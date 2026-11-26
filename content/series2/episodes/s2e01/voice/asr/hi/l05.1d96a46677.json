@@ -1,0 +1,164 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,050"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 50
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,050",
+				"to": "00:00:00,630"
+			},
+			"offsets": {
+				"from": 50,
+				"to": 630
+			},
+			"text": " इंस्पक्टर"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,630",
+				"to": "00:00:00,990"
+			},
+			"offsets": {
+				"from": 630,
+				"to": 990
+			},
+			"text": " सुदिर"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,990",
+				"to": "00:00:01,600"
+			},
+			"offsets": {
+				"from": 990,
+				"to": 1600
+			},
+			"text": " निराला"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,000",
+				"to": "00:00:02,080"
+			},
+			"offsets": {
+				"from": 2000,
+				"to": 2080
+			},
+			"text": " रूपम"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,080",
+				"to": "00:00:02,560"
+			},
+			"offsets": {
+				"from": 2080,
+				"to": 2560
+			},
+			"text": " तोकी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,560",
+				"to": "00:00:03,320"
+			},
+			"offsets": {
+				"from": 2560,
+				"to": 3320
+			},
+			"text": " स्थाना"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,560",
+				"to": "00:00:03,860"
+			},
+			"offsets": {
+				"from": 3560,
+				"to": 3860
+			},
+			"text": " रेल्वे"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,860",
+				"to": "00:00:04,220"
+			},
+			"offsets": {
+				"from": 3860,
+				"to": 4220
+			},
+			"text": " लाइन"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,220",
+				"to": "00:00:04,400"
+			},
+			"offsets": {
+				"from": 4220,
+				"to": 4400
+			},
+			"text": " के"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,400",
+				"to": "00:00:04,580"
+			},
+			"offsets": {
+				"from": 4400,
+				"to": 4580
+			},
+			"text": " इस"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,580",
+				"to": "00:00:04,920"
+			},
+			"offsets": {
+				"from": 4580,
+				"to": 4920
+			},
+			"text": " पार"
+		}
+	]
+}

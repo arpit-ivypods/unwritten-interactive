@@ -1,0 +1,164 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,150"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 150
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,150",
+				"to": "00:00:00,290"
+			},
+			"offsets": {
+				"from": 150,
+				"to": 290
+			},
+			"text": " Press"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,290",
+				"to": "00:00:00,870"
+			},
+			"offsets": {
+				"from": 290,
+				"to": 870
+			},
+			"text": " conference"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,870",
+				"to": "00:00:01,020"
+			},
+			"offsets": {
+				"from": 870,
+				"to": 1020
+			},
+			"text": " at"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,020",
+				"to": "00:00:01,340"
+			},
+			"offsets": {
+				"from": 1020,
+				"to": 1340
+			},
+			"text": " 10"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,340",
+				"to": "00:00:01,980"
+			},
+			"offsets": {
+				"from": 1340,
+				"to": 1980
+			},
+			"text": " tomorrow,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,980",
+				"to": "00:00:02,500"
+			},
+			"offsets": {
+				"from": 1980,
+				"to": 2500
+			},
+			"text": " S.I."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,500",
+				"to": "00:00:03,040"
+			},
+			"offsets": {
+				"from": 2500,
+				"to": 3040
+			},
+			"text": " Joshi,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,040",
+				"to": "00:00:03,120"
+			},
+			"offsets": {
+				"from": 3040,
+				"to": 3120
+			},
+			"text": " in"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,120",
+				"to": "00:00:03,330"
+			},
+			"offsets": {
+				"from": 3120,
+				"to": 3330
+			},
+			"text": " your"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,330",
+				"to": "00:00:03,510"
+			},
+			"offsets": {
+				"from": 3330,
+				"to": 3510
+			},
+			"text": " own"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,510",
+				"to": "00:00:03,960"
+			},
+			"offsets": {
+				"from": 3510,
+				"to": 3960
+			},
+			"text": " Thana."
+		}
+	]
+}

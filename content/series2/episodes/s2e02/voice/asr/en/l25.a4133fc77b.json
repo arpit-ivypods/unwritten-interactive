@@ -1,0 +1,197 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 0
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,220"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 220
+			},
+			"text": " For"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,220",
+				"to": "00:00:00,520"
+			},
+			"offsets": {
+				"from": 220,
+				"to": 520
+			},
+			"text": " two"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,520",
+				"to": "00:00:00,810"
+			},
+			"offsets": {
+				"from": 520,
+				"to": 810
+			},
+			"text": " years"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,810",
+				"to": "00:00:00,880"
+			},
+			"offsets": {
+				"from": 810,
+				"to": 880
+			},
+			"text": " I"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,880",
+				"to": "00:00:01,170"
+			},
+			"offsets": {
+				"from": 880,
+				"to": 1170
+			},
+			"text": " have"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,170",
+				"to": "00:00:01,610"
+			},
+			"offsets": {
+				"from": 1170,
+				"to": 1610
+			},
+			"text": " waited"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,610",
+				"to": "00:00:01,840"
+			},
+			"offsets": {
+				"from": 1610,
+				"to": 1840
+			},
+			"text": " for"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,840",
+				"to": "00:00:01,900"
+			},
+			"offsets": {
+				"from": 1840,
+				"to": 1900
+			},
+			"text": " a"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,900",
+				"to": "00:00:02,190"
+			},
+			"offsets": {
+				"from": 1900,
+				"to": 2190
+			},
+			"text": " real"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,190",
+				"to": "00:00:02,760"
+			},
+			"offsets": {
+				"from": 2190,
+				"to": 2760
+			},
+			"text": " officer"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,760",
+				"to": "00:00:02,870"
+			},
+			"offsets": {
+				"from": 2760,
+				"to": 2870
+			},
+			"text": " to"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,870",
+				"to": "00:00:03,040"
+			},
+			"offsets": {
+				"from": 2870,
+				"to": 3040
+			},
+			"text": " ask"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,040",
+				"to": "00:00:03,290"
+			},
+			"offsets": {
+				"from": 3040,
+				"to": 3290
+			},
+			"text": " for"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,290",
+				"to": "00:00:03,640"
+			},
+			"offsets": {
+				"from": 3290,
+				"to": 3640
+			},
+			"text": " them."
+		}
+	]
+}

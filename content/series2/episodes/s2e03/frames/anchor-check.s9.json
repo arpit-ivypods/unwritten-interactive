@@ -1,0 +1,42 @@
+{
+ "by": "S9 Visual checker",
+ "scope": "s2e03 scene anchor s02 (scene A, talkies_lobby, lobby_night), attempt 1; file_md5 9cce1de75cf583c78cdef5d5ef61374d",
+ "method": "s02.png (1440x2560) viewed whole, then cropped at full resolution with ffmpeg: both faces set beside the three-quarter close-ups on nandini.png and nirala.png; epaulettes, pen, pouch, medal, cap band, Nirala's hands and the phone (zoomed 2.5x), Nandini's hands, helmet, file and registers, tokens and poster frame, top band (windows, bulb) and bottom quarter. Heights measured by pixel-column scans on s02.png and on pair_nandini_nirala.png. No face-matching tool; identity is by eye.",
+ "results": {
+  "s02": {
+   "verdict": "approved with logged drift",
+   "checked": [
+    "Identity: Nandini matches the sheet's three-quarter close-up (oval face, angular jaw, low straight brows in a frown, low ponytail, ear clear, no jewellery, no watch). Nirala matches his (long narrow face, ears out, large round eyes with white showing, moustache with down-turned ends, tufts under the cap).",
+    "Sides: Nandini picture-left facing picture-right, pouch shut on her right hip (near side, picture-left of her body), blue pen in her left chest pocket (picture-right, far side), two bars on her epaulette. Nirala picture-right facing picture-left, three bars, medal on his left chest (picture-right), disc on the pocket-flap edge at about half the flap width; holster hidden by the counter; belt buckle at the counter line.",
+    "Heights (anchor-check item): her crown y=559, her front hairline y=676-680, his cap crown y=692 (about 0.5 percent of the frame below her hairline), so the cap crown is at her hairline as the lock says. Pair sheet for comparison: her crown 443, hairline 499, his cap crown 520, i.e. 0.49 of her head length below her crown; in the frame 0.43. Within tolerance. Her shoulders (about y=900) are above his chin (about y=1025) because he bows over the counter; accepted as pose.",
+    "Phone: face up, almost edge-on, a thin dark slab with a silver edge; no screen content readable.",
+    "Counter: squared stack of plain registers with the brick-red cloth file tied in an off-white bow on top; no label.",
+    "Helmet: open-face, no visor, no stickers, on the bench seat behind her on the left wall. It reads dark red in shadow (about RGB 100,32,28 against the file's 164,55,41), still distinct from the file.",
+    "Wall: nail with a bunch of blank grey tokens; one blank poster frame; high windows flat dark navy. No clock.",
+    "D-021 style-frame watch: no daylight shaft, ceiling fan, wall shield, almirah or barred door. Night light only: one bulb over the counter with a soft cone (D-017 amendment 5). 0 of 1 first-of-scene frames copy the style frame.",
+    "Hands: Nandini's hands empty at her sides; Nirala's two hands flat, five digits on the hand whose thumb shows, four fingertips on the other with the thumb hidden. No extra fingers.",
+    "No text anywhere (tokens, poster frame, registers, file, phone, floor). Lantern sleeve patches only.",
+    "Faces: Nandini y 559-871 (22-34 percent), Nirala y 692-1028 (27-40 percent); both well above the bottom 25 percent. The bottom fifth holds only the counter end panel, her trouser leg and terrazzo. Faces, hands and props are more than 8 percent from the edges; only her back and his shoulder approach the side edges.",
+    "Exactly two people, two sheet faces (D-021 decision 8)."
+   ],
+   "drift_logged": [
+    "STATE miss, Nirala's hands: both hands lie flat to the PICTURE-RIGHT of the phone (phone at about x 715-880, nearest fingertips about x 820, y 1650-1720), not one on each side as the framing, action and STATE ask. Not a side error and not a story-tracked prop state; the phone itself is right.",
+    "Sleeves: his cuffs end at the wrist and the backs of his hands show, where the lock and the s01/s04 STATE say the sleeves hang over the backs of the hands so only the fingers show. This matches how nirala.png draws it, so it is drift from the lock wording, not from the sheet.",
+    "Nirala's chin at about 40 percent down, against the prompt's 38 percent safe line. No subtitle risk.",
+    "Cap: a small off-white stud at the left end of a black strap over the peak; it reads as a strap button, not a badge. The cap tilts with his bowed head; not askew sideways."
+   ],
+   "why_not_rejected": "Every anchor-check item in shots.json dependencies_and_checks passes, including the height relation, the one fault that would not hold in earlier two-shots (D-017). The hand placement fault is fixable at no generation cost in the frames that follow, and a retake risks the height pass. If the Arbiter reads the hand STATE as binding, this take still stands as the better one under D-013 rule 11 unless a retake keeps the heights.",
+   "routed_to_S7_before_s01_is_generated": [
+    "s01 and s04 attach s02 as the anchor. Add to their 'Do not copy from the anchor' lists: 'his hands' position beside the phone and his cuffs ending at the wrist; here the sleeves hang over the backs of his hands'.",
+    "s01 (and s05, its second framing) shows the phone between his hands; s02 cuts straight in with both hands to the picture-right of it. Either restage s01 so both hands lie flat beside the phone on one side, consistent with s02, or accept the mismatch and log it. Recommended: restage, since s01 is not yet made.",
+    "s08 (second framing of s02 after the call) inherits this verdict and this hand placement."
+   ]
+  }
+ },
+ "not_verified": [
+  "Identity is by eye against the sheet crops; no face-matching tool.",
+  "Relative depth of the two figures is inferred by eye (he stands behind the counter, she beside its near end), so the height reading assumes about the same distance from the camera; not measured.",
+  "I did not view s02.raw.png separately; s02.png is the upscaled file the edit will use.",
+  "I did not check the helmet's hue against red_helmet.png."
+ ]
+}

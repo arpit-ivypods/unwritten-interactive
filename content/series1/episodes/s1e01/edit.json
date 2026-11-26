@@ -1,0 +1,277 @@
+{
+ "about": "s1e01 edit (S13 Editor, 26 Nov; clarity re-edit). Per-episode choices only; the shared toolchain is production/scripts/episode/.",
+ "render_name": "s1e01",
+ "slate_color": "#1d2430",
+ "max_seconds": 150,
+ "voice_models": [
+  "v4"
+ ],
+ "voice_fx": {
+  "phone": {
+   "speakers": [
+    "mausi"
+   ]
+  }
+ },
+ "layout": {
+  "first_lead": 4,
+  "lead_default": 5,
+  "use_silent_lead": true,
+  "lead": {
+   "s03": 12,
+   "s15": 10
+  },
+  "gap_default": 8,
+  "tail_default": 6,
+  "tail": {
+   "s06": 24,
+   "s09": 10,
+   "s31": 60
+  },
+  "min_last_segment": 24,
+  "read_cps": 17,
+  "end_black": 12,
+  "silent_frames": {
+   "s07": 45,
+   "s33": 66,
+   "s35": 75,
+   "s36": 45
+  },
+  "cut_on_word": [
+   {
+    "line": "l01",
+    "word": {
+     "hi": "आधी",
+     "en": "half"
+    }
+   },
+   {
+    "line": "l02",
+    "word": {
+     "hi": "मैं",
+     "en": "i"
+    }
+   },
+   {
+    "line": "l03",
+    "word": {
+     "hi": "इसीलिए",
+     "en": "that's"
+    }
+   },
+   {
+    "line": "l04",
+    "word": {
+     "hi": "चाबी",
+     "en": "the"
+    },
+    "occurrence": {
+     "hi": 1,
+     "en": 2
+    }
+   },
+   {
+    "line": "l05",
+    "word": {
+     "hi": "घर",
+     "en": "the"
+    },
+    "occurrence": {
+     "hi": 1,
+     "en": 2
+    }
+   },
+   {
+    "line": "l27",
+    "word": {
+     "hi": "पर",
+     "en": "but"
+    },
+    "occurrence": 1,
+    "shot": "s16"
+   }
+  ]
+ },
+ "sound": [
+  {
+   "cue": "sfx_powder_into_milk",
+   "at": 0,
+   "until": "s02.start",
+   "fade_out": 1
+  },
+  {
+   "cue": "amb_bedroom_night",
+   "id": "#b1",
+   "kind": "bed",
+   "from": 0,
+   "to": "s02.start",
+   "loop": true,
+   "fade_in": 0,
+   "fade_out": 1
+  },
+  {
+   "cue": "amb_bedroom_night",
+   "id": "#b2-b4",
+   "kind": "bed",
+   "from": "s03.start",
+   "to": "s14.start",
+   "loop": true,
+   "fade_in": 3,
+   "fade_out": 1
+  },
+  {
+   "cue": "sfx_bed_creak_petals",
+   "at": "s03.start",
+   "until": "l02.speech_start",
+   "fade_out": 4
+  },
+  {
+   "cue": "sfx_dog_far",
+   "at": "l03.speech_end + 2",
+   "len": "1.0s",
+   "db": -14,
+   "fade_out": 6
+  },
+  {
+   "cue": "sfx_s1e01_bare_feet",
+   "at": "s07.start - 0.7s",
+   "trim": "1.7s",
+   "until": "s07.start + 0.35s",
+   "fade_out": 3
+  },
+  {
+   "cue": "sfx_bolt_rattle",
+   "at": "s07.start",
+   "len": "0.8s",
+   "db": -8,
+   "fade_out": 6
+  },
+  {
+   "cue": "sfx_padlock_knock",
+   "at": "s07.start + 0.85s",
+   "len": "0.36s",
+   "db": -6,
+   "fade_out": 3
+  },
+  {
+   "cue": "sfx_almirah_door",
+   "at": "s10.start",
+   "len": "1.2s",
+   "db": -8,
+   "fade_out": 6
+  },
+  {
+   "cue": "sfx_velvet_box_hinge",
+   "at": "s11.start - 0.3s",
+   "until": "s11.start + 1",
+   "db": -10,
+   "fade_out": 3
+  },
+  {
+   "cue": "amb_lane_night",
+   "kind": "bed",
+   "from": "s14.start",
+   "to": "s17.start",
+   "loop": true,
+   "fade_in": 0,
+   "fade_out": 1,
+   "segments": [
+    {
+     "from": "l10.speech_start - 0.2s",
+     "to": "l10.speech_end + 0.1s",
+     "db": -6
+    },
+    {
+     "from": "l27.speech_start - 0.2s",
+     "to": "l27.speech_end + 0.1s",
+     "db": -6
+    }
+   ]
+  },
+  {
+   "cue": "sfx_toothpick_click",
+   "at": "s15.start",
+   "trim": "0.8s",
+   "len": "0.4s",
+   "db": -4,
+   "fade_out": 2
+  },
+  {
+   "cue": "mus_bed_drone",
+   "kind": "bed",
+   "from": "s14.start",
+   "to": "l25.speech_start + 0.8s",
+   "gain_db": -24,
+   "fade_in": 30,
+   "fade_out": 24,
+   "segments": [
+    {
+     "from": "l13.speech_start - 0.2s",
+     "to": "l13.speech_end + 0.1s",
+     "db": -8
+    }
+   ]
+  },
+  {
+   "cue": "amb_bedroom_night",
+   "id": "#b6-b10",
+   "kind": "bed",
+   "from": "s17.start",
+   "to": "l25.speech_start + 0.5s",
+   "loop": true,
+   "fade_in": 0,
+   "fade_out": 12,
+   "segments": [
+    {
+     "from": "l13.speech_start - 0.2s",
+     "to": "l13.speech_end + 0.1s",
+     "db": -4
+    }
+   ]
+  },
+  {
+   "cue": "sfx_photo_print",
+   "at": "s29.start",
+   "until": "s29.end",
+   "db": -2,
+   "fade_out": 6
+  },
+  {
+   "cue": "amb_bedroom_night",
+   "id": "#lamp-hum",
+   "kind": "bed",
+   "from": "s33.start",
+   "to": "s35.start",
+   "loop": true,
+   "filter": {
+    "lowpass_hz": 180
+   },
+   "db": -12,
+   "fade_in": 6,
+   "fade_out": 1
+  },
+  {
+   "cue": "mus_swell_reveal",
+   "at": "s35.start",
+   "until": "s36.start",
+   "gain_db": -10,
+   "fade_out": 1,
+   "duck": false
+  },
+  {
+   "cue": "sfx_chooda_click",
+   "at": "s36.start + 0.2s",
+   "db": -4
+  }
+ ],
+ "notes": [
+  "Lines split over two shots (l01-l05) are placed once and cut on a word inside them (cut_on_word). en l04 and l05 cut on the second 'the' ('The key', 'The house'), per D-023 decision 2.",
+  "Camera moves come from shots.json (toolsmith step, D-023 rule 3); the old shots.<id>.move copies are removed, which also replaces the stale s05 and s25 moves (retake check owed_before_edit).",
+  "No gain_db on the cue sheet or in the library: point and bed levels here are set against the files' measured levels (library manifest mean/max dB).",
+  "sfx_truck_far_pass dropped: no pause after l07 before the lane cut (cue sheet: 'otherwise drop it').",
+  "sfx_s1e01_bare_feet (episode one-off, sound/manifest.jsonl status ok): file 1.7-2.75 s, so its last two steps (file 1.85 s, and the loudest at 2.5 s) land 0.55 s before and 0.1 s after the cut to s07, ending before the bolt rattle peaks (file 0.45 s, at s07.start + 0.45 s). Cue sheet: steps end as her hand reaches the bolt and may start over the cut into b3. The first step falls close to the far dog bark after l03. Not heard.",
+  "b10-b11: bedroom bed and drone go out under l25. s33 (the 2.2 s hold) and l26 (s34) carry only the lamp-hum stretch allowed by the cue sheet: amb_bedroom_night low-passed at 180 Hz at -12 dB (edit.json sound filter, toolsmith item 5). It goes out on the cut to the scar insert (s35). Not heard; if screening wants the hold silent again, delete the #lamp-hum entry.",
+  "mus_swell_reveal plays from the cut to s35 and is cut at s36 (1-frame fade), so the chooda click is alone.",
+  "Clarity re-edit (S13, 26 Nov): l27 split s15/s16 cuts on 'पर'/'but' (S7 remap note); s31 now carries l29, so silent_frames.s31 removed and tail.s31 60 frames holds the photograph 2.0 s after l29 (script b9 silent_seconds 2.0 'after', shots.json s31 silent_tail_s 2.0; the S7 note's 'about 48' gave 1.6 s); amb_lane_night ducks -6 dB under l27 as under l10 (both Mausi on the phone over the lane)."
+ ]
+}

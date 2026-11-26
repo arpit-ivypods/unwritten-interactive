@@ -1,0 +1,142 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,050"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 50
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,050",
+				"to": "00:00:00,150"
+			},
+			"offsets": {
+				"from": 50,
+				"to": 150
+			},
+			"text": " और"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,150",
+				"to": "00:00:00,300"
+			},
+			"offsets": {
+				"from": 150,
+				"to": 300
+			},
+			"text": " ये"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,300",
+				"to": "00:00:00,610"
+			},
+			"offsets": {
+				"from": 300,
+				"to": 610
+			},
+			"text": " ताना"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,610",
+				"to": "00:00:00,940"
+			},
+			"offsets": {
+				"from": 610,
+				"to": 940
+			},
+			"text": " मेरे"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,940",
+				"to": "00:00:01,330"
+			},
+			"offsets": {
+				"from": 940,
+				"to": 1330
+			},
+			"text": " रिकोड"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,330",
+				"to": "00:00:01,550"
+			},
+			"offsets": {
+				"from": 1330,
+				"to": 1550
+			},
+			"text": " में"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,550",
+				"to": "00:00:01,760"
+			},
+			"offsets": {
+				"from": 1550,
+				"to": 1760
+			},
+			"text": " है"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,760",
+				"to": "00:00:01,870"
+			},
+			"offsets": {
+				"from": 1760,
+				"to": 1870
+			},
+			"text": " ही"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,870",
+				"to": "00:00:02,460"
+			},
+			"offsets": {
+				"from": 1870,
+				"to": 2460
+			},
+			"text": " नहीं"
+		}
+	]
+}

@@ -1,0 +1,564 @@
+{
+  "episode_id": "s2e02",
+  "series_id": "series2",
+  "status": "planned",
+  "status_note": "Planned only. Nothing generated, nothing listened to. A separate runner generates the one-off cues below once each through the connector (D-009 route b) and records ids, probed lengths and credits in this folder's manifest.jsonl; library cues come from content/series2/sound/ and are not generated again here (D-011 reuse).",
+  "authority": [
+    "D-011 reuse: library cues by cue_id, one-offs only for sounds the library lacks.",
+    "D-014 / D-0M2: shots follow measured voice; every placement is anchored to a beat or line id, not to seconds.",
+    "D-0M4: -14 LUFS integrated, -1 dBTP, +/-0.5 LU.",
+    "D-019: s2e02 was held for its S3 read. review-notes.json now carries a critic_rerun (pass, 8) whose two medium fixes (l14, l26) are in the current script; neither changes a sound. If a later script change moves a beat or line, this sheet is touched up, not regenerated.",
+    "D-020: the English cut uses the same beat and line anchors; no character gate changes anything here."
+  ],
+  "sources": [
+    "content/series2/episodes/s2e02/script.hi.json (beats, silent_seconds, sfx_notes, music_note)",
+    "content/series2/episodes/s2e02/script.en.json (same beat and line ids, same sfx_notes and music_note: checked by script)",
+    "content/series2/sound/library.json (ambiences, effects, themes, mix.phone_filters, one_offs_left_to_episode_sheets s2e02 entry)",
+    "content/series2/episodes/s2e01/sound/cues.json (sheet format)"
+  ],
+  "timebase": "Line and beat anchors only. No s2e02 voice is measured yet; S13 converts anchors to seconds from the measured timeline. The English cut uses the same anchors by line id. There is no b9 in this script (merged into b8, D-006 change 8c): beats run b8 to b10.",
+  "library_cues": [
+    {
+      "cue_id": "amb_projection_room",
+      "where": "b1 to b2",
+      "gain_db": -24,
+      "notes": "Day. 'Dry quiet, a faint street outside the small window, dust': the base as is. Continues straight on from s2e01's last bed, so it opens at the same level s2e01 b12 used. Cuts on the b2 to b3 picture cut."
+    },
+    {
+      "cue_id": "amb_talkies_lobby",
+      "where": "b3 to b10",
+      "gain_db": -24,
+      "notes": "Day: base only, no crickets, no birds. The clock layer (sfx_wall_clock_tick) is placed in b4 only. Under every line b3 to b10; slightly up (-22) in the silences of b6 and b7 so the booth hold and the medal shot are not dead air. Cuts on the b10 to b11 cut."
+    },
+    {
+      "cue_id": "amb_real_thana",
+      "where": "b11 to b12",
+      "gain_db": -24,
+      "notes": "Evening, one tube light: the base's tube-light hum and slow fan are exactly what the script asks for; no night layer (the script asks for no crickets). Library note: s2e02 b11 wants 'the fan alone' on the stopped-chewing shot, so from that shot only this bed plays. Ducked right down (about -38) under l33 and l34; hard cut to silence on l34's last word."
+    },
+    {
+      "cue_id": "sfx_pouch_flap_snap",
+      "where": "b1, at the head of l03 (flap opens); b10 under l28 (flap snaps shut)",
+      "gain_db": -12,
+      "notes": "b1: in the l02 to l03 speaker gap or on l03's first syllable at -16. b10: after the chain clink, under the end of l28 at -14. Library pairs it with sfx_cuff_chain_clink both times."
+    },
+    {
+      "cue_id": "sfx_cuff_chain_clink",
+      "where": "b1 under l03 (cuffs drawn out); b10 under l28 (cuffs into the pouch)",
+      "gain_db": -16,
+      "notes": "'Close and dry' in b1. Use different clinks from the take for the two moments (or +/-1 semitone) so they do not read as a repeat. No clinks for the cuffs hanging from her hand in b2 to b8: the script asks for none, and every line there is dialogue-first."
+    },
+    {
+      "cue_id": "sfx_knitting_needles",
+      "where": "b2 under l09 to the b2 to b3 cut; b11 under l32 to the stopped-chewing shot",
+      "gain_db": -24,
+      "notes": "Silent in b1 and under l05 to l08 (Pushpa's knitting has stopped; she winds wool). b2: in under l09 with Pushpa's needles starting again (shot 5), steady, cut with the b2 to b3 picture cut. b11: under l32, -26; STOP cut clean on a gap, no fade, on the stopped-chewing shot after l32 (every sound but the fan drops out)."
+    },
+    {
+      "cue_id": "sfx_pen_scratch",
+      "where": "b4 under l12; b8 under l20",
+      "gain_db": -20,
+      "notes": "Always under the line, low (library). b4: he writes the number on a fresh receipt as he says it. b8: Nirala writing on the envelope, aloud; may carry on a moment into the l20 to l21 gap and stop before l21."
+    },
+    {
+      "cue_id": "sfx_rubber_stamp",
+      "where": "b4, between l12 and l13 (shot 2, the silent hand letting go)",
+      "gain_db": -10,
+      "notes": "Once, 'one dry wooden thump', then s2e02_sfx_receipt_tear straight after it. Both sit in the gap between l12 and l13, which is a same-speaker gap (Nirala to Nirala) with no silent_seconds written: see editor_notes. Tail gone before l13."
+    },
+    {
+      "cue_id": "sfx_wall_clock_tick",
+      "where": "b4 under l14 (and the clock insert)",
+      "gain_db": -26,
+      "notes": "In from the end of l13 or the head of shot 4, under l14 and the clock insert, out on the b4 to b5 cut with a 0.2 s fade (or cut by the car door if the insert runs into b5). Plain ticks; no raised tick here."
+    },
+    {
+      "cue_id": "sfx_car_door",
+      "where": "b5, in the 0.8 s silence before l15",
+      "gain_db": -12,
+      "notes": "Outside the lobby: low-pass a little and push it back so it reads through the lobby doors, but 'solid and heavy, then nothing'. The caper bed and everything except the lobby bed stop on it."
+    },
+    {
+      "cue_id": "sfx_steps_gravel",
+      "where": "b5 under l15, coming closer",
+      "gain_db": -26,
+      "notes": "Sandals on gravel outside, starting far (-30) and rising to about -22 by l15's end. Between words where possible; never on 'भैयाजी।' (l15's first word). Ends on the b5 to b6 cut, handing over to sfx_steps_terrazzo."
+    },
+    {
+      "cue_id": "sfx_steps_terrazzo",
+      "where": "b6, the 0.8 s silence and under l16 (Bhaiyaji in); b7 after the medal tink (Bhaiyaji out); b10 in the 0.6 s after l30 (Pushpa out)",
+      "gain_db": -18,
+      "notes": "b6: unhurried heavy sandals arriving, stop under l16 as he reaches the desk (-22 under the line). b7: a few steps receding toward the door with the keys, fading. b10: Pushpa's lighter steps out of the door, quicker, a different stretch of the take, fade with the cut to b11."
+    },
+    {
+      "cue_id": "sfx_keyring_jingle",
+      "where": "b6 under l16 and l17, light; b7 out of the door after the medal tink, fading into the start of b8",
+      "gain_db": -24,
+      "notes": "Library: 'light under l17; then walks out of the door and fades into b8'. Keep it at -28 or lower under l17 and clear of [laughs] and 'त्रिपाठी जी से सस्ते भी, मीठे भी।' (the script asks for the laugh and the line to stay clear). b7: the last thing out of the door, panned toward the door, fading through the b7 to b8 cut; gone before l20's first word."
+    },
+    {
+      "cue_id": "sfx_match_wax",
+      "where": "b8 under l23 (shot 4 insert)",
+      "gain_db": -18,
+      "notes": "Match strike in the l22 to l23 gap if there is one, else under l23's start at -20; wax drip low under the rest of l23. Nirala's seal ritual, as in s2a01 b2."
+    },
+    {
+      "cue_id": "sfx_page_turn",
+      "where": "b8 under l24 (shot 5, ledger)",
+      "gain_db": -16,
+      "notes": "One ledger page turned. l24 is one word ('चौबीस।'): place the turn just before it, so the word lands on the stopped finger in silence, or under it at -20 if there is no gap."
+    },
+    {
+      "cue_id": "sfx_peanut_crack",
+      "where": "b11 under l31",
+      "gain_db": -20,
+      "notes": "Mouth full: one or two cracks around l31, between words. None under l32's second half and none after it: the stopped chewing is the cue (as in s2e01 b9)."
+    },
+    {
+      "cue_id": "sfx_desk_phone_lift",
+      "where": "b12, the 1.8 s silence before l33, first part",
+      "gain_db": -12,
+      "notes": "The 'plastic clack' of the receiver. Trim to the clack itself (about 0.3 s) so the 1.8 s can hold the digits, the ring-back burst and the pick-up click too."
+    },
+    {
+      "cue_id": "sfx_dtmf_dialling",
+      "where": "b12, after the lift, inside the 1.8 s silence",
+      "gain_db": -14,
+      "notes": "The last two digits only: two tones (about 0.4 s). Same desk phone as s2e01 b8."
+    },
+    {
+      "cue_id": "sfx_ringback_pickup",
+      "where": "b12, after the two digits, inside the 1.8 s silence, ending before l33",
+      "gain_db": -18,
+      "notes": "'One short ring-back burst (not a full ring cadence), a click as it is picked up.' Cut the ring-back to a short burst (about 0.5 s) and butt the click to it. In the room, no phone filter (library and script): faint, as leak from the earpiece at his ear. The click lands just before l33."
+    },
+    {
+      "cue_id": "mus_theme_caper_bed",
+      "where": "b3 to b4 (the bicycle dispute), out on the car door in b5",
+      "gain_db": -18,
+      "notes": "The 'light plucked procedural motif' is the series bed (library: s2e02 b3-b4). Enters on the b3 head with the stair steps, ducked -8 under l10 to l14. Hard out on the car door in b5 (the script: 'gone at the car door'), no fade tail under the door."
+    },
+    {
+      "cue_id": "mus_tension_note",
+      "where": "b6 to b7 (under Bhaiyaji); b12 from the ring-back to the cut to black",
+      "gain_db": -22,
+      "notes": "b6 to b7: the 'one low, warm sustained note, faintly uneasy' (library: s2e02 b6-b7). Enters under l16, barely audible, ducked -8 under l16 to l19, out with the keys leaving in b7 (fade with the jingle, gone by the b7 to b8 cut: b8 has nothing but sound). Warm it with a gentle low-pass if it reads too cold; no second theme. b12: the 'low drone' enters with the ring-back burst, ducked under l33 and l34, hard cut to silence with the picture on l34's last word."
+    },
+    {
+      "cue_id": "mus_theme_warm_ending",
+      "where": "b10, in under l28, resolving under l30",
+      "gain_db": -22,
+      "notes": "Library: s2e02 b10's 'soft single sustained chord that resolves under l30' uses this cue's opening chord (0 to 12 s). In under l28 (with the cuffs going into the pouch), ducked -8 under l28 to l30. For the resolve under l30, cross-fade (about 0.5 s) into the 34 to 40 s resolve-and-hold section if it matches by ear; otherwise let the opening chord fade to nothing under l30's last word. Out by the end of the 0.6 s after l30 (Pushpa's steps); b11 has no music."
+    }
+  ],
+  "one_off_cues": [
+    {
+      "cue_id": "s2e02_sfx_wool_pull",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 3.0,
+      "loop": false,
+      "prompt": "Close and quiet in a small dusty room: soft wool yarn being pulled off a ball in a few slow tugs, a faint fibrous drag and the ball turning lightly in a hand. Very soft, intimate. No needles, no voices, no music.",
+      "used_at": [
+        "b2 shot 2, under l06 (Pushpa winding orange wool off the ball)"
+      ],
+      "notes": "Very low, -26, between words of l06; never on 'भेजती मैं ही थी'. Stops before l08 (the wool goes still in shot 4). If the take is mostly hiss, drop it: the picture carries it.",
+      "status": "generated"
+    },
+    {
+      "cue_id": "s2e02_sfx_wooden_stair_steps",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 3.0,
+      "loop": false,
+      "prompt": "Two people walking down an old narrow wooden staircase inside a big empty hall, unhurried footsteps on hollow wooden treads with a faint creak, one pair of steps a little behind the other, echoing slightly. No voices, no music.",
+      "used_at": [
+        "b3 shot 1, from the b3 head (0.4 s silence) under l10 and l11, ending at the foot of the stair"
+      ],
+      "notes": "Not sfx_steps_terrazzo (stone floor) or sfx_steps_gravel. Starts at -18 in the 0.4 s silence, -24 under l10 and l11. The last step lands as Nirala reaches the foot of the stair (shot 2).",
+      "status": "generated"
+    },
+    {
+      "cue_id": "s2e02_sfx_bicycle_bell_tring",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 1.0,
+      "loop": false,
+      "prompt": "A single small chrome bicycle bell giving one short accidental tring as a handlebar is tugged, a little rattle of the bicycle frame with it, indoors in a big hard hall. One ring only. No voices, no music.",
+      "used_at": [
+        "b3 shot 1, in the 0.4 s silence before l10"
+      ],
+      "notes": "One tring at -14, before l10 (the script: 'before l10'). If the take rings twice, keep the first strike and cut the rest; its tail may run under l10's first syllable at -24 and no louder.",
+      "status": "generated"
+    },
+    {
+      "cue_id": "s2e02_sfx_receipt_tear",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 1.0,
+      "loop": false,
+      "prompt": "A thin paper receipt torn off a receipt book along its perforated line in one quick clean pull, a crisp short tearing rip, close, on a wooden counter. No voices, no music.",
+      "used_at": [
+        "b4 shot 2, straight after sfx_rubber_stamp, between l12 and l13"
+      ],
+      "notes": "-14, finished before l13 starts. sfx_paper_slip is a slide or rustle, not a tear, so this one is new (the library lists it for this sheet).",
+      "status": "generated"
+    },
+    {
+      "cue_id": "s2e02_sfx_envelope_on_wood",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 1.0,
+      "loop": false,
+      "prompt": "A thick brown paper envelope full of banknotes laid down flat on an old wooden counter, one soft papery slap with a slight weight to it, close. No voices, no music.",
+      "used_at": [
+        "b6 shot 2, under l16 (on or just after 'इस महीने का')"
+      ],
+      "notes": "-18 under the line. Fallback if the take reads wrong: the cleanest second of sfx_paper_slip at -20 with a low shelf lift; do not generate again.",
+      "status": "generated"
+    },
+    {
+      "cue_id": "s2e02_sfx_medal_tink",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 1.0,
+      "loop": false,
+      "prompt": "A fingertip flicking a small brass medal hanging on a cloth ribbon, one light bright metallic tink and a tiny swing of the disc, very close and quiet. No voices, no music.",
+      "used_at": [
+        "b7 shot 3, in the 0.8 s silence after l19"
+      ],
+      "notes": "Alone in the silence at -14 over the lobby bed and the tension note; then the keys and the receding steps take over. Not a bell, not a coin: small, dry, brief.",
+      "status": "generated"
+    },
+    {
+      "cue_id": "s2e02_sfx_booth_grille_creak",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 2.0,
+      "loop": false,
+      "prompt": "A small old iron grille door on a cinema ticket booth swung open slowly, a dry rusty hinge creak and a faint rattle of the grille bars, indoors in a big empty hall. No slam, no voices, no music.",
+      "used_at": [
+        "b8 shot 1, under l20 (Nandini stepping out of the booth)"
+      ],
+      "notes": "Script: 'creaking under l20'. Low, -22, panned to the booth side, mostly before or between the spoken digits of l20 so 'सात-सात-तीन' stays clear. Not sfx_door_chain_stop or sfx_door_shut_bolt (lane house doors).",
+      "status": "generated"
+    }
+  ],
+  "placement_by_beat": [
+    {
+      "beat": "b1",
+      "bed": [
+        "amb_projection_room"
+      ],
+      "events": [
+        {
+          "cue_id": "sfx_pouch_flap_snap",
+          "anchor": "l02 to l03 gap or l03 first syllable (flap opens)"
+        },
+        {
+          "cue_id": "sfx_cuff_chain_clink",
+          "anchor": "under l03, cuffs drawn out, close and dry"
+        }
+      ]
+    },
+    {
+      "beat": "b2",
+      "bed": [
+        "amb_projection_room"
+      ],
+      "events": [
+        {
+          "cue_id": "s2e02_sfx_wool_pull",
+          "anchor": "shot 2, under l06, very low; stops before l08"
+        },
+        {
+          "cue_id": "sfx_knitting_needles",
+          "anchor": "in under l09 (shot 5), steady to the b2 to b3 cut"
+        }
+      ]
+    },
+    {
+      "beat": "b3",
+      "bed": [
+        "amb_talkies_lobby"
+      ],
+      "events": [
+        {
+          "cue_id": "s2e02_sfx_wooden_stair_steps",
+          "anchor": "from the b3 head, under l10 and l11, to the foot of the stair"
+        },
+        {
+          "cue_id": "s2e02_sfx_bicycle_bell_tring",
+          "anchor": "one tring in the 0.4 s silence before l10"
+        },
+        {
+          "cue_id": "mus_theme_caper_bed",
+          "anchor": "enters at the b3 head, ducked -8 under l10 and l11"
+        }
+      ]
+    },
+    {
+      "beat": "b4",
+      "bed": [
+        "amb_talkies_lobby"
+      ],
+      "events": [
+        {
+          "cue_id": "sfx_pen_scratch",
+          "anchor": "under l12, low"
+        },
+        {
+          "cue_id": "sfx_rubber_stamp",
+          "anchor": "shot 2, between l12 and l13"
+        },
+        {
+          "cue_id": "s2e02_sfx_receipt_tear",
+          "anchor": "straight after the stamp, before l13"
+        },
+        {
+          "cue_id": "sfx_wall_clock_tick",
+          "anchor": "under l14 and the clock insert"
+        },
+        {
+          "cue_id": "mus_theme_caper_bed",
+          "anchor": "continues, ducked under l12 to l14"
+        }
+      ]
+    },
+    {
+      "beat": "b5",
+      "bed": [
+        "amb_talkies_lobby"
+      ],
+      "events": [
+        {
+          "cue_id": "sfx_car_door",
+          "anchor": "in the 0.8 s silence before l15, outside, then nothing"
+        },
+        {
+          "cue_id": "mus_theme_caper_bed",
+          "anchor": "hard out on the car door"
+        },
+        {
+          "cue_id": "sfx_steps_gravel",
+          "anchor": "under l15, coming closer, never on its first word"
+        }
+      ]
+    },
+    {
+      "beat": "b6",
+      "bed": [
+        "amb_talkies_lobby (-22 in the 0.8 s booth hold)"
+      ],
+      "events": [
+        {
+          "cue_id": "sfx_steps_terrazzo",
+          "anchor": "in the 0.8 s silence, stopping under l16 at the desk"
+        },
+        {
+          "cue_id": "sfx_keyring_jingle",
+          "anchor": "light under l16 and l17; -28 or lower under l17, clear of the laugh"
+        },
+        {
+          "cue_id": "s2e02_sfx_envelope_on_wood",
+          "anchor": "shot 2, under l16"
+        },
+        {
+          "cue_id": "mus_tension_note",
+          "anchor": "enters under l16, barely audible, ducked under l16 and l17"
+        }
+      ]
+    },
+    {
+      "beat": "b7",
+      "bed": [
+        "amb_talkies_lobby (-22 in the 0.8 s after l19)"
+      ],
+      "events": [
+        {
+          "cue_id": "mus_tension_note",
+          "anchor": "ducked under l18 and l19; fades out with the keys, gone by the b7 to b8 cut"
+        },
+        {
+          "cue_id": "s2e02_sfx_medal_tink",
+          "anchor": "shot 3, first moment of the 0.8 s after l19"
+        },
+        {
+          "cue_id": "sfx_steps_terrazzo",
+          "anchor": "after the tink, receding to the door"
+        },
+        {
+          "cue_id": "sfx_keyring_jingle",
+          "anchor": "last thing out of the door, fading across the b7 to b8 cut"
+        }
+      ]
+    },
+    {
+      "beat": "b8",
+      "bed": [
+        "amb_talkies_lobby"
+      ],
+      "events": [
+        {
+          "cue_id": "sfx_keyring_jingle",
+          "anchor": "tail only, gone before l20's first word"
+        },
+        {
+          "cue_id": "s2e02_sfx_booth_grille_creak",
+          "anchor": "shot 1, under l20, clear of the digits"
+        },
+        {
+          "cue_id": "sfx_pen_scratch",
+          "anchor": "under l20, writing on the envelope"
+        },
+        {
+          "cue_id": "sfx_match_wax",
+          "anchor": "strike in the l22 to l23 gap, wax under l23"
+        },
+        {
+          "cue_id": "sfx_page_turn",
+          "anchor": "just before l24 (or under it at -20)"
+        }
+      ]
+    },
+    {
+      "beat": "b10",
+      "bed": [
+        "amb_talkies_lobby"
+      ],
+      "events": [
+        {
+          "cue_id": "sfx_cuff_chain_clink",
+          "anchor": "shot 3, under l28, cuffs into the pouch"
+        },
+        {
+          "cue_id": "sfx_pouch_flap_snap",
+          "anchor": "under the end of l28, flap snaps shut"
+        },
+        {
+          "cue_id": "mus_theme_warm_ending",
+          "anchor": "opening chord in under l28, ducked; resolves under l30; out by the end of the 0.6 s after l30"
+        },
+        {
+          "cue_id": "sfx_steps_terrazzo",
+          "anchor": "Pushpa out of the door in the 0.6 s after l30"
+        }
+      ]
+    },
+    {
+      "beat": "b11",
+      "bed": [
+        "amb_real_thana (tube-light hum and fan, no layers)"
+      ],
+      "events": [
+        {
+          "cue_id": "sfx_peanut_crack",
+          "anchor": "around l31, between words"
+        },
+        {
+          "cue_id": "sfx_knitting_needles",
+          "anchor": "under l32; STOP cut clean on the stopped-chewing shot"
+        },
+        {
+          "cue_id": "amb_real_thana",
+          "anchor": "the fan alone through the 1.6 s after l32 (shots 3 and 4)"
+        }
+      ]
+    },
+    {
+      "beat": "b12",
+      "bed": [
+        "amb_real_thana (down to about -38 under l33 and l34)"
+      ],
+      "events": [
+        {
+          "cue_id": "sfx_desk_phone_lift",
+          "anchor": "1.8 s silence: the clack, after the gamchha shot"
+        },
+        {
+          "cue_id": "sfx_dtmf_dialling",
+          "anchor": "1.8 s silence: two digits after the lift"
+        },
+        {
+          "cue_id": "sfx_ringback_pickup",
+          "anchor": "1.8 s silence: one short burst, then the click, just before l33"
+        },
+        {
+          "cue_id": "mus_tension_note",
+          "anchor": "enters with the ring-back burst; ducked under l33 and l34; hard cut to silence on l34's last word"
+        }
+      ]
+    }
+  ],
+  "mix": {
+    "dialogue_first": true,
+    "loudness_target": "-14 LUFS integrated, -1 dBTP, +/-0.5 LU (D-0M4)",
+    "starting_gains_db": {
+      "music": -18,
+      "music_duck_under_dialogue": -8,
+      "ambience": -24,
+      "ambience_layer": -28,
+      "sfx": -10
+    },
+    "ducking": [
+      "Music ducks -8 dB under every line (library default).",
+      "b6: keys at -28 or lower under l17; the laugh and 'त्रिपाठी जी से सस्ते भी, मीठे भी।' stay clear of every effect.",
+      "b12: the fan, the bed and the drone duck right down under l33 and l34 (fan about -38) so the cliffhanger is fully intelligible.",
+      "Effects under lines (wool, stair steps, gravel, terrazzo, pen, wax, keys, grille) sit at -18 or lower and between words where the take allows; spoken numbers in l12 and l20 are never covered."
+    ],
+    "filters": {
+      "phone_lines": [],
+      "phone": "None. b12 is Tripathi's side of the call, dry in the room (script); the ring-back and pick-up click are in the room too, faint. Bhaiyaji's voice is never heard. lyr_phone_line_hiss is not used.",
+      "dry_lines": "Every line is dry. l10 (neighbour_voice, off frame from the bench) gets a touch of the lobby reverb and sits a little back, no filter: a carrying call, not a shout."
+    },
+    "music_in_out": [
+      {
+        "cue_id": "mus_theme_caper_bed",
+        "in": "b3 head",
+        "out": "hard out on the car door in b5's 0.8 s silence"
+      },
+      {
+        "cue_id": "mus_tension_note",
+        "in": "under l16 (b6)",
+        "out": "fades with the keys leaving, gone by the b7 to b8 cut"
+      },
+      {
+        "cue_id": "mus_theme_warm_ending",
+        "in": "under l28 (b10)",
+        "out": "resolves under l30; gone by the end of the 0.6 s after l30"
+      },
+      {
+        "cue_id": "mus_tension_note",
+        "in": "b12, with the ring-back burst",
+        "out": "hard cut to silence on l34's last word"
+      }
+    ],
+    "no_music": "b1 to b2; b5 after the car door; b8 ('nothing but sound'); b11; b12 before the ring-back.",
+    "hard_rules": [
+      "No sting anywhere, no comic sting, no percussion hit (music_note).",
+      "The caper bed is gone at the car door, not faded under it.",
+      "b8 has no music.",
+      "No phone filter in b12; Bhaiyaji is never heard.",
+      "No peanut crack and no knitting after the stopped-chewing shot in b11: the fan alone.",
+      "The knitting stop in b11 is a clean cut, not a fade.",
+      "The episode ends on silence: bed and drone cut with the picture on l34's last word, before any answer."
+    ]
+  },
+  "editor_notes": [
+    "b4: the stamp and the receipt tear sit between l12 and l13, a same-speaker gap with no silent_seconds in the script (the action calls it 'silent inside the speaker gap'). They need about 0.8 to 1.0 s; if the measured gap is shorter, the edit opens it there (shot 2 is the hand letting go) rather than putting the stamp under l13. Flagged for S13 and the editor, not changed here.",
+    "b12: the 1.8 s hold must carry the receiver clack, two digits, one ring-back burst and the click (writer_notes say 1.8 s is the least that does). Each is trimmed short in this sheet; if it still reads rushed, the hold is not shortened by the length trim order (the writer protects it at 1.8 s).",
+    "b11: the writer's first length cut is the b11 silent hold to 1.0 s; the fan-alone moment and Pushpa going out still fit in 1.0 s, nothing here needs moving."
+  ],
+  "counts": {
+    "library_cues_used": 22,
+    "one_off_cues_new": 7,
+    "one_off_planned_seconds": 12.0,
+    "one_off_credit_estimate": 119
+  },
+  "not_verified": [
+    "Nothing generated or heard. Gains are starting points for S13.",
+    "The warm-ending resolve under l30, the envelope one-off and the grille creak depend on what the takes contain; each has a stated fallback that needs no new generation.",
+    "Whether the b4 gap and the b12 hold are long enough depends on the measured timeline (no s2e02 voice exists yet).",
+    "Credit estimate assumes the proof's 17 credits per sound generation."
+  ]
+}

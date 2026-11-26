@@ -1,0 +1,9 @@
+{
+ "pass": "D-025 clarity re-voice, take 2 (retakes of the s2branch1 take-1 review: s2a01, s2b01)",
+ "written_by": "S10 voice director, 26 Nov 2026",
+ "how_to_run": "One call per row: creative_generate_speech {prompt: text_sent, model_id: model, voice_id, generations_count: 1, flow_id: settings.flow_id (the episode's existing flow)}. Download to out_path at once, ffprobe it, append a manifest row with take = the row's take (clarity take 1; a clarity retake n is take + n - 1, file <line>.c{n}.mp3), clarity_take = n, pass = 'clarity', text = text_sent, credits = credit_costs, rule = 'D-025'. The take numbers already follow each line's highest existing manifest take, so no renumbering is needed afterwards. Retakes follow the line's note in voice/takes.clarity.<lang>.json. Never re-call generate on a pending result.",
+ "result": "No retakes. All 38 clarity take-1 files were accepted under D-022 as ruled by D-026; one (s2b01 en l31) passed only by the D-026 waiver for consonant and breath tails and is on the ear list with the others in voice/review.clarity.json.",
+ "count": 0,
+ "est_credits_total": 0,
+ "rows": []
+}

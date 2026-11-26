@@ -1,0 +1,222 @@
+{
+ "by": "S9 Visual checker",
+ "date": "2026-11-26",
+ "scope": "s2e03 non-anchor frames, attempt 1 each: s01 s03 s04 s06 s07 s09 s10 s11 s12 s13 s15 s16 s17 s20 s21 s22 s23 s24 s25 s26 s27 s29 s30 s31 s32 s33 (26). The anchor s02 is covered by anchor-check.s9.json. Second framings s05, s08, s14, s18, s19 and s28 have no png of their own: each inherits its source verdict, and the second-framing checks are reported under the source shot.",
+ "method": "Each 1440x2560 png viewed whole at 720 wide beside the sheets (nandini, nirala, pushpa), the pair sheets, talkies_lobby, the prop sheets (nirala_phone, wooden_revolver, handcuffs, pushpa_knitting) and the anchor s02. Then cropped at full resolution with ffmpeg: s01 hands and screen; s04 hands; s09 hands and phone; s10 counter phone; s11 Nirala hands; s15 all hands; s17 and s21 hand on phone; s20 hands; s23 hands, phone and wool; s26 heights band and phone; s29 hands and eyes; s30 holster; s32 arms, arm join, cuffs and background; s33 clock, cuffs and pouch. Prompts s01, s04, s29, s32 and s33 read for SAFE AREAS and do-not-copy lists. Sides judged by pouch (her right hip) and pen (her left pocket) for Nandini; medal, holster and belt tail for Nirala; wool and bag for Pushpa.",
+ "summary": {
+  "approved": 15,
+  "approved_with_logged_drift": 9,
+  "rejected": 2,
+  "rejected_ids": [
+   "s32",
+   "s33"
+  ]
+ },
+ "style_frame_watch_D021": "No daylight shaft, fan, shield, almirah or barred door in any of the 26. Night light only: one bulb with its cone, and deep-blue shadow away from the desk. The barred window in s11, s12 and s22 is the plate's ticket-booth lockup.",
+ "text": "No letters, numbers or marks in any frame: phone screens blank, stamp face unseen, file and registers unlabelled, board and poster frames blank, tokens blank, clock without numerals.",
+ "sheet_faces_D021_8": "At most two sheet faces in every frame: s11, s23 and s26 have two; s10 has one face (Nandini from behind).",
+ "weapon_rule": "s27 and s29 to s32: the revolver is flat in profile, barrel to picture-left, pointing at nobody. s26: holstered and closed. s30: the holster is open and empty.",
+ "results": {
+  "s01": {
+   "verdict": "approved with logged drift",
+   "file_md5": "cd7f7ec443ff241174ee5523e0cc449c",
+   "checked": "Top-down insert, no face. Keypad phone matches nirala_phone (worn silver edge, blank grey keys), face up, screen lit, blank and unobstructed. Two flat hands, one each side, thumbs inward, five digits each, sleeve ends over the backs of the hands. Motion ticks only, no lettering.",
+   "drift_logged": [
+    "Overlay ov_caller_bhaiyaji: the drawn screen is at 39-47% down and 42-58% across (full-res x 600-830, y 1005-1195). shots.json says 30-40% down; S7 corrects the surface to the drawing (no retake).",
+    "Continuity with the anchor: here the hands are one each side of the phone; in s02 (and s08, its reframing) both hands lie to the picture-right of it. The anchor check offered 'restage or accept and log'; s01 was not restaged. Logged.",
+    "Second-framing check for s05 fails as written: the picture-left buzz ticks (x 435-495, y 1215-1280) sit about 5% right of that hand's fingers (hand x 60-430, y 870-1270). No 1.28x window that holds the hand can leave them out, so s05 (l04, call already on speaker) shows buzz ticks. Editor's call: accept, or hold s05 on the hand's left part only if the move allows."
+   ]
+  },
+  "s03": {
+   "verdict": "approved",
+   "file_md5": "4bed3f82949fc307a9457479007c5ff4",
+   "checked": "Nandini chest-up, from behind the counter towards the entrance (doorway, pillar on picture-left). Matches the sheet: oval face, low level brows, centre parting, low ponytail, no jewellery. Two bars, pen in the picture-right pocket, hands out of picture, phone out of sight. Face 18-48% down."
+  },
+  "s04": {
+   "verdict": "approved with logged drift",
+   "file_md5": "982cc7e7424968bf6324b362a26222d9",
+   "checked": "Close insert from above: keypad phone lit, blank screen clear of the finger; forefinger on a key at the upper right, other hand flat at the upper left, sleeve ends over the backs of the hands, no extra fingers.",
+   "drift_logged": [
+    "The forefinger is touching the key rather than just lifting off it. Acting only.",
+    "Anatomy against STATE wording: fingers point towards the camera, so the hands read as a man facing us, which makes the pressing hand (picture-right) his LEFT. The STATE names that hand his right. Picture positions match the STATE; handedness is not story-tracked.",
+    "Overlay (optional): the screen is drawn in perspective at about 19-49% across, 42-54% down."
+   ]
+  },
+  "s06": {
+   "verdict": "approved",
+   "file_md5": "dd79df7d33d92cebb3b6651ef8144f82",
+   "checked": "Wooden-knob stamp and open tin pad, violet ink, lid off, by the khaki sleeve at the upper right, fingertips only. Phone and faces not in view. Red file on the registers behind, no label. No text on the stamp."
+  },
+  "s07": {
+   "verdict": "approved",
+   "file_md5": "7d3acfe003378093d266a9416e260998",
+   "checked": "Close-up, eyes lowered, very still; identity matches the sheet. Two bars, pen picture-right at the lower edge, hands out of picture. Night doorway behind. Face 17-58% down."
+  },
+  "s09": {
+   "verdict": "approved",
+   "file_md5": "9aa57ff3fd7637a769f2a0f9d7fab280",
+   "checked": "Medium single from Nirala's side. Hands flat on the near edge of the counter (five digits each, thumbs inward). Keypad phone matches the prop, screen DARK. Red cloth file tied with an off-white bow, no label. Pen picture-right; pouch hidden by her right arm, as STATE asks. Eyes go to the file. No helmet, no Nirala."
+  },
+  "s10": {
+   "verdict": "approved with logged drift",
+   "file_md5": "79ff1041c133e368d48c333beb5a4574",
+   "checked": "Doorway wide. Pushpa small in the open doorway: needles crossed in the bun, spectacles, plum sleeveless cardigan, one bar, wool ball in the picture-left pocket (her right), off-white bag on the picture-right shoulder (her left), her right hand on the door frame. Nandini from behind: ponytail, pouch on the picture-right hip (her right, seen from behind), hands empty. Registers in the foreground.",
+   "drift_logged": [
+    "PROP: the phone on the counter (full-res x 1100-1330, y 2240-2370) is drawn as a slab smartphone (full black glass, silver frame, charging port), not Nirala's keypad handset. It is small, dark, in the bottom-right corner. The s02 anchor's edge-on phone has the same slab look. Editor: keep the push-in's window off the bottom-right corner if possible; otherwise accept.",
+    "Nandini is not visibly turning towards Pushpa; her head faces straight away from us."
+   ]
+  },
+  "s11": {
+   "verdict": "approved",
+   "file_md5": "e0807e480c5d5abd0f8848ce9104fe7d",
+   "checked": "Two-shot at the counter end. Nandini picture-left facing picture-right: pouch on her near (picture-left) hip, pen at the picture-right pocket, two bars. Pushpa picture-right: wool ball picture-left pocket, bag strap over the picture-right shoulder, needles in bun, one bar, hands empty. Nirala only as two sleeved hands on the counter at the lower right edge. Lockup with arched grille, door shut. Heights: Pushpa's hair top is at about Nandini's nose and her eyes level with Nandini's shoulders (pair rule: head at her mouth); within tolerance. Two sheet faces."
+  },
+  "s12": {
+   "verdict": "approved with logged drift",
+   "file_md5": "64f55761d237bab6a3baaa48fb2e0ae9",
+   "checked": "Pushpa chest-up, spectacles low, eyes to picture-left. Needles crossed in the bun, one bar each side, bag strap over the picture-right shoulder, wool ball in the picture-left pocket. Lockup grille behind (matches s11).",
+   "drift_logged": [
+    "Second-framing check for s14 ('face inside the top 40 percent') misses: her chin is at about 46% down (crown 24%). Editor: anchor s14's 1.3x window at the top (focus y about 0.385); her face then sits at about 30-60% of the output, clear of the subtitle band."
+   ]
+  },
+  "s13": {
+   "verdict": "approved",
+   "file_md5": "e4ce38a37913b3eb66a4031d21148367",
+   "checked": "Nandini chest-up, sharp, eyes to picture-right, mouth open on the line. Two bars, pen picture-right, hands out of picture. Face 13-47% down."
+  },
+  "s15": {
+   "verdict": "approved",
+   "file_md5": "f7dac7606e618fcd17fe6990360ce61f",
+   "checked": "Top-down, no faces. Dark keypad phone in the middle. Nirala's hands at the top, sleeve ends over the backs, thumbs inward. Nandini's at the bottom, flat, buttoned cuffs, thumbs inward. Pushpa's at the right with buttoned khaki cuffs, holding the pale bamboo needles and the orange strip, still. Five digits on every hand that shows them; no extra hands."
+  },
+  "s16": {
+   "verdict": "approved with logged drift",
+   "file_md5": "0c60c90a2df077224dd699c23acbc500",
+   "checked": "Close-up of Nirala: long narrow face, ears out, round eyes, pencil moustache, cap dead level (teal band, black peak, no badge), three bars, medal on the picture-right chest, eyes lowered. Blank board behind; bulb above. Face 35-59% down.",
+   "drift_logged": [
+    "Overlay ov_fake_board: only narrow strips of the board are clear, at about 3-17% and 79-97% across, 22-56% down; his cap and head cover the middle. Thin for dressing."
+   ]
+  },
+  "s17": {
+   "verdict": "approved",
+   "file_md5": "aa023e45c9df04cec2f30179888b2729",
+   "checked": "Nandini at the pillar (picture-right), phone in her right hand at the picture-left side of her head, back of the phone (lens) to camera. Left hand empty at her side (picture-right), pouch on the picture-left hip, pen picture-right. Second-framing check for s18 passes: face and phone at 16-34% down."
+  },
+  "s20": {
+   "verdict": "approved",
+   "file_md5": "e908d5550c3ee69a46ae58d5397a9875",
+   "checked": "Low insert along the counter: dark keypad phone in the middle (35-61% across, the middle third for s19), Nirala's two hands flat at the upper left, sleeves over the backs, Pushpa's hands at the right with the bamboo needles stopped in the orange knitting, wool strand falling off the counter. No faces."
+  },
+  "s21": {
+   "verdict": "approved",
+   "file_md5": "129136bdac0607734849992398c432f9",
+   "checked": "Close-up at the pillar (picture-right). Phone at her right ear on the picture-left, back to camera, four fingers over it, thumb hidden. Two bars, pen picture-right. Face 11-54% down."
+  },
+  "s22": {
+   "verdict": "approved",
+   "file_md5": "32d7e371d5b2819f5edfd0ab6e27911b",
+   "checked": "Empty ticket-booth lockup: arched steel-grille window dark, side door shut with its knob, stair behind, blank frame on the wall. No person, no text. Matches the plate and s11/s12."
+  },
+  "s23": {
+   "verdict": "approved",
+   "file_md5": "2b2f0d6556b11a6db939b8bd06c54ce1",
+   "checked": "Two-shot by the pillar (picture-right). Nandini picture-left: phone lowered in her right hand (picture-left), back outwards; left hand empty; pouch picture-left hip; pen picture-right. Pushpa picture-right holding the bamboo needles and orange knitting at her waist; wool ball in the picture-left pocket with the strand to the knitting; bag over the picture-right shoulder; needles in the bun. Heights match s11 and the pair rule closely enough (her hair top between Nandini's nose and mouth). Two sheet faces."
+  },
+  "s24": {
+   "verdict": "approved",
+   "file_md5": "960f9ccde52f746af997ea11a3f3a410",
+   "checked": "Both door leaves open; far off, a small lit red signal lamp on a post; pillar on the picture-left. No people, no text."
+  },
+  "s25": {
+   "verdict": "approved with logged drift",
+   "file_md5": "76349a8d8f80eb256550e41696a7ea32",
+   "checked": "Close, phone out of picture, eyes and head turned towards picture-right (the doors), pen picture-right at the lower edge. Identity matches. Face 11-50% down.",
+   "drift_logged": [
+    "The pillar behind her is on the picture-left; in s17, s21 and s23 it is on the picture-right. The plate has two entrance pillars, so this reads as the other one. Not story-tracked."
+   ]
+  },
+  "s26": {
+   "verdict": "approved with logged drift",
+   "file_md5": "08ae09ddb0fffbf269e6b86ef1e02efd",
+   "checked": "Two-shot from Nandini's side, board blank behind. Nandini picture-left in profile, eyes down. Nirala picture-right, three-quarter: brown holster with a brass-stud flap CLOSED on his right hip (picture-left of his body); hands hanging, sleeves to the fingers; cap level; medal picture-right; belt tail picture-right. Keypad phone face up on the counter, screen dark. Heights: his cap crown (y about 635) is at her front hairline (about 650); her shoulders are level with his chin (about 1000). Rule met. Overlay: the board's left half (about 34-62% across, 23-42% down) is clear.",
+   "drift_logged": [
+    "STATE wording, not the frame: STATE says her pouch is 'on her right hip (the far side, hidden)'. She faces picture-right, so her right hip is the near side, and the character lock says 'in full view on the near hip when she faces picture-right'. The frame shows it there, shut, as in s02. S7 fixes the STATE line; no retake."
+   ]
+  },
+  "s27": {
+   "verdict": "approved",
+   "file_md5": "c772c34e01cda2f8f6a51decd64b94e2",
+   "checked": "Pale teak revolver flat in exact profile, barrel to picture-left, grain and one knot, no metal; matches wooden_revolver. Fingers just lifting off at the right, sleeve over the back of the hand, five digits. Points at nobody. Second-framing check for s28: the hand is at 64-92% across, effectively the right third."
+  },
+  "s29": {
+   "verdict": "approved with logged drift",
+   "file_md5": "484a8566fbb4152afa7feb0802282016",
+   "checked": "Medium close: cap level, medal picture-right, belt tail picture-right, three bars. Revolver flat on the counter in profile, barrel to picture-left, with one hand flat on each side (five digits each). Holster out of sight. Board clear at both sides of his head (about 10-31% and 68-90% across) for the dressing overlay.",
+   "drift_logged": [
+    "Eyeline: his eyes look straight out at us (at Nandini), not down at the revolver as framing and STATE ask. The line still plays, but s29 was composed so 'eyes down at the wood' would show.",
+    "Sleeves end at the wrists and the backs of his hands show. This is the same drift from the lock wording that s02's anchor check logged; it matches the sheet."
+   ]
+  },
+  "s30": {
+   "verdict": "approved with logged drift",
+   "file_md5": "68721016171a25f771b4184d7757a0a8",
+   "checked": "Front-on: cap level, three bars, medal picture-right, both forearms out across the counter, hands palms down, revolver in profile just behind his wrists, barrel to picture-left. Board clear at both sides for the overlay.",
+   "drift_logged": [
+    "The holster shows, open and EMPTY, flap up, on his right hip (picture-left), above the counter line. STATE says it is below the counter. The story state (open, empty) is right.",
+    "His hands sit about 120 px apart (720-wide view) with the revolver between them, so they are not quite 'side by side'.",
+    "Sleeves end at the wrists, as in s29."
+   ]
+  },
+  "s31": {
+   "verdict": "approved",
+   "file_md5": "3ebbd4594787e63bea785929a3aaa604",
+   "checked": "Insert, no face (only the chin's underside at the top edge). Two forearms out side by side over the counter, sleeves over the backs of the hands, five digits each, thumbs inward. Revolver between and behind them, barrel to picture-left. Medal picture-right, three bars, belt tail. Cuffs not in view."
+  },
+  "s32": {
+   "verdict": "rejected",
+   "file_md5": "415499df10d9463bcdb3b4a867688ce4",
+   "checked": "Correct: the open cuffs (both rings open C-shapes) hang by the chain from Nandini's right hand, which comes in from the picture-right with a buttoned cuff; his wrists are bare; the revolver lies in profile, barrel to picture-left; his sleeves cover the backs of the hands. Faults below.",
+   "faults": [
+    "HANDS/ANATOMY: his picture-right forearm comes in flat along the counter from the picture-right edge at the bottom (x 1100-1440, y 1700-2100 full-res). His picture-left sleeve end has no forearm behind it: the stub stops at y about 1705 and only bare counter and the revolver lie behind it. Nobody stands across the counter. Two khaki arms enter from the picture-right edge (hers and this one), so this one can read as Nandini's LEFT arm beside his wrist. The STATE forbids that arm here: branch B opens with it.",
+    "ANCHOR COPY / AXIS: the background copies the anchor's bench, cherry-red helmet, token nail, poster frame, red file and registers, with the counter running into depth towards the left wall. The prompt lists 'the bench, the helmet, the camera angle' under do-not-copy. s31, the shot before, looks across the counter from Nandini's side, with his body above his wrists. The cut s31 to s32 jumps axis.",
+    "SAFE AREAS: his fingers reach about 85% down (prompt: wrists 56-66%, bottom fifth plain counter). The shot is silent, so no subtitle clashes, but s32 is the branch-seam frame that both s2a01 b1 and s2b01 b1 must match, so it should be clean."
+   ],
+   "fix": "One retake (D-023 rule 4.1), prompt changes in picture terms. (1) Same camera as s31: from Nandini's side of the counter, looking a little down across it towards the BACK wall (dark wall and the blank board edge, NOT the bench, helmet, token nail, poster frame or file). Add 'the bench, the helmet, the tokens, the poster frame, the file and registers' to do-not-copy. (2) Nirala stands across the counter at the TOP of the picture, his body out of frame above. BOTH forearms run unbroken from the top edge down over the counter, side by side, parallel, a hand's width apart; wrists at 56-66% down; fingertips no lower than 72%. No arm enters from the left or right edge except Nandini's one right arm. (3) Nandini's right forearm and buttoned cuff come in from the picture-right edge at 28-45% down, holding the open cuffs by the chain above his wrists; her left arm and hand are nowhere in the picture. (4) Revolver as now, between the cuffs and his wrists. If the retake also misses, accept the better take and log (D-013 rule 11). Note: s32 already uses five refs, so attach no extra one; keep s02 as the style anchor."
+  },
+  "s33": {
+   "verdict": "rejected",
+   "file_md5": "953c01cacebd52a29da5d4b549b6c8b5",
+   "checked": "Correct: Nandini front-on under the bulb, turned away from the counter. Identity matches the sheet. Two bars, pen picture-right. Pouch on the picture-left hip, flap open, empty. Open cuffs (both rings open) in her right hand (picture-left); left hand empty. Round clock with no numerals: hour hand on eleven, minute hand on twelve, at 10-25% down and about 9% in from the left. Blank board edge on the right. No Nirala. Face 16-34% down. Faults below.",
+   "faults": [
+    "SAFE AREAS / KEY PROP: the open cuffs hang at 73-87% down: the chain from about 1860, the rings at about 1950-2225 of 2560. The prompt set them at 50-66% and kept the bottom fifth for 'only her trousers and the counter's panel', because l27's subtitle and the question card go there. About two-thirds of each ring lies inside the bottom fifth, so the object the question is about sits under the subtitle and under the card.",
+    "With the planned move (push-in 0.2 at focus y 0.3), a 1.2x window from the top ends at about 83% of the frame, so the rings would also be pushed partly out of the picture."
+   ],
+   "fix": "One retake (D-023 rule 4.1). Keep the prompt and restage only the hand. She holds the open cuffs RAISED in front of her, right forearm bent across her stomach (picture-left of her body), her hand at about 50% down, with both open rings hanging at 52-66% down against her shirt front, clear of the belt line. The bottom fifth holds only trousers and the counter panel. Keep the clock (hour on eleven, minute on twelve, no numerals), the open empty pouch, the empty left hand, the face at 16-34%, and 'no Nirala'. Editor: re-check the push-in window against the new cuffs. If the retake also misses, accept the better take and log (D-013 rule 11). In that case, keep this take's cuffs in view by changing s33's move rather than the frame."
+  }
+ },
+ "routed": {
+  "S7 (shots.json, no retake)": [
+   "s01 ov_caller_bhaiyaji.surface to 39-47% down, 42-58% across.",
+   "s26 STATE: the pouch is on her near hip, in view, shut (lock wording); not the far side.",
+   "s05: decide whether buzz ticks under l04 are acceptable (see s01)."
+  ],
+  "S13 editor": [
+   "s14: anchor the 1.3x window at the top (focus y about 0.385).",
+   "s10: keep the move's window off the bottom-right corner if possible (smartphone-looking prop).",
+   "s33: re-check the push-in against the cuffs (on this take, the end window cuts the rings)."
+  ],
+  "frame runner (retakes, D-023 rule 4.1)": [
+   "s32",
+   "s33"
+  ]
+ },
+ "fault_rate_D0M2": "Rejected 2 of 26 (8%). s32 fails on hands/anatomy, anchor copy and axis; s33 puts the key prop in the reserved bottom fifth. Prop or state drift in 1 (s10 phone model). Lock-wording sleeve drift in s29 and s30, as already logged on s02. No side error in any frame. Below the 1-in-5 trigger.",
+ "not_verified": [
+  "Identity is by eye against the sheet crops; no face-matching tool.",
+  "Positions are measured by eye from 720-wide views and full-resolution crops, to about 1-2% of the frame; no pixel-column scans this time.",
+  "Heights in s11, s23 and s26 are read by eye and assume roughly equal depth (s26: she is nearer).",
+  "Raw pngs not opened; colours not sampled as hex.",
+  "Not checked against audio, the timeline or the camera-move renders.",
+  "Whether two khaki arms from the picture-right edge in s32 confuse a cold viewer is my judgement, not tested."
+ ]
+}

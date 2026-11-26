@@ -1,0 +1,175 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,100"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 100
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,100",
+				"to": "00:00:00,250"
+			},
+			"offsets": {
+				"from": 100,
+				"to": 250
+			},
+			"text": " Any"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,250",
+				"to": "00:00:00,840"
+			},
+			"offsets": {
+				"from": 250,
+				"to": 840
+			},
+			"text": " officer"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,840",
+				"to": "00:00:01,110"
+			},
+			"offsets": {
+				"from": 840,
+				"to": 1110
+			},
+			"text": " who"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,110",
+				"to": "00:00:01,510"
+			},
+			"offsets": {
+				"from": 1110,
+				"to": 1510
+			},
+			"text": " helps"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,510",
+				"to": "00:00:01,880"
+			},
+			"offsets": {
+				"from": 1510,
+				"to": 1880
+			},
+			"text": " him"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,880",
+				"to": "00:00:02,180"
+			},
+			"offsets": {
+				"from": 1880,
+				"to": 2180
+			},
+			"text": " will"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,180",
+				"to": "00:00:02,370"
+			},
+			"offsets": {
+				"from": 2180,
+				"to": 2370
+			},
+			"text": " be"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,370",
+				"to": "00:00:02,840"
+			},
+			"offsets": {
+				"from": 2370,
+				"to": 2840
+			},
+			"text": " named"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,840",
+				"to": "00:00:03,030"
+			},
+			"offsets": {
+				"from": 2840,
+				"to": 3030
+			},
+			"text": " in"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,030",
+				"to": "00:00:03,310"
+			},
+			"offsets": {
+				"from": 3030,
+				"to": 3310
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,310",
+				"to": "00:00:03,690"
+			},
+			"offsets": {
+				"from": 3310,
+				"to": 3690
+			},
+			"text": " same"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,690",
+				"to": "00:00:04,000"
+			},
+			"offsets": {
+				"from": 3690,
+				"to": 4000
+			},
+			"text": " FIR."
+		}
+	]
+}

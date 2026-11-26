@@ -1,0 +1,4177 @@
+[
+ {
+  "line_id": "l01",
+  "lang": "hi",
+  "speaker": "dsp",
+  "model": "eleven_v4",
+  "voice_id": "yD3f554gXhA5NxImkyqU",
+  "take": 1,
+  "text": "[excited] इमलीपुर थाना: लगातार दूसरे साल, zero crime।",
+  "file": "voice/hi/l01.mp3",
+  "generation_id": "nFGzLE6YXAxuxGhP5Cwo",
+  "transcript": "इमली पुर्ठाना लगा तार दूसरे साल जीरो क्राईं",
+  "transcript_en_pass": "Imli Purthana. Laga Taar, Dhusre Saal. Zero Crime.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 4.24,
+  "target_s": 5.2,
+  "lead_silence_s": 0.08,
+  "trail_silence_s": 0.34,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 3.82,
+  "speech_vs_target_pct": -26.5,
+  "pauses": [
+   [
+    0.88,
+    0.4
+   ],
+   [
+    2.8,
+    0.34
+   ]
+  ],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [
+   [
+    0.914,
+    0.366
+   ]
+  ],
+  "lufs": -17.5,
+  "true_peak_dbtp": -1.6,
+  "mean_db": -19.2,
+  "speech_rms_db": -17.7,
+  "voiced_ratio": 0.841,
+  "voiced_ratio_strict": 0.722,
+  "median_f0_hz": 228.6,
+  "segments": [
+   {
+    "t": [
+     0.08,
+     0.88
+    ],
+    "rms_db": -18.2,
+    "voiced_ratio": 0.77
+   },
+   {
+    "t": [
+     1.28,
+     2.8
+    ],
+    "rms_db": -16.6,
+    "voiced_ratio": 0.89
+   },
+   {
+    "t": [
+     3.14,
+     3.9
+    ],
+    "rms_db": -20.3,
+    "voiced_ratio": 0.81
+   }
+  ],
+  "last_0_5s_rms_db": -19.4,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "All words heard ('इमली पुर्ठाना' runs 'इमलीपुर थाना' together; en pass 'Zero Crime'). Beat at the colon 0.40 s. No tag spoken aloud. Voiced (0.841); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 3.82 s against target 5.2 s (-26.5%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l02",
+  "lang": "hi",
+  "speaker": "dsp",
+  "model": "eleven_v4",
+  "voice_id": "yD3f554gXhA5NxImkyqU",
+  "take": 1,
+  "text": "[laughs] और ये रहा नक़ली Inspector: arrest। शाबाश, SI जोशी।",
+  "file": "voice/hi/l02.mp3",
+  "generation_id": "G0c9553dow1OD6zD8opq",
+  "transcript": "और ये रहा, नकली इंस्पक्टर अरेस्ट शबाश एसाई जोशी",
+  "transcript_en_pass": "And this is the fake inspector. Arrest. Well done, S.I. Joshi.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 6.24,
+  "target_s": 6.0,
+  "lead_silence_s": 0.32,
+  "trail_silence_s": 0.26,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 5.66,
+  "speech_vs_target_pct": -5.7,
+  "pauses": [
+   [
+    2.66,
+    0.54
+   ],
+   [
+    3.68,
+    0.52
+   ]
+  ],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [
+   [
+    2.688,
+    0.515
+   ],
+   [
+    3.688,
+    0.488
+   ]
+  ],
+  "lufs": -17.6,
+  "true_peak_dbtp": -1.9,
+  "mean_db": -20.2,
+  "speech_rms_db": -18.3,
+  "voiced_ratio": 0.604,
+  "voiced_ratio_strict": 0.475,
+  "median_f0_hz": 153.8,
+  "segments": [
+   {
+    "t": [
+     0.32,
+     2.66
+    ],
+    "rms_db": -18.0,
+    "voiced_ratio": 0.61
+   },
+   {
+    "t": [
+     3.2,
+     3.68
+    ],
+    "rms_db": -17.4,
+    "voiced_ratio": 0.41
+   },
+   {
+    "t": [
+     4.2,
+     5.98
+    ],
+    "rms_db": -18.9,
+    "voiced_ratio": 0.65
+   }
+  ],
+  "last_0_5s_rms_db": -22.2,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "WORD CHECK passes: 'और ये रहा' heard whole after the laugh ('और ये रहा, नकली इंस्पक्टर अरेस्ट शबाश एसाई जोशी'; en pass 'And this is the fake inspector. Arrest. Well done, S.I. Joshi.'). Beats 0.54 s at the colon and 0.52 s after 'arrest'. No tag spoken aloud. Voiced (0.604); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 5.66 s against target 6.0 s (-5.7%), for the edit.",
+  "ear_check": "Is the laugh audible at the head? Whisper marks none; the first 0.32 s are below speech level.",
+  "retake_text": null
+ },
+ {
+  "line_id": "l03",
+  "lang": "hi",
+  "speaker": "nandini",
+  "model": "eleven_v4",
+  "voice_id": "QpSjVAs2VI5btKzupPaD",
+  "take": 1,
+  "text": "[flatly] Order पूरा, DSP साहब।",
+  "file": "voice/hi/l03.mp3",
+  "generation_id": "it9TqhC8vFeHSAQOy2ZR",
+  "transcript": "अडर पुरा दिस्पी सहब",
+  "transcript_en_pass": "Order Pura, DSP Sahab.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 2.4,
+  "target_s": 2.4,
+  "lead_silence_s": 0.1,
+  "trail_silence_s": 0.28,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 2.02,
+  "speech_vs_target_pct": -15.8,
+  "pauses": [],
+  "short_gaps_200_300ms": [
+   [
+    1.0,
+    0.28
+   ]
+  ],
+  "silencedetect_internal_ge300ms": [],
+  "lufs": -20.7,
+  "true_peak_dbtp": -2.5,
+  "mean_db": -20.8,
+  "speech_rms_db": -18.9,
+  "voiced_ratio": 0.949,
+  "voiced_ratio_strict": 0.872,
+  "median_f0_hz": 195.1,
+  "segments": [
+   {
+    "t": [
+     0.1,
+     1.0
+    ],
+    "rms_db": -16.4,
+    "voiced_ratio": 0.92
+   },
+   {
+    "t": [
+     1.28,
+     2.12
+    ],
+    "rms_db": -24.8,
+    "voiced_ratio": 0.97
+   }
+  ],
+  "last_0_5s_rms_db": -27.3,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "All words heard ('अडर पुरा दिस्पी सहब'). No tag spoken aloud. Voiced (0.949); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 2.02 s against target 2.4 s (-15.8%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l04",
+  "lang": "hi",
+  "speaker": "nandini",
+  "model": "eleven_v4",
+  "voice_id": "QpSjVAs2VI5btKzupPaD",
+  "take": 1,
+  "text": "[calm] और ये: कल रात की तीस FIR।",
+  "file": "voice/hi/l04.mp3",
+  "generation_id": "29LM3Llmas1QPCmcK7s7",
+  "transcript": "और ये कल राद की तीस, F-I-R.",
+  "transcript_en_pass": "And this is the 30th FIR of the night.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 4.48,
+  "target_s": 3.0,
+  "lead_silence_s": 0.12,
+  "trail_silence_s": 0.24,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 4.12,
+  "speech_vs_target_pct": 37.3,
+  "pauses": [
+   [
+    0.64,
+    0.64
+   ],
+   [
+    2.84,
+    0.3
+   ]
+  ],
+  "short_gaps_200_300ms": [
+   [
+    2.06,
+    0.22
+   ]
+  ],
+  "silencedetect_internal_ge300ms": [
+   [
+    0.633,
+    0.655
+   ]
+  ],
+  "lufs": -22.2,
+  "true_peak_dbtp": -2.1,
+  "mean_db": -23.1,
+  "speech_rms_db": -21.1,
+  "voiced_ratio": 0.705,
+  "voiced_ratio_strict": 0.655,
+  "median_f0_hz": 181.8,
+  "segments": [
+   {
+    "t": [
+     0.12,
+     0.64
+    ],
+    "rms_db": -20.3,
+    "voiced_ratio": 0.96
+   },
+   {
+    "t": [
+     1.28,
+     2.84
+    ],
+    "rms_db": -19.5,
+    "voiced_ratio": 0.69
+   },
+   {
+    "t": [
+     3.14,
+     4.24
+    ],
+    "rms_db": -25.6,
+    "voiced_ratio": 0.59
+   }
+  ],
+  "last_0_5s_rms_db": -29.0,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "All words heard; 'FIR' as letters ('F-I-R'). Beat at the colon 0.64 s. No tag spoken aloud. Voiced (0.705); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 4.12 s against target 3.0 s (+37.3%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l05",
+  "lang": "hi",
+  "speaker": "dsp",
+  "model": "eleven_v4",
+  "voice_id": "yD3f554gXhA5NxImkyqU",
+  "take": 1,
+  "text": "[quietly] बाद में, जोशी।",
+  "file": "voice/hi/l05.mp3",
+  "generation_id": "zwvHnWFRtLsO7xo4GFip",
+  "transcript": "बात में जोशी",
+  "transcript_en_pass": "Later, Joshi.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 2.0,
+  "target_s": 1.8,
+  "lead_silence_s": 0.04,
+  "trail_silence_s": 0.3,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.327
+  ],
+  "speech_span_s": 1.66,
+  "speech_vs_target_pct": -7.8,
+  "pauses": [],
+  "short_gaps_200_300ms": [
+   [
+    0.92,
+    0.28
+   ]
+  ],
+  "silencedetect_internal_ge300ms": [
+   [
+    0.847,
+    0.374
+   ]
+  ],
+  "lufs": -30.5,
+  "true_peak_dbtp": -13.8,
+  "mean_db": -31.5,
+  "speech_rms_db": -29.7,
+  "voiced_ratio": 0.439,
+  "voiced_ratio_strict": 0.318,
+  "median_f0_hz": 111.1,
+  "segments": [
+   {
+    "t": [
+     0.04,
+     0.92
+    ],
+    "rms_db": -29.2,
+    "voiced_ratio": 0.44
+   },
+   {
+    "t": [
+     1.2,
+     1.7
+    ],
+    "rms_db": -30.7,
+    "voiced_ratio": 0.44
+   }
+  ],
+  "last_0_5s_rms_db": -30.7,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "Words heard ('बात में जोशी'; en pass 'Later, Joshi.'). No tag spoken aloud. Breathy, not a whisper by this review's line: voiced 0.44 (strict 0.32) on both halves, -30.5 LUFS, 8 to 13 LU under his other Hindi lines here. Frame view: 'बाद' and 'जो' voiced (95-130 Hz), 'में' and the end of 'शी' unvoiced. No hard-cut note. Length is not a retake reason (D-0M2). Speech 1.66 s against target 1.8 s (-7.8%), for the edit.",
+  "ear_check": "EAR PRIORITY: note says 'fully voiced, never a whisper'. Breathy by measure ('में' unvoiced); the English take of the same line is a full whisper and is retaken. If the ear hears a whisper, retake '[low voice] बाद में, जोशी।' (rung 2; [quietly] is untested on this voice and whispered in English).",
+  "retake_text": null
+ },
+ {
+  "line_id": "l06",
+  "lang": "hi",
+  "speaker": "nandini",
+  "model": "eleven_v4",
+  "voice_id": "QpSjVAs2VI5btKzupPaD",
+  "take": 1,
+  "text": "[calm] FIR number एक।",
+  "file": "voice/hi/l06.mp3",
+  "generation_id": "sOMnIY3PBlrY42moMNWi",
+  "transcript": "विर नमबर एक",
+  "transcript_en_pass": "FIR number 1.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 2.48,
+  "target_s": 1.9,
+  "lead_silence_s": 0.08,
+  "trail_silence_s": 0.2,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 2.2,
+  "speech_vs_target_pct": 15.8,
+  "pauses": [
+   [
+    1.02,
+    0.32
+   ]
+  ],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [
+   [
+    1.032,
+    0.31
+   ]
+  ],
+  "lufs": -20.0,
+  "true_peak_dbtp": -2.0,
+  "mean_db": -20.4,
+  "speech_rms_db": -18.5,
+  "voiced_ratio": 0.775,
+  "voiced_ratio_strict": 0.675,
+  "median_f0_hz": 200.0,
+  "segments": [
+   {
+    "t": [
+     0.08,
+     1.02
+    ],
+    "rms_db": -17.8,
+    "voiced_ratio": 0.8
+   },
+   {
+    "t": [
+     1.34,
+     2.28
+    ],
+    "rms_db": -19.6,
+    "voiced_ratio": 0.75
+   }
+  ],
+  "last_0_5s_rms_db": -23.3,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "All words heard ('विर नमबर एक'; en pass 'FIR number 1.'). No tag spoken aloud. Voiced (0.775); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 2.20 s against target 1.9 s (+15.8%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l07",
+  "lang": "hi",
+  "speaker": "nandini",
+  "model": "eleven_v4",
+  "voice_id": "QpSjVAs2VI5btKzupPaD",
+  "take": 1,
+  "text": "[flatly] आरोपी: बलराम ठाकुर, उर्फ़ भैयाजी। जुर्म: उगाही।",
+  "file": "voice/hi/l07.mp3",
+  "generation_id": "uF9kLIAHaKCgeLqeoz1b",
+  "transcript": "आरोपी बल्राम ताकृर उर्फ भ्याजे जुर्म उगाही",
+  "transcript_en_pass": "R.O.P. Balram Thakur Urf Bhaiyaji Jurm Ugahi",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 5.44,
+  "target_s": 5.6,
+  "lead_silence_s": 0.1,
+  "trail_silence_s": 0.2,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 5.14,
+  "speech_vs_target_pct": -8.2,
+  "pauses": [
+   [
+    0.64,
+    0.42
+   ],
+   [
+    2.08,
+    0.3
+   ],
+   [
+    3.32,
+    0.5
+   ],
+   [
+    4.24,
+    0.46
+   ]
+  ],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [
+   [
+    0.636,
+    0.437
+   ],
+   [
+    2.072,
+    0.309
+   ],
+   [
+    3.315,
+    0.512
+   ],
+   [
+    4.227,
+    0.476
+   ]
+  ],
+  "lufs": -20.6,
+  "true_peak_dbtp": -1.4,
+  "mean_db": -22.0,
+  "speech_rms_db": -19.7,
+  "voiced_ratio": 0.84,
+  "voiced_ratio_strict": 0.722,
+  "median_f0_hz": 190.5,
+  "segments": [
+   {
+    "t": [
+     0.1,
+     0.64
+    ],
+    "rms_db": -19.6,
+    "voiced_ratio": 0.96
+   },
+   {
+    "t": [
+     1.06,
+     2.08
+    ],
+    "rms_db": -18.0,
+    "voiced_ratio": 0.81
+   },
+   {
+    "t": [
+     2.38,
+     3.32
+    ],
+    "rms_db": -20.9,
+    "voiced_ratio": 0.68
+   },
+   {
+    "t": [
+     3.82,
+     4.24
+    ],
+    "rms_db": -20.6,
+    "voiced_ratio": 1.0
+   },
+   {
+    "t": [
+     4.7,
+     5.24
+    ],
+    "rms_db": -21.7,
+    "voiced_ratio": 0.93
+   }
+  ],
+  "last_0_5s_rms_db": -22.8,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": true,
+  "hard_cut_note": true,
+  "verdict": "ok",
+  "reason": "All words heard ('आरोपी बल्राम ताकृर उर्फ भ्याजे जुर्म उगाही'); cut 0-2.2 s 'R.O.P. Balram Thakur', 2.2-5.44 s 'उर्फ भईयाजी जुर्म उगाही'. No tag spoken aloud. Voiced (0.84); no whisper fault. HARD CUT met, just: the comma pause after 'बलराम ठाकुर' is 0.30 s by frames (2.08-2.38 s, digital silence) and 0.31 s by silencedetect, against 'at least 0.3 s'. Beats at the colons 0.42 s and 0.46 s; 0.50 s before 'जुर्म'. True peak -1.4 dBTP, over -1.5 (mix note, not a retake). Length is not a retake reason (D-0M2). Speech 5.14 s against target 5.6 s (-8.2%), for the edit.",
+  "ear_check": "THE CLIMAX, ear first (note). [flatly] is untested on her: no tag spoken, no level fault (-20.6 LUFS, segments -18.0 to -21.7 dB, falling), so 'robotic' is the owner's call. Hard-cut gap is at the minimum: cut at 2.08-2.38 s.",
+  "retake_text": null
+ },
+ {
+  "line_id": "l08",
+  "lang": "hi",
+  "speaker": "reporter",
+  "model": "eleven_v4",
+  "voice_id": "S85GAlTdJF2N4BFuGH1l",
+  "take": 1,
+  "text": "[excited] DSP साहब, chief guest ही आरोपी हैं?",
+  "file": "voice/hi/l08.mp3",
+  "generation_id": "mO9BTYZqUm7QUHVcAKoS",
+  "transcript": "दिस्पी सहाँ चीव गेस्ट ही आरोपी हैं",
+  "transcript_en_pass": "DSP sahab, chief guest hai Aaropi hai.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 3.04,
+  "target_s": 3.4,
+  "lead_silence_s": 0.02,
+  "trail_silence_s": 0.28,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 2.74,
+  "speech_vs_target_pct": -19.4,
+  "pauses": [
+   [
+    0.94,
+    0.4
+   ]
+  ],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [],
+  "lufs": -17.0,
+  "true_peak_dbtp": -3.4,
+  "mean_db": -17.8,
+  "speech_rms_db": -16.6,
+  "voiced_ratio": 0.825,
+  "voiced_ratio_strict": 0.798,
+  "median_f0_hz": 307.7,
+  "segments": [
+   {
+    "t": [
+     0.02,
+     0.94
+    ],
+    "rms_db": -17.5,
+    "voiced_ratio": 0.87
+   },
+   {
+    "t": [
+     1.34,
+     2.76
+    ],
+    "rms_db": -16.1,
+    "voiced_ratio": 0.8
+   }
+  ],
+  "last_0_5s_rms_db": -16.2,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "All words heard ('दिस्पी सहाँ चीव गेस्ट ही आरोपी हैं'). Loud as directed (-17.0 LUFS); median 308 Hz, above her casting 242-267 Hz. No tag spoken aloud. Voiced (0.825); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 2.74 s against target 3.4 s (-19.4%), for the edit.",
+  "ear_check": "Does it rise as a real question at 'आरोपी हैं?' and stay short of shrill (308 Hz)?",
+  "retake_text": null
+ },
+ {
+  "line_id": "l09",
+  "lang": "hi",
+  "speaker": "tripathi",
+  "model": "eleven_v4",
+  "voice_id": "KjB3pyRrta1C1C2zoshr",
+  "take": 1,
+  "text": "[sharply] ये register तो almirah में बंद था!",
+  "file": "voice/hi/l09.mp3",
+  "generation_id": "o49lPnoaIhfLvbw8JAUs",
+  "transcript": "ये रजिस्टर तो आल्मारी में बन था",
+  "transcript_en_pass": "This register was locked in the cupboard.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 2.16,
+  "target_s": 3.6,
+  "lead_silence_s": 0.04,
+  "trail_silence_s": 0.28,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 1.84,
+  "speech_vs_target_pct": -48.9,
+  "pauses": [],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [],
+  "lufs": -18.7,
+  "true_peak_dbtp": -1.9,
+  "mean_db": -19.7,
+  "speech_rms_db": -19.0,
+  "voiced_ratio": 0.846,
+  "voiced_ratio_strict": 0.692,
+  "median_f0_hz": 210.5,
+  "segments": [
+   {
+    "t": [
+     0.04,
+     1.88
+    ],
+    "rms_db": -19.0,
+    "voiced_ratio": 0.85
+   }
+  ],
+  "last_0_5s_rms_db": -18.5,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "All words heard ('ये रजिस्टर तो आल्मारी में बन था'; en pass 'This register was locked in the cupboard.'); 'almirah' heard 'आल्मारी', the Hindi word. No tag spoken aloud. Voiced (0.846); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 1.84 s against target 3.6 s (-48.9%), for the edit.",
+  "ear_check": "EAR PRIORITY (note: 'reject a shouted take'): measured an octave above his voice and louder. Median 210 Hz against his casting 96-118 Hz on this method; -18.7 LUFS against -23 to -25 in casting. Under D-0M2 a level or pitch fault is not an automatic retake. If the ear hears a shout or not-Tripathi, retake '[low] ये register तो almirah में बंद था!' (rung 2: the fault comes from [sharply]).",
+  "retake_text": null
+ },
+ {
+  "line_id": "l10",
+  "lang": "hi",
+  "speaker": "pushpa",
+  "model": "eleven_v4",
+  "voice_id": "NU0iY2ULYR4TzJYPOm31",
+  "take": 1,
+  "text": "[deadpan] दूसरी चाबी, SHO साहब।",
+  "file": "voice/hi/l10.mp3",
+  "generation_id": "hC8mafjv2pXPbDqohzMW",
+  "transcript": "दूस्री चाभी एस एचो सहाब",
+  "transcript_en_pass": "2nd key, SHO Sahab.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 3.28,
+  "target_s": 2.5,
+  "lead_silence_s": 0.1,
+  "trail_silence_s": 0.24,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 2.94,
+  "speech_vs_target_pct": 17.6,
+  "pauses": [
+   [
+    1.12,
+    0.44
+   ]
+  ],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [
+   [
+    1.073,
+    0.488
+   ]
+  ],
+  "lufs": -25.0,
+  "true_peak_dbtp": -4.6,
+  "mean_db": -26.2,
+  "speech_rms_db": -24.8,
+  "voiced_ratio": 0.817,
+  "voiced_ratio_strict": 0.704,
+  "median_f0_hz": 177.8,
+  "segments": [
+   {
+    "t": [
+     0.1,
+     1.12
+    ],
+    "rms_db": -24.6,
+    "voiced_ratio": 0.78
+   },
+   {
+    "t": [
+     1.56,
+     3.04
+    ],
+    "rms_db": -24.9,
+    "voiced_ratio": 0.84
+   }
+  ],
+  "last_0_5s_rms_db": -30.9,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "All words heard ('दूस्री चाभी एस एचो सहाब'; en pass '2nd key, SHO Sahab.'). Beat at the comma 0.44 s. No tag spoken aloud. Voiced (0.817); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 2.94 s against target 2.5 s (+17.6%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l11",
+  "lang": "hi",
+  "speaker": "nandini",
+  "model": "eleven_v4",
+  "voice_id": "QpSjVAs2VI5btKzupPaD",
+  "take": 1,
+  "text": "[calm] तीसों में एक ही line: 'SHO त्रिपाठी ने FIR लिखने से मना किया।'",
+  "file": "voice/hi/l11.mp3",
+  "generation_id": "yABpHaIEL9xCBuYPti3t",
+  "transcript": "30 में एक ही लाई, एस होट्र पाटी ने F-I-R लिखने से मना किया.",
+  "transcript_en_pass": "30's only one line. SH Otrapathi refused to write FIR.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 6.32,
+  "target_s": 7.0,
+  "lead_silence_s": 0.06,
+  "trail_silence_s": 0.24,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 6.02,
+  "speech_vs_target_pct": -14.0,
+  "pauses": [
+   [
+    1.52,
+    0.52
+   ]
+  ],
+  "short_gaps_200_300ms": [
+   [
+    3.68,
+    0.28
+   ]
+  ],
+  "silencedetect_internal_ge300ms": [
+   [
+    1.512,
+    0.541
+   ],
+   [
+    3.671,
+    0.302
+   ]
+  ],
+  "lufs": -20.0,
+  "true_peak_dbtp": -1.6,
+  "mean_db": -20.5,
+  "speech_rms_db": -19.3,
+  "voiced_ratio": 0.801,
+  "voiced_ratio_strict": 0.72,
+  "median_f0_hz": 216.2,
+  "segments": [
+   {
+    "t": [
+     0.06,
+     1.52
+    ],
+    "rms_db": -18.3,
+    "voiced_ratio": 0.8
+   },
+   {
+    "t": [
+     2.04,
+     6.08
+    ],
+    "rms_db": -19.7,
+    "voiced_ratio": 0.8
+   }
+  ],
+  "last_0_5s_rms_db": -26.8,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "All words heard ('30 में एक ही लाई, एस होट्र पाटी ने F-I-R लिखने से मना किया'; en pass 'SH Otrapathi refused to write FIR'). Pause 0.52 s at the colon before the quote. No tag spoken aloud. Voiced (0.801); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 6.02 s against target 7.0 s (-14.0%), for the edit.",
+  "ear_check": "Is 'SHO त्रिपाठी' clear as two items ('एस होट्र पाटी' in transcript)?",
+  "retake_text": null
+ },
+ {
+  "line_id": "l12",
+  "lang": "hi",
+  "speaker": "nandini",
+  "model": "eleven_v4",
+  "voice_id": "QpSjVAs2VI5btKzupPaD",
+  "take": 1,
+  "text": "[quietly] और कल रात आठ सौ बोरी आपके sign पर निकली।",
+  "file": "voice/hi/l12.mp3",
+  "generation_id": "LOI7fVdkctKY2nREcPf7",
+  "transcript": "और कल रात आट्सो बोरी आपके साइंग पर निकलें।",
+  "transcript_en_pass": "And tomorrow night, 800 Bhori will appear on your sign.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 3.44,
+  "target_s": 4.8,
+  "lead_silence_s": 0.02,
+  "trail_silence_s": 0.18,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 3.24,
+  "speech_vs_target_pct": -32.5,
+  "pauses": [],
+  "short_gaps_200_300ms": [
+   [
+    1.0,
+    0.26
+   ]
+  ],
+  "silencedetect_internal_ge300ms": [],
+  "lufs": -25.9,
+  "true_peak_dbtp": -8.9,
+  "mean_db": -26.2,
+  "speech_rms_db": -25.4,
+  "voiced_ratio": 0.723,
+  "voiced_ratio_strict": 0.688,
+  "median_f0_hz": 190.5,
+  "segments": [
+   {
+    "t": [
+     0.02,
+     1.0
+    ],
+    "rms_db": -25.5,
+    "voiced_ratio": 0.59
+   },
+   {
+    "t": [
+     1.26,
+     3.26
+    ],
+    "rms_db": -25.4,
+    "voiced_ratio": 0.78
+   }
+  ],
+  "last_0_5s_rms_db": -26.8,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "All words heard ('और कल रात आट्सो बोरी आपके साइंग पर निकलें'; 'निकलें' for निकली is whisper's spelling). No tag spoken aloud. Voiced (0.723); no whisper fault. Quieter than l11 by 5.9 LU (-25.9 against -20.0), holds to the end (last 0.5 s -26.8 dB against -25.2 before), voiced 0.72: neither whispered nor louder at the end. No hard-cut note. Length is not a retake reason (D-0M2). Speech 3.24 s against target 4.8 s (-32.5%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l13",
+  "lang": "hi",
+  "speaker": "bhaiyaji",
+  "model": "eleven_v4",
+  "voice_id": "n4jGuG5wrMvqWCjMtnMS",
+  "take": 1,
+  "text": "[chuckles] DSP साहब, एक नक़ली Inspector के काग़ज़ पर—",
+  "file": "voice/hi/l13.mp3",
+  "generation_id": "YioYD33S9S3eM4Z7l6te",
+  "transcript": "दिस्पी साहाँ एक नकली इंस्पेक्टर के कालस पर",
+  "transcript_en_pass": "DSP Sahab, on the call of a fake inspector.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 4.56,
+  "target_s": 4.4,
+  "lead_silence_s": 0.04,
+  "trail_silence_s": 0.22,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 4.3,
+  "speech_vs_target_pct": -2.3,
+  "pauses": [],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [],
+  "lufs": -19.0,
+  "true_peak_dbtp": -2.8,
+  "mean_db": -19.2,
+  "speech_rms_db": -18.9,
+  "voiced_ratio": 0.659,
+  "voiced_ratio_strict": 0.436,
+  "median_f0_hz": 137.9,
+  "segments": [
+   {
+    "t": [
+     0.04,
+     4.34
+    ],
+    "rms_db": -18.9,
+    "voiced_ratio": 0.66
+   }
+  ],
+  "last_0_5s_rms_db": -22.2,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": true,
+  "verdict": "ok",
+  "reason": "Words mostly heard: 'दिस्पी साहाँ एक नकली इंस्पेक्टर के कालस पर' (small greedy and beam 5), 'Kalaspur' (base), cut 2.0-4.56 s 'के कालस पर'; en pass 'on the call of a fake inspector'. 'DSP साहब' heard whole after the chuckle (WORD CHECK passes). 'काग़ज़' comes out 'कालस' in every decode and the en pass loses 'papers'. No tag spoken aloud. Voiced (0.659); no whisper fault. HARD CUT met: ends on 'पर', nothing after the dash, trail 0.22 s; no pause in the take. Length is not a retake reason (D-0M2). Speech 4.30 s against target 4.4 s (-2.3%), for the edit.",
+  "ear_check": "EAR PRIORITY, word: is 'काग़ज़' said, or 'कालस'? Every decode hears 'कालस', and Nirala's 'काग़ज़' in l14 is heard correctly, but whisper small is weak on ग़/ज़, so this is not counted as a wrong word. If the ear agrees it is wrong, retake as written '[chuckles] DSP साहब, एक नक़ली Inspector के काग़ज़ पर—'. Also: pitch falls on 'पर' (138 to 88 Hz in the last 0.2 s); the note asks no trailing fall.",
+  "retake_text": null
+ },
+ {
+  "line_id": "l14",
+  "lang": "hi",
+  "speaker": "nirala",
+  "model": "eleven_v4",
+  "voice_id": "x8QLi04vAqWNOHsZm7yK",
+  "take": 1,
+  "text": "[earnest] काग़ज़ मेरे नहीं हैं, भैयाजी।",
+  "file": "voice/hi/l14.mp3",
+  "generation_id": "v81F1VfW6dxeKQUTPfPt",
+  "transcript": "कागाज मेरे नहीं है, बहिया जी.",
+  "transcript_en_pass": "I don't have the documents, brother.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 2.48,
+  "target_s": 3.2,
+  "lead_silence_s": 0.14,
+  "trail_silence_s": 0.26,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 2.08,
+  "speech_vs_target_pct": -35.0,
+  "pauses": [],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [],
+  "lufs": -18.2,
+  "true_peak_dbtp": -5.1,
+  "mean_db": -18.5,
+  "speech_rms_db": -17.5,
+  "voiced_ratio": 0.949,
+  "voiced_ratio_strict": 0.898,
+  "median_f0_hz": 148.1,
+  "segments": [
+   {
+    "t": [
+     0.14,
+     1.56
+    ],
+    "rms_db": -16.3,
+    "voiced_ratio": 0.97
+   },
+   {
+    "t": [
+     1.68,
+     2.22
+    ],
+    "rms_db": -25.3,
+    "voiced_ratio": 0.89
+   }
+  ],
+  "last_0_5s_rms_db": -25.1,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "All words heard ('कागाज मेरे नहीं है, बहिया जी'). Lead 0.14 s: the edit butts it to l13. No tag spoken aloud. Voiced (0.949); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 2.08 s against target 3.2 s (-35.0%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l15",
+  "lang": "hi",
+  "speaker": "nirala",
+  "model": "eleven_v4",
+  "voice_id": "x8QLi04vAqWNOHsZm7yK",
+  "take": 1,
+  "text": "[calm] Register असली, अँगूठे असली, अफ़सर असली। [quietly] नक़ली सिर्फ़ मैं था।",
+  "file": "voice/hi/l15.mp3",
+  "generation_id": "gsDQkutHtKFR0qvisHpb",
+  "transcript": "रेजिस्टर अस्ली, अगुटे अस्ली, अफसर अस्ली नक्ली शर्फ मैं ता.",
+  "transcript_en_pass": "Register asli, Anguthe asli, Afsar asli. Nakli, Sirf maitha.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 6.64,
+  "target_s": 7.2,
+  "lead_silence_s": 0.14,
+  "trail_silence_s": 0.3,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 6.2,
+  "speech_vs_target_pct": -13.9,
+  "pauses": [
+   [
+    1.14,
+    0.6
+   ],
+   [
+    2.6,
+    0.54
+   ],
+   [
+    3.9,
+    0.66
+   ]
+  ],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [
+   [
+    1.157,
+    0.584
+   ],
+   [
+    2.626,
+    0.531
+   ],
+   [
+    3.91,
+    0.633
+   ]
+  ],
+  "lufs": -22.0,
+  "true_peak_dbtp": -1.9,
+  "mean_db": -23.1,
+  "speech_rms_db": -21.1,
+  "voiced_ratio": 0.651,
+  "voiced_ratio_strict": 0.545,
+  "median_f0_hz": 131.1,
+  "segments": [
+   {
+    "t": [
+     0.14,
+     1.14
+    ],
+    "rms_db": -18.9,
+    "voiced_ratio": 0.76
+   },
+   {
+    "t": [
+     1.74,
+     2.6
+    ],
+    "rms_db": -19.2,
+    "voiced_ratio": 0.81
+   },
+   {
+    "t": [
+     3.14,
+     3.9
+    ],
+    "rms_db": -24.5,
+    "voiced_ratio": 0.57
+   },
+   {
+    "t": [
+     4.56,
+     6.34
+    ],
+    "rms_db": -23.8,
+    "voiced_ratio": 0.54
+   }
+  ],
+  "last_0_5s_rms_db": -24.5,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": true,
+  "verdict": "ok",
+  "reason": "All words heard ('रेजिस्टर अस्ली, अगुटे अस्ली, अफसर अस्ली नक्ली शर्फ मैं ता'; en pass 'Register asli, Anguthe asli, Afsar asli. Nakli, Sirf maitha.'). '[quietly]' not spoken. No tag spoken aloud. Voiced (0.651); no whisper fault. Second sentence quieter: -23.8 dB against -18.9 and -19.2 on the first two entries, voiced 0.54. HARD CUT met: 0.66 s pause after 'अफ़सर असली।' (silencedetect 0.63 s); 0.60 s and 0.54 s between the entries. Length is not a retake reason (D-0M2). Speech 6.20 s against target 7.2 s (-13.9%), for the edit.",
+  "ear_check": "'अफ़सर असली' already drops to -24.5 dB, a phrase before the [quietly] sentence: hear whether the three entries still sound level and certain.",
+  "retake_text": null
+ },
+ {
+  "line_id": "l16",
+  "lang": "hi",
+  "speaker": "nirala",
+  "model": "eleven_v4",
+  "voice_id": "x8QLi04vAqWNOHsZm7yK",
+  "take": 1,
+  "text": "[calm] और आपके चौबीस लिफ़ाफ़े: case property।",
+  "file": "voice/hi/l16.mp3",
+  "generation_id": "c7IKJIlBurTii72TvMSk",
+  "transcript": "और आपके चाँबिस लिखाफे केज प्रोपर्टी",
+  "transcript_en_pass": "and your 24 lifafe. Case. Property.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 3.68,
+  "target_s": 4.2,
+  "lead_silence_s": 0.04,
+  "trail_silence_s": 0.28,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 3.36,
+  "speech_vs_target_pct": -20.0,
+  "pauses": [
+   [
+    1.64,
+    0.56
+   ],
+   [
+    2.58,
+    0.32
+   ]
+  ],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [
+   [
+    1.67,
+    0.528
+   ],
+   [
+    2.596,
+    0.316
+   ]
+  ],
+  "lufs": -18.3,
+  "true_peak_dbtp": -0.9,
+  "mean_db": -19.9,
+  "speech_rms_db": -18.2,
+  "voiced_ratio": 0.772,
+  "voiced_ratio_strict": 0.569,
+  "median_f0_hz": 140.4,
+  "segments": [
+   {
+    "t": [
+     0.04,
+     1.64
+    ],
+    "rms_db": -18.8,
+    "voiced_ratio": 0.86
+   },
+   {
+    "t": [
+     2.2,
+     2.58
+    ],
+    "rms_db": -16.6,
+    "voiced_ratio": 0.68
+   },
+   {
+    "t": [
+     2.9,
+     3.4
+    ],
+    "rms_db": -17.9,
+    "voiced_ratio": 0.56
+   }
+  ],
+  "last_0_5s_rms_db": -17.9,
+  "edge_blips_s": [
+   3.66
+  ],
+  "peak_over_minus1_5_dbtp": true,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "All words heard ('और आपके चाँबिस लिखाफे केज प्रोपर्टी'; en pass 'and your 24 lifafe. Case. Property.'). Beat at the colon 0.56 s. A -41 dB blip in the last 20 ms (ignored in trail). No tag spoken aloud. Voiced (0.772); no whisper fault. No hard-cut note. True peak -0.9 dBTP, over -1.5 (mix note, not a retake). Length is not a retake reason (D-0M2). Speech 3.36 s against target 4.2 s (-20.0%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l17",
+  "lang": "hi",
+  "speaker": "dsp",
+  "model": "eleven_v4",
+  "voice_id": "yD3f554gXhA5NxImkyqU",
+  "take": 1,
+  "text": "[calm] और आज से, इमलीपुर police इन तीस मामलों में कार्रवाई कर रही है।",
+  "file": "voice/hi/l17.mp3",
+  "generation_id": "TL5YRnVTGkGh75mo647Z",
+  "transcript": "और आज से इमलिपृर पूलिस इन तीस मामलो में कारवाई कर रही है",
+  "transcript_en_pass": "And from today, the Imlipur Police has been working on these 30 cases.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 4.8,
+  "target_s": 6.6,
+  "lead_silence_s": 0.06,
+  "trail_silence_s": 0.28,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 4.46,
+  "speech_vs_target_pct": -32.4,
+  "pauses": [
+   [
+    0.9,
+    0.4
+   ]
+  ],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [
+   [
+    0.954,
+    0.349
+   ]
+  ],
+  "lufs": -20.6,
+  "true_peak_dbtp": -2.9,
+  "mean_db": -21.5,
+  "speech_rms_db": -20.2,
+  "voiced_ratio": 0.809,
+  "voiced_ratio_strict": 0.708,
+  "median_f0_hz": 145.5,
+  "segments": [
+   {
+    "t": [
+     0.06,
+     0.9
+    ],
+    "rms_db": -18.6,
+    "voiced_ratio": 0.7
+   },
+   {
+    "t": [
+     1.3,
+     4.52
+    ],
+    "rms_db": -20.7,
+    "voiced_ratio": 0.84
+   }
+  ],
+  "last_0_5s_rms_db": -33.5,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "All words heard ('और आज से इमलिपृर पूलिस इन तीस मामलो में कारवाई कर रही है'). No tag spoken aloud. Voiced (0.809); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 4.46 s against target 6.6 s (-32.4%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l18",
+  "lang": "hi",
+  "speaker": "dsp",
+  "model": "eleven_v4",
+  "voice_id": "yD3f554gXhA5NxImkyqU",
+  "take": 1,
+  "text": "[sharply] Head Constable। भैयाजी और SHO त्रिपाठी: दोनों को हिरासत में लीजिए।",
+  "file": "voice/hi/l18.mp3",
+  "generation_id": "uyzT0NxaAxOTe2klndhe",
+  "transcript": "हैट कुन्स्तबल बहियाजी और स्हो त्रिपाठी दोनो को हिरासत में लिजिये",
+  "transcript_en_pass": "Head Constable, Bhaiyaji and SHO Tripathi. Both of you are dismissed.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 5.52,
+  "target_s": 6.6,
+  "lead_silence_s": 0.12,
+  "trail_silence_s": 0.32,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 5.08,
+  "speech_vs_target_pct": -23.0,
+  "pauses": [
+   [
+    0.78,
+    0.66
+   ],
+   [
+    3.42,
+    0.54
+   ]
+  ],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [
+   [
+    0.792,
+    0.645
+   ],
+   [
+    3.417,
+    0.549
+   ]
+  ],
+  "lufs": -17.9,
+  "true_peak_dbtp": -0.7,
+  "mean_db": -19.7,
+  "speech_rms_db": -17.7,
+  "voiced_ratio": 0.883,
+  "voiced_ratio_strict": 0.696,
+  "median_f0_hz": 170.2,
+  "segments": [
+   {
+    "t": [
+     0.12,
+     0.78
+    ],
+    "rms_db": -17.6,
+    "voiced_ratio": 0.8
+   },
+   {
+    "t": [
+     1.44,
+     3.42
+    ],
+    "rms_db": -18.0,
+    "voiced_ratio": 0.86
+   },
+   {
+    "t": [
+     3.96,
+     5.2
+    ],
+    "rms_db": -17.3,
+    "voiced_ratio": 0.95
+   }
+  ],
+  "last_0_5s_rms_db": -23.8,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": true,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "WORD CHECK passes: both names heard ('हैट कुन्स्तबल बहियाजी और स्हो त्रिपाठी दोनो को हिरासत में लिजिये'; en pass 'Head Constable, Bhaiyaji and SHO Tripathi'). Beat after 'Head Constable' 0.66 s. No tag spoken aloud. Voiced (0.883); no whisper fault. No hard-cut note. True peak -0.7 dBTP, over -1.5 (mix note, not a retake). Length is not a retake reason (D-0M2). Speech 5.08 s against target 6.6 s (-23.0%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l19",
+  "lang": "hi",
+  "speaker": "pushpa",
+  "model": "eleven_v4",
+  "voice_id": "NU0iY2ULYR4TzJYPOm31",
+  "take": 1,
+  "text": "[deadpan] Zero अब zero नहीं रहा, SHO साहब।",
+  "file": "voice/hi/l19.mp3",
+  "generation_id": "jW5aWlk4tb3KwK12M96A",
+  "transcript": "जीरो अब जीरो नहीं रहा",
+  "transcript_en_pass": "Zero. Now, it's not zero. S-H-O, sir.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 4.64,
+  "target_s": 3.6,
+  "lead_silence_s": 0.1,
+  "trail_silence_s": 0.32,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.318
+  ],
+  "speech_span_s": 4.22,
+  "speech_vs_target_pct": 17.2,
+  "pauses": [
+   [
+    0.78,
+    0.54
+   ],
+   [
+    2.64,
+    0.38
+   ]
+  ],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [
+   [
+    0.812,
+    0.514
+   ],
+   [
+    2.624,
+    0.414
+   ]
+  ],
+  "lufs": -23.7,
+  "true_peak_dbtp": -4.1,
+  "mean_db": -24.7,
+  "speech_rms_db": -23.3,
+  "voiced_ratio": 0.89,
+  "voiced_ratio_strict": 0.799,
+  "median_f0_hz": 177.8,
+  "segments": [
+   {
+    "t": [
+     0.1,
+     0.78
+    ],
+    "rms_db": -25.3,
+    "voiced_ratio": 0.91
+   },
+   {
+    "t": [
+     1.32,
+     2.64
+    ],
+    "rms_db": -21.2,
+    "voiced_ratio": 0.94
+   },
+   {
+    "t": [
+     3.02,
+     4.32
+    ],
+    "rms_db": -25.8,
+    "voiced_ratio": 0.83
+   }
+  ],
+  "last_0_5s_rms_db": -27.8,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "Words heard: the full-take hi pass stops at 'नहीं रहा', but the en pass has 'S-H-O, sir' and a 2.9-4.64 s cut gives 'एसे जो सहाब' / 'S-H-O, Sahab.'. Beat 0.38 s before 'SHO साहब'. No tag spoken aloud. Voiced (0.89); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 4.22 s against target 3.6 s (+17.2%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l20",
+  "lang": "hi",
+  "speaker": "nandini",
+  "model": "eleven_v4",
+  "voice_id": "QpSjVAs2VI5btKzupPaD",
+  "take": 1,
+  "text": "[calm] और आठ सौ बोरी नहीं लौटेगी, DSP साहब।",
+  "file": "voice/hi/l20.mp3",
+  "generation_id": "HHei29SyACGHcxe9oirV",
+  "transcript": "और आर्ट्सो भूरी नहीं लोटेगी, बिस्पी सहब.",
+  "transcript_en_pass": "and 800 more will not return, BSP Sahab.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 3.68,
+  "target_s": 3.8,
+  "lead_silence_s": 0.04,
+  "trail_silence_s": 0.28,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 3.36,
+  "speech_vs_target_pct": -11.6,
+  "pauses": [],
+  "short_gaps_200_300ms": [
+   [
+    2.32,
+    0.2
+   ]
+  ],
+  "silencedetect_internal_ge300ms": [],
+  "lufs": -20.9,
+  "true_peak_dbtp": -7.2,
+  "mean_db": -21.0,
+  "speech_rms_db": -20.0,
+  "voiced_ratio": 0.891,
+  "voiced_ratio_strict": 0.837,
+  "median_f0_hz": 181.8,
+  "segments": [
+   {
+    "t": [
+     0.04,
+     2.32
+    ],
+    "rms_db": -19.0,
+    "voiced_ratio": 0.9
+   },
+   {
+    "t": [
+     2.52,
+     3.4
+    ],
+    "rms_db": -25.0,
+    "voiced_ratio": 0.88
+   }
+  ],
+  "last_0_5s_rms_db": -25.6,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "All words heard ('और आर्ट्सो भूरी नहीं लोटेगी, बिस्पी सहब'; 'बिस्पी' for DSP as whisper hears it). No tag spoken aloud. Voiced (0.891); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 3.36 s against target 3.8 s (-11.6%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l21",
+  "lang": "hi",
+  "speaker": "nandini",
+  "model": "eleven_v4",
+  "voice_id": "QpSjVAs2VI5btKzupPaD",
+  "take": 1,
+  "text": "[quietly] वो मेरे सामने से गई थी।",
+  "file": "voice/hi/l21.mp3",
+  "generation_id": "Q3Lm0SPypL8PRuxVA7q7",
+  "transcript": "वो मेरे सान्ने से गए थी",
+  "transcript_en_pass": "She went in front of me.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 2.0,
+  "target_s": 2.8,
+  "lead_silence_s": 0.16,
+  "trail_silence_s": 0.2,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 1.64,
+  "speech_vs_target_pct": -41.4,
+  "pauses": [],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [],
+  "lufs": -29.3,
+  "true_peak_dbtp": -14.2,
+  "mean_db": -31.1,
+  "speech_rms_db": -30.5,
+  "voiced_ratio": 0.709,
+  "voiced_ratio_strict": 0.633,
+  "median_f0_hz": 190.5,
+  "segments": [
+   {
+    "t": [
+     0.16,
+     1.8
+    ],
+    "rms_db": -30.5,
+    "voiced_ratio": 0.71
+   }
+  ],
+  "last_0_5s_rms_db": -31.5,
+  "edge_blips_s": [
+   1.98
+  ],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "All words heard ('वो मेरे सान्ने से गए थी'; en pass 'She went in front of me.'). No tag spoken aloud. Voiced (0.709); no whisper fault. Lower than l20 (-29.3 against -20.9 LUFS), voiced 0.71, holds to the end. A -51 dB blip at the last frame (ignored). No hard-cut note. Length is not a retake reason (D-0M2). Speech 1.64 s against target 2.8 s (-41.4%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l22",
+  "lang": "hi",
+  "speaker": "dsp",
+  "model": "eleven_v4",
+  "voice_id": "yD3f554gXhA5NxImkyqU",
+  "take": 1,
+  "text": "[calm] आपकी transfer application, जोशी। आज sign कर दूँ?",
+  "file": "voice/hi/l22.mp3",
+  "generation_id": "TQw7n2B1aPGiDsheqdzQ",
+  "transcript": "अग की ट्रान्स्वर अप्लिकेशन जोशी आज याज साईम कर दों",
+  "transcript_en_pass": "Your transfer application, Joshi. Shall I sign today?",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 4.08,
+  "target_s": 4.8,
+  "lead_silence_s": 0.06,
+  "trail_silence_s": 0.34,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.35
+  ],
+  "speech_span_s": 3.68,
+  "speech_vs_target_pct": -23.3,
+  "pauses": [
+   [
+    2.06,
+    0.54
+   ]
+  ],
+  "short_gaps_200_300ms": [
+   [
+    1.48,
+    0.22
+   ]
+  ],
+  "silencedetect_internal_ge300ms": [
+   [
+    2.054,
+    0.56
+   ]
+  ],
+  "lufs": -22.9,
+  "true_peak_dbtp": -3.7,
+  "mean_db": -23.6,
+  "speech_rms_db": -22.0,
+  "voiced_ratio": 0.707,
+  "voiced_ratio_strict": 0.571,
+  "median_f0_hz": 123.1,
+  "segments": [
+   {
+    "t": [
+     0.06,
+     2.06
+    ],
+    "rms_db": -21.5,
+    "voiced_ratio": 0.63
+   },
+   {
+    "t": [
+     2.6,
+     3.74
+    ],
+    "rms_db": -22.8,
+    "voiced_ratio": 0.82
+   }
+  ],
+  "last_0_5s_rms_db": -23.3,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "All words heard ('अग की ट्रान्स्वर अप्लिकेशन जोशी आज याज साईम कर दों'; the stray 'याज' is not in the 2.5-4.08 s cut, 'आज साईम कर दूं'). Beat 0.54 s at the '।'. No tag spoken aloud. Voiced (0.707); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 3.68 s against target 4.8 s (-23.3%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l23",
+  "lang": "hi",
+  "speaker": "nandini",
+  "model": "eleven_v4",
+  "voice_id": "QpSjVAs2VI5btKzupPaD",
+  "take": 1,
+  "text": "[calm] वापस ले रही हूँ, DSP साहब।",
+  "file": "voice/hi/l23.mp3",
+  "generation_id": "6gKmyeR579aldYIW7OOK",
+  "transcript": "वापस ले रही हु दिस्पी साहब",
+  "transcript_en_pass": "Wapas le rahi ho, DSP sahab.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 2.88,
+  "target_s": 2.8,
+  "lead_silence_s": 0.12,
+  "trail_silence_s": 0.36,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.376
+  ],
+  "speech_span_s": 2.4,
+  "speech_vs_target_pct": -14.3,
+  "pauses": [
+   [
+    1.26,
+    0.38
+   ]
+  ],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [
+   [
+    1.252,
+    0.396
+   ]
+  ],
+  "lufs": -23.0,
+  "true_peak_dbtp": -6.7,
+  "mean_db": -23.4,
+  "speech_rms_db": -21.7,
+  "voiced_ratio": 0.907,
+  "voiced_ratio_strict": 0.845,
+  "median_f0_hz": 173.9,
+  "segments": [
+   {
+    "t": [
+     0.12,
+     1.26
+    ],
+    "rms_db": -20.4,
+    "voiced_ratio": 0.93
+   },
+   {
+    "t": [
+     1.64,
+     2.52
+    ],
+    "rms_db": -25.0,
+    "voiced_ratio": 0.88
+   }
+  ],
+  "last_0_5s_rms_db": -26.7,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "All words heard ('वापस ले रही हु दिस्पी साहब'). No tag spoken aloud. Voiced (0.907); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 2.40 s against target 2.8 s (-14.3%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l24",
+  "lang": "hi",
+  "speaker": "nandini",
+  "model": "eleven_v4",
+  "voice_id": "QpSjVAs2VI5btKzupPaD",
+  "take": 1,
+  "text": "[flatly] यहाँ तीस FIR pending हैं।",
+  "file": "voice/hi/l24.mp3",
+  "generation_id": "r8lrFVJj5zurTf3IPnat",
+  "transcript": "यहां 30 FIR Pending हैं",
+  "transcript_en_pass": "Here is 30 FIR pending.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 2.88,
+  "target_s": 2.8,
+  "lead_silence_s": 0.12,
+  "trail_silence_s": 0.26,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 2.5,
+  "speech_vs_target_pct": -10.7,
+  "pauses": [],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [],
+  "lufs": -19.5,
+  "true_peak_dbtp": -4.6,
+  "mean_db": -20.2,
+  "speech_rms_db": -19.1,
+  "voiced_ratio": 0.882,
+  "voiced_ratio_strict": 0.845,
+  "median_f0_hz": 195.1,
+  "segments": [
+   {
+    "t": [
+     0.12,
+     0.58
+    ],
+    "rms_db": -17.2,
+    "voiced_ratio": 1.0
+   },
+   {
+    "t": [
+     0.76,
+     2.62
+    ],
+    "rms_db": -19.7,
+    "voiced_ratio": 0.85
+   }
+  ],
+  "last_0_5s_rms_db": -24.2,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "All words heard ('यहां 30 FIR Pending हैं'). No tag spoken aloud. Voiced (0.882); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 2.50 s against target 2.8 s (-10.7%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l25",
+  "lang": "hi",
+  "speaker": "nirala",
+  "model": "eleven_v4",
+  "voice_id": "x8QLi04vAqWNOHsZm7yK",
+  "take": 1,
+  "text": "[calm] जुर्म क़बूल करूँगा, madam। वर्दी नक़ली थी।",
+  "file": "voice/hi/l25.mp3",
+  "generation_id": "g3Fqibc6ZjyBHVqRobbp",
+  "transcript": "जुर्म कबूल करूंगा मादम वर्दी नक्ली ती",
+  "transcript_en_pass": "I will accept the crime, madam. Vardhi was a fake.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 3.68,
+  "target_s": 4.8,
+  "lead_silence_s": 0.12,
+  "trail_silence_s": 0.34,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.307
+  ],
+  "speech_span_s": 3.22,
+  "speech_vs_target_pct": -32.9,
+  "pauses": [
+   [
+    1.6,
+    0.5
+   ]
+  ],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [
+   [
+    1.618,
+    0.501
+   ]
+  ],
+  "lufs": -20.1,
+  "true_peak_dbtp": -2.5,
+  "mean_db": -20.9,
+  "speech_rms_db": -19.5,
+  "voiced_ratio": 0.948,
+  "voiced_ratio_strict": 0.784,
+  "median_f0_hz": 121.2,
+  "segments": [
+   {
+    "t": [
+     0.12,
+     1.6
+    ],
+    "rms_db": -18.9,
+    "voiced_ratio": 0.95
+   },
+   {
+    "t": [
+     2.1,
+     3.34
+    ],
+    "rms_db": -20.4,
+    "voiced_ratio": 0.95
+   }
+  ],
+  "last_0_5s_rms_db": -24.2,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "All words heard ('जुर्म कबूल करूंगा मादम वर्दी नक्ली ती'). Beat 0.50 s at the '।'. No tag spoken aloud. Voiced (0.948); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 3.22 s against target 4.8 s (-32.9%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l26",
+  "lang": "hi",
+  "speaker": "nandini",
+  "model": "eleven_v4",
+  "voice_id": "QpSjVAs2VI5btKzupPaD",
+  "take": 1,
+  "text": "[quietly] काम असली था। Cap सीधी रखिए।",
+  "file": "voice/hi/l26.mp3",
+  "generation_id": "lFIpyF87KAFCeQzl3UOL",
+  "transcript": "काम आस्ली ता कैप सीथी रखिये",
+  "transcript_en_pass": "Kaam asli tha. Cap siddhi rakhiye.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 3.44,
+  "target_s": 3.4,
+  "lead_silence_s": 0.16,
+  "trail_silence_s": 0.22,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 3.06,
+  "speech_vs_target_pct": -10.0,
+  "pauses": [
+   [
+    1.32,
+    0.64
+   ]
+  ],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [
+   [
+    1.3,
+    0.661
+   ]
+  ],
+  "lufs": -24.8,
+  "true_peak_dbtp": -6.9,
+  "mean_db": -26.1,
+  "speech_rms_db": -23.8,
+  "voiced_ratio": 0.629,
+  "voiced_ratio_strict": 0.567,
+  "median_f0_hz": 186.0,
+  "segments": [
+   {
+    "t": [
+     0.16,
+     1.32
+    ],
+    "rms_db": -28.4,
+    "voiced_ratio": 0.63
+   },
+   {
+    "t": [
+     1.96,
+     3.22
+    ],
+    "rms_db": -21.6,
+    "voiced_ratio": 0.62
+   }
+  ],
+  "last_0_5s_rms_db": -23.4,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": true,
+  "verdict": "ok",
+  "reason": "All words heard ('काम आस्ली ता कैप सीथी रखिये'; en pass 'Kaam asli tha. Cap siddhi rakhiye.'). No tag spoken aloud. Voiced (0.629); no whisper fault. 'काम असली था।' low and voiced (-28.4 dB, 0.63). HARD CUT met: 0.64 s pause at the '।' (silencedetect 0.66 s). Length is not a retake reason (D-0M2). Speech 3.06 s against target 3.4 s (-10.0%), for the edit.",
+  "ear_check": "'Cap सीधी रखिए' comes up 6.8 dB over 'काम असली था' (-21.6 against -28.4 dB): is it still dry and nearly tender, not a louder order?",
+  "retake_text": null
+ },
+ {
+  "line_id": "l27",
+  "lang": "hi",
+  "speaker": "pushpa",
+  "model": "eleven_v4",
+  "voice_id": "NU0iY2ULYR4TzJYPOm31",
+  "take": 1,
+  "text": "[calm] Madam, bench भर गई है।",
+  "file": "voice/hi/l27.mp3",
+  "generation_id": "YUMsBcp5Ad99uzf2lXuh",
+  "transcript": "मदम बेंच बर गई है।",
+  "transcript_en_pass": "Madam, the bench is full.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 2.4,
+  "target_s": 2.4,
+  "lead_silence_s": 0.12,
+  "trail_silence_s": 0.26,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 2.02,
+  "speech_vs_target_pct": -15.8,
+  "pauses": [],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [],
+  "lufs": -24.3,
+  "true_peak_dbtp": -5.6,
+  "mean_db": -24.7,
+  "speech_rms_db": -23.5,
+  "voiced_ratio": 0.967,
+  "voiced_ratio_strict": 0.902,
+  "median_f0_hz": 181.8,
+  "segments": [
+   {
+    "t": [
+     0.12,
+     0.72
+    ],
+    "rms_db": -22.5,
+    "voiced_ratio": 0.97
+   },
+   {
+    "t": [
+     0.9,
+     2.14
+    ],
+    "rms_db": -24.1,
+    "voiced_ratio": 0.97
+   }
+  ],
+  "last_0_5s_rms_db": -28.3,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "All words heard ('मदम बेंच बर गई है'; en pass 'Madam, the bench is full.'). No tag spoken aloud. Voiced (0.967); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 2.02 s against target 2.4 s (-15.8%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l01",
+  "lang": "en",
+  "speaker": "dsp",
+  "model": "eleven_v4",
+  "voice_id": "yD3f554gXhA5NxImkyqU",
+  "take": 1,
+  "text": "[excited] Imlipur thana: second year running, zero crime.",
+  "file": "voice/en/l01.mp3",
+  "generation_id": "Q0kpkjESNxa2yi7dTn1E",
+  "transcript": "Imli Purtana, second year running, zero crime.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 3.68,
+  "target_s": 4.6,
+  "lead_silence_s": 0.02,
+  "trail_silence_s": 0.28,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 3.38,
+  "speech_vs_target_pct": -26.5,
+  "pauses": [
+   [
+    0.9,
+    0.32
+   ]
+  ],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [],
+  "lufs": -16.8,
+  "true_peak_dbtp": -1.6,
+  "mean_db": -18.1,
+  "speech_rms_db": -17.0,
+  "voiced_ratio": 0.818,
+  "voiced_ratio_strict": 0.734,
+  "median_f0_hz": 235.3,
+  "segments": [
+   {
+    "t": [
+     0.02,
+     0.9
+    ],
+    "rms_db": -18.4,
+    "voiced_ratio": 0.74
+   },
+   {
+    "t": [
+     1.22,
+     3.4
+    ],
+    "rms_db": -16.6,
+    "voiced_ratio": 0.85
+   }
+  ],
+  "last_0_5s_rms_db": -18.6,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "All words heard ('Imli Purtana' for 'Imlipur thana'). Beat at the colon 0.32 s. No tag spoken aloud. Voiced (0.818); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 3.38 s against target 4.6 s (-26.5%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l02",
+  "lang": "en",
+  "speaker": "dsp",
+  "model": "eleven_v4",
+  "voice_id": "yD3f554gXhA5NxImkyqU",
+  "take": 1,
+  "text": "[laughs] And here is our fake Inspector: arrested. Well done, SI Joshi.",
+  "file": "voice/en/l02.mp3",
+  "generation_id": "7pwiWxsk1xu92pmFVLPH",
+  "transcript": "And here is our fake inspector. Arrested. Well done, SI Joshi.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 6.16,
+  "target_s": 5.4,
+  "lead_silence_s": 0.34,
+  "trail_silence_s": 0.24,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 5.58,
+  "speech_vs_target_pct": 3.3,
+  "pauses": [
+   [
+    2.7,
+    0.52
+   ],
+   [
+    4.0,
+    0.36
+   ]
+  ],
+  "short_gaps_200_300ms": [
+   [
+    0.4,
+    0.2
+   ]
+  ],
+  "silencedetect_internal_ge300ms": [
+   [
+    2.726,
+    0.495
+   ],
+   [
+    4.017,
+    0.359
+   ]
+  ],
+  "lufs": -17.5,
+  "true_peak_dbtp": -0.6,
+  "mean_db": -19.9,
+  "speech_rms_db": -17.9,
+  "voiced_ratio": 0.697,
+  "voiced_ratio_strict": 0.574,
+  "median_f0_hz": 153.8,
+  "segments": [
+   {
+    "t": [
+     0.34,
+     2.7
+    ],
+    "rms_db": -17.8,
+    "voiced_ratio": 0.65
+   },
+   {
+    "t": [
+     3.22,
+     4.0
+    ],
+    "rms_db": -21.0,
+    "voiced_ratio": 0.47
+   },
+   {
+    "t": [
+     4.36,
+     5.92
+    ],
+    "rms_db": -17.0,
+    "voiced_ratio": 0.86
+   }
+  ],
+  "last_0_5s_rms_db": -20.9,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": true,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "Verbatim. WORD CHECK passes: 'And here is our fake Inspector' heard whole after the laugh. Beats 0.52 s and 0.36 s. No tag spoken aloud. Voiced (0.697); no whisper fault. No hard-cut note. True peak -0.6 dBTP, over -1.5 (mix note, not a retake). Length is not a retake reason (D-0M2). Speech 5.58 s against target 5.4 s (+3.3%), for the edit.",
+  "ear_check": "Is the laugh audible at the head (first 0.34 s below speech level)?",
+  "retake_text": null
+ },
+ {
+  "line_id": "l03",
+  "lang": "en",
+  "speaker": "nandini",
+  "model": "eleven_v4",
+  "voice_id": "QpSjVAs2VI5btKzupPaD",
+  "take": 1,
+  "text": "[flatly] Order carried out, sir.",
+  "file": "voice/en/l03.mp3",
+  "generation_id": "INIZUBv4VvnmQq15LHVi",
+  "transcript": "Order carried out, sir.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 1.68,
+  "target_s": 2.1,
+  "lead_silence_s": 0.14,
+  "trail_silence_s": 0.32,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.32
+  ],
+  "speech_span_s": 1.22,
+  "speech_vs_target_pct": -41.9,
+  "pauses": [],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [],
+  "lufs": -20.0,
+  "true_peak_dbtp": -2.6,
+  "mean_db": -20.6,
+  "speech_rms_db": -19.0,
+  "voiced_ratio": 0.845,
+  "voiced_ratio_strict": 0.724,
+  "median_f0_hz": 190.5,
+  "segments": [
+   {
+    "t": [
+     0.14,
+     1.36
+    ],
+    "rms_db": -19.0,
+    "voiced_ratio": 0.84
+   }
+  ],
+  "last_0_5s_rms_db": -28.4,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "Verbatim. No tag spoken aloud. Voiced (0.845); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 1.22 s against target 2.1 s (-41.9%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l04",
+  "lang": "en",
+  "speaker": "nandini",
+  "model": "eleven_v4",
+  "voice_id": "QpSjVAs2VI5btKzupPaD",
+  "take": 1,
+  "text": "[calm] And this: last night's thirty FIRs.",
+  "file": "voice/en/l04.mp3",
+  "generation_id": "J9IP6j4ZUXu9DxZGsE1v",
+  "transcript": "And this, last night's 30 FIRs.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 3.6,
+  "target_s": 3.0,
+  "lead_silence_s": 0.08,
+  "trail_silence_s": 0.16,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 3.36,
+  "speech_vs_target_pct": 12.0,
+  "pauses": [
+   [
+    0.86,
+    0.32
+   ]
+  ],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [
+   [
+    0.872,
+    0.32
+   ]
+  ],
+  "lufs": -22.3,
+  "true_peak_dbtp": -7.8,
+  "mean_db": -22.4,
+  "speech_rms_db": -21.5,
+  "voiced_ratio": 0.628,
+  "voiced_ratio_strict": 0.517,
+  "median_f0_hz": 186.0,
+  "segments": [
+   {
+    "t": [
+     0.08,
+     0.86
+    ],
+    "rms_db": -20.8,
+    "voiced_ratio": 0.51
+   },
+   {
+    "t": [
+     1.18,
+     3.44
+    ],
+    "rms_db": -21.8,
+    "voiced_ratio": 0.67
+   }
+  ],
+  "last_0_5s_rms_db": -28.9,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "Verbatim ('30 FIRs'). No tag spoken aloud. Voiced (0.628); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 3.36 s against target 3.0 s (+12.0%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l05",
+  "lang": "en",
+  "speaker": "dsp",
+  "model": "eleven_v4",
+  "voice_id": "yD3f554gXhA5NxImkyqU",
+  "take": 1,
+  "text": "[quietly] Not now, Joshi.",
+  "file": "voice/en/l05.mp3",
+  "generation_id": "OPmSrLJN69WUO1BB7uNT",
+  "transcript": "Not now, Joshi.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 1.76,
+  "target_s": 1.5,
+  "lead_silence_s": 0.0,
+  "trail_silence_s": 0.32,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.385
+  ],
+  "speech_span_s": 1.44,
+  "speech_vs_target_pct": -4.0,
+  "pauses": [],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [],
+  "lufs": -26.9,
+  "true_peak_dbtp": -10.6,
+  "mean_db": -29.8,
+  "speech_rms_db": -28.7,
+  "voiced_ratio": 0.09,
+  "voiced_ratio_strict": 0.045,
+  "median_f0_hz": 123.1,
+  "segments": [
+   {
+    "t": [
+     0.0,
+     1.44
+    ],
+    "rms_db": -28.7,
+    "voiced_ratio": 0.09
+   }
+  ],
+  "last_0_5s_rms_db": -33.0,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "retake",
+  "reason": "Verbatim ('Not now, Joshi.'). No tag spoken aloud. WHISPERED where the note asks 'fully voiced, never a whisper' (As hi l05): voiced 0.09 (strict 0.05) over the whole line, at the level of the known s1e01 whisper (0.12); only 'Not' carries pitch (0.20-0.30 s). Spectral flatness 0.065, centroid 2449 Hz. No hard-cut note. RETAKE: Lost voicing (D-0M2). Rung 2 of the ladder, not a second [quietly] roll: [quietly] is untested on this voice and gave a whisper here and a breathy take in Hindi, so the tag is the cause. Length is not a retake reason (D-0M2). Speech 1.44 s against target 1.5 s (-4.0%), for the edit.",
+  "ear_check": null,
+  "retake_text": "[calm] Not now, Joshi.",
+  "d022_line_class": "voice-wanted",
+  "retake_text_reviewer": "[low voice] Not now, Joshi.",
+  "retake_model": "eleven_v4",
+  "retake_take": 2,
+  "rule": "D-022",
+  "d022_note": "D-022 rule 1: script text with every quiet-family tag deleted, [calm] added because no tag was left"
+ },
+ {
+  "line_id": "l06",
+  "lang": "en",
+  "speaker": "nandini",
+  "model": "eleven_v4",
+  "voice_id": "QpSjVAs2VI5btKzupPaD",
+  "take": 1,
+  "text": "[calm] FIR number one.",
+  "file": "voice/en/l06.mp3",
+  "generation_id": "nqunLEjd6CMhrW2gZaLO",
+  "transcript": "FIR, number one.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 2.32,
+  "target_s": 1.7,
+  "lead_silence_s": 0.08,
+  "trail_silence_s": 0.12,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 2.12,
+  "speech_vs_target_pct": 24.7,
+  "pauses": [
+   [
+    1.08,
+    0.42
+   ]
+  ],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [
+   [
+    1.079,
+    0.424
+   ]
+  ],
+  "lufs": -21.2,
+  "true_peak_dbtp": -3.0,
+  "mean_db": -21.5,
+  "speech_rms_db": -19.8,
+  "voiced_ratio": 0.797,
+  "voiced_ratio_strict": 0.722,
+  "median_f0_hz": 190.5,
+  "segments": [
+   {
+    "t": [
+     0.08,
+     1.08
+    ],
+    "rms_db": -19.5,
+    "voiced_ratio": 0.77
+   },
+   {
+    "t": [
+     1.5,
+     2.2
+    ],
+    "rms_db": -20.3,
+    "voiced_ratio": 0.83
+   }
+  ],
+  "last_0_5s_rms_db": -22.9,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "Verbatim. No tag spoken aloud. Voiced (0.797); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 2.12 s against target 1.7 s (+24.7%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l07",
+  "lang": "en",
+  "speaker": "nandini",
+  "model": "eleven_v4",
+  "voice_id": "QpSjVAs2VI5btKzupPaD",
+  "take": 1,
+  "text": "[flatly] Accused: Balram Thakur, alias Bhaiyaji. Offence: extortion.",
+  "file": "voice/en/l07.mp3",
+  "generation_id": "Sw3HB1G4hQp4bvPQyp6r",
+  "transcript": "Accused. Balran Thakur, alias Bhaiyaji. Offense, extortion.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 5.52,
+  "target_s": 5.2,
+  "lead_silence_s": 0.04,
+  "trail_silence_s": 0.16,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 5.32,
+  "speech_vs_target_pct": 2.3,
+  "pauses": [
+   [
+    0.68,
+    0.34
+   ],
+   [
+    3.34,
+    0.42
+   ]
+  ],
+  "short_gaps_200_300ms": [
+   [
+    2.0,
+    0.24
+   ],
+   [
+    4.34,
+    0.26
+   ]
+  ],
+  "silencedetect_internal_ge300ms": [
+   [
+    0.687,
+    0.341
+   ],
+   [
+    3.334,
+    0.444
+   ]
+  ],
+  "lufs": -21.0,
+  "true_peak_dbtp": -1.0,
+  "mean_db": -22.3,
+  "speech_rms_db": -20.8,
+  "voiced_ratio": 0.72,
+  "voiced_ratio_strict": 0.617,
+  "median_f0_hz": 195.1,
+  "segments": [
+   {
+    "t": [
+     0.04,
+     0.68
+    ],
+    "rms_db": -23.9,
+    "voiced_ratio": 0.62
+   },
+   {
+    "t": [
+     1.02,
+     3.34
+    ],
+    "rms_db": -19.2,
+    "voiced_ratio": 0.83
+   },
+   {
+    "t": [
+     3.76,
+     5.36
+    ],
+    "rms_db": -23.5,
+    "voiced_ratio": 0.59
+   }
+  ],
+  "last_0_5s_rms_db": -25.5,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": true,
+  "hard_cut_note": true,
+  "verdict": "retake",
+  "reason": "Words heard ('Accused. Balran Thakur, alias Bhaiyaji. Offense, extortion.'; cut 0-2.05 s 'Accused. Balran Thakur.', 2.05-5.52 s 'alias bhaiyaji. Offense, extortion.'). No tag spoken aloud. Voiced (0.72); no whisper fault. HARD CUT NOT MET: the note asks at least 0.3 s at the comma after 'Balram Thakur'; measured 0.24 s by frames (speech ends 2.00 s, resumes 2.24 s), silencedetect 0.25 s at -35 dB, 0.23 s at -45 dB, 0.18 s at -50 dB, none at -40 dB / 0.3 s. RETAKE: Hard-cut line short of its pause (D-0M2). Rung 1, retake as written: the tag was not spoken and no level fault shows, which is when the note moves to [calm]. If the retake is still short, the edit can split this take in the clean gap at 2.10 s (about -64 dB) and pad it to 0.3 s rather than spend a third take. True peak -1.0 dBTP, over -1.5 (mix note, not a retake). Length is not a retake reason (D-0M2). Speech 5.32 s against target 5.2 s (+2.3%), for the edit.",
+  "ear_check": "THE CLIMAX: hear the retake first.",
+  "retake_text": "[flatly] Accused: Balram Thakur, alias Bhaiyaji. Offence: extortion.",
+  "d022_line_class": "other",
+  "retake_text_reviewer": "[flatly] Accused: Balram Thakur, alias Bhaiyaji. Offence: extortion.",
+  "retake_model": "eleven_v4",
+  "retake_take": 2,
+  "rule": "D-022",
+  "d022_note": "D-022 rule 7: not a voice-wanted line; the retake is for another fault and goes ahead on its ladder as the reviewer set it"
+ },
+ {
+  "line_id": "l08",
+  "lang": "en",
+  "speaker": "reporter",
+  "model": "eleven_v4",
+  "voice_id": "S85GAlTdJF2N4BFuGH1l",
+  "take": 1,
+  "text": "[excited] DSP sir, the chief guest is the accused?",
+  "file": "voice/en/l08.mp3",
+  "generation_id": "GMUM9LOQl7wQOSu5wp4m",
+  "transcript": "DSP sir, the chief guest is the accused?",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 3.36,
+  "target_s": 3.0,
+  "lead_silence_s": 0.04,
+  "trail_silence_s": 0.3,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 3.02,
+  "speech_vs_target_pct": 0.7,
+  "pauses": [],
+  "short_gaps_200_300ms": [
+   [
+    0.94,
+    0.28
+   ]
+  ],
+  "silencedetect_internal_ge300ms": [],
+  "lufs": -17.4,
+  "true_peak_dbtp": -2.4,
+  "mean_db": -18.2,
+  "speech_rms_db": -17.1,
+  "voiced_ratio": 0.688,
+  "voiced_ratio_strict": 0.633,
+  "median_f0_hz": 320.0,
+  "segments": [
+   {
+    "t": [
+     0.04,
+     0.94
+    ],
+    "rms_db": -17.4,
+    "voiced_ratio": 0.82
+   },
+   {
+    "t": [
+     1.22,
+     3.06
+    ],
+    "rms_db": -16.9,
+    "voiced_ratio": 0.62
+   }
+  ],
+  "last_0_5s_rms_db": -16.4,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "Verbatim. Loud (-17.4 LUFS); median 320 Hz. No tag spoken aloud. Voiced (0.688); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 3.02 s against target 3.0 s (+0.7%), for the edit.",
+  "ear_check": "Does it rise at 'accused?' without going shrill?",
+  "retake_text": null
+ },
+ {
+  "line_id": "l09",
+  "lang": "en",
+  "speaker": "tripathi",
+  "model": "eleven_v4",
+  "voice_id": "KjB3pyRrta1C1C2zoshr",
+  "take": 1,
+  "text": "[sharply] Arre, that register was locked in the almirah!",
+  "file": "voice/en/l09.mp3",
+  "generation_id": "uzyoC8DnoiI6YKKCrz3q",
+  "transcript": "That register was locked in the Almira.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 2.72,
+  "target_s": 3.4,
+  "lead_silence_s": 0.04,
+  "trail_silence_s": 0.26,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 2.42,
+  "speech_vs_target_pct": -28.8,
+  "pauses": [],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [],
+  "lufs": -17.6,
+  "true_peak_dbtp": -1.3,
+  "mean_db": -18.2,
+  "speech_rms_db": -17.2,
+  "voiced_ratio": 0.838,
+  "voiced_ratio_strict": 0.705,
+  "median_f0_hz": 235.3,
+  "segments": [
+   {
+    "t": [
+     0.04,
+     0.32
+    ],
+    "rms_db": -16.1,
+    "voiced_ratio": 0.71
+   },
+   {
+    "t": [
+     0.5,
+     2.46
+    ],
+    "rms_db": -17.3,
+    "voiced_ratio": 0.86
+   }
+  ],
+  "last_0_5s_rms_db": -16.1,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": true,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "Words heard: full take 'That register was locked in the Almira.' drops 'Arre', but a 0-0.5 s cut gives 'ARI!' (en) / 'अदे' (hi) and 0-1.1 s 'अरे ताक रेज़स्ता' (hi), so 'Arre' is said, as Hindi. 'almirah' heard 'Almira'. No tag spoken aloud. Voiced (0.838); no whisper fault. No hard-cut note. True peak -1.3 dBTP, over -1.5 (mix note, not a retake). Length is not a retake reason (D-0M2). Speech 2.42 s against target 3.4 s (-28.8%), for the edit.",
+  "ear_check": "EAR PRIORITY as hi l09: median 235 Hz (20 ms frames mostly 200-280 Hz) against his casting 96-118 Hz, -17.6 LUFS against -23 to -25: raised and louder, where the note wants low and never shouted. If the ear agrees, retake '[low] Arre, that register was locked in the almirah!'. Also 'almirah' (al-mee-RAH, not al-MY-ra) and 'Arre' (UH-ray) by ear.",
+  "retake_text": null
+ },
+ {
+  "line_id": "l10",
+  "lang": "en",
+  "speaker": "pushpa",
+  "model": "eleven_v4",
+  "voice_id": "NU0iY2ULYR4TzJYPOm31",
+  "take": 1,
+  "text": "[deadpan] Second key, SHO sahab.",
+  "file": "voice/en/l10.mp3",
+  "generation_id": "I0ui7SCubHz5SUeK2sK7",
+  "transcript": "Second key, SHO Sahab.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 3.12,
+  "target_s": 2.3,
+  "lead_silence_s": 0.12,
+  "trail_silence_s": 0.22,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 2.78,
+  "speech_vs_target_pct": 20.9,
+  "pauses": [
+   [
+    0.9,
+    0.5
+   ]
+  ],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [
+   [
+    0.937,
+    0.465
+   ]
+  ],
+  "lufs": -22.0,
+  "true_peak_dbtp": -0.7,
+  "mean_db": -24.4,
+  "speech_rms_db": -22.9,
+  "voiced_ratio": 0.835,
+  "voiced_ratio_strict": 0.615,
+  "median_f0_hz": 181.8,
+  "segments": [
+   {
+    "t": [
+     0.12,
+     0.9
+    ],
+    "rms_db": -20.5,
+    "voiced_ratio": 0.77
+   },
+   {
+    "t": [
+     1.4,
+     2.9
+    ],
+    "rms_db": -25.3,
+    "voiced_ratio": 0.87
+   }
+  ],
+  "last_0_5s_rms_db": -31.5,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": true,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "Verbatim ('SHO Sahab'). No tag spoken aloud. Voiced (0.835); no whisper fault. No hard-cut note. True peak -0.7 dBTP, over -1.5 (mix note, not a retake). Length is not a retake reason (D-0M2). Speech 2.78 s against target 2.3 s (+20.9%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l11",
+  "lang": "en",
+  "speaker": "nandini",
+  "model": "eleven_v4",
+  "voice_id": "QpSjVAs2VI5btKzupPaD",
+  "take": 1,
+  "text": "[calm] All thirty have the same line: 'SHO Tripathi refused to register the FIR.'",
+  "file": "voice/en/l11.mp3",
+  "generation_id": "cr9y7mcelQiUwAGqNQfR",
+  "transcript": "All 30 have the same line. SHO Tripathi refused to register the FIR.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 6.4,
+  "target_s": 6.2,
+  "lead_silence_s": 0.1,
+  "trail_silence_s": 0.3,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 6.0,
+  "speech_vs_target_pct": -3.2,
+  "pauses": [
+   [
+    2.0,
+    0.58
+   ]
+  ],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [
+   [
+    1.998,
+    0.585
+   ]
+  ],
+  "lufs": -20.8,
+  "true_peak_dbtp": -3.2,
+  "mean_db": -21.3,
+  "speech_rms_db": -20.4,
+  "voiced_ratio": 0.823,
+  "voiced_ratio_strict": 0.74,
+  "median_f0_hz": 200.0,
+  "segments": [
+   {
+    "t": [
+     0.1,
+     2.0
+    ],
+    "rms_db": -20.2,
+    "voiced_ratio": 0.91
+   },
+   {
+    "t": [
+     2.58,
+     6.1
+    ],
+    "rms_db": -20.5,
+    "voiced_ratio": 0.77
+   }
+  ],
+  "last_0_5s_rms_db": -26.7,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "Verbatim ('All 30'). No tag spoken aloud. Voiced (0.823); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 6.00 s against target 6.2 s (-3.2%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l12",
+  "lang": "en",
+  "speaker": "nandini",
+  "model": "eleven_v4",
+  "voice_id": "QpSjVAs2VI5btKzupPaD",
+  "take": 1,
+  "text": "[quietly] And last night eight hundred sacks went out on your signature.",
+  "file": "voice/en/l12.mp3",
+  "generation_id": "aainnBjz6p8mvb4lTOqM",
+  "transcript": "And last night, 800 sacks went out on your signature.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 3.68,
+  "target_s": 4.8,
+  "lead_silence_s": 0.02,
+  "trail_silence_s": 0.0,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 3.66,
+  "speech_vs_target_pct": -23.7,
+  "pauses": [],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [],
+  "lufs": -24.6,
+  "true_peak_dbtp": -8.3,
+  "mean_db": -25.5,
+  "speech_rms_db": -25.6,
+  "voiced_ratio": 0.573,
+  "voiced_ratio_strict": 0.404,
+  "median_f0_hz": 186.0,
+  "segments": [
+   {
+    "t": [
+     0.02,
+     3.68
+    ],
+    "rms_db": -25.6,
+    "voiced_ratio": 0.57
+   }
+  ],
+  "last_0_5s_rms_db": -33.2,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "Verbatim ('800 sacks'). No tag spoken aloud. Voiced (0.573); no whisper fault. Quieter than l11 (-24.6 against -20.8 LUFS), voiced 0.57 (strict 0.40), falls at the end (last 0.5 s -33.2 dB). Trail 0.00 s: breath runs to the file end; give the edit a fade. No hard-cut note. Length is not a retake reason (D-0M2). Speech 3.66 s against target 4.8 s (-23.7%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l13",
+  "lang": "en",
+  "speaker": "bhaiyaji",
+  "model": "eleven_v4",
+  "voice_id": "n4jGuG5wrMvqWCjMtnMS",
+  "take": 1,
+  "text": "[chuckles] DSP sahab, on a fake Inspector's papers—",
+  "file": "voice/en/l13.mp3",
+  "generation_id": "3kVxu9npT88kAhsWGUTB",
+  "transcript": "BSB Sahab, on a fake inspector's papers...",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 4.32,
+  "target_s": 3.8,
+  "lead_silence_s": 0.04,
+  "trail_silence_s": 0.28,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 4.0,
+  "speech_vs_target_pct": 5.3,
+  "pauses": [],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [],
+  "lufs": -19.5,
+  "true_peak_dbtp": -2.4,
+  "mean_db": -20.1,
+  "speech_rms_db": -19.2,
+  "voiced_ratio": 0.669,
+  "voiced_ratio_strict": 0.388,
+  "median_f0_hz": 142.9,
+  "segments": [
+   {
+    "t": [
+     0.04,
+     4.04
+    ],
+    "rms_db": -19.2,
+    "voiced_ratio": 0.67
+   }
+  ],
+  "last_0_5s_rms_db": -23.3,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": true,
+  "verdict": "ok",
+  "reason": "Words heard: 'BSB Sahab, on a fake inspector's papers...' (small), 'BSB's I hope on a fake inspectors papers.' (base); cut 0-1.3 s 'BS'. No tag spoken aloud. Voiced (0.669); no whisper fault. HARD CUT met: ends on 'papers', nothing after, trail 0.28 s. Length is not a retake reason (D-0M2). Speech 4.00 s against target 3.8 s (+5.3%), for the edit.",
+  "ear_check": "WORD CHECK by ear: is 'DSP sahab' heard whole after the chuckle? Whisper hears 'BSB' (it also hears 'BSP' for Nandini's clear 'DSP' in hi l20), so not counted as a wrong word.",
+  "retake_text": null
+ },
+ {
+  "line_id": "l14",
+  "lang": "en",
+  "speaker": "nirala",
+  "model": "eleven_v4",
+  "voice_id": "x8QLi04vAqWNOHsZm7yK",
+  "take": 1,
+  "text": "[earnest] The papers are not mine, Bhaiyaji.",
+  "file": "voice/en/l14.mp3",
+  "generation_id": "ISWU5KCsCXtEY42DfgRI",
+  "transcript": "The papers are not mine, bhaiyaji.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 2.24,
+  "target_s": 2.9,
+  "lead_silence_s": 0.02,
+  "trail_silence_s": 0.32,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 1.9,
+  "speech_vs_target_pct": -34.5,
+  "pauses": [],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [],
+  "lufs": -17.5,
+  "true_peak_dbtp": -1.9,
+  "mean_db": -18.1,
+  "speech_rms_db": -17.4,
+  "voiced_ratio": 0.958,
+  "voiced_ratio_strict": 0.874,
+  "median_f0_hz": 170.2,
+  "segments": [
+   {
+    "t": [
+     0.02,
+     1.92
+    ],
+    "rms_db": -17.4,
+    "voiced_ratio": 0.96
+   }
+  ],
+  "last_0_5s_rms_db": -24.7,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "Verbatim ('The papers are not mine, bhaiyaji.'; no contraction). No tag spoken aloud. Voiced (0.958); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 1.90 s against target 2.9 s (-34.5%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l15",
+  "lang": "en",
+  "speaker": "nirala",
+  "model": "eleven_v4",
+  "voice_id": "x8QLi04vAqWNOHsZm7yK",
+  "take": 1,
+  "text": "[calm] The register is real, the thumbprints are real, the officer is real. [quietly] I was the only fake.",
+  "file": "voice/en/l15.mp3",
+  "generation_id": "Lsk44SzTijY3CfYXiNyo",
+  "transcript": "The register is real. The thumbprints are real. The officer is real. I was the only fake.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 6.4,
+  "target_s": 7.2,
+  "lead_silence_s": 0.06,
+  "trail_silence_s": 0.24,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 6.1,
+  "speech_vs_target_pct": -15.3,
+  "pauses": [
+   [
+    1.18,
+    0.5
+   ],
+   [
+    2.76,
+    0.54
+   ],
+   [
+    4.28,
+    0.68
+   ]
+  ],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [
+   [
+    1.281,
+    0.408
+   ],
+   [
+    2.762,
+    0.541
+   ],
+   [
+    4.306,
+    0.606
+   ]
+  ],
+  "lufs": -21.7,
+  "true_peak_dbtp": -1.6,
+  "mean_db": -23.3,
+  "speech_rms_db": -21.5,
+  "voiced_ratio": 0.731,
+  "voiced_ratio_strict": 0.642,
+  "median_f0_hz": 127.0,
+  "segments": [
+   {
+    "t": [
+     0.06,
+     1.18
+    ],
+    "rms_db": -17.7,
+    "voiced_ratio": 0.96
+   },
+   {
+    "t": [
+     1.68,
+     2.76
+    ],
+    "rms_db": -21.5,
+    "voiced_ratio": 0.81
+   },
+   {
+    "t": [
+     3.3,
+     4.28
+    ],
+    "rms_db": -26.1,
+    "voiced_ratio": 0.83
+   },
+   {
+    "t": [
+     4.96,
+     6.16
+    ],
+    "rms_db": -32.7,
+    "voiced_ratio": 0.31
+   }
+  ],
+  "last_0_5s_rms_db": -39.5,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": true,
+  "verdict": "ok",
+  "reason": "Verbatim, no contractions. No tag spoken aloud. Second sentence breathy: voiced 0.31, flatness 0.089. 'the only' carries pitch (121-136 Hz); 'fake' is unvoiced. Above this review's whisper line (0.25), below the accepted quiet takes (0.41+). Second sentence much quieter (-32.7 dB against -17.7 to -26.1 on the entries). HARD CUT met: 0.68 s pause after 'the officer is real.' (silencedetect 0.61 s). Length is not a retake reason (D-0M2). Speech 6.10 s against target 7.2 s (-15.3%), for the edit.",
+  "ear_check": "EAR PRIORITY: 'I was the only fake.' must be fully voiced (note). Breathy by measure, with the last word unvoiced. If the ear hears a whisper, retake '[calm] The register is real, the thumbprints are real, the officer is real. [quietly] I was the only fake.' as written.",
+  "retake_text": null
+ },
+ {
+  "line_id": "l16",
+  "lang": "en",
+  "speaker": "nirala",
+  "model": "eleven_v4",
+  "voice_id": "x8QLi04vAqWNOHsZm7yK",
+  "take": 1,
+  "text": "[calm] And your twenty-four envelopes: case property.",
+  "file": "voice/en/l16.mp3",
+  "generation_id": "oUwKsdbu27IePBvFYfA7",
+  "transcript": "and your 24 envelopes, case property.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 3.28,
+  "target_s": 3.9,
+  "lead_silence_s": 0.0,
+  "trail_silence_s": 0.34,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.327
+  ],
+  "speech_span_s": 2.94,
+  "speech_vs_target_pct": -24.6,
+  "pauses": [
+   [
+    1.72,
+    0.46
+   ]
+  ],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [
+   [
+    1.769,
+    0.417
+   ]
+  ],
+  "lufs": -18.9,
+  "true_peak_dbtp": -1.5,
+  "mean_db": -20.5,
+  "speech_rms_db": -19.0,
+  "voiced_ratio": 0.744,
+  "voiced_ratio_strict": 0.615,
+  "median_f0_hz": 145.5,
+  "segments": [
+   {
+    "t": [
+     0.0,
+     1.72
+    ],
+    "rms_db": -18.4,
+    "voiced_ratio": 0.8
+   },
+   {
+    "t": [
+     2.18,
+     2.94
+    ],
+    "rms_db": -20.7,
+    "voiced_ratio": 0.62
+   }
+  ],
+  "last_0_5s_rms_db": -26.7,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "Verbatim ('24 envelopes'). No tag spoken aloud. Voiced (0.744); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 2.94 s against target 3.9 s (-24.6%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l17",
+  "lang": "en",
+  "speaker": "dsp",
+  "model": "eleven_v4",
+  "voice_id": "yD3f554gXhA5NxImkyqU",
+  "take": 1,
+  "text": "[calm] And from today, Imlipur police is taking action in these thirty cases.",
+  "file": "voice/en/l17.mp3",
+  "generation_id": "S03aM68zOOmh8Hs6MQFI",
+  "transcript": "And from today, Imlipur Police is taking action in these 30 cases.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 4.64,
+  "target_s": 5.8,
+  "lead_silence_s": 0.1,
+  "trail_silence_s": 0.12,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 4.42,
+  "speech_vs_target_pct": -23.8,
+  "pauses": [
+   [
+    0.94,
+    0.36
+   ]
+  ],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [
+   [
+    0.96,
+    0.343
+   ]
+  ],
+  "lufs": -20.3,
+  "true_peak_dbtp": -1.8,
+  "mean_db": -21.1,
+  "speech_rms_db": -19.9,
+  "voiced_ratio": 0.726,
+  "voiced_ratio_strict": 0.629,
+  "median_f0_hz": 133.3,
+  "segments": [
+   {
+    "t": [
+     0.1,
+     0.94
+    ],
+    "rms_db": -18.2,
+    "voiced_ratio": 0.78
+   },
+   {
+    "t": [
+     1.3,
+     4.52
+    ],
+    "rms_db": -20.6,
+    "voiced_ratio": 0.71
+   }
+  ],
+  "last_0_5s_rms_db": -35.9,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "Verbatim. No tag spoken aloud. Voiced (0.726); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 4.42 s against target 5.8 s (-23.8%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l18",
+  "lang": "en",
+  "speaker": "dsp",
+  "model": "eleven_v4",
+  "voice_id": "yD3f554gXhA5NxImkyqU",
+  "take": 1,
+  "text": "[sharply] Head Constable. Bhaiyaji and SHO Tripathi: take them both into custody.",
+  "file": "voice/en/l18.mp3",
+  "generation_id": "GeQvAZciFyY1wkMjiCuH",
+  "transcript": "Head Constable, Bhaiyaji and SHO Tripathi. Take them both into custody.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 5.28,
+  "target_s": 5.6,
+  "lead_silence_s": 0.12,
+  "trail_silence_s": 0.24,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 4.92,
+  "speech_vs_target_pct": -12.1,
+  "pauses": [
+   [
+    0.76,
+    0.64
+   ],
+   [
+    3.18,
+    0.58
+   ]
+  ],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [
+   [
+    0.757,
+    0.643
+   ],
+   [
+    3.18,
+    0.593
+   ]
+  ],
+  "lufs": -17.5,
+  "true_peak_dbtp": -1.2,
+  "mean_db": -19.5,
+  "speech_rms_db": -17.6,
+  "voiced_ratio": 0.754,
+  "voiced_ratio_strict": 0.637,
+  "median_f0_hz": 166.7,
+  "segments": [
+   {
+    "t": [
+     0.12,
+     0.76
+    ],
+    "rms_db": -18.7,
+    "voiced_ratio": 0.66
+   },
+   {
+    "t": [
+     1.4,
+     3.18
+    ],
+    "rms_db": -18.5,
+    "voiced_ratio": 0.77
+   },
+   {
+    "t": [
+     3.76,
+     5.04
+    ],
+    "rms_db": -16.2,
+    "voiced_ratio": 0.79
+   }
+  ],
+  "last_0_5s_rms_db": -23.6,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": true,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "Verbatim. WORD CHECK passes: 'Bhaiyaji and SHO Tripathi' heard. Beat 0.64 s after 'Head Constable'. No tag spoken aloud. Voiced (0.754); no whisper fault. No hard-cut note. True peak -1.2 dBTP, over -1.5 (mix note, not a retake). Length is not a retake reason (D-0M2). Speech 4.92 s against target 5.6 s (-12.1%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l19",
+  "lang": "en",
+  "speaker": "pushpa",
+  "model": "eleven_v4",
+  "voice_id": "NU0iY2ULYR4TzJYPOm31",
+  "take": 1,
+  "text": "[deadpan] Zero is not zero any more, SHO sahab.",
+  "file": "voice/en/l19.mp3",
+  "generation_id": "1j362G6nRQzPzQDdQQnX",
+  "transcript": "Zero is not zero anymore, S.H.O. Sahab.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 3.6,
+  "target_s": 3.3,
+  "lead_silence_s": 0.2,
+  "trail_silence_s": 0.16,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 3.24,
+  "speech_vs_target_pct": -1.8,
+  "pauses": [],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [],
+  "lufs": -24.2,
+  "true_peak_dbtp": -8.9,
+  "mean_db": -24.6,
+  "speech_rms_db": -24.0,
+  "voiced_ratio": 0.818,
+  "voiced_ratio_strict": 0.747,
+  "median_f0_hz": 163.3,
+  "segments": [
+   {
+    "t": [
+     0.2,
+     2.26
+    ],
+    "rms_db": -22.6,
+    "voiced_ratio": 0.88
+   },
+   {
+    "t": [
+     2.38,
+     3.44
+    ],
+    "rms_db": -30.0,
+    "voiced_ratio": 0.69
+   }
+  ],
+  "last_0_5s_rms_db": -30.4,
+  "edge_blips_s": [
+   3.58
+  ],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "Verbatim ('anymore', 'S.H.O. Sahab'). A -44 dB blip at the last frame (ignored). No tag spoken aloud. Voiced (0.818); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 3.24 s against target 3.3 s (-1.8%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l20",
+  "lang": "en",
+  "speaker": "nandini",
+  "model": "eleven_v4",
+  "voice_id": "QpSjVAs2VI5btKzupPaD",
+  "take": 1,
+  "text": "[calm] And the eight hundred sacks won't come back, sir.",
+  "file": "voice/en/l20.mp3",
+  "generation_id": "qMqoDGg3LDFs2uBcgzKB",
+  "transcript": "and the 800 sacks won't come back, sir.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 3.04,
+  "target_s": 3.8,
+  "lead_silence_s": 0.04,
+  "trail_silence_s": 0.28,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 2.72,
+  "speech_vs_target_pct": -28.4,
+  "pauses": [],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [],
+  "lufs": -21.1,
+  "true_peak_dbtp": -6.0,
+  "mean_db": -21.4,
+  "speech_rms_db": -20.6,
+  "voiced_ratio": 0.691,
+  "voiced_ratio_strict": 0.65,
+  "median_f0_hz": 210.5,
+  "segments": [
+   {
+    "t": [
+     0.04,
+     2.76
+    ],
+    "rms_db": -20.6,
+    "voiced_ratio": 0.69
+   }
+  ],
+  "last_0_5s_rms_db": -30.2,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "Verbatim ('won't' kept). No tag spoken aloud. Voiced (0.691); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 2.72 s against target 3.8 s (-28.4%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l21",
+  "lang": "en",
+  "speaker": "nandini",
+  "model": "eleven_v4",
+  "voice_id": "QpSjVAs2VI5btKzupPaD",
+  "take": 1,
+  "text": "[quietly] They left right in front of me.",
+  "file": "voice/en/l21.mp3",
+  "generation_id": "wWpWVwxWietblLKRppbW",
+  "transcript": "They left right in front of me.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 2.32,
+  "target_s": 2.7,
+  "lead_silence_s": 0.02,
+  "trail_silence_s": 0.26,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.301
+  ],
+  "speech_span_s": 2.04,
+  "speech_vs_target_pct": -24.4,
+  "pauses": [],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [],
+  "lufs": -28.9,
+  "true_peak_dbtp": -4.1,
+  "mean_db": -31.8,
+  "speech_rms_db": -31.4,
+  "voiced_ratio": 0.101,
+  "voiced_ratio_strict": 0.051,
+  "median_f0_hz": 205.1,
+  "segments": [
+   {
+    "t": [
+     0.02,
+     2.06
+    ],
+    "rms_db": -31.4,
+    "voiced_ratio": 0.1
+   }
+  ],
+  "last_0_5s_rms_db": -35.1,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "retake",
+  "reason": "Verbatim ('They left right in front of me.'). No tag spoken aloud. WHISPERED where the note asks 'fully voiced' (lower than l20): voiced 0.10 (strict 0.05), -28.9 LUFS, flatness 0.090 (s1e01 known whisper 0.090), no pitch track. The Hindi take of the line is voiced (0.71). No hard-cut note. RETAKE: Lost voicing (D-0M2). Rung 2, not a second [quietly] roll: her [quietly] was tested only in Hindi, and her English [quietly] lines here all run breathy (l12 0.57, l26 second sentence 0.38) with this one a full whisper; s1e01 went to [low voice] the same way. Length is not a retake reason (D-0M2). Speech 2.04 s against target 2.7 s (-24.4%), for the edit.",
+  "ear_check": null,
+  "retake_text": "[calm] They left right in front of me.",
+  "d022_line_class": "voice-wanted",
+  "retake_text_reviewer": "[low voice] They left right in front of me.",
+  "retake_model": "eleven_v4",
+  "retake_take": 2,
+  "rule": "D-022",
+  "d022_note": "D-022 rule 1: script text with every quiet-family tag deleted, [calm] added because no tag was left"
+ },
+ {
+  "line_id": "l22",
+  "lang": "en",
+  "speaker": "dsp",
+  "model": "eleven_v4",
+  "voice_id": "yD3f554gXhA5NxImkyqU",
+  "take": 1,
+  "text": "[calm] Your transfer application, Joshi. Shall I sign it today?",
+  "file": "voice/en/l22.mp3",
+  "generation_id": "xFehsy82fg1fCys3DHAa",
+  "transcript": "Your transfer application. Joshi, shall I sign it today?",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 3.6,
+  "target_s": 4.5,
+  "lead_silence_s": 0.08,
+  "trail_silence_s": 0.22,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 3.3,
+  "speech_vs_target_pct": -26.7,
+  "pauses": [
+   [
+    1.84,
+    0.58
+   ]
+  ],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [
+   [
+    1.834,
+    0.563
+   ]
+  ],
+  "lufs": -22.8,
+  "true_peak_dbtp": -5.1,
+  "mean_db": -23.1,
+  "speech_rms_db": -21.5,
+  "voiced_ratio": 0.707,
+  "voiced_ratio_strict": 0.545,
+  "median_f0_hz": 166.7,
+  "segments": [
+   {
+    "t": [
+     0.08,
+     1.84
+    ],
+    "rms_db": -21.3,
+    "voiced_ratio": 0.66
+   },
+   {
+    "t": [
+     2.42,
+     3.38
+    ],
+    "rms_db": -21.7,
+    "voiced_ratio": 0.78
+   }
+  ],
+  "last_0_5s_rms_db": -22.5,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "Verbatim (whisper puts the stop after 'application'). Pause 0.58 s after 'Joshi'. No tag spoken aloud. Voiced (0.707); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 3.30 s against target 4.5 s (-26.7%), for the edit.",
+  "ear_check": "Light rise at 'today?'.",
+  "retake_text": null
+ },
+ {
+  "line_id": "l23",
+  "lang": "en",
+  "speaker": "nandini",
+  "model": "eleven_v4",
+  "voice_id": "QpSjVAs2VI5btKzupPaD",
+  "take": 1,
+  "text": "[calm] I am withdrawing it, sir.",
+  "file": "voice/en/l23.mp3",
+  "generation_id": "gsRBdHmTYFkc9D9XTlZl",
+  "transcript": "I'm withdrawing it, sir.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 1.76,
+  "target_s": 2.2,
+  "lead_silence_s": 0.08,
+  "trail_silence_s": 0.38,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.378
+  ],
+  "speech_span_s": 1.3,
+  "speech_vs_target_pct": -40.9,
+  "pauses": [],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [],
+  "lufs": -21.1,
+  "true_peak_dbtp": -5.3,
+  "mean_db": -21.7,
+  "speech_rms_db": -20.2,
+  "voiced_ratio": 0.836,
+  "voiced_ratio_strict": 0.787,
+  "median_f0_hz": 181.8,
+  "segments": [
+   {
+    "t": [
+     0.08,
+     1.38
+    ],
+    "rms_db": -20.2,
+    "voiced_ratio": 0.84
+   }
+  ],
+  "last_0_5s_rms_db": -28.2,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "Heard as 'I'm withdrawing it, sir.' by small greedy, small beam 5 and base, against 'I am'. No tag spoken aloud. Voiced (0.836); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 1.30 s against target 2.2 s (-40.9%), for the edit.",
+  "ear_check": "Does she say 'I am' or 'I'm'? Three decodes hear 'I'm'; the meaning is unchanged and whisper often fuses a quick 'I am', so it is not counted as a wrong word. If the ear hears 'I'm' and the owner wants the subtitle matched, retake '[calm] I am withdrawing it, sir.' as written.",
+  "retake_text": null
+ },
+ {
+  "line_id": "l24",
+  "lang": "en",
+  "speaker": "nandini",
+  "model": "eleven_v4",
+  "voice_id": "QpSjVAs2VI5btKzupPaD",
+  "take": 1,
+  "text": "[flatly] There are thirty FIRs pending here.",
+  "file": "voice/en/l24.mp3",
+  "generation_id": "jOZaf3nhLWqfg3p1Tjgq",
+  "transcript": "There are 30 FIRs pending here.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 2.64,
+  "target_s": 2.8,
+  "lead_silence_s": 0.04,
+  "trail_silence_s": 0.26,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 2.34,
+  "speech_vs_target_pct": -16.4,
+  "pauses": [],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [],
+  "lufs": -21.6,
+  "true_peak_dbtp": -6.8,
+  "mean_db": -21.9,
+  "speech_rms_db": -21.3,
+  "voiced_ratio": 0.77,
+  "voiced_ratio_strict": 0.681,
+  "median_f0_hz": 190.5,
+  "segments": [
+   {
+    "t": [
+     0.04,
+     2.38
+    ],
+    "rms_db": -21.3,
+    "voiced_ratio": 0.77
+   }
+  ],
+  "last_0_5s_rms_db": -28.0,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "Verbatim ('30 FIRs'). No tag spoken aloud. Voiced (0.77); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 2.34 s against target 2.8 s (-16.4%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l25",
+  "lang": "en",
+  "speaker": "nirala",
+  "model": "eleven_v4",
+  "voice_id": "x8QLi04vAqWNOHsZm7yK",
+  "take": 1,
+  "text": "[calm] I will plead guilty, madam. The uniform was fake.",
+  "file": "voice/en/l25.mp3",
+  "generation_id": "KvBMHsnMj5TIIIGiB2Ns",
+  "transcript": "I will plead guilty, madam. The uniform was fake.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 3.44,
+  "target_s": 4.4,
+  "lead_silence_s": 0.02,
+  "trail_silence_s": 0.22,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 3.2,
+  "speech_vs_target_pct": -27.3,
+  "pauses": [
+   [
+    1.46,
+    0.5
+   ]
+  ],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [
+   [
+    1.479,
+    0.464
+   ]
+  ],
+  "lufs": -20.8,
+  "true_peak_dbtp": -1.5,
+  "mean_db": -21.4,
+  "speech_rms_db": -20.3,
+  "voiced_ratio": 0.809,
+  "voiced_ratio_strict": 0.71,
+  "median_f0_hz": 129.0,
+  "segments": [
+   {
+    "t": [
+     0.02,
+     1.46
+    ],
+    "rms_db": -19.6,
+    "voiced_ratio": 0.85
+   },
+   {
+    "t": [
+     1.96,
+     3.22
+    ],
+    "rms_db": -21.3,
+    "voiced_ratio": 0.77
+   }
+  ],
+  "last_0_5s_rms_db": -29.2,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "Verbatim ('I will', no contraction). Beat 0.50 s at the full stop. No tag spoken aloud. Voiced (0.809); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 3.20 s against target 4.4 s (-27.3%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l26",
+  "lang": "en",
+  "speaker": "nandini",
+  "model": "eleven_v4",
+  "voice_id": "QpSjVAs2VI5btKzupPaD",
+  "take": 1,
+  "text": "[quietly] The work was real. Keep your cap straight.",
+  "file": "voice/en/l26.mp3",
+  "generation_id": "Bc3CMqlCxsBor4eq9PXw",
+  "transcript": "The walk was real. Keep your cap straight.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 2.96,
+  "target_s": 3.6,
+  "lead_silence_s": 0.02,
+  "trail_silence_s": 0.12,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 2.82,
+  "speech_vs_target_pct": -21.7,
+  "pauses": [
+   [
+    1.3,
+    0.46
+   ]
+  ],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [
+   [
+    1.234,
+    0.533
+   ]
+  ],
+  "lufs": -27.3,
+  "true_peak_dbtp": -9.6,
+  "mean_db": -29.7,
+  "speech_rms_db": -28.6,
+  "voiced_ratio": 0.532,
+  "voiced_ratio_strict": 0.405,
+  "median_f0_hz": 190.5,
+  "segments": [
+   {
+    "t": [
+     0.02,
+     1.3
+    ],
+    "rms_db": -28.3,
+    "voiced_ratio": 0.64
+   },
+   {
+    "t": [
+     1.76,
+     2.84
+    ],
+    "rms_db": -29.2,
+    "voiced_ratio": 0.38
+   }
+  ],
+  "last_0_5s_rms_db": -29.6,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": true,
+  "verdict": "ok",
+  "reason": "Heard 'The walk was real. Keep your cap straight.' (small and base): 'walk' for 'work'. No tag spoken aloud. Voiced (0.532); no whisper fault. Quiet throughout (-27.3 LUFS); first sentence voiced 0.64, second 0.38 (breathy). HARD CUT met: 0.46 s pause after 'The work was real.' (silencedetect 0.53 s). Length is not a retake reason (D-0M2). Speech 2.82 s against target 3.6 s (-21.7%), for the edit.",
+  "ear_check": "Is it 'work', not 'walk'? Whisper small and base both hear 'walk'; an Indian-English 'work' often decodes so. 'Keep your cap straight.' breathy (0.38).",
+  "retake_text": null
+ },
+ {
+  "line_id": "l27",
+  "lang": "en",
+  "speaker": "pushpa",
+  "model": "eleven_v4",
+  "voice_id": "NU0iY2ULYR4TzJYPOm31",
+  "take": 1,
+  "text": "[calm] Madam, the bench is full.",
+  "file": "voice/en/l27.mp3",
+  "generation_id": "awm1bamq17Ty36Fbl8Zp",
+  "transcript": "Madam, the bench is full.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli), ggml-small (~/.whisper-models/ggml-small.bin), greedy, no prompt, script not given; Hindi takes: `transcript` is the -l hi pass, `transcript_en_pass` the -l en pass (translates more than it transliterates; shows whether Latin words and the sense were heard). Segment cuts, beam 5 and ggml-base re-runs where the reason says so. A check on words, not a timing source (D-0M2).",
+  "measure_source": "ffprobe duration; ffmpeg ebur128 (LUFS, true peak), volumedetect (mean_db), silencedetect -40 dB / 0.3 s (lead_trail_silencedetect_s, silencedetect_internal_ge300ms). Frame measures (pure Python on ffmpeg-decoded PCM): 20 ms frames, speech = within 35 dB of the loudest frame (floor -55 dBFS), isolated 1-2 frame blips at the file edges ignored (edge_blips_s); lead/trail/pauses from that; pauses >= 0.30 s, short gaps 0.20-0.30 s, as [start_s, length_s]. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 40 ms window, 70-444 Hz) is >= 0.6 (strict >= 0.75). Calibration on this method: s1e01 en l16 take 1 (a known whisper) 0.12; accepted quiet voiced takes 0.41-0.59 (s1e01 en l26, en l04, hi l24; s2 casting nirala_t4_en first sentence 0.41). Whisper line here: < 0.25 on a whole line or sentence; 0.25-0.40 breathy, ear list. None of these hear acting, accent or timbre.",
+  "duration_s": 2.24,
+  "target_s": 2.2,
+  "lead_silence_s": 0.16,
+  "trail_silence_s": 0.22,
+  "lead_trail_silencedetect_s": [
+   0.0,
+   0.0
+  ],
+  "speech_span_s": 1.86,
+  "speech_vs_target_pct": -15.5,
+  "pauses": [],
+  "short_gaps_200_300ms": [],
+  "silencedetect_internal_ge300ms": [],
+  "lufs": -24.4,
+  "true_peak_dbtp": -4.8,
+  "mean_db": -24.7,
+  "speech_rms_db": -23.6,
+  "voiced_ratio": 0.929,
+  "voiced_ratio_strict": 0.776,
+  "median_f0_hz": 190.5,
+  "segments": [
+   {
+    "t": [
+     0.16,
+     0.74
+    ],
+    "rms_db": -22.0,
+    "voiced_ratio": 1.0
+   },
+   {
+    "t": [
+     0.9,
+     2.02
+    ],
+    "rms_db": -24.7,
+    "voiced_ratio": 0.89
+   }
+  ],
+  "last_0_5s_rms_db": -28.3,
+  "edge_blips_s": [],
+  "peak_over_minus1_5_dbtp": false,
+  "hard_cut_note": false,
+  "verdict": "ok",
+  "reason": "Verbatim. No tag spoken aloud. Voiced (0.929); no whisper fault. No hard-cut note. Length is not a retake reason (D-0M2). Speech 1.86 s against target 2.2 s (-15.5%), for the edit.",
+  "ear_check": null,
+  "retake_text": null
+ },
+ {
+  "line_id": "l05",
+  "lang": "en",
+  "speaker": "dsp",
+  "voice_id": "yD3f554gXhA5NxImkyqU",
+  "model": "eleven_v4",
+  "file": "voice/en/l05_t2.mp3",
+  "take": 2,
+  "text": "[calm] Not now, Joshi.",
+  "generation_id": "j9uBEF5f2YClOT5Ds6Aj",
+  "script_text_bare": "Not now, Joshi.",
+  "transcript": "Not now, Joshi.",
+  "transcript_base": "Not now, Joshi.",
+  "transcript_checks": null,
+  "transcript_source": "local whisper.cpp 1.8.x (/opt/homebrew/bin/whisper-cli), ggml-small.bin forced to the take's language (transcript), Hindi takes also -l en (transcript_en_pass), ggml-base.bin second pass (transcript_base); greedy, no prompt, script not given; cut re-runs in transcript_checks",
+  "duration_s": 1.76,
+  "speech_s": 1.36,
+  "lead_silence_s": 0.16,
+  "trail_silence_s": 0.24,
+  "gaps_ge150ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.183,
+   "trail_s": 0.275,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -24.7,
+  "ff_mean_db": -25.9,
+  "ff_max_db": -9.7,
+  "voiced_ratio": 0.48,
+  "median_hz": 99,
+  "spectral_centroid_hz": 2344,
+  "spectral_flatness": 0.054,
+  "segments": [
+   {
+    "t": [
+     0.16,
+     1.52
+    ],
+    "rms_db": -24.8,
+    "voiced_ratio": 0.48,
+    "longest_unvoiced_s": 0.2,
+    "median_hz": 99
+   }
+  ],
+  "segments_ge0_5s_under_0_6": [
+   [
+    0.16,
+    1.52
+   ]
+  ],
+  "earlier_takes": [
+   {
+    "take": 1,
+    "text": "[quietly] Not now, Joshi.",
+    "voiced_ratio": 0.21,
+    "min_segment_ge0_5s": 0.21,
+    "transcript": "Not now, Joshi.",
+    "file": "series2/episodes/s2a03/voice/en/l05.t1.mp3"
+   }
+  ],
+  "measure_method": "ffmpeg decode, pure Python (copies of scratchpad s10_s1e01_review meas.py and seg.py, unchanged). Speech frames: 20 ms RMS within 35 dB of the take's loudest frame, floor -55 dBFS. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, lags 70-450 Hz) is 0.6 or more. segments: speech runs split at gaps of 150 ms or more, each with its own voiced_ratio. D-022 test: whole take and every segment of 0.5 s or more under 0.6 fails on a voice-wanted line. Nobody listened.",
+  "verdict": "retake",
+  "reason": "Script words present (transcript 'Not now, Joshi.', base 'Not now, Joshi.'). No tag spoken. Voiced 0.48 whole take, lowest segment of 0.5 s or more 0.48. Voice-wanted (as hi l05: fully voiced, never a whisper). [calm] take 2 measures 0.48 whole take, one segment 0.16-1.52 s at 0.48, -24.7 dB. Under 0.6. Words present ('Not now, Joshi.', both models). Next rung: bare line. Budget 3 to 4 takes (three words).",
+  "edit_note": null,
+  "retake_text": "Not now, Joshi.",
+  "retake_model": "eleven_v4",
+  "retake_take": 3,
+  "rule": "D-022",
+  "d022_line_class": "voice-wanted",
+  "review_scope": "D-022",
+  "ear_check": null,
+  "reviewer": "S10 voice director, D-022 round 2 (did not generate these takes)",
+  "date": "2026-11-26"
+ },
+ {
+  "line_id": "l07",
+  "lang": "en",
+  "speaker": "nandini",
+  "voice_id": "QpSjVAs2VI5btKzupPaD",
+  "model": "eleven_v4",
+  "file": "voice/en/l07_t2.mp3",
+  "take": 2,
+  "text": "[flatly] Accused: Balram Thakur, alias Bhaiyaji. Offence: extortion.",
+  "generation_id": "clZCZvI2WFLJjzI0s8Yq",
+  "script_text_bare": "Accused: Balram Thakur, alias Bhaiyaji. Offence: extortion.",
+  "transcript": "Accused. Balran Bhakur, alias Bhayaji. Offense. Extortion.",
+  "transcript_base": "accused Balran Pakur, alias Bhayaji, offense extortion.",
+  "transcript_checks": "Cut 0-2.2 s: small 'Accused. Balran Thakur.', base 'accused Balran Bhakur.'; cut 2.2-5.6 s: 'alias bhaiyaji. Offense, extortion.' (both models).",
+  "transcript_source": "local whisper.cpp 1.8.x (/opt/homebrew/bin/whisper-cli), ggml-small.bin forced to the take's language (transcript), Hindi takes also -l en (transcript_en_pass), ggml-base.bin second pass (transcript_base); greedy, no prompt, script not given; cut re-runs in transcript_checks",
+  "duration_s": 5.6,
+  "speech_s": 5.43,
+  "lead_silence_s": 0.03,
+  "trail_silence_s": 0.14,
+  "gaps_ge150ms": [
+   [
+    0.69,
+    1.1,
+    0.41
+   ],
+   [
+    2.09,
+    2.31,
+    0.22
+   ],
+   [
+    3.4,
+    3.86,
+    0.46
+   ],
+   [
+    4.43,
+    4.71,
+    0.28
+   ]
+  ],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.149,
+   "pauses_ge300ms": [
+    [
+     0.7,
+     1.1,
+     0.4
+    ],
+    [
+     3.39,
+     3.86,
+     0.47
+    ]
+   ]
+  },
+  "speech_rms_db": -20.9,
+  "ff_mean_db": -22.5,
+  "ff_max_db": -1.7,
+  "voiced_ratio": 0.69,
+  "median_hz": 178,
+  "spectral_centroid_hz": 2267,
+  "spectral_flatness": 0.041,
+  "segments": [
+   {
+    "t": [
+     0.04,
+     0.68
+    ],
+    "rms_db": -23.1,
+    "voiced_ratio": 0.75,
+    "longest_unvoiced_s": 0.04,
+    "median_hz": 162
+   },
+   {
+    "t": [
+     1.1,
+     2.08
+    ],
+    "rms_db": -17.4,
+    "voiced_ratio": 0.84,
+    "longest_unvoiced_s": 0.06,
+    "median_hz": 205
+   },
+   {
+    "t": [
+     2.3,
+     3.4
+    ],
+    "rms_db": -21.1,
+    "voiced_ratio": 0.89,
+    "longest_unvoiced_s": 0.06,
+    "median_hz": 178
+   },
+   {
+    "t": [
+     3.86,
+     4.24
+    ],
+    "rms_db": -20.4,
+    "voiced_ratio": 0.74,
+    "longest_unvoiced_s": 0.1,
+    "median_hz": 157
+   },
+   {
+    "t": [
+     4.7,
+     5.46
+    ],
+    "rms_db": -25.4,
+    "voiced_ratio": 0.59,
+    "longest_unvoiced_s": 0.1,
+    "median_hz": 168
+   }
+  ],
+  "segments_ge0_5s_under_0_6": [
+   [
+    4.7,
+    5.46
+   ]
+  ],
+  "earlier_takes": [
+   {
+    "take": 1,
+    "text": "[flatly] Accused: Balram Thakur, alias Bhaiyaji. Offence: extortion.",
+    "voiced_ratio": 0.69,
+    "min_segment_ge0_5s": 0.55,
+    "transcript": "Accused. Balran Thakur, alias Bhaiyaji. Offense, extortion.",
+    "file": "series2/episodes/s2a03/voice/en/l07.t1.mp3"
+   }
+  ],
+  "measure_method": "ffmpeg decode, pure Python (copies of scratchpad s10_s1e01_review meas.py and seg.py, unchanged). Speech frames: 20 ms RMS within 35 dB of the take's loudest frame, floor -55 dBFS. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, lags 70-450 Hz) is 0.6 or more. segments: speech runs split at gaps of 150 ms or more, each with its own voiced_ratio. D-022 test: whole take and every segment of 0.5 s or more under 0.6 fails on a voice-wanted line. Nobody listened.",
+  "verdict": "ok",
+  "reason": "Script words present (transcript 'Accused. Balran Bhakur, alias Bhayaji. Offense. Extortion.', base 'accused Balran Pakur, alias Bhayaji, offense extortion.'). No tag spoken. Voiced 0.69 whole take, lowest segment of 0.5 s or more 0.59. Retake reason was the hard cut after 'Balram Thakur' (note: at least 0.3 s). Take 2 still has a short gap there: 0.22 s by frames (2.09-2.31 s), silencedetect 0.24 s at -35 dB, 0.22 s at -40 dB, 0.20 s at -45 and -50 dB. Words present (cuts: 'Accused. Balran Thakur.' / 'alias bhaiyaji. Offense, extortion.'). Not retaken: the gap is clean silence below -50 dB for 0.20 s, so the edit can open it to 0.3 s or more at 2.09-2.29 s without touching a word; a third paid take at the cap would not be more certain than that. Director's call against the note's retake clause; edit instruction below. Other line: voicing not judged, 0.69.",
+  "edit_note": "Edit: open the gap after 'Thakur' (2.09-2.29 s, below -50 dB) to at least 0.3 s for the hard cut.",
+  "retake_text": null,
+  "retake_model": null,
+  "retake_take": null,
+  "rule": "D-022",
+  "d022_line_class": "other",
+  "review_scope": "D-022",
+  "ear_check": "Hard-cut pause 0.20-0.24 s, opened in the edit.",
+  "reviewer": "S10 voice director, D-022 round 2 (did not generate these takes)",
+  "date": "2026-11-26"
+ },
+ {
+  "line_id": "l21",
+  "lang": "en",
+  "speaker": "nandini",
+  "voice_id": "QpSjVAs2VI5btKzupPaD",
+  "model": "eleven_v4",
+  "file": "voice/en/l21_t2.mp3",
+  "take": 2,
+  "text": "[calm] They left right in front of me.",
+  "generation_id": "yowxgr0RQngmNm7D8PPn",
+  "script_text_bare": "They left right in front of me.",
+  "transcript": "They left right in front of me.",
+  "transcript_base": "They left right in front of me.",
+  "transcript_checks": null,
+  "transcript_source": "local whisper.cpp 1.8.x (/opt/homebrew/bin/whisper-cli), ggml-small.bin forced to the take's language (transcript), Hindi takes also -l en (transcript_en_pass), ggml-base.bin second pass (transcript_base); greedy, no prompt, script not given; cut re-runs in transcript_checks",
+  "duration_s": 2.16,
+  "speech_s": 1.83,
+  "lead_silence_s": 0.04,
+  "trail_silence_s": 0.29,
+  "gaps_ge150ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.092,
+   "trail_s": 0.308,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -21.7,
+  "ff_mean_db": -22.5,
+  "ff_max_db": -8.9,
+  "voiced_ratio": 0.72,
+  "median_hz": 178,
+  "spectral_centroid_hz": 2777,
+  "spectral_flatness": 0.054,
+  "segments": [
+   {
+    "t": [
+     0.04,
+     1.86
+    ],
+    "rms_db": -21.7,
+    "voiced_ratio": 0.73,
+    "longest_unvoiced_s": 0.2,
+    "median_hz": 178
+   }
+  ],
+  "segments_ge0_5s_under_0_6": [],
+  "earlier_takes": [
+   {
+    "take": 1,
+    "text": "[quietly] They left right in front of me.",
+    "voiced_ratio": 0.15,
+    "min_segment_ge0_5s": 0.15,
+    "transcript": "They left right in front of me.",
+    "file": "series2/episodes/s2a03/voice/en/l21.t1.mp3"
+   }
+  ],
+  "measure_method": "ffmpeg decode, pure Python (copies of scratchpad s10_s1e01_review meas.py and seg.py, unchanged). Speech frames: 20 ms RMS within 35 dB of the take's loudest frame, floor -55 dBFS. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, lags 70-450 Hz) is 0.6 or more. segments: speech runs split at gaps of 150 ms or more, each with its own voiced_ratio. D-022 test: whole take and every segment of 0.5 s or more under 0.6 fails on a voice-wanted line. Nobody listened.",
+  "verdict": "ok",
+  "reason": "Script words present (transcript 'They left right in front of me.', base 'They left right in front of me.'). No tag spoken. Voiced 0.72 whole take, lowest segment of 0.5 s or more 0.73. D-022 test passed (0.6).",
+  "edit_note": null,
+  "retake_text": null,
+  "retake_model": null,
+  "retake_take": null,
+  "rule": "D-022",
+  "d022_line_class": "voice-wanted",
+  "review_scope": "D-022",
+  "ear_check": null,
+  "reviewer": "S10 voice director, D-022 round 2 (did not generate these takes)",
+  "date": "2026-11-26"
+ },
+ {
+  "line_id": "l05",
+  "lang": "en",
+  "speaker": "dsp",
+  "voice_id": "yD3f554gXhA5NxImkyqU",
+  "model": "eleven_v4",
+  "file": "voice/en/l05_t3.mp3",
+  "take": 3,
+  "text": "Not now, Joshi.",
+  "generation_id": "2DIqbPNnzNUdMYX5Tt43",
+  "script_text_bare": "Not now, Joshi.",
+  "transcript": "Not now, Joshi.",
+  "transcript_base": "Not now, Joshi.",
+  "transcript_checks": null,
+  "transcript_source": "local whisper.cpp 1.8.x (/opt/homebrew/bin/whisper-cli), ggml-small.bin forced to the take's language (transcript), Hindi takes also -l en (transcript_en_pass), ggml-base.bin second pass (transcript_base); greedy, no prompt, script not given; cut re-runs in transcript_checks. Every take of the line re-transcribed in this pass.",
+  "duration_s": 1.6,
+  "speech_s": 1.28,
+  "lead_silence_s": 0.02,
+  "trail_silence_s": 0.3,
+  "gaps_ge150ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.297,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -22.8,
+  "ff_mean_db": -24.0,
+  "ff_max_db": -4.5,
+  "voiced_ratio": 0.72,
+  "min_segment_ge0_5s": 0.72,
+  "median_hz": 118,
+  "spectral_centroid_hz": 1752,
+  "spectral_flatness": 0.048,
+  "segments": [
+   {
+    "t": [
+     0.02,
+     1.3
+    ],
+    "rms_db": -22.8,
+    "voiced_ratio": 0.72,
+    "longest_unvoiced_s": 0.16,
+    "median_hz": 118
+   }
+  ],
+  "segments_ge0_5s_under_0_6": [],
+  "earlier_takes": [
+   {
+    "take": 1,
+    "text": "[quietly] Not now, Joshi.",
+    "voiced_ratio": 0.21,
+    "min_segment_ge0_5s": 0.21,
+    "transcript": "Not now, Joshi.",
+    "transcript_base": "Not now, Joshi."
+   },
+   {
+    "take": 2,
+    "text": "[calm] Not now, Joshi.",
+    "voiced_ratio": 0.48,
+    "min_segment_ge0_5s": 0.48,
+    "transcript": "Not now, Joshi.",
+    "transcript_base": "Not now, Joshi."
+   }
+  ],
+  "measure_method": "ffmpeg decode, pure Python (copies of scratchpad s10_d022_r2 meas.py and seg.py, which are copies of s10_s1e01_review's; unchanged). Speech frames: 20 ms RMS within 35 dB of the take's loudest frame, floor -55 dBFS. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, lags 70-450 Hz) is 0.6 or more. segments: speech runs split at gaps of 150 ms or more. D-022 test: whole take and every segment of 0.5 s or more under 0.6 fails on a voice-wanted line. All earlier takes re-measured in this pass. Nobody listened.",
+  "verdict": "ok",
+  "reason": "Bare line passes: 0.72 whole, one segment 0.72 (take 2 [calm] 0.48). Line final on take 3 (l05.mp3 is take 3, checksum match).",
+  "retake_text": null,
+  "retake_model": null,
+  "retake_take": null,
+  "final_take": 3,
+  "final_file": "voice/en/l05.mp3",
+  "line_final": true,
+  "rule": "D-022",
+  "d022_line_class": "voice-wanted",
+  "review_scope": "D-022 round 2 retakes (content/retakes-D022-round2.json)",
+  "ear_check": null,
+  "reviewer": "S10 voice director, D-022 round 2 retake check (did not generate these takes)",
+  "date": "2026-11-26"
+ }
+]

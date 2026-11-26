@@ -1,0 +1,175 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,150"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 150
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,150",
+				"to": "00:00:00,220"
+			},
+			"offsets": {
+				"from": 150,
+				"to": 220
+			},
+			"text": " My"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,220",
+				"to": "00:00:00,660"
+			},
+			"offsets": {
+				"from": 220,
+				"to": 660
+			},
+			"text": " real"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,660",
+				"to": "00:00:01,110"
+			},
+			"offsets": {
+				"from": 660,
+				"to": 1110
+			},
+			"text": " name"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,110",
+				"to": "00:00:01,320"
+			},
+			"offsets": {
+				"from": 1110,
+				"to": 1320
+			},
+			"text": " is"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,320",
+				"to": "00:00:02,180"
+			},
+			"offsets": {
+				"from": 1320,
+				"to": 2180
+			},
+			"text": " Aditya."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,180",
+				"to": "00:00:02,430"
+			},
+			"offsets": {
+				"from": 2180,
+				"to": 2430
+			},
+			"text": " Your"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,430",
+				"to": "00:00:02,910"
+			},
+			"offsets": {
+				"from": 2430,
+				"to": 2910
+			},
+			"text": " marriage"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,910",
+				"to": "00:00:03,290"
+			},
+			"offsets": {
+				"from": 2910,
+				"to": 3290
+			},
+			"text": " bureau"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,290",
+				"to": "00:00:03,520"
+			},
+			"offsets": {
+				"from": 3290,
+				"to": 3520
+			},
+			"text": " has"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,520",
+				"to": "00:00:03,530"
+			},
+			"offsets": {
+				"from": 3520,
+				"to": 3530
+			},
+			"text": " a"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,530",
+				"to": "00:00:03,780"
+			},
+			"offsets": {
+				"from": 3530,
+				"to": 3780
+			},
+			"text": " fake"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,780",
+				"to": "00:00:04,240"
+			},
+			"offsets": {
+				"from": 3780,
+				"to": 4240
+			},
+			"text": " one."
+		}
+	]
+}

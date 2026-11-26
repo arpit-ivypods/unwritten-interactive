@@ -1,0 +1,153 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,070"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 70
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,070",
+				"to": "00:00:00,200"
+			},
+			"offsets": {
+				"from": 70,
+				"to": 200
+			},
+			"text": " आज"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,200",
+				"to": "00:00:00,400"
+			},
+			"offsets": {
+				"from": 200,
+				"to": 400
+			},
+			"text": " वो"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,400",
+				"to": "00:00:01,000"
+			},
+			"offsets": {
+				"from": 400,
+				"to": 1000
+			},
+			"text": " स्मेहा"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,000",
+				"to": "00:00:01,300"
+			},
+			"offsets": {
+				"from": 1000,
+				"to": 1300
+			},
+			"text": " बनी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,300",
+				"to": "00:00:01,800"
+			},
+			"offsets": {
+				"from": 1300,
+				"to": 1800
+			},
+			"text": " है."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,800",
+				"to": "00:00:02,080"
+			},
+			"offsets": {
+				"from": 1800,
+				"to": 2080
+			},
+			"text": " पर"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,080",
+				"to": "00:00:02,200"
+			},
+			"offsets": {
+				"from": 2080,
+				"to": 2200
+			},
+			"text": " है"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,200",
+				"to": "00:00:02,440"
+			},
+			"offsets": {
+				"from": 2200,
+				"to": 2440
+			},
+			"text": " तो"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,440",
+				"to": "00:00:02,920"
+			},
+			"offsets": {
+				"from": 2440,
+				"to": 2920
+			},
+			"text": " मेरी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,920",
+				"to": "00:00:03,600"
+			},
+			"offsets": {
+				"from": 2920,
+				"to": 3600
+			},
+			"text": " किरण."
+		}
+	]
+}

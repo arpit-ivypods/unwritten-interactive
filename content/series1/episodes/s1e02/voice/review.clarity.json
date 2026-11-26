@@ -1,0 +1,1146 @@
+{
+ "schema": "voice-review-clarity/1",
+ "episode": "s1e02",
+ "reviewer": "S10 voice director (directed these takes; did not generate them)",
+ "date": "26 Nov 2026",
+ "rule": "D-025 clarity re-voice, judged on D-022 and voice/takes.clarity.<lang>.json notes",
+ "method": "Local only. Transcripts: whisper.cpp whisper-cli ggml-small, greedy, no prompt, script not given: -l <lang>; Hindi takes also -l en (transcript_latin_pass, shows whether the English words were heard); every take also -l auto (language id). Doubtful words: each speech segment cut (+-0.08 s) and transcribed alone with ggml-small, plus ggml-base as a second model (ggml-large-v3-q5_0 is not in ~/.whisper-models, so it was not used). Measures: copies of the D-022 round-3 meas.py and seg.py, unchanged: speech frames are 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); voiced_ratio is the share of speech frames with normalised autocorrelation (8 kHz, 70-450 Hz lags) of 0.6 or more; segments split at gaps of 150 ms or more. D-022 test on voice-wanted lines: whole take and every segment of 0.5 s or more that carries script words at 0.6 or more. Segments that hold only a tagged sigh or laugh are not word-carrying. Nobody listened.",
+ "counts": {
+  "takes": 22,
+  "accept": 20,
+  "retake": 2
+ },
+ "edit_pick": "The edit reads voice/manifest.jsonl and voice/review.json, not this file. Each clarity row's manifest take was renumbered to the line's next take, and a matching row (verdict ok or retake, model eleven_v4) was appended to review.json, so build_timeline.py cuts in the .c1 take. A retake verdict keeps the .c1 take in the cut until a .c2 exists.",
+ "takes": [
+  {
+   "line_id": "l03",
+   "lang": "hi",
+   "speaker": "kiran",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series1/episodes/s1e02/voice/hi/l03.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[flatly] तो ये दूध मैं ही पी लेती हूँ।",
+   "verdict": "accept",
+   "reasons": "Words heard: 'तो ये दूद मही पीरेते हूं'; Latin pass 'So, I drink this milk only.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.79 whole take; lowest word-carrying segment of 0.5 s or more 0.79. No tag word in either transcript. Language: auto-id hi (0.99). No cut-off: 0.12 s before the first speech frame, 0.223 s of silence after the last; peak -2.9 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "तो ये दूद मही पीरेते हूं",
+   "transcript_latin_pass": "So, I drink this milk only.",
+   "transcript_auto": "तो ये दूद मही पीरेते हूं",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.989,
+   "voiced_ratio": 0.79,
+   "duration": 2.64,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -18.3,
+   "ff_max_db": -2.9,
+   "lead_s": 0.12,
+   "trail_s": 0.223,
+   "flatness": 0.036,
+   "centroid_hz": 1894,
+   "median_hz": 200,
+   "segments": [
+    {
+     "t": [
+      0.12,
+      2.42
+     ],
+     "rms_db": -18.3,
+     "voiced_ratio": 0.79,
+     "longest_unvoiced_s": 0.18,
+     "median_hz": 200
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l06",
+   "lang": "hi",
+   "speaker": "kiran",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series1/episodes/s1e02/voice/hi/l06.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[flatly] मेरे बिना मौसी का दरवाज़ा नहीं खुलेगा।",
+   "verdict": "accept",
+   "reasons": "Words heard: 'मेरे बिना मोसी का दर्वाजा नहीं खुलेगा'; Latin pass 'My aunt's door won't open without me.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.87 whole take; lowest word-carrying segment of 0.5 s or more 0.9. No tag word in either transcript. Language: auto-id hi (0.88). No cut-off: 0.2 s before the first speech frame, 0.223 s of silence after the last; peak -2.7 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "मेरे बिना मोसी का दर्वाजा नहीं खुलेगा.",
+   "transcript_latin_pass": "My aunt's door won't open without me.",
+   "transcript_auto": "मेरे बिना मोसी का दर्वाजा नहीं खुलेगा.",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.885,
+   "voiced_ratio": 0.87,
+   "duration": 3.04,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -18.2,
+   "ff_max_db": -2.7,
+   "lead_s": 0.2,
+   "trail_s": 0.223,
+   "flatness": 0.035,
+   "centroid_hz": 1887,
+   "median_hz": 195,
+   "segments": [
+    {
+     "t": [
+      0.2,
+      2.76
+     ],
+     "rms_db": -18.1,
+     "voiced_ratio": 0.9,
+     "longest_unvoiced_s": 0.08,
+     "median_hz": 195
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l13",
+   "lang": "hi",
+   "speaker": "kiran",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series1/episodes/s1e02/voice/hi/l13.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[flatly] बहुत हुआ, तो जागने वाले को बिल्लू के लड़कों का एक थप्पड़।",
+   "verdict": "retake",
+   "reasons": "Voiced 0.85, all segments pass. Doubtful word: 'थप्पड़' is heard with a 'ख' by three passes (ggml-small -l hi 'खब पड', -l en 'khap pad', ggml-base 'خبر'); on the earlier take of this line the same model heard 'थब पड़'. 'थप्पड़' is the line's last word and its point. Large-v3 is not installed, so this is not confirmed. My note: wrong words, resend the same text once. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "बहुत हूँ तो जागने वाले को बिल्लू के लगकों का एक खब पड.",
+   "transcript_latin_pass": "That's enough. The one who wakes up gets a slap from Billu's boys.",
+   "transcript_auto": "बहुत हूँ तो जागने वाले को बिल्लू के लगकों का एक खब पड.",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.992,
+   "voiced_ratio": 0.85,
+   "duration": 4.56,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -18.7,
+   "ff_max_db": -2.2,
+   "lead_s": 0.17,
+   "trail_s": 0.229,
+   "flatness": 0.032,
+   "centroid_hz": 2005,
+   "median_hz": 205,
+   "segments": [
+    {
+     "t": [
+      0.18,
+      1.04
+     ],
+     "rms_db": -21.9,
+     "voiced_ratio": 0.77,
+     "longest_unvoiced_s": 0.14,
+     "median_hz": 167
+    },
+    {
+     "t": [
+      1.4,
+      4.34
+     ],
+     "rms_db": -18.0,
+     "voiced_ratio": 0.89,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 211
+    }
+   ],
+   "whisper_wanted": false,
+   "diagnosis": "doubtful word",
+   "retake_text": "[flatly] बहुत हुआ, तो जागने वाले को बिल्लू के लड़कों का एक थप्पड़।",
+   "retake_model": "eleven_v4",
+   "retake_take": 3,
+   "retake_file": "content/series1/episodes/s1e02/voice/hi/l13.c2.mp3"
+  },
+  {
+   "line_id": "l20",
+   "lang": "hi",
+   "speaker": "kiran",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series1/episodes/s1e02/voice/hi/l20.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[hesitant] और मैं? मौसी गईं, तो मेरे अठारह लाख भी गए, घर भी।",
+   "verdict": "accept",
+   "reasons": "Words heard: 'और मैं, मुसी गई, तो मेरे 18 लाग भी गय, गर भी'; Latin pass 'And when I went to the aunt, my 18 lakhs went home too.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.81 whole take; lowest word-carrying segment of 0.5 s or more 0.73. No tag word in either transcript. Language: auto-id hi (0.99). No cut-off: 0.17 s before the first speech frame, 0.248 s of silence after the last; peak -4.5 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "और मैं, मुसी गई, तो मेरे 18 लाग भी गय, गर भी.",
+   "transcript_latin_pass": "And when I went to the aunt, my 18 lakhs went home too.",
+   "transcript_auto": "और मैं, मुसी गई, तो मेरे 18 लाग भी गय, गर भी.",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.991,
+   "voiced_ratio": 0.81,
+   "duration": 5.6,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -18.8,
+   "ff_max_db": -4.5,
+   "lead_s": 0.17,
+   "trail_s": 0.248,
+   "flatness": 0.043,
+   "centroid_hz": 2155,
+   "median_hz": 216,
+   "segments": [
+    {
+     "t": [
+      0.18,
+      0.92
+     ],
+     "rms_db": -20.8,
+     "voiced_ratio": 0.73,
+     "longest_unvoiced_s": 0.2,
+     "median_hz": 216
+    },
+    {
+     "t": [
+      1.46,
+      4.44
+     ],
+     "rms_db": -18.3,
+     "voiced_ratio": 0.81,
+     "longest_unvoiced_s": 0.2,
+     "median_hz": 229
+    },
+    {
+     "t": [
+      4.72,
+      5.3
+     ],
+     "rms_db": -19.5,
+     "voiced_ratio": 0.93,
+     "longest_unvoiced_s": 0.02,
+     "median_hz": 174
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l23",
+   "lang": "hi",
+   "speaker": "mausi",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series1/episodes/s1e02/voice/hi/l23.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] दो बजे किरण से पूछूँगी, दामाद जी ने दूध पी लिया?",
+   "verdict": "accept",
+   "reasons": "Words heard: 'दोबजे किरन से पूछूँँँँँँँँँँँँँँँ. दामाज जीने दूद पीलिया'; Latin pass '(Speaks in Hindi)'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.89 whole take; lowest word-carrying segment of 0.5 s or more 0.85. No tag word in either transcript. Language: auto-id hi (1.00). No cut-off: 0.14 s before the first speech frame, 0.341 s of silence after the last; peak -8.7 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "दोबजे किरन से पूछूँँँँँँँँँँँँँँँ. दामाज जीने दूद पीलिया.",
+   "transcript_latin_pass": "(Speaks in Hindi)",
+   "transcript_auto": "दोबजे किरन से पूछूँँँँँँँँँँँँँँँ. दामाज जीने दूद पीलिया.",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.997,
+   "voiced_ratio": 0.89,
+   "duration": 4.16,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -25.8,
+   "ff_max_db": -8.7,
+   "lead_s": 0.14,
+   "trail_s": 0.341,
+   "flatness": 0.054,
+   "centroid_hz": 2063,
+   "median_hz": 205,
+   "segments": [
+    {
+     "t": [
+      0.14,
+      1.64
+     ],
+     "rms_db": -24.9,
+     "voiced_ratio": 0.85,
+     "longest_unvoiced_s": 0.1,
+     "median_hz": 205
+    },
+    {
+     "t": [
+      2.14,
+      3.84
+     ],
+     "rms_db": -26.6,
+     "voiced_ratio": 0.94,
+     "longest_unvoiced_s": 0.04,
+     "median_hz": 205
+    }
+   ],
+   "whisper_wanted": false,
+   "ear_check": "Whole-take ASR looped on 'पूछूँगी'; both segments cut alone are right."
+  },
+  {
+   "line_id": "l31",
+   "lang": "hi",
+   "speaker": "aditya",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series1/episodes/s1e02/voice/hi/l31.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] तुम वो होतीं, तो ये नाम नहीं देतीं।",
+   "verdict": "accept",
+   "reasons": "Words heard: 'तुम वो हुतीं तो ये नाम नहीं देतीं।'; Latin pass 'If you are that person, then you don't give this name.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.88 whole take; lowest word-carrying segment of 0.5 s or more 0.87. No tag word in either transcript. Language: auto-id hi (0.80). No cut-off: 0.06 s before the first speech frame, 0.191 s of silence after the last; peak -5.4 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "तुम वो हुतीं तो ये नाम नहीं देतीं।",
+   "transcript_latin_pass": "If you are that person, then you don't give this name.",
+   "transcript_auto": "तुम वो हुतीं तो ये नाम नहीं देतीं।",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.798,
+   "voiced_ratio": 0.88,
+   "duration": 2.96,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -16.3,
+   "ff_max_db": -5.4,
+   "lead_s": 0.06,
+   "trail_s": 0.191,
+   "flatness": 0.023,
+   "centroid_hz": 1046,
+   "median_hz": 110,
+   "segments": [
+    {
+     "t": [
+      0.06,
+      1.14
+     ],
+     "rms_db": -15.0,
+     "voiced_ratio": 0.87,
+     "longest_unvoiced_s": 0.04,
+     "median_hz": 119
+    },
+    {
+     "t": [
+      1.54,
+      2.7
+     ],
+     "rms_db": -17.8,
+     "voiced_ratio": 0.88,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 108
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l32",
+   "lang": "hi",
+   "speaker": "kiran",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series1/episodes/s1e02/voice/hi/l32.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] सब ठीक रहा, तो तीन बजे गाड़ी हमें मौसी तक ले जाएगी।",
+   "verdict": "accept",
+   "reasons": "Words heard: 'सब टीक रहा, तो तीन बजे गाडी हमें माँसी तक लेजाएगी'; Latin pass 'Everything was fine, so at 3 o'clock the car would take us to the auntie.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.85 whole take; lowest word-carrying segment of 0.5 s or more 0.86. No tag word in either transcript. Language: auto-id hi (1.00). No cut-off: 0.09 s before the first speech frame, 0.221 s of silence after the last; peak -4.2 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "सब टीक रहा, तो तीन बजे गाडी हमें माँसी तक लेजाएगी.",
+   "transcript_latin_pass": "Everything was fine, so at 3 o'clock the car would take us to the auntie.",
+   "transcript_auto": "सब टीक रहा, तो तीन बजे गाडी हमें माँसी तक लेजाएगी.",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.997,
+   "voiced_ratio": 0.85,
+   "duration": 4.48,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -18.4,
+   "ff_max_db": -4.2,
+   "lead_s": 0.09,
+   "trail_s": 0.221,
+   "flatness": 0.043,
+   "centroid_hz": 2074,
+   "median_hz": 200,
+   "segments": [
+    {
+     "t": [
+      0.2,
+      1.04
+     ],
+     "rms_db": -21.1,
+     "voiced_ratio": 0.86,
+     "longest_unvoiced_s": 0.08,
+     "median_hz": 190
+    },
+    {
+     "t": [
+      1.38,
+      4.26
+     ],
+     "rms_db": -17.6,
+     "voiced_ratio": 0.9,
+     "longest_unvoiced_s": 0.04,
+     "median_hz": 200
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l33",
+   "lang": "hi",
+   "speaker": "billu",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series1/episodes/s1e02/voice/hi/l33.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "जी मौसी, बोलो।",
+   "verdict": "accept",
+   "reasons": "Words heard: 'जी मोसी बुलो'; Latin pass 'Yes auntie, tell me.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.91 whole take; lowest word-carrying segment of 0.5 s or more 0.9. No tag word in either transcript. Language: auto-id hi (0.96). No cut-off: 0.01 s before the first speech frame, 0.307 s of silence after the last; peak -8.0 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "जी मोसी बुलो",
+   "transcript_latin_pass": "Yes auntie, tell me.",
+   "transcript_auto": "जी मोसी बुलो",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.96,
+   "voiced_ratio": 0.91,
+   "duration": 1.52,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -22.4,
+   "ff_max_db": -8.0,
+   "lead_s": 0.01,
+   "trail_s": 0.307,
+   "flatness": 0.035,
+   "centroid_hz": 1422,
+   "median_hz": 113,
+   "segments": [
+    {
+     "t": [
+      0.02,
+      0.62
+     ],
+     "rms_db": -22.5,
+     "voiced_ratio": 0.9,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 107
+    },
+    {
+     "t": [
+      0.92,
+      1.24
+     ],
+     "rms_db": -22.1,
+     "voiced_ratio": 1.0,
+     "longest_unvoiced_s": 0.0,
+     "median_hz": 123
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l34",
+   "lang": "hi",
+   "speaker": "kiran",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series1/episodes/s1e02/voice/hi/l34.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] और सुबह तक दुल्हन ग़ायब।",
+   "verdict": "accept",
+   "reasons": "Words heard: 'और सुभातक दुल्हन गायब'; Latin pass 'And in the morning, the bride is gone.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.75 whole take; lowest word-carrying segment of 0.5 s or more 0.75. No tag word in either transcript. Language: auto-id says ar (0.98), but the forced -l hi transcript is the script in hi and the auto text is the same words in another script ('وصباتك دلان غيب'): accent, not wrong language. No cut-off: 0.1 s before the first speech frame, 0.233 s of silence after the last; peak -7.8 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "और सुभातक दुल्हन गायब.",
+   "transcript_latin_pass": "And in the morning, the bride is gone.",
+   "transcript_auto": "وصباتك دلان غيب",
+   "auto_lang": "ar",
+   "auto_lang_p": 0.976,
+   "voiced_ratio": 0.75,
+   "duration": 2.56,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -21.3,
+   "ff_max_db": -7.8,
+   "lead_s": 0.1,
+   "trail_s": 0.233,
+   "flatness": 0.051,
+   "centroid_hz": 2179,
+   "median_hz": 186,
+   "segments": [
+    {
+     "t": [
+      0.1,
+      2.32
+     ],
+     "rms_db": -21.5,
+     "voiced_ratio": 0.75,
+     "longest_unvoiced_s": 0.14,
+     "median_hz": 186
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l35",
+   "lang": "hi",
+   "speaker": "mausi",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series1/episodes/s1e02/voice/hi/l35.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] उसे पता है क्या बोलना है।",
+   "verdict": "accept",
+   "reasons": "Words heard: 'उसे पता है क्या बून्ना है'; Latin pass 'Usse pata hai kya boonna hai.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.88 whole take; lowest word-carrying segment of 0.5 s or more 0.9. No tag word in either transcript. Language: auto-id hi (1.00). No cut-off: 0.15 s before the first speech frame, 0.252 s of silence after the last; peak -9.0 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "उसे पता है क्या बून्ना है",
+   "transcript_latin_pass": "Usse pata hai kya boonna hai.",
+   "transcript_auto": "उसे पता है क्या बून्ना है",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.998,
+   "voiced_ratio": 0.88,
+   "duration": 2.08,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -25.9,
+   "ff_max_db": -9.0,
+   "lead_s": 0.15,
+   "trail_s": 0.252,
+   "flatness": 0.063,
+   "centroid_hz": 2542,
+   "median_hz": 167,
+   "segments": [
+    {
+     "t": [
+      0.16,
+      1.84
+     ],
+     "rms_db": -26.0,
+     "voiced_ratio": 0.9,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 167
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l36",
+   "lang": "hi",
+   "speaker": "mausi",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series1/episodes/s1e02/voice/hi/l36.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[warmly] तेरे लिए ख़ुद बनाई है।",
+   "verdict": "accept",
+   "reasons": "Words heard: 'तेरे लिये खुद बनाई है'; Latin pass 'Tere liye khud banai hai.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.87 whole take; lowest word-carrying segment of 0.5 s or more 0.88. No tag word in either transcript. Language: auto-id hi (0.96). No cut-off: 0.04 s before the first speech frame, 0.327 s of silence after the last; peak -8.6 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "तेरे लिये खुद बनाई है",
+   "transcript_latin_pass": "Tere liye khud banai hai.",
+   "transcript_auto": "तेरे लिये खुद बनाई है",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.96,
+   "voiced_ratio": 0.87,
+   "duration": 1.84,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -24.4,
+   "ff_max_db": -8.6,
+   "lead_s": 0.04,
+   "trail_s": 0.327,
+   "flatness": 0.044,
+   "centroid_hz": 2421,
+   "median_hz": 211,
+   "segments": [
+    {
+     "t": [
+      0.04,
+      1.56
+     ],
+     "rms_db": -24.4,
+     "voiced_ratio": 0.88,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 211
+    },
+    {
+     "t": [
+      1.82,
+      1.84
+     ],
+     "rms_db": -48.1,
+     "voiced_ratio": 0.0,
+     "longest_unvoiced_s": 0.02,
+     "median_hz": null
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l03",
+   "lang": "en",
+   "speaker": "kiran",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series1/episodes/s1e02/voice/en/l03.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[flatly] Then I'll drink this milk myself.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'then I'll drink this milk myself'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.68 whole take; lowest word-carrying segment of 0.5 s or more 0.78. No tag word in either transcript. Language: auto-id en (0.99). No cut-off: 0.0 s before the first speech frame, 0.231 s of silence after the last; peak -2.3 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "then I'll drink this milk myself.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "then I'll drink this milk myself.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.993,
+   "voiced_ratio": 0.68,
+   "duration": 2.24,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -19.4,
+   "ff_max_db": -2.3,
+   "lead_s": 0.0,
+   "trail_s": 0.231,
+   "flatness": 0.035,
+   "centroid_hz": 2026,
+   "median_hz": 200,
+   "segments": [
+    {
+     "t": [
+      0.0,
+      1.98
+     ],
+     "rms_db": -19.0,
+     "voiced_ratio": 0.78,
+     "longest_unvoiced_s": 0.18,
+     "median_hz": 200
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l06",
+   "lang": "en",
+   "speaker": "kiran",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series1/episodes/s1e02/voice/en/l06.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[flatly] Without me, Mausi's door won't open for you.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'Without me, Mossy's door won't open for you'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.8 whole take; lowest word-carrying segment of 0.5 s or more 0.81. No tag word in either transcript. Language: auto-id en (0.99). No cut-off: 0.13 s before the first speech frame, 0.157 s of silence after the last; peak -1.7 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "Without me, Mossy's door won't open for you.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "Without me, Mossy's door won't open for you.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.995,
+   "voiced_ratio": 0.8,
+   "duration": 3.04,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -19.5,
+   "ff_max_db": -1.7,
+   "lead_s": 0.13,
+   "trail_s": 0.157,
+   "flatness": 0.037,
+   "centroid_hz": 1592,
+   "median_hz": 184,
+   "segments": [
+    {
+     "t": [
+      0.14,
+      1.0
+     ],
+     "rms_db": -17.6,
+     "voiced_ratio": 0.81,
+     "longest_unvoiced_s": 0.16,
+     "median_hz": 222
+    },
+    {
+     "t": [
+      1.18,
+      2.88
+     ],
+     "rms_db": -20.8,
+     "voiced_ratio": 0.82,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 170
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l13",
+   "lang": "en",
+   "speaker": "kiran",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series1/episodes/s1e02/voice/en/l13.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[flatly] At most, if a groom wakes up, Billu's boys slap him once.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'At most, if a groom wakes up, will those boys slap him once'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.7 whole take; lowest word-carrying segment of 0.5 s or more 0.76. No tag word in either transcript. Language: auto-id en (0.99). No cut-off: 0.12 s before the first speech frame, 0.154 s of silence after the last; peak -4.1 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "At most, if a groom wakes up, will those boys slap him once.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "At most, if a groom wakes up, will those boys slap him once.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.986,
+   "voiced_ratio": 0.7,
+   "duration": 4.4,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -19.5,
+   "ff_max_db": -4.1,
+   "lead_s": 0.12,
+   "trail_s": 0.154,
+   "flatness": 0.032,
+   "centroid_hz": 1815,
+   "median_hz": 195,
+   "segments": [
+    {
+     "t": [
+      0.12,
+      2.38
+     ],
+     "rms_db": -17.7,
+     "voiced_ratio": 0.76,
+     "longest_unvoiced_s": 0.1,
+     "median_hz": 200
+    },
+    {
+     "t": [
+      2.58,
+      4.06
+     ],
+     "rms_db": -21.9,
+     "voiced_ratio": 0.82,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 190
+    },
+    {
+     "t": [
+      4.22,
+      4.24
+     ],
+     "rms_db": -45.8,
+     "voiced_ratio": 0.0,
+     "longest_unvoiced_s": 0.02,
+     "median_hz": null
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l20",
+   "lang": "en",
+   "speaker": "kiran",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series1/episodes/s1e02/voice/en/l20.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[hesitant] And me? If Mausi goes, my eighteen lakh goes too. And my home.",
+   "verdict": "retake",
+   "reasons": "Whole take 0.78; 'And me?' (0.12-1.26 s) is 0.51 voiced: 0.12-0.36 s is an unvoiced in-breath at -38 to -47 dB before the word, 'And me' (0.38-0.88 s) is voiced at -13 to -35 dB, 0.90-1.26 s a tail. The low segment's words are voiced at speaking level; its unvoiced frames are consonants and breath or release tails 15 to 30 dB below the vowels (frame dump), not a whisper. It still fails the D-022 segment test as written, so it is retaken; see the diagnosis. Rung 2, the bare line. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "And me? If mossy goes, my 18 lakh goes too. And my home.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "And me? If mossy goes, my 18 lakh goes too. And my home.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.893,
+   "voiced_ratio": 0.78,
+   "duration": 5.76,
+   "segments_ge0_5s_under_0_6": [
+    [
+     0.12,
+     1.26,
+     0.51
+    ]
+   ],
+   "nonverbal_segments": [],
+   "speech_rms_db": -18.8,
+   "ff_max_db": -3.3,
+   "lead_s": 0.11,
+   "trail_s": 0.201,
+   "flatness": 0.044,
+   "centroid_hz": 2055,
+   "median_hz": 229,
+   "segments": [
+    {
+     "t": [
+      0.12,
+      1.26
+     ],
+     "rms_db": -19.5,
+     "voiced_ratio": 0.51,
+     "longest_unvoiced_s": 0.26,
+     "median_hz": 205
+    },
+    {
+     "t": [
+      1.46,
+      4.34
+     ],
+     "rms_db": -19.3,
+     "voiced_ratio": 0.86,
+     "longest_unvoiced_s": 0.12,
+     "median_hz": 242
+    },
+    {
+     "t": [
+      4.74,
+      5.56
+     ],
+     "rms_db": -16.7,
+     "voiced_ratio": 0.95,
+     "longest_unvoiced_s": 0.02,
+     "median_hz": 211
+    }
+   ],
+   "whisper_wanted": false,
+   "diagnosis": "measure only",
+   "retake_text": "And me? If Mausi goes, my eighteen lakh goes too. And my home.",
+   "retake_model": "eleven_v4",
+   "retake_take": 3,
+   "retake_file": "content/series1/episodes/s1e02/voice/en/l20.c2.mp3"
+  },
+  {
+   "line_id": "l23",
+   "lang": "en",
+   "speaker": "mausi",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series1/episodes/s1e02/voice/en/l23.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] At two I'll ask Kiran, did Damaad ji, the groom, drink his milk?",
+   "verdict": "accept",
+   "reasons": "Words heard: 'At two, I'll ask Kiran, did Bamaji the groom drink his milk?'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.86 whole take; lowest word-carrying segment of 0.5 s or more 0.81. No tag word in either transcript. Language: auto-id en (0.95). No cut-off: 0.09 s before the first speech frame, 0.125 s of silence after the last; peak -11.7 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "At two, I'll ask Kiran, did Bamaji the groom drink his milk?",
+   "transcript_latin_pass": null,
+   "transcript_auto": "At two, I'll ask Kiran, did Bamaji the groom drink his milk?",
+   "auto_lang": "en",
+   "auto_lang_p": 0.953,
+   "voiced_ratio": 0.86,
+   "duration": 5.04,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -26.8,
+   "ff_max_db": -11.7,
+   "lead_s": 0.09,
+   "trail_s": 0.125,
+   "flatness": 0.047,
+   "centroid_hz": 1863,
+   "median_hz": 186,
+   "segments": [
+    {
+     "t": [
+      0.1,
+      1.72
+     ],
+     "rms_db": -26.7,
+     "voiced_ratio": 0.81,
+     "longest_unvoiced_s": 0.1,
+     "median_hz": 222
+    },
+    {
+     "t": [
+      2.18,
+      3.94
+     ],
+     "rms_db": -26.1,
+     "voiced_ratio": 0.93,
+     "longest_unvoiced_s": 0.04,
+     "median_hz": 184
+    },
+    {
+     "t": [
+      4.1,
+      5.04
+     ],
+     "rms_db": -29.6,
+     "voiced_ratio": 0.82,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 170
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l31",
+   "lang": "en",
+   "speaker": "aditya",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series1/episodes/s1e02/voice/en/l31.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] If you were her, you would not hand me a name.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'If you were her, you would not hand me a name'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.88 whole take; lowest word-carrying segment of 0.5 s or more 0.84. No tag word in either transcript. Language: auto-id en (0.99). No cut-off: 0.0 s before the first speech frame, 0.3 s of silence after the last; peak -6.4 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "If you were her, you would not hand me a name.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "If you were her, you would not hand me a name.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.995,
+   "voiced_ratio": 0.88,
+   "duration": 3.2,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -18.6,
+   "ff_max_db": -6.4,
+   "lead_s": 0.0,
+   "trail_s": 0.3,
+   "flatness": 0.022,
+   "centroid_hz": 1079,
+   "median_hz": 105,
+   "segments": [
+    {
+     "t": [
+      0.0,
+      1.18
+     ],
+     "rms_db": -17.8,
+     "voiced_ratio": 0.84,
+     "longest_unvoiced_s": 0.08,
+     "median_hz": 118
+    },
+    {
+     "t": [
+      1.48,
+      2.9
+     ],
+     "rms_db": -19.4,
+     "voiced_ratio": 0.9,
+     "longest_unvoiced_s": 0.1,
+     "median_hz": 103
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l32",
+   "lang": "en",
+   "speaker": "kiran",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series1/episodes/s1e02/voice/en/l32.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] If all's well, the car comes at three and takes us to Mausi.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'If all's well, the car comes at three and takes us to Morsi'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.72 whole take; lowest word-carrying segment of 0.5 s or more 0.77. No tag word in either transcript. Language: auto-id en (0.99). No cut-off: 0.04 s before the first speech frame, 0.271 s of silence after the last; peak -3.2 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "If all's well, the car comes at three and takes us to Morsi.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "If all's well, the car comes at three and takes us to Morsi.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.987,
+   "voiced_ratio": 0.72,
+   "duration": 4.0,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -19.6,
+   "ff_max_db": -3.2,
+   "lead_s": 0.04,
+   "trail_s": 0.271,
+   "flatness": 0.042,
+   "centroid_hz": 1974,
+   "median_hz": 190,
+   "segments": [
+    {
+     "t": [
+      0.04,
+      1.04
+     ],
+     "rms_db": -18.6,
+     "voiced_ratio": 0.77,
+     "longest_unvoiced_s": 0.1,
+     "median_hz": 200
+    },
+    {
+     "t": [
+      1.32,
+      3.72
+     ],
+     "rms_db": -19.7,
+     "voiced_ratio": 0.77,
+     "longest_unvoiced_s": 0.1,
+     "median_hz": 186
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l33",
+   "lang": "en",
+   "speaker": "billu",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series1/episodes/s1e02/voice/en/l33.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "Ji, Mausi. Tell me.",
+   "verdict": "accept",
+   "reasons": "Words heard: '\"Gee, Mossy, tell me.\"'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.84 whole take; lowest word-carrying segment of 0.5 s or more 0.88. No tag word in either transcript. Language: auto-id says hi (0.61), but the forced -l en transcript is the script in en and the auto text is the same words in another script ('जी मोसी जल मी'): accent, not wrong language. No cut-off: 0.01 s before the first speech frame, 0.181 s of silence after the last; peak -8.8 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "\"Gee, Mossy, tell me.\"",
+   "transcript_latin_pass": null,
+   "transcript_auto": "जी मोसी जल मी",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.612,
+   "voiced_ratio": 0.84,
+   "duration": 1.92,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -23.9,
+   "ff_max_db": -8.8,
+   "lead_s": 0.01,
+   "trail_s": 0.181,
+   "flatness": 0.041,
+   "centroid_hz": 1717,
+   "median_hz": 123,
+   "segments": [
+    {
+     "t": [
+      0.02,
+      0.94
+     ],
+     "rms_db": -24.6,
+     "voiced_ratio": 0.88,
+     "longest_unvoiced_s": 0.1,
+     "median_hz": 121
+    },
+    {
+     "t": [
+      1.38,
+      1.74
+     ],
+     "rms_db": -23.0,
+     "voiced_ratio": 0.78,
+     "longest_unvoiced_s": 0.04,
+     "median_hz": 146
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l34",
+   "lang": "en",
+   "speaker": "kiran",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series1/episodes/s1e02/voice/en/l34.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] And the bride's gone by morning.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'and the bride's gone by morning'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.86 whole take; lowest word-carrying segment of 0.5 s or more 0.87. No tag word in either transcript. Language: auto-id en (0.99). No cut-off: 0.11 s before the first speech frame, 0.341 s of silence after the last; peak -4.5 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "and the bride's gone by morning.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "and the bride's gone by morning.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.989,
+   "voiced_ratio": 0.86,
+   "duration": 2.16,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -19.4,
+   "ff_max_db": -4.5,
+   "lead_s": 0.11,
+   "trail_s": 0.341,
+   "flatness": 0.034,
+   "centroid_hz": 1287,
+   "median_hz": 170,
+   "segments": [
+    {
+     "t": [
+      0.12,
+      1.84
+     ],
+     "rms_db": -19.4,
+     "voiced_ratio": 0.87,
+     "longest_unvoiced_s": 0.08,
+     "median_hz": 170
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l35",
+   "lang": "en",
+   "speaker": "mausi",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series1/episodes/s1e02/voice/en/l35.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] She knows what to say.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'She knows what to say'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.65 whole take; lowest word-carrying segment of 0.5 s or more 0.71. No tag word in either transcript. Language: auto-id en (0.99). No cut-off: 0.18 s before the first speech frame, 0.231 s of silence after the last; peak -9.3 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "She knows what to say.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "She knows what to say.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.99,
+   "voiced_ratio": 0.65,
+   "duration": 1.68,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -22.7,
+   "ff_max_db": -9.3,
+   "lead_s": 0.18,
+   "trail_s": 0.231,
+   "flatness": 0.064,
+   "centroid_hz": 2241,
+   "median_hz": 160,
+   "segments": [
+    {
+     "t": [
+      0.2,
+      1.46
+     ],
+     "rms_db": -22.8,
+     "voiced_ratio": 0.71,
+     "longest_unvoiced_s": 0.1,
+     "median_hz": 160
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l36",
+   "lang": "en",
+   "speaker": "mausi",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series1/episodes/s1e02/voice/en/l36.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[warmly] Made them myself, for you. Your salty mathri.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'Made them myself. For you. Your Salty Matri'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.8 whole take; lowest word-carrying segment of 0.5 s or more 0.84. No tag word in either transcript. Language: auto-id en (0.94). No cut-off: 0.22 s before the first speech frame, 0.138 s of silence after the last; peak -8.4 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "Made them myself. For you. Your Salty Matri.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "Made them myself. For you. Your Salty Matri.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.941,
+   "voiced_ratio": 0.8,
+   "duration": 3.68,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -26.7,
+   "ff_max_db": -8.4,
+   "lead_s": 0.22,
+   "trail_s": 0.138,
+   "flatness": 0.047,
+   "centroid_hz": 1965,
+   "median_hz": 205,
+   "segments": [
+    {
+     "t": [
+      0.22,
+      1.16
+     ],
+     "rms_db": -24.8,
+     "voiced_ratio": 0.93,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 242
+    },
+    {
+     "t": [
+      1.54,
+      2.04
+     ],
+     "rms_db": -27.7,
+     "voiced_ratio": 0.88,
+     "longest_unvoiced_s": 0.04,
+     "median_hz": 242
+    },
+    {
+     "t": [
+      2.38,
+      2.58
+     ],
+     "rms_db": -32.3,
+     "voiced_ratio": 0.9,
+     "longest_unvoiced_s": 0.02,
+     "median_hz": 88
+    },
+    {
+     "t": [
+      2.76,
+      3.58
+     ],
+     "rms_db": -27.0,
+     "voiced_ratio": 0.84,
+     "longest_unvoiced_s": 0.08,
+     "median_hz": 190
+    }
+   ],
+   "whisper_wanted": false
+  }
+ ],
+ "pass": "clarity"
+}

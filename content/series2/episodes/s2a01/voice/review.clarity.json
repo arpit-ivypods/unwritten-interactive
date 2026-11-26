@@ -1,0 +1,711 @@
+{
+ "schema": "voice-review-clarity/1",
+ "episode": "s2a01",
+ "pass": "clarity",
+ "reviewer": "S10 voice director (directed these takes; did not generate them)",
+ "date": "26 Nov 2026",
+ "rule": "D-025 clarity re-voice, judged on D-022 as ruled for this pass by D-026, and the voice/takes.clarity.<lang>.json notes",
+ "method": "Local only, no connector transcription. Transcripts: whisper.cpp whisper-cli ggml-small, greedy, no prompt, script not given: -l <lang>; Hindi takes also -l en (transcript_latin_pass, shows whether the English words were heard); every take also -l auto (language id). Doubtful words: each speech segment cut (+-0.08 s) and transcribed alone with ggml-small, plus ggml-base as a second model (ggml-large-v3 is not in ~/.whisper-models, so it was not used). Measures: copies of the D-022 round-3 meas.py and seg.py, unchanged: speech frames are 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); voiced_ratio is the share of speech frames with normalised autocorrelation (8 kHz, 70-450 Hz lags) of 0.6 or more; segments split at gaps of 150 ms or more. D-022 test on voice-wanted lines: whole take and every segment of 0.5 s or more that carries script words at 0.6 or more, applied as ruled by D-026: retake only real faults (wrong or missing words, whispered or breathy words, glitches, wrong language); words voiced at speaking level whose segment falls under 0.6 only on consonant or breath tails are accepted and go on the ear list. Nobody listened.",
+ "counts": {
+  "takes": 14,
+  "accept": 14,
+  "retake": 0
+ },
+ "edit_pick": "The edit reads voice/manifest.jsonl and voice/review.json, not this file. The runner wrote each clarity row's manifest take as the line's next take (not renumbered here); a matching row (verdict ok, model eleven_v4, same take) was appended to review.json, so build_timeline.py cuts in the .c1 take (checked with a replica of pick_take).",
+ "takes": [
+  {
+   "line_id": "l13",
+   "lang": "hi",
+   "speaker": "nandini",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2a01/voice/hi/l13.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] गया। SHO साहब के sign पर।",
+   "verdict": "accept",
+   "reasons": "Words heard: 'गया। S-H-O साहब के साईंग पर।'; Latin pass 'Gaya. S.H.O. Sahab ki sign par.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.75 whole take; lowest segment of 0.5 s or more 0.75. No tag word in any transcript. Language: auto-id hi (0.99). No cut-off: 0.12 s before the first speech frame, 0.157 s of silence after the last; peak -3.1 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "गया। S-H-O साहब के साईंग पर।",
+   "transcript_latin_pass": "Gaya. S.H.O. Sahab ki sign par.",
+   "transcript_auto": "गया। S-H-O साहब के साईंग पर।",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.993,
+   "voiced_ratio": 0.75,
+   "duration": 3.04,
+   "segments_ge0_5s_under_0_6": [],
+   "speech_rms_db": -20.6,
+   "ff_max_db": -3.1,
+   "lead_s": 0.12,
+   "trail_s": 0.157,
+   "flatness": 0.037,
+   "centroid_hz": 2016,
+   "median_hz": 174,
+   "segments": [
+    {
+     "t": [
+      0.12,
+      0.56
+     ],
+     "rms_db": -19.6,
+     "voiced_ratio": 0.95,
+     "longest_unvoiced_s": 0.02,
+     "median_hz": 182
+    },
+    {
+     "t": [
+      1.14,
+      2.82
+     ],
+     "rms_db": -20.6,
+     "voiced_ratio": 0.75,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 163
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l20",
+   "lang": "hi",
+   "speaker": "nandini",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2a01/voice/hi/l20.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] Press के सामने रखा register कोई दबा नहीं सकता।",
+   "verdict": "accept",
+   "reasons": "Words heard: 'प्रेस के सामने रखा रगिस्टर कोई दबा नहीं सकता'; Latin pass 'No one can press the register in front of the press.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.82 whole take; lowest segment of 0.5 s or more 0.83. No tag word in any transcript. Language: auto-id hi (0.99). No cut-off: 0.08 s before the first speech frame, 0.261 s of silence after the last; peak -4.8 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "प्रेस के सामने रखा रगिस्टर कोई दबा नहीं सकता.",
+   "transcript_latin_pass": "No one can press the register in front of the press.",
+   "transcript_auto": "प्रेस के सामने रखा रगिस्टर कोई दबा नहीं सकता.",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.989,
+   "voiced_ratio": 0.82,
+   "duration": 3.76,
+   "segments_ge0_5s_under_0_6": [],
+   "speech_rms_db": -19.9,
+   "ff_max_db": -4.8,
+   "lead_s": 0.08,
+   "trail_s": 0.261,
+   "flatness": 0.036,
+   "centroid_hz": 1954,
+   "median_hz": 190,
+   "segments": [
+    {
+     "t": [
+      0.1,
+      1.94
+     ],
+     "rms_db": -19.2,
+     "voiced_ratio": 0.85,
+     "longest_unvoiced_s": 0.1,
+     "median_hz": 216
+    },
+    {
+     "t": [
+      2.28,
+      3.5
+     ],
+     "rms_db": -21.2,
+     "voiced_ratio": 0.83,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 182
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l21",
+   "lang": "hi",
+   "speaker": "nirala",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2a01/voice/hi/l21.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[hesitant] दस के बाद... register फिर SHO साहब की almirah में बंद।",
+   "verdict": "accept",
+   "reasons": "Words heard: 'दसके बाद रजिस्टर फिर एसे चो सहाप की आल्मिरा में बन्द'; Latin pass 'After ten, register. Then close the almeerah of such a person.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.82 whole take; lowest segment of 0.5 s or more 0.75. No tag word in any transcript. Language: auto-id hi (0.96). No cut-off: 0.05 s before the first speech frame, 0.245 s of silence after the last; peak -0.6 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "दसके बाद रजिस्टर फिर एसे चो सहाप की आल्मिरा में बन्द",
+   "transcript_latin_pass": "After ten, register. Then close the almeerah of such a person.",
+   "transcript_auto": "दसके बाद रजिस्टर फिर एसे चो सहाप की आल्मिरा में बन्द",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.961,
+   "voiced_ratio": 0.82,
+   "duration": 6.08,
+   "segments_ge0_5s_under_0_6": [],
+   "speech_rms_db": -18.0,
+   "ff_max_db": -0.6,
+   "lead_s": 0.05,
+   "trail_s": 0.245,
+   "flatness": 0.03,
+   "centroid_hz": 1937,
+   "median_hz": 172,
+   "segments": [
+    {
+     "t": [
+      0.06,
+      1.64
+     ],
+     "rms_db": -22.2,
+     "voiced_ratio": 0.75,
+     "longest_unvoiced_s": 0.18,
+     "median_hz": 170
+    },
+    {
+     "t": [
+      1.96,
+      2.7
+     ],
+     "rms_db": -15.9,
+     "voiced_ratio": 0.76,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 174
+    },
+    {
+     "t": [
+      3.12,
+      5.78
+     ],
+     "rms_db": -17.3,
+     "voiced_ratio": 0.89,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 178
+    }
+   ],
+   "whisper_wanted": false,
+   "ear_check": "'SHO साहब' heard as 'एसे चो सहाप' (Latin pass of the segment: 'SHO'). Are the letters S-H-O clear?"
+  },
+  {
+   "line_id": "l25",
+   "lang": "hi",
+   "speaker": "nandini",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2a01/voice/hi/l25.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[flatly] एक पन्ना तक नहीं भरा। तो ये है zero crime।",
+   "verdict": "accept",
+   "reasons": "Words heard: 'एक पन्ना तत नहीं बहुरा तो ये है जीरो क्रिम'; Latin pass 'So this is zero crime.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.9 whole take; lowest segment of 0.5 s or more 0.89. No tag word in any transcript. Language: auto-id hi (0.99). No cut-off: 0.12 s before the first speech frame, 0.209 s of silence after the last; peak -3.1 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "एक पन्ना तत नहीं बहुरा तो ये है जीरो क्रिम",
+   "transcript_latin_pass": "So this is zero crime.",
+   "transcript_auto": "एक पन्ना तत नहीं बहुरा तो ये है जीरो क्रिम",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.992,
+   "voiced_ratio": 0.9,
+   "duration": 4.08,
+   "segments_ge0_5s_under_0_6": [],
+   "speech_rms_db": -19.1,
+   "ff_max_db": -3.1,
+   "lead_s": 0.12,
+   "trail_s": 0.209,
+   "flatness": 0.036,
+   "centroid_hz": 2180,
+   "median_hz": 178,
+   "segments": [
+    {
+     "t": [
+      0.12,
+      1.6
+     ],
+     "rms_db": -18.6,
+     "voiced_ratio": 0.89,
+     "longest_unvoiced_s": 0.04,
+     "median_hz": 170
+    },
+    {
+     "t": [
+      2.22,
+      3.88
+     ],
+     "rms_db": -19.8,
+     "voiced_ratio": 0.91,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 186
+    }
+   ],
+   "whisper_wanted": false,
+   "ear_check": "'भरा' heard as 'बहुरा' (segment Latin pass 'bhara'); the whole-take Latin pass dropped the first sentence. Is 'एक पन्ना तक नहीं भरा' clean?"
+  },
+  {
+   "line_id": "l28",
+   "lang": "hi",
+   "speaker": "nandini",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2a01/voice/hi/l28.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] Register इसी almirah में है। और चाबी SHO साहब के पास।",
+   "verdict": "accept",
+   "reasons": "Words heard: 'रेजिस्टर इसी आल्मिरा में है, और चाभी S-H-O साहब के पास'; Latin pass 'Register is in this Almira and the key is with the SHO.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.71 whole take; lowest segment of 0.5 s or more 0.72. No tag word in any transcript. Language: auto-id hi (0.99). No cut-off: 0.11 s before the first speech frame, 0.154 s of silence after the last; peak -1.9 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "रेजिस्टर इसी आल्मिरा में है, और चाभी S-H-O साहब के पास.",
+   "transcript_latin_pass": "Register is in this Almira and the key is with the SHO.",
+   "transcript_auto": "रेजिस्टर इसी आल्मिरा में है, और चाभी S-H-O साहब के पास.",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.986,
+   "voiced_ratio": 0.71,
+   "duration": 5.76,
+   "segments_ge0_5s_under_0_6": [],
+   "speech_rms_db": -21.1,
+   "ff_max_db": -1.9,
+   "lead_s": 0.11,
+   "trail_s": 0.154,
+   "flatness": 0.044,
+   "centroid_hz": 2402,
+   "median_hz": 174,
+   "segments": [
+    {
+     "t": [
+      0.12,
+      2.04
+     ],
+     "rms_db": -21.2,
+     "voiced_ratio": 0.77,
+     "longest_unvoiced_s": 0.2,
+     "median_hz": 174
+    },
+    {
+     "t": [
+      2.46,
+      3.12
+     ],
+     "rms_db": -20.6,
+     "voiced_ratio": 0.93,
+     "longest_unvoiced_s": 0.02,
+     "median_hz": 186
+    },
+    {
+     "t": [
+      3.48,
+      4.38
+     ],
+     "rms_db": -20.1,
+     "voiced_ratio": 0.72,
+     "longest_unvoiced_s": 0.08,
+     "median_hz": 182
+    },
+    {
+     "t": [
+      4.74,
+      5.38
+     ],
+     "rms_db": -20.4,
+     "voiced_ratio": 0.76,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 167
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l29",
+   "lang": "hi",
+   "speaker": "nandini",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2a01/voice/hi/l29.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] और फिर भी भैयाजी ने आपको अकेले बुलाया।",
+   "verdict": "accept",
+   "reasons": "Words heard: 'और फिर भी भी भी आजी ने आपको अखेले बुलाया'; Latin pass 'and still brother called you alone.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.89 whole take; lowest segment of 0.5 s or more 0.89. Whole-take ASR heard 'भी भी भी आजी' for 'भी भैयाजी'; the take cut alone is 'और फिर भी भ्याजी ने आपको अखेले बुलाया.', and the Latin pass 'and still brother called you alone' renders भैयाजी; read as an ASR loop, not a doubled word; ear list. No tag word in any transcript. Language: auto-id hi (0.99). No cut-off: 0.03 s before the first speech frame, 0.22 s of silence after the last; peak -6.0 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "और फिर भी भी भी आजी ने आपको अखेले बुलाया.",
+   "transcript_latin_pass": "and still brother called you alone.",
+   "transcript_auto": "और फिर भी भी भी आजी ने आपको अखेले बुलाया.",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.992,
+   "voiced_ratio": 0.89,
+   "duration": 3.12,
+   "segments_ge0_5s_under_0_6": [],
+   "speech_rms_db": -20.3,
+   "ff_max_db": -6.0,
+   "lead_s": 0.03,
+   "trail_s": 0.22,
+   "flatness": 0.042,
+   "centroid_hz": 2180,
+   "median_hz": 211,
+   "segments": [
+    {
+     "t": [
+      0.04,
+      2.9
+     ],
+     "rms_db": -20.4,
+     "voiced_ratio": 0.89,
+     "longest_unvoiced_s": 0.12,
+     "median_hz": 211
+    }
+   ],
+   "whisper_wanted": false,
+   "ear_check": "Whole-take ASR looped 'भी भी भी आजी' for 'भी भैयाजी'; the cut is right. Any doubled syllable?"
+  },
+  {
+   "line_id": "l30",
+   "lang": "hi",
+   "speaker": "nirala",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2a01/voice/hi/l30.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] Complaint वहीं चढ़कर FIR बनती है, madam।",
+   "verdict": "accept",
+   "reasons": "Words heard: 'कंप्लेंट वही च़कर अप यार बनती है माडम'; Latin pass 'Complaint is the same thing as FIR, madam.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.85 whole take; lowest segment of 0.5 s or more 0.85. No tag word in any transcript. Language: auto-id hi (0.96). No cut-off: 0.03 s before the first speech frame, 0.215 s of silence after the last; peak -1.5 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "कंप्लेंट वही च़कर अप यार बनती है माडम",
+   "transcript_latin_pass": "Complaint is the same thing as FIR, madam.",
+   "transcript_auto": "कंप्लेंट वही च़कर अप यार बनती है माडम",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.957,
+   "voiced_ratio": 0.85,
+   "duration": 3.52,
+   "segments_ge0_5s_under_0_6": [],
+   "speech_rms_db": -16.1,
+   "ff_max_db": -1.5,
+   "lead_s": 0.03,
+   "trail_s": 0.215,
+   "flatness": 0.028,
+   "centroid_hz": 1778,
+   "median_hz": 148,
+   "segments": [
+    {
+     "t": [
+      0.04,
+      3.3
+     ],
+     "rms_db": -16.1,
+     "voiced_ratio": 0.85,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 148
+    }
+   ],
+   "whisper_wanted": false,
+   "ear_check": "'FIR' heard as 'अप यार' in Devanagari (Latin pass 'FIR'): letters clear?"
+  },
+  {
+   "line_id": "l13",
+   "lang": "en",
+   "speaker": "nandini",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2a01/voice/en/l13.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] Gone. On SHO sahab's signature.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'Gone on SHO Sahab Signature'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.72 whole take; lowest segment of 0.5 s or more 0.77. No tag word in any transcript. Language: auto-id en (0.65). No cut-off: 0.14 s before the first speech frame, 0.179 s of silence after the last; peak -4.0 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "Gone on SHO Sahab Signature",
+   "transcript_latin_pass": null,
+   "transcript_auto": "Gone on SHO Sahab Signature",
+   "auto_lang": "en",
+   "auto_lang_p": 0.653,
+   "voiced_ratio": 0.72,
+   "duration": 3.2,
+   "segments_ge0_5s_under_0_6": [],
+   "speech_rms_db": -21.2,
+   "ff_max_db": -4.0,
+   "lead_s": 0.14,
+   "trail_s": 0.179,
+   "flatness": 0.043,
+   "centroid_hz": 1917,
+   "median_hz": 182,
+   "segments": [
+    {
+     "t": [
+      0.14,
+      0.74
+     ],
+     "rms_db": -21.9,
+     "voiced_ratio": 0.87,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 162
+    },
+    {
+     "t": [
+      1.16,
+      3.02
+     ],
+     "rms_db": -20.5,
+     "voiced_ratio": 0.77,
+     "longest_unvoiced_s": 0.14,
+     "median_hz": 190
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l20",
+   "lang": "en",
+   "speaker": "nandini",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2a01/voice/en/l20.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] Nobody can bury a register laid out in front of the press.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'Nobody can bury a register laid out in front of the press'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.8 whole take; lowest segment of 0.5 s or more 0.89. No tag word in any transcript. Language: auto-id en (1.00). No cut-off: 0.19 s before the first speech frame, 0.079 s of silence after the last; peak -5.1 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "Nobody can bury a register laid out in front of the press.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "Nobody can bury a register laid out in front of the press.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.997,
+   "voiced_ratio": 0.8,
+   "duration": 3.92,
+   "segments_ge0_5s_under_0_6": [],
+   "speech_rms_db": -19.4,
+   "ff_max_db": -5.1,
+   "lead_s": 0.19,
+   "trail_s": 0.079,
+   "flatness": 0.035,
+   "centroid_hz": 1933,
+   "median_hz": 184,
+   "segments": [
+    {
+     "t": [
+      0.2,
+      3.56
+     ],
+     "rms_db": -19.0,
+     "voiced_ratio": 0.89,
+     "longest_unvoiced_s": 0.14,
+     "median_hz": 184
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l21",
+   "lang": "en",
+   "speaker": "nirala",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2a01/voice/en/l21.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[hesitant] After ten... the register goes back into SHO sahab's almirah. His locked steel cupboard.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'After 10, the register goes back into S.H.O Sahab's Almira, his locked steel cupboard'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.79 whole take; lowest segment of 0.5 s or more 0.63. No tag word in any transcript. Language: auto-id en (0.99). No cut-off: 0.08 s before the first speech frame, 0.225 s of silence after the last; peak -1.1 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "After 10, the register goes back into S.H.O Sahab's Almira, his locked steel cupboard.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "After 10, the register goes back into S.H.O Sahab's Almira, his locked steel cupboard.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.988,
+   "voiced_ratio": 0.79,
+   "duration": 6.48,
+   "segments_ge0_5s_under_0_6": [],
+   "speech_rms_db": -19.7,
+   "ff_max_db": -1.1,
+   "lead_s": 0.08,
+   "trail_s": 0.225,
+   "flatness": 0.037,
+   "centroid_hz": 1992,
+   "median_hz": 145,
+   "segments": [
+    {
+     "t": [
+      0.1,
+      1.5
+     ],
+     "rms_db": -23.8,
+     "voiced_ratio": 0.63,
+     "longest_unvoiced_s": 0.24,
+     "median_hz": 160
+    },
+    {
+     "t": [
+      1.7,
+      4.4
+     ],
+     "rms_db": -18.4,
+     "voiced_ratio": 0.9,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 150
+    },
+    {
+     "t": [
+      4.98,
+      6.24
+     ],
+     "rms_db": -20.6,
+     "voiced_ratio": 0.81,
+     "longest_unvoiced_s": 0.1,
+     "median_hz": 132
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l25",
+   "lang": "en",
+   "speaker": "nandini",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2a01/voice/en/l25.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[flatly] Not one page filled in. So this is zero crime.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'not one page filled in. So this is zero crime'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.83 whole take; lowest segment of 0.5 s or more 0.86. No tag word in any transcript. Language: auto-id en (1.00). No cut-off: 0.12 s before the first speech frame, 0.17 s of silence after the last; peak -4.1 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "not one page filled in. So this is zero crime.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "not one page filled in. So this is zero crime.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.998,
+   "voiced_ratio": 0.83,
+   "duration": 4.08,
+   "segments_ge0_5s_under_0_6": [],
+   "speech_rms_db": -21.5,
+   "ff_max_db": -4.1,
+   "lead_s": 0.12,
+   "trail_s": 0.17,
+   "flatness": 0.034,
+   "centroid_hz": 1838,
+   "median_hz": 174,
+   "segments": [
+    {
+     "t": [
+      0.12,
+      1.7
+     ],
+     "rms_db": -21.4,
+     "voiced_ratio": 0.88,
+     "longest_unvoiced_s": 0.1,
+     "median_hz": 168
+    },
+    {
+     "t": [
+      2.26,
+      3.92
+     ],
+     "rms_db": -21.3,
+     "voiced_ratio": 0.86,
+     "longest_unvoiced_s": 0.1,
+     "median_hz": 178
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l28",
+   "lang": "en",
+   "speaker": "nandini",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2a01/voice/en/l28.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] The register is in this almirah. And SHO sahab has the key.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'The register is in this Almira and SHO Sahab has the key'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.81 whole take; lowest segment of 0.5 s or more 0.86. No tag word in any transcript. Language: auto-id en (0.90). No cut-off: 0.03 s before the first speech frame, 0.146 s of silence after the last; peak -2.2 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "The register is in this Almira and SHO Sahab has the key.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "The register is in this Almira and SHO Sahab has the key.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.896,
+   "voiced_ratio": 0.81,
+   "duration": 4.64,
+   "segments_ge0_5s_under_0_6": [],
+   "speech_rms_db": -20.0,
+   "ff_max_db": -2.2,
+   "lead_s": 0.03,
+   "trail_s": 0.146,
+   "flatness": 0.039,
+   "centroid_hz": 2090,
+   "median_hz": 186,
+   "segments": [
+    {
+     "t": [
+      0.04,
+      1.86
+     ],
+     "rms_db": -18.8,
+     "voiced_ratio": 0.87,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 190
+    },
+    {
+     "t": [
+      2.24,
+      4.5
+     ],
+     "rms_db": -21.1,
+     "voiced_ratio": 0.86,
+     "longest_unvoiced_s": 0.04,
+     "median_hz": 186
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l29",
+   "lang": "en",
+   "speaker": "nandini",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2a01/voice/en/l29.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] And still Bhaiyaji asked you to come alone.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'And still, Bhaiyaji asked you to come alone'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.78 whole take; lowest segment of 0.5 s or more 0.8. No tag word in any transcript. Language: auto-id en (0.68). No cut-off: 0.02 s before the first speech frame, 0.29 s of silence after the last; peak -4.2 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "And still, Bhaiyaji asked you to come alone.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "And still, Bhaiyaji asked you to come alone.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.679,
+   "voiced_ratio": 0.78,
+   "duration": 3.12,
+   "segments_ge0_5s_under_0_6": [],
+   "speech_rms_db": -20.4,
+   "ff_max_db": -4.2,
+   "lead_s": 0.02,
+   "trail_s": 0.29,
+   "flatness": 0.036,
+   "centroid_hz": 1794,
+   "median_hz": 200,
+   "segments": [
+    {
+     "t": [
+      0.02,
+      2.84
+     ],
+     "rms_db": -20.4,
+     "voiced_ratio": 0.8,
+     "longest_unvoiced_s": 0.14,
+     "median_hz": 200
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l30",
+   "lang": "en",
+   "speaker": "nirala",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2a01/voice/en/l30.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] Only there does a complaint become an FIR, madam.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'Only there does a complaint become an FIR, madam'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.86 whole take; lowest segment of 0.5 s or more 0.86. No tag word in any transcript. Language: auto-id en (0.99). No cut-off: 0.04 s before the first speech frame, 0.321 s of silence after the last; peak -2.8 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "Only there does a complaint become an FIR, madam.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "Only there does a complaint become an FIR, madam.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.994,
+   "voiced_ratio": 0.86,
+   "duration": 3.68,
+   "segments_ge0_5s_under_0_6": [],
+   "speech_rms_db": -18.6,
+   "ff_max_db": -2.8,
+   "lead_s": 0.04,
+   "trail_s": 0.321,
+   "flatness": 0.025,
+   "centroid_hz": 1704,
+   "median_hz": 127,
+   "segments": [
+    {
+     "t": [
+      0.04,
+      3.36
+     ],
+     "rms_db": -18.7,
+     "voiced_ratio": 0.86,
+     "longest_unvoiced_s": 0.12,
+     "median_hz": 127
+    }
+   ],
+   "whisper_wanted": false
+  }
+ ]
+}

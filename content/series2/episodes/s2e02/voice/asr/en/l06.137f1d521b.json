@@ -1,0 +1,175 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,040"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 40
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,040",
+				"to": "00:00:00,080"
+			},
+			"offsets": {
+				"from": 40,
+				"to": 80
+			},
+			"text": " I"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,080",
+				"to": "00:00:00,430"
+			},
+			"offsets": {
+				"from": 80,
+				"to": 430
+			},
+			"text": " sent"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,430",
+				"to": "00:00:00,950"
+			},
+			"offsets": {
+				"from": 430,
+				"to": 950
+			},
+			"text": " them,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,950",
+				"to": "00:00:01,680"
+			},
+			"offsets": {
+				"from": 950,
+				"to": 1680
+			},
+			"text": " madam,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,680",
+				"to": "00:00:02,090"
+			},
+			"offsets": {
+				"from": 1680,
+				"to": 2090
+			},
+			"text": " whoever"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,090",
+				"to": "00:00:02,940"
+			},
+			"offsets": {
+				"from": 2090,
+				"to": 2940
+			},
+			"text": " S.H.O."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,940",
+				"to": "00:00:03,240"
+			},
+			"offsets": {
+				"from": 2940,
+				"to": 3240
+			},
+			"text": " Sahab"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,240",
+				"to": "00:00:03,480"
+			},
+			"offsets": {
+				"from": 3240,
+				"to": 3480
+			},
+			"text": " turned"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,480",
+				"to": "00:00:04,110"
+			},
+			"offsets": {
+				"from": 3480,
+				"to": 4110
+			},
+			"text": " away"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,110",
+				"to": "00:00:04,580"
+			},
+			"offsets": {
+				"from": 4110,
+				"to": 4580
+			},
+			"text": " across"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,580",
+				"to": "00:00:04,710"
+			},
+			"offsets": {
+				"from": 4580,
+				"to": 4710
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,710",
+				"to": "00:00:05,000"
+			},
+			"offsets": {
+				"from": 4710,
+				"to": 5000
+			},
+			"text": " line."
+		}
+	]
+}

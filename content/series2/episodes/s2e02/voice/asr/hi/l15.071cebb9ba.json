@@ -1,0 +1,120 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,010"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 10
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,010",
+				"to": "00:00:00,900"
+			},
+			"offsets": {
+				"from": 10,
+				"to": 900
+			},
+			"text": " बहिया"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,900",
+				"to": "00:00:01,690"
+			},
+			"offsets": {
+				"from": 900,
+				"to": 1690
+			},
+			"text": " जी,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,690",
+				"to": "00:00:02,240"
+			},
+			"offsets": {
+				"from": 1690,
+				"to": 2240
+			},
+			"text": " मैडम"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,240",
+				"to": "00:00:02,960"
+			},
+			"offsets": {
+				"from": 2240,
+				"to": 2960
+			},
+			"text": " लोकव"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,960",
+				"to": "00:00:03,730"
+			},
+			"offsets": {
+				"from": 2960,
+				"to": 3730
+			},
+			"text": " में,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,730",
+				"to": "00:00:04,170"
+			},
+			"offsets": {
+				"from": 3730,
+				"to": 4170
+			},
+			"text": " मतलब"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,170",
+				"to": "00:00:05,000"
+			},
+			"offsets": {
+				"from": 4170,
+				"to": 5000
+			},
+			"text": " चूपिये"
+		}
+	]
+}

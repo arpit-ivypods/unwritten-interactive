@@ -1,0 +1,164 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,080"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 80
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,080",
+				"to": "00:00:00,160"
+			},
+			"offsets": {
+				"from": 80,
+				"to": 160
+			},
+			"text": " कल"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,160",
+				"to": "00:00:00,370"
+			},
+			"offsets": {
+				"from": 160,
+				"to": 370
+			},
+			"text": " 10"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,370",
+				"to": "00:00:00,580"
+			},
+			"offsets": {
+				"from": 370,
+				"to": 580
+			},
+			"text": " बजे"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,580",
+				"to": "00:00:01,720"
+			},
+			"offsets": {
+				"from": 580,
+				"to": 1720
+			},
+			"text": " प्रिस्कोंट्रन्स"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,720",
+				"to": "00:00:02,120"
+			},
+			"offsets": {
+				"from": 1720,
+				"to": 2120
+			},
+			"text": " है,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,120",
+				"to": "00:00:02,250"
+			},
+			"offsets": {
+				"from": 2120,
+				"to": 2250
+			},
+			"text": " एस"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,250",
+				"to": "00:00:02,940"
+			},
+			"offsets": {
+				"from": 2250,
+				"to": 2940
+			},
+			"text": " आईजुशी,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,940",
+				"to": "00:00:03,320"
+			},
+			"offsets": {
+				"from": 2940,
+				"to": 3320
+			},
+			"text": " आपके"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,320",
+				"to": "00:00:03,530"
+			},
+			"offsets": {
+				"from": 3320,
+				"to": 3530
+			},
+			"text": " ही"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,530",
+				"to": "00:00:03,910"
+			},
+			"offsets": {
+				"from": 3530,
+				"to": 3910
+			},
+			"text": " ताने"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,910",
+				"to": "00:00:04,200"
+			},
+			"offsets": {
+				"from": 3910,
+				"to": 4200
+			},
+			"text": " में"
+		}
+	]
+}

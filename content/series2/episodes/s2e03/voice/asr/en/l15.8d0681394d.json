@@ -1,0 +1,186 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,080"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 80
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,080",
+				"to": "00:00:00,150"
+			},
+			"offsets": {
+				"from": 80,
+				"to": 150
+			},
+			"text": " We"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,150",
+				"to": "00:00:00,520"
+			},
+			"offsets": {
+				"from": 150,
+				"to": 520
+			},
+			"text": " don't"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,520",
+				"to": "00:00:00,820"
+			},
+			"offsets": {
+				"from": 520,
+				"to": 820
+			},
+			"text": " read"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,820",
+				"to": "00:00:00,970"
+			},
+			"offsets": {
+				"from": 820,
+				"to": 970
+			},
+			"text": " on"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,970",
+				"to": "00:00:01,420"
+			},
+			"offsets": {
+				"from": 970,
+				"to": 1420
+			},
+			"text": " what's"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,420",
+				"to": "00:00:01,790"
+			},
+			"offsets": {
+				"from": 1420,
+				"to": 1790
+			},
+			"text": " heard"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,790",
+				"to": "00:00:02,120"
+			},
+			"offsets": {
+				"from": 1790,
+				"to": 2120
+			},
+			"text": " over"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,120",
+				"to": "00:00:02,160"
+			},
+			"offsets": {
+				"from": 2120,
+				"to": 2160
+			},
+			"text": " a"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,160",
+				"to": "00:00:02,460"
+			},
+			"offsets": {
+				"from": 2160,
+				"to": 2460
+			},
+			"text": " fake"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,460",
+				"to": "00:00:02,900"
+			},
+			"offsets": {
+				"from": 2460,
+				"to": 2900
+			},
+			"text": " Tana's"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,900",
+				"to": "00:00:03,480"
+			},
+			"offsets": {
+				"from": 2900,
+				"to": 3480
+			},
+			"text": " phone,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,480",
+				"to": "00:00:03,800"
+			},
+			"offsets": {
+				"from": 3480,
+				"to": 3800
+			},
+			"text": " S.I."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,800",
+				"to": "00:00:04,200"
+			},
+			"offsets": {
+				"from": 3800,
+				"to": 4200
+			},
+			"text": " Joshi."
+		}
+	]
+}

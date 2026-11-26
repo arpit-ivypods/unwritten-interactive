@@ -1,0 +1,142 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,090"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 90
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,090",
+				"to": "00:00:00,270"
+			},
+			"offsets": {
+				"from": 90,
+				"to": 270
+			},
+			"text": " और"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,270",
+				"to": "00:00:00,810"
+			},
+			"offsets": {
+				"from": 270,
+				"to": 810
+			},
+			"text": " मुछे"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,810",
+				"to": "00:00:01,080"
+			},
+			"offsets": {
+				"from": 810,
+				"to": 1080
+			},
+			"text": " वो"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,080",
+				"to": "00:00:01,560"
+			},
+			"offsets": {
+				"from": 1080,
+				"to": 1560
+			},
+			"text": " औरत"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,560",
+				"to": "00:00:01,800"
+			},
+			"offsets": {
+				"from": 1560,
+				"to": 1800
+			},
+			"text": " जो"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,800",
+				"to": "00:00:01,930"
+			},
+			"offsets": {
+				"from": 1800,
+				"to": 1930
+			},
+			"text": " ये"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,930",
+				"to": "00:00:02,460"
+			},
+			"offsets": {
+				"from": 1930,
+				"to": 2460
+			},
+			"text": " दुलाने"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,460",
+				"to": "00:00:03,000"
+			},
+			"offsets": {
+				"from": 2460,
+				"to": 3000
+			},
+			"text": " बिष्टी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,000",
+				"to": "00:00:03,360"
+			},
+			"offsets": {
+				"from": 3000,
+				"to": 3360
+			},
+			"text": " है"
+		}
+	]
+}

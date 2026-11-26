@@ -1,0 +1,100 @@
+{
+ "scene": "proof/flat2d",
+ "decision": "D-009 v4 vs v3, flat2d pairs (hi l07, l08, l12), Meenu (JG3V6gojK42M5cRu9q07), identical text per pair",
+ "method": {
+  "check1_words": "Local whisper.cpp ggml-small, Devanagari pass (-l hi) plus a Latin pass (-l en, which translates but exposes the English nouns). No script prompt. The connector's Scribe transcribed every take, but its text cannot be read back with the available tools.",
+  "check2_tags": "No tag word appears in any transcript.",
+  "check3_length": "Speech span (first to last speech, ffmpeg silencedetect at -40 dB, 50 ms) against target_seconds, within 20%. Raw file length is also given; targets include the speaker-change gap (script timing_note).",
+  "check4_quiet": "Per-segment RMS split at the >=300 ms pause, compared with the same voice's plain lines (v4 l02 -21.3 dB, l05 -23.9 dB). There are no v3 plain Meenu lines, and v3 renders about 4-8 dB hotter than v4 on the same text, so cross-model level is confounded. Added a voiced-frame ratio (autocorrelation, 60-400 Hz) to tell a whisper from a quiet voiced line."
+ },
+ "pairs": [
+  {
+   "line_id": "l07",
+   "v4": "voice/hi/l07.mp3",
+   "v3": "voice/hi/l07.v3.mp3",
+   "check1": {
+    "v4": "English nouns ok (cash, court, produce); the name was heard as 'बभी'/'Babu'",
+    "v3": "name ok ('बब्लू'/'Bablu'); 'में' heard as 'पे', and the Latin pass gives 'cash code' for 'court'",
+    "result": "tie (one doubtful word each)"
+   },
+   "check2": {
+    "v4": "pass",
+    "v3": "pass",
+    "result": "tie"
+   },
+   "check3": {
+    "v4": "speech 3.26 s, +9% (raw 3.52)",
+    "v3": "speech 3.01 s, 0% (raw 3.52)",
+    "result": "tie (both pass)"
+   },
+   "check4": {
+    "v4": "n/a (no quiet tag); sentence -21.4 dB, no louder than her plain l02",
+    "v3": "n/a; sentence -15.4 dB",
+    "result": "n/a"
+   },
+   "winner": "tie, which stays with v4 under D-009",
+   "note": "Beyond the four checks, v3 says the name more clearly and is clearly her loudest line; v4 is not measurably louder than her curt line. This is for the owner's ear."
+  },
+  {
+   "line_id": "l08",
+   "v4": "voice/hi/l08.mp3",
+   "v3": "voice/hi/l08.v3.mp3",
+   "check1": {
+    "v4": "pass ('लोग तूटा नहीं जाभी से खुला है'; Latin 'Lock is not broken, it's opened with a key')",
+    "v3": "near pass ('खुला' heard as 'ठूला'; Latin pass identical to v4)",
+    "result": "v4 slightly ahead"
+   },
+   "check2": {
+    "v4": "pass",
+    "v3": "pass",
+    "result": "tie"
+   },
+   "check3": {
+    "v4": "speech 3.52 s, +10% (raw 4.00, +25%)",
+    "v3": "speech 3.53 s, +10% (raw 3.60)",
+    "result": "tie (both pass)"
+   },
+   "check4": {
+    "v4": "pass: whisper half -32.7 dB against -28.3 dB, voiced 0.80 to 0.00, words transcribed",
+    "v3": "fail: second half -21.4 dB against -20.9 dB, voiced 0.91 to 0.64; [whispers] ignored",
+    "result": "v4"
+   },
+   "winner": "v4"
+  },
+  {
+   "line_id": "l12",
+   "v4": "voice/hi/l12.mp3",
+   "v3": "voice/hi/l12.v3.mp3",
+   "check1": {
+    "v4": "pass ('साभ को कैसे पता चला?')",
+    "v3": "pass ('साहःप को कैसे पता चला?')",
+    "result": "tie"
+   },
+   "check2": {
+    "v4": "pass",
+    "v3": "pass",
+    "result": "tie"
+   },
+   "check3": {
+    "v4": "speech 1.59 s, -12%",
+    "v3": "speech 1.86 s, +3%",
+    "result": "tie (both pass)"
+   },
+   "check4": {
+    "v4": "pass as written: -27.2 dB, 4.6 dB under her plain lines, words transcribed",
+    "v3": "fail as written: -23.9 dB, not measurably under her plain lines (-21.3/-23.9), although v3 runs hot so this is confounded",
+    "result": "v4 on the letter of the check"
+   },
+   "winner": "v4 on the four checks as written",
+   "note": "Check 4 rewards the wrong thing here. The line asks for 'low but fully voiced'. v4 came out whispered (voiced ratio 0.17) and is marked retake in review.json; v3 is fully voiced (0.63). On the line's own direction v3 is the better take."
+  }
+ ],
+ "tally_flat2d": {
+  "v4": 2,
+  "v3": 0,
+  "tie": 1
+ },
+ "d009_effect": "v3 needs at least 4 of the 6 pairs. It wins 0 of these 3, so it can reach at most 3 of 6 whatever the photoreal pairs show. v4 stays the default. On the voicing reading of l12, v3 would have 1 of 3 here and would need all 3 photoreal pairs.",
+ "per_character": "Meenu, the only voice in these pairs, follows tags cleanly on neither model. v4 obeys [whispers] but over-applies [quietly] and [low voice] into a whisper (hi l10, hi l12, en l10). v3 ignores [whispers]. So no per-character switch on this evidence. On v4, drop the quiet tags for her voiced-quiet lines (this is the retake ladder).",
+ "not_verified": "Performance quality, anger, accent and the 'laakh' pronunciation; the two takes were not listened to. whisper-small is weak on Hindi, so check 1 differences of one word are within its error. The voicing detector is a simple autocorrelation and is most reliable as a same-text comparison. Owner ear pick overrides (D-009)."
+}

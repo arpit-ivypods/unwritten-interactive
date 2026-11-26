@@ -1,0 +1,213 @@
+/*
+ * Motion for every screen. OWNER: motion engineer. Imported by MotionRoot.
+ *
+ * Design system, Motion: dur-tap 160ms for press feedback, dur-move 420ms for
+ * panels and sheets, dur-scene 900ms for the backdrop cross-fade (that one is
+ * in roomCrossfade.ts and the player's RoomBackdrop). ease-out for anything
+ * arriving, ease-in-out for cross-fades.
+ *
+ * Rules kept here:
+ * - Only opacity and the individual transform properties (translate, scale)
+ *   are animated, so other teams' `transform` (the resting tilt of the side
+ *   panels) is never overwritten and nothing triggers layout. The one
+ *   exception is the stage dim: a filter on one still, because that is how
+ *   the design system draws uw-stage--dim.
+ * - Opacity is animated only on an element that is itself the glass (or has
+ *   no glass inside), because opacity below 1 on a wrapper would cut a
+ *   backdrop-filter off from the room behind it for the length of the fade.
+ * - Entrance animations use fill-mode backwards: once they end they leave no
+ *   style behind.
+ * - prefers-reduced-motion: --uw-motion becomes 0, so every rise becomes a
+ *   plain fade (cross-fades stay; travel, tilt and press scale go).
+ *
+ * Hooks used: the flow screens' classes and data-screen / data-part
+ * (components/flow/screens/shared.tsx), the player's uwp-* classes, and the
+ * design system's uw-* classes. Opt in from anywhere with data-motion="rise".
+ */
+@layer components {
+  :root {
+    --uw-motion: 1;
+    /* How far a panel travels as it rises. */
+    --uw-rise: 24px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    :root {
+      --uw-motion: 0;
+    }
+  }
+
+  @keyframes uw-rise {
+    from {
+      opacity: 0;
+      translate: 0 calc(var(--uw-rise) * var(--uw-motion));
+    }
+  }
+  @keyframes uw-slide-in {
+    from {
+      opacity: 0;
+      translate: calc(var(--uw-rise) * var(--uw-motion)) 0;
+    }
+  }
+  @keyframes uw-grow {
+    from {
+      scale: calc(1 - var(--uw-motion)) 1;
+      opacity: 0;
+    }
+  }
+  @keyframes uw-dim-in {
+    from {
+      filter: none;
+    }
+  }
+
+  /* --- Panels and sheets rise as a screen arrives ------------------------
+   * A route change mounts a new screen, so these run on every page change; a
+   * panel that appears later (after the stores load, or a new state) rises
+   * too. The stage does not move: it is the anchor between screens. */
+  .flow-layout > .flow-side > *,
+  .flow-series-dock > *,
+  .flow-shelf > li > *,
+  .flow-welcome > .uw-glass,
+  .flow-page > *,
+  .uwp-info > .uw-glass,
+  .uwp-controls-inner > *,
+  .uw-ambient--screen [data-motion="rise"] {
+    animation: uw-rise var(--dur-move) var(--ease-out) backwards;
+    animation-delay: var(--uw-delay, 0ms);
+  }
+  /* Order: the sheet side first, the other side after it, then the rest. */
+  .flow-layout[data-sheet="right"] > .flow-left,
+  .flow-layout[data-sheet="left"] > .flow-right {
+    --uw-base: 90ms;
+  }
+  .flow-side > * {
+    --uw-delay: var(--uw-base, 0ms);
+  }
+  .flow-side > :nth-child(2) {
+    --uw-delay: calc(var(--uw-base, 0ms) + 60ms);
+  }
+  .flow-side > :nth-child(n + 3) {
+    --uw-delay: calc(var(--uw-base, 0ms) + 120ms);
+  }
+  .flow-series-dock > * {
+    --uw-delay: 160ms;
+  }
+  .flow-shelf > li:nth-child(1) > * {
+    --uw-delay: 200ms;
+  }
+  .flow-shelf > li:nth-child(2) > * {
+    --uw-delay: 260ms;
+  }
+  .flow-shelf > li:nth-child(n + 3) > * {
+    --uw-delay: 320ms;
+  }
+  .flow-page > :nth-child(2) {
+    --uw-delay: 60ms;
+  }
+  .flow-page > :nth-child(n + 3) {
+    --uw-delay: 120ms;
+  }
+  /* The player's audio and subtitle controls: on phones each control is its
+     own glass, so each rises; from 1024px the box around them is the glass
+     (and the controls inside are not), so the box rises. */
+  .uwp-controls-inner > * {
+    --uw-delay: 60ms;
+  }
+  @media (min-width: 1024px) {
+    .uwp-controls-inner > * {
+      animation: none;
+    }
+    .uwp-controls-inner {
+      animation: uw-rise var(--dur-move) var(--ease-out) 60ms backwards;
+    }
+  }
+  /* On phones the sheet comes up from further down, over the stage. */
+  @media (max-width: 899.98px) {
+    .flow-layout > .flow-side > .flow-sheet {
+      --uw-rise: 48px;
+    }
+  }
+
+  /* --- The held ballot moment ---------------------------------------------
+   * The stage dims, the question card rises, then the two glimpses side by
+   * side, and nothing else moves. Across the app's three screens:
+   * Question: the stage dims, then the question card rises in it.
+   * Glimpses: the sheet with the question, then the two glimpses side by side.
+   * Ballot: the sheet, then the two options side by side in order.
+   * The other panels on these screens arrive without moving. */
+  [data-screen="question"] .uw-stage--dim > img {
+    animation: uw-dim-in var(--dur-move) var(--ease-in-out) backwards;
+  }
+  [data-screen="question"] .uw-stage--dim .uw-question {
+    animation: uw-rise var(--dur-move) var(--ease-out) 260ms backwards;
+  }
+  [data-screen="question"] .flow-layout > .flow-side > *,
+  [data-screen="glimpses"] .flow-layout > .flow-side > :not(.flow-sheet),
+  [data-screen="ballot"] .flow-layout > .flow-side > :not(.flow-sheet) {
+    animation: none;
+  }
+  [data-screen="glimpses"] .flow-sheet .flow-pair > * {
+    animation: uw-rise var(--dur-move) var(--ease-out) 180ms backwards;
+  }
+  [data-screen="glimpses"] .flow-sheet .flow-pair > :nth-child(2) {
+    animation-delay: 260ms;
+  }
+  [data-screen="ballot"] .flow-sheet .uw-option {
+    animation: uw-rise var(--dur-move) var(--ease-out) 180ms backwards;
+  }
+  [data-screen="ballot"] .flow-sheet .uw-option ~ .uw-option {
+    animation-delay: 260ms;
+  }
+
+  /* --- The audience split appears ---------------------------------------- */
+  .uw-tally-bar {
+    transform-origin: left center;
+    animation: uw-grow var(--dur-move) var(--ease-out) 120ms backwards;
+  }
+
+  /* --- Press feedback (dur-tap) -------------------------------------------
+   * uw-btn and the stage's play control already scale on press (bundle.css,
+   * extensions.css). The same for everything else that is pressed. `scale`
+   * composes with any transform the element already has. */
+  .uw-option,
+  .uw-choice,
+  .uw-seg button,
+  .uw-dock a,
+  .uw-rail li > a,
+  .uw-trailer,
+  .uw-series,
+  .uw-toast button,
+  [data-motion="press"] {
+    transition: scale var(--dur-tap) var(--ease-out);
+  }
+  :is(.uw-option, .uw-choice, .uw-seg button, .uw-dock a, .uw-rail li > a, .uw-toast button, [data-motion="press"]):active:not(:disabled, [aria-disabled="true"]) {
+    scale: calc(1 - 0.03 * var(--uw-motion));
+  }
+  /* Big cards give less. */
+  :is(.uw-trailer, .uw-series):active {
+    scale: calc(1 - 0.02 * var(--uw-motion));
+  }
+
+  /* --- Toasts and the presenter drawer arrive ------------------------------ */
+  .uw-toast {
+    --uw-rise: 16px;
+    animation: uw-rise var(--dur-move) var(--ease-out) backwards;
+  }
+  .uw-drawer--overlay {
+    animation: uw-slide-in var(--dur-move) var(--ease-out) backwards;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .uw-option,
+    .uw-choice,
+    .uw-seg button,
+    .uw-dock a,
+    .uw-rail li > a,
+    .uw-trailer,
+    .uw-series,
+    .uw-toast button,
+    [data-motion="press"] {
+      transition: none;
+    }
+  }
+}

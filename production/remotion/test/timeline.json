@@ -1,0 +1,52 @@
+{
+  "id": "toolchain-test",
+  "fps": 30,
+  "durationSec": 6,
+  "slateColor": "#3a3a5c",
+  "shots": [
+    {
+      "id": "001",
+      "image": "assets/a.png",
+      "durationSec": 2.5,
+      "move": {"preset": "push-in", "intensity": 0.8, "focus": {"x": 0.5, "y": 0.4}},
+      "transitionIn": {"type": "fade", "frames": 9}
+    },
+    {
+      "id": "002",
+      "layers": [
+        {"src": "assets/b.png", "depth": 0.6},
+        {"src": "assets/fg.png", "depth": 1.6}
+      ],
+      "duration": 75,
+      "move": {"preset": "pan-right", "intensity": 0.7, "easing": "ease-in-out"},
+      "transitionIn": {"type": "crossfade", "frames": 12}
+    },
+    {
+      "id": "003",
+      "type": "slate",
+      "color": "#5a2a82",
+      "note": "slate test",
+      "duration": 30,
+      "transitionIn": {"type": "crossfade", "frames": 10},
+      "transitionOut": {"type": "fade", "frames": 10}
+    }
+  ],
+  "audio": {
+    "dialogue": [
+      {"id": "L1", "src": "assets/dialogue1.wav", "startSec": 1.5},
+      {"id": "L2", "src": "assets/dialogue2.wav", "start": 120}
+    ],
+    "music": [
+      {"id": "bed", "src": "assets/music.wav", "start": 0, "loop": true, "volume": 0.6, "fadeIn": 15, "fadeOut": 30}
+    ],
+    "sfx": [
+      {"id": "whoosh", "src": "assets/sfx.wav", "start": 75, "volume": 0.5}
+    ],
+    "ducking": {"amountDb": -10, "attack": 8, "release": 15}
+  },
+  "subtitles": [
+    {"startMs": 1500, "endMs": 3000, "text": "Pehli line — test dialogue one"},
+    {"startMs": 4000, "endMs": 5000, "text": "Doosri line"}
+  ],
+  "debug": {"burnSubtitles": false, "showInfo": false}
+}

@@ -1,0 +1,687 @@
+{
+ "schema": "frames-review/1",
+ "episode": "s1a01",
+ "by": "S9 Visual checker (anchor check), 26 Nov 2026; this session made none of these frames",
+ "anchor_check": {
+  "stage": "scene-anchor check (D-015 rule 7, D-013 rule 2): the six anchors s03, s04, s15, s21, s28, s31, attempt 1 each",
+  "method": "Each frame viewed whole at 720x1280, then ffmpeg crops of the 1440x2560 png (faces beside the sheet's front close-up or profile view, hands, cuffs, wrists, pockets, nostrils, ear lobes, props, number plates, signboard, cashbox, dashboard and the bottom band). Each png is an exact lanczos upscale of its 941x1672 raw (PSNR inf against the upscaled raw for all six), so detail is the raw's. Judged against shots.json (shot state, framing, refs, screen_direction, state_ledger, storyboard_notes), style.json (character and wardrobe locks for kiran, aditya, billu, mausi; negative_rules; style_frame; light_states; key_props), continuity.json via the state_ledger, and the refs kiran_p1, kiran_p2, kiran_hands, aditya, billu, mausi, pair_kiran_aditya_p1, pair_kiran_aditya_p2, pair_kiran_mausi_p2, bedroom_bed, lane_night, stairwell_up, car_forward, bureau_exterior, bureau_front, billu_car, key_bunch, brass_set. Prompt read: s28 (by grep for hands, sides and jewellery).",
+  "counts": {
+   "judged": 6,
+   "approved": 3,
+   "approved_with_logged_drift": 2,
+   "rejected_for_retake": 1
+  },
+  "rejected": [
+   "s28"
+  ],
+  "waiting_on_rejected_anchor": {
+   "s28": [
+    "s29",
+    "s30"
+   ]
+  },
+  "may_run_now": {
+   "s03": [
+    "s01",
+    "s05",
+    "s06",
+    "s10",
+    "s11",
+    "s12"
+   ],
+   "s15": [
+    "s14",
+    "s16"
+   ],
+   "s21": [
+    "s18",
+    "s19",
+    "s20",
+    "s22",
+    "s24",
+    "s26",
+    "s27"
+   ],
+   "s31": [
+    "s32",
+    "s33",
+    "s34",
+    "s37",
+    "s38"
+   ]
+  },
+  "style_frame_watch_D021": "0 of 5 first-of-scene frames outside the bedroom (s04, s15, s21, s28, s31) copy bedroom_bed's garlands, grille or lamp, or inherit its night light. s21 is blue dawn, s28 warm low sun, s31 flat daylight and tube. The warm grilled window in s04 and the marigold curtain in s31 belong to their own plates (lane_night, bureau_front). D-021's fallback is not triggered.",
+  "height_watch_D017": "Not tested here: s15 has Aditya a step up and s28 has them at different depths. s34 is still the first same-depth test.",
+  "cuff_rule_D023_4_6": "Both cuffs are at rest in every anchor that shows them (s03, s15, s28). No bare forearm near the scar's place and no scar anywhere.",
+  "not_checked": [
+   "No face-matching tool was used. Identity and age are my judgement by eye from crops set beside the sheet close-ups.",
+   "Placement percentages are eye readings from the 720x1280 previews multiplied up, not pixel measurements.",
+   "Light direction was judged by eye.",
+   "Text: by eye on whole frames and on crops of plates, shutters, the signboard, the cashbox, the dashboard and the windows. I did not crop every part of every frame.",
+   "Only the s28 prompt was read (by grep). Every other verdict rests on the shots.json STATE, not on what that prompt said.",
+   "Camera moves and push-ins were not rendered, so whether a push crops anything into or out of the subtitle band was not checked.",
+   "D-021 decision 6 (the retake check of the regenerated sheets) is still unreported. I did not run it. pair_kiran_aditya_p1/p2 and pair_kiran_mausi_p2 were viewed only as whole sheets at 540x960.",
+   "The other 22 generated frames do not exist yet and were not judged."
+  ]
+ },
+ "frames": [
+  {
+   "shot": "s03",
+   "verdict": "approved with logged drift",
+   "attempt": 1,
+   "stage": "anchor",
+   "checks": {
+    "identity": "pass: Kiran's face crop (three-quarter, nose to picture-left) matches the kiran_p1 close-up: long oval face, freckles, straight brows, sindoor parting, small red bindi. She reads late twenties. Aditya in right profile matches the aditya sheet: long narrow face, rimless glasses, short side-parted hair. He reads early thirties.",
+    "jewellery": "DRIFT: Kiran's nose ornament is on the correct nostril (her LEFT, the near side in this view), but it is drawn as a small round gold stud, not the lock's thin plain hoop. Her ear studs carry a small hanging drop rather than plain balls. Her mangalsutra has black beads and a gold centre bead: pass.",
+    "wardrobe": "pass: Kiran in the red saree with its gold border and red blouse, the pallu on her LEFT shoulder (picture-right), barefoot. Aditya in the cream kurta and churidar, sleeves folded back once, barefoot.",
+    "hands_and_cuffs": "pass with a note. Kiran's torso faces the camera more than the STATE asks, so her RIGHT hand is the visible one, resting on her knee on the picture-left side: back of the hand plain, fingertips dipped, thumb and four fingers, cuff at rest just above the wrist with ivory bangles at both ends. Her LEFT forearm and hand are hidden under the fall of the pallu, which is what the STATE requires. Aditya holds the dabba in his near (right) hand; no watch on that wrist, and the far wrist is out of sight.",
+    "props": "pass: small round plain steel dabba, lid on, at his waist. Black phone in a red cover lying face up on the sheet between them, screen dark. On the stool on the window side: a steel tray, the steel tumbler full of pale kesar milk, and the white fold lying open with powder in its crease. The maroon bag on the wooden chair with its side pocket unzipped and empty. Almirah shut. Brass key on its doubled red thread at mid-chest. Patch pocket on his near (right) chest.",
+    "geography": "pass: Aditya on the picture-left facing picture-right, Kiran on the picture-right facing picture-left. Window with grille in the right wall, lamp on the almirah side, no ceiling fan. Matches bedroom_bed.",
+    "eyelines": "pass: Aditya's eyes are lowered to the floor and Kiran's are on him.",
+    "text": "pass: none, including the building seen through the window.",
+    "placement": "pass: Aditya's face at about 15-24 % of the frame height, Kiran's at about 31-40 %. The bottom quarter holds only floor, feet and the window's light bars."
+   },
+   "why_not_rejected": "Stud against hoop is a small jewellery-type drift on the correct side, at wide-shot size. It does not change how she reads, and no beat turns on it. The torso turn keeps the requirement that matters (left forearm hidden; scar never in frame).",
+   "for_later_prompts": "Frames attaching s03 (s01, s05, s06, s10, s11, s12) should list under 'do not copy from the anchor': the small round nose stud (she wears a thin plain gold HOOP in her LEFT nostril) and the drop on the ear studs (plain gold balls). s01 is an extreme close-up from the tip of her nose down, so this matters most there. s05 and s10 should keep her LEFT forearm covered or at rest as their own STATE says, not copy the frontal torso."
+  },
+  {
+   "shot": "s04",
+   "verdict": "approved",
+   "attempt": 1,
+   "stage": "anchor",
+   "checks": {
+    "identity": "pass: the face crop matches the billu close-up: long narrow face, hollow cheeks, patchy stubble, thick brows, wet-look hair gelled back with curling ends. He reads about thirty. His eyes are cut towards picture-right, a half smirk.",
+    "toothpick": "pass: in the RIGHT corner of his mouth (picture-left).",
+    "wardrobe": "pass: faded denim trucker jacket worn open with sleeves rolled, black round-neck T-shirt, dark jeans. No chain, watch, ring or cap.",
+    "hands": "pass: his RIGHT hand (picture-left) is in the front jeans pocket, the phone already out of sight. The car key (black head, brass blade, steel ring) hangs from the pocket mouth on that side, its ring running up into the pocket where the fingers are. Which finger holds it cannot be seen. His LEFT hand (picture-right) lies flat on the bonnet: thumb and four fingers, no fused digits.",
+    "car": "pass: the white boxy sedan with black bumpers, a blank front number plate, marigolds along the dashboard and the lemon-chilli charm on the mirror. The steering wheel is on the picture-left as we face the car's front, which is the car's right, so it is right-hand drive. Lights off.",
+    "boys": "pass: two men on the motorbike deep in the lane, riding away with the red tail light lit. Backs only, no faces. The bike's plate is an illegible blur.",
+    "lane": "pass: matches lane_night: one cool blue-white streetlight and the warm amber grilled window as the only warm light. No rain and no wet ground.",
+    "text": "pass: none on the plates, shutters, doors or walls.",
+    "placement": "pass: face at about 32-43 % of the frame height. The bottom quarter holds jeans, bumper and the plate. Hands at about 63-71 %."
+   },
+   "notes": "No later frame attaches s04 (the lane's only frame)."
+  },
+  {
+   "shot": "s15",
+   "verdict": "approved",
+   "attempt": 1,
+   "stage": "anchor",
+   "checks": {
+    "identity": "pass: Kiran's face crop matches the kiran_p2 close-up (freckles, kajal, sindoor, bindi, ball studs) and she reads late twenties. Aditya's face matches the aditya close-up: glasses, long face, side-parted hair. He reads early-to-mid thirties.",
+    "jewellery": "pass: thin gold hoop in her LEFT nostril (picture-right), gold ball studs, and the mangalsutra with its centre bead.",
+    "wardrobe": "pass: ash-grey crinkled salwar-kurta with sleeves just below the elbow, grey dupatta over her LEFT shoulder (picture-right), flat black toe-post sandals. Aditya in the cream kurta with the patch pocket on his RIGHT chest (picture-left), brass key at mid-chest, tan sandals.",
+    "hands_and_cuffs": "pass: her RIGHT hand (picture-left) hangs at her side, back of the hand plain, fingertips dipped, cuff at rest at the wrist. Her LEFT hand (picture-right) is curled over the iron handrail, back of the hand plain, tips dipped, cuff at rest. Aditya's LEFT hand (picture-right) holds the closed red velvet box at his side: thumb and four fingers, and the watch on that wrist.",
+    "props": "pass: the closed red velvet box matches the brass_set box. The bare yellow bulb is lit over the landing and the handrail is on the picture-right wall.",
+    "staging": "pass: Kiran three steps up, coming down and facing the camera. Aditya one step above, just behind and a little to the picture-right, his head well above hers, eyes lowered onto her. Billu is not in frame.",
+    "text": "pass: none. The upper picture-left wall is plain, so the '3:00' overlay has room.",
+    "placement": "pass: Kiran's face at about 18-27 % of the frame height, Aditya's at about 7-16 %. The bottom quarter holds only steps and sandals.",
+    "notes": "The open door at the top reads teal-grey rather than pale blue. Harmless."
+   }
+  },
+  {
+   "shot": "s21",
+   "verdict": "approved",
+   "attempt": 1,
+   "stage": "anchor",
+   "checks": {
+    "identity": "pass: the profile crop matches the kiran_p2 right-profile view: small straight nose, full lower lip, freckles, low bun with loose strands. She reads late twenties.",
+    "jewellery": "pass: in right profile (nose to picture-right) no nose ornament shows on the near nostril, as the lock says. Gold ball stud, sindoor line, bindi. The mangalsutra hangs a little lower than the base of her throat, about as on the sheet.",
+    "wardrobe": "pass: grey kurta. The dupatta falls down her front from the far (left) shoulder, and the near shoulder is bare of it.",
+    "hands": "pass: below the frame.",
+    "car": "pass: we look across from the driver's side and she faces the road (picture-right). Her side window shows flat fields, mist and blue dawn. The dashboard's end with marigolds is at the lower picture-right. No driver or rear passenger is visible.",
+    "light": "pass: car_dawn_blue, soft and cool with low contrast. No amber and no lamp.",
+    "text": "pass: none on the dashboard or the window.",
+    "placement": "pass: face at about 22-46 % of the frame height. The bottom quarter holds the kurta and the seat."
+   },
+   "for_later_prompts": "b8 frames attaching s21 list its blue light under do-not-copy (car_first_sun), as shots.json already says."
+  },
+  {
+   "shot": "s28",
+   "verdict": "rejected",
+   "attempt": 1,
+   "stage": "anchor",
+   "checks": {
+    "identity": "pass: Aditya's face crop matches the aditya sheet. Kiran's three-quarter face (nose to picture-left) matches kiran_p2, and she reads late twenties.",
+    "hand_sides": "FAIL: the wrong hands are joined. Both torsos are turned towards the camera, not side-on. Evidence for Kiran: the dupatta sits on her shoulder on the picture-right, which is her LEFT, and the arm reaching to Aditya comes from her picture-left shoulder, so it is her RIGHT arm. Evidence for Aditya: his patch pocket (on his RIGHT chest) is on the picture-left half of his chest, and the arm reaching to her comes from his picture-right shoulder, so it is his LEFT arm. So the frame shows her RIGHT hand, palm up, in his LEFT hand. The STATE and the beat ask for her LEFT hand, the hand whose cuff covers the scar, in his RIGHT hand on the near side. s29's macro (her LEFT forearm, his RIGHT hand closing on the cuff) would not cut with this.",
+    "henna": "FAIL: Kiran's other hand, her LEFT, lies palm down on her lap at the lower picture-right of her body. The solid henna disc is on the BACK of that hand. The lock, fixed at Gate 3 (D-021), says the backs of both hands are plain with no disc. The held hand shows the disc correctly on its palm.",
+    "jewellery": "DRIFT: no nose ornament is visible on her near (LEFT) nostril in this three-quarter view, where the lock says the hoop shows. Ball studs: pass.",
+    "watch": "DRIFT: both of Aditya's wrists are in view and neither has the watch. The STATE expected his left wrist to be out of sight.",
+    "cuffs": "pass: both cuffs at rest just above the wrists with ivory bangles at the ends. No bare forearm near the scar's place.",
+    "car_and_street": "pass: white sedan with its rear at the picture-right, nose away. The front-left door is open towards the pavement with its inner panel towards us. Steering wheel and marigolds on the far (right) side, so right-hand drive. The grey shutter is down with a padlock on the picture-left, the pink signboard above it is blank, and the street is empty. Billu is not visible.",
+    "light": "pass: low warm sun from the picture-left raking across the shutters, with a blue-grey sky. No night light and no bedroom props.",
+    "text": "pass: none on the signboard, shutters or car.",
+    "placement": "pass: Aditya's face at about 20-28 % of the frame height, Kiran's at about 30-39 %, and the joined hands at about 53 %. The bottom quarter holds pavement, sandals and the car's sill."
+   },
+   "why_rejected": "This is a side error on the prop the beat turns on: the hand and cuff over the scar (D-003, D-005). It breaks the s28 to s29 cut, and the henna disc on the back of a hand breaks a lock that Gate 3 fixed. s28 is also the anchor for s29 and s30, so its faults would spread (D-013 rule 2).",
+   "retake_fix": [
+    "Cause: the prompt asks for both faces 'three-quarters to the camera', and the model turned both bodies to the camera to get it. Two people facing each other across the frame with their bodies square to the lens join his LEFT hand to her RIGHT.",
+    "Restage side-on, in picture terms. Aditya stands in profile facing the picture-right. His near shoulder, near arm and the patch pocket face the camera. The arm that reaches for her is the near one, on the camera side of his body. The watch wrist is hidden behind his body.",
+    "Kiran is turned to face the picture-left, side-on to the camera. The shoulder carrying the grey dupatta is the one nearer the camera. The hand he holds belongs to that same dupatta-side arm, on the near side, palm up or back up, with its red cuff at rest. Her face is in profile or near-profile with the nose to the picture-left, and the thin gold hoop shows on the near nostril.",
+    "Her other hand is hidden on the far side of her body (on the seat edge or the door frame behind her), not in her lap.",
+    "Write that the joined hands are nearer the camera than both bodies. Drop 'three-quarters to the camera' for both faces and use 'profile, turned slightly towards the camera' instead.",
+    "Add to the prompt's AVOID or FINAL CHECK: 'no henna disc on the back of either hand; the disc is only on a palm'.",
+    "If the retake still joins the wrong hands, accept the better take and log it (D-013 rule 11, D-023 rule 4.6's ladder). s29's macro then carries the hand side, as an insert made for it."
+   ],
+   "waiting": "s29 and s30 attach s28 and must not run until the s28 retake passes the retake check (D-023 rule 4.1)."
+  },
+  {
+   "shot": "s28",
+   "verdict": "approved with logged drift",
+   "attempt": 2,
+   "stage": "retake check",
+   "final": true,
+   "final_rule": "D-013 rule 11 / D-023 rule 4.1: one retake per frame; attempt 2 is the better take and stands. No further retake. The anchor row's own fallback applies: 'If the retake still joins the wrong hands, accept the better take and log it ... s29's macro then carries the hand side.'",
+   "by": "S9 Visual checker (retake check of s28 attempt 2 and frame check of s30 attempt 2), 26 Nov 2026; this session made neither frame",
+   "image": "frames/s28.png (attempt 2, prompt_sha 763620de1399, refs pair_kiran_aditya_p2, billu_car, bureau_exterior, bedroom_bed as manifest row for s28 attempt 2, status ok); attempt 1 kept as frames/s28.prev1.png",
+   "file_md5": "71a91fed197fbd1e2a6e47fc7b86bd2f",
+   "method": "Viewed whole at 720x1280 beside s28.prev1.png, then ffmpeg crops of the 1440x2560 png: both faces, Kiran's nose and ear, the joined hands (zoomed 3x), Kiran's torso, dupatta and other arm, Aditya's chest, key and sleeves, the shutter, fascia and padlock, the street behind, the car's rear and sill. Judged against prompts/s28.txt (all but the CHARACTER LOCK tail after Aditya's sleeves, which I checked against style.json instead), shots.json s28 (state, framing, refs, drift), style.json locks for kiran (grey salwar-kurta) and aditya, the anchor row above, and the sheets pair_kiran_aditya_p2, bureau_exterior. The png is an exact lanczos upscale of its 941x1672 raw (PSNR inf). prompt_sha 763620de1399 equals the sha256 of prompts/s28.txt.",
+   "checks": {
+    "identity": "pass: Aditya in profile (nose to the picture-right) matches the aditya half of pair_kiran_aditya_p2: long narrow face, beard shadow, ears standing out, rimless glasses, reads early thirties. Kiran's three-quarter face (nose to the picture-left) matches: freckles, kajal, sindoor line, red bindi, low bun with loose strands; reads late twenties.",
+    "rejecting_faults": "Of the two faults that rejected attempt 1, the henna one is fixed and the hand side is fixed for Aditya only (see hand_sides).",
+    "hand_sides": "DRIFT (logged, not fixed): Aditya now stands in profile facing the picture-right with his right side to the camera (patch pocket on the camera side of his chest, the other arm and watch wrist hidden), and the reaching arm is the near one, so the holding hand is his RIGHT, thumb on top: pass. Kiran is still wrong. Her torso is turned about three-quarters to the camera, not side-on: the round neckline and mangalsutra face the lens, the dupatta lies on the picture-right shoulder (her LEFT, as the lock wants) and runs down the picture-right of her body, and the reaching arm leaves from the picture-left shoulder. That makes the held hand her RIGHT, in his RIGHT hand, where the STATE asks for her LEFT. Her thumb is not visible in the 3x crop, so the hand's own shape does not settle it; the torso does. On screen the error is hard to read: both forearms carry identical cuffs, no scar is shown, and the screen direction (her cuffed arm from the picture-right, his hand from the picture-left, her hand palm down on his) matches s29's macro, which carries the LEFT forearm and the cuff over the scar.",
+    "henna": "pass: the back of the held hand is plain wheat-brown with only the dipped fingertips; her other hand is hidden on the far side of her body (only the grey sleeve of that arm shows beside the car's pillar), not in her lap. No disc on any back of a hand.",
+    "jewellery": "pass: thin gold hoop in her near (LEFT) nostril, nose to the picture-left, as the lock says it shows in this view; gold ball stud in the visible ear; mangalsutra; bindi.",
+    "cuffs": "pass: the held arm's cuff is at rest just above the wrist, ivory bangles at both ends, no bare forearm near the scar's place; the other cuff is out of sight.",
+    "watch": "pass: no watch visible; his left wrist is behind his body.",
+    "aditya_wardrobe": "DRIFT: his sleeve is rolled to mid-forearm, not folded once with the cuff just above the wrist (lock); s29 shows the same roll, so the pair matches, but s30's soft foreground cuff sits near the wrist. The key hangs at mid-chest on a red thread that reads single rather than doubled. Glasses, cream kurta and churidar, tan sandals: pass.",
+    "car_and_street": "pass: the white sedan at the picture-right, rear and tail light nearest the camera, nose away, left side to the pavement; the front passenger door open towards the pavement with its inner panel towards us; dull dusty paint, black bumper. Billu, the wheel and the dashboard are out of sight (nothing contradicts right-hand drive). Grey shutter down with a padlock at its foot on the picture-left, the blank faded-pink fascia above it, neighbours' shutters down, street empty.",
+    "light": "pass: low warm sun raking orange across the shutters from the picture-left, pale blue-grey sky, warm soft light on both faces and the hands. No night light and no bedroom props (D-021 watch).",
+    "text": "pass: none on the fascia, shutters, car or the shop fronts down the street (by eye on crops; the far fronts are too soft to carry text).",
+    "placement": "pass: Aditya's face (brow to chin) at about 22-27 % of the frame height, Kiran's at about 34-41 %, the joined hands at about 52-56 %, near the centre; the shutter between about 15 and 66 %. The bottom fifth holds pavement, sandals and the car's bumper and wheel. No face or hand in the outer 6 % band."
+   },
+   "drift": [
+    "The held hand is Kiran's RIGHT, not her LEFT (torso three-quarters to the camera, reaching arm from the picture-left shoulder). Accepted under D-013 rule 11 as the anchor row's fallback set out; s29's macro carries the LEFT forearm and the cuff over the scar. The cut works by screen direction.",
+    "Kiran's body is turned about three-quarters to the camera rather than side-on, so the dupatta lies on her far shoulder, not the near one the prompt asks for (it is still her LEFT, as the lock wants).",
+    "Aditya's sleeve is rolled to mid-forearm instead of folded once at the wrist, and the key thread reads single rather than doubled.",
+    "Aditya looks down at the joined hands rather than at her face; the beat (playing the attentive husband) still reads."
+   ],
+   "attempt_1": {
+    "verdict": "rejected",
+    "stage": "anchor",
+    "why_rejected": "Wrong hands joined (her RIGHT in his LEFT) and the henna disc on the back of her left hand in her lap."
+   },
+   "better_take": "attempt 2: Aditya's side, the henna lock, the hoop, the hidden watch wrist and the hidden other hand are all fixed; only Kiran's hand side remains wrong, against two faults in attempt 1. It introduces no new side or lock error.",
+   "releases": "s29 and s30 attach this frame. Their condition (s28 attempt 2 passing its retake check) is met by this row."
+  },
+  {
+   "shot": "s31",
+   "verdict": "approved with logged drift",
+   "attempt": 1,
+   "stage": "anchor",
+   "checks": {
+    "identity": "pass: Mausi's three-quarter face (nose to picture-left) matches the mausi close-up: round full face, large maroon bindi, grey streaks oiled back into a low bun, rose lips. She reads mid-fifties. Kiran's near-profile matches kiran_p2: freckles, ball stud, sindoor, small bindi. She reads late twenties.",
+    "mausi_jewellery": "pass on the stud: one small gold stud on her near (LEFT) nostril, and no right profile is shown. Thin gold chain: pass. DRIFT on the ring: the hand on Kiran's near cheek is Mausi's near (LEFT) hand, seen from the back with the thumb towards Kiran's chin, and it wears a thin gold band on the ring finger. The lock puts the band on her RIGHT hand only, with no other rings. Her far hand's band is not visible. There is a tiny pale point on her ear lobe, too small to read as an earring.",
+    "mausi_hands_and_bangles": "pass: her near forearm is bare and unmarked under a stack of about eight green glass bangles. A second green stack shows at Kiran's far jaw, so her far hand is on Kiran's far cheek. No extra or fused fingers on the visible hand.",
+    "keys": "pass: steel ring on a hook with about six keys of the key_bunch type, at Mausi's near (LEFT) hip at the lower picture-right, as the STATE allows.",
+    "kiran": "pass: grey kurta, the dupatta towards her far side, eyes lowered. Her hands hang below the frame, so no cuff or forearm detail is in shot. No nose ornament shows on her near (RIGHT) side, which is correct.",
+    "background": "pass: desk with the closed grey cashbox, marigold curtain and tube light, matching bureau_front. The beige oval on the upper picture-left wall is the plate's mannequin head, not a face. The mirror wall is not in frame.",
+    "light": "pass: bureau_morning, flat pale daylight with the tube on. Nothing copied from the bedroom style frame.",
+    "text": "pass: none on the cashbox, walls or curtain.",
+    "placement": "pass: Kiran's face at about 24-43 % of the frame height, Mausi's at about 25-46 %. The keys sit in the bottom fifth (about 86-96 %), which the STATE allows ('at the lower picture-right edge or just below the frame'). They are not this shot's key object."
+   },
+   "why_not_rejected": "The band on the wrong hand is a lock detail with no story weight, and D-021 decision 6 handles ring findings by keeping them consistent and logging them, not by remaking images. Face, age, stud side, keys side and bangles are all right.",
+   "for_later_prompts": "Frames attaching s31 (s32, s33, s34, s37, s38) should list under 'do not copy from the anchor': the gold band on her LEFT hand. The band is only on her RIGHT hand, and her left hand has no ring. This matters most for s38, the b11 insert of Mausi's RIGHT hand with the band on Kiran's LEFT wrist."
+  },
+  {
+   "shot": "s01",
+   "verdict": "approved",
+   "attempt": 1,
+   "stage": "frame check",
+   "checks": {
+    "identity": "pass: lower face from the eyelashes to the saree matches kiran_p1: freckles, small straight nose, full lower lip, late twenties.",
+    "jewellery": "pass: crop of the nose shows a thin plain gold HOOP on the near nostril (her LEFT; nose to picture-left), so the anchor's stud was not copied. Plain gold ball stud on the near ear lobe. Black-bead mangalsutra with a gold centre bead.",
+    "wardrobe": "pass: red saree with gold border, the border and pallu on her picture-right shoulder (her LEFT).",
+    "hands_and_cuffs": "pass: no hands or forearms in frame, as the STATE asks.",
+    "light": "pass: warm lamp key on the face, cool window light at picture-left in the soft background.",
+    "text": "pass: none.",
+    "placement": "pass: nose and mouth at about 5-30 % of the frame height; the bottom quarter is saree."
+   }
+  },
+  {
+   "shot": "s05",
+   "verdict": "approved",
+   "attempt": 1,
+   "stage": "frame check",
+   "checks": {
+    "identity": "pass: face crop matches the kiran_p1 three-quarter view (nose to picture-left): freckles, straight brows, kajal circles, sindoor, small bindi, late twenties.",
+    "jewellery": "pass: thin hoop on the near (LEFT) nostril, ball stud, mangalsutra.",
+    "wardrobe": "pass: red blouse and saree, pallu over her picture-right (LEFT) shoulder.",
+    "hands_and_cuffs": "pass: both forearms and hands out of frame.",
+    "eyeline": "pass: she looks just past the picture-left edge of the lens.",
+    "props": "note: the steel tray on the stool behind her (soft, at the picture-right) shows no tumbler; the tumbler may be hidden behind her bun. The STATE puts glass, fold and phone out of frame, and nobody will read the tray at this softness. Not a fault.",
+    "text": "pass: none.",
+    "placement": "pass: face at about 29-54 % of the frame height; the bottom quarter is saree and blouse."
+   }
+  },
+  {
+   "shot": "s06",
+   "verdict": "approved",
+   "attempt": 1,
+   "stage": "frame check",
+   "checks": {
+    "identity": "pass: matches the aditya sheet: long narrow face, rimless rectangular glasses, side-parted hair, early thirties.",
+    "wardrobe": "pass: cream kurta, band collar, patch pocket on the picture-left half of his chest, which is his RIGHT chest with his right side nearer the camera (body turned to the picture-right).",
+    "props": "pass: brass key on the doubled red thread at about 80-88 % of the frame height (the STATE puts it at the lower edge). Dabba and hands below the frame. Behind him the grey-green almirah shut and the wooden chair with the maroon bag, its side pocket open and empty.",
+    "eyeline": "pass: he looks just past the picture-right edge.",
+    "text": "pass: none.",
+    "placement": "pass: face at about 22-48 %."
+   }
+  },
+  {
+   "shot": "s10",
+   "verdict": "approved with logged drift",
+   "attempt": 2,
+   "stage": "retake check",
+   "final": true,
+   "final_rule": "D-013 rule 11 / D-023 rule 4.1: one retake per frame; attempt 2 is the better take and stands. No further retake.",
+   "by": "S9 Visual checker (retake check), 26 Nov 2026; this session made neither frame",
+   "image": "frames/s10.png (attempt 2, prompt_sha fad895d3b937, refs as manifest row 32); attempt 1 kept as frames/s10.prev1.png",
+   "checks": {
+    "rejecting_fault_fixed": "pass: crop of both forearms. The arm from her picture-left shoulder (her RIGHT, the near arm) now wears its own complete glossy deep-red cuff with two ivory bangles at each end; its hand lies over the other cuff. The arm from her picture-right shoulder (her LEFT) crosses the waist, hand towards the picture-left, cuff at rest at the wrist with two ivory bangles at each end and a hand's width of bare forearm above it up to the sleeve. No scar or mark anywhere (zoomed crop of the bare band above the left cuff).",
+    "identity": "pass: face crop beside the kiran_p2 front close-up: long oval face to a small pointed chin, faint freckles, straight brows, kajal, centre parting with sindoor, low bun with loose strands, bindi, mangalsutra. Reads late twenties.",
+    "jewellery": "pass: thin gold hoop on the picture-right nostril (her LEFT) in this near-frontal view. Zoomed crops of both ear lobes: plain gold ball studs, no drop (the anchor's drop is gone, as the fix asked).",
+    "henna": "pass: backs of both hands plain wheat-brown, no disc; fingertips dipped orange-brown on the visible fingers.",
+    "wardrobe": "pass: ash-grey kurta and salwar, grey dupatta over her picture-right (LEFT) shoulder, sleeves ending at about the elbow.",
+    "props": "pass: red saree with a narrow gold border folded over the chair back; maroon bag on the seat, side pocket half unzipped towards the camera with the steel dabba's round lid showing; almirah open on plain folded cloth; amber lamp at the picture-right.",
+    "text": "pass: none.",
+    "placement": "pass: face at about 16-29 % of the height, hands and cuffs at about 55-67 %; bottom fifth is kurta hem, chair legs and floor. Her picture-left elbow touches the left edge (not a face or hand)."
+   },
+   "drift": [
+    "Right (near) cuff sits about 2-3 cm up from the wrist: a narrow band of bare wrist shows between its ivory bangles and the resting hand. It reads as worn and at rest, not pushed up, and the scar is on the LEFT forearm only, so nothing story-critical is exposed. This confirms the storyboard's own drift note.",
+    "Both cuffs read a little wide in diameter and slightly longer than the lock's 10 cm, close to the kiran_hands sheet's proportions.",
+    "Torso faces the camera more than the three-quarter turn the STATE asks (carried from attempt 1); hand sides still read correctly.",
+    "The saree on the chair reads deep crimson in the lamp light rather than bright sindoor-red."
+   ],
+   "cuff_rule_D023_4_6": "Cuffs are at rest in this shot, so no pushed-up cuff needs framing out. kiran_hands is attached; its second view (cuff at rest at the wrist) matches this state, and the prompt lists the third view (cuff pushed up, scar bare) as do-not-copy.",
+   "attempt_1": {
+    "verdict": "rejected",
+    "stage": "frame check",
+    "why_rejected": "The near (right) forearm had no chooda at all, which contradicted the constant both-cuffs-at-rest ledger line. Logged drift then: ear-stud drop from the anchor, torso too square."
+   },
+   "better_take": "attempt 2: it fixes the missing cuff and the ear-stud drop and introduces no side error."
+  },
+  {
+   "shot": "s11",
+   "verdict": "approved",
+   "attempt": 1,
+   "stage": "frame check",
+   "checks": {
+    "identity": "pass: matches the aditya sheet.",
+    "wardrobe": "pass: cream kurta, patch pocket on the picture-left chest (his RIGHT, facing camera), sleeves folded once; barefoot not in frame.",
+    "hands": "pass: his LEFT hand (picture-right) holds the closed red velvet box at his side, the steel watch with a brown strap on that wrist; his RIGHT hand (picture-left) hangs empty. Five fingers on each.",
+    "props": "pass: key on its thread at mid-chest. Behind him on the stool: the steel tumbler full of pale milk and the white fold lying open beside it.",
+    "eyeline": "pass, roughly: face near-frontal, eyes a little to the picture-left.",
+    "text": "pass: none.",
+    "placement": "pass: face at about 9-25 %. His empty right hand reaches about 87 %, which carries no action."
+   }
+  },
+  {
+   "shot": "s12",
+   "verdict": "approved",
+   "attempt": 1,
+   "stage": "frame check",
+   "checks": {
+    "pocket": "pass: patch pocket on his RIGHT chest (near side, picture-left), the white back of the print and the small folded-shut paper square showing at its mouth; no picture side.",
+    "key_and_padlock": "pass: the doubled red thread runs taut from the top edge to the brass key, which is in the padlock; his RIGHT hand turns it (back of the hand to camera, folded cuff at the left edge, no watch). The shackle has sprung open and still hangs through the hasp's staple; hasp closed; the iron bolt above still shot; door shut.",
+    "text": "pass: none.",
+    "placement": "pass: pocket at about 28-35 %, key and padlock at about 55-65 %. No face."
+   }
+  },
+  {
+   "shot": "s14",
+   "verdict": "approved",
+   "attempt": 1,
+   "stage": "frame check",
+   "checks": {
+    "identity": "pass: face crop matches the billu close-up: long narrow face, hollow cheeks, patchy stubble, gelled hair; about thirty.",
+    "toothpick": "pass: in the corner of his mouth on the picture-left (his RIGHT).",
+    "hands": "pass: his RIGHT hand (picture-left) on the door edge with the steel ring on the index finger and the black-headed key with brass blade hanging from it; LEFT hand at his side.",
+    "wardrobe": "pass: faded denim jacket open, sleeves rolled, black T-shirt, dark jeans, grey-white sneaker on the bottom step.",
+    "geography": "pass: reverse down the flight, handrail on the picture-left (the picture-right wall in s15). Night lane behind with the cool streetlight, the white car (rear three-quarter) and a warm window. Nobody else.",
+    "text": "pass: crop of the car shows no plate text.",
+    "placement": "pass: face at about 20-35 %."
+   }
+  },
+  {
+   "shot": "s16",
+   "verdict": "approved with logged drift",
+   "attempt": 1,
+   "stage": "frame check",
+   "checks": {
+    "hands": "pass: his LEFT hand (picture-right) holds the box base palm up, watch with a brown strap and pale dial (no digits) on that wrist; his RIGHT hand (picture-left) holds the lid up and back with the thumb on its edge, bare wrist. Five fingers each.",
+    "wardrobe_and_key": "pass: patch pocket on the picture-left chest (his RIGHT), sleeves folded, key on the red thread at the top of the frame.",
+    "brass_set": "pass on the set: leaf necklace and two leaf earrings on cream satin in the red velvet box, matching brass_set.",
+    "scratch": "DRIFT: no distinct scratch showing dull brass near the clasp; the leaves by the clasp are only a little duller. brass_set does not draw a scratch either, so the frame matches its sheet; the line carries 'it's only brass'.",
+    "text": "pass: none.",
+    "placement": "pass: hands and box at about 22-75 %; the bottom quarter is kurta."
+   },
+   "why_not_rejected": "The scratch is a small grace note that the dialogue states outright; the sheet never showed it, and the set, hands and sides are right."
+  },
+  {
+   "shot": "s18",
+   "verdict": "approved with logged drift",
+   "attempt": 1,
+   "stage": "frame check",
+   "checks": {
+    "car": "pass: the white sedan matches billu_car (boxy shape, dent on the rear door, black bumpers, blank white plate, marigolds on the dash, lemon-and-chilli charm), headlights on, driving towards the picture-left in the far lane, so its right (driver's) side faces the camera, which fits right-hand drive in left-hand traffic.",
+    "road_and_light": "pass: empty two-lane highway, flat fields, ground mist, blue-grey dawn with a faint warm horizon. No vehicles, people or signs.",
+    "faces": "DRIFT: crop of the cabin shows no driver: the near front window shows a seat and dark glass but no head, so the car can read as empty. At this size (car about 12 % of frame height) it reads as dark glass, which the STATE asked for.",
+    "text": "pass: plate blank, no signs.",
+    "placement": "pass: car at about 55-67 %."
+   },
+   "why_not_rejected": "Wide establishing shot; the cabin is small and dark, and no face was wanted."
+  },
+  {
+   "shot": "s19",
+   "verdict": "approved",
+   "attempt": 1,
+   "stage": "frame check",
+   "checks": {
+    "identity": "pass: in the mirror, Billu's thick brows, narrowed dark eyes and nose bridge, matching his sheet.",
+    "geography": "pass: steering wheel and his shoulder on the picture-right, so right-hand drive. The back of his head and denim collar soft at the picture-right edge. Toothpick not in frame, as the storyboard allows.",
+    "props": "pass: lemon-and-green-chilli charm on a dark thread below the mirror; marigolds along the dashboard. Key not in view.",
+    "light": "pass: car_dawn_blue.",
+    "text": "pass: none.",
+    "placement": "pass: mirror eyes at about 22-34 %."
+   }
+  },
+  {
+   "shot": "s20",
+   "verdict": "approved",
+   "attempt": 1,
+   "stage": "frame check",
+   "checks": {
+    "identity": "pass: matches the aditya sheet; a faint smile.",
+    "geography": "pass: looking back from between the front seats; he sits on the rear seat on the picture-right (behind the front passenger seat).",
+    "wardrobe_and_props": "pass: patch pocket on the picture-left chest (his RIGHT) with a thin white edge of paper at its mouth; key on its thread at mid-chest; glasses; watch on the picture-right wrist (his LEFT), dial without digits.",
+    "hands": "pass: loose in his lap, five fingers each; they sit in the bottom quarter but carry no action.",
+    "text": "pass: none.",
+    "placement": "pass: face at about 20-42 %."
+   }
+  },
+  {
+   "shot": "s22",
+   "verdict": "approved",
+   "attempt": 1,
+   "stage": "frame check",
+   "checks": {
+    "identity": "pass: face crop matches the kiran_p2 right profile: freckles, ball stud, sindoor, bindi; no hoop on the near (right) nostril, as the lock says.",
+    "wardrobe": "pass: grey kurta, grey dupatta down her front from the far shoulder.",
+    "billu_hand": "pass: a hand in a rolled faded-denim sleeve enters from the picture-left, palm up, holding a plain black phone flat with the screen up, over the gear knob; no watch, no ring. The hand's anatomy is consistent with his LEFT hand, though a still cannot prove it.",
+    "phone": "pass: screen a plain soft glow, no characters (crop).",
+    "car": "pass: dashboard end with marigolds and glovebox on the picture-right (passenger side), dawn fields through her window.",
+    "hands_and_cuffs": "pass: her hands are not in frame.",
+    "eyeline": "drift, small: she looks ahead rather than 'a little down towards the phone'.",
+    "text": "pass: none.",
+    "placement": "pass: face at about 18-40 %, phone at about 57-61 %."
+   }
+  },
+  {
+   "shot": "s24",
+   "verdict": "approved",
+   "attempt": 1,
+   "stage": "frame check",
+   "checks": {
+    "identity": "pass: Kiran in right profile (nose to picture-right), leaning to the phone, mouth open; no hoop on the near nostril. Aditya only as a soft edge of glasses, ear and cream shoulder at the picture-left (two faces at most).",
+    "geography": "pass: from the rear bench, Kiran front-left (picture-left), Billu behind the wheel on the picture-right seen only from behind (gelled hair, denim collar). Right-hand drive. The mirror glass shows only a dark blur.",
+    "phone_and_hand": "pass: Billu's LEFT hand (from the picture-left side of his body) holds the phone flat over the gear lever, screen up and blank.",
+    "hands_and_cuffs": "pass: crop of her lap shows one forearm (from the door side, her LEFT) with its cuff complete and at rest, ivory bangles at the ends, back of the hand plain, no bare skin near the scar's place.",
+    "props": "pass: charm and marigolds.",
+    "text": "pass: none.",
+    "placement": "pass: Kiran's face at about 33-50 %, the phone at about 53 %."
+   }
+  },
+  {
+   "shot": "s26",
+   "verdict": "approved with logged drift",
+   "attempt": 1,
+   "stage": "frame check",
+   "checks": {
+    "hand_side": "pass: forearm across her lap, hand towards the picture-right, palm down, thumb on the near side, which is a LEFT hand in this orientation.",
+    "cuff": "pass: complete deep-red cuff, two ivory bangles at each end, glowing red where the sun comes through; no bare skin above it and no scar.",
+    "henna": "pass: back of the hand plain, every fingertip dipped.",
+    "sleeve": "DRIFT: the grey sleeve reaches down to the cuff's upper bangles, longer than the lock's 'sleeves just below the elbow' and than s10's bare hand's width above the cuff. The STATE asked the frame edge to cut on the sleeve, so it reads as intended cover; a viewer will not compare sleeve lengths across a macro.",
+    "light": "pass: car_first_sun, warm and low.",
+    "text": "pass: none.",
+    "placement": "pass: hand and cuff at about 41-60 %."
+   }
+  },
+  {
+   "shot": "s27",
+   "verdict": "approved with logged drift",
+   "attempt": 2,
+   "stage": "retake check",
+   "final": true,
+   "final_rule": "D-013 rule 11 / D-023 rule 4.1: one retake per frame; attempt 2 is the better take and stands. No further retake.",
+   "by": "S9 Visual checker (retake check), 26 Nov 2026; this session made neither frame",
+   "image": "frames/s27.png (attempt 2, prompt_sha 77bedd8b2cef, refs aditya, billu, s24, s21 as manifest row 31); attempt 1 kept as frames/s27.prev1.png",
+   "checks": {
+    "rejecting_fault_fixed": "pass: Billu sits in the driver's seat on the picture-right, seen from behind and a little from his left: the back of his gelled black hair, his ear, and the faded-denim jacket and collar; one hand on the wheel. The driver's seat is no longer empty.",
+    "driver_identity": "pass: hair (dark, wavy, gelled back) and jacket match the billu sheet's back view. Mirror crop: narrowed eyes, heavy straight brows, long narrow face, matching the sheet's front close-up.",
+    "pocket_and_print": "pass: lower picture-left, Aditya's cream kurta with the square patch pocket on his RIGHT chest; the creased print going in white back outward, about half still out, no picture side visible. The hand is his RIGHT (back to camera, fingers down, thumb on the picture-right side of the hand); no watch on that wrist. Brass key on red thread at the picture-left of the pocket.",
+    "car_and_road": "pass: right-hand drive, wheel and driver on the picture-right; grey seat covers, dark-grey dashboard with the marigold string, lemon-and-chilli charm under the mirror, straight two-lane road through dry fields with poles. Matches s24 and s21. Kiran's dark hair shows above the passenger seat back at the picture-left; her face is not visible.",
+    "faces_per_frame_D021": "pass: one face (Billu, in the mirror).",
+    "text": "pass: crop of the dashboard and radio: only an illegible blue-red temperature bar, no characters.",
+    "placement": "pass: mirror at about 24-29 % of the height; print at about 71-79 % of the height and 22-40 % of the width, above the bottom fifth."
+   },
+   "drift": [
+    "Only one of Billu's hands is on the wheel, and it is his LEFT (the near arm, from the picture-left side of his body seen from behind), not his right as the storyboard's drift note says. The STATE asks for hands on the wheel; one visible hand is acceptable.",
+    "The low sun disc shows on the horizon at the picture-left of the windscreen, rather than the light coming only through the left-side windows. Light still comes from the picture-left and the grade matches the light state.",
+    "In the mirror Billu's eyes read towards the lens and rear seat rather than clearly down at the pocket; the beat (eyes following the print) still reads.",
+    "The foreground hand and pocket are fairly sharp rather than soft as the framing asks.",
+    "The print sits at about 71-79 % of the height against the 58-66 % asked (as in attempt 1, which passed on placement).",
+    "The back of Billu's head reaches the picture-right edge (not a face or hand, but inside the outer 6 % band); the custom move ends at scale 1.25 centred, so the editor should check it does not crop his head to a sliver.",
+    "The key's red thread reads single rather than doubled."
+   ],
+   "attempt_1": {
+    "verdict": "rejected",
+    "stage": "frame check",
+    "why_rejected": "The driver's seat was empty in a moving car while Billu's eyes looked out of the mirror."
+   },
+   "better_take": "attempt 2: it puts Billu behind the wheel and introduces no side error."
+  },
+  {
+   "shot": "s29",
+   "verdict": "approved with logged drift",
+   "attempt": 1,
+   "stage": "frame check",
+   "checks": {
+    "hand_sides": "pass: Kiran's forearm enters from the picture-right with its hand towards the picture-left, back of the hand facing the camera, fingertips dipped, back plain. Aditya's hand comes from the picture-left, back of the hand to the camera, thumb on top: that is his RIGHT hand for a man standing on the picture-left facing picture-right with his right side to the camera, which is how s28 (attempt 2) stages him.",
+    "cuff": "pass: the cuff covers her forearm from the wrist to the frame's grey sleeve at the picture-right edge; ivory bangles at both ends; no bare forearm and no scar.",
+    "grip": "DRIFT: his fingers close over the wrist end of the cuff (the first ivory bangle), not the middle. The 'stack shifts' reading still works.",
+    "sleeve_and_watch": "DRIFT: his kurta sleeve is rolled to mid-forearm, not folded once at the wrist (the lock); s28 attempt 2 shows the same roll, so the pair is consistent. No watch on this wrist: pass.",
+    "background": "pass: soft white car door and pavement in low warm sun.",
+    "text": "pass: none.",
+    "placement": "pass: joined hands at about 38-60 %."
+   },
+   "why_not_rejected": "Sides, cuff cover and henna are right; the two drifts are small and match the anchor.",
+   "condition": "s29 attaches s28 attempt 2. No retake check of s28 attempt 2 is recorded in this file (only attempt 1, rejected). This verdict holds only if s28 attempt 2 passes its retake check (D-023 rule 4.1)."
+  },
+  {
+   "shot": "s30",
+   "verdict": "approved",
+   "attempt": 1,
+   "stage": "frame check",
+   "checks": {
+    "identity": "pass: face crop matches the mausi front close-up: round full face, large maroon bindi, grey streaks oiled back, rose lips, warm closed smile; mid-fifties.",
+    "jewellery": "pass: one small stud on her picture-right nostril (her LEFT); thin gold chain; no earrings.",
+    "hands_and_band": "pass: zoomed crop of her clasped hands: the top hand comes from the picture-left wrist with its thumb at the top right, which is her RIGHT hand, and the thin gold band is on its ring finger. Green glass bangles (about six to eight) on both wrists.",
+    "wardrobe_and_keys": "pass: bottle-green saree with mustard border, mustard blouse, pallu with pin over her picture-right shoulder (LEFT). The steel ring with skeleton keys hooked at her picture-right hip, matching key_bunch.",
+    "foreground_hands": "pass: soft at the lower picture-left, Aditya's hand lowered and open below a cream folded sleeve, no watch; at the lower picture-right, Kiran's hand dropping, red cuff and ivory bangles, fingertips dipped, the skin above the cuff is the lock's bare forearm below the sleeve, far from the scar's place and blurred. A clear gap between the hands.",
+    "background": "pass: pink front room through the opening, tube light on, marigold curtain, desk with the grey cashbox, the mannequin of the bureau plate. Shutters down on the neighbouring fronts. The rolled-up shutter's box is not visible above the opening, nor is it on bureau_exterior.",
+    "text": "pass: none on the lintel, shutters or room.",
+    "placement": "pass: Mausi's face at about 29-40 %. Note for the editor: the two foreground hands sit at the lower corners (about 78-98 %), inside the subtitle band; the STATE placed them there. Keep the subtitle block centred."
+   },
+   "condition": "s30 attaches s28 attempt 2; as for s29, it depends on that frame passing its retake check."
+  },
+  {
+   "shot": "s30",
+   "verdict": "approved with logged drift",
+   "attempt": 2,
+   "stage": "frame check",
+   "by": "S9 Visual checker (retake check of s28 attempt 2 and frame check of s30 attempt 2), 26 Nov 2026; this session made neither frame",
+   "image": "frames/s30.png (attempt 2, prompt_sha 9941cc92504e, refs mausi, key_bunch, bureau_exterior, bureau_front and frames/s28.png, status ok; run 09:39-09:47, after s28 attempt 2 was written at 09:25, so the attached anchor is s28 attempt 2). Attempt 1 is a runner failure ('Selected model is at capacity') with no image.",
+   "file_md5": "46228f7387bf7dd56913a02c7bdba01e",
+   "note_on_earlier_row": "The earlier s30 row (attempt 1, 'approved') describes this same png; the frame check's method says attempt 2 is the first image, so its attempt number is a label slip. This row re-judges the png under the right attempt number; I did not edit that row.",
+   "method": "Viewed whole at 720x1280, then ffmpeg crops of the 1440x2560 png: face (2x) beside the mausi sheet's front close-up, nose stud and ears, the clasped hands and band, the keys beside key_bunch, both foreground hands, the room through the opening, the lintel and the neighbouring shutters. Judged against prompts/s30.txt (all but the CHARACTER LOCK and later tails, checked against style.json instead), shots.json s30 (state, framing, refs), style.json locks for mausi, kiran and aditya, and the plates bureau_exterior and the room as described in the prompt (bureau_front itself not opened). The png is an exact lanczos upscale of its 941x1672 raw (PSNR inf). prompt_sha 9941cc92504e equals the sha256 of prompts/s30.txt.",
+   "checks": {
+    "identity": "pass: round full face with a soft double chin, heavy-lidded eyes, broad nose, rose lips in a warm closed-lip smile, large maroon bindi, grey streaks at the hairline oiled back; matches the sheet's front close-up and reads mid-fifties.",
+    "jewellery": "pass: one small gold stud on her picture-right nostril (her LEFT); thin gold chain; no earrings visible.",
+    "hands_and_band": "pass: the top hand of the clasp comes from the picture-left wrist with its thumb on top pointing to the picture-right, so it is her RIGHT hand, and the thin gold band is on its ring finger. About eight green glass bangles on each wrist.",
+    "wardrobe_and_keys": "pass: bottle-green saree with the mustard border, mustard blouse with sleeves just above the elbow, pallu over her picture-right shoulder (LEFT) with a small gold pin. The steel hook and ring of mixed steel and brass skeleton keys at her picture-right hip, matching key_bunch.",
+    "foreground_hands": "pass: soft at the lower picture-left, a man's hand lowered and open under a folded cream kurta cuff, no watch; soft at the lower picture-right, a hand dropping with the deep-red cuff and ivory bangles, dipped fingertips, the back of the hand plain; a wide gap of air between them. The cuff sits at rest over the scar's place; the skin above it is the upper forearm below the sleeve. Which hand each is cannot be proved in these blurred, edge-cut shapes; positions match the STATE (his at the picture-left, hers at the picture-right) and the absent watch fits his RIGHT.",
+    "background": "pass: shop front matches bureau_exterior (faded-pink fascia, flanking grey shutters with their boxes, down); through the opening, soft: pink walls, the tube light on, the orange marigold curtain, the desk with the grey cashbox and a chair, the red-lehenga mannequin at the back left. No mirror wall in view. No shutter box shows above the opening (only a wooden batten under the fascia), as on the plate.",
+    "faces_per_frame_D021": "pass: one face.",
+    "light": "pass: warm low sun on the picture-left pillar and on her face and saree, pale green-white tube inside, blue-grey sky strip at the top.",
+    "text": "pass: none on the fascia, lintel, shutters or in the room.",
+    "placement": "DRIFT: her face at about 30-39 % of the frame height (asked about 25 %), the keys at about 65-73 % (asked about 50 %), the foreground hands at about 78-98 % (asked 70-78 %) and touching the left and right frame edges. Faces and hands otherwise clear of the outer 6 % band."
+   },
+   "drift": [
+    "Placement as above: everything sits lower than asked, so the two parting hands are in the bottom fifth and cut by the frame edges. s30 is silent (no line_ids, no supers), so no subtitle falls on them. The push-in (intensity 0.25, focus y 0.33) moves the frame towards the upper centre; I did not measure whether its end crops the corner hands, which carry the beat ('he has let go'). The editor should check the last frame of the move.",
+    "Mausi stands on the pavement in front of the step, which is drawn as two steps, rather than in the opening on the one low step of the plate.",
+    "The camera reads near level rather than low looking up.",
+    "Aditya's foreground cuff sits near the wrist (as the lock wants), where s28 attempt 2 and s29 show the sleeve rolled to mid-forearm. In a soft 2.5 s foreground this is minor."
+   ],
+   "why_not_rejected": "Identity, every side lock (stud, band, keys, pallu), the props and the room are right, and the beat reads: the hands are apart below Mausi. The faults are placement and staging drift, not side or lock errors."
+  },
+  {
+   "shot": "s32",
+   "verdict": "approved",
+   "attempt": 1,
+   "stage": "frame check",
+   "checks": {
+    "identity": "pass: Mausi, laughing with her eyes creased; face crop shows the stud on the picture-right nostril (her LEFT).",
+    "hands_and_band": "pass: crop shows the thin gold band on her picture-left hand (her RIGHT) resting on the desk; her LEFT hand (picture-right) raised to her chest; green bangles on both wrists.",
+    "props": "pass: red velvet box open with the leaf necklace and earrings (contents face the camera; the lid is on her side); the grey steel cashbox closed with its keyhole, to the box's picture-left; keys hidden by the desk.",
+    "billu": "pass: a hand in a rolled faded-denim sleeve at the picture-right edge, withdrawing from the box; no face.",
+    "background": "pass: marigold curtain, tube light, pink wall.",
+    "text": "pass: none on the cashbox or walls.",
+    "placement": "pass: face at about 22-37 %; box and hands at about 53-77 %."
+   }
+  },
+  {
+   "shot": "s33",
+   "verdict": "approved",
+   "attempt": 1,
+   "stage": "frame check",
+   "checks": {
+    "identity": "pass: Chhoti reads as a young adult woman, about twenty; no bindi, no nose ring, no earrings; braid over her RIGHT shoulder (the near side, picture-left).",
+    "left_hand": "pass: crop of the hand held out to the picture-right from her far shoulder: back of the hand up, plain, fingers spread, every fingertip dipped deep orange-brown, thumb on the near side (a LEFT hand). Outer forearm and left wrist bare and unmarked.",
+    "right_hand": "pass: crop shows her RIGHT hand bare of henna with two thin green glass bangles, holding the phone in its plain pink cover in her lap, back of the phone to camera, no logo or text.",
+    "wardrobe": "pass: mustard kurta, white salwar, white crinkled dupatta round the neck.",
+    "background": "pass: bright open shutter with the rolled shutter above, pink wall, the cot under her; nothing readable.",
+    "text": "pass: none.",
+    "placement": "pass: face at about 18-38 %; the held-out hand at about 49-57 %. The phone sits at about 80-86 %, a secondary prop."
+   }
+  },
+  {
+   "shot": "s34",
+   "verdict": "approved",
+   "attempt": 1,
+   "stage": "frame check",
+   "checks": {
+    "identity": "pass: Kiran (picture-left) face crop matches kiran_p2 front view, hoop on the picture-right nostril (her LEFT), ball studs; Aditya (picture-right) matches his sheet, head bent and turned to her, mouth at her ear level.",
+    "height_D017": "pass by eye: with his head bent, her crown sits at about his eye line. His shoulder line is about 160 px (in a 1280 px preview) above hers; at her head's scale (about 8 px per cm) that is about 19 cm, which is the shoulder difference expected for 183 cm against 160 cm. This is an eye reading on a preview, not a scripted measurement.",
+    "wardrobe_and_props": "pass: patch pocket on his picture-left chest (his RIGHT), key at mid-chest, watch on the picture-right wrist (his LEFT); Kiran's grey dupatta from her picture-right shoulder.",
+    "cuffs": "pass: both cuffs complete and at rest on both forearms, hands at her sides.",
+    "eyeline": "pass: she looks straight past the camera, not at him.",
+    "background": "pass: bright open shutter with the rolled shutter above, nothing readable; the cot edge soft at the picture-left edge.",
+    "text": "pass: none.",
+    "placement": "pass: faces at about 26-46 %. Her cuffs fall at about 84-95 %, which carries no action here."
+   }
+  },
+  {
+   "shot": "s37",
+   "verdict": "approved with logged drift",
+   "attempt": 1,
+   "stage": "frame check",
+   "checks": {
+    "identity": "pass: Kiran in right profile (nose to picture-right): no hoop on the near nostril, ball stud, matches kiran_p2. Mausi in three-quarter facing picture-left: one stud on the near nostril (her LEFT), no right profile.",
+    "mausi_hands": "pass on the band and the sides of the arms: the hand on the desk edge has the thin gold band, and zoomed it is a RIGHT hand (palm down, fingers to the picture-left, thumb on the near side). Green bangles on both wrists. DRIFT: the open palm-up hand held towards Kiran on the near arm has its thumb on the far side, which is the shape of a right hand, not a left; so the anatomy of that hand is mirrored. Five fingers, no fusion.",
+    "keys": "pass: the steel ring of keys at her near hip, visible, matching key_bunch.",
+    "kiran": "pass: both cuffs complete and at rest, hands at her sides, eyes on Mausi.",
+    "props": "pass: the open red velvet box with the leaf necklace and the closed grey cashbox on the desk behind them.",
+    "background": "pass: marigold curtain and tube light; Chhoti and Aditya out of frame.",
+    "text": "pass: none.",
+    "placement": "pass: faces at about 22-39 %; Mausi's hands at about 54-65 %."
+   },
+   "why_not_rejected": "The open hand reads as hers and as open, which is the beat; its mirrored thumb is visible only to someone checking the anatomy in a crop. Story sides (band on the right hand, keys and stud on the near left side) are right."
+  },
+  {
+   "shot": "s38",
+   "verdict": "approved",
+   "attempt": 1,
+   "stage": "frame check",
+   "checks": {
+    "kiran": "pass: her LEFT forearm enters from the picture-right, the hand towards the picture-left, palm down, back plain, fingertips dipped. The first ivory bangle has been worked off the cuff and sits over her knuckles and the back of her hand; the rest of the cuff (red, one ivory at the wrist end, two at the upper end) still covers the forearm to the grey sleeve. No bare forearm, no scar.",
+    "mausi": "pass: two of Mausi's hands are in frame, both with green glass bangles (about eight on the lower one). The lower hand, from the lower picture-left, is a RIGHT hand by its thumb (far side, palm down, fingers to the picture-right) and wears the thin gold band; it holds Kiran's wrist and its thumb presses the ivory bangle. The upper hand is a LEFT hand with no ring. The STATE names only her right hand; the second hand is hers and is consistent with the lock.",
+    "aditya": "pass: standing beyond the hands, glasses on, key on its red thread at mid-chest, eyes lowered onto the hands, a little soft but readable; the only face in frame. Matches his sheet.",
+    "background": "pass: marigold curtain, tube light, mirror-frame shape at the picture-left (no face in it), desk edge soft at the lower picture-right.",
+    "text": "pass: none.",
+    "placement": "pass: Aditya's face at about 12-28 %; the hands at about 53-77 %."
+   }
+  }
+ ],
+ "frame_check": {
+  "stage": "frame check of the 22 non-anchor generated frames (D-015 rules 5 and 7, D-023 rule 4.1), attempt 1 each",
+  "by": "S9 Visual checker, 26 Nov 2026; this session made none of these frames",
+  "method": "Each frame viewed whole at 720x1280, then ffmpeg crops of the 1440x2560 png (faces against the sheet close-ups, noses, ear lobes, every hand and cuff, rings and bangles, phones, plates, the brass set, the keys). Judged against shots.json (state, refs, framing, screen_direction, state_ledger), style.json locks and key_props, the anchor review's for_later_prompts, and the sheets kiran_p1, kiran_p2, kiran_hands, aditya, billu, mausi, pair_kiran_aditya_p2, plus brass_set, billu_car, key_bunch and bureau_exterior. Manifest rows match shots.json prompt_sha and refs for all 22 (s30 attempt 1 is a runner failure with no image; attempt 2 is the first image).",
+  "counts": {
+   "judged": 22,
+   "approved": 15,
+   "approved_with_logged_drift": 5,
+   "rejected_for_retake": 2
+  },
+  "rejected": [
+   "s10",
+   "s27"
+  ],
+  "first_check_rejection_rate": "2 of 22 (9 %); with the anchor check, 3 of 28 (11 %)",
+  "second_framings_inheriting": {
+   "s07": "s05 approved",
+   "s09": "s05 approved",
+   "s08": "s06 approved",
+   "s17": "s16 approved with logged drift",
+   "s23": "s22 approved",
+   "s25": "s22 approved",
+   "s35": "s34 approved",
+   "s36": "s32 approved",
+   "s39": "s38 approved"
+  },
+  "waiting_on_s28_attempt_2": "s29 and s30 attach s28 attempt 2, whose retake check is not recorded in this file. Their verdicts here stand only if it passes.",
+  "anchor_notes_carried": "s01 carries the hoop, not the anchor's stud. s32, s37 and s38 put Mausi's band on her RIGHT hand, so the s31 drift did not spread. s10 kept the anchor's ear-stud drop (logged).",
+  "cuff_rule_D023_4_6": "Both cuffs should be at rest in every frame here. Fault: s10 has no right cuff at all. s24, s26, s29, s30, s34, s37 and s38 show the cuffs at rest, with no scar anywhere.",
+  "height_watch_D017": "s34, the first same-depth Kiran-Aditya two-shot with the line-up sheet attached: passes by eye (see its entry). No restage needed.",
+  "faces_per_frame_D021": "No frame shows more than two sheet faces.",
+  "not_checked": [
+   "No face-matching tool was used. Identity and age are my judgement by eye from crops set beside the sheet close-ups.",
+   "Placement percentages and the s34 height reading are eye readings from 720x1280 previews, not pixel measurements.",
+   "Hand chirality was judged from thumb position and orientation in crops; s22's hand side cannot be proved in a still.",
+   "Text: by eye on whole frames, plus crops of the plates, phones, dashboards, cashbox and walls listed above; I did not crop every region of every frame.",
+   "Prompts read only for s10, s16 and s27 (by grep for cuffs, the scratch and the driver).",
+   "s28 attempt 2 (the anchor retake) was not judged here; it is outside this brief.",
+   "The raw files were not compared with the upscaled pngs."
+  ],
+  "retake_outcome": "s10 and s27 were retaken once (attempt 2) and pass the retake check as approved with logged drift; see retake_check and their entries in frames."
+ },
+ "retake_check": {
+  "stage": "retake check of the frame-check rejects s10 and s27 (D-023 rule 4.1), attempt 2 each; final under D-013 rule 11",
+  "by": "S9 Visual checker (retake check), 26 Nov 2026; this session made neither frame",
+  "method": "Each attempt-2 png viewed whole at 720x1280 beside its attempt-1 prev1, then ffmpeg crops of the 1440x2560 png: s10 face, both ear lobes, both forearms and wrists, the bare band above the left cuff, the bag and chair; s27 mirror, Billu's head, jacket and hand, the print and pocket, the dashboard and radio. Judged against each prompt file (read in full for s10; all but the STYLE, AVOID and CHARACTER LOCK tails for s27), shots.json (state, refs, drift), the anchor and frame-check notes in this file, and the sheets kiran_p2, kiran_hands and billu, with s24 and s21 for car continuity. Each png is an exact lanczos upscale of its 941x1672 raw (PSNR inf). Manifest rows 31 and 32 match shots.json prompt_sha and refs; both runs status ok.",
+  "counts": {
+   "judged": 2,
+   "approved": 0,
+   "approved_with_logged_drift": 2,
+   "rejected": 0
+  },
+  "retake_check_pass_rate": "2 of 2 frame-check retakes pass (s28's anchor retake not judged here)",
+  "not_checked": [
+   "No face-matching tool. Identity and age are judged by eye from crops beside the sheet close-ups.",
+   "Placement percentages are eye readings from the 720x1280 previews, not pixel measurements.",
+   "Hand sides are judged from arm continuity and thumb position in crops.",
+   "s28 attempt 2 and the s29 and s30 frames that wait on it are outside this brief and are not judged here.",
+   "shots.json drift notes were not edited; the corrections are recorded here (s27: the visible wheel hand is Billu's LEFT)."
+  ]
+ }
+}

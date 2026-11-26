@@ -1,0 +1,2283 @@
+{
+ "id": "s2e01-en-review",
+ "fps": 30,
+ "durationFrames": 4096,
+ "background": "#000",
+ "slateColor": "#1d2430",
+ "shots": [
+  {
+   "id": "s01",
+   "start": 0,
+   "duration": 86,
+   "layers": [
+    {
+     "src": "frames/s01.png",
+     "depth": 1
+    },
+    {
+     "src": "overlays/s01-ov_token_7.png",
+     "depth": 1
+    }
+   ],
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.3,
+    "focus": {
+     "x": 0.62,
+     "y": 0.45
+    }
+   }
+  },
+  {
+   "id": "s02",
+   "start": 86,
+   "duration": 275,
+   "image": "frames/s02.png",
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.35,
+    "focus": {
+     "x": 0.45,
+     "y": 0.3
+    }
+   }
+  },
+  {
+   "id": "s03",
+   "start": 361,
+   "duration": 109,
+   "image": "frames/s03.png",
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.3,
+    "focus": {
+     "x": 0.5,
+     "y": 0.35
+    }
+   }
+  },
+  {
+   "id": "s04",
+   "start": 470,
+   "duration": 45,
+   "image": "frames/s09.png",
+   "move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.22,
+     "x": 0,
+     "y": 0.6
+    },
+    "to": {
+     "scale": 1.3,
+     "x": 0,
+     "y": 0.6
+    }
+   }
+  },
+  {
+   "id": "s05",
+   "start": 515,
+   "duration": 106,
+   "layers": [
+    {
+     "src": "frames/s05.png",
+     "depth": 1
+    },
+    {
+     "src": "overlays/s05-ov_fake_board.en.png",
+     "depth": 1
+    }
+   ],
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.2,
+    "focus": {
+     "x": 0.5,
+     "y": 0.45
+    }
+   }
+  },
+  {
+   "id": "s06",
+   "start": 621,
+   "duration": 153,
+   "image": "frames/s06.png",
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.25,
+    "focus": {
+     "x": 0.5,
+     "y": 0.33
+    }
+   }
+  },
+  {
+   "id": "s07",
+   "start": 774,
+   "duration": 148,
+   "image": "frames/s07.png",
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.3,
+    "focus": {
+     "x": 0.48,
+     "y": 0.3
+    }
+   }
+  },
+  {
+   "id": "s08",
+   "start": 922,
+   "duration": 107,
+   "image": "frames/s03.png",
+   "move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.25,
+     "x": 0,
+     "y": 0.9
+    },
+    "to": {
+     "scale": 1.3,
+     "x": 0,
+     "y": 0.9
+    }
+   }
+  },
+  {
+   "id": "s09",
+   "start": 1029,
+   "duration": 180,
+   "image": "frames/s09.png",
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.3,
+    "focus": {
+     "x": 0.5,
+     "y": 0.3
+    }
+   }
+  },
+  {
+   "id": "s10",
+   "start": 1209,
+   "duration": 60,
+   "image": "frames/s10.png",
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.2,
+    "focus": {
+     "x": 0.58,
+     "y": 0.52
+    }
+   }
+  },
+  {
+   "id": "s11",
+   "start": 1269,
+   "duration": 30,
+   "layers": [
+    {
+     "src": "frames/s11.png",
+     "depth": 1
+    },
+    {
+     "src": "overlays/s11-ov_token_7.png",
+     "depth": 1
+    }
+   ],
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.3,
+    "focus": {
+     "x": 0.5,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "id": "s12",
+   "start": 1299,
+   "duration": 131,
+   "image": "frames/s12.png",
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.2,
+    "focus": {
+     "x": 0.55,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "id": "s13",
+   "start": 1430,
+   "duration": 170,
+   "layers": [
+    {
+     "src": "frames/s13.png",
+     "depth": 1
+    },
+    {
+     "src": "overlays/s13-ov_shield.png",
+     "depth": 1
+    }
+   ],
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.2,
+    "focus": {
+     "x": 0.55,
+     "y": 0.35
+    }
+   }
+  },
+  {
+   "id": "s14",
+   "start": 1600,
+   "duration": 112,
+   "layers": [
+    {
+     "src": "frames/s14.png",
+     "depth": 1
+    },
+    {
+     "src": "overlays/s14-ov_shield.png",
+     "depth": 1
+    }
+   ],
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.15,
+    "focus": {
+     "x": 0.6,
+     "y": 0.3
+    }
+   }
+  },
+  {
+   "id": "s15",
+   "start": 1712,
+   "duration": 118,
+   "layers": [
+    {
+     "src": "frames/s15.png",
+     "depth": 1
+    },
+    {
+     "src": "overlays/s15-ov_shield.png",
+     "depth": 1
+    }
+   ],
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.3,
+    "focus": {
+     "x": 0.55,
+     "y": 0.32
+    }
+   }
+  },
+  {
+   "id": "s16",
+   "start": 1830,
+   "duration": 119,
+   "image": "frames/s16.png",
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.25,
+    "focus": {
+     "x": 0.55,
+     "y": 0.4
+    }
+   }
+  },
+  {
+   "id": "s17",
+   "start": 1949,
+   "duration": 135,
+   "layers": [
+    {
+     "src": "frames/s17.png",
+     "depth": 1
+    },
+    {
+     "src": "overlays/s17-ov_shield.png",
+     "depth": 1
+    }
+   ],
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.2,
+    "focus": {
+     "x": 0.35,
+     "y": 0.3
+    }
+   }
+  },
+  {
+   "id": "s18",
+   "start": 2084,
+   "duration": 146,
+   "layers": [
+    {
+     "src": "frames/s18.png",
+     "depth": 1
+    },
+    {
+     "src": "overlays/s18-ov_shield.png",
+     "depth": 1
+    }
+   ],
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.15,
+    "focus": {
+     "x": 0.5,
+     "y": 0.35
+    }
+   }
+  },
+  {
+   "id": "s19",
+   "start": 2230,
+   "duration": 195,
+   "image": "frames/s19.png",
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.25,
+    "focus": {
+     "x": 0.5,
+     "y": 0.3
+    }
+   }
+  },
+  {
+   "id": "s20",
+   "start": 2425,
+   "duration": 153,
+   "layers": [
+    {
+     "src": "frames/s14.png",
+     "depth": 1
+    },
+    {
+     "src": "overlays/s14-ov_shield.png",
+     "depth": 1
+    }
+   ],
+   "move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.3,
+     "x": -1,
+     "y": 1
+    },
+    "to": {
+     "scale": 1.3,
+     "x": -0.9,
+     "y": 0.9
+    }
+   }
+  },
+  {
+   "id": "s21",
+   "start": 2578,
+   "duration": 106,
+   "image": "frames/s19.png",
+   "move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.12,
+     "x": 0,
+     "y": 0.3
+    },
+    "to": {
+     "scale": 1.2,
+     "x": 0,
+     "y": 0.3
+    }
+   }
+  },
+  {
+   "id": "s22",
+   "start": 2684,
+   "duration": 45,
+   "layers": [
+    {
+     "src": "frames/s22.png",
+     "depth": 1
+    },
+    {
+     "src": "overlays/s22-ov_shield.png",
+     "depth": 1
+    }
+   ],
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.35,
+    "focus": {
+     "x": 0.5,
+     "y": 0.3
+    }
+   }
+  },
+  {
+   "id": "s23",
+   "start": 2729,
+   "duration": 51,
+   "image": "frames/s23.png",
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.25,
+    "focus": {
+     "x": 0.5,
+     "y": 0.3
+    }
+   }
+  },
+  {
+   "id": "s24",
+   "start": 2780,
+   "duration": 15,
+   "layers": [
+    {
+     "src": "frames/s17.png",
+     "depth": 1
+    },
+    {
+     "src": "overlays/s17-ov_shield.png",
+     "depth": 1
+    }
+   ],
+   "move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.28,
+     "x": 1,
+     "y": 0.3
+    },
+    "to": {
+     "scale": 1.3,
+     "x": 1,
+     "y": 0.35
+    }
+   }
+  },
+  {
+   "id": "s25",
+   "start": 2795,
+   "duration": 48,
+   "image": "frames/s23.png",
+   "move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.2,
+     "x": 0,
+     "y": 0.7
+    },
+    "to": {
+     "scale": 1.3,
+     "x": 0,
+     "y": 0.7
+    }
+   }
+  },
+  {
+   "id": "s26",
+   "start": 2843,
+   "duration": 30,
+   "image": "frames/s26.png",
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.2,
+    "focus": {
+     "x": 0.45,
+     "y": 0.4
+    }
+   }
+  },
+  {
+   "id": "s27",
+   "start": 2873,
+   "duration": 78,
+   "image": "frames/s07.png",
+   "move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.1,
+     "x": 0,
+     "y": 0.3
+    },
+    "to": {
+     "scale": 1.2,
+     "x": 0,
+     "y": 0.3
+    }
+   }
+  },
+  {
+   "id": "s28",
+   "start": 2951,
+   "duration": 71,
+   "image": "frames/s28.png",
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.25,
+    "focus": {
+     "x": 0.5,
+     "y": 0.45
+    }
+   }
+  },
+  {
+   "id": "s29",
+   "start": 3022,
+   "duration": 129,
+   "image": "frames/s29.png",
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.2,
+    "focus": {
+     "x": 0.5,
+     "y": 0.35
+    }
+   }
+  },
+  {
+   "id": "s30",
+   "start": 3151,
+   "duration": 75,
+   "image": "frames/s30.png",
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.2,
+    "focus": {
+     "x": 0.68,
+     "y": 0.5
+    }
+   }
+  },
+  {
+   "id": "s31",
+   "start": 3226,
+   "duration": 211,
+   "image": "frames/s31.png",
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.25,
+    "focus": {
+     "x": 0.45,
+     "y": 0.3
+    }
+   }
+  },
+  {
+   "id": "s32",
+   "start": 3437,
+   "duration": 133,
+   "layers": [
+    {
+     "src": "frames/s32.png",
+     "depth": 1
+    },
+    {
+     "src": "overlays/s32-ov_refusal_date.en.png",
+     "depth": 1
+    }
+   ],
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.2,
+    "focus": {
+     "x": 0.4,
+     "y": 0.3
+    }
+   }
+  },
+  {
+   "id": "s33",
+   "start": 3570,
+   "duration": 134,
+   "image": "frames/s31.png",
+   "move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.25,
+     "x": 0.9,
+     "y": 0.9
+    },
+    "to": {
+     "scale": 1.3,
+     "x": 1,
+     "y": 1
+    }
+   }
+  },
+  {
+   "id": "s34",
+   "start": 3704,
+   "duration": 45,
+   "image": "frames/s34.png",
+   "move": {
+    "preset": "pan-right",
+    "intensity": 0.25
+   }
+  },
+  {
+   "id": "s35",
+   "start": 3749,
+   "duration": 125,
+   "image": "frames/s31.png",
+   "move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.05,
+     "x": 0,
+     "y": 0.3
+    },
+    "to": {
+     "scale": 1.15,
+     "x": 0,
+     "y": 0.3
+    }
+   }
+  },
+  {
+   "id": "s36",
+   "start": 3874,
+   "duration": 30,
+   "image": "frames/s36.png",
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.2,
+    "focus": {
+     "x": 0.5,
+     "y": 0.45
+    }
+   }
+  },
+  {
+   "id": "s37",
+   "start": 3904,
+   "duration": 180,
+   "image": "frames/s37.png",
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.35,
+    "focus": {
+     "x": 0.5,
+     "y": 0.3
+    }
+   }
+  }
+ ],
+ "audio": {
+  "dialogue": [
+   {
+    "id": "l01",
+    "src": "voice/en/l01.mp3",
+    "start": 12,
+    "duration": 76,
+    "volume": 1.0
+   },
+   {
+    "id": "l02",
+    "src": "voice/en/l02.c1.mp3",
+    "start": 88,
+    "duration": 96,
+    "volume": 1.0
+   },
+   {
+    "id": "l27",
+    "src": "voice/en/l27.c1.mp3",
+    "start": 183,
+    "duration": 175,
+    "volume": 1.0
+   },
+   {
+    "id": "l03",
+    "src": "voice/en/l03.c1.mp3",
+    "start": 366,
+    "duration": 105,
+    "volume": 1.0
+   },
+   {
+    "id": "l04",
+    "src": "voice/en/l04.mp3",
+    "start": 520,
+    "duration": 103,
+    "volume": 1.0
+   },
+   {
+    "id": "l05",
+    "src": "voice/en/l05.c1.mp3",
+    "start": 626,
+    "duration": 141,
+    "volume": 1.0
+   },
+   {
+    "id": "l06",
+    "src": "voice/en/l06.mp3",
+    "start": 776,
+    "duration": 93,
+    "volume": 1.0
+   },
+   {
+    "id": "l28",
+    "src": "voice/en/l28.c1.mp3",
+    "start": 872,
+    "duration": 52,
+    "volume": 1.0
+   },
+   {
+    "id": "l07",
+    "src": "voice/en/l07.c1.mp3",
+    "start": 925,
+    "duration": 100,
+    "volume": 1.0
+   },
+   {
+    "id": "l32",
+    "src": "voice/en/l32.c1.mp3",
+    "start": 1032,
+    "duration": 45,
+    "volume": 1.0
+   },
+   {
+    "id": "l08",
+    "src": "voice/en/l08.mp3",
+    "start": 1075,
+    "duration": 112,
+    "volume": 1.0
+   },
+   {
+    "id": "l29",
+    "src": "voice/en/l29.c1.mp3",
+    "start": 1329,
+    "duration": 98,
+    "volume": 1.0
+   },
+   {
+    "id": "l09",
+    "src": "voice/en/l09.c1.mp3",
+    "start": 1436,
+    "duration": 273,
+    "volume": 1.0
+   },
+   {
+    "id": "l10",
+    "src": "voice/en/l10.mp3",
+    "start": 1714,
+    "duration": 115,
+    "volume": 1.0
+   },
+   {
+    "id": "l11",
+    "src": "voice/en/l11.mp3",
+    "start": 1831,
+    "duration": 117,
+    "volume": 1.0
+   },
+   {
+    "id": "l12",
+    "src": "voice/en/l12.mp3",
+    "start": 1950,
+    "duration": 132,
+    "volume": 1.0
+   },
+   {
+    "id": "l30",
+    "src": "voice/en/l30.c1.mp3",
+    "start": 2106,
+    "duration": 93,
+    "volume": 1.0
+   },
+   {
+    "id": "l31",
+    "src": "voice/en/l31.c1.mp3",
+    "start": 2233,
+    "duration": 124,
+    "volume": 1.0
+   },
+   {
+    "id": "l14",
+    "src": "voice/fx/phone/en/l14.wav",
+    "start": 2361,
+    "duration": 67,
+    "volume": 1.0
+   },
+   {
+    "id": "l15",
+    "src": "voice/fx/phone/en/l15.wav",
+    "start": 2426,
+    "duration": 148,
+    "volume": 1.0
+   },
+   {
+    "id": "l16",
+    "src": "voice/fx/phone/en/l16.wav",
+    "start": 2583,
+    "duration": 103,
+    "volume": 1.0
+   },
+   {
+    "id": "l17",
+    "src": "voice/en/l17.mp3",
+    "start": 2732,
+    "duration": 48,
+    "volume": 1.0
+   },
+   {
+    "id": "l18",
+    "src": "voice/en/l18.mp3",
+    "start": 2797,
+    "duration": 48,
+    "volume": 1.0
+   },
+   {
+    "id": "l19",
+    "src": "voice/en/l19.c1.mp3",
+    "start": 2875,
+    "duration": 76,
+    "volume": 1.0
+   },
+   {
+    "id": "l20",
+    "src": "voice/en/l20.c1.mp3",
+    "start": 2954,
+    "duration": 67,
+    "volume": 1.0
+   },
+   {
+    "id": "l21",
+    "src": "voice/en/l21.c1.mp3",
+    "start": 3027,
+    "duration": 122,
+    "volume": 1.0
+   },
+   {
+    "id": "l22",
+    "src": "voice/en/l22.c1.mp3",
+    "start": 3229,
+    "duration": 208,
+    "volume": 1.0
+   },
+   {
+    "id": "l23",
+    "src": "voice/en/l23.mp3",
+    "start": 3439,
+    "duration": 132,
+    "volume": 1.0
+   },
+   {
+    "id": "l24",
+    "src": "voice/en/l24.mp3",
+    "start": 3573,
+    "duration": 129,
+    "volume": 1.0
+   },
+   {
+    "id": "l25",
+    "src": "voice/en/l25.mp3",
+    "start": 3759,
+    "duration": 112,
+    "volume": 1.0
+   },
+   {
+    "id": "l26",
+    "src": "voice/en/l26.mp3",
+    "start": 3906,
+    "duration": 108,
+    "volume": 1.0
+   }
+  ],
+  "music": [
+   {
+    "id": "mus_theme_caper_bed#b4",
+    "src": "../../sound/lib/mus_theme_caper_bed.mp3",
+    "start": 618,
+    "duration": 161,
+    "volume": 0.4467,
+    "trimBefore": 480,
+    "fadeIn": 6,
+    "fadeOut": 9,
+    "duck": true
+   },
+   {
+    "id": "mus_theme_caper_bed#b4exit",
+    "src": "../../sound/lib/mus_theme_caper_bed.mp3",
+    "start": 1180,
+    "duration": 29,
+    "volume": 0.4467,
+    "trimBefore": 720,
+    "fadeIn": 4,
+    "fadeOut": 6,
+    "duck": true
+   },
+   {
+    "id": "mus_theme_caper_bed#b10",
+    "src": "../../sound/lib/mus_theme_caper_bed.mp3",
+    "start": 2843,
+    "duration": 308,
+    "volume": 0.4467,
+    "trimBefore": 480,
+    "fadeIn": 6,
+    "fadeOut": 15,
+    "duck": true
+   },
+   {
+    "id": "mus_tension_note#a#0",
+    "src": "../../sound/lib/mus_tension_note.mp3",
+    "start": 3151,
+    "duration": 105,
+    "volume": 0.1585,
+    "trimBefore": 60,
+    "fadeIn": 15,
+    "fadeOut": 4,
+    "duck": true
+   },
+   {
+    "id": "mus_tension_note#a#1",
+    "src": "../../sound/lib/mus_tension_note.mp3",
+    "start": 3252,
+    "duration": 105,
+    "volume": 0.1679,
+    "trimBefore": 161,
+    "fadeIn": 4,
+    "fadeOut": 4,
+    "duck": true
+   },
+   {
+    "id": "mus_tension_note#a#2",
+    "src": "../../sound/lib/mus_tension_note.mp3",
+    "start": 3353,
+    "duration": 105,
+    "volume": 0.1778,
+    "trimBefore": 262,
+    "fadeIn": 4,
+    "fadeOut": 4,
+    "duck": true
+   },
+   {
+    "id": "mus_tension_note#a#3",
+    "src": "../../sound/lib/mus_tension_note.mp3",
+    "start": 3454,
+    "duration": 87,
+    "volume": 0.1884,
+    "trimBefore": 363,
+    "fadeIn": 4,
+    "fadeOut": 15,
+    "duck": true
+   },
+   {
+    "id": "mus_tension_note#b#0",
+    "src": "../../sound/lib/mus_tension_note.mp3",
+    "start": 3526,
+    "duration": 33,
+    "volume": 0.1884,
+    "trimBefore": 60,
+    "fadeIn": 15,
+    "fadeOut": 4,
+    "duck": true
+   },
+   {
+    "id": "mus_tension_note#b#1",
+    "src": "../../sound/lib/mus_tension_note.mp3",
+    "start": 3555,
+    "duration": 105,
+    "volume": 0.1995,
+    "trimBefore": 89,
+    "fadeIn": 4,
+    "fadeOut": 4,
+    "duck": true
+   },
+   {
+    "id": "mus_tension_note#b#2",
+    "src": "../../sound/lib/mus_tension_note.mp3",
+    "start": 3656,
+    "duration": 105,
+    "volume": 0.2113,
+    "trimBefore": 190,
+    "fadeIn": 4,
+    "fadeOut": 4,
+    "duck": true
+   },
+   {
+    "id": "mus_tension_note#b#3",
+    "src": "../../sound/lib/mus_tension_note.mp3",
+    "start": 3757,
+    "duration": 146,
+    "volume": 0.2239,
+    "trimBefore": 291,
+    "fadeIn": 4,
+    "fadeOut": 4,
+    "duck": true
+   },
+   {
+    "id": "mus_tension_note#c",
+    "src": "../../sound/lib/mus_tension_note.mp3",
+    "start": 3903,
+    "duration": 181,
+    "volume": 0.0158,
+    "trimBefore": 437,
+    "fadeIn": 4,
+    "fadeOut": 1,
+    "duck": true
+   }
+  ],
+  "sfx": [
+   {
+    "id": "amb_talkies_lobby#A0",
+    "src": "../../sound/lib/amb_talkies_lobby.mp3",
+    "start": 0,
+    "duration": 630,
+    "trimBefore": 240,
+    "volume": 0.4467,
+    "fadeIn": 2,
+    "fadeOut": 15
+   },
+   {
+    "id": "amb_talkies_lobby#A1",
+    "src": "../../sound/lib/amb_talkies_lobby.mp3",
+    "start": 615,
+    "duration": 594,
+    "trimBefore": 240,
+    "volume": 0.4467,
+    "fadeIn": 15,
+    "fadeOut": 1
+   },
+   {
+    "id": "amb_crossing_stall",
+    "src": "../../sound/lib/amb_crossing_stall.mp3",
+    "start": 1209,
+    "duration": 90,
+    "volume": 0.631,
+    "fadeOut": 1
+   },
+   {
+    "id": "amb_real_thana#0",
+    "src": "../../sound/lib/amb_real_thana.mp3",
+    "start": 1299,
+    "duration": 870,
+    "volume": 0.3548
+   },
+   {
+    "id": "amb_real_thana#1",
+    "src": "../../sound/lib/amb_real_thana.mp3",
+    "start": 2169,
+    "duration": 190,
+    "volume": 0.3548,
+    "fadeOut": 4
+   },
+   {
+    "id": "amb_real_thana#2",
+    "src": "../../sound/lib/amb_real_thana.mp3",
+    "start": 2355,
+    "duration": 333,
+    "volume": 0.1122,
+    "trimBefore": 186,
+    "fadeIn": 4,
+    "fadeOut": 4
+   },
+   {
+    "id": "amb_real_thana#3",
+    "src": "../../sound/lib/amb_real_thana.mp3",
+    "start": 2684,
+    "duration": 159,
+    "volume": 0.3548,
+    "trimBefore": 515,
+    "fadeIn": 4,
+    "fadeOut": 1
+   },
+   {
+    "id": "amb_talkies_lobby#D0",
+    "src": "../../sound/lib/amb_talkies_lobby.mp3",
+    "start": 2843,
+    "duration": 308,
+    "trimBefore": 240,
+    "volume": 0.4467,
+    "fadeIn": 0,
+    "fadeOut": 1
+   },
+   {
+    "id": "amb_projection_room#0",
+    "src": "../../sound/lib/amb_projection_room.mp3",
+    "start": 3151,
+    "duration": 870,
+    "volume": 0.631
+   },
+   {
+    "id": "amb_projection_room#1",
+    "src": "../../sound/lib/amb_projection_room.mp3",
+    "start": 4021,
+    "duration": 63,
+    "volume": 0.631,
+    "fadeOut": 1
+   },
+   {
+    "id": "lyr_phone_line_hiss#0",
+    "src": "../../sound/lib/lyr_phone_line_hiss.mp3",
+    "start": 2360,
+    "duration": 300,
+    "volume": 0.8913,
+    "fadeIn": 3
+   },
+   {
+    "id": "lyr_phone_line_hiss#1",
+    "src": "../../sound/lib/lyr_phone_line_hiss.mp3",
+    "start": 2660,
+    "duration": 21,
+    "volume": 0.8913,
+    "fadeOut": 3
+   },
+   {
+    "id": "sfx_rubber_stamp",
+    "src": "../../sound/lib/sfx_rubber_stamp.mp3",
+    "start": 2,
+    "duration": 8,
+    "volume": 0.5012
+   },
+   {
+    "id": "sfx_paper_slip",
+    "src": "../../sound/lib/sfx_paper_slip.mp3",
+    "start": 366,
+    "duration": 8,
+    "volume": 0.3981,
+    "trimBefore": 3,
+    "fadeOut": 2
+   },
+   {
+    "id": "s2e01_sfx_tea_pour#0",
+    "src": "sound/s2e01_sfx_tea_pour.mp3",
+    "start": 470,
+    "duration": 54,
+    "volume": 0.5012,
+    "fadeOut": 4
+   },
+   {
+    "id": "s2e01_sfx_tea_pour#1",
+    "src": "sound/s2e01_sfx_tea_pour.mp3",
+    "start": 520,
+    "duration": 40,
+    "volume": 0.1995,
+    "fadeOut": 6,
+    "trimBefore": 50,
+    "fadeIn": 4
+   },
+   {
+    "id": "s2e01_sfx_lobby_door_swing",
+    "src": "sound/s2e01_sfx_lobby_door_swing.mp3",
+    "start": 1181,
+    "duration": 34,
+    "volume": 0.3981,
+    "fadeOut": 6
+   },
+   {
+    "id": "s2e01_sfx_crossing_train",
+    "src": "sound/s2e01_sfx_crossing_train.mp3",
+    "start": 1209,
+    "duration": 90,
+    "volume": 0.2512,
+    "fadeOut": 9
+   },
+   {
+    "id": "sfx_peanut_crack#a",
+    "src": "../../sound/lib/sfx_peanut_crack.mp3",
+    "start": 1481,
+    "duration": 10,
+    "volume": 0.2512
+   },
+   {
+    "id": "sfx_peanut_crack#b",
+    "src": "../../sound/lib/sfx_peanut_crack.mp3",
+    "start": 1704,
+    "duration": 10,
+    "volume": 0.2512,
+    "trimBefore": 15
+   },
+   {
+    "id": "sfx_peanut_crack#c",
+    "src": "../../sound/lib/sfx_peanut_crack.mp3",
+    "start": 1786,
+    "duration": 10,
+    "volume": 0.2512,
+    "trimBefore": 38
+   },
+   {
+    "id": "sfx_knitting_needles#b7",
+    "src": "../../sound/lib/sfx_knitting_needles.mp3",
+    "start": 1830,
+    "duration": 188,
+    "volume": 0.3162,
+    "fadeOut": 20
+   },
+   {
+    "id": "sfx_desk_phone_lift",
+    "src": "../../sound/lib/sfx_desk_phone_lift.mp3",
+    "start": 2084,
+    "duration": 24,
+    "volume": 0.1778,
+    "fadeOut": 3
+   },
+   {
+    "id": "sfx_dtmf_dialling",
+    "src": "../../sound/lib/sfx_dtmf_dialling.mp3",
+    "start": 2196,
+    "duration": 34,
+    "volume": 0.2512,
+    "fadeOut": 4
+   },
+   {
+    "id": "sfx_desk_phone_hangup",
+    "src": "../../sound/lib/sfx_desk_phone_hangup.mp3",
+    "start": 2684,
+    "duration": 24,
+    "volume": 0.2512
+   },
+   {
+    "id": "sfx_register_thump",
+    "src": "../../sound/lib/sfx_register_thump.mp3",
+    "start": 2948,
+    "duration": 30,
+    "volume": 0.3162
+   },
+   {
+    "id": "s2e01_sfx_file_untie_riffle#knot",
+    "src": "sound/s2e01_sfx_file_untie_riffle.mp3",
+    "start": 3151,
+    "duration": 57,
+    "volume": 1.0,
+    "fadeOut": 4
+   },
+   {
+    "id": "sfx_knitting_needles#b11#0",
+    "src": "../../sound/lib/sfx_knitting_needles.mp3",
+    "start": 3151,
+    "duration": 300,
+    "volume": 0.1995,
+    "fadeIn": 6
+   },
+   {
+    "id": "sfx_knitting_needles#b11#1",
+    "src": "../../sound/lib/sfx_knitting_needles.mp3",
+    "start": 3451,
+    "duration": 298,
+    "volume": 0.1995
+   },
+   {
+    "id": "sfx_page_turn#turn",
+    "src": "../../sound/lib/sfx_page_turn.mp3",
+    "start": 3706,
+    "duration": 30,
+    "volume": 1.7783
+   },
+   {
+    "id": "s2e01_sfx_file_untie_riffle#riffle",
+    "src": "sound/s2e01_sfx_file_untie_riffle.mp3",
+    "start": 3726,
+    "duration": 23,
+    "volume": 0.7943,
+    "trimBefore": 57,
+    "fadeOut": 3
+   }
+  ],
+  "ducking": {
+   "enabled": true,
+   "amountDb": -8,
+   "attack": 8,
+   "release": 15,
+   "holdGap": 20
+  }
+ },
+ "subtitlesFile": "subs.en.json",
+ "debug": {
+  "burnSubtitles": true,
+  "showInfo": false
+ },
+ "supers": [
+  {
+   "id": "su1",
+   "kind": "name_role",
+   "start": 86,
+   "duration": 90,
+   "text": "Nandini Joshi · Sub-Inspector",
+   "fadeIn": 6,
+   "fadeOut": 6
+  },
+  {
+   "id": "su2",
+   "kind": "place",
+   "start": 515,
+   "duration": 90,
+   "text": "Roopam Talkies cinema · Imlipur",
+   "fadeIn": 6,
+   "fadeOut": 6
+  },
+  {
+   "id": "su3",
+   "kind": "place",
+   "start": 1209,
+   "duration": 60,
+   "text": "The railway crossing",
+   "fadeIn": 6,
+   "fadeOut": 6
+  },
+  {
+   "id": "su6",
+   "kind": "place",
+   "start": 1329,
+   "duration": 90,
+   "text": "Imlipur thana",
+   "fadeIn": 6,
+   "fadeOut": 6
+  },
+  {
+   "id": "su4",
+   "kind": "name_role",
+   "start": 1712,
+   "duration": 90,
+   "text": "Dayashankar Tripathi · SHO, head of the thana",
+   "fadeIn": 6,
+   "fadeOut": 6
+  },
+  {
+   "id": "su5",
+   "kind": "name_role",
+   "start": 1830,
+   "duration": 90,
+   "text": "Pushpa Kumari · Head Constable",
+   "fadeIn": 6,
+   "fadeOut": 6,
+   "position": "upper"
+  }
+ ],
+ "meta": {
+  "built_by": "production/scripts/episode/build_timeline.py",
+  "lang": "en",
+  "picture_seconds": 136.133,
+  "total_seconds": 136.533,
+  "planned_seconds": null,
+  "cuts": [
+   86,
+   361,
+   470,
+   515,
+   621,
+   774,
+   922,
+   1029,
+   1209,
+   1269,
+   1299,
+   1430,
+   1600,
+   1712,
+   1830,
+   1949,
+   2084,
+   2230,
+   2425,
+   2578,
+   2684,
+   2729,
+   2780,
+   2795,
+   2843,
+   2873,
+   2951,
+   3022,
+   3151,
+   3226,
+   3437,
+   3570,
+   3704,
+   3749,
+   3874,
+   3904,
+   4084
+  ],
+  "end": "hard cut to black and silence at frame 4084, 12 black frames after",
+  "placeholders": {
+   "dialogue": [],
+   "frames_slated": [],
+   "sound": []
+  },
+  "sound_missing": {},
+  "frames": {
+   "s01": {
+    "kind": "generated",
+    "verdict": "verdict 'approved', attempt 1",
+    "image": [
+     "frames/s01.png",
+     "overlays/s01-ov_token_7.png"
+    ]
+   },
+   "s02": {
+    "kind": "generated",
+    "verdict": "verdict 'approved', attempt 1",
+    "image": "frames/s02.png"
+   },
+   "s03": {
+    "kind": "generated",
+    "verdict": "verdict 'approved', attempt 1",
+    "image": "frames/s03.png"
+   },
+   "s04": {
+    "kind": "second_framing",
+    "source": "s09",
+    "verdict": "from s09: verdict 'approved', attempt 1",
+    "image": "frames/s09.png",
+    "max_scale": 1.3
+   },
+   "s05": {
+    "kind": "generated",
+    "verdict": "verdict 'approved', attempt 1",
+    "image": [
+     "frames/s05.png",
+     "overlays/s05-ov_fake_board.en.png"
+    ]
+   },
+   "s06": {
+    "kind": "generated",
+    "verdict": "verdict 'approved', attempt 1",
+    "image": "frames/s06.png"
+   },
+   "s07": {
+    "kind": "generated",
+    "verdict": "verdict 'approved', attempt 1",
+    "image": "frames/s07.png"
+   },
+   "s08": {
+    "kind": "second_framing",
+    "source": "s03",
+    "verdict": "from s03: verdict 'approved', attempt 1",
+    "image": "frames/s03.png",
+    "max_scale": 1.3
+   },
+   "s09": {
+    "kind": "generated",
+    "verdict": "verdict 'approved', attempt 1",
+    "image": "frames/s09.png"
+   },
+   "s10": {
+    "kind": "generated",
+    "verdict": "verdict 'approved', attempt 1",
+    "image": "frames/s10.png"
+   },
+   "s11": {
+    "kind": "generated",
+    "verdict": "verdict 'approved', attempt 1",
+    "image": [
+     "frames/s11.png",
+     "overlays/s11-ov_token_7.png"
+    ]
+   },
+   "s12": {
+    "kind": "generated",
+    "verdict": "verdict 'approved', attempt 1",
+    "image": "frames/s12.png"
+   },
+   "s13": {
+    "kind": "generated",
+    "verdict": "verdict 'approved', attempt 1",
+    "image": [
+     "frames/s13.png",
+     "overlays/s13-ov_shield.png"
+    ]
+   },
+   "s14": {
+    "kind": "generated",
+    "verdict": "verdict 'approved', attempt 2",
+    "image": [
+     "frames/s14.png",
+     "overlays/s14-ov_shield.png"
+    ]
+   },
+   "s15": {
+    "kind": "generated",
+    "verdict": "verdict 'approved', attempt 1",
+    "image": [
+     "frames/s15.png",
+     "overlays/s15-ov_shield.png"
+    ]
+   },
+   "s16": {
+    "kind": "generated",
+    "verdict": "verdict 'approved', attempt 2",
+    "image": "frames/s16.png"
+   },
+   "s17": {
+    "kind": "generated",
+    "verdict": "verdict 'approved', attempt 1",
+    "image": [
+     "frames/s17.png",
+     "overlays/s17-ov_shield.png"
+    ]
+   },
+   "s18": {
+    "kind": "generated",
+    "verdict": "verdict 'approved', attempt 1",
+    "image": [
+     "frames/s18.png",
+     "overlays/s18-ov_shield.png"
+    ]
+   },
+   "s19": {
+    "kind": "generated",
+    "verdict": "verdict 'approved', attempt 1",
+    "image": "frames/s19.png"
+   },
+   "s20": {
+    "kind": "second_framing",
+    "source": "s14",
+    "verdict": "from s14: verdict 'approved', attempt 2",
+    "image": [
+     "frames/s14.png",
+     "overlays/s14-ov_shield.png"
+    ],
+    "max_scale": 1.3
+   },
+   "s21": {
+    "kind": "second_framing",
+    "source": "s19",
+    "verdict": "from s19: verdict 'approved', attempt 1",
+    "image": "frames/s19.png",
+    "max_scale": 1.2
+   },
+   "s22": {
+    "kind": "generated",
+    "verdict": "verdict 'approved', attempt 1",
+    "image": [
+     "frames/s22.png",
+     "overlays/s22-ov_shield.png"
+    ]
+   },
+   "s23": {
+    "kind": "generated",
+    "verdict": "verdict 'approved', attempt 1",
+    "image": "frames/s23.png"
+   },
+   "s24": {
+    "kind": "second_framing",
+    "source": "s17",
+    "verdict": "from s17: verdict 'approved', attempt 1",
+    "image": [
+     "frames/s17.png",
+     "overlays/s17-ov_shield.png"
+    ],
+    "max_scale": 1.3
+   },
+   "s25": {
+    "kind": "second_framing",
+    "source": "s23",
+    "verdict": "from s23: verdict 'approved', attempt 1",
+    "image": "frames/s23.png",
+    "max_scale": 1.3
+   },
+   "s26": {
+    "kind": "generated",
+    "verdict": "verdict 'approved', attempt 2",
+    "image": "frames/s26.png"
+   },
+   "s27": {
+    "kind": "second_framing",
+    "source": "s07",
+    "verdict": "from s07: verdict 'approved', attempt 1",
+    "image": "frames/s07.png",
+    "max_scale": 1.2
+   },
+   "s28": {
+    "kind": "generated",
+    "verdict": "verdict 'approved', attempt 1",
+    "image": "frames/s28.png"
+   },
+   "s29": {
+    "kind": "generated",
+    "verdict": "verdict 'approved', attempt 1",
+    "image": "frames/s29.png"
+   },
+   "s30": {
+    "kind": "generated",
+    "verdict": "verdict 'approved', attempt 1",
+    "image": "frames/s30.png"
+   },
+   "s31": {
+    "kind": "generated",
+    "verdict": "verdict 'approved', attempt 1",
+    "image": "frames/s31.png"
+   },
+   "s32": {
+    "kind": "generated",
+    "verdict": "verdict 'approved', attempt 1",
+    "image": [
+     "frames/s32.png",
+     "overlays/s32-ov_refusal_date.en.png"
+    ]
+   },
+   "s33": {
+    "kind": "second_framing",
+    "source": "s31",
+    "verdict": "from s31: verdict 'approved', attempt 1",
+    "image": "frames/s31.png",
+    "max_scale": 1.3
+   },
+   "s34": {
+    "kind": "generated",
+    "verdict": "verdict 'approved', attempt 1",
+    "image": "frames/s34.png"
+   },
+   "s35": {
+    "kind": "second_framing",
+    "source": "s31",
+    "verdict": "from s31: verdict 'approved', attempt 1",
+    "image": "frames/s31.png",
+    "max_scale": 1.15
+   },
+   "s36": {
+    "kind": "generated",
+    "verdict": "verdict 'approved', attempt 1",
+    "image": "frames/s36.png"
+   },
+   "s37": {
+    "kind": "generated",
+    "verdict": "verdict 'approved', attempt 1",
+    "image": "frames/s37.png"
+   }
+  },
+  "frames_unreviewed": [],
+  "frames_unchecked_takes": {},
+  "frame_review_format": "dict",
+  "split_lines": {},
+  "sound_filters": {},
+  "takes": {
+   "l01": "take 1 (l01.mp3)",
+   "l02": "take 2 (l02.c1.mp3)",
+   "l27": "take 1 (l27.c1.mp3)",
+   "l03": "take 2 (l03.c1.mp3)",
+   "l04": "take 1 (l04.mp3)",
+   "l05": "take 2 (l05.c1.mp3)",
+   "l06": "take 1 (l06.mp3)",
+   "l28": "take 1 (l28.c1.mp3)",
+   "l07": "take 2 (l07.c1.mp3)",
+   "l32": "take 1 (l32.c1.mp3)",
+   "l08": "take 1 (l08.mp3)",
+   "l29": "take 1 (l29.c1.mp3)",
+   "l09": "take 2 (l09.c1.mp3)",
+   "l10": "take 1 (l10.mp3)",
+   "l11": "take 1 (l11.mp3)",
+   "l12": "take 1 (l12.mp3)",
+   "l30": "take 1 (l30.c1.mp3)",
+   "l31": "take 1 (l31.c1.mp3)",
+   "l14": "take 1 (l14.mp3)",
+   "l15": "take 2 (l15.c1.mp3)",
+   "l16": "take 2 (l16.c1.mp3)",
+   "l17": "take 1 (l17.mp3)",
+   "l18": "take 2 (l18.mp3), identical to l18.mp3",
+   "l19": "take 2 (l19.c1.mp3)",
+   "l20": "take 2 (l20.c1.mp3)",
+   "l21": "take 2 (l21.c1.mp3)",
+   "l22": "take 2 (l22.c1.mp3)",
+   "l23": "take 1 (l23.mp3)",
+   "l24": "take 1 (l24.mp3)",
+   "l25": "take 1 (l25.mp3)",
+   "l26": "take 1 (l26.mp3)"
+  },
+  "shot_vs_plan": {
+   "s01": "2.87 s (plan 3.1 s)",
+   "s02": "9.17 s (plan 9.7 s)",
+   "s03": "3.63 s (plan 3.1 s)",
+   "s04": "1.50 s (plan 1.5 s)",
+   "s05": "3.53 s (plan 3.5 s)",
+   "s06": "5.10 s (plan 4.6 s)",
+   "s07": "4.93 s (plan 5.9 s)",
+   "s08": "3.57 s (plan 2.8 s)",
+   "s09": "6.00 s (plan 6.5 s)",
+   "s10": "2.00 s (plan 2.0 s)",
+   "s11": "1.00 s (plan 1.0 s)",
+   "s12": "4.37 s (plan 4.5 s)",
+   "s13": "5.67 s (plan 6.1 s)",
+   "s14": "3.73 s (plan 3.4 s)",
+   "s15": "3.93 s (plan 4.5 s)",
+   "s16": "3.97 s (plan 4.6 s)",
+   "s17": "4.50 s (plan 5.0 s)",
+   "s18": "4.87 s (plan 5.2 s)",
+   "s19": "6.50 s (plan 7.1 s)",
+   "s20": "5.10 s (plan 5.1 s)",
+   "s21": "3.53 s (plan 3.0 s)",
+   "s22": "1.50 s (plan 1.5 s)",
+   "s23": "1.70 s (plan 2.4 s)",
+   "s24": "0.50 s (plan 0.5 s)",
+   "s25": "1.60 s (plan 2.4 s)",
+   "s26": "1.00 s (plan 1.0 s)",
+   "s27": "2.60 s (plan 2.2 s)",
+   "s28": "2.37 s (plan 2.5 s)",
+   "s29": "4.30 s (plan 3.1 s)",
+   "s30": "2.50 s (plan 2.5 s)",
+   "s31": "7.03 s (plan 5.7 s)",
+   "s32": "4.43 s (plan 4.5 s)",
+   "s33": "4.47 s (plan 4.4 s)",
+   "s34": "1.50 s (plan 1.5 s)",
+   "s35": "4.17 s (plan 3.8 s)",
+   "s36": "1.00 s (plan 1.0 s)",
+   "s37": "6.00 s (plan 6.5 s)"
+  },
+  "shot_frames": {
+   "s01": [
+    0,
+    86
+   ],
+   "s02": [
+    86,
+    275
+   ],
+   "s03": [
+    361,
+    109
+   ],
+   "s04": [
+    470,
+    45
+   ],
+   "s05": [
+    515,
+    106
+   ],
+   "s06": [
+    621,
+    153
+   ],
+   "s07": [
+    774,
+    148
+   ],
+   "s08": [
+    922,
+    107
+   ],
+   "s09": [
+    1029,
+    180
+   ],
+   "s10": [
+    1209,
+    60
+   ],
+   "s11": [
+    1269,
+    30
+   ],
+   "s12": [
+    1299,
+    131
+   ],
+   "s13": [
+    1430,
+    170
+   ],
+   "s14": [
+    1600,
+    112
+   ],
+   "s15": [
+    1712,
+    118
+   ],
+   "s16": [
+    1830,
+    119
+   ],
+   "s17": [
+    1949,
+    135
+   ],
+   "s18": [
+    2084,
+    146
+   ],
+   "s19": [
+    2230,
+    195
+   ],
+   "s20": [
+    2425,
+    153
+   ],
+   "s21": [
+    2578,
+    106
+   ],
+   "s22": [
+    2684,
+    45
+   ],
+   "s23": [
+    2729,
+    51
+   ],
+   "s24": [
+    2780,
+    15
+   ],
+   "s25": [
+    2795,
+    48
+   ],
+   "s26": [
+    2843,
+    30
+   ],
+   "s27": [
+    2873,
+    78
+   ],
+   "s28": [
+    2951,
+    71
+   ],
+   "s29": [
+    3022,
+    129
+   ],
+   "s30": [
+    3151,
+    75
+   ],
+   "s31": [
+    3226,
+    211
+   ],
+   "s32": [
+    3437,
+    133
+   ],
+   "s33": [
+    3570,
+    134
+   ],
+   "s34": [
+    3704,
+    45
+   ],
+   "s35": [
+    3749,
+    125
+   ],
+   "s36": [
+    3874,
+    30
+   ],
+   "s37": [
+    3904,
+    180
+   ]
+  },
+  "sound_windows": {
+   "sfx_rubber_stamp": {
+    "window_s": [
+     0.0,
+     0.267
+    ],
+    "from": "qc note: Use final 0-0.25 s"
+   },
+   "mus_theme_caper_bed": {
+    "window_s": [
+     16.0,
+     36.0
+    ],
+    "from": "qc note: use 16-36 s"
+   }
+  },
+  "sound_unplaced": [
+   "s2e01_sfx_pigeon_wings"
+  ],
+  "supers": {
+   "burn": true,
+   "placed": [
+    {
+     "id": "su1",
+     "kind": "name_role",
+     "beat": "b2",
+     "shot": "s02",
+     "start": 86,
+     "duration": 90,
+     "seconds": 3.0,
+     "how": "with l02: on the cut into s02, 5 frames before its speech",
+     "text": "Nandini Joshi · Sub-Inspector"
+    },
+    {
+     "id": "su2",
+     "kind": "place",
+     "beat": "b3",
+     "shot": "s05",
+     "start": 515,
+     "duration": 90,
+     "seconds": 3.0,
+     "how": "with l04: on the cut into s05, 5 frames before its speech",
+     "text": "Roopam Talkies cinema · Imlipur"
+    },
+    {
+     "id": "su3",
+     "kind": "place",
+     "beat": "b5",
+     "shot": "s10",
+     "start": 1209,
+     "duration": 60,
+     "seconds": 2.0,
+     "how": "start of on_shot s10",
+     "text": "The railway crossing",
+     "ended_by": "s11, which carries plot overlay s11-ov_token_7 (edit.json layers)"
+    },
+    {
+     "id": "su6",
+     "kind": "place",
+     "beat": "b6",
+     "shot": "s12",
+     "start": 1329,
+     "duration": 90,
+     "seconds": 3.0,
+     "how": "with l29: on its first speech, in s12",
+     "text": "Imlipur thana"
+    },
+    {
+     "id": "su4",
+     "kind": "name_role",
+     "beat": "b6",
+     "shot": "s15",
+     "start": 1712,
+     "duration": 90,
+     "seconds": 3.0,
+     "how": "with l10: on the cut into s15, 5 frames before its speech",
+     "text": "Dayashankar Tripathi · SHO, head of the thana"
+    },
+    {
+     "id": "su5",
+     "kind": "name_role",
+     "beat": "b7",
+     "shot": "s16",
+     "start": 1830,
+     "duration": 90,
+     "seconds": 3.0,
+     "how": "with l11: on the cut into s16, 5 frames before its speech",
+     "text": "Pushpa Kumari · Head Constable"
+    }
+   ],
+   "unplaced": []
+  },
+  "checks": {
+   "layout_problems": [],
+   "length_ok": true,
+   "max_seconds": 150,
+   "second_framing_scale": [
+    "s33: second_framing at scale 1.3, over 1.25 (D-010)"
+   ],
+   "supers": [
+    "su2: starts on s05, which carries overlay ov_fake_board (D-024 ruling 3.3)",
+    "su4: starts on s15, which carries overlay s15-ov_shield (edit.json layers) (D-024 ruling 3.3)"
+   ]
+  },
+  "notes": [
+   "en l02: voice/en/l02.mp3 differs from the latest take l02.c1.mp3; the latest take is cut in.",
+   "en l03: voice/en/l03.mp3 differs from the latest take l03.c1.mp3; the latest take is cut in.",
+   "en l05: voice/en/l05.mp3 differs from the latest take l05.c1.mp3; the latest take is cut in.",
+   "en l07: voice/en/l07.mp3 differs from the latest take l07.c1.mp3; the latest take is cut in.",
+   "en l09: voice/en/l09.mp3 differs from the latest take l09.c1.mp3; the latest take is cut in.",
+   "en l15: voice/en/l15.mp3 differs from the latest take l15.c1.mp3; the latest take is cut in.",
+   "en l16: voice/en/l16.mp3 differs from the latest take l16.c1.mp3; the latest take is cut in.",
+   "en l19: voice/en/l19.mp3 differs from the latest take l19.c1.mp3; the latest take is cut in.",
+   "en l20: voice/en/l20.mp3 differs from the latest take l20.c1.mp3; the latest take is cut in.",
+   "en l21: voice/en/l21.mp3 differs from the latest take l21.c1.mp3; the latest take is cut in.",
+   "en l22: voice/en/l22.mp3 differs from the latest take l22.c1.mp3; the latest take is cut in.",
+   "en: l27 starts 1 frames later than the 8-frame gap so l02's last cue reads at <= 17 graphemes/s",
+   "en: s06 held 5 frames past its tail so l05's last cue reads at <= 17 graphemes/s",
+   "en: s13/s14 cut on 'Zero' (word 13; occurrence 1 of 1) at 164 frames into l09 (graphemes)",
+   "en: s14 held 3 frames past its tail so l09's last cue reads at <= 17 graphemes/s",
+   "en: s23 held 4 frames past its tail so l17's last cue reads at <= 17 graphemes/s",
+   "sound s2e01_sfx_tea_pour: no gain_db on the cue sheet; -10 dB from the starting gains for 'sfx'.",
+   "sound s2e01_sfx_lobby_door_swing: no gain_db on the cue sheet; -10 dB from the starting gains for 'sfx'.",
+   "sound s2e01_sfx_crossing_train: no gain_db on the cue sheet; -10 dB from the starting gains for 'sfx'.",
+   "sound s2e01_sfx_file_untie_riffle: no gain_db on the cue sheet; -10 dB from the starting gains for 'sfx'.",
+   "sound: 1 cue(s) on the sheet have no placement in edit.json and are not in the mix: s2e01_sfx_pigeon_wings",
+   "en s33: camera move from edit.json shots.s33.move, not shots.json.",
+   "en super su1: s02 frames 86-176 (3.0 s), with l02: on the cut into s02, 5 frames before its speech.",
+   "en super su2: s05 frames 515-605 (3.0 s), with l04: on the cut into s05, 5 frames before its speech.",
+   "en super su3: s10 frames 1209-1269 (2.0 s), start of on_shot s10; ended at s11, which carries plot overlay s11-ov_token_7 (edit.json layers).",
+   "en super su6: s12 frames 1329-1419 (3.0 s), with l29: on its first speech, in s12.",
+   "en super su4: s15 frames 1712-1802 (3.0 s), with l10: on the cut into s15, 5 frames before its speech.",
+   "en super su5: s16 frames 1830-1920 (3.0 s), with l11: on the cut into s16, 5 frames before its speech.",
+   "en: s33: second_framing at scale 1.3, over 1.25 (D-010)",
+   "Toolchain after the D-023 toolsmith step: camera moves come from shots.json (the copied shots.<id>.move entries are removed); second framings show their source frame, so the frames/<shot>.png copies are no longer needed (the toolchain ignores them, with a note); frames/review.json is the one dict format.",
+   "s33 move overridden (screening fix, D-023 rule 1): aimed at Nandini's face on s31 at scale 1.3 (x 0.9 to 1, y 0.9 to 1), no new frame. Still a mid shot, not a close.",
+   "Overlays (screening fix): text layers in overlays/, drawn by the S13 editor with CoreText (scratch tool, the flat2d proof's method), text from bible.json overlays, placed on each surface as measured on the approved frame and masked to the surface colour so anything in front stays in front. ov_token_7 on s01 and s11; ov_fake_board per language on s05; ov_shield on s13, s14 (and s20, cropped from s14), s15, s17 (and s24, cropped from s17), s18, s22; ov_refusal_date per language on s32. The token is not overlaid in its small wrist appearances (s02, s13, s17-s19, s21, s26, s31-s36). Positions were checked on stills, not in motion.",
+   "Sound (screening fixes): mus_theme_caper_bed raised 6 dB (-13 to -7). mus_tension_note is taken from the file's steady 2-15 s stretch in two pieces (#a 390 frames, #b from trim 2 s again with a 15-frame crossfade) with a +3 dB stepped ramp (0.5 dB every 101 frames from s30.start), then #c at -36 dB under l26 and the hold, continuing the file position.",
+   "One-off cues now exist (sound/manifest.jsonl, all status ok, none listened to): gains set from their measured levels: crossing_train -12, lobby_door_swing -8, tea_pour -6 (dips -8 under l04), file_untie_riffle 0 for the knot and cover (first 1.9 s) and -2 for the riffle slice (trim 1.9 s) after the page turn; the riffle replaces the sfx_page_turn fallback. Pigeon wings are not placed: the gap after l01 is under 0.5 s (cue sheet: drop rather than put it under l02).",
+   "s35 lead 12 frames: the knitting stops on the cut into s35, 0.4 s before l25 (cue sheet: 0.3-0.5 s of room tone).",
+   "s20 tail 8 frames (default 6): kept. The round(onset) vs floor(onset) gap between the cut-on-word cut and read_end is still open in the toolchain (README 'Not verified').",
+   "Not done, needs the toolsmith (D-0M4): screening's en c030/c031 split at the pause (edit.json has no subtitle-split override and measure.pause_min_s is global only).",
+   "Clarity re-edit (S13, 26 Nov): layout.tail.s18 36 frames (S7 remap note b8: 1.2 s of dial tones after l30 before the cut to s19). su5 'position': 'upper': in the lower third it covered the wool ball and the stamped envelope on s16. su4 stays on s15 although the build flags the s15-ov_shield layer (ruling 3.3): every b6 shot after s12 carries the shield, s15 is the script's and S7's chosen shot, the plate sits in the top quarter and the super in the lower third, and taking the layer off s15 would show a blank plate straight after the s14 'ZERO CRIME' insert. su2 on s05 stays: ov_fake_board is dressing (script b3, shots.json s05 placement note), not a plot overlay. Sound for b8 re-placed to the clarity action (the cue sheet predates l30): sfx_desk_phone_lift from s18.start until l30.speech_start (was len 24, which ran 3 frames under l30); sfx_dtmf_dialling now in the 1.2 s after l30 (at l30.speech_end + 2 until s19.start, fade 4), not from s18.start + 24 to l14, where it lay under l30 and l31."
+  ],
+  "review": "REVIEW ONLY: timeline.en.json + subs.en.json cues burned in (debug.burnSubtitles). Not a deliverable."
+ },
+ "subtitles": [
+  {
+   "startMs": 483,
+   "endMs": 1283,
+   "text": "Next!"
+  },
+  {
+   "startMs": 1583,
+   "endMs": 2717,
+   "text": "Token number seven."
+  },
+  {
+   "startMs": 3017,
+   "endMs": 4350,
+   "text": "I'm Nandini Joshi,"
+  },
+  {
+   "startMs": 4417,
+   "endMs": 6083,
+   "text": "Sub-Inspector for this area."
+  },
+  {
+   "startMs": 6150,
+   "endMs": 7350,
+   "text": "Six weeks,"
+  },
+  {
+   "startMs": 7417,
+   "endMs": 10117,
+   "text": "not one complaint at\nmy police station."
+  },
+  {
+   "startMs": 10183,
+   "endMs": 11817,
+   "text": "So I took a token too."
+  },
+  {
+   "startMs": 12183,
+   "endMs": 15450,
+   "text": "And this thana of yours is\nnot in my records at all."
+  },
+  {
+   "startMs": 17317,
+   "endMs": 20483,
+   "text": "Kindly sit, madam.\nFirst tea, then complaint."
+  },
+  {
+   "startMs": 20850,
+   "endMs": 22650,
+   "text": "Inspector Sudhir Nirala."
+  },
+  {
+   "startMs": 22717,
+   "endMs": 25783,
+   "text": "Roopam Talkies Thana,\nthis side of the railway line."
+  },
+  {
+   "startMs": 25950,
+   "endMs": 29050,
+   "text": "Imlipur has only one thana.\nMine."
+  },
+  {
+   "startMs": 29117,
+   "endMs": 30517,
+   "text": "This is a shut cinema."
+  },
+  {
+   "startMs": 30883,
+   "endMs": 33417,
+   "text": "And nobody in our\nforce wears a cap."
+  },
+  {
+   "startMs": 33483,
+   "endMs": 34283,
+   "text": "You do."
+  },
+  {
+   "startMs": 34450,
+   "endMs": 35550,
+   "text": "Form is ready."
+  },
+  {
+   "startMs": 35817,
+   "endMs": 37650,
+   "text": "Then kindly dictate,"
+  },
+  {
+   "startMs": 37717,
+   "endMs": 39550,
+   "text": "madam: 'Thana has been stolen.'"
+  },
+  {
+   "startMs": 44283,
+   "endMs": 47450,
+   "text": "SHO sahab, there's a fake\nthana in Roopam Talkies."
+  },
+  {
+   "startMs": 47850,
+   "endMs": 49350,
+   "text": "Talkies? Two years,"
+  },
+  {
+   "startMs": 49850,
+   "endMs": 53250,
+   "text": "not one FIR in my thana.\nNot one case."
+  },
+  {
+   "startMs": 53317,
+   "endMs": 55783,
+   "text": "Zero crime."
+  },
+  {
+   "startMs": 55850,
+   "endMs": 57050,
+   "text": "Got a shield for it."
+  },
+  {
+   "startMs": 57217,
+   "endMs": 59850,
+   "text": "Where there's no complaint,\nthere's no crime."
+  },
+  {
+   "startMs": 59917,
+   "endMs": 60983,
+   "text": "Have some peanuts."
+  },
+  {
+   "startMs": 61150,
+   "endMs": 64750,
+   "text": "Madam, your transfer application\nhas reached DSP sahab."
+  },
+  {
+   "startMs": 65117,
+   "endMs": 67650,
+   "text": "Where no FIR gets written,"
+  },
+  {
+   "startMs": 67717,
+   "endMs": 69250,
+   "text": "what is an SI for?"
+  },
+  {
+   "startMs": 70250,
+   "endMs": 73117,
+   "text": "Don't go over my head\nto DSP sahab, madam."
+  },
+  {
+   "startMs": 74483,
+   "endMs": 75717,
+   "text": "DSP sahab,"
+  },
+  {
+   "startMs": 75783,
+   "endMs": 76983,
+   "text": "SI Joshi."
+  },
+  {
+   "startMs": 77050,
+   "endMs": 78483,
+   "text": "I've found a fake thana."
+  },
+  {
+   "startMs": 78683,
+   "endMs": 80617,
+   "text": "A fake thana, in my area?"
+  },
+  {
+   "startMs": 80983,
+   "endMs": 84050,
+   "text": "At your own thana, press\nconference at ten tomorrow."
+  },
+  {
+   "startMs": 84217,
+   "endMs": 85650,
+   "text": "Second zero-crime year."
+  },
+  {
+   "startMs": 86083,
+   "endMs": 89383,
+   "text": "Before that, I want the fake\nthana's man in your lockup."
+  },
+  {
+   "startMs": 91117,
+   "endMs": 92650,
+   "text": "I'll come with you, madam."
+  },
+  {
+   "startMs": 93317,
+   "endMs": 94550,
+   "text": "I know the way."
+  },
+  {
+   "startMs": 95917,
+   "endMs": 98150,
+   "text": "Nirala ji, all registers seized."
+  },
+  {
+   "startMs": 98517,
+   "endMs": 100517,
+   "text": "All present, madam. In order."
+  },
+  {
+   "startMs": 100883,
+   "endMs": 103783,
+   "text": "The thickest file is upstairs,\nin the malkhana."
+  },
+  {
+   "startMs": 103850,
+   "endMs": 104917,
+   "text": "The evidence room."
+  },
+  {
+   "startMs": 107683,
+   "endMs": 110983,
+   "text": "Thirty complaints.\nRation theft, extortion..."
+  },
+  {
+   "startMs": 111050,
+   "endMs": 114350,
+   "text": "every one names Bhaiyaji,\nof the ration godown."
+  },
+  {
+   "startMs": 114717,
+   "endMs": 116117,
+   "text": "Seventeenth March."
+  },
+  {
+   "startMs": 116650,
+   "endMs": 118783,
+   "text": "'I first went to Imlipur thana.'"
+  },
+  {
+   "startMs": 119150,
+   "endMs": 123250,
+   "text": "'SHO Tripathi said: FIR\nwill not be written.'"
+  },
+  {
+   "startMs": 125350,
+   "endMs": 128917,
+   "text": "All thirty of them...\nturned away by my own thana."
+  },
+  {
+   "startMs": 130283,
+   "endMs": 131950,
+   "text": "So before ten tomorrow..."
+  },
+  {
+   "startMs": 132517,
+   "endMs": 133617,
+   "text": "who do I arrest?"
+  }
+ ]
+}

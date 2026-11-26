@@ -1,0 +1,153 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,090"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 90
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,090",
+				"to": "00:00:00,340"
+			},
+			"offsets": {
+				"from": 90,
+				"to": 340
+			},
+			"text": " हम"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,340",
+				"to": "00:00:00,670"
+			},
+			"offsets": {
+				"from": 340,
+				"to": 670
+			},
+			"text": " बस"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,670",
+				"to": "00:00:01,510"
+			},
+			"offsets": {
+				"from": 670,
+				"to": 1510
+			},
+			"text": " गेहने"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,510",
+				"to": "00:00:02,180"
+			},
+			"offsets": {
+				"from": 1510,
+				"to": 2180
+			},
+			"text": " लेते"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,180",
+				"to": "00:00:02,710"
+			},
+			"offsets": {
+				"from": 2180,
+				"to": 2710
+			},
+			"text": " हैं,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,710",
+				"to": "00:00:03,100"
+			},
+			"offsets": {
+				"from": 2710,
+				"to": 3100
+			},
+			"text": " किसी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,100",
+				"to": "00:00:03,220"
+			},
+			"offsets": {
+				"from": 3100,
+				"to": 3220
+			},
+			"text": " को"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,220",
+				"to": "00:00:03,450"
+			},
+			"offsets": {
+				"from": 3220,
+				"to": 3450
+			},
+			"text": " हाथ"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,450",
+				"to": "00:00:03,770"
+			},
+			"offsets": {
+				"from": 3450,
+				"to": 3770
+			},
+			"text": " नहीं"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,770",
+				"to": "00:00:04,360"
+			},
+			"offsets": {
+				"from": 3770,
+				"to": 4360
+			},
+			"text": " लगाके."
+		}
+	]
+}

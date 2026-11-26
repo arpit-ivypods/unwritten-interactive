@@ -1,0 +1,153 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,010"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 10
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,010",
+				"to": "00:00:01,320"
+			},
+			"offsets": {
+				"from": 10,
+				"to": 1320
+			},
+			"text": " जीजा"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,320",
+				"to": "00:00:01,980"
+			},
+			"offsets": {
+				"from": 1320,
+				"to": 1980
+			},
+			"text": " जी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,980",
+				"to": "00:00:02,450"
+			},
+			"offsets": {
+				"from": 1980,
+				"to": 2450
+			},
+			"text": " बहन"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,450",
+				"to": "00:00:02,770"
+			},
+			"offsets": {
+				"from": 2450,
+				"to": 2770
+			},
+			"text": " के"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,770",
+				"to": "00:00:03,210"
+			},
+			"offsets": {
+				"from": 2770,
+				"to": 3210
+			},
+			"text": " पती"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,210",
+				"to": "00:00:03,670"
+			},
+			"offsets": {
+				"from": 3210,
+				"to": 3670
+			},
+			"text": " हो"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,670",
+				"to": "00:00:03,870"
+			},
+			"offsets": {
+				"from": 3670,
+				"to": 3870
+			},
+			"text": " तो"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,870",
+				"to": "00:00:04,200"
+			},
+			"offsets": {
+				"from": 3870,
+				"to": 4200
+			},
+			"text": " पीतल"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,200",
+				"to": "00:00:04,440"
+			},
+			"offsets": {
+				"from": 4200,
+				"to": 4440
+			},
+			"text": " भी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,440",
+				"to": "00:00:05,000"
+			},
+			"offsets": {
+				"from": 4440,
+				"to": 5000
+			},
+			"text": " चलेगा"
+		}
+	]
+}

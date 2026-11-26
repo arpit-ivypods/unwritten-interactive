@@ -1,0 +1,653 @@
+{
+ "schema": "frames-review/1",
+ "episode": "s2e02",
+ "by": "S9 Visual checker, 26 Nov 2026 (made none of these frames)",
+ "anchor_check": {
+  "stage": "scene-anchor check (D-013 rule 2, D-023 rule 4.1): s10 (A), s11 (B), s34 (C), attempt 1 each. Anchors are checked before the rest of each scene is generated.",
+  "method": "Each 1440x2560 png viewed whole at 1125x2000, then cropped at full resolution with ffmpeg: face crops set beside the sheet close-ups (nandini.png three-quarter close-up, pair_nandini_pushpa Pushpa face, pair_nandini_nirala viewed whole, tripathi.png front close-up), epaulettes, pen, pouch, hands, handcuffs, knitting, wool, bag, rack tags, file pages, stair figures, neighbours' hands, token, helmet, phone keypad, cone, gamchha, shield plate. Head and face heights read off gridded full-resolution crops; the s34 brass plate bounds measured by pixel colour. Judged against shots.json (framing, STATE, frame_check, refs), the s10, s11 and s34 prompts, style.json character_lock and wardrobe_locks.p1, rank_marks and two_shot_rule, continuity.json characters.*.static and the s2e01/s2e02 end_state. Crops: <scratch>",
+  "counts": {
+   "judged": 3,
+   "approved": 1,
+   "approved_with_logged_drift": 1,
+   "rejected": 1
+  },
+  "d021_style_frame_watch": "s10 and s11 attach real_thana as the style frame: neither copies the thana fan, shield, almirah, barred door or doorway shaft. 0 of 2. s34's plate is the style frame itself, so it does not count. Light not inherited: s10 is the projection room's window shafts, s11 lobby daylight from the high left windows, s34 flat cool wall with no daylight shaft and no doorway in frame.",
+  "d017_height_watch": "s10 (Nandini/Pushpa, same depth, feet level): at full resolution Nandini's head top is at y about 582, her mouth about 810; Pushpa's hair top (without the bun) about 805, the needle heads about 695 (Nandini's brow/eye level, the rule says about her nose). The two_shot_rule holds; the restage rule is not triggered. s11: not testable, they stand on different steps.",
+  "counts_note": "First-check rejection here: 1 of 3."
+ },
+ "frames": [
+  {
+   "shot": "s02",
+   "verdict": "approved",
+   "attempt": 1,
+   "stage": "frame check",
+   "file_md5": "261700db2dfaf4085f2f57787b5bf667",
+   "checks": {
+    "identity": "pass: Nirala per nirala.png (long narrow face, pencil moustache with down-turned ends, earnest rounder eyes, ears out); reads late thirties.",
+    "wardrobe": "pass: cap level, teal band, black peak, no badge; three bars each epaulette; medal picture-right on his left chest; lantern patches.",
+    "state": "pass: hands below frame (empty), holster below frame. Eyeline: irises toward the lower picture-left (her hand and the file), as asked.",
+    "picture_side_geography": "pass: reverse of the plate; the left-wall window correctly appears high on picture-right, stair doorway behind him.",
+    "text": "pass: none (tags, envelopes checked).",
+    "faces_low_band": "pass: face 35-51 percent, cap 20-33 percent."
+   },
+   "nits": [
+    "Face sits lower than the prompt's 20-36 percent (brow to chin about 35-51 percent); harmless for subtitles and for s04's punch-in.",
+    "A small green glow speck at the lower edge of the picture-left sleeve patch (about x 60-90, y 2110-2140 of 2560), inside the subtitle band."
+   ],
+   "refs_attached": []
+  },
+  {
+   "shot": "s03",
+   "verdict": "approved",
+   "attempt": 1,
+   "stage": "frame check",
+   "file_md5": "7874505f66484ae32cd36c355065e56e",
+   "checks": {
+    "identity": "pass: face crop matches the nandini.png close-ups (oval face, angular jaw, centre parting, low ponytail).",
+    "wardrobe": "pass: two bars each side, lantern patches, blue pen picture-right, steel buckle, no jewellery.",
+    "state": "pass: cuffs drawn out in the picture-left (right) fist, chain and second ring swinging; right wrist bare; left hand (picture-right) pushing the blank grey token into the left trouser pocket with string loop and card corner showing; pouch picture-left, empty.",
+    "geography": "pass: plate's view, window high left, sheeted projector far end.",
+    "text": "pass: none.",
+    "faces_low_band": "pass: face about 18-31 percent; cuffs 57-78 percent (lower ring at the band edge)."
+   },
+   "nits": [
+    "Pouch drawn as an open-topped holder with no flap visible (STATE: flap open); reads as open and empty.",
+    "Brows angled into a scowl rather than level; mid-word, as the line asks."
+   ],
+   "refs_attached": []
+  },
+  {
+   "shot": "s05",
+   "verdict": "approved",
+   "attempt": 1,
+   "stage": "frame check",
+   "file_md5": "080c32c7c980cf7cc04119a0381fc673",
+   "checks": {
+    "identity": "pass: three-quarter to picture-right, matches the sheet's three-quarter close-up.",
+    "wardrobe": "pass: two bars, pen on the far (picture-right) pocket, lantern patch.",
+    "state": "pass: no hands, cuffs or token in frame, so s07 may reuse it.",
+    "geography": "pass: rack with wax-sealed envelopes behind, window shaft upper left.",
+    "text": "pass: none.",
+    "faces_low_band": "pass: face about 21-45 percent."
+   },
+   "refs_attached": []
+  },
+  {
+   "shot": "s06",
+   "verdict": "approved",
+   "attempt": 2,
+   "stage": "frame check",
+   "file_md5": "c25042d22215cb709423804d095f961e",
+   "checks": {
+    "identity": "pass: Pushpa per pushpa.png (round broad face, frown, round steel spectacles low, grey-streaked bun with steel needles in an X); reads about fifty.",
+    "wardrobe": "pass: ONE bar on each epaulette (the anchor's two-bar drift did not carry), plum sleeveless cardigan with low patch pockets, lantern patches.",
+    "state": "pass: orange wool ball in the picture-left pocket, right hand (picture-left) drawing yarn up; left hand (picture-right) holds the idle bamboo needles and knitting low; off-white bag on her left shoulder (picture-right).",
+    "geography": "pass: against the right-hand rack, projector at picture-left behind.",
+    "text": "pass: none.",
+    "faces_low_band": "pass: face about 26-36 percent."
+   },
+   "refs_attached": []
+  },
+  {
+   "shot": "s10",
+   "verdict": "approved with logged drift",
+   "attempt": 1,
+   "stage": "anchor",
+   "file_md5": "8da7232c803e0155007f00d02f19bf32",
+   "checks": {
+    "identity": "pass: Nandini matches the nandini.png three-quarter close-up (oval face, firm angular jaw, low level brows, straight nose, closed unsmiling mouth, smooth hair to a low ponytail); reads late twenties. Pushpa matches the pair-sheet face (round broad face, frown crease, round steel spectacles low on the nose, eyes down over them, grey-streaked hair in a high bun, two steel needles crossed in an X with ball heads); reads about fifty.",
+    "wardrobe_jewellery": "Nandini pass: two bars on the near epaulette, lantern patches, pen with blue cap in the picture-right pocket (her left, far side), belt with steel buckle, no jewellery or watch. Pushpa DRIFT: her near epaulette (picture-left, her right shoulder) carries TWO off-white bars; her lock, rank_marks and the pair sheet give ONE bar each. The far epaulette, half under the bag strap, shows one. Rest pass: plum sleeveless cardigan with low patch pockets, lantern patches, no jewellery.",
+    "props_state": "pass: plain steel cuffs (two rings, short chain) hanging from her right hand, picture-left/near side; right wrist bare, no token or string; pouch on the near hip open-topped and empty; left hand empty on the far side; no helmet. Pushpa knits orange on two pale bamboo needles, yarn running to the orange ball in her picture-left (right) pocket; off-white cloth bag on her picture-right (left) shoulder. Thick file open on the stool between them, low and behind; sheeted projector at the far end; racks of brown envelopes with red wax and blank tags both sides.",
+    "placement": "pass: Nandini picture-left turned three-quarters to picture-right, Pushpa picture-right against the right rack turned to picture-left, eyes on the work; plate geography kept (window high left, projector far end). Exactly two people.",
+    "hands": "pass: Nandini's cuff hand and empty hand, Pushpa's two knitting hands; no fused or extra fingers seen.",
+    "text": "pass: none (rack tags, bundle tags, file pages, projector box checked at full resolution).",
+    "faces_low_band": "pass: Nandini's face at about 23-33 percent of height, Pushpa's at about 31-41 percent. The cuffs hang at about 66-78 percent (the prompt asked 58-66); at the end of the push-in (intensity 0.2, scale 1.048 about focus y 0.32) the lower ring reaches about 80 percent, the top edge of the subtitle band.",
+    "light": "pass with a nit: window shafts as the LIGHT line asks; the plate's ceiling lamp is drawn with a lit bulb but casts no light (D-021 decision 4: the plate's extra lamp stands as drawn)."
+   },
+   "logged_drift": [
+    "Pushpa's near epaulette shows two bars instead of one. It does not change her face, age, sides or any story prop; the far epaulette shows one, and the frame is otherwise right on every tracked item including the pair height, which a retake could lose. Accepted under D-021 decision 6 and logged.",
+    "The thick file reads as a bound book on a red cover more than loose papers in cloth (same nit as s2e01 s31's anchor note)."
+   ],
+   "for_owner": "S7/S8: every scene-A prompt that attaches frames/s10.png (s03, s05, s06) adds under 'do not copy from the anchor': 'Pushpa's near epaulette in the anchor shows two bars: she has ONE off-white bar on each epaulette, as on her sheet.' s06 (Pushpa single, then s08 from it) must carry this. S13 editor: watch the cuffs against the subtitle band at the end of s10's push-in; lowering intensity or moving focus y up slightly keeps them clear."
+  },
+  {
+   "shot": "s11",
+   "verdict": "rejected",
+   "attempt": 1,
+   "stage": "anchor",
+   "file_md5": "45879796ff4efad3639bf38878646a5b",
+   "reason": "Prop-state error: a second pair of handcuffs. Nirala, coming down first, holds a complete pair of steel handcuffs in his right hand (picture-left side of his body, at about 42-45 percent of height); Nandini, a step above, holds hers in her right hand (one ring visible beside his shoulder). STATE has the cuffs in Nandini's right hand only and Nirala holding nothing but the rail. This changes the reading of the beat (the impostor appears to carry the arrest cuffs), and as the scene-B anchor it is attached to every later scene-B frame (s12-s33), where it would spread a cuffs-in-Nirala's-hand state (D-013 rule 2).",
+   "checks_ok": "Nandini identity (centre parting, low ponytail, level brows, closed mouth), two bars, pen picture-right, pouch picture-left. Nirala identity (long narrow face, pencil moustache, large earnest eyes), cap dead level with teal band and black peak, three bars, medal picture-right on his left chest, brown holster closed picture-left, belt tail hanging. Geography follows the plate: bench and tokens-on-nail left, desk centre with registers, stamp, ink pad, kettle and two glasses, blank board, clock with hands and no numerals, bulb unlit, booth grille right, stair back right. Foreground: one blue-sleeved and one grey-sleeved forearm on one handlebar, token on the blue-sleeved wrist with its string, blank and front-on; cherry-red helmet on the bench. No faces besides the two. No text (board, poster frames, nail tokens, token, clock checked). Style frame not copied. Faces at about 23-26 percent (Nandini) and 28-32 percent (Nirala).",
+   "nits": [
+    "Nirala's sleeves end at the wrist with his whole hands showing; the lock has them hanging over his hands so only the fingers show.",
+    "Nandini's pouch reads closed at this size; STATE says flap open, empty.",
+    "The helmet sits at about 73-85 percent of height, partly inside the bottom-20-percent subtitle band (prompt asked 25-74 percent).",
+    "Nandini's cuff hand is half hidden behind Nirala's shoulder."
+   ],
+   "retake_fix": "One retake (D-013 rule 11), same refs. Add to THE SHOT and STATE, in picture terms: 'NIRALA'S HANDS: his LEFT hand (picture-right) on the iron rail; his RIGHT hand (picture-left) hangs EMPTY at his side, only the fingers showing below his too-long sleeve. He holds NO handcuffs. There is exactly ONE pair of handcuffs in the whole picture, hanging from Nandini's right hand.' Stage Nandini one step above him and a little to the picture-LEFT on the wall side of the step, so her cuff hand on the picture-left of her body is clear of him and not hidden behind his shoulder. Restate her pouch flap open and empty. Raise the foreground so the helmet and token sit between 55 and 74 percent of the way down. Keep everything else; do not apply the 'complexity' contingency, the foreground drew correctly. Then S9 retake check before any scene-B frame that attaches s11.",
+   "overlay_note": "ov_token_8 surface not measured: the retake will move it. Measure at the retake check."
+  },
+  {
+   "shot": "s11",
+   "verdict": "approved with logged drift",
+   "attempt": 2,
+   "stage": "anchor retake check",
+   "file_md5": "bf35631654c0a7dd1b541d3cab27381e",
+   "refs_attached": [
+    "pair_nandini_nirala.png",
+    "talkies_lobby.png",
+    "red_helmet.png",
+    "token.png",
+    "real_thana.png"
+   ],
+   "method": "md5 of frames/s11.png matched to manifest row attempt 2 (prompt_sha feaf1aa19466, refs non-empty, in shots.json order). Viewed whole at 810x1440 on a 10 percent grid beside the plate (talkies_lobby.png), the pair sheet and the style frame; cropped at full resolution with ffmpeg (stair figures 2x, both pairs of epaulettes and chests 4x, Nirala's right hand 3x, Nandini's cuff hand 3x, foreground bench, token and helmet on a 1 percent grid). Token and helmet-shell extents measured by pixel colour from the raw RGB; face heights read off the crops. Crops: <scratch>",
+   "retake_check": "pass: the attempt-1 rejection is fixed. Exactly one pair of handcuffs in the picture (whole frame searched), hanging from Nandini's right hand on the picture-left of her body, against the wall and well clear of Nirala. Nirala's right hand (picture-left) hangs empty at his side, only the fingers below the sleeve; his left hand (picture-right) is on the iron rail; he holds nothing. Accepted as the standing anchor; one retake used (D-013 rule 11).",
+   "checks": {
+    "identity": "pass: Nandini matches the pair sheet (oval face, angular jaw, low level brows, closed unsmiling mouth, centre parting, smooth hair to a low ponytail). Nirala matches it (long narrow face, ears out, pencil moustache with down-turned ends, earnest wide eyes, short tufts under the cap).",
+    "wardrobe": "pass: Nandini two off-white bars on each epaulette, lantern patches, blue-capped pen in the picture-right pocket, steel buckle, no cap or jewellery. Nirala cap dead level with teal band and black peak, no badge; three bars on each epaulette; medal (striped ribbon, brass disc) picture-right on his left chest; brown holster on the picture-left hip, flap buttoned; belt tail hanging.",
+    "props_state": "pass with drift: cuffs (two rings, short chain) in Nandini's right hand only; her left hand not visible (behind Nirala), nothing held shows. Pouch on the picture-left hip, but see logged_drift. Token: blank grey card on its off-white string looped over the blue-sleeved wrist, face flat to camera, unobstructed. Helmet: cherry-red open face, no visor, no stickers, on the bench seat beside and below the hands. One black bicycle handlebar, blue-sleeved hand on its left grip from the left edge, grey-sleeved hand on its right grip from below (one hand each, as in attempt 1 and as the prompt's own wording describes). Desk: registers, stamp, ink pad, kettle, two glasses. Bulb off.",
+    "placement": "pass: Nirala lower on the stair facing us, Nandini one step above (her shoes about 80 px higher at full resolution) and to the picture-left of him on the wall side. Exactly two people drawn in full, plus two neighbours' hands; no other faces. Heights not testable (different steps).",
+    "geography": "pass: follows the plate: high windows on the left wall, blank brass-edged frames, tokens on the nail left, clock (hands, no numerals) high left of the blank board, bulb on its wire, desk centre, chair behind, booth with arched grille right, stair with iron rail at the back right rising to an upper doorway; left pillar at the top-left edge, bench in the left foreground.",
+    "style_frame": "pass: real_thana's fan, almirah, shield, barred door, doorway shaft and grey floor not copied. Light is lobby daylight from the high left windows in hard-edged pale shafts across the terrazzo.",
+    "text": "pass: none (board, four poster frames, nail tokens, token, clock, register spines, ink-pad lid checked).",
+    "hands": "pass: Nandini's cuff hand, Nirala's two hands, the two neighbours' hands; no extra or fused fingers seen.",
+    "faces_low_band": "pass: Nandini's face about 27-30 percent of height, Nirala's (cap to chin) about 30-34 percent, inside the 25-45 safe band and the right half of the picture. Token face measured x 0.113-0.198, y 0.670-0.721. Helmet: see logged_drift."
+   },
+   "logged_drift": [
+    "Helmet low: the red shell measures 72.3-80.6 percent of height by pixel colour (y 1852-2064 of 2560) and the chin-strap buckle reaches about 86 percent, so the lower shell and the strap are in the bottom-20-percent subtitle band. The prompt asked 55-74. Attempt 1 sat the same (73-83 by S7's measure); not worse. It is a dressing prop on the bench, not a face or a state item; a subtitle line covering the strap loses nothing. S13 editor: keep s11's push-in focus at y 0.38 or higher.",
+    "Nandini's handcuff pouch reads closed (black pouch, flap down with its snap showing), against STATE 'flap open, empty'. Small at this distance. Scene-B frames that attach s11 (s12-s33) were already checked; the frame_check rows found no frame where the pouch state misleads.",
+    "The grey-sleeved forearm comes in large from the bottom-right corner and runs through the subtitle band (about x 0.53-0.92, y 0.67-1.0). It is the asked-for neighbour's arm 'from below', drawn bigger than intended; it carries no face, text or story prop.",
+    "Nandini's picture-right side (her left arm and hand) is partly behind Nirala's shoulder and body, against 'no part of her behind his shoulder'. The part that matters, the cuff hand, is in clear view, which is what the shots.json frame_check asks.",
+    "Nirala's rail hand (picture-right) shows the whole hand with the cuff at the wrist; the series sleeve nit (frame_check header). His hanging right hand is now correct, fingers only."
+   ],
+   "overlay_note": "ov_token_8 surface measured by pixel colour: the token face is x 0.113-0.198, y 0.670-0.721 of the frame (x 162-285, y 1716-1846 at 1440x2560), front-on, blank, nothing over it. It sits above the subtitle band. ov_fake_board: the board is blank and readable, about x 0.29-0.55, y 0.34-0.46 (read by eye off the grid, not measured).",
+   "for_owner": "Scene anchor now approved. No other shot was held back by it: every scene-B frame that attaches s11 (s12-s14, s16-s19, s22-s29, s32, s33) was generated with this attempt-2 file and already carries an approved or approved-with-drift row; the second framings in scene B (s15, s20, s21, s30, s31) derive from s13, s17, s19, s25, s29, not from s11. The only effect is that s11 itself stops being slated at the next build.",
+   "first_check": {
+    "verdict": "rejected",
+    "attempt": 1,
+    "file": "frames/s11.prev1.png",
+    "file_md5": "45879796ff4efad3639bf38878646a5b",
+    "reason": "A second pair of handcuffs in Nirala's right hand; nits: sleeves, pouch closed, helmet low, Nandini's cuff hand half hidden behind Nirala."
+   }
+  },
+  {
+   "shot": "s12",
+   "verdict": "approved",
+   "attempt": 1,
+   "stage": "frame check",
+   "file_md5": "c280f276abc24b22c67a36604eff2822",
+   "checks": {
+    "state": "pass: top-down; left forefinger (picture-left) under a register row; right hand (picture-right) writing with a pen on a blank slip; stamp and open purple pad upper right; both neighbours' hands (blue sleeve, grey sleeve) on one handlebar at the top edge.",
+    "hands": "pass: normal fingers; the pen hand reads as a right hand.",
+    "text": "pass: ruled lines only on register and slip (checked at full resolution).",
+    "faces_low_band": "pass: no faces; register and slip at 42-73 percent."
+   },
+   "nits": [
+    "Sleeves end at the wrists and whole hands show; the lock has them hanging over the hands with only fingers showing (frame_check item). Same drift as the s11 attempt-1 nit; see header.",
+    "The counter's far edge is a hard horizontal line across the frame at about 27 percent, with the floor and handlebar above it; reads as the counter edge, not a panel split."
+   ],
+   "refs_attached": []
+  },
+  {
+   "shot": "s13",
+   "verdict": "approved",
+   "attempt": 1,
+   "stage": "frame check",
+   "file_md5": "0107b49621aea42ece24647f4f757f91",
+   "checks": {
+    "identity": "pass: matches nirala.png front close-up; anxious, wide-eyed, not smiling (s15 may reuse it).",
+    "wardrobe": "pass: cap level, three bars, medal picture-right, holster hidden by the counter.",
+    "state": "pass: blank torn receipt held up in the right hand (picture-left); left hand on the open register.",
+    "geography": "pass: board behind, clock (hands, no numerals) upper left, bulb, kettle and glasses right, stamp and pad left on the counter.",
+    "text": "pass: none.",
+    "faces_low_band": "pass: face about 30-39 percent (asked 18-34)."
+   },
+   "nits": [
+    "Eyeline is near the lens rather than clearly past it to picture-left.",
+    "Sleeves at the wrists, whole hands showing (see header)."
+   ],
+   "refs_attached": []
+  },
+  {
+   "shot": "s14",
+   "verdict": "approved with logged drift",
+   "attempt": 4,
+   "stage": "retake check",
+   "file_md5": "d92a96a81380bcdfddf79645c247def7",
+   "refs_attached": [
+    "nandini.png",
+    "talkies_lobby.png",
+    "handcuffs.png",
+    "frames/s11.png"
+   ],
+   "retake_check": "fault reduced, not cleared: the cuffs' lower ring still enters the subtitle band. Accepted as the better take under D-013 rule 11 (one retake used); no further retake.",
+   "checks": {
+    "identity": "pass: face crop matches the nandini.png three-quarter close-up (angular jaw, level brows, centre parting, low ponytail); chin lifted, eyes up to the clock.",
+    "wardrobe": "pass: two bars on each epaulette, lantern patch on the near sleeve, blue pen in the far (picture-right, her left) chest pocket.",
+    "state": "pass: faces picture-right, so her right side is near; the near (right, picture-left) fist holds one ring of plain steel cuffs, chain and second ring hanging; far (left) hand empty at the picture-right edge; pouch on the near hip, top open (empty not confirmable at this size). No helmet in frame.",
+    "clock": "pass: upper right at about 9-24 percent, hands only, no numerals or marks; hour hand at about four, minute hand just short of twelve. Clear of the 8 percent margins.",
+    "framing": "pass: medium-close, head to the top of the thighs, no knees (attempt 3 was drawn to the knees). Pillar at picture-left, high windows, blank frame and blank board.",
+    "text": "pass: none (board, wall frame, clock checked).",
+    "faces_low_band": "drift: see logged_drift."
+   },
+   "logged_drift": [
+    "Cuffs still reach into the subtitle band. On a 2.5 percent grid at full resolution the steel runs from about 65.5 to 85 percent of height (attempt 3: 83-96). The fist is at about 64-70 percent (asked 56-60) and the lower ring lies over the belt at about 78-85 percent (asked nothing below 72). The fist, chain and upper ring read above the band; a subtitle may cover the lower ring. S13 editor: keep the push-in focus at y 0.3 or higher.",
+    "Face a little high: forehead to chin about 25-37 percent (asked 30-44, safe 28-46). Clock and face both clear of the margins, so nothing is cut."
+   ],
+   "first_check": {
+    "verdict": "rejected",
+    "attempt": 3,
+    "file": "frames/s14.prev1.png",
+    "file_md5": "3b604891d7a7b33291304637e9f677f9",
+    "reason": "Cuffs at about 83-96 percent, inside the subtitle band; drawn to the knees, not head to hips; run with no refs attached."
+   }
+  },
+  {
+   "shot": "s16",
+   "verdict": "approved with logged drift",
+   "attempt": 2,
+   "stage": "retake check",
+   "file_md5": "4904cc257dd214de340e620cd8548a94",
+   "refs_attached": [
+    "pair_nandini_nirala.png",
+    "talkies_lobby.png",
+    "red_helmet.png",
+    "handcuffs.png",
+    "frames/s11.png"
+   ],
+   "retake_check": "pass: the side error is fixed. Accepted as the standing take; one retake used (D-013 rule 11).",
+   "checks": {
+    "identity": "pass: Nandini's profile matches the nandini.png profile view (centre parting, low ponytail, straight nose, closed mouth). Nirala matches the pair sheet (long narrow face, pencil moustache, wide eyes).",
+    "sides_nandini": "pass: she bends to the bench facing picture-left, so her left side is near. The near (left) arm, sleeve patch towards us, reaches down and the near hand is on the cherry-red helmet on the bench. The far (right) arm hangs behind her hip with the plain steel cuffs from the right hand, seen past her body. Blue pen in the near chest pocket. Two bars. The near hip shows only the belt (attempt 1 had the pouch there, flap shut).",
+    "nirala": "pass: behind the desk at centre, cap level, three bars, medal on the picture-right (his left) chest, brown holster closed at picture-left, left arm (picture-right) pointing at the ticket booth on picture-right, blank receipt in his right hand.",
+    "geography": "pass: follows the plate; bench and tokens on the nail left, high windows left, blank frames and board, clock with hands only, bulb, stair back right, booth with grille right, its door a little open. No neighbours, no bicycle. Two faces only (D-021 limit).",
+    "text": "pass: none.",
+    "faces_low_band": "pass with drift: see logged_drift."
+   },
+   "logged_drift": [
+    "Pouch: only a small black edge shows at the front of her hips below the buckle, behind the near arm. At full resolution it reads as the far-hip pouch seen past the front of her body, not as a near-hip pouch. Its flap state (open, empty) cannot be read at this size.",
+    "Low against the asked bands (810x1440 grid): her face in profile about 47-52 percent (asked 34-46); the helmet about 70-80 percent, its lower edge and strap at the top of the subtitle band; the cuffs about 69-75 percent. Attempt 1 sat the same, so this is not worse. S13 editor: keep the push-in focus at y 0.4 or higher.",
+    "The far arm is swung back so the cuff hand appears behind her hip rather than below the shoulder. It reads clearly as her far hand; no correction.",
+    "Nirala's sleeves stop at the wrist with whole hands showing (the series nit in the frame_check header)."
+   ],
+   "first_check": {
+    "verdict": "rejected",
+    "attempt": 1,
+    "file": "frames/s16.prev1.png",
+    "file_md5": "1eae687ea2bd2a7934c00e20a3115676",
+    "reason": "Nandini's sides mirrored: cuffs in the near (left) hand, helmet under the far (right) hand, pouch on the near hip with the flap shut; run with no refs attached."
+   }
+  },
+  {
+   "shot": "s17",
+   "verdict": "approved",
+   "attempt": 2,
+   "stage": "frame check",
+   "file_md5": "aceea90f89264ca978845f988f9b2270",
+   "checks": {
+    "identity": "pass: face behind the grille matches the sheet; deadpan, eyes to picture-left.",
+    "wardrobe": "pass: two-bar epaulettes, lantern patches.",
+    "state": "pass: booth door shut; cherry-red helmet hugged in both arms; cuffs dangling from the hand on the picture-left side of her body over the helmet.",
+    "geography": "pass: the plate's booth (arched steel grille in the upper door, knob right).",
+    "text": "pass: none.",
+    "faces_low_band": "pass: face about 20-29 percent; helmet and cuffs 35-55 percent."
+   },
+   "nits": [
+    "Grille bars flank her face rather than cross it; still reads as behind bars."
+   ],
+   "refs_attached": []
+  },
+  {
+   "shot": "s18",
+   "verdict": "approved",
+   "attempt": 4,
+   "stage": "frame check",
+   "file_md5": "2a0c71712563b49fad0c936038ea52fa",
+   "checks": {
+    "identity": "pass: Bhaiyaji per bhaiyaji.png (broad face, thick black moustache, sunglasses pushed up, white kurta with rolled sleeves); Nirala as a three-quarter back (cap back, ear, three-bar epaulette, lantern patch).",
+    "state": "pass: gold watch on his left wrist (picture-right), that hand laying a plain brown envelope with no wax and no tag; keys hang from the right hand (picture-left).",
+    "geography": "pass: reverse view from behind the counter: entrance bright behind him, bench and token nail on the left wall which now reads picture-right, high windows picture-right; no booth, no Nandini.",
+    "text": "pass: none.",
+    "faces_low_band": "pass: Bhaiyaji's face about 22-33 percent."
+   },
+   "nits": [
+    "Envelope sits at about 73-79 percent, touching the top of the subtitle band.",
+    "Keys held in a fist through the ring rather than swinging from the index finger."
+   ],
+   "refs_attached": []
+  },
+  {
+   "shot": "s19",
+   "verdict": "approved",
+   "attempt": 1,
+   "stage": "frame check",
+   "file_md5": "bbffe3b7f43883242fea250bf87214da",
+   "checks": {
+    "identity": "pass: matches bhaiyaji.png; smiling, sunglasses up.",
+    "wardrobe": "pass: plain white kurta, no patch, emblem or pocket; gold watch on the picture-right wrist.",
+    "state": "pass: left hand open palm-up at the room; keys on the right hand (picture-left) over the counter edge.",
+    "hands": "pass: five fingers on the open hand.",
+    "geography": "pass: same reverse view as s18 (entrance, pillars, bench and nail on picture-right).",
+    "text": "pass: none.",
+    "faces_low_band": "pass: face about 22-36 percent."
+   },
+   "nits": [
+    "Keys hang to about 95 percent, into the subtitle band; they are a sound prop with no state at stake here.",
+    "Keys gripped in the fist rather than hooked on the index finger."
+   ],
+   "refs_attached": []
+  },
+  {
+   "shot": "s22",
+   "verdict": "approved",
+   "attempt": 1,
+   "stage": "frame check",
+   "file_md5": "afeb7fe9eabe7d19a93485daee37133b",
+   "checks": {
+    "identity": "pass: matches nirala.png.",
+    "wardrobe": "pass: cap level, three bars, medal picture-right clearly above the envelope; sleeves reach over the backs of the hands.",
+    "state": "pass: plain brown envelope, no wax, held flat at the short ends in both hands; eyes up toward picture-right.",
+    "geography": "pass: plate view: board, clock, bulb, tokens on nail and bench left, stair right, desk props in front.",
+    "text": "pass: none.",
+    "faces_low_band": "pass: face about 27-37 percent; envelope 58-65 percent."
+   },
+   "refs_attached": []
+  },
+  {
+   "shot": "s23",
+   "verdict": "approved",
+   "attempt": 3,
+   "stage": "frame check",
+   "file_md5": "12dd1d7e8cfa0869bf96b8b490197c28",
+   "checks": {
+    "state": "pass: Bhaiyaji's left index finger with gold watch and white rolled sleeve enters from picture-left and has just flicked the brass medal on Nirala's left chest (picture-right), disc tilted on its maroon-and-white ribbon; plain envelope in Nirala's fingers at the bottom.",
+    "hands": "pass: normal.",
+    "text": "pass: none; medal disc blank.",
+    "faces_low_band": "pass: no face (neck only at the top edge); envelope 61-76 percent."
+   },
+   "refs_attached": []
+  },
+  {
+   "shot": "s24",
+   "verdict": "approved",
+   "attempt": 3,
+   "stage": "frame check",
+   "file_md5": "95302e2d2daa0bbec38f0c536f721a23",
+   "checks": {
+    "identity": "pass: both faces match their sheets.",
+    "wardrobe": "pass: Nandini two bars, pen picture-right, pouch picture-left with flap open; Nirala three bars, medal picture-right.",
+    "state": "pass: Nandini in front of the open booth door, cuffs from her right hand (picture-left), helmet under her left arm (picture-right); Nirala seated behind the counter, pen in his right hand (picture-left) on the plain unsealed envelope, left hand holding it; no Bhaiyaji.",
+    "geography": "pass: booth close on the right, counter centre-left, board and clock behind, stair back right, tokens left.",
+    "text": "pass: none.",
+    "faces_low_band": "pass: Nandini face about 31-41 percent, Nirala about 43-48 percent; cuffs 62-74 percent."
+   },
+   "nits": [
+    "Nirala's eyes are raised toward the lens while he writes, rather than his head bowed over the envelope.",
+    "Nandini is drawn full figure (asked head to knees), face lower than the prompt's 14-28 percent."
+   ],
+   "refs_attached": []
+  },
+  {
+   "shot": "s25",
+   "verdict": "approved with logged drift",
+   "attempt": 4,
+   "stage": "retake check",
+   "file_md5": "291da4ace37eff0991b97ad10c96d21c",
+   "refs_attached": [
+    "nandini.png",
+    "talkies_lobby.png",
+    "red_helmet.png",
+    "handcuffs.png",
+    "frames/s11.png"
+   ],
+   "retake_check": "fault reduced, not cleared: the cuffs' lower ring still enters the subtitle band. Accepted as the better take under D-013 rule 11 (one retake used); no further retake.",
+   "checks": {
+    "identity": "pass: face crop matches the nandini.png three-quarter close-up; brows low, mouth mid-word, suited to the line.",
+    "wardrobe": "pass: two bars on each epaulette, lantern patch on the near sleeve, pen in the far (picture-right) chest pocket.",
+    "state": "pass: faces picture-right, right side near. Near (right) fist at the belt in front of the near hip holds one ring of plain steel cuffs, chain and second ring hanging. Pouch on the near hip just behind the fist, top open (empty not confirmable). Cherry-red helmet held on the far side, its curve showing past the front of her body at about 48-71 percent.",
+    "framing": "pass: medium-close, head to the upper thighs, no knees (attempt 3 was drawn to the knees). Face about 13-26 percent (asked 14-28), so s30 can punch in. Blank poster frame, counter end at picture-right, window and shaft upper left.",
+    "text": "pass: none.",
+    "faces_low_band": "drift: see logged_drift."
+   },
+   "logged_drift": [
+    "Cuffs still reach into the subtitle band. On a 2.5 percent grid at full resolution the steel runs from about 67 to 88.5 percent of height (attempt 3: 79-97). The fist is at about 61-66 percent (asked 54-58) and the lower ring hangs at about 80-88.5 percent (asked nothing below 68). The fist, upper ring and chain stay above the band, so the cuffs still read over 'आपने रिश्वत ली'; the lower ring will be partly covered. S13 editor: keep the push-in focus at y 0.26; do not move it lower.",
+    "Face top edge about 13 percent, one point above the asked 14. The counter end at the picture-right edge starts at about 65 percent (asked about 56); background dressing."
+   ],
+   "first_check": {
+    "verdict": "rejected",
+    "attempt": 3,
+    "file": "frames/s25.prev1.png",
+    "file_md5": "464c4c8c0bf02db16cf3406bef99c266",
+    "reason": "Cuffs at about 79-97 percent, inside the subtitle band; drawn to the knees; run with no refs attached."
+   }
+  },
+  {
+   "shot": "s26",
+   "verdict": "approved",
+   "attempt": 1,
+   "stage": "frame check",
+   "file_md5": "249fb935d081e4d43d7c20bb19bcaa36",
+   "checks": {
+    "identity": "pass: matches nirala.png three-quarter.",
+    "wardrobe": "pass: cap level, three bars, medal on the near (left) chest.",
+    "state": "pass: pen lifted off the envelope in the right hand (picture-left), not writing; left hand flat on the plain, unsealed envelope.",
+    "geography": "pass: board behind, stamp and pad right, registers left.",
+    "text": "pass: none.",
+    "faces_low_band": "pass: face about 23-36 percent."
+   },
+   "nits": [
+    "Sleeves at the wrists, whole hands showing (see header)."
+   ],
+   "refs_attached": []
+  },
+  {
+   "shot": "s27",
+   "verdict": "approved",
+   "attempt": 2,
+   "stage": "frame check",
+   "file_md5": "4eb40832071d30f2d177209fbe90eef6",
+   "checks": {
+    "state": "pass: brown envelope with one round red wax blob on the flap, blank off-white tag tied at the upper right corner, flat and front-on, unobstructed; burnt-out match beside it; fingertips steady it from the bottom-left as the storyboard asks.",
+    "text": "pass: none.",
+    "faces_low_band": "pass: no face; envelope and tag at 37-62 percent."
+   },
+   "nits": [
+    "Geography note for the storyboard, not a frame fault: the counter props (books, stamp, pad, kettle, Nirala's chair behind) put the camera on the lobby side, so a khaki sleeve from the bottom-left comes from the lobby side, where Nandini stands. The storyboard asked for the bottom-left. At 2 s it reads as a hand steadying the envelope."
+   ],
+   "refs_attached": []
+  },
+  {
+   "shot": "s28",
+   "verdict": "approved",
+   "attempt": 1,
+   "stage": "frame check",
+   "file_md5": "0889561c34953c2e55d2c88de54a5b19",
+   "checks": {
+    "state": "pass: top-down; right index finger stops on a row of a ledger ruled in plain grey lines; the steel cuffs hang from the same hand, chain and one ring lying across the page.",
+    "hands": "pass: reads as a right hand (back of hand up, fingers curled round the ring on the right, buttoned khaki cuff); no watch or ring.",
+    "text": "pass: no letters or numbers on the ledger.",
+    "faces_low_band": "pass: no face; finger at about 49 percent, cuffs 57-77 percent."
+   },
+   "refs_attached": []
+  },
+  {
+   "shot": "s29",
+   "verdict": "approved",
+   "attempt": 3,
+   "stage": "frame check",
+   "file_md5": "374dcf8006214951e1d4f3b93714c640",
+   "checks": {
+    "identity": "pass: matches nirala.png front close-up; plain, earnest.",
+    "wardrobe": "pass: cap level, three bars, medal picture-right.",
+    "state": "pass: left hand (picture-right) flat on the envelope sealed with red wax and a blank tag.",
+    "text": "pass: none.",
+    "faces_low_band": "pass: face about 23-38 percent; envelope 74-81 percent."
+   },
+   "nits": [
+    "The sealed envelope sits at 74-81 percent, at the top of the subtitle band; s31's crop keeps it at the bottom by design."
+   ],
+   "refs_attached": []
+  },
+  {
+   "shot": "s32",
+   "verdict": "approved",
+   "attempt": 3,
+   "stage": "frame check",
+   "file_md5": "8091138d7b7cccb22827766e75854c92",
+   "checks": {
+    "state": "pass: right hand (picture-left of the body) pushes the last ring and chain down into the black pouch on her right hip, picture-left of the steel buckle; thumb on the flap; bare wrist with the buttoned cuff; no watch; counter edge behind.",
+    "text": "pass: none.",
+    "faces_low_band": "pass: no face; pouch and hand 35-72 percent."
+   },
+   "refs_attached": []
+  },
+  {
+   "shot": "s33",
+   "verdict": "approved with logged drift",
+   "attempt": 1,
+   "stage": "frame check",
+   "file_md5": "b1926e48d9f1329f10c6272052faa101",
+   "checks": {
+    "identity": "pass: Nandini and Nirala match their sheets; Pushpa a back only, no face.",
+    "wardrobe": "pass: Nandini two bars, pen on the far pocket; Nirala three bars, medal on the near (left) chest, holster hidden by his body.",
+    "state": "pass: Nandini faces picture-right, right hand (near) empty, pouch on the near hip with the flap shut, helmet under the far left arm; Nirala faces picture-left, both hands flat on the counter by the ruled ledger and the wax-sealed envelope with blank tag; Pushpa from behind at the stair foot, bag on her left shoulder (picture-left from behind), steel X in the bun.",
+    "height": "pass: same depth; Nirala's cap crown at about Nandini's hairline-to-brow line.",
+    "text": "pass: none.",
+    "faces_low_band": "pass: faces about 34-46 percent."
+   },
+   "logged_drift": [
+    "A second desk. Nirala stands at a foreground counter holding the ledger and the sealed envelope, while the plate's booking desk, with its chair, stamp, pad, registers, kettle and glasses, stands behind them in the middle ground. The plate and s11 have one desk, and s13 to s29 put the stamp, pad and kettle on the counter where he works. Accepted rather than retaken: every tracked side, state and the pair height are right, and a retake could lose them. The background furniture does not change the beat."
+   ],
+   "refs_attached": []
+  },
+  {
+   "shot": "s34",
+   "verdict": "approved",
+   "attempt": 1,
+   "stage": "anchor",
+   "file_md5": "c8abc3a2c1f23ef732b3bbf31b85558a",
+   "checks": {
+    "identity": "pass: matches tripathi.png front close-up (big round face, bald dome, puffed grey fringe over both ears, bushy dark-grey brows, half-closed heavy-lidded eyes with bags, bulbous nose, jowls and double chin); reads mid to late fifties.",
+    "wardrobe": "pass: half-sleeve khaki shirt with turned hems, top buttons open over the off-white vest, three bars on each epaulette, lantern patches, red-and-white checked gamchha over his left shoulder (picture-right). Belly against the desk.",
+    "props_state": "pass: paper cone heaped with peanuts in his left hand (picture-right) in front of his chest; right hand (picture-left) flat on the desk beside the black push-button phone, handset on the cradle, coiled cord; shells on the desk; two closed plain files; mouth full, one cheek bulging.",
+    "placement": "pass: seated centre facing us under the shield; grey steel almirah edge (padlocked) at picture-left.",
+    "hands": "pass: both hands normal, four fingers visible on each with the thumbs hidden by the cone and the pose.",
+    "text": "pass: none. Shield plate blank and front-on; phone keys blank; phone window blank; file covers blank.",
+    "night": "pass: flat cool grey-blue wall, no daylight shaft and no doorway in frame, so the plate's daylight is not inherited. The tube light is behind camera as the prompt says; the night reads from the cool flat wall, not from a visible source.",
+    "faces_low_band": "pass: face at about 30-40 percent of height; cone and phone at about 47-71 percent; bottom fifth is the desk front panel only."
+   },
+   "nits": [
+    "The shield's hanging ring reaches about 3 percent from the top edge and the plaque's top about 6.5 percent (prompt asked 8 percent in). The brass plate itself is well inside."
+   ],
+   "overlay_measured": {
+    "ov_shield": "blank brass plate at x 569-865, y 296-455 px of 1440x2560 (x 39.5-60.1 percent, y 11.6-17.8 percent), front-on, unobstructed; measured by pixel colour at full resolution."
+   }
+  },
+  {
+   "shot": "s35",
+   "verdict": "approved",
+   "attempt": 1,
+   "stage": "frame check",
+   "file_md5": "d8e6eaac3fea1870c9fac5baaf177143",
+   "checks": {
+    "identity": "pass: matches pushpa.png; deadpan, eyes down on the work.",
+    "wardrobe": "pass: one bar each epaulette, plum cardigan, lantern patches.",
+    "state": "pass: knitting orange on bamboo needles, steel X in the bun, wool ball in the picture-left pocket, bag hanging on the chair back, empty tea glass on the side table.",
+    "night": "pass: lit tube light, cool grey-blue wall with the same damp stains and teal dado as s34.",
+    "text": "pass: none.",
+    "faces_low_band": "pass: face about 24-37 percent."
+   },
+   "refs_attached": []
+  },
+  {
+   "shot": "s36",
+   "verdict": "approved",
+   "attempt": 1,
+   "stage": "frame check",
+   "file_md5": "1edc09cd484a9b925a6837bc42775a06",
+   "checks": {
+    "identity": "pass: Tripathi per tripathi.png (bald dome, grey side tufts, heavy lids, jowls); the only face.",
+    "wardrobe": "pass: half sleeves, three bars on the near epaulette, checked gamchha from the far (left) shoulder.",
+    "state": "pass: near (right) hand raises a single peanut, mouth closed and still; cone in the far (left) hand; Pushpa from behind walking out of the dark doorway at the centre back with an empty glass in her right hand (picture-right from behind); bench empty.",
+    "geography": "pass against s34: shield with blank plate and padlocked grey almirah at picture-left, phone on the desk front left, two closed files right.",
+    "night": "pass: tube light, fan, dark doorway.",
+    "text": "pass: none; clock has hands only.",
+    "faces_low_band": "pass: face about 30-46 percent."
+   },
+   "nits": [
+    "The peanut is at his lips rather than halfway to his mouth; the stillness still reads."
+   ],
+   "refs_attached": []
+  },
+  {
+   "shot": "s37",
+   "verdict": "approved",
+   "attempt": 1,
+   "stage": "frame check",
+   "file_md5": "6c600e8f9f864a261822903039b4e3e8",
+   "checks": {
+    "state": "pass: hand lifting the handset off the cradle, coiled cord, shells on the desk; khaki half-sleeve hem; reads as a right hand (thumb toward camera, fingers to picture-left).",
+    "text": "pass: twelve blank keys, no window text.",
+    "night": "pass: cool wall and dado, padlocked almirah edge at picture-left as in s34.",
+    "faces_low_band": "pass: no face; phone 33-73 percent."
+   },
+   "nits": [
+    "The arm enters from the upper right while s34 has his right hand by the phone at picture-left; a 2.2 s insert, so logged only."
+   ],
+   "refs_attached": []
+  },
+  {
+   "shot": "s38",
+   "verdict": "approved",
+   "attempt": 1,
+   "stage": "frame check",
+   "file_md5": "862639a8b378a69b42372c7a9d16fa4d",
+   "checks": {
+    "identity": "pass: matches tripathi.png front close-up; mouth empty and speaking.",
+    "wardrobe": "pass: three bars, gamchha on his left shoulder (picture-right), vest at the open collar.",
+    "state": "pass: black handset at his right ear (picture-left), held in his right hand, mouthpiece at his jaw.",
+    "text": "pass: shield plate blank, upper right, sharp.",
+    "faces_low_band": "pass: face about 30-62 percent."
+   },
+   "nits": [
+    "Mouth at about 51 percent (asked 36-46); s39's push-in has room either way."
+   ],
+   "refs_attached": []
+  }
+ ],
+ "frame_check": {
+  "stage": "frame check of every non-anchor frame (D-015 rule 5, D-023 rule 4.1): 25 frames, s02-s38 less the anchors s10, s11, s34. Each file is the first image its shot produced; the earlier runner attempts in the manifest returned no image.",
+  "by": "S9 Visual checker, 26 Nov 2026 (made none of these frames)",
+  "method": "Each 1440x2560 png viewed whole at 810x1440 and cropped at full resolution with ffmpeg: face crops beside the nandini, nirala, pushpa, bhaiyaji and tripathi sheets, hands, cuffs, pouch, pen, epaulettes, medal, keys, watch, token, envelope wax and tag, register and ledger pages, slip, clock, shield plate, phone keys. Positions are read as percent of height off the 810x1440 views. Judged against shots.json (framing, STATE, frame_check, refs), each prompt's SHOT, SAFE AREAS and STATE, the sheets, continuity.json statics, and the anchors s10, s11 (attempt 2 file) and s34. Crops are in <scratch>",
+  "counts": {
+   "judged": 25,
+   "approved": 21,
+   "approved_with_logged_drift": 1,
+   "rejected": 3
+  },
+  "counts_note": "First-check rejection here: 3 of 25 (12 percent). With the anchor check, 4 of 28.",
+  "process_fault_refs_not_attached": "BLOCKING FOR RETAKES. In frames/manifest.jsonl every non-anchor row has refs: [] (s02 to s38, all attempts). Only the anchors s10, s11 and s34 were run with refs. codex-frame.sh passes -i only for refs given on its command line, so none of these 25 frames was generated with its character or pair sheet, plate, prop sheet or scene anchor. D-013 rule 1 requires them on every call. The codex logs agree. Several first attempts of s06, s14, s17, s18, s23, s24, s25, s27, s29 and s32 ended with Codex asking for the missing attachments (no image). In the runs that made an image, Codex listed the project files with rg and then reported that it had 'inspected' the references. No log shows a view_image call, so that claim is unsupported. The frames hold up mostly because the prompts restate every lock in words. The one side error (s16) is the kind of fault the anchor and sheet refs are there to prevent. FIX: run the three retakes with each shot's refs from shots.json passed as trailing arguments, in the listed order, e.g. codex-frame.sh <frames_dir> s16 frames/prompts/s16.txt <pair_nandini_nirala> <talkies_lobby> <red_helmet> <handcuffs> <frames/s11.png>, and confirm that the new manifest row's refs list is non-empty before the retake check.",
+  "series_drift_nirala_sleeves": "In s12, s13, s16, s24, s26 and s29, Nirala's sleeves stop at the wrist and his whole hands show. His wardrobe lock has the sleeves over the backs of his hands, fingers only (s22 and s23 come closest). It is logged as a nit on each frame, not a rejection: it does not change a side or a state, and the s11 anchor check logged the same nit.",
+  "anchor_watch": "s10's two-bar drift on Pushpa did not spread: s06 and s35 show one bar on each epaulette. s11's attempt-1 second pair of cuffs did not spread: no lobby frame shows cuffs in Nirala's hands. No scene-C frame inherits daylight.",
+  "not_checked": "s11 attempt 2 (the scene-B anchor retake, file md5 bf35631654c0a7dd1b541d3cab27381e): its retake check is not recorded in this file, and it was outside this brief. I used it only as the reference for the lobby. Not checked: overlay surfaces (none of these frames carries ov_token_8; ov_envelope_tag in s27 was seen as blank and front-on, not measured), anything after the camera moves except where noted, and the renders.",
+  "counts_after_retake": {
+   "judged": 25,
+   "approved": 21,
+   "approved_with_logged_drift": 4,
+   "rejected": 0
+  }
+ },
+ "retake_check": {
+  "stage": "retake check (D-015 rule 5, D-023 rule 4.1): s14 attempt 4, s16 attempt 2, s25 attempt 4. This is the one retake each shot is allowed; the verdicts below are final (D-013 rule 11).",
+  "by": "S9 Visual checker, 26 Nov 2026 (made none of these frames)",
+  "method": "md5 of each standing png matched against the manifest row's file; manifest rows 48-50 checked for non-empty refs (all present, in shots.json order); the three codex logs state all references were used. Each 1440x2560 png viewed whole at 810x1440 on a 5 percent grid beside its rejected take (*.prev1.png), then cropped at full resolution with ffmpeg: Nandini face crops beside the nandini.png close-ups, Nirala's upper body, Nandini's body and hands in s16, and the cuff regions of s14 and s25 on a 2.5 percent grid. Judged against shots.json (framing, state, frame_check, retake.prompt_change), the first-check reasons, and the sheet. Cuff extents are read off the grid by eye; no pixel-colour measurement (PIL is not installed here). Crops: <scratch>",
+  "counts": {
+   "judged": 3,
+   "approved": 0,
+   "approved_with_logged_drift": 3,
+   "rejected": 0
+  },
+  "outcome": "s16's side error is fixed. s14 and s25 improved (framing now head to hips, cuffs raised by about 11 and 9 points at the bottom) but their lower cuff ring still sits about 5 and 8.5 points into the bottom-20-percent band, so the safe-area fault is reduced, not cleared. Strictly, 1 of 3 retakes cleared its first-check fault. All three stand as the better take with drift logged; the episode now has no rejected frame other than the s11 anchor's attempt-1 entry.",
+  "not_checked": "s11's standing file (attempt 2, md5 bf35631654c0a7dd1b541d3cab27381e) is the scene anchor attached to all three retakes; its own retake check is still not recorded in this file, and its frames entry still reads 'rejected' for attempt 1. That check was outside this brief. Not checked: renders, camera moves, subtitle placement in a real cut, pouch emptiness at this size."
+ }
+}

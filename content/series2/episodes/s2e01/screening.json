@@ -1,0 +1,326 @@
+{
+ "episode": "series2/s2e01",
+ "reviewer": "S15 Screening",
+ "round": 2,
+ "kind": "changed-items pass (D-015 rule 5, D-023 rule 1). It looks only at the retaken and first-attempt frames, the four added one-off effects, the overlays and the editor's sound and move fixes, measured against round 1's findings. It is not a second full screening.",
+ "date": "2026-11-26",
+ "pass": true,
+ "scored": true,
+ "gate4": "D-023 rule 1: the Gate 4 pass stands. This pass finds no blocking fault. D-024: the pass stands for picture, and the re-voiced cut gets its own changed-items pass.",
+ "verdict": "Pass at 8/10 (round 1: 7/10), with no blocking fault. Nobody has listened to this render or watched it in motion; it is judged from sampled frames and measurements. Every round-1 picture and sound finding that was routed has landed. All 37 shots are real frames: 0 slates in either language. s14, s16 and s26 show their approved attempt-2 frames, s28 and s29 show attempt 1, and s20 is drawn from s14. The overlays render on their surfaces in both languages and move with the camera: '7' on the token, ZERO CRIME on the shield, the board in Hindi and English, and the date '17 मार्च' / '17 March'. The four one-off effects play on their beats: b3's silence went from -47 to -40.5 dBFS RMS, b4's exit from -37 to -31, b5's 3 s crossing beat from about -47 to -30/-27/-22, and b11's knot from -37.5 to -35.7. The tension note no longer swells (+6 dB in round 1); it now holds -36 to -41 dBFS unducked with a gentle rise. s33 now reads as a closer shot on her face, not a third copy of s31. Still open, none blocking: en c031's early start (needs the toolsmith), the cue sheet's statuses, and the drifts already logged. The score covers craft only. The dialogue-clarity problem the owner and five cold viewers found (D-024) is outside this pass and is being fixed by the script pass.",
+ "precondition_D015_rule3": {
+  "voice_manifest": "voice/manifest.jsonl: 53 rows, all status ok, 0 placeholder",
+  "sound_manifest": "content/series2/sound/manifest.jsonl 59 rows ok; episode sound/manifest.jsonl 5 rows ok (crossing_train, lobby_door_swing, tea_pour, file_untie_riffle, pigeon_wings); 0 placeholder",
+  "timeline_placeholders": "meta.placeholders {dialogue: [], frames_slated: [], sound: []} in all four timelines; sound_missing {}; frames_unreviewed []; frames_unchecked_takes {}",
+  "no_slates_D023_rule4_1": "0 slates; frames/review.json has no reject row (S9 retake-check.s9.json: 5 pass, 0 reject)",
+  "lufs_above_minus30": "ffmpeg ebur128 (mine): hi -14.2, en -14.3, hi.review -14.2, en.review -14.3 LUFS; true peak hi -1.0, en -1.1, hi.review -1.0, en.review -1.1 dBTP",
+  "hi_en_differ": "all four md5s differ from each other and from round 1's",
+  "result": "met"
+ },
+ "files_screened": [
+  "content/series2/episodes/s2e01/render/s2e01.hi.mp4",
+  "content/series2/episodes/s2e01/render/s2e01.en.mp4",
+  "content/series2/episodes/s2e01/render/s2e01.hi.review.mp4",
+  "content/series2/episodes/s2e01/render/s2e01.en.review.mp4"
+ ],
+ "changed_items_checked": {
+  "frames_s14_s16_s26_s28_s29_s20": "In both clean cuts I sampled each shot's midpoint, and its first and last frame. s26 matches at source resolution: the token is on the picture-left wrist (her right), that hand sets the helmet on the bench, and the pen is in the picture-right pocket, as in s31. s16: the wool is in the picture-left pocket, matching s23/s25. s14/s20: the peanut hand is in s14's corner and absent from s20's window, and the plate overlay sits on the plate. s28/s29 read cleanly; S9's logged drifts stand (eight registers against l20's 'one to nine'; fitted uniforms). Not fixed, already logged under D-023: s36's missing pen.",
+  "overlays": "ov_token_7 (s01, s11), ov_fake_board (s05: 'पुलिस चौकी इमलीपुर' / 'Police Outpost Imlipur'), ov_shield (s13, s14, s15, s17, s18, s20, s22, s24), ov_refusal_date (s32: '17 मार्च' / '17 March'). Text matches bible.json overlays. s32's date matches l23's spoken 'सत्रह मार्च' / 'Seventeenth March'. The language-specific ones are right in each cut. At each shot's first and last frame the overlay sits on its surface. No overlay touches the burned subtitles.",
+  "s33_move": "Scale 1.25 to 1.3, aimed at her face. It now reads as a tighter shot than s31 and s35, with the token on the picture-left wrist in frame. It is still a crop of s31, as D-023 accepted.",
+  "one_off_effects": "Placements in timeline.{hi,en}.json follow the cue sheet's anchors. tea_pour from s04's head, dipped under l04. lobby_door_swing at l08's end + 2 frames: the thud lands about 0.23 s before the s10 cut and the tail runs 6 frames into b5. crossing_train across s10-s11 with a 9-frame fade-out before b6. Knot and cover from s30's head to l22. The riffle slice follows the page turn. The level changes are measured in the master (verdict).",
+  "music_fixes": "Caper bed volume 0.4467 (-7 dB, up 6 dB from round 1). Peak stays at or below -1.0 dBTP. Dialogue clears the ducked music by at least 17.9 dB (en l21) and 19.7 dB (hi l21); unducked it is still about 10 dB over. Tension note: steady-stretch slices plus a stepped ramp up to 0.2239 (+3 dB). The 1 s unducked profile is -40 at the b11 head and -36 to -38 at 97-100 s, with one -33 second at 101 s. #c sits at -36 dB under l26 and the hold.",
+  "cliffhanger_tail": "Room tone holds to the cut and goes to digital silence from 109.00 s (hi), within one frame of the picture cut at 3269. Round 1's master faded about 1 frame earlier. Still a hard cut to silence."
+ },
+ "scores": {
+  "sync": {
+   "score": 9,
+   "basis": "Re-run on this render: all 50 dialogue clips cross-correlate at 0 ms offset (minimum correlation 0.948). Hindi: 42/42 cue starts within 0.083 s of speech. English: 36/37; en c031 still starts 0.333 s early (unchanged, needs the toolsmith)."
+  },
+  "subtitles": {
+   "score": 8,
+   "basis": "42 hi / 37 en cues. Cue text equals script text minus tags for all 25 lines in each language. Validation ok, max 16.9 / 17.0 graphemes/s. No cue crosses a cut. The last cue ends 2.9 s before the video ends. Burned text shows at all 79 cue midpoints in the review cuts. The slate-text fault is gone with the slates. en c031 timing remains."
+  },
+  "transcript_vs_script": {
+   "score": 8,
+   "basis": "whisper.cpp ggml-small on both full mixes. English: every line heard ('Dockies?' for 'Arre, talkies?', 'complained': ASR errors as in round 1). Hindi: every line heard in substance. The long-file pass skipped l23-l24 and the 'भैयाजी' tail of l22, but 9 s and 6 s windows of the same mix give 'सत्राह माच पहले इम्लिपुर ताने गया ता असे चो त्रपार्ठी ने कहा, FIR नहीं लिखिजाएगी' and '...सब में एक ही नाम! बहिया जी!'."
+  },
+  "intelligibility_over_music": {
+   "score": 9,
+   "basis": "Dialogue clears the ducked music by at least 17.9 dB on every line that has music under it, after the +6 dB caper raise."
+  },
+  "ducking": {
+   "score": 8,
+   "basis": "Round 1's fault is fixed: the tension note no longer runs into the file's swell. Duck depth in the master was still not measured directly."
+  },
+  "music_and_effects_on_beats": {
+   "score": 8,
+   "basis": "All four missing one-offs are now placed on their scripted beats, and b3, b4's exit, b5 and b11's head now carry sound (levels in the verdict). Caper bed raised. Pigeon wings dropped under the cue sheet's own rule (l01 ends at frame 80, the frame l02 starts). Not verified without listening: whether the crossing take has the bell from frame one and the horn about 1 s in. The fitted file keeps raw 2.45-4.95 s (one sustained event) and then the passing train; the master's b5 level rises to its loudest in the last second (peak -7 dBFS)."
+  },
+  "audio_levels": {
+   "score": 8,
+   "basis": "-14.2 / -14.3 LUFS, true peak -1.0 / -1.1 dBTP, LRA 7.8 / 7.9, the same in clean and review cuts."
+  },
+  "picture_completeness": {
+   "score": 8,
+   "basis": "37/37 real frames, 0 slates, and all scripted overlays rendered. Held below 9 by s33 still being a crop of s31 (a mid, not a generated close) and by the logged drifts."
+  },
+  "continuity": {
+   "score": 8,
+   "basis": "The new frames agree with their neighbours: token on the right wrist (picture-left) in s26 and s33; wool in the right pocket (picture-left) in s16, s23, s25 and s29; the helmet is now shown set down in s26. Logged, not fixed: s36's pen, s28's eight registers against 'one to nine', Nirala's fitted uniform."
+  },
+  "pacing": {
+   "score": 8,
+   "basis": "109.4 / 108.9 s. The silent beats (b3, b5, the b4 exit, b11's head) now carry their effects instead of near dead air. b12's run is less repetitive with the s33 reframe."
+  },
+  "opening": {
+   "score": 8,
+   "basis": "The token now shows '7' under 'अगला! Token सात।' / 'Next! Token number seven.'"
+  },
+  "cliffhanger": {
+   "score": 8,
+   "basis": "Unchanged from round 1: l26 on her close, a 2.5 s hold, a hard cut to black and silence."
+  },
+  "length": {
+   "score": 10,
+   "basis": "hi 3281 frames = 109.37 s, en 3266 = 108.87 s (ffprobe count_frames); both under 150 s."
+  },
+  "overall": 8
+ },
+ "blocking": [],
+ "measurements": {
+  "probe": "all four: h264 1080x1920 30/1, aac 48 kHz stereo; frames hi 3281, en 3266 (counted)",
+  "md5": {
+   "hi": "f729e87b739df1d0a5fc2345b3c7f3bb",
+   "en": "f8d8a22f001d839380368f33866140ff",
+   "hi.review": "5752421bb616093d2274fdf2c003914c",
+   "en.review": "b8e9725081de5321aa5485200716a191"
+  },
+  "slate_seconds": {
+   "hi": 0,
+   "en": 0
+  },
+  "scratch": "<scratch>"
+ },
+ "checks_run": [
+  "ffprobe count_frames, codec, size and fps on all four; md5 of all four",
+  "ffmpeg ebur128 with peak=true on all four (integrated loudness, LRA, true peak)",
+  "midpoint frame of every shot in both clean cuts (74), plus first and last frames of the 17 changed shots in both cuts; contact sheets viewed; full-size views of s05 and s32 (both languages), s16, s26, s31 and s33, and a crop of s26's torso from the source png",
+  "frame at every cue midpoint in both review cuts (79), subtitle band viewed",
+  "envelope cross-correlation of all 50 dialogue clips against the new mixes; silencedetect onsets against all 79 cue starts",
+  "cue text against both scripts; cue-vs-cut crossing; last cue against video end; subs validation block",
+  "whisper.cpp ggml-small on both full mixes, plus hi windows 81.6-87.6 s and 87.4-96.4 s",
+  "astats RMS/peak in 15 named windows per language, new master against round 1's master (same shot timing)",
+  "music and dialogue stems rebuilt from timeline.{hi,en}.json; dialogue-over-ducked-music margin per line; 1 s tension-note profile",
+  "50 ms slices of the last 0.6 s against round 1",
+  "timeline audio items against the cue sheet's anchors and fit notes in sound/manifest.jsonl; overlay text against bible.json overlays"
+ ],
+ "not_checked": [
+  "Nobody has listened. The four new effects, the caper level, the tension ramp's 15-frame crossfade back to the file's 2 s position (#a#3 into #b#0 at frames 2752-2767 hi), and whether the crossing take has bell, horn and train in that order were all judged from levels and the fit notes only.",
+  "Nothing was watched in motion. Overlays and moves were checked at the first, middle and last frame of each changed shot, not frame by frame.",
+  "Shots that did not change (round 1 covered them) were only sampled at their midpoints.",
+  "Duck depth was not measured in the master; the stems do not model the duck.",
+  "Faces were not compared with the character sheets; that is S9's check (retake-check.s9.json).",
+  "Dialogue clarity for a first-time viewer (D-024) is out of scope for this pass."
+ ],
+ "fixes": [
+  {
+   "owner": "toolsmith (orchestrator-run, D-0M4)",
+   "severity": "low",
+   "issue": "en c031 'every one names Bhaiyaji.' still starts 0.333 s before 'every' (85.18 s). edit.json has no subtitle-split override, and the editor could not move the split.",
+   "fix": "Add the per-line split override D-023 rule 3 already lists, then split en c030/c031 at the pause (c030 ends at frame 2549, c031 starts at frame 2555). Apply it to the re-voiced cut (D-024) if this cut is superseded first."
+  },
+  {
+   "owner": "sound",
+   "severity": "low",
+   "issue": "sound/cues.json still says top-level status 'planned', and s2e01_sfx_pigeon_wings says 'generated' although the edit drops it under the cue sheet's own rule. It appears only in meta.sound_unplaced, not in meta.placeholders.sound.",
+   "fix": "Set the cue sheet status to 'generated'. Mark pigeon_wings 'dropped' with the reason (l01 runs straight into l02 at frame 80), as D-023 did for sfx_s1e01_bare_feet. Then a dropped cue is tagged the same way in every episode."
+  },
+  {
+   "owner": "owner (ear)",
+   "severity": "low",
+   "issue": "Nobody has heard the new effects or the raised caper bed. The crossing take's bell-then-horn order is unverified, and the train is loudest (peak -7 dBFS) in b5's last second, just before b6's mid-report open.",
+   "fix": "Listen to hi 26.5-31.5 s, 8-13 s, 79-82 s and 96-98 s, and to the caper under b10. If anything is wrong, the editor changes gains or fit in edit.json only. No new generation."
+  },
+  {
+   "owner": "storyboard / writers (D-024 pass)",
+   "severity": "low",
+   "issue": "s28 shows eight registers, but l20 says 'Register एक से नौ' / 'Registers one to nine'. S9 logged it as drift, not countable in a 2.3 s push-in.",
+   "fix": "No retake. If the D-024 rewrite touches l20, avoid a count that the picture contradicts. Otherwise leave it logged."
+  }
+ ],
+ "round1": {
+  "episode": "series2/s2e01",
+  "reviewer": "S15 Screening",
+  "round": 1,
+  "kind": "full screening (D-015 rule 5: the one full screening)",
+  "date": "2026-11-26",
+  "pass": true,
+  "scored": true,
+  "verdict": "Pass at 7/10, with no blocking issue. Nobody has listened to it. The sound and timing work: every one of the 25 clips in each language sits exactly where the timeline puts it (0 ms offset). 78 of 79 cues start within 0.2 s of speech. Loudness is -14.2/-14.3 LUFS at -1.1 dBTP, and the opening and the cliffhanger both land. The score is held down by what is missing, not by faults in what is there. 6 of 37 shots are slates (11.6 s hi, 11.4 s en), including Pushpa's first appearance (s16) and three of b10's four shots. Three of those slates never got their D-015 retake, and s28/s29 were never generated. The four one-off effects were never generated, so b5's 3 s crossing beat (bell, horn, train in the script) plays as faint ambience. None of the overlays exist. Every story fact is still carried by dialogue and subtitles, so plan 7.8 lets this stand as a cut with placeholders. Fixes are routed below. After they land, a changed-items pass covers them.",
+  "precondition_D015_rule3": {
+   "voice_manifest": "voice/manifest.jsonl: 53 rows, all status ok, 0 placeholder rows",
+   "sound_manifest": "content/series2/sound/manifest.jsonl: 59 rows, all status ok, 0 placeholder rows. The four one-off cues in sound/cues.json (crossing_train, lobby_door_swing, tea_pour, file_untie_riffle) have no rows and no files; the cue sheet is still status 'planned'. They are absent, not placeholder rows.",
+   "lufs_above_minus30": "measured (ffmpeg ebur128): hi -14.2, en -14.3, hi.review -14.2, en.review -14.3 LUFS; true peak -1.1 dBTP (hi, en)",
+   "hi_en_differ": "md5 differ for clean and review; clean vs review differ in each language (md5s match the editor's summary)",
+   "result": "met"
+  },
+  "files_screened": [
+   "content/series2/episodes/s2e01/render/s2e01.hi.mp4",
+   "content/series2/episodes/s2e01/render/s2e01.en.mp4",
+   "content/series2/episodes/s2e01/render/s2e01.hi.review.mp4",
+   "content/series2/episodes/s2e01/render/s2e01.en.review.mp4"
+  ],
+  "scores": {
+   "sync": {
+    "score": 9,
+    "basis": "I cross-correlated each dialogue clip (10 ms RMS envelopes) against the rendered mix. All 25 clips per language are at 0 ms offset, with correlation 0.95-1.0. I measured speech onsets with silencedetect (-38 dB, 120 ms) on the clips as placed. Hindi: 42/42 cues start within 0.083 s of speech. English: 36/37. en c031 'every one names Bhaiyaji.' starts 0.33 s before 'every' (85.18 s), and c030 leaves the screen about 0.2 s before 'extortion...' ends. The pause there is about 0.2-0.29 s, under the 300 ms split rule, so words were spread by graphemes. Cut-on-word lands: hi 'आपके' onset 59.94 s vs s20 cut 59.93 s; en 'In' 60.70 vs 60.67; s14 cuts at 36.50 (hi 'Shield' 36.50) and 38.77 (en 'Look' 38.77)."
+   },
+   "subtitles": {
+    "score": 8,
+    "basis": "Per-line cue text equals each script minus tags, all 25 lines in both languages (my own check). No cue crosses a picture cut; c016 hi starts half a frame before 1095, which is rounding. The last cue ends 2.9 s (hi) / 2.9 s (en) before the video ends. Burned cues show on every cue midpoint in both review cuts (79 frames sampled). Two-line Latin and Devanagari cues are legible and shaped correctly at full size. Faults: en c031 timing (above). In the English cut the slates print the Hindi line, and the slate notes are cut off mid-sentence (s16 'Needles click under the')."
+   },
+   "transcript_vs_script": {
+    "score": 8,
+    "basis": "I ran local whisper.cpp ggml-small on both full mixes. English: every line is recognised. 'Arre, talkies?' came back as 'Are they doggies?' and 'complaint' as 'complained', which I take for ASR errors on a clear take. Hindi: every line is recognised in substance, with whisper-small's usual Hindi spelling noise ('तोकन साथ', 'S-I छोट्र पार्ठी' for 'SHO त्रिपाठी'). The l22 head 'तीस complaint' was dropped by the long-file pass, but it transcribes from the clip alone and from a 7 s window of the mix ('तीस कुमप्लिंट राशन, उगाही...'). The phone-filtered DSP lines l14-l16 transcribe in both languages."
+   },
+   "intelligibility_over_music": {
+    "score": 9,
+    "basis": "From stems rebuilt from the timelines plus the master's +5 dB loudness gain: music is 20-30 dB under dialogue in every dialogue window (l05: dialogue -17.9, music unducked -38.1 dBFS RMS, so about -46 ducked; l19-l21: -15.9 vs -34.6 unducked; l22-l24: -18.7 vs -36.3). Effects sit at -43 to -53 under lines. Fan under DSP lines -53. Whisper heard every line from the full mix."
+   },
+   "ducking": {
+    "score": 7,
+    "basis": "Music on duck:true; -8 dB, attack 8, release 15, holdGap 20. Ducked under l05, under b10's lines and under b11-b12's lines; mus_tension_note#1 drops to volume 0.0158 (about -36 dB) under l26 and the hold, measured at -50 to -55 dBFS, as the cue sheet asks. Not separately measured: duck depth in the master. Fault: mus_tension_note#0 (trimBefore 2 s, 23.5 s long) runs into the file's 20-29 s swell. The unducked note goes from about -37 dBFS at the b11 head to about -31/-32 around s34-s35 (97-99 s), about +6 dB where the cue sheet asks for about +3."
+   },
+   "music_and_effects_on_beats": {
+    "score": 5,
+    "basis": "What is placed is on its beat: stamp frames 2-10, gone before l01 at 13; paper slip on the l03 onset; peanut cracks under l09/l10 and none after; knitting under l11, faded under l12; handset lift 0.8 s at the s18 cut; DTMF ends 2 frames before l14; hang-up click on the s22 cut, then the fan alone; register thump between l19 and l20; page turn on s34 plus the riffle fallback; knitting stops 9 frames (hi) / 10 (en) before l25; caper bed in after l04, out for l06-l08 (-65 dBFS) and b5 and b8; tension note from the b11 head; hard cut to silence at the cut to black (black tail -75/-83 dBFS). Missing: s2e01_sfx_crossing_train (b5's whole 3 s beat is crossing ambience at about -47 dBFS (hi) / -42 (en) master RMS, so the script's horn-in-the-silence beat is absent), lobby_door_swing (b4 exit), tea_pour (b3's 1.5 s silence sits at -47 dBFS), file_untie_riffle. The caper theme is heard unducked only on the 0.8 s exit still (-33 dBFS) and the 1.2 s s26 slate (-39 dBFS), so the series' musical colour barely registers."
+   },
+   "audio_levels": {
+    "score": 8,
+    "basis": "-14.2 / -14.3 LUFS integrated, -1.1 dBTP, LRA 7.5 / 7.6 LU, all four files, within D-0M4's ±0.5 LU. Review cuts carry the same loudness. The master is about 5 dB over the timeline's premix (-19.2/-19.5 LUFS), and l26 sits about 6 dB higher in the master than the stem predicts, so the mastering gain is not constant (probably dynamic loudnorm). Not a fault, but quiet lines are lifted."
+   },
+   "picture_completeness": {
+    "score": 5,
+    "basis": "31 of 37 shots are real frames, and they are consistent in style and well composed. Six are slates: s14 and s20 (the shield insert and its reverse), s16 (Pushpa's introduction with l11), s26 (the helmet set down on the bench, a STATE s2e02 picks up), s28 (the register handover), s29 (the colleagues' nod). That is 11.6 s hi / 11.4 s en. s14, s16 and s26 were rejected by S9 on attempt 1 with no retake (D-015 rule 5 allows one). s28 and s29 have prompts and no generation. No overlays: the token is blank in s01/s11, the shield plate is blank in s13/s15/s17, and there is no date on s32. By rule (D-004/D-006) none carries a fact. Second framings s33 and s35 are 1.1-1.2x of s31, so b12 cuts back to almost the same picture three times around its inserts. s08 reads as Nirala with his cap, not a cap insert."
+   },
+   "continuity": {
+    "score": 8,
+    "basis": "Against continuity.json end_state and the shot STATE lines, checked by eye on the rendered frames and on s13, s15 and s18 at full size: token on Nandini's right wrist from b6 (s13 near arm in profile, s17, s18 handset hand, s19/s21, s32, s36); helmet under her left arm in b6-b8; Tripathi's gamchha on his left shoulder, cone in his left hand (s13, s15 arm across body, s18, s22 peanut in right, cone in left), right palm raised in s18; Pushpa's wool in her right pocket (s23, s25) and needles crossed in the bun; Nirala's single cap, medal and oversize uniform; end frame s36 has the right hand on the pouch with the token. Not shown: the helmet leaving her hand (s26 is a slate), so b10-b12 never show where it went. The registers handed over (s28 slate). Rejected s16 would have broken the wool side, so the slate avoids a continuity fault."
+   },
+   "pacing": {
+    "score": 7,
+    "basis": "109.4 s hi / 108.9 s en, under the 150 s ceiling (D-018/D-020) and under the 134.9/121.4 s targets. Gaps are tight, and the scripted silences are held (0.5 s stamp, 1.5 s b3, 3.0 s b5, 1.0 s bench, 2.0 s phone, 1.5 s stopped chewing, 2.5 s b11 head, 1.5 s page turn, 1.0 s after l25, 2.5 s after l26 measured from the last speech at 106.45 s to the cut at 108.97 s). The comic timing was not heard. b3, b5 and the bench beat play at -46 to -49 dBFS, near dead air on a phone, because their effects are missing. The b12 picture repetition (s31/s33/s35) flattens the ending's build."
+   },
+   "opening": {
+    "score": 7,
+    "basis": "Cold open from 0 s on the token insert; the stamp thunk 0.07-0.33 s; 'अगला! Token सात।' / 'Next! Token number seven.' on the still at 0.48 s. It lands on sound and subtitle, but the token shows no '7' (ov_token_7 missing), so the picture does not pay off the line."
+   },
+   "cliffhanger": {
+    "score": 8,
+    "basis": "The ending is spoken, as D-004 requires. l23-l25 read the refusal, a 1.0 s hold on the hand stopped on the pouch (s36), and l26 'तो कल दस बजे से पहले... arrest किसे करूँ?' / 'So before ten tomorrow... who do I arrest?' plays on her close with the tension note ducked away to -50 dBFS. Then a 2.5 s hold on projection-room tone (-41 dBFS), and a hard cut to black and silence. The question is clear from the line alone."
+   },
+   "length": {
+    "score": 10,
+    "basis": "hi 3281 frames = 109.37 s, en 3266 = 108.87 s (ffprobe count_frames), both <= 150 s."
+   },
+   "overall": 7
+  },
+  "blocking": [],
+  "measurements": {
+   "probe": "all four: h264 1080x1920 30/1; aac 48 kHz stereo; frames hi 3281, en 3266 (counted)",
+   "md5": {
+    "hi": "e0670e6e1d0ba356e07061a445918409",
+    "en": "7741cc372e6c47aac9cfc16369dcfb97",
+    "hi.review": "6ed14e0d173254273e7fd5faaf1d8b85",
+    "en.review": "f99fdcf8e282f8bf01642610b06e7e30"
+   },
+   "slate_seconds": {
+    "hi": 11.6,
+    "en": 11.4
+   },
+   "scratch": "<scratch>"
+  },
+  "checks_run": [
+   "ffprobe frame count, codec, size, fps on all four renders; md5 of all four",
+   "ffmpeg ebur128 integrated loudness on all four; true peak on hi and en clean",
+   "whisper.cpp ggml-small on the full hi and en mixes, plus hi l22 alone and in a 7 s mix window, plus en 84.4-85.6 s",
+   "envelope cross-correlation of all 50 dialogue clips against the rendered mix",
+   "silencedetect onsets per clip vs all 79 cue starts and ends",
+   "cue text vs both scripts; cue-vs-cut crossing; last cue vs video end",
+   "frame at the midpoint of every shot in both clean cuts (74) and every cue midpoint in both review cuts (79), viewed as contact sheets; full-size looks at s08, s13, s15, s18, s31, s33, s35 and two burned cues",
+   "music, dialogue and effects stems rebuilt from timeline.{hi,en}.json with ffmpeg (no duck modelled), compared window by window with the master",
+   "continuity of the sampled frames against continuity.json end_state and shots.json STATE"
+  ],
+  "not_checked": [
+   "Nobody has listened. Performance, comic timing, the phone filter's sound, how the music feels, and whether -46 dBFS silent beats read as intended were judged from numbers only.",
+   "Whisper-small is weak on Hindi. I judged Hindi words in substance, not letter by letter. 'Are they doggies?' for 'Arre, talkies?' was taken as an ASR error without a second model.",
+   "Ducking depth was not measured in the master. My stems do not model the duck, and the master's gain is not constant.",
+   "Camera moves were sampled at shot midpoints only, not frame by frame; no check for edge reveal at scale 1.3.",
+   "True peak of the review cuts was not measured separately (integrated loudness was).",
+   "No lip sync applies (stills), and I did not check the per-word highlight because burnSubtitles shows cue-level text.",
+   "Frames were not compared with the character sheets for face identity; that is S9's check."
+  ],
+  "fixes": [
+   {
+    "owner": "frames",
+    "severity": "medium",
+    "issue": "s14, s16 and s26 are slates after S9 rejected attempt 1. No retake was made, though D-015 rule 5 allows one. s20 is cut from s14, so it is a slate too.",
+    "fix": "One retake each through production/scripts/codex-frame.sh against S9's notes in frames/review.json. s14: nothing of the peanut hand right of 20% across. s16: the orange wool ball in Pushpa's RIGHT cardigan pocket, which is PICTURE-LEFT since she faces camera. s26: the token string on Nandini's RIGHT wrist (picture-left) and the helmet set down with that hand. Then the single retake check. If a retake still fails, accept the better take and log it (D-013 rule 11) rather than keep a slate. After approval, S9 adds pass rows to frames/review.json."
+   },
+   {
+    "owner": "frames",
+    "severity": "medium",
+    "issue": "s28 (register handover) and s29 (Nirala and Pushpa's nod) were never generated. frames/prompts/s28.txt and s29.txt exist, but there is no manifest row and no png.",
+    "fix": "Generate attempt 1 of each from the existing prompts via production/scripts/codex-frame.sh. s29 is a same-depth two-shot, so attach the Nirala/Pushpa line-up sheet if one exists (D-017 amendment 2). Then the frame check."
+   },
+   {
+    "owner": "sound",
+    "severity": "medium",
+    "issue": "The four one-off effects in sound/cues.json were never generated (crossing_train, lobby_door_swing, tea_pour, file_untie_riffle). b5's 3 s beat, written as bell, horn and train in the silence, plays as ambience at about -47 dBFS master RMS (hi). b3's 1.5 s silence sits at -47 dBFS and the b4 exit has no door.",
+    "fix": "Generate each once with the prompt in sound/cues.json (crossing_train first), fit them as the notes say, and write rows to the series sound manifest. Set cues.json status to 'generated'. The editor then rebuilds and re-renders. If a cue fails after plan 7.8's ladder, mark it as a placeholder row so the gap is tagged."
+   },
+   {
+    "owner": "editor",
+    "severity": "low",
+    "issue": "en c031 'every one names Bhaiyaji.' starts 0.33 s before 'every' is spoken (85.18 s), and c030 drops about 0.2 s before 'extortion...' ends. The pause after 'extortion...' is about 0.2-0.29 s, under the 300 ms split rule, so the words were spread by graphemes.",
+    "fix": "Move the c030/c031 split in subs.en.json to the pause: c030 ends at frame 2549 (84.97 s) and c031 starts at frame 2555 (85.17 s). Reading speed stays under 17 (c031 about 16.5 graphemes/s, c030 about 13.3). Do this through an edit.json split override if the builder supports one, otherwise flag it for the toolsmith (e.g. a 200 ms pause threshold for this line). Re-render en.review."
+   },
+   {
+    "owner": "editor",
+    "severity": "low",
+    "issue": "mus_tension_note#0 (trimBefore 60 frames, 706 frames long) runs into the library file's 20-29 s swell. The note rises about +6 dB across b11-b12 (about -37 to about -31 dBFS unducked at 97-99 s), where the cue sheet asks for about +3 dB.",
+    "fix": "Take the note from the file's steady 2-15 s stretch, as the library qc_note suggests: two pieces (trimBefore 60 for 390 frames, then trimBefore 60 again with a short crossfade for the rest), and add the +3 dB rise as a volume ramp. Keep #1 (under l26 and the hold) as it is."
+   },
+   {
+    "owner": "editor",
+    "severity": "low",
+    "issue": "The caper theme barely registers. It is heard unducked only on the 0.8 s b4 exit (-33 dBFS) and the 1.2 s s26 slate (-39 dBFS), and sits about 28 dB under dialogue while ducked.",
+    "fix": "Raise mus_theme_caper_bed by about +6 dB (volume 0.2239 to about 0.45) in edit.json's sound placements, re-render, and check that true peak stays at or below -1 dBTP and dialogue stays at least 15 dB over the ducked bed. Owner listening overrides this."
+   },
+   {
+    "owner": "editor",
+    "severity": "low",
+    "issue": "The four dropped one-off cues are logged in assemble.log but not tagged: timeline meta.placeholders.sound is [] in both languages. Plan 7.8 requires every placeholder to be tagged.",
+    "fix": "Tag the dropped cue ids in meta.placeholders.sound and add one morning-report entry. The change to build_timeline.py goes through the orchestrator-run toolsmith step (D-0M4); episode editors do not edit production/scripts."
+   },
+   {
+    "owner": "editor",
+    "severity": "low",
+    "issue": "The English cut's slates print the Hindi line, and slate notes are cut off mid-sentence (s16 '... Needles click under the').",
+    "fix": "Toolsmith step: take the slate text from the cut's language (script.en.json line text for en) and wrap instead of truncating. Moot for any slate that gets a real frame."
+   },
+   {
+    "owner": "editor",
+    "severity": "low",
+    "issue": "No overlays are rendered: ov_token_7 (s01, s11), ov_shield (s13, s15, s17, and s14/s20 once drawn), ov_refusal_date (s32), ov_fake_board (s05). The cold open's '7' is only heard.",
+    "fix": "Add the overlay layer the flat 2D proof used for its caller name, placed by each shot's shots.json overlay.surface, in both languages. If there is no overlay spec file, the storyboard owner writes one with each id's text per language. Re-render."
+   },
+   {
+    "owner": "storyboard",
+    "severity": "low",
+    "issue": "b12 cuts back to almost the same picture three times: s33 (meant as 'close on her face reading aloud') and s35 are 1.2x and 1.1x of s31. The 1.3 cap on second framings cannot make a face close from the s31 wide.",
+    "fix": "Change s33 to generate: true as a real close of Nandini reading, face bent to the file and the token on her right wrist, anchor s31. One Codex frame via frame-generation. Alternatively the editor aims s33's move at her face at scale 1.3, which still reads as a mid shot."
+   }
+  ]
+ }
+}

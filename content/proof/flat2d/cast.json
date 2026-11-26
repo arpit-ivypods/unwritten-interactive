@@ -1,0 +1,131 @@
+{
+  "status": "cast",
+  "status_reason": "Cast on 26 Nov 2026 by S10 from creative_list_voices (Hindi listing: 3 unfiltered pages of 30, plus 6 filtered pages by gender, age, use case and descriptives; 181 listing rows read, repeats included). Chosen from listing text and labels only. NO voice was heard and NO speech was generated in this session (casting brief from the orchestrator forbade generation), so this cast is provisional until the runner's first takes pass the listening_test_lines and reject_if checks below. If a first choice fails, switch that character to backup_voice_id and regenerate all of that character's lines in both languages.",
+  "characters": [
+    {
+      "id": "meenu",
+      "voice_id": "JG3V6gojK42M5cRu9q07",
+      "voice_name": "Rhea – Natural & Real Angry Girl",
+      "why": "Character-dialogue voice (not narrator or ad-read) whose listing promises exactly Meenu's register: 'every shade of anger, from clipped irritation to full outburst, without ever sounding like pure shouting', each level distinct and 'grounded even at peak intensity'. That fits a dry, clipped officer whose volume steps down line by line and whose one loud line (l07) must not screech. Sharp and tense against Bablu's relaxed warmth, so the two are easy to tell apart. Risks, untested: the voice is built on angry performance, so [whispers] in l08 and the flat [deadpan] in l05 are the lines most likely to fail; the name says 'girl', so she may read younger than 32; the listing shows no English.",
+      "backup_voice_id": "UH2Uz5xXGm6QUNMd75r4",
+      "backup_voice_name": "Sneha L Hindi",
+      "backup_why": "Opposite failure mode to the first choice: listed as 'deep, clear, strong', and the lowest-pitched plausible female preview measured (median about 195 Hz), so it should hold authority at low volume and whisper cleanly. Weak points: listed as 'optimistic, motivating and friendly', so [angry] and [curt] may come out too pleasant; thin listing, no gender or age label, no English shown.",
+      "wanted": "Wanted: female, reads as early 30s, low-mid pitch, dry and clipped, north-Indian (Hindi-belt) accent, conversational or character voice rather than narrator or ad-read. Must hold authority at low volume: her arc goes loud (l07), whisper (l08), quiet but voiced (l10), low and clear (l12), so a voice that only works when projected is wrong. Must read English words inside Hindi lines crisply (locker, cash, court, produce) and carry the full Indian English script without drifting to an American or British accent."
+    },
+    {
+      "id": "bablu",
+      "voice_id": "x8QLi04vAqWNOHsZm7yK",
+      "voice_name": "Saurav tandon 2 pro",
+      "why": "The only shortlisted male labelled middle-aged whose listing is an ordinary man talking, not a performer: 'everyday working-dad', 'human, spontaneous and relatable', explicitly not 'a narrator, announcer, motivational speaker', with 'natural Hindi and Hinglish delivery', which covers the English cut. A plain, sincere voice is what keeps Bablu from sounding like he is doing a bit. Preview pitch is in tenor range (median about 170 Hz), well under Meenu's. Risks, untested: listed as 'relaxed, confident', so [nervous] and [sheepish] must come from the tags; accent label is hi-punjabi rather than Hindi-belt small town; only a 3 second preview exists.",
+      "backup_voice_id": "VXrVA5ICBdxC3ymFJeUr",
+      "backup_voice_name": "Swastik M - Raw & Real Stories for Kids",
+      "backup_why": "Closest listing to Bablu's temperament: tells stories 'the way a chacha does on a village charpai', with 'little pauses' and 'nothing studio-smooth', so the ellipsis lines (l03, l09) should trail off naturally. Not first choice because it is a children's-story performer (highest risk of sounding like a bit), shows no English, and its preview measured high (median about 220 Hz).",
+      "wanted": "Wanted: male, reads as mid 40s, warm tenor with a slightly nasal edge, north-Indian small-town accent, unhurried. Earnest and eager to please, never a comedian's voice: the joke only works if he sounds sincere. Must trail off naturally on ellipses (l03, l09) and survive two cut-off lines (l06, l11). Clearly distinct from Meenu in pitch and pace. Hindi-medium Indian English for the English cut."
+    }
+  ],
+  "casting_notes": {
+    "method": "Listing text and labels from creative_list_voices, plus a rough pitch estimate (pure-Python autocorrelation on the public preview clips, 3 to 13 seconds each). The pitch figures are crude, come from performed previews (angry previews run high) and are only a guide. No transcription and no generation was run.",
+    "preview_median_f0_hz": {
+      "meenu_first_rhea_angry": 276,
+      "meenu_backup_sneha": 195,
+      "bablu_first_saurav": 170,
+      "bablu_backup_swastik": 222
+    },
+    "distinctness": "First choices: female, sharp, about 276 Hz against male, relaxed, about 170 Hz; different gender, pitch and temperament. Do not pair the two backups (Sneha with Swastik) without a listening check: by this rough measure their pitch ranges overlap.",
+    "english": "The Hindi listing never states supported languages. Only Bablu's first choice mentions Hinglish. For Meenu no voice that fits the character shows English; the two female listings that do (below) are warm explainer voices. Judge the English cut on the en l07 test take.",
+    "also_considered": {
+      "meenu": [
+        {
+          "voice_id": "8IrlayNCXq6pPzUEevTp",
+          "voice_name": "Aisha – Frustrated & Angry Woman",
+          "note": "Third choice. Web-series dialogue voice, 'sharp, in-the-moment'; preview about 250 Hz, lower than Rhea. Same anger-based risk as the first choice."
+        },
+        {
+          "voice_id": "dx9Va5t4Bdq9YbfGd0aT",
+          "voice_name": "Avani – Intense Angry Character",
+          "note": "'Stern', 'clenched, biting lines', but 'sudden volume jumps and shaking fury' is more than Meenu needs."
+        },
+        {
+          "voice_id": "1TS4CYcTRQ6GBqpeAf8X",
+          "voice_name": "Aarika – Firm Recovery Agent",
+          "note": "'Stern, commanding, loud', no-nonsense; listed as loud, which is the wrong default for five of her six lines."
+        },
+        {
+          "voice_id": "fTfuemKGBjYqG4ni4gw3",
+          "voice_name": "Ritu Rathore - Natural Conversational",
+          "note": "English-cut fallback: listing says Hindi 'with familiar English words'; middle-aged, but 'friendly, reassuring' teacher tone."
+        },
+        {
+          "voice_id": "Qxpj1XUeVT43LQckLPRv",
+          "voice_name": "Poonam Katkar-Hindi Narration",
+          "note": "English-cut fallback: 'natural Indian-English accent', preview about 200 Hz; narrator and ad voice, hi-marathi accent label."
+        },
+        {
+          "voice_id": "R261rEPF3KPH28sAnhOx",
+          "voice_name": "Mitali – Polished Brand Ads",
+          "note": "Lowest female preview (about 178 Hz), 'restraint and gravitas', but an ad-read that is 'never rushed or casual'; Meenu must be fast and clipped."
+        }
+      ],
+      "bablu": [
+        {
+          "voice_id": "dNNR4hVwgRICgZyUZ51n",
+          "voice_name": "Amit Ratan",
+          "note": "Third choice. 'Unfiltered rural Uttar Pradesh voice', Awadhi, 'realistic drama'; best small-town match, but labelled young (Bablu is 46)."
+        },
+        {
+          "voice_id": "PqovzlPXjFmB5NRVvFVe",
+          "voice_name": "Ayush M - Warm, Friendly Support Agent",
+          "note": "Explicitly bilingual Hindi and English and apologetic by design; call-centre polish rather than a constable."
+        },
+        {
+          "voice_id": "FuNEroZdMQWScvkSu4Xt",
+          "voice_name": "Amogh M - Warm, Natural Friend",
+          "note": "'Kind, good-hearted guy' with 'no put-on style', but young and 'a small smile in every line' (l04 needs no smile)."
+        },
+        {
+          "voice_id": "MDc7WRSGSSmDEc7usPmW",
+          "voice_name": "Ranga – Desi Motivational Sidekick",
+          "note": "Web-series sidekick, but uplifting and low (preview about 131 Hz), not a nasal tenor."
+        },
+        {
+          "voice_id": "bZUM1MOlBqnJAQ6YUKWn",
+          "voice_name": "Bismil - Marwadi Desi Friend",
+          "note": "Warm small-town voice, but a marked Marwadi lilt and 'village humour'."
+        },
+        {
+          "voice_id": "8VluH30puysGD3o3MKTp",
+          "voice_name": "Pappi - Cheerful Kids Cartoon Character",
+          "note": "Rejected: a comedian's voice by design."
+        }
+      ]
+    }
+  },
+  "casting_brief": {
+    "how_to_finish": [
+      "creative_list_voices {\"languages\":[\"hi\"],\"page_size\":30}; follow cursor while has_more. Read at least 3 pages, then narrow by gender, age (young / middle_aged) and accent (Indian / Hindi) if the tool offers those filters.",
+      "Shortlist 3 per character from the listing metadata (gender, age, accent, description, use case). Prefer voices described as conversational, characters or narrative-drama over news, ads or meditation.",
+      "Prefer voices whose listing also shows English (en) or that are labelled Indian English, because the English cut uses the same voice.",
+      "Pick first choice and backup per character, fill voice_id, voice_name, why and backup_voice_id above, set status to \"cast\", and copy the voice_id into every entry of voice/takes.json by speaker (meenu / bablu)."
+    ],
+    "listening_test_lines": {
+      "note": "For the voice runner or judge, if a listening test is budgeted. Text is taken from voice/takes.json so a passing test take can be kept as the real take.",
+      "meenu": [
+        {"lang": "hi", "line_id": "l07", "checks": "anger without screeching; English nouns crisp"},
+        {"lang": "hi", "line_id": "l08", "checks": "obeys the mid-line [whispers] switch"},
+        {"lang": "hi", "line_id": "l12", "checks": "low but fully voiced and intelligible on a phone speaker"},
+        {"lang": "en", "line_id": "l07", "checks": "Indian English accent holds"}
+      ],
+      "bablu": [
+        {"lang": "hi", "line_id": "l01", "checks": "nervous, not comic"},
+        {"lang": "hi", "line_id": "l09", "checks": "trails off on the ellipsis"},
+        {"lang": "en", "line_id": "l03", "checks": "Hindi-medium Indian English, sincere"}
+      ]
+    },
+    "reject_if": [
+      "Voice ignores [whispers] or [angry] on v4 (tag obedience depends on the voice).",
+      "English lines come out American or British.",
+      "Meenu and Bablu are hard to tell apart with eyes closed.",
+      "Bablu sounds like he is doing a bit."
+    ]
+  }
+}

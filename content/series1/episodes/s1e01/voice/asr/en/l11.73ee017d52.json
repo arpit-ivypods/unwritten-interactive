@@ -1,0 +1,120 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,270"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 270
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,270",
+				"to": "00:00:01,010"
+			},
+			"offsets": {
+				"from": 270,
+				"to": 1010
+			},
+			"text": " Fine."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,010",
+				"to": "00:00:01,200"
+			},
+			"offsets": {
+				"from": 1010,
+				"to": 1200
+			},
+			"text": " The"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,200",
+				"to": "00:00:01,530"
+			},
+			"offsets": {
+				"from": 1200,
+				"to": 1530
+			},
+			"text": " act's"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,530",
+				"to": "00:00:01,840"
+			},
+			"offsets": {
+				"from": 1530,
+				"to": 1840
+			},
+			"text": " over."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,840",
+				"to": "00:00:02,400"
+			},
+			"offsets": {
+				"from": 1840,
+				"to": 2400
+			},
+			"text": " Are"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,400",
+				"to": "00:00:02,520"
+			},
+			"offsets": {
+				"from": 2400,
+				"to": 2520
+			},
+			"text": " you"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,520",
+				"to": "00:00:03,320"
+			},
+			"offsets": {
+				"from": 2520,
+				"to": 3320
+			},
+			"text": " police?"
+		}
+	]
+}

@@ -1,0 +1,177 @@
+{
+  "status": "cast",
+  "status_reason": "Cast on 26 Nov 2026 by the S10 session, which reached creative_list_voices (first call succeeded). Every voice_id below was copied from that tool's results in this session, none from memory. No speech was generated and no voice was listened to: no agent in this build can listen (D-009). The picks rest on listing text plus a pitch measurement of each shortlisted voice's public preview clip, so they are provisional until the tagged listening-test lines in casting_brief are generated and judged.",
+  "characters": [
+    {
+      "id": "tara",
+      "voice_id": "3OoZto9Iqtw3UoTbyuY0",
+      "voice_name": "Neerja M - Expressive Chatty Gossip Girl",
+      "why": "Cast from listing text and a pitch measurement of the public preview clip; not heard by anyone yet. The listing is the only young female Hindi one that promises this scene's exact range: an everyday-Hindi conversational voice that 'whispers, gasps, teases and laughs mid-story' (l01 laugh, l03 and l09 whispers). It is a character and conversation voice, not a narrator, helpline or ad read. Its preview measured a median pitch near 246 Hz with a top (90th percentile) near 320 Hz, the lowest ceiling of the expressive female character voices sampled (the others peaked at about 350 to 400 Hz), so it carries the least risk of going shrill on l01. Open risks for the listening test: it may still read brighter and younger than 'low-mid with a little husk'; the cold bank voice on l06 is outside what the listing describes; the listing says nothing about English, so the Indian English cut is unproven.",
+      "backup_voice_id": "EHeVIpHOvJGuhp2QcMZZ",
+      "backup_voice_name": "Pyaari",
+      "backup_why": "Listing: young female, 'Perfect Hinglish voice for Hinglish conversations', easy-going and friendly. The strongest listed fit for the Latin-script words and the English cut, and one of the lowest and the darkest-measuring female previews sampled (median near 208 Hz). Not first choice because its preview was almost monotone (about 3.6 semitones of movement), which is a risk for the laugh and the whispers. Switch to it first if Neerja turns shrill on l01 or drifts off Indian English.",
+      "shortlist": [
+        {
+          "voice_id": "3OoZto9Iqtw3UoTbyuY0",
+          "voice_name": "Neerja M - Expressive Chatty Gossip Girl",
+          "preview_median_hz": 246,
+          "note": "first choice"
+        },
+        {
+          "voice_id": "EHeVIpHOvJGuhp2QcMZZ",
+          "voice_name": "Pyaari",
+          "preview_median_hz": 208,
+          "note": "backup; Hinglish listed"
+        },
+        {
+          "voice_id": "fIiQX8HNKMkPpUbyGrN3",
+          "voice_name": "Simran – Persuasive Outbound Sales Agent",
+          "preview_median_hz": 222,
+          "note": "third; composed and confident, suits the l06 bluff, but a sales-call voice with no listed laugh or whisper range"
+        }
+      ]
+    },
+    {
+      "id": "imran",
+      "voice_id": "KjB3pyRrta1C1C2zoshr",
+      "voice_name": "Avinash – Deep & Empathetic",
+      "why": "Cast from listing text and a pitch measurement of the public preview clip; not heard by anyone yet. Listing: 'a warm, deep Indian voice with a calm, empathetic tone', offered for thoughtful conversations as well as narration. Its preview was one of the two lowest male clips sampled (median near 88 Hz) and the flattest (about 3 semitones of movement), which is what three short, tired, never-raised lines need, and a calm, empathetic base is the safest start for l10, where a menacing read is a reject. It sits about an octave below the Caller's preview (near 178 Hz), so the two men should be easy to tell apart before the phone filter. Open risks for the listening test: the listing has no accent, age or gender label (male is inferred from the description and pitch), so Bambaiya colour is not promised; it may come out smoother and warmer than 'gravel'; nothing is said about English.",
+      "backup_voice_id": "4CQg3LJvjr1Z8AjH3Elz",
+      "backup_voice_name": "Prakash - Perfect for creators, deep, expressive, engaging",
+      "backup_why": "Listing: deep, rich Hindi male voice with a Marathi accent label (the nearest listed thing to Mumbai speech). Preview as low as Avinash (median near 86 Hz) and the roughest-measuring male clip sampled, so it is the pick if Avinash sounds too smooth. Not first choice because it is sold as a horror and suspense narrator, which raises the risk of a threatening l10.",
+      "shortlist": [
+        {
+          "voice_id": "KjB3pyRrta1C1C2zoshr",
+          "voice_name": "Avinash – Deep & Empathetic",
+          "preview_median_hz": 88,
+          "note": "first choice"
+        },
+        {
+          "voice_id": "4CQg3LJvjr1Z8AjH3Elz",
+          "voice_name": "Prakash - Perfect for creators, deep, expressive, engaging",
+          "preview_median_hz": 86,
+          "note": "backup; Marathi accent label, rougher"
+        },
+        {
+          "voice_id": "tp9ZAQ5ti5xjrtabLbxF",
+          "voice_name": "Vijay - Narrative Mythology",
+          "preview_median_hz": 116,
+          "note": "third; middle-aged male, Marathi accent label, but a mythology narrator and closer in pitch to the Caller's backup"
+        }
+      ]
+    },
+    {
+      "id": "caller",
+      "voice_id": "m6ybhpNPDDgyT2aEYE04",
+      "voice_name": "Danish Khan - Rich, Poetic Narrator",
+      "why": "Cast from listing text and a pitch measurement of the public preview clip; not heard by anyone yet. Listing: 'a graceful Hindustani where Urdu tehzeeb and plain Hindi sit together', unhurried, every word given room; the same speaker's other listings are labelled old and describe a veteran actor who coaches diction, which fits a cultured man of about 60 with precise consonants for the phone filter. An unhurried, placed delivery is what l08 asks for. Its preview measured a median near 178 Hz, about an octave above Imran's (near 88 Hz) and smoother-measuring, so he is the lighter, smoother man of the pair. Open risks for the listening test: it is a storyteller voice and may drawl or turn recitational (l07 must fit 4.5 s); the polish is Urdu-leaning Hindustani rather than South Bombay; this listing carries no age label; nothing is said about English, so the English cut is the main doubt.",
+      "backup_voice_id": "HTz42M0jBuitrG8bQzNx",
+      "backup_voice_name": "Amit- Deep Documentary & Corp. Narrator",
+      "backup_why": "Listing: mature middle-aged male, neutral and professional, calm pacing, 'excellent articulation and clear pronunciation in both Hindi and English'. It is the backup because it is one of the few listings that names English, and the English cut is the first choice's main doubt. Preview median near 136 Hz, still about 7.5 semitones above Imran. Not first choice because it reads younger and more formal than a smiling man of 60.",
+      "shortlist": [
+        {
+          "voice_id": "m6ybhpNPDDgyT2aEYE04",
+          "voice_name": "Danish Khan - Rich, Poetic Narrator",
+          "preview_median_hz": 178,
+          "note": "first choice"
+        },
+        {
+          "voice_id": "HTz42M0jBuitrG8bQzNx",
+          "voice_name": "Amit- Deep Documentary & Corp. Narrator",
+          "preview_median_hz": 136,
+          "note": "backup; Hindi and English listed"
+        },
+        {
+          "voice_id": "r3CPEby3BZ6hrPxHG8h2",
+          "voice_name": "Danish K – Dramatic Old Voice",
+          "preview_median_hz": 200,
+          "note": "third; same speaker as the first choice in an older, gentler, more dramatic register, listed for conversations; higher risk of an over-acted chuckle on l07"
+        }
+      ]
+    }
+  ],
+  "casting_evidence": {
+    "browsed": "Hindi listing (languages [\"hi\"], page_size 30): three unfiltered pages (90 entries), then five filtered searches: male + old; female + young + conversational, character and entertainment use cases; male + middle_aged + deep, raspy, rough, husky, grumpy, serious; female + husky, confident, casual, sassy, raspy; male + classy, calm, mature, wise, soft, gentle. The male + old search ran out of Hindi voices after seven entries and returned other languages; those were ignored.",
+    "accent_filter": "Not used. Accent labels in the listing are regional Hindi codes (hi-standard, hi-marathi, hi-khariboli and so on); there is no Mumbai or Indian English label to filter on.",
+    "english": "The listing has no field for a second language. English is mentioned only in free-text descriptions, and only a few voices mention it. Of the six voices chosen, the two that name Hinglish or English are the backups for Tara and the Caller, placed there because takes.json makes the backup voice the first fix for an accent drift on English lines.",
+    "preview_measurement": "38 public preview clips were downloaded and measured with a simple autocorrelation pitch tracker (median pitch, 10th to 90th percentile spread, a periodicity score as a rough smoothness proxy). The clips differ in text, length (3 to 13 s) and acting style, so the numbers are indicative only. They were used to rule out high or shouted voices and to check that the two men sit well apart; they say nothing about tag obedience, accent or English.",
+    "pair_check": "Imran first choice near 88 Hz against Caller first choice near 178 Hz: about 12 semitones apart. Worst case across first choices and backups is Imran near 88 Hz against Caller backup near 136 Hz: about 7.5 semitones.",
+    "not_verified": "No take was heard. Not verified: obedience to [laughs], [whispers], [sighs] and [chuckles] on eleven_v4; Indian English accent for any of the six voices; Mumbai colour for Imran; whether Tara turns shrill on l01; whether the Caller's l08 stays fully voiced."
+  },
+  "casting_brief": {
+    "how_to_finish": [
+      "creative_list_voices {\"languages\":[\"hi\"],\"page_size\":30}; follow cursor while has_more. Read at least 3 pages, then narrow by gender, age (young / middle_aged / old) and accent (Indian / Hindi) if the tool offers those filters.",
+      "Shortlist 3 per character from the listing metadata (gender, age, accent, description, use case). Prefer voices described as conversational, characters or narrative-drama over news, ads or meditation.",
+      "Prefer voices whose listing also shows English (en) or that are labelled Indian English, because the English cut uses the same voice.",
+      "Cast the two men as a pair: pick Imran and the Caller together and check they are easy to tell apart before the phone filter is applied.",
+      "Pick first choice and backup per character, fill voice_id, voice_name, why and backup_voice_id above, set status to \"cast\", and copy the voice_id into every entry of voice/takes.json by speaker (tara / imran / caller). takes.json has 23 entries: tara 9 (4 hi, 4 en, 1 v3), imran 7 (3 hi, 3 en, 1 v3), caller 7 (3 hi, 3 en, 1 v3)."
+    ],
+    "listening_test_lines": {
+      "note": "For the voice runner or judge, if a listening test is budgeted. Text is taken from voice/takes.json so a passing test take can be kept as the real take.",
+      "tara": [
+        {
+          "lang": "hi",
+          "line_id": "l01",
+          "checks": "real laugh, excited without going shrill; 'doubt' sounds natural inside the Hindi line"
+        },
+        {
+          "lang": "hi",
+          "line_id": "l03",
+          "checks": "obeys [whispers] and stays intelligible"
+        },
+        {
+          "lang": "hi",
+          "line_id": "l06",
+          "checks": "cold and crisp; stops cleanly on the dash"
+        },
+        {
+          "lang": "en",
+          "line_id": "l01",
+          "checks": "Indian English accent holds; 'lakh' said 'laakh'"
+        }
+      ],
+      "imran": [
+        {
+          "lang": "hi",
+          "line_id": "l02",
+          "checks": "stable on a three-word line; flat, not comic"
+        },
+        {
+          "lang": "hi",
+          "line_id": "l10",
+          "checks": "the sigh is a sigh, tired and not menacing"
+        },
+        {
+          "lang": "en",
+          "line_id": "l10",
+          "checks": "Hindi-accented Indian English, same weight as the Hindi"
+        }
+      ],
+      "caller": [
+        {
+          "lang": "hi",
+          "line_id": "l07",
+          "checks": "soft chuckle, smiling, not a villain laugh"
+        },
+        {
+          "lang": "hi",
+          "line_id": "l08",
+          "checks": "second half low and slow but fully voiced; every word clear"
+        },
+        {
+          "lang": "en",
+          "line_id": "l08",
+          "checks": "South Bombay English, no American or British drift; runs close to 6 s"
+        }
+      ]
+    },
+    "reject_if": [
+      "Voice ignores [whispers], [laughs], [sighs] or [chuckles] on v4, or speaks a tag aloud (tag obedience depends on the voice).",
+      "English lines come out American or British.",
+      "Imran and the Caller are hard to tell apart with eyes closed.",
+      "Tara turns shrill on l01.",
+      "The Caller's l08 comes out whispered or muffled.",
+      "Imran sounds threatening on l10: the open question is whether he is handing her over or protecting her."
+    ]
+  }
+}

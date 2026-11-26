@@ -1,0 +1,164 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,100"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 100
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,100",
+				"to": "00:00:00,260"
+			},
+			"offsets": {
+				"from": 100,
+				"to": 260
+			},
+			"text": " The"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,260",
+				"to": "00:00:00,930"
+			},
+			"offsets": {
+				"from": 260,
+				"to": 930
+			},
+			"text": " crossing"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,930",
+				"to": "00:00:01,100"
+			},
+			"offsets": {
+				"from": 930,
+				"to": 1100
+			},
+			"text": " is"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,100",
+				"to": "00:00:01,540"
+			},
+			"offsets": {
+				"from": 1100,
+				"to": 1540
+			},
+			"text": " under"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,540",
+				"to": "00:00:01,860"
+			},
+			"offsets": {
+				"from": 1540,
+				"to": 1860
+			},
+			"text": " your"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,860",
+				"to": "00:00:02,590"
+			},
+			"offsets": {
+				"from": 1860,
+				"to": 2590
+			},
+			"text": " outpost."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,590",
+				"to": "00:00:02,810"
+			},
+			"offsets": {
+				"from": 2590,
+				"to": 2810
+			},
+			"text": " The"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,810",
+				"to": "00:00:03,140"
+			},
+			"offsets": {
+				"from": 2810,
+				"to": 3140
+			},
+			"text": " slip"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,140",
+				"to": "00:00:03,550"
+			},
+			"offsets": {
+				"from": 3140,
+				"to": 3550
+			},
+			"text": " needs"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,550",
+				"to": "00:00:03,880"
+			},
+			"offsets": {
+				"from": 3550,
+				"to": 3880
+			},
+			"text": " your"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,880",
+				"to": "00:00:04,560"
+			},
+			"offsets": {
+				"from": 3880,
+				"to": 4560
+			},
+			"text": " stamp."
+		}
+	]
+}

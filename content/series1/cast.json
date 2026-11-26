@@ -1,0 +1,630 @@
+{
+  "series_id": "series1",
+  "status": "cast_provisional",
+  "status_reason": "Casting test reviewed on 26 Nov 2026 by an S10 voice director who did not generate the takes. All six first choices kept. Aditya is 'cast'; Kiran, Mausi, Billu, Chhoti and the constable are 'cast_provisional', each on named ear checks (see ear_check), because no agent can listen (D-009). Kiran's backup changed from Apsara (Series 2's lead) to Rudrika. Per-take transcripts and measures: content/series1/casting/review.json. No speech was generated in this review.",
+  "date": "2026-11-26",
+  "model": "eleven_v4",
+  "source": "content/series1/bible.json (characters, register), read with D-003, D-005 and D-007",
+  "characters": [
+    {
+      "id": "kiran",
+      "voice_id": "FtcqBL9uKtROtyotPjvE",
+      "voice_name": "Yashvi G – Real Conversational Voice",
+      "why": "Listing: 'firm, wise and naturally conversational', 'quiet confidence without being cold', 'tells you the truth without making it harsh'. That fits Kiran's flat, blunt register and her rule that under pressure she gets quieter and more exact, never shrill. It is a conversation voice, not a narrator, ad or helpline read. It is also the only young female shortlist voice whose listing names English-speaking audiences, which matters because the lead carries the English cut. Preview measured median about 239 Hz (10th to 90th percentile 190 to 348 Hz, about 10 semitones of movement). That leaves room for the 'Sneha' register to sit a little higher and softer. Open risks for the listening test: the listing says nothing about small-city Madhya Pradesh colour; the switch between 'Sneha' and Kiran has to come from tags alone, and a listing cannot show whether it will; it is about 3 semitones above Mausi's first choice, so the two women in one room is the main pair check.",
+      "backup_voice_id": "2kb0BzqPNMYVxWCj9dqt",
+      "backup_voice_name": "Rudrika",
+      "backup_why": "Replaces Apsara (QpSjVAs2VI5btKzupPaD), which is Series 2's lead (nandini in content/series2/cast.json) and may not be used in Series 1. Found by creative_list_voices on 26 Nov 2026 (languages hi, female, young, search 'conversational Hinglish'). Listing: 'warm, friendly female Indian voice, natural Hindi and Hinglish narration with clear English pronunciation, conversational storytelling tone'. It is the only young female Hindi listing in that search that names English pronunciation, which matters because the lead carries the English cut. Preview measured (same method as casting/review.json) median 276 Hz, 235 to 333 Hz, 6.0 semitones, voiced 0.95. Not used in Series 2 or either proof cast (grep of content/, 26 Nov). Risks: it is sold for narration and wellness, so it may come out soft and polished rather than blunt; previews mispredicted the cast voices by 2 to 3 semitones (Yashvi preview 239 Hz, takes about 214; Savitri preview 200, takes about 235), so its pairing with Chhoti (takes 308 Hz) and Mausi must be rechecked on its own takes. Untested on any line.",
+      "shortlist": [
+        {
+          "voice_id": "FtcqBL9uKtROtyotPjvE",
+          "voice_name": "Yashvi G – Real Conversational Voice",
+          "preview_median_hz": 239,
+          "take_median_hz": 214,
+          "note": "first choice; kept after the casting test"
+        },
+        {
+          "voice_id": "2kb0BzqPNMYVxWCj9dqt",
+          "voice_name": "Rudrika",
+          "preview_median_hz": 276,
+          "note": "backup from 26 Nov; listing names clear English pronunciation; untested"
+        },
+        {
+          "voice_id": "EHeVIpHOvJGuhp2QcMZZ",
+          "voice_name": "Pyaari",
+          "preview_median_hz": 208,
+          "note": "third; Hinglish listed and flat, which suits Kiran's register, but it is the photoreal proof's backup voice and its preview sits near Mausi"
+        },
+        {
+          "voice_id": "UrB5rVw5j9MDZWDZJtOJ",
+          "voice_name": "Reyanshi – Tier 2 & Tier 3 Friendly Voice for Customer Care & Chatbots",
+          "preview_median_hz": 258,
+          "note": "fourth; 'girl-next-door' for Tier 2 and 3 cities and 'regional-flavored' Hindi, the nearest listed small-city colour, but a customer-care voice and no English named"
+        }
+      ],
+      "test_lines": [
+        {
+          "line_id": "kiran_t1",
+          "lang": "hi",
+          "text": "[softly] [hesitant] आप जाग रहे हैं? मैं तो बस आपके दूध में केसर डाल रही थी।",
+          "checks": "'Sneha' register: a little higher, soft, shy, formal आप, the second sentence trails off. Coy, not breathy or romantic. 'केसर' clear."
+        },
+        {
+          "line_id": "kiran_t2",
+          "lang": "hi",
+          "text": "[flatly] Police हो? नहीं? [quietly] तो फिर चाहिए क्या तुम्हें?",
+          "checks": "The switch to Kiran: lower, flat, quick, तुम. Heard against kiran_t1 it must sound like the same woman dropping an act, not a second actor. 'Police' sounds natural inside the Hindi line. Gets quieter on the second tag, not shriller."
+        },
+        {
+          "line_id": "kiran_t3",
+          "lang": "en",
+          "text": "[quietly] Mausi... the milk has split.",
+          "checks": "The locked alarm line, English cut. A real pause on the ellipsis, then steady. Indian English, no American or British drift. 'Mausi' said the Hindi way. Quiet but fully voiced, because Mausi has to hear it on a live call."
+        },
+        {
+          "line_id": "kiran_t4",
+          "lang": "en",
+          "text": "[flatly] You want the one with the burnt wrist? Rekha. She doesn't do weddings any more.",
+          "checks": "Blunt small-city Indian English with contractions. 'Rekha' said the Hindi way. An easy lie: no hesitation before 'Rekha'."
+        }
+      ],
+      "excluded_voices": [
+        {
+          "voice_id": "QpSjVAs2VI5btKzupPaD",
+          "voice_name": "Apsara – Raw & Natural Hinglish Agent",
+          "reason": "Series 2 lead (nandini). Not to be used in Series 1. Was Kiran's backup until 26 Nov."
+        }
+      ],
+      "status": "cast_provisional",
+      "casting_review": {
+        "takes_reviewed": [
+          "kiran_t1",
+          "kiran_t2",
+          "kiran_t3",
+          "kiran_t4"
+        ],
+        "voice_id_tested": "FtcqBL9uKtROtyotPjvE",
+        "credits_spent": 263,
+        "verdict": "Keep Yashvi G. No clear failure on words, spoken tags or partner separation; one tag over-read (kiran_t3 whispered), which plan 7.8 fixes with a simpler tag before any voice change. Provisional on three ear checks: kiran_t3, the Sneha-to-Kiran switch, and the Mausi pair.",
+        "evidence": [
+          "Words: all four transcripts match the script. kiran_t1 'आप जाग रहे हैं, मैं तो बस आपके दूद में केसर डाल रही थी' (केसर clear). kiran_t2 'पूलीस हो? नहीं? तो फिर चाहिये क्या तुमें?' ('Police' heard; the -l en pass also gives 'Police? No?'). kiran_t3 'Mossy, the milk has split.' kiran_t4 'You want the one with the burnt wrist? Reika. She doesn't do weddings anymore.' (word pass: 'Rika').",
+          "Spoken tags: none in any transcript.",
+          "kiran_t3 [quietly] came out whispered by every measure: voiced ratio 0.23 against 0.74 to 0.88 on her other takes, spectral flatness 0.091 (highest of all 24 takes; her others 0.030 to 0.048) and centroid 3,746 Hz (her others 1,664 to 2,190). Level -33.3 dB, 11 to 12 dB under her plain lines. The words survive in transcription, but the check asks for 'quiet but fully voiced'. The ellipsis gives a 0.42 s pause, which passes.",
+          "The same [quietly] inside kiran_t2 was obeyed as intended: the second half drops 6 to 7 dB (-19.3/-20.3 to -27.4/-25.0 dB) and stays voiced (0.87 to 0.88). So the whisper is a tag reading on one short English line, not a voice that cannot do quiet.",
+          "Sneha against Kiran (kiran_t1 vs kiran_t2): Sneha is not higher (median 222 against 216 Hz, 0.5 semitone) and not softer (-22.7 against -22.3 dB). What does differ: kiran_t1 has five short hesitation pauses (0.15 to 0.28 s) and a narrower range (7.0 against 10.3 semitones). By measure the switch rests on hesitation alone; whether it reads as one woman dropping an act needs the ear.",
+          "kiran_t4: 0.43 s pause after 'wrist?' before 'Rekha'. That is a sentence boundary, not clearly a hesitation. 'Rekha' transcribed 'Reika'/'Rika' twice: the aspirated kh may be soft. Ear check.",
+          "Indian English: not decidable from a transcript. 'Mausi' comes out 'Mossy' (an English-model spelling); 'doesn't', 'anymore' read normally."
+        ],
+        "production_direction": "No [low voice] for Kiran, and no quiet-family tag on any of her retakes (D-022); first takes keep the script text. Quiet lines go out with [calm] or as the bare line, with the level set in the mix. Her retakes follow D-022 rule 1: the script text with every quiet-family tag deleted, [calm] only if no tag is left, then the bare line. The locked alarm line's next take is '[calm] Mausi... the milk has split.', then the bare line 'Mausi... the milk has split.'; check voiced_ratio is 0.6 or more.",
+        "switch_if": "Switch to Rudrika (2kb0BzqPNMYVxWCj9dqt) only if the owner's ear finds the Sneha and Kiran takes sound like two actors or the same read, or the English drifts American or British. By measure (D-022 rule 4), a switch is tested only if Kiran's final take is still under 0.6 voiced after the [calm] and bare rungs on 3 or more voice-wanted lines, across at least 2 episodes, while at least half of the other Series 1 voices' quiet-free retakes pass. If that is met, S10 runs Rudrika's four casting lines (about 300 credits, with kiran_t3 as '[calm] Mausi... the milk has split.') and the Chhoti and Mausi pair checks, and the result goes back to the Arbiter before anything is re-voiced. A whispered [low voice] take is no longer a trigger.",
+        "d022": {
+          "rule": "D-022",
+          "production_direction_before": "Do not tag Kiran's must-be-heard English lines [quietly]. For the locked alarm line use '[low voice] Mausi... the milk has split.' or no tag with the level set in the mix. Retake kiran_t3 that way when the episode is voiced and check voiced_ratio is 0.6 or more.",
+          "switch_if_before": "Switch to Rudrika only if the ear finds the Sneha and Kiran takes sound like two actors or the same read, or the English drifts American or British, or a [low voice] retake of kiran_t3 also comes out whispered."
+        }
+      }
+    },
+    {
+      "id": "aditya",
+      "voice_id": "zCXXiWzuZO7d9fERssmF",
+      "voice_name": "Amit Wadhwa - Friendly and Conversational Voice",
+      "why": "Listing: a bilingual English and Hindi voice-over artist with a 'calm, friendly and conversational tone'. Of all the male listings read, it gives the clearest promise that one voice reads both cuts, and Aditya's careful English is half his register in each language. Preview measured median about 126 Hz (110 to 176 Hz, about 8 semitones), in light-baritone range. Its 11-second preview gives the most reliable reading of any male shortlist voice. A calm, courteous base suits a man who 'reads out a prescription' and whose calm is the threat. Open risks for the listening test: it is an ad and e-learning voice and may come out polished or announcer-like rather than soft-spoken; the listing has no small-city colour; whether the voice catches on 'मोहित' without turning theatrical is untested.",
+      "backup_voice_id": "3GWSpjn7tfVISB5tun6E",
+      "backup_voice_name": "Arjun - Indian Hinglish",
+      "backup_why": "Listing: warm deep male, 'conversational, articulate', 'clear diction, measured pacing', 'natural Hindi-English conversation'. That matches the English nouns of his trade (dose, sedative, SIM) inside Hindi lines and his unhurried pace. Preview median about 168 Hz, but the clip is only 3.5 s, so the figure is shaky. It is the backup because it names Hinglish rather than English. Switch to it first if Amit Wadhwa reads as an ad voice or too bright on the menace lines.",
+      "shortlist": [
+        {
+          "voice_id": "zCXXiWzuZO7d9fERssmF",
+          "voice_name": "Amit Wadhwa - Friendly and Conversational Voice",
+          "preview_median_hz": 126,
+          "note": "first choice; bilingual English and Hindi listed"
+        },
+        {
+          "voice_id": "3GWSpjn7tfVISB5tun6E",
+          "voice_name": "Arjun - Indian Hinglish",
+          "preview_median_hz": 168,
+          "note": "backup; Hinglish listed, measured pacing; preview only 3.5 s"
+        },
+        {
+          "voice_id": "GBvFxuGF7PvGzs7tI9fJ",
+          "voice_name": "Vedish - Podcast & Interview Host",
+          "preview_median_hz": 193,
+          "note": "third; composed, stays easy when the talk turns heavy, but no English named and the widest pitch swing measured (15 semitones)"
+        }
+      ],
+      "test_lines": [
+        {
+          "line_id": "aditya_t1",
+          "lang": "hi",
+          "text": "[calm] Sedative कड़वा होता है। [quietly] इसीलिए केसर, है ना?",
+          "checks": "Even, courteous, unhurried, almost kind. 'Sedative' said like a pharmacist's word, not spelled out. The question lands soft. No villain colour."
+        },
+        {
+          "line_id": "aditya_t2",
+          "lang": "hi",
+          "text": "[quietly] मोहित ग्यारह दिन बाद पंखे से लटका मिला। [low voice] मुझे ये हाथ चाहिए।",
+          "checks": "The voice may catch on 'मोहित' and nowhere else. The second sentence drops in volume and slows; it never rises. Every word clear at the lower level."
+        },
+        {
+          "line_id": "aditya_t3",
+          "lang": "en",
+          "text": "[calm] [slowly] Pour in the whole sachet. Half doesn't put me to sleep.",
+          "checks": "Careful Indian English of a science graduate. No American or British drift. Unhurried; the threat is in the calm, not in the stress."
+        },
+        {
+          "line_id": "aditya_t4",
+          "lang": "en",
+          "text": "[low voice] I know which dose brings sleep, and which one you don't wake up from.",
+          "checks": "Low and level to the last word, fully voiced, not whispered. Same weight as the Hindi lines. Sounds clearly unlike the constable."
+        }
+      ],
+      "status": "cast",
+      "casting_review": {
+        "takes_reviewed": [
+          "aditya_t1",
+          "aditya_t2",
+          "aditya_t3",
+          "aditya_t4"
+        ],
+        "voice_id_tested": "zCXXiWzuZO7d9fERssmF",
+        "credits_spent": 292,
+        "verdict": "Keep Amit Wadhwa. Every measurable check passes; nothing points at the backup.",
+        "evidence": [
+          "Words: aditya_t1 'सेटिट्टिव कदवा होता है इसी लिए के सर है ना?', with the -l en pass giving 'Sedative is a bitter thing. That's why it's Kesar' (so 'Sedative' is spoken as a word). aditya_t2 'मोहित 11 दिन बाद पन्के से लट्का मिला मुझे ये हाथ चाही है' (all words). aditya_t3 and aditya_t4 match the script word for word.",
+          "Spoken tags: none.",
+          "Tag obedience: aditya_t1 [quietly] part 8.4 dB under the [calm] part (-18.6 to -27.0 dB). aditya_t2 drops step by step, -18.1, -24.6, -28.2 dB, with a 0.66 s pause before 'मुझे ये हाथ चाहिए', and pitch stays level (105 to 109 Hz, 2.5 semitones over the take): it never rises. aditya_t3 [slowly] 13.2 chars/s against 17.0 on aditya_t4. aditya_t4 [low voice] 2.4 dB under aditya_t3 and lower (107 against 125 Hz), voiced 0.61, so not whispered.",
+          "Watch: the last sentence of aditya_t2 is the breathiest stretch (voiced 0.45 at -28.2 dB) though its words transcribe. aditya_t4 starts 10 ms into the file; 'I' transcribes, so it is not clipped.",
+          "Pair with the constable: 107 against 157 Hz on aditya_t4 / constable_t4 (6.6 semitones), 125 against 188 Hz in English t3 (7.1), 114 against 145 Hz in Hindi (4.2). Clearly apart in pitch; both are dark (centroid 1,271 against 1,108 Hz).",
+          "Not measurable: the catch on 'मोहित', ad or announcer polish, Indian English accent."
+        ]
+      }
+    },
+    {
+      "id": "mausi",
+      "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+      "voice_name": "Savitri - Grounded and Nurturing",
+      "why": "Listing: 'a mature Indian female voice with a gentle Bihari inflection', 'warm, unhurried tone', 'rich, motherly quality', for 'regional storytelling' that calls for 'cultural texture'. Mature, motherly, unhurried and regional is the nearest any listing came to a 56-year-old Bundelkhand-side marriage broker. A Hindi-heartland inflection suits her better than standard broadcast Hindi, though Bihari is not Bundeli. Preview measured median about 200 Hz with a narrow spread (168 to 222 Hz, about 5 semitones), matching her rule that she never raises her voice. Its periodicity score (0.84) was rougher than the smoother motherly voices (0.92), a weak hint of grain. Open risks for the listening test: nothing promises a laugh or a paan-chewer's mouth; the listing says nothing about English; at about 3 semitones below Kiran's first choice, the two women must still be easy to tell apart with eyes closed.",
+      "backup_voice_id": "ZthnDvLLxYzM9qeFVSJe",
+      "backup_voice_name": "Kahani G – Motherly Calm Conversational Voice",
+      "backup_why": "Listing: 'warm, composed, and naturally nurturing', 'feels like a comforting mother's conversation'. That is exactly what the code lines have to sound like, and it is sold as conversational, not as narration. Preview median about 205 Hz with the darkest spectral centroid of the female voices sampled. It is the backup because it reads younger than 56 and is pitched at bedtime stories, so it may lack grain and edge. Switch to it first if Savitri sounds rustic to the point of comedy, will not laugh, or drifts on the English lines.",
+      "shortlist": [
+        {
+          "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+          "voice_name": "Savitri - Grounded and Nurturing",
+          "preview_median_hz": 200,
+          "note": "first choice; mature, motherly, regional"
+        },
+        {
+          "voice_id": "ZthnDvLLxYzM9qeFVSJe",
+          "voice_name": "Kahani G – Motherly Calm Conversational Voice",
+          "preview_median_hz": 205,
+          "note": "backup; motherly conversational, darkest timbre measured"
+        },
+        {
+          "voice_id": "wSMP2ehaozb5I36yi8vg",
+          "voice_name": "Dulari Didi – Gentle Old Aunty Character",
+          "preview_median_hz": 250,
+          "note": "third; the closest character listing ('household matriarch', family dramas), but its preview sits within 1 semitone of Kiran's first choice"
+        }
+      ],
+      "test_lines": [
+        {
+          "line_id": "mausi_t1",
+          "lang": "hi",
+          "text": "[warmly] खाना खाया तूने? [laughs] झूठ मत बोल। Bag की side वाली जेब में मठरी रखी है।",
+          "checks": "Warm, low, grainy, unhurried. A small real laugh, not a cackle. 'Bag' and 'side' natural in the Hindi line. 'मठरी' clear. Fully voiced."
+        },
+        {
+          "line_id": "mausi_t2",
+          "lang": "hi",
+          "text": "[warmly] अच्छा सुन... दामाद जी ने दूध पी लिया, बेटा?",
+          "checks": "The locked code question. It must sound like a mother's check-in on the phone, warm and fully voiced, never whispered (register.performance_flags). A real pause on the ellipsis. Easy to tell from Kiran."
+        },
+        {
+          "line_id": "mausi_t3",
+          "lang": "en",
+          "text": "[warmly] Listen... did Damaad ji drink his milk, beta?",
+          "checks": "Motherly Indian English, someone's aunt at a wedding. 'Damaad ji' and 'beta' said the Hindi way. No American or British drift. Fully voiced."
+        },
+        {
+          "line_id": "mausi_t4",
+          "lang": "en",
+          "text": "[gently] [slowly] You're my daughter. Nobody keeps accounts with a daughter.",
+          "checks": "Softer and slower than mausi_t3: her most dangerous lines are her gentlest. No villain colour, no whisper."
+        }
+      ],
+      "status": "cast_provisional",
+      "casting_review": {
+        "takes_reviewed": [
+          "mausi_t1",
+          "mausi_t2",
+          "mausi_t3",
+          "mausi_t4"
+        ],
+        "voice_id_tested": "q1RcEXDXpiVKpD9oeCVh",
+        "credits_spent": 265,
+        "verdict": "Keep Savitri for now. Words, tags and full voicing pass. The open problem is the pair with Kiran: in the takes Mausi sits 1 to 2.4 semitones above Kiran, the reverse of the previews, with near-equal brightness in Hindi. That is close, not proven indistinguishable, so it goes to the ear first.",
+        "evidence": [
+          "Words: mausi_t1 'खाना खाया तुने? जूट मत बोल बाख की साइट वाली जेब में मतरी रख़ी है' ('Bag' and 'side' heard; -l en pass 'in the bag's side pocket'). mausi_t2 'अचा सुन, दामाजीने दूट पीलिया, भीटा?'. mausi_t3 'Listen, did Damajji drink his milk, beta?'. mausi_t4 word for word. 'दामाद जी' is heard as 'दामाजी' in both languages: the final द runs into जी. Ear check, likely natural.",
+          "Spoken tags: none, including [laughs].",
+          "Fully voiced on the code question, as the bible requires: voiced 0.83 (mausi_t2) and 0.87 (mausi_t3); her lowest is 0.76. Ellipsis pauses are real: 0.43 s after 'सुन' (two short gaps) and 0.36 s after 'Listen'.",
+          "mausi_t4 [gently][slowly] is 2.7 dB softer than mausi_t3 and lower (195 against 235 Hz), with a 0.51 s pause between sentences. Slower is not shown by chars/s (16.0 against 15.1, different texts).",
+          "[laughs] in mausi_t1: no separate non-word segment between 'तूने?' and 'झूठ' (only a 0.39 s gap); whisper stretches 'बोल' to about 1 s. Whether a laugh happened cannot be told by measure.",
+          "Pitch: 235, 242, 235 and 195 Hz (preview was 200). For a 56-year-old 'warm, low, grainy' voice this is higher than planned, and [warmly] seems to lift her ([gently] gave 195).",
+          "Pair with Kiran: kiran_t1/mausi_t1 222 against 235 Hz (1.0 semitone), kiran_t2/mausi_t2 216 against 242 (2.0), kiran_t3/mausi_t3 211 against 235 (1.9, Kiran's figure weak because that take is whispered), kiran_t4/mausi_t3 205 against 235 (2.4). Centroid in Hindi: Kiran 2,190/2,056 Hz, Mausi 2,139/2,085 Hz.",
+          "Pair with Billu: billu_t3/mausi_t3 150 against 235 Hz (7.8 semitones), billu_t1/mausi_t1 174 against 235 (5.2). Clearly apart."
+        ],
+        "production_direction": "Try [gently] or no tag before [warmly] on her phone lines; in this test [warmly] went with the higher pitch.",
+        "switch_if": "If the ear cannot tell Kiran and Mausi apart with eyes closed (kiran_t2 against mausi_t2, kiran_t4 against mausi_t3), switch Mausi, not Kiran, to Kahani G (ZthnDvLLxYzM9qeFVSJe), because Mausi is the one off her brief in pitch. Re-test mausi_t1 to t4 (about 265 credits at this test's rate) and recheck both pairs. Note Kahani G is also Series 2's door2_woman backup."
+      }
+    },
+    {
+      "id": "billu",
+      "voice_id": "7b9mYhmnp0y2qSH1FnBL",
+      "voice_name": "Bunty - Funny Best Friend",
+      "why": "Listing: 'charm, wit, and best-friend energy', 'roast-style rants' and 'banter', 'a naturally desi tone and perfect comic timing'. That fits Billu's cocky, joking default when he thinks he is in charge. Preview measured median about 208 Hz (160 to 276 Hz), a light tenor about 8.7 semitones above Aditya's first choice and 2.7 above the constable's, so the three men sit well apart. Open risks for the listening test: it may play as a sitcom sidekick rather than a driver who slaps grooms; Billu's Bundelkhand street Hindi is not promised (the listing has no accent colour beyond 'desi'); its pitch sits near Mausi's (about 200 Hz), so a phone call between them must still sound like a young man and an older woman; this listing does not mention English.",
+      "backup_voice_id": "3RfQOFdEQ7vZM7w2xR57",
+      "backup_voice_name": "Sujit – Natural Social Media Influencer",
+      "backup_why": "Listing: 'authentic, raw and relatable', an 'unfiltered male tone with the stumbles, laughs and half-finished thoughts of a real conversation'. That suits fast lines round a toothpick and the branch B scenes where the jokes stop. Preview median about 186 Hz with the brightest male timbre measured, which may read as the 'little nasal' quality in the bible. It is the backup because it is less cocky on paper, and at 186 Hz it sits only about 0.8 semitone above the constable's first choice. Switch to it if Bunty sounds comic or cartoonish.",
+      "shortlist": [
+        {
+          "voice_id": "7b9mYhmnp0y2qSH1FnBL",
+          "voice_name": "Bunty - Funny Best Friend",
+          "preview_median_hz": 208,
+          "note": "first choice; banter, comic timing"
+        },
+        {
+          "voice_id": "3RfQOFdEQ7vZM7w2xR57",
+          "voice_name": "Sujit – Natural Social Media Influencer",
+          "preview_median_hz": 186,
+          "note": "backup; raw, unscripted, brightest male timbre"
+        },
+        {
+          "voice_id": "dNNR4hVwgRICgZyUZ51n",
+          "voice_name": "Amit Ratan",
+          "preview_median_hz": 168,
+          "note": "third; young rural Uttar Pradesh voice with an Awadhi label, the nearest listed thing to small-town Bundelkhand speech, but listed for folk tales with no English named, and the preview is only 3 s"
+        }
+      ],
+      "test_lines": [
+        {
+          "line_id": "billu_t1",
+          "lang": "hi",
+          "text": "[teasing] जीजाजी को मौसी से मिलना है? [laughs] मौसी किसी से नहीं मिलतीं।",
+          "checks": "Cocky, quick, light tenor, a short real laugh. Small-town street Hindi, not Mumbai tapori and not a cartoon. 'जीजाजी' natural."
+        },
+        {
+          "line_id": "billu_t2",
+          "lang": "hi",
+          "text": "[alarmed] [loud] Party ने अंदर से ताला मारा है, मौसी।",
+          "checks": "One loud surprised line, every word clear, no cracking or squeal. 'Party' is the trade's word and sounds natural. Ends turned to Mausi, waiting for her answer."
+        },
+        {
+          "line_id": "billu_t3",
+          "lang": "en",
+          "text": "[quick] Yes, Mausi. Light's on. Three o'clock, I'll have the car at the door.",
+          "checks": "Fast, obedient to Mausi. Quick Indian English of a small-town driver, no American street slang. Sounds plainly younger than the constable and unlike Aditya."
+        },
+        {
+          "line_id": "billu_t4",
+          "lang": "en",
+          "text": "[teasing] Jijaji wants to meet Mausi? [laughs] Mausi doesn't meet anyone.",
+          "checks": "Same cocky colour as billu_t1 in English. 'Jijaji' said the Hindi way. The laugh is a laugh, not the word."
+        }
+      ],
+      "status": "cast_provisional",
+      "casting_review": {
+        "takes_reviewed": [
+          "billu_t1",
+          "billu_t2",
+          "billu_t3",
+          "billu_t4"
+        ],
+        "voice_id_tested": "7b9mYhmnp0y2qSH1FnBL",
+        "credits_spent": 275,
+        "verdict": "Keep Bunty. Words, spoken tags, laugh placement and the loud and quick tags pass by measure. Provisional on one ear check: billu_t2 goes very high for a man.",
+        "evidence": [
+          "Words: billu_t1 'जीजा जी को मुसी से मिलना है। मुसी किसी से नहीं मिलती।' billu_t2 'पाटी ने अंदर से ताला मारा है! मुसी!' (-l en pass: 'The party has locked it from inside', so 'Party' is heard). billu_t3 'Yes, Mossy. Lights on. Three o'clock, I'll have the car at the door.' billu_t4 'Jeeja wants to meet Mossy? Mossy doesn't meet anyone.' (word pass: 'Jeeja Ji').",
+          "Spoken tags: none; 'laughs' is never transcribed as a word.",
+          "[laughs]: both takes have a short non-word stretch between the sentences that is quieter and less voiced than speech: billu_t1 2.58 to 3.07 s (-28.5 dB, voiced 0.59; whisper finds no word from 2.34 to 3.42 s), billu_t4 2.38 to 2.65 s (voiced 0.47). Consistent with a short laugh; the ear confirms.",
+          "[loud] billu_t2 is his loudest take (-19.2 dB against -23.3 on billu_t1). Every word transcribes and it ends on 'मौसी'. But pitch jumps to 281 Hz median (286 Hz in the first phrase) against 150 to 195 Hz on his other takes, about 8 to 11 semitones up, with the brightest centroid of his takes (2,275 Hz). That is where a squeal would be. Ear check.",
+          "[quick] billu_t3 20.7 chars/s, nearly twice billu_t4's 10.8.",
+          "Pairs: well apart from Mausi (5.2 to 7.8 semitones) and from Aditya. Close to the constable in English (billu_t3 150 against constable_t4 157 Hz, 0.8 semitone); they are not adjacent speakers in s1a02 or s1a03, so this is a note, not a fail. Measured Bunty is lower than his preview (208 Hz)."
+        ],
+        "switch_if": "Switch to Sujit (3RfQOFdEQ7vZM7w2xR57) only if billu_t2 squeals or cracks on the ear check and a retake with [alarmed] alone (dropping [loud]) does the same. Sujit's preview (186 Hz) sits near the constable's takes; recheck that pair if he comes in."
+      }
+    },
+    {
+      "id": "chhoti",
+      "voice_id": "2lLgWMtK52t50e2eLKAk",
+      "voice_name": "Geet - talkative girl next door",
+      "why": "Listing: young female, 'lively, bubbly, and naturally talkative', 'bright, expressive, playful', 'subtle giggles' and a 'naturally fast pace', for 'character dialogues'. That is Chhoti's voice note almost word for word: bright, quick, sing-song, a giggle in the breath. Preview measured median about 302 Hz (225 to 410 Hz), the highest of the cast: about 4 semitones above Kiran and 7 above Mausi, so the three women are easiest to tell apart by her. Open risks for the listening test: a top near 410 Hz may turn shrill or childish, and she is 19 and must not be played as a child (bible); whether the giggle can be dropped for the frightened small voice is untested; the listing says nothing about English.",
+      "backup_voice_id": "KawjuInLhxYsnVJlqveG",
+      "backup_voice_name": "Shreya G – Candid Hinglish Show Host",
+      "backup_why": "Listing: 'natural Hinglish flow', candid and warm, aimed at Gen Z. That is the best listed fit for Chhoti's phone English (selfie, reel, status, okay, bye) inside Hindi lines. Preview median about 286 Hz, still well above Kiran. It is the backup because it is a host voice, less playful on paper. Switch to it if Geet sounds childish or shrill, or garbles the English words.",
+      "shortlist": [
+        {
+          "voice_id": "2lLgWMtK52t50e2eLKAk",
+          "voice_name": "Geet - talkative girl next door",
+          "preview_median_hz": 302,
+          "note": "first choice; bubbly, giggles, fast"
+        },
+        {
+          "voice_id": "KawjuInLhxYsnVJlqveG",
+          "voice_name": "Shreya G – Candid Hinglish Show Host",
+          "preview_median_hz": 286,
+          "note": "backup; Hinglish listed, Gen Z"
+        },
+        {
+          "voice_id": "sMfpGFsaOYAHWEiUj9cx",
+          "voice_name": "SimranAg- sweet, energetic & versatile",
+          "preview_median_hz": 276,
+          "note": "third; playful RJ style, but listed as 'confident, mature', older than Chhoti"
+        }
+      ],
+      "test_lines": [
+        {
+          "line_id": "chhoti_t1",
+          "lang": "hi",
+          "text": "[cheerful] [giggles] मौसी, मेहँदी सूख गई। सो जाऊँ?",
+          "checks": "Bright, quick, sing-song, a giggle in the breath. Reads as 19, not as a child. Not shrill."
+        },
+        {
+          "line_id": "chhoti_t2",
+          "lang": "hi",
+          "text": "[nervous] [small voice] दीदी, बस एक रात की बात है ना?",
+          "checks": "The frightened register: very small, the giggle gone. Still intelligible. 'दीदी' tender, not whiny."
+        },
+        {
+          "line_id": "chhoti_t3",
+          "lang": "en",
+          "text": "[cheerful] [giggles] Mausi, the henna's dry. Can I sleep?",
+          "checks": "Light, eager Indian English. 'Mausi' said the Hindi way. No American teen colour."
+        },
+        {
+          "line_id": "chhoti_t4",
+          "lang": "en",
+          "text": "[nervous] [small voice] Didi, it's only one night, isn't it?",
+          "checks": "Same small, frightened voice as chhoti_t2. 'Didi' said the Hindi way."
+        }
+      ],
+      "test_gap": "The bible's sample lines for Chhoti have no Latin-script English word, so her phone English (selfie, reel, status, okay, bye) is not covered here. Check it on her first scripted line that has one.",
+      "status": "cast_provisional",
+      "casting_review": {
+        "takes_reviewed": [
+          "chhoti_t1",
+          "chhoti_t2",
+          "chhoti_t3",
+          "chhoti_t4"
+        ],
+        "voice_id_tested": "2lLgWMtK52t50e2eLKAk",
+        "credits_spent": 220,
+        "verdict": "Keep Geet. Words, spoken tags and the small-voice tags pass by measure. Provisional because 'reads 19, not a child, not shrill' and the giggle can only be judged by ear, and the cheerful takes reach about 444 Hz.",
+        "evidence": [
+          "Words: chhoti_t1 'मासी महेंदी सुग गई सोजा हूँ' (मौसी, मेहँदी, सूख, सो जाऊँ; small-model spellings). chhoti_t2 'दीदी बस एक राद की बाद है ना' (all words). chhoti_t3 'Maasi, the henna's dry. Can I sleep?' exact. chhoti_t4 'DB, it's only one night, isn't it?': 'Didi' heard as 'DB'. Ear check, likely the model's spelling.",
+          "Spoken tags: none; no 'giggles' word.",
+          "[giggles]: no separate segment. The first word is stretched in both takes (whisper puts 'मौसी' at 0.05 to 1.90 s in chhoti_t1 and 'Maasi' at 0.05 to 1.04 s in chhoti_t3), consistent with a giggle folded into it. Not provable by measure.",
+          "[nervous][small voice] obeyed: chhoti_t2 and chhoti_t4 are 4 to 6 dB under the cheerful takes (-25.6/-26.7 against -21.6/-21.1 dB), lower (258/250 against 308 Hz) and narrower (5.9/7.9 against 11.0/11.5 semitones), still voiced (0.76/0.73) and fully transcribed.",
+          "Height: cheerful takes median 308 Hz, 90th percentile 444 Hz. That is the range where 'childish or shrill' would live; it is not a verdict.",
+          "Pairs: Chhoti to Kiran 5.7 semitones (cheerful) and 3.1 (small voice). Small-voice Chhoti to Mausi is 1.1 semitones (chhoti_t2 258 against mausi_t2 242 Hz); her frightened lines go to Kiran, so this is a note."
+        ],
+        "switch_if": "Switch to Shreya G (KawjuInLhxYsnVJlqveG) if the ear hears a child or shrillness on chhoti_t1 or chhoti_t3. Note Geet is also Series 2's reporter backup."
+      }
+    },
+    {
+      "id": "constable",
+      "voice_id": "8y8JDNnECG7iMAVsnZGs",
+      "voice_name": "ajay singh",
+      "why": "Listing: middle-aged male, 'heavy serious'. Preview measured median about 178 Hz with one of the flattest spreads (167 to 212 Hz, about 4 semitones) and the darkest timbre of any voice sampled. That suits a tired clerk who says two or three words at a time and has written a thousand names. The pitch matters most: at the chowki he speaks beside Aditya, and he sits about 6 semitones above Aditya's first choice and 2.7 below Billu's. Open risks for the listening test: the listing is two words and the preview only 3 s; the very dark timbre may be a dull recording rather than the voice; one- and two-word lines are where v4 is least stable; nothing is said about English.",
+      "backup_voice_id": "8vyP2QFjbGt9Evswirba",
+      "backup_voice_name": "Ramniwas",
+      "backup_why": "Listing: middle-aged male, Haryanvi accent label, 'News reporter'. Its preview was the flattest male clip measured (about 3.4 semitones), which fits 'flat and tired'. A north Indian regional label suits a small police post. It is the backup because it sits only about 1.7 semitones above Aditya's first choice (139 against 126 Hz), so the chowki scene risks two similar men. Switch to it if ajay singh sounds muffled or menacing. If Aditya also moves to his backup (Arjun, about 168 Hz), recheck this pair by ear.",
+      "shortlist": [
+        {
+          "voice_id": "8y8JDNnECG7iMAVsnZGs",
+          "voice_name": "ajay singh",
+          "preview_median_hz": 178,
+          "note": "first choice; flat, dark, middle-aged"
+        },
+        {
+          "voice_id": "8vyP2QFjbGt9Evswirba",
+          "voice_name": "Ramniwas",
+          "preview_median_hz": 139,
+          "note": "backup; flattest male, Haryanvi, middle-aged; close in pitch to Aditya"
+        },
+        {
+          "voice_id": "iLpGCYkFnnGoa4bBSlqm",
+          "voice_name": "Nazir Qureshi Senior Matured voice",
+          "preview_median_hz": 122,
+          "note": "third; the oldest-sounding man in the listing (a theatre and radio veteran), but within 1 semitone of Aditya's first choice"
+        }
+      ],
+      "test_lines": [
+        {
+          "line_id": "constable_t1",
+          "lang": "hi",
+          "text": "[flatly] [tired] नाम?",
+          "checks": "Stable on a one-word line: no clipped start, no tag spoken aloud, no added syllables. Bored, not menacing."
+        },
+        {
+          "line_id": "constable_t2",
+          "lang": "hi",
+          "text": "[flatly] पूरा नाम।",
+          "checks": "Flat clerk's statement, falling at the end, not a question. Sounds unlike Aditya with eyes closed."
+        },
+        {
+          "line_id": "constable_t3",
+          "lang": "en",
+          "text": "[flatly] [tired] Name?",
+          "checks": "Flat Indian English. Stable on one word."
+        },
+        {
+          "line_id": "constable_t4",
+          "lang": "en",
+          "text": "[flatly] Full name.",
+          "checks": "Same flat weight as the Hindi. No American or British drift."
+        }
+      ],
+      "status": "cast_provisional",
+      "casting_review": {
+        "takes_reviewed": [
+          "constable_t1",
+          "constable_t2",
+          "constable_t3",
+          "constable_t4"
+        ],
+        "voice_id_tested": "8y8JDNnECG7iMAVsnZGs",
+        "credits_spent": 80,
+        "verdict": "Keep ajay singh. Pair with Aditya passes clearly and the two-word lines are stable. Provisional on constable_t1: the one-word 'नाम?' has two voiced parts with a 0.28 s gap, which may be an added sound (a sigh or 'हम्म' from [tired]), a reject_if item if so. Moving to Ramniwas would bring him closer to Aditya, so the fix is a simpler tag, not a new voice.",
+        "evidence": [
+          "Words: constable_t3 'Name?' and constable_t4 'Full name.' exact. Hindi: constable_t1 'आम' (auto: 'Mom?') and constable_t2 'बुरनां' (auto: 'Bura nam'). whisper small is weak on one-word Hindi; 'Bura nam' is close to 'पूरा नाम' with प heard as ब. Ear check for both.",
+          "Spoken tags: none.",
+          "constable_t1: speech 1.29 s for one word, in two parts: 0.18 to 0.59 s (-24.0 dB, voiced 0.71, 133 Hz) then a 0.28 s gap, then 0.87 to 1.47 s (-20.5 dB, 163 Hz). whisper sees one word across both. Either the word is split or something precedes it. constable_t3, the same tags in English, has one 0.58 s part, but a 0.55 s lead with spectral flatness 0.074 (his others 0.014 to 0.018), so [tired] may be adding a breath there too.",
+          "constable_t2 and constable_t4: one part each, 0.65 and 0.63 s, nothing added, onsets 0.16 and 0.18 s into the file, so not clipped.",
+          "Flat: ranges 6.2 to 7.9 semitones; medians 145 to 188 Hz. Darkest voice in the test (centroid 807 to 1,108 Hz on three takes).",
+          "Pair with Aditya: 4.2 to 7.1 semitones apart (see aditya)."
+        ],
+        "production_direction": "Give one-word constable lines [flatly] only; leave out [tired]. If an added sound remains, try eleven_v3 for him before any voice change (plan 7.8). Note ajay singh is also Series 2's door1_man backup.",
+        "switch_if": "Switch to Ramniwas (8vyP2QFjbGt9Evswirba) only if the one-word lines still add sounds after the tag change and v3. Recheck the Aditya pair, because Ramniwas's preview is about 139 Hz."
+      }
+    }
+  ],
+  "not_cast": [
+    {
+      "id": "the_boys",
+      "reason": "Silent in both languages (bible). Any grunt or breath is a sound effect, not a cast voice."
+    },
+    {
+      "id": "mohit",
+      "reason": "No voice in either language (bible). Seen only as a hand in the photograph."
+    }
+  ],
+  "pair_check": {
+    "method": "Median pitch of each public preview clip, in semitones apart (12 x log2 of the ratio). Indicative only; see casting_evidence.preview_measurement.",
+    "women_first_choices": "Chhoti 302 Hz, Kiran 239 Hz, Mausi 200 Hz. Chhoti to Kiran about 4.0 semitones, Kiran to Mausi about 3.1, Chhoti to Mausi about 7.1. Kiran and Mausi is the closest pair, and they share many scenes and the code call. It has to be judged by ear on kiran_t3 against mausi_t3.",
+    "men_first_choices": "Billu 208 Hz, constable 178 Hz, Aditya 126 Hz. Billu to constable about 2.7 semitones, constable to Aditya about 6.0, Billu to Aditya about 8.7.",
+    "across_sexes": "Billu (208 Hz) and Mausi (200 Hz) are within 1 semitone in median pitch. Male and female timbre should still separate them, but they talk on the phone a lot ('हाँ मौसी'), so judge billu_t3 against mausi_t3 by ear.",
+    "backup_risks": "Sujit (Billu backup, 186 Hz) against ajay singh (constable, 178 Hz) is under 1 semitone. Ramniwas (constable backup, 139 Hz) against Amit Wadhwa (Aditya, 126 Hz) is about 1.7 semitones. Dulari Didi (Mausi third, 250 Hz) against Yashvi G (Kiran, 239 Hz) is under 1 semitone. If a backup comes in, recheck its pair. Kiran's backup is now Rudrika (preview 276 Hz), nearer Chhoti's takes (308 Hz) than Mausi's; recheck both pairs if she comes in.",
+    "proof_scene_overlap": "None of the six first choices and six backups is used in either proof cast. Pyaari (Kiran third option) is the photoreal proof backup. Cross-series: Apsara removed from Series 1. Series 2 lists four Series 1 voices as its backups: ajay singh (door1_man), Kahani G (door2_woman), Arjun (defence_lawyer), Geet (reporter). If Series 2 ever switches to one of those, the voice would be heard in both series.",
+    "measured_on_takes": "Median pitch of the casting takes (content/series1/casting/review.json). Kiran/Mausi: 1.0 (t1), 2.0 (t2), 1.9 (t3, Kiran whispered) and 2.4 (kiran_t4 vs mausi_t3) semitones, Mausi the higher; the closest pair, to the ear first. Billu/Mausi: 7.8 (t3), 5.2 (t1), 3.2 (billu_t4 vs mausi_t3); apart. Aditya/constable: 6.6 (t4), 7.1 (t3), 4.2 (aditya_t1 vs constable_t2), 5.6 (aditya_t2 vs constable_t1); apart. Others: Billu/constable 0.8 in English (not adjacent speakers); Chhoti small voice/Mausi 1.1. Previews mispredicted takes by 2 to 3 semitones for Kiran and Mausi."
+  },
+  "casting_evidence": {
+    "browsed": "Hindi listing (languages [\"hi\"], page_size 30): two unfiltered pages (60 entries). Then filtered searches: female + middle_aged (two pages), female + old, female + husky / deep / raspy / mature / serious / confident / sassy, male + old. Then text searches: 'Hinglish', 'English', 'aunty', 'web series', 'dadi'. The female + old and male + old searches ran out of Hindi voices and returned other languages; those were ignored. The search 'aunty mother drama character' returned nothing.",
+    "english": "The listing has no field for a second language. English appears only in free-text descriptions. Of the twelve first choices and backups, these name English or Hinglish: Yashvi G (Hindi and English audiences), Apsara (Hinglish), Amit Wadhwa (bilingual English and Hindi), Arjun (Hindi-English), Shreya G (Hinglish). Mausi, Billu, Chhoti and the constable have no first choice that names English; no listing that did also fitted those roles. Some speakers have a separate voice_id labelled en-indian (several 'Bunty' entries), but the English cut must use the same voice_id, so those were not used.",
+    "preview_measurement": "38 public preview clips (one per voice) were downloaded to the session scratchpad and measured with a simple autocorrelation pitch tracker: median pitch, 10th to 90th percentile spread, a periodicity score as a rough smoothness proxy, and spectral centroid as a rough brightness proxy. The clips differ in text, length (3 to 14 s) and acting style, so the numbers are indicative only. Clips of 3 to 4 s (Arjun, ajay singh, Ramniwas, Amit Ratan, Nazir Qureshi) are the least reliable. The numbers were used to keep each pair apart and to rule out high or shouted voices. They say nothing about tag obedience, accent or English.",
+    "library_voices": "All twelve first choices and backups are listed as library voices (is_library_voice true), not voices already in the workspace. Whether creative_generate_speech accepts a library voice_id directly, or needs it added to a voice slot first (the plan records 160 slots on Pro), was not checked, because no speech was generated.",
+    "not_verified": "No take was heard or generated. Not verified: obedience to [laughs], [giggles], [whispers], [small voice], [flatly], [teasing] and the other tags on eleven_v4 for any of these voices; Indian English accent for any voice; the 'Sneha' to Kiran register switch inside one voice; Bundelkhand or Madhya Pradesh colour for anyone; whether Chhoti reads 19 and not younger; whether the constable's one-word lines are stable."
+  },
+  "listening_test": {
+    "how_to_run": [
+      "Create one flow for the series casting test with creative_create_flow and pass its flow_id to every call.",
+      "One creative_generate_speech call per test line: prompt = text exactly as written (tags included), model_id eleven_v4, voice_id = the character's voice_id, generations_count 1. Never re-call to retry a pending result.",
+      "Download each take at once and check duration with ffprobe. Record it in content/series1/voice/casting-test.jsonl with {line_id, lang, voice_id, model, text, generation_id, credits, file, duration_s, status}.",
+      "Judge each take on its checks, transcribe it to confirm the words (including the Latin-script words inside Hindi lines), then run the pair checks by ear: kiran_t3 against mausi_t3, billu_t3 against mausi_t3, aditya_t4 against constable_t4.",
+      "A character whose first choice fails a reject_if item is re-tested on the backup with the same lines. When all six pass, set status to \"cast\"."
+    ],
+    "estimated_cost": "24 lines, 1,395 characters including tags (Python len). At the measured ~1.25 credits a character (skill note), that is about 1,750 credits for one pass. A backup re-test of one character's four lines adds about 300.",
+    "reject_if": [
+      "A voice ignores its tags or speaks a tag aloud.",
+      "English lines come out American or British.",
+      "Kiran's 'Sneha' and Kiran lines sound like two different actors, or no different at all.",
+      "Mausi's code question (mausi_t2, mausi_t3) comes out whispered, cold or villainous.",
+      "Kiran and Mausi, or Billu and Mausi, are hard to tell apart with eyes closed.",
+      "Aditya raises his voice or sounds theatrical on aditya_t2, or he and the constable are hard to tell apart.",
+      "Chhoti sounds like a child or goes shrill.",
+      "The constable's one-word lines clip, stretch or add syllables."
+    ]
+  },
+  "casting_test": {
+    "manifest": "content/series1/casting/manifest.jsonl",
+    "review": "content/series1/casting/review.json",
+    "takes": 24,
+    "model": "eleven_v4",
+    "credits_spent": 1395,
+    "credit_rate_note": "1,395 credits for 1,395 characters including tags: about 1.0 credit a character on this test, not the skill's 1.25.",
+    "transcript_source": "local whisper.cpp (whisper-cli 'ggml-small.bin', no prompt, script not given). 'transcript' = forced to the take's language; 'transcript_autodetect' = -l auto; 'transcript_en_pass' (Hindi takes) = -l en, which mostly translates rather than transliterates, so it only shows whether Latin-script words were heard. Connector transcription not used (its text cannot be read back)."
+  },
+  "ear_check": [
+    {
+      "order": 1,
+      "takes": [
+        "casting/kiran/kiran_t3.en.mp3"
+      ],
+      "listen_for": "Whispered or quiet-but-voiced? Measures say whispered (voiced 0.23, flatness 0.091). The locked alarm line; Mausi must hear it on a call."
+    },
+    {
+      "order": 2,
+      "takes": [
+        "casting/kiran/kiran_t1.hi.mp3",
+        "casting/kiran/kiran_t2.hi.mp3"
+      ],
+      "listen_for": "Same woman dropping an act? Measures show hesitation pauses in t1 but no higher or softer 'Sneha' (0.5 semitone, 0.4 dB apart)."
+    },
+    {
+      "order": 3,
+      "takes": [
+        "casting/kiran/kiran_t2.hi.mp3",
+        "casting/mausi/mausi_t2.hi.mp3",
+        "casting/kiran/kiran_t4.en.mp3",
+        "casting/mausi/mausi_t3.en.mp3"
+      ],
+      "listen_for": "Kiran and Mausi apart with eyes closed? 1.0 to 2.4 semitones apart, Mausi the higher, similar brightness in Hindi. If not, Mausi goes to Kahani G."
+    },
+    {
+      "order": 4,
+      "takes": [
+        "casting/constable/constable_t1.hi.mp3"
+      ],
+      "listen_for": "An added sigh or syllable before or inside 'नाम?' (two voiced parts, 0.28 s gap). Also whether 'नाम' and 'पूरा नाम' (constable_t2) are said right."
+    },
+    {
+      "order": 5,
+      "takes": [
+        "casting/billu/billu_t2.hi.mp3"
+      ],
+      "listen_for": "Squeal or crack on the loud line (281 Hz median, about 8 to 11 semitones above his other takes)."
+    },
+    {
+      "order": 6,
+      "takes": [
+        "casting/chhoti/chhoti_t1.hi.mp3",
+        "casting/chhoti/chhoti_t3.en.mp3"
+      ],
+      "listen_for": "Reads 19, not a child; not shrill (top about 444 Hz); a giggle is actually there."
+    },
+    {
+      "order": 7,
+      "takes": [
+        "casting/mausi/mausi_t1.hi.mp3"
+      ],
+      "listen_for": "Is there a laugh? Warm and grainy, not rustic comedy? 'दामाद जी' also heard as 'दामाजी' in mausi_t2/t3."
+    },
+    {
+      "order": 8,
+      "takes": [
+        "casting/kiran/kiran_t4.en.mp3"
+      ],
+      "listen_for": "'Rekha' said the Hindi way (transcribed 'Reika'/'Rika'); is the 0.43 s beat before it a hesitation?"
+    },
+    {
+      "order": 9,
+      "takes": [
+        "casting/aditya/aditya_t2.hi.mp3",
+        "casting/aditya/aditya_t4.en.mp3",
+        "casting/constable/constable_t4.en.mp3"
+      ],
+      "listen_for": "Catch on 'मोहित' only; last sentence soft but not breathy; Aditya clearly unlike the constable (measured 6.6 semitones apart)."
+    },
+    {
+      "order": 10,
+      "takes": [
+        "casting/kiran/kiran_t4.en.mp3",
+        "casting/aditya/aditya_t3.en.mp3",
+        "casting/mausi/mausi_t3.en.mp3",
+        "casting/billu/billu_t3.en.mp3",
+        "casting/chhoti/chhoti_t3.en.mp3",
+        "casting/constable/constable_t4.en.mp3"
+      ],
+      "listen_for": "Indian English, no American or British drift, one take per character. A transcript cannot show accent."
+    }
+  ]
+}

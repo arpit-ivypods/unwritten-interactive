@@ -1,0 +1,164 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,040"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 40
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,040",
+				"to": "00:00:00,380"
+			},
+			"offsets": {
+				"from": 40,
+				"to": 380
+			},
+			"text": " Yes,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,380",
+				"to": "00:00:00,860"
+			},
+			"offsets": {
+				"from": 380,
+				"to": 860
+			},
+			"text": " Mosse."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,860",
+				"to": "00:00:01,340"
+			},
+			"offsets": {
+				"from": 860,
+				"to": 1340
+			},
+			"text": " I'm"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,340",
+				"to": "00:00:01,470"
+			},
+			"offsets": {
+				"from": 1340,
+				"to": 1470
+			},
+			"text": " in"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,470",
+				"to": "00:00:01,760"
+			},
+			"offsets": {
+				"from": 1470,
+				"to": 1760
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,760",
+				"to": "00:00:02,050"
+			},
+			"offsets": {
+				"from": 1760,
+				"to": 2050
+			},
+			"text": " car"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,050",
+				"to": "00:00:02,820"
+			},
+			"offsets": {
+				"from": 2050,
+				"to": 2820
+			},
+			"text": " below."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,820",
+				"to": "00:00:03,020"
+			},
+			"offsets": {
+				"from": 2820,
+				"to": 3020
+			},
+			"text": " Light"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,020",
+				"to": "00:00:03,160"
+			},
+			"offsets": {
+				"from": 3020,
+				"to": 3160
+			},
+			"text": " is"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,160",
+				"to": "00:00:03,520"
+			},
+			"offsets": {
+				"from": 3160,
+				"to": 3520
+			},
+			"text": " still"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,520",
+				"to": "00:00:03,740"
+			},
+			"offsets": {
+				"from": 3520,
+				"to": 3740
+			},
+			"text": " on."
+		}
+	]
+}

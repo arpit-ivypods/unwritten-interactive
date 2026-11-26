@@ -1,0 +1,142 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,020"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 20
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,020",
+				"to": "00:00:01,050"
+			},
+			"offsets": {
+				"from": 20,
+				"to": 1050
+			},
+			"text": " चालिस"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,050",
+				"to": "00:00:01,680"
+			},
+			"offsets": {
+				"from": 1050,
+				"to": 1680
+			},
+			"text": " लाक"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,680",
+				"to": "00:00:03,060"
+			},
+			"offsets": {
+				"from": 1680,
+				"to": 3060
+			},
+			"text": " इम्रान"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,060",
+				"to": "00:00:03,240"
+			},
+			"offsets": {
+				"from": 3060,
+				"to": 3240
+			},
+			"text": " और"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,240",
+				"to": "00:00:03,600"
+			},
+			"offsets": {
+				"from": 3240,
+				"to": 3600
+			},
+			"text": " उसे"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,600",
+				"to": "00:00:04,080"
+			},
+			"offsets": {
+				"from": 3600,
+				"to": 4080
+			},
+			"text": " दाूट"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,080",
+				"to": "00:00:04,370"
+			},
+			"offsets": {
+				"from": 4080,
+				"to": 4370
+			},
+			"text": " तक"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,370",
+				"to": "00:00:04,800"
+			},
+			"offsets": {
+				"from": 4370,
+				"to": 4800
+			},
+			"text": " नहीं"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,800",
+				"to": "00:00:05,220"
+			},
+			"offsets": {
+				"from": 4800,
+				"to": 5220
+			},
+			"text": " हूँ"
+		}
+	]
+}

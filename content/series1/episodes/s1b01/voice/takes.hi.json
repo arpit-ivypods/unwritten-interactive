@@ -1,0 +1,282 @@
+[
+  {
+    "line_id": "l01",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[quietly] मौसी... दूध फट गया।",
+    "target_seconds": 2.6,
+    "note": "Locked line, the first of the episode: one whole take, no cut-off (writer_notes; sfx_notes b1 ducks the bed under it). Opens inside the in-breath that ended s1e02. Into the phone on speaker, so Mausi must hear it; to Aditya it must sound like a daughter's small domestic report, not an alarm (D-003 direction 7). Younger with Mausi. A real pause on the ellipsis (D-014 splits the cue there), then 'दूध फट गया' steady and plain. Quiet but FULLY VOICED: reject a whisper (voiced_ratio below 0.6). Her Hindi [quietly] stayed voiced in casting (kiran_t2: second half 6 to 7 dB down, voiced 0.87); her English one did not. Takes: up to 3 (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper, or a clean-ending fault on a line the note marks as a hard cut (D-0M2); length is fixed in the edit. Fallbacks in order (tag changes keep the words, so subtitles stay valid): '[calm] मौसी... दूध फट गया।' (D-022 rule 1); then the bare line 'मौसी... दूध फट गया।' (D-022); then eleven_v3 with the script text; then accept the best take and log it (D-011); then a silent placeholder of target length, status placeholder, only if no take has the right words (plan 7.8). A voice change (Rudrika, 2kb0BzqPNMYVxWCj9dqt) is cast-wide, only under cast.json kiran.casting_review.switch_if."
+  },
+  {
+    "line_id": "l02",
+    "lang": "hi",
+    "speaker": "mausi",
+    "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+    "model": "eleven_v4",
+    "text": "[calm] घबराना मत, बेटा।",
+    "target_seconds": 1.8,
+    "note": "From the phone speaker, still coded: to Aditya it is only a mother's comfort (writer_notes b1). Warm, low, grainy, unhurried, fully voiced, never a whisper; the calm is the message, 'बेटा' soft at the end. Generate clean: the phone-speaker filter and the three call-ended beeps are added in the mix. Short turn (16 characters), flagged for extra takes (writer_notes, D-018); never pad the words. First Kiran-Mausi pair in the episode (cast.json ear_check 3): Mausi should read older, lower and grainier than Kiran's l01. Takes: up to 4 (D-011; short turn). Retake only for wrong words, a spoken tag, a lost or wrong whisper, or a clean-ending fault on a line the note marks as a hard cut (D-0M2); length is fixed in the edit. Fallbacks in order (tag changes keep the words, so subtitles stay valid): '[gently] घबराना मत, बेटा।'; the bare line 'घबराना मत, बेटा।'; eleven_v3 with the script text; then accept the best take and log it (D-011); a silent placeholder of target length, status placeholder, only if no take has the right words (plan 7.8). A voice change (Kahani G – Motherly Calm Conversational Voice, ZthnDvLLxYzM9qeFVSJe) is cast-wide, only under cast.json mausi.casting_review.switch_if; if the ear cannot tell Kiran and Mausi apart, it is Mausi who changes."
+  },
+  {
+    "line_id": "l03",
+    "lang": "hi",
+    "speaker": "aditya",
+    "voice_id": "zCXXiWzuZO7d9fERssmF",
+    "model": "eleven_v4",
+    "text": "[quietly] तुमने उससे क्या कहा?",
+    "target_seconds": 2.2,
+    "note": "Locked line. Boots rising on the stairs under it. He has just understood the unsplit milk: very still, level, dropping in volume rather than rising; a question he already knows the answer to. No villain colour, never a shout. His [quietly] is obeyed and stays voiced (casting aditya_t1: 8.4 dB under his [calm] part). Every word must transcribe. Takes: up to 3 (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper, or a clean-ending fault on a line the note marks as a hard cut (D-0M2); length is fixed in the edit. Fallbacks in order (tag changes keep the words, so subtitles stay valid): '[calm] तुमने उससे क्या कहा?'; then eleven_v3 with the script text; then accept the best take and log it (D-011); then a silent placeholder of target length, status placeholder, only if no take has the right words (plan 7.8) (D-022: the low-voice rung is deleted; it is never a retake rung). Aditya is 'cast' with no switch_if; a voice change (backup Arjun - Indian Hinglish, 3GWSpjn7tfVISB5tun6E) needs the owner's ear."
+  },
+  {
+    "line_id": "l04",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[calm] जो कहना था। अठारह लाख, और मेरा घर।",
+    "target_seconds": 3.8,
+    "note": "The 'Sneha' voice is gone: her own register, lower, flat, quick. The first sentence a shrug; a beat; then the price, plain. 'अठारह लाख' clear (the figure from s1e01 l15). Not defiant, not shrill. Takes: up to 3 (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper, or a clean-ending fault on a line the note marks as a hard cut (D-0M2); length is fixed in the edit. Fallbacks in order (tag changes keep the words, so subtitles stay valid): '[flatly] जो कहना था। अठारह लाख, और मेरा घर।'; the bare line 'जो कहना था। अठारह लाख, और मेरा घर।'; eleven_v3 with the script text; then accept the best take and log it (D-011); a silent placeholder of target length, status placeholder, only if no take has the right words (plan 7.8). A voice change (Rudrika, 2kb0BzqPNMYVxWCj9dqt) is cast-wide, only under cast.json kiran.casting_review.switch_if."
+  },
+  {
+    "line_id": "l05",
+    "lang": "hi",
+    "speaker": "aditya",
+    "voice_id": "zCXXiWzuZO7d9fERssmF",
+    "model": "eleven_v4",
+    "text": "[calm] रास्ता दिया था तुम्हें।",
+    "target_seconds": 2.6,
+    "note": "Even, almost kind, not a reproach: a fact. Slower than her, level to the last word. With l06 it is the last pair in the trim order (writer_notes), so it has no hard cut. Takes: up to 3 (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper, or a clean-ending fault on a line the note marks as a hard cut (D-0M2); length is fixed in the edit. Fallbacks in order (tag changes keep the words, so subtitles stay valid): the bare line 'रास्ता दिया था तुम्हें।'; then eleven_v3 with the script text; then accept the best take and log it (D-011); then a silent placeholder of target length, status placeholder, only if no take has the right words (plan 7.8) (D-022: the low-voice rung is deleted; it is never a retake rung). Aditya is 'cast' with no switch_if; a voice change (backup Arjun - Indian Hinglish, 3GWSpjn7tfVISB5tun6E) needs the owner's ear."
+  },
+  {
+    "line_id": "l06",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[sharply] मेरा रास्ता सीढ़ियाँ चढ़ रहा है।",
+    "target_seconds": 3.4,
+    "note": "His word 'रास्ता' thrown back, fast and hard, with the boots on the stairs as its proof. Sharp, not shrill and not loud: under pressure she gets more exact. 'सीढ़ियाँ' clear. Takes: up to 3 (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper, or a clean-ending fault on a line the note marks as a hard cut (D-0M2); length is fixed in the edit. Fallbacks in order (tag changes keep the words, so subtitles stay valid): '[flatly] मेरा रास्ता सीढ़ियाँ चढ़ रहा है।'; the bare line 'मेरा रास्ता सीढ़ियाँ चढ़ रहा है।'; eleven_v3 with the script text; then accept the best take and log it (D-011); a silent placeholder of target length, status placeholder, only if no take has the right words (plan 7.8). A voice change (Rudrika, 2kb0BzqPNMYVxWCj9dqt) is cast-wide, only under cast.json kiran.casting_review.switch_if."
+  },
+  {
+    "line_id": "l07",
+    "lang": "hi",
+    "speaker": "billu",
+    "voice_id": "7b9mYhmnp0y2qSH1FnBL",
+    "model": "eleven_v4",
+    "text": "[nervous] किरण! ठीक है तू?",
+    "target_seconds": 1.8,
+    "note": "Shouted through the shut door after the one fist bang: loud enough to carry, worried for her, not afraid. Light tenor, quick, round a toothpick; the name called, then the question. Generate at full voice; the muffle through the door is added in the mix (sfx_notes b4). Not a squeal: casting's loud line jumped to 281 Hz median (billu_t2, ear_check 5); a take far above his other takes is flagged for the ear, not rejected by itself. Short turn (16 characters), flagged for extra takes (writer_notes, D-018). Takes: up to 4 (D-011; short turn). Retake only for wrong words, a spoken tag, a lost or wrong whisper, or a clean-ending fault on a line the note marks as a hard cut (D-0M2); length is fixed in the edit. Fallbacks in order (tag changes keep the words, so subtitles stay valid): the bare line 'किरण! ठीक है तू?'; '[quick] किरण! ठीक है तू?'; eleven_v3 with the script text; then accept the best take and log it (D-011); a silent placeholder of target length, status placeholder, only if no take has the right words (plan 7.8). A voice change (Sujit, 3RfQOFdEQ7vZM7w2xR57) is cast-wide, only under cast.json billu.casting_review.switch_if."
+  },
+  {
+    "line_id": "l08",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[calm] ठीक हूँ। ताला अंदर से है, चाबी इसके गले में।",
+    "target_seconds": 4.6,
+    "note": "Palm flat on the door, to Billu through the wood: level and exact, loud enough to carry but not raised, giving him only the facts he needs. The picture cuts to Aditya's hand on the key on the last clause, so a small beat before 'चाबी' helps the cut (not a retake reason). Takes: up to 3 (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper, or a clean-ending fault on a line the note marks as a hard cut (D-0M2); length is fixed in the edit. Fallbacks in order (tag changes keep the words, so subtitles stay valid): '[flatly] ठीक हूँ। ताला अंदर से है, चाबी इसके गले में।'; the bare line 'ठीक हूँ। ताला अंदर से है, चाबी इसके गले में।'; eleven_v3 with the script text; then accept the best take and log it (D-011); a silent placeholder of target length, status placeholder, only if no take has the right words (plan 7.8). A voice change (Rudrika, 2kb0BzqPNMYVxWCj9dqt) is cast-wide, only under cast.json kiran.casting_review.switch_if."
+  },
+  {
+    "line_id": "l09",
+    "lang": "hi",
+    "speaker": "billu",
+    "voice_id": "7b9mYhmnp0y2qSH1FnBL",
+    "model": "eleven_v4",
+    "text": "[nervous] मौसी, party ने अंदर से ताला मारा है।",
+    "target_seconds": 3.8,
+    "note": "On the phone to Mausi, his back to the door: worried, quick and obedient, reporting up. 'party' is the trade's word for the groom: natural inside the Hindi, not stressed (casting billu_t2: 'Party' heard in the -l en pass). Not loud: his loud line is l12. Takes: up to 3 (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper, or a clean-ending fault on a line the note marks as a hard cut (D-0M2); length is fixed in the edit. Fallbacks in order (tag changes keep the words, so subtitles stay valid): '[quick] मौसी, party ने अंदर से ताला मारा है।'; the bare line 'मौसी, party ने अंदर से ताला मारा है।'; eleven_v3 with the script text; then accept the best take and log it (D-011); a silent placeholder of target length, status placeholder, only if no take has the right words (plan 7.8). A voice change (Sujit, 3RfQOFdEQ7vZM7w2xR57) is cast-wide, only under cast.json billu.casting_review.switch_if."
+  },
+  {
+    "line_id": "l10",
+    "lang": "hi",
+    "speaker": "mausi",
+    "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+    "model": "eleven_v4",
+    "text": "[calm] जो दुल्हन को ताले में रखे, वो party नहीं है।",
+    "target_seconds": 4.6,
+    "note": "On Billu's phone. Her first cold decision, said like a proverb: low, warm, grainy, unhurried, never raised. 'वो party नहीं है' settles it. Fully voiced, never a whisper (bible: on the phone she is clear). Generate clean; phone filter in the mix (sfx_notes b5). Takes: up to 3 (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper, or a clean-ending fault on a line the note marks as a hard cut (D-0M2); length is fixed in the edit. Fallbacks in order (tag changes keep the words, so subtitles stay valid): '[gently] जो दुल्हन को ताले में रखे, वो party नहीं है।'; the bare line 'जो दुल्हन को ताले में रखे, वो party नहीं है।'; eleven_v3 with the script text; then accept the best take and log it (D-011); a silent placeholder of target length, status placeholder, only if no take has the right words (plan 7.8). A voice change (Kahani G – Motherly Calm Conversational Voice, ZthnDvLLxYzM9qeFVSJe) is cast-wide, only under cast.json mausi.casting_review.switch_if; if the ear cannot tell Kiran and Mausi apart, it is Mausi who changes."
+  },
+  {
+    "line_id": "l11",
+    "lang": "hi",
+    "speaker": "mausi",
+    "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+    "model": "eleven_v4",
+    "text": "[calm] मेरा इंतज़ार कर। हाथ मत लगाना।",
+    "target_seconds": 3.2,
+    "note": "The order the b5a logic rests on: two short sentences, fully voiced on the phone (the writer moved it from [quietly] to [calm] for exactly this). Softer and slower than l10: the colder, the softer. 'हाथ मत लगाना' clear through the phone filter. Takes: up to 3 (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper, or a clean-ending fault on a line the note marks as a hard cut (D-0M2); length is fixed in the edit. Fallbacks in order (tag changes keep the words, so subtitles stay valid): '[gently] मेरा इंतज़ार कर। हाथ मत लगाना।'; the bare line 'मेरा इंतज़ार कर। हाथ मत लगाना।'; eleven_v3 with the script text; then accept the best take and log it (D-011); a silent placeholder of target length, status placeholder, only if no take has the right words (plan 7.8). A voice change (Kahani G – Motherly Calm Conversational Voice, ZthnDvLLxYzM9qeFVSJe) is cast-wide, only under cast.json mausi.casting_review.switch_if; if the ear cannot tell Kiran and Mausi apart, it is Mausi who changes."
+  },
+  {
+    "line_id": "l12",
+    "lang": "hi",
+    "speaker": "billu",
+    "voice_id": "7b9mYhmnp0y2qSH1FnBL",
+    "model": "eleven_v4",
+    "text": "[sharply] किरण! मौसी ख़ुद आ रही हैं। ढाई घंटे।",
+    "target_seconds": 3.8,
+    "note": "Phone lowered, mouth to the crack of the door: his one loud line (voice_pressure rule; sfx_notes b5: loud and close). Fast and hard, a beat on each sentence. 'ढाई घंटे' is a protected figure (writer_notes; b5a and the 4:10 overlay rest on it): reject a take where it does not transcribe. Squeal risk: casting's loud line went 8 to 11 semitones above his other takes (billu_t2); a very high take goes to the ear (cast.json ear_check 5) and is retaken with fallback 1 under billu.switch_if, not rejected on pitch alone. Takes: up to 3 (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper, or a clean-ending fault on a line the note marks as a hard cut (D-0M2); length is fixed in the edit. Fallbacks in order (tag changes keep the words, so subtitles stay valid): '[alarmed] किरण! मौसी ख़ुद आ रही हैं। ढाई घंटे।'; the bare line 'किरण! मौसी ख़ुद आ रही हैं। ढाई घंटे।'; eleven_v3 with the script text; then accept the best take and log it (D-011); a silent placeholder of target length, status placeholder, only if no take has the right words (plan 7.8). A voice change (Sujit, 3RfQOFdEQ7vZM7w2xR57) is cast-wide, only under cast.json billu.casting_review.switch_if."
+  },
+  {
+    "line_id": "l13",
+    "lang": "hi",
+    "speaker": "aditya",
+    "voice_id": "zCXXiWzuZO7d9fERssmF",
+    "model": "eleven_v4",
+    "text": "[calm] तुमने कहा था, कोई code नहीं। हाथ दिखाओ।",
+    "target_seconds": 4.2,
+    "note": "Protected line. Standing, a step towards her: the lie he caught (s1e02 b4), said evenly, then 'हाथ दिखाओ' slower and lower, the echo of his first line in s1e02. Never a shout: the threat is in the calm. 'code' plain inside the Hindi. Takes: up to 3 (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper, or a clean-ending fault on a line the note marks as a hard cut (D-0M2); length is fixed in the edit. Fallbacks in order (tag changes keep the words, so subtitles stay valid): the bare line 'तुमने कहा था, कोई code नहीं। हाथ दिखाओ।'; then eleven_v3 with the script text; then accept the best take and log it (D-011); then a silent placeholder of target length, status placeholder, only if no take has the right words (plan 7.8) (D-022: the low-voice rung is deleted; it is never a retake rung). Aditya is 'cast' with no switch_if; a voice change (backup Arjun - Indian Hinglish, 3GWSpjn7tfVISB5tun6E) needs the owner's ear."
+  },
+  {
+    "line_id": "l14",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[quietly] हाथ लगाया तो चिल्लाऊँगी। फिर ये दरवाज़ा नहीं बचेगा।",
+    "target_seconds": 5.4,
+    "note": "Protected line. On the floor with her back to the door: a threat said low and exact, not frightened, never shrill; the quieter, the more certain. The second sentence is the reason he stops: one scream and the gang comes through. 'चिल्लाऊँगी' clear. Quiet but FULLY VOICED: reject a whisper (voiced_ratio below 0.6). Her Hindi [quietly] stayed voiced in casting (kiran_t2: second half 6 to 7 dB down, voiced 0.87); her English one did not. Takes: up to 3 (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper, or a clean-ending fault on a line the note marks as a hard cut (D-0M2); length is fixed in the edit. Fallbacks in order (tag changes keep the words, so subtitles stay valid): '[calm] हाथ लगाया तो चिल्लाऊँगी। फिर ये दरवाज़ा नहीं बचेगा।' (D-022 rule 1); then the bare line 'हाथ लगाया तो चिल्लाऊँगी। फिर ये दरवाज़ा नहीं बचेगा।' (D-022); then eleven_v3 with the script text; then accept the best take and log it (D-011); then a silent placeholder of target length, status placeholder, only if no take has the right words (plan 7.8). A voice change (Rudrika, 2kb0BzqPNMYVxWCj9dqt) is cast-wide, only under cast.json kiran.casting_review.switch_if."
+  },
+  {
+    "line_id": "l15",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[sharply] Police को दिखाओगे क्या?",
+    "target_seconds": 2.4,
+    "note": "First of the three short turns (D-007 direction 6). A fast taunt at the phone in his hand, flat and quick, not loud. 'Police' natural inside the Hindi (casting kiran_t2 heard it). Takes: up to 3 (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper, or a clean-ending fault on a line the note marks as a hard cut (D-0M2); length is fixed in the edit. Fallbacks in order (tag changes keep the words, so subtitles stay valid): '[flatly] Police को दिखाओगे क्या?'; the bare line 'Police को दिखाओगे क्या?'; eleven_v3 with the script text; then accept the best take and log it (D-011); a silent placeholder of target length, status placeholder, only if no take has the right words (plan 7.8). A voice change (Rudrika, 2kb0BzqPNMYVxWCj9dqt) is cast-wide, only under cast.json kiran.casting_review.switch_if."
+  },
+  {
+    "line_id": "l16",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[calm] ताला तुमने लगाया है। नाम तुम्हारा नकली है।",
+    "target_seconds": 4.4,
+    "note": "Second turn: two facts laid down, stress on 'तुमने' and 'नकली'. Level and blunt. The padlock insert sits under the first sentence, so a beat between the sentences helps the cut (not a retake reason). Takes: up to 3 (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper, or a clean-ending fault on a line the note marks as a hard cut (D-0M2); length is fixed in the edit. Fallbacks in order (tag changes keep the words, so subtitles stay valid): '[flatly] ताला तुमने लगाया है। नाम तुम्हारा नकली है।'; the bare line 'ताला तुमने लगाया है। नाम तुम्हारा नकली है।'; eleven_v3 with the script text; then accept the best take and log it (D-011); a silent placeholder of target length, status placeholder, only if no take has the right words (plan 7.8). A voice change (Rudrika, 2kb0BzqPNMYVxWCj9dqt) is cast-wide, only under cast.json kiran.casting_review.switch_if."
+  },
+  {
+    "line_id": "l17",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[quietly] और मौसी बस अपनी बेटी लेने आ रही हैं।",
+    "target_seconds": 3.8,
+    "note": "Third turn, the clincher: lower, almost reasonable, how it would look to the police. Respectful plural 'आ रही हैं' for Mausi. Quiet but FULLY VOICED: reject a whisper (voiced_ratio below 0.6). Her Hindi [quietly] stayed voiced in casting (kiran_t2: second half 6 to 7 dB down, voiced 0.87); her English one did not. Takes: up to 3 (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper, or a clean-ending fault on a line the note marks as a hard cut (D-0M2); length is fixed in the edit. Fallbacks in order (tag changes keep the words, so subtitles stay valid): '[calm] और मौसी बस अपनी बेटी लेने आ रही हैं।' (D-022 rule 1); then the bare line 'और मौसी बस अपनी बेटी लेने आ रही हैं।' (D-022); then eleven_v3 with the script text; then accept the best take and log it (D-011); then a silent placeholder of target length, status placeholder, only if no take has the right words (plan 7.8). A voice change (Rudrika, 2kb0BzqPNMYVxWCj9dqt) is cast-wide, only under cast.json kiran.casting_review.switch_if."
+  },
+  {
+    "line_id": "l18",
+    "lang": "hi",
+    "speaker": "aditya",
+    "voice_id": "zCXXiWzuZO7d9fERssmF",
+    "model": "eleven_v4",
+    "text": "[calm] चौदह महीने ढूँढा। अब वो ख़ुद आ रही है।",
+    "target_seconds": 4.0,
+    "note": "His reason to stay, said once: 'चौदह महीने' weighted, then 'अब वो ख़ुद आ रही है' slower, almost to himself, level, no gloat. The phone goes face down at the end of the line. Takes: up to 3 (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper, or a clean-ending fault on a line the note marks as a hard cut (D-0M2); length is fixed in the edit. Fallbacks in order (tag changes keep the words, so subtitles stay valid): the bare line 'चौदह महीने ढूँढा। अब वो ख़ुद आ रही है।'; then eleven_v3 with the script text; then accept the best take and log it (D-011); then a silent placeholder of target length, status placeholder, only if no take has the right words (plan 7.8) (D-022: the low-voice rung is deleted; it is never a retake rung). Aditya is 'cast' with no switch_if; a voice change (backup Arjun - Indian Hinglish, 3GWSpjn7tfVISB5tun6E) needs the owner's ear."
+  },
+  {
+    "line_id": "l19",
+    "lang": "hi",
+    "speaker": "mausi",
+    "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+    "model": "eleven_v4",
+    "text": "[calm] दरवाज़ा खोलिए, दामाद जी।",
+    "target_seconds": 2.6,
+    "note": "Locked line and the episode title. Glimpse B ends on it, so the take must end clean, with no trailing breath or added sound. Through the broken door, after the crack: courteous, warm, fully voiced, never raised, never a whisper; the politeness is the menace. 'दामाद जी' may run together as 'दामाजी' (casting mausi_t2): ear check, not a reject. Generate clean; the door is added in the mix. Takes: up to 3 (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper, or a clean-ending fault on a line the note marks as a hard cut (D-0M2); length is fixed in the edit. Fallbacks in order (tag changes keep the words, so subtitles stay valid): '[gently] दरवाज़ा खोलिए, दामाद जी।'; the bare line 'दरवाज़ा खोलिए, दामाद जी।'; eleven_v3 with the script text; then accept the best take and log it (D-011); a silent placeholder of target length, status placeholder, only if no take has the right words (plan 7.8). A voice change (Kahani G – Motherly Calm Conversational Voice, ZthnDvLLxYzM9qeFVSJe) is cast-wide, only under cast.json mausi.casting_review.switch_if; if the ear cannot tell Kiran and Mausi apart, it is Mausi who changes."
+  },
+  {
+    "line_id": "l20",
+    "lang": "hi",
+    "speaker": "mausi",
+    "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+    "model": "eleven_v4",
+    "text": "[calm] इधर देख, बेटा। हाथ लगाया इसने?",
+    "target_seconds": 3.2,
+    "note": "Her first words face to face. To Kiran, close, turning her face to the light: tender and practical, a mother checking a child, low and warm. 'इसने' with the smallest edge, towards Aditya. Pair check: in this two-shot Kiran and Mausi must be told apart with eyes closed (cast.json ear_check 3); if the ear cannot, it is Mausi's voice that changes (mausi.switch_if). Takes: up to 3 (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper, or a clean-ending fault on a line the note marks as a hard cut (D-0M2); length is fixed in the edit. Fallbacks in order (tag changes keep the words, so subtitles stay valid): '[gently] इधर देख, बेटा। हाथ लगाया इसने?'; the bare line 'इधर देख, बेटा। हाथ लगाया इसने?'; eleven_v3 with the script text; then accept the best take and log it (D-011); a silent placeholder of target length, status placeholder, only if no take has the right words (plan 7.8). A voice change (Kahani G – Motherly Calm Conversational Voice, ZthnDvLLxYzM9qeFVSJe) is cast-wide, only under cast.json mausi.casting_review.switch_if; if the ear cannot tell Kiran and Mausi apart, it is Mausi who changes."
+  },
+  {
+    "line_id": "l21",
+    "lang": "hi",
+    "speaker": "mausi",
+    "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+    "model": "eleven_v4",
+    "text": "[calm] नमस्ते, दामाद जी। दरवाज़े का बुरा मत मानिए।",
+    "target_seconds": 4.4,
+    "note": "Turned to Aditya, palms joined: a hostess's courtesy, warm, with a smile in it. Two sentences on two set-ups (b9 set-ups 3 and 4), so a clear beat between them. The second sentence is in the trim order (writer_notes) and must stand alone; generate the whole line. Takes: up to 3 (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper, or a clean-ending fault on a line the note marks as a hard cut (D-0M2); length is fixed in the edit. Fallbacks in order (tag changes keep the words, so subtitles stay valid): '[gently] नमस्ते, दामाद जी। दरवाज़े का बुरा मत मानिए।'; the bare line 'नमस्ते, दामाद जी। दरवाज़े का बुरा मत मानिए।'; eleven_v3 with the script text; then accept the best take and log it (D-011); a silent placeholder of target length, status placeholder, only if no take has the right words (plan 7.8). A voice change (Kahani G – Motherly Calm Conversational Voice, ZthnDvLLxYzM9qeFVSJe) is cast-wide, only under cast.json mausi.casting_review.switch_if; if the ear cannot tell Kiran and Mausi apart, it is Mausi who changes."
+  },
+  {
+    "line_id": "l22",
+    "lang": "hi",
+    "speaker": "mausi",
+    "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+    "model": "eleven_v4",
+    "text": "[calm] मोहित का भाई। हाँ, ख़बर आई थी। लड़का कमज़ोर निकला।",
+    "target_seconds": 6.0,
+    "note": "Protected line, the near miss. Three sentences on three set-ups (b10 set-ups 4 to 6): eyes lifting from the photograph; 'हाँ, ख़बर आई थी' as her look lands on Kiran's forearm; then the verdict on Mohit, softer and slower, flat, no pity. She recognises the hand and says nothing: no knowing stress anywhere. Real beats between the sentences (300 ms or more lets D-014 split the cues to the set-ups). Timed slow on purpose (writer_notes). Takes: up to 3 (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper, or a clean-ending fault on a line the note marks as a hard cut (D-0M2); length is fixed in the edit. Fallbacks in order (tag changes keep the words, so subtitles stay valid): '[gently] मोहित का भाई। हाँ, ख़बर आई थी। लड़का कमज़ोर निकला।'; the bare line 'मोहित का भाई। हाँ, ख़बर आई थी। लड़का कमज़ोर निकला।'; eleven_v3 with the script text; then accept the best take and log it (D-011); a silent placeholder of target length, status placeholder, only if no take has the right words (plan 7.8). A voice change (Kahani G – Motherly Calm Conversational Voice, ZthnDvLLxYzM9qeFVSJe) is cast-wide, only under cast.json mausi.casting_review.switch_if; if the ear cannot tell Kiran and Mausi apart, it is Mausi who changes."
+  },
+  {
+    "line_id": "l23",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[hesitant] आपको पता था?",
+    "target_seconds": 1.6,
+    "note": "Protected line. The one crack in her: small, younger, आप to Mausi, the question she half does not want answered. Not an accusation. A 0.8 s hold follows with no answer. Short turn (12 characters), flagged for extra takes (writer_notes, D-018). [hesitant] is a verify-in-casting tag; in casting kiran_t1 ([softly] [hesitant]) gave hesitation pauses and no spoken tag. A plain-sounding read is an ear note, not a retake (D-0M2). The writer's fallback is [quietly], which Kiran's Hindi obeys. Takes: up to 4 (D-011; short turn). Retake only for wrong words, a spoken tag, a lost or wrong whisper, or a clean-ending fault on a line the note marks as a hard cut (D-0M2); length is fixed in the edit. Fallbacks in order (tag changes keep the words, so subtitles stay valid): '[quietly] आपको पता था?'; the bare line 'आपको पता था?'; eleven_v3 with the script text; then accept the best take and log it (D-011); a silent placeholder of target length, status placeholder, only if no take has the right words (plan 7.8). A voice change (Rudrika, 2kb0BzqPNMYVxWCj9dqt) is cast-wide, only under cast.json kiran.casting_review.switch_if."
+  },
+  {
+    "line_id": "l24",
+    "lang": "hi",
+    "speaker": "mausi",
+    "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+    "model": "eleven_v4",
+    "text": "[calm] ये डरने वाला नहीं है, बेटा।",
+    "target_seconds": 2.8,
+    "note": "Practical, closing the notebook on the photograph: an assessment, said to Kiran, warm in tone and cold in content. In the trim order (writer_notes); generate whole. Takes: up to 3 (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper, or a clean-ending fault on a line the note marks as a hard cut (D-0M2); length is fixed in the edit. Fallbacks in order (tag changes keep the words, so subtitles stay valid): '[gently] ये डरने वाला नहीं है, बेटा।'; the bare line 'ये डरने वाला नहीं है, बेटा।'; eleven_v3 with the script text; then accept the best take and log it (D-011); a silent placeholder of target length, status placeholder, only if no take has the right words (plan 7.8). A voice change (Kahani G – Motherly Calm Conversational Voice, ZthnDvLLxYzM9qeFVSJe) is cast-wide, only under cast.json mausi.casting_review.switch_if; if the ear cannot tell Kiran and Mausi apart, it is Mausi who changes."
+  },
+  {
+    "line_id": "l25",
+    "lang": "hi",
+    "speaker": "mausi",
+    "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+    "model": "eleven_v4",
+    "text": "[chuckles] चौदह महीने से हिसाब रख रहा है।",
+    "target_seconds": 3.2,
+    "note": "A small, real, grudging chuckle (the critic asked to keep it): she respects a man who keeps accounts. The chuckle sits before or into the line, not a laugh-out; then fully voiced. Reject if 'chuckles' is spoken. First line in the trim order (writer_notes); generate whole. Her [chuckles] line in s1e01 (l09) came back with no failure logged in that manifest; no review of it was read here. Takes: up to 3 (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper, or a clean-ending fault on a line the note marks as a hard cut (D-0M2); length is fixed in the edit. Fallbacks in order (tag changes keep the words, so subtitles stay valid): '[laughs] चौदह महीने से हिसाब रख रहा है।'; the bare line 'चौदह महीने से हिसाब रख रहा है।'; eleven_v3 with the script text; then accept the best take and log it (D-011); a silent placeholder of target length, status placeholder, only if no take has the right words (plan 7.8). A voice change (Kahani G – Motherly Calm Conversational Voice, ZthnDvLLxYzM9qeFVSJe) is cast-wide, only under cast.json mausi.casting_review.switch_if; if the ear cannot tell Kiran and Mausi apart, it is Mausi who changes."
+  },
+  {
+    "line_id": "l26",
+    "lang": "hi",
+    "speaker": "mausi",
+    "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+    "model": "eleven_v4",
+    "text": "[calm] दुल्हन भाग गई, दूल्हा सुबह उठा ही नहीं।",
+    "target_seconds": 4.2,
+    "note": "To Aditya, the old story told back to him as a plan: plain, almost a lullaby, 'सुबह उठा ही नहीं' softer and slower (it ties to s1e02 l19). No villain colour; the colder, the softer. Takes: up to 3 (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper, or a clean-ending fault on a line the note marks as a hard cut (D-0M2); length is fixed in the edit. Fallbacks in order (tag changes keep the words, so subtitles stay valid): '[gently] दुल्हन भाग गई, दूल्हा सुबह उठा ही नहीं।'; the bare line 'दुल्हन भाग गई, दूल्हा सुबह उठा ही नहीं।'; eleven_v3 with the script text; then accept the best take and log it (D-011); a silent placeholder of target length, status placeholder, only if no take has the right words (plan 7.8). A voice change (Kahani G – Motherly Calm Conversational Voice, ZthnDvLLxYzM9qeFVSJe) is cast-wide, only under cast.json mausi.casting_review.switch_if; if the ear cannot tell Kiran and Mausi apart, it is Mausi who changes."
+  },
+  {
+    "line_id": "l27",
+    "lang": "hi",
+    "speaker": "mausi",
+    "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+    "model": "eleven_v4",
+    "text": "[quietly] एक भाई शर्म से गया। दूसरे का कौन पूछेगा?",
+    "target_seconds": 4.8,
+    "note": "Protected line, played on Kiran's face. Her coldest decision, so her softest and slowest; the question is rhetorical and falls. Low but fully voiced, never a whisper (bible). The writer's swap if [quietly] is ignored is [calm] read slower. A take not measurably lower than her [calm] lines is not by itself a retake (D-0M2): the level can be set in the mix. Takes: up to 3 (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper, or a clean-ending fault on a line the note marks as a hard cut (D-0M2); length is fixed in the edit. Fallbacks in order (tag changes keep the words, so subtitles stay valid): '[calm] एक भाई शर्म से गया। दूसरे का कौन पूछेगा?' (D-022 rule 1); then the bare line 'एक भाई शर्म से गया। दूसरे का कौन पूछेगा?' (D-022); then eleven_v3 with the script text; then accept the best take and log it (D-011); then a silent placeholder of target length, status placeholder, only if no take has the right words (plan 7.8). A voice change (Kahani G – Motherly Calm Conversational Voice, ZthnDvLLxYzM9qeFVSJe) is cast-wide, only under cast.json mausi.casting_review.switch_if; if the ear cannot tell Kiran and Mausi apart, it is Mausi who changes."
+  },
+  {
+    "line_id": "l28",
+    "lang": "hi",
+    "speaker": "mausi",
+    "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+    "model": "eleven_v4",
+    "text": "[calm] इस बार पूरी पुड़िया, बेटा। अपने हाथ से।",
+    "target_seconds": 5.0,
+    "note": "Protected line, the cliffhanger. In the room, fully voiced, [calm], not a whisper (writer_notes); the bed ducks under it. Pressing the folds into Kiran's palm: warm, gentle, maternal, which is the horror. Two set-ups (b11 set-ups 4 and 5): a beat after 'बेटा', then 'अपने हाथ से' slow and placed. The episode cuts on the last word, so the take must end clean on 'से', with no trailing breath or added sound. 'पुड़िया' clear (the series' one word for the fold). Takes: up to 3 (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper, or a clean-ending fault on a line the note marks as a hard cut (D-0M2); length is fixed in the edit. Fallbacks in order (tag changes keep the words, so subtitles stay valid): '[gently] इस बार पूरी पुड़िया, बेटा। अपने हाथ से।'; the bare line 'इस बार पूरी पुड़िया, बेटा। अपने हाथ से।'; eleven_v3 with the script text; then accept the best take and log it (D-011); a silent placeholder of target length, status placeholder, only if no take has the right words (plan 7.8). A voice change (Kahani G – Motherly Calm Conversational Voice, ZthnDvLLxYzM9qeFVSJe) is cast-wide, only under cast.json mausi.casting_review.switch_if; if the ear cannot tell Kiran and Mausi apart, it is Mausi who changes."
+  }
+]

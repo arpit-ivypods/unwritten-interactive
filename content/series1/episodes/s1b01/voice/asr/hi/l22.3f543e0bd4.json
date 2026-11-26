@@ -1,0 +1,186 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,080"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 80
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,080",
+				"to": "00:00:00,240"
+			},
+			"offsets": {
+				"from": 80,
+				"to": 240
+			},
+			"text": " तो"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,240",
+				"to": "00:00:00,470"
+			},
+			"offsets": {
+				"from": 240,
+				"to": 470
+			},
+			"text": " ये"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,470",
+				"to": "00:00:01,080"
+			},
+			"offsets": {
+				"from": 470,
+				"to": 1080
+			},
+			"text": " मुहिद"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,080",
+				"to": "00:00:01,380"
+			},
+			"offsets": {
+				"from": 1080,
+				"to": 1380
+			},
+			"text": " का"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,380",
+				"to": "00:00:01,800"
+			},
+			"offsets": {
+				"from": 1380,
+				"to": 1800
+			},
+			"text": " बहाई"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,800",
+				"to": "00:00:02,080"
+			},
+			"offsets": {
+				"from": 1800,
+				"to": 2080
+			},
+			"text": " है"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,520",
+				"to": "00:00:03,060"
+			},
+			"offsets": {
+				"from": 2520,
+				"to": 3060
+			},
+			"text": " हाँ,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,060",
+				"to": "00:00:03,380"
+			},
+			"offsets": {
+				"from": 3060,
+				"to": 3380
+			},
+			"text": " खबर"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,380",
+				"to": "00:00:03,580"
+			},
+			"offsets": {
+				"from": 3380,
+				"to": 3580
+			},
+			"text": " आई"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,580",
+				"to": "00:00:03,880"
+			},
+			"offsets": {
+				"from": 3580,
+				"to": 3880
+			},
+			"text": " थी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,280",
+				"to": "00:00:04,400"
+			},
+			"offsets": {
+				"from": 4280,
+				"to": 4400
+			},
+			"text": " लड़का"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,400",
+				"to": "00:00:04,840"
+			},
+			"offsets": {
+				"from": 4400,
+				"to": 4840
+			},
+			"text": " कमजोर"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,840",
+				"to": "00:00:05,400"
+			},
+			"offsets": {
+				"from": 4840,
+				"to": 5400
+			},
+			"text": " निकला"
+		}
+	]
+}

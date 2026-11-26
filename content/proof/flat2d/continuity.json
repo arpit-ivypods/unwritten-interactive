@@ -1,0 +1,536 @@
+{
+  "id": "proof-flat2d",
+  "scene": "Laddoo (flat 2D proof scene)",
+  "owner": "S4 Continuity keeper",
+  "sources": [
+    "script.hi.json",
+    "script.en.json",
+    "style.json",
+    "shots.json"
+  ],
+  "branch": "none (single proof scene, no branches)",
+  "screen_geography": {
+    "axis_convention": "+x is picture-right when looking from the doorway at the locker (the malkhana_locker_wall master view). In the reverse view (from the locker looking at the doorway) +x is picture-left.",
+    "room": "Malkhana of the fictional Jalebiganj thana, about 3 m wide, windowless. Locker centred on the back wall; single doorway centred in the opposite wall.",
+    "fixed_positions": {
+      "locker": "back wall, centre. Door hinged on its +x side, standing wide open towards +x. Four bare steel shelves.",
+      "brass_padlock": "hangs open on a steel staple on the -x edge of the locker frame, chest height",
+      "steel_rack_of_tagged_bundles": "-x of the locker (the chai glass is set down here in b03)",
+      "tin_trunks": "+x of the locker",
+      "desk_with_ledger_and_phone": "against the +x side wall, between the locker and the doorway",
+      "bench_with_jute_sacks": "against the -x side wall",
+      "corridor_bulb": "beyond the doorway; source of the warm tungsten light"
+    },
+    "character_sides": "From b03 to b06 Meenu stands on the -x side (padlock side) and Bablu on the +x side (trunk and desk side). In the reverse view this puts Bablu and his torch on picture-left; in the master view on picture-right. s02, s03, s05, s06 and s07 all follow this. s04 does not (see shot_check.problems)."
+  },
+  "time": {
+    "time_of_day": "Night, about 2 a.m. (stated in s02 prompt and the logline).",
+    "scene_runs_in_real_time": true,
+    "deadline_set_in_scene": "DSP inspection at 9 a.m. the same morning, about seven hours away (l07)."
+  },
+  "characters": [
+    {
+      "id": "meenu",
+      "name": "Sub-Inspector Meenakshi 'Meenu' Rawat",
+      "lead": true,
+      "wardrobe": "style.json characters[meenu].wardrobe_lock, verbatim, unchanged for the whole scene: khaki shirt, sleeves rolled to just below the elbow, teal epaulettes with two white bars, lantern sleeve patches, khaki trousers, black belt, black shoes, steel-strap watch with blank white dial on her LEFT wrist. No cap, no name tag, no jewellery.",
+      "fixed_marks": "small mole under her RIGHT eye; one loose strand of hair over her LEFT temple; tight low bun",
+      "injuries": "none",
+      "props_carried_at_start": [
+        "cutting-chai glass, half full, in her RIGHT hand",
+        "key ring with exactly one long brass key, in her trouser pocket (not visible)"
+      ]
+    },
+    {
+      "id": "bablu",
+      "name": "Constable Bablu Tiwari",
+      "lead": false,
+      "wardrobe": "style.json characters[bablu].wardrobe_lock, verbatim, unchanged for the whole scene: khaki shirt with sleeves buttoned at the wrist, plain teal epaulettes, lantern sleeve patches, maroon sleeveless V-neck sweater-vest, grey muffler with one end on his chest, khaki trousers. No cap, no glasses.",
+      "fixed_marks": "salt-and-pepper handlebar moustache with upturned tips, receding hairline, pot belly; about 155 cm (top of head reaches Meenu's chin)",
+      "injuries": "none (a single drop of sweat on his temple in s01 is a look, not a mark that has to carry over)",
+      "props_carried_at_start": [
+        "chunky yellow plastic torch, switched ON, in his RIGHT hand (always)"
+      ]
+    }
+  ],
+  "props": [
+    {
+      "id": "yellow_torch",
+      "owner": "bablu",
+      "state": "On from the first frame (torch click in b01). Always in Bablu's right hand. Aimed: into the locker (b01), at Meenu (b02), at the laddoo, with Meenu steering his hand (b03), up at the ceiling fan (b04), at the padlock (b05), at Meenu's open palm (b06), lowered with the beam out of frame (b08)."
+    },
+    {
+      "id": "chai_glass",
+      "owner": "meenu",
+      "state": "In her right hand, stopped halfway to her mouth (b01 silhouette, b02). Set down on the steel rack to the -x side of the locker at the start of b03 (heard as a clink, not seen). Never seen in her hand again; must not appear on any locker shelf."
+    },
+    {
+      "id": "brass_key",
+      "owner": "meenu",
+      "state": "In her trouser pocket b01 to b05 (not visible). Drawn out in b06 and held flat on her open right palm. Clenched in her right fist, bow showing, in b08. It is the only key on the ring."
+    },
+    {
+      "id": "brass_padlock",
+      "owner": "locker",
+      "state": "Already hanging open and undamaged from the staple when the scene starts; the door is already open. Meenu lifts and turns it with her left hand in b05. Not scratched, dented or forced."
+    },
+    {
+      "id": "laddoo_plate",
+      "owner": "unknown (left by the thief)",
+      "state": "One orange motichoor laddoo with two pistachio slivers on a small off-white fluted paper plate, alone in the centre of the locker's middle shelf (read as the second shelf from the top of four), where the cash bundles were. Nobody touches it during the scene."
+    },
+    {
+      "id": "seized_cash",
+      "owner": "malkhana",
+      "state": "Absent. Twenty lakh in seized cash was in the locker; only paler dust-free rectangles on the shelf show where the bundles stood."
+    },
+    {
+      "id": "phone_incoming_call",
+      "owner": "meenu",
+      "state": "Meenu's own phone, lying face up on the desk beside the ledger from before the scene starts (she left it there when she went for chai). Buzzes from b07 to the cut to black. Screen: blue incoming-call screen, contact photo of a heavy-set man in gold-rimmed aviators, blank name band (the name is an assembly overlay). Not answered, not touched."
+    },
+    {
+      "id": "ledger_and_pen",
+      "owner": "malkhana",
+      "state": "Closed maroon ledger with a black ballpoint pen on the desk; untouched."
+    }
+  ],
+  "beats": [
+    {
+      "beat_id": "b01",
+      "shots": [
+        "s01"
+      ],
+      "lines": [
+        "l01"
+      ],
+      "time_s": [
+        0.0,
+        2.8
+      ],
+      "camera_view": "inside the locker looking out (reverse view)",
+      "lighting": "torch beam into the locker lighting Bablu from below; warm corridor light in the far doorway",
+      "meenu": {
+        "visible": "tiny featureless silhouette standing in the far doorway",
+        "position": "doorway",
+        "right_hand": "chai glass",
+        "left_hand": "empty",
+        "pocket": "key ring",
+        "state": "unknown to viewer"
+      },
+      "bablu": {
+        "visible": "close, head and chest, facing the locker",
+        "position": "at the locker opening",
+        "right_hand": "torch (on)",
+        "left_hand": "not seen",
+        "state": "frightened, does not turn round"
+      },
+      "knowledge": {
+        "bablu": [
+          "The locker is empty (stated, l01)."
+        ],
+        "meenu": [
+          "Hears 'the locker is empty'; nothing else yet."
+        ],
+        "viewer": [
+          "A police locker is empty at night. Someone is standing in the doorway behind Bablu."
+        ]
+      }
+    },
+    {
+      "beat_id": "b02",
+      "shots": [
+        "s02"
+      ],
+      "lines": [
+        "l02",
+        "l03"
+      ],
+      "time_s": [
+        2.8,
+        6.5
+      ],
+      "camera_view": "from the locker end looking at the doorway (reverse view)",
+      "lighting": "Meenu backlit by the corridor bulb; Bablu's torch on her chest, glass and lower face",
+      "meenu": {
+        "visible": "mid-thigh up, centred in the doorway, facing camera",
+        "position": "doorway",
+        "right_hand": "chai glass at collar height",
+        "left_hand": "at her side, watch visible on picture-right",
+        "pocket": "key ring",
+        "state": "flat, displeased"
+      },
+      "bablu": {
+        "visible": "back of head and shoulders, lower-left foreground (+x)",
+        "position": "near the locker, +x side",
+        "right_hand": "torch (on), aimed at Meenu",
+        "left_hand": "not seen",
+        "state": "turning to her, delivering bad news"
+      },
+      "knowledge": {
+        "bablu": [
+          "The full twenty lakh is gone (stated, l03)."
+        ],
+        "meenu": [
+          "The full twenty lakh is gone (told, l03)."
+        ],
+        "viewer": [
+          "Twenty lakh missing from the malkhana. Meenu is his superior ('madam')."
+        ]
+      }
+    },
+    {
+      "beat_id": "b03",
+      "shots": [
+        "s03",
+        "s04"
+      ],
+      "lines": [
+        "l04",
+        "l05",
+        "l06"
+      ],
+      "time_s": [
+        6.5,
+        12.0
+      ],
+      "camera_view": "s03 insert into the locker (master direction); s04 close-up of Meenu from the locker side (reverse view)",
+      "lighting": "torch beam from the +x side on the shelf and on Meenu's face from below; doorway rim behind her",
+      "offscreen_action": "Meenu crosses the room, sets the chai glass on the steel rack (-x of the locker; clink) and pushes Bablu's torch hand up to aim it. This happens in the cut into s03 and is not drawn.",
+      "meenu": {
+        "visible": "not in s03; face and shoulders in s04, hands out of frame",
+        "position": "at the locker, -x side of centre",
+        "right_hand": "empty (glass set down); may be on Bablu's torch hand",
+        "left_hand": "empty",
+        "pocket": "key ring",
+        "state": "exhausted disbelief, not angry yet"
+      },
+      "bablu": {
+        "visible": "not visible (off-screen voice in s04)",
+        "position": "at the locker, +x side",
+        "right_hand": "torch (on), aimed at the laddoo",
+        "left_hand": "not seen",
+        "state": "earnest, explaining the laddoo"
+      },
+      "knowledge": {
+        "bablu": [
+          "One motichoor laddoo has been left where the cash was (stated, l04, l06)."
+        ],
+        "meenu": [
+          "One motichoor laddoo has been left where the cash was (seen)."
+        ],
+        "viewer": [
+          "Whoever took the cash left a laddoo in its place: deliberate, a signature or a taunt (inferred)."
+        ]
+      }
+    },
+    {
+      "beat_id": "b04",
+      "shots": [
+        "s05"
+      ],
+      "lines": [
+        "l07"
+      ],
+      "time_s": [
+        12.0,
+        15.0
+      ],
+      "camera_view": "two-shot from the doorway side (master view)",
+      "lighting": "warm tungsten from the doorway behind camera on both faces; torch beam flung up onto the ceiling fan",
+      "meenu": {
+        "visible": "hips up, picture-left (-x), turned to Bablu",
+        "position": "in front of the locker, -x",
+        "right_hand": "pointing finger at his vest",
+        "left_hand": "fist at her hip",
+        "pocket": "key ring",
+        "state": "furious"
+      },
+      "bablu": {
+        "visible": "hips up, picture-right (+x), leaning back",
+        "position": "in front of the locker, +x",
+        "right_hand": "torch (on), flung up at the fan",
+        "left_hand": "half raised, palm open",
+        "state": "startled"
+      },
+      "knowledge": {
+        "bablu": [
+          "DSP inspection at 9 a.m. (told; presumably already knew)."
+        ],
+        "meenu": [
+          "DSP inspection at 9 a.m. (stated, l07)."
+        ],
+        "viewer": [
+          "The stakes: the theft will be exposed at a DSP inspection in about seven hours, on Meenu's watch."
+        ]
+      }
+    },
+    {
+      "beat_id": "b05",
+      "shots": [
+        "s06"
+      ],
+      "lines": [
+        "l08"
+      ],
+      "time_s": [
+        15.0,
+        18.2
+      ],
+      "camera_view": "close at the -x edge of the locker frame, from the doorway side; tilt up from padlock to face",
+      "lighting": "torch beam from the +x side (picture lower right) on the padlock and her hand",
+      "meenu": {
+        "visible": "chest up, turned towards the padlock",
+        "position": "-x edge of the locker, beside the staple",
+        "right_hand": "out of frame, empty",
+        "left_hand": "cupping the padlock; watch visible",
+        "pocket": "key ring",
+        "state": "anger drains into thought"
+      },
+      "bablu": {
+        "visible": "not visible",
+        "position": "+x, holding the torch on the lock",
+        "right_hand": "torch (on), aimed at the padlock",
+        "left_hand": "not seen",
+        "state": "listening"
+      },
+      "knowledge": {
+        "bablu": [
+          "The lock was not forced; it was opened with a key (hears l08)."
+        ],
+        "meenu": [
+          "The lock was not forced; it was opened with a key (deduced, l08)."
+        ],
+        "viewer": [
+          "An inside job: someone with a key."
+        ]
+      }
+    },
+    {
+      "beat_id": "b06",
+      "shots": [
+        "s07"
+      ],
+      "lines": [
+        "l09",
+        "l10",
+        "l11"
+      ],
+      "time_s": [
+        18.2,
+        25.0
+      ],
+      "camera_view": "two-shot from the doorway side (master view)",
+      "lighting": "torch beam on Meenu's open palm, faces lit from below",
+      "meenu": {
+        "visible": "waist up, left of centre (-x), looking down at her palm",
+        "position": "in front of the locker, -x",
+        "right_hand": "open, palm up, the key ring with one brass key on it",
+        "left_hand": "at her side, out of frame",
+        "pocket": "empty (key drawn)",
+        "state": "realising the evidence points at her"
+      },
+      "bablu": {
+        "visible": "waist up, right (+x), half a step further back",
+        "position": "in front of the locker, +x, backed off half a step",
+        "right_hand": "torch (on), aimed at her palm",
+        "left_hand": "not described",
+        "state": "uneasy, looking at her face, not the key"
+      },
+      "knowledge": {
+        "bablu": [
+          "There are only two keys; one is Meenu's (stated, l09).",
+          "The other is with Bada Sahab (told, l10).",
+          "Bada Sahab is on leave (stated, l11, cut off).",
+          "Meenu's key is in her possession (seen).",
+          "Unspoken: he now half-suspects Meenu (shown by the half step back)."
+        ],
+        "meenu": [
+          "Her own key is still on her ring (seen).",
+          "The only other key is with Bada Sahab (stated, l10).",
+          "Bada Sahab is on leave (told, l11).",
+          "Bablu has stepped back from her (may or may not have noticed)."
+        ],
+        "viewer": [
+          "Two suspects with keys: Meenu, and an absent senior officer. Bablu suspects Meenu."
+        ]
+      }
+    },
+    {
+      "beat_id": "b07",
+      "shots": [
+        "s08"
+      ],
+      "lines": [],
+      "time_s": [
+        25.0,
+        27.5
+      ],
+      "camera_view": "insert looking down on the desk (+x side wall)",
+      "lighting": "phone screen blue-white glow; thin tungsten band on the desk's right edge; music stops dead",
+      "meenu": {
+        "visible": "not visible",
+        "position": "assumed: turns towards the desk on the +x wall at the first buzz (needed for s09, where the phone lights her from below)",
+        "right_hand": "key ring, closing into a fist",
+        "left_hand": "empty",
+        "pocket": "empty",
+        "state": "frozen"
+      },
+      "bablu": {
+        "visible": "not visible",
+        "position": "+x side, now behind Meenu's left shoulder",
+        "right_hand": "torch (on), being lowered",
+        "left_hand": "not seen",
+        "state": "frozen"
+      },
+      "knowledge": {
+        "bablu": [
+          "Meenu's phone is ringing (heard)."
+        ],
+        "meenu": [
+          "Her phone is ringing; the caller is Bada Sahab (seen on screen)."
+        ],
+        "viewer": [
+          "Bada Sahab, the absent holder of the other key, is calling Meenu at 2 a.m., the minute the theft is found. His look is now established: heavy-set, double chin, slicked-back black hair, thick black moustache, gold-rimmed aviators, white shirt collar."
+        ]
+      }
+    },
+    {
+      "beat_id": "b08",
+      "shots": [
+        "s09"
+      ],
+      "lines": [
+        "l12"
+      ],
+      "time_s": [
+        27.5,
+        30.3
+      ],
+      "camera_view": "tight close-up on Meenu, facing camera",
+      "lighting": "cold phone glow from below; no torchlight (Bablu's torch lowered out of frame); thin tungsten rim on picture-left",
+      "meenu": {
+        "visible": "face, and right fist under her collar",
+        "position": "over the desk, looking down at the phone",
+        "right_hand": "fist clenched round the key ring, brass bow showing",
+        "left_hand": "out of frame",
+        "pocket": "empty",
+        "state": "quiet fear, does not reach for the phone"
+      },
+      "bablu": {
+        "visible": "small dim shape behind her left shoulder (picture-right)",
+        "position": "one step behind her",
+        "right_hand": "torch (on), lowered, beam out of frame",
+        "left_hand": "not seen",
+        "state": "watching her"
+      },
+      "knowledge": {
+        "bablu": [
+          "Hears Meenu ask how Bada Sahab knows."
+        ],
+        "meenu": [
+          "Infers that Bada Sahab already knows about the theft although nobody has told him (stated as a question, l12)."
+        ],
+        "viewer": [
+          "Nobody has reported the theft, yet the absent key-holder is calling. The call is unanswered when the picture cuts to black."
+        ]
+      }
+    }
+  ],
+  "facts_established_for_later_use": [
+    "Jalebiganj thana, fictional force; emblem a white hurricane lantern on a teal patch.",
+    "Meenu is a Sub-Inspector (two bars), on night duty; Bablu is a constable (no bars) and calls her 'madam'; she calls him 'Bablu'.",
+    "The malkhana locker held twenty lakh in seized cash. It was emptied, a motichoor laddoo left in its place.",
+    "The padlock was opened with a key, not forced. Only two keys exist: Meenu's (still on her ring) and Bada Sahab's.",
+    "Bada Sahab is senior to Meenu, is said to be on leave, and his look is fixed by the contact photo (see b07).",
+    "A DSP inspection is due at 9 a.m. that morning.",
+    "Meenu left her phone on the malkhana desk while she went for chai."
+  ],
+  "unanswered_at_end": "Why is Bada Sahab, on leave and the only other key-holder, calling at 2 a.m. the minute the empty locker is found, and will Meenu pick up? (matches script ending_question)",
+  "shot_check": {
+    "checked_on": "2026-11-26",
+    "method": "Python script over script.hi.json, script.en.json, style.json and shots.json, plus a read of every shot description against this ledger.",
+    "checks": [
+      {
+        "check": "Every script line covered by exactly one shot",
+        "result": "pass",
+        "detail": "l01 to l12 each appear once; no unknown or duplicate line ids."
+      },
+      {
+        "check": "Line ids, beat ids and speakers identical in script.hi.json and script.en.json",
+        "result": "pass",
+        "detail": "Same 8 beats, 12 lines, speakers, target_seconds, emotion tags and silent_seconds in both."
+      },
+      {
+        "check": "Each shot's line ids belong to that shot's beat",
+        "result": "pass"
+      },
+      {
+        "check": "wardrobe_lock verbatim in every prompt where that character is listed",
+        "result": "pass",
+        "detail": "Meenu: s02, s04, s05, s06, s07, s09. Bablu: s01, s02, s05, s07, s09. No wardrobe text in shots where the character is absent. Exception by design: Meenu's featureless doorway silhouette in s01 has no sheet and no wardrobe_lock (see shots.json notes)."
+      },
+      {
+        "check": "style_block and negative_rules verbatim in every prompt; opening line correct",
+        "result": "pass"
+      },
+      {
+        "check": "two_shot_rule sentence in every shot showing both characters",
+        "result": "pass",
+        "detail": "s02, s05, s07, s09."
+      },
+      {
+        "check": "Reference labels match refs order; at most 5 refs; every listed character has its sheet attached",
+        "result": "pass"
+      },
+      {
+        "check": "Lead (meenu) sheet attached in at least 4 shots",
+        "result": "pass",
+        "detail": "6 shots: s02, s04, s05, s06, s07, s09."
+      },
+      {
+        "check": "Durations total 25 to 40 s",
+        "result": "pass",
+        "detail": "30.3 s; each beat's shots sum to that beat's line target_seconds plus silent_seconds."
+      },
+      {
+        "check": "Prop and wardrobe continuity (hands, sides, key, glass, torch, watch, mole, strand)",
+        "result": "pass except s04",
+        "detail": "Watch always left wrist, key always right hand from b06, glass only in b01 and b02, torch always in Bablu's right hand, laddoo orange only in s03, phone blue only in s08 and s09."
+      },
+      {
+        "check": "Screen direction against the fixed room geography",
+        "result": "fail in s04",
+        "detail": "See problems."
+      }
+    ],
+    "fixed": [],
+    "problems": [
+      {
+        "shot": "s04",
+        "severity": "should fix before frame generation",
+        "type": "continuity (screen direction)",
+        "issue": "s04 is drawn from the locker side (reverse view), where Bablu and the doorway-offset both fall on picture-LEFT (s02 puts Bablu lower-left in the same reverse view, and s03, s05, s06 and s07 put him and the torch on the +x side). s04's prompt puts the torch at 'the lower right' and the doorway 'past her shoulder on the right side of the picture' with the warm rim on that side, which mirrors the room. Her gaze to the lower left (towards the laddoo) is already correct.",
+        "suggested_edit": "In s04's prompt, change 'from a torch held out of the picture at the lower right' to 'at the lower left', and 'small past her shoulder on the right side of the picture, part of the open doorway' to 'on the left side of the picture'. Leave the mole and strand sentences as they are. Not applied: it changes the shot description, which is S7's to change."
+      },
+      {
+        "shot": "s08/s09",
+        "severity": "low, accept or note",
+        "type": "staging",
+        "issue": "The desk with the phone stands against the +x wall (Bablu's side), but Meenu spends b05 and b06 at the -x edge of the locker. In s09 she is lit from below by the phone and looks down at it, so she must have moved to the desk during the 2.5 s s08 insert. This is never shown. In a flat 2D close-up it will not read as an error, so the ledger records the move as off-screen."
+      },
+      {
+        "shot": "s01",
+        "severity": "nit",
+        "type": "match on action",
+        "issue": "Meenu's doorway silhouette in s01 has no chai glass, but in s02 (the next cut) she is holding the glass halfway to her mouth. Optional: add 'one hand raised near her chin holding a small glass' to the silhouette sentence. s02's 'has just stepped into the doorway' is also slightly at odds with s01 showing her already standing there; harmless in a still."
+      },
+      {
+        "shot": "s03",
+        "severity": "info",
+        "type": "elided action",
+        "issue": "The b03 opening action in the script (two-shot: Meenu crosses, sets the chai glass down, steers Bablu's torch hand) is not given its own shot. It is carried by the cut, the 1.0 s silence and the clink. Acceptable; noted so S11 places the clink at the head of s03."
+      }
+    ]
+  }
+}

@@ -1,0 +1,615 @@
+{
+ "series_id": "series2",
+ "episode_id": "s2b02",
+ "title": "गोदाम",
+ "status": "planned",
+ "status_note": "Cue sheet only. Nothing generated and nothing listened to. A separate runner generates the six one-offs below once each through the connector (D-009 route b), fits them, and records ids, probed lengths and credits in this folder's manifest.jsonl. Library cues are generated once for the series under content/series2/sound/ and are only referenced here.",
+ "authority": [
+  "D-011 reuse: recurring sounds come from content/series2/sound/library.json; only single-use sounds are made here.",
+  "D-009 route b (ElevenLabs connector, eleven_text_to_sound_v3 for effects; music from the library's music_v2_5 cues).",
+  "D-014 rule 6 and D-0M2: shots follow measured voice; every placement below is anchored to a beat, shot or line id, never to a fixed time.",
+  "D-0M4: loudness -14 LUFS integrated, -1 dBTP, tolerance +/-0.5 LU.",
+  "D-019: s2b02 passed Gate 2 in both languages."
+ ],
+ "sources": [
+  "content/series2/episodes/s2b02/script.hi.json (beats, sfx_notes, music_note, writer_notes; round 2 after review)",
+  "content/series2/episodes/s2b02/script.en.json (line ids and beat silences checked identical to Hindi; target 130.8 s)",
+  "content/series2/episodes/s2b02/review-notes.json",
+  "content/series2/sound/library.json (cue ids, notes, mix starting gains, phone filters, one_offs_left_to_episode_sheets)",
+  "content/proof/flat2d/sound/cues.json (sheet format, prompt style)"
+ ],
+ "timebase": "No shots.json or timeline exists yet for s2b02. Placements are anchored to beat, shot and line ids; S13 converts them to seconds against the measured takes of each language cut. One sheet serves the Hindi and English cuts: the line ids (l01-l03, l05-l32; l04 retired) and beat silences match.",
+ "mix": {
+  "dialogue_first": true,
+  "loudness_target": "-14 LUFS integrated, -1 dBTP; tolerance +/-0.5 LU (D-0M4)",
+  "starting_gains_db": {
+   "music": -18,
+   "music_duck_under_dialogue": -8,
+   "ambience": -24,
+   "ambience_layer": -28,
+   "sfx": -10
+  },
+  "gains_note": "Per-cue gain_db below are starting points relative to full scale on the fitted file, set from the library defaults and the script's 'low' and 'quiet' notes. S13 sets final levels by ear.",
+  "ducking": [
+   "Beds (amb_crossing_stall, amb_godown_night, lyr_night_crickets) duck -6 dB under every line, 150 ms attack, 400 ms release.",
+   "Music ducks -8 dB under every line (library default).",
+   "Foley under a line (key ring, paper tremble, pen scratch) sits in the word gaps or at -24 dB and below; the key ring is never on a word.",
+   "l09 (whisper, 'चाय ठंडी हो गई।'): no effect at all under it; bed ducked a further -4 dB (total -10). The paper tremble is out before it starts.",
+   "l29 (DSP on the phone): bed and crickets duck to -14 dB below their level; nothing else plays on it except lyr_phone_line_hiss (script b10).",
+   "b12_l32: under l32 the bed drops to 'the bulb hum alone': low-pass amb_godown_night at about 250 Hz (leaves the hum, removes roof ticks and rustle) and mute lyr_night_crickets, from 0.3 s before l32 to the end of the episode. Music is out under l32 (see mus_tension_note). After l32: near silence, the hum and the returning note only."
+  ],
+  "filters": {
+   "l29_dsp": "Earpiece phone filter (library mix.phone_filters.earpiece): band-pass about 300-3400 Hz, light saturation, lyr_phone_line_hiss under it. Kept wide enough that every consonant survives; if 'बीस' loses its b, widen to 250-3800 Hz before anything else.",
+   "b10_nandini": "l26, l27, l28 are unfiltered: she is in the room.",
+   "l11_through_steel": "Nandini outside the closed shutter: low-pass about 2.5-3 kHz, -4 dB, a short metallic resonance (small plate or short room reverb, about 0.3 s, 15 per cent wet). Projected, not shouted (script): the take carries it; the filter only muffles. Must stay intelligible; if it does not, raise the cutoff before lowering anything else.",
+   "l16_pushpa": "Off frame but in the room: no filter.",
+   "sfx_ringback_pickup": "Earpiece filter as l29.",
+   "sfx_dtmf_dialling": "High-pass about 600 Hz (keypad phone, smaller).",
+   "sfx_dead_line_tone": "Band-pass about 400-3000 Hz (handset in Pushpa's hand, close and thin)."
+  },
+  "music_in_out": [
+   "b1-b5: no music.",
+   "IN mus_theme_caper_slow on the pen click, b6 Shot 3. Builds through b7 and b8.",
+   "OUT mus_theme_caper_slow hard, on the first frame of b9 (headlights).",
+   "b9-b10: unscored.",
+   "IN mus_tension_note with l30 (b11). Holds under the b11 silence and l31.",
+   "OUT mus_tension_note before l32 (0.4 s fade, gone by l32's first word).",
+   "IN again mus_tension_note after l32 for the final hold; hard cut with the last frame."
+  ],
+  "loudest_event": "The b5 shutter rattle is the loudest thing in the episode (script). Keep its true peak under -1 dBTP; it will not move integrated loudness much because it is short.",
+  "crowded_silences": [
+   "b9 (1.2 s): headlight hum, idle cutting out, car door, steps and one peanut crack. Suggested order: hum + idle from 0.0, idle out at 0.5, door at 0.7, two steps 0.8-1.1, crack just before l23. Drop the steps first if it reads crowded. Everything settles before l24 (script).",
+   "b10 (1.0 s): key click (optional), 3-4 DTMF tones, one ring and the pick-up click. If it cannot sound natural in 1.0 s, lengthen the silence by up to 0.4 s and log it.",
+   "b4 (1.2 s): three blows about 0.4 s apart; their ring may tail under l10 only."
+  ]
+ },
+ "cues": [
+  {
+   "cue_id": "sfx_dead_line_tone",
+   "source": "library",
+   "library_ref": "content/series2/sound/library.json",
+   "gain_db": -16,
+   "uses": [
+    {
+     "beat": "b1",
+     "shot": "Shot 1-2",
+     "anchor": "frame 1 of the episode, to the key click on l02",
+     "note": "Same file as s2b01 b11's ending, so the seam is one sound across the cut. Alone for the first 0.5 s, then the crossing bed fades in under it. Ducked -6 dB under l01. Cut dead (no fade) by sfx_keypad_key_click as the phone goes into Pushpa's pocket on l02."
+    }
+   ],
+   "treatment": "Close and thin: band-pass about 400-3000 Hz so it reads as a small handset speaker in her hand, not a full-range tone."
+  },
+  {
+   "cue_id": "sfx_keypad_key_click",
+   "source": "library",
+   "library_ref": "content/series2/sound/library.json",
+   "gain_db": -14,
+   "uses": [
+    {
+     "beat": "b1",
+     "shot": "Shot 2",
+     "anchor": "on l02, at the moment Pushpa drops the phone into her cardigan pocket",
+     "note": "Ends the dead tone. Under the line: keep it short and below the word."
+    },
+    {
+     "beat": "b10",
+     "shot": "Shot 1",
+     "anchor": "start of the b10 silence, before sfx_dtmf_dialling",
+     "note": "Her left thumb on the phone: one click to wake the keypad. Optional if the silence is too short; the DTMF carries it."
+    }
+   ]
+  },
+  {
+   "cue_id": "amb_crossing_stall",
+   "source": "library",
+   "library_ref": "content/series2/sound/library.json",
+   "gain_db": -24,
+   "uses": [
+    {
+     "beat": "b1",
+     "anchor": "fade in over 0.3 s from 0.5 s (after the dead tone plays alone), to the cut to b2",
+     "note": "Night bed: base includes the signal relay tick and the hanging bulb buzz the script asks for. Hard cut out on the cut to the godown interior."
+    }
+   ]
+  },
+  {
+   "cue_id": "lyr_night_crickets",
+   "source": "library",
+   "library_ref": "content/series2/sound/library.json",
+   "gain_db": -28,
+   "uses": [
+    {
+     "beat": "b1",
+     "anchor": "with amb_crossing_stall, same in/out",
+     "note": "Crossing gain: highest crickets in the series (library note)."
+    },
+    {
+     "beat": "b5",
+     "anchor": "fades in over about 1 s under the tail of the shutter rattle, then holds to the end of b12",
+     "note": "'Night air and crickets come in through the open mouth': at -32 dB inside the godown, lower than at the crossing. Ducked with the bed under every line; muted with the bed under l32 (see mix.b12_l32)."
+    }
+   ]
+  },
+  {
+   "cue_id": "sfx_steps_ballast",
+   "source": "library",
+   "library_ref": "content/series2/sound/library.json",
+   "gain_db": -14,
+   "uses": [
+    {
+     "beat": "b1",
+     "shot": "Shot 1-2",
+     "anchor": "from the dead tone's 0.5 s mark to the end of b1, under l01 and l02",
+     "note": "Long even strides (Nandini) and short brisk steps (Pushpa) across the single track. Ducked -8 dB under l01 and l02; between the lines they come up. Trim to the length of b1."
+    }
+   ]
+  },
+  {
+   "cue_id": "amb_godown_night",
+   "source": "library",
+   "library_ref": "content/series2/sound/library.json",
+   "gain_db": -24,
+   "uses": [
+    {
+     "beat": "b2",
+     "anchor": "hard cut in on the first frame of b2, holds to the last frame of b12",
+     "note": "Tin roof ticking, one bulb humming, faint jute rustle, hollow shed. Low, every line clear of it. Ducked -6 dB under dialogue throughout, deeper under l09, l29 and l32 (see mix)."
+    }
+   ]
+  },
+  {
+   "cue_id": "sfx_keyring_jingle",
+   "source": "library",
+   "library_ref": "content/series2/sound/library.json",
+   "gain_db": -26,
+   "uses": [
+    {
+     "beat": "b2",
+     "shot": "Shot 3",
+     "anchor": "under l05 only, in the word gaps",
+     "note": "Softly, never over a word: automate it down to silence on each word onset or cut it to the gaps."
+    },
+    {
+     "beat": "b5",
+     "shot": "Shot 2",
+     "anchor": "under l12, Shot 2 (the key ring swinging)",
+     "note": "Very low, in the gaps only. Picture-driven; drop it if it competes with the laugh."
+    },
+    {
+     "beat": "b6",
+     "shot": "Shot 1-5",
+     "anchor": "under the b6 silence and l14, stopping dead at the onset of l15",
+     "note": "'The key ring stops jingling on l15': a hard stop, no tail, on the cut to Shot 5 (Bhaiyaji hears his full name)."
+    },
+    {
+     "beat": "b7",
+     "shot": "Shot 5",
+     "anchor": "under l20 only (Shot 5, 'the keys swinging again')",
+     "note": "In the word gaps, very low. Stops at the end of l20."
+    },
+    {
+     "beat": "b10",
+     "anchor": "NOT used in b10 Shot 5",
+     "note": "The key ring hangs still in the 0.8 s pause before l29: silence there is the point; do not add a jingle."
+    }
+   ]
+  },
+  {
+   "cue_id": "sfx_holster_unbutton",
+   "source": "library",
+   "library_ref": "content/series2/sound/library.json",
+   "gain_db": -12,
+   "uses": [
+    {
+     "beat": "b3",
+     "shot": "Shot 1",
+     "anchor": "first 0.8 s of the b3 silence (Shot 1)",
+     "note": "The leather flap unbuttoning. No metal: the revolver is wood (library note)."
+    }
+   ]
+  },
+  {
+   "cue_id": "sfx_wood_revolver_knock",
+   "source": "library",
+   "library_ref": "content/series2/sound/library.json",
+   "gain_db": -16,
+   "uses": [
+    {
+     "beat": "b3",
+     "shot": "Shot 1/2",
+     "anchor": "on the cut from Shot 1 to Shot 2, inside the b3 silence",
+     "note": "'One dull knock of wood on jute': low-pass at about 1.5 kHz and take 4 dB off the take."
+    },
+    {
+     "beat": "b11",
+     "shot": "Shot 2",
+     "anchor": "in the b11 silence after l30, as she takes the revolver by the grip",
+     "note": "'A light wooden knock against her palm': softer still, -22 dB, low-pass about 2 kHz."
+    }
+   ]
+  },
+  {
+   "cue_id": "sfx_paper_slip",
+   "source": "library",
+   "library_ref": "content/series2/sound/library.json",
+   "gain_db": -26,
+   "uses": [
+    {
+     "beat": "b3",
+     "shot": "Shot 3-4",
+     "anchor": "under l07 and l08, very low",
+     "note": "Paper trembling in his shaking hands: pick a soft continuous rustle section, not a crisp flick. Pull it out entirely before l09."
+    },
+    {
+     "beat": "b7",
+     "shot": "Shot 3",
+     "anchor": "Shot 3, just before l19 (not under it)",
+     "note": "The pink slip lifted off the scale. -18 dB, one crisp lift. Ends before l19's first word."
+    }
+   ]
+  },
+  {
+   "cue_id": "sfx_pen_scratch",
+   "source": "library",
+   "library_ref": "content/series2/sound/library.json",
+   "gain_db": -24,
+   "uses": [
+    {
+     "beat": "b6",
+     "shot": "Shot 4-6",
+     "anchor": "under l14, l15 and l16",
+     "note": "Pen on carbon paper: quiet, high-cut at about 6 kHz so it never fights sibilants."
+    },
+    {
+     "beat": "b7",
+     "shot": "Shot 1-6",
+     "anchor": "in the gaps between items (after l17, after l18, after l21)",
+     "note": "Short bursts between lines, not under them. Trim each to 0.4-0.8 s."
+    },
+    {
+     "beat": "b9",
+     "shot": "Shot 2-3",
+     "anchor": "under l24 and l25, lowest (-28)",
+     "note": "She writes item six while he watches; keep it barely there."
+    }
+   ]
+  },
+  {
+   "cue_id": "sfx_shutter_rattle_slam",
+   "source": "library",
+   "library_ref": "content/series2/sound/library.json",
+   "gain_db": -4,
+   "uses": [
+    {
+     "beat": "b5",
+     "shot": "b4 Shot 2 to b5 Shot 1",
+     "anchor": "pre-laps from the end of l11 (b4 Shot 2, Bhaiyaji crossing to the shutter) across the cut into b5, stopping dead at least 0.5 s before l12",
+     "note": "'Loud and long', the loudest event in the episode. Use the rattle section only, WITHOUT the slam (library note), and cut the end hard (a 20 ms fade at most) so it stops dead a full beat before l12. If the rattle section is too short to be 'long', loop two passes of it with a crossfade before asking for a new generation. Keep true peak under -1 dBTP."
+    }
+   ]
+  },
+  {
+   "cue_id": "sfx_headlight_hum",
+   "source": "library",
+   "library_ref": "content/series2/sound/library.json",
+   "gain_db": -26,
+   "uses": [
+    {
+     "beat": "b9",
+     "shot": "silence before Shot 1",
+     "anchor": "first ~1 s of the b9 silence",
+     "note": "The headlight sweep as a faint electrical hum: fade in and out over about a second with the sweep across the sacks."
+    }
+   ]
+  },
+  {
+   "cue_id": "sfx_car_idle",
+   "source": "library",
+   "library_ref": "content/series2/sound/library.json",
+   "gain_db": -24,
+   "uses": [
+    {
+     "beat": "b9",
+     "shot": "silence before Shot 1",
+     "anchor": "with the headlight sweep, cutting out at about 0.5 s into the b9 silence",
+     "note": "'An engine idling and cutting out': no engine-off one-off; fade the tail over 0.15 s with a slight pitch-down so it reads as the key turned (library note). Far, through the open shutter: low-pass about 3 kHz."
+    }
+   ]
+  },
+  {
+   "cue_id": "sfx_car_door",
+   "source": "library",
+   "library_ref": "content/series2/sound/library.json",
+   "gain_db": -16,
+   "uses": [
+    {
+     "beat": "b9",
+     "shot": "silence before Shot 1",
+     "anchor": "about 0.7 s into the b9 silence",
+     "note": "Tripathi's car door, off screen, outside: low-pass about 4 kHz, short hollow room echo from the shed."
+    }
+   ]
+  },
+  {
+   "cue_id": "sfx_steps_gravel",
+   "source": "library",
+   "library_ref": "content/series2/sound/library.json",
+   "gain_db": -18,
+   "uses": [
+    {
+     "beat": "b9",
+     "shot": "silence before Shot 1",
+     "anchor": "two or three slow heavy steps, about 0.8-1.1 s into the b9 silence, last one at the head of l23 at most",
+     "note": "Slow and heavy: pitch down about 1 semitone (library note). If the 1.2 s silence reads crowded, drop the steps first: he is already standing in the shutter mouth in Shot 1."
+    }
+   ]
+  },
+  {
+   "cue_id": "sfx_peanut_crack",
+   "source": "library",
+   "library_ref": "content/series2/sound/library.json",
+   "gain_db": -16,
+   "uses": [
+    {
+     "beat": "b9",
+     "shot": "Shot 1",
+     "anchor": "one single crack, just before l23",
+     "note": "Tripathi's signature: ONE crack only (pick the cleanest from the take). Then nothing: he stops chewing by l25, so no peanut sound under l24 or l25."
+    }
+   ]
+  },
+  {
+   "cue_id": "sfx_dtmf_dialling",
+   "source": "library",
+   "library_ref": "content/series2/sound/library.json",
+   "gain_db": -18,
+   "uses": [
+    {
+     "beat": "b10",
+     "shot": "Shot 1",
+     "anchor": "b10 silence, Shot 1, after the optional key click",
+     "note": "Keypad phone: high-pass slightly (about 600 Hz) so it reads smaller (library note). Trim to 3-4 tones (about 0.5 s) to fit the 1.0 s silence with the ring."
+    }
+   ]
+  },
+  {
+   "cue_id": "sfx_ringback_pickup",
+   "source": "library",
+   "library_ref": "content/series2/sound/library.json",
+   "gain_db": -18,
+   "uses": [
+    {
+     "beat": "b10",
+     "shot": "Shot 1",
+     "anchor": "b10 silence, Shot 1, straight after the DTMF; the pick-up click lands just before l26",
+     "note": "'One ring, the click of pick-up': trim to one ring burst (about 0.4 s) plus the click. Through the earpiece phone filter with lyr_phone_line_hiss under it (library note)."
+    }
+   ]
+  },
+  {
+   "cue_id": "lyr_phone_line_hiss",
+   "source": "library",
+   "library_ref": "content/series2/sound/library.json",
+   "gain_db": -34,
+   "uses": [
+    {
+     "beat": "b10",
+     "shot": "Shot 1-6",
+     "anchor": "from the pick-up click to the end of l29, then cut",
+     "note": "Under the open line, faintest; under l29 it sits with the filtered DSP voice. Not under Nandini's own lines louder than -36 (her voice is unfiltered, in the room)."
+    }
+   ]
+  },
+  {
+   "cue_id": "sfx_s2b02_sheet_pen_on_scale",
+   "source": "one_off",
+   "type": "sfx",
+   "model": "eleven_text_to_sound_v3",
+   "planned_duration_s": 3.0,
+   "loop": false,
+   "gain_db": -16,
+   "why_not_library": "Used once in the series (library one_offs list: 'paper on steel and pen rolling (b2), scale needle creak (b3)'). Two events folded into one generation to keep the count down.",
+   "sections": {
+    "A": "paper laid on steel and the pen rolling to a stop (b2)",
+    "B": "the scale needle's single spring creak (b3)"
+   },
+   "prompt": "On the steel platform of an old weighing scale in a quiet tin warehouse: a single typed sheet of paper laid flat on the metal with a soft papery slap, then a plastic ballpoint pen set down on it that rolls a short way across the steel and stops. A pause. Then the scale's needle spring gives one small, thin metallic creak. Close, dry, no voices, no music.",
+   "uses": [
+    {
+     "beat": "b2",
+     "shot": "Shot 2",
+     "anchor": "section A at the head of Shot 2, about 0.4 s before l03; the roll stops before or just under l03's first word",
+     "note": "The sheet and pen across the scale. Ducked -6 dB if the roll runs under the line."
+    },
+    {
+     "beat": "b3",
+     "shot": "Shot 2",
+     "anchor": "section B in Shot 2 of the b3 silence, after the wood knock",
+     "note": "'The dial needle has hardly moved': one small creak, -20 dB."
+    }
+   ],
+   "fallback": "If section B does not come back clean, drop the needle creak: the knock carries the beat. If section A fails, use sfx_paper_slip (one lay-down) and no pen roll.",
+   "status": "generated"
+  },
+  {
+   "cue_id": "sfx_s2b02_shutter_blows",
+   "source": "one_off",
+   "type": "sfx",
+   "model": "eleven_text_to_sound_v3",
+   "planned_duration_s": 3.0,
+   "loop": false,
+   "gain_db": -8,
+   "why_not_library": "Library one_offs list: 'three blows on the steel shutter (b4)'. The library shutter take is a rattle and slam on the ground, not a fist on closed steel.",
+   "prompt": "Three heavy blows of a fist on a closed corrugated steel rolling shutter, heard from inside a large empty tin warehouse: each blow a deep booming metallic thud with a ringing shimmer, about half a second apart, then the ring slowly dying away. No voices, no footsteps, no music.",
+   "uses": [
+    {
+     "beat": "b4",
+     "shot": "silence before Shot 1",
+     "anchor": "all three blows inside the 1.2 s silence before l10 (about 0.4 s apart; tighten the spacing in the edit if the take is slower)",
+     "note": "D-016 direction 13 order: blows, his smile, her voice. The ring of the third blow may tail under l10 (ducked -12 dB) but must be fully decayed before l11 begins."
+    }
+   ],
+   "fallback": "If the take has more or fewer than three blows, cut it to three. If the spacing cannot fit 1.2 s, lengthen the b4 silence by up to 0.4 s and log it (D-0M2: the edit settles length).",
+   "status": "generated"
+  },
+  {
+   "cue_id": "sfx_s2b02_pen_click",
+   "source": "one_off",
+   "type": "sfx",
+   "model": "eleven_text_to_sound_v3",
+   "planned_duration_s": 0.5,
+   "loop": false,
+   "gain_db": -10,
+   "why_not_library": "Library one_offs list: 'ballpoint click (b6)'. It is the music's entry point, so it has to be its own clean, dry event.",
+   "prompt": "A single click of a retractable plastic ballpoint pen, dry, crisp and very close, in a quiet room. One click only, no reverb, no voices.",
+   "uses": [
+    {
+     "beat": "b6",
+     "shot": "Shot 3",
+     "anchor": "on the pad insert (Shot 3), the last of the three silent stills, before l14",
+     "note": "Dry and close. mus_theme_caper_slow enters on, or a hair after, this click."
+    }
+   ],
+   "status": "generated"
+  },
+  {
+   "cue_id": "sfx_s2b02_jute_touches",
+   "source": "one_off",
+   "type": "sfx",
+   "model": "eleven_text_to_sound_v3",
+   "planned_duration_s": 4.0,
+   "loop": false,
+   "gain_db": -18,
+   "why_not_library": "Library one_offs list: 'palm on jute (b7)', 'sack creak (b11)', plus the phone lifted off jute in b8. Three small jute sounds in one generation.",
+   "sections": {
+    "A": "palm pressed flat on a full sack (b7)",
+    "B": "small object lifted off a sack (b8)",
+    "C": "sack creaking under a man sitting down (b11)"
+   },
+   "prompt": "Close foley on full jute grain sacks in a quiet warehouse: first a flat palm pressed onto a tight jute sack with a dry coarse rustle; a pause; then a small light object lifted off the rough jute with a faint scratch; a pause; then a heavy man settling his weight onto a stacked sack, the jute creaking and the grain inside shifting. No voices, no music.",
+   "uses": [
+    {
+     "beat": "b7",
+     "shot": "Shot 1",
+     "anchor": "section A at the head of Shot 1, just before or under the first word of l17",
+     "note": "Her hand flat on the stencilled sack. -18 dB."
+    },
+    {
+     "beat": "b8",
+     "shot": "Shot 3",
+     "anchor": "section B over Shot 3 of the b8 silence",
+     "note": "Her left hand lifting her phone off the sack: barely there, -26 dB."
+    },
+    {
+     "beat": "b11",
+     "shot": "Shot 1",
+     "anchor": "section C at the head of b11, just before l30",
+     "note": "Bhaiyaji sitting, the smile gone. Must be finished before l30's first word."
+    }
+   ],
+   "fallback": "Any section that fails is dropped rather than regenerated; picture carries b7 and b8. Section C matters most: if it fails, retake this one cue once.",
+   "status": "generated"
+  },
+  {
+   "cue_id": "sfx_s2b02_truck_key_clink",
+   "source": "one_off",
+   "type": "sfx",
+   "model": "eleven_text_to_sound_v3",
+   "planned_duration_s": 3.0,
+   "loop": false,
+   "gain_db": -14,
+   "why_not_library": "Library one_offs list: 'truck key from the cab lock, clink into wool pocket (b8)'.",
+   "sections": {
+    "A": "key out of the door lock",
+    "B": "key dropping into the wool-filled pocket"
+   },
+   "prompt": "A single metal truck key being slid out of an old truck's cab door lock with a short scrape and click, then a moment later the same key dropped into a cardigan pocket full of knitting wool: one soft, muffled metallic clink. Close, quiet, no voices, no music.",
+   "uses": [
+    {
+     "beat": "b8",
+     "shot": "Shot 2-3",
+     "anchor": "section A on Shot 2 of the b8 silence; section B over Shot 3 (not shown, heard)",
+     "note": "The clink is 'the only telling of the pocket': it must be audible, -14 dB, and in the clear (no line on it)."
+    }
+   ],
+   "status": "generated"
+  },
+  {
+   "cue_id": "sfx_s2b02_shell_crush",
+   "source": "one_off",
+   "type": "sfx",
+   "model": "eleven_text_to_sound_v3",
+   "planned_duration_s": 1.0,
+   "loop": false,
+   "gain_db": -12,
+   "why_not_library": "Library notes: 'shell crushed in a fist' is a one-off (sfx_peanut_crack is fingertip cracks, not a crush).",
+   "prompt": "A dry roasted peanut shell crushed slowly in a closed fist: one short brittle crunch and crackle, close, in a quiet room. No voices, no music.",
+   "uses": [
+    {
+     "beat": "b11",
+     "shot": "end of b11 / b12 Shot 1",
+     "anchor": "at the end of the b11 silence, pre-lapping the cut into b12 Shot 1",
+     "note": "Off frame in b11, seen as the crushed shell in his fist in b12 Shot 1. Dry, close."
+    }
+   ],
+   "fallback": "If the take fails, use the single loudest crack of sfx_peanut_crack, pitched down about 2 semitones and doubled 30 ms apart, before retaking.",
+   "status": "generated"
+  }
+ ],
+ "music": [
+  {
+   "cue_id": "mus_theme_caper_slow",
+   "source": "library",
+   "library_ref": "content/series2/sound/library.json",
+   "gain_db": -20,
+   "in": {
+    "beat": "b6",
+    "anchor": "on the pen click (sfx_s2b02_pen_click), Shot 3"
+   },
+   "out": {
+    "beat": "b9",
+    "anchor": "first frame of b9 (the headlight sweep)",
+    "how": "hard stop, no fade, no tail: 'stops dead on Tripathi's headlights'"
+   },
+   "shape": "Enters very quietly, builds a little item by item through b7 and b8 (the file's own density rise; S13 may add up to +3 dB over the span). Ducked -8 dB under every line; up in the item gaps and in the b8 silence.",
+   "length_check": "Estimate from targets: b6 to b8 is about 40 to 42 s with speaker gaps, and the measured cut will likely run longer (D-0M4: +15 to +30 per cent). The library file is planned at 40 s. If the measured span is longer than the file, crossfade-repeat a middle section of the build rather than stretching it or regenerating, and tell the library owner that 50 s would be safer. Not measured: no timeline exists yet."
+  },
+  {
+   "cue_id": "mus_tension_note",
+   "source": "library",
+   "library_ref": "content/series2/sound/library.json",
+   "gain_db": -22,
+   "in": {
+    "beat": "b11",
+    "anchor": "with the first word of l30, faded up over about 1 s"
+   },
+   "shape": "One low sustained string note under l30, the b11 silence and l31. It drops away under l32 so the cliffhanger is exposed: fade out over about 0.4 s ending before l32's first word. Returns after l32 for the final hold, faded up over about 0.5 s, unresolved.",
+   "out": {
+    "beat": "b12",
+    "anchor": "last frame of the b12 hold",
+    "how": "hard cut with the picture, no resolving fade (library: most uses end in a hard cut to silence)"
+   }
+  }
+ ],
+ "unscored": [
+  "b1 to b5: no music at all (music_note). The dead tone, the walk and the godown play on sound alone.",
+  "b9 after the hard stop, and all of b10: unscored."
+ ],
+ "counts": {
+  "library_cues_used": 22,
+  "library_effects_and_beds": 20,
+  "library_music": 2,
+  "one_off_cues": 6,
+  "one_off_generations": 6
+ },
+ "credit_estimate": {
+  "basis": "Proof manifests: 17 credits per eleven_text_to_sound_v3 generation regardless of length (library credit_estimate).",
+  "one_offs_one_take_each": 102,
+  "note": "Estimate, not measured. Library cues are paid once in the library, not here."
+ },
+ "not_verified": [
+  "No cue exists yet; no prompt has been generated or heard.",
+  "No timeline: every timing in seconds above is a target-based estimate, not measured.",
+  "The 40 s library caper_slow file may be shorter than the b6-b8 span once voiced (see music[0].length_check)."
+ ]
+}

@@ -1,0 +1,135 @@
+{
+ "by": "S9 Visual checker",
+ "date": "2026-11-26",
+ "scope": "s2e01 non-anchor frames, attempt 1 each: s01 s03 s05 s06 s07 s09 s11 s12 s14 s15 s16 s17 s18 s19 s22 s23 s30 s32 s34 s36 s37 (21). s28 and s29 have prompts but no png (they wait on the s26 anchor retake), so they were not judged. Anchors s02 s10 s13 s26 s31 are covered by anchor-check.s9.json; s26.png on disk is still the rejected 12:13 take.",
+ "method": "Each 1440x2560 png viewed whole at 720 wide beside its sheet (nandini, nirala, tripathi, pushpa), the plate, and its scene anchor; then cropped at full resolution with ffmpeg: epaulette bars (s03, s15, s22, s16, s23), faces (s06, s09, s23), hands (s01, s11, s14, s18, s32, s36), wool pocket (s16), envelope tags (s30, s37), the s20 crop window taken from s14 (x 23-100%, y 0-77%), and the s32 overlay strip. Sides judged from pouch (her RIGHT hip) and pen (her LEFT pocket) for Nandini, medal/holster for Nirala, gamchha/cone for Tripathi, wool/bag for Pushpa.",
+ "summary": {
+  "pass": 19,
+  "reject": 2,
+  "rejected": [
+   "s14",
+   "s16"
+  ]
+ },
+ "results": {
+  "s01": {
+   "verdict": "pass",
+   "checked": "right upper sleeve with lantern patch, forearm raised, token near-square and blank hanging from the fingers, five-finger hand, bench edge and window shaft; no face",
+   "nits": [
+    "Overlay coordinates do not match the drawing: the token face is at about 59-86% across and 41-56% down, but ov_token_7.surface says 55-72% across, 42-54% down; the overlay would hang partly off the token's left edge. Fix in shots.json, not a retake."
+   ]
+  },
+  "s03": {
+   "verdict": "pass",
+   "checked": "Nirala identity vs sheet (long face, pencil moustache, large eyes), cap level, three bars, medal picture-right (his left), stamp and pad by his right hand (picture-left), receipt stack being squared, registers, kettle, two empty glasses, blank board; cap crown at about 14% down (spec 12-22%)",
+   "nits": [
+    "Holster shows at picture-left above the counter (correct side) though the state says hidden.",
+    "Sleeves are not drawn over the hands as the lock asks."
+   ]
+  },
+  "s05": {
+   "verdict": "pass",
+   "checked": "plate geometry kept (pillars, bench and tokens left, booth-lockup right with door shut, stair back right, clock without numerals, blank board); Nandini from behind: helmet picture-left (her left), token fist picture-right (her right), pouch picture-right; Nirala pouring into one glass, second glass empty, medal picture-right; no text"
+  },
+  "s06": {
+   "verdict": "pass",
+   "checked": "Nandini picture-left facing right: pouch on near hip, token in near (right) hand, helmet on far side at her front, pen at the far pocket edge, two bars; Nirala picture-right facing left: medal on near side, holster hidden, cap level, hands empty; full tea glass between them; Nirala reads shorter; faces at about 20-30% down",
+   "nits": [
+    "A second, empty glass stands by Nirala (matches s05)."
+   ]
+  },
+  "s07": {
+   "verdict": "pass",
+   "checked": "identity matches sheet close-up, three-quarter to picture-right, two bars, pen picture-right, hands/helmet/token below frame"
+  },
+  "s09": {
+   "verdict": "pass",
+   "checked": "Nirala identity, cap level, three bars, medal picture-right, black pen raised in his right hand (picture-left), left hand flat beside a blank ruled form, five fingers each hand",
+   "nits": [
+    "Eyes look up and almost into the lens rather than clearly to the upper left; s04, a punch-in on this frame, leans on that eyeline."
+   ]
+  },
+  "s11": {
+   "verdict": "pass",
+   "checked": "right hand on the right grip seen from behind (grip end picture-right, mirror stem inboard), back of hand up, five fingers, token blank and turned to us, buttoned khaki cuff, day background matching s10 (gate, track, shed)",
+   "nits": [
+    "String goes over the fingers once, not looped twice."
+   ]
+  },
+  "s12": {
+   "verdict": "pass",
+   "checked": "empty dusty bench against the front wall right of the doorway, doorway edge picture-left, gate beyond as on the plate, no people, no text"
+  },
+  "s14": {
+   "verdict": "reject",
+   "reason": "The peanut hand breaks the shot's own placement rule, and s20 is cut from this frame. Prompt and shots.json say no part of the hand or peanut right of 20% across; measured at full resolution the peanut reaches about 24% and the thumb/fingers about 25-27% across, between 64% and 77% down. s20's window (23-100% across, 0-77% down, scale 1.3 which is the D-010 cap) therefore keeps a sliver of peanut and fingertips on its lower-left edge for 1.9 s; the crop cannot be widened past 1.3 to lose it. Second fault: the brass plate is drawn at about 30-45% down and 32-83% across, but ov_shield.surface says 24-36% down, so the overlay would sit partly on the wood above the plate.",
+   "checked_ok": "shield front-on, blank plate, centred at about 58% across; right hand (thumb side to camera, five digits), warm-brown, khaki half-sleeve hem at the corner as the prompt asked; no text"
+  },
+  "s15": {
+   "verdict": "pass",
+   "checked": "Tripathi identity vs sheet (bald dome, grey fringe, jowls, heavy lids), three bars, vest V, half sleeves, gamchha picture-right (his left), cone in his left hand held across towards picture-left, right hand flat on desk, shells, shield bottom behind his head; face about 22-40% down"
+  },
+  "s16": {
+   "verdict": "reject",
+   "reason": "Side error on the wool. Pushpa faces the camera, and the orange wool ball sits in her PICTURE-RIGHT cardigan pocket, i.e. her LEFT pocket. Her lock, the shot STATE ('right_pocket: orange wool ball') and the next Pushpa frame s23 (wool picture-left) all put it in her RIGHT pocket, so the ball jumps pockets across the cut within scene C. Cause: the s16 prompt says 'right pocket' only in body terms; s23's prompt adds 'on the picture-left' and came out right (D-013 rule 3).",
+   "checked_ok": "identity vs sheet (round face, frown, round steel spectacles, grey-streaked bun with two crossed steel needles), one bar each, plum cardigan, orange knitting on bamboo needles, eyes down, brown envelope with a blank violet ring on the table, off-white bag on the chair back, doorway and bench geometry as s12; no text"
+  },
+  "s17": {
+   "verdict": "pass",
+   "checked": "Nandini identity, two bars, token on picture-left wrist (her right), helmet under picture-right arm (her left), pouch picture-left, pen picture-right; Tripathi small in the background under the shield, cone in his left hand, gamchha picture-right, phone on cradle; face about 15-30% down"
+  },
+  "s18": {
+   "verdict": "pass",
+   "checked": "Nandini 3/4 facing picture-right: handset at her near (right) ear with its back to camera, token on that wrist, far (left) hand dialling, helmet clamped under that arm, pouch near hip, pen at far pocket; Tripathi's right palm raised (five digits), cone in his left hand, gamchha picture-right; keypad keys blank"
+  },
+  "s19": {
+   "verdict": "pass",
+   "checked": "identity matches sheet, three-quarter to picture-right, handset at her right ear on the picture-left side, back to camera, token on that wrist, pen picture-right, two bars, locker as in s13"
+  },
+  "s22": {
+   "verdict": "pass",
+   "checked": "Tripathi identity, three bars, peanut stopped at chin height in his right hand (picture-left), cone low in his left, gamchha picture-right, eyes lifted a little, mouth closed, shield behind"
+  },
+  "s23": {
+   "verdict": "pass",
+   "checked": "identity vs sheet, one bar each, both hands at the bun with the second needle going in, two needles crossed, bag on her left shoulder (picture-right), wool in the picture-left (her right) pocket, table with envelope picture-right",
+   "nits": [
+    "Eyes look at the lens more than off picture-left."
+   ]
+  },
+  "s30": {
+   "verdict": "pass",
+   "checked": "plate view kept: window left wall with shafts, sheeted projector, empty stool, racks both sides; Nandini from behind turned to the right rack, pouch on her right hip (picture-right), patch on her right sleeve, token on the right wrist of the lower hand on the file, red-cloth file still tied with its bow; envelope tags blank; no face"
+  },
+  "s32": {
+   "verdict": "pass",
+   "checked": "top-down ruled pages on the red cloth, tape end, right hand (palm down, thumb on picture-left), index fingertip just under the top ruled line (line at about 30% down, fingertip from about 30% down at 44-49% across), token lying on the lower page; strip 16-55% across, 24-30% down is empty; no lettering",
+   "nits": [
+    "Loose pages here; s31 draws a bound book. Readable as the same file in an insert."
+   ]
+  },
+  "s34": {
+   "verdict": "pass",
+   "checked": "low side view of fanned ruled pages, right hand with token on that wrist, buttoned cuff, red cloth and tape, envelopes and bundles behind with blank tags"
+  },
+  "s36": {
+   "verdict": "pass",
+   "checked": "her right hand (arm from picture-left with patch) flat on the closed snap-flap pouch on the right hip, string coiled on the wrist, token hanging, five-finger hand, belt buckle picture-right of the pouch, no pen in the visible (right) pocket, stool and open file at picture-left"
+  },
+  "s37": {
+   "verdict": "pass",
+   "checked": "identity matches sheet close-up, near front-on, tighter than s31, window shaft across the picture-right side of her face, two bars, pen picture-right, rack and bundles behind with blank tags; face about 25-55% down",
+   "nits": [
+    "Eyes meet the lens rather than looking past it."
+   ]
+  }
+ },
+ "fixes": {
+  "s14": "Retake (its one retake under 7.8). Keep the prompt and restate the hand in picture terms and smaller: only the tip of the peanut and the thumb and first finger enter from the bottom-left corner, everything left of 18% across and below 66% down, nothing else of the hand in frame. Before generating, update shots.json s14 overlay ov_shield.surface to the plate where it is drawn in the new take (in this take about 30-45% down, 32-83% across). If the retake also misses, accept the better take under 7.8 and log the sliver on s20's left edge.",
+  "s16": "Retake (its one retake). Add to the s16 prompt and its STATE block, in picture terms as s23 does: 'The ball of orange wool sits in her RIGHT cardigan pocket, on the PICTURE-LEFT side, next to the table; the picture-right pocket is empty; the yarn runs from the picture-left pocket up to the work.' Keep everything else.",
+  "s01_overlay": "No retake. Update shots.json s01 overlay ov_token_7.surface to the drawn token face: about 41-56% down, 59-86% across.",
+  "s26_reminder": "Anchor s26 still needs its retake before s28 and s29 can be generated (anchor-check.s9.json)."
+ },
+ "fault_rate_D0M2": "Prop/side state wrong in 1 of 21 non-anchor frames (s16 wool). Placement miss in 1 (s14 hand). Below the 1-in-5 trigger for D-013 fallback (c).",
+ "not_verified": "No face-matching tool; identity judged by eye on crops. Heights only by eye (s06). Colours not sampled as hex. Raw pngs not opened. Pixel positions measured from crops and the 720-wide views to about 1%. Not checked against audio or the timeline."
+}

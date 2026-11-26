@@ -1,0 +1,153 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,100"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 100
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,100",
+				"to": "00:00:00,600"
+			},
+			"offsets": {
+				"from": 100,
+				"to": 600
+			},
+			"text": " You're"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,600",
+				"to": "00:00:01,430"
+			},
+			"offsets": {
+				"from": 600,
+				"to": 1430
+			},
+			"text": " awake?"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,430",
+				"to": "00:00:01,620"
+			},
+			"offsets": {
+				"from": 1430,
+				"to": 1620
+			},
+			"text": " I"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,620",
+				"to": "00:00:01,770"
+			},
+			"offsets": {
+				"from": 1620,
+				"to": 1770
+			},
+			"text": " was"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,770",
+				"to": "00:00:02,080"
+			},
+			"offsets": {
+				"from": 1770,
+				"to": 2080
+			},
+			"text": " only"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,080",
+				"to": "00:00:02,740"
+			},
+			"offsets": {
+				"from": 2080,
+				"to": 2740
+			},
+			"text": " putting"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,740",
+				"to": "00:00:03,170"
+			},
+			"offsets": {
+				"from": 2740,
+				"to": 3170
+			},
+			"text": " saffron"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,170",
+				"to": "00:00:03,330"
+			},
+			"offsets": {
+				"from": 3170,
+				"to": 3330
+			},
+			"text": " in"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,330",
+				"to": "00:00:03,650"
+			},
+			"offsets": {
+				"from": 3330,
+				"to": 3650
+			},
+			"text": " your"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,650",
+				"to": "00:00:04,000"
+			},
+			"offsets": {
+				"from": 3650,
+				"to": 4000
+			},
+			"text": " milk."
+		}
+	]
+}

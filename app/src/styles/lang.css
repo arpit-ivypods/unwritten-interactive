@@ -1,0 +1,20 @@
+/*
+ * Devanagari rules for Tailwind type utilities. Not in a layer on purpose:
+ * utilities live in @layer utilities, which beats @layer components whatever
+ * the specificity, so these must sit outside the layers to win.
+ * Never track Devanagari, never uppercase it, lines of at least 1.3, and
+ * display sizes at 700 rather than 800 (design system, Type).
+ */
+.uw :lang(hi) {
+  letter-spacing: 0;
+}
+.text-display-hero:lang(hi),
+.text-display-title:lang(hi),
+.text-display-heading:lang(hi) {
+  line-height: 1.35;
+  font-weight: 700;
+}
+.text-label:lang(hi),
+.uppercase:lang(hi) {
+  text-transform: none;
+}

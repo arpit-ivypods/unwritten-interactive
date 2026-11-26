@@ -1,0 +1,489 @@
+{
+ "about": "s2e02 per-episode edit choices (S13 editor, 26 Nov, first edit). Inputs: shots.json (S7 clarity remap), script.{hi,en}.json, voice/manifest.jsonl + review.json, sound/cues.json, sound/manifest.jsonl, frames/review.json.",
+ "render_name": "s2e02",
+ "max_seconds": 150,
+ "voice_models": [
+  "v4"
+ ],
+ "layout": {
+  "cut_on_word": [
+   {
+    "line": "l08",
+    "word": {
+     "hi": "shield",
+     "en": "the"
+    },
+    "occurrence": 1,
+    "shot": "s09"
+   },
+   {
+    "line": "l15",
+    "word": {
+     "hi": "lockup",
+     "en": "lockup"
+    },
+    "occurrence": 1,
+    "shot": "s16"
+   },
+   {
+    "line": "l17",
+    "word": {
+     "hi": "त्रिपाठी",
+     "en": "Cheaper"
+    },
+    "occurrence": 1,
+    "shot": "s20"
+   }
+  ],
+  "tail": {
+   "s09": 24,
+   "s33": 18,
+   "s12": 30,
+   "s39": 2
+  }
+ },
+ "supers": {
+  "items": {
+   "su8": {
+    "position": "upper"
+   },
+   "su7": {
+    "until": "s34.end"
+   }
+  }
+ },
+ "shots": {
+  "s09": {
+   "layers": [
+    {
+     "src": "../s2e01/frames/s14.png",
+     "depth": 1
+    },
+    {
+     "src": "../s2e01/overlays/s14-ov_shield.png",
+     "depth": 1
+    }
+   ]
+  },
+  "s12": {
+   "move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.0,
+     "x": 0,
+     "y": 0
+    },
+    "to": {
+     "scale": 1.14,
+     "x": -0.3,
+     "y": 0
+    }
+   }
+  },
+  "s34": {
+   "layers": [
+    {
+     "src": "frames/s34.png",
+     "depth": 1
+    },
+    {
+     "src": "overlays/s34-ov_shield.png",
+     "depth": 1
+    }
+   ]
+  },
+  "s38": {
+   "layers": [
+    {
+     "src": "frames/s38.png",
+     "depth": 1
+    },
+    {
+     "src": "overlays/s38-ov_shield.png",
+     "depth": 1
+    }
+   ]
+  },
+  "s39": {
+   "layers": [
+    {
+     "src": "frames/s38.png",
+     "depth": 1
+    },
+    {
+     "src": "overlays/s38-ov_shield.png",
+     "depth": 1
+    }
+   ]
+  }
+ },
+ "sound": [
+  {
+   "cue": "amb_projection_room",
+   "kind": "bed",
+   "from": 0,
+   "to": "s10.end",
+   "loop": true,
+   "gain_db": -4,
+   "fade_in": 2,
+   "fade_out": 1
+  },
+  {
+   "cue": "amb_talkies_lobby",
+   "kind": "bed",
+   "from": "s11.start",
+   "to": "s33.end",
+   "window_s": [
+    8.0,
+    29.0
+   ],
+   "loop_xf": 15,
+   "gain_db": -7,
+   "fade_in": 0,
+   "fade_out": 1
+  },
+  {
+   "cue": "amb_real_thana",
+   "kind": "bed",
+   "from": "s34.start",
+   "to": "end",
+   "loop": true,
+   "gain_db": -9,
+   "fade_in": 0,
+   "fade_out": 1,
+   "segments": [
+    {
+     "from": "l33.speech_start - 6",
+     "to": "end",
+     "db": -10
+    }
+   ]
+  },
+  {
+   "cue": "sfx_pouch_flap_snap",
+   "id": "#b1",
+   "at": "l03.speech_start - 12",
+   "gain_db": -2
+  },
+  {
+   "cue": "sfx_cuff_chain_clink",
+   "id": "#b1",
+   "at": "l03.speech_start - 1",
+   "gain_db": -10
+  },
+  {
+   "cue": "s2e02_sfx_wool_pull",
+   "at": "l06.split1_start",
+   "until": "s06.end",
+   "gain_db": 0,
+   "fade_out": 4
+  },
+  {
+   "cue": "sfx_knitting_needles",
+   "id": "#b2",
+   "kind": "bed",
+   "from": "l09.speech_start",
+   "to": "s10.end",
+   "loop": true,
+   "gain_db": -10,
+   "fade_in": 6,
+   "fade_out": 1
+  },
+  {
+   "cue": "s2e02_sfx_bicycle_bell_tring",
+   "at": "s11.start",
+   "trim": "0.2s",
+   "gain_db": -12,
+   "fade_out": 3
+  },
+  {
+   "cue": "s2e02_sfx_wooden_stair_steps",
+   "at": "s11.start",
+   "until": "s11.end",
+   "gain_db": -10,
+   "fade_out": 4,
+   "segments": [
+    {
+     "from": "l10.speech_start",
+     "db": -4
+    }
+   ]
+  },
+  {
+   "cue": "mus_theme_caper_bed",
+   "id": "#b3",
+   "at": "s11.start",
+   "until": "s15.start + 3",
+   "trim": "16s",
+   "gain_db": -9,
+   "fade_in": 6,
+   "fade_out": 1,
+   "duck": true
+  },
+  {
+   "cue": "sfx_pen_scratch",
+   "id": "#b4",
+   "at": "l12.speech_start + 4",
+   "until": "l12.speech_end",
+   "gain_db": 0,
+   "fade_out": 4
+  },
+  {
+   "cue": "sfx_rubber_stamp",
+   "at": "l37.speech_end + 4",
+   "len": 8,
+   "gain_db": -6,
+   "fade_out": 2
+  },
+  {
+   "cue": "s2e02_sfx_receipt_tear",
+   "at": "l37.speech_end + 11",
+   "trim": "0.5s",
+   "gain_db": 2
+  },
+  {
+   "cue": "sfx_wall_clock_tick",
+   "kind": "bed",
+   "from": "l13.speech_end",
+   "to": "s14.end",
+   "loop": true,
+   "gain_db": -2,
+   "fade_in": 3,
+   "fade_out": 6
+  },
+  {
+   "cue": "sfx_car_door",
+   "at": "s15.start + 3",
+   "gain_db": -14,
+   "filter": {
+    "lowpass_hz": 2500
+   }
+  },
+  {
+   "cue": "sfx_steps_gravel",
+   "at": "l15.speech_start + 36",
+   "until": "s16.end",
+   "gain_db": -10,
+   "fade_in": 40,
+   "fade_out": 2
+  },
+  {
+   "cue": "sfx_steps_terrazzo",
+   "id": "#in",
+   "at": "s17.start",
+   "until": "l16.speech_start + 24",
+   "gain_db": -14,
+   "fade_out": 6,
+   "segments": [
+    {
+     "from": "l16.speech_start",
+     "db": -4
+    }
+   ]
+  },
+  {
+   "cue": "sfx_keyring_jingle",
+   "id": "#in",
+   "at": "l16.speech_start",
+   "until": "s18.end",
+   "gain_db": -6,
+   "fade_out": 6
+  },
+  {
+   "cue": "s2e02_sfx_envelope_on_wood",
+   "at": "l16.speech_end - 4",
+   "gain_db": -12
+  },
+  {
+   "cue": "mus_tension_note",
+   "id": "#b6a",
+   "kind": "bed",
+   "from": "l16.speech_start",
+   "to": "l16.speech_start + 360",
+   "trim": "2s",
+   "loop": false,
+   "gain_db": -16,
+   "fade_in": 15,
+   "fade_out": 15,
+   "duck": true
+  },
+  {
+   "cue": "mus_tension_note",
+   "id": "#b6b",
+   "kind": "bed",
+   "from": "l16.speech_start + 345",
+   "to": "s23.end",
+   "trim": "2s",
+   "loop": false,
+   "gain_db": -16,
+   "fade_in": 15,
+   "fade_out": 15,
+   "duck": true
+  },
+  {
+   "cue": "s2e02_sfx_medal_tink",
+   "at": "s23.start + 1",
+   "len": 15,
+   "gain_db": -8,
+   "fade_out": 3
+  },
+  {
+   "cue": "sfx_steps_terrazzo",
+   "id": "#out",
+   "at": "s23.start + 12",
+   "until": "s24.start + 6",
+   "trim": "1.5s",
+   "gain_db": -18,
+   "fade_out": 10
+  },
+  {
+   "cue": "sfx_keyring_jingle",
+   "id": "#out",
+   "at": "s23.start + 14",
+   "until": "l20.speech_start - 2",
+   "gain_db": -8,
+   "fade_out": 8
+  },
+  {
+   "cue": "s2e02_sfx_booth_grille_creak",
+   "at": "s24.start - 14",
+   "until": "l20.speech_start + 4",
+   "gain_db": -20,
+   "fade_out": 4
+  },
+  {
+   "cue": "sfx_pen_scratch",
+   "id": "#b8",
+   "at": "l20.speech_start",
+   "until": "l21.speech_start - 3",
+   "gain_db": 0,
+   "fade_out": 4
+  },
+  {
+   "cue": "sfx_match_wax",
+   "at": "l23.speech_start - 8",
+   "until": "l23.speech_end",
+   "gain_db": -14,
+   "fade_out": 6
+  },
+  {
+   "cue": "sfx_page_turn",
+   "at": "l24.speech_start - 12",
+   "len": 15,
+   "gain_db": 3,
+   "fade_out": 3
+  },
+  {
+   "cue": "sfx_cuff_chain_clink",
+   "id": "#b10",
+   "at": "l28.speech_start + 10",
+   "gain_db": -12
+  },
+  {
+   "cue": "sfx_pouch_flap_snap",
+   "id": "#b10",
+   "at": "l28.speech_end - 6",
+   "gain_db": -4
+  },
+  {
+   "cue": "mus_theme_warm_ending",
+   "at": "l28.speech_start",
+   "until": "s33.end",
+   "gain_db": -20,
+   "fade_in": 20,
+   "fade_out": 18,
+   "duck": true
+  },
+  {
+   "cue": "sfx_steps_terrazzo",
+   "id": "#pushpa",
+   "at": "l30.speech_end + 2",
+   "until": "s33.end",
+   "trim": "2.5s",
+   "gain_db": -18,
+   "fade_out": 4
+  },
+  {
+   "cue": "sfx_peanut_crack",
+   "id": "#a",
+   "at": "s34.start",
+   "len": 8,
+   "gain_db": -12
+  },
+  {
+   "cue": "sfx_peanut_crack",
+   "id": "#b",
+   "at": "l31.speech_end + 1",
+   "trim": "0.5s",
+   "len": 10,
+   "gain_db": -12
+  },
+  {
+   "cue": "sfx_knitting_needles",
+   "id": "#b11",
+   "kind": "bed",
+   "from": "l32.speech_start",
+   "to": "s36.start",
+   "loop": true,
+   "gain_db": -12,
+   "fade_in": 6,
+   "fade_out": 0
+  },
+  {
+   "cue": "sfx_desk_phone_lift",
+   "at": "s37.start + 3",
+   "len": 9,
+   "gain_db": -15,
+   "fade_out": 2
+  },
+  {
+   "cue": "sfx_dtmf_dialling",
+   "at": "s37.start + 14",
+   "len": 13,
+   "gain_db": -12,
+   "fade_out": 2
+  },
+  {
+   "cue": "sfx_ringback_pickup",
+   "id": "#ring",
+   "at": "s37.start + 30",
+   "len": 15,
+   "gain_db": -22,
+   "fade_out": 3
+  },
+  {
+   "cue": "sfx_ringback_pickup",
+   "id": "#click",
+   "at": "s38.start - 10",
+   "trim": "2.45s",
+   "len": 10,
+   "gain_db": -2,
+   "fade_out": 2
+  },
+  {
+   "cue": "mus_tension_note",
+   "id": "#b12",
+   "kind": "bed",
+   "from": "s37.start + 30",
+   "to": "end",
+   "trim": "2s",
+   "loop": false,
+   "gain_db": -18,
+   "fade_in": 6,
+   "fade_out": 1,
+   "duck": true
+  }
+ ],
+ "notes": [
+  "First edit (S13, 26 Nov). Camera moves come from shots.json; second framings and the two reused s2e01 frames (s01 <- s2e01 s36, s09 <- s2e01 s14) render from their source images.",
+  "Slate: s11 (scene-B anchor). frames/review.json rejects attempt 1 (second pair of cuffs in Nirala's hand); attempt 2 is on disk (frames/manifest.jsonl) but has no review row, so the build slates it until S9 adds a retake-check row. No frame was generated or judged here. ov_token_8 (s11) is not drawn for the same reason.",
+  "cut_on_word copied from shots.json (S7 remap, cut_anchors): l08 s08->s09 on hi 'shield' / en 'the'; l15 s15->s16 on 'lockup'; l17 s19->s20 on hi 'त्रिपाठी' / en 'Cheaper'. 'shot' names the later shot, as build_timeline.py reads it. l15's cut word is placed by grapheme spread in both languages (no whisper match for that segment); l08 and l17 by whisper stamps.",
+  "Tails: s09 24 (S7: the insert then reads about 1.9 s); s33 18 (b10's 0.6 s after l30, Pushpa's steps out); s12 30 (cue sheet editor_notes: the stamp and receipt tear sit after l37, before the cut to s13); s39 2 (b12: hard cut to black on the last word of l34, then end_black).",
+  "s12 (top-down counter insert, l12, l36, l37; about 10.4 s hi, 10.2 s en): shots.json has 'hold'; overridden with a slow custom push (scale 1.0 to 1.14, x 0 to -0.3, ease-in-out) toward the register and receipt so the 10 s set-up is not a still. Not watched in motion. Still past the 8 s set-up guide; flag for screening (S7 remap note: no shot may be added).",
+  "Overlays as layers (s2e01 convention): s09 uses s2e01's frames/s14.png with overlays/s14-ov_shield.png (same source and crop family as s2e01 s20). ov_shield drawn new on s34, s38 and s39 (s39 is the second framing of s38): 'ZERO CRIME' in s2e01's ink (59,36,16), AvenirNext-Bold, centred on the brass plate measured by pixel scan (s34 plate x 569-866, y 296-456; s38 plate x 977-1303, y 317-503 of 1440x2560); checked on stills only. Not drawn (dressing, left for screening): ov_fake_board (s11, s13, s16, s22, s24, s26), ov_envelope_tag (s27, spoken by l20).",
+  "Supers: su8 'position': 'upper' (in the lower third it covered Bhaiyaji's keys and hand on s18; upper sits over the ceiling beams, left of his head). su7 'until': 's34.end' so it ends on the s34 cut (2.17 s hi, 2.33 s en) instead of running 0.8 s into s35's knitting; default lower position, clear of the shield plate at the top of s34. The build still flags su7 for starting on s34 (shots.json lists ov_shield there, dressing): s34 is the only shot of l31 and the scene's first, as S7 placed it.",
+  "Sound: the cue sheet has no place entries, so every placement is written here from placement_by_beat. Absolute gains follow s2e01's levels for shared cues (amb_talkies_lobby -7 with the 8-29 s window, amb_real_thana -9, amb_projection_room -4, knitting -10/-12, peanut -12, phone lift -15, dtmf -12, stamp -6, caper bed -9 on its continuous 16-37 s stretch, tension note -16 on its steady 2-14 s stretch in two crossfaded pieces); new cues set from their manifest peak and mean levels. None of it has been listened to.",
+  "Sound deviations: mus_theme_caper_bed starts at trim 16 s (0-16 s has 1.5 s holes); b4 stamp and receipt tear after l37 (l36 and l37 now sit between l12 and l13); keyring jingle only under l16 and out of the door in b7, not under l17 (keeps the laugh and 'Cheaper...' clear); steps on gravel start 36 frames into l15 with a 40-frame fade-in (en l15 has no first split pause); amb_talkies_lobby has no +2 dB lift in the b6/b7 silences (the crossfaded loop takes no segments); sfx_cuff_chain_clink in b10 is the same take at -12 (no pitch shift); ring-back is a 0.5 s burst at -22 and the pick-up click a separate slice (trim 2.45 s) 10 frames before s38; mus_theme_warm_ending only its opening chord, fading out over the last 0.6 s of s33 (no cross-fade to the 34 s resolve, not judged by ear); amb_real_thana -10 dB from l33 to the end; everything cuts on the last frame of s39."
+ ]
+}

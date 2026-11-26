@@ -1,0 +1,175 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,090"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 90
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,090",
+				"to": "00:00:00,180"
+			},
+			"offsets": {
+				"from": 90,
+				"to": 180
+			},
+			"text": " I"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,180",
+				"to": "00:00:00,670"
+			},
+			"offsets": {
+				"from": 180,
+				"to": 670
+			},
+			"text": " always"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,670",
+				"to": "00:00:01,060"
+			},
+			"offsets": {
+				"from": 670,
+				"to": 1060
+			},
+			"text": " take"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,060",
+				"to": "00:00:01,340"
+			},
+			"offsets": {
+				"from": 1060,
+				"to": 1340
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,340",
+				"to": "00:00:01,950"
+			},
+			"offsets": {
+				"from": 1340,
+				"to": 1950
+			},
+			"text": " Tudor,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,950",
+				"to": "00:00:02,270"
+			},
+			"offsets": {
+				"from": 1950,
+				"to": 2270
+			},
+			"text": " these"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,270",
+				"to": "00:00:02,630"
+			},
+			"offsets": {
+				"from": 2270,
+				"to": 2630
+			},
+			"text": " wedding"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,630",
+				"to": "00:00:03,190"
+			},
+			"offsets": {
+				"from": 2630,
+				"to": 3190
+			},
+			"text": " bangles,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,190",
+				"to": "00:00:03,350"
+			},
+			"offsets": {
+				"from": 3190,
+				"to": 3350
+			},
+			"text": " off"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,350",
+				"to": "00:00:03,550"
+			},
+			"offsets": {
+				"from": 3350,
+				"to": 3550
+			},
+			"text": " in"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,550",
+				"to": "00:00:03,670"
+			},
+			"offsets": {
+				"from": 3550,
+				"to": 3670
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,670",
+				"to": "00:00:04,080"
+			},
+			"offsets": {
+				"from": 3670,
+				"to": 4080
+			},
+			"text": " car."
+		}
+	]
+}

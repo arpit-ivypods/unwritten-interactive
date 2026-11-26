@@ -1,0 +1,164 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,090"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 90
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,090",
+				"to": "00:00:00,180"
+			},
+			"offsets": {
+				"from": 90,
+				"to": 180
+			},
+			"text": " A"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,180",
+				"to": "00:00:00,360"
+			},
+			"offsets": {
+				"from": 180,
+				"to": 360
+			},
+			"text": " man"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,360",
+				"to": "00:00:00,600"
+			},
+			"offsets": {
+				"from": 360,
+				"to": 600
+			},
+			"text": " who"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,600",
+				"to": "00:00:01,110"
+			},
+			"offsets": {
+				"from": 600,
+				"to": 1110
+			},
+			"text": " locks"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,110",
+				"to": "00:00:01,350"
+			},
+			"offsets": {
+				"from": 1110,
+				"to": 1350
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,350",
+				"to": "00:00:01,790"
+			},
+			"offsets": {
+				"from": 1350,
+				"to": 1790
+			},
+			"text": " bride"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,790",
+				"to": "00:00:02,090"
+			},
+			"offsets": {
+				"from": 1790,
+				"to": 2090
+			},
+			"text": " in"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,090",
+				"to": "00:00:02,210"
+			},
+			"offsets": {
+				"from": 2090,
+				"to": 2210
+			},
+			"text": " is"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,210",
+				"to": "00:00:02,530"
+			},
+			"offsets": {
+				"from": 2210,
+				"to": 2530
+			},
+			"text": " not"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,530",
+				"to": "00:00:02,620"
+			},
+			"offsets": {
+				"from": 2530,
+				"to": 2620
+			},
+			"text": " a"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,620",
+				"to": "00:00:03,600"
+			},
+			"offsets": {
+				"from": 2620,
+				"to": 3600
+			},
+			"text": " party."
+		}
+	]
+}

@@ -1,0 +1,131 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,060"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 60
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,060",
+				"to": "00:00:00,480"
+			},
+			"offsets": {
+				"from": 60,
+				"to": 480
+			},
+			"text": " लक्डी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,480",
+				"to": "00:00:00,680"
+			},
+			"offsets": {
+				"from": 480,
+				"to": 680
+			},
+			"text": " की"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,680",
+				"to": "00:00:00,880"
+			},
+			"offsets": {
+				"from": 680,
+				"to": 880
+			},
+			"text": " है"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,880",
+				"to": "00:00:01,700"
+			},
+			"offsets": {
+				"from": 880,
+				"to": 1700
+			},
+			"text": " मैंडम,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,700",
+				"to": "00:00:02,420"
+			},
+			"offsets": {
+				"from": 1700,
+				"to": 2420
+			},
+			"text": " सागोन,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,420",
+				"to": "00:00:02,870"
+			},
+			"offsets": {
+				"from": 2420,
+				"to": 2870
+			},
+			"text": " कुट"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,870",
+				"to": "00:00:03,610"
+			},
+			"offsets": {
+				"from": 2870,
+				"to": 3610
+			},
+			"text": " तराशी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,610",
+				"to": "00:00:04,000"
+			},
+			"offsets": {
+				"from": 3610,
+				"to": 4000
+			},
+			"text": " ती"
+		}
+	]
+}

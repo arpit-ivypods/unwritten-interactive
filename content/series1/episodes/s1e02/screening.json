@@ -1,0 +1,105 @@
+{
+  "episode": "series1/s1e02",
+  "reviewer": "S15 Screening",
+  "kind": "first screening of the clarity edit, both languages. Series 1's question episode: the viewer votes after it.",
+  "date": "2026-11-26",
+  "files_screened": {
+    "hi": "render/s1e02.hi.mp4 (140.20 s, sha1 34d0b900d7cc...) and render/s1e02.hi.review.mp4 (sha1 35b8377b12fc...)",
+    "en": "render/s1e02.en.mp4 (143.40 s, sha1 860ba37101ba...) and render/s1e02.en.review.mp4 (sha1 249b8a65353f...)",
+    "note": "The clean and review cuts have byte-identical audio (audio-stream md5: hi 24ded394..., en bbf86f65...). The clean cut has no burned subtitles (checked one frame at 60 s). The 720p files were not screened."
+  },
+  "pass": true,
+  "scored": true,
+  "final_score": {"hi": 8, "en": 8},
+  "gate": "D-023 pass rule: 7/10 or more and no blocking fault. Met in both languages.",
+  "d025_trigger": "Not met. The D-025 items for this episode read clearly: l20-l21 (what Kiran loses and gains if Mausi falls) and l24-l25 (what each phrase sets off). l15 is decoded now that it starts on Aditya (see d025_checks.l15). I judged the new lines l31 to l36 from text, timing and measurements, and none is flat or expository in the D-025 sense. l32 comes closest. It is a watch item, not a trigger. Nobody judged delivery by ear.",
+  "verdict": "Pass at 8/10 in both languages, with no blocking fault. All 38 shots are real frames in both cuts (0 slates). whisper.cpp heard every line in substance in both languages. Levels are -14.2 / -14.3 LUFS integrated and -1.0 / -1.1 dBTP. The super is legible and covers no key action. The episode does its job as the question episode. Before the vote, a cold viewer has heard both options and what each one costs and gains. 'He drank it' sends the car at three, which takes Aditya to Mausi (l32, l24). Mausi goes to the police (l16), and Kiran loses her eighteen lakh and her home (l20) but is free to go (l21-l22). The danger is that her 'Rekha' lie is exposed (l09) and Aditya's plan for 'that hand' is eleven days and then one dose (l18-l19). 'The milk has split' sends the boys up (l24, and l13 says what the boys do), and Mausi 'sees to the rest' (l27). l25 closes the loophole: silence also sends them up. Aditya does not hear any of this, so the viewer knows more than he does going into the question. Billu's 'Ji, Mausi' identifies Mausi on the phone. On speaker, the same voice is identified by the warm 'Did you eat?' and by repeating the exact question from l23. The weaknesses are craft, not clarity. Three phone inserts are blank because the overlays are not drawn: s11 (hi 7.1 s / en 6.3 s), s12 and the buzzing s30. The ending has 1.5 s of digital silence on s38 because the in-breath is missing. Caveat: nobody listened or watched in motion. This screening is built from sampled frames, whisper.cpp and ffmpeg measurements.",
+  "precondition": {
+    "slates": "0 in both cuts (assemble.log: '38 shots (0 slate)' for hi and for en).",
+    "placeholders": "dialogue 0 in both. sound 1 in both: sfx_s1e02_b13_inbreath (known, deferred).",
+    "integrated_lufs": {"hi": -14.2, "en": -14.3},
+    "true_peak_dbtp": {"hi": -1.0, "en": -1.1},
+    "lra_lu": {"hi": 6.6, "en": 6.6},
+    "duration_s": {"hi": 140.2, "en": 143.4},
+    "video": "h264 1080x1920 30 fps, aac 48 kHz stereo, all four files.",
+    "hi_en_differ": "yes",
+    "result": "met"
+  },
+  "scores": {
+    "hi": {
+      "sync": {"score": 8, "basis": "Cue starts are the first speech of each segment (subs validation ok, ASR word timing). Two speaker changes are under 0.3 s of speech gap: l34->l14 0.27 s and l33->l23 0.07 s (Mausi answering Billu on the phone, natural). No clip-level sync check was run."},
+      "subtitles": {"score": 8, "basis": "59 cues. Validation ok, max 13.1 graphemes/s, no cue crosses a cut, text = script minus tags. Burned text read in 71 sampled frames: legible, at most 2 lines. 6 cues are at the 0.8 s minimum (short words). On s36 the cue 'हाँ बेटा?' sits over the body of the untouched tumbler. The milk surface stays visible."},
+      "transcript_vs_script": {"score": 8, "basis": "whisper.cpp ggml-small, one transcription per line window cut from the clean mix. Every line was heard in substance. The first passes of l23, l25 and l32 looped or dropped words. Re-cut windows with -mc 0 give 'तो बजे किरन्से पुचूंगी दामाद जीने दूद पी लिया', 'कुछ और बूले या चुप रहे, तब भी उपर.' and 'सब दीक रहा, तो तीन बजे गाडी हमें माँसी तक लेजाएगी.' One doubtful word: l13 (the c2 retake) 'थप्पड़' is still transcribed 'खब पर' in two windows. That needs the owner's ear. The subtitle carries it. Every other difference is spelling."},
+      "intelligibility_over_music": {"score": 9, "basis": "Speech windows average -16 to -21 dBFS. The lane bed is -42 dBFS in the l35/l24 gap, so the margin is about 20 dB under the drill (l23-l27). Mausi's phone and speaker lines are all heard by ASR."},
+      "music_and_effects_on_beats": {"score": 7, "basis": "The s30 vibrate is clearly present (-18 dBFS mean over the buzz). The SIM chime sits under l10. Two faults. First, s38 is digital silence (-91 dBFS) for 1.5 s, then 12 black frames, because the in-breath is missing. Second, the scripted overlays are not drawn, so s30 shows a dark phone that buzzes. Bangles, glass, creak and zip were placed by the build but not checked by ear."},
+      "audio_levels": {"score": 8, "basis": "-14.2 LUFS, -1.0 dBTP, LRA 6.6 LU. Clean = review."},
+      "picture_completeness": {"score": 7, "basis": "38/38 real frames. Missing: '1:52' and 'No network' on s11, the network bars on s12, and '2:00' with the caller name on s30. That leaves about 10 s of blank phone screen in total. s36 shows a red mark on the milk surface that the earlier tumbler shots (s05, s15, s21) do not have: continuity drift, low."},
+      "clarity_for_the_vote": {"score": 9, "basis": "See verdict and d025_checks."}
+    },
+    "en": {
+      "sync": {"score": 8, "basis": "Same method as hi. Speaker changes under 0.3 s: l05->l31 0.17 s, l31->l06 0.17 s, l34->l14 0.10 s (Aditya cutting in reads as intended), l17->l18 0.27 s, and l33->l23 0.07 s."},
+      "subtitles": {"score": 8, "basis": "61 cues. Validation ok, no cue crosses a cut. Max 17.0 graphemes/s, exactly at the limit, on three cues: c018 'I will check the wrist myself.', c041 'You are free to go, Sneha.' and c051 'they still go up.' (the last is part of the D-025 consequence line l25). Legible in 69 sampled frames. The same s36 tumbler overlap as hi."},
+      "transcript_vs_script": {"score": 8, "basis": "Every line was heard in substance. Mishearings on plot words: l09 'wrist' is heard as 'rest' ('I will check the rest myself'). l07 'calls at two' is heard as 'calls it too'. l13 'Billu's boys' is heard as 'we lose boys'. 'Mausi' comes out as 'Mossy/Morsi' (ASR). l33 'Ji, Mausi' is heard as 'Yes, ma'am'. The subtitles carry all of these. Only l09 'wrist' needs the owner's ear."},
+      "intelligibility_over_music": {"score": 9, "basis": "Speech averages -19 to -22 dBFS against a bed of about -42 dBFS, the same as hi."},
+      "music_and_effects_on_beats": {"score": 7, "basis": "The same as hi: the s30 buzz is present (-18.9 dBFS mean), and s38 is digital silence (-91 dBFS) for 1.4 s."},
+      "audio_levels": {"score": 8, "basis": "-14.3 LUFS, -1.1 dBTP, LRA 6.6 LU. Clean = review."},
+      "picture_completeness": {"score": 7, "basis": "The same as hi. s11 holds a blank phone for 6.3 s."},
+      "clarity_for_the_vote": {"score": 9, "basis": "See verdict and d025_checks. In l23 'Damaad ji, the groom,' is the one overt gloss. It is acceptable for English viewers."}
+    }
+  },
+  "blocking": [],
+  "d025_checks": {
+    "l20_l21": "Clear in both languages. 'And me? If Mausi goes, my eighteen lakh goes too. And my home.' / 'और मैं? मौसी गईं, तो मेरे अठारह लाख भी गए, घर भी।' states Kiran's cost. l21-l22 'Get me to Mausi. After that, I want nothing from you. / You are free to go, Sneha.' states her gain. Both are heard by ASR. The picture cuts from Kiran's CU (s23) to Aditya's CU (s24), so the speakers are clear.",
+    "l24_l25": "Clear in both. 'He drank it', the car at three. 'The milk has split', the boys go up. / Anything else, or silence, they still go up.' Both are heard by ASR, and the bed is ducked about 20 dB under them. l32 sets up 'car at three -> to Mausi', l13 sets up 'boys', and l35 'She knows what to say' exposes Kiran's 'No code' lie (l11) just before. Each phrase maps to one side of the ending question.",
+    "l15": "Decoded in both languages; the watch item is closed by this screening. l15 now opens on Aditya's MCU (s16, 'Our mother's bangles.' / 'माँ के कंगन थे।') and cuts to Kiran for 'The lane laughed at him for eleven days.' The line straight before it answers the D-025 doubt ('who took the bangles'). It runs l12 'We only take the jewellery' -> l34 'And the bride's gone by morning' -> l14 'Nobody touched Mohit either'. So the bride's gang took them, from Mohit, and 'our' makes them Aditya's family's. l18 'Mohit lasted eleven days' then pays off 'eleven days'. Limit: this is reasoned from text, picture and timing, not tested on viewers.",
+    "new_lines_flat_or_expository": {
+      "l31": "No. A sharp, in-character rebuttal of the Rekha lie.",
+      "l32": "Watch item, not a trigger. It explains the plan, but it is Kiran's bargaining chip after l06 ('Without me, Mausi's door won't open') and it sets up l24. Kiran speaks three lines in a row (l06, l07, l32, about 11 s), which leans toward recital.",
+      "l33": "No. It identifies Mausi on the line.",
+      "l34": "No. A dry tag that sets up l14.",
+      "l35": "No. It exposes the l11 lie.",
+      "l36": "No. Warm, and it pays off the mathri and Aditya's stare at the dabba (s33)."
+    },
+    "lines_answering_something_unheard": "None found. l28 'Did you eat? [chuckles] Don't lie to me.' follows a question with no reply. That is Mausi teasing before Kiran can answer, and Aditya's finger on his lips (s31) explains the silence. It is not a fault.",
+    "speakers_identifiable": "Yes. Kiran and Aditya are on screen or obviously off-screen (Kiran's l06 over Aditya's MCU in hi s08, and l34 over s16; the voice gender makes these unambiguous). Mausi in the lane is named by Billu's 'Ji, Mausi'. Mausi on speaker: s31 shows Aditya pressing the lit phone, and the voice, the 'beta' and the repeated l23 question identify her without the missing caller-name overlay."
+  },
+  "deferred_items_judged": {
+    "plot_overlays": "Their absence does not block understanding, but it is a craft cost. s11 1:52 / No network: l07 says the phone must be on, and on s12 Aditya works on the phone with the SIM chime under 'So. Is there a code?', so a viewer infers he has made the phone reachable. s30 2:00 and the caller name: l23 already put the call at two, the buzz is audible, and Mausi's voice identifies her. Cost: about 10 s of blank phone screen, and a phone that buzzes with its screen dark on s30.",
+    "b13_inbreath": "Missing, so s38 (Kiran's CU, lips parted) and the end black are 1.9 s of digital silence. The question still lands, because l29/l30 ask it twice. The breath would have signalled 'she is about to answer' as the cut to the vote. Not blocking."
+  },
+  "measurements": {
+    "frames_sampled": "hi 71, en 69 frames from the review cuts (each shot's midpoint plus each line start + 0.4 s, deduped within 0.35 s), viewed as contact sheets. 4 larger frames: su1 in both languages, s36 in both.",
+    "whisper": "/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, 16 kHz mono of the clean mixes, one transcription per line window (start-0.1 to end+0.25 s). hi l13, l14, l21, l23, l25 and l32 were re-cut with -mc 0.",
+    "levels": "ffmpeg ebur128 with true peak per clean file; volumedetect on the windows below.",
+    "window_levels_dbfs_mean": {"hi s30 buzz": -18.3, "en s30 buzz": -18.9, "hi lane gap l35/l24": -42.1, "hi s35 no lines": -30.0, "hi s37": -33.7, "hi s38": -91.0, "en s38": -91.0, "hi l28 speech": -20.2, "hi l23 speech": -20.7},
+    "su1": "hi 'घर के नीचे, गली में' 100.47-103.47 s; en 'The lane below the house' 100.8-103.8 s; both on s26, at about mid-frame on the left. It overlaps the lower half of the two backlit shapes by the bike (they are shown again on s28 and s35). Billu, the car and the lit window are clear."
+  },
+  "checks_run": [
+    "ffprobe and ebur128 on the clean files; audio md5 of the clean against the review cut",
+    "frame sampling of both review cuts, one per shot plus around each line change; clean-cut frame checked for no burned subs",
+    "whisper.cpp per line window against script.<lang>.json",
+    "subs.<lang>.json: validation block, graphemes/s, short cues, cut crossings; speaker-change gaps from word timings",
+    "super placement, timing and legibility",
+    "volumedetect on the s30 buzz, the lane bed, s35-s38"
+  ],
+  "not_checked": [
+    "Nobody listened or watched in motion. Delivery, emotion and breathiness are not judged.",
+    "Clip-level sync cross-correlation.",
+    "Camera moves (judged from stills only).",
+    "The 720p renders.",
+    "Individual sfx by ear (bangle clinks, glass, SIM chime, creak, zip, boots)."
+  ],
+  "fixes": [
+    {"owner": "Owner (ear list)", "severity": "low", "issue": "hi l13 (c2 retake): ASR still hears 'थप्पड़' as 'खब पर'. en l09: ASR hears 'wrist' as 'rest'.", "fix": "Listen to hi 55.8-60.3 s and en 37.2-40.9 s. Retake (take 2, eleven_v4) only if the word is heard wrong by ear. Otherwise close both."},
+    {"owner": "S11 Sound designer, then Editor (owner's usage call)", "severity": "low", "issue": "sfx_s1e02_b13_inbreath is missing, so s38 and the end black are digital silence.", "fix": "Generate the contingency cue once with the prompt already in sound/cues.json (sfx_s1e02_b13_inbreath), drop it in sound/, and re-render both languages. edit.json already places it at s38.start + 0.5s. If this is not generated, leave the silence: it does not block understanding."},
+    {"owner": "Editor (when a series-1 overlay-text layer exists)", "severity": "low", "issue": "The scripted phone overlays are not drawn, leaving blank phone inserts on s11, s12 and s30.", "fix": "Add edit.json shots.s30.layers ('2:00' upper; caller name 'मौसी' in hi / 'Mausi' in en at screen centre), shots.s11.layers ('1:52' upper, 'No network' on the screen) and shots.s12.layers (signal bars), as in shots.json. Do s30 first: it is the one where the picture contradicts the sound (a buzzing phone with a dark screen)."},
+    {"owner": "S7 Storyboard artist (optional, owner's call)", "severity": "low", "issue": "s36: a red mark on the milk surface that s05, s15 and s21 do not show (frame drift). The tumbler is the 'untouched milk' prop.", "fix": "None needed for the gate. If s36 is ever regenerated, prompt for plain milk with no mark on the surface."}
+  ],
+  "no_change": [
+    "l15 wording and its placement (starts on Aditya s16, cut to Kiran)",
+    "l08 on the s11 insert (deliberate clarity-pass move)",
+    "su1 on s26",
+    "Mausi's phone and speaker voice treatment",
+    "en l23 gloss 'Damaad ji, the groom,'"
+  ]
+}

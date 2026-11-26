@@ -1,0 +1,85 @@
+{
+ "by": "S9 Visual checker",
+ "date": "2026-11-26",
+ "scope": "s2e01 retake check (D-023 rule 1): s26 attempt 2 (scene D anchor), s14 attempt 2, s16 attempt 2, and attempt 1 of s28 and s29 (made against the new s26). s20 is a second framing of s14 and judged through it. I made none of these frames and generated nothing.",
+ "method": "Each png probed (all 1440x2560) and viewed whole at 720 wide against its prompt, shots.json STATE and the earlier S9 rejection; then cropped at full resolution with ffmpeg: s26 torso (pouch, pen, bars), token wrist and helmet, Pushpa (wool, bag, bun, spectacles, bar); s14 bottom-left corner measured in raw RGB pixels against the wall colour, and the brass plate measured the same way; s16 face/bars and hands/wool/pockets; s28 register stack and chest (bars, medal); s29 faces, open hand, epaulettes, bulb. s20's window computed from production/remotion/src/camera.ts for its custom move (scale 1.3, x -1 to -0.9, y 1 to 0.9). s16 attempt 1 (s16.prev1.png) viewed beside attempt 2.",
+ "summary": {
+  "pass": 5,
+  "reject": 0,
+  "passed": [
+   "s26",
+   "s14",
+   "s16",
+   "s28",
+   "s29"
+  ],
+  "s20": "inherits s14 pass",
+  "rule_11": "s26, s14 and s16 have now used their one retake; their attempt-2 takes stand. s28 and s29 passed on attempt 1, so no retake was spent."
+ },
+ "results": {
+  "s26": {
+   "attempt": 2,
+   "file_md5": "3f967728b04677b3769f0751c0058519",
+   "verdict": "pass",
+   "fixed": "Token string is on the picture-left wrist with Nandini facing us (pouch picture-left, blue pen in the picture-right pocket), so it is her RIGHT wrist as STATE requires; that same hand sets the helmet on the bench; her picture-right hand hangs empty.",
+   "checked": "Nandini identity (oval face, centre parting, low ponytail, two bars each side), face about 26-31% down; Pushpa one bar each, low round spectacles, bun with crossed needles, wool in the picture-left pocket (her right), picture-right pocket empty, bag on the picture-right shoulder (her left), hands empty; helmet resting on the bench, token blank and beside it; bench on the left wall, blank tokens on the nail, two blank brass-edged frames, high windows with shafts, pillar at picture-right; exactly two people; no text. Pair height: Nandini bends so it cannot be measured directly; Pushpa's head-to-feet span is about 0.89 of Nandini's bent span at the same depth, consistent with the 152/170 cm sheet.",
+   "drift": [
+    "Helmet's left edge about 4% from the picture-left edge (inside the 8% margin); the push-in keeps it in frame.",
+    "Pushpa is nearly square to camera rather than three-quarters picture-left."
+   ]
+  },
+  "s14": {
+   "attempt": 2,
+   "file_md5": "d2f8f03869f0626e9d964f73c82f0525",
+   "verdict": "pass",
+   "fixed": "Hand and peanut now lie only in the bottom-left corner: top at 76.3% down, right edge at 22.8% across (the 22.8% only at 84% down and below). Pixels of them inside s20's window: 0 at the move's start (23.1-100% x 0-76.9%) and 0 at its end (21.9-98.8% x 1.2-78.1%). Plate measured 29.8-45.0% down, 32.9-83.1% across, which matches the corrected ov_shield.surface in shots.json.",
+   "checked": "Shield front-on, plate blank with screws and one highlight, damp patch and teal dado as the plate; thumb and finger with one peanut pointing up; no text.",
+   "drift": [
+    "Misses the prompt's own 18% line (22.8%); the margin to s20's window is under 1% across.",
+    "Shield drawn larger than asked (about 10-71% down vs 12-54%)."
+   ]
+  },
+  "s16": {
+   "attempt": 2,
+   "file_md5": "6829d9c4e308f8257509a3226613f45c",
+   "verdict": "pass",
+   "fixed": "Orange wool ball now sits in the picture-left pocket (her RIGHT) next to the table, yarn running up to the work; the picture-right pocket is empty. This now matches s23 (wool picture-left) and her lock.",
+   "checked": "Identity vs take 1 and the lock (round face, frown, low round steel spectacles, grey-streaked high bun with crossed needles), one bar each side, plum sleeveless cardigan, eyes down on the knitting, orange work on bamboo needles at about 46-61% down, face about 23-37% down; envelope with blank violet ring on the table at picture-left; bag on the chair back; doorway, gate and bench geometry as take 1; tube light off; no text.",
+   "drift": [
+    "Nearly square to camera rather than three-quarters picture-left.",
+    "Envelope's left end about 2% from the edge (as in take 1); ring stays in frame."
+   ]
+  },
+  "s28": {
+   "attempt": 1,
+   "file_md5": "58df90276484e05d5bfd95da50087af2",
+   "verdict": "pass",
+   "checked": "Nirala identity (long face, pencil moustache, earnest eyes), cap level with teal band and black peak, three bars each side, medal picture-right (his left), both hands flat on the sides of the stack, blank slip index with blank tabs on top, stamp and open violet pad picture-left, kettle and two glasses picture-right, blank board and window shaft behind; face about 21-31% down; bottom fifth is the counter's front panel; no text.",
+   "drift": [
+    "EIGHT registers, not nine (l20 says one to nine). Not countable in a 2.5 s push-in, so logged rather than retaken.",
+    "Hands shown whole and the uniform reads fitted, not one size too big (same lock drift as s03).",
+    "Stack runs to about 74% down (safe band 48-68%) but stays above the subtitle fifth; kettle touches the picture-right edge."
+   ]
+  },
+  "s29": {
+   "attempt": 1,
+   "file_md5": "8685bbf2c2bb4843f3c83e29ae6a50d5",
+   "verdict": "pass",
+   "checked": "Nirala picture-left, Pushpa picture-right at the same depth (feet level). His open, palm-up hand is on the arm on the picture-right side of his body (his LEFT), with the medal on that side and the holster picture-left; three bars on both epaulettes (the far one foreshortened). Pushpa: wool in the picture-left pocket (her right, towards him), picture-right pocket empty, bag on the picture-right shoulder, hands empty. Heights per the line-up rule: her head top is within about 1% of the frame height of his eyebrows, cap top well above her bun and needles; her span is about 0.93 of his (sheet 152/160 = 0.95). Booth grille door shut; stair rises behind and between them; bulb unlit; faces about 27-35% and 31-38% down; matches s26's drawing of Pushpa; no text.",
+   "drift": [
+    "Sleeves do not cover his hands and the uniform reads fitted (same lock drift as s03/s28).",
+    "The nod reads as both looking down towards each other rather than a clear chin dip."
+   ]
+  },
+  "s20": {
+   "verdict": "pass (inherits s14 attempt 2)",
+   "note": "The current build_timeline.py still slates s20 because frames/s20.png does not exist; that is the toolsmith's second_framing fix (D-023 rule 3) or an editor mapping, not a frame fault."
+  }
+ },
+ "not_checked": [
+  "No render was played or extracted; this check is on the source pngs only.",
+  "Pair heights against the line-up sheet pngs themselves were not re-measured; I measured against the RELATIVE SIZE wording in the prompts.",
+  "Whether s28/s29 lobby geometry matches talkies_lobby.png in detail was judged by eye, not measured."
+ ],
+ "review_json": "frames/review.json updated: reject rows for s14, s16, s26 replaced by attempt-2 pass rows (old verdicts kept under 'supersedes'); s28, s29 and s20 rows added. After the edit no row in the file carries a reject verdict."
+}

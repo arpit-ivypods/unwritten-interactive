@@ -1,0 +1,59 @@
+{
+ "by": "S9 Visual checker",
+ "date": "2026-11-26",
+ "scope": "s2e03 retake check (D-023 rule 4.1), attempt 2 of s32 and s33 only. After this one retake the better take stands (D-013 rule 11; D-015 rule 5); no further frame is asked for.",
+ "method": "Both takes of each shot viewed whole at 720 wide with 10% guide lines, beside s31 (the shot before s32), the anchor s02, the nandini sheet and the handcuffs prop sheet. Full-resolution ffmpeg crops: s32 hands and fingers, s32 her hand, cuffs and chain; s33 face (against the sheet close-up), cuffs and hand, bottom fifth, clock with 5% guides. Prompts s32.txt and s33.txt read for THE SHOT, SAFE AREAS and STATE. Positions are by eye against guide lines unless stated.",
+ "results": {
+  "s32": {
+   "verdict": "approved with logged drift",
+   "attempt": 2,
+   "standing_take": "frames/s32.png",
+   "file_md5": "6693c59b043fcea548af8625919b77d8",
+   "previous_take": {
+    "file": "frames/s32.prev1.png",
+    "attempt": 1,
+    "verdict": "rejected",
+    "file_md5": "415499df10d9463bcdb3b4a867688ce4"
+   },
+   "better_take": "attempt 2: it fixes all three attempt-1 faults (arm anatomy, anchor-copied background with the axis jump, fingers at about 85%).",
+   "checked": "No face, 0 sheet faces. Both of Nirala's forearms run unbroken from the top edge, parallel; sleeves over the backs of the hands; five digits each, thumbs inward, palms down; wrists bare of cuffs. The only arm from a side edge is Nandini's right arm from the picture-right, buttoned cuff with its button, darker skin than his; her left arm is not in the picture. Handcuffs match the prop sheet (keyhole housings, plain steel, chain); both rings open C shapes, hanging by the chain above the revolver, not touching it. Revolver flat in profile, barrel to picture-left, grip and knot to picture-right, pointing at nobody, matching s31. Counter runs straight across the width as in s31, so no axis jump; behind his arms only plain night-navy, none of the anchor's bench, helmet, tokens, poster frame, file or registers. Bottom fifth is plain counter. No text or marks.",
+   "drift": [
+    "Wrists sit low: sleeve ends about 66-73% down and fingertips about 77-78%, against 56-66% and no lower than 72%. Still above the bottom-fifth band. s31's wrists sit about 72-80%, so the cut s31 to s32 matches better this way.",
+    "Her hand sits at about 17-28% down, higher than the asked 28-45%; the cuffs are inside the asked band at about 28-48%.",
+    "His forearms are about 40% of the frame width apart at their inner edges, not a hand's width; his picture-left sleeve comes to about 5% from the left edge, inside the 8% margin. Harmless: it is an arm running off frame; the 0.12 push-in about the centre crops about 5.5% each side.",
+    "The sleeves are long straight khaki tubes with no elbow, from the top edge to about 70% down. Seen alone they can read a little like trouser legs; after s31 (same sleeves, same hands, same revolver, same counter) they read as his forearms. Not a reject at the retake stage.",
+    "Branch seam: s2a01 b1 and s2b01 b1 must match this attempt-2 frame, not s32.prev1.png."
+   ]
+  },
+  "s33": {
+   "verdict": "approved with logged drift",
+   "attempt": 2,
+   "standing_take": "frames/s33.png",
+   "file_md5": "3fc1a6e5c5c0af5d9393a71bfe371fc1",
+   "previous_take": {
+    "file": "frames/s33.prev1.png",
+    "attempt": 1,
+    "verdict": "rejected",
+    "file_md5": "953c01cacebd52a29da5d4b549b6c8b5"
+   },
+   "better_take": "attempt 2: the key prop, the open cuffs, is out of the subtitle and question-card band (rings about 58-70% down, against 73-87% in attempt 1). Everything attempt 1 passed is kept.",
+   "checked": "One sheet face. Identity matches the sheet close-up: oval face, firm angular jaw, centre parting, low ponytail, level straight brows, no jewellery; mouth just open on the line. Two bars on each epaulette, lantern patch on both sleeves, blue pen in the picture-right pocket. Pouch on the picture-left hip, flap open, empty. Open cuffs (both rings open C shapes) held by the chain in her right hand (picture-left), forearm bent across her stomach, rings against her shirt front above the belt buckle (about 73-76%). Left hand (picture-right) empty at her side, five digits. Clock: white face, black rim, no numerals, hour hand on eleven, minute hand on twelve. Blank board edge with teal border on the right. Counter top behind her hips. No Nirala, nobody else. No text.",
+   "drift": [
+    "Rings reach about 70% down, about 4 points below the asked 66%; hand at about 53-60%, against about 50%.",
+    "Her empty left hand reaches about 84-97% down, inside the bottom fifth (the prompt asked that neither hand reach it; Codex's own log reports this miss). Attempt 1 had the same hand there and S9 passed it. It is an empty hand at the picture-right side, not the key prop.",
+    "A star-shaped fold shadow on the trouser front at about 82-92% down, as in attempt 1. Cel shading, under the subtitle band; logged only.",
+    "Clock at about 15-28% down and 7.8-29.5% across (5% guides at full resolution), against 10-24% down and at least 10% in. With the 0.2 push-in, if it scales about the focus point (x 0.48, y 0.3) the end window runs x 0.08-0.91 and y 0.05-0.88: the clock's left rim loses well under 1% of frame width and the rings stay above that window's bottom fifth. If the window is clamped to the top (y 0-0.83), the ring bottoms come close to the band. S13 editor to confirm on the render, as S7's drift note in shots.json also asks; changing the move, not the frame, is the remedy.",
+    "Face, brow to chin, at about 24-35% (hair top about 17%), within about a point of the asked 16-34%.",
+    "shots.json STATE for s33 still says the cuffs are 'at her waist'; the prompt and this frame have them raised against the shirt front. Storyboard wording only; the frame follows the prompt."
+   ]
+  }
+ },
+ "summary": {
+  "checked": 2,
+  "approved": 0,
+  "approved_with_logged_drift": 2,
+  "rejected": 0,
+  "further_retakes": 0
+ },
+ "not_verified": "No render or push-in window was seen: the crop figures are computed from shots.json, not observed. The s2a01 b1 and s2b01 b1 branch-seam frames were not compared. Face judged by eye against the sheet close-up, no metric. Positions are by eye against guide lines."
+}

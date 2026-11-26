@@ -1,0 +1,164 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,140"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 140
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,140",
+				"to": "00:00:01,000"
+			},
+			"offsets": {
+				"from": 140,
+				"to": 1000
+			},
+			"text": " मिलेंगी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,240",
+				"to": "00:00:01,540"
+			},
+			"offsets": {
+				"from": 1240,
+				"to": 1540
+			},
+			"text": " तुमहारी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,540",
+				"to": "00:00:02,010"
+			},
+			"offsets": {
+				"from": 1540,
+				"to": 2010
+			},
+			"text": " पुडिया"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,010",
+				"to": "00:00:02,150"
+			},
+			"offsets": {
+				"from": 2010,
+				"to": 2150
+			},
+			"text": " का"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,150",
+				"to": "00:00:02,660"
+			},
+			"offsets": {
+				"from": 2150,
+				"to": 2660
+			},
+			"text": " सुआत"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,660",
+				"to": "00:00:03,240"
+			},
+			"offsets": {
+				"from": 2660,
+				"to": 3240
+			},
+			"text": " तो"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,240",
+				"to": "00:00:03,680"
+			},
+			"offsets": {
+				"from": 3240,
+				"to": 3680
+			},
+			"text": " कोई"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,680",
+				"to": "00:00:03,890"
+			},
+			"offsets": {
+				"from": 3680,
+				"to": 3890
+			},
+			"text": " भी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,890",
+				"to": "00:00:04,160"
+			},
+			"offsets": {
+				"from": 3890,
+				"to": 4160
+			},
+			"text": " फार्मसिस्ट"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,160",
+				"to": "00:00:04,550"
+			},
+			"offsets": {
+				"from": 4160,
+				"to": 4550
+			},
+			"text": " पकर"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,550",
+				"to": "00:00:04,840"
+			},
+			"offsets": {
+				"from": 4550,
+				"to": 4840
+			},
+			"text": " ले"
+		}
+	]
+}

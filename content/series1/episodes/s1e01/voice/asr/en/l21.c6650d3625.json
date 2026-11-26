@@ -1,0 +1,164 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,020"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 20
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,020",
+				"to": "00:00:00,210"
+			},
+			"offsets": {
+				"from": 20,
+				"to": 210
+			},
+			"text": " I"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,210",
+				"to": "00:00:00,490"
+			},
+			"offsets": {
+				"from": 210,
+				"to": 490
+			},
+			"text": " didn't"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,490",
+				"to": "00:00:00,650"
+			},
+			"offsets": {
+				"from": 490,
+				"to": 650
+			},
+			"text": " go"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,650",
+				"to": "00:00:00,770"
+			},
+			"offsets": {
+				"from": 650,
+				"to": 770
+			},
+			"text": " to"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,770",
+				"to": "00:00:00,980"
+			},
+			"offsets": {
+				"from": 770,
+				"to": 980
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,980",
+				"to": "00:00:01,660"
+			},
+			"offsets": {
+				"from": 980,
+				"to": 1660
+			},
+			"text": " wedding."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,660",
+				"to": "00:00:01,870"
+			},
+			"offsets": {
+				"from": 1660,
+				"to": 1870
+			},
+			"text": " I"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,870",
+				"to": "00:00:01,970"
+			},
+			"offsets": {
+				"from": 1870,
+				"to": 1970
+			},
+			"text": " was"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,970",
+				"to": "00:00:02,110"
+			},
+			"offsets": {
+				"from": 1970,
+				"to": 2110
+			},
+			"text": " at"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,110",
+				"to": "00:00:02,330"
+			},
+			"offsets": {
+				"from": 2110,
+				"to": 2330
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,330",
+				"to": "00:00:02,880"
+			},
+			"offsets": {
+				"from": 2330,
+				"to": 2880
+			},
+			"text": " shop."
+		}
+	]
+}

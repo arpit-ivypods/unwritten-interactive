@@ -1,0 +1,164 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,040"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 40
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,040",
+				"to": "00:00:00,380"
+			},
+			"offsets": {
+				"from": 40,
+				"to": 380
+			},
+			"text": " Put"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,380",
+				"to": "00:00:00,550"
+			},
+			"offsets": {
+				"from": 380,
+				"to": 550
+			},
+			"text": " it"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,550",
+				"to": "00:00:01,200"
+			},
+			"offsets": {
+				"from": 550,
+				"to": 1200
+			},
+			"text": " down!"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,200",
+				"to": "00:00:01,250"
+			},
+			"offsets": {
+				"from": 1200,
+				"to": 1250
+			},
+			"text": " If"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,250",
+				"to": "00:00:01,560"
+			},
+			"offsets": {
+				"from": 1250,
+				"to": 1560
+			},
+			"text": " you're"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,560",
+				"to": "00:00:02,130"
+			},
+			"offsets": {
+				"from": 1560,
+				"to": 2130
+			},
+			"text": " asleep,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,130",
+				"to": "00:00:02,190"
+			},
+			"offsets": {
+				"from": 2130,
+				"to": 2190
+			},
+			"text": " who"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,190",
+				"to": "00:00:02,540"
+			},
+			"offsets": {
+				"from": 2190,
+				"to": 2540
+			},
+			"text": " takes"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,540",
+				"to": "00:00:02,620"
+			},
+			"offsets": {
+				"from": 2540,
+				"to": 2620
+			},
+			"text": " me"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,620",
+				"to": "00:00:02,740"
+			},
+			"offsets": {
+				"from": 2620,
+				"to": 2740
+			},
+			"text": " to"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,740",
+				"to": "00:00:03,280"
+			},
+			"offsets": {
+				"from": 2740,
+				"to": 3280
+			},
+			"text": " Morsi?"
+		}
+	]
+}

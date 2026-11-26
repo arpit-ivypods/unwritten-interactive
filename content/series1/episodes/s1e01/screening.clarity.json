@@ -1,0 +1,262 @@
+{
+  "episode": "series1/s1e01",
+  "reviewer": "S15 Screening",
+  "kind": "full screening of the clarity re-edit (the one full screening, D-023 decision 2; D-025 'Would change it')",
+  "date": "2026-11-26",
+  "files_screened": {
+    "hi": "render/s1e01.hi.mp4 (130.10 s, sha1 b617f9aaadf6...) and render/s1e01.hi.review.mp4 (sha1 b662d5f7a3c9...)",
+    "en": "render/s1e01.en.mp4 (123.40 s, sha1 d8076d808727...) and render/s1e01.en.review.mp4 (sha1 38ba45d39ee3...)",
+    "note": "Clean and review cuts carry byte-identical audio (md5 of the audio stream: hi 16ce7d8a..., en b7e55289...). The 720p files were not screened."
+  },
+  "pass": true,
+  "scored": true,
+  "final_score": {
+    "hi": 8,
+    "en": 8
+  },
+  "gate": "D-023 decision 2 pass rule: 7/10 or more and no blocking fault. Met in both languages, so s1e01 passes Gate 4 without going back to the Arbiter.",
+  "d025_trigger": "Not met. Every D-025 fix and clarity line reads clearly in context. No new line is flat or expository in the D-025 sense, judged on text, timing and measurement. Delivery was not judged by ear. l27 is the closest to exposition and is a watch item, not a trigger. So the critic round for Series 1's remaining episodes is not triggered by this screening.",
+  "verdict": "Pass at 8/10 in both languages, no blocking fault. 36 of 36 shots are real frames in both cuts (0 slates). Every line is heard by whisper.cpp in both languages. Levels: -14.0 LUFS, -1.1 dBTP. Both supers are legible and cover no key action. The clarity lines work: by the end a cold viewer can name the bride as Kiran (playing 'Sneha'), the groom as Aditya, and place Billu and Mausi. They can also say what each person wants and why the scar matters. F1 (l21) now says outright that Aditya never went to the wedding. With l23, l24 and l29 it builds a chain to the cliffhanger: no photo of the bride, only this print of a hand, and a burn like a half moon. The weaknesses are craft, not clarity: a 12.7 s stretch on near-identical framings of Aditya (s18/s19); turn gaps of about 0.35 s through b6 to b8, including the hesitant l20; the scripted '1:40' and 'No network' overlays are not drawn; and the chooda click at the end is quiet. Caveat: nobody listened or watched in motion. This screening is built from sampled frames, whisper.cpp and ffmpeg measurements.",
+  "precondition": {
+    "slates": "0 in both cuts (timeline meta.placeholders.frames_slated empty; assemble.log '36 shots (0 slate)').",
+    "placeholders": "dialogue 0, sound 0 in both timelines.",
+    "integrated_lufs": {
+      "hi": -14.0,
+      "en": -14.0
+    },
+    "true_peak_dbtp": {
+      "hi": -1.1,
+      "en": -1.1
+    },
+    "lra_lu": {
+      "hi": 6.9,
+      "en": 7.3
+    },
+    "duration_s": {
+      "hi": 130.1,
+      "en": 123.4
+    },
+    "video": "h264 1080x1920 30 fps, aac 48 kHz stereo, all four files.",
+    "hi_en_differ": "yes",
+    "result": "met"
+  },
+  "scores": {
+    "hi": {
+      "sync": {
+        "score": 9,
+        "basis": "Energy-onset check on the mix (20 ms RMS, onset = first window 12 dB over the local minimum): 54/56 cue starts within 0.2 s of speech. The 2 outliers (c006 -0.38 s, c017 +0.26 s) are mid-line pauses and the toothpick click on s15, not late cues. All picture cuts that cut on a word land on its onset: l27 'पर' at 42.483 s, and the s16 cut is frame 1275 = 42.50 s."
+      },
+      "subtitles": {
+        "score": 8,
+        "basis": "56 cues, validation ok, max 13.5 graphemes/s, no cue across a cut, text = script minus tags. Burned text was read in 108 sampled frames and is legible. 6 cues are 0.80-0.83 s (short words, e.g. 'है ना?', 'सच में।'). On s15 the cue sits over the top of Billu's hanging key fob (minor prop)."
+      },
+      "transcript_vs_script": {
+        "score": 8,
+        "basis": "whisper.cpp ggml-small. The full-file Hindi pass looped ('आदिमे मुझे नीन आदी' repeated from 2 to 18 s) and dropped lines, a known model failure on long Hindi audio. So every one of the 29 lines was cut from the mix and transcribed alone: all heard in substance. l12, l14 and l22 lost their opening phrase in the clip-length window. In 1.6-3.4 s windows they give 'फामसिस्ट', '14 महीने लगे तुमहरी पार्टी बनने में' and 'रेशेप्षिन हुए ही नहीं'. l26 is transcribed 'मुझे ये हाथ जाएए' (soft 'चाहिए'); every other difference is spelling."
+      },
+      "intelligibility_over_music": {
+        "score": 9,
+        "basis": "Speech -20 to -22 dBFS RMS against -41 to -44 dBFS for the lane bed and drone in the l27 pause and before l08. That is about 20 dB of margin. The mixed lines (phone fx on Mausi) are all heard by ASR."
+      },
+      "ducking": {
+        "score": 8,
+        "basis": "Lane bed: about -41 dBFS in the l09/l27 gap, -43 to -44 dBFS ducked. The step from undocked (l09) to ducked (l27) is about 3 dB over 0.2 s in a 0.26 s gap, with no audible-size jump by measurement. The l27 and l10 ducks overlap (release 43.78 s, re-duck 43.75 s), so there is no bump between them. l09 is not ducked, which is inconsistent but harmless at 20 dB of margin."
+      },
+      "music_and_effects_on_beats": {
+        "score": 7,
+        "basis": "The drone enters on the lane cut and is out before l25 ends. s33 hum: -56 to -60 dBFS RMS, low-passed at 180 Hz, so it is effectively silence on phone speakers and faint on headphones. mus_swell_reveal on s35 runs -20 to -27 dBFS RMS and cuts dead at s36. The chooda click on s36 peaks -25 dBFS (loudest 50 ms about -43 dBFS RMS) straight after a swell at dialogue level, so it is the quietest event on the last beat and risks being missed on a phone. The bare feet and bolt were not checked by ear."
+      },
+      "audio_levels": {
+        "score": 8,
+        "basis": "-14.0 LUFS, -1.1 dBTP, LRA 6.9 LU; clean = review."
+      },
+      "picture_completeness": {
+        "score": 8,
+        "basis": "36/36 real frames, supers su1 and su2 drawn. The shots.json overlays '1:40' (s14) and 'No network' (s12) are not drawn: the build draws plot overlays only from edit.json shots.<id>.layers, and edit.json has none. Story cost is small (l06/l07 carry the SIM beat; su1 already gives the time)."
+      },
+      "continuity": {
+        "score": 8,
+        "basis": "The photograph's crescent (forearm above the bangles) matches the s35 crescent below the pushed-up cuff. The cuff slides down in s36. Pallu: over the head in s04/s07, off from s17 on, as scripted. Logged drift seen again: Kiran's RIGHT chooda sits low on the forearm in s04 and s07 (D-023 4.6). It is not plot-bearing (the scar is on the LEFT) and approved frames are not re-judged here."
+      },
+      "pacing": {
+        "score": 7,
+        "basis": "s18+s19 hold Aditya, seated and near-identically framed, for 12.7 s (52.0-64.7 s) across l12, l28 and l13. s11 is 3.7 s on a near-blank wall. From l11 (49.3 s) to l25 (121 s) speech is almost continuous: cue-to-cue gaps between speakers are about 0.36 s, including l19 to the [hesitant] l20 (89.22 to 89.58 s), where the script wants Aditya to look away for the first time. The 2.0 s photograph hold and the 2.2 s s33 hold are the only air, and both work."
+      },
+      "opening": {
+        "score": 8,
+        "basis": "Image at 0 s (powder into the milk), l01 at 0.33 s; su1 'शादी की रात · 1:35' over s03-s04 sets wedding night and bride by 7 s; l05 'यहाँ चुराने को कुछ नहीं' states the premise by 25 s."
+      },
+      "cliffhanger": {
+        "score": 8,
+        "basis": "l29 plants the half-moon burn over the photograph, so s35's crescent reads as recognition, not puzzle. The cuff slides down in s36; hard cut to black at 129.67 s, silence from 129.4 s. Weakened only by the quiet click (see effects)."
+      },
+      "clarity": {
+        "score": 8,
+        "basis": "See d025_checks."
+      },
+      "length": {
+        "score": 10,
+        "basis": "130.1 s, under the 150 s ceiling."
+      },
+      "overall": 8
+    },
+    "en": {
+      "sync": {
+        "score": 9,
+        "basis": "Same check: 52/54 cue starts within 0.2 s. c004 (-0.30 s, mid-line) and c017 (-0.30 s, toothpick click on s15) are explained. l27 'but' at 40.117 s, s16 cut 40.13 s; en l04/l05 cut on the second 'The' (16.817 s / 20.017 s cues, shots s09/s11 at 16.83/20.03 s)."
+      },
+      "subtitles": {
+        "score": 8,
+        "basis": "54 cues, validation ok, max 17.0 graphemes/s, no cue across a cut. Legible in 89 sampled frames. Two-line cues on s31 sit over the hands and ring, not the scar."
+      },
+      "transcript_vs_script": {
+        "score": 9,
+        "basis": "The whisper.cpp full-file pass is word-for-word the script for all 29 lines. The only differences are 'Maasi', numerals ('14', '18 lakhs', '11') and punctuation."
+      },
+      "intelligibility_over_music": {
+        "score": 9,
+        "basis": "l27 speech -21 dBFS RMS against -42 dBFS in its ducked pause."
+      },
+      "ducking": {
+        "score": 8,
+        "basis": "Same structure as hi: -41/-42 to -44/-45 dBFS across the l09/l27 gap, and l27/l10 ducks overlap."
+      },
+      "music_and_effects_on_beats": {
+        "score": 7,
+        "basis": "s33 hum -56 to -60 dBFS RMS after a 0.2 s fade-in; swell -20 to -25 dBFS RMS; chooda click peaks -25.7 dBFS. Same remark as hi."
+      },
+      "audio_levels": {
+        "score": 8,
+        "basis": "-14.0 LUFS, -1.1 dBTP, LRA 7.3 LU; clean = review."
+      },
+      "picture_completeness": {
+        "score": 8,
+        "basis": "As hi."
+      },
+      "continuity": {
+        "score": 8,
+        "basis": "As hi."
+      },
+      "pacing": {
+        "score": 7,
+        "basis": "s18+s19 12.7 s (50.83-63.57 s). l19 to l20 gap 0.37 s (85.32 to 85.68 s). Otherwise as hi."
+      },
+      "opening": {
+        "score": 8,
+        "basis": "l01 at 0.27 s; su1 'Wedding night · 1:35 am' over s03-s04."
+      },
+      "cliffhanger": {
+        "score": 8,
+        "basis": "As hi; silence from 122.7 s."
+      },
+      "clarity": {
+        "score": 8,
+        "basis": "See d025_checks."
+      },
+      "length": {
+        "score": 10,
+        "basis": "123.4 s."
+      },
+      "overall": 8
+    }
+  },
+  "blocking": [],
+  "d025_checks": {
+    "F1_l21": "Clear in context, both languages. 'My little brother, Mohit. Mausi arranged his wedding.' / 'I didn't go to the wedding. I was at the shop.' leaves no 'go where?'. It plays over Kiran's CU (s27) in Aditya's voice, so the speaker is not in doubt. With l23 ('The bureau never sent her photo') and l24/l29 it gives the reason he hunts a hand. Heard by ASR in both languages ('मैं शादी में गया नहीं दुकान पेता'; English word-perfect).",
+    "clarity_lines": {
+      "l05 'There's nothing here to steal' / 'यहाँ चुराने को कुछ नहीं'": "clear; the premise (a bride who came to rob) is spoken by 25 s / 24 s.",
+      "l08/l09 + su2": "clear: Billu is named by super and by Mausi, the car below ties to 'Bhaiya in the car' in l13.",
+      "l27 'Tonight she's playing Sneha, but she's still my Kiran'": "clear; the cut to the lit window on 'but'/'पर' puts 'my Kiran' on the window. Watch item: Billu already knows this, so its in-scene reason is Mausi's fondness and ownership, not information. That is enough for a reason to speak, so it is not a trigger. Owner's ear decides.",
+      "l11 'The act's over' / 'नाटक ख़त्म'": "clear turn; matches the pallu off in s17.",
+      "l28 'My real name is Aditya...'": "clear and motivated (he has just been asked if he is police). It sits in the static s18/s19 stretch, which makes the run l12-l28-l13 feel like a recital. That is a pacing note, not a line fault.",
+      "l14 gloss 'The groom you rob' / 'यानी लुटने वाला दूल्हा'": "clear. The Hindi 'यानी' is the most overt gloss in the episode, but it reads as Aditya's sarcasm, not narration.",
+      "l16-l18": "clear: money with Mausi, he wants proof, so he wants the woman who sends the brides.",
+      "l22-l24, l29": "clear chain. l29 describes the print she is looking at, so it is partly for the audience, but it is said as the thing he is looking for, and it is what makes s35 land."
+    },
+    "new_line_flat_or_expository": "None found on text and timing. Delivery flatness was not judged: nobody listened.",
+    "cold_viewer_by_the_end": "Who: the bride is Kiran (named once, by Mausi, l27; called Sneha by Aditya, l03), the groom is Aditya (l28), Billu is Mausi's driver (su2), Mausi runs the brides (l13, l18, l19), and Mohit is Aditya's dead brother (l20, l25). Stakes: Kiran wants out with her 18 lakh (l15); Aditya wants Mausi as proof for the police (l17-l18) and the bride with the half-moon burn (l29, l26); the viewer alone sees that the burn is on Kiran's arm (s35-s36). Yes, a cold viewer can say this. Not tested on real cold viewers.",
+    "line_answering_something_unheard": "None that matters. l08 'Yes, Mausi' answers Mausi's unheard first words, which is ordinary phone convention; her voice is heard from l09. l19 jumps from 'the woman who sends these brides' to 'Mausi', which is Kiran's inference and confirms it for the viewer."
+  },
+  "editor_flags_checked": {
+    "su1_over_kiran_chooda_s04": "Checked at full size (hi 6.75 s, en 6.3 s). The super's plate sits just below her right chooda and touches its lower edge, left of her hand at her chest. It covers neither the hand, the face nor the tray. The right cuff carries no plot. Keep.",
+    "l27_cut_on_par_but": "Picture cut is on the onset of 'पर' (hi cue c020 42.483 s, cut 42.50 s) and 'but' (en c020 40.117 s, cut 40.13 s), after a 0.6 s / 0.5 s pause inside the line. Audio runs on unbroken. The cut takes 'my Kiran' to the lit window. Keep.",
+    "lane_bed_duck_under_l27": "Measured (see scores.ducking). Works; no bump between l27 and l10. l09 is not ducked; harmless.",
+    "s31_photograph_2s_hold": "2.0 s after l29 in both (hi 115.55 to 117.57 s; en 109.15 to 111.17 s). The bedroom bed sits under it at -36 to -40 dBFS, so it is not dead air. It gives the viewer time to find the crescent after hearing about it. Keep.",
+    "s33_lamp_hum": "-56 to -60 dBFS RMS, 180 Hz low-pass. On a phone speaker it is silence, and on headphones a faint floor. Either is within the cue sheet ('near-silence (lamp-hum stretch at most), or silence'). Keep; no reason to delete.",
+    "ear_list_voice_items": "Not listened to. Proxies on the source takes (speech frames above -40 dB; median spectral flatness, median centroid, 4 kHz+ against 100-700 Hz band level). en l18.c1 (flatness 0.026, centroid 1543 Hz, HF-LF -15.4 dB) and en l21.c1 (0.025, 1338 Hz, -12.9 dB) sit inside Aditya's range across his 19 English takes (flatness 0.017-0.061, centroid 943-2627 Hz, HF-LF -3.7 to -17.3 dB). en l11.c1 has the highest centroid of Kiran's 6 English takes (2777 Hz against 1752-2305) with flatness 0.050 (range 0.035-0.059). That matches S10's 0.24 s unvoiced tail on 'Fine.' It is weak evidence of a breathy 'Fine', not proof. All three are word-perfect in the mix ASR. Action: owner listens to en l11 first; retake only if heard as breathy (D-026)."
+  },
+  "measurements": {
+    "frames_sampled": "hi 108, en 89 frames from the review cuts (every 2 s plus each shot's midpoint and start+0.15 s, deduped within 0.5 s), viewed as contact sheets; full-size frames for su1 on s04 in both languages.",
+    "whisper": "/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, 16 kHz mono of the clean mixes; en full file; hi full file plus each line's clip window cut from the mix, plus 1.6-3.4 s windows for l12, l14 and l22.",
+    "levels": "ffmpeg ebur128 (true peak) per file; astats RMS in 50 ms and 200 ms windows over l09-l27, s31, s33, s35-s36.",
+    "speech_vs_bed_l27_hi": "speech -22.1 / -20.2 dBFS RMS; ducked pause -43.5",
+    "s36_chooda_click_peak": {
+      "hi": -25.3,
+      "en": -25.7
+    },
+    "s35_swell_rms": "about -20 to -27 dBFS"
+  },
+  "checks_run": [
+    "ffprobe and ebur128 on all four files; audio md5 of clean against review",
+    "frame sampling and viewing, both review cuts; clean cut frame checked for no burned subs",
+    "whisper.cpp against script.<lang>.json (en full file; hi per line)",
+    "subs.<lang>.json: durations, graphemes/s, cut crossings, validation block, cue starts against energy onsets in the mix",
+    "supers: placement, legibility and timing from timeline.<lang>.json and frames",
+    "level profiles for the editor's flags",
+    "breathiness proxies on en l11, l18, l21 against the same speakers' other takes"
+  ],
+  "not_checked": [
+    "Nobody listened or watched in motion. Delivery, emotion, accent and breathiness by ear are not judged.",
+    "Clip-level cross-correlation sync, as run for s2e01, was not run. Sync rests on cue-against-onset timing and the build's placement.",
+    "Camera moves were judged only from still samples.",
+    "The 720p renders.",
+    "sfx_s1e01_bare_feet, bolt rattle, padlock knock and hinge placement by ear.",
+    "Hindi breathiness proxies (hi l11 is the c2 retake; not on the ear list I was given).",
+    "Whisper word timestamps were tried for sync and dropped: without DTW alignment they snap about 0.4-0.9 s early, so they are useless at this scale."
+  ],
+  "fixes": [
+    {
+      "owner": "Owner (ear list, D-026)",
+      "severity": "low",
+      "issue": "en l11 'Fine.' may be breathy (highest centroid of Kiran's English takes; 0.24 s unvoiced tail). en l18 and l21 measure in range.",
+      "fix": "Listen to en 47.4-50.8 s first. Retake en l11 (take 2, eleven_v4, bare [cold] line) only if 'Fine' is heard as breathed. Otherwise close l11, l18 and l21 on the ear list."
+    },
+    {
+      "owner": "Editor",
+      "severity": "low",
+      "issue": "The [hesitant] l20 follows l19 after about 0.36 s, so Aditya's first look away (s26) gets no beat.",
+      "fix": "edit.json layout.lead: add \"s26\": 18 (0.6 s silent lead on s26 before l20). Adds about 0.4 s per cut. Re-render both languages."
+    },
+    {
+      "owner": "Editor",
+      "severity": "low",
+      "issue": "Scripted overlays '1:40' (s14) and 'No network' (s12) are not drawn.",
+      "fix": "Add edit.json shots.s14.layers (text '1:40', upper picture-left, as shots.json s14) and shots.s12.layers ('No network' on the phone screen area), through the existing overlay layer. Same text in both languages unless the storyboard says otherwise."
+    },
+    {
+      "owner": "Editor",
+      "severity": "low",
+      "issue": "The chooda click on s36 peaks -25 dBFS straight after a swell at dialogue level, so the last sound beat is easy to miss on a phone.",
+      "fix": "edit.json sound sfx_chooda_click: change \"db\": -4 to \"db\": 2 (+6 dB). Confirm the master stays at or below -1 dBTP."
+    },
+    {
+      "owner": "S7 Storyboard artist, then Editor (optional, owner's call)",
+      "severity": "low",
+      "issue": "s18+s19 hold near-identical framings of seated Aditya for 12.7 s across l12, l28 and l13.",
+      "fix": "Optional, no new frame: map l28's second sentence ('तुम्हारे marriage bureau के पास नकली है।' / 'Your marriage bureau has a fake one.') onto a reaction shot reusing frames/s17.png (Kiran CU), as a second framing with its own push. Do this only if the owner finds the stretch slow; it adds a shot to shots.json."
+    },
+    {
+      "owner": "Orchestrator",
+      "severity": "info",
+      "issue": "Gate 4 and D-025 status.",
+      "fix": "Log s1e01 as passed at Gate 4 (hi 8/10, en 8/10, no blocking fault; D-023 decision 2 pass rule). Log the D-025 'fix fails' trigger as not met. Put en l11 on the owner's ear list, and l27 as a listen item. The low fixes above are optional polish and do not reopen the gate. If made, they get a changed-items pass (D-015 rule 5)."
+    }
+  ],
+  "no_change": [
+    "su1 placement on s04",
+    "l27 cut on 'पर'/'but'",
+    "lane bed duck under l27",
+    "s31 2.0 s photograph hold",
+    "s33 lamp hum"
+  ]
+}

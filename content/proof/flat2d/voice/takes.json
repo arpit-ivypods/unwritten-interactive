@@ -1,0 +1,275 @@
+[
+  {
+    "line_id": "l01",
+    "lang": "hi",
+    "speaker": "bablu",
+    "voice_id": "x8QLi04vAqWNOHsZm7yK",
+    "model": "eleven_v4",
+    "text": "[nervous] [hushed] Madam... locker खाली है।",
+    "target_seconds": 2.0,
+    "note": "Cold open, 2 a.m., he does not turn round. Scared of saying it, not scared of the dark. Slow on 'Madam', then the fact comes out flat. If it turns comic, drop [hushed]."
+  },
+  {
+    "line_id": "l02",
+    "lang": "hi",
+    "speaker": "meenu",
+    "voice_id": "JG3V6gojK42M5cRu9q07",
+    "model": "eleven_v4",
+    "text": "[curt] खाली मतलब?",
+    "target_seconds": 1.2,
+    "note": "Chai glass stopped halfway. Dry, fast, clipped; not yet worried. Very short turn, unstable: budget 3 to 4 takes. If the tag is spoken or the take wobbles, send the bare script text 'खाली मतलब?'."
+  },
+  {
+    "line_id": "l03",
+    "lang": "hi",
+    "speaker": "bablu",
+    "voice_id": "x8QLi04vAqWNOHsZm7yK",
+    "model": "eleven_v4",
+    "text": "[hesitant] मतलब... [apologetic] बीस लाख cash गायब, madam।",
+    "target_seconds": 2.5,
+    "note": "A beat too slow, as if speed could soften it. The number lands plainly; 'madam' tails away. If it overruns 2.5 s badly, drop [hesitant] and let the ellipsis do the work."
+  },
+  {
+    "line_id": "l04",
+    "lang": "hi",
+    "speaker": "bablu",
+    "voice_id": "x8QLi04vAqWNOHsZm7yK",
+    "model": "eleven_v4",
+    "text": "[sheepish] बस... [matter-of-fact] एक लड्डू रखा है।",
+    "target_seconds": 2.0,
+    "note": "He is reporting evidence, not telling a joke. No smile in the voice. Simpler fallback: '[sheepish] बस... एक लड्डू रखा है।'."
+  },
+  {
+    "line_id": "l05",
+    "lang": "hi",
+    "speaker": "meenu",
+    "voice_id": "JG3V6gojK42M5cRu9q07",
+    "model": "eleven_v4",
+    "text": "[deadpan] लड्डू?",
+    "target_seconds": 1.0,
+    "note": "Flat disbelief, not weariness and not a sigh. One word, level pitch, small lift at the end. Budget 3 to 4 takes. Fallbacks in order: '[flatly] लड्डू?', then bare 'लड्डू?'."
+  },
+  {
+    "line_id": "l06",
+    "lang": "hi",
+    "speaker": "bablu",
+    "voice_id": "x8QLi04vAqWNOHsZm7yK",
+    "model": "eleven_v4",
+    "text": "[earnest] [eager] मोतीचूर का है, ma—",
+    "target_seconds": 1.5,
+    "note": "Helpful detail, offered in good faith. 'ma—' is the first syllable of 'madam', cut off by l07; assembly hard-cuts the tail. Reject takes that spell it out ('em-ay'), stretch it to 'maa', or finish the word. If the model cannot do the stub, the director's fallback is to send 'मोतीचूर का है, madam' and cut after 'ma' in the edit; subtitle stays 'ma—'."
+  },
+  {
+    "line_id": "l07",
+    "lang": "hi",
+    "speaker": "meenu",
+    "voice_id": "JG3V6gojK42M5cRu9q07",
+    "model": "eleven_v4",
+    "text": "[angry] [sharply] बबलू! [furious, fast] नौ बजे ये cash court में produce करना है!",
+    "target_seconds": 3.0,
+    "note": "Her loudest line and the only loud one. Whip-crack on the name, then fast and hard through the sentence; stress on 'नौ बजे' and 'court'. Angry officer, not hysterical: no screech, no crying edge. Simpler fallback is the script text '[angry] बबलू! नौ बजे ये cash court में produce करना है!'."
+  },
+  {
+    "line_id": "l08",
+    "lang": "hi",
+    "speaker": "meenu",
+    "voice_id": "JG3V6gojK42M5cRu9q07",
+    "model": "eleven_v4",
+    "text": "[thinking aloud] Lock टूटा नहीं... [whispers] [slowly] चाबी से खुला है।",
+    "target_seconds": 3.2,
+    "note": "The turn of the scene. First half in her normal speaking voice, anger gone, eyes on the padlock. Real pause on the ellipsis, then the scene's only whisper as she works it out. The whisper must still be intelligible. Reject if the whole line is whispered or none of it is. Fallback is the script text 'Lock टूटा नहीं... [whispers] चाबी से खुला है।'."
+  },
+  {
+    "line_id": "l09",
+    "lang": "hi",
+    "speaker": "bablu",
+    "voice_id": "x8QLi04vAqWNOHsZm7yK",
+    "model": "eleven_v4",
+    "text": "[hesitant] [carefully] चाबी दो ही हैं, madam। [uneasy] एक आपके पास...",
+    "target_seconds": 2.8,
+    "note": "He is realising who holds the key while he says it. First sentence is a careful statement of fact; second slows and trails off unfinished, voice dropping. Not an accusation. Fallback is the script text with [hesitant] only."
+  },
+  {
+    "line_id": "l10",
+    "lang": "hi",
+    "speaker": "meenu",
+    "voice_id": "JG3V6gojK42M5cRu9q07",
+    "model": "eleven_v4",
+    "text": "[quietly] [grim] और दूसरी... बड़े साहब के पास।",
+    "target_seconds": 2.5,
+    "note": "Quiet but voiced: louder than the l08 whisper, softer than her normal voice. She finishes his sentence. Weight on 'बड़े साहब'. Reject if it comes out whispered; then retake with '[grim] और दूसरी... बड़े साहब के पास।'."
+  },
+  {
+    "line_id": "l11",
+    "lang": "hi",
+    "speaker": "bablu",
+    "voice_id": "x8QLi04vAqWNOHsZm7yK",
+    "model": "eleven_v4",
+    "text": "[confused] [protesting] पर वो तो leave पर—",
+    "target_seconds": 1.5,
+    "note": "Honestly puzzled, normal volume, rising. Cut off by the phone buzz; assembly hard-cuts on 'पर'. Reject takes that add words after the dash. Fallback is the script text with [confused] only."
+  },
+  {
+    "line_id": "l12",
+    "lang": "hi",
+    "speaker": "meenu",
+    "voice_id": "JG3V6gojK42M5cRu9q07",
+    "model": "eleven_v4",
+    "text": "[low voice] [tense, measured] साहब को कैसे पता चला?",
+    "target_seconds": 1.8,
+    "note": "The ending question. Low, slow, clear, fully voiced; must be understood on a phone speaker with subtitles off. Fear shows as stillness, not breathiness. If it comes out whispered or muffled, retake with '[tense, measured] साहब को कैसे पता चला?', then with the bare line (per script performance note)."
+  },
+  {
+    "line_id": "l01",
+    "lang": "en",
+    "speaker": "bablu",
+    "voice_id": "x8QLi04vAqWNOHsZm7yK",
+    "model": "eleven_v4",
+    "text": "[nervous] [hushed] Madam... the locker is empty.",
+    "target_seconds": 2.0,
+    "note": "As hi l01. Indian English, Hindi-medium rhythm. If the accent drifts American or British on any English line, the director's first fix is the backup voice, not an accent tag."
+  },
+  {
+    "line_id": "l02",
+    "lang": "en",
+    "speaker": "meenu",
+    "voice_id": "JG3V6gojK42M5cRu9q07",
+    "model": "eleven_v4",
+    "text": "[curt] Empty means?",
+    "target_seconds": 1.2,
+    "note": "As hi l02. Indian English phrasing is intended; do not correct to 'What do you mean, empty?'. Budget 3 to 4 takes; fallback is the bare line."
+  },
+  {
+    "line_id": "l03",
+    "lang": "en",
+    "speaker": "bablu",
+    "voice_id": "x8QLi04vAqWNOHsZm7yK",
+    "model": "eleven_v4",
+    "text": "[hesitant] Means... [apologetic] twenty lakh cash is gone, madam.",
+    "target_seconds": 2.5,
+    "note": "As hi l03. 'lakh' must be said 'laakh', not 'lack'. Reject takes that mispronounce it."
+  },
+  {
+    "line_id": "l04",
+    "lang": "en",
+    "speaker": "bablu",
+    "voice_id": "x8QLi04vAqWNOHsZm7yK",
+    "model": "eleven_v4",
+    "text": "[sheepish] Just... [matter-of-fact] one laddoo is kept there.",
+    "target_seconds": 2.0,
+    "note": "As hi l04. 'laddoo' with a retroflex d and long oo, as in Hindi."
+  },
+  {
+    "line_id": "l05",
+    "lang": "en",
+    "speaker": "meenu",
+    "voice_id": "JG3V6gojK42M5cRu9q07",
+    "model": "eleven_v4",
+    "text": "[deadpan] Laddoo?",
+    "target_seconds": 1.0,
+    "note": "As hi l05. Flat disbelief. Budget 3 to 4 takes. Fallbacks: '[flatly] Laddoo?', then bare 'Laddoo?'."
+  },
+  {
+    "line_id": "l06",
+    "lang": "en",
+    "speaker": "bablu",
+    "voice_id": "x8QLi04vAqWNOHsZm7yK",
+    "model": "eleven_v4",
+    "text": "[earnest] [eager] It's motichoor, ma—",
+    "target_seconds": 1.5,
+    "note": "As hi l06. 'ma—' is the cut-off start of 'madam'. Reject 'em-ay', 'maa' or a completed word. Fallback: send 'It's motichoor, madam' and cut after 'ma' in the edit; subtitle stays 'ma—'."
+  },
+  {
+    "line_id": "l07",
+    "lang": "en",
+    "speaker": "meenu",
+    "voice_id": "JG3V6gojK42M5cRu9q07",
+    "model": "eleven_v4",
+    "text": "[angry] [sharply] Bablu! [furious, fast] That cash has to be in court at nine a.m.!",
+    "target_seconds": 3.0,
+    "note": "As hi l07. Stress on 'court' and 'nine'. 'a.m.' is read as letters. Fallback is the script text with [angry] only."
+  },
+  {
+    "line_id": "l08",
+    "lang": "en",
+    "speaker": "meenu",
+    "voice_id": "JG3V6gojK42M5cRu9q07",
+    "model": "eleven_v4",
+    "text": "[thinking aloud] The lock isn't broken... [whispers] [slowly] it was opened with a key.",
+    "target_seconds": 3.2,
+    "note": "As hi l08. Normal voice, pause, then the only whisper. Fallback is the script text with [whispers] only."
+  },
+  {
+    "line_id": "l09",
+    "lang": "en",
+    "speaker": "bablu",
+    "voice_id": "x8QLi04vAqWNOHsZm7yK",
+    "model": "eleven_v4",
+    "text": "[hesitant] [carefully] There are only two keys, madam. [uneasy] One is with you...",
+    "target_seconds": 2.8,
+    "note": "As hi l09. Second sentence trails off unfinished."
+  },
+  {
+    "line_id": "l10",
+    "lang": "en",
+    "speaker": "meenu",
+    "voice_id": "JG3V6gojK42M5cRu9q07",
+    "model": "eleven_v4",
+    "text": "[quietly] [grim] And the other... is with Bada Sahab.",
+    "target_seconds": 2.5,
+    "note": "As hi l10. Quiet but voiced. 'Bada Sahab' said as Hindi ('baṛe/baṛa saahab'), not anglicised. Reject if whispered."
+  },
+  {
+    "line_id": "l11",
+    "lang": "en",
+    "speaker": "bablu",
+    "voice_id": "x8QLi04vAqWNOHsZm7yK",
+    "model": "eleven_v4",
+    "text": "[confused] [protesting] But he's on leave—",
+    "target_seconds": 1.5,
+    "note": "As hi l11. Cut off by the phone; no words after the dash."
+  },
+  {
+    "line_id": "l12",
+    "lang": "en",
+    "speaker": "meenu",
+    "voice_id": "JG3V6gojK42M5cRu9q07",
+    "model": "eleven_v4",
+    "text": "[low voice] [tense, measured] How did Sahab come to know?",
+    "target_seconds": 1.8,
+    "note": "As hi l12. Low, clear, fully voiced. 'Sahab' as Hindi 'saahab'. If whispered or muffled, retake with '[tense, measured] How did Sahab come to know?', then the bare line."
+  },
+  {
+    "line_id": "l07",
+    "lang": "hi",
+    "speaker": "meenu",
+    "voice_id": "JG3V6gojK42M5cRu9q07",
+    "model": "eleven_v3",
+    "take_suffix": "v3",
+    "text": "[angry] [sharply] बबलू! [furious, fast] नौ बजे ये cash court में produce करना है!",
+    "target_seconds": 3.0,
+    "note": "A/B against the v4 take of hi l07. Identical text so the only variable is the model. Judge: anger that stays in character, English nouns clear."
+  },
+  {
+    "line_id": "l08",
+    "lang": "hi",
+    "speaker": "meenu",
+    "voice_id": "JG3V6gojK42M5cRu9q07",
+    "model": "eleven_v3",
+    "take_suffix": "v3",
+    "text": "[thinking aloud] Lock टूटा नहीं... [whispers] [slowly] चाबी से खुला है।",
+    "target_seconds": 3.2,
+    "note": "A/B against the v4 take of hi l08. Identical text. Judge: does the model switch from voiced to whisper mid-line, and is the whisper intelligible."
+  },
+  {
+    "line_id": "l12",
+    "lang": "hi",
+    "speaker": "meenu",
+    "voice_id": "JG3V6gojK42M5cRu9q07",
+    "model": "eleven_v3",
+    "take_suffix": "v3",
+    "text": "[low voice] [tense, measured] साहब को कैसे पता चला?",
+    "target_seconds": 1.8,
+    "note": "A/B against the v4 take of hi l12. Identical text. Judge: low but fully voiced and intelligible on a phone speaker."
+  }
+]

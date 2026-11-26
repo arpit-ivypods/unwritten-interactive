@@ -1,0 +1,120 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,120"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 120
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,120",
+				"to": "00:00:01,210"
+			},
+			"offsets": {
+				"from": 120,
+				"to": 1210
+			},
+			"text": " शाएकल,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,210",
+				"to": "00:00:01,800"
+			},
+			"offsets": {
+				"from": 1210,
+				"to": 1800
+			},
+			"text": " कम्प्लेंट"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,800",
+				"to": "00:00:02,080"
+			},
+			"offsets": {
+				"from": 1800,
+				"to": 2080
+			},
+			"text": " वाले"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,080",
+				"to": "00:00:02,230"
+			},
+			"offsets": {
+				"from": 2080,
+				"to": 2230
+			},
+			"text": " को"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,230",
+				"to": "00:00:02,580"
+			},
+			"offsets": {
+				"from": 2230,
+				"to": 2580
+			},
+			"text": " लोटाई"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,580",
+				"to": "00:00:02,860"
+			},
+			"offsets": {
+				"from": 2580,
+				"to": 2860
+			},
+			"text": " जाती"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,860",
+				"to": "00:00:03,240"
+			},
+			"offsets": {
+				"from": 2860,
+				"to": 3240
+			},
+			"text": " है"
+		}
+	]
+}

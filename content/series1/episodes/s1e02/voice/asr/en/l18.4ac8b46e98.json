@@ -1,0 +1,175 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,120"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 120
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,120",
+				"to": "00:00:00,490"
+			},
+			"offsets": {
+				"from": 120,
+				"to": 490
+			},
+			"text": " Mohit"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,490",
+				"to": "00:00:01,050"
+			},
+			"offsets": {
+				"from": 490,
+				"to": 1050
+			},
+			"text": " lasted"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,050",
+				"to": "00:00:01,600"
+			},
+			"offsets": {
+				"from": 1050,
+				"to": 1600
+			},
+			"text": " 11"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,600",
+				"to": "00:00:02,290"
+			},
+			"offsets": {
+				"from": 1600,
+				"to": 2290
+			},
+			"text": " days."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,290",
+				"to": "00:00:02,350"
+			},
+			"offsets": {
+				"from": 2290,
+				"to": 2350
+			},
+			"text": " She"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,350",
+				"to": "00:00:02,740"
+			},
+			"offsets": {
+				"from": 2350,
+				"to": 2740
+			},
+			"text": " gets"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,740",
+				"to": "00:00:03,260"
+			},
+			"offsets": {
+				"from": 2740,
+				"to": 3260
+			},
+			"text": " 11"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,260",
+				"to": "00:00:03,620"
+			},
+			"offsets": {
+				"from": 3260,
+				"to": 3620
+			},
+			"text": " days"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,620",
+				"to": "00:00:04,070"
+			},
+			"offsets": {
+				"from": 3620,
+				"to": 4070
+			},
+			"text": " too,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,070",
+				"to": "00:00:04,590"
+			},
+			"offsets": {
+				"from": 4070,
+				"to": 4590
+			},
+			"text": " then"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,590",
+				"to": "00:00:04,630"
+			},
+			"offsets": {
+				"from": 4590,
+				"to": 4630
+			},
+			"text": " one"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,630",
+				"to": "00:00:05,200"
+			},
+			"offsets": {
+				"from": 4630,
+				"to": 5200
+			},
+			"text": " dose."
+		}
+	]
+}

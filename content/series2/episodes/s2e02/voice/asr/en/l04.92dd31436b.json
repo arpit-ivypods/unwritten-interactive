@@ -1,0 +1,131 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,040"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 40
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,040",
+				"to": "00:00:00,320"
+			},
+			"offsets": {
+				"from": 40,
+				"to": 320
+			},
+			"text": " The"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,320",
+				"to": "00:00:00,850"
+			},
+			"offsets": {
+				"from": 320,
+				"to": 850
+			},
+			"text": " thana"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,850",
+				"to": "00:00:01,060"
+			},
+			"offsets": {
+				"from": 850,
+				"to": 1060
+			},
+			"text": " is"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,060",
+				"to": "00:00:01,840"
+			},
+			"offsets": {
+				"from": 1060,
+				"to": 1840
+			},
+			"text": " fake,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,840",
+				"to": "00:00:01,960"
+			},
+			"offsets": {
+				"from": 1840,
+				"to": 1960
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,960",
+				"to": "00:00:02,620"
+			},
+			"offsets": {
+				"from": 1960,
+				"to": 2620
+			},
+			"text": " complaints"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,620",
+				"to": "00:00:02,830"
+			},
+			"offsets": {
+				"from": 2620,
+				"to": 2830
+			},
+			"text": " are"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,830",
+				"to": "00:00:03,120"
+			},
+			"offsets": {
+				"from": 2830,
+				"to": 3120
+			},
+			"text": " real."
+		}
+	]
+}

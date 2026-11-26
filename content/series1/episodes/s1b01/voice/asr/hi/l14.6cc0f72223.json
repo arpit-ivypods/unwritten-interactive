@@ -1,0 +1,164 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,090"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 90
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,090",
+				"to": "00:00:00,280"
+			},
+			"offsets": {
+				"from": 90,
+				"to": 280
+			},
+			"text": " हात"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,280",
+				"to": "00:00:00,730"
+			},
+			"offsets": {
+				"from": 280,
+				"to": 730
+			},
+			"text": " लगाया"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,730",
+				"to": "00:00:00,910"
+			},
+			"offsets": {
+				"from": 730,
+				"to": 910
+			},
+			"text": " तो"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,910",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 910,
+				"to": 2000
+			},
+			"text": " चिल्लाूंगी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,000",
+				"to": "00:00:02,450"
+			},
+			"offsets": {
+				"from": 2000,
+				"to": 2450
+			},
+			"text": " फिर"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,450",
+				"to": "00:00:03,040"
+			},
+			"offsets": {
+				"from": 2450,
+				"to": 3040
+			},
+			"text": " बाहर"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,040",
+				"to": "00:00:03,390"
+			},
+			"offsets": {
+				"from": 3040,
+				"to": 3390
+			},
+			"text": " से"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,390",
+				"to": "00:00:03,990"
+			},
+			"offsets": {
+				"from": 3390,
+				"to": 3990
+			},
+			"text": " लगके"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,990",
+				"to": "00:00:04,420"
+			},
+			"offsets": {
+				"from": 3990,
+				"to": 4420
+			},
+			"text": " दर्वाजा"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,420",
+				"to": "00:00:04,640"
+			},
+			"offsets": {
+				"from": 4420,
+				"to": 4640
+			},
+			"text": " तोर"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,640",
+				"to": "00:00:05,000"
+			},
+			"offsets": {
+				"from": 4640,
+				"to": 5000
+			},
+			"text": " देंगे"
+		}
+	]
+}

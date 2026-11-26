@@ -1,0 +1,219 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,160"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 160
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,160",
+				"to": "00:00:00,440"
+			},
+			"offsets": {
+				"from": 160,
+				"to": 440
+			},
+			"text": " You're"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,440",
+				"to": "00:00:00,660"
+			},
+			"offsets": {
+				"from": 440,
+				"to": 660
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,660",
+				"to": "00:00:00,880"
+			},
+			"offsets": {
+				"from": 660,
+				"to": 880
+			},
+			"text": " one"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,880",
+				"to": "00:00:01,100"
+			},
+			"offsets": {
+				"from": 880,
+				"to": 1100
+			},
+			"text": " who"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,100",
+				"to": "00:00:01,330"
+			},
+			"offsets": {
+				"from": 1100,
+				"to": 1330
+			},
+			"text": " put"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,330",
+				"to": "00:00:01,540"
+			},
+			"offsets": {
+				"from": 1330,
+				"to": 1540
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,540",
+				"to": "00:00:01,840"
+			},
+			"offsets": {
+				"from": 1540,
+				"to": 1840
+			},
+			"text": " lock"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,840",
+				"to": "00:00:02,140"
+			},
+			"offsets": {
+				"from": 1840,
+				"to": 2140
+			},
+			"text": " on,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,140",
+				"to": "00:00:02,370"
+			},
+			"offsets": {
+				"from": 2140,
+				"to": 2370
+			},
+			"text": " even"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,370",
+				"to": "00:00:02,620"
+			},
+			"offsets": {
+				"from": 2370,
+				"to": 2620
+			},
+			"text": " your"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,620",
+				"to": "00:00:02,870"
+			},
+			"offsets": {
+				"from": 2620,
+				"to": 2870
+			},
+			"text": " name"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,870",
+				"to": "00:00:02,990"
+			},
+			"offsets": {
+				"from": 2870,
+				"to": 2990
+			},
+			"text": " at"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,990",
+				"to": "00:00:03,180"
+			},
+			"offsets": {
+				"from": 2990,
+				"to": 3180
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,180",
+				"to": "00:00:03,550"
+			},
+			"offsets": {
+				"from": 3180,
+				"to": 3550
+			},
+			"text": " bureau"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,550",
+				"to": "00:00:03,670"
+			},
+			"offsets": {
+				"from": 3550,
+				"to": 3670
+			},
+			"text": " is"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,670",
+				"to": "00:00:04,160"
+			},
+			"offsets": {
+				"from": 3670,
+				"to": 4160
+			},
+			"text": " fake."
+		}
+	]
+}

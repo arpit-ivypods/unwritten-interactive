@@ -1,0 +1,1023 @@
+{
+  "series_id": "s1",
+  "app_series_id": "series1",
+  "document": "viewer-ledger",
+  "title": {"hi": "नौवीं पहली रात", "en": "The Ninth First Night"},
+  "written_by": "S1 Showrunner",
+  "date": "2026-11-26",
+  "ruling": "docs/decisions.md D-024: the owner's Option 1, a dialogue-only clarity pass. The story, both endings, the choice question and both labels, and every beat, shot and frame stay.",
+  "purpose": "For each Series 1 episode, in story order on each path, this lists what a first-time viewer must know by the end of the episode to follow the next one, and the exact beat and line (or super) that will carry each fact. S2 (Hindi) and S5 (English) rewrite to it. The C1 packet preparer and the S3 critic check against it.",
+  "status": "Ledger only. No script, bible, shot list or app file was changed, and the bible stays as approved (revision 2). Each 'default' wording is a suggestion the writer may use or improve, like the review's section 6 drafts (D-024 ruling 1 item 7). What this ledger fixes is the fact, the beat and the carrier line id.",
+
+  "sources": [
+    "docs/decisions.md D-024 (full entry)",
+    "docs/clarity-review.md (the review proper starts at line 5; line 1 is a stray save instruction, as D-024 notes)",
+    "docs/clarity-cold-viewers.md: the two Series 1 reports",
+    "content/series1/bible.json revision 2: characters, props, beat_outlines, cliffhanger_ladder, choice, glimpses, endings, story_locks, knowledge, writer_notes",
+    "content/series1/episodes/*/script.hi.json and script.en.json, all 8 episodes: every line, plus the action, on_screen and sfx of s1e01, s1e02 and the six branch episodes",
+    ".claude/skills/hinglish-screenwriting/SKILL.md: Clarity rules (D-024), Orientation supers (D-024), Clarity rewrite",
+    "docs/unwritten-poc-plan.md sections 7.8 and 9"
+  ],
+  "not_done": [
+    "No frame viewed and no audio heard.",
+    "JSON not parsed by a tool: this session has no shell. I checked brackets and commas with Grep only.",
+    "Finished-time projections are not made here. They are the writers' job, per D-024 ruling 4, in clarity_pass.projected_finished_seconds.",
+    "The Hindi defaults are mine and have not had a native read. S2 owns the Hindi.",
+    "choice.A.meaning and choice.B.meaning in the bible are not updated. D-024 gives that to S1, but this brief keeps the bible as approved, so the proposed text sits under choice.ballot_meaning_proposed for that later step."
+  ],
+
+  "how_to_read": {
+    "fact_id": "<episode>.fNN, numbered in the order the viewer meets the fact.",
+    "carrier_action": {
+      "keep": "The line already carries the fact. Do not weaken it.",
+      "reword": "Change this existing line. The id stays.",
+      "add": "A new line inside this beat. proposed_id is the next unused id in the episode. Existing ids are never renumbered.",
+      "super": "An orientation super in the beat's supers list (D-024 ruling 3). S7 puts it on the shot of with_line.",
+      "picture": "A shot carries the fact. Any spoken backup is listed beside it (rule 8).",
+      "edit": "Work for S7, S12 or the toolsmith. No writing."
+    },
+    "priority": {
+      "must": "Needed to meet a D-024 rule or a C1 pass condition, or a cold viewer failed on it and nothing else carries it.",
+      "should": "A cold viewer stumbled and the fix is cheap.",
+      "may": "Polish. The writer decides."
+    },
+    "status_now": "lands, partly or fails, from the cold-viewer reports and the review.",
+    "evidence_keys": {
+      "cv_A": "docs/clarity-cold-viewers.md, report 'Series 1, s1e01 > s1e02 > s1a01 > s1a02 > s1a03'. Numbers in brackets are that reader's items.",
+      "cv_B": "docs/clarity-cold-viewers.md, report 'Series 1, s1e01 > s1e02 > s1b01 > s1b02 > s1b03'.",
+      "review": "docs/clarity-review.md, by section or cause number."
+    },
+    "defaults": "Spoken text only. Emotion tags, target_seconds and the line-to-shot map belong to the writer and S7. English defaults are en-IN. Hindi defaults follow the Devanagari plus Latin convention."
+  },
+
+  "locks_to_keep": [
+    "The sedative is never named or measured. 'sedative' (s1e01 l03), 'dose', 'sachet', 'whole' and 'half' are the only words used. No quantity, no drug name.",
+    "'Rekha' and 'Tulsi' are never spoken in branch B. 'Tulsi' is spoken once only, in s1a03 b10 (l26). 'Pooja' may be spoken once, in s1a03 b3, or not at all.",
+    "The scar's origin (a tawa in her uncle's kitchen, at fourteen) is spoken only by Mausi, in s1b03 b4. The shared episodes may say what the photograph shows (a burn like a half moon), never where it came from or whose it is.",
+    "No line before s1a03 b3 (A) or s1b03 b4 (B) says, or lets Aditya learn, that the hand is Kiran's. Kiran must not confess early, including in s1a01 l05.",
+    "Mohit's death is stated as fact once (s1e01 l25) and only referred to after that: never pictured, re-enacted or described further.",
+    "The groom first hears 'Kiran' from Billu: s1a01 b6 (A) or s1b01 b4 (B). The bridge line in s1e01 b5 is in the lane, out of his hearing. On the 2 am speaker call (s1e02 b10, b13) Mausi says only 'beta', never the name.",
+    "Aditya does not know an alarm phrase exists until s1a01 b3 or s1b01 b1. Nothing Kiran says in s1e02 may give him the phrase. 'If all's well' is allowed; a second phrase is not.",
+    "The choice lines are spoken whole, as the first line of each branch: s1a01 l01 and s1b01 l01. No part of either is begun in s1e02.",
+    "Locked lines (bible story_locks.locked_lines): s1e01 l01, l25, l26; s1e02 l29; s1a01 l01, l13; s1b01 l01, l03, l19. Their wording does not change. Only their set-up may.",
+    "Kept apart in the two finales: 'You taught me this' only in s1a03 b5; 'The boy turned out weak' only in s1b01 b10; Mausi reaches for the wrist only in s1b03 b4.",
+    "The chooda dialogue ban: no line says how tightly a chooda fits, how hard it is to take off, or how long a bride must wear it.",
+    "s1b02 b4: nothing in script or subtitle gives away what Kiran whispers or what is in the glass before s1b02 b9.",
+    "Mausi is never seen in s1e01 or s1e02. The boys never speak and never show a face.",
+    "Glimpse must_not_reveal lists: s1ga (s1a01) and s1gb (s1b01), in the bible's glimpses block.",
+    "D-004 direction 5's forms of address apply to Series 2 only. Nothing in Series 1 depends on them."
+  ],
+
+  "protected_lines": {
+    "rule": "D-024 ruling 2 item 10. The set-up of these lines changes first. A line's own wording changes only if that line itself fails C1, and then its meaning stays. This ledger proposes no change to any of them.",
+    "shared": ["s1e01 l01", "s1e01 l03", "s1e01 l07", "s1e01 l13 (bureau is glossed before it: new l28)", "s1e01 l25", "s1e02 l14", "s1e02 l15", "s1e02 l19"],
+    "A": ["s1a02 l17", "s1a02 l28", "s1a03 l08", "s1a03 l14", "s1a03 l16", "s1a03 l17", "s1a03 l22", "s1a03 l26"],
+    "B": ["s1b01 l27", "s1b01 l28", "s1b02 l26", "s1b03 l16", "s1b03 l17", "s1b03 l18", "s1b03 l27", "s1b03 l30"]
+  },
+
+  "path_order": {
+    "A": ["s1e01", "s1e02", "s1a01", "s1a02", "s1a03"],
+    "B": ["s1e01", "s1e02", "s1b01", "s1b02", "s1b03"],
+    "choice_after": "s1e02"
+  },
+
+  "people": [
+    {
+      "id": "kiran",
+      "who": "The lead: the bureau's vanishing bride, on her ninth wedding night.",
+      "names": {"working": "Kiran / किरण", "alias_tonight": "Sneha / स्नेहा", "birth": "Tulsi / तुलसी (path A only, s1a03 l26)"},
+      "first_appearance": "shared: s1e01 b1 (her right hand, the hook); she first speaks in b2 l02.",
+      "role_by": "s1e01 b2: the time super su1 ('Wedding night') with l02 over the bridal room, and l02 and l03 make her the bride putting something in the groom's milk.",
+      "name_by": "s1e01 b5, new l27: Mausi bridges 'Sneha' to Kiran, out of the groom's hearing.",
+      "super": "No name super. 'Sneha' is an alias (ruling 3), and the story keeps her real name back until b5 (bible knowledge.end_of_s1e01).",
+      "status_now": "fails: nothing links Sneha to Kiran (cv_A s1e01 (1); cv_B s1e01; review cause 5)."
+    },
+    {
+      "id": "aditya",
+      "who": "The groom: a pharmacist who made himself the bureau's next target.",
+      "names": {"real": "Aditya / आदित्य", "registered": "a fake name the bureau holds, never spoken"},
+      "first_appearance": "shared: s1e01 b1, an off-screen voice (heard_as off_screen); on screen from b2 set-up 1.",
+      "role_by": "s1e01 b2: su1 ('Wedding night'), l01 to l03; b6 l12 ('Pharmacist').",
+      "name_by": "s1e01 b6, new l28 ('My real name is Aditya'). This is the only spoken 'Aditya' on path A, and one is enough. Path B also has s1b03 l22 and l27.",
+      "super": "None needed: he names himself in b6.",
+      "status_now": "fails: never named on path A, named only in the last minute on B (cv_A s1e01 (6); cv_B gap 2; review cause 5)."
+    },
+    {
+      "id": "mausi",
+      "who": "Shakun Mausi: runs the marriage bureau that sends the brides. The only mother Kiran has had.",
+      "first_appearance": "shared: s1e01 b5, a phone voice. First seen in A at s1a01 b9 (set-up 2) and b10; in B at s1b01 b9.",
+      "role_by": "s1e01 b5 l08 (Billu names her: 'Yes, Mausi'); b6 new l28 (the marriage bureau), l13, l18 ('the woman who sends these brides') and l19 ('What did Mausi ever do to you?').",
+      "super": "A: su2 at s1a01 b10 with l21. B: su1 at s1b01 b9 with l20. Text: 'Shakun Mausi · runs the bureau' / 'शकुन मौसी · bureau चलाती हैं'.",
+      "subtitle_label": "'Mausi' on her first heard_as line in each scene (D-024 edit-only item).",
+      "status_now": "partly: the name lands; the bureau and her role do not (cv_A s1e01 (3))."
+    },
+    {
+      "id": "billu",
+      "who": "Mausi's driver and lookout, who plays the bride's 'brother' (Bhaiya) at every wedding.",
+      "first_appearance": "shared: s1e01 b5, on screen in the car.",
+      "role_by": "s1e01 b5: reworded l08 ('I'm in the car below'), su2 ('Billu · Mausi's driver'); b4 l06 and b6 l13 tie 'Bhaiya' to the man in the car.",
+      "name_by": "s1e01 b5, reworded l09 ('Car at three, Billu').",
+      "status_now": "fails: unnamed in e01, and 'Bhaiya' is not tied to the man in the car (cv_A s1e01 (3); review cause 5)."
+    },
+    {
+      "id": "the_boys",
+      "who": "Billu's two silent helpers.",
+      "first_appearance": "shared: s1e02 b9, as backlit shapes. A: s1a01 b2 (they leave). B: s1b01 b2.",
+      "role_by": "s1e02 b5, reworded l13 ('Billu's boys'), then b9 l24 ('the boys go up') while they are in shot.",
+      "status_now": "partly."
+    },
+    {
+      "id": "mohit",
+      "who": "Aditya's younger brother, the sixth groom. Talked about only; a hand in the photograph.",
+      "first_mention": "s1e01 b8 l20 ('My little brother, Mohit. Mausi arranged his wedding.'): the identifying clause is already there.",
+      "status_now": "lands."
+    },
+    {
+      "id": "chhoti",
+      "who": "The next bride in training, 19.",
+      "first_appearance": "A: s1a01 b10 (l23). B: s1b02 b6, a phone voice; first seen at s1b03 b9.",
+      "role_by": "A: su3 at s1a01 b10 with l23 ('Chhoti · the next bride'); b11 l26 ('It's Chhoti's first wedding'). B: s1b02 b6, reworded l19 (she names herself on the phone) and reworded l21 ('Tomorrow you're a bride').",
+      "super": "A only. In B she is named by line before she is seen, and s1b03 b9 carries the place super instead.",
+      "status_now": "fails in B: 'appears with no set-up' (cv_B s1b02). Lands in A."
+    },
+    {
+      "id": "constable",
+      "who": "A khaki sleeve at the bureau door and the chowki desk. No name.",
+      "first_appearance": "A only: s1a03 b8.",
+      "role_by": "s1a03 b8 l21 ('Sahab, two names to write down'), the khaki sleeve, and the place super at b10 ('Police post').",
+      "status_now": "lands."
+    },
+    {
+      "id": "rekha",
+      "who": "Invented by Kiran in s1e02. She does not exist.",
+      "first_mention": "s1e02 b4 l05, with its clause ('She does Mausi's accounts now').",
+      "rule": "Never a super; never confirmed by anyone but Kiran. A: the lie ends at s1a03 b3a. B: the name is never spoken.",
+      "status_now": "lands as a lie once s1e01 l29 says 'burn on her wrist'."
+    },
+    {
+      "id": "police_at_home",
+      "who": "The police in Aditya's town, who told him to bring proof. Talked about only.",
+      "first_mention": "s1e01 b6, reworded l17 ('The police told me to bring proof').",
+      "later": "A: s1a02 b6, reworded l23. This replaces 'the in-charge in my town', which no viewer could place (cv_A s1a02 (3)).",
+      "status_now": "fails in s1a02."
+    }
+  ],
+
+  "name_clashes": [
+    {
+      "label": "Bhaiya / भैया",
+      "referents": "In the shared episodes, Billu's fake-brother act (s1e01 l06, l13). In s1a03 l17, Mohit's word for Aditya ('he said Bhaiya would come to the reception').",
+      "ruling": "It is a role word (elder brother), not a name. The English gloss in s1e01 l06 ('my brother') makes both uses read correctly. cv_A decoded s1a03 l17 correctly, so it stays unchanged (protected)."
+    },
+    {
+      "label": "beta / बेटा",
+      "referents": "Mausi calls Billu 'beta' (s1e01 l09 now) and Kiran 'beta' (the 2 am call).",
+      "ruling": "s1e01 l09 is reworded to 'Billu', so the first 'beta' a viewer hears on the call is plainly for Kiran."
+    },
+    {
+      "label": "the shop",
+      "referents": "Aditya's medical store (s1e01 l21, s1b02 l09, s1b03 l27). Mausi's bureau is also a shop with a shutter.",
+      "ruling": "'shop' means only Aditya's store. s1e02 l06 drops 'shutter' for plain words, and the bureau is always 'the bureau'."
+    },
+    {
+      "label": "the police",
+      "referents": "The police in Aditya's town, and the police post near the bureau (A).",
+      "ruling": "s1a02 l23 and l24 name them apart: 'the police in my town', 'the police post here'."
+    }
+  ],
+
+  "glossary": [
+    {"term": "bureau / marriage bureau", "kind": "in-world word", "gloss_in": "both", "first_use": "shared: s1e01 b6 l13 (protected)", "carrier": "s1e01 b6, new l28, before l13: 'Your marriage bureau has a fake one.' After that it is used freely.", "evidence": "cv_A s1e01 (3): 'Bureau is never explained'."},
+    {"term": "party", "kind": "in-world code word: the groom the gang marries and robs", "gloss_in": "both", "first_use": "shared: s1e01 b6 l14", "carrier": "s1e01 b6, reworded l14: 'to become your party. The groom you rob.'", "later_uses": "s1a03 l01; s1b01 l09, l10; s1b02 l07, l13, l23", "evidence": "cv_A s1e01 (4); cv_B s1e01."},
+    {"term": "Bhaiya", "kind": "role word: elder brother; in the con, Billu waiting in the car", "gloss_in": "English (meaning); both (the link to the car)", "first_use": "shared: s1e01 b4 l06", "carrier": "EN gloss inside s1e01 l06 ('my brother'). The link to the car comes from s1e01 b5 l08 ('I'm in the car below') and l13 ('Bhaiya in the car').", "evidence": "cv_A s1e01 (3)."},
+    {"term": "code", "kind": "plain word", "gloss_in": "none", "first_use": "shared: s1e02 b4 l10", "carrier": "Defined by s1e02 b9 l23 to l27 (see code_phrases)."},
+    {"term": "shutter", "kind": "in-world word: Mausi's shop shutter", "gloss_in": "both: replace with plain words", "first_use": "shared: s1e02 b4 l06", "carrier": "s1e02 l06 reworded to 'won't even open her door to you'. 'shutter' returns in s1a03 l03, after the shutter has been seen in s1a01 b9.", "evidence": "cv_A s1e02 (4); cv_B s1e02."},
+    {"term": "Damaad ji / दामाद जी", "kind": "address: son-in-law, Mausi's name for the groom", "gloss_in": "English only", "first_use": "shared: s1e02 b9 l23 (after rewording); then the locked l29", "carrier": "EN gloss inside s1e02 l23: 'if Damaad ji, the groom, has drunk his milk'."},
+    {"term": "chooda / चूड़ा", "kind": "object: the bride's red-and-ivory bangle set", "gloss_in": "English only", "first_use": "A: s1a01 b5 l07. B: never spoken.", "carrier": "EN gloss inside s1a01 l07: 'the chooda, these wedding bangles'. It must keep to the chooda dialogue ban.", "evidence": "cv_A s1a01 (5)."},
+    {"term": "advance", "kind": "trade word: money written down against a party", "gloss_in": "both: reword", "first_use": "A: s1a02 b2 l05", "carrier": "s1a02 l05 reworded: 'written your money in the book... An advance on your share'.", "evidence": "cv_A s1a02 (2)."},
+    {"term": "setting", "kind": "slang: an old affair or girlfriend", "gloss_in": "both: replace", "first_use": "A: s1a02 b7 l26", "carrier": "s1a02 l26 reworded: 'Looks like an old girlfriend!' / 'पुरानी girlfriend लगती है!'", "evidence": "cv_A s1a02 (4)."},
+    {"term": "in-charge", "kind": "police jargon", "gloss_in": "both: replace", "first_use": "A: s1a02 b6 l23", "carrier": "s1a02 l23 reworded to 'the police in my town'.", "evidence": "cv_A s1a02 (3)."},
+    {"term": "chowki / police post", "kind": "police word", "gloss_in": "English only", "first_use": "A: s1a02 b6 l24", "carrier": "EN s1a02 l24: 'the police post here'. HI keeps 'चौकी'. Place super at s1a03 b10: 'Police post' / 'Police चौकी'."},
+    {"term": "ledger / the book / accounts (हिसाब)", "kind": "object: Mausi's red book of every party and payment", "gloss_in": "Hindi may need it for 'ledger', which only Aditya says", "first_use": "shared: s1e02 b6 l16 ('Mausi and her ledger')", "carrier": "EN is plain. HI: S2 decides whether s1e02 l16 needs 'हिसाब की किताब' beside 'ledger' (register.one_word_per_object keeps 'ledger' in Aditya's mouth only). A ties it to 'the book' in s1a02 l05 and new l29."},
+    {"term": "tola", "kind": "unit of gold weight", "gloss_in": "English only", "first_use": "B: s1b02 b2 l07", "carrier": "EN s1b02 l07: 'twenty-two tola of gold'. Used freely after that (s1b03 l04, l05)."},
+    {"term": "sachet / पुड़िया", "kind": "object", "gloss_in": "none", "carrier": "Shown in the hook (s1e01 b1) and named in l01."},
+    {"term": "tawa", "kind": "object", "gloss_in": "English, may", "first_use": "B: s1b03 b4 l13", "carrier": "Optional 'a hot tawa'. It is not plot-bearing: 'burnt' carries the meaning."},
+    {"term": "Jijaji, saale sahab, beta, meri bachchi, Didi, Sahab, Mausi, mathri, lakh", "kind": "address words, food and money units in en-IN", "gloss_in": "none", "carrier": "The register keeps them (bible register.english_version). None carries plot on its own: the person addressed is on screen, and 'Did you eat?' frames mathri."}
+  ],
+
+  "code_phrases": {
+    "where_the_viewer_hears_them": "s1e02 b9, Mausi to Billu on the phone in the lane, before the 2 am call and out of Aditya's hearing. The clock is first set in s1e01 b5 l09.",
+    "prompt": {"hi": "दामाद जी ने दूध पी लिया, बेटा?", "en": "Did Damaad ji drink his milk, beta?", "means": "The gang's 2 am check that the groom is drugged and the job is on. Carried by s1e02 l23 (reworded) and asked in l29 (locked), then again in l30."},
+    "all_clear": {"hi": "हाँ मौसी, पी लिया।", "en": "Yes, Mausi. He drank it.", "means": "Billu brings the car at three. The bride leaves for Mausi, and in A, Aditya goes with her. Carried by s1e02 l24, and by Kiran's own account in l32."},
+    "alarm": {"hi": "मौसी... दूध फट गया।", "en": "Mausi... the milk has split.", "means": "Billu takes the boys up to the room. Carried by s1e02 l24."},
+    "anything_else_or_silence": "The boys go up as well. Carried by s1e02 l25. A dead phone brings Billu up: s1e02 l32.",
+    "kiran_lie": "s1e02 l11 'No code. A mother asks how her daughter is.' The reworded s1e02 l23 ('She knows what to say') exposes it, so the viewer sees the lie before the call.",
+    "who_knows": "Kiran, Mausi and Billu know both phrases. Aditya knows only that the call checks on him and that a yes is expected. He learns the alarm exists in s1a01 b3 (A) or hears it in s1b01 b1 (B).",
+    "other_con_shorthand": [
+      {"phrase": "Bureau, Bhaiya in the car, Mausi on the phone, bride gone by morning.", "means": "The gang's method, as a customer meets it. s1e01 l13 (protected). Its words are glossed before it: bureau (l28), Bhaiya (l06, b5)."},
+      {"phrase": "party", "means": "The groom marked to be married and robbed. Glossed in s1e01 l14."}
+    ],
+    "status_now": "fails: 'Mausi's code speech has no clear listener or time, and it contradicts Kiran's No code without signalling that she lied' (cv_A gap 4; cv_B s1e02; review section 4 item 6)."
+  },
+
+  "choice": {
+    "asked_at": "End of s1e02: Mausi's l29 and its repeat l30, on speaker, with Aditya watching Kiran's mouth.",
+    "question": {"hi": "मौसी को इसके हवाले करूँ, या इसे मौसी के?", "en": "Do I hand Mausi to him, or him to Mausi?"},
+    "labels": {"A": {"hi": "हाँ मौसी, पी लिया", "en": "Yes, he drank it"}, "B": {"hi": "मौसी... दूध फट गया", "en": "The milk has split"}},
+    "unchanged": "The question and both labels are unchanged (D-024 ruling 1).",
+    "rule": "D-024 rule 9: both costs and both gains are spoken in s1e02 before l29. Every carrier below sits in b4 to b9.",
+    "A": {
+      "does": "The all-clear. The car comes at three and takes Kiran to Mausi, and Aditya goes with her.",
+      "gains": [
+        {"what": "A way out of the life: Aditya will let her go.", "carrier": "s1e02 b7 l21, l22 (keep)"},
+        {"what": "The only repayment she can make for Mohit: Mausi and her ledger go to the police.", "carrier": "s1e02 b6 l16 (keep)"},
+        {"what": "How 'He drank it' gets him to Mausi.", "carrier": "s1e02 b4, new l32 ('If all's well, the car comes at three and takes me to her'), and b9 l24"}
+      ],
+      "costs": [
+        {"what": "Mausi, her eighteen lakh and her home.", "carrier": "s1e02 b7, reworded l20 (must)"},
+        {"what": "She walks beside the man who has promised one dose to the owner of the hand, which the viewer knows is hers. His promise of safety was made to 'Sneha'.", "carrier": "s1e02 b6 l18, l19 (keep); b7 l22 (keep); s1e01 b11 (picture)"}
+      ]
+    },
+    "B": {
+      "does": "The alarm. Billu and the boys come up for Aditya.",
+      "gains": [
+        {"what": "She keeps Mausi, her eighteen lakh, her home and her last wedding.", "carrier": "s1e02 b7, reworded l20, read as the mirror of A's cost; s1e01 b6 l15"},
+        {"what": "Her secret stays safe: the gang does what it always does and the bride is gone by morning, so nobody checks her wrist again.", "carrier": "s1e02 b5, reworded l13 (must)"}
+      ],
+      "costs": [
+        {"what": "She does to a second brother, knowingly, what was done to Mohit.", "carrier": "s1e02 b5 l14, l15 (keep, protected)"},
+        {"what": "She shuts the only way out anyone has offered her.", "carrier": "s1e02 b7 l22 (keep)"}
+      ]
+    },
+    "no_third_way": "s1e02 b9 l25 (anything else or silence) and b4 new l32 (a dead phone).",
+    "status_now": "fails: 'No line says what Kiran gets or loses either way. Her 18 lakh and her freedom are never tied to this decision' (cv_A); 'I did not understand what He drank it would lead to' (cv_B).",
+    "balance_note": "The new spoken stakes mirror each other: what A gains is what B costs, and the reverse. The danger in A (l18, l19) and the guilt in B (l14, l15) were already spoken. The S3 critic re-reads the vote against D-004's 65/35. If one side tilts past it, raise that side's cost and remove no gain (D-024 rule 9).",
+    "ballot_meaning_proposed": {
+      "note": "For the S1 bible update that D-024 asks for, then for P4's sync of app/public/media/series1/series.json. Not applied here. The form stays the same: the signal to Billu, who is handed to whom, then what Kiran gains and loses, with no praise or blame.",
+      "A": {"en": "Signal to Billu: car at three. Mausi is handed to Aditya. Kiran gets her way out, and loses Mausi, her ₹18 lakh and her home.", "hi": "बिल्लू को इशारा: तीन बजे गाड़ी। मौसी आदित्य के हवाले। किरण को निकलने का रास्ता मिलता है; मौसी, अठारह लाख और घर छूटते हैं।"},
+      "B": {"en": "Signal to Billu: boys up. Aditya is handed to Mausi. Kiran keeps Mausi, her ₹18 lakh and her home, and loses her way out.", "hi": "बिल्लू को इशारा: लड़के ऊपर। आदित्य मौसी के हवाले। किरण के पास मौसी, अठारह लाख और घर रहते हैं; निकलने का रास्ता छूटता है।"}
+    }
+  },
+
+  "threads": [
+    {"thread": "Aditya's vow: eleven days, then one dose for the owner of the hand", "planted": "s1e02 b6 l18, l19; repeated in A at s1a02 l10", "A": "s1a03 b8, new l27 ('I'd counted eleven days. Now the police can keep that account.'), with the powder tipped on the floor", "B": "s1b03 b5, new l32 ('The hand I came to kill kept me alive tonight.')", "priority": "must", "evidence": "cv_A s1a03 (3); cv_B s1b03; review cause 8"},
+    {"thread": "Kiran's eighteen lakh and her last wedding", "planted": "s1e01 b6 l15; s1e02 b7, reworded l20", "A": "s1a02 l19 (Mausi promises it next week); s1a03 b5, reworded l12 ('My eighteen lakh is written in it': she hands it over with the book)", "B": "s1b01 l04; s1b02 b7 l22 to l26 (never to be paid; no last wedding)", "priority": "must (A)"},
+    {"thread": "Rekha, the girl with the burnt wrist", "planted": "s1e02 b4 l05", "A": "s1a01 l24; s1a02 l06 to l10; s1a03 l04, l05 and l08 ('There's no Rekha')", "B": "The name is never spoken (lock). Answered by s1b03 b4 l15 (the burnt wrist is Kiran's, so Rekha was a lie) and echoed by l21 (Mausi will sit and write the accounts: Rekha's invented life). Any stronger echo must not say the name.", "priority": "keep; may in B"},
+    {"thread": "His promise: 'You are free to go, Sneha'", "planted": "s1e02 b7 l22", "A": "s1a03 b8 l21 (he gives her to the police) and b10 l24 ('Sneha', the first name she gives the register)", "B": "s1b03 b7 l25, l26 ('You could have gone.' / 'Where to?')", "priority": "keep"},
+    {"thread": "Mausi knew Mohit was dead and never told Kiran", "planted": "s1e01 b10 (Kiran's face: she did not know)", "A": "s1a03 b1, reworded l02, and Mausi's silence", "B": "s1b01 b10 l22 and reworded l23; s1b02 b2, new l30", "priority": "must"},
+    {"thread": "Aditya's first aim: Mausi and her ledger to the police", "planted": "s1e01 b6 l17, l18; s1e02 b6 l16", "A": "s1a02 b6 l23, l24 (pages sent; police in half an hour); s1a03 b8 (the ledger carried out)", "B": "s1b03 b6 l18 (Kiran keeps the accounts); b7 l22 to l24 (the police are no use to him)", "priority": "keep, with the A rewords"},
+    {"thread": "The photograph", "planted": "s1e01 b9", "A": "s1a02 b7, b8 (Billu, then Mausi); s1a03 b11 (left on the bench)", "B": "s1b01 b10 (Mausi reads it); s1b03 b5, b7 (Kiran keeps it)", "priority": "keep"},
+    {"thread": "The half-used sachet from night one", "planted": "s1e01 b1", "A": "s1a01 b5 (pocketed, picture); s1a03 b4 l10 ('Put the sachet down'); b8 (tipped out)", "B": "s1b02 b1 l02 ('half a sachet in it already'); b4 (the fold tapped and left shut)", "priority": "keep"},
+    {"thread": "Branch A only: police in half an hour", "planted": "s1a02 b6, reworded l24", "paid": "s1a03 b7 l18 ('Police car outside!')", "priority": "must (the set-up)"},
+    {"thread": "Branch A only: Mausi's keys", "planted": "s1a02 b2 (picture), b5 (picture, the theft), b6 new l29 (spoken)", "paid": "s1a03 b5 l12 and b5a", "priority": "must (the spoken plant)"},
+    {"thread": "Branch B only: the fresh milk", "planted": "s1b02 b1 l03 ('Billu can bring fresh milk')", "paid": "s1b03 b3, reworded l11", "priority": "must"},
+    {"thread": "Branch B only: Billu is short-changed", "planted": "s1b02 b2 l06 to l08", "paid": "s1b03 b2 l03 to l10, b3 l12", "priority": "keep"},
+    {"thread": "Branch B only: Chhoti, the next bride", "planted": "s1b02 b6, reworded l19 and l21", "paid": "s1b03 b9, b10", "priority": "must (the set-up)"}
+  ],
+
+  "picture_clues": [
+    {"clue": "The photograph: a bride's left hand with a half-moon burn above red glass bangles", "where": "s1e01 b9 insert (s31)", "spoken": "s1e01 b9, new l29 ('The bride has a burn on her wrist, like a half moon.')", "edit": "Hold s31 for at least 2.5 s with a push-in on the scar, with no new frame (D-024)."},
+    {"clue": "The same burn on Kiran's left forearm, slid under her chooda", "where": "s1e01 b11 set-ups 2 and 3", "spoken": "Cannot be said: no one in the scene may say whose it is (lock). l29's description is the spoken half, so the viewer can match the shape. See c1_watch_items 1."},
+    {"clue": "He slides her bangles off to look", "where": "s1e02 b2", "spoken": "s1e02 l01, l02, l09 (keep)"},
+    {"clue": "She lifts the drugged milk to her own lips", "where": "s1e02 b3 set-up 1", "spoken": "s1e02 l03, reworded ('Then I'll drink it myself.')"},
+    {"clue": "The mathri dabba in her bag", "where": "s1e02 b10", "spoken": "s1e02 l28 (keep)"},
+    {"clue": "He pockets the half sachet and the photograph", "where": "s1a01 b5 inserts", "spoken": "Later: s1a03 l10 (the sachet) and s1a02 l25 (the photograph)."},
+    {"clue": "Billu's eyes follow the photograph", "where": "s1a01 b8", "spoken": "Later: s1a02 l25."},
+    {"clue": "The ledger in the cashbox; the key at Mausi's hip", "where": "s1a02 b2 inserts", "spoken": "s1a02 l05, reworded ('in the book'), and b6 new l29"},
+    {"clue": "Kiran steals Mausi's keys", "where": "s1a02 b5 inserts", "spoken": "s1a02 b6, new l29 ('Her keys...')"},
+    {"clue": "He photographs the ledger", "where": "s1a02 b6 shot 5", "spoken": "s1a02 l23, reworded ('Every page is in my phone')"},
+    {"clue": "Mausi recognises the burn", "where": "s1a02 b8", "spoken": "s1a02 l27, l28 (keep)"},
+    {"clue": "The powder tipped on the floor", "where": "s1a03 b8 set-up 2", "spoken": "s1a03 b8, new l27"},
+    {"clue": "The milk is whole, so the phrase was not about milk", "where": "s1b01 b1 set-up 2", "spoken": "s1b01 l03 (locked), read against s1e02 b9"},
+    {"clue": "The hasp torn out of the door", "where": "s1b01 b8 set-up 1", "spoken": "s1b01 l21, reworded (may)"},
+    {"clue": "His notebook and the photograph read by Mausi", "where": "s1b01 b10", "spoken": "s1b01 l22 ('Mohit's brother'), l25 ('Fourteen months he's kept accounts')"},
+    {"clue": "A fresh glass; the night-one fold tapped and left shut", "where": "s1b02 b4 shot 1 (withheld on purpose)", "spoken": "Only after the reveal: s1b03 l11, reworded"},
+    {"clue": "Two folds still shut; his eye opens", "where": "s1b02 b9", "spoken": "s1b03 l11, reworded, and b3 set-up 2 (he sits up)"},
+    {"clue": "Mausi pushes up the chooda to bare the burn", "where": "s1b03 b4", "spoken": "s1b03 l15"},
+    {"clue": "Kiran keeps his photograph and notebook", "where": "s1b03 b7", "spoken": "Implied by l23 (no proof). May: one clause. Not plot-bearing after the ending."}
+  ],
+
+  "supers": {
+    "rules": "D-024 ruling 3. Only name and role at first appearance on a path, a place, or a time (time only for a deadline or a jump). True and public only: no alias, no false role, nothing a twist reveals. At most two short lines; held 2 s or more; clear of the subtitle zone; never on a shot that carries a plot overlay. Burned in by the edit unless P3 builds app-drawn supers, and never both.",
+    "list": [
+      {"episode": "s1e01", "beat": "b2", "id": "su1", "kind": "time", "with_line": "l02", "text": {"en": "Wedding night · 1:35 am", "hi": "शादी की रात · 1:35"}, "why": "Gives both roles (bride, groom) by the end of their first beat, and starts the clock to the 2 am call. It falls after the hook, so it does not push the 5 s hook. b5's existing 1:40 overlay stays."},
+      {"episode": "s1e01", "beat": "b5", "id": "su2", "kind": "name_role", "with_line": "l09", "text": {"en": "Billu · Mausi's driver", "hi": "बिल्लू · मौसी का driver"}, "why": "Billu's first appearance. It goes on set-up 2, because set-up 1 carries the 1:40 overlay. It is true and public; 'Bhaiya' is his act and is not supered."},
+      {"episode": "s1a01", "beat": "b9", "id": "su1", "kind": "place", "with_line": "l20", "text": {"en": "Mausi's marriage bureau", "hi": "मौसी का marriage bureau"}, "why": "First sight of the bureau on path A. It sits inside glimpse A's range (b9 shot 1); S14 checks it against must_not_reveal, which it does not touch."},
+      {"episode": "s1a01", "beat": "b10", "id": "su2", "kind": "name_role", "with_line": "l21", "text": {"en": "Shakun Mausi · runs the bureau", "hi": "शकुन मौसी · bureau चलाती हैं"}, "why": "Joins the phone voice to a face at her first sight on path A."},
+      {"episode": "s1a01", "beat": "b10", "id": "su3", "kind": "name_role", "with_line": "l23", "text": {"en": "Chhoti · the next bride", "hi": "छोटी · अगली दुल्हन"}, "why": "She is not named in a line until b11 l26, one beat late."},
+      {"episode": "s1a03", "beat": "b10", "id": "su1", "kind": "place", "with_line": "l23", "text": {"en": "Police post", "hi": "Police चौकी"}, "why": "A change of place. If set-up 1 carries register text as an overlay, S7 moves the super to l24's set-up."},
+      {"episode": "s1b01", "beat": "b9", "id": "su1", "kind": "name_role", "with_line": "l20", "text": {"en": "Shakun Mausi · runs the bureau", "hi": "शकुन मौसी · bureau चलाती हैं"}, "why": "Mausi's first sight on path B."},
+      {"episode": "s1b03", "beat": "b9", "id": "su1", "kind": "place", "with_line": "l28", "text": {"en": "Mausi's marriage bureau", "hi": "मौसी का marriage bureau"}, "why": "First sight of the bureau on path B. It goes on set-up 2, because set-up 1 carries the 'Evening' overlay."}
+    ],
+    "not_supered": "Kiran's name (the story holds it to s1e01 b5; 'Sneha' is an alias), Aditya (he names himself in s1e01 b6), Chhoti on path B (named by line before she is seen), the constable (role is given by line and place super), Rekha (she does not exist)."
+  },
+
+  "heard_as": {
+    "rule": "D-024 rule 7, using the skill's check: every line whose speaker is not in the beat's on_screen gets heard_as. The first such line of each speaker in a scene says who is speaking, or the subtitle label does.",
+    "lines": [
+      {"episode": "s1e01", "line": "l01", "value": "off_screen", "identified_by": "The locked hook line cannot name him. The subtitle label is the role ('The groom' / 'दूल्हा'), and b2 set-up 1 shows him sitting up."},
+      {"episode": "s1e01", "lines": ["l09", "l27", "l10"], "value": "phone", "identified_by": "l08 'Yes, Mausi'"},
+      {"episode": "s1e02", "lines": ["l23", "l24", "l25", "l27"], "value": "phone", "identified_by": "new l33 'Yes, Mausi. Go on.'"},
+      {"episode": "s1e02", "lines": ["l28", "l29", "l30"], "value": "phone", "identified_by": "The caller overlay, the subtitle label 'Mausi', and her voice from b9"},
+      {"episode": "s1a01", "line": "l02", "value": "phone", "identified_by": "l01 'Yes, Mausi'"},
+      {"episode": "s1a01", "lines": ["l17", "l19"], "value": "phone", "identified_by": "l16 'Mausi wants to hear it herself'"},
+      {"episode": "s1a02", "lines": ["l20", "l22"], "value": "off_screen", "identified_by": "Mausi is behind the curtain after shot 1. The beat's on_screen lists her, so this is the writer's call. Recommended, because cold readers lose voices they cannot see."},
+      {"episode": "s1b01", "line": "l02", "value": "phone", "identified_by": "l01 'Mausi...'"},
+      {"episode": "s1b01", "lines": ["l10", "l11"], "value": "phone", "identified_by": "l09 'Mausi, the party's locked...'"},
+      {"episode": "s1b01", "line": "l19", "value": "off_screen", "identified_by": "Through the door. The subtitle label is 'Mausi', and her voice and the key chink are known."},
+      {"episode": "s1b02", "line": "l14", "value": "off_screen", "identified_by": "Mausi is out of b4's on_screen. Subtitle label 'Mausi'."},
+      {"episode": "s1b02", "lines": ["l19", "l20"], "value": "phone", "identified_by": "l19 reworded: she names herself"}
+    ],
+    "writer_audit": "This list comes from each beat's on_screen field and the action lines I read. The writer re-checks every line against on_screen after the rewrite."
+  },
+
+  "numbers": {
+    "rule": "D-024 rule 5: at most three load-bearing numbers an episode. A number is load-bearing if a later line, the choice or an ending needs the viewer to remember it. Serial-type numbers are said as words or cut. Series 1 has none.",
+    "by_episode": [
+      {"episode": "s1e01", "load_bearing": ["eighteen lakh (l15)", "eleven days (l25)", "the call at two (l09)"], "incidental": ["car at three (l09; restated in s1e02 l24 and l32)", "fourteen months (l14)", "1:35 (super) and 1:40 (overlay)"]},
+      {"episode": "s1e02", "load_bearing": ["car at three (l24, l32: the choice)", "eleven days (l15, l18: the vow)", "eighteen lakh (l20: the stake)"], "incidental": ["two (l07, l23: the call happens inside the episode)", "2:00 and 1:52 (overlays)"]},
+      {"episode": "s1a01", "load_bearing": ["three (l02)"], "incidental": ["3:00 (overlay)"]},
+      {"episode": "s1a02", "load_bearing": ["eleven days (l10)", "eighteen lakh (l19)", "half an hour (l24)"], "incidental": ["nine (l15)"]},
+      {"episode": "s1a03", "load_bearing": ["eleven days (new l27)", "eighteen lakh (l12)"], "incidental": ["a year (l05)"]},
+      {"episode": "s1b01", "load_bearing": ["eighteen lakh (l04)", "two and a half hours (l12)"], "incidental": ["fourteen months (l18, l25)", "4:10 (overlay)"]},
+      {"episode": "s1b02", "load_bearing": ["eighteen lakh (l25)"], "incidental": ["three hours (l01)", "half a sachet, two more (l02)", "twenty-two and twelve tola (l07, l08)"]},
+      {"episode": "s1b03", "load_bearing": [], "incidental": ["sixteen and eight, nine and four tola (l04 to l06)", "fourteen (l13, her age)"], "may": "Say 'half' once in b2 so the skimming does not rest on arithmetic."}
+    ]
+  },
+
+  "episodes": [
+    {
+      "id": "s1e01",
+      "title": {"hi": "पूरी पुड़िया", "en": "The Whole Sachet"},
+      "branch": "shared",
+      "path_position": 1,
+      "on_paths": ["A", "B"],
+      "next": "s1e02",
+      "premise_at_first_third": "C1 places its marker at the end of b4 (about the first 40 s). By then a reader should be able to say: a bride who drugs grooms' milk to rob them on the wedding night has been caught by this groom; he was awake, has padlocked them both in, has her SIM, and there is nothing in the house worth stealing. Carried by b1 l01, b2 l02 and l03, b3 l04, b4 l05 (with its new clause) and l07.",
+      "premise_after": "A con bride is trapped by a groom who married her on purpose to reach Mausi, the woman who runs the brides, and to find the bride who robbed his brother Mohit, who then hanged himself. All he has is a photo of that bride's burnt wrist, and the burn is on her own arm.",
+      "must_know_by_end": [
+        {"id": "s1e01.f01", "fact": "It is a wedding night. She is the bride, he is the groom, and she is putting a drug in his milk.", "status_now": "lands", "evidence": "Both S1 cold readers stated it.",
+         "carriers": [
+           {"beat": "b1", "line": "l01", "action": "keep", "note": "Locked. heard_as off_screen; subtitle label 'The groom'."},
+           {"beat": "b2", "line": "l02", "action": "keep"},
+           {"beat": "b2", "line": "l03", "action": "keep", "note": "Protected."},
+           {"beat": "b2", "super": "su1", "action": "super", "priority": "must", "text": {"en": "Wedding night · 1:35 am", "hi": "शादी की रात · 1:35"}, "note": "Gives both roles in text by the end of b2 (rule 1)."}
+         ]},
+        {"id": "s1e01.f02", "fact": "He was awake and expected it. He has padlocked the door from inside, wears the key and has her SIM, so she cannot leave or call out.", "status_now": "lands",
+         "carriers": [
+           {"beat": "b3", "line": "l04", "action": "keep"},
+           {"beat": "b4", "line": "l07", "action": "keep", "note": "Protected."}
+         ]},
+        {"id": "s1e01.f03", "fact": "It is a trap: the jewellery set is brass and the house is rented for a month, so there is nothing here to steal.", "status_now": "fails", "evidence": "cv_A s1e01 (2): had to work it out before the show said she is a thief; cv_B s1e01: understood only later.",
+         "carriers": [
+           {"beat": "b4", "line": "l05", "action": "reword", "priority": "must", "now": "The set is brass. The house is rented by the month.", "default": {"en": "The set is brass. The house is rented by the month. There's nothing here to steal.", "hi": "Set पीतल का है। घर एक महीने के rent पे है। यहाँ चुराने को कुछ नहीं है।"}, "note": "This clause also carries the premise by the first-third marker."}
+         ]},
+        {"id": "s1e01.f04", "fact": "The man in the car below is Billu, Mausi's driver. He plays the bride's 'brother' (Bhaiya), the one she asked to call.", "status_now": "fails", "evidence": "cv_A s1e01 (3): nothing ties 'Bhaiya' to the man in the car; Billu is never named.",
+         "carriers": [
+           {"beat": "b4", "line": "l06", "action": "reword", "priority": "should", "language": "en only", "now": "Can I just call Bhaiya once?", "default": {"en": "Can I just call my brother once? Bhaiya will worry."}, "note": "English gloss inside the existing line (D-024 ruling 4 item 6). The Hindi stays: 'मैं ज़रा भैया को call कर लूँ?'"},
+           {"beat": "b5", "line": "l08", "action": "reword", "priority": "must", "now": "Yes, Mausi. Light is still on.", "default": {"en": "Yes, Mausi. I'm in the car below. The light's still on.", "hi": "हाँ मौसी, नीचे गाड़ी में हूँ। बत्ती अभी जल रही है।"}, "note": "Says where we are on the scene change (rule 4) and puts 'the car' in his mouth."},
+           {"beat": "b5", "line": "l09", "action": "reword", "priority": "must", "now": "I'll phone her at two. Car at three, beta.", "default": {"en": "I'll phone her at two. Car at three, Billu.", "hi": "दो बजे उसको phone करूँगी। तीन बजे गाड़ी, बिल्लू।"}, "note": "Names him. heard_as phone."},
+           {"beat": "b5", "super": "su2", "action": "super", "priority": "should", "text": {"en": "Billu · Mausi's driver", "hi": "बिल्लू · मौसी का driver"}},
+           {"beat": "b6", "line": "l13", "action": "keep", "note": "Protected. 'Bhaiya in the car' now points at the man just seen."}
+         ]},
+        {"id": "s1e01.f05", "fact": "Mausi, a woman on the phone, gives the orders. The gang's clock is a call at two and the car at three.", "status_now": "lands", "evidence": "Read correctly by both readers. The fix is marking only.",
+         "carriers": [
+           {"beat": "b5", "line": "l08", "action": "keep or reword (f04)", "note": "'Yes, Mausi' names the caller (rule 7)."},
+           {"beat": "b5", "line": "l09", "action": "reword (f04)", "note": "heard_as phone."}
+         ]},
+        {"id": "s1e01.f06", "fact": "To the gang the bride is Kiran. 'Sneha' is the false name she uses with this groom.", "status_now": "fails", "evidence": "cv_A s1e01 (1); cv_B s1e01 'Who is who'; review cause 5 and section 3 ('No viewer linked the names').",
+         "carriers": [
+           {"beat": "b5", "line": "l27", "action": "add", "priority": "must", "proposed_id": "l27", "placement": "After l09, before l10.", "default": {"en": "Tonight she's 'Sneha' for him. But she's still my Kiran.", "hi": "आज वो उसके लिए स्नेहा बनी है। पर है तो मेरी किरण।"}, "note": "The alias bridge (rule 1). heard_as phone. Out of Aditya's hearing (lock). The sfx duck for 'किरण' moves here from l10."},
+           {"beat": "b5", "line": "l10", "action": "reword", "priority": "must", "now": "And listen, Kiran won't have eaten all day. Bring her straight to me.", "default": {"en": "And listen, she won't have eaten all day. Bring her straight to me.", "hi": "और सुन, सुबह से कुछ नहीं खाया होगा उसने। सीधे मेरे पास लाना।"}, "note": "Keeps Mausi's fretting, a balance lever. The name now sits in l27."}
+         ]},
+        {"id": "s1e01.f07", "fact": "Mausi runs the marriage bureau that sends these brides, and Kiran is loyal to her.", "status_now": "partly", "evidence": "cv_A s1e01 (3): 'Bureau is never explained'.",
+         "carriers": [
+           {"beat": "b6", "line": "l28", "action": "add (f08)", "note": "Glosses 'marriage bureau' before l13."},
+           {"beat": "b6", "line": "l13", "action": "keep", "note": "Protected."},
+           {"beat": "b6", "line": "l18", "action": "reword (f10)"},
+           {"beat": "b6", "line": "l19", "action": "keep", "note": "'What did Mausi ever do to you?' joins Mausi to 'the woman who sends these brides' and shows Kiran's loyalty."}
+         ]},
+        {"id": "s1e01.f08", "fact": "The groom is Aditya, a pharmacist. The bureau knows him by a fake name. It took him fourteen months to get chosen as its next 'party', the groom they rob.", "status_now": "fails", "evidence": "cv_A s1e01 (4) and (6); cv_B s1e01 ('party'); review cause 5 (Aditya never named on path A).",
+         "carriers": [
+           {"beat": "b6", "line": "l12", "action": "keep"},
+           {"beat": "b6", "line": "l28", "action": "add", "priority": "must", "proposed_id": "l28", "placement": "After l12, before l13.", "default": {"en": "My real name is Aditya. Your marriage bureau has a fake one.", "hi": "असली नाम आदित्य है। तुम्हारे marriage bureau के पास नकली है।"}, "note": "Names him on both paths, glosses 'bureau', and sets up s1b01 l16 ('Your name is fake')."},
+           {"beat": "b6", "line": "l14", "action": "reword", "priority": "must", "now": "It took me fourteen months to become your party.", "default": {"en": "It took me fourteen months to become your 'party'. The groom you rob.", "hi": "चौदह महीने लगे, तुम्हारी party बनने में। वो दूल्हा, जिसे तुम लूटती हो।"}, "note": "'party' recurs six times on the two paths, so it is glossed rather than dropped."}
+         ]},
+        {"id": "s1e01.f09", "fact": "Kiran's stake: this is her last wedding, and Mausi is holding eighteen lakh of hers. She offers it all if he opens the padlock.", "status_now": "partly", "evidence": "cv_B s1e01: 'Take it all. Open the padlock.' Take what? The money is with Mausi.",
+         "carriers": [
+           {"beat": "b6", "line": "l15", "action": "keep"},
+           {"beat": "b6", "line": "l16", "action": "reword", "priority": "should", "now": "Take it all. Open the padlock.", "default": {"en": "I'll get you all of it. Just open the padlock.", "hi": "सब तुम्हें दिलवा दूँगी। बस ताला खोलो।"}}
+         ]},
+        {"id": "s1e01.f10", "fact": "Aditya's two aims, in order: the police told him to bring proof, so for them he wants Mausi; for himself he wants the hand (b11).", "status_now": "partly", "evidence": "cv_B s1e01: 'He wants two different people within one minute... Which one is his goal?'",
+         "carriers": [
+           {"beat": "b6", "line": "l17", "action": "reword", "priority": "should", "now": "I don't want money. The police want proof.", "default": {"en": "I don't want money. The police told me to bring proof.", "hi": "पैसा नहीं चाहिए। Police ने कहा था, proof लाओ।"}, "note": "Puts back the because (rule 4) and plants s1a02 l23."},
+           {"beat": "b6", "line": "l18", "action": "reword", "priority": "should", "now": "And I want the woman who sends these brides.", "default": {"en": "And for them, I want the woman who sends these brides.", "hi": "और उनके लिए, मुझे वो औरत चाहिए जो ये दुल्हनें भेजती है।"}},
+           {"beat": "b11", "line": "l26", "action": "keep", "note": "Locked. s1e02 l16 later makes the split explicit."}
+         ]},
+        {"id": "s1e01.f11", "fact": "Why: Mausi married his younger brother Mohit to one of her brides. Aditya stayed at his shop and never saw her. By morning she was gone, so there was no reception, and she took Mohit's phone, so one photo is left. Eleven days later Mohit was found hanging.", "status_now": "partly", "evidence": "cv_B s1e01: why Mohit killed himself is only hinted at ('There was no reception').",
+         "carriers": [
+           {"beat": "b8", "line": "l20", "action": "keep"},
+           {"beat": "b8", "line": "l21", "action": "keep"},
+           {"beat": "b8", "line": "l22", "action": "reword", "priority": "should", "now": "There was no reception.", "default": {"en": "There was no reception. By morning his bride was gone.", "hi": "Reception हुआ ही नहीं। सुबह तक दुल्हन ग़ायब थी।"}, "note": "Keeps 'our mother's bangles' for s1e02 l15. The death is not described further (lock)."},
+           {"beat": "b8", "line": "l23", "action": "keep"},
+           {"beat": "b10", "line": "l25", "action": "keep", "note": "Locked. The one statement of the death."}
+         ]},
+        {"id": "s1e01.f12", "fact": "The photograph shows the bride's hand, with a burn on her wrist shaped like a half moon. It is all he has of her.", "status_now": "fails", "evidence": "cv_A s1e01 (5): saw only the blank back of the print; cv_B: the scar is tiny at phone size; review cause 4.",
+         "carriers": [
+           {"beat": "b9", "line": "l24", "action": "keep"},
+           {"beat": "b9", "line": "l29", "action": "add", "priority": "must", "proposed_id": "l29", "placement": "After l24, on set-up 1 (Aditya holding up the print, on screen), before the silent insert. No heard_as.", "default": {"en": "The bride has a burn on her wrist, like a half moon.", "hi": "दुल्हन की कलाई पे जला निशान है, आधे चाँद जैसा।"}, "note": "Rule 8: it says what the picture shows, never whose. 'Wrist' matches s1e02 l05 and s1a03 l04 ('burnt wrist'). The origin is not spoken (lock)."},
+           {"beat": "b9", "shot": "s31", "action": "edit", "priority": "must", "note": "Hold for at least 2.5 s with a push-in on the scar, and no new frame (D-024)."}
+         ]},
+        {"id": "s1e01.f13", "fact": "Kiran did not know Mohit was dead.", "status_now": "lands (picture)",
+         "carriers": [
+           {"beat": "b10", "action": "picture", "note": "The silent hold on her face after l25."},
+           {"later": "Spoken in A at s1a03 l02 (reworded) and in B at s1b01 l23 (reworded): 'and you never told me'."}
+         ]},
+        {"id": "s1e01.f14", "fact": "The hand in the photograph is Kiran's. The same half-moon burn is on her left forearm, under her red-and-ivory bangles, and Aditya has not seen it.", "status_now": "partly", "evidence": "cv_A s1e01 (5) (he connected it only through the metadata); cv_B s1e01 (the scar is tiny; if missed, the closing wrist shots mean nothing).",
+         "carriers": [
+           {"beat": "b11", "line": "l26", "action": "keep", "note": "Locked."},
+           {"beat": "b11", "action": "picture", "note": "Set-ups 2 and 3: the burn framed to mirror the b9 insert, then the chooda slid over it. Keep about 2.5 s on set-up 2."},
+           {"beat": "b9", "line": "l29", "action": "add (f12)", "note": "The spoken half: the viewer matches the shape. No line may say it is hers (lock). See c1_watch_items 1."}
+         ]}
+      ],
+      "new_lines": ["l27 (b5)", "l28 (b6)", "l29 (b9)"],
+      "supers": ["su1 (b2, time)", "su2 (b5, name_role, Billu)"],
+      "names_known_by_end": ["Kiran (and that 'Sneha' is her alias tonight)", "Aditya", "Mausi", "Billu", "Mohit"],
+      "terms_glossed": ["marriage bureau (l28)", "party (l14)", "Bhaiya, English only (l06)"]
+    },
+    {
+      "id": "s1e02",
+      "title": {"hi": "दो बजे का phone", "en": "The 2 am Call"},
+      "branch": "shared",
+      "path_position": 2,
+      "on_paths": ["A", "B"],
+      "next": "s1a01 or s1b01, by the vote",
+      "premise_after": "Aditya will let 'Sneha' go if she gets him to Mausi, and has calmly sworn to kill the owner of the hand, which is her. At 2 am Mausi rings with the gang's coded check, and Kiran must answer either 'He drank it', which sends the car and him to Mausi and costs her Mausi, her money and her home, or 'The milk has split', which sends the boys up for him and keeps her secret.",
+      "must_know_by_end": [
+        {"id": "s1e02.f01", "fact": "Aditya is checking her hands for the half-moon burn. He slides the bangles off her left wrist one at a time.", "status_now": "lands once s1e01.f12 lands",
+         "carriers": [
+           {"beat": "b1", "line": "l01", "action": "keep"},
+           {"beat": "b2", "line": "l02", "action": "keep"}
+         ]},
+        {"id": "s1e02.f02", "fact": "To stop him she lifts the drugged milk to her own lips. He takes it away because he needs her awake to reach Mausi.", "status_now": "fails", "evidence": "cv_A s1e02 (1); cv_B s1e02 (cannot tell she is trying to drink the milk herself); review cause 7.",
+         "carriers": [
+           {"beat": "b3", "line": "l03", "action": "reword", "priority": "must", "now": "It'll put me to sleep, though.", "default": {"en": "Then I'll drink it myself.", "hi": "तो मैं ही पी लेती हूँ।"}, "note": "Rule 3: the line no longer leans on an action the reader cannot see. The review's draft."},
+           {"beat": "b3", "line": "l04", "action": "keep"}
+         ]},
+        {"id": "s1e02.f03", "fact": "She hands him a decoy: the bride with the burnt wrist is 'Rekha', who now keeps Mausi's accounts. The viewer knows it is a lie.", "status_now": "fails now; fixed by s1e01 l29", "evidence": "cv_A s1e02 (3); cv_B s1e02 ('burnt wrist' arrives as if already known).",
+         "carriers": [
+           {"beat": "b4", "line": "l05", "action": "keep", "note": "Set up by s1e01 l29."}
+         ]},
+        {"id": "s1e02.f04", "fact": "Kiran is his only way to Mausi. Mausi will not let a stranger in, and the 2 am call must be answered. If all is well, the car comes at three and takes Kiran to Mausi. If the phone is dead, Billu comes up.", "status_now": "fails", "evidence": "cv_A s1e02 (4) ('shutter'); cv_B s1e02; cv_B choice ('I did not understand what He drank it would lead to').",
+         "carriers": [
+           {"beat": "b4", "line": "l06", "action": "reword", "priority": "should", "now": "Without me, Mausi's shutter won't open for you.", "default": {"en": "Without me, Mausi won't even open her door to you.", "hi": "मेरे बिना मौसी तुम्हारे लिए दरवाज़ा तक नहीं खोलेंगी।"}, "note": "Plain words. Billu's locked s1a01 l13 still pays it off."},
+           {"beat": "b4", "line": "l07", "action": "reword", "priority": "must", "now": "Mausi calls at two. If the phone's off, Billu comes up.", "default": {"en": "Mausi calls at two, to check on you.", "hi": "दो बजे मौसी का phone आएगा, तुम्हारा हाल पूछने।"}},
+           {"beat": "b4", "line": "l32", "action": "add", "priority": "must", "proposed_id": "l32", "placement": "After l07.", "default": {"en": "If all's well, the car comes at three and takes me to her. If the phone's dead, Billu comes up.", "hi": "सब ठीक रहा, तो तीन बजे गाड़ी मुझे उनके पास ले जाएगी। Phone बंद मिला, तो बिल्लू ऊपर आएगा।"}, "note": "A's mechanism and the no-third-way clause, without giving Aditya any phrase (lock)."}
+         ]},
+        {"id": "s1e02.f05", "fact": "He stops checking, and tells her why: if she were that bride she would not hand him the name. Mausi first, Rekha later. If it is a lie he will check the wrist himself. He gives the three bangles back.", "status_now": "fails", "evidence": "cv_B s1e02: he asks to see her hands and then never looks.",
+         "carriers": [
+           {"beat": "b4", "line": "l31", "action": "add", "priority": "must", "proposed_id": "l31", "placement": "After l32, before l08.", "default": {"en": "If you were her, you wouldn't be handing me her name.", "hi": "तुम वो होतीं, तो उसका नाम मुझे नहीं देतीं।"}, "note": "The bible's b4 reason, which the current script dropped."},
+           {"beat": "b4", "line": "l08", "action": "keep"},
+           {"beat": "b4", "line": "l09", "action": "keep"}
+         ]},
+        {"id": "s1e02.f06", "fact": "He puts her SIM back and asks whether the call carries a code. She says there is none, only a mother asking after her daughter. That is a lie (f10).", "status_now": "lands once f10 is fixed",
+         "carriers": [
+           {"beat": "b4", "line": "l10", "action": "keep"},
+           {"beat": "b4", "line": "l11", "action": "keep"}
+         ]},
+        {"id": "s1e02.f07", "fact": "As far as Kiran knows, the gang only robs. At worst Billu's boys slap a groom who wakes, and the bride is gone by morning.", "status_now": "partly", "evidence": "review section 3 (stakes); this is B's gain at the choice.",
+         "carriers": [
+           {"beat": "b5", "line": "l12", "action": "keep"},
+           {"beat": "b5", "line": "l13", "action": "reword", "priority": "must", "now": "At most, if a groom wakes up, the boys slap him once.", "default": {"en": "At most, if a groom wakes up, Billu's boys slap him once. And the bride's gone by morning.", "hi": "बहुत हुआ, तो जागने वाले को बिल्लू के लड़कों का एक थप्पड़। और सुबह तक दुल्हन ग़ायब।"}, "note": "Identifies 'the boys' (rule 1) and states B's outcome (rule 9)."}
+         ]},
+        {"id": "s1e02.f08", "fact": "What a robbery did to Mohit: nobody touched him either; it was their mother's bangles, and the lane laughed at him for eleven days.", "status_now": "lands",
+         "carriers": [
+           {"beat": "b5", "line": "l14", "action": "keep", "note": "Protected; a balance lever."},
+           {"beat": "b5", "line": "l15", "action": "keep", "note": "Protected."}
+         ]},
+        {"id": "s1e02.f09", "fact": "His terms: Mausi and her ledger go to the police; the hand does not. The owner of the hand gets eleven days, as Mohit did, then one dose. He knows which dose kills.", "status_now": "lands",
+         "carriers": [
+           {"beat": "b6", "line": "l16", "action": "keep"},
+           {"beat": "b6", "line": "l17", "action": "keep"},
+           {"beat": "b6", "line": "l18", "action": "keep"},
+           {"beat": "b6", "line": "l19", "action": "keep", "note": "Protected. No number, no drug name (lock)."}
+         ]},
+        {"id": "s1e02.f10", "fact": "Kiran's own cost if Mausi falls: her eighteen lakh and her home.", "status_now": "fails", "evidence": "cv_A choice: 'Her 18 lakh and her freedom are never tied to this decision'; review section 3.",
+         "carriers": [
+           {"beat": "b7", "line": "l20", "action": "reword", "priority": "must", "now": "And me?", "default": {"en": "And me? If Mausi goes, my eighteen lakh goes with her. And my home.", "hi": "और मैं? मौसी गईं, तो मेरे अठारह लाख भी गए। मेरा घर भी।"}, "note": "Rule 9. It is A's cost and B's gain in one line."}
+         ]},
+        {"id": "s1e02.f11", "fact": "His promise: get him to Mausi and she is free to go. He makes it to 'Sneha', a name the viewer knows is false.", "status_now": "lands once s1e01.f06 lands",
+         "carriers": [
+           {"beat": "b7", "line": "l21", "action": "keep"},
+           {"beat": "b7", "line": "l22", "action": "keep"}
+         ]},
+        {"id": "s1e02.f12", "fact": "The code. In the lane, before the call and out of Aditya's hearing, Mausi tells Billu: at two she will ask whether the groom drank his milk. 'He drank it' means the car at three. 'The milk has split' means the boys go up. Anything else, or silence, sends them up too. Kiran knows the code, so her 'No code' was a lie.", "status_now": "fails", "evidence": "cv_A s1e02 (2) and gap 4; cv_B s1e02 ('Mausi's code speech has no listener I can identify'); review section 3 (b9).",
+         "carriers": [
+           {"beat": "b9", "line": "l33", "action": "add", "priority": "must", "proposed_id": "l33", "placement": "First line of b9, on set-up 1 (Billu on the phone, in shot).", "default": {"en": "Yes, Mausi. Go on.", "hi": "हाँ मौसी, बोलो।"}, "note": "Names the caller and puts Billu in the scene as the listener (rules 1 and 7; the review's 'हाँ मौसी'). The 'He says nothing' note on set-up 4 can stay: he is silent there."},
+           {"beat": "b9", "line": "l23", "action": "reword", "priority": "must", "now": "At two, I'll ask about the milk.", "default": {"en": "Billu, at two I'll ask her if Damaad ji, the groom, has drunk his milk. She knows what to say.", "hi": "बिल्लू, दो बजे उससे पूछूँगी, दामाद जी ने दूध पिया कि नहीं। उसे पता है क्या बोलना है।"}, "note": "Names the listener, sets the time as future (so it is not a flashback), exposes Kiran's lie, glosses 'Damaad ji' in English and makes l29 recognisable as the prompt. heard_as phone."},
+           {"beat": "b9", "line": "l24", "action": "keep", "note": "heard_as phone."},
+           {"beat": "b9", "line": "l25", "action": "keep", "note": "heard_as phone."},
+           {"beat": "b9", "line": "l27", "action": "keep", "note": "heard_as phone."}
+         ]},
+        {"id": "s1e02.f13", "fact": "Mausi's care for Kiran is real: she packed mathri in Kiran's bag.", "status_now": "lands",
+         "carriers": [
+           {"beat": "b10", "line": "l28", "action": "keep", "note": "heard_as phone; a balance lever."}
+         ]},
+        {"id": "s1e02.f14", "fact": "The question, on speaker with Aditya listening: 'Did Damaad ji drink his milk, beta?', then asked again. Kiran breathes in and says no word.", "status_now": "lands",
+         "carriers": [
+           {"beat": "b10", "line": "l29", "action": "keep", "note": "Locked. heard_as phone."},
+           {"beat": "b13", "line": "l30", "action": "keep", "note": "heard_as phone. The in-breath stays a breath."}
+         ]},
+        {"id": "s1e02.f15", "fact": "What each answer costs and gains, spoken before l29.", "status_now": "fails", "carriers": [{"see": "choice.A and choice.B: carriers l13, l14, l15, l16, l18, l19, l20, l21, l22, l32, l24"}]}
+      ],
+      "new_lines": ["l31 (b4)", "l32 (b4)", "l33 (b9)"],
+      "b4_line_order": "l05, l06, l07, l32, l31, l08, l09, l10, l11",
+      "supers": [],
+      "names_known_by_end": ["Kiran", "Aditya", "Mausi", "Billu", "the boys (Billu's)", "Mohit", "'Rekha' (a lie)"],
+      "terms_glossed": ["Damaad ji, English only (l23)", "the code (b9)", "shutter replaced (l06)"]
+    },
+    {
+      "id": "s1a01",
+      "title": {"hi": "मौसी किसी से नहीं मिलतीं", "en": "Mausi Meets No One"},
+      "branch": "A",
+      "path_position": 3,
+      "on_paths": ["A"],
+      "next": "s1a02",
+      "premise_after": "Kiran gave the all-clear and brought Aditya to Mausi's bureau as a fellow con man. Mausi has taken him on, and is now stripping Kiran's bangles for the next bride an arm's length from the man hunting the burn under them.",
+      "must_know_by_end": [
+        {"id": "s1a01.f01", "fact": "She gave the all-clear. Mausi says Billu will be downstairs at three.", "status_now": "lands",
+         "carriers": [
+           {"beat": "b1", "line": "l01", "action": "keep", "note": "Locked choice line."},
+           {"beat": "b1", "line": "l02", "action": "keep", "note": "heard_as phone."}
+         ]},
+        {"id": "s1a01.f02", "fact": "She tells Aditya the other answer would have brought two boys up the stairs, and that she did not say it because of what happened to Mohit.", "status_now": "fails", "evidence": "cv_A s1a01 (1): 'Mohit.' only makes sense after s1a03.",
+         "carriers": [
+           {"beat": "b3", "line": "l03", "action": "keep"},
+           {"beat": "b3", "line": "l04", "action": "keep"},
+           {"beat": "b3", "line": "l05", "action": "reword", "priority": "must", "now": "Mohit.", "default": {"en": "Mohit. After what happened to him, I couldn't send them up to you.", "hi": "मोहित। उसके साथ जो हुआ, उसके बाद लड़कों को तुम्हारे ऊपर नहीं भेज सकी।"}, "note": "Gives her motive without a confession: she must not say she was his bride (lock)."}
+         ]},
+        {"id": "s1a01.f03", "fact": "The cover: Mausi only meets men she can use, so Aditya goes in as a thief who married a thief. His brass set and his rented house become his own con.", "status_now": "fails", "evidence": "cv_A s1a01 (2) and (3).",
+         "carriers": [
+           {"beat": "b3", "line": "l06", "action": "reword", "priority": "must", "now": "Mausi only meets a man she can use. So now you're a thief too.", "default": {"en": "Mausi only meets a man she can use. So you go in as a thief who married a thief.", "hi": "मौसी बस काम के आदमी से मिलती हैं। तो तुम चोर बनके चलोगे, जिसने चोरनी से शादी की।"}},
+           {"beat": "b6", "line": "l11", "action": "keep", "note": "The brass joke, now set up by s1e01 l05."},
+           {"beat": "b10", "line": "l22", "action": "keep"}
+         ]},
+        {"id": "s1a01.f04", "fact": "The chooda, her wedding bangles, usually comes off in the car. He orders it kept on so that they arrive as bride and groom. He pockets the half-used sachet and the photograph, and unlocks the padlock.", "status_now": "partly", "evidence": "cv_A s1a01 (5): nothing says why the chooda matters.",
+         "carriers": [
+           {"beat": "b5", "line": "l07", "action": "reword", "priority": "should", "language": "en only", "now": "I'll take the chooda off in the car, like always.", "default": {"en": "I always take the chooda, these wedding bangles, off in the car."}, "note": "English gloss. Keep to the chooda dialogue ban."},
+           {"beat": "b5", "line": "l08", "action": "keep"},
+           {"beat": "b5", "action": "picture", "note": "The sachet and the photograph go into the pocket, spoken later (s1a03 l10, s1a02 l25)."}
+         ]},
+        {"id": "s1a01.f05", "fact": "At three Billu finds the groom awake and calls her Kiran, and Aditya hears her name. Kiran says he is coming to make a deal with Mausi. Aditya shows the brass set, and Billu laughs: he is one of them.", "status_now": "lands",
+         "carriers": [
+           {"beat": "b6", "line": "l09", "action": "keep"},
+           {"beat": "b6", "line": "l10", "action": "keep"},
+           {"beat": "b6", "line": "l11", "action": "keep"},
+           {"beat": "b6", "line": "l12", "action": "keep"}
+         ]},
+        {"id": "s1a01.f06", "fact": "On the dawn highway Aditya pitches himself: their powder is guesswork any pharmacist can taste, and he runs a medical store, so the right dose for a share. Mausi, on the phone, asks why Kiran said 'He drank it' with the groom awake. Kiran says the deal would have died if the boys had come up. Mausi says to bring him.", "status_now": "partly", "evidence": "cv_A s1a01 (4): 'Half a sachet didn't even make me drowsy' clashes with s1e01.",
+         "carriers": [
+           {"beat": "b7", "line": "l13", "action": "keep", "note": "Locked."},
+           {"beat": "b7", "line": "l14", "action": "reword", "priority": "should", "now": "She will. Half a sachet didn't even make me drowsy.", "default": {"en": "She will. Your powder's guesswork. Any pharmacist can taste it.", "hi": "मिलेंगी। तुम्हारी पुड़िया अंदाज़े का खेल है। कोई भी pharmacist स्वाद पकड़ ले।"}, "note": "No claim that he drank it, so nothing contradicts s1e01. Agrees with s1e01 l03. b7 is in glimpse A's source beats, so S14 re-checks it."},
+           {"beat": "b7", "line": "l15", "action": "keep"},
+           {"beat": "b7", "line": "l16", "action": "keep"},
+           {"beat": "b7", "line": "l17", "action": "keep", "note": "heard_as phone."},
+           {"beat": "b7", "line": "l18", "action": "keep"},
+           {"beat": "b7", "line": "l19", "action": "keep", "note": "heard_as phone."}
+         ]},
+        {"id": "s1a01.f07", "fact": "Billu has seen the photograph in Aditya's pocket.", "status_now": "lands (picture)",
+         "carriers": [
+           {"beat": "b8", "action": "picture", "note": "Spoken in s1a02 b7 l25."}
+         ]},
+        {"id": "s1a01.f08", "fact": "They arrive at Mausi's marriage bureau, a shop behind a grey shutter. Mausi, in person, is the woman from the phone.", "status_now": "new on this path",
+         "carriers": [
+           {"beat": "b9", "super": "su1", "action": "super", "priority": "should", "with_line": "l20", "text": {"en": "Mausi's marriage bureau", "hi": "मौसी का marriage bureau"}},
+           {"beat": "b9", "line": "l20", "action": "keep"},
+           {"beat": "b10", "super": "su2", "action": "super", "priority": "should", "with_line": "l21", "text": {"en": "Shakun Mausi · runs the bureau", "hi": "शकुन मौसी · bureau चलाती हैं"}},
+           {"beat": "b10", "line": "l21", "action": "keep", "note": "The mathri callback ties the voice to her face."},
+           {"beat": "b10", "line": "l22", "action": "keep"}
+         ]},
+        {"id": "s1a01.f09", "fact": "Chhoti, the next bride in training, is on the cot with her henna half done.", "status_now": "partly: named one beat late",
+         "carriers": [
+           {"beat": "b10", "super": "su3", "action": "super", "priority": "must", "with_line": "l23", "text": {"en": "Chhoti · the next bride", "hi": "छोटी · अगली दुल्हन"}, "note": "Rule 1: by the end of her first beat."},
+           {"beat": "b10", "line": "l23", "action": "keep"},
+           {"beat": "b11", "line": "l26", "action": "keep"}
+         ]},
+        {"id": "s1a01.f10", "fact": "No woman with a burnt wrist sits with Mausi. Aditya whispers, 'Where is Rekha?' Kiran answers, 'Not now.'", "status_now": "lands",
+         "carriers": [
+           {"beat": "b10", "line": "l24", "action": "keep"},
+           {"beat": "b10", "line": "l25", "action": "keep"}
+         ]},
+        {"id": "s1a01.f11", "fact": "Mausi's terms: he makes the sachets for Chhoti's first wedding tomorrow, and the chooda comes off Kiran now to go on Chhoti. Mausi starts it off Kiran's left wrist an arm's length from Aditya, and under it is the burn he wants.", "status_now": "partly", "evidence": "cv_A s1a01 (5): only viewers who remember s1e01's last frame feel the danger.",
+         "carriers": [
+           {"beat": "b11", "line": "l26", "action": "keep"},
+           {"beat": "b11", "line": "l27", "action": "keep"},
+           {"beat": "b11", "line": "l28", "action": "keep"},
+           {"beat": "b11", "action": "picture", "note": "The held set-up. The danger rests on s1e01.f12 and f14 and s1e02.f01. No line may say what is under the bangles. See c1_watch_items 3."}
+         ]}
+      ],
+      "new_lines": [],
+      "supers": ["su1 (b9, place)", "su2 (b10, Mausi)", "su3 (b10, Chhoti)"],
+      "names_known_by_end": ["Kiran", "Aditya", "Mausi (seen)", "Billu", "Chhoti", "'Rekha' (a lie)"],
+      "terms_glossed": ["chooda, English only (l07)"]
+    },
+    {
+      "id": "s1a02",
+      "title": {"hi": "रेखा कौन है?", "en": "Who Is Rekha?"},
+      "branch": "A",
+      "path_position": 4,
+      "on_paths": ["A"],
+      "next": "s1a03",
+      "premise_after": "Inside the bureau, Aditya has photographed Mausi's account book with Kiran's stolen keys and the police are half an hour away. Then Billu hands Mausi his photograph, and Mausi, who knows the burn, asks Kiran whether to tell him whose hand it is.",
+      "must_know_by_end": [
+        {"id": "s1a02.f01", "fact": "Kiran makes a fist. Aditya stops Mausi himself: leave the chooda on, it suits his bride. He pays for Chhoti's new set as his first payment, to play the generous husband and buy his way in.", "status_now": "fails", "evidence": "cv_A s1a02 (1): why does he want it left on?",
+         "carriers": [
+           {"beat": "b1", "line": "l01", "action": "keep"},
+           {"beat": "b1", "line": "l02", "action": "reword", "priority": "should", "now": "Get Chhoti a new set instead.", "default": {"en": "Get Chhoti a new set instead. Take it as my first payment.", "hi": "छोटी के लिए नया set ले आइए। मेरी तरफ़ से पहली किस्त समझिए।"}},
+           {"beat": "b1", "line": "l03", "action": "keep"}
+         ]},
+        {"id": "s1a02.f02", "fact": "He is in. Billu hugs him and lifts the photograph from his pocket. Mausi writes his money in her red account book, locks the book in the cashbox and hangs the key back at her hip.", "status_now": "partly", "evidence": "cv_A s1a02 (2): 'Advance for what?'",
+         "carriers": [
+           {"beat": "b2", "line": "l04", "action": "keep"},
+           {"beat": "b2", "line": "l05", "action": "reword", "priority": "should", "now": "Your money's down as advance, Damaad ji.", "default": {"en": "I've written your money in the book, Damaad ji. An advance on your share.", "hi": "आपका पैसा किताब में लिख दिया, दामाद जी। आपके हिस्से का advance।"}, "note": "Names 'the book', which l29, l23 and s1a03 l12 rely on."},
+           {"beat": "b2", "action": "picture", "note": "The photograph lifted; the cashbox and the key. Spoken by l25 and new l29."}
+         ]},
+        {"id": "s1a02.f03", "fact": "Aditya doubts her: she said Rekha keeps the accounts, but Mausi keeps her own. If it is a lie... Kiran finishes it: eleven days, then one dose. She remembers.", "status_now": "lands",
+         "carriers": [
+           {"beat": "b3", "line": "l06", "action": "keep"},
+           {"beat": "b3", "line": "l07", "action": "keep"},
+           {"beat": "b3", "line": "l08", "action": "keep"},
+           {"beat": "b3", "line": "l09", "action": "keep"},
+           {"beat": "b3", "line": "l10", "action": "keep"}
+         ]},
+        {"id": "s1a02.f04", "fact": "In the back room Chhoti shows Kiran tomorrow's groom; it is her first wedding. Kiran stops her trying on the chooda.", "status_now": "lands",
+         "carriers": [
+           {"beat": "b4", "line": "l11", "action": "keep"},
+           {"beat": "b4", "line": "l13", "action": "keep"},
+           {"beat": "b4", "line": "l15", "action": "keep"},
+           {"beat": "b4", "line": "l16", "action": "keep"}
+         ]},
+        {"id": "s1a02.f05", "fact": "Mausi gave Kiran the name Kiran, so it is not the name she was born with. She promises the eighteen lakh next week. While she does Kiran's hair, Kiran steals the keys from her hip.", "status_now": "lands",
+         "carriers": [
+           {"beat": "b5", "line": "l17", "action": "keep", "note": "Protected."},
+           {"beat": "b5", "line": "l19", "action": "keep"},
+           {"beat": "b5", "action": "picture", "note": "The theft. Spoken in b6 by new l29."}
+         ]},
+        {"id": "s1a02.f06", "fact": "Kiran passes him the keys. While she keeps Mausi talking he photographs the account book and sends it to the police in his town, who wanted proof. They have told the police post here, and the police will come in half an hour. He tells Kiran this, low, as he hands back the keys.", "status_now": "fails", "evidence": "cv_A s1a02 (3): 'Who is he saying this to? Why reveal it in front of Mausi? Nobody reacts'; review cause 8.",
+         "carriers": [
+           {"beat": "b6", "line": "l29", "action": "add", "priority": "must", "proposed_id": "l29", "placement": "Shot 2, Kiran pressing the keys into his palm behind the mannequin, before l20. Whispered.", "default": {"en": "Her keys. The book's in the cashbox.", "hi": "मौसी की चाबियाँ। किताब cashbox में है।"}, "note": "Rule 8 for the b5 theft and the b2 cashbox."},
+           {"beat": "b6", "line": "l20", "action": "keep", "note": "Mausi behind the curtain: heard_as off_screen recommended."},
+           {"beat": "b6", "line": "l21", "action": "keep"},
+           {"beat": "b6", "line": "l22", "action": "keep", "note": "heard_as off_screen recommended."},
+           {"beat": "b6", "line": "l23", "action": "reword", "priority": "must", "now": "The in-charge in my town has informed the police post here.", "default": {"en": "Kiran. Every page is in my phone, and with the police in my town.", "hi": "किरण, हर page मेरे phone में है। मेरे शहर की police तक भी पहुँच गया।"}, "note": "Names the listener, says what the picture shows (rule 8), and pays off s1e01 l17."},
+           {"beat": "b6", "line": "l24", "action": "reword", "priority": "must", "now": "The police will be here in half an hour.", "default": {"en": "They've told the police post here. The police will be here in half an hour.", "hi": "उन्होंने यहाँ की चौकी को बोल दिया है। आधे घंटे में police यहाँ होगी।"}, "note": "The bible's anchor wording. Glosses 'chowki' in English."}
+         ]},
+        {"id": "s1a02.f07", "fact": "Billu gives Mausi the photograph from the son-in-law's pocket, thinking it is an old girlfriend.", "status_now": "partly", "evidence": "cv_A s1a02 (4): 'setting' is jargon.",
+         "carriers": [
+           {"beat": "b7", "line": "l25", "action": "keep"},
+           {"beat": "b7", "line": "l26", "action": "reword", "priority": "must", "now": "Looks like an old setting!", "default": {"en": "Looks like an old girlfriend!", "hi": "पुरानी girlfriend लगती है!"}, "note": "Rule 2 for both languages."}
+         ]},
+        {"id": "s1a02.f08", "fact": "Mausi knows the half-moon burn at once, because she dressed it, and knows the temple wedding, so she knows whose hand it is and who Aditya must be. She asks him, warmly, whether he is looking for this hand, and asks Kiran whether to tell him whose it is.", "status_now": "lands",
+         "carriers": [
+           {"beat": "b8", "action": "picture"},
+           {"beat": "b9", "line": "l27", "action": "keep"},
+           {"beat": "b9", "line": "l28", "action": "keep", "note": "Protected."}
+         ]}
+      ],
+      "new_lines": ["l29 (b6)"],
+      "supers": [],
+      "names_known_by_end": ["Kiran (a name Mausi gave her)", "Aditya", "Mausi", "Billu", "Chhoti"],
+      "terms_glossed": ["advance (l05)", "setting replaced (l26)", "in-charge replaced (l23)", "chowki, English only (l24)"]
+    },
+    {
+      "id": "s1a03",
+      "title": {"hi": "असली नाम", "en": "Her Real Name"},
+      "branch": "A",
+      "path_position": 5,
+      "on_paths": ["A"],
+      "next": null,
+      "ending": "A: resolution",
+      "premise_after": "Mausi covers for Kiran, but Kiran confesses she was Mohit's bride, shows the burn and hands over Mausi's keys and book with her own money in it. Aditya pours away the dose he swore and gives both women to the police, and at the police post she gives her birth name, Tulsi.",
+      "must_know_by_end": [
+        {"id": "s1a03.f01", "fact": "Mausi works out who he is: the temple 'party', Mohit's brother. Kiran asks whether Mausi knew Mohit was dead and never told her. Mausi does not answer.", "status_now": "partly", "evidence": "cv_A s1a03 (4).",
+         "carriers": [
+           {"beat": "b1", "line": "l01", "action": "keep"},
+           {"beat": "b1", "line": "l02", "action": "reword", "priority": "should", "now": "You knew, Mausi? That he's no more?", "default": {"en": "You knew, Mausi? That Mohit's gone? And you never told me?", "hi": "आपको पता था, मौसी? कि मोहित नहीं रहा? और मुझे बताया तक नहीं?"}, "note": "Lock: 'the boy turned out weak' stays in s1b01 only."}
+         ]},
+        {"id": "s1a03.f02", "fact": "Mausi has Billu bring the shutter down.", "status_now": "lands", "carriers": [{"beat": "b1a", "line": "l03", "action": "keep"}]},
+        {"id": "s1a03.f03", "fact": "Aditya asks for Rekha, the girl with the burnt wrist. Mausi, who has never heard the name, backs the lie to keep Kiran.", "status_now": "lands",
+         "carriers": [
+           {"beat": "b2", "line": "l04", "action": "keep"},
+           {"beat": "b2a", "line": "l05", "action": "keep"},
+           {"beat": "b2a", "line": "l06", "action": "keep"}
+         ]},
+        {"id": "s1a03.f04", "fact": "Kiran refuses the cover, takes off the chooda and shows the burn: there is no Rekha, and Mohit's bride was her.", "status_now": "lands",
+         "carriers": [
+           {"beat": "b3", "line": "l07", "action": "keep"},
+           {"beat": "b3a", "line": "l08", "action": "keep", "note": "Protected."},
+           {"beat": "b3a", "line": "l09", "action": "keep"}
+         ]},
+        {"id": "s1a03.f05", "fact": "Aditya takes out the half-used sachet from the wedding night, the dose he promised. Mausi steps in front of Kiran and offers to pay for his brother: the girl is hers.", "status_now": "partly", "evidence": "cv_A s1a03 (2): is he about to dose her right now?",
+         "carriers": [
+           {"beat": "b4", "line": "l10", "action": "reword", "priority": "should", "now": "Put the sachet down, Damaad ji. Name your price. The girl is mine.", "default": {"en": "Put the sachet down, Damaad ji. Name your price for your brother. The girl is mine.", "hi": "पुड़िया रख दीजिए, दामाद जी। भाई का दाम बोलिए। लड़की मेरी है।"}, "note": "Says what she is bargaining for (bible b4: she will pay for the dead brother)."},
+           {"beat": "b4", "line": "l11", "action": "keep"}
+         ]},
+        {"id": "s1a03.f06", "fact": "Kiran gives Aditya Mausi's keys. The account pages are already in his phone; he can take the book too, and her own eighteen lakh is written in it. Mausi finds her hip bare: Kiran has robbed her with her own craft.", "status_now": "fails", "evidence": "cv_A s1a03 (1): 'When did she do that?' (fixed by s1a02 l23); rule 6 for the eighteen-lakh thread.",
+         "carriers": [
+           {"beat": "b5", "line": "l12", "action": "reword", "priority": "must", "now": "The accounts are in your phone. Take the book too.", "default": {"en": "The pages are in your phone. Take the book too. My eighteen lakh is written in it.", "hi": "हिसाब तुम्हारे phone में है। किताब भी ले जाओ। मेरे अठारह लाख भी उसी में लिखे हैं।"}, "note": "Closes the shared money thread in A without settling whether Mausi would ever have paid (bible story_locks.money)."},
+           {"beat": "b5a", "line": "l13", "action": "keep"},
+           {"beat": "b5a", "line": "l14", "action": "keep", "note": "Protected."}
+         ]},
+        {"id": "s1a03.f07", "fact": "Mohit's last evening: he was nervous, asked for the milk himself, and said his Bhaiya would come to the reception.", "status_now": "lands",
+         "carriers": [
+           {"beat": "b6", "line": "l15", "action": "keep"},
+           {"beat": "b6", "line": "l16", "action": "keep", "note": "Protected."},
+           {"beat": "b6", "line": "l17", "action": "keep", "note": "Protected. 'Bhaiya' means Aditya here (name_clashes)."}
+         ]},
+        {"id": "s1a03.f08", "fact": "The police arrive, the half-hour from s1a02. Billu runs out the back. Kiran sends Chhoti home.", "status_now": "lands once s1a02.f06 lands",
+         "carriers": [
+           {"beat": "b7", "line": "l18", "action": "keep"},
+           {"beat": "b7a", "line": "l19", "action": "keep"},
+           {"beat": "b7a", "line": "l20", "action": "keep"},
+           {"beat": "b7a", "action": "picture", "note": "Billu's exit is sound only. That accounts for him in A."}
+         ]},
+        {"id": "s1a03.f09", "fact": "Aditya tips the sachet onto the floor, giving up the dose he swore, and gives both women to the police.", "status_now": "fails", "evidence": "cv_A s1a03 (3): 'he never says he is giving up revenge'; review cause 8.",
+         "carriers": [
+           {"beat": "b8", "line": "l27", "action": "add", "priority": "must", "proposed_id": "l27", "placement": "After the powder insert (set-up 2), on set-up 3 before l21.", "default": {"en": "I'd counted eleven days. Now the police can keep that account.", "hi": "ग्यारह दिन मैंने गिने थे। अब ये हिसाब police करेगी।"}, "note": "The review's draft. Answers the vow."},
+           {"beat": "b8", "line": "l21", "action": "reword", "priority": "should", "now": "Sahab, two names to write down.", "default": {"en": "Sahab, two names to write down. Shakun Mausi. And the bride.", "hi": "साहब, दो नाम लिखने हैं। शकुन मौसी, और ये दुल्हन।"}, "note": "Says whose names."}
+         ]},
+        {"id": "s1a03.f10", "fact": "Mausi, walked out behind her own ledger, still mothers Kiran: eat something.", "status_now": "lands", "carriers": [{"beat": "b8a", "line": "l22", "action": "keep", "note": "Protected."}]},
+        {"id": "s1a03.f11", "fact": "At the police post she gives her names in turn: Sneha, then Kiran, then Tulsi, the name her mother gave her.", "status_now": "lands",
+         "carriers": [
+           {"beat": "b10", "super": "su1", "action": "super", "priority": "should", "with_line": "l23", "text": {"en": "Police post", "hi": "Police चौकी"}},
+           {"beat": "b10", "line": "l23", "action": "keep"},
+           {"beat": "b10", "line": "l24", "action": "keep"},
+           {"beat": "b10a", "line": "l25", "action": "keep"},
+           {"beat": "b10b", "line": "l26", "action": "keep", "note": "Protected. The only 'Tulsi'."}
+         ]},
+        {"id": "s1a03.f12", "fact": "Final image: her bare, scarred forearm on the desk. Aditya leaves the photograph on the bench and walks out.", "status_now": "lands", "carriers": [{"beat": "b11", "action": "picture"}]}
+      ],
+      "new_lines": ["l27 (b8)"],
+      "supers": ["su1 (b10, place)"],
+      "threads_closed": ["the vow (l27)", "eighteen lakh (l12)", "Rekha (l08)", "free to go (l21, l24)", "Mausi knew (l02)", "Mausi and her ledger to the police (b8)"]
+    },
+    {
+      "id": "s1b01",
+      "title": {"hi": "दरवाज़ा खोलिए, दामाद जी", "en": "Open the Door, Damaad Ji"},
+      "branch": "B",
+      "path_position": 3,
+      "on_paths": ["B"],
+      "next": "s1b02",
+      "premise_after": "Kiran gave the alarm, and the padlock now keeps the gang out. Mausi has come in person, learned from his notebook that he is Mohit's brother, admitted she knew Mohit died, and ordered Kiran to kill him tonight with the whole sachet, by her own hand.",
+      "must_know_by_end": [
+        {"id": "s1b01.f01", "fact": "She gave the alarm, and Mausi says not to worry. Aditya realises too late that it was not the answer to the check.", "status_now": "lands",
+         "carriers": [
+           {"beat": "b1", "line": "l01", "action": "keep", "note": "Locked choice line."},
+           {"beat": "b1", "line": "l02", "action": "keep", "note": "heard_as phone."},
+           {"beat": "b1", "action": "picture", "note": "The milk, whole."}
+         ]},
+        {"id": "s1b01.f02", "fact": "Billu and the boys come up.", "status_now": "lands", "carriers": [{"beat": "b2", "action": "picture"}, {"beat": "b3", "action": "picture", "note": "Boots on the stairs, as sound."}]},
+        {"id": "s1b01.f03", "fact": "Why she did it: for her eighteen lakh and her home. The way out he offered her is coming up the stairs.", "status_now": "lands",
+         "carriers": [
+           {"beat": "b3", "line": "l03", "action": "keep", "note": "Locked."},
+           {"beat": "b3", "line": "l04", "action": "keep"},
+           {"beat": "b3", "line": "l05", "action": "keep"},
+           {"beat": "b3", "line": "l06", "action": "keep"}
+         ]},
+        {"id": "s1b01.f04", "fact": "The padlock Aditya fitted now keeps the gang out. Billu calls her Kiran through the door, so Aditya hears her name.", "status_now": "lands",
+         "carriers": [
+           {"beat": "b4", "line": "l07", "action": "keep"},
+           {"beat": "b4", "line": "l08", "action": "keep"}
+         ]},
+        {"id": "s1b01.f05", "fact": "Mausi, on Billu's phone: a groom who locks the bride in is no ordinary 'party'. Do not break the door, do not touch him; she is coming herself, two and a half hours away.", "status_now": "lands",
+         "carriers": [
+           {"beat": "b5", "line": "l09", "action": "keep"},
+           {"beat": "b5", "line": "l10", "action": "keep", "note": "heard_as phone."},
+           {"beat": "b5", "line": "l11", "action": "keep", "note": "heard_as phone."},
+           {"beat": "b5", "line": "l12", "action": "keep"}
+         ]},
+        {"id": "s1b01.f06", "fact": "He comes for her hands again, because she lied about the code. She threatens to scream, which would make the boys break the door, and he backs off.", "status_now": "partly",
+         "carriers": [
+           {"beat": "b5a", "line": "l13", "action": "keep"},
+           {"beat": "b5a", "line": "l14", "action": "reword", "priority": "should", "now": "Touch me and I'll scream. Then this door won't hold.", "default": {"en": "Touch me and I'll scream. Then the boys break the door, whatever Mausi said.", "hi": "हाथ लगाया तो चिल्लाऊँगी। फिर लड़के दरवाज़ा तोड़ देंगे, मौसी कुछ भी कहें।"}, "note": "Puts back the because (rule 4): the bible's reason he stops."}
+         ]},
+        {"id": "s1b01.f07", "fact": "Two hours on (the 4:10 overlay), the police are no use to him: he padlocked a bride in, under a name the bureau knows is fake. He waits by choice for the woman he has hunted for fourteen months.", "status_now": "fails", "evidence": "cv_B s1b01: 'Your name is fake.' We have never heard his name, real or fake.",
+         "carriers": [
+           {"beat": "b6", "line": "l15", "action": "keep"},
+           {"beat": "b6", "line": "l16", "action": "reword", "priority": "must", "now": "You're the one who put the lock on. Your name is fake.", "default": {"en": "You put the lock on. And the bureau knows you by a fake name.", "hi": "ताला तुमने लगाया है। और bureau में तुम्हारा नाम नकली है।"}, "note": "Rule 3. Set up by s1e01 l28."},
+           {"beat": "b6", "line": "l17", "action": "keep"},
+           {"beat": "b6", "line": "l18", "action": "keep"}
+         ]},
+        {"id": "s1b01.f08", "fact": "Mausi arrives, the lock is torn out of the door, and through it she says: 'Open the door, Damaad ji.'", "status_now": "lands",
+         "carriers": [
+           {"beat": "b7", "action": "picture"},
+           {"beat": "b8", "line": "l19", "action": "keep", "note": "Locked. heard_as off_screen; subtitle label 'Mausi'."}
+         ]},
+        {"id": "s1b01.f09", "fact": "Mausi, in person, checks Kiran for marks, greets Aditya and apologises for the forced door. The boys hold him on the chair, and Billu takes his phone.", "status_now": "partly", "evidence": "cv_B s1b01: 'Please don't mind the door' (they had no frames).",
+         "carriers": [
+           {"beat": "b9", "super": "su1", "action": "super", "priority": "should", "with_line": "l20", "text": {"en": "Shakun Mausi · runs the bureau", "hi": "शकुन मौसी · bureau चलाती हैं"}},
+           {"beat": "b9", "line": "l20", "action": "keep"},
+           {"beat": "b9", "line": "l21", "action": "reword", "priority": "may", "now": "Namaste, Damaad ji. Please don't mind the door.", "default": {"en": "Namaste, Damaad ji. Please don't mind the door. The boys had to pull the lock out.", "hi": "नमस्ते, दामाद जी। दरवाज़े का बुरा मत मानिए। लड़कों को कुंडी उखाड़नी पड़ी।"}, "note": "The b8 insert shows the torn hasp, so this is polish."}
+         ]},
+        {"id": "s1b01.f10", "fact": "Mausi reads his notebook and photograph: he is Mohit's brother. She knew Mohit was dead and never told Kiran. She does not say whose hand is in the photograph.", "status_now": "fails", "evidence": "cv_B s1b01: 'You knew, Mausi? Knew what?'; cv_B gap 1 (Kiran's turn has no motive on screen).",
+         "carriers": [
+           {"beat": "b10", "line": "l22", "action": "keep", "note": "'The boy turned out weak' is said here only (lock)."},
+           {"beat": "b10", "line": "l23", "action": "reword", "priority": "must", "now": "You knew, Mausi?", "default": {"en": "You knew Mohit was dead, Mausi? And you never told me?", "hi": "आपको पता था कि मोहित नहीं रहा, मौसी? और मुझे बताया तक नहीं?"}}
+         ]},
+        {"id": "s1b01.f11", "fact": "Mausi's order: he cannot be frightened, and he has kept records for fourteen months. Tomorrow it will look as if the bride ran off and the groom never woke. 'One brother died of shame. Who'll ask about the other?' Kiran is to give him the whole sachet, with her own hands.", "status_now": "partly", "evidence": "cv_B s1b01: 'The bride ran off, the groom never woke up' reads as being about Mohit.",
+         "carriers": [
+           {"beat": "b11", "line": "l24", "action": "keep"},
+           {"beat": "b11", "line": "l25", "action": "keep"},
+           {"beat": "b11", "line": "l26", "action": "reword", "priority": "must", "now": "The bride ran off, the groom never woke up.", "default": {"en": "Tomorrow they'll say: the bride ran off, and the groom never woke up.", "hi": "कल सब यही कहेंगे: दुल्हन भाग गई, दूल्हा सुबह उठा ही नहीं।"}},
+           {"beat": "b11", "line": "l27", "action": "keep", "note": "Protected."},
+           {"beat": "b11", "line": "l28", "action": "keep", "note": "Protected."}
+         ]}
+      ],
+      "new_lines": [],
+      "supers": ["su1 (b9, Mausi)"],
+      "glimpse_note": "Glimpse B's source beats (b1, b2, b3, b7, b8) hold no changed text. Only heard_as marking changes, on l02 and l19. S14 checks the subtitle styling in the glimpse.",
+      "names_known_by_end": ["Kiran", "Aditya", "Mausi (seen)", "Billu", "the boys", "Mohit"]
+    },
+    {
+      "id": "s1b02",
+      "title": {"hi": "हिसाब", "en": "The Accounts"},
+      "branch": "B",
+      "path_position": 4,
+      "on_paths": ["B"],
+      "next": "s1b03",
+      "premise_after": "Kiran seems to give Aditya the fatal dose. Mausi reveals there was never going to be a last wedding or any money, while Kiran quietly turns Billu with what Mausi has kept from him. In the last shot the sachets are still shut and Aditya is alive, pretending.",
+      "must_know_by_end": [
+        {"id": "s1b02.f01", "fact": "Kiran stalls: the old milk has stood three hours with half a sachet in it and will not take two more, so Billu can bring fresh milk. Mausi is proud of her.", "status_now": "lands",
+         "carriers": [
+           {"beat": "b1", "line": "l01", "action": "keep"},
+           {"beat": "b1", "line": "l02", "action": "keep"},
+           {"beat": "b1", "line": "l03", "action": "keep", "note": "Plants the fresh milk paid off in s1b03 l11."},
+           {"beat": "b1", "line": "l04", "action": "keep"}
+         ]},
+        {"id": "s1b02.f02", "fact": "On the landing Kiran works on Billu: Mohit is dead and Mausi knew. They have never taken a life, and now Mausi wants a body. The car is in Billu's name. Mausi tells him smaller numbers than the gold weighed.", "status_now": "fails (motive)", "evidence": "cv_B gap 1: the audience needs one clear line about Mohit's death; review section 6 draft.",
+         "carriers": [
+           {"beat": "b2", "line": "l30", "action": "add", "priority": "must", "proposed_id": "l30", "placement": "First line of b2, before l05.", "default": {"en": "That temple groom, Mohit, is dead, Billu. Mausi knew.", "hi": "मंदिर वाला दूल्हा, मोहित, मर गया, बिल्लू। मौसी को पता था।"}, "note": "Kiran's motive, said out of Mausi's and Aditya's hearing. It does not give away the swap (lock). 'Dead' only: not described further (lock)."},
+           {"beat": "b2", "line": "l05", "action": "keep"},
+           {"beat": "b2", "line": "l06", "action": "keep"},
+           {"beat": "b2", "line": "l07", "action": "reword", "priority": "should", "language": "en only", "now": "Last party brought twenty-two tola. How much did she tell you?", "default": {"en": "Last party brought twenty-two tola of gold. How much did she tell you?"}, "note": "English gloss of 'tola'."},
+           {"beat": "b2", "line": "l08", "action": "keep"}
+         ]},
+        {"id": "s1b02.f03", "fact": "Mausi and Aditya talk calmly. She keeps a written record of every groom's name.", "status_now": "lands",
+         "carriers": [
+           {"beat": "b3", "line": "l11", "action": "keep"},
+           {"beat": "b3", "line": "l12", "action": "keep"},
+           {"beat": "b3", "line": "l13", "action": "keep"}
+         ]},
+        {"id": "s1b02.f04", "fact": "Kiran brings a fresh warm glass and seems to pour the whole sachet. She whispers something we do not hear, then tells him to drink or the boys will make him. He drinks.", "status_now": "lands (intended suspense)", "evidence": "cv_B s1b02: could not tell whether she had betrayed Aditya or was playing Mausi. That doubt is designed and is answered in b9.",
+         "carriers": [
+           {"beat": "b4", "line": "l14", "action": "keep", "note": "heard_as off_screen."},
+           {"beat": "b4", "line": "l15", "action": "keep"},
+           {"beat": "b4", "line": "l16", "action": "keep"},
+           {"beat": "b4", "line": "l17", "action": "keep"},
+           {"beat": "b4", "action": "picture", "note": "Withheld on purpose (lock). See c1_watch_items 2."}
+         ]},
+        {"id": "s1b02.f05", "fact": "He slumps, the boys lay him on the bed, and Mausi praises Kiran.", "status_now": "lands", "carriers": [{"beat": "b5", "line": "l18", "action": "keep"}]},
+        {"id": "s1b02.f06", "fact": "Chhoti, the next bride, rings Mausi: her henna is dry, and her first wedding is tomorrow.", "status_now": "fails", "evidence": "cv_B s1b02: Chhoti appears with no set-up.",
+         "carriers": [
+           {"beat": "b6", "line": "l19", "action": "reword", "priority": "must", "now": "Mausi, my mehendi's dry! Can I sleep now?", "default": {"en": "Mausi, it's Chhoti! My mehendi's dry. Can I sleep now?", "hi": "मौसी, मैं छोटी! मेहँदी dry हो गई। सो जाऊँ?"}, "note": "She names herself on the phone (rules 1 and 7). heard_as phone."},
+           {"beat": "b6", "line": "l20", "action": "keep", "note": "heard_as phone."},
+           {"beat": "b6", "line": "l21", "action": "reword", "priority": "should", "now": "Yes, beta. Go to sleep now.", "default": {"en": "Yes, beta. Tomorrow you're a bride. Go to sleep now.", "hi": "हाँ बेटा, कल तू दुल्हन बनेगी। सो जा अब।"}, "note": "Her role. The writer checks 'tomorrow' against timeline.fixed_before_the_choice (day 3, said at about 5 am)."}
+         ]},
+        {"id": "s1b02.f07", "fact": "Kiran asks Mausi to settle her account, since tonight was the last. Mausi says next month's 'party' is booked and Chhoti cannot manage alone, and there is no money: 'Nobody keeps accounts with daughters.' Where would she go now, after what her own hand has done?", "status_now": "lands",
+         "carriers": [
+           {"beat": "b7", "line": "l22", "action": "keep"},
+           {"beat": "b7", "line": "l23", "action": "keep"},
+           {"beat": "b7", "line": "l24", "action": "keep"},
+           {"beat": "b7", "line": "l25", "action": "keep"},
+           {"beat": "b7", "line": "l26", "action": "keep", "note": "Protected."},
+           {"beat": "b7", "line": "l27", "action": "keep"}
+         ]},
+        {"id": "s1b02.f08", "fact": "Billu has heard the money and the order.", "status_now": "lands", "carriers": [{"beat": "b8", "line": "l29", "action": "keep"}]},
+        {"id": "s1b02.f09", "fact": "Kiran never poured. The two sachets are still shut in her fist, and Aditya is alive and pretending.", "status_now": "lands (picture)", "carriers": [{"beat": "b9", "action": "picture", "note": "Spoken in s1b03 l11."}]}
+      ],
+      "new_lines": ["l30 (b2)"],
+      "supers": [],
+      "names_known_by_end": ["Kiran", "Aditya", "Mausi", "Billu", "Chhoti (voice)"],
+      "terms_glossed": ["tola, English only (l07)"]
+    },
+    {
+      "id": "s1b03",
+      "title": {"hi": "दसवीं शादी", "en": "The Tenth Wedding"},
+      "branch": "B",
+      "path_position": 5,
+      "on_paths": ["B"],
+      "next": null,
+      "ending": "B: resolution",
+      "premise_after": "Kiran turns Billu with the real numbers and reveals Aditya alive. Mausi bares the burn to set him on her, but the hand he came to kill has saved him. Kiran takes Mausi's keys and the bureau, sends Aditya home with no proof, and that evening teaches Chhoti to pour.",
+      "must_know_by_end": [
+        {"id": "s1b03.f01", "fact": "Mausi plans to leave him for the landlord to find, and calls Kiran home.", "status_now": "lands",
+         "carriers": [
+           {"beat": "b1", "line": "l01", "action": "keep"},
+           {"beat": "b1", "line": "l02", "action": "keep"}
+         ]},
+        {"id": "s1b03.f02", "fact": "Kiran stops Billu and does the accounts aloud: Mausi always told him less than the gold weighed, and the car, and tonight's body, were in his name.", "status_now": "lands",
+         "carriers": [
+           {"beat": "b2", "line": "l03", "action": "keep"},
+           {"beat": "b2", "line": "l04", "action": "keep"},
+           {"beat": "b2", "line": "l31", "action": "keep"},
+           {"beat": "b2", "line": "l05", "action": "keep"},
+           {"beat": "b2", "line": "l06", "action": "keep"},
+           {"beat": "b2", "line": "l07", "action": "keep", "note": "May: say 'half' once (numbers)."},
+           {"beat": "b2", "line": "l08", "action": "keep"},
+           {"beat": "b2", "line": "l09", "action": "keep"},
+           {"beat": "b2", "line": "l10", "action": "keep"}
+         ]},
+        {"id": "s1b03.f03", "fact": "The truth: both sachets are still shut, and the fresh milk Billu brought had only saffron in it. Aditya sits up alive. Kiran kept blood off Billu's hands.", "status_now": "fails", "evidence": "cv_B s1b03: 'Only saffron in the milk' contradicts the powder poured in s1e01; the fresh-milk swap is never said.",
+         "carriers": [
+           {"beat": "b3", "line": "l11", "action": "reword", "priority": "must", "now": "Both sachets are unopened, Mausi. Only saffron in the milk.", "default": {"en": "Both sachets are still shut, Mausi. The fresh milk Billu brought had only saffron in it.", "hi": "दोनों पुड़िया बंद हैं, मौसी। बिल्लू जो fresh दूध लाया, उसमें बस केसर था।"}, "note": "Rule 8 for the s1b02 b4 swap. The review's draft."},
+           {"beat": "b3", "line": "l12", "action": "keep"}
+         ]},
+        {"id": "s1b03.f04", "fact": "Mausi's last weapon: she bares the burn to turn Aditya on Kiran. Kiran was burnt on a tawa at fourteen, in her uncle's kitchen, and Mausi tied the bandage. 'The hand you were searching for. This is it.'", "status_now": "partly", "evidence": "cv_B s1b03: 'Why does Mausi expose Kiran? I read it as spite, but nothing says so.'",
+         "carriers": [
+           {"beat": "b4", "line": "l13", "action": "keep", "note": "The only place the origin is spoken (lock)."},
+           {"beat": "b4", "line": "l14", "action": "keep"},
+           {"beat": "b4", "line": "l15", "action": "reword", "priority": "should", "now": "Do look, Damaad ji. The hand you were searching for. This is it.", "default": {"en": "Do look, Damaad ji. The hand you were searching for. This is it. Now do what you came to do.", "hi": "दामाद जी, देख लीजिए। जिस हाथ को ढूँढ रहे थे, यही है। अब जो करने आए थे, कर लीजिए।"}, "note": "States her aim, and gives Aditya's new l32 something to answer."}
+         ]},
+        {"id": "s1b03.f05", "fact": "Aditya sees it: 'You.' 'Yes. Me.' The hand he came to kill is the hand that kept him alive tonight, and his vow ends there.", "status_now": "fails", "evidence": "cv_B s1b03: 'His vow is dropped'; review cause 8.",
+         "carriers": [
+           {"beat": "b5", "line": "l16", "action": "keep", "note": "Protected."},
+           {"beat": "b5", "line": "l17", "action": "keep", "note": "Protected."},
+           {"beat": "b5", "line": "l32", "action": "add", "priority": "must", "proposed_id": "l32", "placement": "After l17, on Aditya's single.", "default": {"en": "The hand I came to kill kept me alive tonight.", "hi": "जिस हाथ को मारने आया था, उसी ने आज मुझे बचाया।"}, "note": "The review's draft. Answers the vow in B."}
+         ]},
+        {"id": "s1b03.f06", "fact": "Kiran takes Mausi's keys and the accounts. Mausi will sit at the bureau and write the accounts: the life Kiran once invented for 'Rekha'.", "status_now": "lands",
+         "carriers": [
+           {"beat": "b6", "line": "l18", "action": "keep", "note": "Protected."},
+           {"beat": "b6", "line": "l19", "action": "keep"},
+           {"beat": "b6", "line": "l20", "action": "keep"},
+           {"beat": "b6", "line": "l21", "action": "keep", "note": "The Rekha echo. Never say the name (lock). May strengthen the echo without it."}
+         ]},
+        {"id": "s1b03.f07", "fact": "At first light Kiran sends Aditya home alive. The police cannot help him: what would he report, that his wife ran off? Mohit didn't report it either. He could have gone free; she asks, where to? 'Go home, Aditya.' She keeps his photograph and notebook.", "status_now": "lands",
+         "carriers": [
+           {"beat": "b7", "line": "l22", "action": "keep"},
+           {"beat": "b7", "line": "l23", "action": "keep"},
+           {"beat": "b7", "line": "l24", "action": "keep"},
+           {"beat": "b7", "line": "l25", "action": "keep"},
+           {"beat": "b7", "line": "l26", "action": "keep"},
+           {"beat": "b7", "line": "l27", "action": "keep", "note": "Protected."}
+         ]},
+        {"id": "s1b03.f08", "fact": "Aditya stands alone in the lane. Mausi sits in the back of Billu's car with nothing at her hip.", "status_now": "lands", "carriers": [{"beat": "b8", "action": "picture"}]},
+        {"id": "s1b03.f09", "fact": "That evening at Mausi's bureau, Chhoti, wearing Kiran's chooda, holds a sachet over a glass of milk.", "status_now": "new on this path",
+         "carriers": [
+           {"beat": "b9", "super": "su1", "action": "super", "priority": "should", "with_line": "l28", "text": {"en": "Mausi's marriage bureau", "hi": "मौसी का marriage bureau"}, "note": "Not on set-up 1, which carries the 'Evening' overlay."},
+           {"beat": "b9", "line": "l28", "action": "keep"}
+         ]},
+        {"id": "s1b03.f10", "fact": "Kiran steadies Chhoti's hand: 'Pour in the whole sachet, Chhoti. Half doesn't put them to sleep.'", "status_now": "lands",
+         "carriers": [
+           {"beat": "b10", "line": "l29", "action": "keep"},
+           {"beat": "b10", "line": "l30", "action": "keep", "note": "Protected. It echoes s1e01 l01; keep the wording identical."}
+         ]}
+      ],
+      "new_lines": ["l32 (b5)"],
+      "supers": ["su1 (b9, place)"],
+      "threads_closed": ["the vow (l32)", "eighteen lakh (s1b02 b7)", "Rekha (l15, l21 echo)", "free to go (l25, l26)", "Mausi knew (s1b01 l23, s1b02 l30)", "Mausi and her ledger (l18, l22 to l24)", "the fresh milk (l11)"]
+    }
+  ],
+
+  "c1_watch_items": [
+    {"n": 1, "episode": "s1e01", "item": "Whether a cold reader can say, by the end of s1e01, that the hand in the photograph is Kiran's.", "why": "The picture is the only carrier (b11). No line may say it (lock). The new l29 and the s31 hold are the spoken and edit support.", "if_round_2_fails": "Record an owner item under clarity_pass.owner_items for s1e01 only, quoting the C1 readers: the review's section 6 fallback, an Option 2 beat. Ship the line-level fix meanwhile. Nothing waits (plan 7.8)."},
+    {"n": 2, "episode": "s1b02", "item": "b4's whisper and glass are withheld on purpose.", "why": "A reader may list l15 to l17 as undecoded. b9 and s1b03 l11 answer them inside the path.", "for_the_critic": "Count it as designed suspense, not an undecoded line, if the reader's form shows the answer was found by s1b03 b3."},
+    {"n": 3, "episode": "s1a01", "item": "The b11 cliff (the chooda coming off) relies on the reader remembering the burn under the bangles from s1e01 b11 and s1e02 b2.", "why": "No line may name what is under them.", "for_the_preparer": "Describe s1a01 b11's insert as it looks: the first bangle at her knuckles, the man watching. Do not add 'over the scar'."},
+    {"n": 4, "episode": "s1b01", "item": "cv_B asked why Mausi sent Kiran into Mohit's brother's trap.", "why": "Mausi never meets the parties (bible bio_now). That is spoken only in A (s1a01 l13).", "may": "One clause in s1b01 b10 or b11, for example Mausi: 'I never meet the parties, beta.' Writer's call."},
+    {"n": 5, "episode": "s1e01", "item": "The super su1 'Wedding night · 1:35 am' gives the two roles.", "if_it_fails": "If C1 readers still cannot place who is the bride and who is the groom by the end of b2, the roles move into a line in b2 (D-024 'Supers fail')."}
+  ],
+
+  "for_the_c1_preparer": [
+    "Describe s1e01 b9's insert and b11 set-up 2 by what the camera shows: 'a pale burn shaped like a half moon on the outer forearm, above red glass bangles' and 'the same framing of her left forearm, a pale half-moon burn below the pushed-up red cuff'. Do not write 'her scar' or 'the same scar'.",
+    "People appear by look until a line or super names them. Kiran is 'a young woman in a red bridal saree' until s1e01 b5 l27; Aditya is 'a tall man in glasses and a cream kurta' until b6 l28; Billu is named at b5 l09 and su2; Mausi is a phone voice.",
+    "Mark heard_as lines as the subtitles will (italic, with the label on the first such line per speaker per scene), using neutral speaker labels.",
+    "Put the first-third marker of s1e01 at the end of b4."
+  ],
+
+  "edit_only": [
+    {"owner": "editor / toolsmith", "item": "s1e01 s31 (b9 photograph insert): hold at least 2.5 s with a push-in on the scar, no new frame (D-024)."},
+    {"owner": "S12 / editor / toolsmith", "item": "heard_as lines in italic with a speaker label on the first such line per speaker per scene (D-024). Labels: 'The groom' for s1e01 l01, 'Mausi' for her phone and door lines, 'Chhoti' for s1b02 l19."},
+    {"owner": "S7", "item": "Copy each super in supers.list onto the shot its with_line first falls on. Remap lines to shots for every added or reworded line. Update cut-on-word anchors. No shot changes."},
+    {"owner": "S7 / sound", "item": "s1e01 b5: the sfx duck for 'किरण' moves from l10 to new l27."},
+    {"owner": "S14", "item": "Glimpse A (s1a01 b1, b5, b7, b9) now holds reworded l14 and super su1: re-cut and check against must_not_reveal. Glimpse B (s1b01 b1, b2, b3, b7, b8) holds no changed text, only the heard_as styling on l02 and l19."},
+    {"owner": "S1 (later step) then P4", "item": "Apply choice.ballot_meaning_proposed to the bible's choice.A.meaning and choice.B.meaning after the critic's 65/35 read, then sync app/public/media/series1/series.json."}
+  ],
+
+  "new_line_ids": {
+    "rule": "The next unused id in each episode. Existing ids are never renumbered. If a writer adds a line this ledger does not list, it takes the next id after these.",
+    "s1e01": ["l27 (b5)", "l28 (b6)", "l29 (b9)"],
+    "s1e02": ["l31 (b4)", "l32 (b4)", "l33 (b9)"],
+    "s1a01": [],
+    "s1a02": ["l29 (b6)"],
+    "s1a03": ["l27 (b8)"],
+    "s1b01": [],
+    "s1b02": ["l30 (b2)"],
+    "s1b03": ["l32 (b5)"]
+  },
+
+  "known_limits": [
+    "s1e01 l01 is an off-screen voice that cannot name itself: it is locked and it is the hook. The subtitle label and b2 set-up 1 identify him. This is a stated exception to rule 7's first-line clause, not a lock conflict.",
+    "s1e01 b11 (the hand is Kiran's) cannot be spoken under rule 8 without breaking the bible's secret. The picture plus l29 is the carrier. See c1_watch_items 1."
+  ],
+  "owner_items": [],
+  "lock_conflicts": []
+}

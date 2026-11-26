@@ -1,0 +1,208 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,110"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 110
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,110",
+				"to": "00:00:00,420"
+			},
+			"offsets": {
+				"from": 110,
+				"to": 420
+			},
+			"text": " Six"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,420",
+				"to": "00:00:01,350"
+			},
+			"offsets": {
+				"from": 420,
+				"to": 1350
+			},
+			"text": " weeks,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,350",
+				"to": "00:00:01,520"
+			},
+			"offsets": {
+				"from": 1350,
+				"to": 1520
+			},
+			"text": " not"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,520",
+				"to": "00:00:01,750"
+			},
+			"offsets": {
+				"from": 1520,
+				"to": 1750
+			},
+			"text": " one"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,750",
+				"to": "00:00:02,440"
+			},
+			"offsets": {
+				"from": 1750,
+				"to": 2440
+			},
+			"text": " complaint"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,440",
+				"to": "00:00:02,600"
+			},
+			"offsets": {
+				"from": 2440,
+				"to": 2600
+			},
+			"text": " at"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,600",
+				"to": "00:00:02,740"
+			},
+			"offsets": {
+				"from": 2600,
+				"to": 2740
+			},
+			"text": " my"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,740",
+				"to": "00:00:03,200"
+			},
+			"offsets": {
+				"from": 2740,
+				"to": 3200
+			},
+			"text": " police"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,200",
+				"to": "00:00:04,020"
+			},
+			"offsets": {
+				"from": 3200,
+				"to": 4020
+			},
+			"text": " station."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,020",
+				"to": "00:00:04,400"
+			},
+			"offsets": {
+				"from": 4020,
+				"to": 4400
+			},
+			"text": " So,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,400",
+				"to": "00:00:04,480"
+			},
+			"offsets": {
+				"from": 4400,
+				"to": 4480
+			},
+			"text": " I"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,480",
+				"to": "00:00:04,880"
+			},
+			"offsets": {
+				"from": 4480,
+				"to": 4880
+			},
+			"text": " took"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,880",
+				"to": "00:00:04,970"
+			},
+			"offsets": {
+				"from": 4880,
+				"to": 4970
+			},
+			"text": " a"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,970",
+				"to": "00:00:05,450"
+			},
+			"offsets": {
+				"from": 4970,
+				"to": 5450
+			},
+			"text": " token"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,450",
+				"to": "00:00:05,780"
+			},
+			"offsets": {
+				"from": 5450,
+				"to": 5780
+			},
+			"text": " too."
+		}
+	]
+}

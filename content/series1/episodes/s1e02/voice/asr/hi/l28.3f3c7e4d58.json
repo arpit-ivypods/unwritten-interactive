@@ -1,0 +1,197 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,060"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 60
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,060",
+				"to": "00:00:00,480"
+			},
+			"offsets": {
+				"from": 60,
+				"to": 480
+			},
+			"text": " खाना"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,480",
+				"to": "00:00:01,220"
+			},
+			"offsets": {
+				"from": 480,
+				"to": 1220
+			},
+			"text": " काया?"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,220",
+				"to": "00:00:01,850"
+			},
+			"offsets": {
+				"from": 1220,
+				"to": 1850
+			},
+			"text": " जूट"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,850",
+				"to": "00:00:02,280"
+			},
+			"offsets": {
+				"from": 1850,
+				"to": 2280
+			},
+			"text": " मद"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,280",
+				"to": "00:00:02,950"
+			},
+			"offsets": {
+				"from": 2280,
+				"to": 2950
+			},
+			"text": " बोल"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,950",
+				"to": "00:00:03,220"
+			},
+			"offsets": {
+				"from": 2950,
+				"to": 3220
+			},
+			"text": " बाग"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,220",
+				"to": "00:00:03,380"
+			},
+			"offsets": {
+				"from": 3220,
+				"to": 3380
+			},
+			"text": " की"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,380",
+				"to": "00:00:03,680"
+			},
+			"offsets": {
+				"from": 3380,
+				"to": 3680
+			},
+			"text": " साइद"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,680",
+				"to": "00:00:04,150"
+			},
+			"offsets": {
+				"from": 3680,
+				"to": 4150
+			},
+			"text": " वाली"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,150",
+				"to": "00:00:04,380"
+			},
+			"offsets": {
+				"from": 4150,
+				"to": 4380
+			},
+			"text": " जेब"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,380",
+				"to": "00:00:04,680"
+			},
+			"offsets": {
+				"from": 4380,
+				"to": 4680
+			},
+			"text": " में"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,680",
+				"to": "00:00:05,130"
+			},
+			"offsets": {
+				"from": 4680,
+				"to": 5130
+			},
+			"text": " मत्री"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,130",
+				"to": "00:00:05,400"
+			},
+			"offsets": {
+				"from": 5130,
+				"to": 5400
+			},
+			"text": " रखी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,400",
+				"to": "00:00:05,600"
+			},
+			"offsets": {
+				"from": 5400,
+				"to": 5600
+			},
+			"text": " है"
+		}
+	]
+}

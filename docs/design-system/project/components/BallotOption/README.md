@@ -1,0 +1,3 @@
+# BallotOption
+
+One of the two choices on the ballot. Shows a still from that choice's glimpse, the letter (A in `brand-text`, B in `saffron-text`), the choice in the story's own words (with `lang="hi"` when Hindi), and a helper line. Selected is `aria-pressed="true"`: a `brand-text` border, `brand-soft` fill and a filled check. Glimpses are optional, so an option is never locked for an unwatched glimpse; the helper line just says whether its glimpse has been seen. On day 2 there is no ballot, so the options are shown disabled with the helper line saying voting has closed. The whole row is the target and is at least 72px tall.

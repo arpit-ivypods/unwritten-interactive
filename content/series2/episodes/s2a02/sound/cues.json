@@ -1,0 +1,734 @@
+{
+  "episode_id": "s2a02",
+  "series_id": "series2",
+  "title": "तीस FIR",
+  "status": "planned",
+  "status_note": "Cue sheet only. Nothing generated, nothing listened to. A separate runner generates the five one-offs once each; the library cues are generated once for the series (content/series2/sound/library.json) and only referenced here.",
+  "authority": [
+    "D-011 reuse: library cues by cue_id, one-offs only where the library lacks a sound",
+    "D-009 route b; D-0M4 method approved; D-019 Gate 2: s2a02 passed (7.9)",
+    "D-014 rule 6 / D-0M2: shots follow measured voice, so every placement is anchored to a beat, line id or silence, not to seconds"
+  ],
+  "sources": [
+    "content/series2/episodes/s2a02/script.hi.json (beats, sfx_notes, music_note)",
+    "content/series2/episodes/s2a02/script.en.json (same beat and line ids; music_note identical)",
+    "content/series2/sound/library.json"
+  ],
+  "timebase": "No shots.json or measured takes exist yet. Placements are anchored to beat ids, line ids and each beat's scripted silence (silent_seconds, silent_position); S13 converts them to seconds from the measured timeline of each language. The same sheet serves the Hindi and English cuts.",
+  "mix": {
+    "dialogue_first": true,
+    "loudness_target": "-14 LUFS integrated, -1 dBTP, tolerance +/-0.5 LU (D-0M4)",
+    "starting_gains_db": {
+      "music": -18,
+      "music_duck_under_dialogue": -8,
+      "ambience": -24,
+      "ambience_layer": -28,
+      "sfx": -10
+    },
+    "ducking": [
+      "Music ducks 8 dB under every line (attack about 80 ms, release about 400 ms) and the bed ambience 3 dB.",
+      "Point effects sit between words; any effect that overlaps a line is at -14 or lower and must not cover a stressed word.",
+      "b8 (l17, l18), b9 (l20, l21) and b12 (l29): nothing but the bed under these lines. l29 has no effect on it.",
+      "b12: bed, car idle and tension note all duck under l28 and l29; the tension note a further 8 dB."
+    ],
+    "filters": {
+      "phone": "None in this episode (no phone appears).",
+      "behind_door": "l03 (door1_man) and l22 (door4_voice) come from behind a door open a hand's width: low-pass at about 5 kHz, slight early reflection from the brick lane, -2 dB against on-screen voices. Every consonant must survive.",
+      "off_face": "l13 (Shanti over the hands insert) and l21 (Nirala off frame) are in the same space as the picture: dry, no filter.",
+      "music_pulse": "The b11 clock-tick pulse is high-passed at about 400 Hz and sits on the music bus, so it reads as music, not as a clock in the lane."
+    },
+    "music_in_out": [
+      "b1-b2: no music. The key, the cuff and the chain carry them.",
+      "IN: mus_theme_caper_bed on the first knock in b3.",
+      "b8: bed 2 dB warmer under the dawn tea.",
+      "b9: bed thinned to almost nothing (about -30, low-passed) for the turn; no sting.",
+      "b10: bed back at -18.",
+      "b11: clock-tick pulse joins on the b11 cut; bed and pulse lift 3 dB on the salute in the silence after l27.",
+      "b12: bed and pulse STOP DEAD on the car-door clunk. mus_tension_note from the clunk under l28-l29, ducked well below the voice. mus_sting on the final insert. Then room tone only and cut to black."
+    ],
+    "hard_rules": [
+      "The episode opens on the padlock over black: no music, no fade-in of anything before it but room tone.",
+      "Episode ends on a hard cut to black after the sting and the held room tone; nothing carries past the last frame."
+    ]
+  },
+  "beds": [
+    {
+      "beats": [
+        "b1",
+        "b2"
+      ],
+      "location": "real_thana",
+      "base": "amb_real_thana",
+      "layers": [
+        "lyr_night_crickets"
+      ],
+      "gain_db": {
+        "amb_real_thana": -24,
+        "lyr_night_crickets": -34
+      },
+      "in": "b1: fades in over 0.3 s under the padlock grind (it is not silent black: the grind sits on room tone)",
+      "out": "hard cut at the b2/b3 picture cut",
+      "note": "Night, 1:20 a.m. Crickets very low: they come through the lockup window, not from the room. No music in b1-b2."
+    },
+    {
+      "beats": [
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "location": "lane_doorway",
+      "base": "amb_lane_doorway",
+      "layers": [
+        "lyr_night_crickets"
+      ],
+      "gain_db": {
+        "amb_lane_doorway": -24,
+        "lyr_night_crickets": -28
+      },
+      "in": "hard in on the b3 cut, so the knock lands in a lane, not in black",
+      "out": "continues into b7",
+      "note": "Night, wall lamp lit: the base carries the lamp's faint buzz. One far goods-train horn in this stretch (see placements)."
+    },
+    {
+      "beats": [
+        "b7"
+      ],
+      "location": "lane_doorway",
+      "base": "amb_lane_doorway",
+      "layers": [
+        "lyr_night_crickets -> lyr_morning_birds"
+      ],
+      "gain_db": {
+        "amb_lane_doorway": -26,
+        "lyr_night_crickets": "-28 to off",
+        "lyr_morning_birds": "off to -32"
+      },
+      "in": "continuous from b6",
+      "out": "hard cut at the b7/b8 picture cut",
+      "note": "The night turns. Shot 1 (page insert) stays night. On shot 2 the one-off sfx_s2a02_lamp_die plays as the lamp goes out; crickets fade out over about 2 s from that moment and lyr_morning_birds fades in from silence (the 'first bird'). The base's own lamp buzz cannot be removed from the loop: from the lamp-die moment the base drops 2 dB and, if the buzz is still audible, a high-pass at about 180 Hz is applied to the base from that point (S13 checks on the generated file)."
+    },
+    {
+      "beats": [
+        "b8"
+      ],
+      "location": "crossing_stall",
+      "base": "amb_crossing_stall",
+      "layers": [
+        "lyr_morning_birds"
+      ],
+      "gain_db": {
+        "amb_crossing_stall": -24,
+        "lyr_morning_birds": -30
+      },
+      "in": "hard in on the b8 cut",
+      "out": "hard cut at the b8/b9 cut",
+      "note": "Dawn about 6 a.m. Kettle on the coal stove and the relay tick are in the base. The hanging bulb is off in picture: if the base's bulb buzz is audible, high-pass as in b7. Nothing loud under l17 or l18: base sits 2 dB lower while they play."
+    },
+    {
+      "beats": [
+        "b9",
+        "b10",
+        "b11"
+      ],
+      "location": "lane_doorway",
+      "base": "amb_lane_doorway",
+      "layers": [
+        "lyr_morning_birds",
+        "lyr_morning_town"
+      ],
+      "gain_db": {
+        "amb_lane_doorway": -26,
+        "lyr_morning_birds": -32,
+        "lyr_morning_town": -30
+      },
+      "in": "hard in on the b9 cut",
+      "out": "hard cut at the b11/b12 cut",
+      "note": "Morning from 7:30. Same base high-pass as b7 if the lamp buzz shows (the lamp is off). Never voices, never a crowd. The pressure-cooker whistle (one-off) is placed once, in b9, not looped."
+    },
+    {
+      "beats": [
+        "b12"
+      ],
+      "location": "real_thana",
+      "base": "amb_real_thana",
+      "layers": [],
+      "gain_db": {
+        "amb_real_thana": -24
+      },
+      "in": "hard in on the b12 cut",
+      "out": "held under the final insert through the silence after l29, then hard cut to black with the picture",
+      "note": "Day, press-dressed but no audience: no lyr_press_murmur (that is s2a03). sfx_car_idle from the yard sits on top. Ducks under l28 and l29 with the music; the tube-light hum and fan are what is left over the final insert."
+    }
+  ],
+  "placements": [
+    {
+      "cue_id": "sfx_padlock_rusted",
+      "source": "library",
+      "beat": "b1",
+      "anchor": {
+        "position": "in the 1.2 s silence before l01",
+        "at": "0.0 s, the first sound of the episode, over black"
+      },
+      "gain_db": -10,
+      "note": "The key grinding; fit the grind and the giving clack into about 0.6-0.9 s so the cuff can follow before l01. Trim the second refusal if needed."
+    },
+    {
+      "cue_id": "sfx_cuffs_ratchet",
+      "source": "library",
+      "beat": "b1",
+      "anchor": {
+        "position": "on shot 1, the ring snapping shut, before l01",
+        "at": "hook image, lands by about 2 s"
+      },
+      "gain_db": -8,
+      "note": "First click only (one cuff, her own wrist). Close and exposed: no reverb, nothing else under it."
+    },
+    {
+      "cue_id": "sfx_cuff_chain_clink",
+      "source": "library",
+      "beat": "b2",
+      "anchor": {
+        "line": "l02",
+        "position": "on the salute, just before l02 starts"
+      },
+      "gain_db": -10,
+      "note": "Chain yanked taut as both arms go up; take the sharpest clink, pitch +1 st."
+    },
+    {
+      "cue_id": "sfx_knitting_needles",
+      "source": "library",
+      "beat": "b2",
+      "anchor": {
+        "position": "in the 1.0 s silence after l02, on shot 2 as Pushpa lays the needles down"
+      },
+      "gain_db": -16,
+      "note": "Needles set down: use the last two clicks of the library loop then cut clean on a gap, no fade (the library's 'stop' rule). Replaces the library's suggested one-off 'needles set down'. If the two clicks do not read as a lay-down, add a 0.1 s soft cloth-damped tap from the same take; no new generation."
+    },
+    {
+      "cue_id": "sfx_signature_knock",
+      "source": "library",
+      "beat": "b3",
+      "anchor": {
+        "position": "in the 1.5 s silence before l03, at its head"
+      },
+      "gain_db": -10,
+      "note": "NIRALA'S KNOCK: two slow, one quick, the exact file reused in b10. Start of music: the bed comes in on the first knock (see music)."
+    },
+    {
+      "cue_id": "sfx_door_chain_stop",
+      "source": "library",
+      "beat": "b3",
+      "anchor": {
+        "position": "in the 1.5 s silence before l03, after the knock, ending before l03"
+      },
+      "gain_db": -12,
+      "note": "Door opens a hand's width onto its chain."
+    },
+    {
+      "cue_id": "sfx_cuff_chain_clink",
+      "source": "library",
+      "beat": "b3",
+      "anchor": {
+        "line": "l05",
+        "position": "on the lift of the joined wrists (second framing), under the first word"
+      },
+      "gain_db": -16,
+      "note": "Small, under the line; pitch -1 st."
+    },
+    {
+      "cue_id": "sfx_door_chain_slide",
+      "source": "library",
+      "beat": "b3",
+      "anchor": {
+        "line": "l05",
+        "position": "under the last word of l05"
+      },
+      "gain_db": -14,
+      "note": "Chain latch slid off from inside."
+    },
+    {
+      "cue_id": "sfx_door_chain_stop",
+      "source": "library",
+      "beat": "b3",
+      "anchor": {
+        "line": "l05",
+        "position": "right after the last word of l05",
+        "trim": "creak portion only, before the chain snaps taut"
+      },
+      "gain_db": -14,
+      "note": "The door opening fully: reuse only the wooden creak at the head of the chain-stop take, cut before the chain rattle. Replaces a separate door-open one-off."
+    },
+    {
+      "cue_id": "sfx_s2a02_ink_pad",
+      "source": "episode",
+      "beat": "b4",
+      "anchor": {
+        "line": "l06",
+        "position": "segment 1 (tin lid) just before l06; segment 2 (thumb press) as Ramsevak's hand comes down, under l06"
+      },
+      "gain_db": -14,
+      "note": "Episode one-off, see one_off_cues."
+    },
+    {
+      "cue_id": "sfx_pen_scratch",
+      "source": "library",
+      "beat": "b4",
+      "anchor": {
+        "line": "l06",
+        "position": "under l06, low, ending before the silence after"
+      },
+      "gain_db": -20,
+      "note": "She writes with her right hand. Under the line, low (library rule)."
+    },
+    {
+      "cue_id": "sfx_cuff_chain_clink",
+      "source": "library",
+      "beat": "b5",
+      "anchor": {
+        "line": "l07-l10",
+        "position": "one clink on each out-of-step stride visible in shot 1: about 3 across l07-l08, spaced unevenly, placed between words where possible"
+      },
+      "gain_db": -16,
+      "note": "Vary pitch +/-1 st and level +/-2 dB per clink so they do not sound looped. None on the punch words 'topper' (l08) or 'fail' (l09)."
+    },
+    {
+      "cue_id": "sfx_pen_scratch",
+      "source": "library",
+      "beat": "b5",
+      "anchor": {
+        "position": "in the 0.4 s silence after l10",
+        "trim": "one short hard stroke"
+      },
+      "gain_db": -14,
+      "note": "The pen strike: one firm stroke through the line she wrote."
+    },
+    {
+      "cue_id": "sfx_far_train_horn",
+      "source": "library",
+      "beat": "b5",
+      "anchor": {
+        "position": "starts in the 0.4 s silence after l10, after the pen strike, and fades out under the head of b6 before l11 ends"
+      },
+      "gain_db": -30,
+      "note": "The 'far-off goods train', used once in the episode. Far and soft; ducks with the bed under l11."
+    },
+    {
+      "cue_id": "sfx_s2a02_ink_pad",
+      "source": "episode",
+      "beat": "b6",
+      "anchor": {
+        "line": "l13",
+        "position": "thumb lift from the pad at the head of shot 3, under the first word of l13",
+        "segment": "thumb press, reversed tail or the lift"
+      },
+      "gain_db": -18,
+      "note": "Reuse of the episode one-off."
+    },
+    {
+      "cue_id": "sfx_s2a02_steel_and_glass",
+      "source": "episode",
+      "beat": "b6",
+      "anchor": {
+        "line": "l13",
+        "position": "right after l13 ends, before l14",
+        "segment": "steel tumbler on stone"
+      },
+      "gain_db": -12,
+      "note": "Episode one-off, see one_off_cues. sfx_notes: 'a steel tumbler set down on a stone step after l13'. Must clear l14's first word by at least 0.15 s."
+    },
+    {
+      "cue_id": "sfx_s2a02_ink_pad",
+      "source": "episode",
+      "beat": "b7",
+      "anchor": {
+        "position": "shot 1 (page insert) only, inside the 1.4 s silence before l15",
+        "segment": "thumb presses, two of them"
+      },
+      "gain_db": -16,
+      "note": "Loose rhythm with the page turns."
+    },
+    {
+      "cue_id": "sfx_page_turn",
+      "source": "library",
+      "beat": "b7",
+      "anchor": {
+        "position": "shot 1 only, inside the 1.4 s silence before l15, interleaved with the thumb presses"
+      },
+      "gain_db": -14,
+      "note": "Two turns, the second 2 dB lower (library note: several in a loose rhythm)."
+    },
+    {
+      "cue_id": "sfx_s2a02_lamp_die",
+      "source": "episode",
+      "beat": "b7",
+      "anchor": {
+        "position": "at the head of shot 2, as the wall lamp goes out, ending before l15"
+      },
+      "gain_db": -18,
+      "note": "Episode one-off, see one_off_cues. The bed's night-to-dawn change hangs on this moment (see beds)."
+    },
+    {
+      "cue_id": "sfx_s2a02_steel_and_glass",
+      "source": "episode",
+      "beat": "b8",
+      "anchor": {
+        "position": "shot 1, inside the 0.8 s silence before l17",
+        "segment": "glass tea glass set down on wood"
+      },
+      "gain_db": -14,
+      "note": "One glass down as the insert ends; the second glass down after l18 if the shot allows, otherwise once only."
+    },
+    {
+      "cue_id": "sfx_cuff_chain_clink",
+      "source": "library",
+      "beat": "b8",
+      "anchor": {
+        "position": "shot 1, as his glass lifts and her chained hand rises with it; once more if he lifts again in shot 2, but never under l17 or l18"
+      },
+      "gain_db": -16,
+      "note": "'A chain clink each time his glass lifts. Nothing loud under l17 or l18.'"
+    },
+    {
+      "cue_id": "sfx_paper_slip",
+      "source": "library",
+      "beat": "b9",
+      "anchor": {
+        "line": "l19",
+        "position": "just before l19, as Mukesh holds up the folded receipt"
+      },
+      "gain_db": -14,
+      "note": "Paper unfolding. Pick the cleanest second of the take (library note)."
+    },
+    {
+      "cue_id": "sfx_s2a02_cooker_whistle",
+      "source": "episode",
+      "beat": "b9",
+      "anchor": {
+        "position": "once, far off, in the head of shot 1 before l19 starts, or in the gap between l19 and l20 if shot 1 is too short; never under l20 or l21"
+      },
+      "gain_db": -34,
+      "note": "Episode one-off, see one_off_cues. Morning-town detail."
+    },
+    {
+      "cue_id": "sfx_s2a02_ink_pad",
+      "source": "episode",
+      "beat": "b9",
+      "anchor": {
+        "line": "l21",
+        "position": "thumb onto the pad on shot 3, under the head of l21",
+        "segment": "thumb press"
+      },
+      "gain_db": -22,
+      "note": "Very low: 'nothing at all under l20 and l21 but the bed'. If it competes with the voice at all, drop it; the image carries the press."
+    },
+    {
+      "cue_id": "sfx_signature_knock",
+      "source": "library",
+      "beat": "b10",
+      "anchor": {
+        "position": "in the 1.5 s silence before l22, at its head"
+      },
+      "gain_db": -10,
+      "note": "The SAME file as b3, unedited, so the repeat is heard as his knock."
+    },
+    {
+      "cue_id": "sfx_door_chain_stop",
+      "source": "library",
+      "beat": "b10",
+      "anchor": {
+        "position": "in the 1.5 s silence before l22, after the knock, ending before l22"
+      },
+      "gain_db": -10,
+      "note": "The door stopping hard on its chain: this time keep the full take, chain snap included, 2 dB louder than in b3. No effect under l22."
+    },
+    {
+      "cue_id": "sfx_cuff_chain_clink",
+      "source": "library",
+      "beat": "b10",
+      "anchor": {
+        "line": "l24",
+        "position": "on shot 3's head as she lifts the chain into the light, before l24"
+      },
+      "gain_db": -14,
+      "note": "Her own move this time: one clean clink, pitch 0."
+    },
+    {
+      "cue_id": "sfx_door_chain_slide",
+      "source": "library",
+      "beat": "b10",
+      "anchor": {
+        "line": "l25",
+        "position": "under the end of l25, on the insert"
+      },
+      "gain_db": -14,
+      "note": "The chain sliding off: the door she wins."
+    },
+    {
+      "cue_id": "sfx_s2a02_ink_pad",
+      "source": "episode",
+      "beat": "b10",
+      "anchor": {
+        "position": "after l25 ends, the thumb coming out towards the pad",
+        "segment": "tin lid tap or a soft press"
+      },
+      "gain_db": -18,
+      "note": "Optional; drop if the beat's tail is under 0.5 s."
+    },
+    {
+      "cue_id": "sfx_s2a02_hurried_steps",
+      "source": "episode",
+      "beat": "b11",
+      "anchor": {
+        "line": "l26",
+        "position": "shot 1, from the head of the shot through l26; out of rhythm at first, falling into one rhythm by l26's end"
+      },
+      "gain_db": -14,
+      "note": "Episode one-off, see one_off_cues. Ducks 4 dB under l26."
+    },
+    {
+      "cue_id": "sfx_cuff_chain_clink",
+      "source": "library",
+      "beat": "b11",
+      "anchor": {
+        "line": "l26",
+        "position": "two clinks on shot 1 as the chain swings, between the words of l26"
+      },
+      "gain_db": -18,
+      "note": "Pitch +/-1 st, low."
+    },
+    {
+      "cue_id": "sfx_door_shut_bolt",
+      "source": "library",
+      "beat": "b11",
+      "anchor": {
+        "position": "at the head of shot 2 (the door just shut behind them), before the register thump",
+        "trim": "wooden thud only, no bolt"
+      },
+      "gain_db": -14,
+      "note": "Library note: use the thud and leave out the bolt (they are outside; no one bolts the door on them audibly)."
+    },
+    {
+      "cue_id": "sfx_register_thump",
+      "source": "library",
+      "beat": "b11",
+      "anchor": {
+        "line": "l27",
+        "position": "at the head of shot 2, right after the door thud and before l27"
+      },
+      "gain_db": -10,
+      "note": "The register cover thumped shut before 'तीस।'."
+    },
+    {
+      "cue_id": "sfx_cuff_chain_clink",
+      "source": "library",
+      "beat": "b11",
+      "anchor": {
+        "position": "on the salute by choice, in the 1.6 s silence after l27"
+      },
+      "gain_db": -12,
+      "note": "One clink, the chain slack. Counterpart of b2's taut clink: same take, pitch 0, softer attack if the take has one."
+    },
+    {
+      "cue_id": "sfx_car_idle",
+      "source": "library",
+      "beat": "b12",
+      "anchor": {
+        "position": "from the head of shot 1 to the end of shot 2, from the yard"
+      },
+      "gain_db": -26,
+      "note": "Ducked a further 6 dB under l28 and l29. Fades out over 1 s at the end of l29 so the final insert is just the room."
+    },
+    {
+      "cue_id": "sfx_car_door",
+      "source": "library",
+      "beat": "b12",
+      "anchor": {
+        "position": "at the head of shot 1, before l28"
+      },
+      "gain_db": -10,
+      "note": "One clean clunk (the script says 'opening'; use as is). The music's pulse stops dead on it."
+    },
+    {
+      "cue_id": "sfx_steps_gravel",
+      "source": "library",
+      "beat": "b12",
+      "anchor": {
+        "line": "l28-l29",
+        "position": "sandals on gravel from the yard, starting after the car door, under l28 only",
+        "trim": "3-4 steps"
+      },
+      "gain_db": -26,
+      "note": "No effect on l29: the steps end before l29 starts, so the cliffhanger stays clear."
+    },
+    {
+      "cue_id": "mus_theme_caper_bed",
+      "source": "library",
+      "beat": "b3-b11",
+      "anchor": {
+        "in": "on the first knock in b3 (head of the 1.5 s silence before l03)",
+        "out": "stops dead on the car-door clunk at the head of b12"
+      },
+      "gain_db": -18,
+      "note": "Duck 8 dB under every line. Cut and looped at bar lines (40 s file; b3-b11 runs about 80-90 s on targets). Levels across the span: b3-b7 at -18; b8 dawn tea -16 ('comes back warmer'); b9 thinned to almost nothing (-30, low-pass about 1.5 kHz) from the b9 cut, nothing that reads as a sting under l20; b10-b11 back to -18. The script's soft clarinet is accepted as missing (library note: reuse this bed, no second bed).",
+      "type": "music"
+    },
+    {
+      "cue_id": "sfx_wall_clock_tick",
+      "source": "library",
+      "beat": "b11-b12",
+      "anchor": {
+        "in": "on the b11 cut (shot 1, the hurrying feet)",
+        "out": "stops dead on the car-door clunk at the head of b12, together with the bed"
+      },
+      "gain_db": -22,
+      "note": "The 'ticking pulse as the clock runs', made from the library clock tick routed on the music bus (high-pass at about 400 Hz, a touch of the bed's room) rather than a new music cue. Lifts 3 dB with the bed on the salute in the silence after l27. Same file as the thana clock, which also suits b12's wall clock. If one tick a second fights the bed's 92 BPM, time-stretch the tick loop to the bed's beat (about 0.65 s spacing) instead of generating anything.",
+      "type": "music_layer"
+    },
+    {
+      "cue_id": "mus_tension_note",
+      "source": "library",
+      "beat": "b12",
+      "anchor": {
+        "in": "on the car-door clunk, as the bed and pulse stop",
+        "out": "cut with the sting at the head of the final insert"
+      },
+      "gain_db": -26,
+      "note": "One low sustained note, ducked well below the voice: -26 base, a further -8 under l28 and l29.",
+      "type": "music"
+    },
+    {
+      "cue_id": "mus_sting",
+      "source": "library",
+      "beat": "b12",
+      "anchor": {
+        "position": "on the head of shot 3, the final insert of her hand tightening on the register, at the start of the 1.5 s silence after l29"
+      },
+      "gain_db": -14,
+      "note": "The episode's only sting (library: used once in the series). Proof sting came back quiet (peak about -22 dB): add gain to land it at about -14 short-term, true peak under -1 dBTP. After it: tube-light hum and fan only, then cut to black with the picture.",
+      "type": "music_sting"
+    }
+  ],
+  "one_off_cues": [
+    {
+      "cue_id": "sfx_s2a02_ink_pad",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "loop": false,
+      "planned_duration_s": 3.0,
+      "prompt": "A small round tin ink-pad case: the thin metal lid popped open with a light tinny click, then three soft separate thumb presses onto the damp ink pad and onto paper, each a quiet muted dab, close and dry. No voices.",
+      "segments": [
+        "tin lid click",
+        "thumb press 1",
+        "thumb press 2",
+        "thumb press 3"
+      ],
+      "used_at": [
+        "b4",
+        "b6",
+        "b7",
+        "b9",
+        "b10"
+      ],
+      "why_one_off": "Only s2a02 uses the ink pad (library one-offs list: 'ink pad tin lid and thumb presses (b4, b7)'). One generation, cut into segments and reused in five beats.",
+      "status": "generated"
+    },
+    {
+      "cue_id": "sfx_s2a02_steel_and_glass",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "loop": false,
+      "planned_duration_s": 3.0,
+      "prompt": "A heavy steel drinking tumbler set down on a stone doorstep: one bright, solid metal-on-stone clink. A pause. Then a small glass tea glass set down on a wooden bench: one light glassy knock. Close, outdoors, quiet. No voices.",
+      "segments": [
+        "steel tumbler on stone (b6)",
+        "glass on wood (b8)"
+      ],
+      "used_at": [
+        "b6",
+        "b8"
+      ],
+      "why_one_off": "Library one-offs list: 'steel tumbler on stone and glasses (b6, b8)'. Both in one generation to save a call; if the take only holds one of the two, the missing one is taken from the other's sound pitched (glass: +5 st, shorter) rather than regenerated.",
+      "status": "generated"
+    },
+    {
+      "cue_id": "sfx_s2a02_lamp_die",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "loop": false,
+      "planned_duration_s": 1.5,
+      "prompt": "A small outdoor wall lamp on a bracket going out at dawn: its faint electrical buzz flickers twice, falters and dies with a tiny click, then quiet. Close, soft. No voices, no birds.",
+      "used_at": [
+        "b7"
+      ],
+      "why_one_off": "Library one-offs list: 'wall lamp buzz dying (b7)'. Used once.",
+      "status": "generated"
+    },
+    {
+      "cue_id": "sfx_s2a02_cooker_whistle",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "loop": false,
+      "planned_duration_s": 3.0,
+      "prompt": "A pressure cooker whistle in a kitchen far away across a small Indian town in the morning: one long high steamy whistle heard faintly from several houses off, distant and soft, fading. No voices, no traffic.",
+      "used_at": [
+        "b9"
+      ],
+      "why_one_off": "Library one-offs list: kept out of lyr_morning_town so it does not repeat every 30 s. Used once.",
+      "status": "generated"
+    },
+    {
+      "cue_id": "sfx_s2a02_hurried_steps",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "loop": false,
+      "planned_duration_s": 4.0,
+      "prompt": "Two people hurrying on foot down a narrow brick-paved lane, one in hard leather shoes and one in loose oversized shoes that slap a little: at first their quick steps are out of step with each other, then they fall into one shared rhythm, close, outdoors, quiet morning. No voices, no traffic.",
+      "used_at": [
+        "b11"
+      ],
+      "fallback": "If the take does not fall into step, build it from two copies of the same take offset by about 0.15 s that converge to 0 over the cue. Do not use sfx_steps_gravel here: gravel reads wrong on a brick lane.",
+      "why_one_off": "Library one-offs list: 'hurried footsteps (b11)'. The library's step cues are terrazzo (indoor hall), gravel (yard) and ballast (rails), none a hard lane.",
+      "status": "generated"
+    }
+  ],
+  "library_cues_used": [
+    "amb_crossing_stall",
+    "amb_lane_doorway",
+    "amb_real_thana",
+    "lyr_morning_birds",
+    "lyr_morning_town",
+    "lyr_night_crickets",
+    "mus_sting",
+    "mus_tension_note",
+    "mus_theme_caper_bed",
+    "sfx_car_door",
+    "sfx_car_idle",
+    "sfx_cuff_chain_clink",
+    "sfx_cuffs_ratchet",
+    "sfx_door_chain_slide",
+    "sfx_door_chain_stop",
+    "sfx_door_shut_bolt",
+    "sfx_far_train_horn",
+    "sfx_knitting_needles",
+    "sfx_padlock_rusted",
+    "sfx_page_turn",
+    "sfx_paper_slip",
+    "sfx_pen_scratch",
+    "sfx_register_thump",
+    "sfx_signature_knock",
+    "sfx_steps_gravel",
+    "sfx_wall_clock_tick"
+  ],
+  "counts": {
+    "library_cues_used": 26,
+    "one_off_cues_new": 5,
+    "placements": 41,
+    "new_generations": 5,
+    "credit_estimate": "5 x 17 = 85 credits, one take each (library basis: 17 per eleven_text_to_sound_v3 generation)",
+    "library_cues_used_not_in_library_used_in": [
+      "sfx_knitting_needles",
+      "sfx_wall_clock_tick"
+    ]
+  }
+}

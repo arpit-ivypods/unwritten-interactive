@@ -1,0 +1,153 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 0
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,780"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 780
+			},
+			"text": " Well"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,780",
+				"to": "00:00:01,500"
+			},
+			"offsets": {
+				"from": 780,
+				"to": 1500
+			},
+			"text": " done,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,500",
+				"to": "00:00:01,740"
+			},
+			"offsets": {
+				"from": 1500,
+				"to": 1740
+			},
+			"text": " my"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,740",
+				"to": "00:00:02,930"
+			},
+			"offsets": {
+				"from": 1740,
+				"to": 2930
+			},
+			"text": " child."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,930",
+				"to": "00:00:03,000"
+			},
+			"offsets": {
+				"from": 2930,
+				"to": 3000
+			},
+			"text": " Billu"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,000",
+				"to": "00:00:03,260"
+			},
+			"offsets": {
+				"from": 3000,
+				"to": 3260
+			},
+			"text": " will"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,260",
+				"to": "00:00:03,390"
+			},
+			"offsets": {
+				"from": 3260,
+				"to": 3390
+			},
+			"text": " be"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,390",
+				"to": "00:00:04,030"
+			},
+			"offsets": {
+				"from": 3390,
+				"to": 4030
+			},
+			"text": " downstairs"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,030",
+				"to": "00:00:04,240"
+			},
+			"offsets": {
+				"from": 4030,
+				"to": 4240
+			},
+			"text": " at"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,240",
+				"to": "00:00:04,640"
+			},
+			"offsets": {
+				"from": 4240,
+				"to": 4640
+			},
+			"text": " three."
+		}
+	]
+}

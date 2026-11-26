@@ -1,0 +1,153 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,040"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 40
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,040",
+				"to": "00:00:00,220"
+			},
+			"offsets": {
+				"from": 40,
+				"to": 220
+			},
+			"text": " Can"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,220",
+				"to": "00:00:00,290"
+			},
+			"offsets": {
+				"from": 220,
+				"to": 290
+			},
+			"text": " I"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,290",
+				"to": "00:00:00,660"
+			},
+			"offsets": {
+				"from": 290,
+				"to": 660
+			},
+			"text": " just"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,660",
+				"to": "00:00:00,890"
+			},
+			"offsets": {
+				"from": 660,
+				"to": 890
+			},
+			"text": " call"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,890",
+				"to": "00:00:01,030"
+			},
+			"offsets": {
+				"from": 890,
+				"to": 1030
+			},
+			"text": " my"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,030",
+				"to": "00:00:01,560"
+			},
+			"offsets": {
+				"from": 1030,
+				"to": 1560
+			},
+			"text": " brother"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,560",
+				"to": "00:00:02,120"
+			},
+			"offsets": {
+				"from": 1560,
+				"to": 2120
+			},
+			"text": " once?"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,120",
+				"to": "00:00:02,480"
+			},
+			"offsets": {
+				"from": 2120,
+				"to": 2480
+			},
+			"text": " Bhaiya"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,480",
+				"to": "00:00:02,780"
+			},
+			"offsets": {
+				"from": 2480,
+				"to": 2780
+			},
+			"text": " will"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,780",
+				"to": "00:00:03,260"
+			},
+			"offsets": {
+				"from": 2780,
+				"to": 3260
+			},
+			"text": " worry."
+		}
+	]
+}

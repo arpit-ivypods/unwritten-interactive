@@ -1,0 +1,230 @@
+/*
+ * Additions to the design system's bundle.css that the app needs. Every value
+ * is a token. Imported into @layer components after bundle.css.
+ */
+
+/* --- Devanagari (lang="hi") ------------------------------------------------
+ * The bundle covers its own classes. These extend the same rules to the hero
+ * line and the label and speaker styles (never uppercase or tracked
+ * Devanagari). The same rules for Tailwind utilities are in lang.css. */
+.uw-hero:lang(hi),
+.uw-stage-state-title:lang(hi),
+.uw-step-name:lang(hi) {
+  line-height: 1.35;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.uw-label:lang(hi),
+.uw-sub-speaker:lang(hi),
+.uw-share-series:lang(hi) {
+  text-transform: none;
+  letter-spacing: 0;
+}
+.uw-caption:lang(hi),
+.uw-body:lang(hi),
+.uw-option-text small:lang(hi),
+.uw-series-meta:lang(hi),
+.uw-trailer-meta:lang(hi),
+.uw-teaser-meta:lang(hi) {
+  line-height: 1.5;
+}
+.uw-sub-line:lang(hi) {
+  line-height: 1.45;
+}
+
+/* --- Hero line: display-hero on desktop, display-title on phones ---------- */
+.uw-hero {
+  margin: 0;
+  font-size: 78px;
+  line-height: 0.96;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+}
+@media (max-width: 640px) {
+  .uw-hero {
+    font-size: 34px;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+  }
+}
+
+/* --- Ambient backdrop as a screen root ------------------------------------
+ * uw-ambient--screen fills the viewport and keeps the still fixed while the
+ * page scrolls. The still cross-fades with data-state (motion may drive it). */
+.uw-ambient--screen {
+  min-height: 100dvh;
+}
+.uw-ambient--screen > .uw-ambient-img {
+  position: fixed;
+}
+.uw-ambient::before {
+  pointer-events: none;
+}
+.uw-ambient-img {
+  pointer-events: none;
+  transition: opacity var(--dur-scene) var(--ease-in-out);
+}
+
+/* --- Stage ---------------------------------------------------------------- */
+/* A <video> inside the stage sits where the still does. */
+.uw-stage > video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.uw-stage-scrim,
+.uw-stage--dim > video {
+  pointer-events: none;
+}
+.uw-stage--dim > video {
+  filter: brightness(0.6);
+}
+/* Live progress inside the current segment: set --uw-seg (0%..100%) on the
+   is-now segment. Without it the bundle's 45% still applies. */
+.uw-progress i.is-now {
+  background: linear-gradient(
+    90deg,
+    var(--on-stage) var(--uw-seg, 45%),
+    rgba(255, 255, 255, 0.34) var(--uw-seg, 45%)
+  );
+}
+.uw-stage-play:active {
+  transform: scale(0.97);
+}
+
+/* --- Ballot ---------------------------------------------------------------- */
+.uw-option {
+  min-height: 72px;
+}
+/* The plain meaning under a choice written as a code phrase (decision D-003). */
+.uw-option-meaning {
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: var(--ink-muted);
+}
+.uw-radio--locked {
+  border: 0;
+}
+.uw-radio--locked svg {
+  width: 18px;
+  height: 18px;
+  stroke-width: 1.75;
+}
+
+/* --- Rail: a pill can be a link; the whole pill is the target ------------- */
+.uw-rail li:has(> a) {
+  padding: 0;
+}
+.uw-rail li > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-width: 44px;
+  height: 100%;
+  padding: 0 14px;
+  border-radius: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* --- Nav and dock --------------------------------------------------------- */
+.uw-nav-links a:hover,
+.uw-dock a:hover {
+  color: var(--brand-text);
+}
+.uw-dock a[aria-current]:hover {
+  color: var(--on-ink);
+}
+/* The dock floats above the bottom edge on phones. */
+.uw-dock--fixed {
+  position: fixed;
+  left: var(--space-4);
+  right: var(--space-4);
+  bottom: calc(var(--space-3) + env(safe-area-inset-bottom, 0px));
+  z-index: 40;
+}
+
+/* --- Buttons -------------------------------------------------------------- */
+.uw-btn svg.uw-icon--fill,
+.uw-stage-play svg.uw-icon--fill {
+  fill: currentColor;
+  stroke: none;
+}
+@media (hover: hover) {
+  .uw-btn--glass:not([disabled]):hover {
+    border-color: var(--brand-text);
+  }
+}
+
+/* --- Presenter drawer ------------------------------------------------------ */
+.uw-drawer--overlay {
+  position: fixed;
+  top: var(--space-4);
+  right: var(--space-4);
+  bottom: var(--space-4);
+  z-index: 60;
+  overflow-y: auto;
+  width: calc(100% - 2 * var(--space-4));
+}
+/* A native select styled as a glass-strong pill (jump to any screen). */
+.uw-select {
+  width: 100%;
+  min-height: 44px;
+  padding: 0 var(--space-5);
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--hairline);
+  background: var(--glass-strong);
+  color: var(--ink);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* --- Toast placement: bottom centre above the dock on phones, bottom left on desktop */
+.uw-toast-region {
+  position: fixed;
+  z-index: 50;
+  left: 50%;
+  bottom: calc(88px + env(safe-area-inset-bottom, 0px));
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  width: max-content;
+  max-width: calc(100% - 2 * var(--space-4));
+  pointer-events: none;
+}
+.uw-toast-region > * {
+  pointer-events: auto;
+}
+@media (min-width: 641px) {
+  .uw-toast-region {
+    left: var(--space-9);
+    bottom: var(--space-9);
+    transform: none;
+    align-items: flex-start;
+  }
+}
+
+/* --- Seg buttons with a lang="hi" label use the Devanagari weight -------- */
+.uw-seg button:lang(hi),
+.uw-btn:lang(hi) {
+  font-weight: 700;
+}
+
+/* Cross-fades stay under reduced motion (README, Motion); only the press scale goes. */
+@media (prefers-reduced-motion: reduce) {
+  .uw-stage-play:active {
+    transform: none;
+  }
+}
+
+/* A locked pill can carry a label beside its lock. */
+.uw-rail li {
+  gap: 6px;
+}

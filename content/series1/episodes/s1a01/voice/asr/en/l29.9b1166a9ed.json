@@ -1,0 +1,131 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,120"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 120
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,120",
+				"to": "00:00:00,530"
+			},
+			"offsets": {
+				"from": 120,
+				"to": 530
+			},
+			"text": " Brass"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,530",
+				"to": "00:00:01,350"
+			},
+			"offsets": {
+				"from": 530,
+				"to": 1350
+			},
+			"text": " set,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,350",
+				"to": "00:00:01,910"
+			},
+			"offsets": {
+				"from": 1350,
+				"to": 1910
+			},
+			"text": " rented"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,910",
+				"to": "00:00:02,660"
+			},
+			"offsets": {
+				"from": 1910,
+				"to": 2660
+			},
+			"text": " house."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,660",
+				"to": "00:00:02,940"
+			},
+			"offsets": {
+				"from": 2660,
+				"to": 2940
+			},
+			"text": " Mossy"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,940",
+				"to": "00:00:03,160"
+			},
+			"offsets": {
+				"from": 2940,
+				"to": 3160
+			},
+			"text": " will"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,160",
+				"to": "00:00:03,550"
+			},
+			"offsets": {
+				"from": 3160,
+				"to": 3550
+			},
+			"text": " believe"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,550",
+				"to": "00:00:03,940"
+			},
+			"offsets": {
+				"from": 3550,
+				"to": 3940
+			},
+			"text": " you."
+		}
+	]
+}

@@ -1,0 +1,543 @@
+{
+ "about": "s1b01 edit (S13 Editor, 26 Nov; first edit). Per-episode choices only; the shared toolchain is production/scripts/episode/.",
+ "render_name": "s1b01",
+ "slate_color": "#1d2430",
+ "max_seconds": 150,
+ "voice_models": [
+  "v4"
+ ],
+ "voice_fx": {
+  "phone": {
+   "speakers": []
+  },
+  "through_door": {
+   "chain": "lowpass=f=5000",
+   "match_loudness": true
+  }
+ },
+ "lines": {
+  "l02": {
+   "fx": "phone"
+  },
+  "l10": {
+   "fx": "phone"
+  },
+  "l11": {
+   "fx": "phone"
+  },
+  "l19": {
+   "fx": "through_door"
+  }
+ },
+ "layout": {
+  "first_lead": 4,
+  "lead_default": 5,
+  "use_silent_lead": true,
+  "lead": {
+   "s08": 12
+  },
+  "gap_default": 8,
+  "tail_default": 6,
+  "tail": {
+   "s10": 24,
+   "s36": 24,
+   "s41": 15
+  },
+  "min_last_segment": 24,
+  "read_cps": 17,
+  "end_black": 12,
+  "silent_frames": {},
+  "cut_on_word": [
+   {
+    "line": "l08",
+    "word": {
+     "hi": "चाबी",
+     "en": "key's"
+    },
+    "occurrence": 1,
+    "shot": "s10"
+   },
+   {
+    "line": "l21",
+    "word": {
+     "hi": "दरवाज़े",
+     "en": "please"
+    },
+    "occurrence": 1,
+    "shot": "s29"
+   },
+   {
+    "line": "l22",
+    "word": {
+     "hi": "हाँ",
+     "en": "yes"
+    },
+    "occurrence": 1,
+    "shot": "s34"
+   },
+   {
+    "line": "l22",
+    "word": {
+     "hi": "लड़का",
+     "en": "the"
+    },
+    "occurrence": {
+     "hi": 1,
+     "en": 1
+    },
+    "shot": "s35"
+   },
+   {
+    "line": "l26",
+    "word": {
+     "hi": "दुल्हन",
+     "en": "the"
+    },
+    "occurrence": 1,
+    "shot": "s38"
+   },
+   {
+    "line": "l28",
+    "word": {
+     "hi": "अपने",
+     "en": "with"
+    },
+    "occurrence": 1,
+    "shot": "s41"
+   }
+  ]
+ },
+ "sound": [
+  {
+   "cue": "amb_bedroom_night",
+   "id": "#b1",
+   "kind": "bed",
+   "from": 0,
+   "to": "s03.start",
+   "loop": true,
+   "bus": "music",
+   "fade_in": 0,
+   "fade_out": 1
+  },
+  {
+   "cue": "amb_bedroom_night",
+   "id": "#b3",
+   "kind": "bed",
+   "from": "s04.start",
+   "to": "s08.start",
+   "loop": true,
+   "bus": "music",
+   "fade_in": 0,
+   "fade_out": 1
+  },
+  {
+   "cue": "amb_bedroom_night",
+   "id": "#b4",
+   "kind": "bed",
+   "from": "s09.start",
+   "to": "s11.start",
+   "loop": true,
+   "bus": "music",
+   "fade_in": 0,
+   "fade_out": 1
+  },
+  {
+   "cue": "amb_bedroom_night",
+   "id": "#b5a-b11",
+   "kind": "bed",
+   "from": "s15.start",
+   "to": "end",
+   "loop": true,
+   "bus": "music",
+   "fade_in": 0,
+   "fade_out": 1,
+   "segments": [
+    {
+     "from": "l19.speech_start - 0.2s",
+     "to": "l19.speech_end + 0.1s",
+     "db": -2
+    },
+    {
+     "from": "l28.speech_start - 0.2s",
+     "to": "l28.speech_end",
+     "db": -4
+    }
+   ]
+  },
+  {
+   "cue": "amb_lane_night",
+   "id": "#b2",
+   "kind": "bed",
+   "from": "s03.start",
+   "to": "s04.start",
+   "loop": true,
+   "bus": "music",
+   "db": 3,
+   "fade_in": 0,
+   "fade_out": 1
+  },
+  {
+   "cue": "amb_stairwell_landing",
+   "id": "#b4-b5",
+   "kind": "bed",
+   "from": "s08.start",
+   "to": "s15.start",
+   "loop": true,
+   "bus": "music",
+   "db": 4,
+   "fade_in": 0,
+   "fade_out": 1,
+   "segments": [
+    {
+     "from": "s09.start",
+     "to": "s11.start",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "cue": "amb_lane_night",
+   "id": "#b7",
+   "kind": "bed",
+   "from": "s22.start",
+   "to": "s23.start",
+   "loop": true,
+   "bus": "music",
+   "db": -7,
+   "filter": {
+    "lowpass_hz": 2000
+   },
+   "fade_in": 0,
+   "fade_out": 6
+  },
+  {
+   "cue": "amb_stairwell_landing",
+   "id": "#open",
+   "kind": "bed",
+   "from": "s26.start",
+   "to": "end",
+   "loop": true,
+   "bus": "music",
+   "db": -8,
+   "fade_in": 6,
+   "fade_out": 1
+  },
+  {
+   "cue": "mus_bed_drone",
+   "kind": "bed",
+   "from": "s04.start",
+   "to": "s15.start",
+   "loop": true,
+   "gain_db": -24,
+   "fade_in": 30,
+   "fade_out": 45
+  },
+  {
+   "cue": "mus_tension_pulse",
+   "kind": "bed",
+   "from": "s24.start - 8",
+   "to": "l28.speech_end",
+   "loop": true,
+   "gain_db": -26,
+   "fade_in": 3,
+   "fade_out": 1,
+   "segments": [
+    {
+     "from": "l19.speech_start - 0.2s",
+     "to": "l19.speech_end + 0.1s",
+     "db": -2
+    },
+    {
+     "from": "l28.speech_start - 0.2s",
+     "to": "l28.speech_end",
+     "db": -4
+    }
+   ]
+  },
+  {
+   "cue": "sfx_phone_call_end",
+   "at": "l02.speech_end + 1",
+   "until": "s03.start",
+   "db": -3,
+   "fade_out": 1
+  },
+  {
+   "cue": "sfx_s1b01_toothpick_tarmac",
+   "at": "s03.start + 0.3s",
+   "db": -9
+  },
+  {
+   "cue": "sfx_car_door_clunk",
+   "id": "#b2",
+   "at": "s03.start + 0.9s",
+   "db": -12
+  },
+  {
+   "cue": "sfx_motorbike_start_away",
+   "at": "s03.start + 1.5s",
+   "len": "0.8s",
+   "db": -6,
+   "fade_out": 3
+  },
+  {
+   "cue": "sfx_boots_concrete_shift",
+   "id": "#b2",
+   "at": "s03.start + 1.9s",
+   "until": "s04.start",
+   "db": -8,
+   "fade_out": 1
+  },
+  {
+   "cue": "sfx_boots_stairs_up",
+   "kind": "bed",
+   "from": "s04.start",
+   "to": "l06.speech_end + 4",
+   "loop": true,
+   "db": -14,
+   "filter": {
+    "lowpass_hz": 3000
+   },
+   "trim": "2*len(sfx_boots_stairs_up) - (l06.speech_end + 4 - s04.start)",
+   "fade_in": 6,
+   "fade_out": 2,
+   "segments": [
+    {
+     "from": "s04.start",
+     "to": "l06.speech_end + 4 - len(sfx_boots_stairs_up)",
+     "db": -10
+    }
+   ]
+  },
+  {
+   "cue": "sfx_fist_wooden_door",
+   "at": "s08.start - 2",
+   "db": -4
+  },
+  {
+   "cue": "sfx_bolt_rattle",
+   "at": "l08.speech_end + 3",
+   "until": "s11.start",
+   "db": -12,
+   "fade_out": 4
+  },
+  {
+   "cue": "sfx_boots_concrete_shift",
+   "id": "#b5a",
+   "at": "l14.speech_end + 0.3s",
+   "len": "0.6s",
+   "db": -19,
+   "filter": {
+    "lowpass_hz": 2500
+   },
+   "fade_out": 4
+  },
+  {
+   "cue": "sfx_bed_creak_petals",
+   "at": "l14.speech_end + 1.2s",
+   "until": "s18.start",
+   "fade_out": 3
+  },
+  {
+   "cue": "sfx_dog_far",
+   "at": "s18.start + 0.5s",
+   "len": "1.0s",
+   "db": -20,
+   "fade_out": 6
+  },
+  {
+   "cue": "sfx_phone_set_down_sheet",
+   "at": "l18.speech_end + 1",
+   "len": "0.4s",
+   "db": -19,
+   "fade_out": 3
+  },
+  {
+   "cue": "sfx_car_approach_idle",
+   "at": "s22.start",
+   "trim": "3.5s",
+   "len": "1.4s",
+   "db": -8,
+   "filter": {
+    "lowpass_hz": 2500
+   },
+   "fade_in": 3,
+   "fade_out": 4
+  },
+  {
+   "cue": "sfx_car_door_clunk",
+   "id": "#b7",
+   "at": "s22.start + 1.2s",
+   "db": -20,
+   "filter": {
+    "lowpass_hz": 2500
+   }
+  },
+  {
+   "cue": "sfx_car_pull_away",
+   "at": "s22.start + 1.4s",
+   "trim": "1.2s",
+   "until": "s23.start + 1.0s",
+   "db": -14,
+   "filter": {
+    "lowpass_hz": 2500
+   },
+   "fade_out": 12
+  },
+  {
+   "cue": "sfx_keys_on_stairs",
+   "at": "s23.start",
+   "trim": "2.0s",
+   "until": "s24.start - 8",
+   "db": -26,
+   "filter": {
+    "lowpass_hz": 3500
+   },
+   "fade_in": 4,
+   "fade_out": 2,
+   "segments": [
+    {
+     "from": "s23.start + 1.0s",
+     "db": 4
+    },
+    {
+     "from": "s23.start + 2.0s",
+     "db": 8
+    }
+   ]
+  },
+  {
+   "cue": "sfx_hasp_tear",
+   "at": "s24.start - 8",
+   "db": -9
+  },
+  {
+   "cue": "sfx_padlock_knock",
+   "at": "s24.start + 1.0s",
+   "db": -12,
+   "fade_out": 3
+  },
+  {
+   "cue": "sfx_door_hinge_wood",
+   "at": "s26.start",
+   "db": -13,
+   "fade_out": 6
+  },
+  {
+   "cue": "sfx_keyring_chink",
+   "at": "s26.start + 0.8s",
+   "db": -10
+  },
+  {
+   "cue": "sfx_glass_bangles_chink",
+   "id": "#b9",
+   "at": "s26.start + 1.4s",
+   "len": "0.6s",
+   "db": -16,
+   "fade_out": 4
+  },
+  {
+   "cue": "sfx_s1b01_chair_scrape",
+   "at": "l21.split1_start + 2",
+   "db": -8,
+   "fade_out": 3
+  },
+  {
+   "cue": "sfx_zip_pocket",
+   "at": "s30.start",
+   "trim": "0.5s",
+   "until": "s31.start",
+   "db": 3,
+   "fade_out": 2
+  },
+  {
+   "cue": "sfx_s1b01_notebook_page",
+   "at": "s31.start",
+   "until": "s32.start",
+   "db": -6,
+   "fade_out": 2
+  },
+  {
+   "cue": "sfx_photo_print",
+   "at": "s32.start",
+   "trim": "1.6s",
+   "len": "0.6s",
+   "until": "s33.start",
+   "db": -1,
+   "fade_out": 3
+  },
+  {
+   "cue": "sfx_paper_fold_crinkle",
+   "at": "l28.split1_start - 4",
+   "len": "0.6s",
+   "db": -20,
+   "fade_out": 4
+  },
+  {
+   "cue": "sfx_glass_bangles_chink",
+   "id": "#b11",
+   "at": "l28.split1_start",
+   "len": "0.5s",
+   "db": -24,
+   "fade_out": 4
+  }
+ ],
+ "notes": [
+  "First edit (S13, 26 Nov). Lines split over shots (l08, l21, l22 twice, l26, l28) cut on the words S7 gave in shots.json edit_notes_for_episode_editor (copied as is into layout.cut_on_word). l29 plays on s15 after l13 (b5a hold on its move); l27 stays on s39 (S7 remap_notes).",
+  "Silences from the script, set as shot tails: tail.s10 24 (b4's 0.8 s after l08, the bolt rattle sits in it); tail.s36 24 (b10's 0.8 s hold after l23/l30, Mausi does not answer); tail.s41 15 (b11's 0.5 s room tone after l28, pulse already cut). lead.s08 12: the fist bang lands on the cut, before l07.",
+  "Camera moves overridden from S9's frames/review.json editor_notes: s01 custom 1.0 to 1.06 looking down (y -1), so the lit phone stays at about the frame's own 78-85 % instead of the push-in's 84-91 %; s27 push-in focus y 0.7 so the palms stay at about 68-79 %; s40 custom 1.12 to 1.16 shifted right (x 0.68 to 0.4) to crop the empty chair and bag at the picture-right edge (keeps about x 2-91 % of the frame at the start). Arithmetic from camera.ts, not checked on a rendered still.",
+  "The '4:10' time overlay on s18 (shots.json overlay, 'assembly only') is not drawn: the toolchain has no plot-overlay text layer yet (README 'Not verified'), as for s1e01's '1:40'.",
+  "Voice fx: l02, l10, l11 phone (Mausi on a phone); l19 through_door (low-pass 5 kHz, loudness matched). No landing reverb on l07, l09, l12 (no reverb chain in the toolchain; not attempted).",
+  "Levels: the cue sheet's level_db is read as a target peak, so point gain = level_db - the file's max_db (library manifest). Beds: the bedroom bed at 0 dB (file mean -46 dB), as in s1e01; other beds offset from it by the sheet's level difference. mus_bed_drone -24 dB (as s1e01), mus_tension_pulse -26 dB (sheet 2 dB under the drone).",
+  "Ducking: the beds are on the music bus, so the global ducking (-8 dB, toolchain default) takes them and both music cues down under every line (sheet: beds 6, drone 8, pulse 6). l19 and l28 get a further -2 / -4 dB segment on the bedroom bed and the pulse (sheet: 10 and 12 dB).",
+  "sfx_boots_stairs_up (6 s rising file) is looped once over b3 from s04 to just after l06: trimmed so the second pass ends on its loudest step at l06's end; the first pass runs 10 dB lower so the wrap back to the quiet start does not drop. Low-passed 3 kHz. Stops dead, then the fist bang.",
+  "b7 car and keys low-passed (2.5 / 3.5 kHz) for the bedroom side; the keys rise in three 4 dB steps over s23 and stop 8 frames before s24, where the hasp crack (and the pulse) come in over the cut.",
+  "Dropped as optional on the cue sheet: the faint bangle chink with the print in b10 and the notebook tap on the photograph in b11 (b11 has no gap around l24 wider than 8 frames).",
+  "The paper crinkle and the bangle chink on l28 start in the pause between its two sentences, at about the s40/s41 cut; they run a little under 'अपने' / 'With' at -20 / -24 dB.",
+  "Nothing in this mix has been listened to; levels and placements are by measurement and arithmetic only.",
+  "OPEN (first edit, 26 Nov): en subs c026 (l16 'You're the one who put the lock on.', 35 graphemes) reads at 18.2 graphemes/s and fails build_subs validation, so assemble.sh exits 1. The cue starts on l16's first speech (frame 1831) and can hold only to 2 frames before 'Even' (1889), because the take's pause between the sentences is about 0.4 s; it needs 62 frames and gets 56. No edit.json key moves a cue start or a within-line split (layout gaps, tails and cut-on-word act between lines or at cuts), so this needs a longer pause in the en l16 take (S10), a shorter first sentence (writer), or a subtitle split override (toolsmith). hi passes."
+ ],
+ "shots": {
+  "s01": {
+   "move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.0,
+     "x": 0,
+     "y": 0
+    },
+    "to": {
+     "scale": 1.06,
+     "x": 0,
+     "y": -1.0
+    }
+   }
+  },
+  "s27": {
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.25,
+    "focus": {
+     "x": 0.5,
+     "y": 0.7
+    }
+   }
+  },
+  "s40": {
+   "move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.12,
+     "x": 0.68,
+     "y": 0
+    },
+    "to": {
+     "scale": 1.16,
+     "x": 0.4,
+     "y": 0
+    }
+   }
+  }
+ }
+}

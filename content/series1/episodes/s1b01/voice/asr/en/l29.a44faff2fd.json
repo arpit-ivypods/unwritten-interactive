@@ -1,0 +1,219 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,060"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 60
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,060",
+				"to": "00:00:00,090"
+			},
+			"offsets": {
+				"from": 60,
+				"to": 90
+			},
+			"text": " I"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,090",
+				"to": "00:00:00,480"
+			},
+			"offsets": {
+				"from": 90,
+				"to": 480
+			},
+			"text": " told"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,480",
+				"to": "00:00:00,970"
+			},
+			"offsets": {
+				"from": 480,
+				"to": 970
+			},
+			"text": " you,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,970",
+				"to": "00:00:01,410"
+			},
+			"offsets": {
+				"from": 970,
+				"to": 1410
+			},
+			"text": " didn't"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,410",
+				"to": "00:00:01,980"
+			},
+			"offsets": {
+				"from": 1410,
+				"to": 1980
+			},
+			"text": " I?"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,980",
+				"to": "00:00:02,200"
+			},
+			"offsets": {
+				"from": 1980,
+				"to": 2200
+			},
+			"text": " It"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,200",
+				"to": "00:00:02,530"
+			},
+			"offsets": {
+				"from": 2200,
+				"to": 2530
+			},
+			"text": " was"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,530",
+				"to": "00:00:02,640"
+			},
+			"offsets": {
+				"from": 2530,
+				"to": 2640
+			},
+			"text": " a"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,640",
+				"to": "00:00:03,180"
+			},
+			"offsets": {
+				"from": 2640,
+				"to": 3180
+			},
+			"text": " lie,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,180",
+				"to": "00:00:03,300"
+			},
+			"offsets": {
+				"from": 3180,
+				"to": 3300
+			},
+			"text": " so"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,300",
+				"to": "00:00:03,360"
+			},
+			"offsets": {
+				"from": 3300,
+				"to": 3360
+			},
+			"text": " I"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,360",
+				"to": "00:00:03,900"
+			},
+			"offsets": {
+				"from": 3360,
+				"to": 3900
+			},
+			"text": " will"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,900",
+				"to": "00:00:03,930"
+			},
+			"offsets": {
+				"from": 3900,
+				"to": 3930
+			},
+			"text": " check"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,930",
+				"to": "00:00:04,080"
+			},
+			"offsets": {
+				"from": 3930,
+				"to": 4080
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,080",
+				"to": "00:00:04,380"
+			},
+			"offsets": {
+				"from": 4080,
+				"to": 4380
+			},
+			"text": " wrist"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,380",
+				"to": "00:00:04,900"
+			},
+			"offsets": {
+				"from": 4380,
+				"to": 4900
+			},
+			"text": " myself."
+		}
+	]
+}

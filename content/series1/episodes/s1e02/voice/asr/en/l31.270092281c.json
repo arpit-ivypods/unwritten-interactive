@@ -1,0 +1,164 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,060"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 60
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,060",
+				"to": "00:00:00,260"
+			},
+			"offsets": {
+				"from": 60,
+				"to": 260
+			},
+			"text": " If"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,260",
+				"to": "00:00:00,590"
+			},
+			"offsets": {
+				"from": 260,
+				"to": 590
+			},
+			"text": " you"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,590",
+				"to": "00:00:01,000"
+			},
+			"offsets": {
+				"from": 590,
+				"to": 1000
+			},
+			"text": " were"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,000",
+				"to": "00:00:01,560"
+			},
+			"offsets": {
+				"from": 1000,
+				"to": 1560
+			},
+			"text": " her,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,560",
+				"to": "00:00:01,750"
+			},
+			"offsets": {
+				"from": 1560,
+				"to": 1750
+			},
+			"text": " you"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,750",
+				"to": "00:00:02,100"
+			},
+			"offsets": {
+				"from": 1750,
+				"to": 2100
+			},
+			"text": " would"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,100",
+				"to": "00:00:02,260"
+			},
+			"offsets": {
+				"from": 2100,
+				"to": 2260
+			},
+			"text": " not"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,260",
+				"to": "00:00:02,510"
+			},
+			"offsets": {
+				"from": 2260,
+				"to": 2510
+			},
+			"text": " hand"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,510",
+				"to": "00:00:02,630"
+			},
+			"offsets": {
+				"from": 2510,
+				"to": 2630
+			},
+			"text": " me"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,630",
+				"to": "00:00:02,700"
+			},
+			"offsets": {
+				"from": 2630,
+				"to": 2700
+			},
+			"text": " a"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,700",
+				"to": "00:00:03,080"
+			},
+			"offsets": {
+				"from": 2700,
+				"to": 3080
+			},
+			"text": " name."
+		}
+	]
+}

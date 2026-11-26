@@ -1,0 +1,98 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,130"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 130
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,130",
+				"to": "00:00:00,590"
+			},
+			"offsets": {
+				"from": 130,
+				"to": 590
+			},
+			"text": " Mossy"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,590",
+				"to": "00:00:01,420"
+			},
+			"offsets": {
+				"from": 590,
+				"to": 1420
+			},
+			"text": " first."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,420",
+				"to": "00:00:01,770"
+			},
+			"offsets": {
+				"from": 1420,
+				"to": 1770
+			},
+			"text": " Rekha"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,770",
+				"to": "00:00:01,990"
+			},
+			"offsets": {
+				"from": 1770,
+				"to": 1990
+			},
+			"text": " can"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,990",
+				"to": "00:00:02,640"
+			},
+			"offsets": {
+				"from": 1990,
+				"to": 2640
+			},
+			"text": " wait."
+		}
+	]
+}

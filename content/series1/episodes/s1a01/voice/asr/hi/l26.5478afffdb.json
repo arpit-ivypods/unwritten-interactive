@@ -1,0 +1,142 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,060"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 60
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,060",
+				"to": "00:00:00,530"
+			},
+			"offsets": {
+				"from": 60,
+				"to": 530
+			},
+			"text": " पुडिया"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,530",
+				"to": "00:00:00,780"
+			},
+			"offsets": {
+				"from": 530,
+				"to": 780
+			},
+			"text": " आप"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,780",
+				"to": "00:00:01,170"
+			},
+			"offsets": {
+				"from": 780,
+				"to": 1170
+			},
+			"text": " बनाये"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,170",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 1170,
+				"to": 2000
+			},
+			"text": " दामाज़ी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,000",
+				"to": "00:00:02,480"
+			},
+			"offsets": {
+				"from": 2000,
+				"to": 2480
+			},
+			"text": " चोटी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,480",
+				"to": "00:00:02,800"
+			},
+			"offsets": {
+				"from": 2480,
+				"to": 2800
+			},
+			"text": " की"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,800",
+				"to": "00:00:03,200"
+			},
+			"offsets": {
+				"from": 2800,
+				"to": 3200
+			},
+			"text": " पहली"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,200",
+				"to": "00:00:03,700"
+			},
+			"offsets": {
+				"from": 3200,
+				"to": 3700
+			},
+			"text": " शादी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,700",
+				"to": "00:00:04,000"
+			},
+			"offsets": {
+				"from": 3700,
+				"to": 4000
+			},
+			"text": " है"
+		}
+	]
+}

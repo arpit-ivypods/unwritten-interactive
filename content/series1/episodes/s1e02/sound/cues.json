@@ -1,0 +1,173 @@
+{
+  "episode_id": "s1e02",
+  "series_id": "series1",
+  "status": "planned",
+  "status_note": "Cue sheet by S11. Nothing generated here. Library cues come from content/series1/sound/library.json (generated once by the separate runner and shared by both language cuts). The only possible one-off is a contingency, generated only if Kiran's recorded in-breath fails voice review.",
+  "written_by": "S11 Sound designer",
+  "date": "2026-11-26",
+  "governing": ["D-009", "D-011 (reuse rules)", "D-014", "D-0M2", "D-0M4", "D-018"],
+  "sources": [
+    "content/series1/episodes/s1e02/script.hi.json (beats, sfx_notes, music_note)",
+    "content/series1/episodes/s1e02/script.en.json (same beat and line ids)",
+    "content/series1/sound/library.json"
+  ],
+  "timebase": "Anchored to beat ids, line ids and the silences in each beat, not to seconds. No shots.json exists yet, and under D-014 rule 6 and D-0M2 shots follow the measured voice, so S13 turns these anchors into times from each language's own timeline. One cue sheet serves both the Hindi and English cuts.",
+  "anchor_vocabulary": {
+    "head": "start of the beat",
+    "tail": "end of the beat (the cut)",
+    "silence_before / silence_after": "the beat's silent_seconds stretch on the side the script gives",
+    "after:lNN / under:lNN / before:lNN": "relative to the measured speech of that line"
+  },
+  "counts": {
+    "library_cues_used": 14,
+    "one_off_cues_to_generate": 0,
+    "one_off_contingency_cues": 1,
+    "placements": 20
+  },
+  "library_cues_used": [
+    {
+      "cue_id": "amb_bedroom_night",
+      "placements": [
+        {"beat": "b1", "from": "head", "to": "tail of b7", "level": "bed, about -28 dB under dialogue", "note": "Continuous across b1 to b7. No fan. Crickets and lamp hum carry b1 to b3 alone with breath and clinks (no music there)."},
+        {"beat": "b10", "from": "head", "to": "tail", "level": "bed", "note": "Pulled down a further 6 dB from l29 onward."},
+        {"beat": "b13", "from": "head", "to": "in-breath", "level": "ducked under l30, back to bed level for the hold", "note": "Cut hard with everything else on the in-breath (see mix.music_in_out)."}
+      ]
+    },
+    {
+      "cue_id": "amb_lane_night",
+      "placements": [
+        {"beat": "b9", "from": "head (silence_before)", "to": "tail", "level": "open-air bed, sodium buzz audible in the 1.0 s silence", "note": "Duck 6 dB under l23 to l27 so all three outcomes in l24 and l25 sit clearly above it."},
+        {"beat": "b12", "from": "head", "to": "tail", "level": "bed", "note": "The 2.5 s still has no line. The lane is heard at full bed level here, the only time it is."}
+      ]
+    },
+    {
+      "cue_id": "sfx_dog_far",
+      "placements": [
+        {"beat": "b1", "anchor": "silence_after (set-up 2)", "level": "very low, behind the crickets", "note": "Once in the episode, never looped. Use the first two barks only and fade out before l02."}
+      ]
+    },
+    {
+      "cue_id": "sfx_truck_far_pass",
+      "placements": [
+        {"beat": "b9", "anchor": "silence_before, peaking there and fading out by the start of l24", "level": "low", "note": "The script's 'far truck on a highway'. Must be gone before l24; never under the drill."}
+      ]
+    },
+    {
+      "cue_id": "sfx_bangle_slide_off",
+      "placements": [
+        {"beat": "b2", "anchor": "silence_after (set-up 2)", "note": "Three clinks, one for each bangle laid on the sheet. Cut the file after the third clink: silence as his fingers close on the fourth."},
+        {"beat": "b4", "anchor": "after:l11 (set-up 7 and its silence_after)", "level": "3 dB softer than b2", "note": "The three soft clinks as she slides them back on, red first. Reuse of the same three clinks per the library note."}
+      ]
+    },
+    {
+      "cue_id": "sfx_steel_glass_tray",
+      "placements": [
+        {"beat": "b3", "anchor": "lift: just before l03 (set-up 1)", "note": "First half of the file: the small scrape as she lifts the glass."},
+        {"beat": "b3", "anchor": "set-down: after:l04, at the head of the 1.0 s silence", "note": "Second half: the soft clink as he sets it back on the tray. The glass is not touched again."}
+      ]
+    },
+    {
+      "cue_id": "sfx_phone_sim_chime",
+      "placements": [
+        {"beat": "b4", "anchor": "set-up 6 (the SIM insert), between l09 and l10", "note": "Whole file: tray click, short pause, network chime. Fits the overlay of the network returning."}
+      ]
+    },
+    {
+      "cue_id": "sfx_bed_creak_petals",
+      "placements": [
+        {"beat": "b6", "anchor": "just before l19 (set-up 4)", "level": "faint", "note": "The frame creak as he leans in. Use the creak and only a trace of the petal rustle. Nothing under the fist insert after l19."}
+      ]
+    },
+    {
+      "cue_id": "sfx_phone_vibrate",
+      "placements": [
+        {"beat": "b10", "anchor": "silence_before (set-up 1, phone lights)", "note": "Two buzzes on the sheet. The second buzz is cut short by the speaker tap."}
+      ]
+    },
+    {
+      "cue_id": "sfx_phone_set_down_sheet",
+      "placements": [
+        {"beat": "b10", "anchor": "end of silence_before, set-up 2, immediately before l28", "note": "Use the second part only (the fingertip tap on the glass) as the speaker press. Mausi's voice starts after it."}
+      ]
+    },
+    {
+      "cue_id": "sfx_zip_pocket",
+      "placements": [
+        {"beat": "b10", "anchor": "under:l28 from 'Bag की' (set-up 3)", "level": "very soft, at least 12 dB under Mausi's voice, dry and panned slightly away from the phone", "note": "A noted departure from bible b10: the zip is heard by the viewer, not by Mausi. The dabba lid is not opened, so no dabba sound."}
+      ]
+    },
+    {
+      "cue_id": "sfx_boots_concrete_shift",
+      "placements": [
+        {"beat": "b12", "anchor": "mid-still", "level": "low, with outdoor air", "note": "The two shapes straightening up from the bike. Not in the library's used_in for s1e02; reused rather than adding a one-off. Optional: drop it if the still reads without it."}
+      ]
+    },
+    {
+      "cue_id": "mus_bed_drone",
+      "placements": [
+        {"beat": "b4", "from": "head of b4 (under l05)", "to": "head of b10 (crossfade into mus_tension_pulse)", "level": "barely there, about -30 dB, ducked under every line", "note": "Discard the first ~4 s fade-in; loop with a 2 s crossfade if the cut outruns the file. Continues through b5 to b7."},
+        {"beat": "b9", "from": "head", "to": "tail", "level": "+2 dB over its bedroom level for the lane (the lift), then back down", "note": "Still ducked under l23 to l27."}
+      ]
+    },
+    {
+      "cue_id": "mus_tension_pulse",
+      "placements": [
+        {"beat": "b10", "from": "head (phone lights)", "to": "the in-breath in b13", "level": "low; ducked right down under l29 and l30", "note": "Enters under the first buzz with a 2 s crossfade from mus_bed_drone (same key and register). Carries through b12 at its normal low level. Discard the first ~4 s."}
+      ]
+    }
+  ],
+  "library_cues_listed_for_s1e02_but_not_used": [
+    {"cue_id": "sfx_car_door_clunk", "reason": "b12 shows Billu's hand on the car door; the door is not shut, and the library says the clunk is for a door shut only. Adding it would also imply he is leaving, which the still does not say."}
+  ],
+  "one_off_cues": [],
+  "contingency_cues": [
+    {
+      "cue_id": "sfx_s1e02_b13_inbreath",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "generate": "only_if_voice_breath_fails",
+      "trigger": "Kiran's recorded in-breath (owned by the voice take, library episode_specific_not_in_library) fails voice review: missing, voices a word, or reads as a gasp. Plan 7.8 and D-011: one take.",
+      "prompt": "A young woman's single quiet in-breath through parted lips, about to speak but not speaking, close and dry in a silent room. One soft breath in, no exhale, no voice, no word.",
+      "planned_duration_s": 1.2,
+      "loop": false,
+      "prompt_influence": 0.6,
+      "placement": {"beat": "b13", "anchor": "second half of silence_after (set-up 3), the last sound before the cut"}
+    }
+  ],
+  "voice_owned_sounds": [
+    {"beat": "b13", "sound": "Kiran's in-breath, close and dry, the last sound", "owner": "voice take (S10)"},
+    {"beat": "b10", "line": "l28", "sound": "Mausi's [chuckles]", "owner": "voice take"}
+  ],
+  "mix": {
+    "dialogue_first": true,
+    "loudness_target": "-14 LUFS integrated, -1 dBTP, tolerance +/-0.5 LU (D-0M4). Each language cut mastered separately from its own timeline.",
+    "music_in_out": [
+      "b1 to b3: no music. Bed, breath, the clinks and the tray only.",
+      "In: mus_bed_drone at the head of b4, barely audible.",
+      "b9 (lane): drone lifts about 2 dB; drops back at the cut to b10.",
+      "b10 head: 2 s crossfade from mus_bed_drone into mus_tension_pulse as the phone lights.",
+      "b10 l29 and b13 l30: drone/pulse and both ambiences ducked right down (pulse about -12 dB from its level, beds about -6 dB) so the locked question 'दामाद जी ने दूध पी लिया, बेटा?' and its repeat are fully intelligible.",
+      "b12: pulse at its low level over the lane bed (no line).",
+      "Out: on Kiran's in-breath in b13, everything (music, bedroom bed) cuts to silence with a 10 ms fade; the breath sits alone, then the question card in silence. No sting."
+    ],
+    "ducking": [
+      "All dialogue: music ducks about 8 dB under speech, beds about 4 dB, with 150 ms attack and 400 ms release.",
+      "b9 l23 to l27 (Mausi on Billu's phone): lane bed -6 dB extra; keep all three outcomes in l24 and l25 above it.",
+      "b10 l28: sfx_zip_pocket stays at least 12 dB under Mausi.",
+      "b10 l29, b13 l30: the deep duck in music_in_out."
+    ],
+    "filters": [
+      "b9 l23, l24, l25, l27 (Mausi through Billu's phone in the lane): band-pass about 300-3400 Hz, light saturation, mono, dry; wide enough that every consonant survives; fully voiced, never whispered. Processing on the voice take, not a cue.",
+      "b10 l28, l29 and b13 l30 (Mausi on speaker in the room): lighter phone colour, about 200-5000 Hz band-pass with light saturation plus a short small-room reflection so she sits on the sheet, not in the ear. Still fully voiced.",
+      "No fan anywhere in this episode."
+    ],
+    "silences": "Every beat silence carries only the bed and the effect placed in it; S13 must not fill silences with music in b1 to b3.",
+    "timing": "Point effects are placed against the measured voice and edited shot lengths (D-014 rule 6, D-0M2); the anchors above are relative to lines, so they hold if lines run long."
+  },
+  "fallback": "If a music cue is missing after retries (plan 7.8): drop mus_tension_pulse and run mus_bed_drone alone from b4 to the in-breath; if both are missing, raise amb_bedroom_night 3 dB from b4 and log it in docs/morning-report.md. If any library effect is missing, the beat plays on its bed alone; none is a locked story beat except the b2 clinks, which fall back to a slice of sfx_glass_bangles_chink.",
+  "not_verified": [
+    "Nothing here has been generated or heard.",
+    "No shots.json or measured voice exists yet, so no placement has a time.",
+    "The JSON was parsed with python3 after writing (see S11 report); the library cue ids were checked against library.json by script."
+  ]
+}

@@ -1,0 +1,524 @@
+{
+  "episode_id": "s2b01",
+  "series_id": "series2",
+  "status": "planned",
+  "status_note": "Planned only. Nothing generated, nothing listened to. A separate runner generates the one-off cues below once each through the connector (D-009 route b) and records ids, probed lengths and credits in this folder's manifest.jsonl; library cues come from content/series2/sound/ and are not generated again here (D-011 reuse).",
+  "authority": [
+    "D-011 reuse: library cues by cue_id, one-offs only for sounds the library lacks.",
+    "D-009 route b (ElevenLabs connector, eleven_text_to_sound_v3 for effects; music from the library's music_v2_5 cue).",
+    "D-014 / D-0M2: shots follow measured voice; every placement is anchored to a beat, shot or line id, not to seconds.",
+    "D-0M4: -14 LUFS integrated, -1 dBTP, +/-0.5 LU.",
+    "D-019: s2b01 critic re-run passed Gate 2 (8.3, review-notes.json critic_rerun). Its must-fix (the cloth rustle moved from the b11 head to between l24 and l25) is already in both scripts and is what this sheet places. The writer notes that the mechanical script checks were not run in that session; that does not change any placement here."
+  ],
+  "sources": [
+    "content/series2/episodes/s2b01/script.hi.json (beats, silent_seconds, sfx_notes, music_note)",
+    "content/series2/episodes/s2b01/script.en.json (same beat and line ids, same speakers, same silent_seconds, identical sfx_notes and music_note: checked by script in this session)",
+    "content/series2/episodes/s2b01/review-notes.json (critic_rerun must-fix on the b10 rustle)",
+    "content/series2/sound/library.json (cues, mix.phone_filters.handset_on_wool, one_offs_left_to_episode_sheets)",
+    "content/series2/episodes/s2e01/sound/cues.json (sheet format)"
+  ],
+  "timebase": "Line and beat anchors only. No voice is measured yet; S13 converts anchors to seconds from the measured timeline. One sheet serves the Hindi and English cuts (target 124.5 s and 120.1 s): line ids l01 to l27, speakers and beat silences are the same in both.",
+  "library_cues": [
+    {
+      "cue_id": "amb_talkies_lobby",
+      "where": "b1 to b5",
+      "gain_db": -24,
+      "notes": "Night use: base plus the night layers lyr_night_crickets and sfx_wall_clock_tick (library time_layers.night). The bare-bulb hum in the base carries the dressing in b1 to b4 (no music there). Cuts on the b5 to b6 picture cut."
+    },
+    {
+      "cue_id": "lyr_night_crickets",
+      "where": "b1 to b5 (through the lobby doors), b6 (wide), b7 to b11 (very low)",
+      "gain_db": -32,
+      "notes": "Per-location gain: about -32 under the lobby (outside the doors); up to about -26 at the crossing in b6, 'wider and emptier than the lobby'; back to about -32 for b7 to b11 ('very low'). Pulled to near nothing in the 1.5 s before l24 (b10: 'bulb hum only') and under l25 and l27."
+    },
+    {
+      "cue_id": "sfx_wall_clock_tick",
+      "where": "b1 to b5",
+      "gain_db": -30,
+      "notes": "Slow tick under the lobby; the clock is in frame in b5 (a quarter to twelve). Steady, never accented. Out with the lobby bed on the b5 to b6 cut."
+    },
+    {
+      "cue_id": "amb_crossing_stall",
+      "where": "b6 to b11 (including b8 shot 1 on the godown plate)",
+      "gain_db": -26,
+      "notes": "Night: base plus lyr_night_crickets. b6 a little more open (signal-lamp buzz audible, the script asks for it). b7 to b11 low (about -28): the stall is shut, so if the take's kettle and coal tick read as a working stall, S13 low-passes or rides them down; no new generation. Stays under b8 shot 1 too: the godown is seen from across the track and the shutter is heard live and far (library amb_godown_night note), so amb_godown_night is NOT used in this episode. Ducks under l16 and right down under l25 and l27."
+    },
+    {
+      "cue_id": "sfx_cuff_chain_clink",
+      "where": "b1 shot 2",
+      "gain_db": -14,
+      "notes": "Once: the cuffs dropping into the pouch, then sfx_pouch_flap_snap, both finished before l01 ends; they can sit in a gap between l01's two sentences if the take has one, otherwise low under the second sentence."
+    },
+    {
+      "cue_id": "sfx_pouch_flap_snap",
+      "where": "b1 shot 2; b4 shot 1 (holster press stud, second use)",
+      "gain_db": -14,
+      "notes": "b1 as is, right after the clink. b4: the holster flap's press stud closing, pitched down about 1 semitone and a touch softer (-16), after s2b01_sfx_holster_wood_slide and before l07. Same leather-and-stud sound, so no new stud is generated."
+    },
+    {
+      "cue_id": "sfx_keypad_vibrate",
+      "where": "b5 shot 1 (optional)",
+      "gain_db": -24,
+      "notes": "A short burst (about 0.4 s), low-passed and without the wood (the handset is in her palm), under the start of the ring. First thing dropped if the 1.5 s feels crowded (library note: skip if the ring alone reads)."
+    },
+    {
+      "cue_id": "sfx_keypad_ring",
+      "where": "b5 shot 1",
+      "gain_db": -14,
+      "notes": "The shared series keypad tone, monophonic, one ring, trimmed to about 0.6 s and cut dead by sfx_keypad_key_click."
+    },
+    {
+      "cue_id": "sfx_keypad_key_click",
+      "where": "b5 shot 1",
+      "gain_db": -14,
+      "notes": "Her thumb on the key; cuts the ring. Followed at once by the record beep slice of s2b01_sfx_phone_taps_record_beep."
+    },
+    {
+      "cue_id": "lyr_phone_line_hiss",
+      "where": "b7 head to the end of l26 (b11), inside the handset chain",
+      "gain_db": -36,
+      "notes": "The open call, lower than the earpiece uses (library note). Runs continuously while the line is open, not only under the voices, so the call is felt in b8's 1.0 s of nothing and b10's near-silence; there it is the faintest thing in the mix. Stops dead at the end of l26 where sfx_dead_line_tone takes over."
+    },
+    {
+      "cue_id": "sfx_steps_gravel",
+      "where": "b6 shot 3 (live); b7 2.0 s silence (through the handset filter)",
+      "gain_db": -16,
+      "notes": "b6: in the 3.0 s hold after l14, walking away, fading to nothing by the b6 to b7 cut (start -16, out by the end). b7: a different slice of the same take through mix.phone_filters.handset_on_wool, about -20, ending before l15. Nothing at the stall itself crunches."
+    },
+    {
+      "cue_id": "sfx_far_dog",
+      "where": "b6 shot 1",
+      "gain_db": -26,
+      "notes": "One bark only (trim the second) in the 1.0 s wide silence before l14, far and echoing. Never under a line."
+    },
+    {
+      "cue_id": "sfx_knitting_needles",
+      "where": "b7 to b10",
+      "gain_db": -22,
+      "notes": "Soft from the b7 head (under the filtered footsteps and l15, lower under the phone voices, about -26). b9 shot 2 onwards: slowing (time-stretch the last 2 s of the loop or spaced single clicks). b10: sparse clicks in the 1.5 s before l24, then STOP, clean cut on a gap, at the laugh that opens l24. No needles after that."
+    },
+    {
+      "cue_id": "sfx_shutter_rattle_slam",
+      "where": "b8 shot 1, 2.5 s silence",
+      "gain_db": -16,
+      "notes": "Heard live and far across the track, NOT through the phone: low-passed and pushed back with distance reverb. Rattle compressed to about 1.2 s, the slam, the tail cut so the whole thing is dead at least 1.0 s before l16 (the second 1.0 s is bed and hiss only). Take the slam section of the take; s2b02 b5 reuses the rattle section of the same file."
+    },
+    {
+      "cue_id": "sfx_paper_slip",
+      "where": "b9 shot 3, the 0.8 s between l22 and l23",
+      "gain_db": -20,
+      "notes": "Through the handset filter, soft and short (the slip in his hand by the hidden phone); finished before l23's first syllable. Pick the cleanest 0.6 to 0.8 s of the take."
+    },
+    {
+      "cue_id": "sfx_dead_line_tone",
+      "where": "b11 shot 2 to the last frame",
+      "gain_db": -20,
+      "notes": "The seam sound into s2b02 b1 (same file, same pitch, no processing beyond the handset's small-speaker colour, so the two sides of the cut match). Full for the 1.0 s after l26, dropped to near silence (about -40) under l27, back faintly (about -28) for the 1.5 s hold; hard cut with the picture."
+    },
+    {
+      "cue_id": "mus_tension_note",
+      "where": "b5 shot 3 to the end of b6; b10 (the laugh) to the end of b11",
+      "gain_db": -20,
+      "notes": "Two uses of the library note, from different offsets in the 40 s file so the second is not heard as a restart. First: enters barely audible under l10 at the phone-into-pocket insert ('under the wiring'), ducked under every line, holds through the salute (l14) and fades out with the footsteps in b6's 3.0 s hold, gone by the b6 to b7 cut. Second: enters on the laugh at the head of l24, ducked under l24 and l25 (about -40 under l25), holds under the dead tone, hard cut to silence on the last frame. No sting, no swell on the reversal."
+    }
+  ],
+  "one_off_cues": [
+    {
+      "cue_id": "s2b01_sfx_palm_on_wrists",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 1.0,
+      "loop": false,
+      "prompt": "A soft, flat slap of a hand closing over two wrists and pressing them down onto a wooden desk: skin and cotton sleeve against skin, a dull muffled thump of forearms on wood. Close, small, a quiet room. One movement only. No voices, no metal, no music.",
+      "used_at": [
+        "b1 shot 1, the 1.0 s silent opening insert"
+      ],
+      "notes": "The hook. Lands early in the 1.0 s at about -14; nothing else under it except the lobby bed. Must read as wood and skin, not a blow. If the take is too hard, low-pass and take 3 dB off; do not generate again.",
+      "status": "generated"
+    },
+    {
+      "cue_id": "s2b01_sfx_uniform_dressing",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 4.0,
+      "loop": false,
+      "prompt": "Close and quiet, someone dressing another person in a stiff uniform: a leather belt pulled tight through a metal buckle with a short creak and a small buckle tick, the loose tail tucked into a leather loop; then stiff starched cotton cloth creasing as a shoulder seam is squared with two pats; then a starched shirt cuff folded back once with a crisp cloth crease. Small dry sounds with short pauses between them. No voices, no music.",
+      "used_at": [
+        "b2 shot 1 (belt and tail), in the 3.5 s silence",
+        "b2 shot 2 (starched cloth, shoulder seam), in the 3.5 s silence",
+        "b2 shot 3 (cuff folded back), the end of the silence and low under the start of l04"
+      ],
+      "notes": "Three moments from one generation: split at the pauses. Belt about -14, cloth -16, cuff -18 and only between words of l04 if it runs under it. If the take has no usable cuff fold, reuse a short slice of the cloth crease; do not generate again.",
+      "status": "generated"
+    },
+    {
+      "cue_id": "s2b01_sfx_pin_and_button",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 2.0,
+      "loop": false,
+      "prompt": "Very close: the tiny bright metallic click of a brass safety pin being opened on a medal, then after a pause a shirt button pushed through a stiff cotton pocket flap with a soft cloth pop. Two small sounds, quiet room. No voices, no music, no jingle.",
+      "used_at": [
+        "b3 shot 2, the pin click in the 1.0 s silent hold (between l05 and l06)",
+        "b3 shot 3, the button low under l06"
+      ],
+      "notes": "Two moments from one take, split at the pause. Pin click -16 (the hold is otherwise room tone and his stricken face). Button -22 under l06, between words. Do not add a medal tink (that is s2e02's one-off).",
+      "status": "generated"
+    },
+    {
+      "cue_id": "s2b01_sfx_holster_wood_slide",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 1.5,
+      "loop": false,
+      "prompt": "A small carved wooden toy pistol slid slowly into a stiff brown leather holster: a dry, hollow sliding rub of smooth wood against leather, ending in a soft seated bump. Close. Not metal: no click, no rattle, no gun sounds. No voices.",
+      "used_at": [
+        "b4 shot 1, the 0.8 s silence before l07"
+      ],
+      "notes": "About -14, then sfx_pouch_flap_snap (pitched down) as the press stud, both inside the 0.8 s and finished before l07. The library's sfx_holster_unbutton and sfx_wood_revolver_knock are an opening and a wood-on-wood knock, so neither fits this. Never metallic (library note on the wooden revolver).",
+      "status": "generated"
+    },
+    {
+      "cue_id": "s2b01_sfx_phone_taps_record_beep",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 2.0,
+      "loop": false,
+      "prompt": "Two soft fingertip taps on a smartphone glass screen, close and quiet; then a pause; then one short high electronic beep from a cheap old keypad mobile phone, a single clean tone about a fifth of a second long. No ringtone, no voices, no music.",
+      "used_at": [
+        "b5 shot 1: taps at the head of the 1.5 s silence (Nandini dialling off frame), before sfx_keypad_ring",
+        "b5 shot 1: the beep right after sfx_keypad_key_click, the last sound before l09"
+      ],
+      "notes": "Two moments from one take, split at the pause. Order in the 1.5 s: taps (-20), ring (with the optional vibrate under it), key click, beep (-16), then l09. If the beep comes back long or musical, keep its first 0.2 s; do not generate again.",
+      "status": "generated"
+    },
+    {
+      "cue_id": "s2b01_sfx_phone_into_pocket",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 1.5,
+      "loop": false,
+      "prompt": "A smartphone slid slowly down into the stiff cotton chest pocket of a starched shirt: a soft brushing cloth slide and a gentle settle, very close and quiet. No voices, no music, no tapping.",
+      "used_at": [
+        "b5 shot 3, low under l10"
+      ],
+      "notes": "About -22, between the two sentences of l10 if the take allows. This is the cue the mixed tension note enters on.",
+      "status": "generated"
+    },
+    {
+      "cue_id": "s2b01_sfx_pocket_mic_rustle",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 1.5,
+      "loop": false,
+      "prompt": "Heard from a phone microphone inside a shirt pocket: a hand pushing into the pocket and grabbing at it, loud close cotton cloth rustling and scraping right against the microphone, rough and muffled, then still. No voices, no music.",
+      "used_at": [
+        "b10, the 1.0 s silence between l24 and l25 (through the handset filter)"
+      ],
+      "notes": "The critic's must-fix: the search is heard starting before l25. Through mix.phone_filters.handset_on_wool, loud (about -14 before the filter) but clipped at the filter so it does not spike; fully settled before l25, with the hiss alone under l25. Listed as b11 in the library's one-off list; the critic re-run moved it to b10.",
+      "status": "generated"
+    }
+  ],
+  "placement_by_beat": [
+    {
+      "beat": "b1",
+      "bed": [
+        "amb_talkies_lobby",
+        "lyr_night_crickets",
+        "sfx_wall_clock_tick"
+      ],
+      "events": [
+        {
+          "cue_id": "s2b01_sfx_palm_on_wrists",
+          "anchor": "shot 1, early in the 1.0 s silence before l01"
+        },
+        {
+          "cue_id": "sfx_cuff_chain_clink",
+          "anchor": "shot 2, under or between the sentences of l01"
+        },
+        {
+          "cue_id": "sfx_pouch_flap_snap",
+          "anchor": "shot 2, right after the clink, finished before l01 ends"
+        }
+      ]
+    },
+    {
+      "beat": "b2",
+      "bed": [
+        "amb_talkies_lobby",
+        "lyr_night_crickets",
+        "sfx_wall_clock_tick"
+      ],
+      "events": [
+        {
+          "cue_id": "s2b01_sfx_uniform_dressing",
+          "anchor": "belt slice on shot 1, cloth slice on shot 2, cuff slice at shot 3 head, all in the 3.5 s before l04"
+        }
+      ]
+    },
+    {
+      "beat": "b3",
+      "bed": [
+        "amb_talkies_lobby",
+        "lyr_night_crickets",
+        "sfx_wall_clock_tick"
+      ],
+      "events": [
+        {
+          "cue_id": "s2b01_sfx_pin_and_button",
+          "anchor": "pin click in the 1.0 s hold after l05 (shot 2); button low under l06 (shot 3)"
+        }
+      ]
+    },
+    {
+      "beat": "b4",
+      "bed": [
+        "amb_talkies_lobby",
+        "lyr_night_crickets",
+        "sfx_wall_clock_tick"
+      ],
+      "events": [
+        {
+          "cue_id": "s2b01_sfx_holster_wood_slide",
+          "anchor": "shot 1, the 0.8 s before l07"
+        },
+        {
+          "cue_id": "sfx_pouch_flap_snap",
+          "anchor": "shot 1, end of the 0.8 s, as the holster stud, before l07"
+        }
+      ]
+    },
+    {
+      "beat": "b5",
+      "bed": [
+        "amb_talkies_lobby",
+        "lyr_night_crickets",
+        "sfx_wall_clock_tick"
+      ],
+      "events": [
+        {
+          "cue_id": "s2b01_sfx_phone_taps_record_beep",
+          "anchor": "taps slice at the head of the 1.5 s silence"
+        },
+        {
+          "cue_id": "sfx_keypad_vibrate",
+          "anchor": "optional short burst under the ring's start"
+        },
+        {
+          "cue_id": "sfx_keypad_ring",
+          "anchor": "one ring, about 0.6 s"
+        },
+        {
+          "cue_id": "sfx_keypad_key_click",
+          "anchor": "cuts the ring"
+        },
+        {
+          "cue_id": "s2b01_sfx_phone_taps_record_beep",
+          "anchor": "beep slice right after the click, before l09"
+        },
+        {
+          "cue_id": "s2b01_sfx_phone_into_pocket",
+          "anchor": "shot 3, low under l10"
+        },
+        {
+          "cue_id": "mus_tension_note",
+          "anchor": "enters barely audible under l10 at shot 3; ducked under l11, l12, l13"
+        }
+      ]
+    },
+    {
+      "beat": "b6",
+      "bed": [
+        "amb_crossing_stall",
+        "lyr_night_crickets (wider)"
+      ],
+      "events": [
+        {
+          "cue_id": "sfx_far_dog",
+          "anchor": "shot 1, one bark in the 1.0 s before l14"
+        },
+        {
+          "cue_id": "mus_tension_note",
+          "anchor": "held, ducked under l14; fades with the footsteps, gone by the b6 to b7 cut"
+        },
+        {
+          "cue_id": "sfx_steps_gravel",
+          "anchor": "shot 3, the 3.0 s hold after l14, walking away and fading"
+        }
+      ]
+    },
+    {
+      "beat": "b7",
+      "bed": [
+        "amb_crossing_stall",
+        "lyr_night_crickets (very low)"
+      ],
+      "events": [
+        {
+          "cue_id": "lyr_phone_line_hiss",
+          "anchor": "from the b7 head, the call open, inside the handset chain"
+        },
+        {
+          "cue_id": "sfx_knitting_needles",
+          "anchor": "soft from the b7 head"
+        },
+        {
+          "cue_id": "sfx_steps_gravel",
+          "anchor": "the 2.0 s before l15, through the handset filter, ending before l15"
+        }
+      ]
+    },
+    {
+      "beat": "b8",
+      "bed": [
+        "amb_crossing_stall",
+        "lyr_night_crickets (very low)",
+        "lyr_phone_line_hiss"
+      ],
+      "events": [
+        {
+          "cue_id": "sfx_shutter_rattle_slam",
+          "anchor": "shot 1, first 1.5 s of the 2.5 s silence, live and far; dead at least 1.0 s before l16"
+        },
+        {
+          "cue_id": "sfx_knitting_needles",
+          "anchor": "continue very low (about -30) under b8; no scripted stop here (see editor_notes)"
+        }
+      ]
+    },
+    {
+      "beat": "b9",
+      "bed": [
+        "amb_crossing_stall",
+        "lyr_night_crickets (very low)",
+        "lyr_phone_line_hiss"
+      ],
+      "events": [
+        {
+          "cue_id": "sfx_knitting_needles",
+          "anchor": "shot 2 onwards, slowing under l19 and after"
+        },
+        {
+          "cue_id": "sfx_paper_slip",
+          "anchor": "shot 3, the 0.8 s between l22 and l23, through the handset filter"
+        }
+      ]
+    },
+    {
+      "beat": "b10",
+      "bed": [
+        "amb_crossing_stall (bulb hum only in the 1.5 s before l24; right down under l25)",
+        "lyr_phone_line_hiss (faintest)"
+      ],
+      "events": [
+        {
+          "cue_id": "sfx_knitting_needles",
+          "anchor": "sparse in the 1.5 s before l24; STOP, clean cut, on the laugh at l24's head"
+        },
+        {
+          "cue_id": "mus_tension_note",
+          "anchor": "enters on the laugh at l24's head; ducked under l24 and l25"
+        },
+        {
+          "cue_id": "s2b01_sfx_pocket_mic_rustle",
+          "anchor": "the 1.0 s between l24 and l25, through the handset filter, settled before l25"
+        }
+      ]
+    },
+    {
+      "beat": "b11",
+      "bed": [
+        "amb_crossing_stall (low; right down under l27)",
+        "lyr_phone_line_hiss (until the end of l26 only)"
+      ],
+      "events": [
+        {
+          "cue_id": "sfx_dead_line_tone",
+          "anchor": "from the end of l26: full for the 1.0 s, near silence under l27, faint in the 1.5 s hold, hard cut with the picture"
+        },
+        {
+          "cue_id": "mus_tension_note",
+          "anchor": "held low under the dead tone, about -40 under l27; hard cut to silence on the last frame"
+        }
+      ]
+    }
+  ],
+  "mix": {
+    "dialogue_first": true,
+    "loudness_target": "-14 LUFS integrated, -1 dBTP, +/-0.5 LU (D-0M4)",
+    "starting_gains_db": {
+      "music": -18,
+      "music_duck_under_dialogue": -8,
+      "ambience": -24,
+      "ambience_layer": -28,
+      "sfx": -10
+    },
+    "ducking": [
+      "Music ducks -8 dB under every line (library default); the tension note sits lower than that (about -20 before ducking) because both uses are 'barely audible'; about -40 under l25 and l27.",
+      "Beds duck under every phone-filtered line (l15 to l24, l26) so the narrow band is never competing with full-band room tone; the crossing bed goes right down under l25 and l27 (sfx_notes b10, b11).",
+      "b10's 1.5 s before l24: bulb hum, the faint hiss and sparse needles only; crickets pulled to near nothing.",
+      "Effects under lines (cuff clink, button, cuff fold, phone into pocket, needles) sit at -18 or lower and between words where the take allows."
+    ],
+    "filters": {
+      "phone_lines": [
+        "l15",
+        "l16",
+        "l17",
+        "l18",
+        "l19",
+        "l20",
+        "l21",
+        "l23",
+        "l24",
+        "l26"
+      ],
+      "phone": "Library mix.phone_filters.handset_on_wool: narrow band plus a short hollow tin-shed echo (the godown heard through Pushpa's handset on speaker), wide enough that every consonant survives. lyr_phone_line_hiss under it. The same chain carries the b7 footsteps, the b9 paper slip and the b10 pocket rustle. l24's laugh may distort a little in the chain (light extra saturation on the laugh only); the words of l24 stay clean.",
+      "dry_lines": "l01 to l14 (the lobby and the crossing) and the stall's own voices l22, l25, l27 are dry. l22 is Nandini's murmur as she writes: dry, close, low. l25 and l27 are fully clear over a ducked bed."
+    },
+    "music_in_out": [
+      {
+        "cue_id": "mus_tension_note",
+        "in": "b5 shot 3, under l10 (phone into pocket)",
+        "out": "fades with the footsteps in b6's 3.0 s hold, gone by the b6 to b7 cut"
+      },
+      {
+        "cue_id": "mus_tension_note",
+        "in": "b10, the laugh at the head of l24",
+        "out": "hard cut to silence on the last frame of b11"
+      }
+    ],
+    "no_music": "b1 to b4 (the dressing plays in room tone), b5 up to l10, and b7 to b9 (the phone and the stall carry the sting so it sounds real).",
+    "hard_rules": [
+      "No music in b1 to b4.",
+      "No train anywhere in this episode (no horn, no rumble; the crossing base carries none).",
+      "The revolver is wood: no metallic gun foley in b4.",
+      "No shutter sound before b8 (b7 has none, D-016 direction 13).",
+      "The shutter is live and far, not through the phone, and completely dead a full 1.0 s before l16.",
+      "The b9 paper slip is soft and finished before l23 starts.",
+      "The needles stop clean, no fade, on the laugh at l24's head.",
+      "The pocket rustle is between l24 and l25 and settled before l25: nothing said at the stall may read as what gave him away.",
+      "Nothing under l26 or just before it but the faint hiss and the ducked bed.",
+      "The dead tone drops to near silence under l27; l27 is fully clear.",
+      "No sting anywhere, no swell on the reversal.",
+      "The episode ends on a hard cut to silence with the picture; the dead tone is the same file s2b02 b1 opens on."
+    ]
+  },
+  "editor_notes": [
+    "b5's 1.5 s holds two taps, a ring, a key click and a beep. If it reads rushed, drop sfx_keypad_vibrate first, then shorten the ring to about 0.4 s; the taps can start on the very first frame of shot 1. Flagged for S13, not a script change.",
+    "amb_crossing_stall's base has a simmering kettle and coal tick, but the stall is shut at night in b7 to b11. Kept low (about -28) and low-passed if it reads as a working stall. If it still reads wrong at screening, the fix is a night variant of the crossing bed in the library, not a one-off here.",
+    "b8 is not scripted to stop the needles; they continue very low under the frozen two-shot. If the frozen shot wants a held breath, S13 may drop them for b8 shot 2 only and bring them back at l17; the scripted stop stays in b10.",
+    "The library one-off list puts the cloth rustle in b11; the critic re-run moved it to b10 and both scripts now have it there. The library line is stale on that point only."
+  ],
+  "counts": {
+    "library_cues_used": 17,
+    "one_off_cues_new": 7,
+    "one_off_planned_seconds": 13.5,
+    "one_off_credit_estimate": 119
+  },
+  "not_verified": [
+    "Nothing generated or heard. Gains are starting points for S13.",
+    "The split takes (uniform dressing, pin and button, taps and beep) depend on what each take contains; each has a stated fallback that needs no new generation.",
+    "Whether the pitched-down sfx_pouch_flap_snap reads as a holster stud has not been heard.",
+    "Credit estimate assumes the proof's 17 credits per sound generation (7 x 17)."
+  ]
+}

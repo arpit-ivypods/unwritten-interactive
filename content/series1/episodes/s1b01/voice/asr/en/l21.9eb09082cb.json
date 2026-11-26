@@ -1,0 +1,186 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,130"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 130
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,130",
+				"to": "00:00:01,200"
+			},
+			"offsets": {
+				"from": 130,
+				"to": 1200
+			},
+			"text": " Namaste,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,200",
+				"to": "00:00:02,110"
+			},
+			"offsets": {
+				"from": 1200,
+				"to": 2110
+			},
+			"text": " Damaji."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,110",
+				"to": "00:00:02,330"
+			},
+			"offsets": {
+				"from": 2110,
+				"to": 2330
+			},
+			"text": " Please"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,330",
+				"to": "00:00:02,510"
+			},
+			"offsets": {
+				"from": 2330,
+				"to": 2510
+			},
+			"text": " don't"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,510",
+				"to": "00:00:02,650"
+			},
+			"offsets": {
+				"from": 2510,
+				"to": 2650
+			},
+			"text": " mind"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,650",
+				"to": "00:00:02,760"
+			},
+			"offsets": {
+				"from": 2650,
+				"to": 2760
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,760",
+				"to": "00:00:03,170"
+			},
+			"offsets": {
+				"from": 2760,
+				"to": 3170
+			},
+			"text": " door."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,170",
+				"to": "00:00:03,220"
+			},
+			"offsets": {
+				"from": 3170,
+				"to": 3220
+			},
+			"text": " We"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,220",
+				"to": "00:00:03,450"
+			},
+			"offsets": {
+				"from": 3220,
+				"to": 3450
+			},
+			"text": " had"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,450",
+				"to": "00:00:03,610"
+			},
+			"offsets": {
+				"from": 3450,
+				"to": 3610
+			},
+			"text": " to"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,610",
+				"to": "00:00:04,020"
+			},
+			"offsets": {
+				"from": 3610,
+				"to": 4020
+			},
+			"text": " break"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,020",
+				"to": "00:00:04,270"
+			},
+			"offsets": {
+				"from": 4020,
+				"to": 4270
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,270",
+				"to": "00:00:04,720"
+			},
+			"offsets": {
+				"from": 4270,
+				"to": 4720
+			},
+			"text": " latch."
+		}
+	]
+}

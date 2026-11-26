@@ -1,0 +1,217 @@
+{
+ "scene": "content/proof/photoreal",
+ "decision": "D-009 v4 vs v3 test, photoreal half (hi l01, l08, l10)",
+ "method": {
+  "check_1_words": "Local whisper.cpp ggml-small transcript (lang hi, no prompt) compared with the script words, including the English words inside the Hindi. Pass = every script word is recognisable, nothing is added or missing. whisper-small Hindi spelling noise (दाउत for doubt, ताना for था ना) is not counted as a miss. ElevenLabs Scribe did run on two takes, but its text cannot be read back in this session (see not_checked).",
+  "check_2_tags": "Pass = no tag word (laughs, giddy, excited, fast, calm, quietly, slowly, deliberate, sighs, weary) in the transcript. Non-speech (laugh, sigh) is located with a 20/40 ms RMS envelope and a 70-300 Hz voiced-frame proxy.",
+  "check_3_length": "Speech span (clip minus leading and trailing silence at -40 dB, ffmpeg silencedetect) within +/-20% of target_seconds.",
+  "check_4_quiet_tag": "Only where the line carries a whispered or quiet tag (l08 [quietly]). Level of the tagged second half against the same take's untagged first half (active-frame RMS, frames above -45 dBFS). Pass = at least 3 dB lower, still voiced, and the words still transcribed. The 3 dB bar was set after the levels had been measured, so the sensitivity at a 1 dB bar is reported too. l01 and l10 carry no quiet tag, so check 4 is n/a there.",
+  "pair_rule": "Each check is scored pass or fail per take. A pair goes to the model that passes more checks; equal counts are a tie. D-009: a tie stays with v4."
+ },
+ "pairs": [
+  {
+   "line_id": "l01",
+   "speaker": "tara",
+   "text": "[laughs] [giddy] चालीस लाख, इमरान! [excited, fast] और उसे doubt तक नहीं हुआ।",
+   "v4": {
+    "file": "content/proof/photoreal/voice/hi/l01.mp3",
+    "transcript": "चालिस लाग फिम्रान और उसे दाउत तक नहीं हूँ",
+    "duration_s": 5.12,
+    "speech_s": 4.78,
+    "target_s": 3.5,
+    "length_vs_target_pct": 37,
+    "mean_speech_db": -22.9,
+    "max_db": -5.4,
+    "pauses": [],
+    "checks": {
+     "words": "pass",
+     "tags": "pass",
+     "length": "fail (+37%)",
+     "quiet_tag": "n/a"
+    },
+    "notes": "Laugh present: ~0.9 s of breathy unvoiced pulses before 'चालीस' (voiced share 0.12). The laugh is most of the overrun."
+   },
+   "v3": {
+    "file": "content/proof/photoreal/voice/hi/l01.v3.mp3",
+    "transcript": "चालिस लाक हिम्रान और से दाउट तत नहीं हूँ.",
+    "duration_s": 3.68,
+    "speech_s": 3.498,
+    "target_s": 3.5,
+    "length_vs_target_pct": 0,
+    "mean_speech_db": -12.8,
+    "max_db": -0.4,
+    "pauses": [
+     {
+      "start": 1.632,
+      "end": 2.218,
+      "dur": 0.586
+     }
+    ],
+    "checks": {
+     "words": "pass",
+     "tags": "pass",
+     "length": "pass (0%)",
+     "quiet_tag": "n/a"
+    },
+    "notes": "[laughs] looks ignored: speech starts at 0.18 s at full level straight into 'चालीस', with no non-speech segment. 10 dB hotter than v4 (mean -12.8 dB, peak -0.4 dBFS). Trailing silence 0.00 s, so the tail may be clipped."
+   },
+   "winner": "eleven_v3",
+   "score": "v3 3/3, v4 2/3",
+   "caveat": "v3 wins on length only, and partly because it drops the directed laugh, which the four checks do not score. On the brief's intent (is the laugh real) the measurements favour v4."
+  },
+  {
+   "line_id": "l08",
+   "speaker": "caller",
+   "text": "[calm] अब अपने driver से पूछो... [quietly] [slowly, deliberate] आज रात वो किसके लिए गाड़ी चला रहा है।",
+   "v4": {
+    "file": "content/proof/photoreal/voice/hi/l08.mp3",
+    "transcript": "अब अबने द्रीवर से पुछो आज रात वो किस के लिए गाडी चला रहा है?",
+    "duration_s": 6.32,
+    "speech_s": 6.016,
+    "target_s": 6.0,
+    "length_vs_target_pct": 0,
+    "mean_speech_db": -27.7,
+    "max_db": -8.9,
+    "pauses": [
+     {
+      "start": 2.01,
+      "end": 2.837,
+      "dur": 0.827
+     },
+     {
+      "start": 3.988,
+      "end": 4.329,
+      "dur": 0.341
+     }
+    ],
+    "checks": {
+     "words": "pass",
+     "tags": "pass",
+     "length": "pass (0%)",
+     "quiet_tag": "fail (second half 0.6 dB below first half; voiced share 0.84)"
+    },
+    "halves_db": {
+     "first_0.09-2.01": -26.0,
+     "second_2.84-6.10": -26.6
+    },
+    "notes": "Ellipsis pause 0.83 s. [quietly] has no measurable level effect, and the second half is no quieter than the caller's plain l05 (-26.5 dB)."
+   },
+   "v3": {
+    "file": "content/proof/photoreal/voice/hi/l08.v3.mp3",
+    "transcript": "अब अबने द्रीवर से पुछो आज रात वो किस के लिए गाडी चला रा है?",
+    "duration_s": 7.28,
+    "speech_s": 6.385,
+    "target_s": 6.0,
+    "length_vs_target_pct": 6,
+    "mean_speech_db": -24.1,
+    "max_db": -6.7,
+    "pauses": [
+     {
+      "start": 2.0,
+      "end": 3.3,
+      "dur": 1.299
+     },
+     {
+      "start": 4.037,
+      "end": 4.653,
+      "dur": 0.616
+     }
+    ],
+    "checks": {
+     "words": "pass",
+     "tags": "pass",
+     "length": "pass (+6%; whole clip 7.28 s is +21% because of 0.81 s trailing silence the cut trims)",
+     "quiet_tag": "fail at 3 dB (second half 1.7 dB below first half; voiced share 0.82)"
+    },
+    "halves_db": {
+     "first_0.09-2.00": -21.4,
+     "second_3.30-6.47": -23.1
+    },
+    "notes": "Ellipsis pause 1.30 s, longer than v4's. Overall 3.6 dB hotter than v4."
+   },
+   "winner": "tie (stays eleven_v4)",
+   "score": "v4 3/4, v3 3/4",
+   "sensitivity": "At a 1 dB bar for check 4, v3 passes and wins the pair 4/4 to 3/4. Neither model gives a clear (3 dB) drop at [quietly]."
+  },
+  {
+   "line_id": "l10",
+   "speaker": "imran",
+   "text": "[sighs] [weary] बोला था ना... मत उठाना।",
+   "v4": {
+    "file": "content/proof/photoreal/voice/hi/l10.mp3",
+    "transcript": "बोला ताना मत उताना",
+    "duration_s": 3.52,
+    "speech_s": 3.084,
+    "target_s": 2.5,
+    "length_vs_target_pct": 23,
+    "mean_speech_db": -28.0,
+    "max_db": -5.3,
+    "pauses": [
+     {
+      "start": 2.039,
+      "end": 2.344,
+      "dur": 0.306
+     }
+    ],
+    "checks": {
+     "words": "pass",
+     "tags": "pass",
+     "length": "fail (+23%)",
+     "quiet_tag": "n/a"
+    },
+    "notes": "Sigh is a 0.56 s unvoiced breath (voiced share 0.07), then ~0.3 s of near-silence. Overrun +0.58 s."
+   },
+   "v3": {
+    "file": "content/proof/photoreal/voice/hi/l10.v3.mp3",
+    "transcript": "बोला ताना मत उताना",
+    "duration_s": 2.96,
+    "speech_s": 2.838,
+    "target_s": 2.5,
+    "length_vs_target_pct": 14,
+    "mean_speech_db": -24.6,
+    "max_db": -3.4,
+    "pauses": [
+     {
+      "start": 1.538,
+      "end": 2.071,
+      "dur": 0.533
+     }
+    ],
+    "checks": {
+     "words": "pass",
+     "tags": "pass",
+     "length": "pass (+14%)",
+     "quiet_tag": "n/a"
+    },
+    "notes": "Sigh is a 0.53 s unvoiced breath (voiced share 0.00), straight into the words. 'बोला था ना' is 4.4 dB louder than v4 (-20.4 vs -24.8 dB); whether that tips it towards menace needs the ear."
+   },
+   "winner": "eleven_v3",
+   "score": "v3 3/3, v4 2/3",
+   "caveat": "v4 misses the length bar by 3 points with one take per model, so a second v4 take could easily land inside it."
+  }
+ ],
+ "result": {
+  "photoreal_tally": {
+   "eleven_v3": 2,
+   "eleven_v4": 0,
+   "tie": 1
+  },
+  "d009_status": "Not settled by this scene. v3 needs at least 4 of the 6 pairs; with 2 here it needs at least 2 of the 3 flat-2D pairs (l07, l08, l12). If l08 is read at a 1 dB bar, v3 has 3 here and needs 1 of 3.",
+  "per_character_note": "No case for moving a single character to v3. Both v4 voices did their non-verbal tags (Tara's laugh, Imran's sigh). v3 ignored Tara's laugh. Neither model obeyed [quietly] on the caller.",
+  "strength_of_evidence": "Weak. One take per model per line. Both v3 wins come from the length check alone, one of them by 3 points and one by dropping a directed laugh. Length on single takes is noisy.",
+  "ear_check_for_owner": [
+   "<repo>/content/proof/photoreal/voice/hi/l01.mp3",
+   "<repo>/content/proof/photoreal/voice/hi/l01.v3.mp3",
+   "<repo>/content/proof/photoreal/voice/hi/l08.mp3",
+   "<repo>/content/proof/photoreal/voice/hi/l08.v3.mp3",
+   "<repo>/content/proof/photoreal/voice/hi/l10.mp3",
+   "<repo>/content/proof/photoreal/voice/hi/l10.v3.mp3"
+  ],
+  "owner_override": "Per D-009 the owner's pick by ear overrides this."
+ },
+ "not_checked": [
+  "ElevenLabs Scribe transcripts. creative_transcribe_audio ran on hi l01 (an earlier session, node W42MX7KEO4udwNTSIxgB) and on hi l02 (this session, node 2Kj5afHWRSafL58Wdh11, generation 2erStjIjMfo3Bmz9lJEg, 0 credits); both are complete. The text comes back only through creative_get_flow_run_status, which is not exposed to this session: ToolSearch select finds no match. creative_get_generations returns only status and modality for a text generation, and creative_get_flow returns no output. creative_attach_reference_file is not needed (the takes are already TTS nodes on the flow) and does not take local files anyway. So Scribe's handling of mixed Hindi-English lines (D-009, D-014) is still unknown.",
+  "How either take sounds: shrillness, warmth, menace, accent. No agent can listen.",
+  "Word-timing accuracy. whisper-small word times are visibly off (for example it stretches 'Newspaper?' across the pause), so they say nothing about Scribe timings for D-014."
+ ]
+}

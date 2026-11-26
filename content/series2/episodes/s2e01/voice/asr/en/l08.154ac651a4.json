@@ -1,0 +1,131 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 0
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,360"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 360
+			},
+			"text": " Then"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,360",
+				"to": "00:00:00,920"
+			},
+			"offsets": {
+				"from": 360,
+				"to": 920
+			},
+			"text": " kindly"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,920",
+				"to": "00:00:01,530"
+			},
+			"offsets": {
+				"from": 920,
+				"to": 1530
+			},
+			"text": " dictate"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,530",
+				"to": "00:00:02,130"
+			},
+			"offsets": {
+				"from": 1530,
+				"to": 2130
+			},
+			"text": " madam,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,130",
+				"to": "00:00:02,450"
+			},
+			"offsets": {
+				"from": 2130,
+				"to": 2450
+			},
+			"text": " Thana"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,450",
+				"to": "00:00:02,710"
+			},
+			"offsets": {
+				"from": 2450,
+				"to": 2710
+			},
+			"text": " has"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,710",
+				"to": "00:00:02,990"
+			},
+			"offsets": {
+				"from": 2710,
+				"to": 2990
+			},
+			"text": " been"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,990",
+				"to": "00:00:03,400"
+			},
+			"offsets": {
+				"from": 2990,
+				"to": 3400
+			},
+			"text": " stolen."
+		}
+	]
+}

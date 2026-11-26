@@ -1,0 +1,208 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,110"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 110
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,110",
+				"to": "00:00:00,640"
+			},
+			"offsets": {
+				"from": 110,
+				"to": 640
+			},
+			"text": " जाने"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,640",
+				"to": "00:00:01,290"
+			},
+			"offsets": {
+				"from": 640,
+				"to": 1290
+			},
+			"text": " दूं,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,290",
+				"to": "00:00:01,420"
+			},
+			"offsets": {
+				"from": 1290,
+				"to": 1420
+			},
+			"text": " तो"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,420",
+				"to": "00:00:01,620"
+			},
+			"offsets": {
+				"from": 1420,
+				"to": 1620
+			},
+			"text": " गो"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,620",
+				"to": "00:00:02,010"
+			},
+			"offsets": {
+				"from": 1620,
+				"to": 2010
+			},
+			"text": " डाून"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,010",
+				"to": "00:00:02,310"
+			},
+			"offsets": {
+				"from": 2010,
+				"to": 2310
+			},
+			"text": " में"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,310",
+				"to": "00:00:02,700"
+			},
+			"offsets": {
+				"from": 2310,
+				"to": 2700
+			},
+			"text": " सर्फ"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,700",
+				"to": "00:00:03,000"
+			},
+			"offsets": {
+				"from": 2700,
+				"to": 3000
+			},
+			"text": " यही"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,000",
+				"to": "00:00:03,610"
+			},
+			"offsets": {
+				"from": 3000,
+				"to": 3610
+			},
+			"text": " जासकते"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,610",
+				"to": "00:00:04,030"
+			},
+			"offsets": {
+				"from": 3610,
+				"to": 4030
+			},
+			"text": " है,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,030",
+				"to": "00:00:04,470"
+			},
+			"offsets": {
+				"from": 4030,
+				"to": 4470
+			},
+			"text": " मेरा"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,470",
+				"to": "00:00:04,790"
+			},
+			"offsets": {
+				"from": 4470,
+				"to": 4790
+			},
+			"text": " फोन"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,790",
+				"to": "00:00:05,100"
+			},
+			"offsets": {
+				"from": 4790,
+				"to": 5100
+			},
+			"text": " जेब"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,100",
+				"to": "00:00:05,430"
+			},
+			"offsets": {
+				"from": 5100,
+				"to": 5430
+			},
+			"text": " में"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,430",
+				"to": "00:00:06,000"
+			},
+			"offsets": {
+				"from": 5430,
+				"to": 6000
+			},
+			"text": " लेकर."
+		}
+	]
+}

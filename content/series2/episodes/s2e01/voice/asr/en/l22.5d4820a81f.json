@@ -1,0 +1,197 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,150"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 150
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,150",
+				"to": "00:00:00,530"
+			},
+			"offsets": {
+				"from": 150,
+				"to": 530
+			},
+			"text": " 30"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,530",
+				"to": "00:00:01,410"
+			},
+			"offsets": {
+				"from": 530,
+				"to": 1410
+			},
+			"text": " Complaints"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,410",
+				"to": "00:00:01,480"
+			},
+			"offsets": {
+				"from": 1410,
+				"to": 1480
+			},
+			"text": " -"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,480",
+				"to": "00:00:02,020"
+			},
+			"offsets": {
+				"from": 1480,
+				"to": 2020
+			},
+			"text": " Rashan"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,020",
+				"to": "00:00:02,550"
+			},
+			"offsets": {
+				"from": 2020,
+				"to": 2550
+			},
+			"text": " Theft,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,550",
+				"to": "00:00:03,820"
+			},
+			"offsets": {
+				"from": 2550,
+				"to": 3820
+			},
+			"text": " Extortion,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,820",
+				"to": "00:00:04,370"
+			},
+			"offsets": {
+				"from": 3820,
+				"to": 4370
+			},
+			"text": " Everyone"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,370",
+				"to": "00:00:04,790"
+			},
+			"offsets": {
+				"from": 4370,
+				"to": 4790
+			},
+			"text": " Names"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,790",
+				"to": "00:00:05,550"
+			},
+			"offsets": {
+				"from": 4790,
+				"to": 5550
+			},
+			"text": " Bhaiyaji"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,550",
+				"to": "00:00:05,610"
+			},
+			"offsets": {
+				"from": 5550,
+				"to": 5610
+			},
+			"text": " of"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,610",
+				"to": "00:00:05,780"
+			},
+			"offsets": {
+				"from": 5610,
+				"to": 5780
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,780",
+				"to": "00:00:06,110"
+			},
+			"offsets": {
+				"from": 5780,
+				"to": 6110
+			},
+			"text": " Rashan"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:06,110",
+				"to": "00:00:06,220"
+			},
+			"offsets": {
+				"from": 6110,
+				"to": 6220
+			},
+			"text": " Go"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:06,220",
+				"to": "00:00:06,640"
+			},
+			"offsets": {
+				"from": 6220,
+				"to": 6640
+			},
+			"text": " Down."
+		}
+	]
+}

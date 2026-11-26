@@ -1,0 +1,128 @@
+{
+  "continuity": {
+    "ok": false,
+    "by": "S4 Continuity keeper, 26 Nov 2026",
+    "ledger": "content/series1/continuity.json (problem ids P01, P08, P16)",
+    "fixed": [],
+    "problems": [
+      {"id": "P01", "severity": "high", "owner": "S2", "line": "b1 set-up 2: 'a marigold petal and the small round steel dabba of mathri on the sheet beside it'. s1e02 b13 ends with the dabba in Aditya's hand, across the room by the chair, and s1a01 opens inside the same breath.", "fix": "b1 only: delete 'and the small round steel dabba of mathri on the sheet beside it' from set-up 2; add 'the steel dabba still in Aditya's hand' to the silent two-shot. b5 already has it back in the bag."},
+      {"id": "P08", "severity": "nit", "owner": "S2 or S7", "line": "b5 insert (1): the fold goes into his pocket 'beside the white edge of the creased photograph'; the print was last on the sheet (s1e02 b4).", "fix": "b5 insert (1): 'his long fingers take the print from the sheet, fold the half-empty paper shut over the tray, and slide both into his right kurta pocket'."},
+      {"id": "P16", "severity": "info", "owner": "none", "line": "l26 'पुड़िया आप बनाइए, दामाद जी।': the offer in l15 came before the speaker call began at l16.", "fix": "None. Mausi has his biodata as a pharmacist (bible aditya.bio_cover) and Kiran's 'सौदा' (l18)."}
+    ]
+  },
+  "pass": true,
+  "score": 7.8,
+  "must_fix": [
+    "PERFORMABILITY (must fix): l27 is the line the cliffhanger rests on (Mausi asks for the chooda), and it is the only line with no tag. Every line is generated on its own on v4, so its delivery is left to chance. Fix: l27 text '[calm] और तू चूड़ा उतार दे, बेटा। कल छोटी को चढ़ेगा।', emotion_tags ['[calm]'], target_seconds 4.0 unchanged. The anchor wording stays word for word. Remove 'l27 is untagged on purpose' from writer_notes.",
+    "STILLS-ONLY STAGING (must fix): b7 shot 3 puts l14 and l15 on one set-up: 4.0 + 4.4 = 8.4 s at target. That is over the bible's 8 s ceiling per set-up (production_locks) before any overrun. At Gate 0b's measured +20 to 60 per cent it would hold about 10 to 13 s. Fix, with no change to the lines: 'Shot 3 (l14): Aditya in the back seat, glasses, key, the faint smile of a greedy man; Billu's eyes in the mirror at frame edge. Shot 3b (l15): Kiran in profile in the front seat, eyes on the road, giving nothing away while he sells the lie she set up.'",
+    "HINGLISH (must fix): there is almost no code-mixing. The 28 lines hold 4 English words (dose, line, ready, set) and none of them is the lead's. Kiran has no English word in any of her 8 lines, though the bible gives her small-city Hinglish (phone, party, plan, police, time, tension) and she used shutter, phone and code in s1e02. Aditya has one. Plan section 3 and the bible's writer_notes ask for English nouns and verbs inside Hindi grammar. Fix at almost no length cost: l03 '[sharply] दूसरा code बोलती, तो दो लड़के अभी सीढ़ियों पर होते।' (this also pays off her s1e02 l11 lie 'कोई code नहीं' and seeds his doubt in s1a02 b3); l10 '[calm] ये साथ चलेंगे। मौसी से deal करेंगे।' (sets up 'सौदा' in l18); l15 '[chuckles] मेरा medical store है। सही dose, हिस्से के बदले।'. Targets stay 4.8, 3.2 and 4.4. Equivalents are fine if Kiran gets at least two natural English words."
+  ],
+  "medium": [
+    "LENGTH (medium): the nominal total is honest arithmetic: 89.5 s spoken, plus 20 speaker changes at 0.3 s (6.0 s), plus 23.4 s of silence = 118.9 s. But many lines are timed at 10.4 to 11.4 characters a second (l13, l14, l17, l18, l23, l26, l27). Applying Gate 0b's measured +20 to 60 per cent to the speech gives an estimated 137 to 173 s against D-007's 135 s ceiling. There is a flaw in the writer's trim order: its second step, dropping the second sentence of l15, removes the pharmacist's offer that 'सौदा' in l18 and 'पुड़िया आप बनाइए' in l26 depend on. Replace it with silence trims (b2 3.0 to 2.0, b5 3.0 to 2.0, b8 cut to its second set-up 4.5 to 2.5, b9 4.5 to 3.5), then drop l16, then make l12 a laugh in the sound mix only. Dialogue is about 883 characters by my hand count, under D-007's 1,050, so do not pad. Per D-0M2, length is settled in the edit.",
+    "STILLS-ONLY STAGING (medium): two more set-ups are under 8 s at target but will pass it at the measured pace: b7 shot 5 (l17 + l18 = 7.6 s) and b3 shot 3 (l05 + l06 = 6.6 s). Split b3 as 'Shot 3 (l05): Kiran close. Shot 3b (the 1.2 s silence, moved here): Aditya close, holding on her. Shot 3c (l06): Kiran close, straight to business.' This also puts 'for the first time he owes her something' on मोहित, where the bible has it, instead of after the business line. Split b7 shot 5 as 'Shot 5 (l17): Kiran close, phone near her face, मौसी overlay. Shot 5b (l18): from the back seat, Kiran in profile into the phone, Aditya soft behind her.'",
+    "CONTINUITY (medium): props appear without being placed. (1) The red velvet box is in Aditya's hands in b6 shot 4, but no shot takes it from the almirah. Add to b5 shot 2: 'the red velvet box from the almirah in his left hand'. (2) At the end of s1e02 the mathri dabba is in Aditya's hand (that script's continuity note), and s1a01 never places it. Put it in b1 shot 2 ('the steel dabba of mathri on the sheet beside the phone') and say in b5 that it goes back into the maroon bag. l21 then lands as a payoff. (3) In the bible Kiran's phone is black in a plain dark-red cover; b1 says only 'black phone'.",
+    "CONTINUITY (medium): Billu in the car, b7. In a right-hand-drive car Billu sits front right and Kiran front left, so he would hold the phone out with his LEFT hand; the script says right. While he drives the key is in the ignition, but his look puts it on his right index finger in every shot; add 'except while driving (b7 to b9)'. It is also unclear who holds the phone in l17 to l19 (Billu's hand in shots 4 and 6, 'near her face' in shot 5). Pick one, for example Billu holds it out on speaker over the gear lever throughout.",
+    "PERFORMABILITY (medium): Aditya's voice_note says he lets a little amusement in on l11, l14 and l15, but l11 and l14 are tagged [calm]. Optional: l11 '[chuckles] पीतल है, साले साहब।', with Billu's [laughs] in l12 answering it. l24 is the episode's one whisper and has no duck note. Add to the b10 sfx: 'keys and bangles still under l24 and l25; the whisper dry and close'.",
+    "PERFORMABILITY (minor): 'हम्म...' in l19 is a word the voice may garble on v4. Keep it, flag it for the take check, and use '[quietly] ठीक है... ले आ, बेटा।' as the fallback. Short turns l05, l12 and l25 are already flagged by the writer.",
+    "CONTINUITY (minor): in b10 shot 3 Chhoti holds her LEFT palm up. By story_locks.scar that turns the outer forearm, where a scar would be, away from Aditya: the same reason Kiran's palms-up showed nothing in s1e02 b1. So his check of Chhoti does not hold up. Restage: 'LEFT hand held out flat, back up, fingertips dipped, the outer forearm bare and unmarked'.",
+    "CONTINUITY (minor): b5 says 'a hand's width of cuff showing below the sleeve', but her look has the sleeves ending a hand's width ABOVE the chooda. Reword: 'the whole cuff below the sleeve, a hand's width of bare forearm above it'.",
+    "METADATA (minor): the sibling scripts (s1e02, s1a02) carry app_series_id, path_position, logline_id and script_note; this one does not. Add \"app_series_id\": \"series1\", \"path_position\": 3, \"logline_id\": \"a03\" and script_note. No script.en.json exists yet, so the hi/en id check could not run.",
+    "HOOK (minor, optional): b1's silence after plus b2 add 4.2 s of silence between l02 and l03, so the first new information (l03) lands at about 12 s. Trimming b2 to 2.0 s brings it near 10 s.",
+    "CRAFT (optional): in b10 shot 1 Mausi holds Kiran's face and asks about the mathri, and Kiran is given no reaction. One note, 'Kiran's eyes drop from Mausi's', would show what choice A costs her.",
+    "GLIMPSE (minor): the b9 sfx starts the shutter rattle on set-up (1), the frame Glimpse A ends on. The glimpse may not reveal the shutter opening, so cut it before the rattle starts."
+  ],
+  "summary": "**Verdict: pass, no fatal problem.** Overall 7.8 (the mean of the eight is 7.75). Sub-scores: hook 8, stakes 8.5, choice n/a, branch distinctness 8.5, cliffhanger 8.5, natural Hinglish 7, performability 7, length 6.5, continuity 8. There are 3 must-fix items and 12 medium, minor or optional notes. File: <repo>/content/series1/episodes/s1a01/script.hi.json\n\n**Tools.** This session had only Read, Grep and Glob: no shell and no Write. The brief says to stop if a needed tool is missing. I went ahead because reading, scoring and listing fixes only needs those tools. As the cost of that, the checks below were done by reading, pattern search and hand arithmetic, not by script. The JSON was not parsed, and `review-notes.json` was not written. Earlier critic rounds without a write tool (D-005, D-007) were also delivered as text. Someone with Write needs to save this verdict as the critic section of <repo>/content/series1/episodes/s1a01/review-notes.json.\n\n**Checks I ran, by hand:**\n- **JSON:** not parsed. Pattern searches found no comma before a closing bracket, no missing comma between lines, no backslash or tab, and no double quote inside a string value.\n- **Ids:** every speaker, on_screen and location id is in the bible.\n- **Tags:** emotion_tags match the inline tags on all 28 lines.\n- **Durations:** spoken 89.5 s, silences 23.4 s, and 20 speaker changes at 0.3 s (6.0 s) add up to 118.9 s, which equals `target_total_seconds`.\n- **Lines:** 28.\n- **Dialogue length:** about 883 characters by my hand count (nukta as a separate code point, ellipsis as three dots), against the writer's ~890 and D-007's 1,050. That count is an estimate.\n- **Density:** the densest line is l23 at 11.4 characters a second, none is over 12, and the average is 9.9.\n- **Lead:** Kiran is on screen in 9 of 10 beats (all but b2).\n- **Pronouns:** no यह or वह, and none of the other bookish forms I searched for.\n- **Locked lines:** l01 and l13 are word for word.\n- **Faces:** no frame has more than two faces (D-007 direction 16).\n- **Set-ups:** I checked each against the 8 s ceiling.\n- **Not run:** the hi/en comparison, because `script.en.json` does not exist. There is no continuity ledger for series 1, so I checked against the bible's knowledge, story locks and production locks, and against the s1e02 and s1a02 scripts.\n\n**What works.**\n- It opens inside the voted line.\n- The cover story is set by one line and then played rather than planned. Billu's surprise and Kiran's answer to Mausi are coherent with the code from s1e02.\n- All three near misses on the wrist (b5, b9, b11) have reasons the viewer can see.\n- Who knows what matches the bible: Aditya learns the alarm existed in b3, first hears 'किरण' at l09, and Mausi learns the groom was awake in b7.\n- The ending opens straight into s1a02 b1 and leaves its question unanswered and audible.\n\n**Must fix:**\n1. **l27 has no tag.** It is the pivotal line, so add [calm].\n2. **b7 shot 3 is 8.4 s at target**, over the 8 s ceiling. Split it.\n3. **Kiran speaks no English in the whole episode.** Swap in code, deal and medical store on l03, l10 and l15. The l03 change also pays off her s1e02 lie 'कोई code नहीं'.\n\n**Length.** This is the main medium risk. Applying Gate 0b's +20 to 60 per cent to the speech gives an estimated 137 to 173 s, against the 135 s ceiling. The writer's second trim would cut the pharmacist's offer that l18 and l26 rest on, so trim silences instead.\n\n**Not verified:** how any line sounds (no voice), how any frame looks, the JSON parse, and the exact character count.",
+  "writer_response": [
+    {
+      "item": "must_fix 0 (l27 tag)",
+      "action": "applied",
+      "reason": "l27 now reads '[calm] और तू चूड़ा उतार दे, बेटा। कल छोटी को चढ़ेगा।', emotion_tags ['[calm]'], target 4.0. Anchor wording unchanged. The 'untagged on purpose' note is removed from writer_notes."
+    },
+    {
+      "item": "must_fix 1 (b7 shot 3 over 8 s)",
+      "action": "applied",
+      "reason": "Split into Shot 3 (l14, Aditya) and Shot 3b (l15, Kiran in profile), using the critic's wording. No line changed."
+    },
+    {
+      "item": "must_fix 2 (Hinglish)",
+      "action": "applied",
+      "reason": "l03, l10 and l15 now use the critic's text word for word: Kiran gets 'code' and 'deal', Aditya gets 'medical store'. Targets are still 4.8, 3.2 and 4.4. Aditya's voice_note now lists medical store with dose."
+    },
+    {
+      "item": "medium 0 (length and trim order)",
+      "action": "applied as the trim order in writer_notes; one trim applied now",
+      "reason": "b2 is cut from 3.0 to 2.0 s now, because the hook note asks for it as well. The rest of the trim order follows the critic's sequence: b5 3.0 to 2.0, b8 to its second set-up (4.5 to 2.5), b9 4.5 to 3.5, then drop l16, then make l12 a laugh in the mix only. Those steps are held back until measured takes show the cut is needed. No dialogue is padded."
+    },
+    {
+      "item": "medium 1 (b3 and b7 shot 5 splits)",
+      "action": "b7 applied; b3 applied with a change",
+      "reason": "b7: split into Shot 5 (l17) and Shot 5b (l18) as the critic wrote it, with Billu holding the phone (see medium 3). b3: the script format allows silent_position only 'before' or 'after' a beat's lines, so the 1.2 s silence cannot sit between l05 and l06 without changing the schema or adding a beat, and beat ids are fixed. I kept the critic's aim, Aditya's hold landing on मोहित, inside the format: Shot 3 (l05) is Kiran close, Shot 3b (l06) is Aditya close holding on her while she talks business off his face, and the silence after is Kiran close, waiting. Every set-up is now under 5 s at target. If the orchestrator wants the silence exactly between the two lines, the assembler needs a 'between' position."
+    },
+    {
+      "item": "medium 2 (props)",
+      "action": "applied",
+      "reason": "b1 shot 2: the phone is black in a plain dark-red cover, with the steel mathri dabba on the sheet beside it. b5 shot 1: the dabba is back in the side pocket of the maroon bag. b5 shot 2: the red velvet box from the almirah is in Aditya's left hand."
+    },
+    {
+      "item": "medium 3 (Billu in the car)",
+      "action": "applied",
+      "reason": "Billu's look adds 'except while driving (b7 to b9), when it is in the ignition'. In b7, Billu's LEFT hand holds the phone out on speaker over the gear lever from l16 to l19. Shots 4, 5, 5b and 6 all say so."
+    },
+    {
+      "item": "medium 4 (l11 tag, l24 duck)",
+      "action": "applied",
+      "reason": "l11 is now [chuckles], which Billu's [laughs] in l12 answers. The b10 sfx adds: keys and bangles still under l24 and l25; the whisper dry and close."
+    },
+    {
+      "item": "minor 5 (l19 'हम्म...')",
+      "action": "applied",
+      "reason": "Kept. writer_notes flags it for the take check, with '[quietly] ठीक है... ले आ, बेटा।' as the fallback."
+    },
+    {
+      "item": "minor 6 (Chhoti's hand)",
+      "action": "applied",
+      "reason": "b10 shot 3 now reads: LEFT hand held out flat, back up, fingertips dipped, the outer forearm bare and unmarked."
+    },
+    {
+      "item": "minor 7 (b5 cuff wording)",
+      "action": "applied",
+      "reason": "Now reads 'the whole cuff below the sleeve, a hand's width of bare forearm above it'."
+    },
+    {
+      "item": "minor 8 (metadata)",
+      "action": "applied",
+      "reason": "Added app_series_id 'series1', logline_id 'a03' (checked against bible.json line 406), path_position 3 and script_note. script.en.json is S5's job and does not exist yet."
+    },
+    {
+      "item": "minor 9 (hook)",
+      "action": "applied",
+      "reason": "b2 is now 2.0 s. target_total_seconds drops from 118.9 to 117.9."
+    },
+    {
+      "item": "optional 10 (Kiran's reaction in b10)",
+      "action": "applied",
+      "reason": "b10 shot 1 now has Kiran's eyes dropping from Mausi's."
+    },
+    {
+      "item": "minor 11 (Glimpse A and the rattle)",
+      "action": "applied",
+      "reason": "b9 action and sfx now say Glimpse A cuts before the shutter rattle starts. The rattle starts late in set-up (1)."
+    }
+  ],
+  "writer_response_note": "Saved by the S2 writer, 26 Nov. The critic could not write this file, so the S2 writer wrote it. Everything above writer_response is the critic's output, copied word for word. The S2 session has Read, Write, Edit, Grep and Glob but no Bash, so neither this file nor script.hi.json has been run through a JSON parser. Durations were re-added by hand.",
+  "english_review": {
+    "file": "content/series1/episodes/s1a01/script.en.json",
+    "round": 1,
+    "must_fix": [
+      "METADATA / CONTINUITY (must fix): in script.en.json the b1 action (shot 2) and the b7 action (shot 5) still give the caller-name overlay as 'मौसी'. That breaks two things. (1) The proof format puts the English overlay text in the English action: content/proof/flat2d/script.en.json has 'Bada Sahab' where its Hindi file has 'बड़े साहब'. (2) It contradicts the episode before. content/series1/episodes/s1e02/script.en.json b10 already shows 'Mausi' on this same phone, and s1a01 b1 opens 'inside the same breath'. As written, the English viewer sees the caller ID switch from 'Mausi' to Devanagari across the cut. The writer's reason, that 'the picture is shared', does not hold: overlays are added in assembly and are not in the frames. Fix: b1 shot 2 becomes \"...caller name 'Mausi' (overlay; 'मौसी' in the Hindi cut) and 2:00 as overlays...\". b7 shot 5 becomes \"...'Mausi' overlay on its screen ('मौसी' in the Hindi cut).\" Replace the conditional overlay writer_note with \"Caller-name overlays read 'Mausi' in the English cut (as in s1e02); frames unchanged.\" No line, tag, target or frame changes. Round 2 only needs to confirm this."
+    ],
+    "adapter_response": [
+      {
+        "item": "must_fix 0 (caller-name overlay in b1 and b7)",
+        "action": "applied",
+        "reason": "b1 shot 2 now reads \"caller name 'Mausi' (overlay; 'मौसी' in the Hindi cut) and 2:00 as overlays\". b7 shot 5 now reads \"'Mausi' overlay on its screen ('मौसी' in the Hindi cut)\". The conditional overlay writer_note is replaced word for word with \"Caller-name overlays read 'Mausi' in the English cut (as in s1e02); frames unchanged.\" One related edit: the first writer_note said action was unchanged from the Hindi, which is no longer true, so it now names the overlay text in b1 shot 2 and b7 shot 5 as the one exception. No line text, tag, emotion_tags, target_seconds, silence, on_screen or frame description changed. A search of script.en.json finds 'मौसी' only inside the two 'in the Hindi cut' parentheticals."
+      }
+    ],
+    "adapter_response_note": "S5 English adapter, 26 Nov 2026. This session has Read, Edit, Write, Grep and Glob but no shell, so neither script.en.json nor this file has been run through a JSON parser. The edits were string replacements inside existing JSON string values, plus this new key."
+  }
+}

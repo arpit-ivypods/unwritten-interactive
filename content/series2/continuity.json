@@ -1,0 +1,551 @@
+{
+  "series_id": "s2",
+  "made_by": "S4 Continuity keeper",
+  "made_on": "2026-11-26",
+  "revision": "2: after the D-024 dialogue clarity pass on all nine scripts (hi and en). Revision 1 (pre-clarity) is superseded; its resolved items are listed under resolved_since_revision_1.",
+  "sources": [
+    "content/series2/bible.json (by search: neighbour_voice, names_rule)",
+    "content/series2/viewer-ledger.json (read in full: naming, glossary, code_phrases, must_know_by_end, must_not_know_yet, threads, lock_checks, judgement_calls)",
+    "content/series2/episodes/<all nine>/script.hi.json (read in full: actions, lines, writer_notes, clarity_pass)",
+    "content/series2/episodes/<all nine>/script.en.json (ids, speakers, heard_as and spoken text, by search)",
+    "content/series2/episodes/<all nine>/script.hi.prev.json (by search, for lines whose old wording later episodes leaned on)",
+    "content/series2/episodes/s2e01/shots.json, s2e02/shots.json, s2e03/shots.json (shot ids, beat ids, line_ids, framing, state, cut_on_word)",
+    "content/series2/episodes/s2b02/sound/cues.json (by search for retired line ids)"
+  ],
+  "read_order": ["s2e01", "s2e02", "s2e03", "s2a01", "s2ga", "s2a02", "s2a03", "s2b01", "s2gb", "s2b02", "s2b03"],
+  "how_checked": "Every current script.hi.json was read in full in story order per path (shared, then A, then B). Each script.en.json was searched for ids, speakers, heard_as and text and compared line by line by eye with its Hindi. Old wording was taken from each clarity_pass ledger (reworded, added, retired) and spot-checked in script.hi.prev.json. The three existing shots.json files were compared with the new beat actions and lines. Names, forms of address, 'Joshi', bare 'sir' and 'Aaiye' were searched with Grep. No JSON parser, diff or counter was run: this session has Read, Write, Edit and Grep only, no shell. This file was written by hand and checked by eye.",
+
+  "characters": {
+    "nandini": {
+      "wardrobe_lock": "Nandini Joshi, Indian woman, 28, tall and lean, very straight-backed, medium-brown skin, oval face, straight thick black eyebrows, level dark-brown eyes, firm mouth, black hair with a clean centre parting in a low ponytail to the shoulder blades, no make-up, no jewellery, no watch; crisp sandy khaki force shirt with a pointed collar, two buttoned chest pockets and full sleeves, dark teal epaulettes with TWO off-white bars, a white lantern on a round teal patch on each upper sleeve, khaki trousers, black belt with a black handcuff pouch on her right hip, black shoes, a blue ballpoint pen clipped in her left chest pocket; no cap, no stars.",
+      "static": "Face, height, centre parting and low ponytail never change. No jewellery, no watch. Handcuff pouch on her RIGHT hip; pen in her LEFT chest pocket. Writes with her RIGHT hand. Cherry-red open-face scooter helmet, carried under her LEFT arm outdoors or just arrived, otherwise set on a bench or desk. Her black smartphone, when not in use: right trouser pocket from s2e03 b7 (see the open s2b01 pocket problem).",
+      "wardrobe_changes": [
+        {"from_episode": "s2e02", "branch": "shared", "lock": "Token seven's string slips off her right wrist on s2e02 l03 and the token goes into her LEFT trouser pocket, out of sight, to the end of both branches.", "why": "s2e02 b1 shot 3 (script and shots.json s03). Closes revision 1's high item."},
+        {"from_episode": "s2a01", "branch": "A", "lock": "Helmet on the lobby bench b1 and b2, under her left arm b3, set down on the SHO's desk b4, picked up b5, in her left hand b6 and b7, set down by the doorway b8; not in frame again in branch A.", "why": "D-016 direction 19; s2a01 look and b8 STATE."},
+        {"from_episode": "s2a02", "branch": "A", "lock": "Her LEFT wrist cuffed to Nirala's RIGHT wrist; she stands picture-left in a front two-shot. A grey cardboard token in her left chest pocket from b7.", "why": "s2a02 b1 to s2a03 b2 (unlocked there)."},
+        {"from_episode": "s2b01", "branch": "B", "lock": "Nirala's brass medal buttoned inside her left chest pocket, out of sight (pen still clipped on the pocket).", "why": "s2b01 b3 shot 3 to the end of s2b02; on the evidence table in s2b03."},
+        {"from_episode": "s2b01", "branch": "B", "lock": "Small dark pocket notebook: left trouser pocket b1 to b6, open on her knee b7 to b10, left on the stall bench at s2b02 b1 shot 1, then in Pushpa's knitting bag from s2b02 b1 shot 2.", "why": "s2b01 look; s2b02 b1."},
+        {"from_episode": "s2b02", "branch": "B", "lock": "No helmet from s2b02 b2 on (left on the stall bench). Printed memo pad folded in her right trouser pocket from b1, out in b6, back in that pocket with the pink slip under its top sheet at the start of b10. Her phone in her LEFT hand from b8; wooden revolver in her RIGHT hand, barrel down, in profile, from b11.", "why": "s2b02 look and props note."},
+        {"from_episode": "s2b03", "branch": "B", "lock": "From b9: both two-bar epaulettes off, bare khaki shoulder straps.", "why": "Suspension, s2b03 b9."},
+        {"from_episode": "s2b03", "branch": "B", "lock": "PERIOD 2 (b11 only): plain mustard-yellow cotton kurta with elbow-length sleeves over off-white trousers, same low ponytail, the blue pen tucked behind her right ear.", "why": "Weeks later; time cut stated (super su_b4)."}
+      ]
+    },
+    "nirala": {
+      "wardrobe_lock": "Sudhir Nirala, Indian man, 40, slight and short, narrow sloping shoulders, thin neck, light-brown skin, long narrow face, large earnest eyes, neat black pencil moustache; home-stitched copy of the force uniform, over-starched and ONE SIZE TOO BIG, shoulder seams drooping, sleeves to his knuckles, collar standing off his neck, belt tail hanging loose; teal epaulettes with three off-white bars, lantern sleeve patches; the only peaked cap in the series (khaki, teal band, shiny black peak, no badge) worn dead level; one palm-wide blank brass-yellow medal on a broad maroon-and-off-white striped ribbon above his left chest pocket; brown leather holster with a buttoned flap on his right hip.",
+      "static": "Face and pencil moustache never change. Cap dead level whenever worn (askew once, s2a03 b10 shots 1-2). Holster on his RIGHT hip. Rubber stamp and tin ink pad in his RIGHT trouser pocket. Medal above the LEFT chest pocket.",
+      "wardrobe_changes": [
+        {"from_episode": "s2e03", "lock": "Holster flap open, wooden revolver lying in profile on the desk (b8 to the end).", "why": "He lays it down."},
+        {"from_episode": "s2a01", "branch": "A", "lock": "Plain steel handcuffs on BOTH wrists (b1 to end of s2a01); holster EMPTY, flap buttoned flat, from b2 to the end of the branch.", "why": "Arrest; revolver sealed as case property in s2a01 b2."},
+        {"from_episode": "s2a02", "branch": "A", "lock": "RIGHT wrist cuffed to Nandini's LEFT; red cloth-tied file clamped under his LEFT arm; ink pad in his free LEFT hand at doors; spare tokens on their own short string in his left trouser pocket (habit; the lobby string stays on its nail).", "why": "s2a02 b1 to s2a03 b2; from s2a03 b2 to b6 the free half is in Pushpa's hand; no cuffs in the van."},
+        {"from_episode": "s2b01", "branch": "B", "lock": "PERIOD 1b: belt pulled tight, tail tucked; shoulder seams squared; cuffs folded back so his hands show (one change per still in b2); NO MEDAL from b3 shot 3; revolver buttoned in the holster from b4; Nandini's black phone in his left chest pocket, screen inward, from b5.", "why": "She dresses and wires him. Lasts to the end of s2b02; the phone is out of his pocket from s2b01 b11 (found) and lies face down on a sack beside him in s2b02 b2 to b8; holster empty from s2b02 b3."},
+        {"from_episode": "s2b03", "branch": "B", "lock": "PERIOD 2: no cap (cap on the evidence table), flat side-parted black hair, plain white half-sleeve shirt, grey trousers, no medal, no holster.", "why": "Days later in court, and weeks later at the help desk."}
+      ]
+    },
+    "tripathi": {
+      "wardrobe_lock": "Dayashankar Tripathi, Indian man, 56, large, heavy and slow, big soft belly, warm-brown skin, bald dome with a grey fringe at the sides, heavy jowls, clean-shaven, half-closed sleepy eyes; approved force uniform worn slack, khaki half-sleeve shirt with the top two buttons open over a white vest, teal epaulettes with three off-white bars, lantern sleeve patches, khaki trousers; a red-and-white checked gamchha over his LEFT shoulder; a paper cone of roasted peanuts in his LEFT hand; no cap.",
+      "static": "Gamchha on the LEFT shoulder, peanut cone in the LEFT hand, shells near him. One outfit throughout.",
+      "wardrobe_changes": [
+        {"from_episode": "s2e01", "branch": "shared", "lock": "b8: right palm raised towards her while she dials (now with his spoken l30).", "why": "Action, unchanged by the clarity pass."},
+        {"from_episode": "s2a03", "branch": "A", "lock": "From b8 the peanut cone is on the floor.", "why": "Custody."},
+        {"from_episode": "s2b02", "branch": "B", "lock": "From b9 a cracked shell in his RIGHT hand, crushed in his right fist in b11-b12.", "why": "Action."},
+        {"from_episode": "s2b03", "branch": "B", "lock": "No peanuts, both hands empty in his lap; uniform and three bars unchanged (open flag).", "why": "Accused in court."}
+      ]
+    },
+    "bhaiyaji": {
+      "wardrobe_lock": "Balram 'Bhaiyaji' Thakur, Indian man, 45, broad and solid, thick neck, big square hands, brown skin, thick black hair combed straight back, full black moustache, an unhurried closed-lip smile; spotless white cotton kurta with the sleeves pushed up over white pyjama trousers, brown leather sandals; heavy gold watch on his LEFT wrist; dark sunglasses pushed up on top of his head; a fat ring of godown keys hooked on his RIGHT index finger.",
+      "static": "Watch on the LEFT wrist, keys on the RIGHT index finger, sunglasses on his head unless an exception below. One outfit throughout.",
+      "wardrobe_changes": [
+        {"from_episode": "s2a02", "branch": "A", "lock": "Marigold welcome garland round his neck (prop, D-016 direction 19).", "why": "Chief guest, s2a02 b12 and s2a03 to b6; in s2a03 b8 the garland and the key ring lie on the empty chief-guest chair."},
+        {"from_episode": "s2a03", "branch": "A", "lock": "From b4 the sunglasses sit on his nose.", "why": "His name is read into the microphones."},
+        {"from_episode": "s2b02", "branch": "B", "lock": "From b11 the smile is gone; sunglasses still up.", "why": "Cornered."},
+        {"from_episode": "s2b03", "branch": "B", "lock": "Sunglasses folded in his RIGHT hand all episode; no key ring.", "why": "Accused in court."}
+      ]
+    },
+    "pushpa": {
+      "wardrobe_lock": "Pushpa Kumari, Indian woman, 50, short and solid, round shoulders, wheat-brown skin, round face, sharp small eyes over round steel-rimmed spectacles worn low, grey-streaked black hair in a tight high bun with two steel knitting needles crossed through it; approved force uniform with ONE off-white bar on each teal epaulette, lantern sleeve patches, khaki trousers, black shoes; an open hand-knitted plum-purple cardigan with two sagging pockets, a ball of orange wool in the right pocket; a cloth knitting bag over her left shoulder outdoors; no cap.",
+      "static": "Two needles in the bun at all times; the working pair comes from the knitting bag. One outfit throughout. Her old keypad handset in a knitted orange cover lives in her LEFT cardigan pocket (written from s2e03; the wool is in the right).",
+      "wardrobe_changes": [
+        {"from_episode": "s2a01", "branch": "A", "lock": "Second almirah key on a loop of orange wool, out of her cardigan pocket in b10; held up in s2a03 b5.", "why": "The register."},
+        {"from_episode": "s2b01", "branch": "B", "lock": "Keypad handset in her palm (b5), face up on the knitting in her lap at the stall (b7-b11); in her hand at s2b02 b1, then in her LEFT cardigan pocket; on the evidence table in s2b03. Nandini's notebook in her knitting bag from s2b02 b1 shot 2.", "why": "The recording."},
+        {"from_episode": "s2b02", "branch": "B", "lock": "The truck key in her RIGHT cardigan pocket with the wool from b8 (heard, not shown).", "why": "Seizure item five."},
+        {"from_episode": "s2b03", "branch": "B", "lock": "Nandini's two epaulettes in her cardigan pocket from b9.", "why": "Suspension."}
+      ]
+    },
+    "dsp": {
+      "wardrobe_lock": "Anil Rathore, DSP, Indian man, 48, tall and lean, upright, brown skin, short silver-grey side-parted hair, trimmed grey moustache, rimless rectangular spectacles; sharply pressed force uniform, khaki full-sleeve shirt, teal epaulettes each with ONE BROAD off-white band (no bars, no stars), lantern sleeve patches, khaki trousers, polished brown belt, a slim brown leather cane under his LEFT arm; no cap.",
+      "static": "On screen only in branch A (s2a02 b12, s2a03). A phone voice in s2e01, s2e03 and s2b02; a signature in s2b03. His full name is never spoken. Hindi always 'DSP साहब'; Nandini names him at every pick-up (s2e01 l31, s2e03 l30, s2b02 l26).",
+      "wardrobe_changes": []
+    },
+    "minor": {
+      "neighbour_voice": "s2e02 b3 l10 'निराला जी!', off screen, hands only. Kept by D-019. The two neighbours are hands on one handlebar in b3 and b4; Nirala names them as witnesses in b4 l37. Still not in bible.json (Grep: 0 hits): S1 errata owed.",
+      "door1_man": "Ramsevak. Face once (s2a01 b11); a hand and a voice in s2a02 b3-b4. Door: the same colour both times, a bicycle leaning by the step.",
+      "door2_woman": "Shanti Devi. One face shot, s2a02 b6 shot 1, about 3 a.m.; green sari, steel tumbler. Door: brass water pot.",
+      "door3_man": "Mukesh. One face shot, s2a02 b9 shot 1, about 7:30 a.m.; checked shirt, folded stamped receipt in his fist. Door: upturned tin bucket.",
+      "door4_voice": "A hand on a door held on its chain, s2a02 b10, about 8:30 a.m. Door: charpai end.",
+      "reporter": "Voice only, s2a03 b4.",
+      "magistrate": "Hands only, s2b03.",
+      "defence_lawyer": "Black-coated back and a pen hand, s2b03; Bhaiyaji's counsel ('मेरे मुवक्किल भैयाजी', l02).",
+      "truck_driver": "A forearm only, s2a01 b6-b7."
+    }
+  },
+
+  "branches": {
+    "shared": [
+      {
+        "episode": "s2e01",
+        "continuity_result": "pass (low items open: shots.json not yet re-laid for the six new lines; l27's tail plays over Nirala's shot unmarked)",
+        "end_state": {
+          "characters": {
+            "nandini": {"alive": true, "injuries": "none", "location": "talkies projection room, over the stool and the open red file", "wardrobe": "lock", "held": ["right hand resting on the handcuff pouch on her right hip", "token seven's string looped round her right wrist"], "not_held": "helmet on the lobby bench downstairs (set down in b10)"},
+            "nirala": {"alive": true, "injuries": "none", "location": "top of the projection-room stair", "wardrobe": "lock, period 1, medal on, revolver holstered and never shown", "held": []},
+            "pushpa": {"alive": true, "injuries": "none", "location": "top of the projection-room stair", "wardrobe": "lock, knitting bag on her left shoulder", "held": ["knitting, needles stopped"]},
+            "tripathi": {"alive": true, "injuries": "none", "location": "real thana, at the SHO's desk (last seen b9)", "wardrobe": "lock", "held": ["peanut cone, left hand"]},
+            "dsp": {"location": "off screen; phone voice only"},
+            "bhaiyaji": {"location": "not seen; named only, as 'godown वाले भैयाजी'"}
+          },
+          "props": {
+            "token_7": "with Nandini, string on her right wrist",
+            "red_helmet": "on the talkies lobby complainants' bench",
+            "thick_file": "red cloth untied, open on the projection-room stool",
+            "registers": "nine, pushed across the lobby counter in b10 ('सारे register ज़ब्त' / 'हाज़िर हैं, madam। क्रम से।'); the count nine is no longer spoken; not carried away (s2e03 has a stack on Nirala's desk)",
+            "sealed_envelopes": "23 on the projection-room racks (the 24th arrives in s2e02)",
+            "medal": "on Nirala's chest",
+            "wooden_revolver": "in Nirala's holster, flap buttoned, never seen",
+            "handcuffs": "in Nandini's pouch",
+            "thana_desk_phone": "on the SHO's desk, handset down (b9)",
+            "zero_crime_shield": "on the real thana wall",
+            "complaint_form": "blank, under Nirala's raised pen (b4, l32 'Form तैयार है')",
+            "transfer_application": "envelope with a receipt stamp at Pushpa's side table; the application is pending with the DSP",
+            "nandini_scooter": "last seen at the crossing gate (b5); not mentioned again in any episode"
+          },
+          "knowledge": {
+            "nandini": ["In six weeks no complaint has reached her thana, so she came with a token like a complainant (l27; her belief, corrected for the viewer by s2e02 l06)", "A man in a too-big uniform and a cap calls himself Inspector Sudhir Nirala of the 'रूपम Talkies थाना', this side of the railway line, in a shut cinema", "Nobody in her force wears a cap; he does", "Her thana has registered no FIR in two years and has a zero-crime shield for it", "Tripathi asked her not to tell the DSP (l30); she phoned anyway", "Her transfer application has reached the DSP", "DSP's order: the man running the fake thana in her lockup before ten tomorrow; ten is the DSP's press conference at her own thana for its second zero-crime year", "Thirty complaints in the thickest file, all naming 'godown वाले भैयाजी' (ration theft, extortion)", "All thirty were first refused at her own thana by SHO Tripathi (first dated 17 March)"],
+            "nirala": ["She is the area's real SI and came with a token", "She has seized his registers and is reading the thickest file"],
+            "pushpa": ["Everything Nandini knows", "The way to the talkies (she says so); the bible's secrets are not yet spoken"],
+            "tripathi": ["Nandini has reported the fake thana to the DSP against his wish", "The DSP wants its man in the lockup before the press conference"],
+            "viewer": ["All of Nandini's list", "Tripathi did not want the DSP told and stopped chewing when she phoned"]
+          },
+          "relationships": {"nandini-nirala": "officer and impostor; he cooperates, she has not acted", "nandini-tripathi": "subordinate; distrust begins", "nandini-pushpa": "Pushpa is quietly on her side", "pushpa-nirala": "they nod like colleagues"},
+          "time": "Day 1, about 2 p.m.",
+          "numbers_said": ["Token सात", "छह हफ़्ते", "दो साल से एक FIR नहीं", "कल दस बजे", "Zero crime का दूसरा साल", "तीस complaint", "सत्रह मार्च", "तीस की तीस"],
+          "supers": ["su1 नंदिनी जोशी · Sub-Inspector (b2)", "su2 रूपम Talkies · इमलीपुर (b3)", "su3 Railway फाटक (b5)", "su6 इमलीपुर थाना (b6)", "su4 दयाशंकर त्रिपाठी · SHO, थाना प्रभारी (b6)", "su5 पुष्पा कुमारी · Head Constable (b7)"],
+          "open_questions": ["Who is she being sent to arrest?", "Why did her SHO refuse all thirty?"]
+        }
+      },
+      {
+        "episode": "s2e02",
+        "continuity_result": "pass (revision 1's high token item fixed in the script and in shots.json s01 and s03; low items open: shots.json lacks l35 to l37 and the b4 hands-insert shot)",
+        "opens_from": "s2e01 end, seconds later, same room. Matches: hand on the pouch, token seven on the right wrist (shots.json s01 reuses s2e01 s36), file open on the stool, helmet on the lobby bench.",
+        "end_state": {
+          "characters": {
+            "nandini": {"alive": true, "injuries": "none", "location": "talkies lobby (last seen at the desk, about 4 p.m.; reading the files into the evening, per Pushpa's l32)", "wardrobe": "lock", "held": ["helmet under her left arm (b8, b10)"], "pocketed": "token seven in her left trouser pocket (from l03)", "not_held": "handcuffs back in the pouch (l28 insert)"},
+            "nirala": {"alive": true, "injuries": "none", "location": "talkies lobby desk", "wardrobe": "lock, period 1, medal on (flicked by Bhaiyaji in b7), holster closed", "held": ["the 24th envelope, sealed, flat under his hand"]},
+            "pushpa": {"alive": true, "injuries": "none", "location": "real thana; at about 7 p.m. sent out of the doorway for tea with Tripathi's empty glass, walking slowly", "wardrobe": "lock", "held": ["Tripathi's empty tea glass"]},
+            "tripathi": {"alive": true, "injuries": "none", "location": "real thana, alone under the shield, on the desk phone to Bhaiyaji", "wardrobe": "lock", "held": ["desk-phone receiver", "peanut cone"]},
+            "bhaiyaji": {"alive": true, "location": "off screen; on the phone with Tripathi (left the talkies about 4 p.m. by car)", "wardrobe": "lock", "held": ["godown keys"]}
+          },
+          "props": {
+            "sealed_envelopes": "24: 23 on the projection-room racks, the newest sealed with red wax and a blank tag, entered in the malkhana ledger on the lobby desk",
+            "malkhana_ledger": "open on the lobby desk, last entry the 24th",
+            "handcuffs": "in Nandini's pouch, flap shut (b10)",
+            "red_helmet": "under Nandini's left arm (into the booth with her in b6)",
+            "token_7": "in Nandini's left trouser pocket, not seen again in either branch",
+            "token_8": "with the bicycle neighbours (looped over a wrist); left with them",
+            "bicycle_receipt": "stamped and torn off in b4; in Nirala's hand (s13)",
+            "bicycle": "returned to the complainant by Nirala's ruling (l36), the two neighbours named as witnesses (l37)",
+            "thick_file": "last seen open on the projection-room stool (b1); not moved on screen",
+            "thana_desk_phone": "in Tripathi's hand, connected to Bhaiyaji",
+            "zero_crime_shield": "on the wall over Tripathi"
+          },
+          "knowledge": {
+            "nandini": ["Pushpa sent every complainant Tripathi turned away across the line", "Tripathi has known for two years and kept quiet because speaking would cost him the shield; he told neither the department nor Bhaiyaji that the talkies Inspector is fake (l09)", "Nirala keeps a register good enough to settle a stolen-cycle dispute in ten minutes; his rule: say aloud what you write so the witness hears", "Bhaiyaji pays Nirala monthly as 'our outpost, our Inspector साहब', and pays Tripathi more", "Bhaiyaji believes the thirty papers are asleep; Nirala: the money is to keep the files asleep, and the files are awake (l35)", "Nirala seals every payment as case property with date, amount and note numbers: 24 envelopes, two years, waiting for a real officer to ask", "He failed the police entrance nine times by one centimetre of chest", "She has given him until before ten tomorrow; charge handover until then"],
+            "nirala": ["Nandini saw the payment from the booth", "His deadline: her lockup before ten tomorrow"],
+            "pushpa": ["Nandini is reading the files, not arresting him (she tells Tripathi)", "Part of Tripathi's call (revealed only in s2e03)"],
+            "tripathi": ["Nandini has not arrested the talkies man and is reading his files, which name Tripathi thirty times"],
+            "bhaiyaji": ["Until about 7 p.m.: Nirala is his bought Inspector. What Tripathi tells him is unheard. He has never seen Nandini (she hid in the booth)"],
+            "viewer": ["Pushpa says Tripathi never told Bhaiyaji the man is fake", "Tripathi phones Bhaiyaji about 'talkies वाली चौकी'; nothing of the reply is heard"]
+          },
+          "relationships": {"nandini-nirala": "grudging respect; a deadline", "nandini-pushpa": "trust, after a confession", "tripathi-bhaiyaji": "paid SHO, now calling him"},
+          "time": "Day 1, about 7 p.m. (super su7 'उसी शाम' on b11)",
+          "numbers_said": ["Token आठ", "दस minute", "चौबीस लिफ़ाफ़े", "दो साल", "नौ बार", "एक centimetre", "कल दस बजे"],
+          "numbers_dropped_by_clarity_pass": ["Frame नौ-दो-सात", "Note सात-सात-तीन", "Register एक से नौ (s2e01)"],
+          "off_screen_fact_true_in_both_branches": "The same evening Tripathi signs and stamps the truck's movement slip himself; the truck is fully loaded by midnight. Nobody on screen knows this until after the vote.",
+          "open_questions": ["What did Tripathi tell Bhaiyaji?", "What will Bhaiyaji do to the man he thinks he bought?"]
+        }
+      },
+      {
+        "episode": "s2e03",
+        "continuity_result": "pass (low items open: shots.json not re-laid for seven new lines and the l20 cut; phone pocket conflicts with s2b01)",
+        "opens_from": "s2e02 end plus about three and a half hours (super su9 'रात 10:30'). File and registers on the lobby desk (moved off screen in the gap); helmet on the lobby bench.",
+        "end_state": {
+          "characters": {
+            "nandini": {"alive": true, "injuries": "none", "location": "talkies lobby, standing across the desk from Nirala, picture-left", "wardrobe": "lock", "held": ["the open handcuffs in her right hand, just out of the pouch"], "pocketed": "her black phone in her right trouser pocket (from after b7); token seven in her left trouser pocket", "not_held": "helmet on the lobby complainants' bench all episode"},
+            "nirala": {"alive": true, "injuries": "none", "location": "behind the lobby desk", "wardrobe": "lock, period 1, medal on, holster flap open and EMPTY", "held": ["both wrists held out across the desk, sleeves over his knuckles"]},
+            "pushpa": {"alive": true, "injuries": "none", "location": "talkies lobby, in the room, out of frame in b8-b10", "wardrobe": "lock, knitting bag on her left shoulder", "held": ["the working pair of needles and orange wool from the bag"], "pocketed": "keypad handset in its orange cover, left cardigan pocket"},
+            "bhaiyaji": {"location": "off screen; phoned Nirala at about 10:30 p.m."},
+            "dsp": {"location": "off screen; phoned by Nandini"},
+            "tripathi": {"location": "off screen"}
+          },
+          "props": {
+            "wooden_revolver": "lying in profile on the lobby desk, pale teak, between his wrists and her",
+            "handcuffs": "open, in Nandini's right hand",
+            "nirala_phone": "keypad handset face up on the desk, screen dark",
+            "nandini_phone": "used at a pillar in b6, lowered in b7, then in her right trouser pocket (writer_notes; shots.json s03, s09, s23, s25, s26, s33)",
+            "pushpa_phone": "in its knitted orange cover in her left cardigan pocket all episode, out of sight",
+            "thick_file": "red cloth file on the lobby desk",
+            "registers": "squared in a stack on the lobby desk",
+            "stamp_and_pad": "on the desk by his sleeve (b2 insert)",
+            "red_helmet": "on the lobby complainants' bench",
+            "medal": "on Nirala's chest",
+            "wall_clock": "hour hand on eleven, minute hand on twelve"
+          },
+          "knowledge": {
+            "nandini": ["Bhaiyaji's invitation: godown, twelve tonight, alone; eight hundred sacks going out; the crossing is the outpost's, so the slip needs his stamp; 'as always'", "Nirala has stamped Bhaiyaji's slip every month: refusing would not stop the truck (the SHO would stamp it) and would tell Bhaiyaji the thana is not bought, and the files would go (l28, l29, l33)", "This is the town's ration, and a chance to catch it red-handed", "Tripathi phoned Bhaiyaji in the evening; the call connected; Pushpa heard 'talkies', then the door shut; nobody heard Bhaiyaji's answer", "The call came first and the invitation after, in the usual words: trap or not, nobody knows (l34)", "She asked the DSP for a raid on the godown tonight (l30); he will not raid on something heard on a fake thana's phone, orders Nirala locked up now, and says any officer who helps him will be named in the same FIR", "If arrested, Nirala is safe but the SHO will stamp the slip and she cannot stop a stamped truck", "If he goes, only he can get into the godown, with her phone in his pocket; Bhaiyaji's own voice would be recorded, red-handed (l20, l35); it would be on her word, against orders (l32)", "The revolver is carved teak and has never left the holster; Bhaiyaji has a real one (Nirala's words)"],
+            "nirala": ["The same", "He has said he is not police and will do what she says"],
+            "pushpa": ["The same, from b4 on; her needles stop on the DSP's l16, so she is taken to hear the DSP's side of the call (s2b01 l02 rests on it)"],
+            "dsp": ["Nandini's request: a raid on Bhaiyaji's godown tonight; her source: Bhaiyaji's own voice on the fake thana's phone"],
+            "viewer": ["The same as Nandini. Neither she nor the viewer knows the slip is already stamped or that Bhaiyaji knows. Where a recording would be kept is not said."]
+          },
+          "relationships": {"nandini-dsp": "ordered, and warned", "nandini-nirala": "he leaves the choice to her", "nirala-bhaiyaji": "fear, now spoken; complicity explained"},
+          "time": "Day 1 (night 1), 11 p.m.",
+          "numbers_said": ["बारह बजे", "आठ सौ बोरी", "दो साल"],
+          "supers": ["su9 रात 10:30 (b1, not spoken)"],
+          "open_questions": ["Cuff him, or let him be Inspector tonight?", "Does Bhaiyaji know?"]
+        }
+      }
+    ],
+
+    "A": [
+      {
+        "episode": "s2a01",
+        "continuity_result": "pass (revision 1's helmet items fixed; no open item)",
+        "opens_from": "s2e03 end state: wrists out, open cuffs in her right hand, revolver on the desk, Pushpa in the room, helmet on the lobby bench (look text now says so). Matches.",
+        "end_state": {
+          "characters": {
+            "nandini": {"alive": true, "injuries": "none", "location": "lane_doorway, at Ramsevak's shut door, 1 a.m. (super su_a1)", "wardrobe": "lock", "held": ["red file under her left arm", "green FIR register held flat against her chest by the same arm", "right hand half raised after knocking"], "not_held": "handcuffs on Nirala, pouch empty; helmet set down by the real thana doorway in b8, not in frame again"},
+            "nirala": {"alive": true, "injuries": "none", "location": "real thana lockup", "wardrobe": "lock, period 1, medal on, cap level, holster EMPTY", "held": ["handcuffs on both wrists"]},
+            "pushpa": {"alive": true, "injuries": "none", "location": "real thana", "wardrobe": "lock", "held": ["knitting"]},
+            "door1_man": {"location": "behind his shut door"},
+            "tripathi": {"location": "off screen all night"},
+            "bhaiyaji": {"location": "off screen; the godown, waiting at midnight, then the truck"}
+          },
+          "props": {
+            "wooden_revolver": "sealed in a cloth bag with his red wax, label 'एक revolver, लकड़ी की। मुलज़िम से बरामद।'; carried by Pushpa in b2; assumed in the real thana",
+            "handcuffs": "on both of Nirala's wrists",
+            "talkies_lobby": "dark: Pushpa switched off the bulb (b2); Nirala's keypad phone and the registers left on the desk",
+            "movement_slip": "pink; signed and stamped by SHO Tripathi; read by Nandini and handed back to the driver; gone with the truck",
+            "truck": "passed the crossing at 12:10 a.m. with 800 sacks",
+            "almirah_key": "Pushpa's second key on a loop of orange wool, out of her cardigan pocket (b10)",
+            "steel_almirah": "opened with the second key; the SHO holds the first (l28)",
+            "fir_register": "out of the almirah, blank ruled pages, now against Nandini's chest",
+            "thick_file": "with Pushpa (b2), on the SHO's desk (b9), under Nandini's left arm (b11)",
+            "red_helmet": "set down by the real thana doorway, out of frame (b8 STATE)",
+            "lockup_door": "closed and locked on Nirala",
+            "zero_crime_shield": "on the wall above the blank register (b10)"
+          },
+          "knowledge": {
+            "nandini": ["The slip for 800 sacks carries SHO Tripathi's signature and stamp; the papers are complete", "She let the truck go at 12:10", "Inference, not confirmed: the stamp was already on the slip and Bhaiyaji still asked Nirala to come alone, so the invitation was for him, not for a stamp (l29, l16)", "His files are a fake thana's paper; a complaint becomes an FIR only in the real register (l18, l30), and a register laid before the press at ten cannot be buried; after ten it goes back into the SHO's almirah", "The register is in that almirah and the SHO has the key (l28); Pushpa has had a second key for two years; the register is blank", "The first complainant will not open to the real uniform"],
+            "nirala": ["The truck went on the SHO's signature; the same inference", "Ten o'clock microphones (from Nandini, l19)"],
+            "pushpa": ["Her key is now known"],
+            "viewer": ["The same as Nandini; still no confirmation that Bhaiyaji knew"]
+          },
+          "relationships": {"nandini-nirala": "jailer and prisoner, now allies on the register", "nandini-pushpa": "Pushpa hands over what she kept"},
+          "time": "Night 1, about 1 a.m.",
+          "numbers_said": ["दो साल", "बारह", "आठ सौ बोरी", "बारह बजकर दस मिनट (l11 only; dropped from l13)", "सुबह दस बजे", "दस के बाद"],
+          "open_questions": ["How does she get even one thumb before ten?"]
+        }
+      },
+      {
+        "episode": "s2ga",
+        "continuity_result": "pass",
+        "note": "Glimpse A inherits s2a01 b1 (l03 only), b4 shot 3, b5 (l07) and b6 l08. No line or super in that range changed in the clarity pass (s2a01 kept l01 to l12 byte-identical). It ends with her hand raised in the headlights. Nothing from l09 on.",
+        "end_state": {"inherits": "s2a01 b6 at l08: Nirala cuffed in the lockup, Nandini at the crossing with the helmet in her left hand and her right hand up; the truck idling behind the lowered gate arm; slip not yet shown"}
+      },
+      {
+        "episode": "s2a02",
+        "continuity_result": "pass (no open item; the spare-token string is accepted as habit and now written in his look)",
+        "opens_from": "s2a01 end plus twenty minutes: 1:20 a.m., real thana lockup; she has walked back with the register and the file. Matches.",
+        "end_state": {
+          "characters": {
+            "nandini": {"alive": true, "injuries": "none", "location": "in the real thana's front doorway, 9:55 a.m.", "wardrobe": "lock, NO helmet", "held": ["green register under her right arm, her right hand tightening on it"], "pocketed": "a grey cardboard token in her left chest pocket (from b7); token seven in her left trouser pocket", "chained": "her LEFT wrist to Nirala's RIGHT"},
+            "nirala": {"alive": true, "injuries": "none", "location": "beside her in the doorway, picture-right", "wardrobe": "lock, period 1, medal on, cap level, holster empty, flap buttoned flat", "held": ["red file under his LEFT arm", "tin ink pad in his right trouser pocket between doors", "spare token string in his left trouser pocket"], "chained": "his RIGHT wrist to her LEFT"},
+            "pushpa": {"alive": true, "injuries": "none", "location": "at the microphone table in the dressed thana", "wardrobe": "lock"},
+            "dsp": {"alive": true, "location": "stepping out of the white car in the thana yard", "wardrobe": "lock, cane under his LEFT arm", "first_on_screen": true},
+            "bhaiyaji": {"alive": true, "location": "stepping out of the same car", "wardrobe": "lock plus marigold garland; sunglasses on his head; keys on his right finger"},
+            "tripathi": {"location": "not shown (he is behind the DSP at s2a03 b1)"}
+          },
+          "props": {
+            "handcuffs": "one ring on Nandini's left wrist, one on Nirala's right",
+            "fir_register": "thirty FIRs with thirty thumbprints: 1 Ramsevak about 1:30, Shanti Devi about 3 a.m., 11 at first light, tea at the stall 6 a.m., Mukesh about 7:30, door four about 8:30, 27 at 9:30, 30 at about 9:50",
+            "ink_pad": "Nirala's own tin pad; thirty thumbs",
+            "token_11": "in Nandini's left chest pocket",
+            "thick_file": "under Nirala's left arm",
+            "real_thana": "dressed: microphone table, polished shield, cloth banner (ov_press_banner)",
+            "marigold_garland": "on Bhaiyaji",
+            "dsp_car": "white, in the yard, door open"
+          },
+          "knowledge": {
+            "nandini": ["Thirty complainants have given FIRs, all naming Bhaiyaji (Nirala, l33)", "The chief guest is the man named in all thirty"],
+            "nirala": ["The same; he has told the town to trust her and not his rubber stamp"],
+            "town": ["Doors stay shut to the real uniform and open for him (l30); thirty households know the real thana has written their FIRs; Mukesh's complaint had a receipt with Nirala's stamp; door four heard the grain went past her"],
+            "pushpa": ["Who has arrived"],
+            "dsp": ["Nothing of the night"],
+            "bhaiyaji": ["Nirala did not come at midnight; the truck crossed; nothing of the register"],
+            "viewer": ["The same as Nandini"]
+          },
+          "relationships": {"nandini-nirala": "chained partners; she salutes with him by choice", "nandini-town": "trust won through Nirala, then one door by herself"},
+          "time": "Day 2, 9:55 a.m.",
+          "numbers_said": ["FIR number एक", "दस बजे तक तीस", "नौ बार", "Token ग्यारह", "FIR number ग्यारह", "साढ़े नौ। सत्ताईस।", "तीस। दस minute बाक़ी।", "तीसों"],
+          "supers": ["su_a3 रात 3 बजे (b6)", "su_a2 सुबह 6 बजे (b8)", "su_a4 सुबह 8:30 (b10)"],
+          "open_questions": ["Will the DSP take the register, or bury it and her?"]
+        }
+      },
+      {
+        "episode": "s2a03",
+        "continuity_result": "pass (Joshi spelling and DSP role fixed; low English forms-of-address item open)",
+        "opens_from": "s2a02 end, minutes later: still chained, register and file as before. Matches.",
+        "end_state": {
+          "characters": {
+            "nandini": {"alive": true, "injuries": "none", "location": "the real thana front doorway, saluting towards the yard", "wardrobe": "lock, no helmet, wrists free", "held": ["her transfer application, folded (taken back from the DSP's file in b9)"]},
+            "nirala": {"alive": true, "injuries": "none", "location": "inside the prison van, leaving the yard", "wardrobe": "lock, period 1, cap set level by her, medal on, holster empty, no cuffs in view, no file in view"},
+            "pushpa": {"alive": true, "location": "inside the thana, near the bench", "wardrobe": "lock"},
+            "tripathi": {"alive": true, "location": "in custody (taken by Pushpa on the DSP's order)"},
+            "bhaiyaji": {"alive": true, "location": "in custody; last seen b6"},
+            "dsp": {"alive": true, "location": "the thana, owning the thirty cases"}
+          },
+          "props": {
+            "handcuffs": "off Nandini at b2; the free half in Pushpa's hand to b6, then locked to a window bar off screen; not in the van",
+            "fir_register": "on the press table among the microphones",
+            "zero_crime_shield": "face down on the SHO's desk",
+            "peanut_cone": "on the floor, peanuts rolling",
+            "marigold_garland_and_keys": "on the empty chief-guest chair",
+            "almirah_key": "held up by Pushpa in b5",
+            "transfer_application": "withdrawn, in Nandini's hand",
+            "thick_file": "under Nirala's arm to b6; place after not written (nothing later needs it)",
+            "wooden_revolver": "not in frame (sealed property since s2a01)",
+            "sealed_envelopes": "spoken of only (l16, 'आपकी रिश्वत के चौबीस लिफ़ाफ़े'), still in the talkies projection room",
+            "complainants_bench": "full: three pairs of hands, one with a folded stamped receipt"
+          },
+          "knowledge": {
+            "press_and_dsp": ["FIR number one names the chief guest, Balram Thakur alias Bhaiyaji, for extortion", "All thirty record that SHO Tripathi refused them", "Last night's 800 sacks of ration left on Tripathi's signature", "Bhaiyaji's 24 envelopes of bribes are sealed case property", "The DSP's reason, said to himself: thirty FIRs read out before the press will not stay buried (l28)"],
+            "nirala": ["He will plead guilty"],
+            "viewer": ["The grain is gone for good; Nandini stays; no sentence is named"]
+          },
+          "time": "Day 2, the same morning, straight after the 10 a.m. press conference (super su1 'सुबह दस बजे'; su2 'थाने के बाहर · jail van' at b10)",
+          "numbers_said": ["लगातार दूसरे साल", "तीस FIR", "FIR number एक", "तीसों", "आठ सौ बोरी", "चौबीस लिफ़ाफ़े", "तीस मामलों"],
+          "open_questions": []
+        }
+      }
+    ],
+
+    "B": [
+      {
+        "episode": "s2b01",
+        "continuity_result": "pass (notebook placed; low phone-pocket item open against s2e03)",
+        "opens_from": "s2e03 held frame: her left hand on his wrists, open cuffs in her right, revolver on the desk, Pushpa in the room. Matches. Phone: s2b01 look puts it in her right chest pocket from b1; s2e03 left it in her right trouser pocket (low, open).",
+        "end_state": {
+          "characters": {
+            "nandini": {"alive": true, "injuries": "none", "location": "crossing_stall, on her feet beside the bench, about 12:10 a.m.", "wardrobe": "lock; Nirala's medal buttoned in her left chest pocket", "held": ["left hand flat over the left chest pocket"], "not_held": "no phone (hers was in Nirala's pocket and has been found); helmet on the stall bench; notebook and blue pen at the bench (b7-b10)"},
+            "nirala": {"alive": true, "injuries": "none", "location": "inside the godown, shutter down, with Bhaiyaji", "wardrobe": "period 1b: no medal, cuffs folded back, belt tucked, seams squared, cap level, revolver buttoned in the holster", "held": ["the slip (read aloud in b9)"], "not_held": "Nandini's phone, found in his pocket by Bhaiyaji (b11)"},
+            "pushpa": {"alive": true, "injuries": "none", "location": "crossing_stall bench, seated", "wardrobe": "lock", "held": ["keypad handset on the knitting in her lap, screen dark, recording kept"]},
+            "bhaiyaji": {"alive": true, "location": "inside the godown, voice only", "held": ["Nandini's phone (just found)"]},
+            "tripathi": {"location": "off screen"},
+            "dsp": {"location": "off screen"}
+          },
+          "props": {
+            "handcuffs": "in Nandini's pouch from b1, not seen again",
+            "medal": "in Nandini's buttoned left chest pocket",
+            "wooden_revolver": "buttoned in Nirala's holster",
+            "nandini_phone": "in Bhaiyaji's hand; the open call to Pushpa's handset cut",
+            "pushpa_phone": "recording made from b5 l09 to the cut; screen dark; the only copy",
+            "red_helmet": "on the stall bench (stays there)",
+            "notebook": "Nandini's, from her left trouser pocket; open on her knee b7-b10",
+            "memo_pad": "folded in Nandini's right trouser pocket, unseen",
+            "godown_shutter": "down (fell in b8)",
+            "truck": "fully loaded under its tarpaulin inside the godown",
+            "movement_slip": "in Nirala's hand inside the godown; already signed by SHO Tripathi",
+            "crossing_gate_arm": "up"
+          },
+          "knowledge": {
+            "nandini": ["She sent him in as Inspector to face Bhaiyaji (l28); her phone in his pocket on a live call (l29); the recording is on Pushpa's phone (l09); he must not draw the wooden revolver because Bhaiyaji has a real one (l07)", "Bhaiyaji, in his own voice, on the recording: a bigger load than usual, the truck full to the tarpaulin, crossing tonight, all 800, government-marked", "The slip already carries the SHO's signature; Nirala asked why he was called (l32)", "Bhaiyaji knew Nirala was a fake and was waiting for him: the invitation was a trap (l25, l31)", "Bhaiyaji has found her phone; the line is dead", "Everything up to the cut is safe on Pushpa's handset"],
+            "pushpa": ["The same; she started the recording; she knows the DSP's FIR warning (l02)"],
+            "nirala": ["The slip is already signed by the SHO", "Bhaiyaji knows he is a fake"],
+            "bhaiyaji": ["Nirala is a fake (since about 7 p.m., from Tripathi)", "There was a phone on an open call in his pocket; whose, he asks"],
+            "viewer": ["The same as Nandini"]
+          },
+          "relationships": {"nandini-nirala": "she sent him and promised he would come back for the medal", "nandini-dsp": "she has broken his order on her own word"},
+          "time": "Night 1, about 12:10 a.m.",
+          "numbers_said": ["एक रात और", "दो साल", "आठ सौ बोरी", "पूरी आठ सौ", "आठ सौ। सरकारी। आज रात।"],
+          "supers": ["su_b1 भैयाजी का godown (b8 shot 1)"],
+          "open_questions": ["What does Bhaiyaji want the fake inspector for?", "How does she reach him with no order, no backup and a dead line?"]
+        }
+      },
+      {
+        "episode": "s2gb",
+        "continuity_result": "pass, re-cut owed (S14)",
+        "note": "Glimpse B inherits s2b01 b3, b4, b6 and b8 (to l16). l05, l06 and l07 are reworded and su_b1 sits on b8 shot 1, so S14 re-cuts it. The optional b5 shot 3 now carries l29 (phone into the pocket). Nothing in the range touches must_not_reveal: no laugh, no 'नक़ली Inspector', no dead line, no slip, no danger phrase. l07's 'भैयाजी के पास असली है' repeats s2e03 l24 and reveals nothing new.",
+        "end_state": {"inherits": "s2b01 b8 at l16: shutter down behind Nirala; medal in her pocket; revolver holstered; the women at the stall listening"}
+      },
+      {
+        "episode": "s2b02",
+        "continuity_result": "pass (memo pad, slip and notebook placed; Joshi spelling fixed; low sound-cue id item open)",
+        "opens_from": "s2b01 end plus about two minutes (12:12 a.m.), at the stall. Matches; helmet left on the bench; notebook scooped into Pushpa's knitting bag in b1.",
+        "end_state": {
+          "characters": {
+            "nandini": {"alive": true, "injuries": "none", "location": "inside the godown", "wardrobe": "lock, no helmet, medal buttoned in her left chest pocket", "held": ["wooden revolver in her RIGHT hand, barrel to the floor, in profile", "her black phone in her LEFT hand, then flat over her left chest pocket"], "pocketed": "memo pad with the pink slip under its top sheet in her right trouser pocket; pen clipped in her left chest pocket; token seven in her left trouser pocket"},
+            "nirala": {"alive": true, "injuries": "none", "location": "seated on a jute sack", "wardrobe": "period 1b, holster EMPTY", "held": []},
+            "pushpa": {"alive": true, "injuries": "none", "location": "inside the godown", "wardrobe": "lock, knitting bag with Nandini's notebook in it", "held": ["keypad phone (the recording) in her LEFT cardigan pocket", "truck key in her RIGHT cardigan pocket with the wool"]},
+            "bhaiyaji": {"alive": true, "location": "seated on a sack, smile gone", "wardrobe": "lock, sunglasses up, keys on his right finger"},
+            "tripathi": {"alive": true, "location": "standing in the godown, pointing at Nandini", "wardrobe": "lock", "held": ["peanut cone, left hand", "crushed shell, right fist"]},
+            "dsp": {"location": "off screen; force promised in twenty minutes"}
+          },
+          "props": {
+            "confession_sheet": "typed, unsigned, pen across it, on the weighing-scale platform",
+            "movement_slip": "item three; under the memo pad's top sheet after l19; in her right trouser pocket with the pad from b10",
+            "seizure_memo": "items: 1 a government-marked sack (l17), 2 the truck, fully loaded (l35, from Nirala's count l18), 3 the movement slip signed by SHO Tripathi (l19), 4 the owner present (l21), 5 the truck key seized (l22), 6 SHO Dayashankar Tripathi present at 12:30 (l24, l25); witness Head Constable Pushpa Kumari (l16); started 12:20 at the godown of Balram Thakur alias Bhaiyaji (l14, l37)",
+            "truck": "loaded, tailgate up, key seized",
+            "godown_shutter": "up since b5",
+            "nandini_phone": "face down on a sack beside Nirala b2-b8; in her left hand from b8",
+            "pushpa_phone": "left cardigan pocket; never in Bhaiyaji's reach",
+            "red_helmet": "left on the stall bench",
+            "notebook": "in Pushpa's knitting bag",
+            "handcuffs": "in Nandini's pouch"
+          },
+          "knowledge": {
+            "nandini": ["The dead line is itself the danger signal (l33); the recording survives on Pushpa's phone (l34)", "Bhaiyaji's plan: a 'fake police gang' confession for Nirala to sign, Tripathi coming to arrest him, one arrest for the DSP (she sees the sheet; Nirala heard it)", "The DSP is sending a force in twenty minutes; his press conference is gone (l38); he takes nothing back"],
+            "nirala": ["The grain was not looted: it is in Bhaiyaji's godown (l40); a gang needs two (l08)"],
+            "dsp": ["An SI's seizure memo with a witness, Bhaiyaji's voice on record, 800 sacks; he sends a force"],
+            "bhaiyaji": ["The phone in the impostor's pocket was madam's (from b8)", "A recording exists (said in front of him, l27)"],
+            "tripathi": ["He is item six; the phone was madam's (Bhaiyaji, l39); he concludes she sent the impostor in and will say so in court"],
+            "viewer": ["The same"]
+          },
+          "time": "Night 1, about 12:40 a.m. (force due about 12:55)",
+          "numbers_said": ["रात बारह बजकर बीस minute", "Item एक, दो, तीन, चार, पाँच, छह", "आठ सौ", "रात साढ़े बारह बजे", "बीस minute"],
+          "open_questions": ["Will she lie in court?"]
+        }
+      },
+      {
+        "episode": "s2b03",
+        "continuity_result": "pass (low creative flag open: Tripathi's bars)",
+        "opens_from": "Days later (super su_b3). Every handover from the s2b02 end state is covered by the time cut: the revolver, the medal from her pocket, Pushpa's phone, the cap and the 24 envelopes are exhibits; Nirala is in period 2.",
+        "end_state": {
+          "characters": {
+            "nandini": {"alive": true, "injuries": "none", "location": "talkies lobby help desk, weeks later", "wardrobe": "PERIOD 2 mustard kurta, pen behind her right ear", "held": [], "status": "suspended on the DSP's signature; transfer application returned, refused; will stand trial on her own statement"},
+            "nirala": {"alive": true, "injuries": "none", "location": "beside her at the help desk", "wardrobe": "PERIOD 2 white half-sleeve shirt, no cap", "held": ["string of blank tokens; lifts token one"], "status": "on bail; trial next month"},
+            "pushpa": {"alive": true, "location": "off screen; in charge at the thana, writing the thirty FIRs", "held": ["Nandini's epaulettes in her cardigan pocket (b9)"]},
+            "bhaiyaji": {"alive": true, "location": "in custody: charged, bail refused"},
+            "tripathi": {"alive": true, "location": "in custody: charged, bail refused"},
+            "dsp": {"location": "off screen; signed the suspension"}
+          },
+          "props": {
+            "evidence_table_at_hearing": "24 sealed envelopes (one turned over by the magistrate, wax unbroken), the peaked cap, the brass medal (slid clear of the sealed exhibits in b8), the wooden revolver on its side, Pushpa's keypad phone in its orange cover",
+            "seizure_memo_carbon": "folded on the rail of the witness stand (b4)",
+            "suspension_order": "in a long brown open envelope, brought by Pushpa; the returned transfer application comes with it (spoken, l27; not shown)",
+            "medal": "a paperweight on a stack of forms at the help desk (weeks later)",
+            "tokens": "a new string of blank grey tokens; token one called",
+            "help_desk_board": "new hand-painted board (ov_helpdesk_board); ticket-booth grille open and empty"
+          },
+          "knowledge": {
+            "court": ["She sent him, the phone was hers and the decision was hers", "The recording is evidence because an SI sent the phone in; on it Bhaiyaji greets the fake inspector he was waiting for", "Nirala never opened one of the 24 envelopes"],
+            "viewer": ["Her transfer is refused and she is staying (l27, l28)", "The help desk is not a thana: complaints are written there, FIRs at the real thana (l23, l31)", "Both trials are on the same day next month"]
+          },
+          "time": "Some days after night 1 (b1-b10); some weeks later (b11, morning, super su_b4)",
+          "numbers_said": ["चौबीस लिफ़ाफ़े", "तीस FIR", "अगले महीने", "Token एक"],
+          "open_questions": []
+        }
+      }
+    ]
+  },
+
+  "clarity_pass_check": {
+    "scope": "Every line added, reworded or retired in the D-024 pass, against the bible, this ledger, viewer-ledger.json and the three shots.json files.",
+    "hi_en_ids": "pass: all nine episodes have the same line ids in the same order with the same speakers in hi and en (checked by eye from Grep output). Retired ids are retired in both: s2e01 l13; s2b02 l04, l07, l15, l29, l30.",
+    "must_not_know_yet": "pass: no new line before the vote says the slip is already stamped or that Bhaiyaji knows (s2e03 l29 and l33 are conditional). l35 'record होगी' does not say where the recording is kept. The transfer is not mentioned in s2e03. s2e01 l30 shows Tripathi's fear without saying he has known for two years.",
+    "cross_branch": "pass: branch A never mentions the recording, memo, confession or phone; branch B never mentions the almirah, the second key or the register walk. The shared s2e03 l35 ('record होगी') is a gain stated before the vote and is paid only on B.",
+    "names_and_titles": "Hindi pass: 'जोशी' in Devanagari everywhere; no bare 'साहब'; 'Inspector साहब' only from Bhaiyaji; 'रूपम Talkies थाना' for the fake station and 'इमलीपुर थाना' only for the real one. English: open low item in s2a03 (bare 'sir', 'DSP sir'); nit in s2b02 l12 ('Aaiye').",
+    "numbers": "pass: load-bearing numbers agree on every path (ten o'clock, thirty, twenty-four, eight hundred, two years, nine times, twelve and ten past twelve). Serials removed (frame, note, register one to nine); nothing later depended on them."
+  },
+
+  "problems_by_episode": {
+    "s2e01": [
+      {"severity": "low", "where": "shots.json (pre-clarity layout)", "issue": "The six new lines l27, l28, l29, l30, l31 and l32 are in no shot's line_ids. The cut words no longer exist in the new text: l09 en 'Look' (en l09 now ends 'Got a shield for it.'; hi now cuts on 'Zero', the script's anchor) and l15 en 'In' (l15 now plays whole on s20 and opens 'At your own thana'). s19 still carries l15's head. Action quotes in s02, s03, s06, s08, s13, s19 and s28 quote the old lines (for example s06 'थाना इमलीपुर, line के इस पार').", "fix": "S7 re-lays per the script's beat actions: s02 l02 + head of l27; s03 tail of l27 + l03; s07 l06 + l28; s09 l32 + l08; s12 l29 (heard off screen over the empty bench, with su6); s18 l30 inside the 2.0 s silence; s19 l31 + l14; s20 all of l15; l09 cut on 'Zero' in both languages; update the quoted action text. Not done by S4: line_ids and durations need the new takes, which may not be voiced before C1 (D-024 ruling 5), and a half-updated layout would mix two versions.", "owner": "S7", "blocks": "the S13 build of the re-voiced cut"},
+      {"severity": "low", "where": "b2 l27, tail over s03", "issue": "The script cuts to shot 2 (Nirala at the desk) on 'तो', so the rest of l27 plays over his face, but only l03 is marked heard_as off_screen. This is the same fault the cold viewer reported on l03 ('it reads as if HE says it').", "fix": "Either mark l27 heard_as off_screen (her voice over his shot), or keep all of l27 on s02 and cut on l03. Text unchanged.", "owner": "S2 (mark), S12 (subtitle styling)"},
+      {"severity": "info", "where": "b2 l27 'छह हफ़्ते से मेरे थाने में एक complaint नहीं आई'", "issue": "Complainants did reach the real thana and were refused by Tripathi (l23, l24; s2e02 l06). Her line is her belief, and s2e02 b2 corrects it for her and the viewer.", "fix": "None: consistent as dramatic irony.", "owner": "none"},
+      {"severity": "nit", "where": "b10 l19 'सारे register ज़ब्त'", "issue": "Seized in words, left on the lobby desk (s2e03 shows them). Carried over from revision 1.", "fix": "None.", "owner": "none"}
+    ],
+    "s2e02": [
+      {"severity": "low", "where": "b4 (script shot 2) against shots.json s12 to s14", "issue": "The script's b4 now has four shots: shot 2 is an insert of the two neighbours' hands, one letting go of the handlebar, carrying l36 and l37 (heard off screen). shots.json has no such shot: b4 is s12 (register insert, l12), s13 (l13), s14 (l14). D-024 allows no new shot. s12's action still quotes the old l12 'Frame नौ-दो-सात। दर्ज है।'. l35 is in no shot (script: on s27 after l23).", "fix": "S7: make shot 2 a second framing of s12 (s12 already shows both neighbours' hands on the handlebar at its top edge), punched in on the hands at scale 1.3 or less, no new generation; put l36 and l37 on it; add l35 to s27; update s12's action text. The 'one hand lets go' state is a script wish that a second framing cannot show; S7 records it as a deviation or the hold carries it as sound.", "owner": "S7"},
+      {"severity": "nit", "where": "b4 l37 'आप दोनों गवाह हैं।'", "issue": "The two neighbours are the parties to the dispute, and Nirala names them as its witnesses. No continuity break; the line sets up l13's 'गवाह'.", "fix": "None required. S3 may weigh it at C1.", "owner": "S3"},
+      {"severity": "low", "where": "b3 l10, neighbour_voice", "issue": "Settled by D-019 (stays), but bible.json still has no neighbour_voice (Grep: 0 hits).", "fix": "S1 errata: add neighbour_voice to minor_characters.voices_only.", "owner": "S1"}
+    ],
+    "s2e03": [
+      {"severity": "low", "where": "shots.json (pre-clarity layout)", "issue": "l28, l29, l33, l34, l30, l35 and l32 are in no shot. l20 still splits across s24 and s25, and its cut word ('मेरे' / 'On') no longer occurs in the new l20. s25's tail note follows l20, which now has to follow l32. b3's three new lines (about 13 s by targets) go on s08, a 1.2 s second framing of s02, which is over the 8 s set-up rule (D-018).", "fix": "S7 re-lays per script: s08 l28 + l29 + l33 (hold on the move or add a second framing at scale 1.3 or less for l33); s16 l12 + l34; s17 l30, then l13 moves to s18 with l14; s24 all of l20; s25 l35 + l32, horn tail after l32; drop the l20 cut_on_word.", "owner": "S7"},
+      {"severity": "info", "where": "b6, Pushpa's knowledge of the DSP's words", "issue": "Nandini is on her own phone at a pillar; Pushpa's needles stop on l16, so the script takes it that Pushpa hears the DSP. s2b01 l02 (reworded) now has Pushpa quote the FIR warning (l17).", "fix": "None required. If C1 asks how Pushpa knows, one action clause in s2e03 b6 ('in the quiet lobby the DSP's voice carries from the phone') settles it.", "owner": "S2 (optional)"}
+    ],
+    "s2a01": [],
+    "s2a02": [
+      {"severity": "nit", "where": "b10 l24 'कल रात' at about 8:30 a.m.", "issue": "The truck left at 12:10 a.m. the same night. Natural speech for 'last night'. Carried over.", "fix": "None.", "owner": "none"}
+    ],
+    "s2a03": [
+      {"severity": "low", "where": "script.en.json l03, l08, l20, l23", "issue": "English says bare 'sir' (l03, l20, l23) and 'DSP sir' (l08) where the Hindi says 'DSP साहब' and viewer-ledger lock_checks asks 'DSP sahab'. The two languages use different forms of address for the same man; s2e03 en l14 already uses 'DSP sahab'. Logged by S5 as an owner item.", "fix": "Apply S5's drafts ('Order carried out, DSP sahab.', 'DSP sahab, the chief guest is the accused?', '...won't come back, DSP sahab.', 'I am withdrawing it, DSP sahab.'); four English re-voices. Or the Arbiter rules the departure acceptable.", "owner": "S5, Arbiter"},
+      {"severity": "nit", "where": "b7 l28 'तीस FIR, press के सामने पढ़ी गईं'", "issue": "On screen she reads FIR one and the one line all thirty share (l06, l07, l11), not all thirty. The DSP's shorthand.", "fix": "Accept.", "owner": "none"},
+      {"severity": "nit", "where": "b3 l04 'कल रात लिखी गईं तीस FIR'", "issue": "FIRs 12 to 30 were written after dawn. Carried over; accepted.", "fix": "None.", "owner": "none"},
+      {"severity": "nit", "where": "supers su1, su2", "issue": "s2a03's super ids su1 (time) and su2 (place) reuse s2e01's ids su1 (Nandini) and su2 (Roopam Talkies) for different text. Harmless if supers are keyed per episode.", "fix": "If S12 or the app keys supers series-wide, rename to su_a5 and su_a6.", "owner": "S12"}
+    ],
+    "s2b01": [
+      {"severity": "low", "where": "characters.nandini.look 'Her black smartphone is in her right chest pocket from b1', against s2e03 (writer_notes and shots.json s03, s09, s23, s25, s26, s33: right trouser pocket after b7)", "issue": "The phone changes pocket at the branch seam, which is a held frame with no time gap. It is never seen (she takes it out off frame in b5 shot 1), so no viewer will notice, but prompts copied from either file disagree. Revision 1 of this ledger set the trouser pocket.", "fix": "s2b01 look, one clause: 'her black smartphone in her right trouser pocket from b1 (as s2e03 leaves it), with the folded memo pad'. No line, no picture changes.", "owner": "S2"}
+    ],
+    "s2b02": [
+      {"severity": "low", "where": "sound/cues.json", "issue": "Cue anchors still name retired line ids l04, l07, l15, l29 and l30 (Grep: 17 hits). Their replacements are l40 (for l07), l37 (l15), l38 (l29) and l39 (l30); l04 has no replacement.", "fix": "S11 renames the anchors to the new ids and drops l04.", "owner": "S11"},
+      {"severity": "nit", "where": "script.en.json l12 '[laughs] Madam! Aaiye. Good that you have come.'", "issue": "s2b01's English dropped 'Aaiye' from l15 and l24 because it is untranslated Hindi; the same word survives here.", "fix": "S5: 'Madam! Come in. Good that you have come.' (English re-voice only).", "owner": "S5"}
+    ],
+    "s2b03": [
+      {"severity": "low", "where": "characters.tripathi.look, three bars in court", "issue": "He keeps three bars as an accused in the episode where Nandini's come off (b9). Carried over.", "fix": "Creative call: bare khaki straps on Tripathi by prompt, or a bible note that he is not yet suspended.", "owner": "S1 / S6 to choose; S3 to weigh"},
+      {"severity": "info", "where": "b9 l27 'आपकी transfer application भी लौट आई। नामंज़ूर।'", "issue": "The bible's character note says the application is moot in branch B and not mentioned again; viewer-ledger judgement_calls takes the payoff under D-024 rule 6. No branch A fact leaks (A withdraws it in s2a03 b9). The application is spoken, not shown, in Pushpa's envelope.", "fix": "None, unless the Arbiter reads the bible note as a lock.", "owner": "Arbiter (only if challenged)"},
+      {"severity": "info", "where": "b10 to b11, the medal", "issue": "On the evidence table in b10, a paperweight weeks later. The bible's approved open point. Carried over.", "fix": "None.", "owner": "none"}
+    ],
+    "series": [
+      {"severity": "info", "where": "shots.json", "issue": "Only s2e01, s2e02 and s2e03 have shot lists; none of the six branch episodes does, so the ten shot-list checks ran on three episodes only.", "fix": "Rerun S4 after S7 re-lays the shared episodes and writes the branch shot lists.", "owner": "S7"},
+      {"severity": "info", "where": "script key sets", "issue": "Carried over from revision 1: the nine scripts still use two key sets (some with per-beat location and silent_position). Unchanged by the clarity pass.", "fix": "Orchestrator picks one schema.", "owner": "orchestrator"}
+    ]
+  },
+
+  "resolved_since_revision_1": [
+    "s2e02 high: token seven at the b1 match cut. The script now keeps the string on her right wrist in shot 1 and pockets the token in her left trouser pocket on l03; shots.json s01 (reused s2e01 s36) and s03 follow it.",
+    "s2a01 low and nit: helmet on the lobby bench in b1-b2, set down on the SHO's desk in b4, picked up in b5, set down by the doorway in b8 (look text, b4 action, b8 STATE).",
+    "s2a02 low: Nirala's tokens are a spare string carried from habit, written in his look; the lobby string stays on its nail.",
+    "s2a03 and s2b02 low: 'Joshi' is now 'जोशी' in Hindi in all five lines (s2a03 l02, l05, l22; s2b02 l23, l26).",
+    "s2a03 nit: DSP role reads 'The sub-division's DSP'.",
+    "s2b01 low: the notebook is placed in her left trouser pocket from b1.",
+    "s2b02 nits: memo pad placed in her right trouser pocket from b1; the slip goes under the pad's top sheet after l19 and into that pocket at b10; Pushpa scoops the notebook into her knitting bag in b1.",
+    "s2e03 nit: her phone after b7 and Pushpa's handset are now written (but see the new s2b01 pocket item)."
+  ],
+
+  "checks": [
+    {"check": "Ids: every speaker, character and location exists in the bible; hi and en have the same beats, lines and speakers", "result": "pass with one low item", "detail": "hi and en ids, order and speakers match in all nine episodes (by eye). Every speaker is in the bible except s2e02's neighbour_voice (D-019 keeps it; errata owed)."},
+    {"check": "Knowledge: nobody acts on what they have not learned; no cross-branch facts; viewer tracked separately", "result": "pass", "detail": "New knowledge lines all rest on heard facts: s2a01 l29 on s2e03 l06 ('अकेले आइएगा'); s2a01 l28 on her own posting; s2e03 l29 on s2e02 l17 (Tripathi is paid too); s2b01 l07 on s2e03 l24; s2b01 l02 on s2e03 l17 (Pushpa in the room, info item); s2b02 l39 on b8 (she lifts her own phone). Must-not-know items hold before the vote."},
+    {"check": "Opening state matches the previous end state on the same path", "result": "pass with one low item", "detail": "e02 seconds later (token fixed); e03 at 10:30 p.m. after a stated gap; a01 and b01 on the s2e03 held frame; a02 twenty minutes later; a03 minutes later; b02 two minutes later; b03 days later. The phone pocket differs at the s2e03 to s2b01 seam (low, unseen)."},
+    {"check": "Props placed before use; nothing set down later in a hand", "result": "pass", "detail": "All revision 1 placement gaps are closed (helmet, tokens, notebook, memo pad, slip). New props: s2e01 blank complaint form (b4, already in shot s09); s2e02 receipt and returned cycle (b4)."},
+    {"check": "Wardrobe and injuries carry over; changes on screen or across a stated time cut", "result": "pass", "detail": "No injuries in the series. Unchanged by the clarity pass. Time cuts are now also carried by supers (su7, su9, su_a1 to su_a4, su_b3, su_b4)."},
+    {"check": "Time, weather and elapsed time agree with lines", "result": "pass", "detail": "Supers agree with spoken times and clocks: s2e03 10:30 and eleven on the clock; s2a01 1 a.m. after 12:10; s2a02 3 a.m., 6 a.m., 8:30 a.m., then 9:30 and about 9:50 spoken; s2a03 10 a.m.; s2b02 12:20 and 12:30 spoken. Nits only on 'कल रात' after midnight."},
+    {"check": "Names and titles: one name per person, one word per object; no shared title", "result": "pass in Hindi; low item in English", "detail": "Hindi: one spelling of जोशी, no bare साहब, Inspector साहब only from Bhaiyaji, the two stations named apart. English s2a03 uses 'sir' and 'DSP sir' (low); s2b02 l12 keeps 'Aaiye' (nit)."},
+    {"check": "Physical states in the lines match the action", "result": "pass", "detail": "New lines sit on matching pictures: s2e01 l30 on Tripathi's raised palm; l32 on the raised pen over the blank form; s2e02 l37 on the neighbours' hands (shot still to be made); s2a02 l32 on the tea insert; s2b02 l40 with the loaded truck in frame."},
+    {"check": "Shot lists: every line covered once; beat ids match; text and anchors agree (s2e01 to s2e03 only)", "result": "fail (low, pending S7)", "detail": "s2e01 misses 6 lines and 2 English cut words; s2e02 misses 3 lines and has no shot for the script's b4 hands insert; s2e03 misses 7 lines and has an obsolete l20 cut. All existing beat_ids still match their lines. No shot's state, side or prop contradicts a new line."}
+  ],
+  "fixed_in_shots_json": [],
+  "fixed_in_shots_json_note": "Nothing edited in shots.json this round: every shot-list gap needs line_ids and durations from takes that may not be voiced before C1 (D-024 ruling 5), and partial edits would leave each file half pre-clarity and half post. Itemised for S7 under problems_by_episode.",
+  "creative_flags": [
+    "s2b03: Tripathi keeps his three bars as an accused while Nandini removes hers. S1/S6 to choose; S3 to weigh.",
+    "s2a03 English: 'sir' / 'DSP sir' against 'DSP sahab' in the Hindi and the ledger. S5 or the Arbiter to rule; four English re-voices if applied.",
+    "s2b03 l27: the transfer pays off on path B against the bible's 'not mentioned again' note. Arbiter only if challenged.",
+    "Series: one script schema. Orchestrator to choose."
+  ],
+  "not_verified": [
+    "No JSON parser was run on this file, the scripts or the shot lists: this session has no shell. Checked by eye.",
+    "hi/en parity was checked by eye from Grep output of ids, speakers, heard_as and text; not by a tool.",
+    "script.hi.prev.json files were consulted by search for specific lines, not diffed in full; the list of changes is taken from each script's clarity_pass and spot-checked.",
+    "No shot list exists for any branch episode, so no shot-level check ran on branch A or B.",
+    "Line timing, shot lengths and the 8 s set-up rule were judged from script targets and the writers' estimates only; no take exists for any new line.",
+    "Frames were not looked at; shot content is taken from shots.json framing and state text."
+  ]
+}

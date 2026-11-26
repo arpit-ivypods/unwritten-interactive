@@ -1,0 +1,574 @@
+{
+ "about": "s2e03 per-episode edit choices (S13 editor, 26 Nov, first edit). Inputs: shots.json (S7 clarity remap), script.{hi,en}.json, voice/manifest.jsonl + review.json, sound/cues.json, sound/manifest.jsonl, frames/review.json.",
+ "render_name": "s2e03",
+ "max_seconds": 150,
+ "voice_models": [
+  "v4"
+ ],
+ "layout": {
+  "cut_on_word": [
+   {
+    "line": "l08",
+    "word": {
+     "hi": "शाम",
+     "en": "This"
+    },
+    "occurrence": 1,
+    "shot": "s11"
+   }
+  ],
+  "tail": {
+   "s21": 30,
+   "s25": 30,
+   "s26": 45,
+   "s33": 45
+  },
+  "lead": {
+   "s08": 66
+  }
+ },
+ "supers": {
+  "items": {}
+ },
+ "voice_fx": {
+  "phone": {
+   "speakers": [
+    "dsp"
+   ]
+  },
+  "small_speaker": {
+   "chain": "highpass=f=250,lowpass=f=5000,aecho=0.8:0.4:35:0.18"
+  }
+ },
+ "lines": {
+  "l03": {
+   "fx": "small_speaker"
+  },
+  "l04": {
+   "fx": "small_speaker"
+  },
+  "l05": {
+   "fx": "small_speaker"
+  },
+  "l06": {
+   "fx": "small_speaker"
+  }
+ },
+ "shots": {
+  "s01": {
+   "layers": [
+    {
+     "src": "frames/s01.png",
+     "depth": 1
+    },
+    {
+     "src": "overlays/s01-ov_caller_bhaiyaji.{lang}.png",
+     "depth": 1
+    }
+   ]
+  }
+ },
+ "sound": [
+  {
+   "cue": "amb_talkies_lobby",
+   "id": "#A",
+   "kind": "bed",
+   "from": 0,
+   "to": "l03.speech_start - 3",
+   "window_s": [
+    8.0,
+    29.0
+   ],
+   "loop_xf": 15,
+   "gain_db": -7,
+   "fade_in": 9,
+   "fade_out": 3
+  },
+  {
+   "cue": "amb_talkies_lobby",
+   "id": "#B",
+   "kind": "bed",
+   "from": "l03.speech_start - 6",
+   "to": "l06.speech_end + 6",
+   "window_s": [
+    8.0,
+    29.0
+   ],
+   "loop_xf": 15,
+   "gain_db": -11,
+   "fade_in": 3,
+   "fade_out": 3
+  },
+  {
+   "cue": "amb_talkies_lobby",
+   "id": "#C",
+   "kind": "bed",
+   "from": "l06.speech_end + 3",
+   "to": "l17.speech_start - 3",
+   "window_s": [
+    8.0,
+    29.0
+   ],
+   "loop_xf": 15,
+   "gain_db": -7,
+   "fade_in": 3,
+   "fade_out": 3
+  },
+  {
+   "cue": "amb_talkies_lobby",
+   "id": "#D",
+   "kind": "bed",
+   "from": "l17.speech_start - 6",
+   "to": "l17.speech_end + 6",
+   "window_s": [
+    8.0,
+    29.0
+   ],
+   "loop_xf": 15,
+   "gain_db": -11,
+   "fade_in": 3,
+   "fade_out": 3
+  },
+  {
+   "cue": "amb_talkies_lobby",
+   "id": "#E",
+   "kind": "bed",
+   "from": "l17.speech_end + 3",
+   "to": "l27.speech_start - 3",
+   "window_s": [
+    8.0,
+    29.0
+   ],
+   "loop_xf": 15,
+   "gain_db": -7,
+   "fade_in": 3,
+   "fade_out": 3
+  },
+  {
+   "cue": "amb_talkies_lobby",
+   "id": "#F",
+   "kind": "bed",
+   "from": "l27.speech_start - 6",
+   "to": "s33.end",
+   "window_s": [
+    8.0,
+    29.0
+   ],
+   "loop_xf": 15,
+   "gain_db": -15,
+   "fade_in": 3,
+   "fade_out": 1
+  },
+  {
+   "cue": "lyr_night_crickets",
+   "id": "#1",
+   "kind": "bed",
+   "from": 0,
+   "to": "s08.start + 6",
+   "loop": true,
+   "gain_db": -9,
+   "filter": {
+    "highpass_hz": 300
+   },
+   "fade_in": 9,
+   "fade_out": 6,
+   "segments": [
+    {
+     "from": "l03.speech_start - 6",
+     "to": "l06.speech_end + 6",
+     "db": -4
+    },
+    {
+     "from": "s15.start",
+     "to": "s16.start",
+     "db": -4
+    },
+    {
+     "from": "l17.speech_start - 6",
+     "to": "l17.speech_end + 6",
+     "db": -4
+    },
+    {
+     "from": "l27.speech_start - 6",
+     "to": "end",
+     "db": -8
+    }
+   ]
+  },
+  {
+   "cue": "lyr_night_crickets",
+   "id": "#2",
+   "kind": "bed",
+   "from": "s10.start",
+   "to": "s33.end",
+   "loop": true,
+   "gain_db": -9,
+   "filter": {
+    "highpass_hz": 300
+   },
+   "fade_in": 15,
+   "fade_out": 1,
+   "segments": [
+    {
+     "from": "l03.speech_start - 6",
+     "to": "l06.speech_end + 6",
+     "db": -4
+    },
+    {
+     "from": "s15.start",
+     "to": "s16.start",
+     "db": -4
+    },
+    {
+     "from": "l17.speech_start - 6",
+     "to": "l17.speech_end + 6",
+     "db": -4
+    },
+    {
+     "from": "l27.speech_start - 6",
+     "to": "end",
+     "db": -8
+    }
+   ]
+  },
+  {
+   "cue": "sfx_wall_clock_tick",
+   "id": "#1",
+   "kind": "bed",
+   "from": 0,
+   "to": "s08.start + 6",
+   "loop": true,
+   "gain_db": -4,
+   "fade_in": 9,
+   "fade_out": 6,
+   "segments": [
+    {
+     "from": "l03.speech_start - 6",
+     "to": "l06.speech_end + 6",
+     "db": -4
+    },
+    {
+     "from": "s15.start",
+     "to": "s16.start",
+     "db": 3
+    },
+    {
+     "from": "l17.speech_start - 6",
+     "to": "l17.speech_end + 6",
+     "db": -4
+    },
+    {
+     "from": "l27.speech_start - 6",
+     "to": "end",
+     "db": -8
+    }
+   ]
+  },
+  {
+   "cue": "sfx_wall_clock_tick",
+   "id": "#2",
+   "kind": "bed",
+   "from": "s10.start",
+   "to": "s33.end",
+   "loop": true,
+   "gain_db": -4,
+   "fade_in": 15,
+   "fade_out": 1,
+   "segments": [
+    {
+     "from": "l03.speech_start - 6",
+     "to": "l06.speech_end + 6",
+     "db": -4
+    },
+    {
+     "from": "s15.start",
+     "to": "s16.start",
+     "db": 3
+    },
+    {
+     "from": "l17.speech_start - 6",
+     "to": "l17.speech_end + 6",
+     "db": -4
+    },
+    {
+     "from": "l27.speech_start - 6",
+     "to": "end",
+     "db": -8
+    }
+   ]
+  },
+  {
+   "cue": "sfx_keypad_vibrate",
+   "at": 0,
+   "until": "l01.speech_start + 1",
+   "gain_db": 0,
+   "fade_out": 0
+  },
+  {
+   "cue": "sfx_keypad_key_click",
+   "at": "l03.speech_start - 14",
+   "gain_db": 0
+  },
+  {
+   "cue": "sfx_keypad_call_end",
+   "at": "l06.speech_end + 6",
+   "len": "1.2s",
+   "gain_db": -4,
+   "fade_out": 2,
+   "filter": "highpass=f=250,lowpass=f=5000"
+  },
+  {
+   "cue": "sfx_steps_terrazzo",
+   "at": "s10.start",
+   "until": "l08.speech_start - 2",
+   "gain_db": -16,
+   "filter": {
+    "lowpass_hz": 5000
+   },
+   "fade_in": 6,
+   "fade_out": 3
+  },
+  {
+   "cue": "sfx_s2e03_knit_bag_thump",
+   "at": "l08.speech_start - 12",
+   "until": "l08.speech_start + 2",
+   "gain_db": 4,
+   "fade_out": 3
+  },
+  {
+   "cue": "sfx_s2e03_pushpa_breath",
+   "at": "s10.start",
+   "until": "l08.speech_start + 6",
+   "gain_db": 0,
+   "fade_out": 6
+  },
+  {
+   "cue": "sfx_far_dog",
+   "at": "s15.start + 8",
+   "len": 26,
+   "gain_db": -6,
+   "fade_out": 6,
+   "filter": {
+    "lowpass_hz": 4000
+   }
+  },
+  {
+   "cue": "lyr_phone_line_hiss",
+   "id": "#l13",
+   "kind": "bed",
+   "from": "l13.speech_start - 3",
+   "to": "l13.speech_end + 3",
+   "loop": true,
+   "gain_db": -3,
+   "fade_in": 3,
+   "fade_out": 3
+  },
+  {
+   "cue": "lyr_phone_line_hiss",
+   "id": "#l15",
+   "kind": "bed",
+   "from": "l15.speech_start - 3",
+   "to": "l15.speech_end + 3",
+   "loop": true,
+   "gain_db": -3,
+   "fade_in": 3,
+   "fade_out": 3
+  },
+  {
+   "cue": "lyr_phone_line_hiss",
+   "id": "#l16",
+   "kind": "bed",
+   "from": "l16.speech_start - 3",
+   "to": "l16.speech_end + 3",
+   "loop": true,
+   "gain_db": -3,
+   "fade_in": 3,
+   "fade_out": 3
+  },
+  {
+   "cue": "lyr_phone_line_hiss",
+   "id": "#l17",
+   "kind": "bed",
+   "from": "l17.speech_start - 3",
+   "to": "l17.speech_end + 3",
+   "loop": true,
+   "gain_db": -3,
+   "fade_in": 3,
+   "fade_out": 3
+  },
+  {
+   "cue": "mus_tension_note",
+   "id": "#u1a",
+   "kind": "bed",
+   "from": "s17.start",
+   "to": "min(s17.start + 360, l32.speech_end + 30)",
+   "trim": "2s",
+   "loop": false,
+   "gain_db": -17,
+   "fade_in": 60,
+   "fade_out": 15,
+   "duck": true,
+   "segments": [
+    {
+     "from": "l17.speech_start - 3",
+     "to": "l17.speech_end + 3",
+     "db": -4
+    }
+   ]
+  },
+  {
+   "cue": "mus_tension_note",
+   "id": "#u1b",
+   "kind": "bed",
+   "from": "s17.start + 345",
+   "to": "min(s17.start + 705, l32.speech_end + 30)",
+   "trim": "2s",
+   "loop": false,
+   "gain_db": -17,
+   "fade_in": 15,
+   "fade_out": 15,
+   "duck": true,
+   "segments": [
+    {
+     "from": "l17.speech_start - 3",
+     "to": "l17.speech_end + 3",
+     "db": -4
+    }
+   ]
+  },
+  {
+   "cue": "mus_tension_note",
+   "id": "#u1c",
+   "kind": "bed",
+   "from": "s17.start + 690",
+   "to": "min(s17.start + 1050, l32.speech_end + 30)",
+   "trim": "2s",
+   "loop": false,
+   "gain_db": -17,
+   "fade_in": 15,
+   "fade_out": 15,
+   "duck": true,
+   "segments": [
+    {
+     "from": "l17.speech_start - 3",
+     "to": "l17.speech_end + 3",
+     "db": -4
+    }
+   ]
+  },
+  {
+   "cue": "mus_tension_note",
+   "id": "#u1d",
+   "kind": "bed",
+   "from": "s17.start + 1035",
+   "to": "min(s17.start + 1395, l32.speech_end + 30)",
+   "trim": "2s",
+   "loop": false,
+   "gain_db": -17,
+   "fade_in": 15,
+   "fade_out": 15,
+   "duck": true,
+   "segments": [
+    {
+     "from": "l17.speech_start - 3",
+     "to": "l17.speech_end + 3",
+     "db": -4
+    }
+   ]
+  },
+  {
+   "cue": "mus_tension_note",
+   "id": "#u1e",
+   "kind": "bed",
+   "from": "s17.start + 1380",
+   "to": "l32.speech_end + 30",
+   "trim": "2s",
+   "loop": false,
+   "gain_db": -17,
+   "fade_in": 15,
+   "fade_out": 30,
+   "duck": true,
+   "segments": [
+    {
+     "from": "l17.speech_start - 3",
+     "to": "l17.speech_end + 3",
+     "db": -4
+    }
+   ]
+  },
+  {
+   "cue": "sfx_far_train_horn",
+   "at": "l32.speech_end + 6",
+   "until": "l21.speech_end",
+   "gain_db": -8,
+   "filter": {
+    "lowpass_hz": 2500
+   },
+   "fade_out": 30,
+   "segments": [
+    {
+     "from": "l21.speech_start - 2",
+     "db": -6
+    }
+   ]
+  },
+  {
+   "cue": "sfx_holster_unbutton",
+   "at": "l21.speech_end + 3",
+   "gain_db": -12,
+   "fade_out": 3
+  },
+  {
+   "cue": "sfx_wood_revolver_knock",
+   "at": "l21.speech_end + 30",
+   "len": 8,
+   "gain_db": -12,
+   "fade_out": 2
+  },
+  {
+   "cue": "sfx_cuffs_unlock",
+   "at": "s32.start + 6",
+   "len": 16,
+   "gain_db": -10,
+   "fade_out": 2
+  },
+  {
+   "cue": "mus_tension_note",
+   "id": "#u2",
+   "kind": "bed",
+   "from": "s32.start",
+   "to": "s33.end",
+   "trim": "9s",
+   "loop": false,
+   "gain_db": -17,
+   "fade_in": 30,
+   "fade_out": 1,
+   "duck": true,
+   "segments": [
+    {
+     "from": "l27.speech_start - 3",
+     "to": "end",
+     "db": -4
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "First edit (S13, 26 Nov). No slates: all 27 generated frames have an approved row in frames/review.json, and the six second framings (s05, s08, s14, s18, s19, s28) render from approved sources with their shots.json moves.",
+  "cut_on_word: l08 s10->s11 on hi 'शाम' / en 'This' (S7 remap: recorded only as line_part, so the entry is written here; 'shot' names the later shot). The l20 entry in shots.json edit_notes_for_episode_editor is not copied: S7's remap removed the l20 split (l20 is whole on s24).",
+  "measure.pause_min_s 0.22 (default 0.30): en l15 'We don't raid on what's heard / over a fake thana's phone, SI Joshi.' had no split pause, so build_subs split it mid-line and the first cue read at 17.4 graphemes/s (subs en failed validation). The take has a 0.24 s pause at 'phone,'; at 0.22 s it becomes a split, and the cue reads under 17. The setting is global (no per-line subtitle-split override exists yet, a toolsmith item), so it also splits hi l03, l05, l14, l30 and en l12, l34 at their comma pauses (more, shorter cues; no picture change in hi; en shots from s16 on move 2 frames later). hi l08's cut word is now placed by grapheme spread (it was whisper) at the same frame.",
+  "Lead s08 66 frames (silent_lead 36): sfx_keypad_call_end (about 1.15 s of tone) starts on the s07/s08 cut and the 1.0 s of bulb hum after it ends before l28 (cue sheet: shorten the hold, never cut the tones). Tails: s21 30 (b6's 0.8 s hold on her after l17), s25 30 (the train horn after l32), s26 45 (b8's 1.5 s: holster unbutton, wood knock), s33 45 (b10's 1.5 s hold, then hard cut with all sound).",
+  "Long set-ups held on their moves, as S7's remap asks: s08 about 12.5 s hi / 13.7 s en (second framing of s02, three lines), s16 about 9 s, s25 about 8 s. Over the 8 s set-up guide; flag for screening.",
+  "Overlay: ov_caller_bhaiyaji drawn per language on s01 (the plot overlay; 'भैयाजी' / 'Bhaiyaji', ink #1B2440, Kohinoor Devanagari Semibold, centred on the lit screen measured by pixel scan at x 606-826, y 1009-1193 of 1440x2560), with content/proof/flat2d/make_caller_overlay.swift adapted (scratch copy). Checked on a still only. Not drawn: s04's tilted screen (S7: optional, the name is read on s01) and ov_fake_board on s16, s26, s29, s30 (dressing).",
+  "su9 starts on the cut into s02 and holds 3.0 s into s03 (s02 is under 2 s in both cuts); not flagged. The cue sheet's 'black for a breath' before the buzz is not cut: the buzz starts on frame 0 with s01.",
+  "Voice fx: dsp lines through the built-in 'phone' chain; Bhaiyaji's speaker lines l03-l06 through 'small_speaker' (highpass 250 Hz, lowpass 5 kHz, a short aecho), loudness-matched. sfx_keypad_call_end goes through the same band (no echo). lyr_phone_line_hiss sits under l13, l15, l16, l17 only.",
+  "Sound: every placement written here from the cue sheet (it has no place entries). amb_talkies_lobby (8-29 s window, crossfaded loop, -7) is cut into six pieces for its ducks: -4 under l03-l06 and l17, -8 from l27 through the hold. Crickets (highpass 300 Hz, -9) and the clock (-4) go out for b3 (s08-s09) and return at s10, follow the same ducks, and the clock is +3 in b5's silence. mus_tension_note use 1 is five 12 s pieces of its steady 2-14 s stretch with 15-frame crossfades, from s17 (2 s fade-in) to 1 s after l32 (b7 now ends on l32, not l20), with -4 under l17; use 2 from s32 at trim 9 s, -4 from l27, hard cut at s33's end. The horn starts after l32 (S7 kept about 1 s for it), low-passed 2.5 kHz, -6 under l21 and out by l21's end. Gains are starting points from the manifest levels; nothing has been listened to.",
+  "sound/cues.json: mix.starting_gains_db was prose, which stopped build_timeline.py (TypeError). Replaced with the library numbers it quoted (music -18, music under dialogue -8, ambience -24, layer -28, sfx -10); the prose kept as mix.starting_gains_note. The toolchain could accept a non-mapping there (toolsmith)."
+ ],
+ "measure": {
+  "silence_db": -40,
+  "pause_min_s": 0.22,
+  "merge_blip_ms": 0,
+  "edge_tol_ms": 5
+ }
+}

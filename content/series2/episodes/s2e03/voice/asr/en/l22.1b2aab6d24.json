@@ -1,0 +1,142 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,120"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 120
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,120",
+				"to": "00:00:00,160"
+			},
+			"offsets": {
+				"from": 120,
+				"to": 160
+			},
+			"text": " It"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,160",
+				"to": "00:00:00,320"
+			},
+			"offsets": {
+				"from": 160,
+				"to": 320
+			},
+			"text": " is"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,320",
+				"to": "00:00:00,780"
+			},
+			"offsets": {
+				"from": 320,
+				"to": 780
+			},
+			"text": " wood,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,780",
+				"to": "00:00:01,550"
+			},
+			"offsets": {
+				"from": 780,
+				"to": 1550
+			},
+			"text": " madam."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,550",
+				"to": "00:00:02,360"
+			},
+			"offsets": {
+				"from": 1550,
+				"to": 2360
+			},
+			"text": " Teak."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,360",
+				"to": "00:00:02,400"
+			},
+			"offsets": {
+				"from": 2360,
+				"to": 2400
+			},
+			"text": " I"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,400",
+				"to": "00:00:02,850"
+			},
+			"offsets": {
+				"from": 2400,
+				"to": 2850
+			},
+			"text": " carved"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,850",
+				"to": "00:00:03,010"
+			},
+			"offsets": {
+				"from": 2850,
+				"to": 3010
+			},
+			"text": " it"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,010",
+				"to": "00:00:03,520"
+			},
+			"offsets": {
+				"from": 3010,
+				"to": 3520
+			},
+			"text": " myself."
+		}
+	]
+}

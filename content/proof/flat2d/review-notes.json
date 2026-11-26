@@ -1,0 +1,125 @@
+{
+ "critic": {
+  "pass": true,
+  "score": 8,
+  "problems": [
+   "VERDICT: pass, no fatal problem. File reviewed: <repo>/content/proof/flat2d/script.hi.json. Sub-scores: hook 8, stakes 8, cliffhanger 8, natural Hinglish 8, performability 7, length 7.5, lead coverage 9.5 (overall 8.0). Verified by script: JSON valid, 12 lines (6 Meenu / 6 Bablu), line targets sum 25.0 s + 5.3 s silence = 30.3 s as declared, lead in 6 of 8 beats, Devanagari/Latin convention followed on every line, declared emotion_tags match inline tags. Not verified: real TTS durations (my figures below are estimates, nothing was generated).",
+   "CLARITY (medium): two off-screen superiors are introduced in 30 seconds with nothing to separate them: 'DSP' (l07, inspecting at 9 a.m.) and 'बड़े साहब' (l10, on leave, the caller). In thana speech 'बड़े साहब' can mean either the SHO or the DSP/SP, so a cold viewer can read them as one man, which makes 'inspection at 9' contradict 'on leave' and muddies the cliffhanger.",
+   "LENGTH (medium): the 30.3 s total assumes zero gap between the 11 speaker changes and optimistic per-line targets. l08 is the worst: 15 syllables with an ellipsis and a half-whispered clause budgeted at 3.2 s (14.4 chars/s, fastest in the script, though whispering is slower); realistic 3.8-4.4 s. l05 gives 1.0 s for a sigh plus a word. My estimate of the real cut is 33-35 s, about 10-15% over. Acceptable for 'about 30 s' but the timeline should not be built on 30.3.",
+   "PERFORMABILITY (medium): Meenu's last three lines (second half of l08, l10, l12) are all [whispers]. That flattens the climb, leaves the final line with no contrast against l10, and l12 is whispered over a phone buzz the SFX note calls 'loud in the silence' and 'still going', so the cliffhanger line risks being inaudible on a phone speaker after -14 LUFS mastering.",
+   "PERFORMABILITY (medium): Bablu has one tag in six lines. His pivotal turn at l09 (he realises the key holder is standing in front of him) and l11 are untagged, and tags do not carry across turns in the dialogue endpoint, so the 'half step back' suspicion beat is likely to be read neutral. l06 ('मोतीचूर का है, mad—') depends entirely on an earnest read and has no tag.",
+   "PERFORMABILITY (minor): TTS risk tokens. 'mad—' will be read and subtitled as the English word 'mad'; l10 starts with a leading ellipsis straight after a tag ('[whispers] ...और'), which tends to produce a stray breath or artefact; l02 (4 syllables) and l05 (tag plus one 2-syllable word) are very short turns, the least stable case for the v3/v4 dialogue models. [sighs] on l05 reads as weary where the beat wants flat disbelief.",
+   "STILLS PRODUCIBILITY (medium, plan 7.3/9 say stills only): story-critical actions are written as continuous motion that one frame cannot show. b06: 'slowly pulls the key ring from her pocket' and Bablu 'looks at the key, then at her, and takes half a step back' is the moment her own constable starts to suspect her, and it exists only as movement. b03 packs a room crossing, setting down the chai, grabbing the torch, an insert and a close-up into about 5.5 s. b05 asks for a tilt from a hand-on-padlock close-up up to her face. b01's 'from inside the locker looking out' cannot also show 'empty shelves'.",
+   "TIMELINE AMBIGUITY (medium): silent_seconds has no position. It is clearly before the line in b01, after the line in b08 ('hold one beat after the line'), and undefined in b03, where three shots (two-shot, laddoo insert, close-up) and three lines have no line-to-shot mapping. It is unclear whether the laddoo is seen before Bablu names it (line becomes redundant) or after (insert is the payoff).",
+   "CONTINUITY (minor): Meenu enters from the corridor in b02 holding chai, yet in b07 her phone is already lying face up on the desk inside the dark malkhana. Nothing shows her putting it down.",
+   "HINGLISH (minor): 'DSP की inspection' has no honorific; a UP/Bihar SI says 'DSP साहब' (or 'CO साहब') even when shouting at a constable, and 'का inspection' is the more common gender. No line uses an English verb with a Hindi auxiliary ('check किया', 'call उठाऊँ'), which plan section 3 names as the Hinglish pattern and which is the hardest case for the mixed-script timing test in 7.1; Latin tokens are only Madam/madam x3, locker, Lock, DSP, inspection. 'Lock' in l08 versus 'ताला' in the logline is inconsistent (either is fine, pick one).",
+   "CLIFFHANGER (minor): the ending depends on the viewer reading a 2.5 s caller-name overlay; nobody says who is calling ('इन्हें' only implies it). l12 'इन्हें कैसे पता चला?' also steers the viewer to 'he found out' and away from the sharper reading set up by l10 (he holds the other key, so he may be the thief).",
+   "HOOK (minor): the first 5 seconds deliver 'a locker is empty', a familiar beat. The amount lands at about 6 s and the signature image (a laddoo where the cash was, also the title) not until about 8 s.",
+   "METADATA (minor): \"language\": \"hi-Latn-mixed\" is wrong; hi-Latn means Hindi written in Latin script. If the audio step derives language_code from this field it will mis-set it."
+  ],
+  "fixes": [
+   "Separate the two superiors. Either rename the key holder with an acronym in l10 and the overlay ('...और दूसरी SHO साहब के पास।', caller name 'SHO साहब'), which also adds a Latin token for the pronunciation test, or drop the DSP and make the deadline concrete: '[angry] बबलू! सुबह नौ बजे ये cash court में पेश होना है!' (also tells the viewer it is evidence she must produce).",
+   "Re-budget time: allow 0.25-0.3 s per speaker change, set l08 to about 4.0 s and l05 to about 1.4 s, and declare the honest total (about 33-34 s), or claw it back by trimming l09 to 'चाबी दो ही हैं, madam। एक आपके पास...' and cutting b07's silence from 2.5 to 2.0 s. Build the timeline from measured audio, not these targets.",
+   "Vary Meenu's dynamics so the last line is the only true whisper: l08 keep the mid-line [whispers]; l10 change to a flat low read (e.g. [quietly] or no tag); l12 keep [whispers]. Duck the phone buzz under l12 (or place the line in the gap between two buzz pulses) and say so in sfx_notes.",
+   "Tag Bablu's key lines: l06 '[earnest]' or '[helpfully]', l09 '[hesitant]' (and consider '[nervous]' again), l11 '[confused]'. Budget 3-4 takes for l02 and l05; if [sighs] reads weary, swap for '[deadpan]' or drop the tag and let the flat read carry it.",
+   "Clean the TTS-risk tokens: write the cut-off as 'mada—' (or 'ma—') so it is not read as 'mad'; remove the leading ellipsis in l10 ('[whispers] और दूसरी... बड़े साहब के पास।' keeps the hesitation without starting on one).",
+   "Restage for stills: b06 as one readable frame (key in her open palm in the foreground, Bablu behind already leaning away, eyes on the key), or split it into two explicit frames (key in palm; Bablu's recoil). b03: state three frames and drop the crossing (start with her already at the locker, chai set down). b05: one tall medium close-up with the padlock low in frame and her face above so the tilt is a camera move on a single still. b01: choose either the POV from inside the locker on Bablu's face, or the torch sweeping empty shelves, not both.",
+   "Make timing unambiguous: add a silent_position ('before' or 'after') to each beat, and in b03 map lines to shots, recommended order: 1.0 s silence on the two-shot, l04 over the two-shot, cut to the laddoo insert as the payoff, l05 and l06 over Meenu's close-up.",
+   "Fix the phone continuity in one clause: in b03 she drops her phone on the desk as she crosses, or it buzzes in her shirt pocket and she pulls it out for the b07 insert.",
+   "Hinglish polish: l07 'DSP साहब का inspection है!'; add one English-verb construction without adding length, e.g. change l08's second half to '[whispers] किसी ने चाबी से open किया है।' or have Bablu's l01 become '[nervous] Madam... locker check किया... खाली है।'; settle on 'lock' or 'ताला' in both logline and dialogue.",
+   "Harden the cliffhanger: let Bablu name the caller before her line (replace the cut-off l11 payoff with a short b07 line, '[whispers] Madam... बड़े साहब।'), so it survives subtitles-off and a missed overlay. Optional sharper l12 that keeps both readings open: '[whispers] अभी तो किसी को बताया भी नहीं...'.",
+   "Optional hook lift with no dialogue change: open b01 on the torch beam finding the lone laddoo on the bare shelf before Bablu speaks, so the title image is on screen in the first second and the audience is ahead of Meenu until l04.",
+   "Set \"language\" to a plain description and add an explicit \"language_code\": \"hi\" for the audio step."
+  ]
+ },
+ "continuity": {
+  "ok": true,
+  "fixed": [],
+  "problems": [
+   "Wrote <repo>/content/proof/flat2d/continuity.json. It holds the room geography with a fixed axis, wardrobe and marks for both characters, a state for every prop, and a per-beat ledger (b01 to b08) of position, hands, pockets, lighting and who knows what. It also lists the facts this scene establishes and a shot_check section. Mechanical checks were run with a script and all passed, so nothing in shots.json was changed: lines l01 to l12 are each covered once; line, beat and speaker ids are identical in script.hi.json and script.en.json; every prompt carries the wardrobe_lock verbatim for each listed character, plus style_block, negative_rules and the two_shot_rule in the two-person shots; reference labels match the refs; Meenu's sheet is attached in 6 shots (s02, s04, s05, s06, s07, s09); total is 30.3 s and each beat's shot durations match the script.",
+   "s04 (should fix before frames; screen direction, not applied because it changes S7's shot description): s04 is shot from the locker side. In that view s02 puts Bablu on picture-left, and s03, s05, s06 and s07 put him and his torch on the +x side. s04 instead puts the torch at 'the lower right' and the doorway 'past her shoulder on the right side of the picture', which mirrors the room. Suggested edit: change 'at the lower right' to 'at the lower left', and change the doorway to 'on the left side of the picture'. Her gaze to the lower left is already correct.",
+   "s08/s09 (low; accept or note): the desk with the phone stands against the +x wall on Bablu's side, but Meenu is at the -x edge of the locker in b05 and b06. In s09 the phone lights her from below, so she must have moved to the desk during the 2.5 s s08 insert, which is never shown. The ledger records this as an off-screen move; it will not read as an error in a flat 2D close-up.",
+   "s01 (nit): Meenu's doorway silhouette has no chai glass, but in the next cut (s02) she holds it halfway to her mouth. Optionally add 'one hand raised near her chin holding a small glass' to the silhouette sentence. By design, the silhouette has no sheet or wardrobe_lock; I left it that way because the full wardrobe text would invite a detailed figure.",
+   "s03 (info): the script's b03 two-shot (Meenu crosses, sets the chai glass on the steel rack, steers Bablu's torch hand) has no shot of its own. The cut and the 1.0 s silence carry it. S11 should place the glass clink at the head of s03, and the glass must not appear on any locker shelf or in her hand after b02."
+  ]
+ },
+ "writer_fixes": {
+  "revision": 2,
+  "files_changed": [
+   "content/proof/flat2d/script.hi.json",
+   "content/proof/flat2d/script.en.json"
+  ],
+  "structure": "Still 12 lines (l01 to l12) in 8 beats, same ids, same speakers, same line-to-beat mapping. Every target_seconds and silent_seconds is unchanged: speech 25.0 s + silence 5.3 s = 30.3 s, so shots.json durations and line_ids still match. No line was added or removed.",
+  "changes": [
+   "CLARITY (two superiors): dropped the DSP. l07 is now '[angry] बबलू! नौ बजे ये cash court में produce करना है!' (EN: 'Bablu! That cash has to be in court at nine a.m.!'). 'बड़े साहब' is the only off-screen superior left, so the caller overlay text is unchanged. The deadline is still 9 a.m.; it is now a court production, not an inspection.",
+   "ENDING LINE: l12 is no longer whispered and now names the caller: '[low voice] साहब को कैसे पता चला?' (EN: 'How did Sahab come to know?'). It stays a question, is fully voiced, and survives subtitles-off or a missed overlay. b08 action and the b08 SFX note say the line sits in the gap between two buzz pulses or the buzz is ducked under it.",
+   "MEENU DYNAMICS: only one whisper remains (second half of l08). l10 is '[quietly]', l12 is '[low voice]'. performance_notes records the step-down and the fallback (retake l12 without the tag if it comes out whispered).",
+   "BABLU TAGS: l06 '[earnest]', l09 '[hesitant]', l11 '[confused]'. l05 changed from '[sighs]' to '[deadpan]'. emotion_tags arrays match the inline tags on every line.",
+   "TTS-RISK TOKENS: l06 cut-off is 'ma—' instead of 'mad—'. l10 no longer opens on an ellipsis: '[quietly] और दूसरी... बड़े साहब के पास।'.",
+   "HINGLISH: l03 'मतलब... बीस लाख cash गायब, madam।'; l07 uses an English verb with a Hindi auxiliary ('produce करना है') plus 'cash' and 'court'; l11 'पर वो तो leave पर—'. Logline now says 'Lock' to match l08. Spoken pronouns checked: dialogue has ये (l07) and वो (l11), and no यह/वह.",
+   "LENGTH: slots kept, text trimmed so they are more realistic. l08 went from 15 to 11 syllables ('Lock टूटा नहीं... [whispers] चाबी से खुला है।'), l09 lost 'तो', l07 lost 'सुबह', l03 lost 'पूरा'. Net about 7 syllables shorter across the scene. timing_note says each slot includes the speaker-change gap and that the timeline must be built from measured audio.",
+   "TIMELINE AMBIGUITY: added silent_position to every beat (before, after, whole_beat, none). b03 now states the order used by shots.json: 1.0 s of silence on the laddoo insert, l04 over the insert, l05 and l06 over Meenu's close-up.",
+   "STILLS: beat actions for b01, b03, b05, b06 and b08 are rewritten as single readable frames that match shots s01, s03/s04, s06, s07 and s09 (b01 is the locker point of view only; b03 drops the on-screen crossing; b05 is one tall frame with a tilt; b06 has the key already in her palm and Bablu already half a step back).",
+   "PHONE CONTINUITY: b02 action and the location line now say she left her phone on the malkhana desk when she went for chai, matching continuity.json. The chai glass goes down on the steel rack, off-screen, not on a locker shelf.",
+   "METADATA: language is a plain description and language_code is set ('hi' in script.hi.json, 'en' in script.en.json). Added speech_target_seconds, timing_note and performance_notes at top level.",
+   "ENGLISH: l03, l05, l06, l07, l08, l09, l10, l11 and l12 updated to follow the Hinglish changes; l01, l02 and l04 are unchanged."
+  ],
+  "not_applied": [
+   "Renaming the caller to 'SHO साहब': not needed once the DSP is gone, and it would have changed the overlay text in shots.json.",
+   "A spoken Bablu line in b07 naming the caller: it would add a line, renumber ids and change s08. l12 names the caller instead.",
+   "Hook lift (open b01 on the laddoo): conflicts with shot s01 and with the shots.json rule that the laddoo orange appears only in s03.",
+   "Re-budgeting slot lengths (l08 to 4.0 s, l05 to 1.4 s, b07 to 2.0 s): left alone so shots.json stays in sync; the text was trimmed instead.",
+   "s04 screen-direction fix and the s01 chai-glass nit: these are shots.json edits, not script edits."
+  ],
+  "stale_in_other_files": [
+   "continuity.json lines 29, 258, 261, 264 and 446 still say 'DSP inspection at 9 a.m.'. It should read: the cash must be produced in court at 9 a.m. (l07).",
+   "continuity.json lines 429 and 432 describe l12 correctly in substance (she asks how Bada Sahab knows); no change needed.",
+   "shots.json s05 action (line 134) says 'the DSP inspects at nine'. Descriptive text only, not in the image prompt as far as the grep showed.",
+   "shots.json s07 action (line 189) says she finishes the sentence 'in a whisper' and s09 action (line 237) says she 'whispers the question'. Both are now voiced (quiet, then low and clear). Descriptive text only."
+  ],
+  "not_verified": [
+   "No audio was generated. Line durations, tag obedience for [deadpan], [earnest], [hesitant], [confused], [quietly] and [low voice], and the pronunciation of 'ma—', 'produce' and 'leave' inside Devanagari lines are untested.",
+   "JSON validity and the timing sums were checked by reading and by hand arithmetic, not by running a parser or script (this role has no shell)."
+  ]
+ },
+ "storyboard_fixes": {
+  "revision": 2,
+  "owner": "S7 Storyboard artist",
+  "files_changed": [
+   "content/proof/flat2d/shots.json"
+  ],
+  "structure": "Still 9 shots (s01 to s09), same ids, same beat_id, same line_ids, same duration_s (total 30.3 s), same camera moves. No shot was added or removed. Image prompts changed in s01, s02, s04 and s09 only; s03, s05, s06, s07 and s08 prompts are untouched.",
+  "line_coverage": {
+   "result": "pass, no change needed",
+   "detail": "Every line id in script.hi.json and script.en.json (l01 to l12, identical in both) is covered by exactly one shot, inside its own beat: s01 l01 (b01); s02 l02, l03 (b02); s03 l04 (b03); s04 l05, l06 (b03); s05 l07 (b04); s06 l08 (b05); s07 l09, l10, l11 (b06); s08 no lines (b07, silent beat); s09 l12 (b08). Each beat's shot durations equal its line target_seconds plus silent_seconds: 2.8, 3.7, 3.0 + 2.5, 3.0, 3.2, 6.8, 2.5, 2.8 = 30.3 s. The revision 2 script kept all ids and slots, and its b03 action now states the same two-frame order shots.json uses (silence and l04 on the insert, l05 and l06 on the close-up)."
+  },
+  "changes": [
+   "s04 SCREEN DIRECTION (the continuity flag marked should fix before frames): re-staged. The camera moved from the locker side to the doorway side of the line between Meenu and Bablu, the same side as s05, s06 and s07. Meenu is now turned three-quarters to picture-right and looks down out of frame at the lower right; the torchlight still comes from the lower right, which is now also true to the room (Bablu stands on the trunk and desk side, picture-right from the doorway side); the doorway is no longer in the picture and instead gives a thin warm rim on the picture-left edge of her hair and shoulder; the background is the dark side wall. The mole is on the near cheek and the loose strand on the far side, worded as in s05 and s07. Expression, head size, safe areas, wardrobe_lock, style_block and negative_rules are unchanged.",
+   "s04 WHY NOT THE SUGGESTED EDIT: the continuity keeper suggested keeping the locker-side camera and swapping the torch and doorway to picture-left. That makes the room true but leaves the camera on the wrong side of the line for one shot: torchlight would enter from the lower right in s03, from the lower left in s04, and Bablu would then be picture-right in s05, and Meenu would look picture-left in s04 and picture-right in s05. That is a 180-degree jump across two cuts. Moving the camera fixes the room geometry and the screen direction together.",
+   "s04 REFS: was [meenu, malkhana_doorway], now [meenu]. The doorway plate showed a view that is no longer in the frame, and the new background is a plain shadowed wall, so no plate is attached (same approach as s09). The Image 2 label was removed from the prompt so the labels still match the refs order. camera_focus x moved from 0.5 to 0.47 because her head now sits slightly left of centre to leave room on the side she looks towards. framing and action text rewritten to match.",
+   "s01 MATCH CUT (continuity nit): the doorway silhouette now has the arm on the picture-left side bent with the hand raised to collar height as if holding a small glass, still part of the one flat featureless shape. That is her right hand, the hand that holds the chai glass in s02. Still no sheet and no wardrobe_lock for the silhouette, by design.",
+   "s02 MATCH CUT: 'has just stepped into the doorway and stopped dead' changed to 'has stopped dead in the doorway', because s01 already shows her standing there.",
+   "s03 COVERAGE (continuity info item): no new shot. Added an assembly_note saying the b03 crossing is carried by the cut, with the glass clink at the head of the shot, then the 1.0 s of silence, then l04. The revision 2 script no longer asks for an on-screen crossing, so this is not a coverage gap any more.",
+   "s08/s09 STAGING (continuity low item): accepted as an off-screen move, as the keeper recommended. s08 assembly_note now records that Meenu steps from the locker to the desk under the insert and that s09 picks her up over the phone. Screen direction holds across it: Bablu stays picture-right in s05, s07 and s09.",
+   "SCRIPT SYNC, image prompt: s09 'lips just parted as if whispering' changed to 'lips just parted in the middle of a low, quiet word', because l12 is now voiced.",
+   "SCRIPT SYNC, descriptive text only (the stale items listed in writer_fixes): s05 action no longer mentions the DSP (the cash has to be produced in court at nine); s07 action says she finishes the sentence quietly, voiced; s09 action says she asks in a low, clear voice; s04 action says one flat deadpan word instead of a sigh; s09 assembly_note adds that l12 sits between two buzz pulses or the buzz is ducked.",
+   "NOTES: shots.json notes gained a screen-direction rule for S8 and the visual checker (set-up A is s01 and s02 from the locker end; set-up B is s03 to s07 from the doorway side with Meenu picture-left and Bablu and the torch picture-right; no shot from s03 onwards from the locker side) and a line recording the s04 re-stage."
+  ],
+  "screen_direction_check": "Read every shot description against continuity.json screen_geography. s01 and s02 (reverse view): Bablu and torch picture-left, doorway and Meenu beyond, hands and marks on the correct picture sides. s03: beam from the lower right. s04: now doorway side, look and torch to the lower right. s05 and s07: Meenu picture-left with her right side to camera, Bablu picture-right with his left side to camera, torch in his far right hand. s06: locker frame and padlock picture-left, Meenu turned to it, left hand and watch nearer camera, beam from the lower right. s09: Bablu picture-right behind her left shoulder, warm rim picture-left. No remaining shot contradicts the fixed room or crosses the line.",
+  "not_applied": [
+   "No shot added for the b03 crossing or for Meenu's move to the desk: both would add frames and time to a 30 s proof scene, and the script and the keeper both accept them off-screen.",
+   "No change to durations, line slots or camera moves: the writer kept every slot, and the editor retimes to measured audio.",
+   "continuity.json was not edited (S4 owns it); see stale_in_other_files."
+  ],
+  "stale_in_other_files": [
+   "continuity.json screen_geography.character_sides ends 's04 does not (see shot_check.problems)': s04 now follows the rule.",
+   "continuity.json beats b03 camera_view says 's04 close-up of Meenu from the locker side (reverse view)' and lighting says 'doorway rim behind her': s04 is now from the doorway side, three-quarter to picture-right, torch from the lower right, doorway out of frame behind camera with a thin rim on picture-left.",
+   "continuity.json shot_check: the s04 problem and the 'fail in s04' and 'pass except s04' results are resolved by the re-stage, not by the suggested text swap; the s01 nit is applied; the wardrobe and refs checks should be re-run because s04's refs changed to [meenu].",
+   "continuity.json still says 'DSP inspection at 9 a.m.' in time.deadline_set_in_scene, beats b04 knowledge and facts_established_for_later_use (already listed in writer_fixes). shots.json no longer mentions the DSP anywhere."
+  ],
+  "not_verified": [
+   "No image was generated. Whether the model draws the new s04 three-quarter view with the mole on the near cheek, and whether the tiny s01 silhouette reads with the raised hand, is untested until S8 and S9 run.",
+   "No parser or script was run (this role has no shell). JSON validity, line coverage, the duration sum and the verbatim blocks were checked by reading the file back with search. The wardrobe_lock, style_block and negative_rules text was not edited in any prompt, so the keeper's earlier verbatim check should still hold, but it was not re-run mechanically."
+  ]
+ }
+}

@@ -1,0 +1,253 @@
+{
+  "episode_id": "s1a02",
+  "series_id": "series1",
+  "status": "planned",
+  "status_note": "Cue sheet by S11; nothing generated, no ElevenLabs call made. Library cues are generated once at series level (content/series1/sound/library.json) and only referenced here. The five new cues below are this episode's only one-offs, all named in library.json episode_specific_not_in_library for s1a02; the separate runner generates each once (D-011: one take, retake only if review flags) and fits it to planned_duration_s.",
+  "written_by": "S11 Sound designer",
+  "date": "2026-11-26",
+  "governing": [
+    "D-009",
+    "D-011 (reuse rules)",
+    "D-014",
+    "D-0M2",
+    "D-0M4",
+    "D-018",
+    "D-019",
+    "D-020"
+  ],
+  "sources": [
+    "content/series1/episodes/s1a02/script.hi.json (beats, silent_seconds, sfx_notes, music_note, writer_notes)",
+    "content/series1/episodes/s1a02/script.en.json (same beat and line ids; sfx_notes and music_note identical to hi, checked by parse)",
+    "content/series1/episodes/s1a02/review-notes.json (critic_rerun minor 1: phone vibration off the head of l23)",
+    "content/series1/sound/library.json (cue ids, notes, mix rules)",
+    "content/series1/episodes/s1a01/sound/cues.json (the seam: s1a01 ends on one dry glass-bangle chink at the bureau desk)"
+  ],
+  "timebase": "Anchors are beat and line ids, not seconds. No storyboard or measured takes existed when this was written. S13 places every cue against the measured voice and the edited shot lengths (D-014 rule 6, D-0M2). One sheet serves both hi and en cuts: same line ids. Silences are as in the script now (b5 2.5, b6 2.0, b8 7.0 s); the critic's medium proposal (b5 3.0, b6 3.0, b8 5.5) is not applied, and the placements below survive either set.",
+  "library_cues_used": [
+    {
+      "cue_id": "amb_bureau_room",
+      "where": "b1-b9 (whole episode)",
+      "placement": "One loop for the whole episode, in from frame 1 of b1 already running (we open inside s1a01's last moment, so no fade-in). b3: lift the mirror-bulb buzz in the bed about +2 dB around 2-5 kHz for the mirror set-ups (the bed already carries the bulb buzz; no separate cue). b4 back room: the same bed deadened and closer, high-cut ~4 kHz and -4 dB (library note). b5-b7 as b1. b8: fan drops away; tube hum only (high-pass/notch so only the hum stays, or mute and let the held note carry). b9: hum only, ducked right down under l27 and l28; out with the sting at the cut to black."
+    },
+    {
+      "cue_id": "sfx_street_morning_layer",
+      "where": "b1-b7",
+      "placement": "Shutter is up all morning: the thin street layer under the bureau bed, low. b4 (back room, behind the curtain): -6 dB further and high-cut. Ducked under every line. Drops away at the head of b8 with the fan (sfx_notes b8) and stays out to the end."
+    },
+    {
+      "cue_id": "sfx_chooda_click",
+      "where": "b1 shot 1 (open) and b1 shot 5 (tail of l03); b4 shot 5 (l15)",
+      "placement": "b1: one soft click of the ivory bangle against Kiran's knuckles in the 1.0 s silent lead (first sound of the episode with the bed), and a second slice as the bangle settles back into the cuff under the tail of l03, after Mausi's laugh peaks, never on a word. b4 l15: the 'tiny tick' as Chhoti's hennaed left fingertips meet the cuff, taken as the first transient of the file only, about -8 dB, in a gap inside l15 or just after it. Chhoti's left wrist is bare (character look), so this is the cuff's own hard tick, not a glass bangle; reusing Kiran's chooda file keeps one sound for the prop."
+    },
+    {
+      "cue_id": "sfx_keyring_unhook",
+      "where": "b2 shot 3, before or under the head of l05",
+      "placement": "First part of the file only (one key unhooked), short and low; in the gap after l04 if it fits, otherwise tucked under l05's [chuckles]."
+    },
+    {
+      "cue_id": "sfx_pen_ledger_loop",
+      "where": "b2 shot 3, under l05",
+      "placement": "Pen scratch on ledger paper under l05, low (-10 dB under the voice), ending with the line or with the cut to shot 4."
+    },
+    {
+      "cue_id": "sfx_cashbox",
+      "where": "b2 shot 4 (silent after); b6 shot 4 (l21) and shot 7 (l24)",
+      "placement": "b2: slice the lid-shut and lock clack into the 2.4 s silent after, on the shot 4 insert; leave the key chink (below) to follow it. b6: the key turning and the lid lifted under l21, low, clear of 'मौसी' / 'Mausi'; the lock clack under l24, kept small (they are stealing an arm's length from the curtain), placed between words, never on 'police' or the half hour."
+    },
+    {
+      "cue_id": "sfx_keyring_chink",
+      "where": "b2 shot 4, after the cashbox lock",
+      "placement": "One small chink as the key goes back on the ring at her left hip, in the silent after, then let the bed hold for shot 5 (Aditya's eyes on her hip). Not used anywhere else in this episode: b5 the keys must NOT chink (library note, sfx_notes b5), and the hand-offs in b6 shots 2 and 7 are silent too."
+    },
+    {
+      "cue_id": "sfx_marigold_curtain",
+      "where": "b6 shot 1 (silent before)",
+      "placement": "Plastic marigold rattle as Mausi goes through, in the 2.0 s silent lead; let it settle before the shot 2 key hand-off (which is silent)."
+    },
+    {
+      "cue_id": "sfx_phone_vibrate",
+      "where": "b6, the gap after l22, before l23",
+      "placement": "First pulse only, short and low, on Aditya's phone in his hand (dry, no bed-sheet colour: high-pass a little). Placed in the gap after l22 and before l23 rather than under the start of l23 as sfx_notes says, so the head of l23 is not masked (critic_rerun minor 1). If the edit leaves no gap, let the pulse end before l23's first word. No camera-shutter sound anywhere in b6."
+    },
+    {
+      "cue_id": "sfx_sneakers_concrete",
+      "where": "b7 (0.8 s silent before)",
+      "placement": "A few steps only, Billu coming in from the shutter to the desk, high-cut the reverb (library note: bureau floor, not stairs). Out before l25."
+    },
+    {
+      "cue_id": "sfx_photo_print",
+      "where": "b7, under l25",
+      "placement": "Use the end of the file: the print laid flat on the wooden desk with one small tap, low under l25, consonants on top. Drop the cloth slide at the head (the print comes out of Billu's hand, not a pocket). The b8 insert of the print in Mausi's fingers is silent."
+    },
+    {
+      "cue_id": "mus_bed_drone",
+      "where": "b8 to the end of b9",
+      "placement": "The music_note's 'one held low note'. Enters at the head of b8 shot 1 (the print in her fingers), from the file's steady section (discard the first ~4 s fade-in), at the edge of hearing, and rises very slightly across the 7.0 s silence while the fan and street fall away. Ducked right down under l27 and l28 (sfx_notes b9) so every word is clear. Held low through the 2.5 s silent after and resolves into mus_sting_cut on the cut to black. No score in b1-b7."
+    },
+    {
+      "cue_id": "mus_sting_cut",
+      "where": "b9, on the cut to black after the silent after",
+      "placement": "One low sting exactly on the cut to black (library note: s1a02 b9 after l28, the held low note resolves into it). mus_bed_drone and the bed cut out under its attack; the sting is the last sound, then true silence."
+    }
+  ],
+  "new_cues": [
+    {
+      "cue_id": "sfx_s1a02_notes_on_desk",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A small folded wad of paper banknotes put down on a wooden desk, a soft papery slap and a faint crinkle as the fold settles, then still. Very close and dry, quiet room, no voices, no music.",
+      "planned_duration_s": 1.5,
+      "loop": false,
+      "prompt_influence": 0.6,
+      "where": "b1 shot 3, under l02",
+      "placement": "Low under l02, on the insert of the notes beside the cashbox; in a gap between words if the take allows. Trim to the slap and settle.",
+      "why_new": "Listed in library.json episode_specific_not_in_library for s1a02 b1; the cash is put down nowhere else in the series.",
+      "status": "generated",
+      "file": "sound/sfx_s1a02_notes_on_desk.mp3"
+    },
+    {
+      "cue_id": "sfx_s1a02_denim_hug",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "Two men hugging and slapping backs: the rough rustle of a stiff denim jacket against a cotton shirt, two soft pats on the back, then the clothes settling. Close, indoors, no voices, no music.",
+      "planned_duration_s": 2.0,
+      "loop": false,
+      "prompt_influence": 0.5,
+      "where": "b2 shot 1, under l04",
+      "placement": "Under Billu's laugh and l04, low enough that 'जीजाजी' / 'Jijaji' sits on top; pats in a gap, not on a word.",
+      "why_new": "Listed in library.json episode_specific_not_in_library for s1a02 b2; heard in no other episode.",
+      "status": "generated",
+      "file": "sound/sfx_s1a02_denim_hug.mp3"
+    },
+    {
+      "cue_id": "sfx_s1a02_saree_trunk",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "Folded heavy silk sarees shifting and sliding softly on the lid of a steel trunk as two people sit down on it, a smooth silky rustle and one faint dull flex of thin steel, then quiet. Small dead back room, close, no voices, no music.",
+      "planned_duration_s": 2.5,
+      "loop": false,
+      "prompt_influence": 0.5,
+      "where": "b4 shot 1, at the head of the beat, before or under the start of l11",
+      "placement": "Rustle at the cut into the back room, settling before Chhoti's first word or low under it; one more short slice optional on shot 6 as Kiran puts Chhoti's hand back in her lap (under or after l16). Same deadened colour as the b4 bed.",
+      "why_new": "Listed in library.json episode_specific_not_in_library for s1a02 b4; the back room and its trunk appear in no other episode's sound.",
+      "status": "generated",
+      "file": "sound/sfx_s1a02_saree_trunk.mp3"
+    },
+    {
+      "cue_id": "sfx_s1a02_hairpins_comb",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A woman re-pinning another woman's hair bun: a wooden comb drawn slowly through oiled black hair, the soft slick of oil on fingers, two or three thin metal hairpins slid in, one tiny click of a pin. Very close and gentle, quiet room, no voices, no music, no jewellery.",
+      "planned_duration_s": 6.0,
+      "loop": false,
+      "prompt_influence": 0.5,
+      "where": "b5, under l17-l19 and on through the 2.5 s silent after",
+      "placement": "Low and continuous under all three lines (ducked well under the voice, pin clicks in gaps), and carrying, unchanged in level, through shots 4 and 5 of the silent after: Mausi's hands are still in Kiran's hair while Kiran takes the keys. The theft itself has NO sound: no chink, no rustle, and the bed stays even (sfx_notes b5). Loop by slices if the edit runs longer than the file.",
+      "why_new": "Listed in library.json episode_specific_not_in_library for s1a02 b5; heard in no other episode.",
+      "status": "generated",
+      "file": "sound/sfx_s1a02_hairpins_comb.mp3"
+    },
+    {
+      "cue_id": "sfx_s1a02_water_drip_desk",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "Three or four slow single water drops falling from wet fingers onto a varnished wooden desk, small soft distinct taps with short gaps between them. Very close and dry, quiet room, no voices, no music.",
+      "planned_duration_s": 2.5,
+      "loop": false,
+      "prompt_influence": 0.6,
+      "where": "b7, under l25 into l26",
+      "placement": "Two or three drops as he leans over the desk and lays the print down, after sfx_photo_print's tap; in gaps around l25 and l26, never on a word. Out by the end of l26: none in b8.",
+      "why_new": "Listed in library.json episode_specific_not_in_library for s1a02 b7; heard in no other episode.",
+      "status": "generated",
+      "file": "sound/sfx_s1a02_water_drip_desk.mp3"
+    }
+  ],
+  "voice_owned_not_cues": [
+    "Mausi's [laughs] (l03, l20) and [chuckles] (l05, l22), Billu's [laughs] (l04, l26) and [chuckles] (l25), Chhoti's [laughs] (l15): all in the voice takes, not effects.",
+    "Mausi's lines from behind the curtain (l20, l22) are the same takes with a filter (mix.filters), not a separate recording."
+  ],
+  "mix": {
+    "dialogue_first": true,
+    "loudness_target": "-14 LUFS integrated, -1 dBTP; tolerance +/-0.5 LU (D-0M4)",
+    "no_fan": "The bureau is the one location where the fan is allowed (library mix.no_fan_rule): it is inside amb_bureau_room. No separate fan cue. It drops away in b8.",
+    "rules": [
+      "b1: open inside s1a01's last moment: bed already running, no fade-in, no music. First point sound is the chooda click in the 1.0 s silent lead. Notes on the desk under l02; chooda settles under the tail of l03.",
+      "b1-b7: no score (music_note: 'no score, or the thinnest pulse under b6's ledger shots only'). I chose no score, so that the held note in b8 is the first music of the episode. Optional, S13's call only if the b6 ledger shots feel slack in the cut: mus_tension_pulse at the edge of hearing under shots 4-6 of b6, out by l24.",
+      "b2: hug rustle under l04; key unhook and pen under l05; cashbox lock then key chink in the silent after, then 0.5 s or more of bed alone for shot 5.",
+      "b3: one face per frame at the mirror; voices low and close ([quietly]/[calm]), no reverb. The bulb buzz is lifted a touch in the bed; nothing else. Mausi works out of frame: no desk sounds under these lines (they must not seem overheard).",
+      "b4: back room colour on the bed (high-cut, -4 dB) and the street layer further down. Voices dry and close (same room as the camera). Saree rustle at the head; the cuff tick on l15 small; l16 [sharply] fully clear, nothing under it but the bed.",
+      "b5: bed even from the first line through the silent after. Hair sounds continuous and level. The keys do NOT chink and the theft adds no sound: the missing chink is the point. Nothing sweet under b5: no music.",
+      "b6: curtain rattle in the silent lead; the key hand-off silent. l20 and l22 come from behind the curtain: slightly duller but fully voiced and clear (mix.filters). Kiran (l21) in the gap of the curtain, dry. Aditya (l23, l24) close and low, his voice dry and in front; the cashbox under l21 and l24 kept small. Phone vibration in the gap after l22. No camera shutter.",
+      "b7: sneakers in the 0.8 s lead; print tap and drips under Billu's low lines; Billu dry and close to the desk.",
+      "b8: 7.0 s, no line. At the head the fan and the street fall away (over about 1 s, not a hard cut, so it reads as the room thinning rather than an edit); tube hum only plus the held low note entering at the edge of hearing. No effect on the print or on Kiran's cuffed hand.",
+      "b9: hum and held note ducked right down under l27 and l28 so every word is clear; Mausi fully voiced, warm, never whispered. After l28, the 2.5 s silent after on the note alone at its low level; mus_sting_cut on the cut to black; then digital silence to the end of the file.",
+      "Shortening silences for length (D-018 rule 3): every placement survives shorter holds. If b8 is cut from 7.0 to 5.0-5.5 s, the fan/street fall-away still starts at the head of b8 and the note still enters on shot 1. If the trim order removes l20, the curtain rattle stays in the lead and Mausi is simply silent behind the curtain; if l26 is removed, the drips end with l25."
+    ],
+    "music_in_out": [
+      {
+        "cue_id": "mus_bed_drone",
+        "in": "b8 shot 1 (print in Mausi's fingers), edge of hearing, from the steady section",
+        "out": "cut under the attack of mus_sting_cut on the cut to black"
+      },
+      {
+        "cue_id": "mus_sting_cut",
+        "in": "the cut to black after b9's silent after",
+        "out": "its own end, then true silence"
+      }
+    ],
+    "filters": [
+      {
+        "target": "voice takes l20, l22 (mausi, behind the curtain)",
+        "filter": "gentle high-cut around 5-6 kHz and about -3 dB, a touch of small-room early reflection; every consonant must survive. Not phone-processed (she is in the next room, not on a phone)."
+      },
+      {
+        "target": "amb_bureau_room and sfx_street_morning_layer in b4 (back room)",
+        "filter": "high-cut ~4 kHz, bed -4 dB, street a further -6 dB"
+      },
+      {
+        "target": "amb_bureau_room in b8-b9",
+        "filter": "fan and street out; tube hum only (high-pass/notch to keep the hum), or mute and let the held note carry"
+      },
+      {
+        "target": "sfx_phone_vibrate in b6",
+        "filter": "light high-pass to lose the bed-sheet colour (phone in a hand)"
+      }
+    ],
+    "ducking": [
+      {
+        "under": "every dialogue line",
+        "duck": "beds, street layer and point effects"
+      },
+      {
+        "under": "l17-l19",
+        "duck": "sfx_s1a02_hairpins_comb well under the voice; bed unchanged"
+      },
+      {
+        "under": "l23, l24",
+        "duck": "cashbox lock kept off 'police' and the half hour; bed -2 dB"
+      },
+      {
+        "under": "l27, l28",
+        "duck": "tube hum and mus_bed_drone right down"
+      }
+    ]
+  },
+  "fallback": "Plan 7.8: if mus_bed_drone is missing, b8 holds on the tube hum alone and the episode still ends on mus_sting_cut; if mus_sting_cut is missing, cut to black on silence after the held note (or on the hum cut hard). If any one-off fails: sfx_s1a02_notes_on_desk, sfx_s1a02_denim_hug and sfx_s1a02_water_drip_desk are dropped (the scenes play on the bed); sfx_s1a02_saree_trunk is dropped (the b4 bed colour carries the room change); sfx_s1a02_hairpins_comb is dropped and b5 plays on the bed alone, which still keeps the missing key chink. A failed one-off never holds the episode.",
+  "counts": {
+    "library_cues_used": 13,
+    "new_cues": 5,
+    "music_library": 2,
+    "ambience_library": 2,
+    "effects_library": 9
+  },
+  "credit_estimate": {
+    "new_cues": 85,
+    "basis": "5 x 17 credits per eleven_text_to_sound_v3 generation (proof manifests); library cues are costed in library.json."
+  },
+  "not_verified": [
+    "No cue generated or heard. Placements are from the script only; the storyboard (S7) and measured takes may move them.",
+    "The critic's medium items (l24 to [quietly], b9 shot 3 as a Kiran single, silences b5 3.0 / b6 3.0 / b8 5.5) were not applied to the script at the time of writing; this sheet works with either version.",
+    "b4 l15 'tiny tick of glass': reading it as the cuff's own tick (a slice of sfx_chooda_click) is my interpretation, because Chhoti's left wrist is bare. If S13 or the director wants a glass sound there, a first-transient slice of sfx_glass_bangles_chink is the library alternative; no new cue is needed either way.",
+    "Word-level anchors in the English cut must be found in the English takes by S13; line and beat ids match."
+  ]
+}

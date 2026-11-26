@@ -1,0 +1,186 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,090"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 90
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,090",
+				"to": "00:00:00,840"
+			},
+			"offsets": {
+				"from": 90,
+				"to": 840
+			},
+			"text": " Mohit,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,840",
+				"to": "00:00:01,180"
+			},
+			"offsets": {
+				"from": 840,
+				"to": 1180
+			},
+			"text": " after"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,180",
+				"to": "00:00:02,060"
+			},
+			"offsets": {
+				"from": 1180,
+				"to": 2060
+			},
+			"text": " what"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,060",
+				"to": "00:00:02,890"
+			},
+			"offsets": {
+				"from": 2060,
+				"to": 2890
+			},
+			"text": " happened"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,890",
+				"to": "00:00:03,130"
+			},
+			"offsets": {
+				"from": 2890,
+				"to": 3130
+			},
+			"text": " to"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,130",
+				"to": "00:00:03,630"
+			},
+			"offsets": {
+				"from": 3130,
+				"to": 3630
+			},
+			"text": " him,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,630",
+				"to": "00:00:03,680"
+			},
+			"offsets": {
+				"from": 3630,
+				"to": 3680
+			},
+			"text": " I"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,680",
+				"to": "00:00:04,140"
+			},
+			"offsets": {
+				"from": 3680,
+				"to": 4140
+			},
+			"text": " couldn't"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,140",
+				"to": "00:00:04,310"
+			},
+			"offsets": {
+				"from": 4140,
+				"to": 4310
+			},
+			"text": " set"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,310",
+				"to": "00:00:04,480"
+			},
+			"offsets": {
+				"from": 4310,
+				"to": 4480
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,480",
+				"to": "00:00:04,710"
+			},
+			"offsets": {
+				"from": 4480,
+				"to": 4710
+			},
+			"text": " boys"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,710",
+				"to": "00:00:04,820"
+			},
+			"offsets": {
+				"from": 4710,
+				"to": 4820
+			},
+			"text": " on"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,820",
+				"to": "00:00:05,240"
+			},
+			"offsets": {
+				"from": 4820,
+				"to": 5240
+			},
+			"text": " you."
+		}
+	]
+}

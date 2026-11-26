@@ -1,0 +1,469 @@
+{
+ "id": "proof-photoreal-hi",
+ "fps": 30,
+ "durationFrames": 1112,
+ "background": "#000",
+ "slateColor": "#1d2430",
+ "shots": [
+  {
+   "id": "s01",
+   "start": 0,
+   "duration": 207,
+   "image": "frames/s01.png",
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.35,
+    "focus": {
+     "x": 0.5,
+     "y": 0.36
+    }
+   }
+  },
+  {
+   "id": "s02",
+   "start": 207,
+   "duration": 110,
+   "image": "frames/s02.png",
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.7,
+    "focus": {
+     "x": 0.5,
+     "y": 0.42
+    }
+   }
+  },
+  {
+   "id": "s03",
+   "start": 317,
+   "duration": 87,
+   "image": "frames/s03.png",
+   "move": {
+    "preset": "tilt-up",
+    "intensity": 0.4
+   }
+  },
+  {
+   "id": "s04",
+   "start": 404,
+   "duration": 136,
+   "image": "frames/s04.png",
+   "move": {
+    "preset": "drift",
+    "intensity": 0.4
+   }
+  },
+  {
+   "id": "s05",
+   "start": 540,
+   "duration": 163,
+   "image": "frames/s05.png",
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.45,
+    "focus": {
+     "x": 0.52,
+     "y": 0.36
+    }
+   }
+  },
+  {
+   "id": "s06",
+   "start": 703,
+   "duration": 171,
+   "image": "frames/s06.png",
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.8,
+    "focus": {
+     "x": 0.6,
+     "y": 0.36
+    }
+   }
+  },
+  {
+   "id": "s07",
+   "start": 874,
+   "duration": 52,
+   "image": "frames/s07.png",
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.1,
+    "easing": "linear",
+    "focus": {
+     "x": 0.4,
+     "y": 0.19
+    }
+   }
+  },
+  {
+   "id": "s08",
+   "start": 926,
+   "duration": 44,
+   "image": "frames/s08.png",
+   "move": {
+    "preset": "push-in",
+    "intensity": 0.3,
+    "focus": {
+     "x": 0.5,
+     "y": 0.45
+    }
+   }
+  },
+  {
+   "id": "s09",
+   "start": 970,
+   "duration": 130,
+   "image": "frames/s09.png",
+   "move": {
+    "preset": "pull-out",
+    "intensity": 0.25,
+    "focus": {
+     "x": 0.5,
+     "y": 0.36
+    }
+   }
+  }
+ ],
+ "audio": {
+  "dialogue": [
+   {
+    "id": "l01",
+    "src": "voice/hi/l01_t2.mp3",
+    "start": 4,
+    "duration": 158,
+    "volume": 1.0
+   },
+   {
+    "id": "l02",
+    "src": "voice/hi/l02.mp3",
+    "start": 164,
+    "duration": 50,
+    "volume": 1.0
+   },
+   {
+    "id": "l03",
+    "src": "voice/hi/l03_t2.mp3",
+    "start": 248,
+    "duration": 74,
+    "volume": 1.0
+   },
+   {
+    "id": "l04",
+    "src": "voice/hi/l04.mp3",
+    "start": 362,
+    "duration": 43,
+    "volume": 1.0,
+    "trimBefore": 19
+   },
+   {
+    "id": "l05",
+    "src": "voice/phonefx/hi/l05.wav",
+    "start": 407,
+    "duration": 76,
+    "volume": 1.0
+   },
+   {
+    "id": "l06",
+    "src": "voice/hi/l06.mp3",
+    "start": 476,
+    "duration": 74,
+    "volume": 1.0
+   },
+   {
+    "id": "l07",
+    "src": "voice/phonefx/hi/l07.wav",
+    "start": 533,
+    "duration": 153,
+    "volume": 1.0
+   },
+   {
+    "id": "l08",
+    "src": "voice/phonefx/hi/l08.wav",
+    "start": 684,
+    "duration": 189,
+    "volume": 1.0
+   },
+   {
+    "id": "l09",
+    "src": "voice/hi/l09.mp3",
+    "start": 938,
+    "duration": 40,
+    "volume": 1.0
+   },
+   {
+    "id": "l10",
+    "src": "voice/hi/l10.mp3",
+    "start": 992,
+    "duration": 105,
+    "volume": 1.0
+   }
+  ],
+  "music": [
+   {
+    "id": "mus_drone_bed#0",
+    "src": "sound/mus_drone_bed.mp3",
+    "start": 317,
+    "duration": 447,
+    "volume": 0.1,
+    "trimBefore": 60,
+    "fadeIn": 6,
+    "fadeOut": 4
+   },
+   {
+    "id": "mus_drone_bed#1",
+    "src": "sound/mus_drone_bed.mp3",
+    "start": 760,
+    "duration": 114,
+    "volume": 0.0251,
+    "trimBefore": 503,
+    "fadeIn": 4,
+    "fadeOut": 1
+   },
+   {
+    "id": "mus_end_sting",
+    "src": "sound/mus_end_sting.mp3",
+    "start": 995,
+    "duration": 105,
+    "volume": 0.1585,
+    "fadeOut": 1
+   }
+  ],
+  "sfx": [
+   {
+    "id": "amb_rain_roof#0",
+    "src": "sound/amb_rain_roof.mp3",
+    "start": 0,
+    "duration": 764,
+    "volume": 0.0794,
+    "fadeIn": 2,
+    "fadeOut": 4
+   },
+   {
+    "id": "amb_rain_roof#1",
+    "src": "sound/amb_rain_roof.mp3",
+    "start": 760,
+    "duration": 118,
+    "volume": 0.02,
+    "trimBefore": 760,
+    "fadeIn": 4,
+    "fadeOut": 4
+   },
+   {
+    "id": "amb_rain_roof#2",
+    "src": "sound/amb_rain_roof.mp3",
+    "start": 874,
+    "duration": 26,
+    "volume": 0.0794,
+    "trimBefore": 874,
+    "fadeIn": 4
+   },
+   {
+    "id": "amb_rain_roof#3",
+    "src": "sound/amb_rain_roof.mp3",
+    "start": 900,
+    "duration": 200,
+    "volume": 0.0794,
+    "fadeOut": 1
+   },
+   {
+    "id": "sfx_s01_breath_leather",
+    "src": "sound/sfx_s01_breath_leather.mp3",
+    "start": 0,
+    "duration": 60,
+    "volume": 0.1995
+   },
+   {
+    "id": "sfx_s01_zip_pull",
+    "src": "sound/sfx_s01_zip_pull.mp3",
+    "start": 111,
+    "duration": 120,
+    "volume": 0.2512
+   },
+   {
+    "id": "sfx_s02_paper_rustle",
+    "src": "sound/sfx_s02_paper_rustle.mp3",
+    "start": 228,
+    "duration": 27,
+    "volume": 0.1995,
+    "fadeOut": 4
+   },
+   {
+    "id": "sfx_s03_phone_ring#0",
+    "src": "sound/sfx_s03_phone_ring.mp3",
+    "start": 317,
+    "duration": 46,
+    "volume": 0.5012,
+    "fadeOut": 4
+   },
+   {
+    "id": "sfx_s03_phone_ring#1",
+    "src": "sound/sfx_s03_phone_ring.mp3",
+    "start": 359,
+    "duration": 30,
+    "volume": 0.0631,
+    "trimBefore": 42,
+    "fadeIn": 4,
+    "fadeOut": 1
+   },
+   {
+    "id": "sfx_s04_key_click",
+    "src": "sound/sfx_s04_key_click.mp3",
+    "start": 402,
+    "duration": 15,
+    "volume": 0.3162
+   },
+   {
+    "id": "amb_s04_line_hiss#0",
+    "src": "sound/amb_s04_line_hiss.mp3",
+    "start": 404,
+    "duration": 180,
+    "volume": 0.0316,
+    "fadeIn": 2
+   },
+   {
+    "id": "amb_s04_line_hiss#1",
+    "src": "sound/amb_s04_line_hiss.mp3",
+    "start": 584,
+    "duration": 180,
+    "volume": 0.0316
+   },
+   {
+    "id": "amb_s04_line_hiss#2",
+    "src": "sound/amb_s04_line_hiss.mp3",
+    "start": 764,
+    "duration": 104,
+    "volume": 0.0316,
+    "fadeOut": 3
+   },
+   {
+    "id": "sfx_s06_call_end",
+    "src": "sound/sfx_s06_call_end.mp3",
+    "start": 868,
+    "duration": 48,
+    "volume": 0.1585
+   },
+   {
+    "id": "amb_s07_dead_line",
+    "src": "sound/amb_s07_dead_line.mp3",
+    "start": 908,
+    "duration": 18,
+    "volume": 0.0316,
+    "fadeOut": 1
+   },
+   {
+    "id": "sfx_s08_lock_clunk",
+    "src": "sound/sfx_s08_lock_clunk.mp3",
+    "start": 926,
+    "duration": 18,
+    "volume": 0.631,
+    "fadeOut": 6
+   },
+   {
+    "id": "sfx_s09_headlight_click",
+    "src": "sound/sfx_s09_headlight_click.mp3",
+    "start": 970,
+    "duration": 18,
+    "volume": 0.1259
+   },
+   {
+    "id": "sfx_s09_ignition_idle#0",
+    "src": "sound/sfx_s09_ignition_idle.mp3",
+    "start": 985,
+    "duration": 13,
+    "volume": 0.1995,
+    "fadeOut": 4
+   },
+   {
+    "id": "sfx_s09_ignition_idle#1",
+    "src": "sound/sfx_s09_ignition_idle.mp3",
+    "start": 994,
+    "duration": 96,
+    "volume": 0.1,
+    "fadeOut": 4,
+    "trimBefore": 9,
+    "fadeIn": 4
+   },
+   {
+    "id": "sfx_s09_ignition_idle#fill",
+    "src": "sound/sfx_s09_ignition_idle.mp3",
+    "start": 1086,
+    "duration": 14,
+    "volume": 0.1,
+    "fadeOut": 1,
+    "trimBefore": 89,
+    "fadeIn": 4
+   }
+  ],
+  "ducking": {
+   "enabled": true,
+   "amountDb": -8,
+   "attack": 8,
+   "release": 15,
+   "holdGap": 20
+  }
+ },
+ "debug": {
+  "burnSubtitles": false,
+  "showInfo": false
+ },
+ "meta": {
+  "built_by": "S13 Editor, content/proof/photoreal/build_timeline.py",
+  "lang": "hi",
+  "picture_seconds": 36.667,
+  "total_seconds": 37.067,
+  "planned_seconds": 31.7,
+  "cuts": [
+   207,
+   317,
+   404,
+   540,
+   703,
+   874,
+   926,
+   970,
+   1100
+  ],
+  "end": "hard cut to black and silence at frame 1100, 12 black frames after",
+  "placeholders": {
+   "dialogue": [],
+   "frames_slated": [],
+   "sound": []
+  },
+  "takes": {
+   "l01": "take 2 (l01_t2.mp3), identical to l01.mp3",
+   "l02": "take 1 (l02.mp3)",
+   "l03": "take 2 (l03_t2.mp3), identical to l03.mp3",
+   "l04": "take 1 (l04.mp3); head trimmed to 0.64 s (review trim_in_s)",
+   "l05": "take 1 (l05.mp3)",
+   "l06": "take 1 (l06.mp3)",
+   "l07": "take 2 (l07_t2.mp3), identical to l07.mp3",
+   "l08": "take 1 (l08.mp3)",
+   "l09": "take 1 (l09.mp3)",
+   "l10": "take 1 (l10.mp3)"
+  },
+  "shot_vs_plan": {
+   "s01": "6.90 s (plan 4.7 s)",
+   "s02": "3.67 s (plan 3.3 s)",
+   "s03": "2.90 s (plan 2.5 s)",
+   "s04": "4.53 s (plan 4.0 s)",
+   "s05": "5.43 s (plan 4.5 s)",
+   "s06": "5.70 s (plan 6.0 s)",
+   "s07": "1.73 s (plan 1.7 s)",
+   "s08": "1.47 s (plan 1.7 s)",
+   "s09": "4.33 s (plan 3.3 s)"
+  },
+  "notes": [
+   "hi: s05/s06 cut on 'driver' at 19 frames into l08 (asr)",
+   "D-014 rule 6: shot lengths follow this language's measured takes; speech is not sped up (no atempo).",
+   "Layout is on speech (silencedetect -40 dB): lead before first speech, 8 frames speech-to-speech inside a shot, 4 frames after the last speech (s03 6, s06 6, s09 12), at least 800 ms of picture for a shot's last segment.",
+   "Caller lines (l05, l07, l08): voice/phonefx/<lang>/<id>.wav, band-pass 300-3400 Hz + light tanh saturation, loudness-matched.",
+   "l06 is cut 3 frames before its last speech; l07's first speech is on the s04/s05 cut.",
+   "sfx_s06_call_end (1.6 s) starts on l08's last speech (frame 868); line hiss ends there; dead line enters on the third beep; s07 holds until the dead line has played 0.6 s alone.",
+   "mus_drone_bed starts 2.0 s into the file (its head is a ~4 s fade-in) with a 6-frame fade, from the first ring to the cut into s07; the 11 s 'pulse' was not found in a loudness scan, so it is not aligned.",
+   "Rain -12 dB and drone extra duck from frame 760 to 874 (l08's question after its ellipsis pause).",
+   "End sting right-aligned on the hard cut (s09 is longer than the 3.5 s file); ignition stays 0.5 s into s09 and its steady idle tail is repeated, crossfaded, to the cut.",
+   "s07 move: very slow linear 2.4% push towards Imran's eyes in the mirror (screening r1)."
+  ]
+ }
+}

@@ -1,0 +1,2892 @@
+{
+ "id": "s2e02",
+ "series_id": "s2",
+ "title": "Charge",
+ "made_by": "S7 Storyboard artist (on Opus), 26 Nov 2026",
+ "sources": [
+  "content/series2/episodes/s2e02/script.hi.json and script.en.json (beats, actions, STATE lines, silences; English actions checked identical to Hindi by script)",
+  "content/series2/episodes/s2e02/voice/manifest.jsonl and voice/review.json (measured clip lengths and speech spans of the final takes: take 1 for every line except l34, which is take 2 in Hindi and take 3 in English)",
+  "content/series2/style.json (character_lock and wardrobe_locks.p1 as rewritten under D-021 decision 7, pairs.two_shot_rule, grade.light_states and beat_light, style_block, negative_rules, style_frame)",
+  "content/series2/continuity.json (characters.*.static, the s2e01 and s2e02 end_state, problems_by_episode.s2e02) and content/series2/bible.json (overlays, production_locks)",
+  "content/series2/episodes/s2e01/shots.json, frames/prompts and frames/review.json (format, approved frames s14 and s36 reused here)",
+  "docs/decisions.md D-010, D-012, D-013, D-014, D-015, D-017, D-018 to D-023, D-0M2, D-0M4; plan section 9 and 7.8",
+  "production/scripts/episode/README.md and build_timeline.py (shots.json fields: line split over consecutive shots, cut_on_word, second_framing and reused_asset frames, custom moves)"
+ ],
+ "lead_character_id": "nandini",
+ "frame_spec": "vertical 9:16; Codex output about 941x1672, upscaled by codex-frame.sh to 1440x2560 before camera moves",
+ "runner": "<repo>/production/scripts/codex-frame.sh <frames_dir> <shot_id> <prompt_file> [refs in the listed order]; frames_dir = <repo>/content/series2/episodes/s2e02/frames",
+ "summary": {
+  "shots": 39,
+  "frames_to_generate": 28,
+  "second_framings": 9,
+  "reused_assets": 2,
+  "budget_rule": "D-010 / D-023 rule 4.2: 28 generated frames per episode; extra shots are second framings of approved frames at camera scale 1.3 or less. Two shots reuse approved s2e01 frames (s01 <- s2e01 s36, the planned match frame; s09 <- s2e01 s14, the shield insert) at no Codex cost. D-017: if flat 2D frames average over 150 s in wave 2, Series 2 drops to 24 (see contingency).",
+  "anchors": {
+   "A_projection_room_b1_b2": "s10",
+   "B_talkies_lobby_b3_b10": "s11",
+   "C_real_thana_b11_b12": "s34"
+  },
+  "pre_layout_estimate_s": {
+   "hi": 114.1,
+   "en": 111.3,
+   "note": "my hand model before the scratch build_timeline run; superseded by estimated_seconds"
+  },
+  "longer_language": "hi",
+  "estimated_seconds": {
+   "hi": "114.6 s (shots 114.24 s + 0.4 s end black)",
+   "en": "113.4 s (shots 113.00 s + 0.4 s end black)",
+   "basis": "build_timeline.py (production/scripts/episode) run by S7 on a scratch copy of this episode folder with this shots.json and an edit.json holding only the three cut_on_word entries and the s09/s33 tails above; every frame was a slate, no sound placed; layout_problems empty and length_ok true in both languages. Real takes, measured speech. The editor's own edit.json (leads, gaps, sound windows) can move these by a few seconds. Both are under the 150 s ceiling (D-018, D-019, D-020) and under the 120 s aim."
+  },
+  "longest_setup_s": {
+   "s06": "6.03 s (hi)",
+   "s33": "5.87 s (en)",
+   "s10": "5.03 s (en)"
+  },
+  "setup_rule": "No set-up is held past 8 s on measured clip lengths (D-018, D-019); in the scratch layout the longest is s06 at 6.03 s (hi)."
+ },
+ "scenes": [
+  {
+   "id": "A",
+   "location": "projection_room",
+   "beats": [
+    "b1",
+    "b2"
+   ],
+   "light": "projection_afternoon (s09 is a cut-away insert in thana_day)",
+   "anchor": "s10",
+   "first_frame_rule": "s10 (the b2 two-shot, the first generated frame with the lead and the room) is generated first and carries the style frame (refs/real_thana.png) in the anchor slot. Every other generated frame of the scene, including s02, s03 and s05 which play before it, attaches s10. s01 and s09 are approved s2e01 frames and need no anchor.",
+   "shots": [
+    "s01",
+    "s02",
+    "s03",
+    "s04",
+    "s05",
+    "s06",
+    "s07",
+    "s08",
+    "s09",
+    "s10"
+   ]
+  },
+  {
+   "id": "B",
+   "location": "talkies_lobby",
+   "beats": [
+    "b3",
+    "b4",
+    "b5",
+    "b6",
+    "b7",
+    "b8",
+    "b10"
+   ],
+   "light": "lobby_day (from b6 the shafts are described lower and warmer inside the shot text; the LIGHT line stays lobby_day per grade.beat_light)",
+   "anchor": "s11",
+   "first_frame_rule": "s11, the wide that opens b3 (both principals small on the stair, the bench, the booth, the desk and the clock), carries the style frame and is the anchor for every other lobby frame. Its figures are small, so those prompts take faces from the sheets and the anchor only for idiom, palette and room; each lists what the anchor shows that is different now (D-017 rule 4).",
+   "shots": [
+    "s11",
+    "s12",
+    "s13",
+    "s14",
+    "s15",
+    "s16",
+    "s17",
+    "s18",
+    "s19",
+    "s20",
+    "s21",
+    "s22",
+    "s23",
+    "s24",
+    "s25",
+    "s26",
+    "s27",
+    "s28",
+    "s29",
+    "s30",
+    "s31",
+    "s32",
+    "s33"
+   ]
+  },
+  {
+   "id": "C",
+   "location": "real_thana",
+   "beats": [
+    "b11",
+    "b12"
+   ],
+   "light": "thana_night",
+   "anchor": "s34",
+   "first_frame_rule": "s34 carries the style frame; the scene's plate is the same file (refs/real_thana.png), so it is attached once and labelled as both (D-021 decision 3). The plate is drawn by day: every prompt says keep the layout and change the light. Watch for inherited daylight (D-021 'would change it': crossing_stall as the night style frame).",
+   "shots": [
+    "s34",
+    "s35",
+    "s36",
+    "s37",
+    "s38",
+    "s39"
+   ]
+  }
+ ],
+ "generation_order": [
+  "s10",
+  "s11",
+  "s34",
+  "ANCHOR CHECK (D-015 rule 7): the frame check passes s10, s11 and s34 before any other frame of their scene is generated. A rejected anchor gets its one retake first (D-023 rule 4.1).",
+  "s02",
+  "s03",
+  "s05",
+  "s06",
+  "s12",
+  "s13",
+  "s14",
+  "s16",
+  "s17",
+  "s18",
+  "s19",
+  "s22",
+  "s23",
+  "s24",
+  "s25",
+  "s26",
+  "s27",
+  "s28",
+  "s29",
+  "s32",
+  "s33",
+  "s35",
+  "s36",
+  "s37",
+  "s38",
+  "SECOND FRAMINGS AND REUSED ASSETS, no Codex call, rendered by build_timeline.py from the source image with the shot's own move: s04<-s02, s07<-s05, s08<-s06, s15<-s13, s20<-s17, s21<-s19, s30<-s25, s31<-s29, s39<-s38; s01<-../s2e01/frames/s36.png, s09<-../s2e01/frames/s14.png",
+  "Then, per D-023 rule 4.1: frame check; one retake for each rejected frame; the retake check; then the edit."
+ ],
+ "ref_legend": {
+  "nandini": "<repo>/content/series2/refs/nandini.png",
+  "nirala": "<repo>/content/series2/refs/nirala.png",
+  "pushpa": "<repo>/content/series2/refs/pushpa.png",
+  "bhaiyaji": "<repo>/content/series2/refs/bhaiyaji.png",
+  "tripathi": "<repo>/content/series2/refs/tripathi.png",
+  "pair_nandini_nirala": "<repo>/content/series2/refs/pair_nandini_nirala.png",
+  "pair_nandini_pushpa": "<repo>/content/series2/refs/pair_nandini_pushpa.png",
+  "pair_nirala_bhaiyaji": "<repo>/content/series2/refs/pair_nirala_bhaiyaji.png",
+  "projection_room": "<repo>/content/series2/refs/projection_room.png (plate)",
+  "talkies_lobby": "<repo>/content/series2/refs/talkies_lobby.png (plate)",
+  "real_thana": "<repo>/content/series2/refs/real_thana.png (plate)",
+  "handcuffs": "<repo>/content/series2/refs/handcuffs.png (prop)",
+  "token": "<repo>/content/series2/refs/token.png (prop)",
+  "red_helmet": "<repo>/content/series2/refs/red_helmet.png (prop)",
+  "pushpa_knitting": "<repo>/content/series2/refs/pushpa_knitting.png (prop)",
+  "stamp_and_pad": "<repo>/content/series2/refs/stamp_and_pad.png (prop)",
+  "godown_keys": "<repo>/content/series2/refs/godown_keys.png (prop)",
+  "medal": "<repo>/content/series2/refs/medal.png (prop)",
+  "sealed_envelopes": "<repo>/content/series2/refs/sealed_envelopes.png (prop)",
+  "zero_crime_shield": "<repo>/content/series2/refs/zero_crime_shield.png (prop)",
+  "thana_desk_phone": "<repo>/content/series2/refs/thana_desk_phone.png (prop)",
+  "style_frame": "<repo>/content/series2/refs/real_thana.png (D-021 decision 3)"
+ },
+ "method_notes": [
+  "Refs are attached with -i in the order listed per shot, at most five: character or pair sheets, then the plate, then prop sheets, then the scene anchor; the style frame takes the anchor's slot only on the three anchors (D-013 rule 1, D-021 decision 3). Each prompt labels them Image 1..N in that order. Do not reorder or drop a ref without rebuilding the prompt.",
+  "Every prompt carries, in order (style.json usage_notes): the opening line; the reference labels, with 'do not copy from the anchor' items (D-017 rule 4); THE SHOT in picture-side wording; SAFE AREAS; the STATE block; CHARACTER LOCK = style.json character_lock + wardrobe_locks.p1 verbatim for every principal whose face, body or hand is in shot; the pair's two_shot_rule verbatim when both are in frame (with a sentence when they are not at the same depth); the grade LIGHT line for the beat; style_block and negative_rules verbatim.",
+  "Sides are written in picture terms (D-013 rule 3, D-023 rule 4.7). Facing camera or three-quarter: Nandini's pouch and cuff hand picture-left, pen and helmet arm picture-right; Nirala's holster picture-left, medal picture-right; Bhaiyaji's keys picture-left, watch picture-right; Tripathi's gamchha and cone picture-right; Pushpa's wool pocket picture-left, bag shoulder picture-right. In back views the sides are reversed, and the prompts say so (s33, s36).",
+  "STATE source: continuity.json has no per-beat ledger for s2e02, only characters.*.static, the s2e01 end_state and an s2e02 end_state. Each shot's STATE is built from those plus the script's b1 STATE line and the writer's staging STATE note (writer_notes). continuity.json still lists the token-seven problem as open; the script has since fixed it (token pocketed on l03), and these prompts follow the script.",
+  "Faces per frame: at most two sheet faces (D-021 decision 8). Pushpa is a back in s33 and s36; the neighbours are hands only (s11, s12); Bhaiyaji's hand only in s23.",
+  "Script words the style forbids are translated to picture terms: 'soft' backgrounds become simpler, flatter layers with no blur (s38, s39); every readable surface is blank and listed as an overlay surface (ov_token_8, ov_envelope_tag, ov_shield, ov_fake_board).",
+  "Where an action needs a hand the lock calls empty (Pushpa knitting, Tripathi's right hand), the lock is quoted verbatim and one bracketed sentence after it says the STATE governs that hand.",
+  "Prop sheets left off on purpose: sealed_envelopes on every frame before the wax goes on (s18, s22, s24, s26), because the sheet shows wax; handcuffs on s11 (five-slot limit; the cuffs are small there and described in words, D-017 rule 3); godown_keys and medal where a sheet already draws them and the beat does not turn on them."
+ ],
+ "edit_notes_for_episode_editor": {
+  "owner": "S13 episode editor writes these into content/series2/episodes/s2e02/edit.json; shots.json is not edited for them.",
+  "cut_on_word": [
+   {
+    "line": "l08",
+    "word": {
+     "hi": "shield",
+     "en": "the"
+    },
+    "occurrence": 1,
+    "shot": "s09",
+    "why": "Script b2 shot 4: cut to the shield insert on 'shield'. English cuts one word earlier, on 'the' (its only occurrence in en l08), because on 'shield' the English insert measured 0.83 s in my scratch layout. s08 lists l08 as head, s09 as tail."
+   },
+   {
+    "line": "l15",
+    "word": {
+     "hi": "lockup",
+     "en": "lockup"
+    },
+    "occurrence": 1,
+    "shot": "s16",
+    "why": "Script b5: shot 2 from 'lockup में'. In English 'the' stays on s15."
+   },
+   {
+    "line": "l17",
+    "word": {
+     "hi": "त्रिपाठी",
+     "en": "Cheaper"
+    },
+    "occurrence": 1,
+    "shot": "s20",
+    "why": "Script b6 shot 4 cuts back to the grille 'from the laugh'; the laugh is a tag, not a word, so the cut lands on the first word after it."
+   }
+  ],
+  "tails_and_holds": {
+   "s09": "tail 24 frames (layout.tail.s09 = 24; tails are not per language): the insert then lays out at 1.97 s hi and 1.87 s en in my scratch build.",
+   "s33": "tail 18 frames (layout.tail.s33 = 18): b10's scripted 0.6 s silence after l30.",
+   "s39": "hard cut to black on the last word of l34 (sfx_notes b12); then end_black."
+  },
+  "silent_shots": "duration_s of the shots with no lines is the planned length: s17 1.2 (b6's 0.8 s silence plus the sandals), s23 1.4 (b7's 0.8 s after-silence, the medal tink and the keys going out), s36 2.0 (b11's 1.6 s after-silence, two script stills in one picture), s37 2.2 (b12's 1.8 s hold: receiver, two digits, one ring-back burst, the pick-up click; the critic's note says the sound may want more, so silent_frames may be raised if the cue needs it). b3's 0.4 s and b5's 0.8 s silences are silent_lead_s on s11 and s15.",
+  "second_framings_and_reused_assets": "No png copies are needed: build_timeline.py renders frame_source / frame.image with the shot's own 'move' (D-023 toolsmith). s01 shows content/series2/episodes/s2e01/frames/s36.png and s09 shows content/series2/episodes/s2e01/frames/s14.png; for s09 the s2e01 overlay overlays/s14-ov_shield.png matches the same source frame and move as s2e01 s20.",
+  "overlays": "ov_token_8 on s11 (blank token face, foreground left), ov_envelope_tag on s27 (blank tag, front-on), ov_shield on s09, s34 and s38 (dressing), ov_fake_board where the board shows (s11, s13, s16, s22, s24, s26; dressing). Surfaces are to be measured on the approved frames.",
+  "voice_takes": "Final takes per voice/review.json: every line take 1, except l34 (hi take 2 = voice/hi/l34.mp3, 4.64 s; en take 3 = voice/en/l34.mp3, 3.60 s, passed at exactly 0.60 voiced)."
+ },
+ "shots": [
+  {
+   "id": "s01",
+   "scene": "A",
+   "beat_id": "b1",
+   "line_ids": [
+    "l01"
+   ],
+   "duration_s": 2.4,
+   "silent_lead_s": 0,
+   "voice_s": {
+    "hi": [
+     2.4
+    ],
+    "en": [
+     2.08
+    ]
+   },
+   "generate": false,
+   "frame": {
+    "kind": "reused_asset",
+    "image": "<repo>/content/series2/episodes/s2e01/frames/s36.png"
+   },
+   "move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.2,
+     "x": 0,
+     "y": -1
+    },
+    "to": {
+     "scale": 1.28,
+     "x": 0,
+     "y": -1
+    }
+   },
+   "camera_move": "custom",
+   "intensity": 0,
+   "framing": "Reused asset: s2e01 s36 (approved), the match frame s2e01 was built to end on: her right hand stopped on the closed pouch, token seven's string round that wrist. Cropped to the lower 78-83% of the frame so the chest pocket (s36's logged missing pen) stays out.",
+   "action": "Cold open on the match frame, seconds after s2e01. Nirala, off: 'Arrest आपका हक़ है, madam।'",
+   "characters": [
+    "nandini (hand, hip)"
+   ],
+   "sheet_faces": 0,
+   "light": "projection_afternoon",
+   "state": {
+    "right_hand": "resting on the closed pouch",
+    "right_wrist": "token seven's string, token hanging",
+    "handcuffs": "in the pouch",
+    "thick_file": "open on the stool, picture-left edge"
+   },
+   "note": "build_timeline.py renders frame.image with this move (D-023 toolsmith: reused_asset). At scale 1.2 with y -1 the window is the lower 83% of s36 (16.7-100% down); the pocket flap (about 7-26% down in s36) is mostly cropped and the pen cap height (about 5-10%) is out. Deviation: Pushpa's hands with stopped needles at the edge of shot 1 are not drawn (no new frame; she is placed by s06 and s10).",
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 2.4,
+    "en": 2.03
+   }
+  },
+  {
+   "id": "s02",
+   "scene": "A",
+   "beat_id": "b1",
+   "line_ids": [
+    "l02"
+   ],
+   "duration_s": 3.8,
+   "silent_lead_s": 0,
+   "voice_s": {
+    "hi": [
+     3.36
+    ],
+    "en": [
+     3.44
+    ]
+   },
+   "generate": true,
+   "prompt_file": "frames/prompts/s02.txt",
+   "framing": "Medium close-up of Nirala, cap to mid-chest, standing just inside the stair doorway between the racks; eyes lowered to the lower left of the picture (her hand, the file), calm and earnest; medal on his left chest (picture-right).",
+   "action": "'पर charge handover के बिना थाना नहीं छोड़ा जाता।' He does not step back.",
+   "camera_move": "push-in",
+   "intensity": 0.15,
+   "camera_focus": {
+    "x": 0.55,
+    "y": 0.3
+   },
+   "refs": [
+    "<repo>/content/series2/refs/nirala.png",
+    "<repo>/content/series2/refs/projection_room.png",
+    "<repo>/content/series2/episodes/s2e02/frames/s10.png"
+   ],
+   "ref_labels": [
+    "Image 1 nirala",
+    "Image 2 projection_room",
+    "Image 3 scene anchor s10"
+   ],
+   "do_not_copy_from_anchor": "Nandini, Pushpa, the stool, the cuffs or its camera position; Nirala is not in the anchor, so take his face and uniform only from Image 1",
+   "characters": [
+    "nirala"
+   ],
+   "sheet_faces": 1,
+   "state": {
+    "nirala": "cap level, medal left chest, holster closed, hands empty",
+    "nandini_offscreen": "right hand on the pouch, token on wrist"
+   },
+   "light": "projection_afternoon",
+   "frame_check": [
+    "cap dead level, no badge",
+    "medal on picture-right of his chest",
+    "face inside 20-36% so s04 can punch in"
+   ],
+   "prompt_chars": 13482,
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 3.47,
+    "en": 3.8
+   }
+  },
+  {
+   "id": "s03",
+   "scene": "A",
+   "beat_id": "b1",
+   "line_ids": [
+    "l03"
+   ],
+   "duration_s": 2.33,
+   "silent_lead_s": 0,
+   "voice_s": {
+    "hi": [
+     2.32
+    ],
+    "en": [
+     2.24
+    ]
+   },
+   "generate": true,
+   "prompt_file": "frames/prompts/s03.txt",
+   "framing": "Medium shot of Nandini, head to mid-thigh, facing us in the aisle: her right hand (picture-left) has just drawn the steel cuffs out of the pouch on her right hip; her left hand (picture-right) pushes token seven into her left trouser pocket, only the end of the string and a corner of the grey card still showing; her right wrist bare.",
+   "action": "'नक़ली थाने का charge handover?' The cuffs come out on this line (D-016 direction 10) and the token goes into her left trouser pocket.",
+   "camera_move": "push-in",
+   "intensity": 0.2,
+   "camera_focus": {
+    "x": 0.45,
+    "y": 0.45
+   },
+   "refs": [
+    "<repo>/content/series2/refs/nandini.png",
+    "<repo>/content/series2/refs/projection_room.png",
+    "<repo>/content/series2/refs/handcuffs.png",
+    "<repo>/content/series2/refs/token.png",
+    "<repo>/content/series2/episodes/s2e02/frames/s10.png"
+   ],
+   "ref_labels": [
+    "Image 1 nandini",
+    "Image 2 projection_room",
+    "Image 3 handcuffs",
+    "Image 4 token",
+    "Image 5 scene anchor s10"
+   ],
+   "do_not_copy_from_anchor": "Pushpa, the knitting, the stool, her three-quarter pose or its camera position",
+   "characters": [
+    "nandini"
+   ],
+   "sheet_faces": 1,
+   "state": {
+    "right_hand": "drawing the cuffs out of the pouch",
+    "right_wrist": "bare",
+    "left_hand": "pushing token seven into her left trouser pocket",
+    "pouch": "flap open",
+    "helmet": "lobby bench"
+   },
+   "light": "projection_afternoon",
+   "frame_check": [
+    "cuffs in the hand on the picture-left side of her body",
+    "token going into the pocket on the picture-right side of her body; nothing on the right wrist",
+    "pen on picture-right chest pocket",
+    "pouch on picture-left hip"
+   ],
+   "prompt_chars": 12958,
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 2.33,
+    "en": 2.33
+   }
+  },
+  {
+   "id": "s04",
+   "scene": "A",
+   "beat_id": "b1",
+   "line_ids": [
+    "l04"
+   ],
+   "duration_s": 3.4,
+   "silent_lead_s": 0,
+   "voice_s": {
+    "hi": [
+     3.12
+    ],
+    "en": [
+     3.2
+    ]
+   },
+   "generate": false,
+   "frame_source": "s02",
+   "frame": {
+    "kind": "second_framing",
+    "source_shot": "s02"
+   },
+   "move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.12,
+     "x": 0,
+     "y": 0.6
+    },
+    "to": {
+     "scale": 1.2,
+     "x": 0,
+     "y": 0.6
+    }
+   },
+   "camera_move": "custom",
+   "intensity": 0,
+   "framing": "Second framing of s02 (script: 'Nirala, same set-up as shot 2'), pushed in on his face and cap.",
+   "action": "'थाना नक़ली है। Complaint असली हैं।'",
+   "characters": [
+    "nirala"
+   ],
+   "sheet_faces": 1,
+   "light": "projection_afternoon",
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 3.07,
+    "en": 3.4
+   }
+  },
+  {
+   "id": "s05",
+   "scene": "A",
+   "beat_id": "b2",
+   "line_ids": [
+    "l05"
+   ],
+   "duration_s": 1.47,
+   "silent_lead_s": 0,
+   "voice_s": {
+    "hi": [
+     1.6
+    ],
+    "en": [
+     1.12
+    ]
+   },
+   "generate": true,
+   "prompt_file": "frames/prompts/s05.txt",
+   "framing": "Close-up, head to mid-chest, three-quarters to picture-right (towards Pushpa, out of frame); flat and level; hands and cuffs below frame (so s07 can reuse it).",
+   "action": "'आपको पता था।' She turns from him to Pushpa.",
+   "camera_move": "push-in",
+   "intensity": 0.15,
+   "camera_focus": {
+    "x": 0.45,
+    "y": 0.28
+   },
+   "refs": [
+    "<repo>/content/series2/refs/nandini.png",
+    "<repo>/content/series2/refs/projection_room.png",
+    "<repo>/content/series2/episodes/s2e02/frames/s10.png"
+   ],
+   "ref_labels": [
+    "Image 1 nandini",
+    "Image 2 projection_room",
+    "Image 3 scene anchor s10"
+   ],
+   "do_not_copy_from_anchor": "Pushpa, the knitting, the stool, the cuffs (they are below this picture) or its camera distance",
+   "characters": [
+    "nandini"
+   ],
+   "sheet_faces": 1,
+   "state": {
+    "right_hand": "cuffs, below frame",
+    "token_7": "left trouser pocket"
+   },
+   "light": "projection_afternoon",
+   "frame_check": [
+    "no hands, cuffs or token in frame (s07 reuses it)",
+    "face matches the sheet close-up"
+   ],
+   "prompt_chars": 11711,
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 1.47,
+    "en": 1.03
+   }
+  },
+  {
+   "id": "s06",
+   "scene": "A",
+   "beat_id": "b2",
+   "line_ids": [
+    "l06"
+   ],
+   "duration_s": 6.03,
+   "silent_lead_s": 0,
+   "voice_s": {
+    "hi": [
+     6.08
+    ],
+    "en": [
+     5.2
+    ]
+   },
+   "generate": true,
+   "prompt_file": "frames/prompts/s06.txt",
+   "framing": "Medium single of Pushpa against the right-hand rack, head to hips, nearly front-on, turned slightly to picture-left; eyes down; her right hand (picture-left) draws a length of orange yarn up off the ball in her right pocket, her left hand (picture-right) holds the idle knitting low; bag on her left shoulder.",
+   "action": "'भेजती मैं ही थी, madam। SHO साहब जिसे लौटाते, उसे line के पार।' Not looking up.",
+   "camera_move": "push-in",
+   "intensity": 0.2,
+   "camera_focus": {
+    "x": 0.55,
+    "y": 0.3
+   },
+   "refs": [
+    "<repo>/content/series2/refs/pushpa.png",
+    "<repo>/content/series2/refs/projection_room.png",
+    "<repo>/content/series2/refs/pushpa_knitting.png",
+    "<repo>/content/series2/episodes/s2e02/frames/s10.png"
+   ],
+   "ref_labels": [
+    "Image 1 pushpa",
+    "Image 2 projection_room",
+    "Image 3 pushpa_knitting",
+    "Image 4 scene anchor s10"
+   ],
+   "do_not_copy_from_anchor": "Nandini, the cuffs, the stool, or the needles moving in her hands (here the knitting is idle in one hand)",
+   "characters": [
+    "pushpa"
+   ],
+   "sheet_faces": 1,
+   "state": {
+    "right_hand": "drawing yarn off the ball",
+    "left_hand": "knitting, idle",
+    "wool": "right pocket (picture-left)",
+    "bag": "left shoulder (picture-right)"
+   },
+   "light": "projection_afternoon",
+   "frame_check": [
+    "wool ball on the picture-left pocket",
+    "bamboo needles in the hand, steel needles in the bun",
+    "face inside 18-34% so s08 can punch in"
+   ],
+   "prompt_chars": 13150,
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 6.03,
+    "en": 5.4
+   }
+  },
+  {
+   "id": "s07",
+   "scene": "A",
+   "beat_id": "b2",
+   "line_ids": [
+    "l07"
+   ],
+   "duration_s": 1.57,
+   "silent_lead_s": 0,
+   "voice_s": {
+    "hi": [
+     1.52
+    ],
+    "en": [
+     1.44
+    ]
+   },
+   "generate": false,
+   "frame_source": "s05",
+   "frame": {
+    "kind": "second_framing",
+    "source_shot": "s05"
+   },
+   "move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.12,
+     "x": 0,
+     "y": 0.4
+    },
+    "to": {
+     "scale": 1.22,
+     "x": 0,
+     "y": 0.4
+    }
+   },
+   "camera_move": "custom",
+   "intensity": 0,
+   "framing": "Second framing of the close s05, a little tighter.",
+   "action": "'और SHO साहब?' Sharp.",
+   "characters": [
+    "nandini"
+   ],
+   "sheet_faces": 1,
+   "light": "projection_afternoon",
+   "note": "Valid only if s05 keeps hands, cuffs and token out of frame (frame check item).",
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 1.57,
+    "en": 1.47
+   }
+  },
+  {
+   "id": "s08",
+   "scene": "A",
+   "beat_id": "b2",
+   "line_ids": [
+    "l08"
+   ],
+   "line_part": "head",
+   "duration_s": 3.4,
+   "silent_lead_s": 0,
+   "voice_s": {
+    "hi": [
+     4.24
+    ],
+    "en": [
+     4.48
+    ]
+   },
+   "generate": false,
+   "frame_source": "s06",
+   "frame": {
+    "kind": "second_framing",
+    "source_shot": "s06"
+   },
+   "move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.18,
+     "x": 0,
+     "y": 0.6
+    },
+    "to": {
+     "scale": 1.28,
+     "x": 0,
+     "y": 0.6
+    }
+   },
+   "camera_move": "custom",
+   "intensity": 0,
+   "framing": "Second framing of s06 pushed in on Pushpa's face; the wool is still (her hands go low in the crop).",
+   "action": "'दो साल से जानते हैं। बोलते, तो...' Cut to s09 on 'shield'.",
+   "characters": [
+    "pushpa"
+   ],
+   "sheet_faces": 1,
+   "light": "projection_afternoon",
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 2.93,
+    "en": 3.4
+   }
+  },
+  {
+   "id": "s09",
+   "scene": "A",
+   "beat_id": "b2",
+   "line_ids": [
+    "l08"
+   ],
+   "line_part": "tail",
+   "cut_on_word": {
+    "hi": "shield",
+    "en": "the"
+   },
+   "duration_s": 1.97,
+   "silent_lead_s": 0,
+   "voice_s": {
+    "hi": [
+     4.24
+    ],
+    "en": [
+     4.48
+    ]
+   },
+   "generate": false,
+   "frame": {
+    "kind": "reused_asset",
+    "image": "<repo>/content/series2/episodes/s2e01/frames/s14.png"
+   },
+   "move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.3,
+     "x": -1,
+     "y": 1
+    },
+    "to": {
+     "scale": 1.3,
+     "x": -0.9,
+     "y": 0.9
+    }
+   },
+   "camera_move": "custom",
+   "intensity": 0,
+   "framing": "Reused asset: s2e01 s14 (approved attempt 2), the zero-crime shield with its blank brass plate, with s2e01 s20's move (top-right window, about 23-100% across and 0-77% down) so Tripathi's peanut fingers (bottom-left corner, right edge about 22.6% across) stay out.",
+   "action": "Insert on 'shield': '...shield जाता।' Overlay ov_shield (the s2e01 overlay file s14-ov_shield.png can be reused).",
+   "characters": [],
+   "sheet_faces": 0,
+   "light": "thana_day",
+   "overlay": [
+    {
+     "id": "ov_shield",
+     "surface": "as in s2e01 s14: brass plate about 30-45% down, 33-83% across of the source frame"
+    }
+   ],
+   "note": "A cut-away to the real thana wall, in day light (2 p.m.), exactly as the script asks for the insert on 'shield'.",
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 1.97,
+    "en": 1.87
+   }
+  },
+  {
+   "id": "s10",
+   "scene": "A",
+   "beat_id": "b2",
+   "line_ids": [
+    "l09"
+   ],
+   "duration_s": 5.03,
+   "silent_lead_s": 0,
+   "voice_s": {
+    "hi": [
+     4.64
+    ],
+    "en": [
+     4.96
+    ]
+   },
+   "generate": true,
+   "prompt_file": "frames/prompts/s10.txt",
+   "anchor_of_scene": "A",
+   "framing": "SCENE ANCHOR. Two-shot in the aisle between the racks, the plate's own view a little closer, knees up: Nandini picture-left turned three-quarters to picture-right, cuffs hanging from her right hand; Pushpa picture-right by the right-hand rack turned three-quarters to picture-left, knitting again, eyes on the work; stool with the open red file low between them, sheeted projector at the far end.",
+   "action": "'इसलिए ना department को बताया, ना भैयाजी को।' Pushpa's needles start again (sound).",
+   "camera_move": "push-in",
+   "intensity": 0.2,
+   "camera_focus": {
+    "x": 0.5,
+    "y": 0.32
+   },
+   "refs": [
+    "<repo>/content/series2/refs/pair_nandini_pushpa.png",
+    "<repo>/content/series2/refs/projection_room.png",
+    "<repo>/content/series2/refs/handcuffs.png",
+    "<repo>/content/series2/refs/pushpa_knitting.png",
+    "<repo>/content/series2/refs/real_thana.png"
+   ],
+   "ref_labels": [
+    "Image 1 pair_nandini_pushpa",
+    "Image 2 projection_room",
+    "Image 3 handcuffs",
+    "Image 4 pushpa_knitting",
+    "Image 5 style frame (real_thana)"
+   ],
+   "refs_not_attached": [
+    "token: in her pocket, not seen",
+    "thick_file: small, low, background; described in words"
+   ],
+   "characters": [
+    "nandini",
+    "pushpa"
+   ],
+   "sheet_faces": 2,
+   "state": {
+    "nandini_right_hand": "handcuffs, hanging",
+    "nandini_right_wrist": "bare",
+    "token_7": "left trouser pocket, not seen",
+    "pouch": "flap open, empty",
+    "helmet": "lobby bench downstairs",
+    "pushpa_hands": "knitting, needles moving",
+    "pushpa_wool": "right pocket (picture-left of her body)",
+    "pushpa_bag": "left shoulder",
+    "thick_file": "open on the stool",
+    "nirala": "in the room, out of frame"
+   },
+   "light": "projection_afternoon",
+   "frame_check": [
+    "Nandini's right wrist bare; no token or string visible",
+    "cuffs in her right hand (near side, picture-left of her body)",
+    "Pushpa knitting with bamboo needles; steel X in the bun; wool ball in her right pocket",
+    "height: Pushpa's head top at Nandini's mouth",
+    "no third person",
+    "the style frame's thana room, fan, shield, almirah or doorway not copied"
+   ],
+   "prompt_chars": 15974,
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 4.63,
+    "en": 5.03
+   }
+  },
+  {
+   "id": "s11",
+   "scene": "B",
+   "beat_id": "b3",
+   "line_ids": [
+    "l10",
+    "l11"
+   ],
+   "duration_s": 2.7,
+   "silent_lead_s": 0.4,
+   "voice_s": {
+    "hi": [
+     0.88,
+     1.36
+    ],
+    "en": [
+     0.96,
+     1.44
+    ]
+   },
+   "generate": true,
+   "prompt_file": "frames/prompts/s11.txt",
+   "anchor_of_scene": "B",
+   "framing": "SCENE ANCHOR. Wide from the lobby floor by the left pillar and the bench, looking across to the back stair: Nirala coming down first, Nandini a step above him, cuffs in her right hand; desk, board and clock centre, booth right; foreground picture-left on the bench, two pairs of hands tug one bicycle handlebar, token eight on one wrist, the red helmet beside them.",
+   "action": "Silence 0.4 s, then from the bench, off frame: 'निराला जी!' Nirala: 'Token आठ।' Overlay ov_token_8 on the token.",
+   "camera_move": "push-in",
+   "intensity": 0.15,
+   "camera_focus": {
+    "x": 0.62,
+    "y": 0.38
+   },
+   "refs": [
+    "<repo>/content/series2/refs/pair_nandini_nirala.png",
+    "<repo>/content/series2/refs/talkies_lobby.png",
+    "<repo>/content/series2/refs/red_helmet.png",
+    "<repo>/content/series2/refs/token.png",
+    "<repo>/content/series2/refs/real_thana.png"
+   ],
+   "ref_labels": [
+    "Image 1 pair_nandini_nirala",
+    "Image 2 talkies_lobby",
+    "Image 3 red_helmet",
+    "Image 4 token",
+    "Image 5 style frame (real_thana)"
+   ],
+   "refs_not_attached": [
+    "handcuffs: small at this distance; described in words from style.json (two rings, short three-link chain, plain steel); D-017 rule 3 drop order"
+   ],
+   "characters": [
+    "nandini",
+    "nirala",
+    "neighbours (hands only)"
+   ],
+   "sheet_faces": 2,
+   "state": {
+    "nandini_right_hand": "handcuffs (the only pair in the picture), clear of Nirala",
+    "helmet": "on the bench, foreground left",
+    "neighbours": "two pairs of hands on one handlebar",
+    "token_8": "on the blue-sleeved wrist, blank, facing camera",
+    "nirala": "cap level, medal, holster closed; left hand (picture-right) on the rail; right hand (picture-left) empty, fingers only below the sleeve; holds no handcuffs",
+    "handcuff_pouch": "Nandini's right hip (picture-left), flap open, empty"
+   },
+   "light": "lobby_day",
+   "overlay": [
+    {
+     "id": "ov_token_8",
+     "surface": "blank face of the token on the blue-sleeved wrist, foreground picture-left (position to be measured at the frame check)"
+    },
+    {
+     "id": "ov_fake_board",
+     "surface": "the blank board above the desk, if readable at this size (dressing only)"
+    }
+   ],
+   "frame_check": [
+    "two faces only; the neighbours are hands only",
+    "helmet on the bench, cuffs in Nandini's hand on the picture-left side of her body",
+    "token blank and front-on",
+    "geography follows the plate: bench left, booth right, stair back right",
+    "the style frame's thana room not copied",
+    "retake check (S9): one pair of cuffs only, in Nandini's right hand; Nirala's right hand empty"
+   ],
+   "prompt_chars": 18000,
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 2.7,
+    "en": 2.57
+   },
+   "retake": {
+    "attempt": 2,
+    "by": "S7, 26 Nov 2026",
+    "reason": "S9 anchor rejection of attempt 1 (second pair of cuffs in Nirala's hand; nits: sleeves, pouch, helmet low, cuff hand hidden)",
+    "prompt_change": "THE SHOT, SAFE AREAS and STATE: Nirala's left hand (picture-right) on the rail, right hand (picture-left) empty with fingers only below the sleeve, no handcuffs, exactly one pair in the picture; Nandini one step up and a little picture-left on the wall side, cuff hand clear; pouch flap open and empty restated; foreground raised with helmet and token at 55-74 percent. Same five refs. Complexity contingency not applied.",
+    "previous_take": "frames/s11.prev1.png (attempt 1, kept)",
+    "standing_take": "frames/s11.png (attempt 2)"
+   },
+   "drift": [
+    "Attempt 2 stands as the better take (D-013 rule 11; no further retake). Fixed against attempt 1, on S7's own look at full resolution: exactly one pair of cuffs, in Nandini's right hand on the picture-left of her body, clear of Nirala against the wall; Nirala's left hand on the rail and right hand empty, the sleeve over the hand so only the fingers show; Nandini one step up and to picture-left of him.",
+    "Helmet still sits low: the red shell measures about 72-81 percent of height by pixel colour, and the black liner and chin strap reach about 86 percent, so the lower part is inside the bottom-20-percent subtitle band. Attempt 1 measured 73-83 percent the same way. The prompt asked for 55-74. S13 editor: keep the push-in focus high (y 0.38) so the helmet does not sink further into the band; the subtitle band may cover the strap.",
+    "Nandini's handcuff pouch still reads closed (black pouch with a snapped flap), against STATE 'flap open, empty'. It is small at this distance. Later scene-B prompts that attach s11 should say under 'do not copy from the anchor': 'her handcuff pouch flap is OPEN and the pouch is empty'.",
+    "The grey-sleeved forearm now comes in large from the bottom-right corner and runs through the subtitle band (attempt 1 had it smaller). It is the neighbour's arm the shot asks for, coming 'from below', but it is bigger than intended.",
+    "ov_token_8: the token sits at about x 0.11-0.19, y 0.67-0.72 (read by eye off a 5-percent grid, not measured by pixel); S9 to measure at the retake check."
+   ]
+  },
+  {
+   "id": "s12",
+   "scene": "B",
+   "beat_id": "b4",
+   "line_ids": [
+    "l12",
+    "l36",
+    "l37"
+   ],
+   "duration_s": 10.5,
+   "silent_lead_s": 0,
+   "voice_s": {
+    "hi": [
+     4.48,
+     3.36,
+     2.0
+    ],
+    "en": [
+     4.48,
+     2.64,
+     2.16
+    ]
+   },
+   "generate": true,
+   "prompt_file": "frames/prompts/s12.txt",
+   "framing": "Top-down insert on the counter: an old register open at an older page, Nirala's left forefinger under one entry; his right hand writing on a fresh blank receipt slip; stamp and pad at the upper right; at the top edge the bicycle handlebar with both neighbours' hands on it.",
+   "action": "'Frame नौ-दो-सात। दर्ज है।' He reads the frame number from his register and writes it on a receipt (the number is spoken, never shown).",
+   "camera_move": "hold",
+   "intensity": 0,
+   "refs": [
+    "<repo>/content/series2/refs/nirala.png",
+    "<repo>/content/series2/refs/talkies_lobby.png",
+    "<repo>/content/series2/refs/stamp_and_pad.png",
+    "<repo>/content/series2/episodes/s2e02/frames/s11.png"
+   ],
+   "ref_labels": [
+    "Image 1 nirala",
+    "Image 2 talkies_lobby",
+    "Image 3 stamp_and_pad",
+    "Image 4 scene anchor s11"
+   ],
+   "do_not_copy_from_anchor": "the stair, the bicycle handlebar and the neighbours' hands, the helmet lying on the bench, the two people on the stair or its camera position; this is a top-down insert on the counter",
+   "characters": [
+    "nirala (hands only)",
+    "neighbours (hands only)"
+   ],
+   "sheet_faces": 0,
+   "state": {
+    "nirala_left_forefinger": "under one register row",
+    "nirala_right_hand": "pen on a blank receipt",
+    "neighbours": "both hands on the handlebar"
+   },
+   "light": "lobby_day",
+   "frame_check": [
+    "no letters or numbers on register or slip",
+    "sleeves over the backs of his hands",
+    "both neighbours' hands on the handlebar"
+   ],
+   "prompt_chars": 14002,
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 3.97,
+    "en": 2.97
+   }
+  },
+  {
+   "id": "s13",
+   "scene": "B",
+   "beat_id": "b4",
+   "line_ids": [
+    "l13"
+   ],
+   "duration_s": 4.67,
+   "silent_lead_s": 0,
+   "voice_s": {
+    "hi": [
+     4.56
+    ],
+    "en": [
+     4.48
+    ]
+   },
+   "generate": true,
+   "prompt_file": "frames/prompts/s13.txt",
+   "framing": "Medium of Nirala behind the counter, head to counter top, facing us; eyes up and a little to picture-left past the lens (to her by the pillar, and the door beyond her); the torn blank receipt held up in his right hand (picture-left). Face kept in 18-34% so s15 can punch in.",
+   "action": "'जो लिखो, बोलकर लिखो, madam। ताकि गवाह सुन ले।' The stamp and the tear were sound in the gap before.",
+   "camera_move": "push-in",
+   "intensity": 0.15,
+   "camera_focus": {
+    "x": 0.55,
+    "y": 0.28
+   },
+   "refs": [
+    "<repo>/content/series2/refs/nirala.png",
+    "<repo>/content/series2/refs/talkies_lobby.png",
+    "<repo>/content/series2/refs/stamp_and_pad.png",
+    "<repo>/content/series2/episodes/s2e02/frames/s11.png"
+   ],
+   "ref_labels": [
+    "Image 1 nirala",
+    "Image 2 talkies_lobby",
+    "Image 3 stamp_and_pad",
+    "Image 4 scene anchor s11"
+   ],
+   "do_not_copy_from_anchor": "the stair, the bicycle handlebar and the neighbours' hands, the helmet lying on the bench, Nandini, or its camera position",
+   "characters": [
+    "nirala"
+   ],
+   "sheet_faces": 1,
+   "state": {
+    "right_hand": "torn receipt, held up",
+    "left_hand": "on the register",
+    "medal": "left chest",
+    "holster": "closed, hidden"
+   },
+   "light": "lobby_day",
+   "overlay": [
+    {
+     "id": "ov_fake_board",
+     "surface": "the blank board behind him (dressing only)"
+    }
+   ],
+   "frame_check": [
+    "receipt blank",
+    "eyeline past the lens to picture-left",
+    "face inside 18-34%"
+   ],
+   "prompt_chars": 14122,
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 4.67,
+    "en": 4.63
+   }
+  },
+  {
+   "id": "s14",
+   "scene": "B",
+   "beat_id": "b4",
+   "line_ids": [
+    "l14"
+   ],
+   "duration_s": 1.7,
+   "silent_lead_s": 0,
+   "voice_s": {
+    "hi": [
+     1.52
+    ],
+    "en": [
+     1.76
+    ]
+   },
+   "generate": true,
+   "prompt_file": "frames/prompts/s14.txt",
+   "framing": "Medium-close, slightly low: Nandini by the left pillar, three-quarters to picture-right, chin lifted, eyes raised to the round wall clock high in the upper right of the frame (hands, no numerals: hour hand just short of four); cuffs hanging from her right hand. The clock insert is merged into this shot.",
+   "action": "'दस minute में।' She has timed him by the lobby clock (D-016 direction 17).",
+   "camera_move": "push-in",
+   "intensity": 0.15,
+   "camera_focus": {
+    "x": 0.55,
+    "y": 0.3
+   },
+   "refs": [
+    "<repo>/content/series2/refs/nandini.png",
+    "<repo>/content/series2/refs/talkies_lobby.png",
+    "<repo>/content/series2/refs/handcuffs.png",
+    "<repo>/content/series2/episodes/s2e02/frames/s11.png"
+   ],
+   "ref_labels": [
+    "Image 1 nandini",
+    "Image 2 talkies_lobby",
+    "Image 3 handcuffs",
+    "Image 4 scene anchor s11"
+   ],
+   "do_not_copy_from_anchor": "the stair, the bicycle handlebar and the neighbours' hands, the helmet lying on the bench, Nirala, or its camera position",
+   "characters": [
+    "nandini"
+   ],
+   "sheet_faces": 1,
+   "state": {
+    "right_hand": "handcuffs",
+    "left_hand": "empty",
+    "pouch": "flap open",
+    "helmet": "bench, out of frame",
+    "clock": "hands only, just short of four"
+   },
+   "light": "lobby_day",
+   "frame_check": [
+    "clock has no numerals or marks",
+    "cuffs on the near (right) side",
+    "clock and her face both clear of the 8% margins"
+   ],
+   "prompt_chars": 13000,
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 1.3,
+    "en": 1.7
+   },
+   "retake": {
+    "attempt": 4,
+    "by": "S7, 26 Nov 2026",
+    "reason": "S9 frame-check rejection of attempt 3: the cuffs hung from her right hand at about 83-96 percent, in the subtitle band, and she was drawn to the knees where the shot asks for head to hips. Attempts 1-3 ran with no refs attached (manifest refs []).",
+    "prompt_change": "THE SHOT: MEDIUM CLOSE SHOT, head to belt, top of head about 24 percent, belt about 78-82 percent, bottom edge across the top of the hips, thighs/knees/feet not in the picture. Her near (right) forearm bent and raised, right fist at waist height above the belt at 56-60 percent gripping ONE ring; chain and second ring hanging at 60-72 percent, nothing lower than 72. SAFE AREAS and STATE restated to match. Pouch, pen, clock, light, CHARACTER LOCK unchanged. Same four refs in the same order, this time actually attached (nandini, talkies_lobby, handcuffs, s11 anchor). Deviation from S9's wording 'right fist at her belt': with her face held at 30-44 percent and the clock above her, her belt falls at about 78-82 percent, so a fist at the belt cannot put the cuffs at 60-72; the fist was placed at the waist above the belt instead.",
+    "previous_take": "frames/s14.prev1.png (attempt 3, kept)",
+    "standing_take": "frames/s14.png (attempt 4)"
+   },
+   "drift": [
+    "Attempt 4 stands as the better take (D-023 4.1, one retake; D-013 rule 11, no further retake). Checked by S7's own look at the 1440x2560 png on a 5-percent grid, with full-resolution crops; the cuff extent was measured by pixel colour. Fixed against attempt 3: framed head to hips (bottom edge cuts across the top of the thighs, no knees); her near (right) fist holds one ring with the chain and second ring hanging; pouch on the near hip, flap open and empty; two bars on each epaulette; pen in the far (left) chest pocket; clock upper right at about 9-24 percent, hands only, no numerals, hour hand at about four.",
+    "Cuffs still reach into the subtitle band: steel measures about 66-85 percent of height (attempt 3: 83-96). Her fist sits at about 66-71 percent, lower than the 56-60 asked, and the lower ring lies over her belt at about 79-85 percent. S13 editor: keep the push-in focus at y 0.3 or higher so the ring does not sink further; the subtitle may graze the bottom of the lower ring.",
+    "Her face sits a little high: forehead to chin about 26-38 percent by eye (asked 30-44, safe 28-46). The clock and face are both clear of the 8 percent margins."
+   ]
+  },
+  {
+   "id": "s15",
+   "scene": "B",
+   "beat_id": "b5",
+   "line_ids": [
+    "l15"
+   ],
+   "line_part": "head",
+   "duration_s": 2.93,
+   "silent_lead_s": 0.8,
+   "voice_s": {
+    "hi": [
+     5.2
+    ],
+    "en": [
+     5.2
+    ]
+   },
+   "generate": false,
+   "frame_source": "s13",
+   "frame": {
+    "kind": "second_framing",
+    "source_shot": "s13"
+   },
+   "move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.2,
+     "x": 0,
+     "y": 0.7
+    },
+    "to": {
+     "scale": 1.3,
+     "x": 0,
+     "y": 0.7
+    }
+   },
+   "camera_move": "custom",
+   "intensity": 0,
+   "framing": "Second framing of s13, punched in: Nirala gone completely still, eyes past the lens towards the entrance (the lobby door is behind the camera, beyond her). The receipt is still in his hand at the bottom of the crop.",
+   "action": "Silence 0.8 s (a car door shuts outside, sound), then '[nervous] भैयाजी। Madam...' Cut to s16 on 'lockup'.",
+   "characters": [
+    "nirala"
+   ],
+   "sheet_faces": 1,
+   "light": "lobby_day",
+   "note": "Same face as s13 (earnest, wide-eyed); the stillness comes from the push-in and the silence. If the frame check finds s13's expression reads as smiling, generate s15 as its own frame (one extra).",
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 2.5,
+    "en": 2.93
+   }
+  },
+  {
+   "id": "s16",
+   "scene": "B",
+   "beat_id": "b5",
+   "line_ids": [
+    "l15"
+   ],
+   "line_part": "tail",
+   "cut_on_word": {
+    "hi": "lockup",
+    "en": "lockup"
+   },
+   "duration_s": 3.43,
+   "silent_lead_s": 0,
+   "voice_s": {
+    "hi": [
+     5.2
+    ],
+    "en": [
+     5.2
+    ]
+   },
+   "generate": true,
+   "prompt_file": "frames/prompts/s16.txt",
+   "framing": "The plate's view from the entrance: Nirala behind the desk centre, frightened, his left arm (picture-right) pointing past her to the ticket booth on the right, the receipt in his right hand; Nandini at the picture-left edge nearer us, bending to the bench, her left hand closing on the red helmet, cuffs in her right hand. No neighbours, no bicycle.",
+   "action": "'...lockup में। मतलब... छुपिए।' He points her to the ticket booth.",
+   "camera_move": "push-in",
+   "intensity": 0.15,
+   "camera_focus": {
+    "x": 0.55,
+    "y": 0.4
+   },
+   "refs": [
+    "<repo>/content/series2/refs/pair_nandini_nirala.png",
+    "<repo>/content/series2/refs/talkies_lobby.png",
+    "<repo>/content/series2/refs/red_helmet.png",
+    "<repo>/content/series2/refs/handcuffs.png",
+    "<repo>/content/series2/episodes/s2e02/frames/s11.png"
+   ],
+   "ref_labels": [
+    "Image 1 pair_nandini_nirala",
+    "Image 2 talkies_lobby",
+    "Image 3 red_helmet",
+    "Image 4 handcuffs",
+    "Image 5 scene anchor s11"
+   ],
+   "do_not_copy_from_anchor": "the stair positions, the bicycle and the neighbours' hands (they are gone now) or its camera position",
+   "characters": [
+    "nirala",
+    "nandini"
+   ],
+   "sheet_faces": 2,
+   "state": {
+    "nirala_left_hand": "pointing at the booth (picture-right)",
+    "nirala_right_hand": "receipt",
+    "nandini_left_hand": "on the helmet",
+    "nandini_right_hand": "cuffs",
+    "neighbours": "gone",
+    "booth_door": "a little open"
+   },
+   "light": "lobby_day",
+   "overlay": [
+    {
+     "id": "ov_fake_board",
+     "surface": "the blank board behind the counter (dressing only)"
+    }
+   ],
+   "frame_check": [
+    "he points to picture-right, at the booth",
+    "helmet on the bench under her near (left) hand",
+    "no neighbours, no bicycle",
+    "two faces only"
+   ],
+   "prompt_chars": 16716,
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 3.43,
+    "en": 3.0
+   },
+   "retake": {
+    "attempt": 2,
+    "by": "S7, 26 Nov 2026",
+    "reason": "S9 frame-check rejection of attempt 1: Nandini's sides were mirrored (near arm held the cuffs, far arm on the helmet, pouch on the near hip with the flap shut). Attempt 1 ran with no refs attached (manifest refs []).",
+    "prompt_change": "THE SHOT: Nandini written in picture terms: facing picture-left, her LEFT side is near; the near (left) arm with its sleeve patch facing us reaches down and the near hand closes on the helmet; the far (right) arm hangs on the far side with the cuffs, seen past her body; the pen in the near chest pocket; the pouch on the far (right) hip, mostly hidden, flap open and empty; nothing on the near hip. STATE restated with near/far. CHARACTER LOCK pouch clause extended with '; on the far hip, mostly hidden, when she faces picture-left'. Nirala, geography and the no-text rule unchanged. Same five refs in the same order, this time actually attached (pair_nandini_nirala, talkies_lobby, red_helmet, handcuffs, s11 anchor).",
+    "previous_take": "frames/s16.prev1.png (attempt 1, kept)",
+    "standing_take": "frames/s16.png (attempt 2)"
+   },
+   "drift": [
+    "Attempt 2 stands as the better take (D-023 4.1, one retake; D-013 rule 11, no further retake). Checked by S7's own look at the 1440x2560 png on a 5-percent grid and a full-resolution crop of Nandini. Fixed against attempt 1: facing picture-left, her near (left) arm with the sleeve patch facing us reaches down and the near hand is on the red helmet on the bench; the far (right) arm hangs behind her body with the cuffs, seen past her legs; the blue pen is in the near chest pocket; the near hip shows only the belt. Nirala as before: behind the counter centre, his left arm (picture-right) pointing at the booth, receipt in his right hand, medal on the picture-right, cap level; booth door a little open; no neighbours, no bicycle; clock hands only; tokens on the nail; two faces.",
+    "Pouch: only a small black edge shows at the front of her hips behind her near arm, which reads as the far-hip pouch seen past her body; its flap state (open, empty) cannot be read at this size. S9 to confirm it does not read as a near-hip pouch.",
+    "Low against the asked bands (by eye on the grid; cuffs by pixel colour): her face in profile about 48-52 percent (asked 34-46); the helmet about 71-80 percent (asked 56-64), its lower edge at the subtitle band; the cuffs about 68-75 percent (safe area asked 15-68). Attempt 1 had the helmet at about 71-78 percent, so this did not get worse. S13 editor: keep s16's push-in focus at y 0.4 or higher."
+   ]
+  },
+  {
+   "id": "s17",
+   "scene": "B",
+   "beat_id": "b6",
+   "line_ids": [],
+   "duration_s": 1.2,
+   "silent_lead_s": 1.2,
+   "voice_s": {
+    "hi": [],
+    "en": []
+   },
+   "generate": true,
+   "prompt_file": "frames/prompts/s17.txt",
+   "framing": "COMIC IMAGE. Front-on to the ticket booth: through the arched steel grille window, the real SI's face from the eyes down to her chest, the cherry-red helmet clutched against her chest in both arms, the steel cuffs dangling from her right hand over it. Booth door shut. Face kept in 28-44% so s20 can punch in.",
+   "action": "Silent hold, about 1.2 s: the car door was sound; sandals on terrazzo coming in.",
+   "camera_move": "hold",
+   "intensity": 0,
+   "refs": [
+    "<repo>/content/series2/refs/nandini.png",
+    "<repo>/content/series2/refs/talkies_lobby.png",
+    "<repo>/content/series2/refs/red_helmet.png",
+    "<repo>/content/series2/refs/handcuffs.png",
+    "<repo>/content/series2/episodes/s2e02/frames/s11.png"
+   ],
+   "ref_labels": [
+    "Image 1 nandini",
+    "Image 2 talkies_lobby",
+    "Image 3 red_helmet",
+    "Image 4 handcuffs",
+    "Image 5 scene anchor s11"
+   ],
+   "do_not_copy_from_anchor": "the stair, the bicycle handlebar and the neighbours' hands, the helmet lying on the bench, Nirala, or its camera position",
+   "characters": [
+    "nandini"
+   ],
+   "sheet_faces": 1,
+   "state": {
+    "nandini": "in the booth behind the grille",
+    "helmet": "clutched against her chest",
+    "right_hand": "cuffs dangling over the helmet",
+    "booth_door": "shut"
+   },
+   "light": "lobby_day",
+   "frame_check": [
+    "grille bars read clearly in front of her face",
+    "helmet cherry red against her chest",
+    "cuffs from the hand on the picture-left side of her body"
+   ],
+   "prompt_chars": 12857,
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 1.2,
+    "en": 1.2
+   }
+  },
+  {
+   "id": "s18",
+   "scene": "B",
+   "beat_id": "b6",
+   "line_ids": [
+    "l16"
+   ],
+   "duration_s": 3.4,
+   "silent_lead_s": 0,
+   "voice_s": {
+    "hi": [
+     3.28
+    ],
+    "en": [
+     3.2
+    ]
+   },
+   "supers": [
+    {
+     "id": "su8",
+     "kind": "name_role",
+     "with_line": "l16",
+     "text_hi": "भैयाजी · राशन godown के मालिक",
+     "text_en": "Bhaiyaji · owns the ration godown",
+     "hold_min_s": 2.0
+    }
+   ],
+   "generate": true,
+   "prompt_file": "frames/prompts/s18.txt",
+   "framing": "Over Nirala's shoulder from behind the counter: Nirala picture-left foreground in three-quarter back (back of the cap, shoulder, cheek edge); Bhaiyaji picture-right on the lobby side, face to camera, smiling, laying a plain brown envelope flat on the counter with his left hand (watch, picture-right), keys swinging from his right index finger (picture-left of his body). Entrance bright behind him; booth out of frame.",
+   "action": "'Inspector साहब! इस महीने का।' Keys jingling; the envelope laid on wood.",
+   "camera_move": "push-in",
+   "intensity": 0.15,
+   "camera_focus": {
+    "x": 0.65,
+    "y": 0.35
+   },
+   "refs": [
+    "<repo>/content/series2/refs/pair_nirala_bhaiyaji.png",
+    "<repo>/content/series2/refs/talkies_lobby.png",
+    "<repo>/content/series2/refs/godown_keys.png",
+    "<repo>/content/series2/episodes/s2e02/frames/s11.png"
+   ],
+   "ref_labels": [
+    "Image 1 pair_nirala_bhaiyaji",
+    "Image 2 talkies_lobby",
+    "Image 3 godown_keys",
+    "Image 4 scene anchor s11"
+   ],
+   "do_not_copy_from_anchor": "the stair, the bicycle handlebar and the neighbours' hands, the helmet lying on the bench, Nandini, or its camera position; Bhaiyaji is not in the anchor, so take him only from Image 1",
+   "refs_not_attached": [
+    "sealed_envelopes: this envelope is not sealed yet; attaching the sheet would invite wax"
+   ],
+   "characters": [
+    "bhaiyaji",
+    "nirala (back)"
+   ],
+   "sheet_faces": 1,
+   "state": {
+    "bhaiyaji_left_hand": "laying the envelope; watch",
+    "bhaiyaji_right_index": "keys",
+    "envelope": "plain brown, unsealed, on the counter",
+    "nirala": "back to camera"
+   },
+   "light": "lobby_day",
+   "frame_check": [
+    "watch on the picture-right wrist, keys on the picture-left hand",
+    "envelope has no wax and no tag",
+    "no booth grille and no Nandini in frame",
+    "sunglasses up, not over his eyes"
+   ],
+   "prompt_chars": 17049,
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 3.4,
+    "en": 3.3
+   }
+  },
+  {
+   "id": "s19",
+   "scene": "B",
+   "beat_id": "b6",
+   "line_ids": [
+    "l17"
+   ],
+   "line_part": "head",
+   "duration_s": 4.3,
+   "silent_lead_s": 0,
+   "voice_s": {
+    "hi": [
+     6.88
+    ],
+    "en": [
+     6.72
+    ]
+   },
+   "generate": true,
+   "prompt_file": "frames/prompts/s19.txt",
+   "framing": "Medium single of Bhaiyaji from behind the counter (Nirala's eyeline, slightly low): leaning on the counter, closer, smiling; his left hand (watch, picture-right) opens palm up at the room; keys on his right index finger (picture-left) over the counter edge. Face kept in 18-34% so s21 can punch in.",
+   "action": "'हमारी चौकी, हमारे Inspector साहब। [laughs]' (cut to s20 on 'त्रिपाठी' / 'Cheaper').",
+   "camera_move": "push-in",
+   "intensity": 0.2,
+   "camera_focus": {
+    "x": 0.45,
+    "y": 0.3
+   },
+   "refs": [
+    "<repo>/content/series2/refs/bhaiyaji.png",
+    "<repo>/content/series2/refs/talkies_lobby.png",
+    "<repo>/content/series2/refs/godown_keys.png",
+    "<repo>/content/series2/episodes/s2e02/frames/s11.png"
+   ],
+   "ref_labels": [
+    "Image 1 bhaiyaji",
+    "Image 2 talkies_lobby",
+    "Image 3 godown_keys",
+    "Image 4 scene anchor s11"
+   ],
+   "do_not_copy_from_anchor": "the stair, the bicycle handlebar and the neighbours' hands, the helmet lying on the bench, Nandini, Nirala or its camera position; Bhaiyaji is not in the anchor, so take him only from Image 1",
+   "characters": [
+    "bhaiyaji"
+   ],
+   "sheet_faces": 1,
+   "state": {
+    "left_hand": "open palm, watch",
+    "right_hand": "keys on index finger",
+    "sunglasses": "up"
+   },
+   "light": "lobby_day",
+   "frame_check": [
+    "watch on the picture-right wrist; keys on the picture-left hand",
+    "plain kurta: no patch, emblem or pocket",
+    "face inside 18-34%"
+   ],
+   "prompt_chars": 13174,
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 4.3,
+    "en": 4.07
+   }
+  },
+  {
+   "id": "s20",
+   "scene": "B",
+   "beat_id": "b6",
+   "line_ids": [
+    "l17"
+   ],
+   "line_part": "tail",
+   "cut_on_word": {
+    "hi": "त्रिपाठी",
+    "en": "Cheaper"
+   },
+   "duration_s": 2.8,
+   "silent_lead_s": 0,
+   "voice_s": {
+    "hi": [
+     6.88
+    ],
+    "en": [
+     6.72
+    ]
+   },
+   "generate": false,
+   "frame_source": "s17",
+   "frame": {
+    "kind": "second_framing",
+    "source_shot": "s17"
+   },
+   "move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.2,
+     "x": 0,
+     "y": 0.3
+    },
+    "to": {
+     "scale": 1.28,
+     "x": 0,
+     "y": 0.3
+    }
+   },
+   "camera_move": "custom",
+   "intensity": 0,
+   "framing": "Second framing of the booth s17, tighter on her eyes behind the grille.",
+   "action": "'[laughs] ...त्रिपाठी जी से सस्ते भी, मीठे भी।' from 'त्रिपाठी' / 'Cheaper'.",
+   "characters": [
+    "nandini"
+   ],
+   "sheet_faces": 1,
+   "light": "lobby_day",
+   "note": "The script's 'her eyes wider' cannot come from a second framing; the tighter crop carries it.",
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 2.63,
+    "en": 2.8
+   }
+  },
+  {
+   "id": "s21",
+   "scene": "B",
+   "beat_id": "b7",
+   "line_ids": [
+    "l18"
+   ],
+   "duration_s": 3.87,
+   "silent_lead_s": 0,
+   "voice_s": {
+    "hi": [
+     3.6
+    ],
+    "en": [
+     3.28
+    ]
+   },
+   "generate": false,
+   "frame_source": "s19",
+   "frame": {
+    "kind": "second_framing",
+    "source_shot": "s19"
+   },
+   "move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.18,
+     "x": 0.15,
+     "y": 0.6
+    },
+    "to": {
+     "scale": 1.28,
+     "x": 0.15,
+     "y": 0.6
+    }
+   },
+   "camera_move": "custom",
+   "intensity": 0,
+   "framing": "Second framing of s19: Bhaiyaji closer, smiling (script b7 shot 1).",
+   "action": "'वो तीस काग़ज़... सो रहे हैं ना?'",
+   "characters": [
+    "bhaiyaji"
+   ],
+   "sheet_faces": 1,
+   "light": "lobby_day",
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 3.87,
+    "en": 3.57
+   }
+  },
+  {
+   "id": "s22",
+   "scene": "B",
+   "beat_id": "b7",
+   "line_ids": [
+    "l19"
+   ],
+   "duration_s": 2.1,
+   "silent_lead_s": 0,
+   "voice_s": {
+    "hi": [
+     2.08
+    ],
+    "en": [
+     2.08
+    ]
+   },
+   "generate": true,
+   "prompt_file": "frames/prompts/s22.txt",
+   "framing": "Medium of Nirala behind the counter from the lobby side: he lifts the plain brown envelope off the counter in both hands, held flat at the short ends, sleeves over his knuckles; eyes up to picture-right (to Bhaiyaji, taller, out of frame); medal clearly above the envelope.",
+   "action": "'File में हैं, भैयाजी।'",
+   "camera_move": "push-in",
+   "intensity": 0.15,
+   "camera_focus": {
+    "x": 0.45,
+    "y": 0.35
+   },
+   "refs": [
+    "<repo>/content/series2/refs/nirala.png",
+    "<repo>/content/series2/refs/talkies_lobby.png",
+    "<repo>/content/series2/episodes/s2e02/frames/s11.png"
+   ],
+   "ref_labels": [
+    "Image 1 nirala",
+    "Image 2 talkies_lobby",
+    "Image 3 scene anchor s11"
+   ],
+   "do_not_copy_from_anchor": "the stair, the bicycle handlebar and the neighbours' hands, the helmet lying on the bench, Nandini, or its camera position",
+   "refs_not_attached": [
+    "sealed_envelopes: not sealed yet"
+   ],
+   "characters": [
+    "nirala"
+   ],
+   "sheet_faces": 1,
+   "state": {
+    "hands": "envelope, both hands",
+    "envelope": "plain, unsealed",
+    "medal": "left chest, hanging straight"
+   },
+   "light": "lobby_day",
+   "overlay": [
+    {
+     "id": "ov_fake_board",
+     "surface": "the blank board behind him (dressing only)"
+    }
+   ],
+   "frame_check": [
+    "envelope plain, no wax",
+    "medal visible on picture-right of his chest above the envelope",
+    "only fingers show below the sleeves"
+   ],
+   "prompt_chars": 13470,
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 2.1,
+    "en": 2.03
+   }
+  },
+  {
+   "id": "s23",
+   "scene": "B",
+   "beat_id": "b7",
+   "line_ids": [],
+   "duration_s": 1.4,
+   "silent_lead_s": 1.4,
+   "voice_s": {
+    "hi": [],
+    "en": []
+   },
+   "generate": true,
+   "prompt_file": "frames/prompts/s23.txt",
+   "framing": "Close insert on Nirala's left chest: Bhaiyaji's left index finger (gold watch, white rolled sleeve) comes in from the picture-left edge and has just flicked the brass medal; the disc swings out tilted on its ribbon; the top of the brown envelope in Nirala's fingers at the bottom. No faces.",
+   "action": "Silent, about 1.4 s after l19: a small brass tink. He goes; the keys' jingle is the last thing out of the door.",
+   "camera_move": "push-in",
+   "intensity": 0.1,
+   "camera_focus": {
+    "x": 0.62,
+    "y": 0.4
+   },
+   "refs": [
+    "<repo>/content/series2/refs/nirala.png",
+    "<repo>/content/series2/refs/bhaiyaji.png",
+    "<repo>/content/series2/refs/medal.png",
+    "<repo>/content/series2/episodes/s2e02/frames/s11.png"
+   ],
+   "ref_labels": [
+    "Image 1 nirala",
+    "Image 2 bhaiyaji",
+    "Image 3 medal",
+    "Image 4 scene anchor s11"
+   ],
+   "do_not_copy_from_anchor": "the stair, the bicycle handlebar and the neighbours' hands, the helmet lying on the bench, any face, or its camera position; this is a close insert on his chest",
+   "refs_not_attached": [
+    "godown_keys: out of frame"
+   ],
+   "characters": [
+    "nirala (chest)",
+    "bhaiyaji (hand)"
+   ],
+   "sheet_faces": 0,
+   "state": {
+    "medal": "left chest, flicked, tilted",
+    "bhaiyaji_left_hand": "flicking; watch",
+    "envelope": "in Nirala's fingers"
+   },
+   "light": "lobby_day",
+   "frame_check": [
+    "medal on picture-right of his chest",
+    "watch on the flicking hand",
+    "no face"
+   ],
+   "prompt_chars": 15026,
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 1.4,
+    "en": 1.4
+   }
+  },
+  {
+   "id": "s24",
+   "scene": "B",
+   "beat_id": "b8",
+   "line_ids": [
+    "l20"
+   ],
+   "duration_s": 2.33,
+   "silent_lead_s": 0,
+   "voice_s": {
+    "hi": [
+     2.4
+    ],
+    "en": [
+     2.16
+    ]
+   },
+   "generate": true,
+   "prompt_file": "frames/prompts/s24.txt",
+   "framing": "From near the entrance, booth close on the right: Nandini nearer, just stepped out of the booth (door open behind her), facing us turned slightly to picture-left, cuffs in her right hand (picture-left of her body), helmet under her left arm (picture-right); Nirala behind the counter centre-left, head bowed, writing on the brown envelope.",
+   "action": "'Note सात-सात-तीन...' He is already writing on the envelope, aloud.",
+   "camera_move": "push-in",
+   "intensity": 0.15,
+   "camera_focus": {
+    "x": 0.55,
+    "y": 0.35
+   },
+   "refs": [
+    "<repo>/content/series2/refs/pair_nandini_nirala.png",
+    "<repo>/content/series2/refs/talkies_lobby.png",
+    "<repo>/content/series2/refs/red_helmet.png",
+    "<repo>/content/series2/refs/handcuffs.png",
+    "<repo>/content/series2/episodes/s2e02/frames/s11.png"
+   ],
+   "ref_labels": [
+    "Image 1 pair_nandini_nirala",
+    "Image 2 talkies_lobby",
+    "Image 3 red_helmet",
+    "Image 4 handcuffs",
+    "Image 5 scene anchor s11"
+   ],
+   "do_not_copy_from_anchor": "the stair, the bicycle handlebar and the neighbours' hands, the helmet lying on the bench or its camera position; the helmet is under her arm now",
+   "characters": [
+    "nandini",
+    "nirala"
+   ],
+   "sheet_faces": 2,
+   "state": {
+    "nandini_right_hand": "cuffs (picture-left of her body)",
+    "nandini_left_arm": "helmet (picture-right)",
+    "booth_door": "open",
+    "nirala": "writing on the envelope",
+    "envelope": "unsealed, on the counter"
+   },
+   "light": "lobby_day",
+   "overlay": [
+    {
+     "id": "ov_fake_board",
+     "surface": "the blank board behind the counter (dressing only)"
+    }
+   ],
+   "frame_check": [
+    "helmet under her left arm on the picture-right side of her body",
+    "cuffs in the hand on the picture-left side",
+    "envelope unsealed",
+    "no Bhaiyaji"
+   ],
+   "prompt_chars": 16643,
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 2.33,
+    "en": 2.03
+   }
+  },
+  {
+   "id": "s25",
+   "scene": "B",
+   "beat_id": "b8",
+   "line_ids": [
+    "l21"
+   ],
+   "duration_s": 1.57,
+   "silent_lead_s": 0,
+   "voice_s": {
+    "hi": [
+     1.44
+    ],
+    "en": [
+     1.52
+    ]
+   },
+   "generate": true,
+   "prompt_file": "frames/prompts/s25.txt",
+   "framing": "Medium single, head to hips, side-on at the counter: Nandini picture-left of centre, three-quarters to picture-right (towards Nirala, out of frame); cuffs hanging from her right hand on the near side; helmet under her left arm on the far side, its red curve behind her hip. Face kept in 14-28% so s30 can punch in.",
+   "action": "'आपने रिश्वत ली।' Low and fast.",
+   "camera_move": "push-in",
+   "intensity": 0.15,
+   "camera_focus": {
+    "x": 0.45,
+    "y": 0.26
+   },
+   "refs": [
+    "<repo>/content/series2/refs/nandini.png",
+    "<repo>/content/series2/refs/talkies_lobby.png",
+    "<repo>/content/series2/refs/red_helmet.png",
+    "<repo>/content/series2/refs/handcuffs.png",
+    "<repo>/content/series2/episodes/s2e02/frames/s11.png"
+   ],
+   "ref_labels": [
+    "Image 1 nandini",
+    "Image 2 talkies_lobby",
+    "Image 3 red_helmet",
+    "Image 4 handcuffs",
+    "Image 5 scene anchor s11"
+   ],
+   "do_not_copy_from_anchor": "the stair, the bicycle handlebar and the neighbours' hands, the helmet lying on the bench, Nirala, or its camera position",
+   "characters": [
+    "nandini"
+   ],
+   "sheet_faces": 1,
+   "state": {
+    "right_hand": "cuffs (near side)",
+    "left_arm": "helmet (far side)",
+    "pouch": "flap open"
+   },
+   "light": "lobby_day",
+   "frame_check": [
+    "cuffs on the near hand, helmet on the far side",
+    "face inside 14-28% so s30 can punch in"
+   ],
+   "prompt_chars": 12959,
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 1.5,
+    "en": 1.57
+   },
+   "retake": {
+    "attempt": 4,
+    "by": "S7, 26 Nov 2026",
+    "reason": "S9 frame-check rejection of attempt 3: the cuffs hung from her near (right) hand at about 79-97 percent, in the subtitle band, under the line 'आपने रिश्वत ली', and she was drawn to the knees where the shot asks for head to hips. Attempts 1-3 ran with no refs attached (manifest refs []).",
+    "prompt_change": "THE SHOT: MEDIUM CLOSE SHOT, top of head about 10 percent, belt about 56-60 percent, bottom edge across the top of the thighs, knees/lower legs/feet not in the picture. Her near (right) arm bent, right fist at her belt in front of the near hip at 54-58 percent gripping ONE ring; chain and second ring hanging at 56-68 percent, nothing lower than 68; pouch just behind the fist, flap open, empty. The cuffs now named as Image 4 (the prompt had said Image 3, which is the helmet sheet). SAFE AREAS: face 14-28, fist and cuffs 54-68, helmet 40-66 behind the far hip. STATE restated. Face, helmet, pen, light, CHARACTER LOCK unchanged. Same five refs in the same order, this time actually attached (nandini, talkies_lobby, red_helmet, handcuffs, s11 anchor). With her face held at 14-28 percent her belt falls near 60 percent, so 'head to belt' framing leaves her upper thighs in the bottom of the picture.",
+    "previous_take": "frames/s25.prev1.png (attempt 3, kept)",
+    "standing_take": "frames/s25.png (attempt 4)"
+   },
+   "drift": [
+    "Attempt 4 stands as the better take (D-023 4.1, one retake; D-013 rule 11, no further retake). Checked by S7's own look at the 1440x2560 png on a 5-percent grid, with a full-resolution crop of the fist, pouch and cuffs; the cuff extent was measured by pixel colour. Fixed against attempt 3: framed head to upper thighs, no knees; her near (right) fist at her belt in front of the near hip holds one ring, the chain and second ring hanging; the pouch on the near hip, flap open and empty; the red helmet tucked under her far arm behind the far hip at about 49-70 percent; face about 13-26 percent (asked 14-28), mouth mid-word, brows low; pen in the far chest pocket; two bars.",
+    "Cuffs still reach into the subtitle band: steel measures about 67-88 percent of height (attempt 3: 80-97). Her fist sits at about 61-66 percent, lower than the 54-58 asked, and the lower ring hangs at about 79-88 percent. The upper ring, the chain and the fist stay above the band, so the cuffs still read above the subtitle; the lower ring will be partly covered. S13 editor: keep the push-in focus at y 0.26 as planned; do not move it lower.",
+    "The counter end at the picture-right edge sits at about 65-100 percent (asked about 56 for the top). It is background dressing."
+   ]
+  },
+  {
+   "id": "s26",
+   "scene": "B",
+   "beat_id": "b8",
+   "line_ids": [
+    "l22"
+   ],
+   "duration_s": 4.13,
+   "silent_lead_s": 0,
+   "voice_s": {
+    "hi": [
+     3.92
+    ],
+    "en": [
+     4.0
+    ]
+   },
+   "generate": true,
+   "prompt_file": "frames/prompts/s26.txt",
+   "framing": "Medium of Nirala behind the counter, three-quarters to picture-left (towards her): pen lifted off the envelope in his right hand, left hand flat on the plain envelope; medal on his near chest; earnest.",
+   "action": "'रिश्वत लेना जुर्म है। ज़ब्त करना duty।'",
+   "camera_move": "push-in",
+   "intensity": 0.15,
+   "camera_focus": {
+    "x": 0.55,
+    "y": 0.3
+   },
+   "refs": [
+    "<repo>/content/series2/refs/nirala.png",
+    "<repo>/content/series2/refs/talkies_lobby.png",
+    "<repo>/content/series2/episodes/s2e02/frames/s11.png"
+   ],
+   "ref_labels": [
+    "Image 1 nirala",
+    "Image 2 talkies_lobby",
+    "Image 3 scene anchor s11"
+   ],
+   "do_not_copy_from_anchor": "the stair, the bicycle handlebar and the neighbours' hands, the helmet lying on the bench, Nandini, or its camera position",
+   "refs_not_attached": [
+    "sealed_envelopes: not sealed yet"
+   ],
+   "characters": [
+    "nirala"
+   ],
+   "sheet_faces": 1,
+   "state": {
+    "right_hand": "pen, lifted",
+    "left_hand": "flat on the envelope",
+    "envelope": "unsealed",
+    "medal": "near side"
+   },
+   "light": "lobby_day",
+   "overlay": [
+    {
+     "id": "ov_fake_board",
+     "surface": "the blank board behind him (dressing only)"
+    }
+   ],
+   "frame_check": [
+    "envelope still unsealed",
+    "medal visible on his near chest",
+    "pen lifted, not writing"
+   ],
+   "prompt_chars": 13662,
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 3.93,
+    "en": 4.13
+   }
+  },
+  {
+   "id": "s27",
+   "scene": "B",
+   "beat_id": "b8",
+   "line_ids": [
+    "l23",
+    "l35"
+   ],
+   "duration_s": 7.9,
+   "silent_lead_s": 0,
+   "voice_s": {
+    "hi": [
+     2.0,
+     3.84
+    ],
+    "en": [
+     3.6,
+     3.92
+    ]
+   },
+   "generate": true,
+   "prompt_file": "frames/prompts/s27.txt",
+   "framing": "Close insert from slightly above on the counter top: the brown envelope with a fresh round blob of red wax on the flap and a blank off-white tag tied on at its upper right corner, tag flat and front-on (ov_envelope_tag); Nirala's fingertips steady it from the bottom-left; a burnt-out match beside it.",
+   "action": "'ये case property है।' A match struck and wax dripping (sound).",
+   "camera_move": "push-in",
+   "intensity": 0.15,
+   "camera_focus": {
+    "x": 0.6,
+    "y": 0.35
+   },
+   "refs": [
+    "<repo>/content/series2/refs/nirala.png",
+    "<repo>/content/series2/refs/sealed_envelopes.png",
+    "<repo>/content/series2/episodes/s2e02/frames/s11.png"
+   ],
+   "ref_labels": [
+    "Image 1 nirala",
+    "Image 2 sealed_envelopes",
+    "Image 3 scene anchor s11"
+   ],
+   "do_not_copy_from_anchor": "the stair, the bicycle handlebar and the neighbours' hands, the helmet lying on the bench, any person, or its camera position; this is a close insert on the counter top",
+   "characters": [
+    "nirala (fingers)"
+   ],
+   "sheet_faces": 0,
+   "state": {
+    "envelope": "sealed with red wax, blank tag tied on",
+    "match": "burnt out, on the counter"
+   },
+   "light": "lobby_day",
+   "overlay": [
+    {
+     "id": "ov_envelope_tag",
+     "surface": "the blank tag, front-on, about 24-36% down and 60-84% across as asked (to be measured at the frame check)"
+    }
+   ],
+   "frame_check": [
+    "tag blank, front-on and unobstructed",
+    "one wax blob only",
+    "no text anywhere"
+   ],
+   "prompt_chars": 12590,
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 2.03,
+    "en": 2.0
+   }
+  },
+  {
+   "id": "s28",
+   "scene": "B",
+   "beat_id": "b8",
+   "line_ids": [
+    "l24"
+   ],
+   "duration_s": 1.2,
+   "silent_lead_s": 0,
+   "voice_s": {
+    "hi": [
+     1.2
+    ],
+    "en": [
+     1.2
+    ]
+   },
+   "generate": true,
+   "prompt_file": "frames/prompts/s28.txt",
+   "framing": "Top-down insert: the malkhana ledger open on the counter, rows of plain grey lines (no text); her right index finger has come down the column and stops on the last filled row; the steel cuffs dangle from the same hand, chain and one ring lying across the page.",
+   "action": "'चौबीस।' She has counted the entries: twenty-four.",
+   "camera_move": "hold",
+   "intensity": 0,
+   "refs": [
+    "<repo>/content/series2/refs/nandini.png",
+    "<repo>/content/series2/refs/handcuffs.png",
+    "<repo>/content/series2/episodes/s2e02/frames/s11.png"
+   ],
+   "ref_labels": [
+    "Image 1 nandini",
+    "Image 2 handcuffs",
+    "Image 3 scene anchor s11"
+   ],
+   "do_not_copy_from_anchor": "the stair, the bicycle handlebar and the neighbours' hands, the helmet lying on the bench, any person, or its camera position; this is a top-down insert",
+   "characters": [
+    "nandini (hand)"
+   ],
+   "sheet_faces": 0,
+   "state": {
+    "right_index": "on the last filled row",
+    "cuffs": "hanging from the same hand, across the page",
+    "ledger": "open, blank lines only"
+   },
+   "light": "lobby_day",
+   "frame_check": [
+    "no letters or numbers on the ledger",
+    "cuffs hang from the same hand as the pointing finger",
+    "no watch or ring on her hand"
+   ],
+   "prompt_chars": 11494,
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 1.2,
+    "en": 1.17
+   }
+  },
+  {
+   "id": "s29",
+   "scene": "B",
+   "beat_id": "b8",
+   "line_ids": [
+    "l25"
+   ],
+   "duration_s": 3.93,
+   "silent_lead_s": 0,
+   "voice_s": {
+    "hi": [
+     3.92
+    ],
+    "en": [
+     3.76
+    ]
+   },
+   "generate": true,
+   "prompt_file": "frames/prompts/s29.txt",
+   "framing": "Close (cap to the counter top) on Nirala, nearly front-on, turned a little to picture-left; quiet, plain, cap level; his left hand (picture-right) flat on the sealed envelope (red wax, blank tag) on the counter. Face kept in 16-36% so s31 can punch in.",
+   "action": "'दो साल से इंतज़ार है कि कोई असली अफ़सर इन्हें माँगे।'",
+   "camera_move": "push-in",
+   "intensity": 0.15,
+   "camera_focus": {
+    "x": 0.55,
+    "y": 0.27
+   },
+   "refs": [
+    "<repo>/content/series2/refs/nirala.png",
+    "<repo>/content/series2/refs/talkies_lobby.png",
+    "<repo>/content/series2/refs/sealed_envelopes.png",
+    "<repo>/content/series2/episodes/s2e02/frames/s11.png"
+   ],
+   "ref_labels": [
+    "Image 1 nirala",
+    "Image 2 talkies_lobby",
+    "Image 3 sealed_envelopes",
+    "Image 4 scene anchor s11"
+   ],
+   "do_not_copy_from_anchor": "the stair, the bicycle handlebar and the neighbours' hands, the helmet lying on the bench, Nandini, or its camera position",
+   "characters": [
+    "nirala"
+   ],
+   "sheet_faces": 1,
+   "state": {
+    "left_hand": "flat on the sealed envelope",
+    "envelope": "wax and blank tag",
+    "medal": "left chest"
+   },
+   "light": "lobby_day",
+   "frame_check": [
+    "envelope sealed (wax, tag) under the hand on the picture-right",
+    "face inside 16-36%"
+   ],
+   "prompt_chars": 13794,
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 3.9,
+    "en": 3.93
+   }
+  },
+  {
+   "id": "s30",
+   "scene": "B",
+   "beat_id": "b10",
+   "line_ids": [
+    "l26"
+   ],
+   "duration_s": 2.1,
+   "silent_lead_s": 0,
+   "voice_s": {
+    "hi": [
+     1.92
+    ],
+    "en": [
+     2.08
+    ]
+   },
+   "generate": false,
+   "frame_source": "s25",
+   "frame": {
+    "kind": "second_framing",
+    "source_shot": "s25"
+   },
+   "move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.15,
+     "x": 0.15,
+     "y": 0.7
+    },
+    "to": {
+     "scale": 1.25,
+     "x": 0.15,
+     "y": 0.7
+    }
+   },
+   "camera_move": "custom",
+   "intensity": 0,
+   "framing": "Second framing of s25 on Nandini's face and shoulders (b10 shot 1).",
+   "action": "'Police join क्यों नहीं की?'",
+   "characters": [
+    "nandini"
+   ],
+   "sheet_faces": 1,
+   "light": "lobby_day",
+   "note": "At this crop the cuffs (56-64% in s25) may still show at the bottom; that is right only up to l28. l26 is before l28, so it holds.",
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 1.97,
+    "en": 2.1
+   }
+  },
+  {
+   "id": "s31",
+   "scene": "B",
+   "beat_id": "b10",
+   "line_ids": [
+    "l27"
+   ],
+   "duration_s": 4.93,
+   "silent_lead_s": 0,
+   "voice_s": {
+    "hi": [
+     4.24
+    ],
+    "en": [
+     4.88
+    ]
+   },
+   "generate": false,
+   "frame_source": "s29",
+   "frame": {
+    "kind": "second_framing",
+    "source_shot": "s29"
+   },
+   "move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.12,
+     "x": -0.1,
+     "y": 0.5
+    },
+    "to": {
+     "scale": 1.22,
+     "x": -0.1,
+     "y": 0.5
+    }
+   },
+   "camera_move": "custom",
+   "intensity": 0,
+   "framing": "Second framing of the close s29: 'Nirala, plain, no self-pity'; his hand on the sealed envelope stays at the bottom of the crop.",
+   "action": "'नौ बार। हर बार सीना एक centimetre कम निकला।'",
+   "characters": [
+    "nirala"
+   ],
+   "sheet_faces": 1,
+   "light": "lobby_day",
+   "note": "Script: 'hands flat on the register'. In this crop his hand lies flat on the sealed envelope instead; the state is the same moment.",
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 4.3,
+    "en": 4.93
+   }
+  },
+  {
+   "id": "s32",
+   "scene": "B",
+   "beat_id": "b10",
+   "line_ids": [
+    "l28"
+   ],
+   "duration_s": 2.77,
+   "silent_lead_s": 0,
+   "voice_s": {
+    "hi": [
+     2.56
+    ],
+    "en": [
+     2.64
+    ]
+   },
+   "generate": true,
+   "prompt_file": "frames/prompts/s32.txt",
+   "framing": "Close insert at her right hip: her right hand pushes the last steel ring of the cuffs down into the open black pouch, thumb on the flap about to snap it shut; bare wrist; counter edge behind.",
+   "action": "Nirala (off): 'Complaint सुनने में सीना नहीं लगता।' She puts the cuffs away; the flap snaps shut (sound).",
+   "camera_move": "push-in",
+   "intensity": 0.1,
+   "camera_focus": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "refs": [
+    "<repo>/content/series2/refs/nandini.png",
+    "<repo>/content/series2/refs/handcuffs.png",
+    "<repo>/content/series2/episodes/s2e02/frames/s11.png"
+   ],
+   "ref_labels": [
+    "Image 1 nandini",
+    "Image 2 handcuffs",
+    "Image 3 scene anchor s11"
+   ],
+   "do_not_copy_from_anchor": "the stair, the bicycle handlebar and the neighbours' hands, the helmet lying on the bench, any face, or its camera position; this is a close insert at her hip",
+   "characters": [
+    "nandini (hand, hip)"
+   ],
+   "sheet_faces": 0,
+   "state": {
+    "right_hand": "cuffs into the pouch, thumb on the flap",
+    "cuffs": "into the pouch",
+    "right_wrist": "bare"
+   },
+   "light": "lobby_day",
+   "frame_check": [
+    "pouch on the belt, cuffs going in",
+    "wrist bare: no token string",
+    "no watch"
+   ],
+   "prompt_chars": 11530,
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 2.6,
+    "en": 2.77
+   }
+  },
+  {
+   "id": "s33",
+   "scene": "B",
+   "beat_id": "b10",
+   "line_ids": [
+    "l29",
+    "l30"
+   ],
+   "duration_s": 5.87,
+   "silent_lead_s": 0,
+   "voice_s": {
+    "hi": [
+     3.04,
+     2.32
+    ],
+    "en": [
+     2.88,
+     2.48
+    ]
+   },
+   "generate": true,
+   "prompt_file": "frames/prompts/s33.txt",
+   "framing": "Side-on two-shot across the counter, waist up (as s2e01 s06): Nandini picture-left facing right, cuffs put away, right hand empty, helmet under her far left arm; Nirala picture-right behind the counter facing left, hands flat on the counter by the ledger and the sealed envelope; between and behind them, small, Pushpa from behind at the foot of the stair with her knitting bag. Same depth for the two, so heights compare.",
+   "action": "'कल दस बजे से पहले, मेरे lockup में।' / 'तब तक charge handover कीजिए।' Then 0.6 s of silence.",
+   "camera_move": "push-in",
+   "intensity": 0.15,
+   "camera_focus": {
+    "x": 0.5,
+    "y": 0.3
+   },
+   "refs": [
+    "<repo>/content/series2/refs/pair_nandini_nirala.png",
+    "<repo>/content/series2/refs/pushpa.png",
+    "<repo>/content/series2/refs/talkies_lobby.png",
+    "<repo>/content/series2/refs/red_helmet.png",
+    "<repo>/content/series2/episodes/s2e02/frames/s11.png"
+   ],
+   "ref_labels": [
+    "Image 1 pair_nandini_nirala",
+    "Image 2 pushpa",
+    "Image 3 talkies_lobby",
+    "Image 4 red_helmet",
+    "Image 5 scene anchor s11"
+   ],
+   "do_not_copy_from_anchor": "the stair, the bicycle handlebar and the neighbours' hands, the helmet lying on the bench, the cuffs in her hand (they are put away now) or its camera position",
+   "characters": [
+    "nandini",
+    "nirala",
+    "pushpa (back)"
+   ],
+   "sheet_faces": 2,
+   "state": {
+    "nandini_right_hand": "empty",
+    "cuffs": "in the pouch, flap shut",
+    "helmet": "under her left arm",
+    "nirala_hands": "flat on the counter",
+    "counter": "ledger, sealed envelope",
+    "pushpa": "back to camera at the stair foot, bag on shoulder"
+   },
+   "light": "lobby_day",
+   "frame_check": [
+    "pouch flap shut, no cuffs in hand",
+    "height: cap crown at her hairline",
+    "Pushpa shows no face",
+    "two faces only"
+   ],
+   "prompt_chars": 19854,
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 5.77,
+    "en": 5.87
+   }
+  },
+  {
+   "id": "s34",
+   "scene": "C",
+   "beat_id": "b11",
+   "line_ids": [
+    "l31"
+   ],
+   "duration_s": 1.97,
+   "silent_lead_s": 0,
+   "voice_s": {
+    "hi": [
+     1.2
+    ],
+    "en": [
+     2.0
+    ]
+   },
+   "supers": [
+    {
+     "id": "su7",
+     "kind": "time",
+     "with_line": "l31",
+     "text_hi": "उसी शाम",
+     "text_en": "That evening",
+     "hold_min_s": 2.0,
+     "placement": "s34 carries ov_shield, which shots.json s34 lists as dressing (the shield is background above Tripathi). l31 plays only on s34, and this is the scene's first shot, so the time super goes here; keep it clear of the brass plate. Note s2e01 kept supers off ov_shield shots s13/s14, where the shield is the subject."
+    }
+   ],
+   "generate": true,
+   "prompt_file": "frames/prompts/s34.txt",
+   "anchor_of_scene": "C",
+   "framing": "SCENE ANCHOR. Medium of Tripathi seated behind his desk, facing us across the room, under the zero-crime shield; mouth full, chewing; cone in his left hand (picture-right), gamchha on his left shoulder (picture-right); right hand by the black phone; tube light on, night.",
+   "action": "Evening, one tube light, the fan (sound). 'Arrest हो गया?' round a mouthful; shells cracking.",
+   "camera_move": "push-in",
+   "intensity": 0.15,
+   "camera_focus": {
+    "x": 0.5,
+    "y": 0.32
+   },
+   "refs": [
+    "<repo>/content/series2/refs/tripathi.png",
+    "<repo>/content/series2/refs/real_thana.png",
+    "<repo>/content/series2/refs/zero_crime_shield.png",
+    "<repo>/content/series2/refs/thana_desk_phone.png"
+   ],
+   "ref_labels": [
+    "Image 1 tripathi",
+    "Image 2 real_thana",
+    "Image 3 zero_crime_shield",
+    "Image 4 thana_desk_phone"
+   ],
+   "refs_not_attached": [
+    "style_frame: the plate is the same file (real_thana.png), attached once and labelled as both (D-021 decision 3)"
+   ],
+   "characters": [
+    "tripathi"
+   ],
+   "sheet_faces": 1,
+   "state": {
+    "left_hand": "peanut cone",
+    "right_hand": "on the desk by the phone",
+    "mouth": "full",
+    "gamchha": "left shoulder",
+    "phone": "handset on cradle",
+    "shield": "blank plate",
+    "tube_light": "on"
+   },
+   "light": "thana_night",
+   "overlay": [
+    {
+     "id": "ov_shield",
+     "surface": "the brass plate on the wall above him (dressing; to be measured at the frame check)"
+    }
+   ],
+   "frame_check": [
+    "night: tube light on, doorway (if in frame) dark navy; daylight from the style frame NOT inherited",
+    "cone and gamchha on the picture-right",
+    "shield plate blank"
+   ],
+   "prompt_chars": 13110,
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 1.2,
+    "en": 1.97
+   }
+  },
+  {
+   "id": "s35",
+   "scene": "C",
+   "beat_id": "b11",
+   "line_ids": [
+    "l32"
+   ],
+   "duration_s": 4.63,
+   "silent_lead_s": 0,
+   "voice_s": {
+    "hi": [
+     4.64
+    ],
+    "en": [
+     3.84
+    ]
+   },
+   "generate": true,
+   "prompt_file": "frames/prompts/s35.txt",
+   "framing": "Medium single, seated at her side table under the lit tube light, three-quarters to picture-left; knitting, not looking up; deadpan; bag hanging on the chair back.",
+   "action": "'नहीं, SHO साहब। Madam files पढ़ रही हैं।' Needles under the line.",
+   "camera_move": "push-in",
+   "intensity": 0.15,
+   "camera_focus": {
+    "x": 0.55,
+    "y": 0.32
+   },
+   "refs": [
+    "<repo>/content/series2/refs/pushpa.png",
+    "<repo>/content/series2/refs/real_thana.png",
+    "<repo>/content/series2/refs/pushpa_knitting.png",
+    "<repo>/content/series2/episodes/s2e02/frames/s34.png"
+   ],
+   "ref_labels": [
+    "Image 1 pushpa",
+    "Image 2 real_thana",
+    "Image 3 pushpa_knitting",
+    "Image 4 scene anchor s34"
+   ],
+   "do_not_copy_from_anchor": "Tripathi, the desk, the shield, the phone or its camera position",
+   "characters": [
+    "pushpa"
+   ],
+   "sheet_faces": 1,
+   "state": {
+    "hands": "knitting",
+    "wool": "right pocket (picture-left)",
+    "bag": "chair back",
+    "table": "empty tea glass",
+    "tube_light": "on"
+   },
+   "light": "thana_night",
+   "frame_check": [
+    "tube light on and night colours",
+    "wool on the picture-left pocket",
+    "bamboo needles in hand, steel in bun"
+   ],
+   "prompt_chars": 13431,
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 4.63,
+    "en": 4.0
+   }
+  },
+  {
+   "id": "s36",
+   "scene": "C",
+   "beat_id": "b11",
+   "line_ids": [],
+   "duration_s": 2.0,
+   "silent_lead_s": 2.0,
+   "voice_s": {
+    "hi": [],
+    "en": []
+   },
+   "generate": true,
+   "prompt_file": "frames/prompts/s36.txt",
+   "framing": "Close-medium, low beside the desk: Tripathi foreground picture-left, three-quarters to picture-right, has stopped chewing, a single peanut halted halfway to his mouth in his right hand; behind him, small in the dark doorway at the centre back, Pushpa from behind walking slowly out with his empty tea glass. One face.",
+   "action": "Silent, about 2.0 s: every sound but the fan drops out. He has sent her for tea without a word. (Script b11 shots 3 and 4 in one picture.)",
+   "camera_move": "push-in",
+   "intensity": 0.2,
+   "camera_focus": {
+    "x": 0.35,
+    "y": 0.28
+   },
+   "refs": [
+    "<repo>/content/series2/refs/tripathi.png",
+    "<repo>/content/series2/refs/pushpa.png",
+    "<repo>/content/series2/refs/real_thana.png",
+    "<repo>/content/series2/episodes/s2e02/frames/s34.png"
+   ],
+   "ref_labels": [
+    "Image 1 tripathi",
+    "Image 2 pushpa",
+    "Image 3 real_thana",
+    "Image 4 scene anchor s34"
+   ],
+   "do_not_copy_from_anchor": "the camera position, his chewing mouth (he has stopped now) or the cone held up at his chest",
+   "characters": [
+    "tripathi",
+    "pushpa (back)"
+   ],
+   "sheet_faces": 1,
+   "state": {
+    "tripathi_right_hand": "peanut halfway to mouth",
+    "tripathi_mouth": "stopped chewing",
+    "pushpa": "back to camera in the doorway, empty glass in right hand",
+    "doorway": "open, dark",
+    "bench": "empty"
+   },
+   "light": "thana_night",
+   "frame_check": [
+    "one face only",
+    "the peanut in the near hand, mouth closed",
+    "Pushpa's glass in her right hand (picture-right of her back)",
+    "doorway dark (night)"
+   ],
+   "prompt_chars": 15642,
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 2.0,
+    "en": 2.0
+   }
+  },
+  {
+   "id": "s37",
+   "scene": "C",
+   "beat_id": "b12",
+   "line_ids": [],
+   "duration_s": 2.2,
+   "silent_lead_s": 2.2,
+   "voice_s": {
+    "hi": [],
+    "en": []
+   },
+   "generate": true,
+   "prompt_file": "frames/prompts/s37.txt",
+   "framing": "Close insert on the desk top: the black push-button phone, his right hand lifting the handset off the cradle, the coiled cord stretched; peanut shells around; night.",
+   "action": "Silent, about 2.2 s: receiver lifted (clack), the last two digits, one short ring-back burst, the click of a pick-up (sound). Script b12 shot 1 (the wipe on the gamchha, the door ajar) is folded into this hold.",
+   "camera_move": "push-in",
+   "intensity": 0.1,
+   "camera_focus": {
+    "x": 0.5,
+    "y": 0.42
+   },
+   "refs": [
+    "<repo>/content/series2/refs/tripathi.png",
+    "<repo>/content/series2/refs/thana_desk_phone.png",
+    "<repo>/content/series2/episodes/s2e02/frames/s34.png"
+   ],
+   "ref_labels": [
+    "Image 1 tripathi",
+    "Image 2 thana_desk_phone",
+    "Image 3 scene anchor s34"
+   ],
+   "do_not_copy_from_anchor": "his face, the shield, the cone or its camera position; this is a close insert on the desk",
+   "characters": [
+    "tripathi (hand)"
+   ],
+   "sheet_faces": 0,
+   "state": {
+    "right_hand": "lifting the handset",
+    "phone": "handset off the cradle",
+    "desk": "shells"
+   },
+   "light": "thana_night",
+   "frame_check": [
+    "buttons blank",
+    "hand is the right hand, half-sleeve hem",
+    "no face"
+   ],
+   "prompt_chars": 11449,
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 2.2,
+    "en": 2.2
+   }
+  },
+  {
+   "id": "s38",
+   "scene": "C",
+   "beat_id": "b12",
+   "line_ids": [
+    "l33"
+   ],
+   "duration_s": 2.57,
+   "silent_lead_s": 0,
+   "voice_s": {
+    "hi": [
+     2.48
+    ],
+    "en": [
+     2.32
+    ]
+   },
+   "generate": true,
+   "prompt_file": "frames/prompts/s38.txt",
+   "framing": "Close-up: Tripathi's face from the eyes to the chin with the black handset at his right ear (picture-left), mouthpiece at his mouth; low, flat, fully voiced; the blank shield on the wall behind his head at the upper right. Mouth kept in 36-46% so s39 can punch in.",
+   "action": "'भैयाजी? त्रिपाठी बोल रहा हूँ।' The fan and bed duck right down.",
+   "camera_move": "push-in",
+   "intensity": 0.15,
+   "camera_focus": {
+    "x": 0.45,
+    "y": 0.4
+   },
+   "refs": [
+    "<repo>/content/series2/refs/tripathi.png",
+    "<repo>/content/series2/refs/real_thana.png",
+    "<repo>/content/series2/refs/thana_desk_phone.png",
+    "<repo>/content/series2/refs/zero_crime_shield.png",
+    "<repo>/content/series2/episodes/s2e02/frames/s34.png"
+   ],
+   "ref_labels": [
+    "Image 1 tripathi",
+    "Image 2 real_thana",
+    "Image 3 thana_desk_phone",
+    "Image 4 zero_crime_shield",
+    "Image 5 scene anchor s34"
+   ],
+   "do_not_copy_from_anchor": "his chewing mouth, the cone held up at his chest or its camera distance",
+   "characters": [
+    "tripathi"
+   ],
+   "sheet_faces": 1,
+   "state": {
+    "right_hand": "handset at right ear (picture-left)",
+    "mouth": "speaking, empty",
+    "gamchha": "left shoulder",
+    "shield": "upper right, blank"
+   },
+   "light": "thana_night",
+   "overlay": [
+    {
+     "id": "ov_shield",
+     "surface": "brass plate upper right, about 6-24% down and 58-88% across as asked (dressing; to be measured)"
+    }
+   ],
+   "frame_check": [
+    "handset on the picture-left side at his right ear",
+    "no food in mouth",
+    "shield plate blank, upper right, no blur",
+    "mouth inside 36-46% so s39 can punch in"
+   ],
+   "prompt_chars": 13164,
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 2.57,
+    "en": 2.53
+   }
+  },
+  {
+   "id": "s39",
+   "scene": "C",
+   "beat_id": "b12",
+   "line_ids": [
+    "l34"
+   ],
+   "duration_s": 4.77,
+   "silent_lead_s": 0,
+   "voice_s": {
+    "hi": [
+     4.64
+    ],
+    "en": [
+     3.6
+    ]
+   },
+   "generate": false,
+   "frame_source": "s38",
+   "frame": {
+    "kind": "second_framing",
+    "source_shot": "s38"
+   },
+   "move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.15,
+     "x": 0,
+     "y": -0.1
+    },
+    "to": {
+     "scale": 1.25,
+     "x": 0,
+     "y": -0.2
+    }
+   },
+   "camera_move": "custom",
+   "intensity": 0,
+   "framing": "Second framing of the close s38, tighter on his mouth and the handset; the shield's lower edge stays at the upper right.",
+   "action": "'एक बात बतानी थी... वो talkies वाली चौकी के बारे में।' Cut to black on the last word, before any answer.",
+   "characters": [
+    "tripathi"
+   ],
+   "sheet_faces": 1,
+   "light": "thana_night",
+   "subtitle_safe": true,
+   "laid_out_s": {
+    "hi": 4.77,
+    "en": 3.87
+   }
+  }
+ ],
+ "second_framings": {
+  "s04": {
+   "source": "s02",
+   "max_scale": 1.3
+  },
+  "s07": {
+   "source": "s05",
+   "max_scale": 1.3
+  },
+  "s08": {
+   "source": "s06",
+   "max_scale": 1.3
+  },
+  "s15": {
+   "source": "s13",
+   "max_scale": 1.3
+  },
+  "s20": {
+   "source": "s17",
+   "max_scale": 1.3
+  },
+  "s21": {
+   "source": "s19",
+   "max_scale": 1.3
+  },
+  "s30": {
+   "source": "s25",
+   "max_scale": 1.3
+  },
+  "s31": {
+   "source": "s29",
+   "max_scale": 1.3
+  },
+  "s39": {
+   "source": "s38",
+   "max_scale": 1.3
+  }
+ },
+ "reused_assets": {
+  "s01": {
+   "image": "<repo>/content/series2/episodes/s2e01/frames/s36.png",
+   "max_scale": 1.3
+  },
+  "s09": {
+   "image": "<repo>/content/series2/episodes/s2e01/frames/s14.png",
+   "max_scale": 1.3
+  }
+ },
+ "contingency": {
+  "if_budget_drops_to_24 (D-017, D-023 rule 4 'would change it')": "Fold in this order, each logged: s12 (register insert) dropped and l12 played on s13 with its push-in; s28 (ledger insert) becomes a second framing of s25 for 'चौबीस'; s32 (cuffs into pouch) dropped, l28 played on s31 and the pouch shown shut in s33; s27 (wax insert) becomes a second framing of s29 (the wax and tag are visible under his hand there).",
+  "if_an_anchor_fails_twice": "D-013 rule 11 then D-017: accept the better take and log; if it spreads a fault, replace the anchor slot with the sheet close-up crop.",
+  "if_s11_is_rejected_for_complexity": "Its one retake drops the bicycle and the neighbours to a smaller foreground corner; if that also fails, s24 (both principals, booth, desk) is promoted to scene-B anchor and s11 is accepted as the better take and logged.",
+  "if_heights_fail_in_a_two_shot": "D-017 'would change it': restage that pair's two-shots with depth separation or over the shoulder. The same-depth two-shots here are s10 (Nandini/Pushpa) and s33 (Nandini/Nirala).",
+  "if_night_inherits_daylight": "If s34 inherits the plate's daylight, its retake attaches refs/crossing_stall.png as the night style frame in a fifth slot (D-021 'would change it') and the scene-C prompts are rebuilt."
+ },
+ "deviations_from_script": [
+  "s01: the opening insert is the approved s2e01 s36 itself (the frame s2e01 was built to match). Pushpa's hands with stopped needles at its edge are not drawn; she is placed by s06 and s10.",
+  "s09: the shield insert is the approved s2e01 s14 with s2e01 s20's crop (day light, a cut-away to the real thana wall, as the script asks).",
+  "s11: the bench is at the picture-LEFT foreground, not picture-right as the script says, because the talkies_lobby plate puts the bench on the left wall (plate geography wins). l10 and l11 both play on this wide; script b3 shot 2 (Nirala's nod at the stair foot) is not drawn separately.",
+  "b4 shot 2 (one neighbour's hand letting go, silent) is not drawn; the stamp and the tear are sound over the end of s12 and the gap before s13.",
+  "s14: the clock insert is merged into Nandini's shot: the clock is in the upper right of the same frame.",
+  "s15: b5 shot 1 is a second framing of s13 (same desk, receipt still in hand); his eyeline is past the lens towards the entrance, which is also where she stands.",
+  "s18: 'the desk from the lobby side' with Nirala in three-quarter back and Bhaiyaji facing camera can only be shot from behind the counter, so it is (over Nirala's shoulder).",
+  "s19 and s21: Bhaiyaji's opening hand (b6 shot 3) and 'leaning on the counter, closer' (b7 shot 1) are one generated frame, s21 being its tighter framing.",
+  "s20: 'her eyes wider' is carried by a tighter second framing of s17, not a new drawing.",
+  "s31: b10 shot 2 'hands flat on the register' plays on the second framing of the l25 close, his hand flat on the sealed envelope.",
+  "b10 shot 5 (Pushpa's back in the lobby doorway, sent back across the line) is not drawn: Pushpa waits at the stair foot with her bag in s33 and is next seen at the real thana. This loses Nandini's head-tilt cue; it is the first shot to add if the budget allows one more frame.",
+  "s36: b11 shots 3 and 4 (Tripathi stops chewing; Pushpa goes out with his glass) are one picture with depth.",
+  "s37: b12 shot 1 (he wipes his right hand on the gamchha; the door left a hand's width open) is folded into the phone insert's hold. The optional ajar door (critic, for s2e03 l09) is not shown.",
+  "All of these trade a separate picture for the 28-frame budget (D-010) or for plate geography. None removes a line, a STATE change the next episode needs, or an overlay surface."
+ ],
+ "dependencies_and_checks": [
+  "D-021 decision 6: the visual checker's full-resolution re-check (Bhaiyaji's kurta front on bhaiyaji and his five pairs; heights on the nine regenerated pairs) must finish before the first anchor that attaches a sheet it names. None of the three anchors does. s18 (pair_nirala_bhaiyaji), s19 and s23 (bhaiyaji) attach those sheets; I found no record that the re-check ran, so the orchestrator should confirm it before those three are generated.",
+  "Height in two-shots: s10 (Nandini/Pushpa) and s33 (Nandini/Nirala) are same-depth two-shots with the pair sheet attached; s16, s18 and s24 put one person nearer and say so. D-017 lists line-up-sheet height as untested in story frames.",
+  "Frame check items for second framings: s05 shows no hands, cuffs or token (for s07); s06's face sits in 18-34% (for s08); s13's face in 18-34% and an expression that is not a smile (for s15); s17's face in 28-44% (for s20); s19's face in 18-34% (for s21); s25's face in 14-28% (for s30); s29's face in 16-36% (for s31); s38's mouth in 36-46% and the shield upper right (for s39).",
+  "Prop state checklist for the frame check (D-013 rule 10): token seven on the right wrist only in s01, going into the left trouser pocket in s03, never seen after; cuffs in Nandini's right hand from s03 to s32, in the pouch (flap shut) in s33; helmet on the bench s11 and s16, against her chest s17, under her left arm s24, s25, s33; envelope plain s18, s22, s24, s26, sealed with wax and a blank tag s27, s29; medal on Nirala's left chest everywhere, tilted only in s23."
+ ],
+ "not_verified": [
+  "No frame was generated and no Codex call was made by this session.",
+  "duration_s and laid_out_s come from my scratch build_timeline.py run with slates for every frame and no sound placed; the real edit.json and the sound sheet were not used. In that run the l15 cut word was placed by grapheme spread in both languages and the l08 (hi) and l17 cuts by whisper.cpp word times, so those three cut points may move a little.",
+  "I viewed the three plates, the bhaiyaji and nirala sheets, the pair_nirala_bhaiyaji, pair_nandini_nirala and pair_nandini_pushpa sheets and five prop sheets (handcuffs, sealed_envelopes, godown_keys, medal, pushpa_knitting) whole at reduced size, and s2e01 frames s02, s03, s05, s06, s07, s09, s13, s14, s16, s17, s26, s28, s29, s31, s36 and s37. I did not open the tripathi, nandini or pushpa sheets, the token, red_helmet, stamp_and_pad, zero_crime_shield or thana_desk_phone sheets; prompts rely on style.json's rewritten locks and gate lists for those.",
+  "Whether a wide anchor with small faces (s11) holds faces as well as a close anchor would; faces are taken from the sheets in scene B for that reason.",
+  "The reused s2e01 frames' review rows live in s2e01; this episode has no review row for s01 or s09 (build_timeline.py treats a reused asset with no row as approved).",
+  "Whether the D-021 sheet re-check has run (see dependencies_and_checks)."
+ ],
+ "remap_notes": {
+  "by": "S7 Storyboard artist (on Opus), 26 Nov 2026, clarity remap (D-024 ruling 1 and 3.5, D-025 items 4 and 8)",
+  "lines_newly_mapped": {
+   "l36": "s12",
+   "l37": "s12",
+   "l35": "s27"
+  },
+  "deviations_from_beat_action": [
+   "b4: the action's shot 2 (an insert of the two neighbours' hands, one letting go of the handlebar) does not exist on this board. The nearest existing b4 shot is s12, the top-down counter insert that already holds the neighbours' hands at the handlebar, so s12 carries l12, l36 and l37 (about 10.5 s planned). s12's camera_move is 'hold' and is not changed: about 10 s on a still insert, past the 8 s set-up guide. The editor may want to flag it at screening; the remedy is not S7's (no shot may be added, D-024 ruling 1.3).",
+   "b8: s27 carries l23 then l35 (about 7.9 s English, 6.2 s Hindi), as the action asks."
+  ],
+  "cut_anchors": "Unchanged and still valid against the clarity text in both languages: l08 s08->s09 on 'shield'/'the', l15 s15->s16 on 'lockup', l17 s19->s20 on 'त्रिपाठी'/'Cheaper' (the word after [laughs]). They stay as shot-level cut_on_word on the tail shot, as this board already records them; s2e02 has no edit.json yet, so the editor copies them to layout.cut_on_word.",
+  "supers_on_shots": {
+   "su8": "s18 (l16)",
+   "su7": "s34 (l31)"
+  },
+  "super_on_shot_fixes_in_script": "su8 and su7 had no on_shot in either script; on_shot 's18' and 's34' added to both script.hi.json and script.en.json.",
+  "planned_durations": "duration_s and voice_s were recomputed only for shots whose line_ids or split changed (and the re-split silent shots). Basis: silent_lead_s + the longer language's winning-take clip lengths (voice/manifest.jsonl, status ok, highest take; the clarity takes where they exist) + 0.25 s between lines + any hold the action names + 0.1 s, rounded up to 0.1 s. A split line's head and tail are shared by character count up to the cut word. The build lays out from measured speech, so these are plans only.",
+  "slate_text": "Shot 'action' and 'framing' fields are left as written (frames are approved); several actions still quote pre-clarity wording.",
+  "not_verified": "build_timeline.py was not run (it writes voice caches); cut-word onsets were not measured; the per-language word lookups were checked by S7's own script only.",
+  "planned_duration_below_current_takes": [
+   "s02 plan 3.8 s < about 5.8 s of current takes",
+   "s05 plan 1.47 s < about 2.4 s of current takes",
+   "s10 plan 5.03 s < about 7.2 s of current takes",
+   "s14 plan 1.7 s < about 2.1 s of current takes",
+   "s24 plan 2.33 s < about 3.6 s of current takes",
+   "s28 plan 1.2 s < about 1.8 s of current takes",
+   "s34 plan 1.97 s < about 2.2 s of current takes",
+   "(informational: these shots kept their mapping; their reworded lines' new takes run longer than the old plan. The build lays out from speech, so only silent-shot plans drive the cut.)"
+  ]
+ }
+}

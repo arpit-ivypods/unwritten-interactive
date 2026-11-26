@@ -1,0 +1,187 @@
+{
+  "id": "proof-photoreal",
+  "title": "ग़लत Bag",
+  "logline": "A con artist opens the bag she has just stolen and finds a ringing phone instead of forty lakh rupees. The man on the line knows her real name, and tells her to ask her own driver who he is working for tonight.",
+  "language": "hi",
+  "language_note": "Hinglish: Hindi in Devanagari, English words in Latin script, in the same line.",
+  "target_total_seconds": 31.7,
+  "characters": [
+    {
+      "id": "tara",
+      "name": "तारा सेठी (Tara Sethi)",
+      "age": 31,
+      "role": "LEAD. Con artist. Tonight she played 'निशा', a private-bank relationship manager.",
+      "look": "Indian woman, 31, lean, sharp cheekbones, warm brown skin. Shoulder-length black hair, damp from rain, left side tucked behind the ear. Small gold stud in the left nostril. Smudged kajal. Thin gold chain at the collarbone. Charcoal fitted blazer, wet at the shoulders, over a maroon silk blouse: her bank-officer disguise. No other jewellery, short unpainted nails. Same face, hair, nose stud, blazer and blouse in every shot.",
+      "voice_note": "Late 20s to early 30s female, Mumbai Hindi with easy English. Quick, low, a little husky. Starts the scene high on adrenaline and laughing; by the end she is barely above a whisper. Never shrill."
+    },
+    {
+      "id": "imran",
+      "name": "इमरान शेख़ (Imran Shaikh)",
+      "age": 46,
+      "role": "Her driver and partner of six years. Seen mostly as eyes in the rear-view mirror and the back of his head.",
+      "look": "Indian man, 46, heavy-lidded tired eyes, salt-and-pepper stubble, thick greying hair cut short. Faded khaki taxi-driver shirt, sleeves rolled, steel kada on the right wrist. Broad shoulders filling the driver's seat.",
+      "voice_note": "Mid-40s male, Bambaiya Hindi, gravelly and unhurried. Says very little. Flat and tired, never raises his voice; the last line is a sigh, not a threat."
+    },
+    {
+      "id": "caller",
+      "name": "Caller (नाम नहीं पता)",
+      "age": 60,
+      "role": "The man she robbed tonight. Voice on the phone only.",
+      "look": "Never seen. Voice only.",
+      "voice_note": "About 60, male, cultured old-money Mumbai Hindi, soft and amused, unhurried but never drawling. Sounds like he is smiling. His last line (l08) drops lower and slower but stays fully voiced: never a whisper, every word clear. Phone-filtered in the mix (narrow band, slight line hiss)."
+    }
+  ],
+  "location": "Back seat of a kaali-peeli (black-and-yellow) taxi parked under a concrete flyover in a Mumbai-like city. Rain running down the windows, sodium-orange street light, red and blue neon from a shuttered shop smeared across wet glass. Engine off.",
+  "time_of_day": "Night, about 2 am, monsoon rain",
+  "beats": [
+    {
+      "id": "b1",
+      "action": "Open inside the moment. Tight on TARA in the back seat, still wired from the job, rain-damp, laughing, a tan leather duffel bag on her lap, both hands on the zip and already starting to pull it as she speaks. IMRAN is only a pair of eyes in the rear-view mirror. Engine off, wipers still, rain drumming on the roof.",
+      "on_screen": ["tara", "imran"],
+      "silent_seconds": 0,
+      "lines": [
+        {
+          "id": "l01",
+          "speaker": "tara",
+          "text": "[laughs] चालीस लाख, इमरान! [excited] और उसे doubt तक नहीं हुआ।",
+          "emotion_tags": ["[laughs]", "[excited]"],
+          "target_seconds": 3.5
+        },
+        {
+          "id": "l02",
+          "speaker": "imran",
+          "text": "[deadpan] पहले गिन लो।",
+          "emotion_tags": ["[deadpan]"],
+          "target_seconds": 1.2
+        }
+      ]
+    },
+    {
+      "id": "b2",
+      "action": "She rips the zip open. Insert, top-down into the bag: no cash. Neat bundles of cut newspaper held with rubber bands, and on top of them one cheap black keypad phone. Back to Tara's face: the grin dies where it is.",
+      "on_screen": ["tara"],
+      "silent_seconds": 1.5,
+      "lines": [
+        {
+          "id": "l03",
+          "speaker": "tara",
+          "text": "[whispers] रद्दी...? ये क्या है?",
+          "emotion_tags": ["[whispers]"],
+          "target_seconds": 1.8
+        }
+      ]
+    },
+    {
+      "id": "b3",
+      "action": "The keypad phone lights up in the bag and rings, harsh and far too loud in the closed car. Its green glow lands on Tara's face from below. She stares at it. Her thumb moves towards the answer key. Imran's eyes snap to her in the mirror.",
+      "on_screen": ["tara", "imran"],
+      "silent_seconds": 1.5,
+      "lines": [
+        {
+          "id": "l04",
+          "speaker": "imran",
+          "text": "[sharply] Phone मत उठाना।",
+          "emotion_tags": ["[sharply]"],
+          "target_seconds": 1.0
+        }
+      ]
+    },
+    {
+      "id": "b4",
+      "action": "She answers anyway. Close on Tara in profile, the cheap phone at her ear, rain streaking the window behind her, neon bleeding red and blue through the drops. The CALLER is voice only. She tries to bluff; he talks straight over her.",
+      "on_screen": ["tara"],
+      "silent_seconds": 0,
+      "lines": [
+        {
+          "id": "l05",
+          "speaker": "caller",
+          "text": "[calm] Bag पसंद आया, तारा?",
+          "emotion_tags": ["[calm]"],
+          "target_seconds": 2.0
+        },
+        {
+          "id": "l06",
+          "speaker": "tara",
+          "text": "[cold] Wrong number. यहाँ कोई तारा—",
+          "emotion_tags": ["[cold]"],
+          "target_seconds": 2.0
+        },
+        {
+          "id": "l07",
+          "speaker": "caller",
+          "text": "[chuckles] निशा तो तुम आज बनी थी। मैं तारा से बात कर रहा हूँ।",
+          "emotion_tags": ["[chuckles]"],
+          "target_seconds": 4.5
+        }
+      ]
+    },
+    {
+      "id": "b5",
+      "action": "Tara has stopped breathing. Slow push in on her face, front on, eyes wide and fixed on nothing. Out of focus in the foreground, the back of Imran's head has not moved. On the caller's last word the line goes dead.",
+      "on_screen": ["tara", "imran"],
+      "silent_seconds": 0,
+      "lines": [
+        {
+          "id": "l08",
+          "speaker": "caller",
+          "text": "[calm] अब अपने driver से पूछो... [quietly] आज रात वो किसके लिए गाड़ी चला रहा है।",
+          "emotion_tags": ["[calm]", "[quietly]"],
+          "target_seconds": 6.0
+        }
+      ]
+    },
+    {
+      "id": "b6",
+      "action": "Silence except rain and a dead-line tone. Tara lowers the phone a few centimetres. Her eyes travel up to the rear-view mirror. Imran's eyes are already there, watching her. His hand moves on the door panel. CLUNK: all four door locks drop. Tara's hand, on the door handle, stops.",
+      "on_screen": ["tara", "imran"],
+      "silent_seconds": 2.2,
+      "lines": [
+        {
+          "id": "l09",
+          "speaker": "tara",
+          "text": "[whispers] इमरान...?",
+          "emotion_tags": ["[whispers]"],
+          "target_seconds": 1.2
+        }
+      ]
+    },
+    {
+      "id": "b7",
+      "action": "Behind the taxi a parked car's headlights switch on, flooding the cabin white through the rear window and turning Tara into a rim-lit silhouette, the dead phone still in her hand. Imran does not turn around. Optional insert, same mirror set-up as b6: his eyes go from Tara to that light and stay on it a moment, and it must not be clear whether he is signalling the car behind or afraid of it. Then he turns the key and the engine catches (sound only, no wiper). Hold on Tara's face under his last line, then cut to black.",
+      "on_screen": ["tara", "imran"],
+      "silent_seconds": 0.8,
+      "lines": [
+        {
+          "id": "l10",
+          "speaker": "imran",
+          "text": "[sighs] बोला था ना... मत उठाना।",
+          "emotion_tags": ["[sighs]"],
+          "target_seconds": 2.5
+        }
+      ]
+    }
+  ],
+  "sfx_notes": [
+    "Bed, whole scene, loopable: heavy monsoon rain on a car roof, heard from inside; distant traffic hiss on a wet flyover overhead.",
+    "b1: Tara's quick, laughing breath; leather creak of the bag; the zip starts to move under l01.",
+    "b2: the zip pull finishes, long and metallic, then paper rustle as the bundles shift.",
+    "b3: old keypad-phone ringtone, monophonic, shrill, two rings; cut dead by a key click when she answers.",
+    "b4-b5: caller's voice through a phone filter (narrow band, faint line hiss). Keep the filter wide enough that consonants survive. Under the second half of l08 (the question itself) pull the rain bed and the drone right down so every word is clear. On his last word, call-ended beeps, three short tones.",
+    "b6: central locking CLUNK, dry and close, all four doors at once. Leave it exposed: no music under it.",
+    "b7: a soft electrical click as headlights come on behind; then ignition turning, old engine catching and settling into idle. No wiper."
+  ],
+  "music_note": "No music for the first half: rain and breath only. From the phone's first ring (b3) a single low synth drone enters, barely audible, with a slow sub pulse like a heartbeat from b5. Drone and pulse duck right down under the second half of l08 so the caller's question stays fully intelligible. Everything drops out for the lock CLUNK in b6. One low, dissonant string swell under Imran's last line, cut hard to silence on the cut to black. Instrumental, no melody, no percussion hits.",
+  "ending_question": "इमरान ने दरवाज़े lock किए: तारा को सौंपने के लिए, या बचाने के लिए?",
+  "writer_notes": [
+    "Names are written in Devanagari (तारा, इमरान, निशा) so the Hindi voice pronounces them correctly; English words (doubt, Phone, Bag, Wrong number, driver) stay in Latin script, per the plan section 2 convention. Six Latin-script words across five of the ten lines.",
+    "Spoken register throughout: ये and वो, never यह or वह, because the written text is exactly what the voice reads and what the subtitle shows.",
+    "Audio tags sit inside text exactly where the delivery changes; emotion_tags lists the same tags in order. Subtitle text is text with the square-bracket tags removed.",
+    "l06 is cut off by l07: end l06 abruptly on the dash and start l07 with no gap (or a slight overlap).",
+    "on_screen and silent_seconds per beat and target_total_seconds are additions to the requested schema, for the storyboard and the timeline. Spoken total 25.7 s, silent beats 6.0 s, 31.7 s in all. These are estimates from syllable counts, not measured takes; only l08 changed (4.8 to 6.0 s).",
+    "l08 is the line the scene exists for. It is no longer whispered: the second half is '[quietly]', meaning low, slow and fully voiced, so it survives the phone filter. Give it the full 6.0 s and duck rain and drone under it.",
+    "Tags: l04 '[sharply]' means low and fast, not loud; Imran never raises his voice. l09 carries one tag only. '[deadpan]', '[cold]', '[sharply]' and '[quietly]' have not been tested on the cast voices; if a voice ignores one, swap it for '[flatly]' or '[calm]'.",
+    "l10 repeats the last two words of l04 ('मत उठाना') so the ending lands as an echo of the warning. It is a tired sigh, not a threat: the open question is whether Imran locked her in to hand her over or to keep her safe.",
+    "Stills only (plan section 9): the hand on the door panel in b6, the ignition in b7 and the zip in b1 are carried by sound. The headlight flood can be a cross-fade between two versions of the last still. Imran's mirror glance in b7 is an optional insert; the current shots.json has no still for it.",
+    "The lead (tara) is on screen in all seven beats, with her face visible in at least six shots: this is the character-consistency test."
+  ]
+}

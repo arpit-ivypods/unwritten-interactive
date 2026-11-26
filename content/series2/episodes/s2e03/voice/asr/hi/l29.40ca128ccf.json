@@ -1,0 +1,142 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,120"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 120
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,120",
+				"to": "00:00:00,490"
+			},
+			"offsets": {
+				"from": 120,
+				"to": 490
+			},
+			"text": " जी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,490",
+				"to": "00:00:00,760"
+			},
+			"offsets": {
+				"from": 490,
+				"to": 760
+			},
+			"text": " ना"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,760",
+				"to": "00:00:01,450"
+			},
+			"offsets": {
+				"from": 760,
+				"to": 1450
+			},
+			"text": " लगाता"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,450",
+				"to": "00:00:01,760"
+			},
+			"offsets": {
+				"from": 1450,
+				"to": 1760
+			},
+			"text": " तो"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,760",
+				"to": "00:00:02,220"
+			},
+			"offsets": {
+				"from": 1760,
+				"to": 2220
+			},
+			"text": " एसे"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,220",
+				"to": "00:00:02,400"
+			},
+			"offsets": {
+				"from": 2220,
+				"to": 2400
+			},
+			"text": " चो"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,400",
+				"to": "00:00:02,970"
+			},
+			"offsets": {
+				"from": 2400,
+				"to": 2970
+			},
+			"text": " साहब"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,970",
+				"to": "00:00:03,350"
+			},
+			"offsets": {
+				"from": 2970,
+				"to": 3350
+			},
+			"text": " लगा"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,350",
+				"to": "00:00:04,200"
+			},
+			"offsets": {
+				"from": 3350,
+				"to": 4200
+			},
+			"text": " देते"
+		}
+	]
+}

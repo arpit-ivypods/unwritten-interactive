@@ -1,0 +1,142 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,090"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 90
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,090",
+				"to": "00:00:00,270"
+			},
+			"offsets": {
+				"from": 90,
+				"to": 270
+			},
+			"text": " दो"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,270",
+				"to": "00:00:00,690"
+			},
+			"offsets": {
+				"from": 270,
+				"to": 690
+			},
+			"text": " साल"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,690",
+				"to": "00:00:00,970"
+			},
+			"offsets": {
+				"from": 690,
+				"to": 970
+			},
+			"text": " से"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,970",
+				"to": "00:00:01,550"
+			},
+			"offsets": {
+				"from": 970,
+				"to": 1550
+			},
+			"text": " जानते"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,550",
+				"to": "00:00:02,170"
+			},
+			"offsets": {
+				"from": 1550,
+				"to": 2170
+			},
+			"text": " हैं,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,170",
+				"to": "00:00:02,670"
+			},
+			"offsets": {
+				"from": 2170,
+				"to": 2670
+			},
+			"text": " बोलते"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,670",
+				"to": "00:00:02,860"
+			},
+			"offsets": {
+				"from": 2670,
+				"to": 2860
+			},
+			"text": " तो"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,860",
+				"to": "00:00:03,370"
+			},
+			"offsets": {
+				"from": 2860,
+				"to": 3370
+			},
+			"text": " शिल्ट"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,370",
+				"to": "00:00:04,000"
+			},
+			"offsets": {
+				"from": 3370,
+				"to": 4000
+			},
+			"text": " जाता।"
+		}
+	]
+}

@@ -1,0 +1,175 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,060"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 60
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,060",
+				"to": "00:00:00,660"
+			},
+			"offsets": {
+				"from": 60,
+				"to": 660
+			},
+			"text": " So,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,660",
+				"to": "00:00:00,670"
+			},
+			"offsets": {
+				"from": 660,
+				"to": 670
+			},
+			"text": " Ji"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,670",
+				"to": "00:00:00,940"
+			},
+			"offsets": {
+				"from": 670,
+				"to": 940
+			},
+			"text": " Ji"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,940",
+				"to": "00:00:01,100"
+			},
+			"offsets": {
+				"from": 940,
+				"to": 1100
+			},
+			"text": " Ji"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,100",
+				"to": "00:00:01,660"
+			},
+			"offsets": {
+				"from": 1100,
+				"to": 1660
+			},
+			"text": " wants"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,660",
+				"to": "00:00:01,880"
+			},
+			"offsets": {
+				"from": 1660,
+				"to": 1880
+			},
+			"text": " to"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,880",
+				"to": "00:00:02,350"
+			},
+			"offsets": {
+				"from": 1880,
+				"to": 2350
+			},
+			"text": " meet"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,350",
+				"to": "00:00:03,410"
+			},
+			"offsets": {
+				"from": 2350,
+				"to": 3410
+			},
+			"text": " Mossy?"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,410",
+				"to": "00:00:03,890"
+			},
+			"offsets": {
+				"from": 3410,
+				"to": 3890
+			},
+			"text": " Mossy"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,890",
+				"to": "00:00:04,430"
+			},
+			"offsets": {
+				"from": 3890,
+				"to": 4430
+			},
+			"text": " meets"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,430",
+				"to": "00:00:04,640"
+			},
+			"offsets": {
+				"from": 4430,
+				"to": 4640
+			},
+			"text": " no"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,640",
+				"to": "00:00:05,000"
+			},
+			"offsets": {
+				"from": 4640,
+				"to": 5000
+			},
+			"text": " one."
+		}
+	]
+}

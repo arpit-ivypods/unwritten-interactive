@@ -1,0 +1,599 @@
+{
+  "episode_id": "s2a01",
+  "series_id": "series2",
+  "status": "planned",
+  "status_note": "Planned only. Nothing generated, nothing listened to. A separate runner generates the one-off cues below once each through the connector (D-009 route b) and records ids, probed lengths and credits in this folder's manifest.jsonl; library cues come from content/series2/sound/ and are not generated again here (D-011 reuse).",
+  "authority": [
+    "D-011 reuse: library cues by cue_id, one-offs only for sounds the library lacks.",
+    "D-014 / D-0M2: shots follow measured voice; every placement is anchored to a beat or line id, not to seconds.",
+    "D-0M4: -14 LUFS integrated, -1 dBTP, +/-0.5 LU.",
+    "D-019: s2a01 was held for its critic read; the critic rerun passed it at 8.0 (review-notes.json, critic_rerun) and S2 applied the must-fix items. This sheet is planned from the script as it stands after those changes (b3 silence 2.0 s, l13 4.1 s, 27 lines).",
+    "D-018 / D-019 / D-020: length is settled in the edit, 150 s ceiling per language cut; nothing here adds screen time except the flagged b11 head (editor_notes)."
+  ],
+  "sources": [
+    "content/series2/episodes/s2a01/script.hi.json (beats, silent_seconds, silent_position, sfx_notes, music_note, writer_notes glimpse entry)",
+    "content/series2/episodes/s2a01/script.en.json (same beat and line ids and silences; sfx_notes identical except the quoted l08 text; music_note identical)",
+    "content/series2/episodes/s2a01/review-notes.json (critic_rerun: Glimpse A cut before b6's paper rustle)",
+    "content/series2/sound/library.json (cues, prompts, mix, one_offs_left_to_episode_sheets)",
+    "content/series2/bible.json (glimpses.A, s2ga)",
+    "content/series2/episodes/s2e01/sound/cues.json (sheet format)"
+  ],
+  "timebase": "Line and beat anchors only. No voice is measured yet; S13 converts anchors to seconds from the measured timeline of each language. The English cut (target 123.2 s against Hindi 127.6 s) uses the same anchors by line id; scripted silences are the same in both. Glimpse A (s2ga) is cut from this episode and reuses these cues (library how_to_use).",
+  "library_cues": [
+    {
+      "cue_id": "amb_talkies_lobby",
+      "where": "b1 to b2",
+      "gain_db": -24,
+      "notes": "Night: base + lyr_night_crickets (lowest of the series, as if outside the high windows). Not on frame one: fades in (0.3 s) only after the first second, so the ratchet plays alone. At the bulb click after l05 (b2 shot 3) the bed drops about 6 dB and is low-passed so the bulb hum goes with the light; crickets stay. Cuts on the b2 to b3 picture cut. The script's 'faint ceiling creak' is not in the base and is not generated: if the base take has a creak, keep it; otherwise do without."
+    },
+    {
+      "cue_id": "amb_crossing_stall",
+      "where": "b3, b6, b7",
+      "gain_db": -24,
+      "notes": "Night: base + lyr_night_crickets (highest of the series here). The signal relay tick and the signal-lamp buzz are in the base, which covers b3's 'signal relay ticking'. No train anywhere (b3 says so; the base carries none). b6 and b7: under the truck; after the truck has faded in b7 the bed and crickets are what is left, up 2 dB for the tail of b7, then a hard cut on the b7 to b8 cut."
+    },
+    {
+      "cue_id": "amb_real_thana",
+      "where": "b4, b5, b8, b9, b10",
+      "gain_db": -24,
+      "notes": "Tube-light hum and slow ceiling fan, as the script asks. Night, but the beds stay indoor and close: lyr_night_crickets left out (the library allows it low; this episode's thana is a shut room against the open crossing, and the contrast helps the cuts). Down to about -28 under b9 and b10 lines with the music in. Cuts on the b10 to b11 picture cut; the knock pre-lap plays over the tail of this bed."
+    },
+    {
+      "cue_id": "amb_lane_doorway",
+      "where": "b11",
+      "gain_db": -26,
+      "notes": "Night: base + lyr_night_crickets at -32. The wall-lamp buzz is in the base. Script: 'the bed is down to almost nothing under l27': pull base and crickets to about -36 under l27. After the bolt, near silence for the 2.5 s hold: base only at about -34, crickets out with the bolt. Cuts with the picture to black."
+    },
+    {
+      "cue_id": "lyr_night_crickets",
+      "where": "b1 to b2 (-34), b3 and b6 to b7 (-28), b11 (-32, about -38 under l27)",
+      "gain_db": -28,
+      "notes": "The one night layer. Lowest under the talkies, highest at the crossing, per the library. Not in the real thana beats."
+    },
+    {
+      "cue_id": "sfx_cuffs_ratchet",
+      "where": "b1, frame one, in the 0.6 s silence before l01",
+      "gain_db": -8,
+      "notes": "Two clicks, one per wrist, close and dry. Nothing else under it for the first second (bed enters after). The second click may run under the first syllable of 'सुधीर' if the 0.6 s is too short (the action has the ratchet and 'सुधीर निराला।' over the same shot); keep it 6 dB down if so. Also the first sound of Glimpse A (s2ga)."
+    },
+    {
+      "cue_id": "sfx_match_wax",
+      "where": "b2 shot 1, under l04, low",
+      "gain_db": -20,
+      "notes": "Strike and the soft drip on the knot, placed between l04's phrases. After the drawstring part of s2a01_sfx_bag_switch."
+    },
+    {
+      "cue_id": "sfx_pen_scratch",
+      "where": "b2 shot 2, under l05, low",
+      "gain_db": -22,
+      "notes": "Nandini writing the tag. Always under the line, low (library). About 2 s of the take; ease out with the end of l05."
+    },
+    {
+      "cue_id": "sfx_steps_ballast",
+      "where": "b3, the whole 2.0 s still",
+      "gain_db": -14,
+      "notes": "The take's long even strides and short brisk steps; the third rhythm (small careful steps) is built from the lighter crunches of the same take, plus sfx_cuff_chain_clink. Fade in over the first 0.2 s, out on the b3 to b4 cut. Only 2 s of an 8 s take: pick the bit where the rhythms overlap."
+    },
+    {
+      "cue_id": "sfx_cuff_chain_clink",
+      "where": "b3 (faint, -22, on one of the small careful steps); b9 (-12, once, on the cut from shot 1 to shot 2, between l17 and l18)",
+      "gain_db": -12,
+      "notes": "b9: against an iron bar as his hands close round it; not under either line (script). Vary pitch +/-1 semitone between the two uses (library)."
+    },
+    {
+      "cue_id": "sfx_padlock_rusted",
+      "where": "b4 shot 1: grinding and refusing under l06, giving after it",
+      "gain_db": -18,
+      "notes": "Grind slices at -18 between l06's two sentences and under its start, never on 'मुलज़िम' or 'खुलते'; the shackle clack at -10 right after l06 ends, at the head of the 2.5 s silence. Also used in Glimpse A if l06 is kept."
+    },
+    {
+      "cue_id": "sfx_wall_clock_tick",
+      "where": "b5, head to the end of the 2.0 s silence",
+      "gain_db": -24,
+      "notes": "Shot 1 (the hands meeting at twelve): the first tick on the cut is the loud one, +5 dB (library: raise one tick 4 to 6 dB). Then steady at -28 under l07, and on through the helmet lift and her exit; out on the b5 to b6 cut. Not used again in b8 to b10: the script places it in b5 only."
+    },
+    {
+      "cue_id": "sfx_steps_terrazzo",
+      "where": "b5, the 2.0 s silence after l07, after the helmet lift",
+      "gain_db": -18,
+      "notes": "Her shoes leaving: three or four steps from the take, fading out to the empty doorway frame. The take is a terrazzo hall with sandals and shoes; the thana is a smaller plaster room, so trim the tail echo and take some reverb off. If the take reads as sandals, drop it and let the empty doorway play on the clock; do not generate. Not in this cue's library used_in (s2e02, s2e03); it is used here as a footstep stand-in."
+    },
+    {
+      "cue_id": "sfx_truck_idle",
+      "where": "b6 head (1.0 s silence) to b7 shot 1, until the gear engages",
+      "gain_db": -18,
+      "notes": "Close and low from b6's first frame. Ducked right down, about -34, under l08 (Glimpse A's last line, must be fully intelligible: script and library). About -26 under l09 and l10. In b7 it crossfades (0.2 s) into s2a01_sfx_truck_pull_away as the gear engages. Also in Glimpse A up to l08."
+    },
+    {
+      "cue_id": "sfx_headlight_hum",
+      "where": "b6, the whole beat, under the idle",
+      "gain_db": -32,
+      "notes": "Quiet sweetener for the headlight glare. Out with the truck idle in b7 (the headlights leave with the truck). Glimpse A's last moment also carries it."
+    },
+    {
+      "cue_id": "sfx_paper_slip",
+      "where": "b6, the cut from shot 1 to shot 2: between l08 and l09 (the slip changing hands)",
+      "gain_db": -14,
+      "notes": "The 'paper rustle as the slip changes hands'. Pick the cleanest second of the take (library). Must start after l08 has finished: Glimpse A is cut before it. A second, softer slice at -18 may go in b7 shot 1 as she hands it back, inside the 2.0 s silence, ahead of the gate creak."
+    },
+    {
+      "cue_id": "sfx_far_dog",
+      "where": "b8, the 1.5 s silence after l16, after the collar brush; b11, late in the 2.5 s hold",
+      "gain_db": -28,
+      "notes": "Once each, far, never under a line (library). b8: one bark at the tail of the silence, after s2a01_sfx_collar_brush. b11: one far bark about 1.5 s into the hold at -32; if it fights the 'near silence' after the bolt, drop it there and keep b8's."
+    },
+    {
+      "cue_id": "sfx_bench_creak",
+      "where": "b9, the 1.0 s silence before l17",
+      "gain_db": -14,
+      "notes": "He gets up off the bench. One creak, finished before l17."
+    },
+    {
+      "cue_id": "sfx_knitting_needles",
+      "where": "b9, under l17 and l18; STOP before l19",
+      "gain_db": -26,
+      "notes": "Pushpa off frame (hands only in shot 5). Faint and steady from the head of l17. STOP is a cue: clean cut on a gap, no fade, in the l18 to l19 speaker change, so the 0.3 s before l19 has fan and music only. Shot 5 shows her needles stopped, which matches."
+    },
+    {
+      "cue_id": "sfx_register_thump",
+      "where": "b10 shot 2, the register coming out of the almirah: in the l24 to l25 speaker change (or under the last word of l24 at -18 if there is no gap)",
+      "gain_db": -12,
+      "notes": "The take's thump and puff of dust cover 'a dull thump and a breath of dust'. Pushpa's hands take its weight, so a little softer than a desk slam."
+    },
+    {
+      "cue_id": "sfx_page_turn",
+      "where": "b10 shot 3, under l25",
+      "gain_db": -20,
+      "notes": "One page turn, low, as her hand goes flat on the blank pages; placed under 'तो ये है' ('So this is'), clear of 'zero crime'."
+    },
+    {
+      "cue_id": "sfx_signature_knock",
+      "where": "b10, the 1.5 s silence after l25: pre-lap into b11",
+      "gain_db": -10,
+      "notes": "Nirala's knock file, the two slow knocks only (library: if the take does not hold the rhythm, cut two knocks from it; do not regenerate). Dry, outdoor lane acoustic, not the thana room: it is the b11 door heard early. mus_theme_caper_slow stops dead on the second knock."
+    },
+    {
+      "cue_id": "sfx_door_chain_stop",
+      "where": "b11 head, before l26",
+      "gain_db": -12,
+      "notes": "The chain latch rattling taut as the door stops a hand's width open. Must finish before l26. See editor_notes: b11 has no scripted silence before l26."
+    },
+    {
+      "cue_id": "sfx_door_shut_bolt",
+      "where": "b11, head of the 2.5 s hold, after l27 has finished",
+      "gain_db": -8,
+      "notes": "Solid and close: the thud and the bolt shot home. Then near silence for the hold (lane base only, very low)."
+    },
+    {
+      "cue_id": "mus_tension_note",
+      "where": "b7 shot 2 (tail-lights) through l11; gone by l12",
+      "gain_db": -22,
+      "notes": "Enters on the cut to the tail-lights, just before l11, with a 1.0 s fade-in, so it rises as the engine fades. Ducked -8 under l11. Out on the b7 to b8 cut with a 0.4 s fade that ends before l12's first syllable ('gone by the first line of b8'). Its only use in this episode."
+    },
+    {
+      "cue_id": "mus_theme_caper_slow",
+      "where": "b9 from the head of l17 to the second knock in b10's silence",
+      "gain_db": -24,
+      "notes": "Very quietly from l17 (-24, ducked -8 under lines), building a little (to about -18 between lines) under the key in l23 and the register in l24 and l25. Stops dead, a hard cut, on the second knock (library: stops are hard cuts at a gap). Fallback per library: mus_theme_caper_bed time-stretched to about 0.75x."
+    }
+  ],
+  "one_off_cues": [
+    {
+      "cue_id": "s2a01_sfx_moth_bulb",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 6.0,
+      "loop": false,
+      "prompt": "A single moth fluttering around a bare hanging light bulb at night and tapping against the glass: soft, irregular, papery ticks and tiny wing flutters, close and quiet, in a still room. No voices, no crickets, no music.",
+      "used_at": [
+        "b1 and b2, faint (-30), between lines, at the lobby's bare bulb; stops at the bulb click in b2 shot 3",
+        "b11, fainter (-34), at the lane's wall lamp, under l26 only between words, nothing under l27"
+      ],
+      "notes": "Script asks for a moth at the lobby bulb (b1-b2) and at the wall lamp (b11); the library leaves it to this sheet. One take, sliced: separate ticks, spaced irregularly so it does not read as a loop. Not under the ratchet or the first second of b1.",
+      "status": "generated"
+    },
+    {
+      "cue_id": "s2a01_sfx_bag_switch",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 3.0,
+      "loop": false,
+      "prompt": "Close, in a quiet empty hall: a small cloth bag with a heavy object inside drawn shut, the cotton drawstring pulled tight with a soft rasp, then after a pause, an old brass bulb-holder switch turned with one sharp dry click. No voices, no music.",
+      "used_at": [
+        "b2 shot 1 head, drawstring, low (-18) under the start of l04",
+        "b2 shot 3, the bulb click (-12) in the 1.5 s silence after l05"
+      ],
+      "notes": "Two moments from one generation, split at the pause (same method as s2e01_sfx_file_untie_riffle). The lobby bed drops on the click. If the take has no clean click, any short dry click from sfx_keypad_key_click (library), low-passed, stands in; do not generate again.",
+      "status": "generated"
+    },
+    {
+      "cue_id": "s2a01_sfx_lockup_door_clang",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 2.5,
+      "loop": false,
+      "prompt": "An old iron barred cell door in a small police lockup swinging shut on rusty hinges, a short squeal, then one single heavy iron clang as it hits the frame, ringing briefly in a hard plaster room. No voices, no keys, no footsteps.",
+      "used_at": [
+        "b4 shot 3, ending the 2.5 s silence after l06: the clang is the cut to b5"
+      ],
+      "notes": "Clear of l06 (script). Hinge squeal from the shot 3 cut, clang on the last frames of b4, ring allowed 0.3 s into b5 under the clock tick and no more. Also the Glimpse A image (s2ga). Not sfx_door_shut_bolt (a wooden lane door).",
+      "status": "generated"
+    },
+    {
+      "cue_id": "s2a01_sfx_helmet_lift",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 1.0,
+      "loop": false,
+      "prompt": "A hard plastic open-face motorcycle helmet lifted off a wooden desk: a light hollow knock and a short scrape, the chin strap buckle clinking once, close, quiet room. No voices.",
+      "used_at": [
+        "b5, head of the 2.0 s silence after l07"
+      ],
+      "notes": "Before the footsteps (sfx_steps_terrazzo). About -14. The helmet is not heard again after b7 (out of frame from b8).",
+      "status": "generated"
+    },
+    {
+      "cue_id": "s2a01_sfx_gate_arm_creak",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 2.0,
+      "loop": false,
+      "prompt": "An old manual railway level-crossing barrier arm being raised at night: a long dry metal creak of the pivot and a counterweight clunk at the top, outdoors, open air. No bell, no train, no voices.",
+      "used_at": [
+        "b7 shot 1, first half of the 2.0 s silence before l11"
+      ],
+      "notes": "About -14. No bell: s2e01's crossing bell belongs to its day one-off. Overlaps the head of s2a01_sfx_truck_pull_away by about 0.3 s.",
+      "status": "generated"
+    },
+    {
+      "cue_id": "s2a01_sfx_truck_pull_away",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 6.0,
+      "loop": false,
+      "prompt": "A big old loaded diesel truck at night: the gearbox clunking into first gear, the engine revving and pulling away, the wheels thudding twice over railway rails at a level crossing, then the engine fading slowly into the distance. Open air. No horn, no voices, no music.",
+      "used_at": [
+        "b7, from the gear change in the 2.0 s silence, through l11 (the fade), to the b7 to b8 cut"
+      ],
+      "notes": "Gear change and both rail thuds inside the silence, at -12; l11 sits on the fade, not on the gear change (script), so by l11's first syllable the engine is down to about -26 and still falling. Crossfades from the library sfx_truck_idle (one truck, one engine: match level and tone at the join). If the take's rail thuds are weak, keep them anyway; do not generate again.",
+      "status": "generated"
+    },
+    {
+      "cue_id": "s2a01_sfx_collar_brush",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 1.0,
+      "loop": false,
+      "prompt": "A soft brush of fingers against a starched cotton shirt collar, with the faint small clink of a handcuff chain, very close, very quiet. No voices.",
+      "used_at": [
+        "b8 shot 5, the 1.5 s silence after l16"
+      ],
+      "notes": "About -16. Before sfx_far_dog in the same silence. The chain clink in it should be smaller than sfx_cuff_chain_clink in b9.",
+      "status": "generated"
+    },
+    {
+      "cue_id": "s2a01_sfx_almirah_open",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 3.0,
+      "loop": false,
+      "prompt": "A tall old grey steel office almirah: a small padlock clicking open, then the steel door swinging open with a long low metallic groan, in a quiet bare room. No voices, no music.",
+      "used_at": [
+        "b10, the l23 to l24 join: padlock click after l23, the groan low under the start of l24"
+      ],
+      "notes": "Click at -12 after l23 ends (there is no speaker change between l23 and l24, both Pushpa, so the click needs the gap the take leaves; if there is none, put it under l23's last word at -18). Groan at -20 under l24's first words, gone before 'इंतज़ार'. Not sfx_padlock_rusted: this lock opens first time.",
+      "status": "generated"
+    }
+  ],
+  "placement_by_beat": [
+    {
+      "beat": "b1",
+      "bed": [
+        "amb_talkies_lobby + lyr_night_crickets (in after the first second)"
+      ],
+      "events": [
+        {
+          "cue_id": "sfx_cuffs_ratchet",
+          "anchor": "frame one, two clicks in the 0.6 s before l01; alone for the first second"
+        },
+        {
+          "cue_id": "s2a01_sfx_moth_bulb",
+          "anchor": "faint ticks between lines after l01 begins (in the l01 to l02 change and around l03)"
+        }
+      ]
+    },
+    {
+      "beat": "b2",
+      "bed": [
+        "amb_talkies_lobby + lyr_night_crickets (bed down 6 dB and low-passed at the bulb click)"
+      ],
+      "events": [
+        {
+          "cue_id": "s2a01_sfx_bag_switch",
+          "anchor": "drawstring slice, shot 1 head, under the start of l04"
+        },
+        {
+          "cue_id": "sfx_match_wax",
+          "anchor": "under l04, between phrases"
+        },
+        {
+          "cue_id": "sfx_pen_scratch",
+          "anchor": "under l05"
+        },
+        {
+          "cue_id": "s2a01_sfx_moth_bulb",
+          "anchor": "faint, stops at the bulb click"
+        },
+        {
+          "cue_id": "s2a01_sfx_bag_switch",
+          "anchor": "bulb-click slice, shot 3, in the 1.5 s after l05"
+        }
+      ]
+    },
+    {
+      "beat": "b3",
+      "bed": [
+        "amb_crossing_stall + lyr_night_crickets (relay tick in the base)"
+      ],
+      "events": [
+        {
+          "cue_id": "sfx_steps_ballast",
+          "anchor": "whole 2.0 s still"
+        },
+        {
+          "cue_id": "sfx_cuff_chain_clink",
+          "anchor": "faint, on one small careful step"
+        }
+      ]
+    },
+    {
+      "beat": "b4",
+      "bed": [
+        "amb_real_thana"
+      ],
+      "events": [
+        {
+          "cue_id": "sfx_padlock_rusted",
+          "anchor": "grind under l06 (between sentences), clack right after l06"
+        },
+        {
+          "cue_id": "s2a01_sfx_lockup_door_clang",
+          "anchor": "shot 3, the clang on the cut to b5"
+        }
+      ]
+    },
+    {
+      "beat": "b5",
+      "bed": [
+        "amb_real_thana"
+      ],
+      "events": [
+        {
+          "cue_id": "sfx_wall_clock_tick",
+          "anchor": "from the head; one loud tick on the clock insert; low under l07"
+        },
+        {
+          "cue_id": "s2a01_sfx_helmet_lift",
+          "anchor": "head of the 2.0 s after l07"
+        },
+        {
+          "cue_id": "sfx_steps_terrazzo",
+          "anchor": "after the lift, three or four steps fading to the empty doorway"
+        }
+      ]
+    },
+    {
+      "beat": "b6",
+      "bed": [
+        "amb_crossing_stall + lyr_night_crickets"
+      ],
+      "events": [
+        {
+          "cue_id": "sfx_truck_idle",
+          "anchor": "from the head; about -34 under l08; about -26 under l09 and l10"
+        },
+        {
+          "cue_id": "sfx_headlight_hum",
+          "anchor": "whole beat, faint"
+        },
+        {
+          "cue_id": "sfx_paper_slip",
+          "anchor": "after l08 ends, before l09 (shot 1 to shot 2); Glimpse A is cut before it"
+        }
+      ]
+    },
+    {
+      "beat": "b7",
+      "bed": [
+        "amb_crossing_stall + lyr_night_crickets (up 2 dB once the truck has gone)"
+      ],
+      "events": [
+        {
+          "cue_id": "sfx_truck_idle",
+          "anchor": "head of the silence only, crossfading into the pull-away"
+        },
+        {
+          "cue_id": "sfx_paper_slip",
+          "anchor": "optional soft slice as the slip goes back, early in the silence"
+        },
+        {
+          "cue_id": "s2a01_sfx_gate_arm_creak",
+          "anchor": "shot 1, first half of the 2.0 s silence"
+        },
+        {
+          "cue_id": "s2a01_sfx_truck_pull_away",
+          "anchor": "gear change and two rail thuds in the silence; fading under l11"
+        },
+        {
+          "cue_id": "mus_tension_note",
+          "anchor": "in on the tail-lights shot just before l11; out before l12"
+        }
+      ]
+    },
+    {
+      "beat": "b8",
+      "bed": [
+        "amb_real_thana"
+      ],
+      "events": [
+        {
+          "cue_id": "s2a01_sfx_collar_brush",
+          "anchor": "shot 5 insert, the 1.5 s after l16"
+        },
+        {
+          "cue_id": "sfx_far_dog",
+          "anchor": "once, far, at the tail of the same silence"
+        }
+      ]
+    },
+    {
+      "beat": "b9",
+      "bed": [
+        "amb_real_thana (about -28 under lines)"
+      ],
+      "events": [
+        {
+          "cue_id": "sfx_bench_creak",
+          "anchor": "the 1.0 s silence before l17"
+        },
+        {
+          "cue_id": "mus_theme_caper_slow",
+          "anchor": "enters at the head of l17, very quietly"
+        },
+        {
+          "cue_id": "sfx_knitting_needles",
+          "anchor": "under l17 and l18; STOP clean in the l18 to l19 change"
+        },
+        {
+          "cue_id": "sfx_cuff_chain_clink",
+          "anchor": "once, on the shot 1 to shot 2 cut, between l17 and l18"
+        }
+      ]
+    },
+    {
+      "beat": "b10",
+      "bed": [
+        "amb_real_thana (about -28 under lines)"
+      ],
+      "events": [
+        {
+          "cue_id": "mus_theme_caper_slow",
+          "anchor": "building a little under l23 to l25; hard stop on the second knock"
+        },
+        {
+          "cue_id": "s2a01_sfx_almirah_open",
+          "anchor": "padlock click after l23, groan low under the start of l24"
+        },
+        {
+          "cue_id": "sfx_register_thump",
+          "anchor": "l24 to l25 change"
+        },
+        {
+          "cue_id": "sfx_page_turn",
+          "anchor": "under the start of l25"
+        },
+        {
+          "cue_id": "sfx_signature_knock",
+          "anchor": "two slow knocks in the 1.5 s after l25, lane acoustic, pre-lap into b11"
+        }
+      ]
+    },
+    {
+      "beat": "b11",
+      "bed": [
+        "amb_lane_doorway + lyr_night_crickets (both almost nothing under l27; crickets out at the bolt)"
+      ],
+      "events": [
+        {
+          "cue_id": "sfx_door_chain_stop",
+          "anchor": "b11 head, finished before l26"
+        },
+        {
+          "cue_id": "s2a01_sfx_moth_bulb",
+          "anchor": "at the wall lamp, very faint, between words of l26 only"
+        },
+        {
+          "cue_id": "sfx_door_shut_bolt",
+          "anchor": "after l27 has finished, head of the 2.5 s hold"
+        },
+        {
+          "cue_id": "sfx_far_dog",
+          "anchor": "optional, far, about 1.5 s into the hold"
+        }
+      ]
+    }
+  ],
+  "mix": {
+    "dialogue_first": true,
+    "loudness_target": "-14 LUFS integrated, -1 dBTP, +/-0.5 LU (D-0M4)",
+    "starting_gains_db": {
+      "music": -18,
+      "music_duck_under_dialogue": -8,
+      "ambience": -24,
+      "ambience_layer": -28,
+      "sfx": -10
+    },
+    "ducking": [
+      "Music ducks -8 dB under every line (library default). Both music cues here start lower than the -18 default (tension -22, caper slow -24): the script asks for 'very quietly' and 'low'.",
+      "b6: sfx_truck_idle to about -34 under l08 so Glimpse A's last line is fully intelligible; about -26 under l09 and l10.",
+      "b7: l11 sits on the engine fade; the pull-away is already under -26 at l11's first syllable.",
+      "b11: lane bed and crickets to about -36 / -38 under l27; nothing loud on l27; no moth on l27.",
+      "Effects under lines (wax, pen, padlock grind, knitting, almirah groan, page turn, moth) sit at -18 or lower and between words where the take allows."
+    ],
+    "filters": {
+      "phone_lines": [],
+      "phone": "None in this episode: no phone, no PA.",
+      "dry_lines": "Every line is dry in its room. l27 is through a hand's-width gap in the door: dry, same lane acoustic as l26, no filter. l08 is full voice over the engine (writer note); do not add level to it beyond the duck."
+    },
+    "music_in_out": [
+      {
+        "cue_id": "mus_tension_note",
+        "in": "b7, cut to the tail-lights shot, just before l11 (1.0 s fade-in)",
+        "out": "b7 to b8 cut, 0.4 s fade, gone before l12"
+      },
+      {
+        "cue_id": "mus_theme_caper_slow",
+        "in": "b9, head of l17",
+        "out": "hard stop on the second knock in b10's silence after l25"
+      }
+    ],
+    "no_music": "b1 to b6 (the arrest and the lockup play on room sound), b7 before the tail-lights, b8 entirely, b9's silence before l17, and b11 (the door shut and the hold play on silence).",
+    "hard_rules": [
+      "Nothing under the ratchet for the first second of b1.",
+      "The lockup clang is clear of l06 and ends b4.",
+      "l08 fully intelligible over the ducked idle; Glimpse A ends on l08 and carries no paper rustle.",
+      "l11 on the engine fade, never on the gear change or a rail thud.",
+      "Tension note gone before l12.",
+      "Cuff chain on the b9 shot 1 to shot 2 cut, not under l17 or l18.",
+      "Knitting stops dead, no fade, before l19.",
+      "Caper motif stops dead on the second knock; no music in b11.",
+      "Door shut and bolt only after l27 has finished; then near silence to the cut to black.",
+      "No train horn, no sting, no percussion hits anywhere."
+    ]
+  },
+  "glimpse_A_notes": [
+    "s2ga uses b1 (sfx_cuffs_ratchet on frame one, l03), b4 shot 3 (s2a01_sfx_lockup_door_clang, with l06 and the sfx_padlock_rusted grind if l06 is kept), b5 (sfx_wall_clock_tick with its loud tick, l07) and b6 shot 1 (sfx_truck_idle ducked under l08, sfx_headlight_hum, crossing bed and crickets).",
+    "The glimpse's last sound is l08 over the idle; cut the idle and hum with the picture (a 0.2 s fade at most). No sfx_paper_slip, no gate creak, no pull-away: they would show whether the truck passes (must_not_reveal).",
+    "Each glimpse moment carries its own bed from this sheet; S14 crossfades beds at the glimpse's own cuts (0.1 to 0.2 s)."
+  ],
+  "editor_notes": [
+    "b11 has no scripted silence before l26 (silent_position 'after'), yet the chain latch has to rattle taut before l26. Either the chain sits at the end of b10's 1.5 s after the two knocks (tight: knocks about 1.0 s, chain about 0.5 s of a 1.5 s take), or b11 opens with about 0.5 s of door before l26 (taken from b11's 2.5 s hold or within the 150 s ceiling, D-019). Flagged for S13 and the editor; not changed here.",
+    "b3 is 2.0 s after the critic rerun (was 3.0): three walking rhythms fit only as a short overlap. If the screening finds it rushed, that is the edit's call, not this sheet's.",
+    "b8's far dog and the collar brush share 1.5 s; if it crowds, the dog goes (b11 keeps its own)."
+  ],
+  "counts": {
+    "library_cues_used": 26,
+    "one_off_cues_new": 8,
+    "one_off_planned_seconds": 24.5,
+    "one_off_credit_estimate": 136,
+    "library_cues_used_not_in_library_used_in": [
+      "sfx_steps_terrazzo"
+    ]
+  },
+  "not_verified": [
+    "Nothing generated or heard. Gains are starting points for S13.",
+    "Several placements depend on what the takes contain (the ratchet's second click, the bag/switch split, the rail thuds, the terrazzo steps as thana footsteps, the almirah click gap); each has a stated fallback that needs no new generation.",
+    "Whether the base ambience takes contain the lobby ceiling creak the script mentions; it is not generated.",
+    "Credit estimate assumes the proof's 17 credits per sound generation (library credit_estimate basis)."
+  ]
+}

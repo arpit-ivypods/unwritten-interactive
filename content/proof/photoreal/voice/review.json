@@ -1,0 +1,785 @@
+[
+ {
+  "line_id": "l01",
+  "lang": "hi",
+  "model": "eleven_v4",
+  "file": "content/proof/photoreal/voice/hi/l01.mp3",
+  "text": "[laughs] [giddy] चालीस लाख, इमरान! [excited, fast] और उसे doubt तक नहीं हुआ।",
+  "transcript": "चालिस लाग फिम्रान और उसे दाउत तक नहीं हूँ",
+  "transcript_source": "whisper.cpp ggml-small (local)",
+  "duration_s": 5.12,
+  "speech_s": 4.78,
+  "target_s": 3.5,
+  "length_vs_target_pct": 37,
+  "lead_silence_s": 0.115,
+  "trail_silence_s": 0.225,
+  "pauses": [],
+  "pauses_at_minus35db": [],
+  "mean_db": -23.2,
+  "mean_speech_db": -22.9,
+  "max_db": -5.4,
+  "lufs_i": -22.1,
+  "verdict": "retake",
+  "reason": "Words all present (doubt heard as दाउत), no tag spoken, laugh present as ~0.9 s of unvoiced pulses before the first word. Speech span 4.78 s vs 3.5 s target (+37%, +1.28 s): fails length; the director's note names overrun as the retake trigger. Words alone (~1.0-4.9 s) are ~3.9 s, so the excess is the laugh plus a slow read. Risk: the ladder text drops 'fast', so take 2 may still run long; if it does, take 3 is the last allowed and the editor absorbs the overrun.",
+  "retake_text": "[laughs] चालीस लाख, इमरान! [excited] और उसे doubt तक नहीं हुआ।",
+  "retake_take_no": 2
+ },
+ {
+  "line_id": "l02",
+  "lang": "hi",
+  "model": "eleven_v4",
+  "file": "content/proof/photoreal/voice/hi/l02.mp3",
+  "text": "[deadpan] [tired] पहले गिन लो।",
+  "transcript": "पहले गिन लो",
+  "transcript_source": "whisper.cpp ggml-small (local)",
+  "duration_s": 1.68,
+  "speech_s": 1.156,
+  "target_s": 1.2,
+  "length_vs_target_pct": -4,
+  "lead_silence_s": 0.119,
+  "trail_silence_s": 0.405,
+  "pauses": [],
+  "pauses_at_minus35db": [],
+  "mean_db": -26.4,
+  "mean_speech_db": -24.7,
+  "max_db": -7.1,
+  "lufs_i": -24.3,
+  "verdict": "ok",
+  "reason": "Transcript exact (पहले गिन लो). No tag spoken. Speech 1.16 s vs 1.2 s. Level -24.7 dB, fully voiced, flat.",
+  "retake_text": null
+ },
+ {
+  "line_id": "l03",
+  "lang": "hi",
+  "model": "eleven_v4",
+  "file": "content/proof/photoreal/voice/hi/l03.mp3",
+  "text": "[whispers] [stunned] रद्दी...? ये क्या है?",
+  "transcript": "रद्ती, ये क्या है?",
+  "transcript_source": "whisper.cpp ggml-small (local)",
+  "duration_s": 2.56,
+  "speech_s": 2.112,
+  "target_s": 1.8,
+  "length_vs_target_pct": 17,
+  "lead_silence_s": 0.162,
+  "trail_silence_s": 0.286,
+  "pauses": [
+   {
+    "start": 0.984,
+    "end": 1.541,
+    "dur": 0.557
+   }
+  ],
+  "pauses_at_minus35db": [
+   {
+    "start": 0.949,
+    "end": 1.572,
+    "dur": 0.622
+   }
+  ],
+  "mean_db": -26.9,
+  "mean_speech_db": -26.0,
+  "max_db": -8.5,
+  "lufs_i": -24.4,
+  "verdict": "retake",
+  "reason": "Words present (रद्दी heard as रद्ती, ये क्या है), no tag spoken, length 2.11 s vs 1.8 s (+17%, ok), ellipsis pause 0.56 s found. Whole line is 3-5 dB below Tara's plain lines, but the second half is not whispered: 'ये क्या है?' (1.54-2.27 s) sits at -22.7 dB, the same level as plain l01 (-22.9), with voiced-frame share 0.65 against 0.30 on 'रद्दी'. The note says the whole line stays whispered and to retake if the whisper is lost. This rests on a level plus low-band voicing proxy, not on listening: the owner's ear should confirm before spending ~32 credits.",
+  "retake_text": "[whispers] रद्दी...? ये क्या है?",
+  "retake_take_no": 2
+ },
+ {
+  "line_id": "l04",
+  "lang": "hi",
+  "model": "eleven_v4",
+  "file": "content/proof/photoreal/voice/hi/l04.mp3",
+  "text": "[sharply] [low voice] Phone मत उठाना।",
+  "transcript": "फों मत्टाना",
+  "transcript_source": "whisper.cpp ggml-small (local)",
+  "duration_s": 2.08,
+  "speech_s": 1.765,
+  "target_s": 1.0,
+  "length_vs_target_pct": 76,
+  "lead_silence_s": 0.073,
+  "trail_silence_s": 0.241,
+  "pauses": [],
+  "pauses_at_minus35db": [
+   {
+    "start": 0.358,
+    "end": 0.709,
+    "dur": 0.35
+   }
+  ],
+  "mean_db": -25.7,
+  "mean_speech_db": -25.0,
+  "max_db": -1.6,
+  "lufs_i": -23.3,
+  "verdict": "ok",
+  "reason": "Transcript matches (Phone heard as फों, मत उठाना). No tag spoken, not shouted (spoken part -23.7 dB vs plain l02 -24.7). Speech span 1.77 s vs 1.0 s (+77%), but 0.07-0.36 s is an unrequested unvoiced breath followed by silence; words run 0.64-1.84 s = 1.20 s (+20%, at the limit). The cut absorbs it: trim the head to 0.64 s. If the editor cannot trim, the clip adds ~0.6 s to the shot, which the voice-led cut also absorbs. No retake.",
+  "retake_text": null,
+  "trim_in_s": 0.64
+ },
+ {
+  "line_id": "l05",
+  "lang": "hi",
+  "model": "eleven_v4",
+  "file": "content/proof/photoreal/voice/hi/l05.mp3",
+  "text": "[calm] [amused] Bag पसंद आया, तारा?",
+  "transcript": "बग पसन्द आया तारा",
+  "transcript_source": "whisper.cpp ggml-small (local)",
+  "duration_s": 2.56,
+  "speech_s": 2.168,
+  "target_s": 2.0,
+  "length_vs_target_pct": 8,
+  "lead_silence_s": 0.058,
+  "trail_silence_s": 0.334,
+  "pauses": [
+   {
+    "start": 1.55,
+    "end": 1.918,
+    "dur": 0.368
+   }
+  ],
+  "pauses_at_minus35db": [
+   {
+    "start": 1.539,
+    "end": 1.919,
+    "dur": 0.38
+   }
+  ],
+  "mean_db": -27.2,
+  "mean_speech_db": -26.5,
+  "max_db": -9.7,
+  "lufs_i": -26.6,
+  "verdict": "ok",
+  "reason": "Transcript matches including the English 'Bag' (बग पसन्द आया तारा). No tag spoken. Speech 2.17 s vs 2.0 s (+8%). A 0.37 s pause lands before 'तारा', as directed.",
+  "retake_text": null
+ },
+ {
+  "line_id": "l06",
+  "lang": "hi",
+  "model": "eleven_v4",
+  "file": "content/proof/photoreal/voice/hi/l06.mp3",
+  "text": "[cold] [curt] Wrong number. यहाँ कोई तारा—",
+  "transcript": "रों नमब़ यहाँ कोई तारा",
+  "transcript_source": "whisper.cpp ggml-small (local)",
+  "duration_s": 2.48,
+  "speech_s": 1.997,
+  "target_s": 2.0,
+  "length_vs_target_pct": 0,
+  "lead_silence_s": 0.209,
+  "trail_silence_s": 0.273,
+  "pauses": [
+   {
+    "start": 0.869,
+    "end": 1.253,
+    "dur": 0.384
+   }
+  ],
+  "pauses_at_minus35db": [
+   {
+    "start": 0.849,
+    "end": 1.255,
+    "dur": 0.406
+   }
+  ],
+  "mean_db": -21.8,
+  "mean_speech_db": -20.9,
+  "max_db": -4.3,
+  "lufs_i": -20.0,
+  "verdict": "ok",
+  "reason": "Transcript matches including 'Wrong number' (रों नमब़ यहाँ कोई तारा) and stops on 'तारा', nothing after the dash. Normal level (-20.9 dB, Tara's loudest line), voiced. Speech 2.00 s vs 2.0 s. 0.38 s pause after 'Wrong number.'.",
+  "retake_text": null
+ },
+ {
+  "line_id": "l07",
+  "lang": "hi",
+  "model": "eleven_v4",
+  "file": "content/proof/photoreal/voice/hi/l07.mp3",
+  "text": "[chuckles] [gently] निशा तो तुम आज बनी थी। [calm, certain] मैं तारा से बात कर रहा हूँ।",
+  "transcript": "निशा तो तुम आज बनी थी मैं तारा से बाट कर रहा हूं",
+  "transcript_source": "whisper.cpp ggml-small (local)",
+  "duration_s": 5.84,
+  "speech_s": 5.552,
+  "target_s": 4.5,
+  "length_vs_target_pct": 23,
+  "lead_silence_s": 0.03,
+  "trail_silence_s": 0.258,
+  "pauses": [
+   {
+    "start": 3.37,
+    "end": 3.886,
+    "dur": 0.516
+   }
+  ],
+  "pauses_at_minus35db": [
+   {
+    "start": 0.837,
+    "end": 1.167,
+    "dur": 0.33
+   },
+   {
+    "start": 3.357,
+    "end": 3.887,
+    "dur": 0.53
+   }
+  ],
+  "mean_db": -27.4,
+  "mean_speech_db": -27.2,
+  "max_db": -9.2,
+  "lufs_i": -26.5,
+  "verdict": "retake",
+  "reason": "Transcript matches (बाट for बात is ASR noise). No tag spoken. Chuckle present and small (two short pulses at 0.2-0.5 s, not a big laugh). Speech 5.55 s vs 4.5 s (+23%, +1.05 s): fails length, and the note says 'it has to fit 4.5 s' and to retake on overrun. Excess is the chuckle plus ~0.4 s of dead air before 'निशा' and a 0.52 s gap at the dropped [calm, certain] tag.",
+  "retake_text": "[chuckles] निशा तो तुम आज बनी थी। मैं तारा से बात कर रहा हूँ।",
+  "retake_take_no": 2
+ },
+ {
+  "line_id": "l08",
+  "lang": "hi",
+  "model": "eleven_v4",
+  "file": "content/proof/photoreal/voice/hi/l08.mp3",
+  "text": "[calm] अब अपने driver से पूछो... [quietly] [slowly, deliberate] आज रात वो किसके लिए गाड़ी चला रहा है।",
+  "transcript": "अब अबने द्रीवर से पुछो आज रात वो किस के लिए गाडी चला रहा है?",
+  "transcript_source": "whisper.cpp ggml-small (local)",
+  "duration_s": 6.32,
+  "speech_s": 6.016,
+  "target_s": 6.0,
+  "length_vs_target_pct": 0,
+  "lead_silence_s": 0.087,
+  "trail_silence_s": 0.217,
+  "pauses": [
+   {
+    "start": 2.01,
+    "end": 2.837,
+    "dur": 0.827
+   },
+   {
+    "start": 3.988,
+    "end": 4.329,
+    "dur": 0.341
+   }
+  ],
+  "pauses_at_minus35db": [
+   {
+    "start": 1.996,
+    "end": 2.837,
+    "dur": 0.841
+   },
+   {
+    "start": 3.981,
+    "end": 4.329,
+    "dur": 0.348
+   }
+  ],
+  "mean_db": -27.9,
+  "mean_speech_db": -27.7,
+  "max_db": -8.9,
+  "lufs_i": -27.9,
+  "verdict": "ok",
+  "reason": "Transcript complete including 'driver' (द्रीवर). No tag spoken. Speech 6.02 s vs 6.0 s. 0.83 s pause on the ellipsis, second 0.34 s pause inside the second half. Second half fully voiced (voiced share 0.84), so it passes the 'never whispered' rule. But [quietly] has no measurable level effect: second half -26.6 dB vs first half -26.0 dB (0.6 dB) and vs the caller's plain l05 -26.5 dB. Ear check: whether it sounds lower and slower.",
+  "retake_text": null
+ },
+ {
+  "line_id": "l09",
+  "lang": "hi",
+  "model": "eleven_v4",
+  "file": "content/proof/photoreal/voice/hi/l09.mp3",
+  "text": "[whispers] इमरान...?",
+  "transcript": "इम्रान",
+  "transcript_source": "whisper.cpp ggml-small (local)",
+  "duration_s": 1.36,
+  "speech_s": 0.705,
+  "target_s": 1.2,
+  "length_vs_target_pct": -41,
+  "lead_silence_s": 0.226,
+  "trail_silence_s": 0.428,
+  "pauses": [],
+  "pauses_at_minus35db": [],
+  "mean_db": -32.6,
+  "mean_speech_db": -29.8,
+  "max_db": -14.8,
+  "lufs_i": -28.9,
+  "verdict": "ok",
+  "reason": "Transcript is only the name (इम्रान), nothing added. Fully whispered (voiced share 0.00), -29.8 dB vs Tara's plain -22.9/-20.9. Length is short, not long: speech 0.71 s vs 1.2 s (-41%), clip 1.36 s. The 'hanging' is held on picture, so the cut absorbs it. The only fallback is the bare line, which risks a voiced read, so no retake.",
+  "retake_text": null
+ },
+ {
+  "line_id": "l10",
+  "lang": "hi",
+  "model": "eleven_v4",
+  "file": "content/proof/photoreal/voice/hi/l10.mp3",
+  "text": "[sighs] [weary] बोला था ना... मत उठाना।",
+  "transcript": "बोला ताना मत उताना",
+  "transcript_source": "whisper.cpp ggml-small (local)",
+  "duration_s": 3.52,
+  "speech_s": 3.084,
+  "target_s": 2.5,
+  "length_vs_target_pct": 23,
+  "lead_silence_s": 0.097,
+  "trail_silence_s": 0.339,
+  "pauses": [
+   {
+    "start": 2.039,
+    "end": 2.344,
+    "dur": 0.306
+   }
+  ],
+  "pauses_at_minus35db": [
+   {
+    "start": 0.66,
+    "end": 0.972,
+    "dur": 0.312
+   },
+   {
+    "start": 1.998,
+    "end": 2.348,
+    "dur": 0.35
+   }
+  ],
+  "mean_db": -28.5,
+  "mean_speech_db": -28.0,
+  "max_db": -5.3,
+  "lufs_i": -27.5,
+  "verdict": "ok",
+  "reason": "Transcript matches (बोला था ना heard as बोला ताना, मत उठाना). No tag spoken: the sigh is a 0.56 s unvoiced breath (voiced share 0.07), not a word. Speech 3.08 s vs 2.5 s (+23%, +0.58 s): over by 3 points, and the excess is all in the directed sigh and the ellipsis pause (0.31 s). Accepted as an emotional overrun: this is the last line of the scene, before the cut to black, so the cut absorbs it.",
+  "retake_text": null
+ },
+ {
+  "line_id": "l01",
+  "lang": "en",
+  "model": "eleven_v4",
+  "file": "content/proof/photoreal/voice/en/l01.mp3",
+  "text": "[laughs] [giddy] Forty lakh, Imran! [excited, fast] And he didn't suspect a thing.",
+  "transcript": "40 lakh Imran and he didn't suspect a thing.",
+  "transcript_source": "whisper.cpp ggml-small (local)",
+  "duration_s": 4.72,
+  "speech_s": 4.226,
+  "target_s": 3.5,
+  "length_vs_target_pct": 21,
+  "lead_silence_s": 0.203,
+  "trail_silence_s": 0.29,
+  "pauses": [],
+  "pauses_at_minus35db": [],
+  "mean_db": -23.2,
+  "mean_speech_db": -22.7,
+  "max_db": -3.3,
+  "lufs_i": -21.9,
+  "verdict": "retake",
+  "reason": "Transcript matches ('40 lakh Imran and he didn't suspect a thing'; 'lakh' recognised). No tag spoken, laugh present before the first word. Speech 4.23 s vs 3.5 s (+21%, +0.73 s): just over the limit. The note is 'as hi l01', and hi l01 retakes on overrun, so this one does too.",
+  "retake_text": "[laughs] Forty lakh, Imran! [excited] And he didn't suspect a thing.",
+  "retake_take_no": 2
+ },
+ {
+  "line_id": "l02",
+  "lang": "en",
+  "model": "eleven_v4",
+  "file": "content/proof/photoreal/voice/en/l02.mp3",
+  "text": "[deadpan] [tired] Count it first.",
+  "transcript": "Count it first.",
+  "transcript_source": "whisper.cpp ggml-small (local)",
+  "duration_s": 1.52,
+  "speech_s": 1.161,
+  "target_s": 1.2,
+  "length_vs_target_pct": -3,
+  "lead_silence_s": 0.118,
+  "trail_silence_s": 0.241,
+  "pauses": [],
+  "pauses_at_minus35db": [],
+  "mean_db": -27.5,
+  "mean_speech_db": -26.3,
+  "max_db": -9.4,
+  "lufs_i": -25.7,
+  "verdict": "ok",
+  "reason": "Transcript exact. No tag spoken. Speech 1.16 s vs 1.2 s.",
+  "retake_text": null
+ },
+ {
+  "line_id": "l03",
+  "lang": "en",
+  "model": "eleven_v4",
+  "file": "content/proof/photoreal/voice/en/l03.mp3",
+  "text": "[whispers] [stunned] Newspaper...? What is this?",
+  "transcript": "Newspaper? What is this?",
+  "transcript_source": "whisper.cpp ggml-small (local)",
+  "duration_s": 3.12,
+  "speech_s": 2.686,
+  "target_s": 1.8,
+  "length_vs_target_pct": 49,
+  "lead_silence_s": 0.295,
+  "trail_silence_s": 0.14,
+  "pauses": [
+   {
+    "start": 1.563,
+    "end": 2.058,
+    "dur": 0.494
+   }
+  ],
+  "pauses_at_minus35db": [
+   {
+    "start": 1.407,
+    "end": 2.111,
+    "dur": 0.704
+   }
+  ],
+  "mean_db": -29.4,
+  "mean_speech_db": -28.7,
+  "max_db": -10.4,
+  "lufs_i": -26.3,
+  "verdict": "retake",
+  "reason": "Transcript exact ('Newspaper? What is this?'). No tag spoken. Whispered (voiced share 0.23/0.38; -28.7 dB vs plain -22.7/-21.7). Ellipsis pause 0.49 s found. Speech 2.69 s vs 1.8 s (+49%, +0.89 s): 'Newspaper' alone takes ~1.26 s. Fails length; the overrun is more than a held beat.",
+  "retake_text": "[whispers] Newspaper...? What is this?",
+  "retake_take_no": 2
+ },
+ {
+  "line_id": "l04",
+  "lang": "en",
+  "model": "eleven_v4",
+  "file": "content/proof/photoreal/voice/en/l04.mp3",
+  "text": "[sharply] [low voice] Don't pick up.",
+  "transcript": "Don't pick up.",
+  "transcript_source": "whisper.cpp ggml-small (local)",
+  "duration_s": 1.92,
+  "speech_s": 1.579,
+  "target_s": 1.0,
+  "length_vs_target_pct": 58,
+  "lead_silence_s": 0.061,
+  "trail_silence_s": 0.28,
+  "pauses": [
+   {
+    "start": 0.386,
+    "end": 0.789,
+    "dur": 0.403
+   }
+  ],
+  "pauses_at_minus35db": [
+   {
+    "start": 0.346,
+    "end": 0.789,
+    "dur": 0.443
+   }
+  ],
+  "mean_db": -30.1,
+  "mean_speech_db": -29.3,
+  "max_db": -2.6,
+  "lufs_i": -26.9,
+  "verdict": "ok",
+  "reason": "Transcript exact ('Don't pick up.'). No tag spoken. Speech span 1.58 s vs 1.0 s (+58%), but 0.06-0.39 s is an unrequested unvoiced breath (whisper.cpp labels it '(sighs)') followed by 0.37 s of silence; words run 0.74-1.64 s = 0.90 s (-10%). The cut absorbs it: trim the head to 0.74 s. Not shouted (-29.3 dB).",
+  "retake_text": null,
+  "trim_in_s": 0.74
+ },
+ {
+  "line_id": "l05",
+  "lang": "en",
+  "model": "eleven_v4",
+  "file": "content/proof/photoreal/voice/en/l05.mp3",
+  "text": "[calm] [amused] Did you like the bag, Tara?",
+  "transcript": "Did you like the bag Tara?",
+  "transcript_source": "whisper.cpp ggml-small (local)",
+  "duration_s": 2.16,
+  "speech_s": 1.796,
+  "target_s": 2.0,
+  "length_vs_target_pct": -10,
+  "lead_silence_s": 0.093,
+  "trail_silence_s": 0.271,
+  "pauses": [],
+  "pauses_at_minus35db": [],
+  "mean_db": -25.3,
+  "mean_speech_db": -24.5,
+  "max_db": -8.7,
+  "lufs_i": -24.9,
+  "verdict": "ok",
+  "reason": "Transcript exact. No tag spoken. Speech 1.80 s vs 2.0 s (-10%). 'Tara' recognised as Tara; the dental t vs 'Terra' needs the ear.",
+  "retake_text": null
+ },
+ {
+  "line_id": "l06",
+  "lang": "en",
+  "model": "eleven_v4",
+  "file": "content/proof/photoreal/voice/en/l06.mp3",
+  "text": "[cold] [curt] Wrong number. There's no Tara—",
+  "transcript": "Wrong number. There's no Tara.",
+  "transcript_source": "whisper.cpp ggml-small (local)",
+  "duration_s": 2.32,
+  "speech_s": 1.786,
+  "target_s": 2.0,
+  "length_vs_target_pct": -11,
+  "lead_silence_s": 0.248,
+  "trail_silence_s": 0.285,
+  "pauses": [],
+  "pauses_at_minus35db": [],
+  "mean_db": -22.9,
+  "mean_speech_db": -21.7,
+  "max_db": -4.4,
+  "lufs_i": -21.4,
+  "verdict": "ok",
+  "reason": "Transcript exact, ends on 'Tara', nothing after the dash. Normal level (-21.7 dB), voiced. Speech 1.79 s vs 2.0 s.",
+  "retake_text": null
+ },
+ {
+  "line_id": "l07",
+  "lang": "en",
+  "model": "eleven_v4",
+  "file": "content/proof/photoreal/voice/en/l07.mp3",
+  "text": "[chuckles] [gently] Nisha is who you were today. [calm, certain] I am speaking to Tara.",
+  "transcript": "Nisha is who you were today. I'm speaking to Tara.",
+  "transcript_source": "whisper.cpp ggml-small (local)",
+  "duration_s": 5.52,
+  "speech_s": 5.111,
+  "target_s": 4.5,
+  "length_vs_target_pct": 14,
+  "lead_silence_s": 0.06,
+  "trail_silence_s": 0.349,
+  "pauses": [
+   {
+    "start": 0.938,
+    "end": 1.324,
+    "dur": 0.386
+   },
+   {
+    "start": 3.355,
+    "end": 3.874,
+    "dur": 0.519
+   }
+  ],
+  "pauses_at_minus35db": [
+   {
+    "start": 0.858,
+    "end": 1.326,
+    "dur": 0.468
+   },
+   {
+    "start": 3.295,
+    "end": 3.874,
+    "dur": 0.579
+   }
+  ],
+  "mean_db": -28.2,
+  "mean_speech_db": -27.9,
+  "max_db": -10.0,
+  "lufs_i": -27.2,
+  "verdict": "retake",
+  "reason": "Contraction: three ASR models (whisper small, small.en, base) all hear 'I'm speaking to Tara'. The script is 'I am', and the note says reject takes that contract. The envelope cannot settle it: the syllable before 'speaking' is 0.32 s. So an ASR normalising 'I am' to 'I'm' is possible: ear-check before spending ~62 credits. Length is fine (5.11 s vs 4.5 s, +14%). Chuckle present and small.",
+  "retake_text": "[chuckles] Nisha is who you were today. I am speaking to Tara.",
+  "retake_take_no": 2
+ },
+ {
+  "line_id": "l08",
+  "lang": "en",
+  "model": "eleven_v4",
+  "file": "content/proof/photoreal/voice/en/l08.mp3",
+  "text": "[calm] Now ask that driver of yours... [quietly] [slowly, deliberate] who he is driving for tonight.",
+  "transcript": "Now ask that driver of yours who he is driving for tonight.",
+  "transcript_source": "whisper.cpp ggml-small (local)",
+  "duration_s": 5.28,
+  "speech_s": 4.874,
+  "target_s": 6.0,
+  "length_vs_target_pct": -19,
+  "lead_silence_s": 0.13,
+  "trail_silence_s": 0.276,
+  "pauses": [
+   {
+    "start": 2.178,
+    "end": 2.843,
+    "dur": 0.665
+   }
+  ],
+  "pauses_at_minus35db": [
+   {
+    "start": 2.155,
+    "end": 2.865,
+    "dur": 0.71
+   }
+  ],
+  "mean_db": -28.2,
+  "mean_speech_db": -27.9,
+  "max_db": -10.8,
+  "lufs_i": -27.8,
+  "verdict": "ok",
+  "reason": "Transcript exact including 'who he is' (not 'who he's'). No tag spoken. Speech 4.87 s vs 6.0 s (-19%, inside 20%), clip 5.28 s; the writer predicted about 5 s. Timeline should use 4.87 s. Ellipsis pause 0.67 s. Second half fully voiced (0.80), but [quietly] gives no level drop (-27.0 vs -26.5 dB).",
+  "retake_text": null
+ },
+ {
+  "line_id": "l09",
+  "lang": "en",
+  "model": "eleven_v4",
+  "file": "content/proof/photoreal/voice/en/l09.mp3",
+  "text": "[whispers] Imran...?",
+  "transcript": "Imran.",
+  "transcript_source": "whisper.cpp ggml-small (local)",
+  "duration_s": 1.52,
+  "speech_s": 0.912,
+  "target_s": 1.2,
+  "length_vs_target_pct": -24,
+  "lead_silence_s": 0.218,
+  "trail_silence_s": 0.39,
+  "pauses": [],
+  "pauses_at_minus35db": [],
+  "mean_db": -30.5,
+  "mean_speech_db": -28.3,
+  "max_db": -13.0,
+  "lufs_i": -26.3,
+  "verdict": "ok",
+  "reason": "Transcript is only the name ('Imran'). Fully whispered (voiced share 0.03), -28.3 dB vs plain -22.7/-21.7. Speech 0.91 s vs 1.2 s (-24%), clip 1.52 s: short, not long, and held on picture. The bare-line fallback risks a voiced read, so no retake.",
+  "retake_text": null
+ },
+ {
+  "line_id": "l10",
+  "lang": "en",
+  "model": "eleven_v4",
+  "file": "content/proof/photoreal/voice/en/l10.mp3",
+  "text": "[sighs] [weary] I told you... don't pick up.",
+  "transcript": "I told you, don't pick up.",
+  "transcript_source": "whisper.cpp ggml-small (local)",
+  "duration_s": 3.84,
+  "speech_s": 3.447,
+  "target_s": 2.5,
+  "length_vs_target_pct": 38,
+  "lead_silence_s": 0.088,
+  "trail_silence_s": 0.305,
+  "pauses": [
+   {
+    "start": 2.098,
+    "end": 2.535,
+    "dur": 0.438
+   }
+  ],
+  "pauses_at_minus35db": [
+   {
+    "start": 0.55,
+    "end": 0.907,
+    "dur": 0.357
+   },
+   {
+    "start": 2.06,
+    "end": 2.536,
+    "dur": 0.476
+   }
+  ],
+  "mean_db": -33.2,
+  "mean_speech_db": -32.8,
+  "max_db": -11.9,
+  "lufs_i": -31.8,
+  "verdict": "retake",
+  "reason": "Transcript matches ('I told you, don't pick up.'). No tag spoken; the sigh is an unvoiced breath (whisper.cpp tags '*sigh*'). Speech 3.45 s vs 2.5 s (+38%, +0.95 s): the sigh plus 0.36 s of dead air plus a 0.44 s ellipsis pause. Over the 0.6 s an emotional overrun may absorb. Words alone are ~2.6 s. Also the quietest take in the set (-32.8 dB, 4 dB under hi l10); mastering can lift that, so it is not a reason on its own.",
+  "retake_text": "[sighs] I told you... don't pick up.",
+  "retake_take_no": 2
+ },
+ {
+  "line_id": "l01",
+  "lang": "hi",
+  "model": "eleven_v3",
+  "file": "content/proof/photoreal/voice/hi/l01.v3.mp3",
+  "text": "[laughs] [giddy] चालीस लाख, इमरान! [excited, fast] और उसे doubt तक नहीं हुआ।",
+  "transcript": "चालिस लाक हिम्रान और से दाउट तत नहीं हूँ.",
+  "transcript_source": "whisper.cpp ggml-small (local)",
+  "duration_s": 3.68,
+  "speech_s": 3.498,
+  "target_s": 3.5,
+  "length_vs_target_pct": 0,
+  "lead_silence_s": 0.182,
+  "trail_silence_s": 0.0,
+  "pauses": [
+   {
+    "start": 1.632,
+    "end": 2.218,
+    "dur": 0.586
+   }
+  ],
+  "pauses_at_minus35db": [
+   {
+    "start": 1.623,
+    "end": 2.226,
+    "dur": 0.603
+   }
+  ],
+  "mean_db": -13.0,
+  "mean_speech_db": -12.8,
+  "max_db": -0.4,
+  "lufs_i": -11.8,
+  "verdict": "ok",
+  "reason": "A/B comparison take, not for the cut unless D-009 flips. Transcript matches (से/तत for उसे/तक is ASR noise; दाउट for doubt). No tag spoken. Speech 3.50 s vs 3.5 s. But the [laughs] tag appears ignored: speech starts at 0.18 s at full level straight into 'चालीस', with no non-speech segment before it. 10 dB hotter than v4 (mean -13.0 dB, peak -0.4 dBFS). Trailing silence 0.00 s: the last word runs to the end of the file, so the tail may be clipped.",
+  "retake_text": null,
+  "role": "d009_ab_comparison"
+ },
+ {
+  "line_id": "l08",
+  "lang": "hi",
+  "model": "eleven_v3",
+  "file": "content/proof/photoreal/voice/hi/l08.v3.mp3",
+  "text": "[calm] अब अपने driver से पूछो... [quietly] [slowly, deliberate] आज रात वो किसके लिए गाड़ी चला रहा है।",
+  "transcript": "अब अबने द्रीवर से पुछो आज रात वो किस के लिए गाडी चला रा है?",
+  "transcript_source": "whisper.cpp ggml-small (local)",
+  "duration_s": 7.28,
+  "speech_s": 6.385,
+  "target_s": 6.0,
+  "length_vs_target_pct": 6,
+  "lead_silence_s": 0.089,
+  "trail_silence_s": 0.806,
+  "pauses": [
+   {
+    "start": 2.0,
+    "end": 3.3,
+    "dur": 1.299
+   },
+   {
+    "start": 4.037,
+    "end": 4.653,
+    "dur": 0.616
+   }
+  ],
+  "pauses_at_minus35db": [
+   {
+    "start": 1.99,
+    "end": 3.305,
+    "dur": 1.316
+   },
+   {
+    "start": 4.031,
+    "end": 4.656,
+    "dur": 0.625
+   }
+  ],
+  "mean_db": -24.7,
+  "mean_speech_db": -24.1,
+  "max_db": -6.7,
+  "lufs_i": -23.1,
+  "verdict": "ok",
+  "reason": "A/B comparison take. Transcript complete ('रा' for रहा is ASR noise). No tag spoken. Speech 6.39 s vs 6.0 s (+6%), clip 7.28 s with 0.81 s trailing silence. Ellipsis pause 1.30 s. Second half fully voiced (0.82) and 1.7 dB below the first half.",
+  "retake_text": null,
+  "role": "d009_ab_comparison"
+ },
+ {
+  "line_id": "l10",
+  "lang": "hi",
+  "model": "eleven_v3",
+  "file": "content/proof/photoreal/voice/hi/l10.v3.mp3",
+  "text": "[sighs] [weary] बोला था ना... मत उठाना।",
+  "transcript": "बोला ताना मत उताना",
+  "transcript_source": "whisper.cpp ggml-small (local)",
+  "duration_s": 2.96,
+  "speech_s": 2.838,
+  "target_s": 2.5,
+  "length_vs_target_pct": 14,
+  "lead_silence_s": 0.073,
+  "trail_silence_s": 0.049,
+  "pauses": [
+   {
+    "start": 1.538,
+    "end": 2.071,
+    "dur": 0.533
+   }
+  ],
+  "pauses_at_minus35db": [
+   {
+    "start": 1.458,
+    "end": 2.082,
+    "dur": 0.625
+   }
+  ],
+  "mean_db": -24.8,
+  "mean_speech_db": -24.6,
+  "max_db": -3.4,
+  "lufs_i": -24.3,
+  "verdict": "ok",
+  "reason": "A/B comparison take. Transcript identical to v4 (बोला ताना मत उताना). No tag spoken; the sigh is a 0.53 s unvoiced breath (voiced share 0.00). Speech 2.84 s vs 2.5 s (+14%). Words louder than v4 (-20.4 vs -24.8 dB on 'बोला था ना'); whether that reads as menacing needs the ear. Trailing silence 0.05 s.",
+  "retake_text": null,
+  "role": "d009_ab_comparison"
+ }
+]

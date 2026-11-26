@@ -1,0 +1,142 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 0
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,320"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 320
+			},
+			"text": " In"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,320",
+				"to": "00:00:00,450"
+			},
+			"offsets": {
+				"from": 320,
+				"to": 450
+			},
+			"text": " two"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,450",
+				"to": "00:00:01,110"
+			},
+			"offsets": {
+				"from": 450,
+				"to": 1110
+			},
+			"text": " years,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,110",
+				"to": "00:00:01,240"
+			},
+			"offsets": {
+				"from": 1110,
+				"to": 1240
+			},
+			"text": " it"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,240",
+				"to": "00:00:01,450"
+			},
+			"offsets": {
+				"from": 1240,
+				"to": 1450
+			},
+			"text": " has"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,450",
+				"to": "00:00:01,800"
+			},
+			"offsets": {
+				"from": 1450,
+				"to": 1800
+			},
+			"text": " never"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,800",
+				"to": "00:00:02,080"
+			},
+			"offsets": {
+				"from": 1800,
+				"to": 2080
+			},
+			"text": " left"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,080",
+				"to": "00:00:02,290"
+			},
+			"offsets": {
+				"from": 2080,
+				"to": 2290
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,290",
+				"to": "00:00:03,120"
+			},
+			"offsets": {
+				"from": 2290,
+				"to": 3120
+			},
+			"text": " holster."
+		}
+	]
+}

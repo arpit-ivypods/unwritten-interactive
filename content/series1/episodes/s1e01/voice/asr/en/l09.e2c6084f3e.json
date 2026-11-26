@@ -1,0 +1,153 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,030"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 30
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,030",
+				"to": "00:00:00,690"
+			},
+			"offsets": {
+				"from": 30,
+				"to": 690
+			},
+			"text": " I'll"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,690",
+				"to": "00:00:00,930"
+			},
+			"offsets": {
+				"from": 690,
+				"to": 930
+			},
+			"text": " phone"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,930",
+				"to": "00:00:01,240"
+			},
+			"offsets": {
+				"from": 930,
+				"to": 1240
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,240",
+				"to": "00:00:01,750"
+			},
+			"offsets": {
+				"from": 1240,
+				"to": 1750
+			},
+			"text": " bride"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,750",
+				"to": "00:00:01,960"
+			},
+			"offsets": {
+				"from": 1750,
+				"to": 1960
+			},
+			"text": " at"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,960",
+				"to": "00:00:02,500"
+			},
+			"offsets": {
+				"from": 1960,
+				"to": 2500
+			},
+			"text": " two,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,500",
+				"to": "00:00:02,670"
+			},
+			"offsets": {
+				"from": 2500,
+				"to": 2670
+			},
+			"text": " car"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,670",
+				"to": "00:00:02,960"
+			},
+			"offsets": {
+				"from": 2670,
+				"to": 2960
+			},
+			"text": " at"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,960",
+				"to": "00:00:03,150"
+			},
+			"offsets": {
+				"from": 2960,
+				"to": 3150
+			},
+			"text": " three"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,150",
+				"to": "00:00:03,600"
+			},
+			"offsets": {
+				"from": 3150,
+				"to": 3600
+			},
+			"text": " below."
+		}
+	]
+}

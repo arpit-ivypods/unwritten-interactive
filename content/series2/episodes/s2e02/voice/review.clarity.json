@@ -1,0 +1,1243 @@
+{
+ "schema": "voice-review-clarity/1",
+ "episode": "s2e02",
+ "reviewer": "S10 voice director (directed these takes; did not generate them)",
+ "date": "26 Nov 2026",
+ "rule": "D-025 clarity re-voice, judged on D-022 and voice/takes.clarity.<lang>.json notes",
+ "method": "Local only. Transcripts: whisper.cpp whisper-cli ggml-small, greedy, no prompt, script not given: -l <lang>; Hindi takes also -l en (transcript_latin_pass, shows whether the English words were heard); every take also -l auto (language id). Doubtful words: each speech segment cut (+-0.08 s) and transcribed alone with ggml-small, plus ggml-base as a second model (ggml-large-v3-q5_0 is not in ~/.whisper-models, so it was not used). Measures: copies of the D-022 round-3 meas.py and seg.py, unchanged: speech frames are 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); voiced_ratio is the share of speech frames with normalised autocorrelation (8 kHz, 70-450 Hz lags) of 0.6 or more; segments split at gaps of 150 ms or more. D-022 test on voice-wanted lines: whole take and every segment of 0.5 s or more that carries script words at 0.6 or more. Segments that hold only a tagged sigh or laugh are not word-carrying. Nobody listened.",
+ "counts": {
+  "takes": 24,
+  "accept": 23,
+  "retake": 1
+ },
+ "edit_pick": "The edit reads voice/manifest.jsonl and voice/review.json, not this file. Each clarity row's manifest take was renumbered to the line's next take, and a matching row (verdict ok or retake, model eleven_v4) was appended to review.json, so build_timeline.py cuts in the .c1 take. A retake verdict keeps the .c1 take in the cut until a .c2 exists.",
+ "takes": [
+  {
+   "line_id": "l05",
+   "lang": "hi",
+   "speaker": "nandini",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e02/voice/hi/l05.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[flatly] पुष्पा जी, आपको पता था।",
+   "verdict": "accept",
+   "reasons": "Words heard: 'पुश्पा जी आपको पता था।'; Latin pass 'Pushpa ji, you knew.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.65 whole take; lowest word-carrying segment of 0.5 s or more 0.61. No tag word in either transcript. Language: auto-id hi (1.00). No cut-off: 0.08 s before the first speech frame, 0.355 s of silence after the last; peak -8.1 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "पुश्पा जी आपको पता था।",
+   "transcript_latin_pass": "Pushpa ji, you knew.",
+   "transcript_auto": "पुश्पा जी आपको पता था।",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.995,
+   "voiced_ratio": 0.65,
+   "duration": 2.4,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -23.0,
+   "ff_max_db": -8.1,
+   "lead_s": 0.08,
+   "trail_s": 0.355,
+   "flatness": 0.056,
+   "centroid_hz": 2325,
+   "median_hz": 190,
+   "segments": [
+    {
+     "t": [
+      0.08,
+      0.92
+     ],
+     "rms_db": -22.4,
+     "voiced_ratio": 0.61,
+     "longest_unvoiced_s": 0.2,
+     "median_hz": 211
+    },
+    {
+     "t": [
+      1.14,
+      2.06
+     ],
+     "rms_db": -24.4,
+     "voiced_ratio": 0.7,
+     "longest_unvoiced_s": 0.08,
+     "median_hz": 167
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l09",
+   "lang": "hi",
+   "speaker": "pushpa",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e02/voice/hi/l09.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[sighs] इसलिए ना department को बताया, ना भैयाजी को, कि talkies वाला Inspector नक़ली है।",
+   "verdict": "accept",
+   "reasons": "Words heard: 'इस्लिये ना दिपार्ट्मेंट को बताया ना भहीया जी को कि तोकीज वाला इंस्पेक्तर नक्ली है'; Latin pass '(sighs) (speaks in foreign language)'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.79 whole take; lowest word-carrying segment of 0.5 s or more 0.86. Segment 0.08-0.64 s (0.0) is the [sighs] alone (cut alone: 'अग' / '(sighs)'), no script words. No tag word in either transcript. Language: auto-id hi (0.99). No cut-off: 0.08 s before the first speech frame, 0.315 s of silence after the last; peak -3.7 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "इस्लिये ना दिपार्ट्मेंट को बताया ना भहीया जी को कि तोकीज वाला इंस्पेक्तर नक्ली है",
+   "transcript_latin_pass": "(sighs) (speaks in foreign language)",
+   "transcript_auto": "इस्लिये ना दिपार्ट्मेंट को बताया ना भहीया जी को कि तोकीज वाला इंस्पेक्तर नक्ली है",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.985,
+   "voiced_ratio": 0.79,
+   "duration": 7.2,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [
+    [
+     0.08,
+     0.64,
+     0.0
+    ]
+   ],
+   "speech_rms_db": -23.7,
+   "ff_max_db": -3.7,
+   "lead_s": 0.08,
+   "trail_s": 0.315,
+   "flatness": 0.042,
+   "centroid_hz": 2176,
+   "median_hz": 182,
+   "segments": [
+    {
+     "t": [
+      0.08,
+      0.64
+     ],
+     "rms_db": -41.0,
+     "voiced_ratio": 0.0,
+     "longest_unvoiced_s": 0.56,
+     "median_hz": null
+    },
+    {
+     "t": [
+      1.08,
+      3.12
+     ],
+     "rms_db": -22.4,
+     "voiced_ratio": 0.88,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 216
+    },
+    {
+     "t": [
+      3.3,
+      4.2
+     ],
+     "rms_db": -25.6,
+     "voiced_ratio": 0.9,
+     "longest_unvoiced_s": 0.08,
+     "median_hz": 151
+    },
+    {
+     "t": [
+      4.7,
+      6.9
+     ],
+     "rms_db": -23.9,
+     "voiced_ratio": 0.86,
+     "longest_unvoiced_s": 0.12,
+     "median_hz": 182
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l12",
+   "lang": "hi",
+   "speaker": "nirala",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e02/voice/hi/l12.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] चोरी की complaint यहीं दर्ज है। वही cycle पड़ोसी के पास मिली।",
+   "verdict": "accept",
+   "reasons": "Words heard: 'चोरी की कमप्लेंट यही दरज है। वही साएकल पडोसी के पास मिली।'; Latin pass 'The complaint of theft is here. The same cycle was found near the neighbour.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.85 whole take; lowest word-carrying segment of 0.5 s or more 0.84. No tag word in either transcript. Language: auto-id hi (0.99). No cut-off: 0.08 s before the first speech frame, 0.28 s of silence after the last; peak -1.3 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "चोरी की कमप्लेंट यही दरज है। वही साएकल पडोसी के पास मिली।",
+   "transcript_latin_pass": "The complaint of theft is here. The same cycle was found near the neighbour.",
+   "transcript_auto": "चोरी की कमप्लेंट यही दरज है। वही साएकल पडोसी के पास मिली।",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.992,
+   "voiced_ratio": 0.85,
+   "duration": 4.48,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -17.1,
+   "ff_max_db": -1.3,
+   "lead_s": 0.08,
+   "trail_s": 0.28,
+   "flatness": 0.029,
+   "centroid_hz": 1950,
+   "median_hz": 145,
+   "segments": [
+    {
+     "t": [
+      0.08,
+      1.86
+     ],
+     "rms_db": -16.5,
+     "voiced_ratio": 0.84,
+     "longest_unvoiced_s": 0.1,
+     "median_hz": 143
+    },
+    {
+     "t": [
+      2.36,
+      4.18
+     ],
+     "rms_db": -18.1,
+     "voiced_ratio": 0.85,
+     "longest_unvoiced_s": 0.08,
+     "median_hz": 148
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l14",
+   "lang": "hi",
+   "speaker": "nandini",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e02/voice/hi/l14.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] दस minute में फ़ैसला।",
+   "verdict": "accept",
+   "reasons": "Words heard: 'दस मिनट में फैस्ला'; Latin pass '10-Minute Me Faisalah'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.65 whole take; lowest word-carrying segment of 0.5 s or more 0.73. No tag word in either transcript. Language: auto-id hi (0.91). No cut-off: 0.11 s before the first speech frame, 0.217 s of silence after the last; peak -1.3 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "दस मिनट में फैस्ला",
+   "transcript_latin_pass": "10-Minute Me Faisalah",
+   "transcript_auto": "दस मिनट में फैस्ला",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.909,
+   "voiced_ratio": 0.65,
+   "duration": 1.92,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -21.0,
+   "ff_max_db": -1.3,
+   "lead_s": 0.11,
+   "trail_s": 0.217,
+   "flatness": 0.062,
+   "centroid_hz": 2276,
+   "median_hz": 195,
+   "segments": [
+    {
+     "t": [
+      0.12,
+      1.68
+     ],
+     "rms_db": -20.6,
+     "voiced_ratio": 0.73,
+     "longest_unvoiced_s": 0.16,
+     "median_hz": 195
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l17",
+   "lang": "hi",
+   "speaker": "bhaiyaji",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e02/voice/hi/l17.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] हमारी चौकी, हमारे Inspector साहब। [laughs] त्रिपाठी जी को जितना देते हैं, उससे सस्ते भी, मीठे भी।",
+   "verdict": "accept",
+   "reasons": "Words heard: 'अमारी च्योकी हमारे अन्स्पक्तर साभद त्रिपार्ठी जी को जितना देते हैं उस्से सस्ते भी मीते भी'; Latin pass 'Our Chalky, our Inspector Sahab. Tripathi Ji ko jitna dete hain, usse saste bhi, meethe bhi.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.8 whole take; lowest word-carrying segment of 0.5 s or more 0.81. No tag word in either transcript. Language: auto-id hi (0.98). No cut-off: 0.07 s before the first speech frame, 0.296 s of silence after the last; peak -1.7 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "अमारी च्योकी हमारे अन्स्पक्तर साभद त्रिपार्ठी जी को जितना देते हैं उस्से सस्ते भी मीते भी",
+   "transcript_latin_pass": "Our Chalky, our Inspector Sahab. Tripathi Ji ko jitna dete hain, usse saste bhi, meethe bhi.",
+   "transcript_auto": "अमारी च्योकी हमारे अन्स्पक्तर साभद त्रिपार्ठी जी को जितना देते हैं उस्से सस्ते भी मीते भी",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.984,
+   "voiced_ratio": 0.8,
+   "duration": 8.24,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -19.1,
+   "ff_max_db": -1.7,
+   "lead_s": 0.07,
+   "trail_s": 0.296,
+   "flatness": 0.043,
+   "centroid_hz": 1707,
+   "median_hz": 121,
+   "segments": [
+    {
+     "t": [
+      0.08,
+      7.94
+     ],
+     "rms_db": -19.2,
+     "voiced_ratio": 0.81,
+     "longest_unvoiced_s": 0.42,
+     "median_hz": 121
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l20",
+   "lang": "hi",
+   "speaker": "nirala",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e02/voice/hi/l20.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] तारीख़, रक़म, हर note का number...",
+   "verdict": "accept",
+   "reasons": "Words heard: 'तारीख, रकम, हर नोट का नंबर'; Latin pass 'Tareekh, Rakam, Har not ka number.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.84 whole take; lowest word-carrying segment of 0.5 s or more 0.77. No tag word in either transcript. Language: auto-id hi (0.79). No cut-off: 0.08 s before the first speech frame, 0.334 s of silence after the last; peak -1.2 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "तारीख, रकम, हर नोट का नंबर.",
+   "transcript_latin_pass": "Tareekh, Rakam, Har not ka number.",
+   "transcript_auto": "तारीख, रकम, हर नोट का नंबर.",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.786,
+   "voiced_ratio": 0.84,
+   "duration": 3.6,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -17.9,
+   "ff_max_db": -1.2,
+   "lead_s": 0.08,
+   "trail_s": 0.334,
+   "flatness": 0.022,
+   "centroid_hz": 1610,
+   "median_hz": 136,
+   "segments": [
+    {
+     "t": [
+      0.08,
+      0.7
+     ],
+     "rms_db": -16.9,
+     "voiced_ratio": 0.77,
+     "longest_unvoiced_s": 0.08,
+     "median_hz": 136
+    },
+    {
+     "t": [
+      1.06,
+      1.64
+     ],
+     "rms_db": -18.9,
+     "voiced_ratio": 0.93,
+     "longest_unvoiced_s": 0.04,
+     "median_hz": 129
+    },
+    {
+     "t": [
+      2.04,
+      3.16
+     ],
+     "rms_db": -18.2,
+     "voiced_ratio": 0.84,
+     "longest_unvoiced_s": 0.08,
+     "median_hz": 118
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l24",
+   "lang": "hi",
+   "speaker": "nandini",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e02/voice/hi/l24.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[flatly] चौबीस लिफ़ाफ़े।",
+   "verdict": "accept",
+   "reasons": "Words heard: 'चाँ बीस लिखा फेर'; Latin pass 'Chawbi slifafi.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.61 whole take; lowest word-carrying segment of 0.5 s or more 0.62. No tag word in either transcript. Language: auto-id says en (0.61), but the forced -l hi transcript is the script in hi and the auto text is the same words in another script ('Chawbi slifafi.'): accent, not wrong language. No cut-off: 0.12 s before the first speech frame, 0.19 s of silence after the last; peak -5.6 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "चाँ बीस लिखा फेर",
+   "transcript_latin_pass": "Chawbi slifafi.",
+   "transcript_auto": "Chawbi slifafi.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.609,
+   "voiced_ratio": 0.61,
+   "duration": 1.52,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -21.7,
+   "ff_max_db": -5.6,
+   "lead_s": 0.12,
+   "trail_s": 0.19,
+   "flatness": 0.05,
+   "centroid_hz": 2132,
+   "median_hz": 170,
+   "segments": [
+    {
+     "t": [
+      0.12,
+      1.32
+     ],
+     "rms_db": -21.7,
+     "voiced_ratio": 0.62,
+     "longest_unvoiced_s": 0.14,
+     "median_hz": 170
+    }
+   ],
+   "whisper_wanted": false,
+   "ear_check": "'लिफ़ाफ़े' heard as 'लिखा फेर'; Latin pass 'slifafi'."
+  },
+  {
+   "line_id": "l31",
+   "lang": "hi",
+   "speaker": "tripathi",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e02/voice/hi/l31.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] Talkies वाले का arrest हो गया?",
+   "verdict": "accept",
+   "reasons": "Words heard: 'तोकीज वाले का रेस्थ हो गया?'; Latin pass 'The talkies man got arrested?'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.7 whole take; lowest word-carrying segment of 0.5 s or more 0.69. No tag word in either transcript. Language: auto-id hi (0.93). No cut-off: 0.12 s before the first speech frame, 0.236 s of silence after the last; peak -6.6 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "तोकीज वाले का रेस्थ हो गया?",
+   "transcript_latin_pass": "The talkies man got arrested?",
+   "transcript_auto": "तोकीज वाले का रेस्थ हो गया?",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.934,
+   "voiced_ratio": 0.7,
+   "duration": 2.16,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -24.6,
+   "ff_max_db": -6.6,
+   "lead_s": 0.12,
+   "trail_s": 0.236,
+   "flatness": 0.043,
+   "centroid_hz": 1910,
+   "median_hz": 131,
+   "segments": [
+    {
+     "t": [
+      0.12,
+      1.94
+     ],
+     "rms_db": -25.1,
+     "voiced_ratio": 0.69,
+     "longest_unvoiced_s": 0.14,
+     "median_hz": 131
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l35",
+   "lang": "hi",
+   "speaker": "nirala",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e02/voice/hi/l35.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] ये पैसे सुलाने के हैं, madam। Files जाग रही हैं।",
+   "verdict": "accept",
+   "reasons": "Words heard: 'ये पैसे सुलाने के है मैंडम फािल्ज जाग रही हैं'; Latin pass 'These money are to be fixed, madam. The files are being woken up.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.85 whole take; lowest word-carrying segment of 0.5 s or more 0.84. No tag word in either transcript. Language: auto-id hi (0.95). No cut-off: 0.13 s before the first speech frame, 0.297 s of silence after the last; peak -4.7 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "ये पैसे सुलाने के है मैंडम फािल्ज जाग रही हैं",
+   "transcript_latin_pass": "These money are to be fixed, madam. The files are being woken up.",
+   "transcript_auto": "ये पैसे सुलाने के है मैंडम फािल्ज जाग रही हैं",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.948,
+   "voiced_ratio": 0.85,
+   "duration": 3.84,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -20.9,
+   "ff_max_db": -4.7,
+   "lead_s": 0.13,
+   "trail_s": 0.297,
+   "flatness": 0.038,
+   "centroid_hz": 1838,
+   "median_hz": 123,
+   "segments": [
+    {
+     "t": [
+      0.14,
+      1.9
+     ],
+     "rms_db": -20.5,
+     "voiced_ratio": 0.88,
+     "longest_unvoiced_s": 0.1,
+     "median_hz": 127
+    },
+    {
+     "t": [
+      2.42,
+      3.52
+     ],
+     "rms_db": -21.7,
+     "voiced_ratio": 0.84,
+     "longest_unvoiced_s": 0.14,
+     "median_hz": 119
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l36",
+   "lang": "hi",
+   "speaker": "nirala",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e02/voice/hi/l36.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] Cycle, complaint वाले को लौटाई जाती है।",
+   "verdict": "accept",
+   "reasons": "Words heard: 'शाएकल कमप्लेंट वाले को लोटाई जाती है'; Latin pass 'cycle complaint wale ko lautai jaati hai.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.83 whole take; lowest word-carrying segment of 0.5 s or more 0.81. No tag word in either transcript. Language: auto-id hi (0.97). No cut-off: 0.11 s before the first speech frame, 0.244 s of silence after the last; peak -0.9 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "शाएकल कमप्लेंट वाले को लोटाई जाती है",
+   "transcript_latin_pass": "cycle complaint wale ko lautai jaati hai.",
+   "transcript_auto": "शाएकल कमप्लेंट वाले को लोटाई जाती है",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.971,
+   "voiced_ratio": 0.83,
+   "duration": 3.36,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -17.7,
+   "ff_max_db": -0.9,
+   "lead_s": 0.11,
+   "trail_s": 0.244,
+   "flatness": 0.025,
+   "centroid_hz": 1864,
+   "median_hz": 127,
+   "segments": [
+    {
+     "t": [
+      0.26,
+      0.78
+     ],
+     "rms_db": -18.2,
+     "voiced_ratio": 0.81,
+     "longest_unvoiced_s": 0.04,
+     "median_hz": 127
+    },
+    {
+     "t": [
+      1.2,
+      3.04
+     ],
+     "rms_db": -17.4,
+     "voiced_ratio": 0.91,
+     "longest_unvoiced_s": 0.04,
+     "median_hz": 127
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l37",
+   "lang": "hi",
+   "speaker": "nirala",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e02/voice/hi/l37.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] आप दोनों गवाह हैं।",
+   "verdict": "accept",
+   "reasons": "Words heard: 'आप दूनो गवा है'; Latin pass 'You are both witnesses.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.89 whole take; lowest word-carrying segment of 0.5 s or more 0.89. No tag word in either transcript. Language: auto-id hi (0.93). No cut-off: 0.11 s before the first speech frame, 0.42 s of silence after the last; peak -1.9 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "आप दूनो गवा है",
+   "transcript_latin_pass": "You are both witnesses.",
+   "transcript_auto": "आप दूनो गवा है",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.932,
+   "voiced_ratio": 0.89,
+   "duration": 2.0,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -18.0,
+   "ff_max_db": -1.9,
+   "lead_s": 0.11,
+   "trail_s": 0.42,
+   "flatness": 0.019,
+   "centroid_hz": 1505,
+   "median_hz": 115,
+   "segments": [
+    {
+     "t": [
+      0.12,
+      1.52
+     ],
+     "rms_db": -18.0,
+     "voiced_ratio": 0.89,
+     "longest_unvoiced_s": 0.04,
+     "median_hz": 115
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l02",
+   "lang": "en",
+   "speaker": "nirala",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e02/voice/en/l02.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] But one does not leave a thana without charge handover. Every file handed over, in writing.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'But one does not leave a thana without charge handover. Every file handed over in writing'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.89 whole take; lowest word-carrying segment of 0.5 s or more 0.84. No tag word in either transcript. Language: auto-id en (1.00). No cut-off: 0.05 s before the first speech frame, 0.219 s of silence after the last; peak -1.1 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "But one does not leave a thana without charge handover. Every file handed over in writing.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "But one does not leave a thana without charge handover. Every file handed over in writing.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.999,
+   "voiced_ratio": 0.89,
+   "duration": 5.84,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -17.8,
+   "ff_max_db": -1.1,
+   "lead_s": 0.05,
+   "trail_s": 0.219,
+   "flatness": 0.026,
+   "centroid_hz": 1648,
+   "median_hz": 136,
+   "segments": [
+    {
+     "t": [
+      0.06,
+      2.9
+     ],
+     "rms_db": -18.4,
+     "voiced_ratio": 0.87,
+     "longest_unvoiced_s": 0.12,
+     "median_hz": 129
+    },
+    {
+     "t": [
+      3.38,
+      4.72
+     ],
+     "rms_db": -16.2,
+     "voiced_ratio": 0.94,
+     "longest_unvoiced_s": 0.04,
+     "median_hz": 170
+    },
+    {
+     "t": [
+      4.98,
+      5.62
+     ],
+     "rms_db": -20.7,
+     "voiced_ratio": 0.84,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 112
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l05",
+   "lang": "en",
+   "speaker": "nandini",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e02/voice/en/l05.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[flatly] Pushpa ji, you knew.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'Pushpa ji, you knew'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.77 whole take; lowest word-carrying segment of 0.5 s or more 0.6. No tag word in either transcript. Language: auto-id says hi (0.40), but the forced -l en transcript is the script in en and the auto text is the same words in another script ('पुश्पा जी यू नु'): accent, not wrong language. No cut-off: 0.0 s before the first speech frame, 0.291 s of silence after the last; peak -7.9 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "Pushpa ji, you knew.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "पुश्पा जी यू नु",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.404,
+   "voiced_ratio": 0.77,
+   "duration": 2.0,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -21.8,
+   "ff_max_db": -7.9,
+   "lead_s": 0.0,
+   "trail_s": 0.291,
+   "flatness": 0.039,
+   "centroid_hz": 2115,
+   "median_hz": 170,
+   "segments": [
+    {
+     "t": [
+      0.0,
+      0.94
+     ],
+     "rms_db": -22.7,
+     "voiced_ratio": 0.6,
+     "longest_unvoiced_s": 0.2,
+     "median_hz": 203
+    },
+    {
+     "t": [
+      1.14,
+      1.72
+     ],
+     "rms_db": -21.1,
+     "voiced_ratio": 1.0,
+     "longest_unvoiced_s": 0.0,
+     "median_hz": 163
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l09",
+   "lang": "en",
+   "speaker": "pushpa",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e02/voice/en/l09.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[sighs] So he never told the department, or Bhaiyaji, that the talkies Inspector is fake.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'So he never told the department or bhaiyaji that the talkies inspector is fake'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.79 whole take; lowest word-carrying segment of 0.5 s or more 0.85. No tag word in either transcript. Language: auto-id en (0.80). No cut-off: 0.09 s before the first speech frame, 0.122 s of silence after the last; peak -1.4 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "So he never told the department or bhaiyaji that the talkies inspector is fake.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "So he never told the department or bhaiyaji that the talkies inspector is fake.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.801,
+   "voiced_ratio": 0.79,
+   "duration": 7.04,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -21.9,
+   "ff_max_db": -1.4,
+   "lead_s": 0.09,
+   "trail_s": 0.122,
+   "flatness": 0.045,
+   "centroid_hz": 2014,
+   "median_hz": 180,
+   "segments": [
+    {
+     "t": [
+      0.1,
+      0.52
+     ],
+     "rms_db": -36.9,
+     "voiced_ratio": 0.0,
+     "longest_unvoiced_s": 0.42,
+     "median_hz": null
+    },
+    {
+     "t": [
+      1.08,
+      4.46
+     ],
+     "rms_db": -20.7,
+     "voiced_ratio": 0.94,
+     "longest_unvoiced_s": 0.12,
+     "median_hz": 180
+    },
+    {
+     "t": [
+      4.74,
+      6.88
+     ],
+     "rms_db": -22.8,
+     "voiced_ratio": 0.85,
+     "longest_unvoiced_s": 0.08,
+     "median_hz": 180
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l12",
+   "lang": "en",
+   "speaker": "nirala",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e02/voice/en/l12.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] Theft complaint, on record here. The cycle was found with the neighbour.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'Theft complained. On record here. The cycle was found with the neighbour'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.82 whole take; lowest word-carrying segment of 0.5 s or more 0.67. No tag word in either transcript. Language: auto-id en (1.00). No cut-off: 0.06 s before the first speech frame, 0.321 s of silence after the last; peak -1.2 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "Theft complained. On record here. The cycle was found with the neighbour.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "Theft complained. On record here. The cycle was found with the neighbour.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.998,
+   "voiced_ratio": 0.82,
+   "duration": 4.48,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -17.7,
+   "ff_max_db": -1.2,
+   "lead_s": 0.06,
+   "trail_s": 0.321,
+   "flatness": 0.026,
+   "centroid_hz": 1811,
+   "median_hz": 154,
+   "segments": [
+    {
+     "t": [
+      0.12,
+      0.98
+     ],
+     "rms_db": -19.1,
+     "voiced_ratio": 0.67,
+     "longest_unvoiced_s": 0.1,
+     "median_hz": 119
+    },
+    {
+     "t": [
+      1.22,
+      1.98
+     ],
+     "rms_db": -17.3,
+     "voiced_ratio": 0.84,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 137
+    },
+    {
+     "t": [
+      2.48,
+      4.1
+     ],
+     "rms_db": -17.4,
+     "voiced_ratio": 0.9,
+     "longest_unvoiced_s": 0.04,
+     "median_hz": 163
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l14",
+   "lang": "en",
+   "speaker": "nandini",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e02/voice/en/l14.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] Settled in ten minutes.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'settled in 10 minutes'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.61 whole take; lowest word-carrying segment of 0.5 s or more 0.76. No tag word in either transcript. Language: auto-id en (0.99). No cut-off: 0.11 s before the first speech frame, 0.095 s of silence after the last; peak -4.8 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "settled in 10 minutes.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "settled in 10 minutes.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.993,
+   "voiced_ratio": 0.61,
+   "duration": 2.08,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -21.0,
+   "ff_max_db": -4.8,
+   "lead_s": 0.11,
+   "trail_s": 0.095,
+   "flatness": 0.054,
+   "centroid_hz": 2739,
+   "median_hz": 184,
+   "segments": [
+    {
+     "t": [
+      0.24,
+      1.64
+     ],
+     "rms_db": -20.1,
+     "voiced_ratio": 0.76,
+     "longest_unvoiced_s": 0.1,
+     "median_hz": 184
+    },
+    {
+     "t": [
+      1.94,
+      1.98
+     ],
+     "rms_db": -47.1,
+     "voiced_ratio": 0.0,
+     "longest_unvoiced_s": 0.04,
+     "median_hz": null
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l17",
+   "lang": "en",
+   "speaker": "bhaiyaji",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e02/voice/en/l17.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] Our outpost, our Inspector sahab. [laughs] Cheaper than what I pay Tripathi ji, and sweeter.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'our Outpost, our Inspector Sahab. Cheaper than what I pay Tripati G and sweeter'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.68 whole take; lowest word-carrying segment of 0.5 s or more 0.66. No tag word in either transcript. Language: auto-id en (0.94). No cut-off: 0.0 s before the first speech frame, 0.297 s of silence after the last; peak -2.8 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "our Outpost, our Inspector Sahab. Cheaper than what I pay Tripati G and sweeter.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "our Outpost, our Inspector Sahab. Cheaper than what I pay Tripati G and sweeter.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.943,
+   "voiced_ratio": 0.68,
+   "duration": 7.2,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -20.6,
+   "ff_max_db": -2.8,
+   "lead_s": 0.0,
+   "trail_s": 0.297,
+   "flatness": 0.048,
+   "centroid_hz": 1652,
+   "median_hz": 125,
+   "segments": [
+    {
+     "t": [
+      0.0,
+      5.54
+     ],
+     "rms_db": -20.2,
+     "voiced_ratio": 0.66,
+     "longest_unvoiced_s": 0.24,
+     "median_hz": 131
+    },
+    {
+     "t": [
+      5.78,
+      6.86
+     ],
+     "rms_db": -27.5,
+     "voiced_ratio": 0.71,
+     "longest_unvoiced_s": 0.08,
+     "median_hz": 101
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l20",
+   "lang": "en",
+   "speaker": "nirala",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e02/voice/en/l20.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] Date, amount, every note's number...",
+   "verdict": "accept",
+   "reasons": "Words heard: 'date, amount, every note's number'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.83 whole take; lowest word-carrying segment of 0.5 s or more 0.77. No tag word in either transcript. Language: auto-id en (1.00). No cut-off: 0.06 s before the first speech frame, 0.196 s of silence after the last; peak -1.5 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "date, amount, every note's number.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "date, amount, every note's number.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.996,
+   "voiced_ratio": 0.83,
+   "duration": 3.2,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -19.2,
+   "ff_max_db": -1.5,
+   "lead_s": 0.06,
+   "trail_s": 0.196,
+   "flatness": 0.023,
+   "centroid_hz": 1578,
+   "median_hz": 127,
+   "segments": [
+    {
+     "t": [
+      0.06,
+      0.58
+     ],
+     "rms_db": -18.6,
+     "voiced_ratio": 0.77,
+     "longest_unvoiced_s": 0.04,
+     "median_hz": 116
+    },
+    {
+     "t": [
+      0.9,
+      1.42
+     ],
+     "rms_db": -20.4,
+     "voiced_ratio": 0.85,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 123
+    },
+    {
+     "t": [
+      1.84,
+      2.96
+     ],
+     "rms_db": -19.0,
+     "voiced_ratio": 0.88,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 163
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l23",
+   "lang": "en",
+   "speaker": "nirala",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e02/voice/en/l23.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] This is case property. Evidence, for the court.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'This is case property. Evidence for the court'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.66 whole take; lowest word-carrying segment of 0.5 s or more 0.66. No tag word in either transcript. Language: auto-id en (0.99). No cut-off: 0.03 s before the first speech frame, 0.308 s of silence after the last; peak -1.5 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "This is case property. Evidence for the court.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "This is case property. Evidence for the court.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.994,
+   "voiced_ratio": 0.66,
+   "duration": 3.6,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -20.8,
+   "ff_max_db": -1.5,
+   "lead_s": 0.03,
+   "trail_s": 0.308,
+   "flatness": 0.056,
+   "centroid_hz": 2183,
+   "median_hz": 128,
+   "segments": [
+    {
+     "t": [
+      0.04,
+      1.28
+     ],
+     "rms_db": -20.2,
+     "voiced_ratio": 0.66,
+     "longest_unvoiced_s": 0.1,
+     "median_hz": 138
+    },
+    {
+     "t": [
+      1.78,
+      2.36
+     ],
+     "rms_db": -20.1,
+     "voiced_ratio": 0.71,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 105
+    },
+    {
+     "t": [
+      2.68,
+      3.26
+     ],
+     "rms_db": -23.7,
+     "voiced_ratio": 0.67,
+     "longest_unvoiced_s": 0.08,
+     "median_hz": 116
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l24",
+   "lang": "en",
+   "speaker": "nandini",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e02/voice/en/l24.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[flatly] Twenty-four envelopes.",
+   "verdict": "retake",
+   "reasons": "Whole take 0.58 on meas.py (its one segment measures 0.63 on seg.py): unvoiced frames are 'f' of 'four' (0.38-0.50 s), 'v'/'s' of 'envelopes' and the end tail (1.44-1.52 s) at -36 to -46 dB; the vowels are voiced at -15 to -30 dB. The low segment's words are voiced at speaking level; its unvoiced frames are consonants and breath or release tails 15 to 30 dB below the vowels (frame dump), not a whisper. It still fails the D-022 segment test as written, so it is retaken; see the diagnosis. Rung 2, the bare line. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "24 envelopes.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "24 envelopes.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.989,
+   "voiced_ratio": 0.58,
+   "duration": 1.84,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -20.8,
+   "ff_max_db": -5.3,
+   "lead_s": 0.08,
+   "trail_s": 0.303,
+   "flatness": 0.029,
+   "centroid_hz": 1697,
+   "median_hz": 170,
+   "segments": [
+    {
+     "t": [
+      0.08,
+      1.54
+     ],
+     "rms_db": -20.5,
+     "voiced_ratio": 0.63,
+     "longest_unvoiced_s": 0.14,
+     "median_hz": 170
+    }
+   ],
+   "whisper_wanted": false,
+   "diagnosis": "measure only",
+   "retake_text": "Twenty-four envelopes.",
+   "retake_model": "eleven_v4",
+   "retake_take": 3,
+   "retake_file": "content/series2/episodes/s2e02/voice/en/l24.c2.mp3"
+  },
+  {
+   "line_id": "l31",
+   "lang": "en",
+   "speaker": "tripathi",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e02/voice/en/l31.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] Is the talkies man arrested yet?",
+   "verdict": "accept",
+   "reasons": "Words heard: 'Is the talkies man arrested yet?'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.68 whole take; lowest word-carrying segment of 0.5 s or more 0.7. No tag word in either transcript. Language: auto-id en (0.98). No cut-off: 0.04 s before the first speech frame, 0.262 s of silence after the last; peak -5.6 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "Is the talkies man arrested yet?",
+   "transcript_latin_pass": null,
+   "transcript_auto": "Is the talkies man arrested yet?",
+   "auto_lang": "en",
+   "auto_lang_p": 0.976,
+   "voiced_ratio": 0.68,
+   "duration": 2.24,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -23.1,
+   "ff_max_db": -5.6,
+   "lead_s": 0.04,
+   "trail_s": 0.262,
+   "flatness": 0.041,
+   "centroid_hz": 1847,
+   "median_hz": 114,
+   "segments": [
+    {
+     "t": [
+      0.04,
+      1.96
+     ],
+     "rms_db": -23.4,
+     "voiced_ratio": 0.7,
+     "longest_unvoiced_s": 0.1,
+     "median_hz": 114
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l35",
+   "lang": "en",
+   "speaker": "nirala",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e02/voice/en/l35.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] He pays to keep the files asleep, madam. They are wide awake.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'He pays to keep the files asleep, madam. They are wide awake'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.84 whole take; lowest word-carrying segment of 0.5 s or more 0.81. No tag word in either transcript. Language: auto-id en (1.00). No cut-off: 0.1 s before the first speech frame, 0.142 s of silence after the last; peak -2.7 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "He pays to keep the files asleep, madam. They are wide awake.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "He pays to keep the files asleep, madam. They are wide awake.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.997,
+   "voiced_ratio": 0.84,
+   "duration": 3.92,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -20.3,
+   "ff_max_db": -2.7,
+   "lead_s": 0.1,
+   "trail_s": 0.142,
+   "flatness": 0.033,
+   "centroid_hz": 1760,
+   "median_hz": 129,
+   "segments": [
+    {
+     "t": [
+      0.12,
+      2.28
+     ],
+     "rms_db": -19.8,
+     "voiced_ratio": 0.81,
+     "longest_unvoiced_s": 0.12,
+     "median_hz": 131
+    },
+    {
+     "t": [
+      2.74,
+      3.72
+     ],
+     "rms_db": -22.5,
+     "voiced_ratio": 0.93,
+     "longest_unvoiced_s": 0.04,
+     "median_hz": 127
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l36",
+   "lang": "en",
+   "speaker": "nirala",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e02/voice/en/l36.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] The cycle is returned to the complainant.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'The cycle is returned to the complainant'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.86 whole take; lowest word-carrying segment of 0.5 s or more 0.88. No tag word in either transcript. Language: auto-id en (1.00). No cut-off: 0.06 s before the first speech frame, 0.327 s of silence after the last; peak -1.3 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "The cycle is returned to the complainant.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "The cycle is returned to the complainant.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.995,
+   "voiced_ratio": 0.86,
+   "duration": 2.64,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -19.3,
+   "ff_max_db": -1.3,
+   "lead_s": 0.06,
+   "trail_s": 0.327,
+   "flatness": 0.037,
+   "centroid_hz": 1852,
+   "median_hz": 123,
+   "segments": [
+    {
+     "t": [
+      0.06,
+      2.22
+     ],
+     "rms_db": -19.4,
+     "voiced_ratio": 0.88,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 123
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l37",
+   "lang": "en",
+   "speaker": "nirala",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e02/voice/en/l37.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] You two are the witnesses.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'You too are the witnesses'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.85 whole take; lowest word-carrying segment of 0.5 s or more 0.92. No tag word in either transcript. Language: auto-id en (0.97). No cut-off: 0.16 s before the first speech frame, 0.352 s of silence after the last; peak -2.3 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "You too are the witnesses.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "You too are the witnesses.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.975,
+   "voiced_ratio": 0.85,
+   "duration": 2.16,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -19.5,
+   "ff_max_db": -2.3,
+   "lead_s": 0.16,
+   "trail_s": 0.352,
+   "flatness": 0.035,
+   "centroid_hz": 1779,
+   "median_hz": 129,
+   "segments": [
+    {
+     "t": [
+      0.16,
+      1.8
+     ],
+     "rms_db": -19.2,
+     "voiced_ratio": 0.92,
+     "longest_unvoiced_s": 0.04,
+     "median_hz": 129
+    }
+   ],
+   "whisper_wanted": false
+  }
+ ],
+ "pass": "clarity"
+}

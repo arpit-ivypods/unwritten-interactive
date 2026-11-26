@@ -1,0 +1,3 @@
+# Subtitles
+
+Spoken lines inside the stage. Hindi is written in Devanagari and English words stay in Latin script within the same line ("यह file किसने खोली?"), exactly as the voice script is written; the font stack sets Latin in Plus Jakarta Sans and Devanagari in Anek Devanagari. Mark Hindi lines with `lang="hi"`. Two lines maximum, about 32 characters a line, centred, on `subtitle-plate`. The word being spoken is wrapped in `<b>` and takes `subtitle-active`; highlight whole words, never single characters. Show `uw-sub-speaker` when the speaker changes or is off screen. Use `uw-sub--sm` below 360px stage width. English audio uses the same component with the English line.

@@ -1,0 +1,153 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,200"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 200
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,200",
+				"to": "00:00:00,420"
+			},
+			"offsets": {
+				"from": 200,
+				"to": 420
+			},
+			"text": " She"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,420",
+				"to": "00:00:01,200"
+			},
+			"offsets": {
+				"from": 420,
+				"to": 1200
+			},
+			"text": " will."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,200",
+				"to": "00:00:01,420"
+			},
+			"offsets": {
+				"from": 1200,
+				"to": 1420
+			},
+			"text": " Any"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,420",
+				"to": "00:00:02,160"
+			},
+			"offsets": {
+				"from": 1420,
+				"to": 2160
+			},
+			"text": " pharmacist"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,160",
+				"to": "00:00:02,530"
+			},
+			"offsets": {
+				"from": 2160,
+				"to": 2530
+			},
+			"text": " can"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,530",
+				"to": "00:00:02,860"
+			},
+			"offsets": {
+				"from": 2530,
+				"to": 2860
+			},
+			"text": " taste"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,860",
+				"to": "00:00:03,180"
+			},
+			"offsets": {
+				"from": 2860,
+				"to": 3180
+			},
+			"text": " what's"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,180",
+				"to": "00:00:03,290"
+			},
+			"offsets": {
+				"from": 3180,
+				"to": 3290
+			},
+			"text": " in"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,290",
+				"to": "00:00:03,540"
+			},
+			"offsets": {
+				"from": 3290,
+				"to": 3540
+			},
+			"text": " your"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,540",
+				"to": "00:00:04,000"
+			},
+			"offsets": {
+				"from": 3540,
+				"to": 4000
+			},
+			"text": " sachets."
+		}
+	]
+}

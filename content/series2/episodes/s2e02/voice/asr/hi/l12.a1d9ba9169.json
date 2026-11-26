@@ -1,0 +1,175 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,060"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 60
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,060",
+				"to": "00:00:00,360"
+			},
+			"offsets": {
+				"from": 60,
+				"to": 360
+			},
+			"text": " चोरी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,360",
+				"to": "00:00:00,540"
+			},
+			"offsets": {
+				"from": 360,
+				"to": 540
+			},
+			"text": " की"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,540",
+				"to": "00:00:01,170"
+			},
+			"offsets": {
+				"from": 540,
+				"to": 1170
+			},
+			"text": " कम्पन्त"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,170",
+				"to": "00:00:01,440"
+			},
+			"offsets": {
+				"from": 1170,
+				"to": 1440
+			},
+			"text": " यही"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,440",
+				"to": "00:00:01,800"
+			},
+			"offsets": {
+				"from": 1440,
+				"to": 1800
+			},
+			"text": " दर्ज"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,800",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 1800,
+				"to": 2000
+			},
+			"text": " है"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,000",
+				"to": "00:00:02,270"
+			},
+			"offsets": {
+				"from": 2000,
+				"to": 2270
+			},
+			"text": " वही"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,270",
+				"to": "00:00:02,780"
+			},
+			"offsets": {
+				"from": 2270,
+				"to": 2780
+			},
+			"text": " साएकल"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,780",
+				"to": "00:00:03,170"
+			},
+			"offsets": {
+				"from": 2780,
+				"to": 3170
+			},
+			"text": " पडोसी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,170",
+				"to": "00:00:03,350"
+			},
+			"offsets": {
+				"from": 3170,
+				"to": 3350
+			},
+			"text": " के"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,350",
+				"to": "00:00:03,620"
+			},
+			"offsets": {
+				"from": 3350,
+				"to": 3620
+			},
+			"text": " पास"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,620",
+				"to": "00:00:04,000"
+			},
+			"offsets": {
+				"from": 3620,
+				"to": 4000
+			},
+			"text": " मिली"
+		}
+	]
+}

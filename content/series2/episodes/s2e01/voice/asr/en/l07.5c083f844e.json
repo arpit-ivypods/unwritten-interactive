@@ -1,0 +1,153 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,100"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 100
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,100",
+				"to": "00:00:00,270"
+			},
+			"offsets": {
+				"from": 100,
+				"to": 270
+			},
+			"text": " and"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,270",
+				"to": "00:00:00,810"
+			},
+			"offsets": {
+				"from": 270,
+				"to": 810
+			},
+			"text": " nobody"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,810",
+				"to": "00:00:00,990"
+			},
+			"offsets": {
+				"from": 810,
+				"to": 990
+			},
+			"text": " in"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,990",
+				"to": "00:00:01,260"
+			},
+			"offsets": {
+				"from": 990,
+				"to": 1260
+			},
+			"text": " our"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,260",
+				"to": "00:00:01,700"
+			},
+			"offsets": {
+				"from": 1260,
+				"to": 1700
+			},
+			"text": " force"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,700",
+				"to": "00:00:02,170"
+			},
+			"offsets": {
+				"from": 1700,
+				"to": 2170
+			},
+			"text": " wears"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,170",
+				"to": "00:00:02,250"
+			},
+			"offsets": {
+				"from": 2170,
+				"to": 2250
+			},
+			"text": " a"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,250",
+				"to": "00:00:02,690"
+			},
+			"offsets": {
+				"from": 2250,
+				"to": 2690
+			},
+			"text": " cap,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,690",
+				"to": "00:00:02,870"
+			},
+			"offsets": {
+				"from": 2690,
+				"to": 2870
+			},
+			"text": " you"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,870",
+				"to": "00:00:03,200"
+			},
+			"offsets": {
+				"from": 2870,
+				"to": 3200
+			},
+			"text": " do."
+		}
+	]
+}

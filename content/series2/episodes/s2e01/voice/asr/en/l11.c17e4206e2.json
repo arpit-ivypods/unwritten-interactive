@@ -1,0 +1,131 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,160"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 160
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,160",
+				"to": "00:00:00,500"
+			},
+			"offsets": {
+				"from": 160,
+				"to": 500
+			},
+			"text": " Madam,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,500",
+				"to": "00:00:00,930"
+			},
+			"offsets": {
+				"from": 500,
+				"to": 930
+			},
+			"text": " your"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,930",
+				"to": "00:00:01,350"
+			},
+			"offsets": {
+				"from": 930,
+				"to": 1350
+			},
+			"text": " transfer"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,350",
+				"to": "00:00:02,160"
+			},
+			"offsets": {
+				"from": 1350,
+				"to": 2160
+			},
+			"text": " application"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,160",
+				"to": "00:00:02,420"
+			},
+			"offsets": {
+				"from": 2160,
+				"to": 2420
+			},
+			"text": " has"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,420",
+				"to": "00:00:03,040"
+			},
+			"offsets": {
+				"from": 2420,
+				"to": 3040
+			},
+			"text": " reached"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,040",
+				"to": "00:00:03,290"
+			},
+			"offsets": {
+				"from": 3040,
+				"to": 3290
+			},
+			"text": " DSP"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,290",
+				"to": "00:00:04,000"
+			},
+			"offsets": {
+				"from": 3290,
+				"to": 4000
+			},
+			"text": " Sahab."
+		}
+	]
+}

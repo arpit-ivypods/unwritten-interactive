@@ -1,0 +1,263 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,070"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 70
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,070",
+				"to": "00:00:00,210"
+			},
+			"offsets": {
+				"from": 70,
+				"to": 210
+			},
+			"text": " बर"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,210",
+				"to": "00:00:00,650"
+			},
+			"offsets": {
+				"from": 210,
+				"to": 650
+			},
+			"text": " मुसी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,650",
+				"to": "00:00:00,850"
+			},
+			"offsets": {
+				"from": 650,
+				"to": 850
+			},
+			"text": " बस"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,850",
+				"to": "00:00:01,180"
+			},
+			"offsets": {
+				"from": 850,
+				"to": 1180
+			},
+			"text": " काम"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,180",
+				"to": "00:00:01,400"
+			},
+			"offsets": {
+				"from": 1180,
+				"to": 1400
+			},
+			"text": " के"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,400",
+				"to": "00:00:01,820"
+			},
+			"offsets": {
+				"from": 1400,
+				"to": 1820
+			},
+			"text": " आदमी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,820",
+				"to": "00:00:02,040"
+			},
+			"offsets": {
+				"from": 1820,
+				"to": 2040
+			},
+			"text": " से"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,040",
+				"to": "00:00:02,600"
+			},
+			"offsets": {
+				"from": 2040,
+				"to": 2600
+			},
+			"text": " मिलती"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,600",
+				"to": "00:00:03,000"
+			},
+			"offsets": {
+				"from": 2600,
+				"to": 3000
+			},
+			"text": " है"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,000",
+				"to": "00:00:03,210"
+			},
+			"offsets": {
+				"from": 3000,
+				"to": 3210
+			},
+			"text": " तो"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,210",
+				"to": "00:00:03,520"
+			},
+			"offsets": {
+				"from": 3210,
+				"to": 3520
+			},
+			"text": " तुम"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,520",
+				"to": "00:00:03,840"
+			},
+			"offsets": {
+				"from": 3520,
+				"to": 3840
+			},
+			"text": " चोर"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,840",
+				"to": "00:00:04,160"
+			},
+			"offsets": {
+				"from": 3840,
+				"to": 4160
+			},
+			"text": " बन"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,160",
+				"to": "00:00:04,270"
+			},
+			"offsets": {
+				"from": 4160,
+				"to": 4270
+			},
+			"text": " के"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,270",
+				"to": "00:00:05,000"
+			},
+			"offsets": {
+				"from": 4270,
+				"to": 5000
+			},
+			"text": " चलोगे"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,000",
+				"to": "00:00:05,610"
+			},
+			"offsets": {
+				"from": 5000,
+				"to": 5610
+			},
+			"text": " जिसने"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,610",
+				"to": "00:00:06,180"
+			},
+			"offsets": {
+				"from": 5610,
+				"to": 6180
+			},
+			"text": " चोरनी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:06,180",
+				"to": "00:00:06,300"
+			},
+			"offsets": {
+				"from": 6180,
+				"to": 6300
+			},
+			"text": " से"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:06,300",
+				"to": "00:00:06,720"
+			},
+			"offsets": {
+				"from": 6300,
+				"to": 6720
+			},
+			"text": " शादी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:06,720",
+				"to": "00:00:07,000"
+			},
+			"offsets": {
+				"from": 6720,
+				"to": 7000
+			},
+			"text": " की"
+		}
+	]
+}

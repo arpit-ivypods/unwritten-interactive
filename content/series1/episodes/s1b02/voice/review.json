@@ -1,0 +1,4482 @@
+[
+ {
+  "line_id": "l01",
+  "lang": "hi",
+  "speaker": "kiran",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "file": "voice/hi/l01.mp3",
+  "take": 1,
+  "take_text": "[calm] ये दूध तीन घंटे से रखा है, मौसी।",
+  "transcript": "ये दूद तीम गड़े से रखा है, मुसी.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "transcript_latin_pass": "This milk has been kept for three hours, auntie.",
+  "duration_s": 3.12,
+  "target_s": 4.0,
+  "speech_s": 2.76,
+  "speech_vs_target_pct": -31.0,
+  "lead_silence_s": 0.11,
+  "trail_silence_s": 0.25,
+  "pauses": [],
+  "first_word_s": 0.11,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.1,
+   "trail_s": 0.26,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -19.7,
+  "ff_mean_db": -20.7,
+  "ff_max_db": -5.9,
+  "lufs": -20.8,
+  "true_peak_dbtp": -5.8,
+  "voiced_ratio": 0.79,
+  "voiced_ratio_strict": 0.79,
+  "median_hz": 205,
+  "spectral_centroid_hz": 2516,
+  "spectral_flatness": 0.056,
+  "segments": [
+   {
+    "t": [
+     0.11,
+     2.87
+    ],
+    "rms_db": -19.7,
+    "voiced_ratio": 0.79,
+    "longest_unvoiced_s": 0.19,
+    "median_hz": 205
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard ('दूद', 'तीम गड़े', 'मुसी' are whisper-small spellings of दूध, तीन घंटे, मौसी; en pass 'kept for three hours'). No tag spoken. Voiced 0.79. No pause asked; none measured.",
+  "retake_text": null,
+  "ear_check": "Kiran low in her range against Mausi (205 Hz here; Mausi's Hindi lines this episode 154 to 246 Hz): the cast.json pair ear check 3."
+ },
+ {
+  "line_id": "l02",
+  "lang": "hi",
+  "speaker": "kiran",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "file": "voice/hi/l02.mp3",
+  "take": 1,
+  "take_text": "[quietly] आधी पुड़िया पड़ी है। दो और नहीं घुलेंगी।",
+  "transcript": "आदी पुडिया पडी है, दो और नहीं गूलेंगी",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "transcript_latin_pass": "Adi puria pari hai. Do aur nahi gholingi.",
+  "duration_s": 3.52,
+  "target_s": 4.8,
+  "speech_s": 3.19,
+  "speech_vs_target_pct": -33.5,
+  "lead_silence_s": 0.11,
+  "trail_silence_s": 0.22,
+  "pauses": [
+   [
+    1.53,
+    1.97,
+    0.44
+   ]
+  ],
+  "first_word_s": 0.11,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.12,
+   "trail_s": 0.24,
+   "pauses_ge300ms": [
+    [
+     1.52,
+     1.98,
+     0.46
+    ]
+   ]
+  },
+  "speech_rms_db": -23.7,
+  "ff_mean_db": -25.0,
+  "ff_max_db": -11.2,
+  "lufs": -24.4,
+  "true_peak_dbtp": -11.2,
+  "voiced_ratio": 0.81,
+  "voiced_ratio_strict": 0.8,
+  "median_hz": 186,
+  "spectral_centroid_hz": 2344,
+  "spectral_flatness": 0.061,
+  "segments": [
+   {
+    "t": [
+     0.11,
+     1.53
+    ],
+    "rms_db": -27.1,
+    "voiced_ratio": 0.74,
+    "longest_unvoiced_s": 0.07,
+    "median_hz": 188
+   },
+   {
+    "t": [
+     1.97,
+     3.3
+    ],
+    "rms_db": -21.8,
+    "voiced_ratio": 0.88,
+    "longest_unvoiced_s": 0.06,
+    "median_hz": 182
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard ('आदी पुडिया पडी है, दो और नहीं गूलेंगी'; 'पुड़िया' clear as 'पुडिया'). No tag spoken. Quiet and fully voiced as the note asks: voiced 0.81 (strict 0.80), -24.4 LUFS against her [calm] lines' -19.7 to -22.0. Beat between the sentences 0.44 s (frame measure and silencedetect agree), so D-014 splits it there.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l03",
+  "lang": "hi",
+  "speaker": "kiran",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "file": "voice/hi/l03.mp3",
+  "take": 1,
+  "take_text": "[calm] बिल्लू fresh दूध ले आएगा।",
+  "transcript": "बिल्ल।, फ्रेश्डूद ले आएगा",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "transcript_latin_pass": "Billu will bring fresh milk.",
+  "duration_s": 2.08,
+  "target_s": 3.0,
+  "speech_s": 1.65,
+  "speech_vs_target_pct": -45.0,
+  "lead_silence_s": 0.1,
+  "trail_silence_s": 0.33,
+  "pauses": [],
+  "first_word_s": 0.1,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.112,
+   "trail_s": 0.309,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -19.0,
+  "ff_mean_db": -20.2,
+  "ff_max_db": -3.9,
+  "lufs": -19.7,
+  "true_peak_dbtp": -3.9,
+  "voiced_ratio": 0.74,
+  "voiced_ratio_strict": 0.74,
+  "median_hz": 200,
+  "spectral_centroid_hz": 1918,
+  "spectral_flatness": 0.043,
+  "segments": [
+   {
+    "t": [
+     0.1,
+     1.75
+    ],
+    "rms_db": -19.0,
+    "voiced_ratio": 0.74,
+    "longest_unvoiced_s": 0.14,
+    "median_hz": 200
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard; 'fresh' heard in both passes (hi 'फ्रेश्डूद', en 'Billu will bring fresh milk'). No tag spoken. Voiced 0.74.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l04",
+  "lang": "hi",
+  "speaker": "mausi",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "file": "voice/hi/l04.mp3",
+  "take": 1,
+  "take_text": "[laughs] देखा? मुझसे आगे सोचती है मेरी बच्ची।",
+  "transcript": "देखा, मुछ से आगे सुचती है मेरी बच्ची",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "transcript_latin_pass": "See, she thinks ahead of me.",
+  "duration_s": 4.0,
+  "target_s": 4.6,
+  "speech_s": 3.74,
+  "speech_vs_target_pct": -18.7,
+  "lead_silence_s": 0.01,
+  "trail_silence_s": 0.25,
+  "pauses": [
+   [
+    1.35,
+    1.81,
+    0.46
+   ]
+  ],
+  "first_word_s": 0.8,
+  "pre_word_nonspeech": {
+   "t": [
+    0.01,
+    0.78
+   ],
+   "kind": "laugh"
+  },
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.279,
+   "pauses_ge300ms": [
+    [
+     1.33,
+     1.82,
+     0.49
+    ]
+   ]
+  },
+  "speech_rms_db": -26.5,
+  "ff_mean_db": -27.9,
+  "ff_max_db": -9.2,
+  "lufs": -26.7,
+  "true_peak_dbtp": -9.2,
+  "voiced_ratio": 0.75,
+  "voiced_ratio_strict": 0.69,
+  "median_hz": 235,
+  "spectral_centroid_hz": 2315,
+  "spectral_flatness": 0.06,
+  "segments": [
+   {
+    "t": [
+     0.01,
+     1.35
+    ],
+    "rms_db": -27.9,
+    "voiced_ratio": 0.7,
+    "longest_unvoiced_s": 0.1,
+    "median_hz": 216
+   },
+   {
+    "t": [
+     1.81,
+     3.75
+    ],
+    "rms_db": -25.9,
+    "voiced_ratio": 0.78,
+    "longest_unvoiced_s": 0.09,
+    "median_hz": 246
+   }
+  ],
+  "segment_checks": [
+   {
+    "cut": [
+     0.0,
+     0.78
+    ],
+    "small_hi": "अग!",
+    "base_hi": "[웃음]",
+    "small_en": "(laughs)",
+    "base_en": "[laughs]"
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Laugh check passes: a non-word stretch 0.01 to 0.78 s comes before 'देखा' (cut alone: small hi 'अग!', base hi '[웃음]' = 'laughter', small and base en '(laughs)'/'[laughs]', a sound label, not the word). 'laughs' is not spoken. Words all heard ('देखा, मुछ से आगे सुचती है मेरी बच्ची'). Pause 0.46 s after 'देखा?'. Voiced 0.75.",
+  "retake_text": null,
+  "ear_check": "Is the laugh small and real, not a cackle (casting could not prove her laugh, ear check 7)?"
+ },
+ {
+  "line_id": "l05",
+  "lang": "hi",
+  "speaker": "kiran",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "file": "voice/hi/l05.mp3",
+  "take": 1,
+  "take_text": "[quietly] आज तक हमने किसी की जान नहीं ली। आज मौसी को लाश चाहिए।",
+  "transcript": "आज तक हम ने किसी की जान नहीं ले, आज मूसी को लाश जहीए.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "transcript_latin_pass": "We haven't taken anyone's life so far. Today, aunt needs a corpse.",
+  "duration_s": 4.96,
+  "target_s": 6.6,
+  "speech_s": 4.7,
+  "speech_vs_target_pct": -28.8,
+  "lead_silence_s": 0.01,
+  "trail_silence_s": 0.25,
+  "pauses": [
+   [
+    2.29,
+    2.88,
+    0.59
+   ]
+  ],
+  "first_word_s": 0.01,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.139,
+   "trail_s": 0.269,
+   "pauses_ge300ms": [
+    [
+     2.25,
+     2.89,
+     0.63
+    ]
+   ]
+  },
+  "speech_rms_db": -24.7,
+  "ff_mean_db": -25.8,
+  "ff_max_db": -10.1,
+  "lufs": -25.2,
+  "true_peak_dbtp": -9.8,
+  "voiced_ratio": 0.63,
+  "voiced_ratio_strict": 0.62,
+  "median_hz": 174,
+  "spectral_centroid_hz": 2523,
+  "spectral_flatness": 0.067,
+  "segments": [
+   {
+    "t": [
+     0.01,
+     2.29
+    ],
+    "rms_db": -25.2,
+    "voiced_ratio": 0.62,
+    "longest_unvoiced_s": 0.19,
+    "median_hz": 182
+   },
+   {
+    "t": [
+     2.88,
+     3.35
+    ],
+    "rms_db": -24.8,
+    "voiced_ratio": 0.48,
+    "longest_unvoiced_s": 0.2,
+    "median_hz": 178
+   },
+   {
+    "t": [
+     3.52,
+     4.71
+    ],
+    "rms_db": -24.0,
+    "voiced_ratio": 0.7,
+    "longest_unvoiced_s": 0.17,
+    "median_hz": 170
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard ('ले' for ली, 'मूसी' for मौसी, 'जहीए' for चाहिए are spellings; en pass 'Today, aunt needs a corpse'). No tag spoken. Voiced 0.63 (strict 0.62), above the note's 0.6 bar, so not a whisper retake; the 'आज मौसी' stretch (2.88 to 3.35 s) is the breathiest at 0.48. Beat after the first sentence 0.59 s. -25.2 LUFS.",
+  "retake_text": null,
+  "ear_check": "Intelligible under concrete reverb? 'आज मौसी' (2.9 to 3.4 s) is the breathiest stretch."
+ },
+ {
+  "line_id": "l06",
+  "lang": "hi",
+  "speaker": "kiran",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "file": "voice/hi/l06.mp3",
+  "take": 1,
+  "take_text": "[calm] उठाएगा कौन? गाड़ी तो तेरे नाम पे है।",
+  "transcript": "उठायेगा कोन? गाडी तो तेरे नामपे है",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "transcript_latin_pass": "Who will pick it up? The car is in your name.",
+  "duration_s": 2.88,
+  "target_s": 4.2,
+  "speech_s": 2.64,
+  "speech_vs_target_pct": -37.1,
+  "lead_silence_s": 0.07,
+  "trail_silence_s": 0.17,
+  "pauses": [
+   [
+    0.95,
+    1.33,
+    0.38
+   ]
+  ],
+  "first_word_s": 0.07,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.085,
+   "trail_s": 0.18,
+   "pauses_ge300ms": [
+    [
+     0.94,
+     1.34,
+     0.4
+    ]
+   ]
+  },
+  "speech_rms_db": -21.0,
+  "ff_mean_db": -22.3,
+  "ff_max_db": -7.4,
+  "lufs": -22.0,
+  "true_peak_dbtp": -7.4,
+  "voiced_ratio": 0.93,
+  "voiced_ratio_strict": 0.92,
+  "median_hz": 190,
+  "spectral_centroid_hz": 1956,
+  "spectral_flatness": 0.042,
+  "segments": [
+   {
+    "t": [
+     0.07,
+     0.95
+    ],
+    "rms_db": -20.4,
+    "voiced_ratio": 0.89,
+    "longest_unvoiced_s": 0.04,
+    "median_hz": 195
+   },
+   {
+    "t": [
+     1.33,
+     2.71
+    ],
+    "rms_db": -21.4,
+    "voiced_ratio": 0.95,
+    "longest_unvoiced_s": 0.02,
+    "median_hz": 186
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard ('उठायेगा कोन? गाडी तो तेरे नामपे है'; en pass 'The car is in your name'). No tag spoken. Voiced 0.93. Pause 0.38 s after 'कौन?'.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l07",
+  "lang": "hi",
+  "speaker": "kiran",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "file": "voice/hi/l07.mp3",
+  "take": 1,
+  "take_text": "[quietly] पिछली party में बाईस तोला आया था। तुझे कितना बताया?",
+  "transcript": "पिछ्ली पाटी में पाइस दोला आया दा तुछे कितना बताया?",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "transcript_latin_pass": "Last party, 22 came. How much did you know?",
+  "duration_s": 4.08,
+  "target_s": 5.4,
+  "speech_s": 3.72,
+  "speech_vs_target_pct": -31.1,
+  "lead_silence_s": 0.11,
+  "trail_silence_s": 0.25,
+  "pauses": [],
+  "first_word_s": 0.11,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.121,
+   "trail_s": 0.295,
+   "pauses_ge300ms": [
+    [
+     2.42,
+     2.94,
+     0.52
+    ]
+   ]
+  },
+  "speech_rms_db": -28.3,
+  "ff_mean_db": -29.6,
+  "ff_max_db": -9.4,
+  "lufs": -28.3,
+  "true_peak_dbtp": -9.3,
+  "voiced_ratio": 0.64,
+  "voiced_ratio_strict": 0.6,
+  "median_hz": 195,
+  "spectral_centroid_hz": 2626,
+  "spectral_flatness": 0.069,
+  "segments": [
+   {
+    "t": [
+     0.11,
+     1.12
+    ],
+    "rms_db": -27.7,
+    "voiced_ratio": 0.61,
+    "longest_unvoiced_s": 0.26,
+    "median_hz": 195
+   },
+   {
+    "t": [
+     1.37,
+     2.48
+    ],
+    "rms_db": -29.7,
+    "voiced_ratio": 0.66,
+    "longest_unvoiced_s": 0.1,
+    "median_hz": 176
+   },
+   {
+    "t": [
+     2.64,
+     2.71
+    ],
+    "rms_db": -54.4,
+    "voiced_ratio": 1.0,
+    "longest_unvoiced_s": 0.0,
+    "median_hz": 471
+   },
+   {
+    "t": [
+     2.93,
+     3.83
+    ],
+    "rms_db": -27.2,
+    "voiced_ratio": 0.63,
+    "longest_unvoiced_s": 0.06,
+    "median_hz": 235
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Key figure heard: 'बाईस' as 'पाइस' in the hi pass and '22' in the en pass; 'party' as 'पाटी' (en 'party'); 'तोला' as 'दोला'. No tag spoken. Voiced 0.64 (strict 0.60): at the note's 0.6 bar, not under it, so no whisper retake. -28.3 LUFS, Kiran's quietest take here. silencedetect finds a 0.52 s pause at 2.42 s between the sentences (the frame measure sees a 0.45 s gap broken by a -54 dB blip).",
+  "retake_text": null,
+  "ear_check": "'बाईस तोला' crystal clear at this level? Voicing is only just at the bar."
+ },
+ {
+  "line_id": "l08",
+  "lang": "hi",
+  "speaker": "billu",
+  "voice_id": "7b9mYhmnp0y2qSH1FnBL",
+  "model": "eleven_v4",
+  "file": "voice/hi/l08.mp3",
+  "take": 1,
+  "take_text": "[hesitant] बारह। मौसी ने कहा है।",
+  "transcript": "बारा मुसी ने कहा है",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "transcript_latin_pass": "12. Where is auntie?",
+  "duration_s": 3.04,
+  "target_s": 3.2,
+  "speech_s": 2.75,
+  "speech_vs_target_pct": -14.1,
+  "lead_silence_s": 0.07,
+  "trail_silence_s": 0.22,
+  "pauses": [
+   [
+    1.05,
+    1.59,
+    0.54
+   ]
+  ],
+  "first_word_s": 0.07,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.088,
+   "trail_s": 0.243,
+   "pauses_ge300ms": [
+    [
+     1.03,
+     1.6,
+     0.57
+    ]
+   ]
+  },
+  "speech_rms_db": -24.0,
+  "ff_mean_db": -25.4,
+  "ff_max_db": -9.3,
+  "lufs": -24.1,
+  "true_peak_dbtp": -9.3,
+  "voiced_ratio": 0.87,
+  "voiced_ratio_strict": 0.87,
+  "median_hz": 127,
+  "spectral_centroid_hz": 1927,
+  "spectral_flatness": 0.055,
+  "segments": [
+   {
+    "t": [
+     0.07,
+     1.05
+    ],
+    "rms_db": -25.6,
+    "voiced_ratio": 0.84,
+    "longest_unvoiced_s": 0.1,
+    "median_hz": 138
+   },
+   {
+    "t": [
+     1.59,
+     2.82
+    ],
+    "rms_db": -23.0,
+    "voiced_ratio": 0.88,
+    "longest_unvoiced_s": 0.08,
+    "median_hz": 118
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard ('बारा मुसी ने कहा है' = बारह। मौसी ने कहा है।; en pass '12.'). No tag spoken, no stammer: two clean segments. Pause 0.54 s after 'बारह'. Voiced 0.87.",
+  "retake_text": null,
+  "ear_check": "Hesitant, not a stammer; 'बारह' clear."
+ },
+ {
+  "line_id": "l09",
+  "lang": "hi",
+  "speaker": "mausi",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "file": "voice/hi/l09.mp3",
+  "take": 1,
+  "take_text": "[calm] दुकान आज कौन खोलेगा, दामाद जी?",
+  "transcript": "दुकान आज कोन खोलेगा दामाज जी",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "transcript_latin_pass": "Who will open the shop today?",
+  "duration_s": 2.96,
+  "target_s": 3.6,
+  "speech_s": 2.6,
+  "speech_vs_target_pct": -27.8,
+  "lead_silence_s": 0.09,
+  "trail_silence_s": 0.27,
+  "pauses": [],
+  "first_word_s": 0.09,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.101,
+   "trail_s": 0.292,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -25.4,
+  "ff_mean_db": -26.9,
+  "ff_max_db": -10.9,
+  "lufs": -26.4,
+  "true_peak_dbtp": -10.8,
+  "voiced_ratio": 0.87,
+  "voiced_ratio_strict": 0.87,
+  "median_hz": 225,
+  "spectral_centroid_hz": 2032,
+  "spectral_flatness": 0.051,
+  "segments": [
+   {
+    "t": [
+     0.09,
+     0.69
+    ],
+    "rms_db": -23.7,
+    "voiced_ratio": 0.89,
+    "longest_unvoiced_s": 0.04,
+    "median_hz": 267
+   },
+   {
+    "t": [
+     0.9,
+     1.92
+    ],
+    "rms_db": -25.6,
+    "voiced_ratio": 0.82,
+    "longest_unvoiced_s": 0.07,
+    "median_hz": 235
+   },
+   {
+    "t": [
+     2.12,
+     2.69
+    ],
+    "rms_db": -27.8,
+    "voiced_ratio": 0.93,
+    "longest_unvoiced_s": 0.04,
+    "median_hz": 174
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard ('दुकान आज कोन खोलेगा दामाज जी'); 'जी' clear, which the note accepts. No tag spoken. Voiced 0.87.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l10",
+  "lang": "hi",
+  "speaker": "aditya",
+  "voice_id": "zCXXiWzuZO7d9fERssmF",
+  "model": "eleven_v4",
+  "file": "voice/hi/l10.mp3",
+  "take": 1,
+  "take_text": "[calm] मेरे बिना नहीं खुलती।",
+  "transcript": "मेरे बिना नहीं कुलती",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "transcript_latin_pass": "She doesn't open without me.",
+  "duration_s": 2.24,
+  "target_s": 2.6,
+  "speech_s": 1.71,
+  "speech_vs_target_pct": -34.2,
+  "lead_silence_s": 0.12,
+  "trail_silence_s": 0.41,
+  "pauses": [],
+  "first_word_s": 0.12,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.123,
+   "trail_s": 0.385,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -17.0,
+  "ff_mean_db": -18.3,
+  "ff_max_db": -5.9,
+  "lufs": -18.0,
+  "true_peak_dbtp": -5.9,
+  "voiced_ratio": 0.88,
+  "voiced_ratio_strict": 0.88,
+  "median_hz": 118,
+  "spectral_centroid_hz": 1293,
+  "spectral_flatness": 0.03,
+  "segments": [
+   {
+    "t": [
+     0.12,
+     1.83
+    ],
+    "rms_db": -17.0,
+    "voiced_ratio": 0.88,
+    "longest_unvoiced_s": 0.06,
+    "median_hz": 118
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard ('मेरे बिना नहीं कुलती'). No tag spoken. Start not clipped: speech begins 0.12 s into the file and 'मेरे' transcribes. Voiced 0.88.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l11",
+  "lang": "hi",
+  "speaker": "mausi",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "file": "voice/hi/l11.mp3",
+  "take": 1,
+  "take_text": "[sighs] मोहित सीधा लड़का था।",
+  "transcript": "अग, मुहेद सीदा लगका ता",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "transcript_latin_pass": "Mohit was a straight guy.",
+  "duration_s": 2.96,
+  "target_s": 2.8,
+  "speech_s": 2.55,
+  "speech_vs_target_pct": -8.9,
+  "lead_silence_s": 0.09,
+  "trail_silence_s": 0.32,
+  "pauses": [
+   [
+    0.61,
+    1.05,
+    0.44
+   ]
+  ],
+  "first_word_s": 1.05,
+  "pre_word_nonspeech": {
+   "t": [
+    0.09,
+    0.61
+   ],
+   "kind": "sigh"
+  },
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.114,
+   "trail_s": 0.355,
+   "pauses_ge300ms": [
+    [
+     0.47,
+     1.06,
+     0.58
+    ]
+   ]
+  },
+  "speech_rms_db": -28.1,
+  "ff_mean_db": -29.6,
+  "ff_max_db": -12.2,
+  "lufs": -27.5,
+  "true_peak_dbtp": -12.2,
+  "voiced_ratio": 0.61,
+  "voiced_ratio_strict": 0.6,
+  "median_hz": 205,
+  "spectral_centroid_hz": 3001,
+  "spectral_flatness": 0.072,
+  "segments": [
+   {
+    "t": [
+     0.09,
+     0.61
+    ],
+    "rms_db": -39.2,
+    "voiced_ratio": 0.24,
+    "longest_unvoiced_s": 0.27,
+    "median_hz": 219
+   },
+   {
+    "t": [
+     1.05,
+     2.64
+    ],
+    "rms_db": -26.8,
+    "voiced_ratio": 0.74,
+    "longest_unvoiced_s": 0.22,
+    "median_hz": 205
+   }
+  ],
+  "segment_checks": [
+   {
+    "cut": [
+     0.0,
+     0.9
+    ],
+    "small_hi": "आप",
+    "base_hi": "[Sigh]",
+    "small_en": "*sigh*",
+    "base_en": "[XBOX SOUND]"
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Sigh check passes: a soft non-word breath 0.09 to 0.61 s (-39 dB, voiced 0.24) before 'मोहित' (cut alone: base hi '[Sigh]', small en '*sigh*'; small hi writes 'आप'/'अग', its usual guess on a breath). Not the word 'sighs', not a groan by level. Words heard ('मुहेद सीदा लगका ता'; en 'Mohit was a straight guy'). Pause 0.44 s after the sigh.",
+  "retake_text": null,
+  "ear_check": "Sigh real and soft; no syllable in it (small hi reads it 'अग'/'आप')."
+ },
+ {
+  "line_id": "l12",
+  "lang": "hi",
+  "speaker": "aditya",
+  "voice_id": "zCXXiWzuZO7d9fERssmF",
+  "model": "eleven_v4",
+  "file": "voice/hi/l12.mp3",
+  "take": 1,
+  "take_text": "[quietly] आपको सबके नाम याद हैं?",
+  "transcript": "अपको सबके नाम याद है?",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "transcript_latin_pass": "Do you remember everyone's name?",
+  "duration_s": 2.4,
+  "target_s": 2.8,
+  "speech_s": 1.99,
+  "speech_vs_target_pct": -28.9,
+  "lead_silence_s": 0.11,
+  "trail_silence_s": 0.3,
+  "pauses": [],
+  "first_word_s": 0.11,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.124,
+   "trail_s": 0.317,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -23.7,
+  "ff_mean_db": -25.0,
+  "ff_max_db": -4.2,
+  "lufs": -25.4,
+  "true_peak_dbtp": -4.2,
+  "voiced_ratio": 0.58,
+  "voiced_ratio_strict": 0.55,
+  "median_hz": 129,
+  "spectral_centroid_hz": 1848,
+  "spectral_flatness": 0.052,
+  "segments": [
+   {
+    "t": [
+     0.11,
+     2.1
+    ],
+    "rms_db": -23.7,
+    "voiced_ratio": 0.58,
+    "longest_unvoiced_s": 0.17,
+    "median_hz": 129
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard ('अपको सबके नाम याद है?'; en 'Do you remember everyone's name?'). No tag spoken. Voiced 0.58 (strict 0.55), -25.4 LUFS, 7.4 LU under l10: quiet and partly breathy, but the note's reject bar is 'breathy to the point of losing words' and no word is lost.",
+  "retake_text": null,
+  "ear_check": "Breathy but every word there? Catch on 'सबके नाम'?"
+ },
+ {
+  "line_id": "l13",
+  "lang": "hi",
+  "speaker": "mausi",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "file": "voice/hi/l13.mp3",
+  "take": 1,
+  "take_text": "[chuckles] हर party का नाम लिखा है।",
+  "transcript": "हर पार्टी का नाम लिखा है",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "transcript_latin_pass": "Every party's name is written.",
+  "duration_s": 2.64,
+  "target_s": 3.0,
+  "speech_s": 2.38,
+  "speech_vs_target_pct": -20.7,
+  "lead_silence_s": 0.03,
+  "trail_silence_s": 0.23,
+  "pauses": [],
+  "first_word_s": 0.8,
+  "pre_word_nonspeech": {
+   "t": [
+    0.03,
+    0.35
+   ],
+   "kind": "chuckle"
+  },
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.284,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -25.1,
+  "ff_mean_db": -26.3,
+  "ff_max_db": -6.8,
+  "lufs": -24.8,
+  "true_peak_dbtp": -6.7,
+  "voiced_ratio": 0.65,
+  "voiced_ratio_strict": 0.64,
+  "median_hz": 211,
+  "spectral_centroid_hz": 2340,
+  "spectral_flatness": 0.058,
+  "segments": [
+   {
+    "t": [
+     0.03,
+     2.41
+    ],
+    "rms_db": -25.1,
+    "voiced_ratio": 0.65,
+    "longest_unvoiced_s": 0.22,
+    "median_hz": 211
+   }
+  ],
+  "segment_checks": [
+   {
+    "cut": [
+     0.0,
+     0.7
+    ],
+    "small_hi": "अद़़़़",
+    "base_hi": "[웃음]",
+    "small_en": "(laughs)",
+    "base_en": "(laughs)"
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Chuckle check passes: non-word 0.03 to about 0.35 s, then a short gap (cut 0 to 0.7 s: base hi '[웃음]', en '(laughs)' in both models). No spoken tag. Words heard ('हर पार्टी का नाम लिखा है'). Voiced 0.65.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l14",
+  "lang": "hi",
+  "speaker": "mausi",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "file": "voice/hi/l14.mp3",
+  "take": 1,
+  "take_text": "[calm] अपने हाथ से, बेटा।",
+  "transcript": "अपने हाच से बिटा",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "transcript_latin_pass": "With your own hands, my child.",
+  "duration_s": 2.08,
+  "target_s": 2.2,
+  "speech_s": 1.71,
+  "speech_vs_target_pct": -22.3,
+  "lead_silence_s": 0.12,
+  "trail_silence_s": 0.25,
+  "pauses": [
+   [
+    1.1,
+    1.46,
+    0.36
+   ]
+  ],
+  "first_word_s": 0.12,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.138,
+   "trail_s": 0.269,
+   "pauses_ge300ms": [
+    [
+     1.07,
+     1.47,
+     0.4
+    ]
+   ]
+  },
+  "speech_rms_db": -27.0,
+  "ff_mean_db": -29.2,
+  "ff_max_db": -12.9,
+  "lufs": -27.5,
+  "true_peak_dbtp": -12.9,
+  "voiced_ratio": 0.71,
+  "voiced_ratio_strict": 0.71,
+  "median_hz": 174,
+  "spectral_centroid_hz": 2512,
+  "spectral_flatness": 0.071,
+  "segments": [
+   {
+    "t": [
+     0.12,
+     1.1
+    ],
+    "rms_db": -25.9,
+    "voiced_ratio": 0.67,
+    "longest_unvoiced_s": 0.15,
+    "median_hz": 182
+   },
+   {
+    "t": [
+     1.46,
+     1.83
+    ],
+    "rms_db": -33.9,
+    "voiced_ratio": 0.84,
+    "longest_unvoiced_s": 0.04,
+    "median_hz": 151
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard ('अपने हाच से बिटा' = अपने हाथ से, बेटा; en 'With your own hands, my child'). No tag spoken. 'बेटा' lower (151 against 182 Hz) and 8 dB softer after a 0.36 s pause, as asked.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l15",
+  "lang": "hi",
+  "speaker": "aditya",
+  "voice_id": "zCXXiWzuZO7d9fERssmF",
+  "model": "eleven_v4",
+  "file": "voice/hi/l15.mp3",
+  "take": 1,
+  "take_text": "[quietly] पूरी पुड़िया?",
+  "transcript": "पूरी पूरीया",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "transcript_latin_pass": "Puri Puriya?",
+  "duration_s": 1.44,
+  "target_s": 1.8,
+  "speech_s": 1.15,
+  "speech_vs_target_pct": -36.1,
+  "lead_silence_s": 0.06,
+  "trail_silence_s": 0.23,
+  "pauses": [],
+  "first_word_s": 0.06,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.17,
+   "trail_s": 0.249,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -24.7,
+  "ff_mean_db": -25.9,
+  "ff_max_db": -11.0,
+  "lufs": -25.6,
+  "true_peak_dbtp": -10.9,
+  "voiced_ratio": 0.52,
+  "voiced_ratio_strict": 0.43,
+  "median_hz": 136,
+  "spectral_centroid_hz": 1657,
+  "spectral_flatness": 0.055,
+  "segments": [
+   {
+    "t": [
+     0.06,
+     1.21
+    ],
+    "rms_db": -24.7,
+    "voiced_ratio": 0.52,
+    "longest_unvoiced_s": 0.21,
+    "median_hz": 136
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Both words heard ('पूरी पूरीया'; isolated cut 0 to 0.65 s: small 'पूरी पूरी', base 'Puri'). No tag spoken. Start not clipped (onset at 0.17 s by silencedetect; the 0.0 to 0.17 s stretch sits at -48 to -60 dB, far under speech, not a breath at speech level). Voiced 0.52 (strict 0.43); the note sets no voicing bar here.",
+  "retake_text": null,
+  "ear_check": "Any added breath before 'पूरी'? Quiet check, not fear."
+ },
+ {
+  "line_id": "l16",
+  "lang": "hi",
+  "speaker": "kiran",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "file": "voice/hi/l16.mp3",
+  "take": 1,
+  "take_text": "[flatly] पूरी।",
+  "transcript": "बूरी",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "transcript_latin_pass": "Booty.",
+  "duration_s": 1.12,
+  "target_s": 1.0,
+  "speech_s": 0.57,
+  "speech_vs_target_pct": -43.0,
+  "lead_silence_s": 0.13,
+  "trail_silence_s": 0.42,
+  "pauses": [],
+  "first_word_s": 0.13,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.143,
+   "trail_s": 0.389,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -18.6,
+  "ff_mean_db": -21.6,
+  "ff_max_db": -6.7,
+  "lufs": -19.8,
+  "true_peak_dbtp": -6.7,
+  "voiced_ratio": 0.75,
+  "voiced_ratio_strict": 0.73,
+  "median_hz": 170,
+  "spectral_centroid_hz": 2224,
+  "spectral_flatness": 0.071,
+  "segments": [
+   {
+    "t": [
+     0.13,
+     0.7
+    ],
+    "rms_db": -18.6,
+    "voiced_ratio": 0.75,
+    "longest_unvoiced_s": 0.12,
+    "median_hz": 170
+   }
+  ],
+  "segment_checks": [
+   {
+    "cut": [
+     0.0,
+     1.12
+    ],
+    "small_hi": "बूरी",
+    "base_hi": "Buri",
+    "small_auto": "Booty.",
+    "base_auto": "Boori.",
+    "small_hi_bs5": "बूरी",
+    "base_hi_bs5": "Buri"
+   },
+   {
+    "control": "hi l17 [0.0,0.45]",
+    "small_hi": "पीलो",
+    "base_hi": "Pilo...",
+    "small_auto": "¡Pilo!",
+    "base_auto": "Pilo."
+   },
+   {
+    "control": "hi l02 [0.55,1.6]",
+    "small_hi": "पुर्या पुरी है",
+    "base_hi": "भूरिया परिये"
+   },
+   {
+    "control": "hi l15 [0.0,0.65] (Aditya)",
+    "small_hi": "पूरी पूरी",
+    "base_hi": "Puri",
+    "small_auto": "पूरी पूरी",
+    "base_auto": "부립"
+   }
+  ],
+  "verdict": "retake",
+  "reason": "Wrong word, strong but not certain: 'पूरी' is heard as 'बूरी' in 6 of 6 passes (small and base, -l hi and -l auto, greedy and beam 5: 'बूरी', 'Buri', 'Booty', 'Boori'). Control: Kiran's own isolated प-words read प in 5 of 6 passes (hi l17 'पी लो' cut 0 to 0.45 s: 'पीलो', 'Pilo' x3; hi l02 'पुड़िया' cut: small 'पुर्या', base 'भूरिया'), and Aditya's isolated 'पूरी' (hi l15) reads प in 3 of 4. One word that is the lie the episode turns on, so it is retaken (D-0M2: wrong word). No tag spoken; one voiced part 0.13 to 0.70 s, nothing added. Rung 1 of the ladder ([calm]) rather than a re-roll of [flatly]: [flatly] is untried on this voice and both its takes show artefacts (here a soft 20 ms pre-onset at -36 to -41 dB before the vowel; en l16 a breathy unvoiced tail), while [calm] is clean on every Kiran line in this episode. Cost about 12 credits.",
+  "retake_text": "[calm] पूरी।",
+  "ear_check": "If take 1 is heard as 'पूरी' by ear, keep take 1 and drop the retake. On the new take: one flat, falling word, no sound before or after.",
+  "d022_line_class": "other",
+  "retake_text_reviewer": "[calm] पूरी।",
+  "retake_model": "eleven_v4",
+  "retake_take": 2,
+  "rule": "D-022",
+  "d022_note": "D-022 rule 7: not a voice-wanted line; the retake is for another fault and goes ahead on its ladder as the reviewer set it"
+ },
+ {
+  "line_id": "l17",
+  "lang": "hi",
+  "speaker": "kiran",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "file": "voice/hi/l17.mp3",
+  "take": 1,
+  "take_text": "[sharply] पी लो। नहीं तो ये पिला देंगे।",
+  "transcript": "पीलो नहीं तो ये पिलाडेंगे",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "transcript_latin_pass": "Peel it. Or else they'll feed you.",
+  "duration_s": 2.32,
+  "target_s": 3.4,
+  "speech_s": 1.89,
+  "speech_vs_target_pct": -44.4,
+  "lead_silence_s": 0.09,
+  "trail_silence_s": 0.34,
+  "pauses": [
+   [
+    0.4,
+    0.79,
+    0.39
+   ]
+  ],
+  "first_word_s": 0.09,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.105,
+   "trail_s": 0.335,
+   "pauses_ge300ms": [
+    [
+     0.46,
+     0.79,
+     0.33
+    ]
+   ]
+  },
+  "speech_rms_db": -14.7,
+  "ff_mean_db": -16.7,
+  "ff_max_db": -1.1,
+  "lufs": -15.6,
+  "true_peak_dbtp": -1.1,
+  "voiced_ratio": 0.99,
+  "voiced_ratio_strict": 0.99,
+  "median_hz": 242,
+  "spectral_centroid_hz": 2852,
+  "spectral_flatness": 0.041,
+  "segments": [
+   {
+    "t": [
+     0.09,
+     0.4
+    ],
+    "rms_db": -12.1,
+    "voiced_ratio": 1.0,
+    "longest_unvoiced_s": 0.0,
+    "median_hz": 262
+   },
+   {
+    "t": [
+     0.79,
+     1.98
+    ],
+    "rms_db": -15.7,
+    "voiced_ratio": 0.98,
+    "longest_unvoiced_s": 0.01,
+    "median_hz": 232
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard ('पीलो नहीं तो ये पिलाडेंगे'; en 'Or else they'll feed you'). No tag spoken. Pause 0.39 s after 'पी लो।'. Voiced 0.99. Not a retake reason, but [sharply] came out louder and higher, not low: -15.6 LUFS (her [calm] lines -19.7 to -22.0) and 242 Hz (her [calm] 178 to 205 Hz); true peak -1.1 dBTP.",
+  "retake_text": null,
+  "ear_check": "Shouted or shrill? Measures say about 5 LU louder and 3 to 5 semitones higher than her calm lines; the note wants low and fast."
+ },
+ {
+  "line_id": "l18",
+  "lang": "hi",
+  "speaker": "mausi",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "file": "voice/hi/l18.mp3",
+  "take": 1,
+  "take_text": "[calm] शाबाश, मेरी बच्ची।",
+  "transcript": "शबाश मेरी बच्ची",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "transcript_latin_pass": "Shabash, my child.",
+  "duration_s": 2.48,
+  "target_s": 2.4,
+  "speech_s": 2.11,
+  "speech_vs_target_pct": -12.1,
+  "lead_silence_s": 0.09,
+  "trail_silence_s": 0.28,
+  "pauses": [],
+  "first_word_s": 0.09,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.111,
+   "trail_s": 0.337,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -31.6,
+  "ff_mean_db": -32.7,
+  "ff_max_db": -14.3,
+  "lufs": -30.1,
+  "true_peak_dbtp": -14.1,
+  "voiced_ratio": 0.5,
+  "voiced_ratio_strict": 0.5,
+  "median_hz": 154,
+  "spectral_centroid_hz": 3109,
+  "spectral_flatness": 0.082,
+  "segments": [
+   {
+    "t": [
+     0.09,
+     2.2
+    ],
+    "rms_db": -31.6,
+    "voiced_ratio": 0.5,
+    "longest_unvoiced_s": 0.36,
+    "median_hz": 154
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard ('शबाश मेरी बच्ची'; en 'Shabash, my child'). No tag spoken. Voiced 0.50 (strict 0.50), -30.1 LUFS, flatness 0.082: soft. Not judged a whisper: the text is heavy in unvoiced sounds (श, श, च्च), and the vowel bins read 0.55 to 0.88 voiced, unlike hi l27's first sentence (0.00 to 0.53 on mostly voiced text). The note sets no numeric bar.",
+  "retake_text": null,
+  "ear_check": "Soft but voiced, not breathy? Lowest-voiced Mausi line that is not retaken."
+ },
+ {
+  "line_id": "l19",
+  "lang": "hi",
+  "speaker": "chhoti",
+  "voice_id": "2lLgWMtK52t50e2eLKAk",
+  "model": "eleven_v4",
+  "file": "voice/hi/l19.mp3",
+  "take": 1,
+  "take_text": "[excited] मौसी, मेहँदी dry हो गई! सो जाऊँ?",
+  "transcript": "मासी, महदी द्राई होगे, सोजाओ?",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "transcript_latin_pass": "Aunty, Mehdi is dry. Go to sleep.",
+  "duration_s": 3.2,
+  "target_s": 3.6,
+  "speech_s": 2.78,
+  "speech_vs_target_pct": -22.8,
+  "lead_silence_s": 0.11,
+  "trail_silence_s": 0.31,
+  "pauses": [],
+  "first_word_s": 0.11,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.118,
+   "trail_s": 0.323,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -18.3,
+  "ff_mean_db": -19.5,
+  "ff_max_db": -1.8,
+  "lufs": -18.5,
+  "true_peak_dbtp": -1.8,
+  "voiced_ratio": 0.86,
+  "voiced_ratio_strict": 0.67,
+  "median_hz": 296,
+  "spectral_centroid_hz": 2029,
+  "spectral_flatness": 0.032,
+  "segments": [
+   {
+    "t": [
+     0.11,
+     2.07
+    ],
+    "rms_db": -18.0,
+    "voiced_ratio": 0.87,
+    "longest_unvoiced_s": 0.1,
+    "median_hz": 296
+   },
+   {
+    "t": [
+     2.34,
+     2.89
+    ],
+    "rms_db": -19.5,
+    "voiced_ratio": 0.85,
+    "longest_unvoiced_s": 0.08,
+    "median_hz": 286
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard; 'dry' heard in both passes (hi 'द्राई', en 'Mehdi is dry'), which closes the cast.json test_gap for her phone English. No tag spoken. Voiced 0.86, median 296 Hz.",
+  "retake_text": null,
+  "ear_check": "Reads 19, not a child; not shrill (296 Hz median); a giggle in the breath?"
+ },
+ {
+  "line_id": "l20",
+  "lang": "hi",
+  "speaker": "chhoti",
+  "voice_id": "2lLgWMtK52t50e2eLKAk",
+  "model": "eleven_v4",
+  "file": "voice/hi/l20.mp3",
+  "take": 1,
+  "take_text": "[nervous] मेरी शादी सच में इतनी जल्दी है?",
+  "transcript": "मेरी शादि सच में जल्दि है",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "transcript_latin_pass": "My marriage is really so fast.",
+  "duration_s": 3.12,
+  "target_s": 3.8,
+  "speech_s": 2.8,
+  "speech_vs_target_pct": -26.3,
+  "lead_silence_s": 0.24,
+  "trail_silence_s": 0.08,
+  "pauses": [],
+  "first_word_s": 0.24,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.256,
+   "trail_s": 0.092,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -23.0,
+  "ff_mean_db": -23.8,
+  "ff_max_db": -9.2,
+  "lufs": -23.1,
+  "true_peak_dbtp": -9.2,
+  "voiced_ratio": 0.73,
+  "voiced_ratio_strict": 0.69,
+  "median_hz": 254,
+  "spectral_centroid_hz": 2556,
+  "spectral_flatness": 0.055,
+  "segments": [
+   {
+    "t": [
+     0.24,
+     1.42
+    ],
+    "rms_db": -24.0,
+    "voiced_ratio": 0.78,
+    "longest_unvoiced_s": 0.11,
+    "median_hz": 242
+   },
+   {
+    "t": [
+     1.58,
+     3.04
+    ],
+    "rms_db": -22.4,
+    "voiced_ratio": 0.69,
+    "longest_unvoiced_s": 0.16,
+    "median_hz": 271
+   }
+  ],
+  "segment_checks": [
+   {
+    "cut": [
+     0.2,
+     1.5
+    ],
+    "small_hi": "मेरी शादी"
+   },
+   {
+    "cut": [
+     1.5,
+     3.12
+    ],
+    "small_hi": "सच में जाल्दी है?",
+    "small_en": "Is it really that fast?"
+   },
+   {
+    "cut": [
+     1.97,
+     3.12
+    ],
+    "small_hi": "तुछ भी तुछ भी जल्दी है।",
+    "base_hi": "ये पनी जल्टी है?"
+   },
+   {
+    "cut": [
+     2.1,
+     3.12
+    ],
+    "small_hi": "भी ज़़ी है?",
+    "base_hi": "पेपनी जल्टी है?"
+   },
+   {
+    "cut": [
+     2.25,
+     3.12
+    ],
+    "small_hi": "भी जल्दी है",
+    "base_hi": "پڑی جلڑی ہے"
+   },
+   {
+    "full_bs5": true,
+    "small_hi": "मेरी शाटी सच में जल्दी है?"
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Words heard except one open question: 'इतनी' is not written by whisper small in any pass ('मेरी शादि सच में जल्दि है'). It is probably there: cuts from 2.1 or 2.25 s still give a syllable before 'जल्दी' (small 'भी', base 'पेपनी'/'ये पनी'/'पड़ी'), which fits the '-नी' of 'इतनी'; the en passes give 'so fast'/'that fast'; and a strongly voiced 2.00 to 2.20 s stretch with a stop closure at 2.20 s sits between 'सच में' and 'जल्दी'. Not strong enough for a wrong-word retake. No tag spoken. Smaller and lower than l19, as the note requires: 4.6 dB under (-23.0 against -18.3 dB) and 2.6 semitones lower (254 against 296 Hz). Voiced 0.73.",
+  "retake_text": null,
+  "ear_check": "Is 'इतनी' said between 'सच में' and 'जल्दी' (about 2.0 to 2.4 s)? If not, retake as written."
+ },
+ {
+  "line_id": "l21",
+  "lang": "hi",
+  "speaker": "mausi",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "file": "voice/hi/l21.mp3",
+  "take": 1,
+  "take_text": "[laughs] हाँ बेटा। सो जा अब।",
+  "transcript": "बिट्ता, सो जाएब",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "transcript_latin_pass": "So job.",
+  "duration_s": 3.28,
+  "target_s": 2.4,
+  "speech_s": 2.99,
+  "speech_vs_target_pct": 24.6,
+  "lead_silence_s": 0.03,
+  "trail_silence_s": 0.26,
+  "pauses": [
+   [
+    0.31,
+    0.69,
+    0.38
+   ]
+  ],
+  "first_word_s": 1.28,
+  "pre_word_nonspeech": {
+   "t": [
+    0.03,
+    1.22
+   ],
+   "kind": "laugh (two parts)"
+  },
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.286,
+   "pauses_ge300ms": [
+    [
+     0.28,
+     0.69,
+     0.41
+    ]
+   ]
+  },
+  "speech_rms_db": -27.3,
+  "ff_mean_db": -29.6,
+  "ff_max_db": -7.2,
+  "lufs": -27.9,
+  "true_peak_dbtp": -7.1,
+  "voiced_ratio": 0.54,
+  "voiced_ratio_strict": 0.53,
+  "median_hz": 200,
+  "spectral_centroid_hz": 1902,
+  "spectral_flatness": 0.069,
+  "segments": [
+   {
+    "t": [
+     0.03,
+     0.31
+    ],
+    "rms_db": -36.2,
+    "voiced_ratio": 0.22,
+    "longest_unvoiced_s": 0.21,
+    "median_hz": 211
+   },
+   {
+    "t": [
+     0.69,
+     1.8
+    ],
+    "rms_db": -28.9,
+    "voiced_ratio": 0.51,
+    "longest_unvoiced_s": 0.24,
+    "median_hz": 195
+   },
+   {
+    "t": [
+     2.05,
+     3.02
+    ],
+    "rms_db": -25.2,
+    "voiced_ratio": 0.68,
+    "longest_unvoiced_s": 0.12,
+    "median_hz": 195
+   }
+  ],
+  "segment_checks": [
+   {
+    "cut": [
+     0.0,
+     0.65
+    ],
+    "small_hi": "अग",
+    "base_hi": "[웃음]",
+    "small_en": "(laughs)",
+    "base_en": "[laughs]"
+   },
+   {
+    "cut": [
+     0.6,
+     1.0
+    ],
+    "small_hi": "अग!",
+    "base_hi": "[웃음]",
+    "small_en": "[Laughs]",
+    "base_en": "(laughs)"
+   },
+   {
+    "cut": [
+     0.6,
+     1.9
+    ],
+    "small_hi": "बिटा",
+    "base_hi": "بتa",
+    "small_en": "haha, beta",
+    "base_en": "(laughs)"
+   },
+   {
+    "cut": [
+     0.95,
+     1.9
+    ],
+    "small_hi": "बेटा",
+    "base_hi": "Beta"
+   },
+   {
+    "cut": [
+     1.95,
+     3.28
+    ],
+    "small_hi": "तो जाब",
+    "base_hi": "So job.",
+    "small_en": "So, job!"
+   }
+  ],
+  "verdict": "retake",
+  "reason": "Missing word, strong but not certain: 'हाँ' is not heard. The take opens with a laugh at 0.03 to 0.31 s (-36 dB), a 0.38 s gap, then three short voiced pulses about 0.18 s apart (0.68 to 0.76, 0.86 to 0.94, 1.04 to 1.22 s): laughter, not one held 'हाँ' vowel. Cut 0.6 to 1.0 s reads as laughter in 4 of 4 passes ('अग!', '[웃음]', '[Laughs]', '(laughs)'); cut 0.95 to 1.9 s reads only 'बेटा' (small and base); full passes 'बिट्ता, सो जाएब' / 'So job.'. 'हाँ' is Mausi's 'yes' to Chhoti's question and the subtitle shows it, so D-0M2's missing-word rule applies. 'सो जा अब' is heard ('सो जाएब', 'तो जाब'). No tag spoken. [laughs] appears to have swallowed the word, so rung 1, [chuckles], which on this voice in this episode (hi l13, hi l23) gave a short separate chuckle and left every word intact. Cost about 30 credits.",
+  "retake_text": "[chuckles] हाँ बेटा। सो जा अब।",
+  "ear_check": "If 'हाँ' is heard by ear inside the laugh on take 1, keep take 1. On the new take: light laugh, then 'हाँ बेटा' clear and 'सो जा अब' bedtime-soft.",
+  "d022_line_class": "other",
+  "retake_text_reviewer": "[chuckles] हाँ बेटा। सो जा अब।",
+  "retake_model": "eleven_v4",
+  "retake_take": 2,
+  "rule": "D-022",
+  "d022_note": "D-022 rule 7: not a voice-wanted line; the retake is for another fault and goes ahead on its ladder as the reviewer set it"
+ },
+ {
+  "line_id": "l22",
+  "lang": "hi",
+  "speaker": "kiran",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "file": "voice/hi/l22.mp3",
+  "take": 1,
+  "take_text": "[calm] तो मेरा हिसाब clear कर दीजिए, मौसी। आज आख़िरी थी।",
+  "transcript": "तु मेरा हिसाब ख्यर कर दीजे मुसी आज आखरी ती",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "transcript_latin_pass": "So clear my account aunty. Today was the last day.",
+  "duration_s": 4.24,
+  "target_s": 5.6,
+  "speech_s": 3.77,
+  "speech_vs_target_pct": -32.7,
+  "lead_silence_s": 0.1,
+  "trail_silence_s": 0.37,
+  "pauses": [
+   [
+    2.11,
+    2.65,
+    0.54
+   ]
+  ],
+  "first_word_s": 0.1,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.119,
+   "trail_s": 0.376,
+   "pauses_ge300ms": [
+    [
+     2.16,
+     2.65,
+     0.5
+    ]
+   ]
+  },
+  "speech_rms_db": -19.6,
+  "ff_mean_db": -21.1,
+  "ff_max_db": -3.1,
+  "lufs": -20.4,
+  "true_peak_dbtp": -3.1,
+  "voiced_ratio": 0.73,
+  "voiced_ratio_strict": 0.72,
+  "median_hz": 178,
+  "spectral_centroid_hz": 2455,
+  "spectral_flatness": 0.059,
+  "segments": [
+   {
+    "t": [
+     0.1,
+     2.11
+    ],
+    "rms_db": -18.6,
+    "voiced_ratio": 0.85,
+    "longest_unvoiced_s": 0.09,
+    "median_hz": 186
+   },
+   {
+    "t": [
+     2.65,
+     3.87
+    ],
+    "rms_db": -22.0,
+    "voiced_ratio": 0.52,
+    "longest_unvoiced_s": 0.22,
+    "median_hz": 174
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard ('तु मेरा हिसाब ख्यर कर दीजे मुसी / आज आखरी ती'); 'clear' heard in the en pass ('So clear my account aunty'). No tag spoken. Beat 0.54 s before 'आज आख़िरी थी।'. Voiced 0.73 (second sentence 0.52, softer; no voicing bar on this [calm] line).",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l23",
+  "lang": "hi",
+  "speaker": "mausi",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "file": "voice/hi/l23.mp3",
+  "take": 1,
+  "take_text": "[chuckles] आख़िरी? अगले महीने की booking है, बेटा।",
+  "transcript": "अखरी अगले महीने की बुकिंग है बिटा",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "transcript_latin_pass": "The last one is the next month's booking.",
+  "duration_s": 3.84,
+  "target_s": 4.6,
+  "speech_s": 3.58,
+  "speech_vs_target_pct": -22.2,
+  "lead_silence_s": 0.07,
+  "trail_silence_s": 0.19,
+  "pauses": [
+   [
+    1.42,
+    2.01,
+    0.59
+   ]
+  ],
+  "first_word_s": 0.64,
+  "pre_word_nonspeech": {
+   "t": [
+    0.07,
+    0.41
+   ],
+   "kind": "chuckle"
+  },
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.083,
+   "trail_s": 0.22,
+   "pauses_ge300ms": [
+    [
+     1.4,
+     2.02,
+     0.62
+    ]
+   ]
+  },
+  "speech_rms_db": -25.3,
+  "ff_mean_db": -27.1,
+  "ff_max_db": -10.9,
+  "lufs": -26.4,
+  "true_peak_dbtp": -10.9,
+  "voiced_ratio": 0.76,
+  "voiced_ratio_strict": 0.73,
+  "median_hz": 242,
+  "spectral_centroid_hz": 2325,
+  "spectral_flatness": 0.053,
+  "segments": [
+   {
+    "t": [
+     0.07,
+     0.41
+    ],
+    "rms_db": -31.7,
+    "voiced_ratio": 0.48,
+    "longest_unvoiced_s": 0.13,
+    "median_hz": 205
+   },
+   {
+    "t": [
+     0.64,
+     1.42
+    ],
+    "rms_db": -26.9,
+    "voiced_ratio": 0.45,
+    "longest_unvoiced_s": 0.21,
+    "median_hz": 281
+   },
+   {
+    "t": [
+     2.01,
+     3.65
+    ],
+    "rms_db": -24.2,
+    "voiced_ratio": 0.94,
+    "longest_unvoiced_s": 0.03,
+    "median_hz": 242
+   }
+  ],
+  "segment_checks": [
+   {
+    "cut": [
+     0.0,
+     0.6
+    ],
+    "small_hi": "तुछ तुछ तुछ",
+    "base_hi": "[웃음]",
+    "small_en": "(laughs)",
+    "base_en": "[laughs]"
+   },
+   {
+    "cut": [
+     0.6,
+     1.45
+    ],
+    "small_hi": "अखरी",
+    "base_hi": "آخری"
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Chuckle check passes: non-word 0.07 to 0.41 s (cut 0 to 0.6 s: base hi '[웃음]', en '(laughs)'/'[laughs]'). No spoken tag. 'आख़िरी?' heard alone (cut 0.6 to 1.45 s: 'अखरी', 'آخری'); 'booking' heard ('बुकिंग'); 'बेटा' as 'बिटा'. Pause 0.59 s after 'आख़िरी?'. Voiced 0.76.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l24",
+  "lang": "hi",
+  "speaker": "mausi",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "file": "voice/hi/l24.mp3",
+  "take": 1,
+  "take_text": "[calm] छोटी अकेले कैसे सँभालेगी?",
+  "transcript": "चोटी अकेले कैसे संबालेगी?",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "transcript_latin_pass": "How can a little girl handle it alone?",
+  "duration_s": 2.48,
+  "target_s": 3.0,
+  "speech_s": 2.18,
+  "speech_vs_target_pct": -27.3,
+  "lead_silence_s": 0.13,
+  "trail_silence_s": 0.17,
+  "pauses": [],
+  "first_word_s": 0.13,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.14,
+   "trail_s": 0.192,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -27.1,
+  "ff_mean_db": -28.3,
+  "ff_max_db": -13.3,
+  "lufs": -27.3,
+  "true_peak_dbtp": -12.9,
+  "voiced_ratio": 0.74,
+  "voiced_ratio_strict": 0.74,
+  "median_hz": 205,
+  "spectral_centroid_hz": 3015,
+  "spectral_flatness": 0.078,
+  "segments": [
+   {
+    "t": [
+     0.13,
+     0.69
+    ],
+    "rms_db": -27.1,
+    "voiced_ratio": 0.66,
+    "longest_unvoiced_s": 0.17,
+    "median_hz": 242
+   },
+   {
+    "t": [
+     0.96,
+     2.31
+    ],
+    "rms_db": -27.1,
+    "voiced_ratio": 0.78,
+    "longest_unvoiced_s": 0.07,
+    "median_hz": 190
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard ('चोटी' for छोटी is the small model's unaspirated spelling; 'अकेले कैसे संबालेगी'). No tag spoken. Voiced 0.74.",
+  "retake_text": null,
+  "ear_check": "'छोटी' aspirated?"
+ },
+ {
+  "line_id": "l25",
+  "lang": "hi",
+  "speaker": "kiran",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "file": "voice/hi/l25.mp3",
+  "take": 1,
+  "take_text": "[sharply] और मेरे अठारह लाख?",
+  "transcript": "और मेरे अटारा लाक",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "transcript_latin_pass": "and my 18 lakhs?",
+  "duration_s": 1.68,
+  "target_s": 2.2,
+  "speech_s": 1.36,
+  "speech_vs_target_pct": -38.2,
+  "lead_silence_s": 0.05,
+  "trail_silence_s": 0.27,
+  "pauses": [],
+  "first_word_s": 0.05,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.061,
+   "trail_s": 0.257,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -14.6,
+  "ff_mean_db": -15.9,
+  "ff_max_db": -1.5,
+  "lufs": -14.7,
+  "true_peak_dbtp": -1.4,
+  "voiced_ratio": 0.81,
+  "voiced_ratio_strict": 0.68,
+  "median_hz": 267,
+  "spectral_centroid_hz": 2377,
+  "spectral_flatness": 0.036,
+  "segments": [
+   {
+    "t": [
+     0.05,
+     1.41
+    ],
+    "rms_db": -14.6,
+    "voiced_ratio": 0.81,
+    "longest_unvoiced_s": 0.08,
+    "median_hz": 267
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard ('और मेरे अटारा लाक'; en 'and my 18 lakhs?'). No tag spoken. Voiced 0.81. Not a retake reason: -14.7 LUFS, 267 Hz, the loudest and highest Hindi take here; true peak -1.4 dBTP.",
+  "retake_text": null,
+  "ear_check": "Shouted or shrill? The note wants quick and low, not loud."
+ },
+ {
+  "line_id": "l26",
+  "lang": "hi",
+  "speaker": "mausi",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "file": "voice/hi/l26.mp3",
+  "take": 1,
+  "take_text": "[warmly] तू मेरी बेटी है। बेटियों का हिसाब नहीं होता।",
+  "transcript": "तो मेरी भेटी है, बेटियों का हिसाब नहीं होता",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "transcript_latin_pass": "You are my daughter. Daughters don't count.",
+  "duration_s": 3.52,
+  "target_s": 5.2,
+  "speech_s": 3.3,
+  "speech_vs_target_pct": -36.5,
+  "lead_silence_s": 0.04,
+  "trail_silence_s": 0.18,
+  "pauses": [
+   [
+    1.23,
+    1.67,
+    0.44
+   ]
+  ],
+  "first_word_s": 0.04,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.056,
+   "trail_s": 0.249,
+   "pauses_ge300ms": [
+    [
+     1.19,
+     1.67,
+     0.48
+    ]
+   ]
+  },
+  "speech_rms_db": -23.5,
+  "ff_mean_db": -24.5,
+  "ff_max_db": -8.7,
+  "lufs": -23.9,
+  "true_peak_dbtp": -8.7,
+  "voiced_ratio": 0.89,
+  "voiced_ratio_strict": 0.87,
+  "median_hz": 205,
+  "spectral_centroid_hz": 1966,
+  "spectral_flatness": 0.047,
+  "segments": [
+   {
+    "t": [
+     0.04,
+     1.23
+    ],
+    "rms_db": -24.7,
+    "voiced_ratio": 0.92,
+    "longest_unvoiced_s": 0.08,
+    "median_hz": 190
+   },
+   {
+    "t": [
+     1.67,
+     3.34
+    ],
+    "rms_db": -22.8,
+    "voiced_ratio": 0.86,
+    "longest_unvoiced_s": 0.05,
+    "median_hz": 216
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard ('तो मेरी भेटी है, बेटियों का हिसाब नहीं होता'; 'तू' as 'तो' is vowel noise, en pass 'You are my daughter'). No tag spoken. Fully voiced 0.89. Not high: 205 Hz median (casting [warmly] 235 to 242 Hz, [gently] 195 Hz), so the note's 'retake with [gently] if high' does not arise. Pause 0.44 s between the sentences.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l27",
+  "lang": "hi",
+  "speaker": "mausi",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "file": "voice/hi/l27.mp3",
+  "take": 1,
+  "take_text": "[quietly] अब जाएगी कहाँ? अपने हाथ से पिलाया है तूने।",
+  "transcript": "अप जाएकी कहाँ अपने हाथ से पिलाया है तुने",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "transcript_latin_pass": "Where will she go now? You've given her to me.",
+  "duration_s": 3.36,
+  "target_s": 5.4,
+  "speech_s": 3.05,
+  "speech_vs_target_pct": -43.5,
+  "lead_silence_s": 0.11,
+  "trail_silence_s": 0.2,
+  "pauses": [
+   [
+    1.22,
+    1.71,
+    0.49
+   ]
+  ],
+  "first_word_s": 0.11,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.152,
+   "trail_s": 0.222,
+   "pauses_ge300ms": [
+    [
+     1.13,
+     1.72,
+     0.6
+    ]
+   ]
+  },
+  "speech_rms_db": -33.3,
+  "ff_mean_db": -34.1,
+  "ff_max_db": -11.4,
+  "lufs": -31.1,
+  "true_peak_dbtp": -11.1,
+  "voiced_ratio": 0.53,
+  "voiced_ratio_strict": 0.51,
+  "median_hz": 182,
+  "spectral_centroid_hz": 3023,
+  "spectral_flatness": 0.086,
+  "segments": [
+   {
+    "t": [
+     0.11,
+     1.22
+    ],
+    "rms_db": -34.2,
+    "voiced_ratio": 0.31,
+    "longest_unvoiced_s": 0.16,
+    "median_hz": 213
+   },
+   {
+    "t": [
+     1.71,
+     3.16
+    ],
+    "rms_db": -32.7,
+    "voiced_ratio": 0.69,
+    "longest_unvoiced_s": 0.12,
+    "median_hz": 178
+   }
+  ],
+  "verdict": "retake",
+  "reason": "Wrong whisper. The note: 'Mausi is never whispered... Reject a whisper (voiced_ratio below 0.6)'. Whole take voiced 0.53 (strict 0.51), under the bar. The first sentence 'अब जाएगी कहाँ?' (0.11 to 1.22 s) is whispered: voiced 0.31 at -34.2 dB, 200 ms bins 0.00 to 0.53 on mostly voiced sounds; flatness 0.086 and centroid 3,023 Hz (her plain lines 0.047 to 0.065 and 1,966 to 2,361 Hz). The second sentence is voiced (0.69). -31.1 LUFS. Words survive ('अप जाएकी कहाँ अपने हाथ से पिलाया है तुने'), so this is a whisper retake, not a word retake. Rung 1 of the note's ladder, [low voice]. If that whispers too, rung 2 is '[gently] [slowly]' (mausi_t4 in casting: softer, lower, voiced). Cost about 60 credits.",
+  "retake_text": "[calm] अब जाएगी कहाँ? अपने हाथ से पिलाया है तूने।",
+  "ear_check": "On the new take: soft and slow but voiced throughout; 'तूने' last and quiet.",
+  "d022_line_class": "voice-wanted",
+  "retake_text_reviewer": "[low voice] अब जाएगी कहाँ? अपने हाथ से पिलाया है तूने।",
+  "retake_model": "eleven_v4",
+  "retake_take": 2,
+  "rule": "D-022",
+  "d022_note": "D-022 rule 1: script text with every quiet-family tag deleted, [calm] added because no tag was left"
+ },
+ {
+  "line_id": "l28",
+  "lang": "hi",
+  "speaker": "mausi",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "file": "voice/hi/l28.mp3",
+  "take": 1,
+  "take_text": "[calm] बिल्लू, गिलास पोंछ दे। कमरा ठीक कर।",
+  "transcript": "बिल्लु गिलास पूँचते कम्रा थीक कर",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "transcript_latin_pass": "Billu, reach the glass. Fix the room.",
+  "duration_s": 3.04,
+  "target_s": 4.2,
+  "speech_s": 2.67,
+  "speech_vs_target_pct": -36.4,
+  "lead_silence_s": 0.09,
+  "trail_silence_s": 0.28,
+  "pauses": [
+   [
+    0.49,
+    0.8,
+    0.31
+   ],
+   [
+    1.58,
+    2.1,
+    0.52
+   ]
+  ],
+  "first_word_s": 0.09,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.107,
+   "trail_s": 0.237,
+   "pauses_ge300ms": [
+    [
+     0.48,
+     0.8,
+     0.33
+    ],
+    [
+     1.57,
+     2.11,
+     0.53
+    ]
+   ]
+  },
+  "speech_rms_db": -23.8,
+  "ff_mean_db": -26.5,
+  "ff_max_db": -8.8,
+  "lufs": -25.3,
+  "true_peak_dbtp": -8.8,
+  "voiced_ratio": 0.81,
+  "voiced_ratio_strict": 0.81,
+  "median_hz": 216,
+  "spectral_centroid_hz": 2361,
+  "spectral_flatness": 0.065,
+  "segments": [
+   {
+    "t": [
+     0.09,
+     0.49
+    ],
+    "rms_db": -22.6,
+    "voiced_ratio": 1.0,
+    "longest_unvoiced_s": 0.0,
+    "median_hz": 235
+   },
+   {
+    "t": [
+     0.8,
+     1.58
+    ],
+    "rms_db": -24.7,
+    "voiced_ratio": 0.79,
+    "longest_unvoiced_s": 0.09,
+    "median_hz": 190
+   },
+   {
+    "t": [
+     2.1,
+     2.76
+    ],
+    "rms_db": -23.6,
+    "voiced_ratio": 0.7,
+    "longest_unvoiced_s": 0.06,
+    "median_hz": 222
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard ('बिल्लु गिलास पूँचते कम्रा थीक कर'; 'पोंछ दे' as 'पूँचते' is a spelling; en 'Billu, reach the glass. Fix the room.' is translation noise). No tag spoken. Pauses 0.31 s after 'बिल्लू' and 0.52 s between the two orders. Voiced 0.81.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l29",
+  "lang": "hi",
+  "speaker": "billu",
+  "voice_id": "7b9mYhmnp0y2qSH1FnBL",
+  "model": "eleven_v4",
+  "file": "voice/hi/l29.mp3",
+  "take": 1,
+  "take_text": "[flatly] हाँ मौसी।",
+  "transcript": "रामोसी.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "transcript_latin_pass": "Hamosi.",
+  "duration_s": 1.44,
+  "target_s": 1.4,
+  "speech_s": 0.95,
+  "speech_vs_target_pct": -32.1,
+  "lead_silence_s": 0.1,
+  "trail_silence_s": 0.39,
+  "pauses": [],
+  "first_word_s": 0.1,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.119,
+   "trail_s": 0.418,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -23.1,
+  "ff_mean_db": -24.9,
+  "ff_max_db": -7.0,
+  "lufs": -23.1,
+  "true_peak_dbtp": -7.0,
+  "voiced_ratio": 0.66,
+  "voiced_ratio_strict": 0.66,
+  "median_hz": 98,
+  "spectral_centroid_hz": 1790,
+  "spectral_flatness": 0.068,
+  "segments": [
+   {
+    "t": [
+     0.1,
+     1.05
+    ],
+    "rms_db": -23.1,
+    "voiced_ratio": 0.66,
+    "longest_unvoiced_s": 0.13,
+    "median_hz": 98
+   }
+  ],
+  "segment_checks": [
+   {
+    "cut": [
+     0.0,
+     1.44
+    ],
+    "small_hi": "रामोसी",
+    "base_hi": "ha mo si",
+    "small_auto": "Hamosi.",
+    "base_auto": "Ha mo si."
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Both words heard (small hi 'रामोसी', base 'ha mo si', auto 'Hamosi'). No tag spoken, no added syllable or laugh: one voiced part 0.10 to 1.05 s. Lead-in 0.10 s, not long, so nothing to trim. 98 Hz, flat.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l01",
+  "lang": "en",
+  "speaker": "kiran",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "file": "voice/en/l01.mp3",
+  "take": 1,
+  "take_text": "[calm] This milk has been kept for three hours, Mausi.",
+  "transcript": "This milk has been kept for three hours, Mossy.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l en, greedy, no prompt, script not given); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "duration_s": 3.04,
+  "target_s": 3.8,
+  "speech_s": 2.63,
+  "speech_vs_target_pct": -30.8,
+  "lead_silence_s": 0.08,
+  "trail_silence_s": 0.33,
+  "pauses": [],
+  "first_word_s": 0.08,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.096,
+   "trail_s": 0.338,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -20.3,
+  "ff_mean_db": -21.1,
+  "ff_max_db": -6.3,
+  "lufs": -21.1,
+  "true_peak_dbtp": -6.3,
+  "voiced_ratio": 0.7,
+  "voiced_ratio_strict": 0.69,
+  "median_hz": 211,
+  "spectral_centroid_hz": 2410,
+  "spectral_flatness": 0.051,
+  "segments": [
+   {
+    "t": [
+     0.08,
+     2.71
+    ],
+    "rms_db": -20.3,
+    "voiced_ratio": 0.7,
+    "longest_unvoiced_s": 0.13,
+    "median_hz": 211
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim ('Mossy' for Mausi is the model's spelling). No tag spoken. Voiced 0.70.",
+  "retake_text": null,
+  "ear_check": "'Mausi' the Hindi way, not 'Mossy'?"
+ },
+ {
+  "line_id": "l02",
+  "lang": "en",
+  "speaker": "kiran",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "file": "voice/en/l02.mp3",
+  "take": 1,
+  "take_text": "[quietly] There's half a sachet in it already. Two more won't mix.",
+  "transcript": "There's half a sachet in it already. Two more won't mix.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l en, greedy, no prompt, script not given); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "duration_s": 3.68,
+  "target_s": 4.6,
+  "speech_s": 3.44,
+  "speech_vs_target_pct": -25.2,
+  "lead_silence_s": 0.12,
+  "trail_silence_s": 0.12,
+  "pauses": [
+   [
+    1.96,
+    2.4,
+    0.44
+   ]
+  ],
+  "first_word_s": 0.12,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.131,
+   "trail_s": 0.139,
+   "pauses_ge300ms": [
+    [
+     1.92,
+     2.41,
+     0.49
+    ]
+   ]
+  },
+  "speech_rms_db": -26.2,
+  "ff_mean_db": -27.2,
+  "ff_max_db": -10.9,
+  "lufs": -26.3,
+  "true_peak_dbtp": -10.9,
+  "voiced_ratio": 0.61,
+  "voiced_ratio_strict": 0.61,
+  "median_hz": 195,
+  "spectral_centroid_hz": 2727,
+  "spectral_flatness": 0.069,
+  "segments": [
+   {
+    "t": [
+     0.12,
+     1.96
+    ],
+    "rms_db": -29.3,
+    "voiced_ratio": 0.57,
+    "longest_unvoiced_s": 0.19,
+    "median_hz": 195
+   },
+   {
+    "t": [
+     2.4,
+     3.56
+    ],
+    "rms_db": -23.5,
+    "voiced_ratio": 0.68,
+    "longest_unvoiced_s": 0.21,
+    "median_hz": 186
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim ('There's half a sachet in it already. Two more won't mix.'). No tag spoken. Voiced 0.61 (strict 0.61): at the note's 0.6 bar, so the 'go straight to fallback 1' rule does not trigger. But the first 0.9 s ('There's half a sa-') reads 0.12 to 0.45 in 200 ms bins at -27 to -31 dB, a breathy or partly whispered opening, then 0.70 to 1.00 to the end; the second sentence is 5.8 dB louder. Beat 0.44 s between sentences. -26.3 LUFS.",
+  "retake_text": null,
+  "ear_check": "FIRST: is the opening 'There's half a sachet' whispered (bins 0.12 to 0.45 voiced)? The casting risk on her English [quietly]. If whispered by ear, retake with '[low voice] There's half a sachet in it already. Two more won't mix.'"
+ },
+ {
+  "line_id": "l03",
+  "lang": "en",
+  "speaker": "kiran",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "file": "voice/en/l03.mp3",
+  "take": 1,
+  "take_text": "[calm] Billu can bring fresh milk.",
+  "transcript": "Belu can bring fresh milk.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l en, greedy, no prompt, script not given); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "duration_s": 2.24,
+  "target_s": 2.4,
+  "speech_s": 1.8,
+  "speech_vs_target_pct": -25.0,
+  "lead_silence_s": 0.1,
+  "trail_silence_s": 0.34,
+  "pauses": [],
+  "first_word_s": 0.1,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.111,
+   "trail_s": 0.298,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -18.3,
+  "ff_mean_db": -19.6,
+  "ff_max_db": -3.2,
+  "lufs": -18.7,
+  "true_peak_dbtp": -3.2,
+  "voiced_ratio": 0.64,
+  "voiced_ratio_strict": 0.64,
+  "median_hz": 229,
+  "spectral_centroid_hz": 1926,
+  "spectral_flatness": 0.043,
+  "segments": [
+   {
+    "t": [
+     0.1,
+     1.9
+    ],
+    "rms_db": -18.3,
+    "voiced_ratio": 0.64,
+    "longest_unvoiced_s": 0.17,
+    "median_hz": 229
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim ('Belu' for Billu). No tag spoken. Voiced 0.64.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l04",
+  "lang": "en",
+  "speaker": "mausi",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "file": "voice/en/l04.mp3",
+  "take": 1,
+  "take_text": "[laughs] See that? Meri bachchi thinks ahead of me.",
+  "transcript": "(laughs) See that? My butchie thinks ahead of me.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l en, greedy, no prompt, script not given); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "duration_s": 3.68,
+  "target_s": 4.0,
+  "speech_s": 3.52,
+  "speech_vs_target_pct": -12.0,
+  "lead_silence_s": 0.07,
+  "trail_silence_s": 0.09,
+  "pauses": [],
+  "first_word_s": 0.88,
+  "pre_word_nonspeech": {
+   "t": [
+    0.07,
+    0.81
+   ],
+   "kind": "laugh"
+  },
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.082,
+   "trail_s": 0.127,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -26.5,
+  "ff_mean_db": -27.9,
+  "ff_max_db": -7.4,
+  "lufs": -26.8,
+  "true_peak_dbtp": -7.3,
+  "voiced_ratio": 0.69,
+  "voiced_ratio_strict": 0.64,
+  "median_hz": 250,
+  "spectral_centroid_hz": 2689,
+  "spectral_flatness": 0.074,
+  "segments": [
+   {
+    "t": [
+     0.07,
+     1.32
+    ],
+    "rms_db": -27.5,
+    "voiced_ratio": 0.61,
+    "longest_unvoiced_s": 0.19,
+    "median_hz": 242
+   },
+   {
+    "t": [
+     1.61,
+     3.59
+    ],
+    "rms_db": -26.0,
+    "voiced_ratio": 0.74,
+    "longest_unvoiced_s": 0.18,
+    "median_hz": 258
+   }
+  ],
+  "segment_checks": [
+   {
+    "cut": [
+     0.0,
+     0.88
+    ],
+    "small_en": "(laughs)",
+    "base_en": "(laughs)"
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Laugh check passes: '(laughs)' 0.07 to 0.81 s, a bracketed sound label, before 'See that?' at 0.93 s (cut 0 to 0.88 s: '(laughs)' in both models). The word 'laughs' is not spoken. All words heard ('My butchie' = meri bachchi). Voiced 0.69.",
+  "retake_text": null,
+  "ear_check": "Small real laugh, not a cackle; 'meri bachchi' the Hindi way?"
+ },
+ {
+  "line_id": "l05",
+  "lang": "en",
+  "speaker": "kiran",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "file": "voice/en/l05.mp3",
+  "take": 1,
+  "take_text": "[quietly] Till today we've never taken anyone's life. Today Mausi wants a body.",
+  "transcript": "Till today, we've never taken anyone's life. Today, Morsi wants a body.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l en, greedy, no prompt, script not given); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "duration_s": 4.96,
+  "target_s": 5.6,
+  "speech_s": 4.75,
+  "speech_vs_target_pct": -15.2,
+  "lead_silence_s": 0.0,
+  "trail_silence_s": 0.21,
+  "pauses": [
+   [
+    2.86,
+    3.43,
+    0.57
+   ]
+  ],
+  "first_word_s": 0.0,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.181,
+   "pauses_ge300ms": [
+    [
+     2.86,
+     3.43,
+     0.57
+    ]
+   ]
+  },
+  "speech_rms_db": -21.0,
+  "ff_mean_db": -22.2,
+  "ff_max_db": -3.9,
+  "lufs": -21.8,
+  "true_peak_dbtp": -3.9,
+  "voiced_ratio": 0.73,
+  "voiced_ratio_strict": 0.72,
+  "median_hz": 190,
+  "spectral_centroid_hz": 2308,
+  "spectral_flatness": 0.062,
+  "segments": [
+   {
+    "t": [
+     0.0,
+     2.86
+    ],
+    "rms_db": -25.0,
+    "voiced_ratio": 0.67,
+    "longest_unvoiced_s": 0.19,
+    "median_hz": 186
+   },
+   {
+    "t": [
+     3.43,
+     4.75
+    ],
+    "rms_db": -17.7,
+    "voiced_ratio": 0.87,
+    "longest_unvoiced_s": 0.06,
+    "median_hz": 190
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim ('Morsi' for Mausi). No tag spoken. Voiced 0.73 (strict 0.72), above the 0.6 bar. Beat 0.57 s before 'Today Mausi wants a body.' The second sentence is 7 dB louder than the first (-17.7 against -25.0 dB).",
+  "retake_text": null,
+  "ear_check": "'a body' placed, not hit? The second sentence is 7 dB up on the first."
+ },
+ {
+  "line_id": "l06",
+  "lang": "en",
+  "speaker": "kiran",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "file": "voice/en/l06.mp3",
+  "take": 1,
+  "take_text": "[calm] Who'll carry it? The car's in your name, after all.",
+  "transcript": "Who'll carry it? The car's in your name after all.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l en, greedy, no prompt, script not given); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "duration_s": 3.2,
+  "target_s": 4.0,
+  "speech_s": 2.89,
+  "speech_vs_target_pct": -27.7,
+  "lead_silence_s": 0.14,
+  "trail_silence_s": 0.17,
+  "pauses": [
+   [
+    1.05,
+    1.46,
+    0.41
+   ]
+  ],
+  "first_word_s": 0.14,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.141,
+   "trail_s": 0.177,
+   "pauses_ge300ms": [
+    [
+     1.13,
+     1.46,
+     0.33
+    ]
+   ]
+  },
+  "speech_rms_db": -19.7,
+  "ff_mean_db": -21.1,
+  "ff_max_db": -5.8,
+  "lufs": -20.6,
+  "true_peak_dbtp": -5.6,
+  "voiced_ratio": 0.75,
+  "voiced_ratio_strict": 0.75,
+  "median_hz": 222,
+  "spectral_centroid_hz": 1789,
+  "spectral_flatness": 0.038,
+  "segments": [
+   {
+    "t": [
+     0.14,
+     1.05
+    ],
+    "rms_db": -20.2,
+    "voiced_ratio": 0.66,
+    "longest_unvoiced_s": 0.09,
+    "median_hz": 258
+   },
+   {
+    "t": [
+     1.46,
+     3.03
+    ],
+    "rms_db": -19.4,
+    "voiced_ratio": 0.8,
+    "longest_unvoiced_s": 0.07,
+    "median_hz": 205
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim. No tag spoken. Pause 0.41 s after 'Who'll carry it?'. Voiced 0.75.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l07",
+  "lang": "en",
+  "speaker": "kiran",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "file": "voice/en/l07.mp3",
+  "take": 1,
+  "take_text": "[quietly] Last party brought twenty-two tola. How much did she tell you?",
+  "transcript": "Last party brought $22. How much did she tell you?",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l en, greedy, no prompt, script not given); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "duration_s": 4.24,
+  "target_s": 5.2,
+  "speech_s": 4.11,
+  "speech_vs_target_pct": -21.0,
+  "lead_silence_s": 0.01,
+  "trail_silence_s": 0.12,
+  "pauses": [
+   [
+    2.37,
+    2.92,
+    0.55
+   ]
+  ],
+  "first_word_s": 0.01,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.16,
+   "trail_s": 0.133,
+   "pauses_ge300ms": [
+    [
+     2.36,
+     2.92,
+     0.56
+    ]
+   ]
+  },
+  "speech_rms_db": -23.7,
+  "ff_mean_db": -25.0,
+  "ff_max_db": -7.5,
+  "lufs": -24.3,
+  "true_peak_dbtp": -7.4,
+  "voiced_ratio": 0.67,
+  "voiced_ratio_strict": 0.63,
+  "median_hz": 205,
+  "spectral_centroid_hz": 2105,
+  "spectral_flatness": 0.058,
+  "segments": [
+   {
+    "t": [
+     0.01,
+     2.37
+    ],
+    "rms_db": -24.8,
+    "voiced_ratio": 0.67,
+    "longest_unvoiced_s": 0.12,
+    "median_hz": 186
+   },
+   {
+    "t": [
+     2.92,
+     4.12
+    ],
+    "rms_db": -22.2,
+    "voiced_ratio": 0.68,
+    "longest_unvoiced_s": 0.1,
+    "median_hz": 246
+   }
+  ],
+  "segment_checks": [
+   {
+    "cut": [
+     1.5,
+     2.45
+    ],
+    "small_en": "$22.",
+    "base_en": "(speaking in foreign language)",
+    "small_hi": "ती तुटोला",
+    "base_hi": "तो तो ला."
+   },
+   {
+    "cut": [
+     0.0,
+     2.45
+    ],
+    "small_en": "Last party brought $22.",
+    "base_en": "Last party brought 22 dollars."
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard. The full pass writes 'Last party brought $22.', and 'tola' is confirmed by a cut (1.5 to 2.45 s): small hi 'ती तुटोला', base hi 'तो तो ला', and base en on 0 to 2.45 s 'brought 22 dollars', so whisper renders tola as 'dollars'. 'How much did she tell you?' verbatim. No tag spoken. Voiced 0.67 (strict 0.63). Beat 0.55 s between sentences.",
+  "retake_text": null,
+  "ear_check": "'twenty-two tola' crystal clear, 'tola' the Hindi way?"
+ },
+ {
+  "line_id": "l08",
+  "lang": "en",
+  "speaker": "billu",
+  "voice_id": "7b9mYhmnp0y2qSH1FnBL",
+  "model": "eleven_v4",
+  "file": "voice/en/l08.mp3",
+  "take": 1,
+  "take_text": "[hesitant] Twelve. Mausi said so.",
+  "transcript": "12. Mosi said so.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l en, greedy, no prompt, script not given); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "duration_s": 2.8,
+  "target_s": 2.8,
+  "speech_s": 2.37,
+  "speech_vs_target_pct": -15.4,
+  "lead_silence_s": 0.15,
+  "trail_silence_s": 0.28,
+  "pauses": [],
+  "first_word_s": 0.15,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.163,
+   "trail_s": 0.339,
+   "pauses_ge300ms": [
+    [
+     1.0,
+     1.32,
+     0.32
+    ]
+   ]
+  },
+  "speech_rms_db": -27.5,
+  "ff_mean_db": -28.3,
+  "ff_max_db": -11.1,
+  "lufs": -26.1,
+  "true_peak_dbtp": -10.4,
+  "voiced_ratio": 0.6,
+  "voiced_ratio_strict": 0.6,
+  "median_hz": 121,
+  "spectral_centroid_hz": 2618,
+  "spectral_flatness": 0.069,
+  "segments": [
+   {
+    "t": [
+     0.15,
+     2.52
+    ],
+    "rms_db": -27.5,
+    "voiced_ratio": 0.6,
+    "longest_unvoiced_s": 0.21,
+    "median_hz": 121
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim ('12. Mosi said so.'). No tag spoken, no stammer: one continuous segment. silencedetect pause 0.32 s after 'Twelve.'. Voiced 0.60.",
+  "retake_text": null,
+  "ear_check": "Hesitant, not a stammer."
+ },
+ {
+  "line_id": "l09",
+  "lang": "en",
+  "speaker": "mausi",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "file": "voice/en/l09.mp3",
+  "take": 1,
+  "take_text": "[calm] Who'll open the shop today, Damaad ji?",
+  "transcript": "Who'll open the shop today, Dhammaji?",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l en, greedy, no prompt, script not given); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "duration_s": 2.24,
+  "target_s": 3.4,
+  "speech_s": 1.94,
+  "speech_vs_target_pct": -42.9,
+  "lead_silence_s": 0.15,
+  "trail_silence_s": 0.15,
+  "pauses": [],
+  "first_word_s": 0.15,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.165,
+   "trail_s": 0.175,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -25.2,
+  "ff_mean_db": -26.2,
+  "ff_max_db": -10.7,
+  "lufs": -25.9,
+  "true_peak_dbtp": -10.6,
+  "voiced_ratio": 0.82,
+  "voiced_ratio_strict": 0.82,
+  "median_hz": 193,
+  "spectral_centroid_hz": 2267,
+  "spectral_flatness": 0.061,
+  "segments": [
+   {
+    "t": [
+     0.15,
+     2.09
+    ],
+    "rms_db": -25.2,
+    "voiced_ratio": 0.82,
+    "longest_unvoiced_s": 0.11,
+    "median_hz": 193
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim with 'Dhammaji' for Damaad ji; 'ji' clear, which the note accepts. No tag spoken. Voiced 0.82.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l10",
+  "lang": "en",
+  "speaker": "aditya",
+  "voice_id": "zCXXiWzuZO7d9fERssmF",
+  "model": "eleven_v4",
+  "file": "voice/en/l10.mp3",
+  "take": 1,
+  "take_text": "[calm] It doesn't open without me.",
+  "transcript": "It doesn't open without me.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l en, greedy, no prompt, script not given); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "duration_s": 2.08,
+  "target_s": 2.4,
+  "speech_s": 1.66,
+  "speech_vs_target_pct": -30.8,
+  "lead_silence_s": 0.13,
+  "trail_silence_s": 0.29,
+  "pauses": [],
+  "first_word_s": 0.13,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.148,
+   "trail_s": 0.274,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -17.8,
+  "ff_mean_db": -19.2,
+  "ff_max_db": -4.5,
+  "lufs": -19.3,
+  "true_peak_dbtp": -4.5,
+  "voiced_ratio": 0.85,
+  "voiced_ratio_strict": 0.84,
+  "median_hz": 110,
+  "spectral_centroid_hz": 1440,
+  "spectral_flatness": 0.034,
+  "segments": [
+   {
+    "t": [
+     0.13,
+     1.79
+    ],
+    "rms_db": -17.8,
+    "voiced_ratio": 0.85,
+    "longest_unvoiced_s": 0.06,
+    "median_hz": 110
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim. No tag spoken. Start not clipped: speech at 0.13 s and 'It' transcribes. Voiced 0.85.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l11",
+  "lang": "en",
+  "speaker": "mausi",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "file": "voice/en/l11.mp3",
+  "take": 1,
+  "take_text": "[sighs] Mohit was a simple boy.",
+  "transcript": "*sigh* Mohit was a simple boy.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l en, greedy, no prompt, script not given); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "duration_s": 3.04,
+  "target_s": 2.6,
+  "speech_s": 2.6,
+  "speech_vs_target_pct": 0.0,
+  "lead_silence_s": 0.09,
+  "trail_silence_s": 0.35,
+  "pauses": [
+   [
+    0.65,
+    1.07,
+    0.42
+   ]
+  ],
+  "first_word_s": 1.07,
+  "pre_word_nonspeech": {
+   "t": [
+    0.09,
+    0.65
+   ],
+   "kind": "sigh"
+  },
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.11,
+   "trail_s": 0.412,
+   "pauses_ge300ms": [
+    [
+     0.49,
+     1.07,
+     0.58
+    ]
+   ]
+  },
+  "speech_rms_db": -28.8,
+  "ff_mean_db": -29.9,
+  "ff_max_db": -12.6,
+  "lufs": -28.0,
+  "true_peak_dbtp": -12.5,
+  "voiced_ratio": 0.6,
+  "voiced_ratio_strict": 0.6,
+  "median_hz": 211,
+  "spectral_centroid_hz": 2650,
+  "spectral_flatness": 0.07,
+  "segments": [
+   {
+    "t": [
+     0.09,
+     0.65
+    ],
+    "rms_db": -36.0,
+    "voiced_ratio": 0.3,
+    "longest_unvoiced_s": 0.33,
+    "median_hz": 225
+   },
+   {
+    "t": [
+     1.07,
+     2.69
+    ],
+    "rms_db": -27.7,
+    "voiced_ratio": 0.7,
+    "longest_unvoiced_s": 0.19,
+    "median_hz": 200
+   }
+  ],
+  "segment_checks": [
+   {
+    "cut": [
+     0.0,
+     0.95
+    ],
+    "small_en": "*sigh*",
+    "base_en": "[sighs]"
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Sigh check passes: '*sigh*' 0.09 to 0.65 s (-36 dB, voiced 0.30), a sound label (cut 0 to 0.95 s: small '*sigh*', base '[sighs]', both bracketed), before 'Mohit' at 1.07 s. Not the word, not a groan by level. Rest verbatim.",
+  "retake_text": null,
+  "ear_check": "Sigh real, not the word 'sighs' (base writes '[sighs]', bracketed)."
+ },
+ {
+  "line_id": "l12",
+  "lang": "en",
+  "speaker": "aditya",
+  "voice_id": "zCXXiWzuZO7d9fERssmF",
+  "model": "eleven_v4",
+  "file": "voice/en/l12.mp3",
+  "take": 1,
+  "take_text": "[quietly] You remember all their names?",
+  "transcript": "You remember all their names?",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l en, greedy, no prompt, script not given); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "duration_s": 2.08,
+  "target_s": 2.6,
+  "speech_s": 1.83,
+  "speech_vs_target_pct": -29.6,
+  "lead_silence_s": 0.02,
+  "trail_silence_s": 0.23,
+  "pauses": [],
+  "first_word_s": 0.02,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.246,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -20.3,
+  "ff_mean_db": -21.1,
+  "ff_max_db": -7.3,
+  "lufs": -21.3,
+  "true_peak_dbtp": -7.3,
+  "voiced_ratio": 0.61,
+  "voiced_ratio_strict": 0.58,
+  "median_hz": 121,
+  "spectral_centroid_hz": 1756,
+  "spectral_flatness": 0.043,
+  "segments": [
+   {
+    "t": [
+     0.02,
+     1.85
+    ],
+    "rms_db": -20.3,
+    "voiced_ratio": 0.61,
+    "longest_unvoiced_s": 0.17,
+    "median_hz": 121
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim. No tag spoken. Voiced 0.61 (strict 0.58), -21.3 LUFS: quiet and voiced; no word lost.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l13",
+  "lang": "en",
+  "speaker": "mausi",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "file": "voice/en/l13.mp3",
+  "take": 1,
+  "take_text": "[chuckles] Every party's name is written down.",
+  "transcript": "Every party's name is written down.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l en, greedy, no prompt, script not given); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "duration_s": 3.12,
+  "target_s": 3.0,
+  "speech_s": 2.9,
+  "speech_vs_target_pct": -3.3,
+  "lead_silence_s": 0.05,
+  "trail_silence_s": 0.17,
+  "pauses": [],
+  "first_word_s": 0.8,
+  "pre_word_nonspeech": {
+   "t": [
+    0.05,
+    0.35
+   ],
+   "kind": "chuckle"
+  },
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.06,
+   "trail_s": 0.203,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -26.0,
+  "ff_mean_db": -26.9,
+  "ff_max_db": -8.5,
+  "lufs": -25.5,
+  "true_peak_dbtp": -8.5,
+  "voiced_ratio": 0.74,
+  "voiced_ratio_strict": 0.72,
+  "median_hz": 211,
+  "spectral_centroid_hz": 2094,
+  "spectral_flatness": 0.045,
+  "segments": [
+   {
+    "t": [
+     0.05,
+     2.95
+    ],
+    "rms_db": -26.0,
+    "voiced_ratio": 0.74,
+    "longest_unvoiced_s": 0.27,
+    "median_hz": 211
+   }
+  ],
+  "segment_checks": [
+   {
+    "cut": [
+     0.0,
+     0.7
+    ],
+    "small_en": "(laughs)",
+    "base_en": "[laughs]"
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Chuckle check passes: non-word 0.05 to about 0.35 s (cut 0 to 0.7 s: '(laughs)', '[laughs]'). No spoken tag. Rest verbatim. Voiced 0.74.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l14",
+  "lang": "en",
+  "speaker": "mausi",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "file": "voice/en/l14.mp3",
+  "take": 1,
+  "take_text": "[calm] With your own hand, beta.",
+  "transcript": "With your own hand, Brita.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l en, greedy, no prompt, script not given); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "duration_s": 2.32,
+  "target_s": 2.2,
+  "speech_s": 1.9,
+  "speech_vs_target_pct": -13.6,
+  "lead_silence_s": 0.21,
+  "trail_silence_s": 0.21,
+  "pauses": [],
+  "first_word_s": 0.21,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.229,
+   "trail_s": 0.241,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -25.2,
+  "ff_mean_db": -27.1,
+  "ff_max_db": -11.2,
+  "lufs": -26.7,
+  "true_peak_dbtp": -11.2,
+  "voiced_ratio": 0.78,
+  "voiced_ratio_strict": 0.78,
+  "median_hz": 160,
+  "spectral_centroid_hz": 2453,
+  "spectral_flatness": 0.058,
+  "segments": [
+   {
+    "t": [
+     0.21,
+     1.46
+    ],
+    "rms_db": -24.3,
+    "voiced_ratio": 0.74,
+    "longest_unvoiced_s": 0.18,
+    "median_hz": 180
+   },
+   {
+    "t": [
+     1.7,
+     2.11
+    ],
+    "rms_db": -29.8,
+    "voiced_ratio": 0.92,
+    "longest_unvoiced_s": 0.02,
+    "median_hz": 148
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard ('Brita' for beta). No tag spoken. 'beta' lower (148 against 180 Hz) and 5.5 dB softer, as asked. Voiced 0.78.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l15",
+  "lang": "en",
+  "speaker": "aditya",
+  "voice_id": "zCXXiWzuZO7d9fERssmF",
+  "model": "eleven_v4",
+  "file": "voice/en/l15.mp3",
+  "take": 1,
+  "take_text": "[quietly] The whole sachet?",
+  "transcript": "The whole sashay?",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l en, greedy, no prompt, script not given); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "duration_s": 1.68,
+  "target_s": 1.6,
+  "speech_s": 1.4,
+  "speech_vs_target_pct": -12.5,
+  "lead_silence_s": 0.01,
+  "trail_silence_s": 0.27,
+  "pauses": [],
+  "first_word_s": 0.01,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.136,
+   "trail_s": 0.282,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -21.6,
+  "ff_mean_db": -22.4,
+  "ff_max_db": -6.7,
+  "lufs": -21.8,
+  "true_peak_dbtp": -6.7,
+  "voiced_ratio": 0.54,
+  "voiced_ratio_strict": 0.46,
+  "median_hz": 119,
+  "spectral_centroid_hz": 1879,
+  "spectral_flatness": 0.053,
+  "segments": [
+   {
+    "t": [
+     0.01,
+     1.41
+    ],
+    "rms_db": -21.6,
+    "voiced_ratio": 0.54,
+    "longest_unvoiced_s": 0.29,
+    "median_hz": 119
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard ('The whole sashay?', which is how 'sachet' is said). No tag spoken. The frame measure starts speech at 0.01 s and silencedetect at 0.14 s; the first 0.2 s reads voiced 0.17 at -28 dB, which may be a breath in before 'The'. An added breath is not a D-0M2 retake reason; the edit can trim it. Voiced 0.54 (strict 0.46); no voicing bar in the note.",
+  "retake_text": null,
+  "ear_check": "An added breath before 'The' (0.0 to 0.14 s)? Trim in the edit if so."
+ },
+ {
+  "line_id": "l16",
+  "lang": "en",
+  "speaker": "kiran",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "file": "voice/en/l16.mp3",
+  "take": 1,
+  "take_text": "[flatly] All of it.",
+  "transcript": "All of it.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l en, greedy, no prompt, script not given); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "duration_s": 1.36,
+  "target_s": 1.0,
+  "speech_s": 0.87,
+  "speech_vs_target_pct": -13.0,
+  "lead_silence_s": 0.2,
+  "trail_silence_s": 0.29,
+  "pauses": [],
+  "first_word_s": 0.2,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.211,
+   "trail_s": 0.294,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -20.1,
+  "ff_mean_db": -22.4,
+  "ff_max_db": -4.2,
+  "lufs": -20.3,
+  "true_peak_dbtp": -4.2,
+  "voiced_ratio": 0.54,
+  "voiced_ratio_strict": 0.46,
+  "median_hz": 182,
+  "spectral_centroid_hz": 2972,
+  "spectral_flatness": 0.093,
+  "segments": [
+   {
+    "t": [
+     0.2,
+     1.07
+    ],
+    "rms_db": -20.1,
+    "voiced_ratio": 0.54,
+    "longest_unvoiced_s": 0.17,
+    "median_hz": 182
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim ('All of it.'). No tag spoken. 'All of' voiced, then an unvoiced tail after 'it' from about 0.75 to 1.07 s at -35 to -44 dB (flatness 0.093, strict voicing 0.46): a breath out or the 't' release, not a word. Trim in the edit; not a D-0M2 retake reason.",
+  "retake_text": null,
+  "ear_check": "Added breath after 'it'? Trim to the word if so."
+ },
+ {
+  "line_id": "l17",
+  "lang": "en",
+  "speaker": "kiran",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "file": "voice/en/l17.mp3",
+  "take": 1,
+  "take_text": "[sharply] Drink it. Otherwise they'll make you.",
+  "transcript": "Drink it. Otherwise, they'll make you.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l en, greedy, no prompt, script not given); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "duration_s": 2.64,
+  "target_s": 2.8,
+  "speech_s": 2.3,
+  "speech_vs_target_pct": -17.9,
+  "lead_silence_s": 0.03,
+  "trail_silence_s": 0.31,
+  "pauses": [],
+  "first_word_s": 0.03,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.278,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -14.7,
+  "ff_mean_db": -16.2,
+  "ff_max_db": -1.8,
+  "lufs": -14.8,
+  "true_peak_dbtp": -1.8,
+  "voiced_ratio": 0.81,
+  "voiced_ratio_strict": 0.81,
+  "median_hz": 216,
+  "spectral_centroid_hz": 2436,
+  "spectral_flatness": 0.038,
+  "segments": [
+   {
+    "t": [
+     0.03,
+     0.71
+    ],
+    "rms_db": -16.2,
+    "voiced_ratio": 0.72,
+    "longest_unvoiced_s": 0.11,
+    "median_hz": 235
+   },
+   {
+    "t": [
+     1.0,
+     2.33
+    ],
+    "rms_db": -14.1,
+    "voiced_ratio": 0.86,
+    "longest_unvoiced_s": 0.08,
+    "median_hz": 216
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim. No tag spoken. Voiced 0.81. Not a retake reason: -14.8 LUFS, about 6 LU over her [calm] English lines (-18.7 to -21.8), true peak -1.8 dBTP.",
+  "retake_text": null,
+  "ear_check": "Shouted? The note wants low and fast, not loud."
+ },
+ {
+  "line_id": "l18",
+  "lang": "en",
+  "speaker": "mausi",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "file": "voice/en/l18.mp3",
+  "take": 1,
+  "take_text": "[calm] Well done, meri bachchi.",
+  "transcript": "Well done, my child.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l en, greedy, no prompt, script not given); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "duration_s": 2.24,
+  "target_s": 2.4,
+  "speech_s": 1.87,
+  "speech_vs_target_pct": -22.1,
+  "lead_silence_s": 0.19,
+  "trail_silence_s": 0.18,
+  "pauses": [],
+  "first_word_s": 0.19,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.21,
+   "trail_s": 0.203,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -28.8,
+  "ff_mean_db": -30.0,
+  "ff_max_db": -13.8,
+  "lufs": -29.6,
+  "true_peak_dbtp": -13.8,
+  "voiced_ratio": 0.69,
+  "voiced_ratio_strict": 0.69,
+  "median_hz": 163,
+  "spectral_centroid_hz": 2534,
+  "spectral_flatness": 0.068,
+  "segments": [
+   {
+    "t": [
+     0.19,
+     2.06
+    ],
+    "rms_db": -28.8,
+    "voiced_ratio": 0.69,
+    "longest_unvoiced_s": 0.29,
+    "median_hz": 163
+   }
+  ],
+  "segment_checks": [
+   {
+    "cut": [
+     1.1,
+     2.24
+    ],
+    "small_en": "My child.",
+    "base_en": "Merry Bucky.",
+    "small_hi": "मेरी बच्ची",
+    "base_hi": "میری بچی"
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard. The full en pass writes 'Well done, my child.'; cut 1.1 to 2.24 s gives 'मेरी बच्ची' (small hi), 'میری بچی' (base hi), 'Merry Bucky' (base en), so 'meri bachchi' is said and the small en pass translated it. No tag spoken. Voiced 0.69, -29.6 LUFS.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l19",
+  "lang": "en",
+  "speaker": "chhoti",
+  "voice_id": "2lLgWMtK52t50e2eLKAk",
+  "model": "eleven_v4",
+  "file": "voice/en/l19.mp3",
+  "take": 1,
+  "take_text": "[excited] Mausi, my mehendi's dry! Can I sleep now?",
+  "transcript": "Mossy, my mehndi is dry. Can I sleep now?",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l en, greedy, no prompt, script not given); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "duration_s": 3.44,
+  "target_s": 3.2,
+  "speech_s": 3.09,
+  "speech_vs_target_pct": -3.4,
+  "lead_silence_s": 0.06,
+  "trail_silence_s": 0.29,
+  "pauses": [],
+  "first_word_s": 0.06,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.07,
+   "trail_s": 0.277,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -19.2,
+  "ff_mean_db": -20.2,
+  "ff_max_db": -1.1,
+  "lufs": -19.2,
+  "true_peak_dbtp": -1.0,
+  "voiced_ratio": 0.86,
+  "voiced_ratio_strict": 0.67,
+  "median_hz": 333,
+  "spectral_centroid_hz": 2352,
+  "spectral_flatness": 0.04,
+  "segments": [
+   {
+    "t": [
+     0.06,
+     2.02
+    ],
+    "rms_db": -18.9,
+    "voiced_ratio": 0.91,
+    "longest_unvoiced_s": 0.06,
+    "median_hz": 320
+   },
+   {
+    "t": [
+     2.25,
+     3.15
+    ],
+    "rms_db": -19.8,
+    "voiced_ratio": 0.78,
+    "longest_unvoiced_s": 0.1,
+    "median_hz": 333
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim ('mehndi'). No tag spoken. Voiced 0.86. Median 333 Hz, the highest take in the episode.",
+  "retake_text": null,
+  "ear_check": "Shrill or childish at 333 Hz median? Giggle there?"
+ },
+ {
+  "line_id": "l20",
+  "lang": "en",
+  "speaker": "chhoti",
+  "voice_id": "2lLgWMtK52t50e2eLKAk",
+  "model": "eleven_v4",
+  "file": "voice/en/l20.mp3",
+  "take": 1,
+  "take_text": "[nervous] Is my wedding really happening so soon?",
+  "transcript": "Is my wedding really happening so soon?",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l en, greedy, no prompt, script not given); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "duration_s": 3.04,
+  "target_s": 3.4,
+  "speech_s": 2.74,
+  "speech_vs_target_pct": -19.4,
+  "lead_silence_s": 0.08,
+  "trail_silence_s": 0.22,
+  "pauses": [],
+  "first_word_s": 0.08,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.1,
+   "trail_s": 0.245,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -25.6,
+  "ff_mean_db": -25.9,
+  "ff_max_db": -7.8,
+  "lufs": -25.2,
+  "true_peak_dbtp": -7.7,
+  "voiced_ratio": 0.71,
+  "voiced_ratio_strict": 0.68,
+  "median_hz": 258,
+  "spectral_centroid_hz": 2590,
+  "spectral_flatness": 0.058,
+  "segments": [
+   {
+    "t": [
+     0.08,
+     2.82
+    ],
+    "rms_db": -25.6,
+    "voiced_ratio": 0.71,
+    "longest_unvoiced_s": 0.22,
+    "median_hz": 258
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim. No tag spoken. Smaller and lower than l19, as the note requires: 6.4 dB under (-25.6 against -19.2 dB) and 4.4 semitones lower (258 against 333 Hz). Voiced 0.71.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l21",
+  "lang": "en",
+  "speaker": "mausi",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "file": "voice/en/l21.mp3",
+  "take": 1,
+  "take_text": "[laughs] Yes, beta. Go to sleep now.",
+  "transcript": "Yes, go to sleep now.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l en, greedy, no prompt, script not given); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "duration_s": 3.12,
+  "target_s": 2.6,
+  "speech_s": 2.92,
+  "speech_vs_target_pct": 12.3,
+  "lead_silence_s": 0.04,
+  "trail_silence_s": 0.16,
+  "pauses": [],
+  "first_word_s": 0.92,
+  "pre_word_nonspeech": {
+   "t": [
+    0.04,
+    0.88
+   ],
+   "kind": "laugh"
+  },
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.051,
+   "trail_s": 0.181,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -26.4,
+  "ff_mean_db": -28.2,
+  "ff_max_db": -8.6,
+  "lufs": -26.7,
+  "true_peak_dbtp": -8.6,
+  "voiced_ratio": 0.61,
+  "voiced_ratio_strict": 0.6,
+  "median_hz": 200,
+  "spectral_centroid_hz": 2126,
+  "spectral_flatness": 0.068,
+  "segments": [
+   {
+    "t": [
+     0.04,
+     0.24
+    ],
+    "rms_db": -37.0,
+    "voiced_ratio": 0.21,
+    "longest_unvoiced_s": 0.14,
+    "median_hz": 219
+   },
+   {
+    "t": [
+     0.47,
+     1.59
+    ],
+    "rms_db": -29.0,
+    "voiced_ratio": 0.72,
+    "longest_unvoiced_s": 0.11,
+    "median_hz": 195
+   },
+   {
+    "t": [
+     1.77,
+     1.84
+    ],
+    "rms_db": -48.3,
+    "voiced_ratio": 0.0,
+    "longest_unvoiced_s": 0.03,
+    "median_hz": null
+   },
+   {
+    "t": [
+     2.08,
+     2.96
+    ],
+    "rms_db": -23.8,
+    "voiced_ratio": 0.6,
+    "longest_unvoiced_s": 0.11,
+    "median_hz": 200
+   }
+  ],
+  "segment_checks": [
+   {
+    "cut": [
+     0.0,
+     1.0
+    ],
+    "small_en": "Yeah.",
+    "base_en": "Yeah."
+   },
+   {
+    "cut": [
+     0.4,
+     1.65
+    ],
+    "small_en": "Yes, beta.",
+    "base_en": "Yes, beta."
+   },
+   {
+    "cut": [
+     1.6,
+     3.12
+    ],
+    "small_en": "Go to sleep now.",
+    "base_en": "Go to sleep now."
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard. The full pass writes 'Yes, go to sleep now.', but cut 0.4 to 1.65 s reads 'Yes, beta.' in both models. Laugh 0.04 to 0.88 s (a faint start, then pulsed voicing 0.46 to 0.88 s), non-word, before 'Yes' at about 0.92 s. No tag spoken. Voiced 0.61.",
+  "retake_text": null,
+  "ear_check": "Light laugh, not a cackle."
+ },
+ {
+  "line_id": "l22",
+  "lang": "en",
+  "speaker": "kiran",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "file": "voice/en/l22.mp3",
+  "take": 1,
+  "take_text": "[calm] Then settle my account, Mausi. Tonight was the last one.",
+  "transcript": "Then settle my account, Mossy. Tonight was the last one.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l en, greedy, no prompt, script not given); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "duration_s": 3.44,
+  "target_s": 4.6,
+  "speech_s": 3.24,
+  "speech_vs_target_pct": -29.6,
+  "lead_silence_s": 0.04,
+  "trail_silence_s": 0.16,
+  "pauses": [],
+  "first_word_s": 0.04,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.052,
+   "trail_s": 0.169,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -21.4,
+  "ff_mean_db": -22.3,
+  "ff_max_db": -5.2,
+  "lufs": -21.8,
+  "true_peak_dbtp": -5.1,
+  "voiced_ratio": 0.74,
+  "voiced_ratio_strict": 0.73,
+  "median_hz": 186,
+  "spectral_centroid_hz": 2067,
+  "spectral_flatness": 0.056,
+  "segments": [
+   {
+    "t": [
+     0.04,
+     1.77
+    ],
+    "rms_db": -21.0,
+    "voiced_ratio": 0.77,
+    "longest_unvoiced_s": 0.09,
+    "median_hz": 186
+   },
+   {
+    "t": [
+     2.06,
+     3.28
+    ],
+    "rms_db": -22.1,
+    "voiced_ratio": 0.7,
+    "longest_unvoiced_s": 0.14,
+    "median_hz": 190
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim ('Mossy'). No tag spoken. The beat before 'Tonight was the last one.' is a 0.29 s gap (1.77 to 2.06 s), just under the 300 ms split size. Voiced 0.74.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l23",
+  "lang": "en",
+  "speaker": "mausi",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "file": "voice/en/l23.mp3",
+  "take": 1,
+  "take_text": "[chuckles] Last? Next month's party is already booked, beta.",
+  "transcript": "Last. Next month's party is already booked.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l en, greedy, no prompt, script not given); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "duration_s": 4.16,
+  "target_s": 4.4,
+  "speech_s": 3.91,
+  "speech_vs_target_pct": -11.1,
+  "lead_silence_s": 0.08,
+  "trail_silence_s": 0.17,
+  "pauses": [
+   [
+    1.32,
+    1.87,
+    0.55
+   ]
+  ],
+  "first_word_s": 0.75,
+  "pre_word_nonspeech": {
+   "t": [
+    0.08,
+    0.47
+   ],
+   "kind": "chuckle"
+  },
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.096,
+   "trail_s": 0.195,
+   "pauses_ge300ms": [
+    [
+     1.3,
+     1.87,
+     0.57
+    ]
+   ]
+  },
+  "speech_rms_db": -27.0,
+  "ff_mean_db": -28.6,
+  "ff_max_db": -8.6,
+  "lufs": -27.6,
+  "true_peak_dbtp": -8.6,
+  "voiced_ratio": 0.7,
+  "voiced_ratio_strict": 0.69,
+  "median_hz": 235,
+  "spectral_centroid_hz": 1926,
+  "spectral_flatness": 0.054,
+  "segments": [
+   {
+    "t": [
+     0.08,
+     0.47
+    ],
+    "rms_db": -33.7,
+    "voiced_ratio": 0.45,
+    "longest_unvoiced_s": 0.16,
+    "median_hz": 216
+   },
+   {
+    "t": [
+     0.75,
+     1.32
+    ],
+    "rms_db": -28.6,
+    "voiced_ratio": 0.5,
+    "longest_unvoiced_s": 0.15,
+    "median_hz": 174
+   },
+   {
+    "t": [
+     1.87,
+     3.99
+    ],
+    "rms_db": -26.2,
+    "voiced_ratio": 0.8,
+    "longest_unvoiced_s": 0.1,
+    "median_hz": 242
+   }
+  ],
+  "segment_checks": [
+   {
+    "cut": [
+     0.0,
+     0.65
+    ],
+    "small_en": "[CHUCKLES]",
+    "base_en": "[laughs]"
+   },
+   {
+    "cut": [
+     1.8,
+     4.16
+    ],
+    "small_en": "Next month's party is already booked, beta.",
+    "base_en": "Next month's party is already booked, dear."
+   },
+   {
+    "cut": [
+     3.3,
+     4.16
+    ],
+    "small_en": "booked beta.",
+    "base_en": "booked, beta.",
+    "small_hi": "बुक्त बेटा"
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard. The full pass drops 'beta' ('Last. Next month's party is already booked.'), but cut 1.8 to 4.16 s reads '...booked, beta.' (small) and cut 3.3 to 4.16 s 'booked, beta.' (both models). Chuckle 0.08 to 0.47 s (cut 0 to 0.65 s: '[CHUCKLES]', '[laughs]', both sound labels), not the word. Pause 0.55 s after 'Last?'. Voiced 0.70.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l24",
+  "lang": "en",
+  "speaker": "mausi",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "file": "voice/en/l24.mp3",
+  "take": 1,
+  "take_text": "[calm] How will Chhoti manage alone?",
+  "transcript": "How will Chhoti manage alone?",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l en, greedy, no prompt, script not given); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "duration_s": 2.16,
+  "target_s": 2.8,
+  "speech_s": 1.85,
+  "speech_vs_target_pct": -33.9,
+  "lead_silence_s": 0.12,
+  "trail_silence_s": 0.19,
+  "pauses": [],
+  "first_word_s": 0.12,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.161,
+   "trail_s": 0.25,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -26.3,
+  "ff_mean_db": -27.1,
+  "ff_max_db": -13.7,
+  "lufs": -26.8,
+  "true_peak_dbtp": -13.6,
+  "voiced_ratio": 0.78,
+  "voiced_ratio_strict": 0.77,
+  "median_hz": 216,
+  "spectral_centroid_hz": 2135,
+  "spectral_flatness": 0.056,
+  "segments": [
+   {
+    "t": [
+     0.12,
+     1.97
+    ],
+    "rms_db": -26.3,
+    "voiced_ratio": 0.78,
+    "longest_unvoiced_s": 0.16,
+    "median_hz": 216
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim ('Chhoti'). No tag spoken. Voiced 0.78.",
+  "retake_text": null,
+  "ear_check": "'Chhoti' aspirated?"
+ },
+ {
+  "line_id": "l25",
+  "lang": "en",
+  "speaker": "kiran",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "file": "voice/en/l25.mp3",
+  "take": 1,
+  "take_text": "[sharply] And my eighteen lakh?",
+  "transcript": "And my 18 lakh?",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l en, greedy, no prompt, script not given); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "duration_s": 1.52,
+  "target_s": 2.0,
+  "speech_s": 1.3,
+  "speech_vs_target_pct": -35.0,
+  "lead_silence_s": 0.02,
+  "trail_silence_s": 0.2,
+  "pauses": [],
+  "first_word_s": 0.02,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.172,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -13.4,
+  "ff_mean_db": -14.6,
+  "ff_max_db": -1.4,
+  "lufs": -13.6,
+  "true_peak_dbtp": -1.3,
+  "voiced_ratio": 0.77,
+  "voiced_ratio_strict": 0.74,
+  "median_hz": 286,
+  "spectral_centroid_hz": 2943,
+  "spectral_flatness": 0.036,
+  "segments": [
+   {
+    "t": [
+     0.02,
+     1.32
+    ],
+    "rms_db": -13.4,
+    "voiced_ratio": 0.77,
+    "longest_unvoiced_s": 0.12,
+    "median_hz": 286
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard ('And my 18 lakh?'). No tag spoken. Voiced 0.77. Not a retake reason: -13.6 LUFS, the loudest take in the episode, 286 Hz; true peak -1.3 dBTP.",
+  "retake_text": null,
+  "ear_check": "Shouted or shrill? The note wants quick and low."
+ },
+ {
+  "line_id": "l26",
+  "lang": "en",
+  "speaker": "mausi",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "file": "voice/en/l26.mp3",
+  "take": 1,
+  "take_text": "[warmly] You're my daughter. Nobody keeps accounts with daughters.",
+  "transcript": "You're my daughter. Nobody keeps accounts with daughters.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l en, greedy, no prompt, script not given); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "duration_s": 3.6,
+  "target_s": 4.8,
+  "speech_s": 3.32,
+  "speech_vs_target_pct": -30.8,
+  "lead_silence_s": 0.19,
+  "trail_silence_s": 0.09,
+  "pauses": [
+   [
+    1.28,
+    1.61,
+    0.33
+   ]
+  ],
+  "first_word_s": 0.19,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.204,
+   "trail_s": 0.098,
+   "pauses_ge300ms": [
+    [
+     1.25,
+     1.62,
+     0.37
+    ]
+   ]
+  },
+  "speech_rms_db": -27.3,
+  "ff_mean_db": -28.3,
+  "ff_max_db": -11.6,
+  "lufs": -27.8,
+  "true_peak_dbtp": -11.6,
+  "voiced_ratio": 0.75,
+  "voiced_ratio_strict": 0.71,
+  "median_hz": 225,
+  "spectral_centroid_hz": 1819,
+  "spectral_flatness": 0.049,
+  "segments": [
+   {
+    "t": [
+     0.19,
+     1.28
+    ],
+    "rms_db": -27.1,
+    "voiced_ratio": 0.88,
+    "longest_unvoiced_s": 0.05,
+    "median_hz": 235
+   },
+   {
+    "t": [
+     1.61,
+     3.51
+    ],
+    "rms_db": -27.4,
+    "voiced_ratio": 0.68,
+    "longest_unvoiced_s": 0.14,
+    "median_hz": 211
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim. No tag spoken. Voiced 0.75. Pause 0.33 s between sentences. Pitch 225 Hz median, between casting [gently] (195 Hz) and [warmly] (235 Hz). The note's 'retake with [gently] if high' is a pitch and acting call, not a D-0M2 retake reason, so it goes to the ear.",
+  "retake_text": null,
+  "ear_check": "Sits high or above Kiran (225 Hz; Kiran's English lines 186 to 229 Hz)? If yes, the owner may order '[gently] You're my daughter. Nobody keeps accounts with daughters.'"
+ },
+ {
+  "line_id": "l27",
+  "lang": "en",
+  "speaker": "mausi",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "file": "voice/en/l27.mp3",
+  "take": 1,
+  "take_text": "[quietly] Where will you go now? You made him drink it, with your own hand.",
+  "transcript": "Where will you go now? You made him drink it with your own hand.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l en, greedy, no prompt, script not given); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "duration_s": 4.24,
+  "target_s": 5.4,
+  "speech_s": 4.07,
+  "speech_vs_target_pct": -24.6,
+  "lead_silence_s": 0.01,
+  "trail_silence_s": 0.16,
+  "pauses": [
+   [
+    1.26,
+    1.86,
+    0.6
+   ]
+  ],
+  "first_word_s": 0.01,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.249,
+   "trail_s": 0.183,
+   "pauses_ge300ms": [
+    [
+     1.2,
+     1.87,
+     0.67
+    ]
+   ]
+  },
+  "speech_rms_db": -31.7,
+  "ff_mean_db": -33.1,
+  "ff_max_db": -14.7,
+  "lufs": -32.3,
+  "true_peak_dbtp": -14.6,
+  "voiced_ratio": 0.68,
+  "voiced_ratio_strict": 0.63,
+  "median_hz": 190,
+  "spectral_centroid_hz": 2580,
+  "spectral_flatness": 0.079,
+  "segments": [
+   {
+    "t": [
+     0.01,
+     1.26
+    ],
+    "rms_db": -32.7,
+    "voiced_ratio": 0.68,
+    "longest_unvoiced_s": 0.15,
+    "median_hz": 190
+   },
+   {
+    "t": [
+     1.86,
+     2.87
+    ],
+    "rms_db": -29.4,
+    "voiced_ratio": 0.7,
+    "longest_unvoiced_s": 0.07,
+    "median_hz": 200
+   },
+   {
+    "t": [
+     3.11,
+     4.08
+    ],
+    "rms_db": -34.2,
+    "voiced_ratio": 0.65,
+    "longest_unvoiced_s": 0.08,
+    "median_hz": 178
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim. No tag spoken. Voiced 0.68 (strict 0.63), every segment 0.65 or above, so not a whisper, unlike hi l27. -32.3 LUFS, the quietest take in the episode, so the bed must duck. Pause 0.60 s after 'Where will you go now?'.",
+  "retake_text": null,
+  "ear_check": "Soft but voiced throughout; every word clear at -32 LUFS?"
+ },
+ {
+  "line_id": "l28",
+  "lang": "en",
+  "speaker": "mausi",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "file": "voice/en/l28.mp3",
+  "take": 1,
+  "take_text": "[calm] Billu, wipe the glass. Set the room right.",
+  "transcript": "Below, wipe the glass, set the room right.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l en, greedy, no prompt, script not given); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "duration_s": 3.28,
+  "target_s": 3.6,
+  "speech_s": 3.0,
+  "speech_vs_target_pct": -16.7,
+  "lead_silence_s": 0.11,
+  "trail_silence_s": 0.17,
+  "pauses": [
+   [
+    0.53,
+    0.95,
+    0.42
+   ],
+   [
+    1.8,
+    2.21,
+    0.41
+   ]
+  ],
+  "first_word_s": 0.11,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.129,
+   "trail_s": 0.188,
+   "pauses_ge300ms": [
+    [
+     0.5,
+     0.95,
+     0.45
+    ],
+    [
+     1.78,
+     2.21,
+     0.43
+    ]
+   ]
+  },
+  "speech_rms_db": -26.8,
+  "ff_mean_db": -29.0,
+  "ff_max_db": -10.5,
+  "lufs": -28.4,
+  "true_peak_dbtp": -10.5,
+  "voiced_ratio": 0.71,
+  "voiced_ratio_strict": 0.71,
+  "median_hz": 190,
+  "spectral_centroid_hz": 2202,
+  "spectral_flatness": 0.065,
+  "segments": [
+   {
+    "t": [
+     0.11,
+     0.53
+    ],
+    "rms_db": -24.5,
+    "voiced_ratio": 0.98,
+    "longest_unvoiced_s": 0.01,
+    "median_hz": 205
+   },
+   {
+    "t": [
+     0.95,
+     1.8
+    ],
+    "rms_db": -27.5,
+    "voiced_ratio": 0.6,
+    "longest_unvoiced_s": 0.2,
+    "median_hz": 195
+   },
+   {
+    "t": [
+     2.21,
+     3.11
+    ],
+    "rms_db": -28.0,
+    "voiced_ratio": 0.68,
+    "longest_unvoiced_s": 0.12,
+    "median_hz": 186
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard ('Below' for Billu). No tag spoken. Pauses 0.42 s and 0.41 s at the two full stops. Voiced 0.71.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l29",
+  "lang": "en",
+  "speaker": "billu",
+  "voice_id": "7b9mYhmnp0y2qSH1FnBL",
+  "model": "eleven_v4",
+  "file": "voice/en/l29.mp3",
+  "take": 1,
+  "take_text": "[flatly] Yes, Mausi.",
+  "transcript": "Yes, Mossy.",
+  "transcript_source": "local whisper.cpp 1.8.6 (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, -l en, greedy, no prompt, script not given); segment_checks = cuts of the take re-run on ggml-small and ggml-base",
+  "duration_s": 1.6,
+  "target_s": 1.4,
+  "speech_s": 1.18,
+  "speech_vs_target_pct": -15.7,
+  "lead_silence_s": 0.12,
+  "trail_silence_s": 0.3,
+  "pauses": [],
+  "first_word_s": 0.12,
+  "pre_word_nonspeech": null,
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.135,
+   "trail_s": 0.312,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -25.6,
+  "ff_mean_db": -27.1,
+  "ff_max_db": -8.3,
+  "lufs": -26.1,
+  "true_peak_dbtp": -8.3,
+  "voiced_ratio": 0.6,
+  "voiced_ratio_strict": 0.6,
+  "median_hz": 99,
+  "spectral_centroid_hz": 2528,
+  "spectral_flatness": 0.077,
+  "segments": [
+   {
+    "t": [
+     0.12,
+     1.3
+    ],
+    "rms_db": -25.6,
+    "voiced_ratio": 0.6,
+    "longest_unvoiced_s": 0.37,
+    "median_hz": 99
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim ('Yes, Mossy.'). No tag spoken, nothing added: one voiced part 0.12 to 1.30 s. Lead-in 0.12 s, nothing to trim. 99 Hz.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l16",
+  "lang": "hi",
+  "speaker": "kiran",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "file": "series1/episodes/s1b02/voice/hi/l16_t2.mp3",
+  "take": 2,
+  "take_text": "[calm] पूरी।",
+  "generation_id": "75hbRXYaIl09IHfSlavz",
+  "script_text_bare": "पूरी।",
+  "transcript": "पूरी",
+  "transcript_en_pass": "Puri.",
+  "transcript_base": "Buri",
+  "transcript_checks": null,
+  "transcript_source": "local whisper.cpp 1.8.x (/opt/homebrew/bin/whisper-cli), ggml-small.bin forced to the take's language (transcript), Hindi takes also -l en (transcript_en_pass), ggml-base.bin second pass (transcript_base); greedy, no prompt, script not given; cut re-runs in transcript_checks",
+  "duration_s": 1.2,
+  "speech_s": 0.6,
+  "lead_silence_s": 0.18,
+  "trail_silence_s": 0.42,
+  "gaps_ge150ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.189,
+   "trail_s": 0.332,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -18.2,
+  "ff_mean_db": -21.3,
+  "ff_max_db": -6.0,
+  "voiced_ratio": 0.63,
+  "median_hz": 190,
+  "spectral_centroid_hz": 1860,
+  "spectral_flatness": 0.052,
+  "segments": [
+   {
+    "t": [
+     0.18,
+     0.78
+    ],
+    "rms_db": -18.3,
+    "voiced_ratio": 0.63,
+    "longest_unvoiced_s": 0.16,
+    "median_hz": 190
+   }
+  ],
+  "segments_ge0_5s_under_0_6": [],
+  "earlier_takes": [
+   {
+    "take": 1,
+    "text": "[flatly] पूरी।",
+    "voiced_ratio": 0.75,
+    "min_segment_ge0_5s": 0.78,
+    "transcript": "बूरी",
+    "file": "series1/episodes/s1b02/voice/hi/l16.t1.mp3"
+   }
+  ],
+  "measure_method": "ffmpeg decode, pure Python (copies of scratchpad s10_s1e01_review meas.py and seg.py, unchanged). Speech frames: 20 ms RMS within 35 dB of the take's loudest frame, floor -55 dBFS. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, lags 70-450 Hz) is 0.6 or more. segments: speech runs split at gaps of 150 ms or more, each with its own voiced_ratio. D-022 test: whole take and every segment of 0.5 s or more under 0.6 fails on a voice-wanted line. Nobody listened.",
+  "verdict": "ok",
+  "reason": "Script words present (transcript 'पूरी', en pass 'Puri.', base 'Buri'). No tag spoken. Voiced 0.63 whole take, lowest segment of 0.5 s or more 0.63. Retake reason was the wrong word 'पूरी' heard as 'बूरी'. Take 2: small -l hi 'पूरी', small -l en 'Puri.', base 'Buri': P in 2 of 3 passes against B in 6 of 6 on take 1. Strong but not certain; passes. Other line (D-022): voicing not judged, 0.63 for the record.",
+  "edit_note": null,
+  "retake_text": null,
+  "retake_model": null,
+  "retake_take": null,
+  "rule": "D-022",
+  "d022_line_class": "other",
+  "review_scope": "D-022",
+  "ear_check": "'पूरी' read as B by base in 1 of 3 passes; check the P.",
+  "reviewer": "S10 voice director, D-022 round 2 (did not generate these takes)",
+  "date": "2026-11-26"
+ },
+ {
+  "line_id": "l21",
+  "lang": "hi",
+  "speaker": "mausi",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "file": "series1/episodes/s1b02/voice/hi/l21_t2.mp3",
+  "take": 2,
+  "take_text": "[chuckles] हाँ बेटा। सो जा अब।",
+  "generation_id": "6V2Y6mNlGlZv6sMuDhk7",
+  "script_text_bare": "हाँ बेटा। सो जा अब।",
+  "transcript": "तो जाब!",
+  "transcript_en_pass": "So job.",
+  "transcript_base": "بیٹھا, so job.",
+  "transcript_checks": "Cut 0-1.7 s: small -l en 'Yeah, son.', small -l hi 'आ, बिटा', base -l en '(laughs) Oh, dear.'; cut 0.5-2.0 s: small -l en 'Yeah, son.'; whole take small 'तो जाब!', base 'بیٹھا, so job.'.",
+  "transcript_source": "local whisper.cpp 1.8.x (/opt/homebrew/bin/whisper-cli), ggml-small.bin forced to the take's language (transcript), Hindi takes also -l en (transcript_en_pass), ggml-base.bin second pass (transcript_base); greedy, no prompt, script not given; cut re-runs in transcript_checks",
+  "duration_s": 3.2,
+  "speech_s": 2.88,
+  "lead_silence_s": 0.03,
+  "trail_silence_s": 0.29,
+  "gaps_ge150ms": [
+   [
+    0.45,
+    0.6,
+    0.15
+   ],
+   [
+    1.56,
+    2.01,
+    0.45
+   ],
+   [
+    2.32,
+    2.47,
+    0.15
+   ]
+  ],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.345,
+   "pauses_ge300ms": [
+    [
+     1.54,
+     2.02,
+     0.48
+    ]
+   ]
+  },
+  "speech_rms_db": -28.4,
+  "ff_mean_db": -30.5,
+  "ff_max_db": -7.9,
+  "voiced_ratio": 0.53,
+  "median_hz": 182,
+  "spectral_centroid_hz": 2065,
+  "spectral_flatness": 0.048,
+  "segments": [
+   {
+    "t": [
+     0.04,
+     0.44
+    ],
+    "rms_db": -35.6,
+    "voiced_ratio": 0.38,
+    "longest_unvoiced_s": 0.18,
+    "median_hz": 198
+   },
+   {
+    "t": [
+     0.6,
+     1.56
+    ],
+    "rms_db": -31.7,
+    "voiced_ratio": 0.4,
+    "longest_unvoiced_s": 0.18,
+    "median_hz": 160
+   },
+   {
+    "t": [
+     2.1,
+     2.9
+    ],
+    "rms_db": -25.1,
+    "voiced_ratio": 0.85,
+    "longest_unvoiced_s": 0.1,
+    "median_hz": 203
+   }
+  ],
+  "segments_ge0_5s_under_0_6": [
+   [
+    0.6,
+    1.56
+   ]
+  ],
+  "earlier_takes": [
+   {
+    "take": 1,
+    "text": "[laughs] हाँ बेटा। सो जा अब।",
+    "voiced_ratio": 0.57,
+    "min_segment_ge0_5s": 0.5,
+    "transcript": "बिटा सो जाब",
+    "file": "series1/episodes/s1b02/voice/hi/l21.t1.mp3"
+   }
+  ],
+  "measure_method": "ffmpeg decode, pure Python (copies of scratchpad s10_s1e01_review meas.py and seg.py, unchanged). Speech frames: 20 ms RMS within 35 dB of the take's loudest frame, floor -55 dBFS. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, lags 70-450 Hz) is 0.6 or more. segments: speech runs split at gaps of 150 ms or more, each with its own voiced_ratio. D-022 test: whole take and every segment of 0.5 s or more under 0.6 fails on a voice-wanted line. Nobody listened.",
+  "verdict": "ok",
+  "reason": "Script words present (transcript 'तो जाब!', en pass 'So job.', base 'بیٹھا, so job.'). No tag spoken. Voiced 0.53 whole take, lowest segment of 0.5 s or more 0.4. Retake reason was the missing 'हाँ'. Take 2: the opening run 0.6-1.56 s is now heard as 'Yeah, son.' (small -l en, two cuts) and 'आ, बिटा' (small -l hi), so 'हाँ बेटा' is present; 'सो जा अब' heard as 'so job' as on take 1. Strong but not certain. No tag spoken ('[chuckles]' not voiced as a word; laugh at 0.04-0.44 s). Other line: voicing not judged, 0.53 for the record.",
+  "edit_note": null,
+  "retake_text": null,
+  "retake_model": null,
+  "retake_take": null,
+  "rule": "D-022",
+  "d022_line_class": "other",
+  "review_scope": "D-022",
+  "ear_check": "'हाँ' found by transcription only on cuts; check it is a word, not laughter.",
+  "reviewer": "S10 voice director, D-022 round 2 (did not generate these takes)",
+  "date": "2026-11-26"
+ },
+ {
+  "line_id": "l27",
+  "lang": "hi",
+  "speaker": "mausi",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "file": "series1/episodes/s1b02/voice/hi/l27_t2.mp3",
+  "take": 2,
+  "take_text": "[calm] अब जाएगी कहाँ? अपने हाथ से पिलाया है तूने।",
+  "generation_id": "7EeXuGw0AUgIQRbvbT4g",
+  "script_text_bare": "अब जाएगी कहाँ? अपने हाथ से पिलाया है तूने।",
+  "transcript": "अप जाएगी कहा, अपने हाथ से पिलाया है तुने.",
+  "transcript_en_pass": "Where will you go now? You have brought it with your own hands.",
+  "transcript_base": "اب جائے گی کہاں اب نے ہاتھ سے پلیا ہے تو نے",
+  "transcript_checks": null,
+  "transcript_source": "local whisper.cpp 1.8.x (/opt/homebrew/bin/whisper-cli), ggml-small.bin forced to the take's language (transcript), Hindi takes also -l en (transcript_en_pass), ggml-base.bin second pass (transcript_base); greedy, no prompt, script not given; cut re-runs in transcript_checks",
+  "duration_s": 3.76,
+  "speech_s": 3.34,
+  "lead_silence_s": 0.13,
+  "trail_silence_s": 0.29,
+  "gaps_ge150ms": [
+   [
+    1.42,
+    1.87,
+    0.45
+   ]
+  ],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.16,
+   "trail_s": 0.318,
+   "pauses_ge300ms": [
+    [
+     1.4,
+     1.87,
+     0.47
+    ]
+   ]
+  },
+  "speech_rms_db": -27.8,
+  "ff_mean_db": -29.1,
+  "ff_max_db": -11.0,
+  "voiced_ratio": 0.75,
+  "median_hz": 162,
+  "spectral_centroid_hz": 2414,
+  "spectral_flatness": 0.06,
+  "segments": [
+   {
+    "t": [
+     0.14,
+     1.42
+    ],
+    "rms_db": -28.1,
+    "voiced_ratio": 0.74,
+    "longest_unvoiced_s": 0.2,
+    "median_hz": 163
+   },
+   {
+    "t": [
+     1.86,
+     3.46
+    ],
+    "rms_db": -27.5,
+    "voiced_ratio": 0.79,
+    "longest_unvoiced_s": 0.1,
+    "median_hz": 160
+   }
+  ],
+  "segments_ge0_5s_under_0_6": [],
+  "earlier_takes": [
+   {
+    "take": 1,
+    "text": "[quietly] अब जाएगी कहाँ? अपने हाथ से पिलाया है तूने।",
+    "voiced_ratio": 0.5,
+    "min_segment_ge0_5s": 0.24,
+    "transcript": "अप जाएकी कहा, अपने हाथ से पिलाया है तुने.",
+    "file": "series1/episodes/s1b02/voice/hi/l27.t1.mp3"
+   }
+  ],
+  "measure_method": "ffmpeg decode, pure Python (copies of scratchpad s10_s1e01_review meas.py and seg.py, unchanged). Speech frames: 20 ms RMS within 35 dB of the take's loudest frame, floor -55 dBFS. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, lags 70-450 Hz) is 0.6 or more. segments: speech runs split at gaps of 150 ms or more, each with its own voiced_ratio. D-022 test: whole take and every segment of 0.5 s or more under 0.6 fails on a voice-wanted line. Nobody listened.",
+  "verdict": "ok",
+  "reason": "Script words present (transcript 'अप जाएगी कहा, अपने हाथ से पिलाया है तुने.', en pass 'Where will you go now? You have brought it with your own hands.', base 'اب جائے گی کہاں اب نے ہاتھ سے پلیا ہے تو نے'). No tag spoken. Voiced 0.75 whole take, lowest segment of 0.5 s or more 0.74. D-022 test passed (0.6).",
+  "edit_note": null,
+  "retake_text": null,
+  "retake_model": null,
+  "retake_take": null,
+  "rule": "D-022",
+  "d022_line_class": "voice-wanted",
+  "review_scope": "D-022",
+  "ear_check": null,
+  "reviewer": "S10 voice director, D-022 round 2 (did not generate these takes)",
+  "date": "2026-11-26"
+ }
+]

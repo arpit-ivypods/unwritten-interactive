@@ -1,0 +1,258 @@
+{
+  "scene_id": "proof-photoreal",
+  "status": "generated",
+  "status_note": "All 14 cues generated once each on flow NLS8ewxPEUWOSqU132CE (eleven_music_v2_5 + eleven_text_to_sound_v3), fitted to planned length with ffmpeg; see manifest.jsonl. Total 1121 credits. Deviation: sfx_s06_call_end is 1.6 s, not 1.2 s.",
+  "sources": [
+    "script.hi.json (music_note, sfx_notes, beats)",
+    "shots.json (duration_s, silent_lead_s per shot)"
+  ],
+  "timebase": "seconds from scene start, from shots.json planned durations; S13 should re-anchor point effects to measured dialogue if shots stretch",
+  "shot_starts_s": {
+    "s01": 0.0,
+    "s02": 4.7,
+    "s03": 8.0,
+    "s04": 10.5,
+    "s05": 14.5,
+    "s06": 19.0,
+    "s07": 25.0,
+    "s08": 26.7,
+    "s09": 28.4,
+    "end": 31.7
+  },
+  "mix": {
+    "dialogue_first": true,
+    "loudness_target": "-14 LUFS integrated, -1 dBTP (plan 7.1)",
+    "rules": [
+      "No music 0-8.0: rain and breath only.",
+      "Music drone from the first ring (8.0), sub pulse from 19.0 (b5).",
+      "22.0-25.0: rain and music pulled right down so the caller's question in l08 is fully intelligible.",
+      "Music out at 25.0; lock CLUNK at 26.7 exposed with no music.",
+      "String swell sting from 28.6 under l10; everything cut hard to silence at 31.7 (cut to black)."
+    ],
+    "caller_voice_fx": "band-pass about 300-3400 Hz, light saturation, plus amb_s04_line_hiss; keep consonants intelligible"
+  },
+  "fallback": "If music_v2_5 fails on rerun, drop mus_drone_bed and raise amb_rain_roof by 3 dB 8.0-25.0 (plan 7.8: missing music becomes ambience); keep mus_end_sting from the sound-effect model.",
+  "cues": [
+    {
+      "id": "mus_drone_bed",
+      "type": "music",
+      "model": "music_v2_5",
+      "api_model_id": "eleven_music_v2_5",
+      "instrumental": true,
+      "duration_s": 35,
+      "start_s": 8.0,
+      "end_s": 25.0,
+      "trim_note": "Generated ~35 s per brief for headroom. Scene uses music 0-17 s (scene 8.0-25.0). Hard cut at scene 25.0 (10 ms fade) so the lock CLUNK at 26.7 is exposed with no music. Discard the rest.",
+      "structure": [
+        {
+          "music_s": "0-11",
+          "scene_s": "8.0-19.0",
+          "content": "single low synth drone, barely audible, enters on the first phone ring"
+        },
+        {
+          "music_s": "11-17",
+          "scene_s": "19.0-25.0",
+          "content": "slow sub pulse like a heartbeat joins under the drone (b5); ducked hard 22.0-25.0 under the question in l08"
+        },
+        {
+          "music_s": "17-35",
+          "scene_s": "unused",
+          "content": "drone and pulse continue unchanged, headroom only"
+        }
+      ],
+      "prompt": "Instrumental dark thriller underscore, minimal and almost subliminal. A single low analog synth drone, very quiet, slowly evolving, cold and claustrophobic, like the air inside a closed car at night. After about 11 seconds a slow, soft sub-bass pulse enters, around 55 BPM, like a distant heartbeat, and continues steadily under the drone to the end. No melody, no chords changes, no percussion hits, no risers, no vocals. Sparse, tense, low register only, steady level throughout.",
+      "gain_db": -20,
+      "duck": {
+        "under_dialogue_db": -8,
+        "extra_duck_scene_s": [
+          22.0,
+          25.0
+        ],
+        "extra_duck_db": -12
+      }
+    },
+    {
+      "id": "mus_end_sting",
+      "type": "music_sting",
+      "model": "eleven_text_to_sound_v3",
+      "shot": "s09",
+      "start_s": 28.6,
+      "end_s": 31.7,
+      "duration_s": 3.5,
+      "loop": false,
+      "prompt_influence": 0.6,
+      "prompt": "A single low, dissonant orchestral string swell: cellos and basses holding a tense minor-second cluster, swelling slowly from silence to a strained, uneasy peak and sustaining. Cinematic thriller ending, dark, no percussion, no melody, no reverb tail.",
+      "gain_db": -16,
+      "mix_note": "Music sting (made with the sound-effect model for exact length). Under l10. Cut hard to silence at 31.7 on the cut to black; do not let the tail ring."
+    },
+    {
+      "id": "amb_rain_roof",
+      "type": "ambience",
+      "model": "eleven_text_to_sound_v3",
+      "shot": "all",
+      "start_s": 0.0,
+      "end_s": 31.7,
+      "duration_s": 30,
+      "loop": true,
+      "prompt_influence": 0.4,
+      "prompt": "Heavy monsoon rain drumming on the metal roof of a small parked taxi, heard from inside the closed car cabin: dense, close, muffled drumming on the roof and streaming on the windows, with a distant low hiss of wet traffic on a flyover overhead. Steady, continuous, no thunder, no wipers, no voices.",
+      "gain_db": -22,
+      "mix_note": "Bed for the whole scene, loop to 31.7. Duck to -34 dB 22.0-25.0 under the question in l08. Hard cut to silence at 31.7."
+    },
+    {
+      "id": "sfx_s01_breath_leather",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "shot": "s01",
+      "start_s": 0.0,
+      "end_s": 2.0,
+      "duration_s": 2.0,
+      "loop": false,
+      "prompt_influence": 0.5,
+      "prompt": "A woman's quick, excited, laughing breath out through the nose, close-mic, while a leather duffel bag creaks and shifts on her lap. Intimate, dry, inside a car.",
+      "gain_db": -14,
+      "mix_note": "Under and around l01; keep below the laugh in the voice take."
+    },
+    {
+      "id": "sfx_s01_zip_pull",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "shot": "s01-s02",
+      "start_s": 1.5,
+      "end_s": 5.5,
+      "duration_s": 4.0,
+      "loop": false,
+      "prompt_influence": 0.6,
+      "prompt": "A heavy metal zip on a leather duffel bag being pulled open: starts slow and creeping for two seconds, then ripped open fast in one long metallic pull to the end. Close-mic, dry, inside a car.",
+      "gain_db": -12,
+      "mix_note": "Starts under l01 (shot note), the fast rip lands on the s02 cut at 4.7."
+    },
+    {
+      "id": "sfx_s02_paper_rustle",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "shot": "s02",
+      "start_s": 5.4,
+      "end_s": 6.9,
+      "duration_s": 1.5,
+      "loop": false,
+      "prompt_influence": 0.5,
+      "prompt": "Bundles of cut newspaper held with rubber bands shifting and rustling inside an opened bag, dry paper sliding, close-mic.",
+      "gain_db": -14,
+      "mix_note": "Before l03 (1.5 s silent lead in s02)."
+    },
+    {
+      "id": "sfx_s03_phone_ring",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "shot": "s03",
+      "start_s": 8.0,
+      "end_s": 10.4,
+      "duration_s": 2.4,
+      "loop": false,
+      "prompt_influence": 0.7,
+      "prompt": "An old cheap keypad mobile phone ringing: monophonic, shrill, electronic beeping ringtone, exactly two rings, very loud in a small closed space.",
+      "gain_db": -6,
+      "mix_note": "Deliberately loud. Two rings; trim to end at 10.45. Duck under l04."
+    },
+    {
+      "id": "sfx_s04_key_click",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "shot": "s04",
+      "start_s": 10.45,
+      "end_s": 10.95,
+      "duration_s": 0.5,
+      "loop": false,
+      "prompt_influence": 0.7,
+      "prompt": "A single small plastic keypad button click on an old mobile phone, dry, close-mic.",
+      "gain_db": -10,
+      "mix_note": "Cuts the ring dead (ring ends at 10.45)."
+    },
+    {
+      "id": "amb_s04_line_hiss",
+      "type": "ambience",
+      "model": "eleven_text_to_sound_v3",
+      "shot": "s04-s06",
+      "start_s": 10.5,
+      "end_s": 24.8,
+      "duration_s": 6.0,
+      "loop": true,
+      "prompt_influence": 0.5,
+      "prompt": "Faint, steady telephone line hiss and soft static from an old mobile phone earpiece, very quiet, continuous, no tones, no voices.",
+      "gain_db": -30,
+      "mix_note": "Loop 10.5-24.8 on the caller bus. Caller voice gets a phone band-pass (about 300-3400 Hz, wide enough that consonants survive) in the mix; this is not generated."
+    },
+    {
+      "id": "sfx_s06_call_end",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "shot": "s06",
+      "start_s": 24.8,
+      "end_s": 26.0,
+      "duration_s": 1.2,
+      "loop": false,
+      "prompt_influence": 0.7,
+      "prompt": "Three short electronic call-ended beeps from an old mobile phone earpiece, small and thin, evenly spaced, then silence.",
+      "gain_db": -16,
+      "mix_note": "On the caller's last word; re-anchor to the measured end of l08.",
+      "fitted_duration_s": 1.6
+    },
+    {
+      "id": "amb_s07_dead_line",
+      "type": "ambience",
+      "model": "eleven_text_to_sound_v3",
+      "shot": "s07",
+      "start_s": 25.6,
+      "end_s": 26.7,
+      "duration_s": 3.0,
+      "loop": true,
+      "prompt_influence": 0.6,
+      "prompt": "A faint, thin, steady disconnected telephone tone from an old mobile phone earpiece held a little away from the ear, continuous, very quiet.",
+      "gain_db": -30,
+      "mix_note": "'Dead-line tone and rain' in s07. Hard cut at 26.7 so the CLUNK is exposed."
+    },
+    {
+      "id": "sfx_s08_lock_clunk",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "shot": "s08",
+      "start_s": 26.7,
+      "end_s": 27.7,
+      "duration_s": 1.0,
+      "loop": false,
+      "prompt_influence": 0.7,
+      "prompt": "Car central locking: all four door locks dropping at once with one heavy, dry, mechanical CLUNK, very close, inside the cabin, no beep, no reverb.",
+      "gain_db": -4,
+      "mix_note": "Lands on the s07-s08 cut. Nothing under it except the rain bed; no music."
+    },
+    {
+      "id": "sfx_s09_headlight_click",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "shot": "s09",
+      "start_s": 28.4,
+      "end_s": 29.0,
+      "duration_s": 0.6,
+      "loop": false,
+      "prompt_influence": 0.5,
+      "prompt": "A soft muffled electrical click of car headlights switching on, heard from inside another car, with a faint electrical hum.",
+      "gain_db": -18,
+      "mix_note": "Headlights of the car behind come on."
+    },
+    {
+      "id": "sfx_s09_ignition_idle",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "shot": "s09",
+      "start_s": 28.9,
+      "end_s": 31.7,
+      "duration_s": 3.5,
+      "loop": false,
+      "prompt_influence": 0.6,
+      "prompt": "An old petrol taxi's ignition: a key turned, the starter motor cranking for under a second, the old engine catching, then settling into a low rough idle. Heard from inside the car, no wipers, no radio.",
+      "gain_db": -14,
+      "mix_note": "Off-screen. Duck idle under l10; hard cut to silence at 31.7."
+    }
+  ]
+}

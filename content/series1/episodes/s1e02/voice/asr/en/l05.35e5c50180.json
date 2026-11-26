@@ -1,0 +1,175 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,090"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 90
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,090",
+				"to": "00:00:00,220"
+			},
+			"offsets": {
+				"from": 90,
+				"to": 220
+			},
+			"text": " The"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,220",
+				"to": "00:00:00,440"
+			},
+			"offsets": {
+				"from": 220,
+				"to": 440
+			},
+			"text": " one"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,440",
+				"to": "00:00:00,730"
+			},
+			"offsets": {
+				"from": 440,
+				"to": 730
+			},
+			"text": " with"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,730",
+				"to": "00:00:00,950"
+			},
+			"offsets": {
+				"from": 730,
+				"to": 950
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,950",
+				"to": "00:00:01,300"
+			},
+			"offsets": {
+				"from": 950,
+				"to": 1300
+			},
+			"text": " burnt"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,300",
+				"to": "00:00:02,090"
+			},
+			"offsets": {
+				"from": 1300,
+				"to": 2090
+			},
+			"text": " wrist?"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,090",
+				"to": "00:00:03,010"
+			},
+			"offsets": {
+				"from": 2090,
+				"to": 3010
+			},
+			"text": " Rekha."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,010",
+				"to": "00:00:03,220"
+			},
+			"offsets": {
+				"from": 3010,
+				"to": 3220
+			},
+			"text": " She"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,220",
+				"to": "00:00:03,550"
+			},
+			"offsets": {
+				"from": 3220,
+				"to": 3550
+			},
+			"text": " does"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,550",
+				"to": "00:00:03,990"
+			},
+			"offsets": {
+				"from": 3550,
+				"to": 3990
+			},
+			"text": " Mossy's"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,990",
+				"to": "00:00:04,550"
+			},
+			"offsets": {
+				"from": 3990,
+				"to": 4550
+			},
+			"text": " accounts"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,550",
+				"to": "00:00:04,880"
+			},
+			"offsets": {
+				"from": 4550,
+				"to": 4880
+			},
+			"text": " now."
+		}
+	]
+}

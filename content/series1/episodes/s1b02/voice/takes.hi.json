@@ -1,0 +1,292 @@
+[
+  {
+    "line_id": "l01",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[calm] ये दूध तीन घंटे से रखा है, मौसी।",
+    "target_seconds": 4.0,
+    "note": "Opens after 1.2 s of silence, two folds in her fist. A practical, stalling line that sounds like housekeeping. To Mausi she is the younger, respectful one, so no edge. Even weight, a slight lift on 'तीन घंटे', and 'मौसी' soft and falling at the end. Keep her low in her own range: in casting Mausi sat 1 to 2.4 semitones above Kiran, and the two share most of this episode. Fallback: bare line 'ये दूध तीन घंटे से रखा है, मौसी।'."
+  },
+  {
+    "line_id": "l02",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[quietly] आधी पुड़िया पड़ी है। दो और नहीं घुलेंगी।",
+    "target_seconds": 4.8,
+    "note": "Lower and exact: a practical objection, not a plea. A short beat between the two sentences. 'पुड़िया' clear, since it is the series' one word for the fold. Quiet but FULLY VOICED: reject a whisper (voiced_ratio below 0.6). Her Hindi [quietly] stayed voiced in casting (kiran_t2, 0.87); her English one did not. The writer's trim order may shorten this line to its second sentence in the edit, but generate the whole line. Fallbacks in order: '[calm] आधी पुड़िया पड़ी है। दो और नहीं घुलेंगी।' (D-022 rule 1); then the bare line 'आधी पुड़िया पड़ी है। दो और नहीं घुलेंगी।' (D-022)."
+  },
+  {
+    "line_id": "l03",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[calm] बिल्लू fresh दूध ले आएगा।",
+    "target_seconds": 3.0,
+    "note": "Offhand, a fix offered as if it costs nothing; it buys her the minutes on the landing. 'fresh' is an everyday English word inside the Hindi, said the Indian way and not stressed. Transcript check: 'fresh' heard (en pass). This line is third in the writer's trim order; generate it anyway. Fallback: bare line 'बिल्लू fresh दूध ले आएगा।'."
+  },
+  {
+    "line_id": "l04",
+    "lang": "hi",
+    "speaker": "mausi",
+    "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+    "model": "eleven_v4",
+    "text": "[laughs] देखा? मुझसे आगे सोचती है मेरी बच्ची।",
+    "target_seconds": 4.6,
+    "note": "Mausi's first line: pleased and proud. A small real laugh before 'देखा?', not a cackle, then warm and unhurried, with 'मेरी बच्ची' tender, said to the room as much as to Kiran. Low, warm, grainy. Check that 'laughs' is not spoken as a word and that a non-word stretch comes before 'देखा'. Casting could not prove her laugh (ear check 7). Fallbacks in order: script text '[chuckles] देखा? मुझसे आगे सोचती है मेरी बच्ची।', then '[gently] देखा? मुझसे आगे सोचती है मेरी बच्ची।' (no laugh)."
+  },
+  {
+    "line_id": "l05",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[quietly] आज तक हमने किसी की जान नहीं ली। आज मौसी को लाश चाहिए।",
+    "target_seconds": 6.6,
+    "note": "On the landing with the door pulled almost to, so Mausi must not hear. Low and exact, to Billu as an equal: the flat, quick तू register. The first sentence is a fact; a beat; then 'लाश', placed, not hit. Not frightened, not pleading. Protected line (writer_notes: do not cut l05 to l08). Quiet but FULLY VOICED: reject a whisper (voiced_ratio below 0.6). It must be intelligible under concrete reverb. Fallbacks in order: '[calm] आज तक हमने किसी की जान नहीं ली। आज मौसी को लाश चाहिए।' (D-022 rule 1); then the bare line 'आज तक हमने किसी की जान नहीं ली। आज मौसी को लाश चाहिए।' (D-022)."
+  },
+  {
+    "line_id": "l06",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[calm] उठाएगा कौन? गाड़ी तो तेरे नाम पे है।",
+    "target_seconds": 4.2,
+    "note": "The first hook in Billu: a question asked as if idly, then the plain fact. Slight weight on 'तेरे नाम'. Flat and quick, no menace, no smile. Protected line. Fallback: bare line 'उठाएगा कौन? गाड़ी तो तेरे नाम पे है।'."
+  },
+  {
+    "line_id": "l07",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[quietly] पिछली party में बाईस तोला आया था। तुझे कितना बताया?",
+    "target_seconds": 5.4,
+    "note": "The figure that matters (D-007 direction 8). 'बाईस तोला' must be crystal clear, each word placed. 'party' is the trade's word for a groom: natural, not stressed. The second sentence is lighter, almost casual, and that is the knife. Quiet but FULLY VOICED: reject a whisper (voiced_ratio below 0.6). Transcript check: 'बाईस' heard, and 'party' in the en pass. Protected line. Fallbacks in order: '[calm] पिछली party में बाईस तोला आया था। तुझे कितना बताया?' (D-022 rule 1); then the bare line 'पिछली party में बाईस तोला आया था। तुझे कितना बताया?' (D-022)."
+  },
+  {
+    "line_id": "l08",
+    "lang": "hi",
+    "speaker": "billu",
+    "voice_id": "7b9mYhmnp0y2qSH1FnBL",
+    "model": "eleven_v4",
+    "text": "[hesitant] बारह। मौसी ने कहा है।",
+    "target_seconds": 3.2,
+    "note": "The jokes have stopped. 'बारह' comes after a short pause, slow and unsure, as he does the sum against twenty-two in his head. Then 'मौसी ने कहा है।' falls away, defensive: he expects Mausi's word to settle it and hears that it doesn't. No toothpick cockiness, no laugh. 'बारह' must be clear (D-007 direction 8; the bed ducks under it). [hesitant] is untested on Bunty: reject a stammer of added syllables or a spoken tag. Five words, so at most three takes. Fallbacks in order: script text '[quietly] बारह। मौसी ने कहा है।' (the writer's fallback), then the bare line."
+  },
+  {
+    "line_id": "l09",
+    "lang": "hi",
+    "speaker": "mausi",
+    "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+    "model": "eleven_v4",
+    "text": "[calm] दुकान आज कौन खोलेगा, दामाद जी?",
+    "target_seconds": 3.6,
+    "note": "Conversational, almost kind, like asking after his family business; the threat is entirely underneath. Unhurried. 'दामाद जी' is affectionate. Casting heard it run together as 'दामाजी' twice; accept that if 'जी' is clear. Low in her range. Fallbacks in order: script text '[gently] दुकान आज कौन खोलेगा, दामाद जी?', then the bare line."
+  },
+  {
+    "line_id": "l10",
+    "lang": "hi",
+    "speaker": "aditya",
+    "voice_id": "zCXXiWzuZO7d9fERssmF",
+    "model": "eleven_v4",
+    "text": "[calm] मेरे बिना नहीं खुलती।",
+    "target_seconds": 2.6,
+    "note": "Even and courteous: a pharmacist stating a fact about his licence. It reads as defiance only later (s1b03). No edge and no fear, with the boys' hands on his shoulders. Short line: check for a clipped start. Fallback: bare line 'मेरे बिना नहीं खुलती।'."
+  },
+  {
+    "line_id": "l11",
+    "lang": "hi",
+    "speaker": "mausi",
+    "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+    "model": "eleven_v4",
+    "text": "[sighs] मोहित सीधा लड़का था।",
+    "target_seconds": 2.8,
+    "note": "She says the dead brother's name to his brother, fondly, as if remembering a client. First a soft breath out, a real sigh and not the word. Then gentle, a little regretful, unhurried, with 'सीधा' tender: cruelty through softness. Reject a spoken 'sighs' or a theatrical groan. Four words, so at most three takes. Second in the writer's trim order. Fallbacks in order: script text '[gently] मोहित सीधा लड़का था।', then the bare line."
+  },
+  {
+    "line_id": "l12",
+    "lang": "hi",
+    "speaker": "aditya",
+    "voice_id": "zCXXiWzuZO7d9fERssmF",
+    "model": "eleven_v4",
+    "text": "[quietly] आपको सबके नाम याद हैं?",
+    "target_seconds": 2.8,
+    "note": "Lower and slower than l10, the one place his calm costs him something. He has just heard his brother's name, so a slight catch on 'सबके नाम' is allowed; the pitch never rises. आप to Mausi, courteous. Quiet and voiced. His [quietly] in casting dropped about 8 dB and stayed voiced, but his lowest stretch went breathy (aditya_t2, voiced 0.45): reject if breathy to the point of losing words. Fallbacks in order: '[calm] आपको सबके नाम याद हैं?' (D-022 rule 1); then the bare line 'आपको सबके नाम याद हैं?' (D-022)."
+  },
+  {
+    "line_id": "l13",
+    "lang": "hi",
+    "speaker": "mausi",
+    "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+    "model": "eleven_v4",
+    "text": "[chuckles] हर party का नाम लिखा है।",
+    "target_seconds": 3.0,
+    "note": "A small, pleased chuckle: a businesswoman proud of her books. 'party' is the trade's word, natural. 'लिखा है' lands softly, with a smile; not villainous. First in the writer's trim order. Reject a spoken tag or a big laugh. Fallbacks in order: script text '[gently] हर party का नाम लिखा है।', then the bare line."
+  },
+  {
+    "line_id": "l14",
+    "lang": "hi",
+    "speaker": "mausi",
+    "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+    "model": "eleven_v4",
+    "text": "[calm] अपने हाथ से, बेटा।",
+    "target_seconds": 2.2,
+    "note": "Off screen, over Kiran at the tray. An instruction said like a mother reminding a daughter of her manners: soft, unhurried, final. 'अपने हाथ से' even, 'बेटा' tender and lower. l27 repeats 'अपने हाथ से', so keep the rhythm. Fallbacks in order: script text '[gently] अपने हाथ से, बेटा।', then the bare line."
+  },
+  {
+    "line_id": "l15",
+    "lang": "hi",
+    "speaker": "aditya",
+    "voice_id": "zCXXiWzuZO7d9fERssmF",
+    "model": "eleven_v4",
+    "text": "[quietly] पूरी पुड़िया?",
+    "target_seconds": 1.8,
+    "note": "Two words, looking up at her. Not fear: a quiet check, like a pharmacist confirming a dose. Low and level, the question light at the end. Short lines are unstable on v4, so budget up to four takes (D-011, one to three words). Reject a clipped start, an added breath or syllable, or a spoken tag. Fallbacks in order: script text '[calm] पूरी पुड़िया?', then the bare line."
+  },
+  {
+    "line_id": "l16",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[flatly] पूरी।",
+    "target_seconds": 1.0,
+    "note": "One word: flat, falling, final. No hesitation before it, because it is a lie and her lies come easily (true things come after a pause). Check for an added sound before or after the word (the constable's one-word casting line split into two voiced parts) and for a spoken tag. [flatly] has not been tried on this voice. Budget up to four takes. Fallbacks in order: script text '[calm] पूरी।', then the bare line 'पूरी।'."
+  },
+  {
+    "line_id": "l17",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[sharply] पी लो। नहीं तो ये पिला देंगे।",
+    "target_seconds": 3.4,
+    "note": "Low and fast, not loud: [sharply] means low and fast in this series. An order that is also a warning. 'पी लो' clipped, then 'नहीं तो ये पिला देंगे' quick and level, with a small weight on 'ये' (the boys). To the room it must sound like cruelty, and to him like the only way out. Protected line. Reject if shouted or shrill. Fallbacks in order: '[calm] पी लो। नहीं तो ये पिला देंगे।' (D-022: the low-voice rung is deleted; it is never a retake rung)."
+  },
+  {
+    "line_id": "l18",
+    "lang": "hi",
+    "speaker": "mausi",
+    "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+    "model": "eleven_v4",
+    "text": "[calm] शाबाश, मेरी बच्ची।",
+    "target_seconds": 2.4,
+    "note": "Stroking Kiran's hair over a man she thinks is dying. Tender, approving, slow: the gentlest she has been so far, which is the point. Soft but fully voiced. Fallbacks in order: script text '[gently] शाबाश, मेरी बच्ची।', then the bare line."
+  },
+  {
+    "line_id": "l19",
+    "lang": "hi",
+    "speaker": "chhoti",
+    "voice_id": "2lLgWMtK52t50e2eLKAk",
+    "model": "eleven_v4",
+    "text": "[excited] मौसी, मेहँदी dry हो गई! सो जाऊँ?",
+    "target_seconds": 3.6,
+    "note": "Through the phone speaker; the filter is added in the mix, so generate clean. Bright, quick, sing-song, a giggle in the breath: a 19-year-old woman, not a child. 'dry' is her phone English, quick and natural. It is her first scripted Latin-script word (cast.json test_gap), so check 'dry' in the en pass of the transcript. 'सो जाऊँ?' a little pleading and sleepy. Reject if shrill or childish (her cheerful casting takes reached about 444 Hz) or if the tag is spoken. Fallbacks in order: script text '[cheerful] मौसी, मेहँदी dry हो गई! सो जाऊँ?' (the tag tried in casting), then the bare line."
+  },
+  {
+    "line_id": "l20",
+    "lang": "hi",
+    "speaker": "chhoti",
+    "voice_id": "2lLgWMtK52t50e2eLKAk",
+    "model": "eleven_v4",
+    "text": "[nervous] मेरी शादी सच में इतनी जल्दी है?",
+    "target_seconds": 3.8,
+    "note": "The voice goes small and the giggle is gone: the first time she is afraid. Slower, a little breathless, still clearly intelligible through a phone filter. A young woman, not whiny. If the take is not clearly smaller and lower than l19, retake with the pair that worked in casting. Fallbacks in order: script text '[nervous] [small voice] मेरी शादी सच में इतनी जल्दी है?' (chhoti_t2: 4 to 6 dB down, voiced 0.76), then '[quietly] मेरी शादी सच में इतनी जल्दी है?'."
+  },
+  {
+    "line_id": "l21",
+    "lang": "hi",
+    "speaker": "mausi",
+    "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+    "model": "eleven_v4",
+    "text": "[laughs] हाँ बेटा। सो जा अब।",
+    "target_seconds": 2.4,
+    "note": "In the room, unfiltered. A light, easy laugh that waves the fear away as a child's nerves, then 'सो जा अब' warm and bedtime-soft. Kiran is watching the next girl; the warmth is what chills. Reject a spoken tag or a cackle. Fallbacks in order: script text '[chuckles] हाँ बेटा। सो जा अब।', then '[gently] हाँ बेटा। सो जा अब।'."
+  },
+  {
+    "line_id": "l22",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[calm] तो मेरा हिसाब clear कर दीजिए, मौसी। आज आख़िरी थी।",
+    "target_seconds": 5.6,
+    "note": "After a silence. To Mausi in the आप register, polite and level; she has rehearsed it. 'हिसाब' and 'clear' even, with 'clear' in plain Indian English. A small beat, then 'आज आख़िरी थी।' plain: a statement, not a hope. Not shrill, not pleading. Keep her low in her own range: in casting Mausi sat 1 to 2.4 semitones above Kiran, and the two share most of this episode. Fallback: bare line 'तो मेरा हिसाब clear कर दीजिए, मौसी। आज आख़िरी थी।'."
+  },
+  {
+    "line_id": "l23",
+    "lang": "hi",
+    "speaker": "mausi",
+    "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+    "model": "eleven_v4",
+    "text": "[chuckles] आख़िरी? अगले महीने की booking है, बेटा।",
+    "target_seconds": 4.6,
+    "note": "A fond little chuckle at the idea, as at a child's joke. 'आख़िरी?' amused and light, then matter-of-fact business, with 'booking' as the trade's word. 'बेटा' tender. Reject a spoken tag. Fallbacks in order: script text '[gently] आख़िरी? अगले महीने की booking है, बेटा।', then the bare line."
+  },
+  {
+    "line_id": "l24",
+    "lang": "hi",
+    "speaker": "mausi",
+    "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+    "model": "eleven_v4",
+    "text": "[calm] छोटी अकेले कैसे सँभालेगी?",
+    "target_seconds": 3.0,
+    "note": "A reasonable question to her, a mother's logic: of course Kiran must train the next one. Soft and unhurried, no menace. Fallback: bare line 'छोटी अकेले कैसे सँभालेगी?'."
+  },
+  {
+    "line_id": "l25",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[sharply] और मेरे अठारह लाख?",
+    "target_seconds": 2.2,
+    "note": "The first crack in her politeness. Quick and low, not loud, with weight on 'अठारह लाख'. Reject if shouted or shrill. Four words, so at most three takes. Fallbacks in order: '[calm] और मेरे अठारह लाख?' (D-022: the low-voice rung is deleted; it is never a retake rung)."
+  },
+  {
+    "line_id": "l26",
+    "lang": "hi",
+    "speaker": "mausi",
+    "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+    "model": "eleven_v4",
+    "text": "[warmly] तू मेरी बेटी है। बेटियों का हिसाब नहीं होता।",
+    "target_seconds": 5.2,
+    "note": "The reveal, and a protected line. Her gentlest line is her most dangerous: slow, soft, loving, every word placed, with 'हिसाब' laid down gently. Warm, low and grainy, never a whisper. Casting note: [warmly] lifted her pitch (235 to 242 Hz, against 195 Hz on [gently]) and put her above Kiran. If this take sits high, retake with [gently] (cast.json production_direction). Fallbacks in order: script text '[gently] तू मेरी बेटी है। बेटियों का हिसाब नहीं होता।', then '[calm] तू मेरी बेटी है। बेटियों का हिसाब नहीं होता।' (the writer's fallback)."
+  },
+  {
+    "line_id": "l27",
+    "lang": "hi",
+    "speaker": "mausi",
+    "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+    "model": "eleven_v4",
+    "text": "[quietly] अब जाएगी कहाँ? अपने हाथ से पिलाया है तूने।",
+    "target_seconds": 5.4,
+    "note": "The trap closes, her eyes going to the bed. Softer and slower still, but fully voiced: Mausi is never whispered, and the bed ducks right down so every word is clear. 'अब जाएगी कहाँ?' almost tender. 'अपने हाथ से' echoes l14 exactly. 'तूने' comes last and quiet, as she looks back at Kiran. Protected line. Reject a whisper (voiced_ratio below 0.6). Fallbacks in order: '[calm] अब जाएगी कहाँ? अपने हाथ से पिलाया है तूने।' (D-022 rule 1); then the bare line 'अब जाएगी कहाँ? अपने हाथ से पिलाया है तूने।' (D-022)."
+  },
+  {
+    "line_id": "l28",
+    "lang": "hi",
+    "speaker": "mausi",
+    "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+    "model": "eleven_v4",
+    "text": "[calm] बिल्लू, गिलास पोंछ दे। कमरा ठीक कर।",
+    "target_seconds": 4.2,
+    "note": "Housekeeping as she turns to the doorway: a routine order after a routine job. Two short instructions, brisk but never raised. Fallback: bare line 'बिल्लू, गिलास पोंछ दे। कमरा ठीक कर।'."
+  },
+  {
+    "line_id": "l29",
+    "lang": "hi",
+    "speaker": "billu",
+    "voice_id": "7b9mYhmnp0y2qSH1FnBL",
+    "model": "eleven_v4",
+    "text": "[flatly] हाँ मौसी।",
+    "target_seconds": 1.4,
+    "note": "Two words, and his usual instant obedience is gone. Flat and slow with no warmth: a man who has just heard twelve against twenty-two, and 'next month'. The lateness is built into the timeline (1.0 s of silence before it), not into the take, so trim any long lead-in silence in the file. Reject added syllables, a laugh, or a spoken tag. Budget up to four takes. Fallbacks in order: script text '[quietly] हाँ मौसी।', then the bare line."
+  }
+]

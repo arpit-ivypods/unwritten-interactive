@@ -1,0 +1,142 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,150"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 150
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,150",
+				"to": "00:00:00,180"
+			},
+			"offsets": {
+				"from": 150,
+				"to": 180
+			},
+			"text": " and"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,180",
+				"to": "00:00:00,500"
+			},
+			"offsets": {
+				"from": 180,
+				"to": 500
+			},
+			"text": " Mossy"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,500",
+				"to": "00:00:00,600"
+			},
+			"offsets": {
+				"from": 500,
+				"to": 600
+			},
+			"text": " is"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,600",
+				"to": "00:00:00,840"
+			},
+			"offsets": {
+				"from": 600,
+				"to": 840
+			},
+			"text": " just"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,840",
+				"to": "00:00:01,200"
+			},
+			"offsets": {
+				"from": 840,
+				"to": 1200
+			},
+			"text": " coming"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,200",
+				"to": "00:00:01,320"
+			},
+			"offsets": {
+				"from": 1200,
+				"to": 1320
+			},
+			"text": " to"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,320",
+				"to": "00:00:01,620"
+			},
+			"offsets": {
+				"from": 1320,
+				"to": 1620
+			},
+			"text": " fetch"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,620",
+				"to": "00:00:01,800"
+			},
+			"offsets": {
+				"from": 1620,
+				"to": 1800
+			},
+			"text": " her"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,800",
+				"to": "00:00:02,480"
+			},
+			"offsets": {
+				"from": 1800,
+				"to": 2480
+			},
+			"text": " daughter."
+		}
+	]
+}

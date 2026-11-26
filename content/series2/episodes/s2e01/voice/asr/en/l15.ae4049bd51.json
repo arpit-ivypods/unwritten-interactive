@@ -1,0 +1,186 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,140"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 140
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,140",
+				"to": "00:00:00,140"
+			},
+			"offsets": {
+				"from": 140,
+				"to": 140
+			},
+			"text": " At"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,140",
+				"to": "00:00:00,420"
+			},
+			"offsets": {
+				"from": 140,
+				"to": 420
+			},
+			"text": " your"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,420",
+				"to": "00:00:00,630"
+			},
+			"offsets": {
+				"from": 420,
+				"to": 630
+			},
+			"text": " own"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,630",
+				"to": "00:00:01,270"
+			},
+			"offsets": {
+				"from": 630,
+				"to": 1270
+			},
+			"text": " Dhamma,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,270",
+				"to": "00:00:01,490"
+			},
+			"offsets": {
+				"from": 1270,
+				"to": 1490
+			},
+			"text": " press"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,490",
+				"to": "00:00:02,060"
+			},
+			"offsets": {
+				"from": 1490,
+				"to": 2060
+			},
+			"text": " conference"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,060",
+				"to": "00:00:02,250"
+			},
+			"offsets": {
+				"from": 2060,
+				"to": 2250
+			},
+			"text": " at"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,250",
+				"to": "00:00:02,510"
+			},
+			"offsets": {
+				"from": 2250,
+				"to": 2510
+			},
+			"text": " 10"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,510",
+				"to": "00:00:03,440"
+			},
+			"offsets": {
+				"from": 2510,
+				"to": 3440
+			},
+			"text": " tomorrow,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,440",
+				"to": "00:00:03,670"
+			},
+			"offsets": {
+				"from": 3440,
+				"to": 3670
+			},
+			"text": " second"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,670",
+				"to": "00:00:04,010"
+			},
+			"offsets": {
+				"from": 3670,
+				"to": 4010
+			},
+			"text": " zero"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,010",
+				"to": "00:00:04,440"
+			},
+			"offsets": {
+				"from": 4010,
+				"to": 4440
+			},
+			"text": " crime"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,440",
+				"to": "00:00:04,880"
+			},
+			"offsets": {
+				"from": 4440,
+				"to": 4880
+			},
+			"text": " year."
+		}
+	]
+}

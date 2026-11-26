@@ -1,0 +1,175 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,120"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 120
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,120",
+				"to": "00:00:00,470"
+			},
+			"offsets": {
+				"from": 120,
+				"to": 470
+			},
+			"text": " Mossy"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,470",
+				"to": "00:00:00,740"
+			},
+			"offsets": {
+				"from": 470,
+				"to": 740
+			},
+			"text": " and"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,740",
+				"to": "00:00:01,020"
+			},
+			"offsets": {
+				"from": 740,
+				"to": 1020
+			},
+			"text": " her"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,020",
+				"to": "00:00:01,570"
+			},
+			"offsets": {
+				"from": 1020,
+				"to": 1570
+			},
+			"text": " ledger"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,570",
+				"to": "00:00:01,750"
+			},
+			"offsets": {
+				"from": 1570,
+				"to": 1750
+			},
+			"text": " go"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,750",
+				"to": "00:00:01,970"
+			},
+			"offsets": {
+				"from": 1750,
+				"to": 1970
+			},
+			"text": " to"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,970",
+				"to": "00:00:02,190"
+			},
+			"offsets": {
+				"from": 1970,
+				"to": 2190
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,190",
+				"to": "00:00:03,060"
+			},
+			"offsets": {
+				"from": 2190,
+				"to": 3060
+			},
+			"text": " police."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,060",
+				"to": "00:00:03,410"
+			},
+			"offsets": {
+				"from": 3060,
+				"to": 3410
+			},
+			"text": " That"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,410",
+				"to": "00:00:03,860"
+			},
+			"offsets": {
+				"from": 3410,
+				"to": 3860
+			},
+			"text": " hand"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,860",
+				"to": "00:00:04,110"
+			},
+			"offsets": {
+				"from": 3860,
+				"to": 4110
+			},
+			"text": " does"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,110",
+				"to": "00:00:04,480"
+			},
+			"offsets": {
+				"from": 4110,
+				"to": 4480
+			},
+			"text": " not."
+		}
+	]
+}

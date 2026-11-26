@@ -1,0 +1,208 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,190"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 190
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,190",
+				"to": "00:00:00,200"
+			},
+			"offsets": {
+				"from": 190,
+				"to": 200
+			},
+			"text": " He"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,200",
+				"to": "00:00:00,670"
+			},
+			"offsets": {
+				"from": 200,
+				"to": 670
+			},
+			"text": " drank"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,670",
+				"to": "00:00:01,300"
+			},
+			"offsets": {
+				"from": 670,
+				"to": 1300
+			},
+			"text": " it."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,300",
+				"to": "00:00:01,560"
+			},
+			"offsets": {
+				"from": 1300,
+				"to": 1560
+			},
+			"text": " The"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,560",
+				"to": "00:00:01,920"
+			},
+			"offsets": {
+				"from": 1560,
+				"to": 1920
+			},
+			"text": " car"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,920",
+				"to": "00:00:02,160"
+			},
+			"offsets": {
+				"from": 1920,
+				"to": 2160
+			},
+			"text": " at"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,160",
+				"to": "00:00:03,000"
+			},
+			"offsets": {
+				"from": 2160,
+				"to": 3000
+			},
+			"text": " three."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,000",
+				"to": "00:00:03,200"
+			},
+			"offsets": {
+				"from": 3000,
+				"to": 3200
+			},
+			"text": " The"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,200",
+				"to": "00:00:03,460"
+			},
+			"offsets": {
+				"from": 3200,
+				"to": 3460
+			},
+			"text": " milk"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,460",
+				"to": "00:00:03,690"
+			},
+			"offsets": {
+				"from": 3460,
+				"to": 3690
+			},
+			"text": " has"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,690",
+				"to": "00:00:04,380"
+			},
+			"offsets": {
+				"from": 3690,
+				"to": 4380
+			},
+			"text": " split."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,380",
+				"to": "00:00:04,500"
+			},
+			"offsets": {
+				"from": 4380,
+				"to": 4500
+			},
+			"text": " The"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,500",
+				"to": "00:00:04,810"
+			},
+			"offsets": {
+				"from": 4500,
+				"to": 4810
+			},
+			"text": " boys"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,810",
+				"to": "00:00:04,940"
+			},
+			"offsets": {
+				"from": 4810,
+				"to": 4940
+			},
+			"text": " go"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,940",
+				"to": "00:00:05,600"
+			},
+			"offsets": {
+				"from": 4940,
+				"to": 5600
+			},
+			"text": " up."
+		}
+	]
+}

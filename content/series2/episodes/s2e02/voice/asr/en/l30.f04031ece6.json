@@ -1,0 +1,109 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,160"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 160
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,160",
+				"to": "00:00:00,400"
+			},
+			"offsets": {
+				"from": 160,
+				"to": 400
+			},
+			"text": " Till"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,400",
+				"to": "00:00:01,110"
+			},
+			"offsets": {
+				"from": 400,
+				"to": 1110
+			},
+			"text": " then,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,110",
+				"to": "00:00:01,120"
+			},
+			"offsets": {
+				"from": 1110,
+				"to": 1120
+			},
+			"text": " do"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,120",
+				"to": "00:00:01,460"
+			},
+			"offsets": {
+				"from": 1120,
+				"to": 1460
+			},
+			"text": " your"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,460",
+				"to": "00:00:01,910"
+			},
+			"offsets": {
+				"from": 1460,
+				"to": 1910
+			},
+			"text": " charge"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,910",
+				"to": "00:00:02,840"
+			},
+			"offsets": {
+				"from": 1910,
+				"to": 2840
+			},
+			"text": " handover."
+		}
+	]
+}

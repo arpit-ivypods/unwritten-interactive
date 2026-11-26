@@ -1,0 +1,164 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,150"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 150
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,150",
+				"to": "00:00:00,360"
+			},
+			"offsets": {
+				"from": 150,
+				"to": 360
+			},
+			"text": " Pour"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,360",
+				"to": "00:00:00,540"
+			},
+			"offsets": {
+				"from": 360,
+				"to": 540
+			},
+			"text": " in"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,540",
+				"to": "00:00:00,810"
+			},
+			"offsets": {
+				"from": 540,
+				"to": 810
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,810",
+				"to": "00:00:01,250"
+			},
+			"offsets": {
+				"from": 810,
+				"to": 1250
+			},
+			"text": " whole"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,250",
+				"to": "00:00:01,950"
+			},
+			"offsets": {
+				"from": 1250,
+				"to": 1950
+			},
+			"text": " sachet."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,950",
+				"to": "00:00:02,350"
+			},
+			"offsets": {
+				"from": 1950,
+				"to": 2350
+			},
+			"text": " Half"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,350",
+				"to": "00:00:02,710"
+			},
+			"offsets": {
+				"from": 2350,
+				"to": 2710
+			},
+			"text": " doesn't"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,710",
+				"to": "00:00:02,920"
+			},
+			"offsets": {
+				"from": 2710,
+				"to": 2920
+			},
+			"text": " put"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,920",
+				"to": "00:00:03,060"
+			},
+			"offsets": {
+				"from": 2920,
+				"to": 3060
+			},
+			"text": " me"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,060",
+				"to": "00:00:03,200"
+			},
+			"offsets": {
+				"from": 3060,
+				"to": 3200
+			},
+			"text": " to"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,200",
+				"to": "00:00:03,600"
+			},
+			"offsets": {
+				"from": 3200,
+				"to": 3600
+			},
+			"text": " sleep."
+		}
+	]
+}

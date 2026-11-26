@@ -1,0 +1,98 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,030"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 30
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,030",
+				"to": "00:00:00,670"
+			},
+			"offsets": {
+				"from": 30,
+				"to": 670
+			},
+			"text": " \"Mossy,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,670",
+				"to": "00:00:01,030"
+			},
+			"offsets": {
+				"from": 670,
+				"to": 1030
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,030",
+				"to": "00:00:01,280"
+			},
+			"offsets": {
+				"from": 1030,
+				"to": 1280
+			},
+			"text": " milk"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,280",
+				"to": "00:00:01,540"
+			},
+			"offsets": {
+				"from": 1280,
+				"to": 1540
+			},
+			"text": " has"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,540",
+				"to": "00:00:02,400"
+			},
+			"offsets": {
+				"from": 1540,
+				"to": 2400
+			},
+			"text": " split.\""
+		}
+	]
+}

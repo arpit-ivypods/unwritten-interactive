@@ -1,0 +1,131 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,130"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 130
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,130",
+				"to": "00:00:00,380"
+			},
+			"offsets": {
+				"from": 130,
+				"to": 380
+			},
+			"text": " No,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,380",
+				"to": "00:00:01,480"
+			},
+			"offsets": {
+				"from": 380,
+				"to": 1480
+			},
+			"text": " S.H.O."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,480",
+				"to": "00:00:02,280"
+			},
+			"offsets": {
+				"from": 1480,
+				"to": 2280
+			},
+			"text": " Sahab."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,280",
+				"to": "00:00:02,500"
+			},
+			"offsets": {
+				"from": 2280,
+				"to": 2500
+			},
+			"text": " Madam"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,500",
+				"to": "00:00:02,600"
+			},
+			"offsets": {
+				"from": 2500,
+				"to": 2600
+			},
+			"text": " is"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,600",
+				"to": "00:00:03,020"
+			},
+			"offsets": {
+				"from": 2600,
+				"to": 3020
+			},
+			"text": " reading"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,020",
+				"to": "00:00:03,200"
+			},
+			"offsets": {
+				"from": 3020,
+				"to": 3200
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,200",
+				"to": "00:00:03,720"
+			},
+			"offsets": {
+				"from": 3200,
+				"to": 3720
+			},
+			"text": " files."
+		}
+	]
+}

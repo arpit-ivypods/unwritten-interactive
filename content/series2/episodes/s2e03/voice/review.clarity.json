@@ -1,0 +1,1005 @@
+{
+ "schema": "voice-review-clarity/1",
+ "episode": "s2e03",
+ "reviewer": "S10 voice director (directed these takes; did not generate them)",
+ "date": "26 Nov 2026",
+ "rule": "D-025 clarity re-voice, judged on D-022 and voice/takes.clarity.<lang>.json notes",
+ "method": "Local only. Transcripts: whisper.cpp whisper-cli ggml-small, greedy, no prompt, script not given: -l <lang>; Hindi takes also -l en (transcript_latin_pass, shows whether the English words were heard); every take also -l auto (language id). Doubtful words: each speech segment cut (+-0.08 s) and transcribed alone with ggml-small, plus ggml-base as a second model (ggml-large-v3-q5_0 is not in ~/.whisper-models, so it was not used). Measures: copies of the D-022 round-3 meas.py and seg.py, unchanged: speech frames are 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); voiced_ratio is the share of speech frames with normalised autocorrelation (8 kHz, 70-450 Hz lags) of 0.6 or more; segments split at gaps of 150 ms or more. D-022 test on voice-wanted lines: whole take and every segment of 0.5 s or more that carries script words at 0.6 or more. Segments that hold only a tagged sigh or laugh are not word-carrying. Nobody listened.",
+ "counts": {
+  "takes": 18,
+  "accept": 18,
+  "retake": 0
+ },
+ "edit_pick": "The edit reads voice/manifest.jsonl and voice/review.json, not this file. Each clarity row's manifest take was renumbered to the line's next take, and a matching row (verdict ok or retake, model eleven_v4) was appended to review.json, so build_timeline.py cuts in the .c1 take. A retake verdict keeps the .c1 take in the cut until a .c2 exists.",
+ "takes": [
+  {
+   "line_id": "l20",
+   "lang": "hi",
+   "speaker": "nandini",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e03/voice/hi/l20.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] जाने दूँ, तो godown में सिर्फ़ यही जा सकते हैं, मेरा phone जेब में लेकर।",
+   "verdict": "accept",
+   "reasons": "Words heard: 'जाने दुं, तो गो डाून में सर्फ यही जासकते है, मेरा फों जेब में लेकर'; Latin pass 'If I let it go, then this is the only way to go down. My phone is in my pocket.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.82 whole take; lowest word-carrying segment of 0.5 s or more 0.79. No tag word in either transcript. Language: auto-id hi (0.99). No cut-off: 0.11 s before the first speech frame, 0.199 s of silence after the last; peak -4.4 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "जाने दुं, तो गो डाून में सर्फ यही जासकते है, मेरा फों जेब में लेकर.",
+   "transcript_latin_pass": "If I let it go, then this is the only way to go down. My phone is in my pocket.",
+   "transcript_auto": "जाने दुं, तो गो डाून में सर्फ यही जासकते है, मेरा फों जेब में लेकर.",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.988,
+   "voiced_ratio": 0.82,
+   "duration": 6.0,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -19.7,
+   "ff_max_db": -4.4,
+   "lead_s": 0.11,
+   "trail_s": 0.199,
+   "flatness": 0.034,
+   "centroid_hz": 1835,
+   "median_hz": 200,
+   "segments": [
+    {
+     "t": [
+      0.12,
+      1.12
+     ],
+     "rms_db": -19.1,
+     "voiced_ratio": 0.82,
+     "longest_unvoiced_s": 0.18,
+     "median_hz": 211
+    },
+    {
+     "t": [
+      1.38,
+      3.9
+     ],
+     "rms_db": -19.1,
+     "voiced_ratio": 0.9,
+     "longest_unvoiced_s": 0.08,
+     "median_hz": 188
+    },
+    {
+     "t": [
+      4.28,
+      5.76
+     ],
+     "rms_db": -20.9,
+     "voiced_ratio": 0.79,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 190
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l28",
+   "lang": "hi",
+   "speaker": "nandini",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e03/voice/hi/l28.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[sharply] हमेशा की तरह?",
+   "verdict": "accept",
+   "reasons": "Words heard: 'हमेशा की तरा?'; Latin pass 'Like always?'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.7 whole take; lowest word-carrying segment of 0.5 s or more 0.7. No tag word in either transcript. Language: auto-id hi (0.95). No cut-off: 0.09 s before the first speech frame, 0.253 s of silence after the last; peak -1.9 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "हमेशा की तरा?",
+   "transcript_latin_pass": "Like always?",
+   "transcript_auto": "हमेशा की तरा?",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.949,
+   "voiced_ratio": 0.7,
+   "duration": 1.28,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -16.4,
+   "ff_max_db": -1.9,
+   "lead_s": 0.09,
+   "trail_s": 0.253,
+   "flatness": 0.053,
+   "centroid_hz": 3196,
+   "median_hz": 286,
+   "segments": [
+    {
+     "t": [
+      0.1,
+      1.02
+     ],
+     "rms_db": -16.6,
+     "voiced_ratio": 0.7,
+     "longest_unvoiced_s": 0.1,
+     "median_hz": 291
+    },
+    {
+     "t": [
+      1.26,
+      1.28
+     ],
+     "rms_db": -42.1,
+     "voiced_ratio": 1.0,
+     "longest_unvoiced_s": 0.0,
+     "median_hz": 258
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l29",
+   "lang": "hi",
+   "speaker": "nirala",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e03/voice/hi/l29.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] जी। ना लगाता, तो SHO साहब लगा देते।",
+   "verdict": "accept",
+   "reasons": "Words heard: 'जी ना लगाता तो एसे चो सहब लगा देते'; Latin pass 'Yes, if I didn't apply it, then I would have applied it like this.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.86 whole take; lowest word-carrying segment of 0.5 s or more 0.72. No tag word in either transcript. Language: auto-id hi (0.97). No cut-off: 0.11 s before the first speech frame, 0.268 s of silence after the last; peak -1.9 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "जी ना लगाता तो एसे चो सहब लगा देते",
+   "transcript_latin_pass": "Yes, if I didn't apply it, then I would have applied it like this.",
+   "transcript_auto": "जी ना लगाता तो एसे चो सहब लगा देते",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.971,
+   "voiced_ratio": 0.86,
+   "duration": 4.4,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -17.7,
+   "ff_max_db": -1.9,
+   "lead_s": 0.11,
+   "trail_s": 0.268,
+   "flatness": 0.023,
+   "centroid_hz": 1946,
+   "median_hz": 145,
+   "segments": [
+    {
+     "t": [
+      0.12,
+      0.7
+     ],
+     "rms_db": -23.2,
+     "voiced_ratio": 0.72,
+     "longest_unvoiced_s": 0.16,
+     "median_hz": 118
+    },
+    {
+     "t": [
+      1.16,
+      2.12
+     ],
+     "rms_db": -15.2,
+     "voiced_ratio": 0.94,
+     "longest_unvoiced_s": 0.02,
+     "median_hz": 190
+    },
+    {
+     "t": [
+      2.3,
+      4.1
+     ],
+     "rms_db": -19.0,
+     "voiced_ratio": 0.85,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 154
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l30",
+   "lang": "hi",
+   "speaker": "nandini",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e03/voice/hi/l30.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] DSP साहब, SI जोशी। आज रात godown पर raid चाहिए।",
+   "verdict": "accept",
+   "reasons": "Words heard: 'DSP Sahab, SI Joshi. आज रात गो डाँन पर रेट चाहिए'; Latin pass 'DSP Sahab, S.I. Joshi.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.86 whole take; lowest word-carrying segment of 0.5 s or more 0.73. No tag word in either transcript. Language: auto-id hi (0.99). No cut-off: 0.11 s before the first speech frame, 0.231 s of silence after the last; peak -1.4 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "DSP Sahab, SI Joshi. आज रात गो डाँन पर रेट चाहिए.",
+   "transcript_latin_pass": "DSP Sahab, S.I. Joshi.",
+   "transcript_auto": "DSP Sahab, SI Joshi. आज रात गो डाँन पर रेट चाहिए.",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.994,
+   "voiced_ratio": 0.86,
+   "duration": 4.88,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -18.8,
+   "ff_max_db": -1.4,
+   "lead_s": 0.11,
+   "trail_s": 0.231,
+   "flatness": 0.037,
+   "centroid_hz": 2157,
+   "median_hz": 195,
+   "segments": [
+    {
+     "t": [
+      0.12,
+      1.02
+     ],
+     "rms_db": -17.9,
+     "voiced_ratio": 0.95,
+     "longest_unvoiced_s": 0.04,
+     "median_hz": 254
+    },
+    {
+     "t": [
+      1.38,
+      2.14
+     ],
+     "rms_db": -22.6,
+     "voiced_ratio": 0.73,
+     "longest_unvoiced_s": 0.12,
+     "median_hz": 170
+    },
+    {
+     "t": [
+      2.66,
+      4.66
+     ],
+     "rms_db": -18.2,
+     "voiced_ratio": 0.93,
+     "longest_unvoiced_s": 0.04,
+     "median_hz": 190
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l32",
+   "lang": "hi",
+   "speaker": "nandini",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e03/voice/hi/l32.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] पर मेरे कहने पर, order के ख़िलाफ़।",
+   "verdict": "accept",
+   "reasons": "Words heard: 'पर मेरे कहने पर अडर के खिलाफ'; Latin pass 'But at my behest, against the order.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.71 whole take; lowest word-carrying segment of 0.5 s or more 0.6. No tag word in either transcript. Language: auto-id hi (0.96). No cut-off: 0.12 s before the first speech frame, 0.202 s of silence after the last; peak -2.9 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "पर मेरे कहने पर अडर के खिलाफ.",
+   "transcript_latin_pass": "But at my behest, against the order.",
+   "transcript_auto": "पर मेरे कहने पर अडर के खिलाफ.",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.961,
+   "voiced_ratio": 0.71,
+   "duration": 3.04,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -18.6,
+   "ff_max_db": -2.9,
+   "lead_s": 0.12,
+   "trail_s": 0.202,
+   "flatness": 0.039,
+   "centroid_hz": 2115,
+   "median_hz": 182,
+   "segments": [
+    {
+     "t": [
+      0.12,
+      1.34
+     ],
+     "rms_db": -16.8,
+     "voiced_ratio": 0.82,
+     "longest_unvoiced_s": 0.08,
+     "median_hz": 200
+    },
+    {
+     "t": [
+      1.72,
+      2.82
+     ],
+     "rms_db": -21.8,
+     "voiced_ratio": 0.6,
+     "longest_unvoiced_s": 0.2,
+     "median_hz": 174
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l33",
+   "lang": "hi",
+   "speaker": "nirala",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e03/voice/hi/l33.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] और भैयाजी जान जाते कि ये थाना बिका नहीं। फिर files भी उठवा लेते।",
+   "verdict": "accept",
+   "reasons": "Words heard: 'और भ्याजी जान जाते की ये ताना भिका नहीं किर फायल्स भी उप्वालेते।'; Latin pass 'And brother would know that this police station was not sold. Then they would pick up the files as well.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.88 whole take; lowest word-carrying segment of 0.5 s or more 0.85. No tag word in either transcript. Language: auto-id hi (0.99). No cut-off: 0.06 s before the first speech frame, 0.284 s of silence after the last; peak -0.9 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "और भ्याजी जान जाते की ये ताना भिका नहीं किर फायल्स भी उप्वालेते।",
+   "transcript_latin_pass": "And brother would know that this police station was not sold. Then they would pick up the files as well.",
+   "transcript_auto": "और भ्याजी जान जाते की ये ताना भिका नहीं किर फायल्स भी उप्वालेते।",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.99,
+   "voiced_ratio": 0.88,
+   "duration": 4.88,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -18.6,
+   "ff_max_db": -0.9,
+   "lead_s": 0.06,
+   "trail_s": 0.284,
+   "flatness": 0.026,
+   "centroid_hz": 1876,
+   "median_hz": 136,
+   "segments": [
+    {
+     "t": [
+      0.06,
+      2.88
+     ],
+     "rms_db": -19.2,
+     "voiced_ratio": 0.9,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 138
+    },
+    {
+     "t": [
+      3.38,
+      4.56
+     ],
+     "rms_db": -17.7,
+     "voiced_ratio": 0.85,
+     "longest_unvoiced_s": 0.04,
+     "median_hz": 130
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l34",
+   "lang": "hi",
+   "speaker": "nirala",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e03/voice/hi/l34.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] जाल है या नहीं, कोई नहीं जानता।",
+   "verdict": "accept",
+   "reasons": "Words heard: 'जाल है या नहीं कोई नहीं जानता।'; Latin pass 'No one knows whether there's a trap or not.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.86 whole take; lowest word-carrying segment of 0.5 s or more 0.8. No tag word in either transcript. Language: auto-id hi (0.95). No cut-off: 0.1 s before the first speech frame, 0.244 s of silence after the last; peak -2.0 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "जाल है या नहीं कोई नहीं जानता।",
+   "transcript_latin_pass": "No one knows whether there's a trap or not.",
+   "transcript_auto": "जाल है या नहीं कोई नहीं जानता।",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.955,
+   "voiced_ratio": 0.86,
+   "duration": 3.36,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -18.9,
+   "ff_max_db": -2.0,
+   "lead_s": 0.1,
+   "trail_s": 0.244,
+   "flatness": 0.027,
+   "centroid_hz": 1721,
+   "median_hz": 143,
+   "segments": [
+    {
+     "t": [
+      0.1,
+      1.88
+     ],
+     "rms_db": -17.5,
+     "voiced_ratio": 0.9,
+     "longest_unvoiced_s": 0.1,
+     "median_hz": 176
+    },
+    {
+     "t": [
+      2.06,
+      3.06
+     ],
+     "rms_db": -23.7,
+     "voiced_ratio": 0.8,
+     "longest_unvoiced_s": 0.08,
+     "median_hz": 114
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l35",
+   "lang": "hi",
+   "speaker": "nandini",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e03/voice/hi/l35.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] भैयाजी की अपनी आवाज़ record होगी, रंगे हाथ।",
+   "verdict": "accept",
+   "reasons": "Words heard: 'बह्याजी की अपनी आवाज रेकोर्ट होगी रंगे हात'; Latin pass 'Bhaya Ji Ki Apni Awaaz Rekord Hogi. Range Haath.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.9 whole take; lowest word-carrying segment of 0.5 s or more 0.82. No tag word in either transcript. Language: auto-id hi (0.98). No cut-off: 0.09 s before the first speech frame, 0.314 s of silence after the last; peak -2.9 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "बह्याजी की अपनी आवाज रेकोर्ट होगी रंगे हात",
+   "transcript_latin_pass": "Bhaya Ji Ki Apni Awaaz Rekord Hogi. Range Haath.",
+   "transcript_auto": "बह्याजी की अपनी आवाज रेकोर्ट होगी रंगे हात",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.981,
+   "voiced_ratio": 0.9,
+   "duration": 4.16,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -20.0,
+   "ff_max_db": -2.9,
+   "lead_s": 0.09,
+   "trail_s": 0.314,
+   "flatness": 0.04,
+   "centroid_hz": 2169,
+   "median_hz": 182,
+   "segments": [
+    {
+     "t": [
+      0.1,
+      2.68
+     ],
+     "rms_db": -19.9,
+     "voiced_ratio": 0.92,
+     "longest_unvoiced_s": 0.04,
+     "median_hz": 184
+    },
+    {
+     "t": [
+      3.06,
+      3.84
+     ],
+     "rms_db": -20.5,
+     "voiced_ratio": 0.82,
+     "longest_unvoiced_s": 0.04,
+     "median_hz": 178
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l14",
+   "lang": "en",
+   "speaker": "nandini",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e03/voice/en/l14.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] I heard Bhaiyaji's own voice, DSP sahab. On Nirala's phone.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'I heard Bhaiyaji's own voice, BSP Sahab, on Nerala's phone'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.81 whole take; lowest word-carrying segment of 0.5 s or more 0.83. No tag word in either transcript. Language: auto-id says hi (0.67), but the forced -l en transcript is the script in en and the auto text is the same words in another script ('आद ब्याजी जी एक वोईज बीस्पी साहब औन निराला से फों'): accent, not wrong language. No cut-off: 0.08 s before the first speech frame, 0.114 s of silence after the last; peak -5.9 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "I heard Bhaiyaji's own voice, BSP Sahab, on Nerala's phone.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "आद ब्याजी जी एक वोईज बीस्पी साहब औन निराला से फों",
+   "auto_lang": "hi",
+   "auto_lang_p": 0.67,
+   "voiced_ratio": 0.81,
+   "duration": 4.72,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -21.4,
+   "ff_max_db": -5.9,
+   "lead_s": 0.08,
+   "trail_s": 0.114,
+   "flatness": 0.04,
+   "centroid_hz": 1885,
+   "median_hz": 178,
+   "segments": [
+    {
+     "t": [
+      0.08,
+      2.1
+     ],
+     "rms_db": -20.8,
+     "voiced_ratio": 0.88,
+     "longest_unvoiced_s": 0.08,
+     "median_hz": 200
+    },
+    {
+     "t": [
+      2.28,
+      3.08
+     ],
+     "rms_db": -24.6,
+     "voiced_ratio": 0.83,
+     "longest_unvoiced_s": 0.08,
+     "median_hz": 163
+    },
+    {
+     "t": [
+      3.56,
+      4.62
+     ],
+     "rms_db": -20.6,
+     "voiced_ratio": 0.83,
+     "longest_unvoiced_s": 0.16,
+     "median_hz": 176
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l19",
+   "lang": "en",
+   "speaker": "nandini",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e03/voice/en/l19.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] But then the SHO stamps the slip, and I can't stop a truck that carries his stamp.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'But then the SHO stamps the slip and I can't stop a truck that carries his stamp'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.68 whole take; lowest word-carrying segment of 0.5 s or more 0.71. No tag word in either transcript. Language: auto-id en (1.00). No cut-off: 0.11 s before the first speech frame, 0.195 s of silence after the last; peak -3.7 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "But then the SHO stamps the slip and I can't stop a truck that carries his stamp.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "But then the SHO stamps the slip and I can't stop a truck that carries his stamp.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.999,
+   "voiced_ratio": 0.68,
+   "duration": 5.68,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -21.4,
+   "ff_max_db": -3.7,
+   "lead_s": 0.11,
+   "trail_s": 0.195,
+   "flatness": 0.048,
+   "centroid_hz": 2352,
+   "median_hz": 186,
+   "segments": [
+    {
+     "t": [
+      0.12,
+      2.5
+     ],
+     "rms_db": -20.0,
+     "voiced_ratio": 0.72,
+     "longest_unvoiced_s": 0.14,
+     "median_hz": 211
+    },
+    {
+     "t": [
+      2.88,
+      4.96
+     ],
+     "rms_db": -22.4,
+     "voiced_ratio": 0.71,
+     "longest_unvoiced_s": 0.12,
+     "median_hz": 167
+    },
+    {
+     "t": [
+      5.12,
+      5.5
+     ],
+     "rms_db": -27.2,
+     "voiced_ratio": 0.93,
+     "longest_unvoiced_s": 0.02,
+     "median_hz": 92
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l20",
+   "lang": "en",
+   "speaker": "nandini",
+   "take": 2,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e03/voice/en/l20.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] If I let him go, only he can get into the godown, with my phone in his pocket.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'If I let him go, only he can get into the go-down with my phone in his pocket'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.79 whole take; lowest word-carrying segment of 0.5 s or more 0.75. No tag word in either transcript. Language: auto-id en (0.98). No cut-off: 0.07 s before the first speech frame, 0.143 s of silence after the last; peak -4.1 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "If I let him go, only he can get into the go-down with my phone in his pocket.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "If I let him go, only he can get into the go-down with my phone in his pocket.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.978,
+   "voiced_ratio": 0.79,
+   "duration": 5.52,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -22.3,
+   "ff_max_db": -4.1,
+   "lead_s": 0.07,
+   "trail_s": 0.143,
+   "flatness": 0.037,
+   "centroid_hz": 1720,
+   "median_hz": 167,
+   "segments": [
+    {
+     "t": [
+      0.08,
+      1.16
+     ],
+     "rms_db": -20.3,
+     "voiced_ratio": 0.85,
+     "longest_unvoiced_s": 0.08,
+     "median_hz": 205
+    },
+    {
+     "t": [
+      1.6,
+      3.42
+     ],
+     "rms_db": -23.2,
+     "voiced_ratio": 0.79,
+     "longest_unvoiced_s": 0.08,
+     "median_hz": 148
+    },
+    {
+     "t": [
+      3.82,
+      5.38
+     ],
+     "rms_db": -23.6,
+     "voiced_ratio": 0.75,
+     "longest_unvoiced_s": 0.12,
+     "median_hz": 170
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l28",
+   "lang": "en",
+   "speaker": "nandini",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e03/voice/en/l28.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[sharply] As always?",
+   "verdict": "accept",
+   "reasons": "Words heard: 'As always'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.68 whole take; lowest word-carrying segment of 0.5 s or more 0.76. No tag word in either transcript. Language: auto-id en (0.99). No cut-off: 0.1 s before the first speech frame, 0.251 s of silence after the last; peak -2.8 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "As always...",
+   "transcript_latin_pass": null,
+   "transcript_auto": "As always...",
+   "auto_lang": "en",
+   "auto_lang_p": 0.989,
+   "voiced_ratio": 0.68,
+   "duration": 1.36,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -18.3,
+   "ff_max_db": -2.8,
+   "lead_s": 0.1,
+   "trail_s": 0.251,
+   "flatness": 0.041,
+   "centroid_hz": 2350,
+   "median_hz": 208,
+   "segments": [
+    {
+     "t": [
+      0.1,
+      1.08
+     ],
+     "rms_db": -17.8,
+     "voiced_ratio": 0.76,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 208
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l29",
+   "lang": "en",
+   "speaker": "nirala",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e03/voice/en/l29.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] Yes. If I refused, SHO sahab would stamp it.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'Yes, if I refused, SHO Sahab would stamp it'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.71 whole take; lowest word-carrying segment of 0.5 s or more 0.64. No tag word in either transcript. Language: auto-id en (0.97). No cut-off: 0.09 s before the first speech frame, 0.114 s of silence after the last; peak -1.4 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "Yes, if I refused, SHO Sahab would stamp it.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "Yes, if I refused, SHO Sahab would stamp it.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.973,
+   "voiced_ratio": 0.71,
+   "duration": 3.92,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -18.2,
+   "ff_max_db": -1.4,
+   "lead_s": 0.09,
+   "trail_s": 0.114,
+   "flatness": 0.047,
+   "centroid_hz": 2373,
+   "median_hz": 157,
+   "segments": [
+    {
+     "t": [
+      0.1,
+      0.66
+     ],
+     "rms_db": -21.6,
+     "voiced_ratio": 0.64,
+     "longest_unvoiced_s": 0.08,
+     "median_hz": 132
+    },
+    {
+     "t": [
+      0.96,
+      1.9
+     ],
+     "rms_db": -16.4,
+     "voiced_ratio": 0.74,
+     "longest_unvoiced_s": 0.08,
+     "median_hz": 163
+    },
+    {
+     "t": [
+      2.14,
+      3.74
+     ],
+     "rms_db": -18.6,
+     "voiced_ratio": 0.82,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 160
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l30",
+   "lang": "en",
+   "speaker": "nandini",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e03/voice/en/l30.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] DSP sahab, SI Joshi. I need a raid on the godown tonight.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'DSP Sahab, S.I. Joshi. I need a raid on the go down tonight'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.83 whole take; lowest word-carrying segment of 0.5 s or more 0.72. No tag word in either transcript. Language: auto-id en (0.85). No cut-off: 0.05 s before the first speech frame, 0.153 s of silence after the last; peak -2.8 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "DSP Sahab, S.I. Joshi. I need a raid on the go down tonight.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "DSP Sahab, S.I. Joshi. I need a raid on the go down tonight.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.85,
+   "voiced_ratio": 0.83,
+   "duration": 4.56,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -18.6,
+   "ff_max_db": -2.8,
+   "lead_s": 0.05,
+   "trail_s": 0.153,
+   "flatness": 0.034,
+   "centroid_hz": 2222,
+   "median_hz": 195,
+   "segments": [
+    {
+     "t": [
+      0.06,
+      0.86
+     ],
+     "rms_db": -17.6,
+     "voiced_ratio": 0.94,
+     "longest_unvoiced_s": 0.02,
+     "median_hz": 250
+    },
+    {
+     "t": [
+      1.22,
+      1.96
+     ],
+     "rms_db": -22.2,
+     "voiced_ratio": 0.72,
+     "longest_unvoiced_s": 0.12,
+     "median_hz": 174
+    },
+    {
+     "t": [
+      2.28,
+      4.38
+     ],
+     "rms_db": -17.9,
+     "voiced_ratio": 0.86,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 186
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l32",
+   "lang": "en",
+   "speaker": "nandini",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e03/voice/en/l32.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] But on my word. Against orders.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'but on my word, against orders'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.8 whole take; lowest word-carrying segment of 0.5 s or more 0.81. No tag word in either transcript. Language: auto-id en (0.99). No cut-off: 0.1 s before the first speech frame, 0.158 s of silence after the last; peak -2.2 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "but on my word, against orders.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "but on my word, against orders.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.99,
+   "voiced_ratio": 0.8,
+   "duration": 2.96,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -20.1,
+   "ff_max_db": -2.2,
+   "lead_s": 0.1,
+   "trail_s": 0.158,
+   "flatness": 0.037,
+   "centroid_hz": 1502,
+   "median_hz": 163,
+   "segments": [
+    {
+     "t": [
+      0.1,
+      1.22
+     ],
+     "rms_db": -19.6,
+     "voiced_ratio": 0.92,
+     "longest_unvoiced_s": 0.02,
+     "median_hz": 167
+    },
+    {
+     "t": [
+      1.7,
+      2.62
+     ],
+     "rms_db": -19.8,
+     "voiced_ratio": 0.81,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 160
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l33",
+   "lang": "en",
+   "speaker": "nirala",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e03/voice/en/l33.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] And Bhaiyaji would know this thana isn't in his pay. Then he'd have the complaint files taken too.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'And Bariyaji would know this thana isn't in his pay. Then he'd have the complaint files taken too'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.81 whole take; lowest word-carrying segment of 0.5 s or more 0.8. No tag word in either transcript. Language: auto-id en (0.99). No cut-off: 0.1 s before the first speech frame, 0.191 s of silence after the last; peak -1.3 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "And Bariyaji would know this thana isn't in his pay. Then he'd have the complaint files taken too.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "And Bariyaji would know this thana isn't in his pay. Then he'd have the complaint files taken too.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.989,
+   "voiced_ratio": 0.81,
+   "duration": 5.92,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -19.1,
+   "ff_max_db": -1.3,
+   "lead_s": 0.1,
+   "trail_s": 0.191,
+   "flatness": 0.03,
+   "centroid_hz": 1840,
+   "median_hz": 129,
+   "segments": [
+    {
+     "t": [
+      0.1,
+      3.16
+     ],
+     "rms_db": -19.6,
+     "voiced_ratio": 0.8,
+     "longest_unvoiced_s": 0.14,
+     "median_hz": 133
+    },
+    {
+     "t": [
+      3.66,
+      5.72
+     ],
+     "rms_db": -18.8,
+     "voiced_ratio": 0.81,
+     "longest_unvoiced_s": 0.08,
+     "median_hz": 123
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l34",
+   "lang": "en",
+   "speaker": "nirala",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e03/voice/en/l34.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] Whether it is a trap, nobody knows.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'Whether it is a trap, nobody knows'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.76 whole take; lowest word-carrying segment of 0.5 s or more 0.72. No tag word in either transcript. Language: auto-id en (0.99). No cut-off: 0.13 s before the first speech frame, 0.313 s of silence after the last; peak -1.8 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "Whether it is a trap, nobody knows.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "Whether it is a trap, nobody knows.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.995,
+   "voiced_ratio": 0.76,
+   "duration": 2.88,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -20.5,
+   "ff_max_db": -1.8,
+   "lead_s": 0.13,
+   "trail_s": 0.313,
+   "flatness": 0.031,
+   "centroid_hz": 1714,
+   "median_hz": 143,
+   "segments": [
+    {
+     "t": [
+      0.14,
+      1.48
+     ],
+     "rms_db": -19.4,
+     "voiced_ratio": 0.72,
+     "longest_unvoiced_s": 0.12,
+     "median_hz": 162
+    },
+    {
+     "t": [
+      1.72,
+      2.56
+     ],
+     "rms_db": -23.7,
+     "voiced_ratio": 0.81,
+     "longest_unvoiced_s": 0.1,
+     "median_hz": 129
+    }
+   ],
+   "whisper_wanted": false
+  },
+  {
+   "line_id": "l35",
+   "lang": "en",
+   "speaker": "nandini",
+   "take": 1,
+   "clarity_take": 1,
+   "file": "content/series2/episodes/s2e03/voice/en/l35.c1.mp3",
+   "model": "eleven_v4",
+   "text_sent": "[calm] Bhaiyaji's own voice gets recorded, red-handed.",
+   "verdict": "accept",
+   "reasons": "Words heard: 'Bhaiyaji's own voice gets recorded, red-handed'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.77 whole take; lowest word-carrying segment of 0.5 s or more 0.77. No tag word in either transcript. Language: auto-id en (0.94). No cut-off: 0.13 s before the first speech frame, 0.2 s of silence after the last; peak -7.0 dB. Emotion and accent not judged: nobody listened (ear list).",
+   "transcript": "Bhaiyaji's own voice gets recorded, red-handed.",
+   "transcript_latin_pass": null,
+   "transcript_auto": "Bhaiyaji's own voice gets recorded, red-handed.",
+   "auto_lang": "en",
+   "auto_lang_p": 0.939,
+   "voiced_ratio": 0.77,
+   "duration": 3.92,
+   "segments_ge0_5s_under_0_6": [],
+   "nonverbal_segments": [],
+   "speech_rms_db": -21.7,
+   "ff_max_db": -7.0,
+   "lead_s": 0.13,
+   "trail_s": 0.2,
+   "flatness": 0.039,
+   "centroid_hz": 1930,
+   "median_hz": 167,
+   "segments": [
+    {
+     "t": [
+      0.14,
+      2.56
+     ],
+     "rms_db": -21.1,
+     "voiced_ratio": 0.78,
+     "longest_unvoiced_s": 0.16,
+     "median_hz": 174
+    },
+    {
+     "t": [
+      2.9,
+      3.74
+     ],
+     "rms_db": -24.0,
+     "voiced_ratio": 0.77,
+     "longest_unvoiced_s": 0.06,
+     "median_hz": 162
+    }
+   ],
+   "whisper_wanted": false
+  }
+ ],
+ "pass": "clarity"
+}

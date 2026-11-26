@@ -1,0 +1,420 @@
+{
+  "episode": "s1e01",
+  "by": "S9 Visual checker, 26 Nov 2026 (anchor check and frame check by different sessions)",
+  "anchor_check": {
+    "stage": "scene-anchor check (D-015 rule 7); frames present: s04, s15 only",
+    "method": "Whole frames viewed at 1125x2000; full-resolution ffmpeg crops of each face (side by side with the sheet's front close-up), hands, fingers, props, lower subtitle band and upper background. Checked against shots.json state, the s04/s15 prompts, style.json locks for kiran and billu, continuity.json s1e01 end_state, refs kiran_p1, billu, billu_car, bedroom_window, glass_and_fold.",
+    "not_checked": [
+      "No other s1e01 frames exist yet; only the two scene anchors were judged.",
+      "No face-matching tool was used; identity and age are by eye from crops.",
+      "Light direction was judged by eye only.",
+      "How far the s15 push-in (intensity 0.35, focus 0.5/0.35) crops the key out of the subtitle band was not rendered or measured."
+    ]
+  },
+  "frame_check": {
+    "stage": "frame check (D-013 rule 10, D-015 rule 5): the 25 non-anchor generated frames, attempt 1 each",
+    "by": "S9 Visual checker (a different session from the anchor check), 26 Nov 2026",
+    "method": "Each frame viewed whole (contact sheets at 540x960) and then full-resolution ffmpeg crops of hands, cuffs, pockets, watch, props, faces and the lower band where a fault was possible. Judged against shots.json shot STATE, framing and refs, the state_ledger and screen_direction, style.json locks for kiran and aditya, continuity.json s1e01 notes (both cuffs pushed up from b1 to b11; P02), the sheets kiran_p1, kiran_hands, aditya, pair_kiran_aditya_p1 and the props key_thread, glass_and_fold, padlock_hasp, kiran_phone, brass_set, photograph, billu_car, the plates bedroom_bed, bedroom_door, bedroom_window, lane_night, and the anchors s04 and s15. Prompts read only for s02, s03, s20 and s21 (by grep).",
+    "counts": {
+      "judged": 25,
+      "approved": 17,
+      "approved_with_logged_drift": 4,
+      "rejected_for_retake": 4
+    },
+    "rejected": [
+      "s02",
+      "s03",
+      "s20",
+      "s21"
+    ],
+    "dependent_second_framings": {
+      "s05": "source s03 (rejected): wait for the s03 retake",
+      "s25": "source s21 (rejected): wait for the s21 retake",
+      "s16": "source s14 (approved with drift)",
+      "s19": "source s18 (approved)",
+      "s22": "source s08 (approved)",
+      "s24": "source s17 (approved)",
+      "s26": "source s28 (approved)",
+      "s34": "source s30 (approved)"
+    },
+    "gate_note": "shots.json generation_gates holds s14 and s20 until the D-021 decision 6 retake check reports on lane_night and pair_kiran_aditya_p1. Both frames exist (manifest 06:46 to 06:50 UTC). I found no report of that retake check in content/series1/refs, docs/decisions.md or docs/morning-report.md, so I cannot say whether the hold was honoured. s14 shows the car front-on, so the boot-lid mark is not in shot. In s20 the backs of Kiran hands are not visible.",
+    "not_checked": [
+      "No face-matching tool; identity and age judged by eye from crops beside the kiran_p1 and aditya front close-ups.",
+      "Aditya hair-part side was not judged reliably at crop size; not used for any verdict.",
+      "Prompts other than s02, s03, s20 and s21 were not read; verdicts rest on shots.json STATE, not on what each prompt said.",
+      "Second framings (s05, s16, s19, s22, s24, s25, s26, s34) and s31 were not rendered or measured; only their source frames were judged.",
+      "Light direction judged by eye; no measurement of placement percentages except where stated.",
+      "Text: checked by eye on whole frames and on crops of the number plates, shutters, phone screen, padlock and print backs; not every square centimetre was cropped."
+    ]
+  },
+  "frames": [
+    {
+      "shot": "s01",
+      "verdict": "approved",
+      "attempt": 1,
+      "stage": "frame",
+      "checks": {
+        "hands": "pass: right hand from upper picture-left, back of hand plain, fingertips dipped, thumb plus fingers correct, tapping powder from the open fold into the tumbler; powder falling; half still in the fold.",
+        "cuff": "pass: only an ivory edge at the upper picture-left corner; wrist and forearm bare (pushed up).",
+        "props": "pass: steel tumbler of kesar milk with saffron on the steel tray on the stool; nothing else on the tray.",
+        "room": "pass: grille window behind, pallu red with gold border at picture-left.",
+        "text": "pass: none.",
+        "placement": "pass: hand and fold in the upper half; no face."
+      }
+    },
+    {
+      "shot": "s02",
+      "verdict": "rejected",
+      "attempt": 1,
+      "stage": "frame",
+      "checks": {
+        "cuff": "FAIL: the right chooda (red cuff and two ivory bangles) sits right at the wrist against the hand (crop: bangles touch the back of the hand). STATE (2) says pushed up towards the elbow, at most at the frame edge; s01, the shot before it, shows a bare wrist with only an ivory edge at the corner, and the s04 anchor has it bunched below the elbow. On the cut s01 to s02 the cuff jumps down the arm.",
+        "hands": "pass: hand stopped above the tumbler, fold held level with a heap of powder in its crease, nothing falling; fingertips dipped; no extra digits.",
+        "framing": "differs from s01 (more of the arm and saree); acceptable per the shot note.",
+        "text": "pass: none."
+      },
+      "why_rejected": "A visible state jump on consecutive shots in the hook, on the prop (right cuff) the continuity file tracks through s1e01 (P02).",
+      "fix": "Retake once. Attach frames/s01.png as the camera reference in place of bedroom_window (D-017 drop order: the plate goes first). Frame so the wrist and at least a hand-width of bare forearm show and the cuff is out of frame or only an ivory edge at the upper picture-left corner, exactly as in s01; add under do-not-copy: kiran_hands view 2 (cuff closed at the wrist)."
+    },
+    {
+      "shot": "s03",
+      "verdict": "rejected",
+      "attempt": 1,
+      "stage": "frame",
+      "checks": {
+        "identity": "pass: matches aditya sheet close-up; early thirties; glasses on.",
+        "pocket": "FAIL: the square patch pocket is on the picture-right of his chest (his LEFT chest). The lock and the sheet put it on his RIGHT chest, picture-left; s09, s28 and s29 draw it there, and s29 draws the print out of it. In s03 the pocket and the watch are on the same side of the picture, which the lock forbids.",
+        "watch": "pass: on the wrist at picture-right, face unreadable.",
+        "props": "pass: key on doubled red thread at mid-chest; Kiran phone face up on the sheet at picture-left by his hip, red cover, screen dark; hands empty in lap.",
+        "room": "pass: lamp picture-left, window picture-right, bolster behind, marigold strings, maroon bag on the chair at picture-left.",
+        "text": "pass: none.",
+        "placement": "pass: face at about 17-27% of height."
+      },
+      "why_rejected": "A wardrobe side error on the principal, prominent at full size, contradicting s09 a few seconds later and the b8 pocket business. s05 is a second framing of this frame and inherits it.",
+      "fix": "Retake once with the same refs. In STATE and FINAL CHECK add: \"The patch pocket is on the picture-left of his chest, on the opposite side of the picture from the watch; there is no pocket on the picture-right of his chest.\" If the retake still flips it, frame s03 so the chest pocket area is covered by his clasped forearms, and log."
+    },
+    {
+      "shot": "s04",
+      "verdict": "approved",
+      "attempt": 1,
+      "checks": {
+        "identity": "pass: face crop matches kiran_p1 close-up (long oval face, freckles, straight brows, smudged kajal, sindoor parting, bindi, gold ball studs); reads late twenties. Cheeks slightly fuller than the sheet with the head lowered; not a fault.",
+        "jewellery": "pass: gold hoop in her LEFT nostril (picture-right of the nose); mangalsutra black beads with centre gold bead; no rings, no watch.",
+        "wardrobe": "pass: red saree with narrow gold border, pallu drawn over her head, fall over her left shoulder (picture-right) hiding the whole left arm; red blouse sleeve above the elbow.",
+        "hands": "pass: right hand (picture-left) flat on chest below the mangalsutra, back to camera, plain back with no disc, fingertips dipped; thumb plus four fingers, no fused or extra digits. Left arm and hand not visible anywhere.",
+        "chooda": "pass: right cuff pushed up and bunched just below the elbow, two ivory bangles at each end, wrist and lower forearm bare.",
+        "props": "pass: round steel tray on the stool at picture-right; steel tumbler full of pale-yellow milk with saffron threads; white fold lying open beside it with a small heap of powder in its crease. No closed folds, no phone, no padlock, no Aditya.",
+        "room": "pass: matches bedroom_window plate (grilled window with open shutters, marigold strings and headboard at picture-left, bed with red bolster and petals at picture-left, pale-blue door edge at picture-right). Not mirrored.",
+        "text": "pass: none found in the window, building opposite, door or corners.",
+        "placement": "pass: face at about 20-33% of height, hand at about 44%, tray at about 62%; bottom fifth holds only saree folds, stool legs and floor; no face or hand in the outer 6%.",
+        "notes": "Framing is a little wider than the mid-thigh medium asked (saree runs to the bottom edge); harmless."
+      },
+      "stage": "anchor"
+    },
+    {
+      "shot": "s06",
+      "verdict": "approved",
+      "attempt": 1,
+      "stage": "frame",
+      "checks": {
+        "props": "pass: full tumbler, saffron threads, untouched; fold open on the tray beside it with powder in the crease; no hand.",
+        "room": "pass: stool, window grille and bar shadows behind; lamp warm.",
+        "text": "pass: none."
+      }
+    },
+    {
+      "shot": "s07",
+      "verdict": "approved with logged drift",
+      "attempt": 1,
+      "stage": "frame",
+      "checks": {
+        "identity": "pass: back to camera, red saree with gold border, pallu over her head.",
+        "hands": "pass: right hand (picture-right) gripping the iron bolt; left arm hidden under the pallu.",
+        "cuff": "DRIFT (minor): right cuff sits at mid-forearm with the wrist bare, not bunched just below the elbow as in s04. It still reads pushed up.",
+        "door": "pass: pale-blue two-leaf plank door; bolt shot, hasp closed, brass padlock locked through it, as bedroom_door and padlock_hasp view 1.",
+        "room": "pass: window at picture-left, almirah and maroon bag on the chair at picture-right, bed edge with petals in the foreground.",
+        "text": "pass: none."
+      }
+    },
+    {
+      "shot": "s08",
+      "verdict": "approved",
+      "attempt": 1,
+      "stage": "frame",
+      "checks": {
+        "props": "pass: bolt shot across the leaf gap, hasp closed, small brass padlock locked through the staple, hanging still; no hand.",
+        "text": "pass: padlock body blank apart from the keyhole.",
+        "note": "Bolt knob is at the picture-left end where padlock_hasp view 1 has it at the right; at insert scale this is not readable as a change."
+      }
+    },
+    {
+      "shot": "s09",
+      "verdict": "approved",
+      "attempt": 1,
+      "stage": "frame",
+      "checks": {
+        "hands": "pass: his right hand from picture-left, index and middle fingertips lifting the key bow off the kurta, thumb hidden; no extra digits.",
+        "props": "pass: brass key on doubled red thread, matches key_thread.",
+        "pocket": "pass: patch pocket at picture-left (his right chest).",
+        "placement": "pass: no face (neck at the top edge); lamp glow at upper left.",
+        "text": "pass: none."
+      }
+    },
+    {
+      "shot": "s10",
+      "verdict": "approved with logged drift",
+      "attempt": 1,
+      "stage": "frame",
+      "checks": {
+        "identity": "pass: matches aditya; glasses, key on thread at mid-chest.",
+        "props": "pass: red velvet box open in both hands tilted to the lens, leaf necklace and earrings as brass_set; almirah doors open behind.",
+        "watch": "pass: on the wrist at picture-right.",
+        "pocket": "DRIFT: a faint patch-pocket outline on the picture-right of his chest, partly behind the box lid (same side error as s03, but faint and half hidden). Not rejected; the editor should not push in on it.",
+        "scratched_link": "not readable at frame size; the dull-brass link the action asks for is not evident.",
+        "text": "pass: none.",
+        "placement": "pass: face at about 10-22%."
+      }
+    },
+    {
+      "shot": "s11",
+      "verdict": "approved",
+      "attempt": 1,
+      "stage": "frame",
+      "checks": {
+        "content": "pass: bare lime-washed wall, one iron nail with nothing on it, almirah top at the lower edge; no people.",
+        "text": "pass: none."
+      }
+    },
+    {
+      "shot": "s12",
+      "verdict": "approved",
+      "attempt": 1,
+      "stage": "frame",
+      "checks": {
+        "props": "pass: phone face up on the white sheet among petals, red cover as kiran_phone; screen dark and blank, no icons; no tray or SIM; no hand.",
+        "note": "Screen is dark rather than a dim even glow; the No network overlay still has a plain field.",
+        "text": "pass: none."
+      }
+    },
+    {
+      "shot": "s13",
+      "verdict": "approved with logged drift",
+      "attempt": 1,
+      "stage": "frame",
+      "checks": {
+        "identity": "pass: matches aditya; glasses; key at mid-chest.",
+        "hands": "DRIFT: the SIM is pinched between thumb and index finger, not between index and middle as STATE (1) and the b4 ledger say. Gold contacts to camera, no printing, right wrist bare, no extra digits.",
+        "focus": "DRIFT (minor): his face is fairly sharp, not soft behind the SIM.",
+        "pocket": "pass: at lower picture-left.",
+        "text": "pass: none."
+      }
+    },
+    {
+      "shot": "s14",
+      "verdict": "approved with logged drift",
+      "attempt": 1,
+      "stage": "frame",
+      "checks": {
+        "content": "pass: empty lane, white sedan parked at picture-left under the single cool streetlight, old motorbike beside it with nobody near, lit first-floor window with grille and marigold string at picture-right; a dim figure at the wheel.",
+        "rhd": "pass: the figure sits on the car right side (picture-left with the car facing camera).",
+        "geography": "DRIFT: the car faces the camera, where lane_night shows its rear. With the car this way round its driver door is against the picture-left wall, away from the house, while s15 puts the open driver window towards the house. Viewers are unlikely to read it in two shots; later lane frames should follow the plate (rear to camera).",
+        "text": "pass: both number plates blank white; shutters and doors bare.",
+        "overlay_space": "pass: dark area at upper picture-left for 1:40."
+      }
+    },
+    {
+      "shot": "s15",
+      "verdict": "approved with logged drift",
+      "attempt": 1,
+      "checks": {
+        "identity": "pass, watch item: face crop matches the billu close-up (long narrow face, sharp jaw, patchy stubble, thick brows, gelled-back hair with curling ends). Raised brows give heavy forehead lines, so he reads early-to-mid thirties against the sheet's about-thirty. Not rejected; later lane prompts should keep the brows level.",
+        "eyes": "pass: brown irises with one small warm catch-light each (looks amber at preview size, normal at full resolution). Gaze is raised but close to the lens line.",
+        "wardrobe": "pass: faded light-blue denim jacket open over a black round-neck T-shirt, two buttoned chest pockets, sleeves rolled (right sleeve at the elbow rather than mid-forearm, minor). No chain, watch, ring or cap.",
+        "toothpick": "pass: in the right corner of his mouth, picture-left.",
+        "phone": "pass: plain black phone in his left hand at his left ear, picture-right; edge and back only, no screen, no logo.",
+        "key": "DRIFT: key on its steel ring with black head and brass blade hangs from his right hand on picture-left outside the sill (side correct), but the ring is on the finger furthest from the thumb side (ring or little finger), not the index finger the lock, STATE (2) and continuity end_state require. Dorsal view of a right hand with fingers down puts the thumb on picture-right, and the ring sits on the leftmost finger.",
+        "car": "pass: white car, right-hand drive (wheel in front of him at picture-right, car front to picture-right), window fully down, marigolds on the dashboard and lemon-chilli charm on the mirror as on billu_car; nobody else in the car or the lane.",
+        "text": "pass: none on the door, roof rail, lane or dashboard.",
+        "placement": "face at about 14-40% of height (above the bottom 25%); sill at about 62%. The key hand's lowest fingertip is at about 79% and the key runs from about 78% to 88%, so the key blade sits in the subtitle band, against the prompt's 'above the bottom fifth'. No face or hand in the outer 6%.",
+        "hands": "pass: no extra or fused fingers on either hand; key hand shows three fingers and the thumb, the fourth finger hidden behind."
+      },
+      "why_not_rejected": "Neither drift changes how Billu reads, and the key is not the action of this line (Mausi on the phone). D-013 rule 11 allows one retake per frame and the episode has one spare frame; spending it on which finger holds the ring is poor value. The orchestrator may overrule.",
+      "for_later_lane_prompts": "When s15 is attached as the anchor, add under 'do not copy from the anchor': the key ring on his outer finger (it hooks on his right INDEX finger), the key hanging into the bottom fifth, and the raised brows and forehead creases.",
+      "stage": "anchor"
+    },
+    {
+      "shot": "s17",
+      "verdict": "approved",
+      "attempt": 1,
+      "stage": "frame",
+      "checks": {
+        "identity": "pass: face crop matches kiran_p1 close-up; late twenties; gold hoop on the picture-right side of the nose; studs, bindi, sindoor, mangalsutra.",
+        "wardrobe": "pass: pallu off her head, on the picture-right shoulder.",
+        "hands": "pass: out of frame.",
+        "room": "pass: plank door behind.",
+        "text": "pass: none.",
+        "placement": "pass: face at about 17-48%."
+      }
+    },
+    {
+      "shot": "s18",
+      "verdict": "approved",
+      "attempt": 1,
+      "stage": "frame",
+      "checks": {
+        "identity": "pass: matches aditya; glasses; key at mid-chest.",
+        "watch": "pass: on the wrist at picture-right; hands together in lap.",
+        "room": "pass: lamp picture-left, window picture-right, bag on the chair at picture-left.",
+        "text": "pass: none."
+      }
+    },
+    {
+      "shot": "s20",
+      "verdict": "rejected",
+      "attempt": 1,
+      "stage": "frame",
+      "checks": {
+        "identity": "pass by eye: both faces match the pair sheet; two faces, the limit.",
+        "door": "FAIL: the door is a single-leaf raised-panel pale-blue door with one bolt and the padlock hanging from it. bedroom_door, s07, s08, s17, s21 and s27 show a two-leaf weathered plank door with a bolt above and a separate hasp and padlock below (padlock_hasp view 1). In the only two-shot of the room the locked door reads as a different door.",
+        "watch": "FAIL: the watch is on his near wrist. His patch pocket shows on the same near side of his chest; the lock puts pocket and watch on opposite sides (pocket right chest, watch left wrist), so one of them is on the wrong side, and STATE (1) asked for the watch on the far wrist, turned away.",
+        "kiran": "pass: pallu off her head on her picture-right shoulder, left arm hidden, right hand hidden behind her on the door; barefoot.",
+        "props": "pass: stool before the window with the tumbler and the open fold on the tray.",
+        "geography": "pass: Aditya picture-left facing right, Kiran picture-right facing left.",
+        "text": "pass: none.",
+        "placement": "pass: faces at about 30-40% of height."
+      },
+      "why_rejected": "The padlocked door is the scene story prop (b3); it changes design in the one frame that shows the whole wall, and Aditya has a side error. The gate in shots.json also held this frame for the D-021 retake check; I found no record that the check ran.",
+      "fix": "Retake once, after the D-021 retake check on pair_kiran_aditya_p1 has reported. Replace glass_and_fold with bedroom_door as Image 3 (the tray is already in the s04 anchor; describe it in words). In STATE add: \"the door is the two-leaf weathered plank door of Image 3, bolt above and hasp with padlock below\"; \"his near arm (picture-left side of his body) has a bare wrist; the watch is on his far wrist, hidden behind his knee\"; \"the patch pocket is on the near side of his chest\"."
+    },
+    {
+      "shot": "s21",
+      "verdict": "rejected",
+      "attempt": 1,
+      "stage": "frame",
+      "checks": {
+        "identity": "pass by eye: matches kiran_p1; hoop on the picture-right side of the nose; eyeline level, a little to picture-left (correct side of the line).",
+        "cuff": "FAIL: the right chooda sits at the wrist, its lower ivory bangles against the back of the hand (crop). STATE (2) says pushed up and bunched just below the elbow with the forearm bare; s04 and s07 show it pushed up, and continuity P02 needs it still pushed up at the end of s1e01.",
+        "hands": "pass: right hand flat on the door at picture-left, back of hand plain, fingertips dipped, thumb plus four fingers.",
+        "wardrobe": "pass: pallu off her head, left arm under the fall.",
+        "text": "pass: none.",
+        "placement": "pass: face about 8-30%; hand about 60-75%."
+      },
+      "why_rejected": "The right cuff is the tracked continuity item for s1e01 (P02), large in frame, and s25 reuses this frame, so the fault would play twice.",
+      "fix": "Retake once. Drop kiran_hands (its view 2 draws the cuff closed at the wrist) and keep kiran_p1, bedroom_door and the s04 anchor; in STATE write \"between the back of her hand and the cuff is a hand-width of bare forearm; the two ivory bangles at the lower end of the cuff sit just below the elbow, as on the anchor\". If it still slides down, reframe to chest-up so the forearm is out of frame and move the hand-on-door to a later shot, and log."
+    },
+    {
+      "shot": "s23",
+      "verdict": "approved",
+      "attempt": 1,
+      "stage": "frame",
+      "checks": {
+        "identity": "pass: matches aditya; glasses.",
+        "props": "pass: key low in frame on its thread (just visible as asked).",
+        "room": "pass: lamp picture-left, window picture-right.",
+        "text": "pass: none.",
+        "placement": "pass: face at about 10-40%."
+      }
+    },
+    {
+      "shot": "s27",
+      "verdict": "approved",
+      "attempt": 1,
+      "stage": "frame",
+      "checks": {
+        "identity": "pass: three-quarter, nose to picture-left; hoop visible on the near (left) nostril; studs, bindi, sindoor.",
+        "wardrobe": "pass: pallu off her head on the picture-right shoulder.",
+        "hands": "pass: out of frame.",
+        "room": "pass: plank door and bolt behind at picture-left.",
+        "text": "pass: none."
+      }
+    },
+    {
+      "shot": "s28",
+      "verdict": "approved",
+      "attempt": 1,
+      "stage": "frame",
+      "checks": {
+        "identity": "pass: matches aditya; head bowed, eyes down.",
+        "state": "pass: seated on the bed edge, hands loosely clasped in the lap, watch at picture-right wrist, key at mid-chest, glasses; pocket at picture-left, flat.",
+        "room": "pass: lamp picture-left, window picture-right.",
+        "text": "pass: none."
+      }
+    },
+    {
+      "shot": "s29",
+      "verdict": "approved",
+      "attempt": 1,
+      "stage": "frame",
+      "checks": {
+        "hands": "pass: right hand from upper picture-left drawing the creased print half out of the patch pocket; no extra digits.",
+        "props": "pass: print white back to camera, blank; key on its red thread.",
+        "pocket": "pass: pocket left of the key; reads as his right chest. The key hangs a little to the picture-right of the placket.",
+        "placement": "pass: no face.",
+        "text": "pass: none."
+      }
+    },
+    {
+      "shot": "s30",
+      "verdict": "approved",
+      "attempt": 1,
+      "stage": "frame",
+      "checks": {
+        "identity": "pass: matches aditya; glasses, key at mid-chest.",
+        "state": "pass: print held at arm length towards picture-right at about shoulder height in his right hand, white back to camera; watch wrist hidden.",
+        "room": "pass: lamp picture-left, window picture-right.",
+        "text": "pass: print back blank."
+      }
+    },
+    {
+      "shot": "s32",
+      "verdict": "approved",
+      "attempt": 1,
+      "stage": "frame",
+      "checks": {
+        "identity": "pass: matches aditya.",
+        "state": "pass: print flat to his chest in his right hand (picture-left) beside the key, white back out; seated on the bed edge; watch on the picture-right wrist.",
+        "fan": "pass: no ceiling fan.",
+        "text": "pass: none."
+      }
+    },
+    {
+      "shot": "s33",
+      "verdict": "approved",
+      "attempt": 1,
+      "stage": "frame",
+      "checks": {
+        "identity": "pass: frontal big close-up matches kiran_p1; hoop on the picture-right side of the nose; eyes dry; mouth closed.",
+        "wardrobe": "pass: pallu at the picture-right edge.",
+        "text": "pass: none.",
+        "placement": "pass: face fills the upper two thirds; chin above the bottom 25%."
+      }
+    },
+    {
+      "shot": "s35",
+      "verdict": "approved",
+      "attempt": 1,
+      "stage": "frame",
+      "checks": {
+        "arm": "pass: left forearm hanging, back of forearm and hand to camera, fingers down, thumb on picture-left; five digits, no fusion.",
+        "cuff": "pass: pushed up and bunched near the top of the frame.",
+        "scar": "pass: crescent across the forearm, curve bulging towards the hand, horns towards the elbow, about three fingers above the wrist bone; pale pink and slightly raised, not raw.",
+        "henna": "pass: fingertips dipped (index dipped a little deeper than the others), back of hand plain; no ring, no glass bangle.",
+        "match_to_photograph": "approximate: the arm is nearer vertical than the print arm; crescent shape and scale are close.",
+        "text": "pass: none."
+      }
+    },
+    {
+      "shot": "s36",
+      "verdict": "approved",
+      "attempt": 1,
+      "stage": "frame",
+      "checks": {
+        "arm": "pass: same arm and side as s35, thumb picture-left, five digits.",
+        "cuff": "pass: slid down to rest just above the wrist bone; no scar visible.",
+        "framing": "close to s35 (arm a little larger and shifted right); reads as the same set-up.",
+        "end_state": "pass: matches continuity s1e01 end_state for the left cuff.",
+        "text": "pass: none."
+      }
+    }
+  ]
+}

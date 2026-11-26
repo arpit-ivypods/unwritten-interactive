@@ -1,0 +1,398 @@
+{
+ "episode_id": "s1a01",
+ "series_id": "series1",
+ "status": "planned",
+ "status_note": "Cue sheet by S11; nothing generated. The runner generates only the two one_off_cues (one take each, D-011) into this folder and logs credits in sound/manifest.jsonl; every other cue is a series library file from content/series1/sound/.",
+ "written_by": "S11 Sound designer",
+ "date": "2026-11-26",
+ "governing": [
+  "D-009",
+  "D-011 (reuse rules)",
+  "D-014",
+  "D-0M2",
+  "D-0M4",
+  "D-018"
+ ],
+ "sources": [
+  "content/series1/episodes/s1a01/script.hi.json (beats, sfx_notes, music_note, writer_notes trim order)",
+  "content/series1/episodes/s1a01/script.en.json (same beat and line ids l01-l28; same silences)",
+  "content/series1/episodes/s1a01/voice/takes.hi.json (l22 note: the cough is an effect)",
+  "content/series1/sound/library.json"
+ ],
+ "timebase": "Anchored to beat and line ids, not seconds: no storyboard or measured takes exist yet. Offsets ('~1.5 s into the silence') are against the script's silent_seconds; S13 places every point effect against the measured voice and the edited shot lengths (D-014 rule 6, D-0M2). Both language cuts use the same cues and anchors; only line timings differ.",
+ "counts": {
+  "library_cues_used": 25,
+  "library_placements": 28,
+  "one_off_cues": 2,
+  "one_off_placements": 2
+ },
+ "library_cues_used": [
+  "amb_bedroom_night",
+  "amb_bureau_room",
+  "amb_car_highway_dawn",
+  "amb_lane_night",
+  "amb_stairwell_landing",
+  "mus_bed_drone",
+  "mus_road_pluck",
+  "sfx_almirah_door",
+  "sfx_birds_dawn_loop",
+  "sfx_bolt_draw",
+  "sfx_car_door_clunk",
+  "sfx_car_idle_engine_off",
+  "sfx_chooda_click",
+  "sfx_dog_far",
+  "sfx_front_door_iron_creak",
+  "sfx_glass_bangles_chink",
+  "sfx_keyring_chink",
+  "sfx_motorbike_start_away",
+  "sfx_padlock_knock",
+  "sfx_paper_fold_crinkle",
+  "sfx_phone_call_end",
+  "sfx_photo_print",
+  "sfx_shutter_up",
+  "sfx_street_morning_layer",
+  "sfx_velvet_box_hinge"
+ ],
+ "one_off_cues": [
+  {
+   "cue_id": "sfx_s1a01_breath_out",
+   "type": "sfx",
+   "model": "eleven_text_to_sound_v3",
+   "planned_duration_s": 1.5,
+   "loop": false,
+   "prompt_influence": 0.6,
+   "prompt": "A single quiet out-breath from a man in his thirties through the nose and slightly parted lips, a short soft exhale of expected relief, very close and dry, small still room at night, no words, no sigh voice, no music.",
+   "why_not_library": "The library lists Aditya's b1 out-breath as a voice take, but b1 has no Aditya line and voice/takes.hi.json has no take for it, so nobody records it. No breath cue exists in the library.",
+   "fallback": "Drop it: the picture (eyes lowering) carries the beat; leave the bed alone in the silence.",
+   "status": "generated",
+   "file": "sound/sfx_s1a01_breath_out.mp3"
+  },
+  {
+   "cue_id": "sfx_s1a01_paan_cough",
+   "type": "sfx",
+   "model": "eleven_text_to_sound_v3",
+   "planned_duration_s": 1.5,
+   "loop": false,
+   "prompt_influence": 0.6,
+   "prompt": "A plump Indian woman in her fifties, a paan chewer, coughing two short wet chesty coughs at the end of a laugh, warm and amused, close and dry in a small room, no words, no music.",
+   "why_not_library": "The cough is one line in one episode. The library assigns it to the voice take, but S10's l22 take note says the voice is not asked for it and it is an effect.",
+   "fallback": "If it sounds like a different woman from Mausi's voice, drop it and let l22's laugh tail ring out; it is texture, not story.",
+   "status": "generated",
+   "file": "sound/sfx_s1a01_paan_cough.mp3"
+  }
+ ],
+ "placements": [
+  {
+   "cue_id": "amb_bedroom_night",
+   "source": "library",
+   "beat": "b1",
+   "anchor": "episode start, continuous with s1e02 b13's bedroom bed (same file, same level); runs b1, b3, b5",
+   "level_db": -24,
+   "duck": "-6 dB under every line; -8 dB under l02 (sfx_notes: 'the bed ducks under l02')",
+   "note": "No ceiling fan. Hard cut out at b1 end into b2 and back in at b3 head; out at b5 end."
+  },
+  {
+   "cue_id": "sfx_s1a01_breath_out",
+   "source": "episode",
+   "beat": "b1",
+   "anchor": "in the 1.2 s silence after l02, after sfx_phone_call_end, on the two-shot as Aditya lowers his eyes",
+   "level_db": -20,
+   "note": "Close and dry. Nothing else under it except the bed."
+  },
+  {
+   "cue_id": "sfx_phone_call_end",
+   "source": "library",
+   "beat": "b1",
+   "anchor": "right after l02's last word, head of the 1.2 s silence",
+   "level_db": -18,
+   "filter": "phone speaker in the room, light colour as l02",
+   "note": "Three beeps; trim to ~0.7 s so the out-breath fits after it in the same 1.2 s. Same file as s1b01 b1 (same call in both branches)."
+  },
+  {
+   "cue_id": "amb_lane_night",
+   "source": "library",
+   "beat": "b2",
+   "anchor": "b2 head to b2 end (2.0 s silent beat)",
+   "level_db": -20,
+   "note": "The sodium buzz is in this bed; no separate cue. Hard cut in and out with the picture."
+  },
+  {
+   "cue_id": "sfx_motorbike_start_away",
+   "source": "library",
+   "beat": "b2",
+   "anchor": "~0.2 s into b2, running to the cut",
+   "level_db": -14,
+   "slice": "kick, engine catch, one rev and the start of the recede (~2 s); a 0.3 s fade at the cut so the recede reads as continuing",
+   "note": "Library note asks for the whole file; b2 is now 2.0 s (trimmed for the hook), so only the head fits. If S13 holds b2 longer, use more of the recede."
+  },
+  {
+   "cue_id": "sfx_dog_far",
+   "source": "library",
+   "beat": "b3",
+   "anchor": "in the 1.2 s silence after l06 (Kiran waiting for his answer)",
+   "level_db": -30,
+   "slice": "one or two barks only",
+   "note": "The script's 'one distant dog' for the bedroom bed. Off-word only; drop it if the edit shortens the silence below 0.8 s."
+  },
+  {
+   "cue_id": "mus_bed_drone",
+   "source": "library",
+   "beat": "b3",
+   "anchor": "enters on 'मोहित' (l05), holds under the rest of b3 and all of b5; fades out over the last 2 s of b5's silence",
+   "level_db": -26,
+   "trim": "discard first ~4 s (fade-in); 2 s crossfade loop",
+   "duck": "-8 dB under every line",
+   "note": "No music before l05 (music_note: none under the 2 am call)."
+  },
+  {
+   "cue_id": "sfx_almirah_door",
+   "source": "library",
+   "beat": "b5",
+   "anchor": "b5 head, under the start of shot 1 before l07 (the almirah door standing open)",
+   "level_db": -22,
+   "slice": "the last ~0.6 s (door settling), not the opening creak",
+   "note": "Optional: use only if the shot shows the door moving; the library marks it 'if heard'."
+  },
+  {
+   "cue_id": "sfx_paper_fold_crinkle",
+   "source": "library",
+   "beat": "b5",
+   "anchor": "b5 silence after l08, insert 1, ~0.2 s in",
+   "level_db": -18,
+   "note": "The half-empty fold pressed shut over the steel tray."
+  },
+  {
+   "cue_id": "sfx_photo_print",
+   "source": "library",
+   "beat": "b5",
+   "anchor": "b5 silence, insert 1, ~0.9 s in, right after the crinkle",
+   "level_db": -20,
+   "slice": "the soft paper/cloth slide only (~0.6 s), no tap",
+   "note": "Covers 'cloth of the kurta pocket' as the print and fold slide into his pocket. Reuse of the library file instead of a one-off; the 'drawn out of a cloth pocket' slide reads the same either way."
+  },
+  {
+   "cue_id": "sfx_padlock_knock",
+   "source": "library",
+   "beat": "b5",
+   "anchor": "b5 silence, insert 2, ~1.6 s in",
+   "level_db": -14,
+   "slice": "first hit only (the clack as the shackle opens)",
+   "note": "Before sfx_bolt_draw."
+  },
+  {
+   "cue_id": "sfx_bolt_draw",
+   "source": "library",
+   "beat": "b5",
+   "anchor": "b5 silence, ~2.1 s in, straight after the padlock clack, finishing on the cut",
+   "level_db": -14,
+   "note": "If b5's silence is trimmed to 2.0 s (trim order), start the clack at ~1.0 s and the bolt at ~1.4 s; trim the bolt tail."
+  },
+  {
+   "cue_id": "amb_stairwell_landing",
+   "source": "library",
+   "beat": "b6",
+   "anchor": "b6 head to b6 end",
+   "level_db": -22,
+   "note": "Bare-bulb hum and concrete echo are in the bed. Light concrete reverb send on l09-l12 (mix setting, not a cue). A thin spill of amb_lane_night at -32 dB through the open front door, with high-cut ~3 kHz."
+  },
+  {
+   "cue_id": "sfx_front_door_iron_creak",
+   "source": "library",
+   "beat": "b6",
+   "anchor": "in the 1.0 s silence before l09; must end before l09's first word",
+   "level_db": -16,
+   "slice": "the tail ~1.0 s of the creak (door already mostly open in the picture)"
+  },
+  {
+   "cue_id": "sfx_velvet_box_hinge",
+   "source": "library",
+   "beat": "b6",
+   "anchor": "under l11, in the gap after 'पीतल है,' if the take has one, otherwise just before l11",
+   "level_db": -20,
+   "note": "Snap on the insert of his hands opening the box. Never on a word; move to the nearest gap."
+  },
+  {
+   "cue_id": "amb_car_highway_dawn",
+   "source": "library",
+   "beat": "b7",
+   "anchor": "b7 head (wide exterior) to b9 head, continuous through b8",
+   "level_db": -20,
+   "duck": "-6 dB under l13-l16; -12 dB under l17-l19 (Mausi on Billu's speaker)",
+   "note": "On the wide exterior shot (b7 silence before), roll the bed's highs off a little (high-cut ~5 kHz, -3 dB) for an outside perspective, then full interior from l13."
+  },
+  {
+   "cue_id": "mus_bed_drone",
+   "source": "library",
+   "beat": "b7",
+   "anchor": "continues from the bedroom's music under b7 to b8 at -30 dB (a fresh loop point is fine; the stairwell has no music)",
+   "level_db": -30,
+   "duck": "-8 dB under every line; -12 dB under l17-l19",
+   "note": "Re-enters with the b7 wide under mus_road_pluck. Stops dead with mus_road_pluck at the shutter in b9."
+  },
+  {
+   "cue_id": "mus_road_pluck",
+   "source": "library",
+   "beat": "b7",
+   "anchor": "in at b7 head on the wide exterior; holds under b7 and b8; warms in level +2 dB across b8 as the light goes orange",
+   "level_db": -26,
+   "duck": "-8 dB under l13-l16; -14 dB under l17-l19",
+   "out": "stops dead (10 ms fade) on the first frame of sfx_shutter_up in b9, together with mus_bed_drone",
+   "note": "Over the drone. Unused while the car is stopped: if b8 to b9 adds time, let the pluck keep going until the rattle."
+  },
+  {
+   "cue_id": "sfx_birds_dawn_loop",
+   "source": "library",
+   "beat": "b8",
+   "anchor": "in at b8 head, low, through b8 into b9 exterior",
+   "level_db": -30,
+   "note": "Rises +4 dB in b9 (car stopped, door open, exterior)."
+  },
+  {
+   "cue_id": "sfx_car_idle_engine_off",
+   "source": "library",
+   "beat": "b9",
+   "anchor": "b9 head under l20 (car stopped at the shutter), engine-off shudder in the silence after l20, before the shutter",
+   "level_db": -20,
+   "duck": "-6 dB under l20",
+   "note": "Replaces amb_car_highway_dawn from b9 head (2-frame crossfade). Exterior perspective: high-cut ~4 kHz."
+  },
+  {
+   "cue_id": "sfx_car_door_clunk",
+   "source": "library",
+   "beat": "b9",
+   "anchor": "right after the engine-off, early in set-up (1) (~0.4 s into the silence)",
+   "level_db": -16,
+   "note": "Kiran's front-left door, which Aditya held open; door shut only. Must be over before the shutter starts."
+  },
+  {
+   "cue_id": "sfx_shutter_up",
+   "source": "library",
+   "beat": "b9",
+   "anchor": "starts late in set-up (1), ~1.5 s into the 4.5 s silence; runs over the cut into set-up (2) and finishes on Mausi standing in it",
+   "level_db": -8,
+   "note": "Loud and long; the music stops dead on its first frame. Glimpse A cuts before this cue starts (and before set-up 2). If b9's silence is trimmed to 3.5 s, start it ~1.2 s in."
+  },
+  {
+   "cue_id": "amb_bureau_room",
+   "source": "library",
+   "beat": "b10",
+   "anchor": "b10 head to episode end",
+   "level_db": -24,
+   "duck": "-6 dB under every line; held still (no change) under l24-l25; -14 dB (right down) under l27-l28",
+   "eq": "pull the fan's whoosh down: high-pass ~200 Hz and -3 dB; the script names only the tube-light hum",
+   "note": "Shutter up: always with sfx_street_morning_layer."
+  },
+  {
+   "cue_id": "sfx_street_morning_layer",
+   "source": "library",
+   "beat": "b10",
+   "anchor": "b10 head to episode end, under amb_bureau_room",
+   "level_db": -30,
+   "duck": "as amb_bureau_room; muted under l27-l28",
+   "note": "'A street waking far outside.' Birds layer may tail out over b10's first second."
+  },
+  {
+   "cue_id": "sfx_keyring_chink",
+   "source": "library",
+   "beat": "b10",
+   "anchor": "under shot 1 as Mausi moves to Kiran, in the gap before l21; again as she sits at the desk before l22; once in the gap between l24 and l25",
+   "level_db": -24,
+   "note": "Three placements of the same file. Under l24-l25 only in the gaps: the whisper stays dry and close with nothing on it."
+  },
+  {
+   "cue_id": "sfx_glass_bangles_chink",
+   "source": "library",
+   "beat": "b10",
+   "anchor": "shot 1 as Mausi's hands take Kiran's face, before l21",
+   "level_db": -22,
+   "note": "Green glass bangles. Second placement before l25 (her hands at the desk), very low (-28)."
+  },
+  {
+   "cue_id": "sfx_s1a01_paan_cough",
+   "source": "episode",
+   "beat": "b10",
+   "anchor": "immediately after the last word of l22, as her laugh breaks; butt it against the take's laugh tail",
+   "level_db": -16,
+   "filter": "match l22's mic and room: dry, same EQ as Mausi's voice",
+   "note": "The script's paan-smoker's cough. S10's take note for l22 says the cough is a sound effect and the voice is not asked for it; the library had it as a voice take, so it is a one-off here."
+  },
+  {
+   "cue_id": "sfx_chooda_click",
+   "source": "library",
+   "beat": "b11",
+   "anchor": "under l28, insert as Mausi's hand closes on Kiran's left wrist and starts the first ivory bangle toward the knuckles; in a gap, not on a word",
+   "level_db": -22,
+   "note": "Kiran's chooda moving. Reuse of the library file (its used_in does not list s1a01). Optional if it crowds l28; the bangle chink at the end is the one that matters."
+  },
+  {
+   "cue_id": "sfx_glass_bangles_chink",
+   "source": "library",
+   "beat": "b11",
+   "anchor": "the last sound: one dry chink on the cut at the end of the 3.0 s held set-up",
+   "level_db": -14,
+   "note": "Everything else is out a frame before it: bureau bed, street layer and drone all cut hard; the chink plays with nothing under it, its tail rings out to silence (~0.5 s), then black. Episode ends."
+  },
+  {
+   "cue_id": "mus_bed_drone",
+   "source": "library",
+   "beat": "b10",
+   "anchor": "in at b10 head, very low; rises +3 dB under l27 and l28 (before ducking); cut hard on the final bangle chink",
+   "level_db": -32,
+   "duck": "-8 dB under l21-l26; under l27-l28 net level about -35 (rise +3, duck -6) so the chooda line is fully clear",
+   "note": "A fresh loop of the same file from its steady section; no road pluck here."
+  }
+ ],
+ "music": {
+  "in_out": [
+   "b1, b2: no music (no music under the 2 am call).",
+   "mus_bed_drone in on 'मोहित' (l05); under the rest of b3 and b5; 2 s fade out at the end of b5's silence.",
+   "b6 stairwell: no music (Billu's laugh and the front door play dry).",
+   "b7-b8: mus_road_pluck over mus_bed_drone from the b7 wide; stops dead with the first frame of sfx_shutter_up in b9. Between l20 and the rattle the music continues under the engine-off and door clunk.",
+   "b10-b11: mus_bed_drone only, very low, rising a little under l27-l28; cut hard a frame before the final glass-bangle chink."
+  ],
+  "glimpse_A": "Glimpse A ends on b9 set-up (1) and cuts before sfx_shutter_up starts; it uses this sheet from its own start to that cut, with the road music cut with the picture (10 ms fade). No glimpse-only sound, and the shutter rattle must not be in it."
+ },
+ "mix": {
+  "dialogue_first": true,
+  "loudness_target": "-14 LUFS integrated, -1 dBTP, tolerance +/-0.5 LU (D-0M4)",
+  "ducking": [
+   "l01: first line of the episode, spoken whole; bed ducked 6 dB, nothing else under it.",
+   "Ambience beds duck 6 dB and music 8 dB under ordinary lines.",
+   "l02 (Mausi on Kiran's speaker): bedroom bed ducks 8 dB.",
+   "l17-l19 (Mausi on Billu's speaker): car engine bed ducks 12 dB, drone 12 dB, pluck 14 dB.",
+   "l24 (the one whisper) and l25: bureau bed and street layer held still (no level move), keys and bangles only in the gaps; whisper dry and close.",
+   "l27-l28: duck everything right down (bureau -14 dB, street muted, drone net about -35 dB) so the chooda line is fully clear; the chooda click only in a gap.",
+   "Point effects never sit on a word; when a measured take moves, the effect moves to the nearest gap."
+  ],
+  "voice_processing": [
+   "l02 (Mausi, Kiran's phone on speaker in the bedroom): light filter only, warm and fully clear: band-pass ~250-5000 Hz, very light saturation (lighter colour than the car).",
+   "l17, l19 (Mausi on Billu's phone on speaker over the gear lever): band-pass ~300-3400 Hz, light saturation, fully voiced, every consonant survives (library mix.phone_voice_fx).",
+   "l09-l12 (stairwell): short small concrete reverb, low send (mix setting).",
+   "l13-l16, l18, l20 (car): dry, slight in-car closeness; l20 is exterior at the car door: dry, no reverb.",
+   "l21-l28 (bureau): small room, dry; l24 whisper closest and driest of all.",
+   "b1 out-breath and l22 cough: matched to the adjacent voice's room and EQ."
+  ],
+  "silences": [
+   "b1: 1.2 s after l02: call-ended beeps, then the out-breath; bed only otherwise.",
+   "b3: 1.2 s after l06: bed, drone and at most one far dog.",
+   "b8: 4.5 s, no line: engine bed, birds, road pluck; nothing else (the print sliding into the pocket is picture only; add a -26 dB slice of sfx_photo_print only if the edit holds on the hand).",
+   "b11: 3.0 s held set-up: room bed and drone held, all cut a frame before the last chink."
+  ],
+  "no_fan": "No ceiling fan in the bedroom, stairwell, lane or car mixes. amb_bureau_room carries a fan; it is allowed in the bureau (library mix.no_fan_rule) but pulled down, since the script names only the tube-light hum.",
+  "trim_order_effect": "If the edit applies the writer's trim order (b5 3.0 -> 2.0, b8 -> 2.5, b9 4.5 -> 3.5): b5 effects compress as noted on sfx_bolt_draw; b8 keeps bed, birds and pluck only; sfx_shutter_up starts ~1.2 s into b9's silence. If l12 becomes a laugh in the mix only, it is Billu's l12 take with the words removed, not a new cue.",
+  "levels_note": "level_db values are starting points relative to full scale before the -14 LUFS master; S13 sets final levels by measurement against dialogue."
+ },
+ "fallback": "Plan 7.8 and D-011 reuse: if a one-off fails or comes back unusable after its one take, drop it (both are texture; see each cue's fallback). If mus_road_pluck is missing, run mus_bed_drone alone under b7-b8 at -26 dB (library fallback). If all music fails, raise the bedroom bed 3 dB in b3-b5 and the car bed 2 dB in b7-b8; the bureau stays dry and the last chink still plays alone.",
+ "credit_estimate": {
+  "one_offs": 34,
+  "basis": "17 credits per eleven_text_to_sound_v3 generation, one take (proof manifests, library credit_estimate)"
+ },
+ "not_verified": [
+  "No cue generated or heard.",
+  "Anchors and offsets are from the script; no storyboard (S7) or measured takes exist for s1a01 yet.",
+  "Whether a 2 s slice of sfx_motorbike_start_away reads as kick, rev and recede in the trimmed b2.",
+  "Whether the slide slice of sfx_photo_print reads as cloth of a kurta pocket.",
+  "Whether the generated cough matches Mausi's cast voice (sfx_s1a01_paan_cough fallback is to drop it).",
+  "The library lists the b1 out-breath and the l22 cough as voice-take items; this sheet moves both to one-offs because no take records them (out-breath) and S10's l22 note says the cough is an effect. The library's episode_specific_not_in_library entries for s1a01 are now out of date."
+ ]
+}

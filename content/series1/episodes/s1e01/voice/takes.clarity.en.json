@@ -1,0 +1,340 @@
+{
+ "pass": "D-025 clarity re-voice, take 1 direction (waves 1-2)",
+ "written_by": "S10 voice director, 26 Nov 2026",
+ "episode": "s1e01",
+ "series": "series1",
+ "lang": "en",
+ "source": "content/revoice-clarity.json rows (retired rows excluded); text from script.en.json; voice ids from content/series1/cast.json",
+ "entry_format": "Same keys as takes.en.json (text = script text, as D-022 rule 3 requires) plus text_sent, quiet_free, whisper_wanted, change, out_path, current_final.",
+ "takes": [
+  {
+   "line_id": "l05",
+   "lang": "en",
+   "speaker": "aditya",
+   "voice_id": "zCXXiWzuZO7d9fERssmF",
+   "model": "eleven_v4",
+   "text": "[calm] The set is brass. The house is rented by the month. There's nothing here to steal.",
+   "target_seconds": 8.0,
+   "note": "CLARITY PASS (D-025), reworded. Adds the third sentence so the premise (a bride who came to rob) is spoken by the end of b4. He takes the room apart fact by fact, like listing side effects. Three short sentences, a clear pause after each; the new 'There's nothing here to steal.' is the conclusion, level, not a gibe. 'brass' and 'steal' clear. No contempt, no triumph. No quiet-family tag; take 1 is the script text, which is also the D-022 rung-1 text. Retake ladder (D-022; a rung already used is skipped, no quiet-family tag on any retake, [low voice] is never a rung): rung 2 the bare line 'The set is brass. The house is rented by the month. There's nothing here to steal.'. A recast is cast-wide and decided by S10 under cast.json switch_if, never a one-line swap. Voice-wanted in this pass: retake only for wrong or missing words (a lost name counts), a spoken tag, or a take under 0.6 voiced (whole take, or any segment of 0.5 s or more that carries script words); never for length, which the edit absorbs (D-0M2). Wrong or missing words: resend the same text once, then the next rung; a spoken tag goes to the next rung. Ear-only faults (comic, filmi, brisk, accent) go to the owner's ear list. Max 3 takes in this pass (D-011), then accept the most-voiced take that has all its words and log it. Never re-call generate on a pending result. Write take 1 to voice/en/l05.c1.mp3 (take n to l05.c{n}.mp3); never overwrite the current final (content/series1/episodes/s1e01/voice/en/l05.mp3, take 1), which stays on disk. Voice: Amit Wadhwa - Friendly and Conversational Voice (cast): even, courteous, almost kind, a pharmacist reading out a prescription; no menace, no smile in the voice. [quietly] and [low voice] whispered on him (s1a01 hi l04, l20; s1e01 hi l04), hence the quiet-free sends.",
+   "text_sent": "[calm] The set is brass. The house is rented by the month. There's nothing here to steal.",
+   "quiet_free": false,
+   "whisper_wanted": false,
+   "change": "reworded",
+   "out_path": "content/series1/episodes/s1e01/voice/en/l05.c1.mp3",
+   "current_final": {
+    "file": "content/series1/episodes/s1e01/voice/en/l05.mp3",
+    "take": 1,
+    "text": "[calm] The set is brass. The house is rented by the month."
+   }
+  },
+  {
+   "line_id": "l06",
+   "lang": "en",
+   "speaker": "kiran",
+   "voice_id": "FtcqBL9uKtROtyotPjvE",
+   "model": "eleven_v4",
+   "text": "[nervous] Can I just call my brother once? Bhaiya will worry.",
+   "target_seconds": 4.8,
+   "note": "CLARITY PASS (D-025), reworded. English only: 'Bhaiya' gets its gloss inside the line ('my brother'). Last 'Sneha' line, the act wearing thin: polite, small, a little too quick, rising on the question; then 'Bhaiya will worry.' as a soft afterthought. 'Bhaiya' said BHAI-yaa, warm. Same register as l02. Generate it whole; the edit decides any trim. No quiet-family tag; take 1 is the script text, which is also the D-022 rung-1 text. Retake ladder (D-022; a rung already used is skipped, no quiet-family tag on any retake, [low voice] is never a rung): rung 2 the bare line 'Can I just call my brother once? Bhaiya will worry.'. A recast is cast-wide and decided by S10 under cast.json switch_if, never a one-line swap. Voice-wanted in this pass: retake only for wrong or missing words (a lost name counts), a spoken tag, or a take under 0.6 voiced (whole take, or any segment of 0.5 s or more that carries script words); never for length, which the edit absorbs (D-0M2). Wrong or missing words: resend the same text once, then the next rung; a spoken tag goes to the next rung. Ear-only faults (comic, filmi, brisk, accent) go to the owner's ear list. Max 3 takes in this pass (D-011), then accept the most-voiced take that has all its words and log it. Never re-call generate on a pending result. Write take 1 to voice/en/l06.c1.mp3 (take n to l06.c{n}.mp3); never overwrite the current final (content/series1/episodes/s1e01/voice/en/l06.mp3, take 1), which stays on disk. Voice: Yashvi G – Real Conversational Voice (cast_provisional): flat, blunt, quick; under pressure quieter and more exact, never shrill. Her English [quietly] whispered in casting (kiran_t3, 0.23) and her [quietly] lines in s1e01 and s1b01 were queued for whisper retakes (D-022), so no take in this pass sends a quiet-family tag on her. A voice change (Rudrika) is cast-wide, only under cast.json kiran.casting_review.switch_if.",
+   "text_sent": "[nervous] Can I just call my brother once? Bhaiya will worry.",
+   "quiet_free": false,
+   "whisper_wanted": false,
+   "change": "reworded",
+   "out_path": "content/series1/episodes/s1e01/voice/en/l06.c1.mp3",
+   "current_final": {
+    "file": "content/series1/episodes/s1e01/voice/en/l06.mp3",
+    "take": 1,
+    "text": "[nervous] Can I just call Bhaiya once?"
+   }
+  },
+  {
+   "line_id": "l08",
+   "lang": "en",
+   "speaker": "billu",
+   "voice_id": "7b9mYhmnp0y2qSH1FnBL",
+   "model": "eleven_v4",
+   "text": "Yes, Mausi. I'm in the car below. Light is still on.",
+   "target_seconds": 4.5,
+   "note": "CLARITY PASS (D-025), reworded. Billu now says where he is ('in the car below'), tying the car to l13. Untagged on purpose: a quick routine report into the phone from the car, light tenor, obedient, a little slurred round the toothpick; the dropped article in 'Light is still on' is deliberate. 'I'm in the car below' plain, a tiny beat after it. 'Mausi' said MAU-see, the Hindi way. No phone filter on him. Untagged on purpose; take 1 is the script text. Retake ladder (D-022; a rung already used is skipped, no quiet-family tag on any retake, [low voice] is never a rung): rung 1 '[calm] Yes, Mausi. I'm in the car below. Light is still on.' (D-022 rule 1 adds [calm] when no tag is left). A recast is cast-wide and decided by S10 under cast.json switch_if, never a one-line swap. Voice-wanted in this pass: retake only for wrong or missing words (a lost name counts), a spoken tag, or a take under 0.6 voiced (whole take, or any segment of 0.5 s or more that carries script words); never for length, which the edit absorbs (D-0M2). Wrong or missing words: resend the same text once, then the next rung; a spoken tag goes to the next rung. Ear-only faults (comic, filmi, brisk, accent) go to the owner's ear list. Max 3 takes in this pass (D-011), then accept the most-voiced take that has all its words and log it. Never re-call generate on a pending result. Write take 1 to voice/en/l08.c1.mp3 (take n to l08.c{n}.mp3); never overwrite the current final (content/series1/episodes/s1e01/voice/en/l08.mp3, take 1), which stays on disk. Voice: Bunty - Funny Best Friend (cast_provisional): light tenor, quick, cocky but obedient to Mausi; small-town, not a sitcom sidekick, not Mumbai tapori. [quietly] whispered on him (s1a01 l16, 0.38/0.23).",
+   "text_sent": "Yes, Mausi. I'm in the car below. Light is still on.",
+   "quiet_free": false,
+   "whisper_wanted": false,
+   "change": "reworded",
+   "out_path": "content/series1/episodes/s1e01/voice/en/l08.c1.mp3",
+   "current_final": {
+    "file": "content/series1/episodes/s1e01/voice/en/l08.mp3",
+    "take": 1,
+    "text": "Yes, Mausi. Light is still on."
+   }
+  },
+  {
+   "line_id": "l09",
+   "lang": "en",
+   "speaker": "mausi",
+   "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+   "model": "eleven_v4",
+   "text": "[chuckles] I'll phone the bride at two. Car at three, Billu.",
+   "target_seconds": 5.6,
+   "note": "CLARITY PASS (D-025), reworded. Mausi now names Billu and says 'the bride' instead of 'her'. Heard as phone. Mausi's first sound in the series, on Billu's phone: low, warm, unhurried. A small fond chuckle at the top, never a cackle. 'two' and 'three' crisp, 'the bride' clear; 'Billu' at the end fond (BIL-loo), it must survive the phone filter. Generate clean; filter in the mix. Reject if the chuckle swallows 'I'll'. No quiet-family tag; take 1 is the script text, which is also the D-022 rung-1 text. Retake ladder (D-022; a rung already used is skipped, no quiet-family tag on any retake, [low voice] is never a rung): rung 2 the bare line 'I'll phone the bride at two. Car at three, Billu.'. A recast is cast-wide and decided by S10 under cast.json switch_if, never a one-line swap. Voice-wanted in this pass: retake only for wrong or missing words (a lost name counts), a spoken tag, or a take under 0.6 voiced (whole take, or any segment of 0.5 s or more that carries script words); never for length, which the edit absorbs (D-0M2). Wrong or missing words: resend the same text once, then the next rung; a spoken tag goes to the next rung. Ear-only faults (comic, filmi, brisk, accent) go to the owner's ear list. Max 3 takes in this pass (D-011), then accept the most-voiced take that has all its words and log it. Never re-call generate on a pending result. Write take 1 to voice/en/l09.c1.mp3 (take n to l09.c{n}.mp3); never overwrite the current final (content/series1/episodes/s1e01/voice/en/l09.mp3, take 1), which stays on disk. Voice: Savitri - Grounded and Nurturing (cast_provisional): low, warm, unhurried; the colder, the softer; fully voiced, never whispered. If the ear cannot tell her from Kiran, it is Mausi who changes (cast.json switch_if).",
+   "text_sent": "[chuckles] I'll phone the bride at two. Car at three, Billu.",
+   "quiet_free": false,
+   "whisper_wanted": false,
+   "change": "reworded",
+   "out_path": "content/series1/episodes/s1e01/voice/en/l09.c1.mp3",
+   "current_final": {
+    "file": "content/series1/episodes/s1e01/voice/en/l09.mp3",
+    "take": 1,
+    "text": "[chuckles] I'll phone her at two. Car at three, beta."
+   }
+  },
+  {
+   "line_id": "l10",
+   "lang": "en",
+   "speaker": "mausi",
+   "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+   "model": "eleven_v4",
+   "text": "[sighs] And listen, my poor girl must be hungry. Bring her straight to me.",
+   "target_seconds": 7.1,
+   "note": "CLARITY PASS (D-025), reworded. The name Kiran moves out of this line (to l27); Mausi's fretting stays. Heard as phone. A small motherly sigh, then 'And listen,' and the fret: 'my poor girl must be hungry' warm, concern, not threat. 'Bring her straight to me' level and fond. Fully voiced, wide enough for the phone filter. Reject if the sigh is spoken or eats 'And listen'. No quiet-family tag; take 1 is the script text, which is also the D-022 rung-1 text. Retake ladder (D-022; a rung already used is skipped, no quiet-family tag on any retake, [low voice] is never a rung): rung 2 the bare line 'And listen, my poor girl must be hungry. Bring her straight to me.'. A recast is cast-wide and decided by S10 under cast.json switch_if, never a one-line swap. Voice-wanted in this pass: retake only for wrong or missing words (a lost name counts), a spoken tag, or a take under 0.6 voiced (whole take, or any segment of 0.5 s or more that carries script words); never for length, which the edit absorbs (D-0M2). Wrong or missing words: resend the same text once, then the next rung; a spoken tag goes to the next rung. Ear-only faults (comic, filmi, brisk, accent) go to the owner's ear list. Max 3 takes in this pass (D-011), then accept the most-voiced take that has all its words and log it. Never re-call generate on a pending result. Write take 1 to voice/en/l10.c1.mp3 (take n to l10.c{n}.mp3); never overwrite the current final (content/series1/episodes/s1e01/voice/en/l10.mp3, take 1), which stays on disk. Voice: Savitri - Grounded and Nurturing (cast_provisional): low, warm, unhurried; the colder, the softer; fully voiced, never whispered. If the ear cannot tell her from Kiran, it is Mausi who changes (cast.json switch_if).",
+   "text_sent": "[sighs] And listen, my poor girl must be hungry. Bring her straight to me.",
+   "quiet_free": false,
+   "whisper_wanted": false,
+   "change": "reworded",
+   "out_path": "content/series1/episodes/s1e01/voice/en/l10.c1.mp3",
+   "current_final": {
+    "file": "content/series1/episodes/s1e01/voice/en/l10.mp3",
+    "take": 1,
+    "text": "[sighs] And listen, Kiran won't have eaten all day. Bring her straight to me."
+   }
+  },
+  {
+   "line_id": "l11",
+   "lang": "en",
+   "speaker": "kiran",
+   "voice_id": "FtcqBL9uKtROtyotPjvE",
+   "model": "eleven_v4",
+   "text": "[cold] Fine. The act's over. Are you police?",
+   "target_seconds": 3.6,
+   "note": "CLARITY PASS (D-025), reworded. Adds 'the act's over', the turn from the shy bride to Kiran. The switch: 'Sneha' is gone. Lower, flat, quick. 'Fine.' final; 'The act's over.' dry and certain, a short beat; then 'Are you police?' blunt, not frightened. Same woman as l02 dropping an act (ear check 2). No quiet-family tag; take 1 is the script text, which is also the D-022 rung-1 text. Retake ladder (D-022; a rung already used is skipped, no quiet-family tag on any retake, [low voice] is never a rung): rung 2 the bare line 'Fine. The act's over. Are you police?'. A recast is cast-wide and decided by S10 under cast.json switch_if, never a one-line swap. Voice-wanted in this pass: retake only for wrong or missing words (a lost name counts), a spoken tag, or a take under 0.6 voiced (whole take, or any segment of 0.5 s or more that carries script words); never for length, which the edit absorbs (D-0M2). Wrong or missing words: resend the same text once, then the next rung; a spoken tag goes to the next rung. Ear-only faults (comic, filmi, brisk, accent) go to the owner's ear list. Max 3 takes in this pass (D-011), then accept the most-voiced take that has all its words and log it. Never re-call generate on a pending result. Write take 1 to voice/en/l11.c1.mp3 (take n to l11.c{n}.mp3); never overwrite the current final (content/series1/episodes/s1e01/voice/en/l11.mp3, take 1), which stays on disk. Voice: Yashvi G – Real Conversational Voice (cast_provisional): flat, blunt, quick; under pressure quieter and more exact, never shrill. Her English [quietly] whispered in casting (kiran_t3, 0.23) and her [quietly] lines in s1e01 and s1b01 were queued for whisper retakes (D-022), so no take in this pass sends a quiet-family tag on her. A voice change (Rudrika) is cast-wide, only under cast.json kiran.casting_review.switch_if.",
+   "text_sent": "[cold] Fine. The act's over. Are you police?",
+   "quiet_free": false,
+   "whisper_wanted": false,
+   "change": "reworded",
+   "out_path": "content/series1/episodes/s1e01/voice/en/l11.c1.mp3",
+   "current_final": {
+    "file": "content/series1/episodes/s1e01/voice/en/l11.mp3",
+    "take": 1,
+    "text": "[cold] Fine. Are you police?"
+   }
+  },
+  {
+   "line_id": "l14",
+   "lang": "en",
+   "speaker": "aditya",
+   "voice_id": "zCXXiWzuZO7d9fERssmF",
+   "model": "eleven_v4",
+   "text": "[quietly] It took me fourteen months to become your 'party'. The groom you rob.",
+   "target_seconds": 7.1,
+   "note": "CLARITY PASS (D-025), reworded. Glosses 'party' inside the line ('the groom you rob'). Two-shot across the room. The quiet weight of fourteen months, low but voiced. 'party' (in quotes in the script) said as her word, without irony; then 'The groom you rob.' as a dry gloss, a hair slower, not a sneer. Take 1 is quiet-free (D-025 item 6, D-022 rule 1): the script text keeps [quietly], the runner sends '[calm] It took me fourteen months to become your 'party'. The groom you rob.'. The edit sets the level the note wants; subtitles stay the script text; the manifest logs text_sent. Retake ladder (D-022; a rung already used is skipped, no quiet-family tag on any retake, [low voice] is never a rung): rung 2 the bare line 'It took me fourteen months to become your 'party'. The groom you rob.'. A recast is cast-wide and decided by S10 under cast.json switch_if, never a one-line swap. Voice-wanted in this pass: retake only for wrong or missing words (a lost name counts), a spoken tag, or a take under 0.6 voiced (whole take, or any segment of 0.5 s or more that carries script words); never for length, which the edit absorbs (D-0M2). Wrong or missing words: resend the same text once, then the next rung; a spoken tag goes to the next rung. Ear-only faults (comic, filmi, brisk, accent) go to the owner's ear list. Max 3 takes in this pass (D-011), then accept the most-voiced take that has all its words and log it. Never re-call generate on a pending result. Write take 1 to voice/en/l14.c1.mp3 (take n to l14.c{n}.mp3); never overwrite the current final (content/series1/episodes/s1e01/voice/en/l14.mp3, take 1), which stays on disk. Voice: Amit Wadhwa - Friendly and Conversational Voice (cast): even, courteous, almost kind, a pharmacist reading out a prescription; no menace, no smile in the voice. [quietly] and [low voice] whispered on him (s1a01 hi l04, l20; s1e01 hi l04), hence the quiet-free sends.",
+   "text_sent": "[calm] It took me fourteen months to become your 'party'. The groom you rob.",
+   "quiet_free": true,
+   "whisper_wanted": false,
+   "change": "reworded",
+   "out_path": "content/series1/episodes/s1e01/voice/en/l14.c1.mp3",
+   "current_final": {
+    "file": "content/series1/episodes/s1e01/voice/en/l14.mp3",
+    "take": 1,
+    "text": "[quietly] It took me fourteen months to become your party."
+   }
+  },
+  {
+   "line_id": "l16",
+   "lang": "en",
+   "speaker": "kiran",
+   "voice_id": "FtcqBL9uKtROtyotPjvE",
+   "model": "eleven_v4",
+   "text": "[quietly] I'll get you all of it. Just open the padlock.",
+   "target_seconds": 4.7,
+   "note": "CLARITY PASS (D-025), reworded. 'Take it all' becomes an offer she can make: she will get him all of it. Under pressure she gets quieter and more exact, never shrill, never begging. An offer, then an order: 'I'll get you all of it.' a deal stated, 'Just open the padlock.' clipped. This line's [quietly] take was queued for a whisper retake under D-022; the take is sent quiet-free and must measure 0.6 or more voiced. Take 1 is quiet-free (D-025 item 6, D-022 rule 1): the script text keeps [quietly], the runner sends '[calm] I'll get you all of it. Just open the padlock.'. The edit sets the level the note wants; subtitles stay the script text; the manifest logs text_sent. Retake ladder (D-022; a rung already used is skipped, no quiet-family tag on any retake, [low voice] is never a rung): rung 2 the bare line 'I'll get you all of it. Just open the padlock.'. A recast is cast-wide and decided by S10 under cast.json switch_if, never a one-line swap. Voice-wanted in this pass: retake only for wrong or missing words (a lost name counts), a spoken tag, or a take under 0.6 voiced (whole take, or any segment of 0.5 s or more that carries script words); never for length, which the edit absorbs (D-0M2). Wrong or missing words: resend the same text once, then the next rung; a spoken tag goes to the next rung. Ear-only faults (comic, filmi, brisk, accent) go to the owner's ear list. Max 3 takes in this pass (D-011), then accept the most-voiced take that has all its words and log it. Never re-call generate on a pending result. Write take 1 to voice/en/l16.c1.mp3 (take n to l16.c{n}.mp3); never overwrite the current final (content/series1/episodes/s1e01/voice/en/l16_t3.mp3, take 3), which stays on disk. Voice: Yashvi G – Real Conversational Voice (cast_provisional): flat, blunt, quick; under pressure quieter and more exact, never shrill. Her English [quietly] whispered in casting (kiran_t3, 0.23) and her [quietly] lines in s1e01 and s1b01 were queued for whisper retakes (D-022), so no take in this pass sends a quiet-family tag on her. A voice change (Rudrika) is cast-wide, only under cast.json kiran.casting_review.switch_if.",
+   "text_sent": "[calm] I'll get you all of it. Just open the padlock.",
+   "quiet_free": true,
+   "whisper_wanted": false,
+   "change": "reworded",
+   "out_path": "content/series1/episodes/s1e01/voice/en/l16.c1.mp3",
+   "current_final": {
+    "file": "content/series1/episodes/s1e01/voice/en/l16_t3.mp3",
+    "take": 3,
+    "text": "[calm] Take it all. Open the padlock."
+   }
+  },
+  {
+   "line_id": "l17",
+   "lang": "en",
+   "speaker": "aditya",
+   "voice_id": "zCXXiWzuZO7d9fERssmF",
+   "model": "eleven_v4",
+   "text": "[calm] I don't want money. The police told me to bring proof.",
+   "target_seconds": 5.4,
+   "note": "CLARITY PASS (D-025), reworded. The 'because' is spoken: the police told him to bring proof. Plain, patient correction. 'I don't want money.' flat; then 'The police told me to bring proof.' as a remembered instruction, a little weight on 'proof'. No scorn. No quiet-family tag; take 1 is the script text, which is also the D-022 rung-1 text. Retake ladder (D-022; a rung already used is skipped, no quiet-family tag on any retake, [low voice] is never a rung): rung 2 the bare line 'I don't want money. The police told me to bring proof.'. A recast is cast-wide and decided by S10 under cast.json switch_if, never a one-line swap. Voice-wanted in this pass: retake only for wrong or missing words (a lost name counts), a spoken tag, or a take under 0.6 voiced (whole take, or any segment of 0.5 s or more that carries script words); never for length, which the edit absorbs (D-0M2). Wrong or missing words: resend the same text once, then the next rung; a spoken tag goes to the next rung. Ear-only faults (comic, filmi, brisk, accent) go to the owner's ear list. Max 3 takes in this pass (D-011), then accept the most-voiced take that has all its words and log it. Never re-call generate on a pending result. Write take 1 to voice/en/l17.c1.mp3 (take n to l17.c{n}.mp3); never overwrite the current final (content/series1/episodes/s1e01/voice/en/l17.mp3, take 1), which stays on disk. Voice: Amit Wadhwa - Friendly and Conversational Voice (cast): even, courteous, almost kind, a pharmacist reading out a prescription; no menace, no smile in the voice. [quietly] and [low voice] whispered on him (s1a01 hi l04, l20; s1e01 hi l04), hence the quiet-free sends.",
+   "text_sent": "[calm] I don't want money. The police told me to bring proof.",
+   "quiet_free": false,
+   "whisper_wanted": false,
+   "change": "reworded",
+   "out_path": "content/series1/episodes/s1e01/voice/en/l17.c1.mp3",
+   "current_final": {
+    "file": "content/series1/episodes/s1e01/voice/en/l17.mp3",
+    "take": 1,
+    "text": "[calm] I don't want money. The police want proof."
+   }
+  },
+  {
+   "line_id": "l18",
+   "lang": "en",
+   "speaker": "aditya",
+   "voice_id": "zCXXiWzuZO7d9fERssmF",
+   "model": "eleven_v4",
+   "text": "[quietly] For that proof, I need the woman who sends these brides.",
+   "target_seconds": 5.8,
+   "note": "CLARITY PASS (D-025), reworded. Ties the woman who sends the brides to the proof. Plays over Kiran's CU: she learns the target is Mausi. 'For that proof,' links back to l17; the pace slows on 'the woman' and it never rises. Low but voiced, every word clear. Take 1 is quiet-free (D-025 item 6, D-022 rule 1): the script text keeps [quietly], the runner sends '[calm] For that proof, I need the woman who sends these brides.'. The edit sets the level the note wants; subtitles stay the script text; the manifest logs text_sent. Retake ladder (D-022; a rung already used is skipped, no quiet-family tag on any retake, [low voice] is never a rung): rung 2 the bare line 'For that proof, I need the woman who sends these brides.'. A recast is cast-wide and decided by S10 under cast.json switch_if, never a one-line swap. Voice-wanted in this pass: retake only for wrong or missing words (a lost name counts), a spoken tag, or a take under 0.6 voiced (whole take, or any segment of 0.5 s or more that carries script words); never for length, which the edit absorbs (D-0M2). Wrong or missing words: resend the same text once, then the next rung; a spoken tag goes to the next rung. Ear-only faults (comic, filmi, brisk, accent) go to the owner's ear list. Max 3 takes in this pass (D-011), then accept the most-voiced take that has all its words and log it. Never re-call generate on a pending result. Write take 1 to voice/en/l18.c1.mp3 (take n to l18.c{n}.mp3); never overwrite the current final (content/series1/episodes/s1e01/voice/en/l18.mp3, take 1), which stays on disk. Voice: Amit Wadhwa - Friendly and Conversational Voice (cast): even, courteous, almost kind, a pharmacist reading out a prescription; no menace, no smile in the voice. [quietly] and [low voice] whispered on him (s1a01 hi l04, l20; s1e01 hi l04), hence the quiet-free sends.",
+   "text_sent": "[calm] For that proof, I need the woman who sends these brides.",
+   "quiet_free": true,
+   "whisper_wanted": false,
+   "change": "reworded",
+   "out_path": "content/series1/episodes/s1e01/voice/en/l18.c1.mp3",
+   "current_final": {
+    "file": "content/series1/episodes/s1e01/voice/en/l18.mp3",
+    "take": 1,
+    "text": "[quietly] And I want the woman who sends these brides."
+   }
+  },
+  {
+   "line_id": "l21",
+   "lang": "en",
+   "speaker": "aditya",
+   "voice_id": "zCXXiWzuZO7d9fERssmF",
+   "model": "eleven_v4",
+   "text": "[quietly] I didn't go to the wedding. I was at the shop.",
+   "target_seconds": 3.6,
+   "note": "CLARITY PASS (D-025), reworded. Says what he did not go to: the wedding. His guilt, kept plain. 'I didn't go to the wedding.' then a slight pause, 'I was at the shop.' flat. No self-pity. Take 1 is quiet-free (D-025 item 6, D-022 rule 1): the script text keeps [quietly], the runner sends '[calm] I didn't go to the wedding. I was at the shop.'. The edit sets the level the note wants; subtitles stay the script text; the manifest logs text_sent. Retake ladder (D-022; a rung already used is skipped, no quiet-family tag on any retake, [low voice] is never a rung): rung 2 the bare line 'I didn't go to the wedding. I was at the shop.'. A recast is cast-wide and decided by S10 under cast.json switch_if, never a one-line swap. Voice-wanted in this pass: retake only for wrong or missing words (a lost name counts), a spoken tag, or a take under 0.6 voiced (whole take, or any segment of 0.5 s or more that carries script words); never for length, which the edit absorbs (D-0M2). Wrong or missing words: resend the same text once, then the next rung; a spoken tag goes to the next rung. Ear-only faults (comic, filmi, brisk, accent) go to the owner's ear list. Max 3 takes in this pass (D-011), then accept the most-voiced take that has all its words and log it. Never re-call generate on a pending result. Write take 1 to voice/en/l21.c1.mp3 (take n to l21.c{n}.mp3); never overwrite the current final (content/series1/episodes/s1e01/voice/en/l21.mp3, take 1), which stays on disk. Voice: Amit Wadhwa - Friendly and Conversational Voice (cast): even, courteous, almost kind, a pharmacist reading out a prescription; no menace, no smile in the voice. [quietly] and [low voice] whispered on him (s1a01 hi l04, l20; s1e01 hi l04), hence the quiet-free sends.",
+   "text_sent": "[calm] I didn't go to the wedding. I was at the shop.",
+   "quiet_free": true,
+   "whisper_wanted": false,
+   "change": "reworded",
+   "out_path": "content/series1/episodes/s1e01/voice/en/l21.c1.mp3",
+   "current_final": {
+    "file": "content/series1/episodes/s1e01/voice/en/l21.mp3",
+    "take": 1,
+    "text": "[quietly] I didn't go. I was at the shop."
+   }
+  },
+  {
+   "line_id": "l22",
+   "lang": "en",
+   "speaker": "aditya",
+   "voice_id": "zCXXiWzuZO7d9fERssmF",
+   "model": "eleven_v4",
+   "text": "[sighs] There was no reception. The bride vanished with everything.",
+   "target_seconds": 6.4,
+   "note": "CLARITY PASS (D-025), reworded. Adds what happened: the bride vanished with everything. The breath goes out of him: a short real exhale, then 'There was no reception.' on what is left of it; a beat; 'The bride vanished with everything.' flat. Reject if 'sighs' is spoken or the sigh swallows 'There was'. No quiet-family tag; take 1 is the script text, which is also the D-022 rung-1 text. Retake ladder (D-022; a rung already used is skipped, no quiet-family tag on any retake, [low voice] is never a rung): rung 2 the bare line 'There was no reception. The bride vanished with everything.'. A recast is cast-wide and decided by S10 under cast.json switch_if, never a one-line swap. Voice-wanted in this pass: retake only for wrong or missing words (a lost name counts), a spoken tag, or a take under 0.6 voiced (whole take, or any segment of 0.5 s or more that carries script words); never for length, which the edit absorbs (D-0M2). Wrong or missing words: resend the same text once, then the next rung; a spoken tag goes to the next rung. Ear-only faults (comic, filmi, brisk, accent) go to the owner's ear list. Max 3 takes in this pass (D-011), then accept the most-voiced take that has all its words and log it. Never re-call generate on a pending result. Write take 1 to voice/en/l22.c1.mp3 (take n to l22.c{n}.mp3); never overwrite the current final (content/series1/episodes/s1e01/voice/en/l22.mp3, take 1), which stays on disk. Voice: Amit Wadhwa - Friendly and Conversational Voice (cast): even, courteous, almost kind, a pharmacist reading out a prescription; no menace, no smile in the voice. [quietly] and [low voice] whispered on him (s1a01 hi l04, l20; s1e01 hi l04), hence the quiet-free sends.",
+   "text_sent": "[sighs] There was no reception. The bride vanished with everything.",
+   "quiet_free": false,
+   "whisper_wanted": false,
+   "change": "reworded",
+   "out_path": "content/series1/episodes/s1e01/voice/en/l22.c1.mp3",
+   "current_final": {
+    "file": "content/series1/episodes/s1e01/voice/en/l22.mp3",
+    "take": 1,
+    "text": "[sighs] There was no reception."
+   }
+  },
+  {
+   "line_id": "l23",
+   "lang": "en",
+   "speaker": "aditya",
+   "voice_id": "zCXXiWzuZO7d9fERssmF",
+   "model": "eleven_v4",
+   "text": "[calm] The bureau never sent her photo. She took Mohit's phone.",
+   "target_seconds": 5.6,
+   "note": "CLARITY PASS (D-025), reworded. Mohit is named as the one whose phone she took; 'her photo' made explicit. Back to the prescription voice: facts. He draws the print from his kurta pocket during it. Pause between the sentences; 'Mohit's phone' clear, plain. The name must be in the transcript. No quiet-family tag; take 1 is the script text, which is also the D-022 rung-1 text. Retake ladder (D-022; a rung already used is skipped, no quiet-family tag on any retake, [low voice] is never a rung): rung 2 the bare line 'The bureau never sent her photo. She took Mohit's phone.'. A recast is cast-wide and decided by S10 under cast.json switch_if, never a one-line swap. Voice-wanted in this pass: retake only for wrong or missing words (a lost name counts), a spoken tag, or a take under 0.6 voiced (whole take, or any segment of 0.5 s or more that carries script words); never for length, which the edit absorbs (D-0M2). Wrong or missing words: resend the same text once, then the next rung; a spoken tag goes to the next rung. Ear-only faults (comic, filmi, brisk, accent) go to the owner's ear list. Max 3 takes in this pass (D-011), then accept the most-voiced take that has all its words and log it. Never re-call generate on a pending result. Write take 1 to voice/en/l23.c1.mp3 (take n to l23.c{n}.mp3); never overwrite the current final (content/series1/episodes/s1e01/voice/en/l23.mp3, take 1), which stays on disk. Voice: Amit Wadhwa - Friendly and Conversational Voice (cast): even, courteous, almost kind, a pharmacist reading out a prescription; no menace, no smile in the voice. [quietly] and [low voice] whispered on him (s1a01 hi l04, l20; s1e01 hi l04), hence the quiet-free sends.",
+   "text_sent": "[calm] The bureau never sent her photo. She took Mohit's phone.",
+   "quiet_free": false,
+   "whisper_wanted": false,
+   "change": "reworded",
+   "out_path": "content/series1/episodes/s1e01/voice/en/l23.c1.mp3",
+   "current_final": {
+    "file": "content/series1/episodes/s1e01/voice/en/l23.mp3",
+    "take": 1,
+    "text": "[calm] The bureau sent no photo. The bride took his phone."
+   }
+  },
+  {
+   "line_id": "l24",
+   "lang": "en",
+   "speaker": "aditya",
+   "voice_id": "zCXXiWzuZO7d9fERssmF",
+   "model": "eleven_v4",
+   "text": "[quietly] Only this survived. Mohit sent it from the temple.",
+   "target_seconds": 5.3,
+   "note": "CLARITY PASS (D-025), reworded. 'He sent it' becomes 'Mohit sent it', so the sender is not read as the bride. Holding the print out to her. 'Only this survived.' low; then 'Mohit sent it from the temple.' with a little tenderness on 'from the temple'. Low but voiced. A 2.0 s silent photograph insert follows, so a clean tail matters. Take 1 is quiet-free (D-025 item 6, D-022 rule 1): the script text keeps [quietly], the runner sends '[calm] Only this survived. Mohit sent it from the temple.'. The edit sets the level the note wants; subtitles stay the script text; the manifest logs text_sent. Retake ladder (D-022; a rung already used is skipped, no quiet-family tag on any retake, [low voice] is never a rung): rung 2 the bare line 'Only this survived. Mohit sent it from the temple.'. A recast is cast-wide and decided by S10 under cast.json switch_if, never a one-line swap. Voice-wanted in this pass: retake only for wrong or missing words (a lost name counts), a spoken tag, or a take under 0.6 voiced (whole take, or any segment of 0.5 s or more that carries script words); never for length, which the edit absorbs (D-0M2). Wrong or missing words: resend the same text once, then the next rung; a spoken tag goes to the next rung. Ear-only faults (comic, filmi, brisk, accent) go to the owner's ear list. Max 3 takes in this pass (D-011), then accept the most-voiced take that has all its words and log it. Never re-call generate on a pending result. Write take 1 to voice/en/l24.c1.mp3 (take n to l24.c{n}.mp3); never overwrite the current final (content/series1/episodes/s1e01/voice/en/l24.mp3, take 1), which stays on disk. Voice: Amit Wadhwa - Friendly and Conversational Voice (cast): even, courteous, almost kind, a pharmacist reading out a prescription; no menace, no smile in the voice. [quietly] and [low voice] whispered on him (s1a01 hi l04, l20; s1e01 hi l04), hence the quiet-free sends.",
+   "text_sent": "[calm] Only this survived. Mohit sent it from the temple.",
+   "quiet_free": true,
+   "whisper_wanted": false,
+   "change": "reworded",
+   "out_path": "content/series1/episodes/s1e01/voice/en/l24.c1.mp3",
+   "current_final": {
+    "file": "content/series1/episodes/s1e01/voice/en/l24.mp3",
+    "take": 1,
+    "text": "[quietly] Just this. He sent it from the temple."
+   }
+  },
+  {
+   "line_id": "l27",
+   "lang": "en",
+   "speaker": "mausi",
+   "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+   "model": "eleven_v4",
+   "text": "[calm] Tonight she's playing Sneha, but she's still my Kiran.",
+   "target_seconds": 5.4,
+   "note": "CLARITY PASS (D-025), new. New: bridges the alias Sneha to Kiran once, out of Aditya's hearing. Heard as phone. Mausi on Billu's phone, between l09 and l10. Fond, a little proud, unhurried: 'Tonight she's playing Sneha,' amused, a small beat; 'but she's still my Kiran.' warm and certain. Both names must be heard: 'Sneha' (SNAY-haa) and 'Kiran' (KI-run); if either is lost in the transcript it is a wrong-word retake. Generate clean; filter in the mix. No quiet-family tag; take 1 is the script text, which is also the D-022 rung-1 text. Retake ladder (D-022; a rung already used is skipped, no quiet-family tag on any retake, [low voice] is never a rung): rung 2 the bare line 'Tonight she's playing Sneha, but she's still my Kiran.'. A recast is cast-wide and decided by S10 under cast.json switch_if, never a one-line swap. Voice-wanted in this pass: retake only for wrong or missing words (a lost name counts), a spoken tag, or a take under 0.6 voiced (whole take, or any segment of 0.5 s or more that carries script words); never for length, which the edit absorbs (D-0M2). Wrong or missing words: resend the same text once, then the next rung; a spoken tag goes to the next rung. Ear-only faults (comic, filmi, brisk, accent) go to the owner's ear list. Max 3 takes in this pass (D-011), then accept the most-voiced take that has all its words and log it. Never re-call generate on a pending result. Write take 1 to voice/en/l27.c1.mp3 (take n to l27.c{n}.mp3); never overwrite the current final; this line has no earlier take. Voice: Savitri - Grounded and Nurturing (cast_provisional): low, warm, unhurried; the colder, the softer; fully voiced, never whispered. If the ear cannot tell her from Kiran, it is Mausi who changes (cast.json switch_if).",
+   "text_sent": "[calm] Tonight she's playing Sneha, but she's still my Kiran.",
+   "quiet_free": false,
+   "whisper_wanted": false,
+   "change": "new",
+   "out_path": "content/series1/episodes/s1e01/voice/en/l27.c1.mp3",
+   "current_final": null
+  },
+  {
+   "line_id": "l28",
+   "lang": "en",
+   "speaker": "aditya",
+   "voice_id": "zCXXiWzuZO7d9fERssmF",
+   "model": "eleven_v4",
+   "text": "[quietly] My real name is Aditya. Your marriage bureau has a fake one.",
+   "target_seconds": 6.2,
+   "note": "CLARITY PASS (D-025), new. New: names Aditya and says the bureau holds a fake name; glosses 'bureau'. Across the room, the first time she hears his name. Even, courteous, a fact laid down: 'My real name is Aditya.' (aa-DIT-ya, clear), a beat; 'Your marriage bureau has a fake one.' dry. Low but voiced; no menace. Take 1 is quiet-free (D-025 item 6, D-022 rule 1): the script text keeps [quietly], the runner sends '[calm] My real name is Aditya. Your marriage bureau has a fake one.'. The edit sets the level the note wants; subtitles stay the script text; the manifest logs text_sent. Retake ladder (D-022; a rung already used is skipped, no quiet-family tag on any retake, [low voice] is never a rung): rung 2 the bare line 'My real name is Aditya. Your marriage bureau has a fake one.'. A recast is cast-wide and decided by S10 under cast.json switch_if, never a one-line swap. Voice-wanted in this pass: retake only for wrong or missing words (a lost name counts), a spoken tag, or a take under 0.6 voiced (whole take, or any segment of 0.5 s or more that carries script words); never for length, which the edit absorbs (D-0M2). Wrong or missing words: resend the same text once, then the next rung; a spoken tag goes to the next rung. Ear-only faults (comic, filmi, brisk, accent) go to the owner's ear list. Max 3 takes in this pass (D-011), then accept the most-voiced take that has all its words and log it. Never re-call generate on a pending result. Write take 1 to voice/en/l28.c1.mp3 (take n to l28.c{n}.mp3); never overwrite the current final; this line has no earlier take. Voice: Amit Wadhwa - Friendly and Conversational Voice (cast): even, courteous, almost kind, a pharmacist reading out a prescription; no menace, no smile in the voice. [quietly] and [low voice] whispered on him (s1a01 hi l04, l20; s1e01 hi l04), hence the quiet-free sends.",
+   "text_sent": "[calm] My real name is Aditya. Your marriage bureau has a fake one.",
+   "quiet_free": true,
+   "whisper_wanted": false,
+   "change": "new",
+   "out_path": "content/series1/episodes/s1e01/voice/en/l28.c1.mp3",
+   "current_final": null
+  },
+  {
+   "line_id": "l29",
+   "lang": "en",
+   "speaker": "aditya",
+   "voice_id": "zCXXiWzuZO7d9fERssmF",
+   "model": "eleven_v4",
+   "text": "[calm] The bride has a burn on her wrist, like a half moon.",
+   "target_seconds": 5.2,
+   "note": "CLARITY PASS (D-025), new. New: says what the photograph shows (a half-moon burn on the bride's wrist), not whose it is. Plays over the photograph insert. The prescription voice, describing evidence: 'The bride has a burn on her wrist,' level; 'like a half moon.' a touch slower, exact. No accusing stress: he does not know it is hers. 'burn' and 'wrist' clear. No quiet-family tag; take 1 is the script text, which is also the D-022 rung-1 text. Retake ladder (D-022; a rung already used is skipped, no quiet-family tag on any retake, [low voice] is never a rung): rung 2 the bare line 'The bride has a burn on her wrist, like a half moon.'. A recast is cast-wide and decided by S10 under cast.json switch_if, never a one-line swap. Voice-wanted in this pass: retake only for wrong or missing words (a lost name counts), a spoken tag, or a take under 0.6 voiced (whole take, or any segment of 0.5 s or more that carries script words); never for length, which the edit absorbs (D-0M2). Wrong or missing words: resend the same text once, then the next rung; a spoken tag goes to the next rung. Ear-only faults (comic, filmi, brisk, accent) go to the owner's ear list. Max 3 takes in this pass (D-011), then accept the most-voiced take that has all its words and log it. Never re-call generate on a pending result. Write take 1 to voice/en/l29.c1.mp3 (take n to l29.c{n}.mp3); never overwrite the current final; this line has no earlier take. Voice: Amit Wadhwa - Friendly and Conversational Voice (cast): even, courteous, almost kind, a pharmacist reading out a prescription; no menace, no smile in the voice. [quietly] and [low voice] whispered on him (s1a01 hi l04, l20; s1e01 hi l04), hence the quiet-free sends.",
+   "text_sent": "[calm] The bride has a burn on her wrist, like a half moon.",
+   "quiet_free": false,
+   "whisper_wanted": false,
+   "change": "new",
+   "out_path": "content/series1/episodes/s1e01/voice/en/l29.c1.mp3",
+   "current_final": null
+  }
+ ],
+ "skipped_identical": []
+}

@@ -1,0 +1,186 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,030"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 30
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,030",
+				"to": "00:00:00,360"
+			},
+			"offsets": {
+				"from": 30,
+				"to": 360
+			},
+			"text": " मुझे"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,360",
+				"to": "00:00:00,630"
+			},
+			"offsets": {
+				"from": 360,
+				"to": 630
+			},
+			"text": " पता"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,630",
+				"to": "00:00:00,810"
+			},
+			"offsets": {
+				"from": 630,
+				"to": 810
+			},
+			"text": " है"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,810",
+				"to": "00:00:01,260"
+			},
+			"offsets": {
+				"from": 810,
+				"to": 1260
+			},
+			"text": " कितनी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,260",
+				"to": "00:00:01,530"
+			},
+			"offsets": {
+				"from": 1260,
+				"to": 1530
+			},
+			"text": " में"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,530",
+				"to": "00:00:02,070"
+			},
+			"offsets": {
+				"from": 1530,
+				"to": 2070
+			},
+			"text": " नीदाती"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,070",
+				"to": "00:00:02,300"
+			},
+			"offsets": {
+				"from": 2070,
+				"to": 2300
+			},
+			"text": " है"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,300",
+				"to": "00:00:02,480"
+			},
+			"offsets": {
+				"from": 2300,
+				"to": 2480
+			},
+			"text": " और"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,480",
+				"to": "00:00:02,930"
+			},
+			"offsets": {
+				"from": 2480,
+				"to": 2930
+			},
+			"text": " कितनी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,930",
+				"to": "00:00:03,260"
+			},
+			"offsets": {
+				"from": 2930,
+				"to": 3260
+			},
+			"text": " में"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,260",
+				"to": "00:00:03,430"
+			},
+			"offsets": {
+				"from": 3260,
+				"to": 3430
+			},
+			"text": " आख"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,430",
+				"to": "00:00:03,740"
+			},
+			"offsets": {
+				"from": 3430,
+				"to": 3740
+			},
+			"text": " नहीं"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,740",
+				"to": "00:00:04,320"
+			},
+			"offsets": {
+				"from": 3740,
+				"to": 4320
+			},
+			"text": " कुलती"
+		}
+	]
+}

@@ -1,0 +1,1458 @@
+{
+ "series_id": "series1",
+ "date": "2026-11-26",
+ "reviewer": "S10 voice director (did not generate these takes)",
+ "transcript_source": "local whisper.cpp (whisper-cli 'ggml-small.bin', no prompt, script not given). 'transcript' = forced to the take's language; 'transcript_autodetect' = -l auto; 'transcript_en_pass' (Hindi takes) = -l en, which mostly translates rather than transliterates, so it only shows whether Latin-script words were heard. Connector transcription not used (its text cannot be read back).",
+ "measure_method": "Audio decoded by ffmpeg. Speech frames: 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS). Pauses: speech-internal runs below that threshold of 150 ms or more. speech_rms_db: power mean over speech frames. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, 60-1000 Hz band, 70-450 Hz lag range) is 0.6 or more; whispered speech scores low. median_hz/p10/p90 over voiced frames. ff_mean_db/ff_max_db: ffmpeg volumedetect. Spectral centroid and flatness: ffmpeg aspectralstats medians after silenceremove at -45 dB; whisper raises both. chars_per_speech_s: script characters without tags per speech second, comparable only within one voice and language. All pure-Python measures; none of them hears acting, accent or timbre.",
+ "credits_spent_by_test": 1395,
+ "takes": [
+  {
+   "line_id": "kiran_t1",
+   "character": "kiran",
+   "lang": "hi",
+   "voice_id": "FtcqBL9uKtROtyotPjvE",
+   "file": "casting/kiran/kiran_t1.hi.mp3",
+   "take_text": "[softly] [hesitant] आप जाग रहे हैं? मैं तो बस आपके दूध में केसर डाल रही थी।",
+   "credits": 75,
+   "transcript": "आप जाग रहे हैं, मैं तो बस आपके दूद में केसर डाल रही थी.",
+   "transcript_autodetect": "आप जाग रहे हैं, मैं तो बस आपके दूद में केसर डाल रही थी.",
+   "transcript_en_pass": "You are awake? I was just putting a cauldron in your milk.",
+   "duration_s": 5.44,
+   "speech_s": 5.07,
+   "lead_silence_s": 0.13,
+   "trail_silence_s": 0.24,
+   "pauses": [
+    [
+     0.38,
+     0.58,
+     0.2
+    ],
+    [
+     0.6,
+     0.82,
+     0.22
+    ],
+    [
+     1.68,
+     1.93,
+     0.25
+    ],
+    [
+     2.03,
+     2.31,
+     0.28
+    ],
+    [
+     3.98,
+     4.13,
+     0.15
+    ]
+   ],
+   "speech_rms_db": -22.7,
+   "ff_mean_db": -24.4,
+   "ff_max_db": -6.0,
+   "voiced_ratio": 0.81,
+   "median_hz": 222,
+   "p10_hz": 178,
+   "p90_hz": 267,
+   "range_semitones": 7.0,
+   "chars_per_speech_s": 10.8,
+   "segments": [
+    {
+     "t": [
+      0.13,
+      0.38
+     ],
+     "rms_db": -23.8,
+     "voiced_ratio": 0.8,
+     "median_hz": 216
+    },
+    {
+     "t": [
+      0.58,
+      0.6
+     ],
+     "rms_db": -43.0,
+     "voiced_ratio": 0.0,
+     "median_hz": null
+    },
+    {
+     "t": [
+      0.82,
+      1.68
+     ],
+     "rms_db": -22.5,
+     "voiced_ratio": 0.85,
+     "median_hz": 242
+    },
+    {
+     "t": [
+      1.93,
+      2.03
+     ],
+     "rms_db": -48.1,
+     "voiced_ratio": 0.0,
+     "median_hz": null
+    },
+    {
+     "t": [
+      2.31,
+      3.98
+     ],
+     "rms_db": -21.9,
+     "voiced_ratio": 0.83,
+     "median_hz": 235
+    },
+    {
+     "t": [
+      4.13,
+      5.2
+     ],
+     "rms_db": -23.4,
+     "voiced_ratio": 0.84,
+     "median_hz": 195
+    }
+   ],
+   "spectral_centroid_hz": 2190,
+   "spectral_flatness": 0.048
+  },
+  {
+   "line_id": "kiran_t2",
+   "character": "kiran",
+   "lang": "hi",
+   "voice_id": "FtcqBL9uKtROtyotPjvE",
+   "file": "casting/kiran/kiran_t2.hi.mp3",
+   "take_text": "[flatly] Police हो? नहीं? [quietly] तो फिर चाहिए क्या तुम्हें?",
+   "credits": 62,
+   "transcript": "पूलीस हो? नहीं? तो फिर चाहिये क्या तुमें?",
+   "transcript_autodetect": "पूलीस हो? नहीं? तो फिर चाहिये क्या तुमें?",
+   "transcript_en_pass": "Police? No? Then what do you want?",
+   "duration_s": 4.0,
+   "speech_s": 3.7,
+   "lead_silence_s": 0.1,
+   "trail_silence_s": 0.2,
+   "pauses": [
+    [
+     0.65,
+     1.14,
+     0.49
+    ],
+    [
+     1.44,
+     2.16,
+     0.72
+    ],
+    [
+     2.65,
+     2.91,
+     0.26
+    ]
+   ],
+   "speech_rms_db": -22.3,
+   "ff_mean_db": -25.0,
+   "ff_max_db": -7.9,
+   "voiced_ratio": 0.88,
+   "median_hz": 216,
+   "p10_hz": 170,
+   "p90_hz": 308,
+   "range_semitones": 10.3,
+   "chars_per_speech_s": 11.6,
+   "segments": [
+    {
+     "t": [
+      0.1,
+      0.65
+     ],
+     "rms_db": -19.3,
+     "voiced_ratio": 0.85,
+     "median_hz": 235
+    },
+    {
+     "t": [
+      1.14,
+      1.44
+     ],
+     "rms_db": -20.3,
+     "voiced_ratio": 0.93,
+     "median_hz": 193
+    },
+    {
+     "t": [
+      2.16,
+      2.65
+     ],
+     "rms_db": -27.4,
+     "voiced_ratio": 0.88,
+     "median_hz": 216
+    },
+    {
+     "t": [
+      2.91,
+      3.8
+     ],
+     "rms_db": -25.0,
+     "voiced_ratio": 0.87,
+     "median_hz": 188
+    }
+   ],
+   "spectral_centroid_hz": 2056,
+   "spectral_flatness": 0.048
+  },
+  {
+   "line_id": "kiran_t3",
+   "character": "kiran",
+   "lang": "en",
+   "voice_id": "FtcqBL9uKtROtyotPjvE",
+   "file": "casting/kiran/kiran_t3.en.mp3",
+   "take_text": "[quietly] Mausi... the milk has split.",
+   "credits": 38,
+   "transcript": "Mossy, the milk has split.",
+   "transcript_autodetect": "Mossy, the milk has split.",
+   "duration_s": 2.48,
+   "speech_s": 2.24,
+   "lead_silence_s": 0.14,
+   "trail_silence_s": 0.1,
+   "pauses": [
+    [
+     0.69,
+     1.11,
+     0.42
+    ]
+   ],
+   "speech_rms_db": -33.3,
+   "ff_mean_db": -34.7,
+   "ff_max_db": -5.4,
+   "voiced_ratio": 0.23,
+   "median_hz": 211,
+   "p10_hz": 190,
+   "p90_hz": 235,
+   "range_semitones": 3.7,
+   "chars_per_speech_s": 12.5,
+   "segments": [
+    {
+     "t": [
+      0.14,
+      0.69
+     ],
+     "rms_db": -33.1,
+     "voiced_ratio": 0.31,
+     "median_hz": 235
+    },
+    {
+     "t": [
+      1.11,
+      2.38
+     ],
+     "rms_db": -33.5,
+     "voiced_ratio": 0.18,
+     "median_hz": 208
+    }
+   ],
+   "spectral_centroid_hz": 3746,
+   "spectral_flatness": 0.091
+  },
+  {
+   "line_id": "kiran_t4",
+   "character": "kiran",
+   "lang": "en",
+   "voice_id": "FtcqBL9uKtROtyotPjvE",
+   "file": "casting/kiran/kiran_t4.en.mp3",
+   "take_text": "[flatly] You want the one with the burnt wrist? Rekha. She doesn't do weddings any more.",
+   "credits": 88,
+   "transcript": "You want the one with the burnt wrist? Reika. She doesn't do weddings anymore.",
+   "transcript_autodetect": "You want the one with the burnt wrist? Reika. She doesn't do weddings anymore.",
+   "duration_s": 4.64,
+   "speech_s": 4.37,
+   "lead_silence_s": 0.13,
+   "trail_silence_s": 0.14,
+   "pauses": [
+    [
+     1.8,
+     2.23,
+     0.43
+    ],
+    [
+     2.75,
+     3.14,
+     0.39
+    ]
+   ],
+   "speech_rms_db": -21.3,
+   "ff_mean_db": -22.5,
+   "ff_max_db": -6.4,
+   "voiced_ratio": 0.74,
+   "median_hz": 205,
+   "p10_hz": 160,
+   "p90_hz": 286,
+   "range_semitones": 10.1,
+   "chars_per_speech_s": 18.1,
+   "segments": [
+    {
+     "t": [
+      0.13,
+      1.8
+     ],
+     "rms_db": -21.0,
+     "voiced_ratio": 0.71,
+     "median_hz": 250
+    },
+    {
+     "t": [
+      2.23,
+      2.75
+     ],
+     "rms_db": -23.0,
+     "voiced_ratio": 0.65,
+     "median_hz": 190
+    },
+    {
+     "t": [
+      3.14,
+      4.5
+     ],
+     "rms_db": -21.3,
+     "voiced_ratio": 0.81,
+     "median_hz": 178
+    }
+   ],
+   "spectral_centroid_hz": 1664,
+   "spectral_flatness": 0.03
+  },
+  {
+   "line_id": "aditya_t1",
+   "character": "aditya",
+   "lang": "hi",
+   "voice_id": "zCXXiWzuZO7d9fERssmF",
+   "file": "casting/aditya/aditya_t1.hi.mp3",
+   "take_text": "[calm] Sedative कड़वा होता है। [quietly] इसीलिए केसर, है ना?",
+   "credits": 60,
+   "transcript": "सेटिट्टिव कदवा होता है इसी लिए के सर है ना?",
+   "transcript_autodetect": "सेटिट्टिव कदवा होता है इसी लिए के सर है ना?",
+   "transcript_en_pass": "Sedative is a bitter thing. That's why it's Kesar, isn't it?",
+   "duration_s": 4.48,
+   "speech_s": 4.18,
+   "lead_silence_s": 0.14,
+   "trail_silence_s": 0.16,
+   "pauses": [
+    [
+     2.12,
+     2.64,
+     0.52
+    ],
+    [
+     3.59,
+     3.98,
+     0.39
+    ]
+   ],
+   "speech_rms_db": -20.2,
+   "ff_mean_db": -21.8,
+   "ff_max_db": -2.9,
+   "voiced_ratio": 0.72,
+   "median_hz": 114,
+   "p10_hz": 103,
+   "p90_hz": 154,
+   "range_semitones": 7.0,
+   "chars_per_speech_s": 10.3,
+   "segments": [
+    {
+     "t": [
+      0.14,
+      2.12
+     ],
+     "rms_db": -18.6,
+     "voiced_ratio": 0.66,
+     "median_hz": 116
+    },
+    {
+     "t": [
+      2.64,
+      3.59
+     ],
+     "rms_db": -27.0,
+     "voiced_ratio": 0.77,
+     "median_hz": 113
+    },
+    {
+     "t": [
+      3.98,
+      4.32
+     ],
+     "rms_db": -20.9,
+     "voiced_ratio": 0.91,
+     "median_hz": 109
+    }
+   ],
+   "spectral_centroid_hz": 1665,
+   "spectral_flatness": 0.047
+  },
+  {
+   "line_id": "aditya_t2",
+   "character": "aditya",
+   "lang": "hi",
+   "voice_id": "zCXXiWzuZO7d9fERssmF",
+   "file": "casting/aditya/aditya_t2.hi.mp3",
+   "take_text": "[quietly] मोहित ग्यारह दिन बाद पंखे से लटका मिला। [low voice] मुझे ये हाथ चाहिए।",
+   "credits": 80,
+   "transcript": "मोहित 11 दिन बाद पन्के से लट्का मिला मुझे ये हाथ चाही है",
+   "transcript_autodetect": "मोहित 11 दिन बाद पन्के से लट्का मिला मुझे ये हाथ चाही है",
+   "transcript_en_pass": "Mohit, after 11 days, got a fight with Pankha. I want this hand.",
+   "duration_s": 5.84,
+   "speech_s": 5.34,
+   "lead_silence_s": 0.17,
+   "trail_silence_s": 0.33,
+   "pauses": [
+    [
+     2.02,
+     2.26,
+     0.24
+    ],
+    [
+     3.37,
+     4.03,
+     0.66
+    ]
+   ],
+   "speech_rms_db": -21.1,
+   "ff_mean_db": -22.5,
+   "ff_max_db": -6.7,
+   "voiced_ratio": 0.67,
+   "median_hz": 107,
+   "p10_hz": 103,
+   "p90_hz": 119,
+   "range_semitones": 2.5,
+   "chars_per_speech_s": 10.9,
+   "segments": [
+    {
+     "t": [
+      0.17,
+      2.02
+     ],
+     "rms_db": -18.1,
+     "voiced_ratio": 0.82,
+     "median_hz": 107
+    },
+    {
+     "t": [
+      2.26,
+      3.37
+     ],
+     "rms_db": -24.6,
+     "voiced_ratio": 0.69,
+     "median_hz": 105
+    },
+    {
+     "t": [
+      4.03,
+      5.51
+     ],
+     "rms_db": -28.2,
+     "voiced_ratio": 0.45,
+     "median_hz": 109
+    }
+   ],
+   "spectral_centroid_hz": 1476,
+   "spectral_flatness": 0.04
+  },
+  {
+   "line_id": "aditya_t3",
+   "character": "aditya",
+   "lang": "en",
+   "voice_id": "zCXXiWzuZO7d9fERssmF",
+   "file": "casting/aditya/aditya_t3.en.mp3",
+   "take_text": "[calm] [slowly] Pour in the whole sachet. Half doesn't put me to sleep.",
+   "credits": 71,
+   "transcript": "Pour in the whole sachet. Half doesn't put me to sleep.",
+   "transcript_autodetect": "Pour in the whole sachet. Half doesn't put me to sleep.",
+   "duration_s": 4.56,
+   "speech_s": 4.18,
+   "lead_silence_s": 0.17,
+   "trail_silence_s": 0.21,
+   "pauses": [
+    [
+     1.96,
+     2.48,
+     0.52
+    ]
+   ],
+   "speech_rms_db": -20.2,
+   "ff_mean_db": -21.2,
+   "ff_max_db": -3.9,
+   "voiced_ratio": 0.7,
+   "median_hz": 125,
+   "p10_hz": 104,
+   "p90_hz": 174,
+   "range_semitones": 8.9,
+   "chars_per_speech_s": 13.2,
+   "segments": [
+    {
+     "t": [
+      0.17,
+      1.96
+     ],
+     "rms_db": -18.5,
+     "voiced_ratio": 0.74,
+     "median_hz": 127
+    },
+    {
+     "t": [
+      2.48,
+      4.35
+     ],
+     "rms_db": -22.9,
+     "voiced_ratio": 0.66,
+     "median_hz": 123
+    }
+   ],
+   "spectral_centroid_hz": 1561,
+   "spectral_flatness": 0.039
+  },
+  {
+   "line_id": "aditya_t4",
+   "character": "aditya",
+   "lang": "en",
+   "voice_id": "zCXXiWzuZO7d9fERssmF",
+   "file": "casting/aditya/aditya_t4.en.mp3",
+   "take_text": "[low voice] I know which dose brings sleep, and which one you don't wake up from.",
+   "credits": 81,
+   "transcript": "I know which dose brings sleep and which one you don't wake up from.",
+   "transcript_autodetect": "I know which dose brings sleep and which one you don't wake up from.",
+   "duration_s": 4.32,
+   "speech_s": 4.05,
+   "lead_silence_s": 0.01,
+   "trail_silence_s": 0.26,
+   "pauses": [],
+   "speech_rms_db": -22.6,
+   "ff_mean_db": -23.2,
+   "ff_max_db": -6.3,
+   "voiced_ratio": 0.61,
+   "median_hz": 107,
+   "p10_hz": 100,
+   "p90_hz": 140,
+   "range_semitones": 5.8,
+   "chars_per_speech_s": 17.0,
+   "segments": [
+    {
+     "t": [
+      0.01,
+      4.06
+     ],
+     "rms_db": -22.6,
+     "voiced_ratio": 0.61,
+     "median_hz": 107
+    }
+   ],
+   "spectral_centroid_hz": 1271,
+   "spectral_flatness": 0.036
+  },
+  {
+   "line_id": "mausi_t1",
+   "character": "mausi",
+   "lang": "hi",
+   "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+   "file": "casting/mausi/mausi_t1.hi.mp3",
+   "take_text": "[warmly] खाना खाया तूने? [laughs] झूठ मत बोल। Bag की side वाली जेब में मठरी रखी है।",
+   "credits": 83,
+   "transcript": "खाना खाया तुने? जूट मत बोल बाख की साइट वाली जेब में मतरी रख़ी है",
+   "transcript_autodetect": "खाना खाया तुने? जूट मत बोल बाख की साइट वाली जेब में मतरी रख़ी है",
+   "transcript_en_pass": "Did you eat? Don't lie. There's butter in the bag's side pocket.",
+   "duration_s": 6.08,
+   "speech_s": 5.88,
+   "lead_silence_s": 0.03,
+   "trail_silence_s": 0.17,
+   "pauses": [
+    [
+     0.98,
+     1.37,
+     0.39
+    ],
+    [
+     2.98,
+     3.18,
+     0.2
+    ]
+   ],
+   "speech_rms_db": -24.4,
+   "ff_mean_db": -25.3,
+   "ff_max_db": -8.4,
+   "voiced_ratio": 0.78,
+   "median_hz": 235,
+   "p10_hz": 182,
+   "p90_hz": 296,
+   "range_semitones": 8.4,
+   "chars_per_speech_s": 11.1,
+   "segments": [
+    {
+     "t": [
+      0.03,
+      0.98
+     ],
+     "rms_db": -24.8,
+     "voiced_ratio": 0.68,
+     "median_hz": 258
+    },
+    {
+     "t": [
+      1.37,
+      2.98
+     ],
+     "rms_db": -24.6,
+     "voiced_ratio": 0.87,
+     "median_hz": 229
+    },
+    {
+     "t": [
+      3.18,
+      5.91
+     ],
+     "rms_db": -24.1,
+     "voiced_ratio": 0.76,
+     "median_hz": 235
+    }
+   ],
+   "spectral_centroid_hz": 2139,
+   "spectral_flatness": 0.036
+  },
+  {
+   "line_id": "mausi_t2",
+   "character": "mausi",
+   "lang": "hi",
+   "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+   "file": "casting/mausi/mausi_t2.hi.mp3",
+   "take_text": "[warmly] अच्छा सुन... दामाद जी ने दूध पी लिया, बेटा?",
+   "credits": 52,
+   "transcript": "अचा सुन, दामाजीने दूट पीलिया, भीटा?",
+   "transcript_autodetect": "अचा सुन, दामाजीने दूट पीलिया, भीटा?",
+   "transcript_en_pass": "Listen, Damajji has drunk the milk, dear.",
+   "duration_s": 3.28,
+   "speech_s": 3.0,
+   "lead_silence_s": 0.03,
+   "trail_silence_s": 0.25,
+   "pauses": [
+    [
+     0.7,
+     0.95,
+     0.25
+    ],
+    [
+     0.97,
+     1.13,
+     0.16
+    ],
+    [
+     2.55,
+     2.7,
+     0.15
+    ]
+   ],
+   "speech_rms_db": -26.0,
+   "ff_mean_db": -27.3,
+   "ff_max_db": -11.9,
+   "voiced_ratio": 0.83,
+   "median_hz": 242,
+   "p10_hz": 170,
+   "p90_hz": 333,
+   "range_semitones": 11.6,
+   "chars_per_speech_s": 14.3,
+   "segments": [
+    {
+     "t": [
+      0.03,
+      0.7
+     ],
+     "rms_db": -27.5,
+     "voiced_ratio": 0.76,
+     "median_hz": 229
+    },
+    {
+     "t": [
+      0.95,
+      0.97
+     ],
+     "rms_db": -54.1,
+     "voiced_ratio": 0.0,
+     "median_hz": null
+    },
+    {
+     "t": [
+      1.13,
+      2.55
+     ],
+     "rms_db": -25.0,
+     "voiced_ratio": 0.87,
+     "median_hz": 250
+    },
+    {
+     "t": [
+      2.7,
+      3.03
+     ],
+     "rms_db": -27.9,
+     "voiced_ratio": 0.87,
+     "median_hz": 186
+    }
+   ],
+   "spectral_centroid_hz": 2085,
+   "spectral_flatness": 0.041
+  },
+  {
+   "line_id": "mausi_t3",
+   "character": "mausi",
+   "lang": "en",
+   "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+   "file": "casting/mausi/mausi_t3.en.mp3",
+   "take_text": "[warmly] Listen... did Damaad ji drink his milk, beta?",
+   "credits": 54,
+   "transcript": "Listen, did Damajji drink his milk, beta?",
+   "transcript_autodetect": "Listen, did Damajji drink his milk, beta?",
+   "duration_s": 3.44,
+   "speech_s": 2.98,
+   "lead_silence_s": 0.25,
+   "trail_silence_s": 0.21,
+   "pauses": [
+    [
+     0.94,
+     1.3,
+     0.36
+    ]
+   ],
+   "speech_rms_db": -26.2,
+   "ff_mean_db": -27.4,
+   "ff_max_db": -11.0,
+   "voiced_ratio": 0.87,
+   "median_hz": 235,
+   "p10_hz": 160,
+   "p90_hz": 286,
+   "range_semitones": 10.1,
+   "chars_per_speech_s": 15.1,
+   "segments": [
+    {
+     "t": [
+      0.25,
+      0.94
+     ],
+     "rms_db": -31.3,
+     "voiced_ratio": 0.7,
+     "median_hz": 170
+    },
+    {
+     "t": [
+      1.3,
+      3.23
+     ],
+     "rms_db": -25.2,
+     "voiced_ratio": 0.93,
+     "median_hz": 235
+    }
+   ],
+   "spectral_centroid_hz": 1965,
+   "spectral_flatness": 0.045
+  },
+  {
+   "line_id": "mausi_t4",
+   "character": "mausi",
+   "lang": "en",
+   "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+   "file": "casting/mausi/mausi_t4.en.mp3",
+   "take_text": "[gently] [slowly] You're my daughter. Nobody keeps accounts with a daughter.",
+   "credits": 76,
+   "transcript": "You're my daughter. Nobody keeps accounts with a daughter.",
+   "transcript_autodetect": "You're my daughter. Nobody keeps accounts with a daughter.",
+   "duration_s": 4.0,
+   "speech_s": 3.62,
+   "lead_silence_s": 0.27,
+   "trail_silence_s": 0.11,
+   "pauses": [
+    [
+     1.36,
+     1.87,
+     0.51
+    ]
+   ],
+   "speech_rms_db": -28.9,
+   "ff_mean_db": -30.3,
+   "ff_max_db": -11.6,
+   "voiced_ratio": 0.76,
+   "median_hz": 195,
+   "p10_hz": 148,
+   "p90_hz": 250,
+   "range_semitones": 9.1,
+   "chars_per_speech_s": 16.0,
+   "segments": [
+    {
+     "t": [
+      0.27,
+      1.36
+     ],
+     "rms_db": -27.5,
+     "voiced_ratio": 0.81,
+     "median_hz": 198
+    },
+    {
+     "t": [
+      1.87,
+      3.89
+     ],
+     "rms_db": -30.0,
+     "voiced_ratio": 0.72,
+     "median_hz": 190
+    }
+   ],
+   "spectral_centroid_hz": 2147,
+   "spectral_flatness": 0.055
+  },
+  {
+   "line_id": "billu_t1",
+   "character": "billu",
+   "lang": "hi",
+   "voice_id": "7b9mYhmnp0y2qSH1FnBL",
+   "file": "casting/billu/billu_t1.hi.mp3",
+   "take_text": "[teasing] जीजाजी को मौसी से मिलना है? [laughs] मौसी किसी से नहीं मिलतीं।",
+   "credits": 72,
+   "transcript": "जीजा जी को मुसी से मिलना है। मुसी किसी से नहीं मिलती।",
+   "transcript_autodetect": "जीजा जी को मुसी से मिलना है। मुसी किसी से नहीं मिलती।",
+   "transcript_en_pass": "Brother-in-law wants to meet aunt. Aunt doesn't meet anyone.",
+   "duration_s": 5.68,
+   "speech_s": 5.38,
+   "lead_silence_s": 0.03,
+   "trail_silence_s": 0.27,
+   "pauses": [
+    [
+     2.37,
+     2.58,
+     0.21
+    ],
+    [
+     3.07,
+     3.24,
+     0.17
+    ]
+   ],
+   "speech_rms_db": -23.3,
+   "ff_mean_db": -24.1,
+   "ff_max_db": -6.8,
+   "voiced_ratio": 0.89,
+   "median_hz": 174,
+   "p10_hz": 101,
+   "p90_hz": 267,
+   "range_semitones": 16.8,
+   "chars_per_speech_s": 9.9,
+   "segments": [
+    {
+     "t": [
+      0.03,
+      2.37
+     ],
+     "rms_db": -23.1,
+     "voiced_ratio": 0.9,
+     "median_hz": 140
+    },
+    {
+     "t": [
+      2.58,
+      3.07
+     ],
+     "rms_db": -28.5,
+     "voiced_ratio": 0.59,
+     "median_hz": 172
+    },
+    {
+     "t": [
+      3.24,
+      5.41
+     ],
+     "rms_db": -23.0,
+     "voiced_ratio": 0.93,
+     "median_hz": 200
+    }
+   ],
+   "spectral_centroid_hz": 1774,
+   "spectral_flatness": 0.035
+  },
+  {
+   "line_id": "billu_t2",
+   "character": "billu",
+   "lang": "hi",
+   "voice_id": "7b9mYhmnp0y2qSH1FnBL",
+   "file": "casting/billu/billu_t2.hi.mp3",
+   "take_text": "[alarmed] [loud] Party ने अंदर से ताला मारा है, मौसी।",
+   "credits": 53,
+   "transcript": "पाटी ने अंदर से ताला मारा है! मुसी!",
+   "transcript_autodetect": "पाटी ने अंदर से ताला मारा है! मुसी!",
+   "transcript_en_pass": "The party has locked it from inside, auntie!",
+   "duration_s": 2.8,
+   "speech_s": 2.44,
+   "lead_silence_s": 0.09,
+   "trail_silence_s": 0.27,
+   "pauses": [
+    [
+     1.83,
+     2.05,
+     0.22
+    ]
+   ],
+   "speech_rms_db": -19.2,
+   "ff_mean_db": -20.5,
+   "ff_max_db": -4.0,
+   "voiced_ratio": 0.91,
+   "median_hz": 281,
+   "p10_hz": 205,
+   "p90_hz": 320,
+   "range_semitones": 7.7,
+   "chars_per_speech_s": 14.8,
+   "segments": [
+    {
+     "t": [
+      0.09,
+      1.83
+     ],
+     "rms_db": -18.7,
+     "voiced_ratio": 0.9,
+     "median_hz": 286
+    },
+    {
+     "t": [
+      2.05,
+      2.53
+     ],
+     "rms_db": -21.6,
+     "voiced_ratio": 0.96,
+     "median_hz": 242
+    }
+   ],
+   "spectral_centroid_hz": 2275,
+   "spectral_flatness": 0.041
+  },
+  {
+   "line_id": "billu_t3",
+   "character": "billu",
+   "lang": "en",
+   "voice_id": "7b9mYhmnp0y2qSH1FnBL",
+   "file": "casting/billu/billu_t3.en.mp3",
+   "take_text": "[quick] Yes, Mausi. Light's on. Three o'clock, I'll have the car at the door.",
+   "credits": 77,
+   "transcript": "Yes, Mossy. Lights on. Three o'clock, I'll have the car at the door.",
+   "transcript_autodetect": "Yes, Mossy. Lights on. Three o'clock, I'll have the car at the door.",
+   "duration_s": 3.6,
+   "speech_s": 3.33,
+   "lead_silence_s": 0.04,
+   "trail_silence_s": 0.23,
+   "pauses": [
+    [
+     0.6,
+     0.83,
+     0.23
+    ],
+    [
+     1.32,
+     1.68,
+     0.36
+    ]
+   ],
+   "speech_rms_db": -20.6,
+   "ff_mean_db": -22.0,
+   "ff_max_db": -2.5,
+   "voiced_ratio": 0.71,
+   "median_hz": 150,
+   "p10_hz": 110,
+   "p90_hz": 421,
+   "range_semitones": 23.2,
+   "chars_per_speech_s": 20.7,
+   "segments": [
+    {
+     "t": [
+      0.04,
+      0.6
+     ],
+     "rms_db": -20.2,
+     "voiced_ratio": 0.64,
+     "median_hz": 140
+    },
+    {
+     "t": [
+      0.83,
+      1.32
+     ],
+     "rms_db": -20.3,
+     "voiced_ratio": 0.51,
+     "median_hz": 152
+    },
+    {
+     "t": [
+      1.68,
+      3.37
+     ],
+     "rms_db": -20.9,
+     "voiced_ratio": 0.79,
+     "median_hz": 153
+    }
+   ],
+   "spectral_centroid_hz": 1656,
+   "spectral_flatness": 0.033
+  },
+  {
+   "line_id": "billu_t4",
+   "character": "billu",
+   "lang": "en",
+   "voice_id": "7b9mYhmnp0y2qSH1FnBL",
+   "file": "casting/billu/billu_t4.en.mp3",
+   "take_text": "[teasing] Jijaji wants to meet Mausi? [laughs] Mausi doesn't meet anyone.",
+   "credits": 73,
+   "transcript": "Jeeja wants to meet Mossy? Mossy doesn't meet anyone.",
+   "transcript_autodetect": "Jeeja wants to meet Mossy? Mossy doesn't meet anyone.",
+   "duration_s": 5.12,
+   "speech_s": 4.98,
+   "lead_silence_s": 0.02,
+   "trail_silence_s": 0.12,
+   "pauses": [
+    [
+     2.05,
+     2.38,
+     0.33
+    ],
+    [
+     2.65,
+     2.8,
+     0.15
+    ]
+   ],
+   "speech_rms_db": -23.0,
+   "ff_mean_db": -23.8,
+   "ff_max_db": -4.8,
+   "voiced_ratio": 0.85,
+   "median_hz": 195,
+   "p10_hz": 105,
+   "p90_hz": 267,
+   "range_semitones": 16.2,
+   "chars_per_speech_s": 10.8,
+   "segments": [
+    {
+     "t": [
+      0.02,
+      2.05
+     ],
+     "rms_db": -23.6,
+     "voiced_ratio": 0.92,
+     "median_hz": 190
+    },
+    {
+     "t": [
+      2.38,
+      2.65
+     ],
+     "rms_db": -24.3,
+     "voiced_ratio": 0.47,
+     "median_hz": 186
+    },
+    {
+     "t": [
+      2.8,
+      5.0
+     ],
+     "rms_db": -22.3,
+     "voiced_ratio": 0.82,
+     "median_hz": 200
+    }
+   ],
+   "spectral_centroid_hz": 1670,
+   "spectral_flatness": 0.034
+  },
+  {
+   "line_id": "chhoti_t1",
+   "character": "chhoti",
+   "lang": "hi",
+   "voice_id": "2lLgWMtK52t50e2eLKAk",
+   "file": "casting/chhoti/chhoti_t1.hi.mp3",
+   "take_text": "[cheerful] [giggles] मौसी, मेहँदी सूख गई। सो जाऊँ?",
+   "credits": 50,
+   "transcript": "मासी महेंदी सुग गई सोजा हूँ",
+   "transcript_autodetect": "मासी महेंदी सुग गई सोजा हूँ",
+   "transcript_en_pass": "Maasi, Mehendi is asleep. Sleep.",
+   "duration_s": 4.48,
+   "speech_s": 4.1,
+   "lead_silence_s": 0.05,
+   "trail_silence_s": 0.33,
+   "pauses": [
+    [
+     3.23,
+     3.56,
+     0.33
+    ]
+   ],
+   "speech_rms_db": -21.6,
+   "ff_mean_db": -22.6,
+   "ff_max_db": -4.7,
+   "voiced_ratio": 0.73,
+   "median_hz": 308,
+   "p10_hz": 235,
+   "p90_hz": 444,
+   "range_semitones": 11.0,
+   "chars_per_speech_s": 7.1,
+   "segments": [
+    {
+     "t": [
+      0.05,
+      3.23
+     ],
+     "rms_db": -22.0,
+     "voiced_ratio": 0.7,
+     "median_hz": 308
+    },
+    {
+     "t": [
+      3.56,
+      4.15
+     ],
+     "rms_db": -19.9,
+     "voiced_ratio": 0.88,
+     "median_hz": 267
+    }
+   ],
+   "spectral_centroid_hz": 2078,
+   "spectral_flatness": 0.031
+  },
+  {
+   "line_id": "chhoti_t2",
+   "character": "chhoti",
+   "lang": "hi",
+   "voice_id": "2lLgWMtK52t50e2eLKAk",
+   "file": "casting/chhoti/chhoti_t2.hi.mp3",
+   "take_text": "[nervous] [small voice] दीदी, बस एक रात की बात है ना?",
+   "credits": 53,
+   "transcript": "दीदी बस एक राद की बाद है ना",
+   "transcript_autodetect": "दीदी बस एक राद की बाद है ना",
+   "transcript_en_pass": "Sister, it's just a matter of one night, isn't it?",
+   "duration_s": 3.2,
+   "speech_s": 2.89,
+   "lead_silence_s": 0.22,
+   "trail_silence_s": 0.09,
+   "pauses": [
+    [
+     0.9,
+     1.11,
+     0.21
+    ],
+    [
+     1.55,
+     1.76,
+     0.21
+    ]
+   ],
+   "speech_rms_db": -25.6,
+   "ff_mean_db": -26.8,
+   "ff_max_db": -10.9,
+   "voiced_ratio": 0.76,
+   "median_hz": 258,
+   "p10_hz": 211,
+   "p90_hz": 296,
+   "range_semitones": 5.9,
+   "chars_per_speech_s": 10.0,
+   "segments": [
+    {
+     "t": [
+      0.22,
+      0.9
+     ],
+     "rms_db": -24.0,
+     "voiced_ratio": 0.88,
+     "median_hz": 262
+    },
+    {
+     "t": [
+      1.11,
+      1.55
+     ],
+     "rms_db": -26.1,
+     "voiced_ratio": 0.5,
+     "median_hz": 286
+    },
+    {
+     "t": [
+      1.76,
+      3.11
+     ],
+     "rms_db": -26.6,
+     "voiced_ratio": 0.79,
+     "median_hz": 250
+    }
+   ],
+   "spectral_centroid_hz": 2000,
+   "spectral_flatness": 0.037
+  },
+  {
+   "line_id": "chhoti_t3",
+   "character": "chhoti",
+   "lang": "en",
+   "voice_id": "2lLgWMtK52t50e2eLKAk",
+   "file": "casting/chhoti/chhoti_t3.en.mp3",
+   "take_text": "[cheerful] [giggles] Mausi, the henna's dry. Can I sleep?",
+   "credits": 57,
+   "transcript": "Maasi, the henna's dry. Can I sleep?",
+   "transcript_autodetect": "Maasi, the henna's dry. Can I sleep?",
+   "duration_s": 4.16,
+   "speech_s": 3.77,
+   "lead_silence_s": 0.04,
+   "trail_silence_s": 0.35,
+   "pauses": [
+    [
+     2.78,
+     3.04,
+     0.26
+    ]
+   ],
+   "speech_rms_db": -21.1,
+   "ff_mean_db": -22.3,
+   "ff_max_db": -2.8,
+   "voiced_ratio": 0.76,
+   "median_hz": 308,
+   "p10_hz": 229,
+   "p90_hz": 444,
+   "range_semitones": 11.5,
+   "chars_per_speech_s": 9.5,
+   "segments": [
+    {
+     "t": [
+      0.04,
+      2.78
+     ],
+     "rms_db": -20.5,
+     "voiced_ratio": 0.75,
+     "median_hz": 308
+    },
+    {
+     "t": [
+      3.04,
+      3.81
+     ],
+     "rms_db": -24.6,
+     "voiced_ratio": 0.8,
+     "median_hz": 341
+    }
+   ],
+   "spectral_centroid_hz": 2067,
+   "spectral_flatness": 0.034
+  },
+  {
+   "line_id": "chhoti_t4",
+   "character": "chhoti",
+   "lang": "en",
+   "voice_id": "2lLgWMtK52t50e2eLKAk",
+   "file": "casting/chhoti/chhoti_t4.en.mp3",
+   "take_text": "[nervous] [small voice] Didi, it's only one night, isn't it?",
+   "credits": 60,
+   "transcript": "DB, it's only one night, isn't it?",
+   "transcript_autodetect": "DB, it's only one night, isn't it?",
+   "duration_s": 3.44,
+   "speech_s": 3.12,
+   "lead_silence_s": 0.24,
+   "trail_silence_s": 0.08,
+   "pauses": [
+    [
+     0.83,
+     1.09,
+     0.26
+    ]
+   ],
+   "speech_rms_db": -26.7,
+   "ff_mean_db": -27.7,
+   "ff_max_db": -11.7,
+   "voiced_ratio": 0.73,
+   "median_hz": 250,
+   "p10_hz": 195,
+   "p90_hz": 308,
+   "range_semitones": 7.9,
+   "chars_per_speech_s": 11.5,
+   "segments": [
+    {
+     "t": [
+      0.24,
+      0.83
+     ],
+     "rms_db": -25.3,
+     "voiced_ratio": 0.84,
+     "median_hz": 281
+    },
+    {
+     "t": [
+      1.09,
+      3.36
+     ],
+     "rms_db": -27.2,
+     "voiced_ratio": 0.71,
+     "median_hz": 246
+    }
+   ],
+   "spectral_centroid_hz": 1907,
+   "spectral_flatness": 0.048
+  },
+  {
+   "line_id": "constable_t1",
+   "character": "constable",
+   "lang": "hi",
+   "voice_id": "8y8JDNnECG7iMAVsnZGs",
+   "file": "casting/constable/constable_t1.hi.mp3",
+   "take_text": "[flatly] [tired] नाम?",
+   "credits": 21,
+   "transcript": "आम",
+   "transcript_autodetect": "Mom?",
+   "transcript_en_pass": "Mom?",
+   "duration_s": 1.84,
+   "speech_s": 1.29,
+   "lead_silence_s": 0.18,
+   "trail_silence_s": 0.37,
+   "pauses": [
+    [
+     0.59,
+     0.87,
+     0.28
+    ]
+   ],
+   "speech_rms_db": -21.6,
+   "ff_mean_db": -24.2,
+   "ff_max_db": -8.1,
+   "voiced_ratio": 0.85,
+   "median_hz": 148,
+   "p10_hz": 127,
+   "p90_hz": 195,
+   "range_semitones": 7.4,
+   "chars_per_speech_s": 3.1,
+   "segments": [
+    {
+     "t": [
+      0.18,
+      0.59
+     ],
+     "rms_db": -24.0,
+     "voiced_ratio": 0.71,
+     "median_hz": 133
+    },
+    {
+     "t": [
+      0.87,
+      1.47
+     ],
+     "rms_db": -20.5,
+     "voiced_ratio": 0.95,
+     "median_hz": 163
+    }
+   ],
+   "spectral_centroid_hz": 976,
+   "spectral_flatness": 0.014
+  },
+  {
+   "line_id": "constable_t2",
+   "character": "constable",
+   "lang": "hi",
+   "voice_id": "8y8JDNnECG7iMAVsnZGs",
+   "file": "casting/constable/constable_t2.hi.mp3",
+   "take_text": "[flatly] पूरा नाम।",
+   "credits": 18,
+   "transcript": "बुरनां",
+   "transcript_autodetect": "Bura nam.",
+   "transcript_en_pass": "Bura Nam.",
+   "duration_s": 1.12,
+   "speech_s": 0.65,
+   "lead_silence_s": 0.16,
+   "trail_silence_s": 0.31,
+   "pauses": [],
+   "speech_rms_db": -16.8,
+   "ff_mean_db": -19.3,
+   "ff_max_db": -3.9,
+   "voiced_ratio": 1.0,
+   "median_hz": 145,
+   "p10_hz": 118,
+   "p90_hz": 186,
+   "range_semitones": 7.9,
+   "chars_per_speech_s": 13.8,
+   "segments": [
+    {
+     "t": [
+      0.16,
+      0.81
+     ],
+     "rms_db": -16.8,
+     "voiced_ratio": 1.0,
+     "median_hz": 145
+    }
+   ],
+   "spectral_centroid_hz": 807,
+   "spectral_flatness": 0.016
+  },
+  {
+   "line_id": "constable_t3",
+   "character": "constable",
+   "lang": "en",
+   "voice_id": "8y8JDNnECG7iMAVsnZGs",
+   "file": "casting/constable/constable_t3.en.mp3",
+   "take_text": "[flatly] [tired] Name?",
+   "credits": 22,
+   "transcript": "Name?",
+   "transcript_autodetect": "Name?",
+   "duration_s": 1.6,
+   "speech_s": 0.58,
+   "lead_silence_s": 0.55,
+   "trail_silence_s": 0.47,
+   "pauses": [],
+   "speech_rms_db": -19.0,
+   "ff_mean_db": -23.5,
+   "ff_max_db": -8.9,
+   "voiced_ratio": 0.91,
+   "median_hz": 188,
+   "p10_hz": 151,
+   "p90_hz": 222,
+   "range_semitones": 6.7,
+   "chars_per_speech_s": 8.6,
+   "segments": [
+    {
+     "t": [
+      0.55,
+      1.13
+     ],
+     "rms_db": -19.0,
+     "voiced_ratio": 0.91,
+     "median_hz": 188
+    }
+   ],
+   "spectral_centroid_hz": 2225,
+   "spectral_flatness": 0.074
+  },
+  {
+   "line_id": "constable_t4",
+   "character": "constable",
+   "lang": "en",
+   "voice_id": "8y8JDNnECG7iMAVsnZGs",
+   "file": "casting/constable/constable_t4.en.mp3",
+   "take_text": "[flatly] Full name.",
+   "credits": 19,
+   "transcript": "Full name.",
+   "transcript_autodetect": "Full name.",
+   "duration_s": 1.2,
+   "speech_s": 0.63,
+   "lead_silence_s": 0.18,
+   "trail_silence_s": 0.39,
+   "pauses": [],
+   "speech_rms_db": -16.9,
+   "ff_mean_db": -19.7,
+   "ff_max_db": -2.9,
+   "voiced_ratio": 0.84,
+   "median_hz": 157,
+   "p10_hz": 133,
+   "p90_hz": 190,
+   "range_semitones": 6.2,
+   "chars_per_speech_s": 15.9,
+   "segments": [
+    {
+     "t": [
+      0.18,
+      0.81
+     ],
+     "rms_db": -16.9,
+     "voiced_ratio": 0.84,
+     "median_hz": 157
+    }
+   ],
+   "spectral_centroid_hz": 1108,
+   "spectral_flatness": 0.018
+  }
+ ]
+}

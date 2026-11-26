@@ -1,0 +1,190 @@
+{
+  "episode_id": "s2e03",
+  "series_id": "series2",
+  "status": "planned",
+  "status_note": "Planned only. No audio generated, nothing listened to. The separate runner generates the two one-off cues below once each through the connector (library cues come from content/series2/sound/), fits them to planned_duration_s with ffmpeg and records ids, probes and credits in this folder's manifest.jsonl.",
+  "authority": [
+    "D-011 reuse: library cues by cue_id; only sounds the library lacks are one-offs here.",
+    "D-014 rule 6 / D-0M2: shots follow measured voice, so every cue is anchored to a beat, a line id or a silence, never to fixed seconds. S13 places them against measured takes.",
+    "D-0M4: -14 LUFS integrated, true peak about -1 dBTP, tolerance +/-0.5 LU.",
+    "D-009 route b, eleven_text_to_sound_v3 for effects.",
+    "D-019: s2e03 passed series2 Gate 2 (8.1)."
+  ],
+  "sources": [
+    "content/series2/episodes/s2e03/script.hi.json and script.en.json (beats, sfx_notes, music_note, silences, writer_notes)",
+    "content/series2/sound/library.json (cue ids, mix starting gains and phone filters, notes for s2e03)"
+  ],
+  "languages": "One cue sheet for both cuts. Line ids l01 to l27 and the beat silences are identical in Hindi and English (checked: same ids per beat, same silent_seconds). Anchors are line starts and ends, so no cue sits on a language-specific word except the vibrate stop at l01's first word.",
+  "anchor_format": "at: 'lNN.start' / 'lNN.end' = start / end of the measured take; 'bN.silence' = the beat's scripted silence (positions as in writer_notes: b1 before l01, b3 before l07, b4 before l08, b5 before l12, b6 before l13, b7 before l18, b8 between l21 and l22, b9 before l25, b10 1.0 s before l27 and 1.5 s after it); 'bN.shotK' = that still.",
+  "library_cues_used": [
+    {
+      "cue_id": "amb_talkies_lobby",
+      "role": "bed",
+      "span": "b1 first picture (after the buzz has started on black) to the end of the b10 hold",
+      "time_layer": "night",
+      "notes": "Base bed for the whole episode: bulb hum in a big hollow lobby. Fades in over 0.3 s with the first picture of b1, under the buzz; the black before it is buzz only. Ducks -4 dB under Bhaiyaji's speaker lines l03 to l06 (sfx_notes b2). b3 hold after the call-end tones: bulb hum alone (crickets and clock pulled out, see their entries). Ducks a further -4 dB under l17 and 'right down' (-8 dB) from l27.start through the 1.5 s hold. Hard cut to total silence with the music at the end of the b10 hold, so the question card lands in silence."
+    },
+    {
+      "cue_id": "lyr_night_crickets",
+      "role": "layer on amb_talkies_lobby",
+      "span": "b1 to the end of b10",
+      "notes": "Through the open lobby doors: high-pass about 300 Hz, a little room reverb, at layer gain minus 2 dB (lowest of the series' night beds, per library). Out for the b3 hold (0.2 s fade after the call-end tones, back with a 0.5 s fade at b4 shot 1, Pushpa in the doorway out of the dark). Lowered a further 4 dB through b5's near-silence. Follows the bed's ducks under l17 and l27."
+    },
+    {
+      "cue_id": "sfx_wall_clock_tick",
+      "role": "layer (placed loop)",
+      "span": "b1 to the end of b10, except the b3 hold",
+      "notes": "Slow tick, whole episode (sfx_notes bed). Played at layer gain (about -28), not sfx gain. Pulled out with the crickets for the b3 hold, back at b4. Most audible in b5's 1.5 s near-silence (up 3 dB there, back down at l12.start). Under l27 and the hold it follows the bed down; the clock is in the b10 shot 2 frame. Loop by crossfade at a tick boundary so the rhythm never doubles."
+    },
+    {
+      "cue_id": "sfx_keypad_vibrate",
+      "role": "point",
+      "at": "b1.silence: starts on black, before the first picture; runs 1.5 s before l01.start; stops dead at l01.start",
+      "notes": "Shared series effect. Starts at frame 0 on black (no bed under it yet); picture cuts in on it. Hard stop with no tail at l01.start (allow at most 0.1 s overlap into the onset of 'भैयाजी' / the English word, then cut). sfx gain. If the 3.0 s file is longer than the measured span, use its head; never fade it out."
+    },
+    {
+      "cue_id": "sfx_keypad_key_click",
+      "role": "point",
+      "at": "between l02.end and l03.start, about 0.25 s before l03.start",
+      "notes": "Nirala presses speaker; the b2 shot 1 still shows his finger just lifting off the key. Single click, sfx gain -4 dB (soft). Must end before l03.start."
+    },
+    {
+      "cue_id": "sfx_keypad_call_end",
+      "role": "point",
+      "at": "b3: 0.2 s after l06.end, before the 1.2 s hold",
+      "notes": "Click and three end-of-call tones through the same small-speaker filter as Bhaiyaji (it is the phone's own speaker). The 1.2 s hold of bulb hum alone counts from the end of the tones, before l07. This adds about 1.6 s to the b3 gap that the script's silence total does not count; if the edit shortens silences (D-0M2), shorten the hold, never cut the tones."
+    },
+    {
+      "cue_id": "sfx_steps_terrazzo",
+      "role": "point",
+      "at": "b4.silence (shot 1, Pushpa in the doorway): the 1.0 s before l08.start",
+      "notes": "Quick steps coming in from the dark: use 3 to 4 steps from the file, tempo up (pitch-neutral, as the library note says), starting a little further off (low-pass about 5 kHz, -4 dB) and arriving closer. Last step lands before l08.start; nothing under l08 but the breath."
+    },
+    {
+      "cue_id": "sfx_far_dog",
+      "role": "point",
+      "at": "b5.silence (the 1.5 s held top-down insert of hands), centred in the silence",
+      "notes": "One far bark only: cut the first bark from the file (the prompt gives two), with its echo, and end it at least 0.2 s before l12.start. Low-pass about 4 kHz, sfx gain -12 dB: far across the town. Never under a line. No music in b5."
+    },
+    {
+      "cue_id": "lyr_phone_line_hiss",
+      "role": "layer under the DSP's filtered lines",
+      "span": "l13.start to l17.end, only while a DSP line plays (0.1 s fades either side of each DSP line)",
+      "notes": "Sits under the earpiece filter on l13, l15, l16 and l17 at layer gain minus 4 dB. Not under l14 (Nandini, dry, in the room) and not under Bhaiyaji's loudspeaker lines (a small speaker in the room, not an earpiece). Out at l17.end; b7 opens after the call, phone lowered."
+    },
+    {
+      "cue_id": "sfx_far_train_horn",
+      "role": "point",
+      "at": "b7/b8: starts 0.2 s after l20.end (only after the last word of l20), never before",
+      "notes": "Low and far: low-pass about 2.5 kHz, sfx gain -10 dB. Its tail fades under b8 shot 1 and l21, at least 10 dB under the dialogue during l21, and must be fully gone by l21.end so b8's 1.5 s silence holds only the leather and the wood. If the measured l21 is short, fade the horn faster; do not delay l21."
+    },
+    {
+      "cue_id": "sfx_holster_unbutton",
+      "role": "point",
+      "at": "b8.silence (after l21.end): starts about 0.1 s into the 1.5 s silence",
+      "notes": "Leather creak and press-stud pop, close, sfx gain. No metallic gun foley anywhere: the revolver is wood (script b8)."
+    },
+    {
+      "cue_id": "sfx_wood_revolver_knock",
+      "role": "point",
+      "at": "b8.silence: about 1.0 s into the silence, after the unbutton, ending before l22.start",
+      "notes": "One light hollow knock of wood laid on wood (the desk is the old booking counter), sfx gain -2 dB. The b8 shot 2 still shows his fingers just leaving it as l22 starts. No sting, no music, nothing else in the silence."
+    },
+    {
+      "cue_id": "sfx_cuffs_unlock",
+      "role": "point",
+      "at": "b10.silence: inside the 1.0 s before l27.start, about 0.3 s into it",
+      "notes": "One dry metallic click of the cuffs opening; it must be completely over (tail included) at least 0.3 s before l27.start. sfx gain -2 dB: a small sound in a quiet room, not a stab. The only metal sound in the episode."
+    },
+    {
+      "cue_id": "mus_tension_note",
+      "role": "music",
+      "span": "two uses: (1) b6.silence to the end of b7; (2) b10 first frame to the end of the b10 hold",
+      "notes": "Use 1: enters in b6's 1.0 s silence before l13 with a 2 s fade-in from nothing (barely audible), under the DSP call; ducks -8 under every line and a further -4 under l17 so every word of it is clear. Holds thinly through b7. Fades out over about 1.5 s starting at l20.end, as the horn comes in, fully out by l21.start: no music anywhere in b8 or b9 (the revolver is played straight, no sting). The b6-b7 span is about 43 s of targets, longer than the 40 s file: crossfade a second section in at a line gap (the prompt keeps the level steady so any section works). Use 2: back at b10's first frame with a 1.0 s fade-in, soft, from a different section of the file than use 1; ducked under l27 and kept low through the 1.5 s hold; hard cut to silence, with the bed, at the end of the hold. Instrumental only, no melody, no percussion."
+    }
+  ],
+  "one_off_cues": [
+    {
+      "cue_id": "sfx_s2e03_knit_bag_thump",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A soft cloth knitting bag stuffed with balls of wool and a pair of wooden knitting needles, swung off a shoulder and settling against the edge of a wooden counter: one soft, muffled, padded thump with a faint dry wooden click of needles inside it, close, in a quiet hall. No metal, no voices.",
+      "planned_duration_s": 1.0,
+      "loop": false,
+      "used_at": [
+        {
+          "at": "b4: on the last footstep, just before l08.start",
+          "beat": "b4",
+          "note": "sfx gain -4 dB. Ends before l08.start or sits at least 10 dB under its first syllable."
+        }
+      ],
+      "why_one_off": "Named for s2e03 b4 only (library one_offs_left_to_episode_sheets).",
+      "status": "generated"
+    },
+    {
+      "cue_id": "sfx_s2e03_pushpa_breath",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "An older woman out of breath after walking fast, breathing through her mouth: about five quick, audible breaths that slowly ease and settle, close, quiet room. Breath only: no voice, no words, no humming, no coughing, no footsteps.",
+      "planned_duration_s": 3.0,
+      "loop": false,
+      "used_at": [
+        {
+          "at": "b4: from the start of the 1.0 s footsteps silence, under l08, faded out by l08.end",
+          "beat": "b4",
+          "note": "Over the steps at sfx gain -6 dB; under l08 drops to about -14 dB below the dialogue and keeps fading, gone by l08.end: the script has the breath die away before l09. l08 carries a [sighs] tag in the take, so let the take's own sigh sit on top; pull the effect out completely around the sigh if the two double up. If the generation contains any vocalising, drop the cue and rely on the take's sigh (one retake at most, 17 credits)."
+        }
+      ],
+      "why_one_off": "Pushpa's breath appears only in s2e03 b4 (library one_offs list). It is a non-speech effect, so it is not a voice take.",
+      "status": "generated"
+    }
+  ],
+  "mix": {
+    "dialogue_first": true,
+    "loudness_target": "-14 LUFS integrated, -1 dBTP, tolerance +/-0.5 LU (D-0M4)",
+    "starting_gains_db": {
+      "music": -18,
+      "music_duck_under_dialogue": -8,
+      "ambience": -24,
+      "ambience_layer": -28,
+      "sfx": -10
+    },
+    "starting_gains_note": "From library mix: music -18, music under dialogue -8 further, ambience -24, ambience layer -28, sfx -10. Per-cue offsets above are relative to these. S13 sets final levels. (S13, 26 Nov: the numbers moved into a mapping so build_timeline.py can read them; values unchanged, from the library mix.)",
+    "phone_filters": [
+      "l03, l04, l05, l06 (Bhaiyaji): library 'small_speaker': band-pass a little wider than the earpiece (about 250-5000 Hz), small-room echo off the terrazzo. Wide enough that every consonant survives (sfx_notes b2). sfx_keypad_call_end goes through the same chain. No line hiss.",
+      "l13, l15, l16, l17 (DSP): library 'earpiece': band-pass about 300-3400 Hz, light saturation, lyr_phone_line_hiss under it; narrower than Bhaiyaji's speaker, still intelligible. Dry, no room echo (it is at her ear).",
+      "Every other line is dry and unfiltered, including l14 (Nandini on the call)."
+    ],
+    "ducking": [
+      "All music ducks -8 dB under every line (library default).",
+      "b1: the buzz plays alone on black; bed fades in with the first picture; buzz cut dead at l01.start.",
+      "l03 to l06: the bed (lobby, crickets, clock) ducks -4 dB so the filtered speaker voice sits clear.",
+      "b3 hold: after the call-end tones, only the bulb hum (crickets and clock out) for the 1.2 s; they return at b4 shot 1.",
+      "l08: breath under the line at least 14 dB below the dialogue and fading out by l08.end.",
+      "l17: bed a further -4 dB and music a further -4 dB, so every word of the price is clear; both return after l17.end.",
+      "l21: horn tail at least 10 dB under the line and gone by l21.end.",
+      "l27 and the 1.5 s hold: bed down -8 dB ('right down') and music ducked; hard cut of everything to silence at the end of the hold."
+    ],
+    "music_in_out": [
+      "b1 to b5: no music at all. Phone, bulb, crickets, clock, steps and one dog only.",
+      "mus_tension_note IN in b6.silence (2 s fade-in from nothing), ducked under l13 to l17, thin through b7, OUT on a 1.5 s fade from l20.end, gone by l21.start.",
+      "b8 and b9: no music. No sting anywhere in the episode (music_note; library mus_sting note).",
+      "mus_tension_note IN again at b10's first frame (1.0 s fade-in), ducked under l27, low through the hold, HARD CUT to silence with the bed at the end of the hold; the question card plays in silence."
+    ],
+    "hard_rules": [
+      "The buzz stops dead at l01.start, no tail.",
+      "Nothing loud anywhere in b6: no train, no door, no effect at all under a DSP line except the line hiss.",
+      "The train horn starts only after l20.end and never sits near the DSP call.",
+      "b8's 1.5 s silence holds only the holster and the wood knock: horn and music gone, no metal.",
+      "The cuffs click is over before l27.start.",
+      "The episode ends in total silence: bed and music cut together at the end of the b10 hold."
+    ],
+    "trim_order_sound_note": "writer_notes trims silences first: the b10 hold, then the b5 and b8 silences. If b5 shortens, the dog bark stays only if it still ends 0.2 s before l12; otherwise drop it before squeezing it under the line. If b8 shortens below about 1.2 s, keep the knock and shorten the unbutton's head. If the b10 hold shortens, the hard cut to silence moves with it. The b3 call-end tones are not cut; its 1.2 s hold shortens instead."
+  },
+  "counts": {
+    "library_cues_used": 14,
+    "one_off_cues": 2,
+    "one_off_generations": 2
+  },
+  "credit_note": "Estimate from the proof manifests, not a measurement: 17 credits per eleven_text_to_sound_v3 generation, so about 34 credits for the two one-offs (51 if the breath needs its one retake). Library cues are made once for the series and cost nothing here."
+}

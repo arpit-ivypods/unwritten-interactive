@@ -1,0 +1,149 @@
+{
+ "scene": "proof/flat2d",
+ "reviewer": "S15 Screening",
+ "round": 3,
+ "date": "2026-11-26",
+ "pass": true,
+ "precondition_d015_rule3": "Met. voice/manifest.jsonl (36 rows) and sound/manifest.jsonl (9 rows) hold no placeholder rows; renders measure -14.0 (hi) and -14.1 (en) LUFS; hi and en files differ (md5 and audio md5 differ).",
+ "verdict": "Pass at 7/10, with no blocking issue. Nobody has listened to it, and nobody can. Voice is placed exactly where the timeline says, cues start on speech, levels meet the target, subtitles burn on exactly the cue frames, and the round 2 frame faults in s07 and s09 are fixed. Four problems remain. The music bed is almost inaudible: it is ducked without a break from frame 294 to 981 (hi), and the held layer sits around -50 to -58 dBFS in the master. So the 'music stops dead on the first buzz' beat is barely there, and the sting is hidden under the buzz. English l10 take 2 drops 'And', so speech and subtitle differ. The nine take-2 retakes have no review rows. s05 still shows an empty shelf.",
+ "files_screened": [
+  "render/proof.hi.mp4",
+  "render/proof.en.mp4",
+  "render/proof.hi.review.mp4",
+  "render/proof.en.review.mp4"
+ ],
+ "scores": {
+  "sync": {
+   "score": 9,
+   "basis": "I cross-correlated each dialogue clip (5 ms envelopes) against the render: all 13 clip placements per language are at offset 0 ms, except l02 at -5 ms. I measured speech with silencedetect (-40 dB/50 ms) on the takes as placed. Every cue starts within 34 ms of its speech (hi max 0.034 s, en max 0.033 s), well inside 0.2 s. Cue ends are within 35 ms, except holds that are intended (l02, l05, l07 'बबलू!/Bablu!' held to the 800 ms minimum) and the l06 cue clamped to its cut. The l06 stub ('ma—') sits under l07's onset and l11 under the first buzz, as scripted. The s08 shake (frames 979-1008 and 1039-1052, hi) matches the measured buzz pulses (979-1007 and 1039-1067) within 1 frame. Audio goes silent on the cut to black (frame 1168 hi / 1157 en is the last with sound, the black frame after is digital silence)."
+  },
+  "pacing": {
+   "score": 7,
+   "basis": "39.33 s hi and 38.97 s en against 30.3 s planned (+30%). The overrun comes from the voice's pace, which D-0M2 accepts. Gaps between lines are tight (0.17-0.6 s), with the scripted 1.27 s silence on the laddoo, 3.07 s on the buzzing phone before l12, and a 1.57 s hold after l12. Spoken pacing and comic timing were not heard."
+  },
+  "audio_levels": {
+   "score": 6,
+   "basis": "Integrated -14.0 LUFS hi and -14.1 en (ebur128), true peak -1.1 and -1.0 dBTP as ffmpeg's ebur128 rounds it, LRA 7.8/7.7 LU. The review cuts carry the same audio stream (audio md5 identical). I rebuilt the stems from the timeline. Pre-master dialogue is -19.7/-20.0 LUFS and music before ducking -38.4, so music is about 19 LU under dialogue before the -8 dB duck. With holdGap 20, the duck spans are [26-265], [294-981] and [1065-1127] (hi), so the music is never heard unducked except for about 0.5 s on the laddoo insert. The ducking does not show as dips in any loudness trace, because the music is ducked the whole time. Estimated master-level music RMS: motif -37 to -41 dBFS in s02-s04, held layer -50 dBFS in s05-s07 and -58 dBFS on the punch-in. Dialogue runs -12 to -22 dBFS. Dialogue is clearly intelligible: local whisper.cpp transcribed every line of the full mix in both languages. The music is close to inaudible on a phone speaker."
+  },
+  "music_and_sound": {
+   "score": 5,
+   "basis": "Placement is correct. The motif runs from the s02 cut to the s06 cut, then the held layer runs to frame 978 with a 1-frame fade-out, a hard stop on the first buzz frame. Clink at the s03 cut, breath/torch at the s05 cut on l07's onset, padlock at the s06 cut under l08, keyring at the s07 cut before l09, buzz from the s08 cut. l12 starts 2-3 frames after a pulse ends and the pulse under it is at -28 dB. The cut to black lands 10 frames into a pulse. Problems: the held layer is too quiet for its stop to register. The sting starts on the same frame as the buzz, which plays at about -15 dBFS RMS, so it is masked. Only two pulses fall in the phone insert where the script says three (the sound QC accepted this, since the generated cycle is 2.0 s). In hi, buzz#2 starts at file 4.9 s, so a 6-frame full-level pulse tail (frames 1125-1131, -19 to -25 dBFS) pops right after l12. No phone filter is used, which is correct: no line in this scene is heard through a phone."
+  },
+  "subtitles": {
+   "score": 9,
+   "basis": "18 hi and 17 en cues. I compared the clean and review cuts frame by frame in the subtitle band (rows 1250-1750): burned frames equal cue frames exactly, hi 805/805 and en 796/796, none missing or extra. No cue spans a picture cut. English two-line cues break where they were written ('That cash has to be in / court at nine a.m.!', 'There are only two keys, / madam. One is with you...'), so the D-012 pre-line fix holds. The texts match the scripts. One mismatch with speech: en c14 shows 'And the other...', but the take used (voice/en/l10.mp3 = l10.t2.mp3) does not say 'And'."
+  },
+  "transcript_vs_script": {
+   "score": 8,
+   "basis": "whisper.cpp ggml-small on the full renders. en: every line matches the script except l10 ('The other is with Bada Sahab.', no 'And'). Spelling-level variants ('Pablu', 'Moti Chur', 'laddu', '20') are recogniser noise. hi: all twelve lines are recognisable ('वादाम लोकर कहाली है', 'बीस लाक कैश गायब मैटम', 'मुथी चूर का है / माद...', 'ना बजे ये कैश कोट में प्रदूस करना है', 'चाभी तो ही है मैटम एक आपके पास', 'और दूसरी बड़े साहब के पास', 'पर वो तो लीफ पर', 'साहब को कैसे पता चला'). These are the small model's usual Hindi errors, not wrong words. On the isolated take en l10 t2, whisper still produced no 'And' even when prompted with the script line. On t1 it does."
+  },
+  "continuity": {
+   "score": 8,
+   "basis": "Fixed since round 2: s09's key fist has a bare wrist with no watch, and s07 and the punch-in show the laddoo on the middle shelf. The English review cut now exists. Holding: Meenu's mole, strand, bun, two-bar epaulettes, lantern patch and the watch on her left wrist (s02, s05, s06). Bablu's moustache, muffler, vest and torch hold. The caller-name layer is registered in both languages. Still open: in s05 the open locker behind them has bare shelves, so the laddoo is missing. On the s07 punch-in Bablu is only a sliver (torch and sleeve) during his own line l11. Bablu's height in s07 is accepted under D-017. His hair is fuller in s01 than in s05 and s07."
+  },
+  "completeness": {
+   "score": 9,
+   "basis": "No placeholders in any manifest, timeline meta or frame. All 4 renders are present. The voice review has no rows for the nine take-2 files actually used (hi l01, l03, l09, l10, l12; en l03, l08, l09, l10). Three of them (hi l10, hi l12, en l10) were retaken because the first take came out whispered, and nobody has checked whether take 2 is voiced."
+  },
+  "grip_and_ending": {
+   "score": 7,
+   "basis": "With real voices the scene reads clearly from picture, transcript and subtitles. The cold open question, laddoo reveal, cut-off, key logic and caller reveal all land in order. It ends on 'साहब को कैसे पता चला? / How did Sahab come to know?' over the ducked buzz, then a final pulse, then a hard cut to black and silence. A comic-noir caper also needs the score's tone and its hard stop, and those are near-inaudible now. Performance and comic timing cannot be judged by any agent."
+  },
+  "overall": 7
+ },
+ "resolved_since_round_2": [
+  {"owner": "voice", "issue": "No voice existed", "evidence": "36 manifest rows, 24 used takes, all eleven_v4, transcribed in the render."},
+  {"owner": "sound", "issue": "No sound existed", "evidence": "9 cues generated (sound/manifest.jsonl, placeholder false). The sfx stem measures -20.7 LUFS pre-master."},
+  {"owner": "editor", "issue": "Silent audio track", "evidence": "-14.0/-14.1 LUFS, true peak -1.1/-1.0 dBTP."},
+  {"owner": "frames", "issue": "s09 key fist wore the watch", "evidence": "Frame 1110 hi: bare wrist on the fist holding the key."},
+  {"owner": "frames", "issue": "Laddoo missing from the locker in s07", "evidence": "Frames 771 and 950 hi: laddoo on the middle shelf."},
+  {"owner": "subtitles", "issue": "English c09 overhung the punch-in by 3 frames", "evidence": "No cue spans a picture cut in either language (cue frames against meta.picture_cuts)."},
+  {"owner": "editor", "issue": "No English review cut", "evidence": "render/proof.en.review.mp4 present. Burned frames 796/796 match the cues."},
+  {"owner": "subtitles", "issue": "Timing not checked against speech", "evidence": "Cue start minus measured speech start is within 34 ms on all 35 cues."}
+ ],
+ "problems": [
+  {
+   "owner": "editor",
+   "severity": "medium",
+   "issue": "The music bed is almost inaudible, and its hard stop on the first buzz barely registers. Ducking runs without a break from 294 to 981 (hi) and from 272 to 970 (en), because holdGap 20 bridges every gap between lines. The motif sits at about -37 to -41 dBFS RMS in the master, the held layer at about -50 dBFS in s05-s07 and -58 dBFS on the punch-in, against dialogue at -12 to -22 dBFS.",
+   "fix": "In build_timeline.py: (1) set duck:false on the three mus_caper_bed#held pieces, and raise music_held_db from -4 to +4 dB. Check for clipping on the pre-master. (2) Raise music_motif_db from -18 to -14 and set ducking.holdGap to 8 frames, so the motif comes up in the 0.3-1.3 s gaps. (3) Re-render. Verify by rebuilding the stems: the held layer should sit about -32 to -36 dBFS RMS in the master, and the motif about 12-16 dB under the dialogue's p50 during lines, with visible rises in the gaps. Keep the hard stop at the first buzz frame."
+  },
+  {
+   "owner": "editor",
+   "severity": "low",
+   "issue": "mus_stop_sting starts on the same frame as the first buzz (978 hi / 967 en). The buzz plays at about -15 dBFS RMS, so the sting (about -35 dB, per the editor's own estimate) is masked.",
+   "fix": "Remove the mus_stop_sting entry from both timelines and let the audible held layer's hard stop carry the beat (fix above). Note the removal in timeline meta.notes."
+  },
+  {
+   "owner": "editor",
+   "severity": "low",
+   "issue": "hi only: sfx_s08_phone_buzz#2 starts at frame 1125 with trimBefore 147 (file 4.9 s), inside a pulse. This gives a 6-frame full-level buzz fragment (frames 1125-1131, -19 to -25 dBFS) 4 frames after l12 ends, which can sound like a glitch. en starts at file 5.03 s and is almost clean.",
+   "fix": "In the hi timeline, set buzz#2 to start 1131, trimBefore 153, duration 27 (silence until the final pulse at 1158). In en, use trimBefore 153 with the start moved to match, or leave it."
+  },
+  {
+   "owner": "voice",
+   "severity": "medium",
+   "issue": "English l10 take 2 (voice/en/l10.mp3, md5 18f29dd5...) does not say 'And'. whisper.cpp hears 'The other is with Bada Sahab.' with and without a prompt containing 'And'. Take 1 says 'And' but was rejected as whispered. The subtitle c14 shows 'And the other...'.",
+   "fix": "Generate en l10 take 3 on eleven_v4 with the text '[grim] And the other... is with Bada Sahab.'. Accept it only if whisper.cpp hears 'And' and the second segment is voiced, measured as voice/review.json does. Then the editor reruns build_timeline.py, build_subs.py and render.sh for en. If no take 3 is made, the editor removes 'And' from en c14 and logs it in subs.method.md."
+  },
+  {
+   "owner": "voice",
+   "severity": "low",
+   "issue": "voice/review.json has no rows for the nine take-2 files the cut uses (hi l01, l03, l09, l10, l12; en l03, l08, l09, l10). hi l10, hi l12 and en l10 were retaken because take 1 came out whispered, so whether take 2 is voiced is unchecked. l12 is the ending line and must be voiced (script performance note).",
+   "fix": "Add review rows for the nine *.t2.mp3 files with transcript, length, silences and segment voiced ratio, the same way as the take-1 rows. If hi l12 t2 is still whispered, switch to voice/hi/l12.v3.mp3, which the review found voiced. The editor then rebuilds hi."
+  },
+  {
+   "owner": "frames",
+   "severity": "low",
+   "issue": "s05: the open locker behind Meenu and Bablu has bare shelves, so the laddoo is missing between s03 and s07. D-017 rule 1 stops further generations for the proof scenes.",
+   "fix": "No regeneration. Log it as an accepted proof fault in docs/morning-report.md, together with Bablu's hair drift (fuller in s01). In the series, the prop-state frame check under D-013 covers the case."
+  },
+  {
+   "owner": "editor",
+   "severity": "low",
+   "issue": "s07-punch: Bablu is a sliver at the right edge (torch and sleeve cut by the frame) for the whole of his own line l11 (still open from round 2).",
+   "fix": "Optional for the proof scene: change the s07-punch 'to' x from 1.0 to 0.95, so the torch and sleeve leave the frame cleanly. Or accept and log."
+  }
+ ],
+ "measurements": {
+  "video": {"codec": "h264, 1080x1920, 30 fps", "frames": {"hi": 1180, "en": 1169}, "duration_s": {"hi": 39.333, "en": 38.967}, "container_s": {"hi": 39.4, "en": 39.0}},
+  "audio": {
+   "integrated_lufs": {"hi": -14.0, "en": -14.1, "hi_review": -14.0, "en_review": -14.1},
+   "true_peak_dbtp_ebur128_display": {"hi": -1.1, "en": -1.0},
+   "lra_lu": {"hi": 7.8, "en": 7.7},
+   "audio_md5": {"hi_and_hi_review": "2716ec73ecea8259227c39340b5df42a", "en_and_en_review": "8473919c7a64f94cf6704d73d9a0dc1b"},
+   "stems_rebuilt_from_timeline_pre_master_lufs": {"hi": {"dialogue": -19.7, "music_unducked": -38.4, "music_ducked": -44.4, "sfx": -20.7, "mix": -19.3}, "en": {"dialogue": -20.0, "music_unducked": -38.4, "music_ducked": -43.2, "sfx": -20.6, "mix": -19.3}},
+   "implied_master_gain_db": 5.3,
+   "duck_spans_frames": {"hi": [[26, 265], [294, 981], [1065, 1127]], "en": [[27, 238], [272, 970], [1055, 1122]]},
+   "buzz_pulses_hi_frames": [[979, 1007], [1039, 1067], "ducked -28 dB about 1098-1124 under l12", [1159, 1167]],
+   "s08_shake_hi_frames": [[979, 1008], [1039, 1052]]
+  },
+  "md5": {
+   "proof.hi.mp4": "6efcf850117325fd053910cfc331fa25",
+   "proof.en.mp4": "c3680224519af2e2bd0a5dabe02e0e44",
+   "proof.hi.review.mp4": "881b6600b65faf009c833e59f603b379",
+   "proof.en.review.mp4": "a248af95dcd86092b903c5b48947258a"
+  },
+  "clip_placement_xcorr_offset_ms": "0 for every dialogue clip in both languages except l02 (-5 ms); normalised correlation 0.93-1.0, l12 0.74/0.79 (buzz underneath)",
+  "cue_start_minus_speech_start_max_s": {"hi": 0.034, "en": 0.033},
+  "burned_subtitle_frames_vs_cue_frames": {"hi": "805/805, 0 missing, 0 extra", "en": "796/796, 0 missing, 0 extra"}
+ },
+ "checks_run": [
+  "ffprobe and md5 on all four renders; audio-stream md5 clean against review",
+  "ffmpeg ebur128 (peak=true) on all four; per-frame RMS trace of the hi and en masters",
+  "local whisper.cpp (/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin) on both full renders, plus en l10 take 1 and take 2 alone, with and without a script prompt",
+  "envelope cross-correlation of every dialogue clip against the render",
+  "silencedetect -40 dB/50 ms on every placed take, segments merged under 300 ms, compared with every cue",
+  "stems (dialogue, music, sfx) rebuilt with ffmpeg from the timeline entries; the duck envelope reimplemented from production/remotion/src/audio.ts; loudness of each stem and of the pre-master mix",
+  "frame-by-frame subtitle-band difference between clean and review cuts, compared with cue frames",
+  "contact sheets: mid-frame of every shot (hi, en) and mid-frame of every cue (both review cuts); detail frames 528, 950, 1015, 1110 (hi)",
+  "s08 subshot timing against the buzz pulses in the RMS trace"
+ ],
+ "checks_not_run": [
+  "Listening. Nobody can listen: performance, tone, comic timing, whether l12 sounds low and voiced, whether the held layer is a cello, the music's bar lines and the l06/l11 cut-off stubs are all unjudged.",
+  "Voiced/whispered measurement of the take-2 files (no pitch tool used); routed to voice.",
+  "The photoreal make_review.py change in the edit report (not this scene).",
+  "The master-audio.sh retry loop was read but not run by me; I measured only its output.",
+  "Real-time playback; motion judged from stills and the subshot timeline only. Upscale softness of the punch-in not re-checked."
+ ]
+}

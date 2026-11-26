@@ -1,0 +1,186 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,100"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 100
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,100",
+				"to": "00:00:00,320"
+			},
+			"offsets": {
+				"from": 100,
+				"to": 320
+			},
+			"text": " At"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,320",
+				"to": "00:00:00,660"
+			},
+			"offsets": {
+				"from": 320,
+				"to": 660
+			},
+			"text": " two,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,660",
+				"to": "00:00:01,040"
+			},
+			"offsets": {
+				"from": 660,
+				"to": 1040
+			},
+			"text": " I'll"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,040",
+				"to": "00:00:01,330"
+			},
+			"offsets": {
+				"from": 1040,
+				"to": 1330
+			},
+			"text": " ask"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,330",
+				"to": "00:00:02,180"
+			},
+			"offsets": {
+				"from": 1330,
+				"to": 2180
+			},
+			"text": " Kiran,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,180",
+				"to": "00:00:02,490"
+			},
+			"offsets": {
+				"from": 2180,
+				"to": 2490
+			},
+			"text": " did"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,490",
+				"to": "00:00:03,010"
+			},
+			"offsets": {
+				"from": 2490,
+				"to": 3010
+			},
+			"text": " Bama"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,010",
+				"to": "00:00:03,320"
+			},
+			"offsets": {
+				"from": 3010,
+				"to": 3320
+			},
+			"text": " Ji"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,320",
+				"to": "00:00:03,550"
+			},
+			"offsets": {
+				"from": 3320,
+				"to": 3550
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,550",
+				"to": "00:00:04,110"
+			},
+			"offsets": {
+				"from": 3550,
+				"to": 4110
+			},
+			"text": " groom"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,110",
+				"to": "00:00:04,350"
+			},
+			"offsets": {
+				"from": 4110,
+				"to": 4350
+			},
+			"text": " drink"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,350",
+				"to": "00:00:04,510"
+			},
+			"offsets": {
+				"from": 4350,
+				"to": 4510
+			},
+			"text": " his"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,510",
+				"to": "00:00:04,960"
+			},
+			"offsets": {
+				"from": 4510,
+				"to": 4960
+			},
+			"text": " milk?"
+		}
+	]
+}

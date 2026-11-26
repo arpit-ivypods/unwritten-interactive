@@ -1,0 +1,131 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,120"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 120
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,120",
+				"to": "00:00:00,230"
+			},
+			"offsets": {
+				"from": 120,
+				"to": 230
+			},
+			"text": " I"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,230",
+				"to": "00:00:00,850"
+			},
+			"offsets": {
+				"from": 230,
+				"to": 850
+			},
+			"text": " didn't"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,850",
+				"to": "00:00:01,330"
+			},
+			"offsets": {
+				"from": 850,
+				"to": 1330
+			},
+			"text": " go."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,330",
+				"to": "00:00:01,470"
+			},
+			"offsets": {
+				"from": 1330,
+				"to": 1470
+			},
+			"text": " I"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,470",
+				"to": "00:00:01,620"
+			},
+			"offsets": {
+				"from": 1470,
+				"to": 1620
+			},
+			"text": " was"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,620",
+				"to": "00:00:01,760"
+			},
+			"offsets": {
+				"from": 1620,
+				"to": 1760
+			},
+			"text": " at"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,760",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 1760,
+				"to": 2000
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,000",
+				"to": "00:00:02,640"
+			},
+			"offsets": {
+				"from": 2000,
+				"to": 2640
+			},
+			"text": " shop."
+		}
+	]
+}

@@ -1,0 +1,1424 @@
+{
+  "series_id": "s1",
+  "app_series_id": "series1",
+  "content_dir": "content/series1",
+  "stage": "bible",
+  "written_by": "S1 Showrunner",
+  "date": "2026-11-26",
+  "revision": 2,
+  "revision_decision": "docs/decisions.md D-005 (Gate 1b): the story is approved and the bible file came back once for 22 changes. All 22 are applied in this revision; revision_log at the end of this file says where. Round 2 is the last bible round.",
+  "source_decision": "docs/decisions.md D-003: s1-l2 chosen, with changes. Pitch: content/series1/loglines.json (id s1-l2).",
+  "title": {"hi": "नौवीं पहली रात", "en": "The Ninth First Night"},
+  "look": "photoreal",
+  "genre": "Con-artist chamber thriller",
+  "logline": {
+    "hi": "आठ शादियाँ, और आठ बार सुबह से पहले गहने लेकर ग़ायब। नौवीं रात दूल्हे ने आँखें खोलीं और कहा: 'पूरी पुड़िया डाल दो।' उसे वो औरत चाहिए जो ये दुल्हनें भेजती है, और वो दुल्हन जिसने उसके भाई को लूटा था। उसे नहीं पता कि वो दुल्हन उसी के सामने बैठी है।",
+    "en": "Kiran has married eight men and vanished with the jewellery before each sunrise. On her ninth wedding night the groom opens his eyes and tells her to pour in the whole sachet. He has spent fourteen months making himself her mark, because the sixth husband her gang robbed was his little brother, who was found hanging eleven days later. He wants the woman who runs the brides. He does not know the bride he is hunting is sitting on his bed."
+  },
+  "premise": "A small city in Madhya Pradesh, one night in late April. Kiran, 27, is the vanishing bride of Shakun Mausi's marriage bureau: eight weddings, eight grooms drugged and robbed before sunrise. On her ninth wedding night the groom, a pharmacist named Aditya, has padlocked the door and planned the whole marriage to reach Mausi, and to find the bride whose theft drove his brother to suicide. That bride is Kiran. At 2 am she must give Mausi one of two coded answers on a live call.",
+  "tone": "Locked-room con thriller played in close-ups: two people, one bed, one glass of milk and a phone. Adult and tense, never graphic: the death is spoken of, the threat is a calm sentence, the violence is a hand on a wrist. Thin, dry humour from Billu and from Mausi's warmth. Warm lamp against cold streetlight. Quick spoken Hinglish; silences and objects carry as much as lines. Branch A becomes a daylight sting, branch B a night siege.",
+  "id_convention": {
+    "episodes": "s1e01 and s1e02 are shared; s1a01 to s1a03 are branch A; s1b01 to s1b03 are branch B. This is the form in the orchestrator's brief and in app/public/media/series1/series.json. The story-bible skill template and loglines.json write the same episodes as e01, e02, a03-a05, b03-b05; each episode entry below carries that form as logline_id.",
+    "glimpses": "s1ga and s1gb, as in the app manifest.",
+    "beats": "b1 onward inside each episode. Ids are stable across revisions, so that D-005 and the critic's notes still point at the same beats: a beat that was merged or cut leaves a gap, its id is not reused, and an added beat takes a letter. After D-005 the gaps are s1e01 b7 (folded into b6), s1e02 b8 (into b4) and b11 (into b10), s1a01 b4 (cut) and s1a03 b9 (into b8); the one added beat is s1b01 b5a. who lists everyone in the beat, including a voice on a phone; the script's on_screen decides who is visible. Script line ids belong to the episode writer.",
+    "quoted_lines": "Hindi lines quoted inside beats are anchor lines. The ones listed in story_locks.locked_lines are fixed; the rest are suggested wording the episode writer may improve."
+  },
+  "timeline": {
+    "season": "Late April: a warm night, the window open, sunrise at about 5:35 am.",
+    "backstory": [
+      "13 years ago: Tulsi, 14, burns her left forearm in her uncle's kitchen. Shakun takes her away, dresses the burn and renames her Kiran.",
+      "About 5 years ago: Kiran's first wedding for the bureau. Eight weddings so far, each over before sunrise.",
+      "About 14 and a half months ago: wedding six, at a temple, as 'Pooja'. The groom is Mohit, 25. His brother Aditya does not come. Eleven days later Mohit is dead.",
+      "The 14 months since: Aditya registers with marriage brokers as a lonely pharmacist with inherited gold, until the 'brother' who drives and the mausi on the phone turn up. Kiran does weddings seven and eight."
+    ],
+    "night_1": [
+      "Evening: the temple wedding of Aditya and 'Sneha'. Not shown.",
+      "About 1:35 am: s1e01 opens.",
+      "2:00 am: Mausi's call. s1e02 ends on it.",
+      "Branch A: 3:00 am, they leave with Billu.",
+      "Branch B: 2:01 am the boys reach the door; about 4:30 am Mausi arrives; about 5:35 am, dawn."
+    ],
+    "day_2": [
+      "Branch A: about 5:40 am they reach the bureau; s1a02 runs through the morning; the police come at about 9:30 am; the chowki before noon.",
+      "Branch B: Aditya is let go at dawn; the last scene is that evening at the bureau."
+    ],
+    "fixed_before_the_choice": "Chhoti's first wedding is booked for day 3 in both branches. Whether a character says कल or परसों depends on when the line is spoken; the writer checks it against this."
+  },
+  "characters": [
+    {
+      "id": "kiran",
+      "name": {"hi": "किरण", "en": "Kiran"},
+      "aliases": {
+        "tonight": {"hi": "स्नेहा", "en": "Sneha"},
+        "wedding_six": {"hi": "पूजा", "en": "Pooja"},
+        "birth_name": {"hi": "तुलसी", "en": "Tulsi"}
+      },
+      "age": 27,
+      "role": "lead",
+      "principal": true,
+      "bio": "Born Tulsi in a village. Mother dead at eleven; unpaid kitchen help in her uncle's house until fourteen, when Shakun, a marriage broker, took her away, dressed a fresh burn on her arm and renamed her Kiran. Trained as the bureau's vanishing bride: eight weddings in five years, each under a different name, gone with the jewellery before sunrise. Mohit was the sixth; she remembers him as nervous and kind, and never learned what became of him.",
+      "want": "Out. Mausi has promised that the ninth wedding is her last and is holding her ₹18 lakh share. Under that: to have one name and stop being a bride.",
+      "secret": "She is the bride in Aditya's photograph: the crescent burn scar is on her left forearm, under the chooda. The viewer learns it in the last shot of s1e01. Aditya learns it in s1a03 (she shows him) or in s1b03 (Mausi exposes it). Her birth name, Tulsi, is spoken only in the last scene of s1a03 and never in branch B.",
+      "look": "Indian woman, 27, about 5 ft 3, slight and wiry. Wheat-brown skin, oval face, straight dark brows, large kajal-lined eyes, a closed, watchful mouth. Low bun, sindoor, small red bindi, thin gold ring in the left nostril. Plain red saree, then plain grey salwar-kurta. Red-and-ivory chooda on both forearms and block henna on both hands in every period. Details in look_detail.",
+      "look_detail": {
+        "face": "Oval face, wheat-brown skin, straight dark brows, large dark eyes lined with kajal, small straight nose, full lower lip. No moles or marks on the face. Watchful and tired, never glamorous.",
+        "build": "About 5 ft 3, slight, wiry, strong forearms and hands. Stands very still; moves fast when she moves.",
+        "hair": "Black, centre parting with a thin line of red sindoor, low bun at the nape, two loose strands at the temples. The same in every period.",
+        "jewellery": "Thin plain gold ring, about 8 mm, in the LEFT nostril. Small plain gold ear studs. Short black-bead mangalsutra with one small gold bead. Small round red bindi. Nothing else: no necklace set, maang tikka, kalire, rings or anklets.",
+        "henna": "Old-style block henna, deep orange-brown, both hands, every period: one solid disc about 4 cm across in the centre of each palm, and every fingertip dipped to the first joint. Backs of the hands plain. No fine pattern anywhere. Nails short and unpainted.",
+        "chooda": "The fixed marker. On EACH forearm a closed-up stack of slim glossy bangles that reads as one deep-red cuff about 10 cm long with a pale ivory band at each end: the two bangles at the wrist end and the two at the elbow end are ivory-white, and everything between is red. The cuff starts just above the wrist bone. No stones, no gold kada. The number of bangles in a stack is not fixed, and no line, lock or continuity check depends on that total. The bangles slide freely along the forearm and come off over the hand one at a time.",
+        "scar": "Left forearm, outer side, under the middle of the left stack. Exact position, size and shape are in story_locks.scar.",
+        "period_1": "Wedding night (s1e01, s1e02, the start of s1a01, the whole night in branch B): plain sindoor-red matte silk-cotton saree with a 1 cm plain gold zari border, no print, no embroidery; plain red blouse with elbow-length sleeves; pallu over the left shoulder, drawn over her head only in her first moments as 'Sneha'; barefoot.",
+        "period_2": "After the first night (from the middle of s1a01; the last scene of s1b03): plain ash-grey cotton salwar-kurta, knee-length, round neck, three-quarter sleeves ending a hand's width above the chooda; grey salwar; plain grey dupatta over the left shoulder; flat black sandals. Hair, sindoor, bindi, nose ring, studs, mangalsutra, henna and chooda unchanged.",
+        "period_3": "Endings only: the period 2 outfit with a bare forearm and the scar visible, faint pressure lines where the bangles sat. In s1a03 she takes the LEFT stack off on screen; at the chowki the left forearm is bare and the right stack is still on. In the last scene of s1b03 both stacks are on Chhoti, both of Kiran's forearms are bare, and Mausi's key bunch is knotted at Kiran's left hip."
+      },
+      "voice_note": "Female, late 20s, alto with a dry edge. Small-city Madhya Pradesh Hindi with the everyday English a 27-year-old there uses (phone, party, plan, police, time, tension). Two registers, one actor. 'Sneha': half a tone higher, soft, shy, formal आप, sentences that trail off. Kiran: lower, flat, quick, तुम, short sentences. She switches in the middle of s1e01 and never fully goes back. With Mausi she sounds younger and says आप.",
+      "voice_pressure": "Under pressure she gets quieter and more exact, never shrill. Lies come out easily; true things come after a pause. By the end of branch B her pace has slowed into Mausi's unhurried warmth.",
+      "voice_note_en": "Same actor. Indian English of a small-city woman who learnt it at school and from a phone: simple, quick, contractions, no British or American colour. Keeps Mausi, beta, ji, Didi. 'Sneha' is polite and tentative; Kiran is blunt. The same quiet-under-pressure rule.",
+      "sample_lines": {
+        "hi": [
+          "आप जाग रहे हैं? मैं तो बस आपके दूध में केसर डाल रही थी।",
+          "Police हो? नहीं? तो फिर चाहिए क्या तुम्हें?",
+          "जली कलाई वाली चाहिए ना? रेखा। वो अब शादियाँ नहीं करती।",
+          "मौसी... दूध फट गया।"
+        ],
+        "en": [
+          "You're awake? I was only putting saffron in your milk.",
+          "Are you police? No? Then what do you want from me?",
+          "You want the one with the burnt wrist? Rekha. She doesn't do weddings any more.",
+          "Mausi... the milk has split."
+        ]
+      },
+      "branches": ["shared", "A", "B"]
+    },
+    {
+      "id": "aditya",
+      "name": {"hi": "आदित्य", "en": "Aditya"},
+      "full_name": {"hi": "आदित्य वर्मा", "en": "Aditya Verma"},
+      "age": 33,
+      "role": "the groom: antagonist to her secret, ally to her escape",
+      "principal": true,
+      "bio": "Runs a medical store on his own pharmacist's licence in another small city. Parents dead; he brought up his brother Mohit, eight years younger. He thought Mohit's bureau match was rushed, did not shut the shop for the temple wedding, and meant to meet the bride at the reception. There was no reception. Mohit, robbed and laughed at, filed no complaint and died eleven days later.",
+      "bio_cover": "For fourteen months he has posed as a lonely groom with inherited gold, under his mother's maiden surname and a rented address, so that the same bureau would choose him. The brass jewellery and the house rented by the month are part of that cover; in branch A they become his story to Mausi.",
+      "want": "Shakun Mausi and her ledger in police hands, because the police told him to bring proof. And, for himself, the woman whose hand is in the photograph.",
+      "secret": "From the gang: who he is. Kiran learns it in s1e01; Mausi works it out in s1a02 (branch A) or s1b01 (branch B). What he means to do to the owner of the hand he says aloud in s1e02. The secret that matters is the one kept from him: the hand is 'Sneha's'.",
+      "look": "Indian man, 33, about 6 ft, tall and narrow, a slight stoop. Light-brown skin, long clean-shaven face, neat side-parted black hair, rimless rectangular glasses. One outfit for the whole story: plain cream wedding kurta and churidar. A brass key on a red thread round his neck and his glasses are in every shot. Details in look_detail.",
+      "look_detail": {
+        "face": "Long face, light-brown skin, clean-shaven, high forehead, calm deep-set eyes, thin mouth. Short neat black hair with a left side parting. Rimless rectangular glasses, on in every shot, including when he lies with his eyes shut.",
+        "build": "About 6 ft, tall and narrow, slightly stooped from years at a counter. Long clean fingers, short nails. Moves little and exactly.",
+        "outfit": "Plain cream cotton-silk wedding kurta, band collar, three cloth buttons, no embroidery, sleeves folded back once; a side pocket on the right. Cream churidar. Tan leather sandals outdoors, barefoot in the bedroom. Never changed; creased by s1a02.",
+        "key": "A brass key about 5 cm long on a doubled red cotton thread round his neck, worn outside the kurta at mid-chest. In every shot of him in both branches, to the last frame.",
+        "other": "A plain steel watch with a brown leather strap on the left wrist, never readable; time is an overlay. No rings, no chain, no tilak, no sehra or turban."
+      },
+      "voice_note": "Male, early 30s, light baritone, soft-spoken. Educated small-city Madhya Pradesh Hindi in full sentences: तुम to Kiran, आप to Mausi, with the English nouns of his trade and schooling (dose, sedative, SIM, speaker, photo, bureau, police, licence, reception). Even and unhurried, almost courteous, like a man reading out a prescription; he has rehearsed this night for a year.",
+      "voice_pressure": "Under pressure he slows down and drops in volume. He never shouts and never swears: the calm is the threat. The one place the voice may catch is his brother's name.",
+      "voice_note_en": "Same actor. Careful Indian English, a science graduate's: complete sentences, precise nouns, no slang, no British or American colour. Calls Billu 'saale sahab' only while playing the greedy husband. The same slow, quiet pressure.",
+      "sample_lines": {
+        "hi": [
+          "पूरी पुड़िया डाल दो। आधी में मुझे नींद नहीं आती।",
+          "Sedative कड़वा होता है। इसीलिए केसर, है ना?",
+          "मोहित ग्यारह दिन बाद पंखे से लटका मिला। मुझे ये हाथ चाहिए।",
+          "मुझे पता है कितनी dose में नींद आती है, और कितनी में आँख नहीं खुलती।"
+        ],
+        "en": [
+          "Pour in the whole sachet. Half doesn't put me to sleep.",
+          "A sedative is bitter. That's why the saffron, isn't it?",
+          "Eleven days later they found Mohit hanging from the fan. I want this hand.",
+          "I know which dose brings sleep, and which one you don't wake up from."
+        ]
+      },
+      "branches": ["shared", "A", "B"]
+    },
+    {
+      "id": "mausi",
+      "name": {"hi": "शकुन मौसी", "en": "Shakun Mausi"},
+      "age": 56,
+      "role": "runs the brides; the only mother Kiran has had",
+      "principal": true,
+      "bio": "Owner of Shubh Lagan Marriage Bureau and Beauty Parlour. Began as a parlour woman and matchmaker and learned that lonely men pay advances and that shame keeps robbed grooms quiet. Took a burnt fourteen-year-old out of a kitchen, dressed the arm, named her Kiran and made her the best vanishing bride in the district.",
+      "bio_now": "She loves Kiran as a daughter and owns her as stock, and cannot tell the two apart. She holds everyone's money 'safe', keeps every party in a red ledger, and meets no party in person: brokers and Billu are the bureau's face, so she has never seen Mohit or Aditya.",
+      "want": "To keep the bureau running and to keep Kiran, for good.",
+      "secret": "Three. She knew Mohit died and never told Kiran. That comes out in both branches, in different words: in s1a03 b1 through Kiran's question and Mausi's silence, and in s1b01 b10 in Mausi's own words ('the boy turned out weak', said only there). The ₹18 lakh was never going to be paid and there was never a last wedding (branch B only, s1b02; never confirmed in branch A). She tells Billu smaller numbers than the gold really weighs (branch B only, s1b02 and s1b03). In s1a03 she also knows whose hand is in the photograph and does not say it: she backs Kiran's 'Rekha' lie to keep her (s1a03 b2) and never offers to give the hand up.",
+      "look": "Indian woman, 56, about 5 ft 2, broad and heavy-shouldered. Brown skin, round face, heavy-lidded shrewd eyes, paan-reddened smile, large maroon bindi, grey-streaked hair in a tight oiled bun. Starched bottle-green cotton saree, a ring of keys at her left hip, green glass bangles. Heard but not seen in the shared episodes. Details in look_detail.",
+      "look_detail": {
+        "face": "Round face, brown skin, heavy-lidded shrewd eyes, a wide mouth with paan-reddened lips and teeth, a smile that arrives before she speaks. Large round maroon bindi. Small gold nose stud. Grey-streaked black hair oiled into a tight bun.",
+        "build": "About 5 ft 2, broad, heavy-shouldered, solid, not soft. Sits like someone who owns the chair.",
+        "outfit": "Starched bottle-green cotton saree with a narrow mustard border, pallu pinned on the left shoulder; plain mustard blouse with elbow sleeves. Thin gold chain. Rubber slippers. The same day and night, in both branches.",
+        "keys": "A steel ring of about eight keys hooked into the saree at her LEFT hip. It chinks when she walks: her sound before she is seen. Gone from her hip after s1a02 b5 (Kiran lifts it) and in the last scenes of s1b03 (Kiran takes it).",
+        "wrists": "A dozen plain green glass bangles on each wrist. Wrists and forearms otherwise bare and unmarked; Aditya checks them in s1a01."
+      },
+      "voice_note": "Female, mid 50s, low, warm and grainy, a paan-chewer's unhurried mouth. Bundelkhand-side Hindi, Hindi-heavy, with only the trade's English (party, booking, advance, biodata, photo, parlour, bureau, bag). An endearment in every second line (बेटा, मेरी बच्ची, दामाद जी). Laughs easily. On the phone and through a door she is fully voiced and clear, never a whisper.",
+      "voice_pressure": "She never raises her voice. The colder the decision, the softer and slower she gets; her most dangerous lines are her gentlest.",
+      "voice_note_en": "Same actor. Warm, motherly Indian English in short plain sentences, Hindi endearments kept (beta, Damaad ji, meri bachchi); she sounds like someone's aunt at a wedding. The code lines must sound like a mother's check-in. Softer as she gets more dangerous.",
+      "sample_lines": {
+        "hi": [
+          "खाना खाया तूने? झूठ मत बोल। Bag की side वाली जेब में मठरी रखी है।",
+          "अच्छा सुन... दामाद जी ने दूध पी लिया, बेटा?",
+          "दरवाज़ा खोलिए, दामाद जी।",
+          "तू मेरी बेटी है। बेटियों का हिसाब नहीं होता।"
+        ],
+        "en": [
+          "Did you eat? Don't lie to me. There's mathri in the side pocket of your bag.",
+          "Listen... did Damaad ji drink his milk, beta?",
+          "Open the door, Damaad ji.",
+          "You're my daughter. Nobody keeps accounts with a daughter."
+        ]
+      },
+      "branches": ["shared", "A", "B"]
+    },
+    {
+      "id": "billu",
+      "name": {"hi": "बिल्लू", "en": "Billu"},
+      "age": 30,
+      "role": "the bride's 'brother', driver and lookout",
+      "principal": true,
+      "bio": "Mausi's driver, lookout and the bride's 'brother' at every wedding since he was nineteen. The car is registered in his name, the bureau in hers. He slaps and frightens when a groom wakes; he has never done worse and assumes he never will. Believes he gets a fair third. Calls every groom जीजाजी.",
+      "want": "His cut, a quiet life and Mausi's approval.",
+      "secret": "None of his own. He does not know he has been short-changed for five years; he learns it in s1b02 and s1b03. In branch A he lifts the photograph from Aditya's pocket (s1a02).",
+      "look": "Indian man, 30, about 5 ft 7, wiry and restless. Brown skin, sharp jaw, patchy stubble, black hair gelled straight back. Faded blue denim jacket over a black T-shirt, dark jeans. A toothpick in the right corner of his mouth and a car key hooked on his right index finger. Details in look_detail.",
+      "look_detail": {
+        "face": "Sharp jaw, brown skin, patchy stubble, quick eyes that check the mirror. Black hair gelled straight back.",
+        "build": "About 5 ft 7, wiry, narrow hips, never quite still.",
+        "outfit": "Faded blue denim jacket with the sleeves pushed up, over a black round-neck T-shirt; dark jeans; white sneakers gone grey. The same throughout.",
+        "marks": "A wooden toothpick in the right corner of his mouth, out only when he is shaken (s1b01 b2, s1b03 b3). A car key on a plain steel ring hooked on his right index finger. No weapon is ever shown on him."
+      },
+      "voice_note": "Male, about 30, light tenor, fast, a little nasal, talks round a toothpick. Small-town Bundelkhand street Hindi, Hindi-heavy, with the trade's English and a driver's (party, booking, advance, setting, tension, phone, time). Cocky and joking when he thinks he is in charge. To Mausi: 'हाँ मौसी', quick and obedient.",
+      "voice_pressure": "When surprised he goes loud for one line, then looks to Mausi for the next move. In branch B his pace drops and the jokes stop when the numbers land.",
+      "voice_note_en": "Same actor. Quick, slangy Indian English of a small-town driver, an article dropped now and then; keeps Jijaji, Mausi, arre. Never American street slang.",
+      "sample_lines": {
+        "hi": [
+          "हाँ मौसी। बत्ती जल रही है। तीन बजे गाड़ी दरवाज़े पे लगा दूँगा।",
+          "जीजाजी को मौसी से मिलना है? मौसी किसी से नहीं मिलतीं।",
+          "Party ने अंदर से ताला मारा है, मौसी।"
+        ],
+        "en": [
+          "Yes, Mausi. Light's on. Three o'clock, I'll have the car at the door.",
+          "Jijaji wants to meet Mausi? Mausi doesn't meet anyone.",
+          "The party's locked it from inside, Mausi."
+        ]
+      },
+      "branches": ["shared", "A", "B"]
+    },
+    {
+      "id": "chhoti",
+      "name": {"hi": "छोटी", "en": "Chhoti"},
+      "age": 19,
+      "role": "the next bride in training",
+      "principal": true,
+      "bio": "Three months at the bureau, from a village, sure that this is a job with nice clothes. Being trained as the next bride; her first wedding is booked for day 3. Calls Kiran दीदी and wants to be her. An adult; nothing about her is played as a child.",
+      "want": "A first wedding that goes like a film, and Didi's approval.",
+      "secret": "She is frightened and hides it. It shows only in the last shot of s1b03, when her hand shakes.",
+      "look": "Indian woman, 19, about 5 ft 1, slight, round-cheeked, wide curious eyes. Light-brown skin. One long black braid to the waist. Plain mustard-yellow kurta, white salwar. A phone in a plain pink cover always in her right hand. Henna half finished. Details in look_detail.",
+      "look_detail": {
+        "face": "Round cheeks, light-brown skin, wide curious eyes, a quick gap-toothed smile.",
+        "hair": "Black, one long braid to the waist tied with a red ribbon, usually pulled forward over her right shoulder.",
+        "outfit": "Plain mustard-yellow cotton kurta with short sleeves, white salwar, no dupatta, rubber slippers. Two thin green glass bangles on the right wrist; left wrist bare. Both forearms plainly unmarked. A phone in a plain pink cover in her right hand in every shot.",
+        "henna_day_2_morning": "Branch A (s1a01 to s1a03): half finished, in the same block style as Kiran's. The LEFT palm has its solid disc and dipped fingertips; the RIGHT hand is still bare.",
+        "last_scene_s1b03": "Same clothes. Henna finished on both palms. Kiran's red-and-ivory chooda on both her forearms."
+      },
+      "voice_note": "Female, 19, bright, quick, sing-song, a giggle in the breath. Small-town Hindi with a phone's English (selfie, reel, status, filter, charge, okay, bye). Calls Kiran दीदी. In s1b02 she is a voice on Mausi's phone only.",
+      "voice_pressure": "When she is frightened the voice goes very small and the giggle disappears.",
+      "voice_note_en": "Same actor. Light, eager Indian English in short sentences; keeps Didi and Mausi.",
+      "sample_lines": {
+        "hi": [
+          "दीदी, बस एक रात की बात है ना?",
+          "मौसी, मेहँदी सूख गई। सो जाऊँ?"
+        ],
+        "en": [
+          "Didi, it's only one night, isn't it?",
+          "Mausi, the henna's dry. Can I sleep?"
+        ]
+      },
+      "branches": ["A", "B"]
+    },
+    {
+      "id": "the_boys",
+      "name": {"hi": "लड़के", "en": "The boys"},
+      "age": 24,
+      "role": "minor, silent: Billu's two helpers",
+      "principal": false,
+      "bio": "Two unnamed men in their twenties who come when Billu calls. They never speak.",
+      "want": "To be paid and go home.",
+      "secret": "None.",
+      "look": "Never a face (production_locks). Two fixed shapes: one heavy-set with a shaved head and a maroon track jacket; one thin, in a checked shirt and a cloth cap. Seen only as backs, hands, boots and backlit silhouettes: two shapes by the motorbike in the lane, boots on the stairs, hands on Aditya's shoulders, figures at the edge of frame with the head cropped, turned away or in full shadow. No face reference sheet is made for them.",
+      "voice_note": "No lines in either language. If a grunt or a breath is needed it is a sound effect, not a cast voice.",
+      "voice_note_en": "No lines.",
+      "branches": ["shared", "A", "B"]
+    },
+    {
+      "id": "constable",
+      "name": {"hi": "सिपाही", "en": "Constable"},
+      "age": 50,
+      "role": "minor: a voice and a khaki sleeve at the chowki desk",
+      "principal": false,
+      "bio": "The man who writes the register at a small police post of an invented force. He has written a thousand names.",
+      "want": "A name for the register.",
+      "secret": "None.",
+      "look": "Never a face. A plain khaki sleeve with no readable badge or crest, a broad brown hand, a steel-capped pen, the edge of a shoulder. At the bureau door in s1a03 b8 the same sleeve and a hand on the shutter.",
+      "voice_note": "Male, about 50, flat and tired, a clerk's Hindi, two or three words at a time: 'नाम?' 'पूरा नाम।'",
+      "voice_note_en": "Same actor. Flat Indian English: 'Name?' 'Full name.'",
+      "branches": ["A"]
+    },
+    {
+      "id": "mohit",
+      "name": {"hi": "मोहित", "en": "Mohit"},
+      "age": 25,
+      "role": "minor: Aditya's dead brother; a hand in a photograph",
+      "principal": false,
+      "bio": "Aditya's younger brother, 25 when he died. Married 'Pooja' at a temple through the bureau, was robbed of his mother's gold bangles before sunrise, filed no complaint, and killed himself eleven days later.",
+      "want": "Nothing now. In life: a wife, and his brother at the reception.",
+      "secret": "None.",
+      "look": "Seen only as a hand in the photograph: a young man's right hand, palm up, light-brown skin, a red thread at the wrist, the cuff of a cream kurta. Never a face. His death is never pictured.",
+      "voice_note": "No voice in either language.",
+      "voice_note_en": "No voice.",
+      "branches": ["shared", "A", "B"]
+    }
+  ],
+  "locations": [
+    {
+      "id": "bedroom",
+      "name": "The bridal bedroom",
+      "description": "First-floor room of the rented house, about 3 by 3.5 m. Double bed with a dark wood headboard against the back wall, white sheet, one red bolster, loose marigold petals; marigold strings hang in a fringe above the headboard. Lime-washed pale-green walls, a bare nail, no pictures, no readable text.",
+      "geography": "Standing at the foot of the bed and facing it: the window is in the RIGHT wall (iron grille, two wooden shutters open, the lane below). The grey-green steel almirah is against the LEFT wall, with a wooden chair holding Kiran's maroon bag beside it. The door is BEHIND you: pale blue, two leaves, an iron bolt and hasp on the inside shut with a brass padlock. A low wooden stool on the window side of the bed holds a steel tray with the steel glass and the paper fold.",
+      "light": "One warm bedside lamp with an amber shade on the almirah side (the key light). Cool blue-white streetlight through the window grille (rim light). No overhead light. Branch B adds headlights sweeping the ceiling at about 4:30 am and grey dawn light at the end.",
+      "time_of_day": "Night 1 from about 1:35 am; to 3 am in branch A; to dawn in branch B.",
+      "episodes": ["s1e01", "s1e02", "s1a01", "s1b01", "s1b02", "s1b03"]
+    },
+    {
+      "id": "stairwell",
+      "name": "The house's stairwell and front door",
+      "description": "One straight, narrow concrete flight from the iron-sheet front door on the lane up to a small landing outside the bedroom's pale-blue door. Damp-stained cream walls, no pictures. From the landing the bedroom door shows no lock on this side, until the hasp is torn out in s1b01.",
+      "light": "One bare yellow bulb over the landing. In s1b03, first grey light through the open front door at the bottom.",
+      "time_of_day": "Night; first light in s1b03.",
+      "episodes": ["s1a01", "s1b01", "s1b02", "s1b03"]
+    },
+    {
+      "id": "lane",
+      "name": "The lane with Billu's parked car",
+      "description": "A narrow lane of shuttered two-storey houses. Billu's old white sedan is parked opposite the house under a single sodium streetlight; above it is the lit first-floor window with its iron grille. A motorbike stands behind the car. Nobody else is ever in the lane; shutters are down and no sign is readable.",
+      "light": "Sodium orange from the one streetlight, the warm square of the bedroom window above. Grey first light in s1b03.",
+      "time_of_day": "Night in s1e01, s1e02, s1a01 and s1b01; dawn in s1b03.",
+      "episodes": ["s1e01", "s1e02", "s1a01", "s1b01", "s1b03"]
+    },
+    {
+      "id": "car",
+      "name": "Billu's car on the highway at dawn",
+      "description": "Inside the old white sedan, right-hand drive: faded grey seat covers, a marigold string along the dashboard, a lemon-and-chilli charm on the rear-view mirror, no idols, no stickers with text. Outside, an empty two-lane highway through flat fields with ground mist. The last set-up is the car stopped at the bureau's grey steel shutter.",
+      "geography": "Fixed seating: Billu drives, front right. Kiran is front left. Aditya is on the rear seat behind Kiran. Billu's eyes are shown in the rear-view mirror. At the shutter Aditya gets out on the left and opens Kiran's door, so the hand he takes is her left.",
+      "light": "Blue-grey going to orange, about 5:00 to 5:40 am; low sun from the left by the end.",
+      "time_of_day": "Dawn, day 2. Branch A only.",
+      "episodes": ["s1a01"]
+    },
+    {
+      "id": "bureau",
+      "name": "Shubh Lagan Marriage Bureau and Beauty Parlour",
+      "description": "A ground-floor shop about two and a half hours' drive from the rented house, behind a grey roll-down steel shutter. Front room: pink walls, a mirror wall on the left with a row of bare bulbs and two black parlour chairs, a shelf of unlabelled bottles, and in the corner a shop mannequin with a smooth featureless face in a red bridal lehenga and dupatta.",
+      "geography": "Mausi's wooden desk and chair stand at the back of the front room, facing the shutter, with a grey steel cashbox on the desk. A low wooden cot with a folded quilt stands along the right wall of the front room, opposite the mirror wall: Chhoti's place (s1a01 b10, s1a03 b7, s1b03 b9). Behind the desk a curtain of plastic marigolds leads to a small back room used as store and changing room: a steel trunk of bridal sarees, a rail of blouses, a floor mat, a small wall mirror, and a back door to an alley. There is no cot in the back room; in s1a02 b4 Chhoti and Kiran sit on the trunk.",
+      "light": "Three states. Morning, shutter up: daylight from the front, tube light on. Shutter down (s1a03): tube light and mirror bulbs only. Evening (s1b03): tube light, blue dusk at the shutter.",
+      "time_of_day": "Day 2 morning in branch A; day 2 evening in branch B.",
+      "text_rule": "The shop name and every other readable word are overlays, never in the image.",
+      "episodes": ["s1a01", "s1a02", "s1a03", "s1b03"]
+    },
+    {
+      "id": "chowki",
+      "name": "A small police chowki desk",
+      "description": "A police post of an invented force. One wooden desk with a green cloth top, an open register, a steel tumbler, a wooden bench against a pale-yellow wall, a barred window, an open door to a bright yard. No crest, flag, portrait or readable board. The constable is a khaki sleeve, a hand and a pen at the edge of frame.",
+      "light": "Flat late-morning daylight from the window and the open door.",
+      "time_of_day": "Day 2, before noon. Branch A only.",
+      "episodes": ["s1a03"]
+    }
+  ],
+  "props": [
+    {
+      "id": "steel_glass",
+      "description": "A plain steel tumbler of pale-yellow kesar milk on a steel tray. In the shared episodes it holds half a sachet and is never drunk. In s1b02 it is replaced by a fresh warm glass. The last shot of s1b03 uses a different steel glass at the bureau."
+    },
+    {
+      "id": "paper_fold",
+      "description": "A small square of white paper folded into a packet (पुड़िया) of white powder. The night-one fold is half emptied into the milk in the hook and left on the tray; in branch A Aditya pockets it (s1a01 b5) and tips it out (s1a03 b8). In branch B Mausi brings two fresh folds (s1b01 b11) and Kiran never opens them. The drug is never named and no quantity is ever given."
+    },
+    {
+      "id": "padlock",
+      "description": "A brass padlock on an iron bolt and hasp fitted to the INSIDE of the bedroom door. Opened with the key in s1a01 b5. In s1b01 b8 the hasp's screws are torn out from outside and the padlock hangs, still locked."
+    },
+    {
+      "id": "key_thread",
+      "description": "A brass key about 5 cm long on a doubled red cotton thread round Aditya's neck. In every shot of him."
+    },
+    {
+      "id": "brass_set",
+      "description": "A red velvet box holding a necklace set that looks like gold and is brass. Kept in the steel almirah; carried to the bureau in branch A."
+    },
+    {
+      "id": "photograph",
+      "description": "A creased 4x6 colour print, soft at one corner. Content and geometry are fixed in story_locks.photograph. With Aditya in the shared episodes; lifted by Billu in s1a02; left on the chowki bench in s1a03; kept by Kiran in s1b03."
+    },
+    {
+      "id": "kiran_phone",
+      "description": "Kiran's smartphone, black, in a plain dark-red cover. SIM out in s1e01, put back by Aditya in s1e02 b4. Everything on its screen (no network, the caller's name, the time) is an overlay."
+    },
+    {
+      "id": "maroon_bag",
+      "description": "Kiran's maroon cloth travel bag on the wooden chair. Side zip pocket: a small round steel dabba of mathri packed by Mausi. Main pocket: the grey salwar-kurta."
+    },
+    {
+      "id": "aditya_phone",
+      "description": "Aditya's phone, plain grey. Photographs the ledger in s1a02; taken by Billu in s1b01 b9."
+    },
+    {
+      "id": "notebook",
+      "description": "Aditya's small black pocket notebook: fourteen months of dates, the bureau, the car. Branch B only. Its pages are never readable."
+    },
+    {
+      "id": "key_bunch",
+      "description": "Mausi's steel ring of about eight keys at her left hip. Lifted by Kiran in s1a02 b5 and held out to Aditya in s1a03 b5. Taken openly by Kiran in s1b03 b6."
+    },
+    {
+      "id": "cashbox_ledger",
+      "description": "A grey steel cashbox with a lock on Mausi's desk, and inside it a thick ledger bound in red cloth: every party, booking and advance. Any page text is an overlay."
+    },
+    {
+      "id": "billu_car",
+      "description": "An old white four-door sedan, right-hand drive, no readable badge or number plate, a marigold string on the dashboard, a lemon-and-chilli charm on the mirror."
+    }
+  ],
+  "episodes": [
+    {
+      "id": "s1e01",
+      "logline_id": "e01",
+      "branch": "shared",
+      "path_position": 1,
+      "title": {"hi": "पूरी पुड़िया", "en": "The Whole Sachet"},
+      "when": "Night 1, about 1:35 to 1:45 am",
+      "locations": ["bedroom", "lane"]
+    },
+    {
+      "id": "s1e02",
+      "logline_id": "e02",
+      "branch": "shared",
+      "path_position": 2,
+      "title": {"hi": "दो बजे का phone", "en": "The 2 am Call"},
+      "when": "Night 1, about 1:45 to 2:00 am",
+      "locations": ["bedroom", "lane"]
+    },
+    {
+      "id": "s1a01",
+      "logline_id": "a03",
+      "branch": "A",
+      "path_position": 3,
+      "title": {"hi": "मौसी किसी से नहीं मिलतीं", "en": "Mausi Meets No One"},
+      "when": "Night 1, 2:00 am, to day 2, about 6 am",
+      "locations": ["bedroom", "lane", "stairwell", "car", "bureau"]
+    },
+    {
+      "id": "s1a02",
+      "logline_id": "a04",
+      "branch": "A",
+      "path_position": 4,
+      "title": {"hi": "रेखा कौन है?", "en": "Who Is Rekha?"},
+      "when": "Day 2, morning",
+      "locations": ["bureau"]
+    },
+    {
+      "id": "s1a03",
+      "logline_id": "a05",
+      "branch": "A",
+      "path_position": 5,
+      "title": {"hi": "असली नाम", "en": "Her Real Name"},
+      "when": "Day 2, about 9 am to noon",
+      "locations": ["bureau", "chowki"]
+    },
+    {
+      "id": "s1b01",
+      "logline_id": "b03",
+      "branch": "B",
+      "path_position": 3,
+      "title": {"hi": "दरवाज़ा खोलिए, दामाद जी", "en": "Open the Door, Damaad Ji"},
+      "when": "Night 1, 2:00 to about 4:35 am",
+      "locations": ["bedroom", "lane", "stairwell"]
+    },
+    {
+      "id": "s1b02",
+      "logline_id": "b04",
+      "branch": "B",
+      "path_position": 4,
+      "title": {"hi": "हिसाब", "en": "The Accounts"},
+      "when": "Night 1, about 4:35 to 5:05 am",
+      "locations": ["bedroom", "stairwell"]
+    },
+    {
+      "id": "s1b03",
+      "logline_id": "b05",
+      "branch": "B",
+      "path_position": 5,
+      "title": {"hi": "दसवीं शादी", "en": "The Tenth Wedding"},
+      "when": "Night 1, about 5:05 am, to dawn; then day 2, evening",
+      "locations": ["bedroom", "stairwell", "lane", "bureau"]
+    }
+  ],
+  "branch_map": {
+    "shared": ["s1e01", "s1e02"],
+    "choice_after": "s1e02",
+    "A": ["s1a01", "s1a02", "s1a03"],
+    "B": ["s1b01", "s1b02", "s1b03"],
+    "path_A": ["s1e01", "s1e02", "s1a01", "s1a02", "s1a03"],
+    "path_B": ["s1e01", "s1e02", "s1b01", "s1b02", "s1b03"],
+    "tie_goes_to": "A",
+    "branch_A_in_one_line": "Road and sting: a bride and the groom who caught her walk into the bureau as partners in crime, with her scar an arm's length from the man who has promised to kill its owner.",
+    "branch_B_in_one_line": "Siege and coup: the gang takes the house, Mausi comes in person and orders a death, and to keep a man alive Kiran has to con the woman who taught her how."
+  },
+  "beat_outlines": {
+    "s1e01": [
+      {
+        "id": "b1",
+        "what_happens": "HOOK, inside 5 seconds. Extreme close-up: Kiran's right hand, henna-dipped fingertips, taps white powder from a paper fold into a steel glass of kesar milk. Both chooda stacks are pushed up toward her elbows so they do not clink, but only the right hand and forearm are in frame: the left arm is under the fall of the pallu from this first frame until b11 (production_locks). Off screen, Aditya, dressed, on the marigold-strewn bed, eyes shut: 'पूरी पुड़िया डाल दो। आधी में मुझे नींद नहीं आती।' Her hand stops, half the powder still in the fold.",
+        "who": ["kiran", "aditya"],
+        "location": "bedroom",
+        "reveal": "The groom is awake and knows what is going into his milk."
+      },
+      {
+        "id": "b2",
+        "what_happens": "He sits up, unhurried, glasses already on. Kiran turns as 'Sneha': shy, high, आप; she was only adding kesar. He answers like a man at his counter: a sedative is bitter, which is why the kesar. He does not touch the glass.",
+        "who": ["kiran", "aditya"],
+        "location": "bedroom",
+        "reveal": "He is a pharmacist and was waiting for this."
+      },
+      {
+        "id": "b3",
+        "what_happens": "She goes for the door, right hand to the bolt. Insert: an iron bolt and hasp on the inside, shut with a brass padlock. Insert: a brass key on a red thread against his cream kurta. 'चाबी यहाँ है।' They stay a room's width apart.",
+        "who": ["kiran", "aditya"],
+        "location": "bedroom",
+        "reveal": "He locked them both in before she began."
+      },
+      {
+        "id": "b4",
+        "what_happens": "He takes the room apart, one insert each. The red velvet box from the steel almirah: the set is brass. The house: rented for one month. Her phone on the bed shows no network (overlay); he holds up her SIM between two fingers.",
+        "who": ["kiran", "aditya"],
+        "location": "bedroom",
+        "reveal": "Everything she came for is fake, and she cannot call out."
+      },
+      {
+        "id": "b5",
+        "what_happens": "Billu in the parked sedan under the streetlight, toothpick, eyes on the lit first-floor window. On the phone to Mausi, whose warm voice is heard here for the first time: the light is on; she will ring the girl at two; he puts the car at the door at three. Mausi, by name: 'किरण ने सुबह से कुछ नहीं खाया होगा। सीधे मेरे पास लाना।'",
+        "who": ["billu", "mausi"],
+        "location": "lane",
+        "reveal": "The gang's clock: a 2 am call and a 3 am pickup. Mausi frets over Kiran like a mother. The viewer hears the bride's working name, Kiran, out of Aditya's hearing: 'Sneha' is false."
+      },
+      {
+        "id": "b6",
+        "what_happens": "The Sneha voice drops; the real one is lower and flat. Is he police? 'Pharmacist. सच में।' He names their method in one breath, as a customer met it: a bureau, a 'brother' who drives, a mausi on the phone, a bride gone by sunrise. It took him fourteen months to become her party. She tries to buy him: this is her last wedding, Mausi is holding eighteen lakh for her, take it and open the lock. He does not want money. The police told him grooms take their complaints back out of shame: bring proof. He wants the woman who sends the brides.",
+        "who": ["kiran", "aditya"],
+        "location": "bedroom",
+        "reveal": "He made himself the mark on purpose. Kiran's stake: a promised last wedding and ₹18 lakh. Aditya's first target: Mausi, with proof."
+      },
+      {
+        "id": "b8",
+        "what_happens": "Why, in one or two lines. His younger brother Mohit married one of their brides at a temple fourteen months ago. Aditya was not there: the shop runs on his licence, and he was to meet her at the reception. There was no reception. The bureau's photographer sent nothing and the bride took Mohit's phone, so one photograph is left: the one Mohit sent him from the temple.",
+        "who": ["kiran", "aditya"],
+        "location": "bedroom",
+        "reveal": "Why Aditya has never seen that bride's face."
+      },
+      {
+        "id": "b9",
+        "what_happens": "He holds up a creased print. Insert, full frame: a young man's hand, palm up; a veiled bride's left hand laid on it, a new ring, red glass bangles slid down to the wrist; above them, on the outer forearm, a pale crescent burn scar.",
+        "who": ["kiran", "aditya"],
+        "location": "bedroom",
+        "reveal": "All he has of her is a left hand with a crescent scar."
+      },
+      {
+        "id": "b10",
+        "what_happens": "'मोहित ग्यारह दिन बाद पंखे से लटका मिला।' Said flat. Hold on Kiran's face: she did not know. The death is never pictured, here or anywhere.",
+        "who": ["kiran", "aditya"],
+        "location": "bedroom",
+        "reveal": "Mohit killed himself eleven days after she robbed him. She is hearing it for the first time."
+      },
+      {
+        "id": "b11",
+        "what_happens": "'मुझे ये हाथ चाहिए।' He is looking at her face. Low and close, behind the fall of her pallu: her left forearm, the stack still pushed up, and the same crescent in the lamplight. Her right hand slides the chooda down over it. Cut.",
+        "who": ["kiran", "aditya"],
+        "location": "bedroom",
+        "reveal": "The hand in the photograph is hers. He has not seen it."
+      }
+    ],
+    "s1e02": [
+      {
+        "id": "b1",
+        "what_happens": "Opens in the same second; the print is still raised. First line, inside 5 seconds: 'हाथ दिखाओ। दोनों।' Kiran holds both hands out, palms up: a henna disc on each palm, a chooda on each forearm.",
+        "who": ["kiran", "aditya"],
+        "location": "bedroom",
+        "reveal": null
+      },
+      {
+        "id": "b2",
+        "what_happens": "He takes her LEFT hand, the hand in the photograph, turns it back up and holds it down on the white sheet, the print laid beside it. The red cuff sits exactly where the print's scar would be. He does not push it. He takes it apart: he slides the bangles off over her hand one at a time, unhurried, like counting out strips at his counter. Two ivory, one red: three lie on the sheet. The cuff is barely shorter and still closed over the middle of her forearm. His fingers close on the fourth.",
+        "who": ["kiran", "aditya"],
+        "location": "bedroom",
+        "reveal": "He checks the right hand and the right place, and has started taking the cuff apart. The viewer knows from s1e01 b11 what is under the middle of it; no frame in this beat shows the covered scar."
+      },
+      {
+        "id": "b3",
+        "what_happens": "Kiran's free right hand lifts the steel glass, half a sachet in it, to her own mouth. He drops her left wrist and takes the glass away from her: he needs her awake to reach Mausi. Her left hand goes back into her lap under the pallu, the cuff still on it. The three bangles stay on the sheet between them.",
+        "who": ["kiran", "aditya"],
+        "location": "bedroom",
+        "reveal": "She protects one hand by making him watch the other. He needs her conscious, and she knows it."
+      },
+      {
+        "id": "b4",
+        "what_happens": "Before he can go back to the wrist she hands him what he wants. The one with the burnt wrist? That is Rekha. She does not do weddings now; she sits with Mausi and writes the accounts. And Mausi meets no one: without Kiran he will not get past the shutter. And at two Mausi rings; if the phone is dead, Billu comes straight up with the boys. He says the name back. He looks at the cuff, at the three bangles on the sheet, at her, and tells her to her face why he is stopping: 'तुम वो होतीं तो उसका पता मुझे नहीं देतीं।' Then he picks the three bangles up himself and holds them out to her: 'पहले मौसी। रेखा बाद में।' She slides them back on, red first, so the pale band is at her wrist again. He slides the SIM back into her phone (insert) and lays the phone on the bed between them: on speaker, and he will listen. He knows what the call is for: the gang checking that the groom is out. Is there any word that warns Mausi? 'कोई code नहीं। माँ बेटी का हाल पूछती है। बस।'",
+        "who": ["kiran", "aditya"],
+        "location": "bedroom",
+        "reveal": "A lie the viewer can see through: 'Rekha'. Aditya stops by his own decision and tells her to her face why, and what comes first. The call must be answered: a dead phone brings Billu up. Aditya knows the call is the gang's check on the groom; he does not know that an alarm phrase exists, or that any other answer counts as one."
+      },
+      {
+        "id": "b5",
+        "what_happens": "Mohit lands on her. They only take jewellery; nobody is ever touched; at worst the boys slap a groom who wakes. Aditya: nobody touched Mohit either. The gold was their mother's bangles. The lane laughed at him for eleven days.",
+        "who": ["kiran", "aditya"],
+        "location": "bedroom",
+        "reveal": "As far as Kiran knows, the gang frightens and robs and no more. What a robbery did to Mohit."
+      },
+      {
+        "id": "b6",
+        "what_happens": "His terms. He is not police. Mausi and her ledger go to the police. The hand does not. What will he do to her? Calmly, as a pharmacist: Mohit lasted eleven days, so she gets eleven days, then one dose; he knows how much brings sleep and how much means not waking. Under the pallu Kiran's left hand closes.",
+        "who": ["kiran", "aditya"],
+        "location": "bedroom",
+        "reveal": "He means to kill the owner of the hand."
+      },
+      {
+        "id": "b7",
+        "what_happens": "'और मैं?' 'तुम जा सकती हो, स्नेहा।' Take him to Mausi and he has no business with her. The promise is made to a name that does not exist.",
+        "who": ["kiran", "aditya"],
+        "location": "bedroom",
+        "reveal": "His promise of safety covers 'Sneha', not the woman with the scar. The viewer has already heard Mausi call her Kiran (s1e01 b5)."
+      },
+      {
+        "id": "b9",
+        "what_happens": "Billu leaning on the bonnet; behind him two young men by a motorbike, backlit shapes with no faces. Mausi on his phone, warm and clear, runs the drill she runs before every such call: at two she will ask if the son-in-law has drunk his milk. 'पी लिया': bring the car at three. 'दूध फट गया': take the boys up. Anything else, or no answer: go up as well. 'बाक़ी मैं देख लूँगी।'",
+        "who": ["billu", "mausi", "the_boys"],
+        "location": "lane",
+        "reveal": "The code: both phrases and what each one does, out of Aditya's hearing. There is no safe third answer."
+      },
+      {
+        "id": "b10",
+        "what_happens": "2:00 (overlay). The phone lights: 'मौसी' (overlay). Aditya presses speaker and puts a finger to his own lips. Mausi: has she eaten? Don't lie; there is mathri in the side pocket of her bag. Without a sound Aditya unzips the side pocket of the maroon bag: a small steel dabba, mathri in it. He looks at it a second too long. Mausi: only tonight, beta; then you come home; I have kept everything of yours safe. Then, lightly, the line the episode is built on: 'अच्छा सुन... दामाद जी ने दूध पी लिया, बेटा?' On this call she says बेटा throughout and never the name.",
+        "who": ["kiran", "aditya", "mausi"],
+        "location": "bedroom",
+        "reveal": "Mausi's care, shown as an object in the hunter's own hand. Then the question itself."
+      },
+      {
+        "id": "b12",
+        "what_happens": "Billu's face turned up to the lit window, his hand on the car door; behind him the two boys straighten up from the bike. No line.",
+        "who": ["billu", "the_boys"],
+        "location": "lane",
+        "reveal": null
+      },
+      {
+        "id": "b13",
+        "what_happens": "The untouched glass between them. The key on its red thread. Her left hand under the pallu. Aditya's eyes on her mouth. Mausi, still warm, asks again: 'हाँ बेटा? पी लिया?' Kiran breathes in. She says no word: the in-breath is the last sound of the episode. Cut to the question.",
+        "who": ["kiran", "aditya", "mausi"],
+        "location": "bedroom",
+        "reveal": null
+      }
+    ],
+    "s1a01": [
+      {
+        "id": "b1",
+        "what_happens": "Opens on her mouth, inside the same breath, and she says the whole line: 'हाँ मौसी, पी लिया।' Mausi: 'शाबाश, मेरी बच्ची। तीन बजे बिल्लू नीचे होगा।' The line goes dead. Aditya lets out a breath: it was the check he expected and the answer he expected. He does not know there was another sentence she could have said.",
+        "who": ["kiran", "aditya", "mausi"],
+        "location": "bedroom",
+        "reveal": "She gave the all-clear."
+      },
+      {
+        "id": "b2",
+        "what_happens": "One short silent shot: Billu pockets his phone and waves the two shapes off, and the motorbike's tail light goes down the lane. The boys are not seen again in this branch. No line.",
+        "who": ["billu", "the_boys"],
+        "location": "lane",
+        "reveal": null
+      },
+      {
+        "id": "b3",
+        "what_happens": "Kiran tells him what he just watched: one other sentence and those two would be on the stairs by now. Why did she not say it? 'मोहित।' For the first time he owes her something. One line from her sets the cover, and the rest is played later, not planned here: Mausi sees no one unless he is useful, so he goes in as a thief who married a thief (story_locks.cover_story_branch_A).",
+        "who": ["kiran", "aditya"],
+        "location": "bedroom",
+        "reveal": "Aditya learns there was an alarm phrase, and that she chose not to say it."
+      },
+      {
+        "id": "b5",
+        "what_happens": "She changes behind the open almirah door; cut. Grey salwar-kurta, chooda on. Usually it comes off in the car. He tells her to leave it: they are arriving as newly-weds. He folds shut the half-empty paper fold from the tray and pockets it with the photograph. Then the key on the red thread opens the padlock; the key stays round his neck.",
+        "who": ["kiran", "aditya"],
+        "location": "bedroom",
+        "reveal": "Near miss 1, with its reason: the man hunting the wrist orders it kept covered. He keeps her sachet."
+      },
+      {
+        "id": "b6",
+        "what_happens": "3:00 (overlay). Billu at the front door sees the groom coming down awake behind her. 'किरण?! ये...' She cuts in: he is coming with us; he will talk to Mausi. Aditya opens the red box: brass. Billu, thrown, laughs once: 'जीजाजी!'",
+        "who": ["kiran", "aditya", "billu"],
+        "location": "stairwell",
+        "reveal": "Aditya hears her working name, Kiran, for the first time."
+      },
+      {
+        "id": "b7",
+        "what_happens": "Dawn on an empty highway. Billu driving, Kiran beside him, Aditya behind her. Billu, without turning: 'जीजाजी को मौसी से मिलना है? मौसी किसी से नहीं मिलतीं।' Aditya plays greed and makes a pharmacist's offer: their powder is guesswork; half of it did not put him to sleep. Billu rings Mausi and holds the phone to Kiran. Mausi's first question is why she said 'पी लिया' with the groom awake. Kiran: 'लड़के ऊपर आते तो सौदा टूट जाता, मौसी। इसलिए बोला पी लिया।' Mausi's voice, after a pause: 'ले आ।'",
+        "who": ["kiran", "aditya", "billu", "mausi"],
+        "location": "car",
+        "reveal": "Mausi hears why Kiran gave the all-clear with the groom awake, and will see him."
+      },
+      {
+        "id": "b8",
+        "what_happens": "Kiran dozes or pretends to, left hand loose in her lap, the first sun red through the bangles. Aditya takes the photograph from his kurta pocket, looks at it, looks at the road, puts it back. In the rear-view mirror Billu's eyes follow the white edge of the print into the pocket. No line.",
+        "who": ["kiran", "aditya", "billu"],
+        "location": "car",
+        "reveal": "Billu has seen that the groom carries a photograph."
+      },
+      {
+        "id": "b9",
+        "what_happens": "The car stops at a grey steel shutter. Aditya gets out, opens her door and takes her left hand, the bangle hand, to help her out, playing husband for Billu. The stack shifts under his fingers. Glimpse A ends here. In the episode the shutter rattles up at that second and Shakun Mausi is standing in it; he looks up and lets go.",
+        "who": ["kiran", "aditya", "billu", "mausi"],
+        "location": "car",
+        "reveal": "Near miss 2, with its reason: his first sight of the woman he has hunted for fourteen months."
+      },
+      {
+        "id": "b10",
+        "what_happens": "Mausi in person: green saree, keys at her hip, paan smile. Kiran first: she holds her face and asks if she ate. Then the brass: she laughs till she coughs; the son-in-law is in their own line. Chhoti on the cot, phone in hand, henna on one palm. Aditya's eyes go wrist to wrist: Mausi's, clean; Chhoti's, clean. Under his breath: 'रेखा?' Kiran: 'अभी नहीं।'",
+        "who": ["kiran", "aditya", "mausi", "billu", "chhoti"],
+        "location": "bureau",
+        "reveal": "No scarred woman sits with Mausi. The lie about Rekha is now on a clock."
+      },
+      {
+        "id": "b11",
+        "what_happens": "Mausi's terms: he makes the powder for tomorrow, Chhoti's first wedding. Then, practical, to Kiran: 'और तू चूड़ा उतार दे, बेटा। कल छोटी को चढ़ेगा।' She does not buy a new set for every wedding. She takes Kiran's left wrist and starts the first bangle over her knuckles. Aditya is an arm's length away, watching the hands. Cut.",
+        "who": ["kiran", "aditya", "mausi", "chhoti"],
+        "location": "bureau",
+        "reveal": "The chooda is bureau stock, wanted for Chhoti tomorrow. It is coming off in front of him."
+      }
+    ],
+    "s1a02": [
+      {
+        "id": "b1",
+        "what_happens": "Opens on the hands: the first ivory bangle is at Kiran's knuckles. She makes a fist and it stops. Aditya's hand comes down over Mausi's: leave it, it suits his bride; buy Chhoti a new set. He puts notes on the desk. Mausi laughs: a generous son-in-law. The bangle goes back.",
+        "who": ["kiran", "aditya", "mausi"],
+        "location": "bureau",
+        "reveal": "Near miss 3, with its reason: he stops it himself, to sell the husband and buy his place."
+      },
+      {
+        "id": "b2",
+        "what_happens": "He is in. Billu hugs him, family now; insert: two fingers lift the white edge of the print from the kurta pocket. Mausi unhooks a key from the bunch at her hip, opens the steel cashbox, writes his money into a red cloth ledger as an advance, and locks it away. Party, booking, advance, biodata.",
+        "who": ["kiran", "aditya", "mausi", "billu"],
+        "location": "bureau",
+        "reveal": "Where the proof is kept and where its key hangs. Billu now has the photograph."
+      },
+      {
+        "id": "b3",
+        "what_happens": "At the mirror wall, each speaking to the other's reflection. 'रेखा कहाँ है?' Ledger first; Rekha is going nowhere. He: she said the girl sits beside Mausi, and nobody sits beside Mausi. If she has lied to him... She finishes it for him: eleven days and a dose. She remembers.",
+        "who": ["kiran", "aditya"],
+        "location": "bureau",
+        "reveal": "He has begun to doubt Rekha."
+      },
+      {
+        "id": "b4",
+        "what_happens": "Back room, the bureau's store: Chhoti and Kiran sit on the steel trunk among the bridal sarees. Chhoti shows Kiran her phone, screen turned away from us: tomorrow's groom. It is only one night, isn't it, Didi? Mausi says Didi has done nine. She reaches for the chooda to try it on. Kiran moves her hand away: 'ये मत पहनना, छोटी।' Aditya is in the front room with Mausi.",
+        "who": ["kiran", "chhoti"],
+        "location": "bureau",
+        "reveal": "Chhoti is where Kiran once was. Near miss 4, with its reason: Kiran stops her, and he is not in the room."
+      },
+      {
+        "id": "b5",
+        "what_happens": "Mausi sits Kiran on the floor in front of her chair and oils and re-pins her bun, as she has since Kiran was fourteen. 'किरण नाम मैंने रखा था तेरा। याद है?' Next week she will put the eighteen lakh in her hand herself. While Mausi's hands are in her hair, Kiran's right hand unhooks the bunch of keys from Mausi's hip.",
+        "who": ["kiran", "mausi"],
+        "location": "bureau",
+        "reveal": "Mausi gave her the name Kiran, so it is not the name she was born with. Kiran has the keys. She steals them from the hands that are mothering her: the cost of this road, shown."
+      },
+      {
+        "id": "b6",
+        "what_happens": "Mausi goes behind the marigold curtain to fit Chhoti's wedding blouse. Kiran passes Aditya the keys behind the mannequin, then stands in the gap of the curtain with her back to the front room and keeps Mausi talking. He opens the cashbox on Mausi's desk. Inserts: ledger pages under his phone camera, rows of parties and advances (text as overlay). His thumb stops on one row. He sends the pictures to the chowki in-charge who once told him to bring proof. A reply lights his screen (overlay, in support only). Box locked. Putting the keys back in Kiran's hand he says it aloud, low, in a full phrase: 'उन्होंने यहाँ की चौकी को बोल दिया है। आधे घंटे में police यहाँ होगी।'",
+        "who": ["kiran", "aditya", "mausi", "chhoti"],
+        "location": "bureau",
+        "reveal": "The proof has gone to the police. His contact has passed it to the nearest post, which is half an hour away."
+      },
+      {
+        "id": "b7",
+        "what_happens": "Mausi is back at her desk. Billu comes in from washing the car for tomorrow and puts the creased print down in front of her: this was in the son-in-law's pocket. He thinks it is a joke about an old girlfriend.",
+        "who": ["billu", "mausi"],
+        "location": "bureau",
+        "reveal": null
+      },
+      {
+        "id": "b8",
+        "what_happens": "Mausi looks at it for a long moment. She knows the crescent at once: she dressed it. The temple step and the glass bangles tell her which wedding, and so which boy. The smile stays where it is. Her eyes go to Kiran's left wrist, then to Aditya.",
+        "who": ["kiran", "aditya", "mausi"],
+        "location": "bureau",
+        "reveal": "Mausi recognises her own girl's scar and the temple wedding. She knows who Aditya must be and what he is hunting."
+      },
+      {
+        "id": "b9",
+        "what_happens": "She holds the print up, warm as ever: 'दामाद जी... ये हाथ ढूँढ रहे हो?' Then, gently, to Kiran: 'बता दूँ इसे, बेटा? ये किसका हाथ है?' Kiran's left hand goes behind her back; the stolen keys are in her right. Aditya looks from the print to Mausi to Kiran. Cut.",
+        "who": ["kiran", "aditya", "mausi", "billu"],
+        "location": "bureau",
+        "reveal": "The sting is blown. Mausi holds the truth and is about to spend it."
+      }
+    ],
+    "s1a03": [
+      {
+        "id": "b1",
+        "what_happens": "Opens on the print in Mausi's hand, her question to Kiran still in the air. She looks at Kiran's face, and at the left hand Kiran is holding behind her back, and does not say it. Instead she works out the man, aloud and softly: the temple party; so he is Mohit's brother. Kiran: she knew he died? Mausi does not answer her. To Billu: bring the shutter down. The room drops to tube light and mirror bulbs.",
+        "who": ["kiran", "aditya", "mausi", "billu"],
+        "location": "bureau",
+        "reveal": "Mausi holds the truth and chooses not to spend it. She knew Mohit died and never told Kiran: her silence is the answer."
+      },
+      {
+        "id": "b2",
+        "what_happens": "Aditya asks her for the hand by the name he was given: where is Rekha, the girl with the burnt wrist who sits beside her and writes the accounts? Mausi has never heard the name. Her eyes go to Kiran for one beat; she understands the lie and what it was for, and backs it without a blink: 'रेखा? वो तो दो साल पहले भाग गई, दामाद जी।' She lays the print face down on her desk and puts her hand flat on it. To Kiran, low: 'तू बस मेरे पास रह।' She does not reach for Kiran's wrist and does not offer the hand to anyone.",
+        "who": ["kiran", "aditya", "mausi"],
+        "location": "bureau",
+        "reveal": "Mausi's choice: she backs a lie she has never heard, to keep Kiran. The cover has a price, and the price is staying hers."
+      },
+      {
+        "id": "b3",
+        "what_happens": "Kiran refuses the cover. 'आपको झूठ बोलने की ज़रूरत नहीं, मौसी।' She takes the chooda off her left arm herself, the bangles dropping one by one onto the desk by the cashbox, and turns her forearm to Aditya: the crescent. There is no Rekha and there never was. At the temple it was her.",
+        "who": ["kiran", "aditya", "mausi"],
+        "location": "bureau",
+        "reveal": "Aditya sees the scar. Nobody forces it: she turns down Mausi's cover and shows it to him herself."
+      },
+      {
+        "id": "b4",
+        "what_happens": "Fourteen months, and the hand is a foot away. From his kurta pocket he takes the paper fold from the wedding night, still half full. Mausi steps in front of Kiran and bargains like the trader she is: 'पुड़िया रख दीजिए, दामाद जी। दाम बोलिए। लड़की मेरी है।' Billu waits for a word. Nobody moves.",
+        "who": ["kiran", "aditya", "mausi", "billu"],
+        "location": "bureau",
+        "reveal": "He has carried her own sachet as the dose he promised. Mausi will pay for the dead brother and will not give up the girl."
+      },
+      {
+        "id": "b5",
+        "what_happens": "Kiran holds out her other hand: the bunch of keys. The ledger is already in his phone; he can take the book too. Mausi's hand goes to her hip: nothing. 'मैंने तुझे चौदह की उमर से...' 'हाँ मौसी। आपने ही सिखाया है।'",
+        "who": ["kiran", "aditya", "mausi"],
+        "location": "bureau",
+        "reveal": "Mausi learns Kiran has robbed her, with her own craft."
+      },
+      {
+        "id": "b6",
+        "what_happens": "Aditya asks the hand for one thing: what Mohit said that night. Kiran gives him something small and true. He was nervous. He asked for the milk himself. He said his brother would come to the reception.",
+        "who": ["kiran", "aditya"],
+        "location": "bureau",
+        "reveal": "Mohit's last evening, from the only person who was there."
+      },
+      {
+        "id": "b7",
+        "what_happens": "Outside: an engine, a fist on the shutter, white light through the slats. Billu goes out by the back door and is not seen again. Mausi sits, straightens her saree and folds a paan. Chhoti has come through the marigold curtain at the noise and sits frozen on the edge of the cot, phone in hand. Kiran to her: wipe your hand, go home, you were never here. Chhoti goes.",
+        "who": ["kiran", "aditya", "mausi", "billu", "chhoti"],
+        "location": "bureau",
+        "reveal": "The police have come. Billu runs; Chhoti is sent home."
+      },
+      {
+        "id": "b8",
+        "what_happens": "The shutter goes up. He could say she helped him. He could keep his promise to the hand. He does neither: he tips the powder onto the floor, steps back from her, and tells the khaki sleeve at the door that there are two names to write. One image: the red ledger and the key ring carried out under a khaki arm. Mausi is walked out after them; passing Kiran, she tucks a loose strand of Kiran's hair behind her ear. 'खाना खा लेना।'",
+        "who": ["kiran", "aditya", "mausi", "constable"],
+        "location": "bureau",
+        "reveal": "He gives up the dose and gives her to the law. Mausi goes out behind her own ledger."
+      },
+      {
+        "id": "b10",
+        "what_happens": "A desk, a register, a hand with a pen. 'नाम?' 'स्नेहा।' The pen waits. 'किरण।' The pen waits. 'तुलसी। माँ ने तुलसी रखा था।'",
+        "who": ["kiran", "constable"],
+        "location": "chowki",
+        "reveal": "Her birth name, spoken for the first time in thirteen years."
+      },
+      {
+        "id": "b11",
+        "what_happens": "Final image. Her bare left forearm on the desk, the crescent in plain daylight, beside the right arm still in its red cuff. In the doorway behind her Aditya, cream kurta, key on its red thread, sets the creased photograph down on the bench and walks out into the sun.",
+        "who": ["kiran", "aditya"],
+        "location": "chowki",
+        "reveal": null
+      }
+    ],
+    "s1b01": [
+      {
+        "id": "b1",
+        "what_happens": "Opens on her mouth, inside the same breath, and she says the whole line: 'मौसी... दूध फट गया।' A pause on the line. Mausi, just as warm: never mind, beta; stay away from the door. The line goes dead. Aditya looks at the glass between them, the milk whole and unsplit, and understands a second late: that was not the answer to the check.",
+        "who": ["kiran", "aditya", "mausi"],
+        "location": "bedroom",
+        "reveal": "She gave the alarm."
+      },
+      {
+        "id": "b2",
+        "what_happens": "Billu spits out the toothpick. The two boys come off the bike. A car door. Boots on the road. No line.",
+        "who": ["billu", "the_boys"],
+        "location": "lane",
+        "reveal": null
+      },
+      {
+        "id": "b3",
+        "what_happens": "Boots on the stairs, as sound. 'तुमने उससे क्या कहा?' What she had to: eighteen lakh, and the only home she has. He gave her a way out. Her way out is coming up the stairs.",
+        "who": ["kiran", "aditya"],
+        "location": "bedroom",
+        "reveal": null
+      },
+      {
+        "id": "b4",
+        "what_happens": "Billu at the pale-blue door, the boys behind him. He bangs once: 'किरण! ठीक है तू?' The door holds: the padlock Aditya fitted now keeps the gang out. Kiran, through the door: she is fine; the lock is inside and the key is on him.",
+        "who": ["billu", "the_boys", "kiran"],
+        "location": "stairwell",
+        "reveal": "Aditya hears her working name. His own lock is all that stands between him and them."
+      },
+      {
+        "id": "b5",
+        "what_happens": "Billu on the phone to Mausi. A groom who padlocks his bride in is not a party; this is something else. Do not break the door, the lane will wake. Do not touch him. She is coming herself.",
+        "who": ["billu", "mausi"],
+        "location": "stairwell",
+        "reveal": "Mausi, who meets no one, is coming in person. She is two and a half hours away."
+      },
+      {
+        "id": "b5a",
+        "what_happens": "About 2:05, no overlay. Aditya turns from the door to her: she has lied to him once tonight, and he wants her hands again. Kiran is already sitting on the floor with her back against the pale-blue door, knees up, her left arm folded under the pallu. 'हाथ लगाया तो चिल्लाऊँगी। फिर ये दरवाज़ा नहीं बचेगा।' The landing creaks on the other side of the wood. He stops a step short of her, then sits down on the edge of the bed. Hold: the two of them a room's width apart, and the door between her and the gang.",
+        "who": ["kiran", "aditya"],
+        "location": "bedroom",
+        "reveal": "Branch B's near miss, with its reason: one scream and the gang breaks the door Mausi told them to leave, so he cannot touch her wrist while they wait."
+      },
+      {
+        "id": "b6",
+        "what_happens": "4:10 (overlay). The same framing two hours on: she has not left the door and he has not left the bed. He picks up his phone. Kiran: 'Police को दिखाओगे क्या? ताला तुमने लगाया है, नाम तुम्हारा नकली है, और मौसी बस अपनी बेटी लेने आई हैं।' He puts the phone face down: fourteen months, and the woman who meets no one is coming to him. One insert: the photograph and a small black notebook squared on the sheet beside him.",
+        "who": ["kiran", "aditya"],
+        "location": "bedroom",
+        "reveal": "He stays by choice, and why the police are no use to him tonight: all he could show them is a bride he padlocked in under a false name. The notebook holds everything he knows about the bureau."
+      },
+      {
+        "id": "b7",
+        "what_happens": "Headlights swing across the ceiling: Mausi has come in a hired car, present only as its lights and its engine. A car door below; the car does not wait and is heard pulling away. Kiran gets up from the door and backs to the window side of the bed, clear of the door. Keys chinking, slowly, up the stairs.",
+        "who": ["kiran", "aditya"],
+        "location": "bedroom",
+        "reveal": null
+      },
+      {
+        "id": "b8",
+        "what_happens": "One crack: the hasp's screws tear out of the old wood from outside and the padlock hangs, still locked. The door stays shut for a breath. Mausi's voice through it, warm, fully voiced: 'दरवाज़ा खोलिए, दामाद जी।' Glimpse B ends here.",
+        "who": ["kiran", "aditya", "mausi"],
+        "location": "bedroom",
+        "reveal": "Mausi is at the door."
+      },
+      {
+        "id": "b9",
+        "what_happens": "Mausi comes in: green saree, keys. Kiran first: she turns her face to the lamp and checks her arms; did he touch her? Then a namaste to Aditya and an apology for the door. She sits on the bed. One image each: the boys' hands on Aditya's shoulders, seating him on the wooden chair; Billu pocketing his phone.",
+        "who": ["kiran", "aditya", "mausi", "billu", "the_boys"],
+        "location": "bedroom",
+        "reveal": null
+      },
+      {
+        "id": "b10",
+        "what_happens": "Mausi reads the notebook, then the photograph. She knows the scar at once, and from the temple step which wedding it was; her eyes touch Kiran's chooda and move on, and she does not say whose hand it is. 'मोहित का भाई।' To Kiran, softly: she never told her; the boy turned out weak. Kiran: she knew?",
+        "who": ["kiran", "aditya", "mausi"],
+        "location": "bedroom",
+        "reveal": "Mausi knew Mohit died. She sees the scar in the print and keeps Kiran's secret, for now."
+      },
+      {
+        "id": "b11",
+        "what_happens": "Mausi, practical. This one cannot be frightened, there is nothing here to rob, and he has kept accounts for fourteen months. A groom whose bride ran off, found in the morning: one brother died of shame, who will ask about the second? She presses two paper folds into Kiran's hennaed palm and nods at the steel glass. 'इस बार पूरी पुड़िया, बेटा। अपने हाथ से।' Cut.",
+        "who": ["kiran", "aditya", "mausi", "billu"],
+        "location": "bedroom",
+        "reveal": "What 'handling him' means: Aditya is to die tonight, passed off as shame, by Kiran's hand."
+      }
+    ],
+    "s1b02": [
+      {
+        "id": "b1",
+        "what_happens": "Opens on the two folds in her palm and Mausi's eyes on her. Kiran buys time in the trade's own terms: that milk has stood for three hours with half a fold in it and has a skin; it will not take two more. Billu can warm a fresh glass downstairs. Mausi, proud: her girl thinks ahead of her.",
+        "who": ["kiran", "aditya", "mausi", "billu"],
+        "location": "bedroom",
+        "reveal": null
+      },
+      {
+        "id": "b2",
+        "what_happens": "Kiran and Billu on the landing with the empty glass. They have never laid a hand on anyone; tonight Mausi wants a body. Who carries it? Whose name is the car in? And one number: the last wedding brought twenty-two tola; what was he told? His toothpick stops. 'मौसी ने कहा है।' He goes down for the milk.",
+        "who": ["kiran", "billu"],
+        "location": "stairwell",
+        "reveal": "The car is in Billu's name. Mausi has been telling him smaller numbers."
+      },
+      {
+        "id": "b3",
+        "what_happens": "Mausi and Aditya, two calm people. She asks after his shop and says his brother was a decent boy. He asks whether she remembers all their names. She does: a good bureau keeps a register.",
+        "who": ["aditya", "mausi", "the_boys"],
+        "location": "bedroom",
+        "reveal": "There is a register of every groom. Neither of them will raise a voice."
+      },
+      {
+        "id": "b4",
+        "what_happens": "Kiran is back with the warm glass. 'अपने हाथ से।' At the tray, her back half to the room, the pallu falling over her hands: paper tapped on steel, a fingertip stirring. She carries it to Aditya. 'पूरी पुड़िया?' 'पूरी।' She bends to his ear and says something we do not hear. He looks at her, and drinks.",
+        "who": ["kiran", "aditya", "mausi", "billu", "the_boys"],
+        "location": "bedroom",
+        "reveal": "Withheld on purpose: what she whispered, and what is in the glass."
+      },
+      {
+        "id": "b5",
+        "what_happens": "His head goes down on his chest, glasses still on. The boys lay him on the bed among the marigolds, eyes shut, as he lay at the start of the night. Mausi strokes Kiran's hair: 'शाबाश, मेरी बच्ची।' Kiran's left fist is closed at her side.",
+        "who": ["kiran", "aditya", "mausi", "the_boys"],
+        "location": "bedroom",
+        "reveal": null
+      },
+      {
+        "id": "b6",
+        "what_happens": "Mausi's phone rings: Chhoti, a young voice on speaker. The henna is dry; can she sleep? Is it really her wedding so soon? Mausi: sleep, beta.",
+        "who": ["kiran", "mausi", "chhoti"],
+        "location": "bedroom",
+        "reveal": "There is a next girl, nineteen, and her first wedding is a day away."
+      },
+      {
+        "id": "b7",
+        "what_happens": "Kiran: settle my account, then; tonight was the last. Mausi, tender: last? Next month's party is booked, and Chhoti cannot manage alone. And the eighteen lakh? 'तू मेरी बेटी है। बेटियों का हिसाब नहीं होता।' Besides, where would she go now, after what her own hand has just done?",
+        "who": ["kiran", "mausi"],
+        "location": "bedroom",
+        "reveal": "The ₹18 lakh was never going to be paid and there was never a last wedding. Mausi made Kiran pour so that she could never leave."
+      },
+      {
+        "id": "b8",
+        "what_happens": "Billu, in the doorway, has heard the part about money. Mausi tells him to straighten the room and wipe the glass. He looks at the man on the bed and is slow to move.",
+        "who": ["kiran", "mausi", "billu"],
+        "location": "bedroom",
+        "reveal": null
+      },
+      {
+        "id": "b9",
+        "what_happens": "Close, behind her back: Kiran's left fist opens. On the henna disc lie two paper folds, still folded shut. On the bed behind Mausi, among the marigolds, Aditya lies as he was laid. Last image, close on his face: behind the glasses one eye opens a slit, finds Kiran's back, and shuts. Cut.",
+        "who": ["kiran", "aditya", "mausi"],
+        "location": "bedroom",
+        "reveal": "She never poured it. He is alive and pretending, and Mausi does not know."
+      }
+    ],
+    "s1b03": [
+      {
+        "id": "b1",
+        "what_happens": "Opens on the open palm behind her back. Mausi, turned away, to Billu: pull the door to behind us; the landlord finds him in the morning. 'चल बेटा, घर।' Billu steps toward the bed.",
+        "who": ["kiran", "aditya", "mausi", "billu"],
+        "location": "bedroom",
+        "reveal": null
+      },
+      {
+        "id": "b2",
+        "what_happens": "Kiran steps between Billu and the bed and does the accounts aloud, wedding by wedding: what came, and what he was told. She carried the gold; she knows the weights. The car is in his name; tonight's body would have been in his name too. Mausi, softer than ever: she is tired, Billu.",
+        "who": ["kiran", "mausi", "billu", "the_boys"],
+        "location": "bedroom",
+        "reveal": "Billu hears, in numbers, how long he has been short-changed."
+      },
+      {
+        "id": "b3",
+        "what_happens": "Kiran holds out her palm: two folds, unopened. There was only kesar in the milk. Aditya opens his eyes and sits up among the marigolds. The boys step back. To Billu: she kept blood off his hands tonight; Mausi wanted it on them. Billu takes the toothpick out of his mouth.",
+        "who": ["kiran", "aditya", "mausi", "billu", "the_boys"],
+        "location": "bedroom",
+        "reveal": "To the room: Aditya is alive, and Kiran has defied Mausi."
+      },
+      {
+        "id": "b4",
+        "what_happens": "Mausi's last weapons: love, then the truth. She took Kiran out of that kitchen at fourteen; she dressed this arm herself. She catches Kiran's left wrist and pushes the chooda up: the crescent, in the lamplight, in front of Aditya. 'दामाद जी, देख लीजिए। जिस हाथ को ढूँढ रहे थे, यही है।'",
+        "who": ["kiran", "aditya", "mausi"],
+        "location": "bedroom",
+        "reveal": "Aditya sees the scar. Mausi exposes it to turn him on Kiran."
+      },
+      {
+        "id": "b5",
+        "what_happens": "Aditya, the photograph on the sheet beside him. The hand he promised eleven days and a dose is the hand that has just refused to pour one. He has no phone, no notebook, no lock. 'तुम।' Kiran does not pull the bangles down. 'हाँ। मैं।'",
+        "who": ["kiran", "aditya"],
+        "location": "bedroom",
+        "reveal": "He knows, and there is nothing he can do with it."
+      },
+      {
+        "id": "b6",
+        "what_happens": "Kiran unhooks the bunch of keys from Mausi's hip herself and knots it at her own. Mausi lets her: she will not be able to run it. 'हिसाब अब मैं रखूँगी, मौसी।' Billu: and her? Kiran: Mausi will sit at the bureau and write the accounts.",
+        "who": ["kiran", "mausi", "billu"],
+        "location": "bedroom",
+        "reveal": "Kiran takes the bureau. Mausi gets the life Kiran invented for 'Rekha'."
+      },
+      {
+        "id": "b7",
+        "what_happens": "First light in the open front door. Kiran walks Aditya down. She keeps the photograph and the notebook. Go to the police, and say what: that his bride ran away? Mohit never said it either. No apology; it would not bring him back. 'घर जाओ, आदित्य। दुकान खोलो।'",
+        "who": ["kiran", "aditya"],
+        "location": "stairwell",
+        "reveal": "He leaves alive, with no proof and no hand."
+      },
+      {
+        "id": "b8",
+        "what_happens": "Aditya in the grey lane: cream kurta, glasses, the brass key on its red thread, for a lock that no longer exists. He looks up at the window once. Behind him Billu's car starts; Mausi sits in the back seat with her hands in her lap and nothing at her hip. No line.",
+        "who": ["aditya", "billu", "mausi"],
+        "location": "lane",
+        "reveal": null
+      },
+      {
+        "id": "b9",
+        "what_happens": "That evening. Kiran in the grey salwar-kurta, keys at her hip, both forearms bare, the crescent in the tube light. Mausi at the desk behind her, writing in the red ledger. Chhoti on the cot, the red-and-ivory chooda on her arms, a paper fold shaking over a steel glass of milk.",
+        "who": ["kiran", "mausi", "chhoti"],
+        "location": "bureau",
+        "reveal": "The chooda has passed to the next bride."
+      },
+      {
+        "id": "b10",
+        "what_happens": "Final image. Kiran's hennaed hand closes over Chhoti's and holds it still. 'हाथ मत काँपने दे। पूरी पुड़िया, छोटी। आधी में नींद नहीं आती।' The powder falls into the milk.",
+        "who": ["kiran", "chhoti"],
+        "location": "bureau",
+        "reveal": null
+      }
+    ]
+  },
+  "cliffhanger_ladder": [
+    {
+      "episode": "s1e01",
+      "path_position": 1,
+      "type": "reveal",
+      "last_beat": "Kiran slides her chooda down over the scar Aditya has just shown her in a photograph.",
+      "question": "How long before he sees her wrist, and what does he do when he does?",
+      "stakes_level": 1
+    },
+    {
+      "episode": "s1e02",
+      "path_position": 2,
+      "type": "decision",
+      "last_beat": "Mausi, on speaker, asks whether the son-in-law has drunk his milk, and asks again: 'हाँ बेटा? पी लिया?' Kiran breathes in and has said no word.",
+      "question": "Which phrase does she say: the all-clear that hands Mausi to Aditya, or the alarm that hands Aditya to Mausi?",
+      "stakes_level": 2
+    },
+    {
+      "episode": "s1a01",
+      "path_position": 3,
+      "type": "threat",
+      "last_beat": "Mausi takes Kiran's left wrist to strip the chooda for Chhoti's wedding, with Aditya an arm's length away.",
+      "question": "The chooda is coming off in front of him. Does he see the scar?",
+      "stakes_level": 3
+    },
+    {
+      "episode": "s1a02",
+      "path_position": 4,
+      "type": "reversal",
+      "last_beat": "Mausi holds up Aditya's photograph and asks Kiran, gently, whether she should tell him whose hand it is.",
+      "question": "Mausi knows who he is and whose hand that is, and the police are half an hour away. Does she say it, and what does he do when he hears?",
+      "stakes_level": 4
+    },
+    {
+      "episode": "s1a03",
+      "path_position": 5,
+      "type": "resolution",
+      "last_beat": "Her bare left forearm on the chowki desk, the scar in daylight; Aditya leaves the photograph and walks out.",
+      "question": "None left open. A last image only: she has a name, and he has nothing left to hunt.",
+      "stakes_level": 5
+    },
+    {
+      "episode": "s1b01",
+      "path_position": 3,
+      "type": "threat",
+      "last_beat": "Mausi presses two paper folds into Kiran's palm: the whole sachet this time, by her own hand.",
+      "question": "Will Kiran pour it?",
+      "stakes_level": 3
+    },
+    {
+      "episode": "s1b02",
+      "path_position": 4,
+      "type": "reveal",
+      "last_beat": "Behind her back Kiran's fist opens on two unopened folds; on the bed, behind his glasses, one of Aditya's eyes opens a slit and shuts.",
+      "question": "He is alive and only Kiran knows. How does she get him, and herself, out of a house held by Mausi, Billu and the boys?",
+      "stakes_level": 4
+    },
+    {
+      "episode": "s1b03",
+      "path_position": 5,
+      "type": "resolution",
+      "last_beat": "Kiran's hennaed hand steadies Chhoti's over a glass of milk.",
+      "question": "None left open. A last unsettling image: the next first night has already begun.",
+      "stakes_level": 5
+    }
+  ],
+  "choice": {
+    "asked_at": "End of s1e02, on the open phone line at 2 am, with Aditya watching her mouth. The episode ends on Mausi's repeated question and Kiran's in-breath; she has said no word. Each branch opens on her whole line.",
+    "cliffhanger_type": "decision",
+    "question": {
+      "hi": "मौसी को इसके हवाले करूँ, या इसे मौसी के?",
+      "en": "Do I hand Mausi to him, or him to Mausi?"
+    },
+    "question_context": {
+      "hi": "Phone speaker पर है। आदित्य उसके होंठ देख रहा है।",
+      "en": "The call is on speaker. Aditya is watching her mouth."
+    },
+    "prompt_line": {
+      "speaker": "mausi",
+      "hi": "दामाद जी ने दूध पी लिया, बेटा?",
+      "en": "Did Damaad ji drink his milk, beta?"
+    },
+    "A": {
+      "label": {"hi": "हाँ मौसी, पी लिया", "en": "Yes, he drank it"},
+      "spoken": {"hi": "हाँ मौसी, पी लिया।", "en": "Yes, Mausi. He drank it."},
+      "meaning": {
+        "hi": "बिल्लू को इशारा: तीन बजे गाड़ी ले आओ। मौसी आदित्य के हवाले।",
+        "en": "Signal to Billu: bring the car at three. Mausi is handed to Aditya."
+      },
+      "does": "She gives the all-clear. Billu brings the car at three and drives the two of them to Mausi's door.",
+      "gain": "A way out of the life, and the only repayment she can make to the family she broke: Mausi and her ledger in police hands.",
+      "cost": "Shakun Mausi, the only mother she has had since fourteen, betrayed by her own mouth, and with her the ₹18 lakh and the only home Kiran has. And she walks beside a man who has just said, calmly, that he will kill the owner of the hand under her bangles; his promise of safety was made to 'Sneha'."
+    },
+    "B": {
+      "label": {"hi": "मौसी... दूध फट गया", "en": "The milk has split"},
+      "spoken": {"hi": "मौसी... दूध फट गया।", "en": "Mausi... the milk has split."},
+      "meaning": {
+        "hi": "बिल्लू को इशारा: लड़कों को ऊपर ले आओ। आदित्य मौसी के हवाले।",
+        "en": "Signal to Billu: bring the boys up. Aditya is handed to Mausi."
+      },
+      "does": "She gives the alarm. Billu and the boys come up for Aditya.",
+      "gain": "Her mother, her ₹18 lakh, her promised last wedding and her secret: the man hunting her wrist stops being her problem.",
+      "cost": "She does to a second brother, knowingly, what she did to the first: hands him to the gang to be frightened and stripped, minutes after hearing what that did to Mohit. And she shuts the only door out of the life that anyone has ever opened for her."
+    },
+    "why_hard": "Both people in the choice are dangerous to her and both have a claim on her. Mausi exploits her and packed her mathri. Aditya is the wronged man, has promised a death, and his mercy covers a name that is not hers. Loyalty, money and her own skin pull one way; guilt and the wish to get out pull the other, and the decent choice is the one most likely to kill her.",
+    "why_B_is_not_villainy": "As far as she knows the boys only frighten and rob, so the alarm is something a decent, frightened person could say. What it costs is that she now knows what a robbery did to Mohit.",
+    "no_third_way": "Stated on screen in s1e02 b4 (a dead phone brings Billu up) and b9 (any other answer, or no answer, brings the boys up). Silence and stalling are both the alarm.",
+    "balance_levers": [
+      "Against A: Aditya says in his own calm words what he will do to the owner of the hand (s1e02 b6), and his promise that she walks is made to 'Sneha' (s1e02 b7), a name the viewer already knows is false because Mausi has called her Kiran (s1e01 b5).",
+      "For Mausi: her care is one concrete act, the mathri in the bag pocket, found by Aditya's own hand (s1e02 b10), set up by her fretting in s1e01 b5.",
+      "For B: as far as Kiran knows the boys frighten and rob and no more (s1e02 b5). What 'handling him' means is learned only in s1b01.",
+      "Against B: 'nobody touched Mohit either' (s1e02 b5). She would be doing it again, knowing.",
+      "No hostage and no weapon is added anywhere in the shared episodes."
+    ],
+    "ballot_note": "Each option shows the spoken phrase (label) with its plain meaning (meaning) under it. The two meanings share one form and about one length: the signal to Billu, then who is handed to whom, with no word of praise or blame. app/public/media/series1/series.json still carries older meaning text and must be synced from these four strings."
+  },
+  "glimpses": {
+    "A": {
+      "id": "s1ga",
+      "source_episode": "s1a01",
+      "source_beats": ["b1", "b5", "b7", "b9"],
+      "seconds": 25,
+      "shows": "Her voice: 'हाँ मौसी, पी लिया।' The key on the red thread opening the padlock. Dawn, Billu's car: Aditya in the back seat playing the greedy husband, Kiran in front. Billu, without turning: 'जीजाजी को मौसी से मिलना है? मौसी किसी से नहीं मिलतीं।' The car stops at a grey steel shutter.",
+      "ends_on": "Aditya opens her door and takes her left hand, the bangle hand; his fingers close on the chooda. New question: what does he find under his fingers?",
+      "must_not_reveal": "Whether he sees or feels the scar. The shutter opening and Mausi's face. The demand for the chooda. That Billu has noticed the photograph. What happens to Mausi. That Kiran shows the scar herself and is arrested."
+    },
+    "B": {
+      "id": "s1gb",
+      "source_episode": "s1b01",
+      "source_beats": ["b1", "b2", "b3", "b7", "b8"],
+      "seconds": 25,
+      "shows": "Her voice: 'मौसी... दूध फट गया।' Billu spits out his toothpick. Boots on the stairs. Aditya to Kiran: 'तुमने उससे क्या कहा?' Headlights swing across the bedroom ceiling; keys chink on the stairs.",
+      "ends_on": "The hasp is torn out from outside and the padlock he fitted hangs broken; through the shut door, Mausi's voice: 'दरवाज़ा खोलिए, दामाद जी।' New question: what does the woman who meets no one want with him in person?",
+      "must_not_reveal": "Mausi's face. The two paper folds and what she intends for him. That she knew about Mohit. That he waited by choice. Whether he lives. That Kiran turns the boys and takes over."
+    }
+  },
+  "glimpse_rules": "Each glimpse opens on the spoken phrase so it stands alone for a late viewer. Glimpse B joins two moments that are two and a half hours apart in the episode; the cut hides the gap, shows no clock and uses nothing from b5a or b6. In the b7 and b8 frames Kiran is at the window side, clear of the door. Neither glimpse shows Mausi's face.",
+  "endings": {
+    "A": {
+      "episode": "s1a03",
+      "summary": "Mausi, holding Aditya's photograph, knows whose hand it is and does not say. When he asks for Rekha she backs the lie, to keep Kiran. Kiran refuses the cover: she takes off the chooda and shows him the scar herself, and gives him the keys to the ledger. He sees the wrist and does not do what he promised: he pours the powder away, steps back and lets the police take both women. Mausi goes with her own ledger; Billu runs; Chhoti is sent home. At the chowki Kiran gives her birth name.",
+      "final_image": "Her bare left forearm on the chowki desk, the crescent scar in daylight beside the right arm still in its red cuff; behind her Aditya leaves the creased photograph on the bench and walks out into the sun.",
+      "lead_state": "Tulsi again: no mother, no money, no freedom, and for the first time in thirteen years one name and nothing hidden.",
+      "others": "Aditya gives up his private justice and has nothing left to hunt. Mausi is in custody, undone by her own craft. Billu gone out the back. Chhoti spared her first wedding."
+    },
+    "B": {
+      "episode": "s1b03",
+      "summary": "Kiran has faked the fatal dose. She shows Billu the unopened folds and the real numbers, and he and the boys stop obeying Mausi. Mausi, cornered, exposes the scar to Aditya herself; he finally sees the hand, and can do nothing with it. Kiran takes the keys from Mausi's hip, sets Mausi to writing the accounts, and lets Aditya go at dawn alive, without his photograph, his notebook or his proof. That evening she teaches Chhoti to pour.",
+      "final_image": "Kiran's hennaed hand, forearm bare and the scar in the light, steadying Chhoti's over a steel glass of milk as the powder falls; Mausi behind them at the desk with the ledger and no keys.",
+      "lead_state": "The new Mausi: she has the keys, the money and her secret out in the open, and she has become the thing she wanted to get away from.",
+      "others": "Aditya is alive because the hand he hunted refused to kill him, and has nothing to show for fourteen months. Mausi is kept, not harmed: she sits at the bureau and writes the accounts, the life Kiran invented for 'Rekha'. Billu and the boys work for Kiran. Chhoti is the next bride."
+    }
+  },
+  "story_locks": {
+    "scar": {
+      "which_arm": "LEFT forearm.",
+      "side": "The outer side, continuous with the back of the hand, so it shows when the hand lies palm down and is hidden when she holds her palms up.",
+      "position": "Its centre is about 5 cm, three fingers' width, above the wrist bone.",
+      "shape_and_size": "A crescent like a thin slice of moon lying ACROSS the forearm: about 4 cm from tip to tip, about 7 mm thick at the middle, its curve bulging toward the hand and both horns pointing toward the elbow.",
+      "surface": "An old healed burn: paler than the skin round it, slightly shiny, a faintly raised edge. Never red, raw or gory.",
+      "origin": "The rim of a hot tawa in her uncle's kitchen when she was fourteen. Mausi dressed it. Spoken of only by Mausi in s1b03 b4; nowhere in the shared episodes.",
+      "under_the_chooda": "At rest the left cuff covers from just above the wrist bone to about 10 cm up the arm, so the scar sits under the middle of it. In s1e02 b2 nothing is pushed: three bangles come off over her hand, the cuff is barely shorter, and it still covers the scar. It would take about half the cuff off to bare it, and no frame in s1e02 shows the scar. Pushed up 6 cm or more toward the elbow, as she had it while doctoring the milk, the scar shows below the cuff (s1e01 b11).",
+      "first_seen": "In the photograph (s1e01 b9), then on Kiran (s1e01 b11). The hook shows her RIGHT hand only."
+    },
+    "photograph": {
+      "what_it_is": "The one picture the bureau's photographer never held: Mohit took it on his own phone at the temple and sent it to Aditya. Aditya carries it as a creased 4x6 print.",
+      "content": "Close on two hands on a stone temple step. Mohit's right hand, palm up, a red thread at his wrist. Laid on it, back of the hand to the camera, the bride's LEFT hand with a new plain gold ring and no henna at all: bare fingertips, bare nails, bare back of the hand. About a dozen thin red glass bangles have slid down to her wrist. About a finger's width above them, on the outer forearm, the pale crescent scar, exactly as fixed in story_locks.scar. The edge of a red veil at the top of the frame.",
+      "never_in_it": "No face, no chooda (she wore glass bangles at that wedding), no henna at all on either hand, no readable text. Tonight her fingertips are dipped in henna; if the print's were too, he would have a second match in front of him from the first frame. Nobody on screen explains the missing henna."
+    },
+    "chooda": {
+      "rule": "On both forearms from the first frame. Stays on the left arm until Kiran removes it herself (s1a03 b3) or until it passes to Chhoti (last scene of s1b03). Three bangles are off it for s1e02 b2 to b4 and no longer (wrist_check.the_three_bangles).",
+      "reads_as": "A red cuff about 10 cm long with a pale band at each end. The number of bangles is not fixed and nothing depends on it.",
+      "mechanics": "The bangles slide along the forearm and come off over the hand one at a time. That is what hides the scar and what keeps threatening to show it.",
+      "dialogue_ban": "No line anywhere says how tightly a chooda fits, how hard it is to remove, or how many days a bride must wear it. None of that was verified, and the story does not need it.",
+      "why_it_is_wanted": "It is the bureau's bridal kit; Mausi does not buy a new set for each wedding (s1a01 b11). Nobody on screen explains why Kiran wore glass bangles at the temple wedding."
+    },
+    "wrist_check": {
+      "requirement": "D-003 direction 2: Aditya must look for the scar on screen and fail for a reason the viewer sees.",
+      "how_it_is_met": [
+        "s1e01 b8: one exchange says why he never saw the bride's face. He was not at the wedding (the shop runs on his licence; he meant to meet her at the reception), and the bureau took every photograph but one.",
+        "s1e02 b1: his first line, inside 5 seconds, is a demand for her hands.",
+        "s1e02 b2: he takes the correct hand, turns it over and starts taking the cuff apart, sliding bangles off over her hand one at a time. Three lie on the sheet and the cuff still covers the scar. His fingers are on the fourth.",
+        "s1e02 b3: she lifts the drugged milk to her own mouth; he has to drop her wrist to take the glass, because he needs her awake.",
+        "s1e02 b4: she gives him a named girl with the burnt wrist who sits with Mausi, makes herself his only way in, and puts a clock on it (Mausi rings at two). He tells her to her face why he stops ('तुम वो होतीं तो उसका पता मुझे नहीं देतीं।') and what comes first ('पहले मौसी। रेखा बाद में।'), and it is his own hand that gives the three bangles back. She slides them on again.",
+        "After the choice: branch A keeps the wrist covered and under threat (near_misses_branch_A); branch B shows why he cannot check it during the two-hour wait (s1b01 b5a, near_misses_branch_B)."
+      ],
+      "staging": "What was the alternative is now the staging (D-005 change 2). The earlier version, the stack pushed up from the wrist with a viewer-only insert of bunched bangles, is deleted: a still cannot show a scar that is covered. The frame for b2 is her left hand held down on the white sheet, the print beside it, three loose bangles on the sheet and an unbroken red cuff on the forearm.",
+      "the_three_bangles": "Two ivory and one red. Off in s1e02 b2, on the sheet through b3, handed back by Aditya and slid on again by Kiran in b4 (red first, so the pale band is at the wrist again). From b5 on the left cuff is complete.",
+      "status": "Round 1: the Script critic accepted the wrist check on three conditions (its M3, M7 and m1), and the Arbiter ruled D-003's condition met, subject to D-005 changes 2, 3 and 4. Those three are applied here (s1e02 b2 to b4, s1b01 b5a). The critic's second read has not happened; if it no longer accepts the wrist check, D-003's fallback applies."
+    },
+    "near_misses_branch_A": [
+      {"episode": "s1a01", "beat": "b5", "threat": "The chooda normally comes off for the journey.", "shown_reason": "Aditya tells her to keep it on: they are arriving as newly-weds."},
+      {"episode": "s1a01", "beat": "b9", "threat": "He takes her left hand at the shutter and the stack shifts under his fingers.", "shown_reason": "The shutter goes up on Mausi, his first sight of her, and he lets go."},
+      {"episode": "s1a01", "beat": "b11", "threat": "Mausi starts to strip the chooda for Chhoti's wedding in front of him.", "shown_reason": "Cliffhanger; answered in s1a02 b1."},
+      {"episode": "s1a02", "beat": "b1", "threat": "The first bangle is at her knuckles.", "shown_reason": "Kiran makes a fist; Aditya himself stops Mausi and pays for a new set, to play the husband."},
+      {"episode": "s1a02", "beat": "b4", "threat": "Chhoti reaches to try the chooda on.", "shown_reason": "Kiran moves her hand away; Aditya is in the other room."},
+      {"episode": "s1a02", "beat": "b9", "threat": "Mausi, holding the photograph, is about to say whose hand it is.", "shown_reason": "Cliffhanger; answered in s1a03: Mausi chooses not to say it and covers for Kiran (b1, b2), and Kiran shows the scar herself (b3)."}
+    ],
+    "near_misses_branch_B": [
+      {"episode": "s1b01", "beat": "b5a", "threat": "With two and a half hours to wait and one lie already caught, he comes for her hands again.", "shown_reason": "Kiran sits with her back against the door, left arm under the pallu: one scream and the gang breaks the door Mausi told them to leave. He stops and sits down. The same framing at 4:10 (b6) shows that nothing has changed."},
+      {"episode": "s1b01", "beat": "b9", "threat": "Once the door is open he is in the same room as her wrist for the rest of the night.", "shown_reason": "The boys' hands seat him on the wooden chair and stay on his shoulders, and Billu takes his phone. From s1b02 b5 he lies on the bed with his eyes shut."},
+      {"episode": "s1b01", "beat": "b10", "threat": "Mausi recognises the scar in the print with Aditya watching her.", "shown_reason": "Her eyes touch Kiran's chooda and move on; she says nothing about whose hand it is. She is about to need that hand to pour."},
+      {"episode": "s1b03", "beat": "b4", "threat": "Mausi catches Kiran's left wrist and pushes the chooda up in front of him.", "shown_reason": "Answered: this is where he sees it. Of the two finales, only this one has Mausi reach for the wrist."}
+    ],
+    "cover_story_branch_A": "Never planned on screen: the planning beat (s1a01 b4) was cut for length, and one line in s1a01 b3 sets it. It is played instead. Aditya was running his own con on the bride's side, brass for gold and a house rented for a month, so two thieves married each other; he woke because a pharmacist knows the taste; now he wants a cut and can give the bureau what it lacks, powder that works. Carried by s1a01 b6 (the brass shown to Billu), b7 (the pharmacist's offer, and Kiran's reason to Mausi for the all-clear) and b10 (Mausi laughs at the brass).",
+    "code": {
+      "prompt": "Mausi asks whether the son-in-law has drunk his milk.",
+      "all_clear": "'पी लिया': Billu brings the car to the door at 3 am.",
+      "alarm": "'दूध फट गया': Billu takes the boys up.",
+      "anything_else": "Any other answer, or no answer, also sends them up.",
+      "heard_by_viewer": "s1e02 b9, in Mausi's own voice to Billu in the lane, before the 2 am call and out of Aditya's hearing. The clock is set up in s1e01 b5.",
+      "who_knows": "Kiran, Mausi and Billu know both phrases. Aditya knows the 2 am call, and so the milk question, is the gang's check on the groom, and he expects the yes (s1e02 b4). He does not know that an alarm phrase exists, or that any other answer or silence counts as one, until Kiran tells him in s1a01 b3 or until he hears it said in s1b01 b1. In branch A Kiran tells Mausi why she gave the all-clear with the groom awake (s1a01 b7).",
+      "pinned_message": "Not used. The pitch's pinned message is dropped: the code is carried in audio and on the ballot."
+    },
+    "sedative": "Never named, never quantified, never shown being prepared beyond a paper fold tapped over a glass. Aditya talks about dose as a pharmacist would, with no numbers. The con is drama, not a method.",
+    "phones": "Kiran's SIM is out from before s1e01 b4 until Aditya puts it back in s1e02 b4, so the only call she takes on screen is Mausi's at 2 am. Mausi is a voice on a phone, fully voiced, in every shared-episode appearance.",
+    "rekha": "Invented by Kiran in s1e02 b4. No such person exists. In branch A the lie frays (s1a01 b10, s1a02 b3); in s1a03 b2 Mausi, who has never heard the name, backs it to cover for Kiran ('रेखा? वो तो दो साल पहले भाग गई, दामाद जी।'); and Kiran ends it herself (s1a03 b3). In branch B it is never repeated; Mausi's fate in s1b03 b6 echoes it.",
+    "names": "Aditya calls her 'Sneha' through both shared episodes, and says the name at least once in s1e01 before b5. The viewer first hears 'किरण' from Mausi, on Billu's phone in the lane (s1e01 b5), out of Aditya's hearing, so the viewer knows 'Sneha' is false before Aditya promises 'Sneha' she can walk (s1e02 b7). On the 2 am speaker call Mausi says only बेटा, never the name. Aditya first hears 'Kiran' from Billu: s1a01 b6 or s1b01 b4. In s1a02 b5 Mausi says she gave her that name ('किरण नाम मैंने रखा था तेरा। याद है?'), and 'Tulsi' pays it off: spoken once, by her, in s1a03 b10, and never in branch B. 'Pooja' may be spoken once, in s1a03 b3.",
+    "money": "₹18 lakh, held by Mausi, promised with the last wedding. First said in s1e01 b6. In branch A Mausi still promises it (s1a02 b5) and the truth is never confirmed. In branch B it was never going to be paid (s1b02 b7).",
+    "mohit": "His death is spoken once as fact (s1e01 b10) and referred to afterwards. It is never pictured, re-enacted or described further.",
+    "locked_lines": [
+      "s1e01 b1, Aditya: 'पूरी पुड़िया डाल दो। आधी में मुझे नींद नहीं आती।'",
+      "s1e01 b10 and b11, Aditya: 'मोहित ग्यारह दिन बाद पंखे से लटका मिला।' and 'मुझे ये हाथ चाहिए।'",
+      "s1e02 b10, Mausi: 'दामाद जी ने दूध पी लिया, बेटा?'",
+      "Choice A, Kiran: 'हाँ मौसी, पी लिया।' Spoken whole as the first line of s1a01 b1; no part of it is begun in s1e02.",
+      "Choice B, Kiran: 'मौसी... दूध फट गया।' Spoken whole as the first line of s1b01 b1; no part of it is begun in s1e02.",
+      "s1a01 b7, Billu: 'जीजाजी को मौसी से मिलना है? मौसी किसी से नहीं मिलतीं।'",
+      "s1b01 b3, Aditya: 'तुमने उससे क्या कहा?'",
+      "s1b01 b8, Mausi: 'दरवाज़ा खोलिए, दामाद जी।'"
+    ],
+    "kept_apart_in_the_two_finales": [
+      "'आपने ही सिखाया है' is said in s1a03 b5 only. s1b03 b6 has its own line: 'हिसाब अब मैं रखूँगी, मौसी।'",
+      "'The boy turned out weak' is said in s1b01 b10 only. In s1a03 b1 the fact that Mausi knew comes out through Kiran's question and Mausi's silence. The fact itself is fixed before the choice and surfaces in both branches.",
+      "Of the two finales, only branch B's has Mausi reach for Kiran's wrist (s1b03 b4), to turn Aditya on her. In s1a03 she covers for Kiran, never reaches for the wrist and never offers the hand; Kiran refuses the cover, so the confession is her own choice."
+    ]
+  },
+  "knowledge": {
+    "end_of_s1e01": {
+      "viewer": "Everything Aditya has said, and that the scarred hand is Kiran's. That the gang calls her Kiran, so 'Sneha' is a false name. The gang's clock: a call at two, a car at three.",
+      "kiran": "Who Aditya is, why he is here, that Mohit is dead, and that he is hunting her own wrist.",
+      "aditya": "The gang's method; that 'Sneha' is one of its brides; that a 'brother' waits outside. Not her real name, not that she was Mohit's bride."
+    },
+    "end_of_s1e02": {
+      "viewer": "The code and what each phrase does; that there is no third answer; what Aditya will do to the owner of the hand; that 'Rekha' is a lie; that Mausi packed the mathri.",
+      "kiran": "All of the above except Mausi's exact words to Billu, which she has no need to hear: it is her own code.",
+      "aditya": "That a girl called Rekha with a burnt wrist sits with Mausi (false). That a 2 am call must be answered, and that the call and its milk question are the gang's check on the groom, to which he expects a yes. He does not know that an alarm phrase exists, or that any other answer or silence counts as one. He has not seen the skin under her cuff, and he still calls her Sneha.",
+      "mausi_and_billu": "Nothing is wrong yet. They do not know the groom is awake, who he is, or that the door is padlocked."
+    },
+    "branch_A_only": "Aditya learns of the alarm phrase (s1a01 b3). Mausi learns the groom was awake and why Kiran still gave the all-clear (s1a01 b7). Mausi learns who he is and whose hand he is hunting from the photograph (s1a02 b8), threatens to say it (s1a02 b9), then chooses to cover for Kiran and backs the 'Rekha' lie (s1a03 b1, b2). Kiran learns from Mausi's silence that she knew about Mohit (s1a03 b1). Aditya learns the truth about the hand from Kiran, who refuses the cover (s1a03 b3). Whether the ₹18 lakh was real is never settled.",
+    "branch_B_only": "Aditya learns there was an alarm phrase when he hears it said (s1b01 b1). Mausi learns who he is from the notebook and photograph (s1b01 b10). Kiran learns Mausi knew about Mohit (s1b01 b10), what 'handling him' means (s1b01 b11), and that the money and the last wedding were lies (s1b02 b7). Aditya learns the truth about the hand from Mausi (s1b03 b4). 'Rekha' and 'Tulsi' are never spoken."
+  },
+  "register": {
+    "convention": "Hindi in Devanagari and English words in Latin script in the same line; spoken forms (ये, वो), never यह or वह. Names in Devanagari in the Hindi script.",
+    "aditya": "Educated small-city pharmacist. English nouns that are natural to him: dose, sedative, SIM, speaker, photo, bureau, police, licence, reception.",
+    "kiran": "Small-city Hinglish: phone, party, plan, police, time, tension. As 'Sneha', fewer English words and more आप.",
+    "mausi_and_billu": "Hindi-heavy, with the trade's English only: party, booking, advance, biodata, photo, parlour, bureau.",
+    "chhoti": "Phone English: selfie, reel, status, okay, bye.",
+    "one_word_per_object": "पुड़िया for the paper fold (sachet in English). चूड़ा for the chooda. ताला for the padlock and चाबी for the key. दूध for the milk. हिसाब for the accounts, and ledger only in Aditya's mouth. गाड़ी for the car.",
+    "english_version": "A full adaptation by the same cast in Indian English. The code must still sound like a mother's check-in: 'Did Damaad ji drink his milk, beta?', 'Yes, Mausi. He drank it.', 'Mausi... the milk has split.' Keep Mausi, beta, Damaad ji, Jijaji, Didi, chooda, mathri, lakh.",
+    "performance_flags": "Mausi's phone and through-the-door lines are warm and fully voiced, never whispered, and the bed ducks under 'दामाद जी ने दूध पी लिया, बेटा?'. s1e02 ends on Mausi's repeated question, 'हाँ बेटा? पी लिया?', and Kiran's in-breath: a breath with no word in it, recorded as a breath and not as a cut-off 'मौसी'. Each branch opener carries her whole locked line in one take."
+  },
+  "production_locks": [
+    "Stills with camera moves only. Action is single strong images: hands, faces, objects. Nothing depends on continuous movement.",
+    "Kiran: plain red saree, no heavy jewellery, block henna, chooda on both forearms; then the same chooda, henna and hair with the grey salwar-kurta. Bare forearm only in the two endings.",
+    "s1e01 b1 to b10: the left forearm is never in frame uncovered. It is under the fall of the pallu or against her body, and she uses only her right hand at the tray, the door and the phone. Its stack stays pushed up, out of sight, until b11 shows the scar and slides the stack down over it.",
+    "Aditya: glasses and the brass key on its red thread in every shot, including lying with his eyes shut.",
+    "The two leads are clothed and apart in the bedroom. The only touch is hand on wrist. She changes clothes off screen behind the almirah door. No intimacy staging.",
+    "Mohit's death is never pictured. Mohit is only a hand in a photograph.",
+    "'The boys' are never faces (D-005 change 17: locked to hands, backs and silhouettes, not given a reference sheet). In all 11 of their beats they are backs, hands, boots and backlit shapes, with any head cropped, turned away or in full shadow. Two fixed shapes so the silhouettes repeat: heavy-set, shaved head, maroon track jacket; thin, checked shirt, cloth cap. Billu is the only face among the three. They never speak.",
+    "The police are an engine, light through shutter slats, a khaki sleeve and a pen. Invented force, no crest, no flag, no readable board.",
+    "All readable text is an overlay: phone screens, the time, the shop name, ledger rows.",
+    "The bedroom is broken up with inserts (glass, paper fold, padlock, key, photograph, phone, SIM, brass set, bag pocket, window) and at least one cut to Billu in the lane in each shared episode (s1e01 b5; s1e02 b9 and b12).",
+    "No set-up is held past 8 seconds. Beats that run longer name more than one set-up.",
+    "No crowd anywhere: the wedding is over before the story starts, the lane is empty, the bureau is shut to customers.",
+    "No weapon is shown on anyone in any episode.",
+    "Mausi is not seen in s1e01 or s1e02; her first image is s1a01 b9 or s1b01 b9. Her reference sheet is still needed before scripts."
+  ],
+  "arbiter_direction_map": [
+    {"direction": "1. Keep as pitched", "where": "Title, five principals, six locations, s1e01 hook and cliffhanger, the question, both phrases, both branches, both endings and both glimpses are kept. One change: the pinned message is dropped in favour of the code in audio (allowed by direction 3)."},
+    {"direction": "2. Wrist check", "where": "story_locks.wrist_check; s1e01 b8; s1e02 b1 to b4; s1b01 b5a; story_locks.near_misses_branch_A and near_misses_branch_B; story_locks.scar and story_locks.photograph; story_locks.chooda.dialogue_ban."},
+    {"direction": "3. Code in audio", "where": "s1e02 b9 (set up by s1e01 b5); choice.A.meaning and choice.B.meaning; story_locks.code."},
+    {"direction": "4. Choice balance", "where": "choice.balance_levers; s1e01 b5; s1e02 b4, b5, b6, b7, b9 and b10."},
+    {"direction": "5. Register", "where": "register; each character's voice_note, voice_pressure and voice_note_en."},
+    {"direction": "6. Production locks", "where": "production_locks; characters.look_detail; locations."},
+    {"direction": "7. English version", "where": "register.english_version; choice.prompt_line; choice.A.spoken and choice.B.spoken."}
+  ],
+  "length_budget": {
+    "source": "D-005 change 9. The plan says only 'about two minutes'; the ceiling is the Arbiter's call.",
+    "target_spoken_seconds": 120,
+    "ceiling_spoken_seconds": 135,
+    "beats_per_episode": {"s1e01": 10, "s1e02": 11, "s1a01": 10, "s1a02": 9, "s1a03": 10, "s1b01": 12, "s1b02": 9, "s1b03": 10},
+    "trims_applied": [
+      "s1e01: b7 folded into b6, the method cut to four items, b8 cut to one or two lines.",
+      "s1e02: b8 folded into b4 with everything it carried (a dead phone brings Billu up, the SIM goes back, the speaker, her lie that there is no code); b11 folded into b10.",
+      "s1a01: b4 cut (the cover is played, not planned; story_locks.cover_story_branch_A); b2 is one short silent shot.",
+      "s1a03: b9 folded into b8.",
+      "s1b01: one beat added (b5a), and b6's notebook business cut to one insert."
+    ],
+    "protected": "s1e02 b5 carries two of the five balance levers and is never a trim candidate. No balance lever, lock or near miss was removed by any trim.",
+    "if_an_episode_runs_long": "Shorten inside a beat before cutting one. s1e02: b1, the drill in b9 (all three outcomes are still spoken) and Mausi's lead-in in b10. s1b01, the only episode that gained a beat: b3, b5 and b9; b2, b7 and b8 are already silent or one line.",
+    "not_measured": "Estimates from beat and line counts. No script exists and nothing was timed. If measured timings come in under the ceiling, D-005 lets the showrunner restore a merged beat."
+  },
+  "writer_notes": [
+    "s1e02 is still the densest episode: eleven beats, with b4 the longest (length_budget). b5 is protected. Do not cut b2 to b7, b9 or b13.",
+    "s1a01 passes through five places. The lane (b2) is one silent shot and the stairwell (b6) can be two lines; the weight belongs in the car and at the bureau.",
+    "s1b01 jumps about two hours between b5a (about 2:05) and b6 (4:10). Mark it with the time overlay over an unchanged framing, Kiran against the door and Aditya on the bed, not with a line. She leaves the door in b7, before the hasp tears in b8.",
+    "s1b02 b4 withholds on purpose what Kiran whispers and what is in the glass. Neither script nor subtitle may give it away before b9.",
+    "The last line of s1b03 repeats Aditya's first line of s1e01. Keep the wording identical.",
+    "Every branch episode opens inside the last beat of the one before: on her mouth, on the hands, on the print, on the palm.",
+    "Single-word turns ('मोहित।', 'तुम।', 'पूरी।', the three names at the chowki and others) are not banned and not padded by rule. Line by line, the writer and the voice director decide whether a turn gets a carrier phrase or extra takes.",
+    "English verbs belong in the Hindi lines where a speaker would use them, not only English nouns (plan section 3): lock करना, call करना, check करना, book करना and the like. The anchor lines quoted in this bible are light on them; writers may add them anywhere except inside story_locks.locked_lines."
+  ],
+  "content_notes": [
+    "Every character is an adult. Kiran being taken from her uncle's house at fourteen is backstory in a line or two, never shown.",
+    "One suicide, in the past: stated once as fact and never pictured or described further.",
+    "A plan to kill a man and pass it off as his own act is spoken as intent in branch B. No method, substance or quantity is given, and it does not happen.",
+    "The sedative is never named or measured.",
+    "The police force, its uniform details and the chowki are invented; no crest, no national flag, no real people, no real bureau.",
+    "A temple wedding is mentioned and a temple step appears in one photograph; no deity, ritual or community is shown or named.",
+    "No intimacy staging, no nudity, no gore, no weapon."
+  ],
+  "not_verified": [
+    "This file has still not been run through a JSON parser, in revision 1 or in revision 2: the showrunner, the critic and the Arbiter all lack a shell. Search-pattern checks only. The first agent with a shell must parse it (D-005).",
+    "The Script critic has read revision 1 only. Its second read, of the beats changed by D-005 changes 1 to 9, has not happened. The wording used for changes 3, 4 and 5 is untested until then.",
+    "Vote split: unknown. No script exists; the balance levers are a design, not a measurement. Whether the rewritten ballot meanings lean either way is a guess until there are votes.",
+    "Lengths are estimates from beat and line counts (length_budget). Nothing was timed.",
+    "Bangles coming off over a hand one at a time, a cuff that still covers the scar with three off, and a stack pushed 6 cm up the forearm (s1e01 b11) are staging assumptions, not tested on a person or on a frame.",
+    "The boys as silhouettes only, and one eye opening a slit behind glasses (s1b02 b9), have not been tried on a frame.",
+    "A chooda as bridal wear in Madhya Pradesh was not checked; here it is the bureau's kit, and nobody in the story remarks on it.",
+    "The line that a medical store runs on its pharmacist's licence is written as Aditya's reason, not as a statement of law; the rule was not checked.",
+    "Sunrise at about 5:35 am in late April and a two-and-a-half-hour drive are plausible figures, not looked up.",
+    "Reading the pitched ending 'gives her real name' as a birth name, Tulsi, different from Kiran, is the showrunner's interpretation."
+  ],
+  "revision_log": {
+    "decision": "docs/decisions.md D-005",
+    "changes": [
+      "1: s1e02 b13; cliffhanger_ladder (s1e02); s1a01 b1; s1b01 b1; choice.asked_at; register.performance_flags; story_locks.locked_lines.",
+      "2: s1e02 b2 and b3; story_locks.wrist_check (how_it_is_met, staging, the_three_bangles, status); story_locks.scar.under_the_chooda; story_locks.chooda.rule; not_verified.",
+      "3: s1e02 b4 (the reason said to her face, the priority line, and his own hand giving the bangles back).",
+      "4: s1b01 b5a (new), b6 and b7; story_locks.near_misses_branch_B; writer_notes; glimpse_rules.",
+      "5: s1a03 b1 to b4 with their reveals; s1b03 b6; endings.A.summary; characters.mausi.secret; story_locks.rekha; story_locks.kept_apart_in_the_two_finales; story_locks.near_misses_branch_A (last entry); knowledge.branch_A_only.",
+      "6: production_locks; s1e01 b1 and b3.",
+      "7: (a) s1e02 b4; s1a01 b1 and b3; s1b01 b1; knowledge.end_of_s1e02.aditya; story_locks.code.who_knows. (b) s1a01 b7.",
+      "8: s1b01 b6.",
+      "9: length_budget; writer_notes; s1e01 b6 (takes in b7) and b8; s1e02 b4 (takes in b8) and b10 (takes in b11); s1a01 b2, b4 cut, story_locks.cover_story_branch_A; s1a03 b8 (takes in b9). Beat ids were kept, not renumbered (id_convention.beats).",
+      "10: choice.A.meaning; choice.B.meaning; choice.ballot_note.",
+      "11: s1e01 b5; story_locks.names; knowledge.end_of_s1e01.viewer; choice.balance_levers; s1e02 b7 (reveal) and b10.",
+      "12: story_locks.photograph (content, never_in_it).",
+      "13: s1a02 b6.",
+      "14: s1b02 b9; cliffhanger_ladder (s1b02).",
+      "15: s1a02 b5; story_locks.names.",
+      "16: characters.kiran.look_detail.chooda; story_locks.chooda.reads_as.",
+      "17: production_locks; characters.the_boys.look; s1e02 b9; s1a01 b2.",
+      "18: locations.bureau.geography; s1a02 b4; s1a03 b7.",
+      "19: s1a02 b6 and b7.",
+      "20: s1b01 b7.",
+      "21: writer_notes, the last two lines.",
+      "22: content/series1/branch-map.md regenerated from this revision."
+    ],
+    "not_applied_by_ruling": "m5 as a rule; m7; the m8d plate list; m9; the s1b02 b3 reveal label; removing 'Mausi knew he died' from either branch.",
+    "choices_the_showrunner_made_inside_the_defaults": [
+      "Change 3: both a line and an action. He says the reason to her face, and he hands the three bangles back himself.",
+      "Change 5: Mausi's rewritten s1a03 b4 line is 'पुड़िया रख दीजिए, दामाद जी। दाम बोलिए। लड़की मेरी है।', and Kiran's refusal in b3 is 'आपको झूठ बोलने की ज़रूरत नहीं, मौसी।'",
+      "Change 9: beat ids kept stable with gaps, so D-005's beat references still resolve.",
+      "Change 10: both meanings open with the signal to Billu and close with who is handed to whom.",
+      "Change 17: silhouettes, hands and backs only; no reference sheet for the boys.",
+      "Change 18: s1a03 b7 brings Chhoti through the curtain to the cot, so she is not in the room for b1 to b6."
+    ]
+  }
+}

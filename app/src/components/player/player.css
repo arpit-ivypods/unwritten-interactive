@@ -1,0 +1,239 @@
+/*
+ * Player screen. OWNER: player.
+ *
+ * Layout and the few things the stage needs while it plays. Every colour,
+ * radius, space and duration is a design-system token; the component classes
+ * (uw-stage, uw-sub, uw-seg, uw-glass) come from the design system's bundle.
+ *
+ * Phone (the primary design): the stage full width with 16px gutters, the
+ * audio and subtitle controls under it, then the "now playing" panel.
+ * Desktop: the stage in the centre, a glass panel either side, tilted a few
+ * degrees toward it (direction C). No tilt under prefers-reduced-motion.
+ */
+
+.uwp-screen {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    "stage"
+    "controls"
+    "info";
+  justify-items: center;
+  align-content: start;
+  gap: var(--space-4);
+  min-height: 100dvh;
+  padding: var(--space-4);
+  padding-bottom: calc(var(--space-9) + env(safe-area-inset-bottom, 0px));
+}
+
+/* The stage is as wide as the gutters allow, and never taller than the screen
+   can show together with the controls under it. */
+.uwp-stage-wrap {
+  grid-area: stage;
+  width: min(100%, calc((100dvh - 168px) * 9 / 16));
+  min-width: min(100%, 220px);
+}
+.uwp-stage {
+  width: 100%;
+  container-type: inline-size;
+  -webkit-tap-highlight-color: transparent;
+}
+.uwp-stage > video {
+  background: var(--stage);
+}
+
+.uwp-controls {
+  grid-area: controls;
+  width: 100%;
+  max-width: 420px;
+}
+.uwp-controls-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--space-3);
+}
+.uwp-hint {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+.uwp-info {
+  grid-area: info;
+  width: 100%;
+  max-width: 420px;
+}
+.uwp-info .uw-btn {
+  align-self: flex-start;
+}
+
+/* Phone stage: the design system's uw-stage--phone, chosen by width so the
+   server and the browser render the same markup. */
+@media (max-width: 640px) {
+  .uwp-stage.uw-stage {
+    border-width: 5px;
+    border-radius: var(--radius-2xl);
+  }
+}
+/* Subtitles step down below a 360px stage (design system, Subtitles: uw-sub--sm). */
+@container (max-width: 359px) {
+  .uwp-stage .uw-sub-line {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .uwp-screen {
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    grid-template-areas: "info stage controls";
+    align-items: center;
+    align-content: center;
+    gap: var(--space-14);
+    padding: var(--space-9) var(--space-14);
+  }
+  .uwp-stage-wrap {
+    width: calc(min(100dvh - 200px, 780px) * 9 / 16);
+    min-width: 270px;
+  }
+  .uwp-info {
+    justify-self: end;
+    max-width: 360px;
+  }
+  .uwp-controls {
+    justify-self: start;
+    max-width: 320px;
+  }
+  .uwp-controls-inner {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-4);
+    padding: var(--space-6);
+    border-radius: var(--radius-xl);
+    background: var(--glass);
+    -webkit-backdrop-filter: blur(var(--blur-glass)) saturate(180%);
+    backdrop-filter: blur(var(--blur-glass)) saturate(180%);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow-panel);
+  }
+  /* On a glass panel the segmented control is a glass-strong row, not glass on glass. */
+  .uwp-controls-inner .uw-seg {
+    background: var(--glass-strong);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    border-color: var(--hairline);
+    box-shadow: none;
+  }
+  .uwp-hint {
+    text-align: left;
+  }
+}
+
+/* Side panels lean toward the stage: at most 7 degrees (design system). */
+@media (min-width: 1024px) and (prefers-reduced-motion: no-preference) {
+  .uwp-info > .uw-glass {
+    transform: perspective(1600px) rotateY(6deg);
+    transform-origin: right center;
+  }
+  .uwp-controls-inner {
+    transform: perspective(1600px) rotateY(-6deg);
+    transform-origin: left center;
+  }
+}
+
+/* --- On the stage --------------------------------------------------------- */
+
+/* Three tap zones over the film: previous shot, pause or play, next shot.
+   pan-y leaves vertical drags to the page and hands horizontal ones to us. */
+.uwp-zones {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  touch-action: pan-y;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+.uwp-zone {
+  appearance: none;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+.uwp-zone--edge {
+  flex: 0 0 26%;
+}
+.uwp-zone--main {
+  flex: 1 1 auto;
+}
+.uwp-zone:focus-visible {
+  outline: 2px solid var(--on-stage);
+  outline-offset: -8px;
+  border-radius: var(--radius-xl);
+}
+
+/* What is drawn over the film lets taps through to the zones. */
+.uwp-stage .uw-stage-scrim,
+.uwp-stage .uw-stage-top,
+.uwp-stage .uw-stage-bottom,
+.uwp-glyph,
+.uwp-spinner {
+  pointer-events: none;
+}
+.uwp-glyph {
+  cursor: default;
+}
+.uwp-spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -18px 0 0 -18px;
+  /* A seek or a file swap usually settles within a few frames: only show the
+     spinner when it does not. */
+  animation:
+    uw-spin 900ms linear infinite,
+    uwp-appear 1ms linear 320ms both;
+}
+@keyframes uwp-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Only shown when the move to the next step takes longer than a moment. */
+.uwp-late {
+  animation: uwp-appear 1ms linear 600ms both;
+}
+
+/* "Tap to play": the whole veil takes the tap, not only the button on it. */
+.uwp-tap {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+}
+
+/* Covers whatever frame the video last held when a file fails to load. */
+.uwp-blank {
+  position: absolute;
+  inset: 0;
+  background: var(--stage);
+}
+
+/* The next episode's video, warming up. Never visible, never played. */
+.uwp-preload {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .uwp-spinner {
+    animation: uwp-appear 1ms linear 320ms both;
+  }
+}

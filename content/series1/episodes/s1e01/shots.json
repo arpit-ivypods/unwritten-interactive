@@ -1,0 +1,1879 @@
+{
+  "id": "s1e01",
+  "series_id": "series1",
+  "title": "पूरी पुड़िया",
+  "made_by": "S7 Storyboard artist",
+  "date": "2026-11-26",
+  "lead_character": "kiran",
+  "governed_by": [
+    "content/series1/episodes/s1e01/script.hi.json and script.en.json (revision 2; same beats, lines and speakers)",
+    "content/series1/episodes/s1e01/voice/manifest.jsonl (measured clip lengths) and voice/review.json",
+    "content/series1/style.json (locks rewritten after Gate 3, style_frame, light_states, prompt_assembly)",
+    "content/series1/continuity.json (s1e01 end_state, wardrobe_changes, P02, P07)",
+    "docs/decisions.md D-010, D-012, D-013, D-014, D-015, D-017, D-018, D-019, D-020, D-021, D-0M2, D-0M4"
+  ],
+  "frames_dir": "<repo>/content/series1/episodes/s1e01/frames",
+  "prompts_dir": "<repo>/content/series1/episodes/s1e01/frames/prompts",
+  "runner": "production/scripts/codex-frame.sh <frames_dir> <shot_id> <frames/prompts/<shot_id>.txt> [refs in the order listed in the shot]. Only shots with frame.kind = generated are sent to the runner.",
+  "shot_count": 36,
+  "frame_budget": {
+    "budget_D010": 28,
+    "generated": 28,
+    "second_framings": 7,
+    "reused_approved_assets": 1,
+    "note": "28 new frames for 36 shots (the D-010 budget, now fully spent: s05 became a generated MCU under D-023 rule 4.8). Second framings reuse an approved frame of this episode with a custom camera move at scale 1.3 or less (D-010). s31 is the one approved photograph (refs/photograph.png, D-007 direction 15), never regenerated. Retakes (s02, s03, s20, s21, attempt 2 each) are retakes, not new frames."
+  },
+  "estimated_seconds": {
+    "picture_timeline_longer_language": 138.58,
+    "hi_from_own_clips": 136.37,
+    "en_from_own_clips": 127.17,
+    "ceiling_per_cut_D018": 150,
+    "basis": "Measured duration_s of every line in voice/manifest.jsonl (latest take where a retake exists: hi l04 take 2 = 3.68 s, hi l16 take 2 = 2.40 s, en l16 take 2 = 2.48 s), plus the script's beat silences (11.2 s), plus 0.25 s after each of the 26 lines (6.5 s). Speech: hi 93.60 s, en 85.04 s. Shot durations below use the longer language shot by shot (duration_s); duration_hi_s and duration_en_s are what each cut gets if its timeline is rebuilt from its own clips (D-014 rule 6). Where one line is split across two shots, the split point is the measured sentence pause and the two parts are estimates; the editor cuts on the pause that silencedetect finds.",
+    "clarity_remap_D025": "2026-11-26, S7 Storyboard artist, clarity remap (D-025 item 8): totals re-summed from the shots after the remap. Shots that gained lines or changed split are timed from the clarity takes (voice/manifest.jsonl, highest ok take per line): whole clip length + 0.25 s after each line, plus the beat silence the shot carries; split parts at the midpoint of the measured pause (silencedetect -40 dB, 0.15 s). Other voiced shots are shifted by (clarity take - previous take) for each re-voiced line. Planned only: the build times voiced shots from speech."
+  },
+  "longest_setup": {
+    "shot": "s19",
+    "seconds": 6.09,
+    "rule": "No set-up held past 8 s (bible production_locks, D-018 storyboards note on measured lengths). Every shot is under 8 s in both languages."
+  },
+  "ref_index": {
+    "kiran_p1": "<repo>/content/series1/refs/kiran_p1.png",
+    "kiran_hands": "<repo>/content/series1/refs/kiran_hands.png",
+    "aditya": "<repo>/content/series1/refs/aditya.png",
+    "billu": "<repo>/content/series1/refs/billu.png",
+    "pair_kiran_aditya_p1": "<repo>/content/series1/refs/pair_kiran_aditya_p1.png",
+    "bedroom_bed": "<repo>/content/series1/refs/bedroom_bed.png",
+    "bedroom_door": "<repo>/content/series1/refs/bedroom_door.png",
+    "bedroom_window": "<repo>/content/series1/refs/bedroom_window.png",
+    "lane_night": "<repo>/content/series1/refs/lane_night.png",
+    "glass_and_fold": "<repo>/content/series1/refs/glass_and_fold.png",
+    "padlock_hasp": "<repo>/content/series1/refs/padlock_hasp.png",
+    "key_thread": "<repo>/content/series1/refs/key_thread.png",
+    "brass_set": "<repo>/content/series1/refs/brass_set.png",
+    "kiran_phone": "<repo>/content/series1/refs/kiran_phone.png",
+    "photograph": "<repo>/content/series1/refs/photograph.png",
+    "billu_car": "<repo>/content/series1/refs/billu_car.png",
+    "style_frame": "<repo>/content/series1/refs/bedroom_bed.png",
+    "anchor_bedroom_s04": "<repo>/content/series1/episodes/s1e01/frames/s04.png",
+    "anchor_lane_s15": "<repo>/content/series1/episodes/s1e01/frames/s15.png"
+  },
+  "scenes": [
+    {
+      "id": "sc1_bedroom",
+      "beats": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b6",
+        "b8",
+        "b9",
+        "b10",
+        "b11"
+      ],
+      "anchor_shot": "s04",
+      "anchor_reason": "First frame of the scene that shows the lead's face (D-013 rule 2): Kiran as 'Sneha' at the stool, with the tray, the tumbler and the open fold, the window grille and both light sources. It is generated first in this scene and is the only bedroom frame that carries the style frame. b6 to b11 follow the lane cutaway inside the same continuous minute, so they are the same scene and attach the same anchor; their prompts list what has changed since s04 under 'do not copy from the anchor'.",
+      "style_frame_on": "s04 only (bedroom_bed.png, attached last; the plate of s04 is bedroom_window, a different file, so both are attached)",
+      "light_state": "bedroom_night"
+    },
+    {
+      "id": "sc2_lane",
+      "beats": [
+        "b5"
+      ],
+      "anchor_shot": "s15",
+      "anchor_reason": "The only person in the scene is Billu; s15 is his face, the car and the lane light. Generated first in the scene with the style frame; s14 attaches it as anchor; s16 is a second framing of s14.",
+      "style_frame_on": "s15 only (bedroom_bed.png, attached last, labelled rendering-only)",
+      "light_state": "lane_night"
+    }
+  ],
+  "generation_order": [
+    "s04",
+    "s15",
+    "s01",
+    "s02",
+    "s03",
+    "s05",
+    "s06",
+    "s07",
+    "s08",
+    "s09",
+    "s10",
+    "s11",
+    "s12",
+    "s13",
+    "s14",
+    "s17",
+    "s18",
+    "s20",
+    "s21",
+    "s23",
+    "s27",
+    "s28",
+    "s29",
+    "s30",
+    "s32",
+    "s33",
+    "s35",
+    "s36"
+  ],
+  "generation_gates": [
+    "D-015 rule 7: generate the two anchors (s04, s15), run the anchor check, and only then the other 25. Every other bedroom frame attaches frames/s04.png and s14 attaches frames/s15.png, so they cannot run before their anchor is approved.",
+    "D-021 decision 6 retake check: it must finish before any frame that attaches a sheet it names. Neither anchor does (s04: kiran_p1, bedroom_window, glass_and_fold, style frame; s15: billu, billu_car, style frame). Two later frames do: s20 attaches pair_kiran_aditya_p1 (backs of Kiran's hands) and s14 attaches lane_night (boot-lid mark). Hold those two until the check has reported.",
+    "D-017 watch item: s20 is the first Kiran-Aditya two-shot. He is seated and she is standing a room's width away, so it is not a same-depth height test; the line-up sheet is attached for faces and scale only."
+  ],
+  "screen_direction": [
+    "Bedroom geography (style.json): facing the headboard from the door, the window is in the right wall, the almirah, chair and maroon bag against the left wall, the lamp on the almirah side of the headboard, the stool and tray on the window side of the bed.",
+    "From b3 on the line runs from Kiran at the door to Aditya on the foot edge of the bed. Every camera stays on the almirah side of that line. So Kiran's singles (s07, s17, s21, s27, s33; plate bedroom_door) have the window on picture-left and the lamp light from picture-right, and she looks just past the picture-left edge of the lens. Aditya's singles (s03, s05, s18, s19, s23, s26, s28, s32; plate bedroom_bed) have the lamp at picture-left and the window at picture-right, and he looks just past the picture-right edge of the lens. The two-shot s20 (plate bedroom_window, from beside the almirah) puts him at picture-left facing right and her at picture-right facing left.",
+    "In b1 and b2 Kiran is at the stool on the window side; s04 (plate bedroom_window) has the bed on picture-left and her looking towards picture-left, which matches the later convention.",
+    "Lane: s14 follows the lane_night plate (car picture-left, house and lit window picture-right). s15 is outside the open driver's window with the house behind the camera; Billu looks up just above the top of the lens."
+  ],
+  "state_ledger": {
+    "source": "continuity.json has no beat-level ledger for s1e01 ('Beat ledgers belong with the storyboard'). This ledger is built from its s1e01 end_state, the wardrobe_changes for kiran and aditya, problems P02 and P07, style.json key_props and characters.*.continuity_notes, and the script's action lines. Sides are the character's own; every prompt converts them to picture terms (D-013 rule 3).",
+    "constant_b1_to_b11": [
+      "Lamp on (almirah side of the headboard), window open, cool streetlight through the grille. No ceiling fan, no ceiling light.",
+      "Padlock: locked through the staple, hasp closed, bolt shot, on the inside of the pale-blue door (padlock_hasp view 1).",
+      "Tumbler: on the steel tray on the stool, window side of the bed; kesar milk with half a sachet in it from b1; never touched again.",
+      "Maroon bag: on the wooden chair by the almirah (as in the plates).",
+      "Kiran: period 1 red saree, barefoot; BOTH chooda cuffs pushed up the forearm towards the elbow (s1e01 look; continuity wardrobe_changes s1e01 b1); her LEFT forearm never in frame uncovered from b1 to b10, always under the fall of the pallu; only her RIGHT hand works.",
+      "Aditya: glasses and the brass key on its doubled red thread at mid-chest in every shot of him; barefoot; watch on his LEFT wrist, unreadable."
+    ],
+    "b1": "Kiran at the stool, right hand tapping powder from the open fold into the tumbler; stops on 'आधी में' with half the powder still in the fold. Aditya off screen on the bed, lying dressed, eyes shut. Pallu on her shoulder, its fall over her left arm.",
+    "b2": "Aditya sitting up against the bolster, hands in his lap; Kiran's phone face up on the sheet beside him, screen dark (review fix). Kiran turned from the stool as 'Sneha': pallu drawn over her head, right hand at her chest; the fold left open on the tray behind her, half full (P07 fix, script revision 2).",
+    "b3": "Kiran at the door, back to camera, right hand on the iron bolt, left arm against her body under the pallu, pallu still over her head. Aditya on the bed; two of his fingers lift the key off the kurta.",
+    "b4": "Aditya at the open almirah with the red velvet box open (brass set). Kiran stays at the door. Phone on the sheet face up, 'No network' overlay, SIM out. The SIM between his index and middle finger. Brass set not shown put back (continuity assumes returned).",
+    "b5": "Lane, about 1:40 am. Billu in the driver's seat, toothpick in the right corner of his mouth, car key on his right index finger, phone at his ear. Car parked, lights off. Nobody else in the lane.",
+    "b6": "Kiran at the door; her right hand has pushed the pallu back off her head; its fall still covers her left arm. From set-up 8 (l19) her right hand is flat on the door and stays there through b10. Aditya back on the foot edge of the bed (review fix), hands in his lap. The SIM is no longer shown.",
+    "b8": "Aditya on the bed edge, eyes down; then his right hand draws the creased print from the patch pocket on his right chest, white back to camera. (style.json: the sheet draws a patch pocket on his RIGHT chest, so the lock follows the sheet over the script's 'side pocket'.)",
+    "b9": "The print held out at arm's length in his right hand, picture side to her, white back to the camera. Then the photograph itself, full frame (refs/photograph.png).",
+    "b10": "The print lowered and held flat to his chest beside the key, white back out. Kiran at the door, right hand still against it.",
+    "b11": "Print raised again by his face. Then her LEFT forearm, back to camera, cuff still pushed up, the scar bare (first and only time in s1e01); then the same framing with the cuff slid down over the scar. End state matches continuity.json s1e01 end_state: left cuff at rest over the scar, right cuff still pushed up (P02, fixed in s1e02)."
+  },
+  "field_notes": {
+    "duration_s": "Longer language, this shot (max of duration_hi_s and duration_en_s).",
+    "silent_lead_s": "Seconds of the shot before its first line starts (the script's beat silence 'before').",
+    "camera_move": "Maps to Move in production/remotion/src/types.ts. For 'custom', from/to are CameraKey {scale, x, y}: x positive looks further left, y positive looks further up (camera.ts). Every second framing keeps scale at or under 1.3 (D-010).",
+    "refs": "Absolute paths, at most five, in the order the prompt labels them: people (pair or single sheet, hand sheet), plate, prop sheets, then scene anchor or, on an anchor, the style frame (D-013 rule 1, D-017 amendment 3, D-021 decision 3).",
+    "subtitle_safe": "true = faces, hands that matter and the key object are above the bottom fifth of the frame."
+  },
+  "storyboard_notes": [
+    "36 shots for 10 beats. Every script set-up and insert is a shot, in script order; nothing is merged and nothing is added.",
+    "Second framings (8): s05 of s03, s16 of s14, s19 of s18, s22 of s08, s24 of s17, s25 of s21, s26 of s28, s34 of s30. Each is a custom move between scales 1.1 and 1.3 on the source frame.",
+    "Departures from the script's set-up wording, all to stay inside 28 frames: (1) s16 (l10) was 'low angle from beside the car up to the lit window'; it is a 1.15 to 1.3 push on the lit window of the s14 wide instead, so the marigold string on the grille is written into s14. (2) s34 (l26) reuses s30; the print is held out beside his face, not raised close to it. (3) s25 (l19) reuses s21, so her chin is level-to-raised as in s21. (4) s22 (l16) reuses the s08 padlock insert, as the script's 'again' allows. If any of these reads wrong in the cut, the one unspent frame goes to it.",
+    "Lane light: the script says 'sodium streetlight'; style.json makes the lane's one streetlight cool blue-white (art_director_notes) so the bedroom rim is motivated. The prompts follow style.json and light_states.lane_night.",
+    "The lane_night plate holds an old motorbike behind the car. s1e01 says nobody else is in the lane and the boys are not in this episode; the bike stays as an empty parked bike, as the plate shows it.",
+    "Readable text is overlay only: '1:40' on s14 (a plain dark area is left at upper picture-left) and 'No network' on the s12 phone screen (the screen is a plain dim glow).",
+    "Mausi is voice only (l09, l10 over the lane). Mohit is only the hand in the photograph. No ceiling fan anywhere. Never more than two faces in a frame (s20 is the only two-face frame).",
+    "Lines on faces: stills cannot lip-sync, so most lines play over the listener or an insert. Lines on the speaker's own face: l03 part 1 (s05), l12, l13, l17, l22, l25 and l24 (Aditya), l11, l15, l19 (Kiran). Each of those frames is written with the mouth closed or barely parted.",
+    "The b9 photograph insert (s31) is refs/photograph.png, a studio-lit prop reference of the one approved print (style.json key_props.photograph: 'cropped or re-framed, never regenerated'). If the grey surface still shows round the print at scale 1.3, the editor shows it as a print lying on grey; it is not regenerated.",
+    "s35 and s36 attach refs/photograph.png for composition only, so that her forearm crosses the frame at the same angle and the crescent sits at the same place and scale as in s31 (review-notes cliffhanger_mirror).",
+    "P07 (fold set down) is carried by the STATE of s04 and s06: the fold lies open on the tray from b2. P02 (right cuff) is left as continuity.json says: the right cuff is still pushed up at the end of s1e01; s1e02 b1 brings it down.",
+    "26 Nov, D-023 retake run (S7 with a shell): s02, s03, s20, s21 retaken once each; s21 and s02 restaged under rule 4.6 (cuff framed out, kiran_hands dropped); s05 changed from a second framing of s03 to a generated MCU (rule 4.8, the 28th frame); s25 re-aimed at her face. s03's pocket is still on the wrong side after its retake and is accepted and logged (D-013 rule 11). edit.json moves for s05 and s25 are now stale; that is the editor's file."
+  ],
+  "shots": [
+    {
+      "id": "s01",
+      "scene": "sc1_bedroom",
+      "beat_id": "b1",
+      "setup": "b1 set-up 1",
+      "line_ids": [
+        "l01"
+      ],
+      "line_part": "from the start of l01 to the pause after 'डाल दो।' / 'sachet.'",
+      "silent_lead_s": 0.4,
+      "duration_hi_s": 1.92,
+      "duration_en_s": 2.1,
+      "duration_s": 2.1,
+      "framing": "Extreme close-up insert, 100 mm macro, from beside her right side looking down at about 40 degrees across the tray towards the window.",
+      "action": "HOOK, lands at 0 s. Kiran's right hand, fingertips dipped in henna, taps white powder from the open paper fold into the steel tumbler of kesar milk. Aditya's l01 is off screen.",
+      "frame": {
+        "kind": "generated",
+        "prompt_file": "<repo>/content/series1/episodes/s1e01/frames/prompts/s01.txt",
+        "out": "<repo>/content/series1/episodes/s1e01/frames/s01.png"
+      },
+      "refs": [
+        "<repo>/content/series1/refs/kiran_hands.png",
+        "<repo>/content/series1/refs/bedroom_window.png",
+        "<repo>/content/series1/refs/glass_and_fold.png",
+        "<repo>/content/series1/episodes/s1e01/frames/s04.png"
+      ],
+      "camera_move": {
+        "preset": "push-in",
+        "intensity": 0.35,
+        "focus": {
+          "x": 0.5,
+          "y": 0.4
+        }
+      },
+      "on_screen": [
+        "kiran (right hand only)"
+      ],
+      "faces_in_frame": 0,
+      "light_state": "bedroom_night",
+      "state": [
+        "Right hand (entering from upper picture-left): holds the open fold tilted over the tumbler, tapping powder in; about half still in the crease.",
+        "Right cuff pushed up towards the elbow: at most its ivory end at the upper picture-left edge.",
+        "Left arm: not in frame (under the pallu).",
+        "Tumbler on the tray on the stool; nothing else on the tray.",
+        "Aditya off screen on the bed, eyes shut."
+      ],
+      "subtitle_safe": true,
+      "note": "Sound of paper on the steel rim and the hiss of powder runs under this shot and stops dead on the cut to s02."
+    },
+    {
+      "id": "s02",
+      "scene": "sc1_bedroom",
+      "beat_id": "b1",
+      "setup": "b1 set-up 2",
+      "line_ids": [
+        "l01"
+      ],
+      "line_part": "from 'आधी में' / 'Half' to the end of l01",
+      "silent_lead_s": 0.0,
+      "duration_hi_s": 2.41,
+      "duration_en_s": 2.39,
+      "duration_s": 2.41,
+      "framing": "The same camera as s01.",
+      "action": "Her hand has stopped in the air above the tumbler; half the powder is still in the fold; nothing falls.",
+      "frame": {
+        "kind": "generated",
+        "prompt_file": "<repo>/content/series1/episodes/s1e01/frames/prompts/s02.txt",
+        "out": "<repo>/content/series1/episodes/s1e01/frames/s02.png"
+      },
+      "refs": [
+        "<repo>/content/series1/episodes/s1e01/frames/s01.png",
+        "<repo>/content/series1/refs/glass_and_fold.png",
+        "<repo>/content/series1/episodes/s1e01/frames/s04.png"
+      ],
+      "refs_note": "D-023 rule 4.6 (Series 1 right-cuff fallback c): kiran_hands is no longer attached, because every view of it draws a cuff at the wrist and view 2 draws it closed there; the prompt names it under do-not-copy and states the cuff is pushed up and out of frame. frames/s01.png is Image 1 (camera, hand, henna and bare wrist), glass_and_fold Image 2, the s04 anchor Image 3 (its cuff listed under do-not-copy).",
+      "camera_move": {
+        "preset": "hold"
+      },
+      "on_screen": [
+        "kiran (right hand only)"
+      ],
+      "faces_in_frame": 0,
+      "light_state": "bedroom_night",
+      "state": [
+        "Right hand (upper picture-left): stopped a few cm above the tumbler, the fold held level, half the powder in its crease, nothing falling.",
+        "Right cuff pushed up towards the elbow and out of the frame (D-023 rule 4.6); nothing red or ivory at the wrist.",
+        "Left arm not in frame.",
+        "Milk surface still, a faint pale haze on it."
+      ],
+      "subtitle_safe": true,
+      "note": "Held dead still: the stop is the hook's second beat. The prompt asks for the s01 camera; if the two takes differ in framing, the cut reads as a cut-in, which is acceptable. RETAKE RUN (attempt 2, 67.4 s, manifest row): restaged under D-023 rule 4.6 with the cuff framed out. Attempt 1 is kept as s02.prev1.png. By eye at full size the cuff is out of the frame and the wrist and forearm are bare to the upper picture-left edge; the fold is level with powder in it. Waiting for the retake check (S9). [S7 retake run, 26 Nov 2026, under D-023 decisions 2 and 4.6; storyboard artist's own look at full resolution, not the retake check]"
+    },
+    {
+      "id": "s03",
+      "scene": "sc1_bedroom",
+      "beat_id": "b2",
+      "setup": "b2 set-up 1",
+      "line_ids": [
+        "l02"
+      ],
+      "line_part": "'आप जाग रहे हैं?' / 'You're awake?'",
+      "silent_lead_s": 0.3,
+      "duration_hi_s": 2.2,
+      "duration_en_s": 1.5,
+      "duration_s": 2.2,
+      "framing": "Medium shot, 50 mm, from the door end of the room towards the bed (bedroom_bed direction).",
+      "action": "Aditya has sat up on the marigold-strewn bed, unhurried, glasses on, key on its thread, the red bolster behind him, her phone face up on the sheet beside him. Kiran's l02 is off screen.",
+      "frame": {
+        "kind": "generated",
+        "prompt_file": "<repo>/content/series1/episodes/s1e01/frames/prompts/s03.txt",
+        "out": "<repo>/content/series1/episodes/s1e01/frames/s03.png"
+      },
+      "refs": [
+        "<repo>/content/series1/refs/aditya.png",
+        "<repo>/content/series1/refs/bedroom_bed.png",
+        "<repo>/content/series1/refs/key_thread.png",
+        "<repo>/content/series1/refs/kiran_phone.png",
+        "<repo>/content/series1/episodes/s1e01/frames/s04.png"
+      ],
+      "camera_move": {
+        "preset": "push-in",
+        "intensity": 0.25,
+        "focus": {
+          "x": 0.5,
+          "y": 0.35
+        }
+      },
+      "on_screen": [
+        "aditya"
+      ],
+      "faces_in_frame": 1,
+      "light_state": "bedroom_night",
+      "state": [
+        "Aditya sitting up against the bolster, hands empty in his lap, glasses on, key at mid-chest.",
+        "Kiran's phone face up on the sheet beside his hip (picture-left), screen dark.",
+        "Photograph in his chest pocket, not visible.",
+        "Kiran off screen at the stool (picture-right)."
+      ],
+      "subtitle_safe": true,
+      "note": "Source frame for s03 only; s05 is now its own generated MCU (D-023 rule 4.8). RETAKE RUN (attempt 2, 130.2 s; attempt 1 kept as s03.prev1.png): same refs, STATE and FINAL CHECK carrying the checker's pocket wording. The pocket STILL comes out on the picture-right of his chest, on the same side as the watch, as in attempt 1; the sheet (refs/aditya.png) draws it on the picture-left. Under D-023 decision 1 and D-013 rule 11 the retake is spent: no third generation, the better take is accepted and the drift is logged here for the retake check. The checker's fallback (forearms over the pocket) would need a third generation, so it was not run. s05 frames the pocket out so the cut s03 to s05 does not show a second pocket. [S7 retake run, 26 Nov 2026, under D-023 decisions 2 and 4.6; storyboard artist's own look at full resolution, not the retake check]",
+      "supers": [
+        {
+          "id": "su1",
+          "kind": "time",
+          "with_line": "l02",
+          "beat_id": "b2",
+          "text_hi": "शादी की रात · 1:35",
+          "text_en": "Wedding night · 1:35 am",
+          "from": "script beat supers (D-024 ruling 3.5); drawn by the edit through the overlay layer"
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "scene": "sc1_bedroom",
+      "beat_id": "b2",
+      "setup": "b2 set-up 2",
+      "scene_anchor": true,
+      "line_ids": [
+        "l02"
+      ],
+      "line_part": "'मैं तो बस केसर डाल रही थी।' / 'I was only putting saffron in your milk.'",
+      "silent_lead_s": 0.0,
+      "duration_hi_s": 3.07,
+      "duration_en_s": 3.05,
+      "duration_s": 3.07,
+      "framing": "Medium shot, 50 mm, from beside the almirah across the foot of the bed towards the window (bedroom_window direction).",
+      "action": "Kiran turned from the stool towards him as 'Sneha': pallu drawn over her head, eyes lowered, right hand at her chest, the fold left open on the tray behind her; left arm under the pallu.",
+      "frame": {
+        "kind": "generated",
+        "prompt_file": "<repo>/content/series1/episodes/s1e01/frames/prompts/s04.txt",
+        "out": "<repo>/content/series1/episodes/s1e01/frames/s04.png"
+      },
+      "refs": [
+        "<repo>/content/series1/refs/kiran_p1.png",
+        "<repo>/content/series1/refs/bedroom_window.png",
+        "<repo>/content/series1/refs/glass_and_fold.png",
+        "<repo>/content/series1/refs/bedroom_bed.png"
+      ],
+      "refs_note": "bedroom_bed.png is attached last as the series style frame (D-021 decision 3), labelled rendering-only. This is the first generated frame of the bedroom scene.",
+      "camera_move": {
+        "preset": "push-in",
+        "intensity": 0.3,
+        "focus": {
+          "x": 0.45,
+          "y": 0.33
+        }
+      },
+      "on_screen": [
+        "kiran"
+      ],
+      "faces_in_frame": 1,
+      "light_state": "bedroom_night",
+      "state": [
+        "Right hand (picture-left) flat on her chest, back of the hand to camera, empty.",
+        "Left arm (picture-right) wholly under the fall of the pallu.",
+        "Pallu drawn over her head.",
+        "Right cuff pushed up and bunched below the elbow.",
+        "Tray on the stool behind her: tumbler full and untouched; the fold lying open beside it, half the powder in its crease (P07).",
+        "Her phone, the padlock and Aditya not in frame."
+      ],
+      "subtitle_safe": true,
+      "note": "SCENE ANCHOR for sc1_bedroom. Generate and check first. Every later bedroom prompt attaches frames/s04.png and lists what differs from it."
+    },
+    {
+      "id": "s05",
+      "scene": "sc1_bedroom",
+      "beat_id": "b2",
+      "setup": "b2 set-up 3",
+      "line_ids": [
+        "l03"
+      ],
+      "line_part": "to 'स्नेहा।' / 'Sneha.'",
+      "silent_lead_s": 0.0,
+      "duration_hi_s": 2.64,
+      "duration_en_s": 2.15,
+      "duration_s": 2.64,
+      "framing": "Medium close-up of Aditya from the upper chest up, 85 mm, same direction as s03 (towards the headboard). Generated frame (D-023 rule 4.8: script b2 set-up 3 asks for an Aditya MCU, and a 1.3 crop of the full-figure s03 is not one).",
+      "action": "Aditya, hands in his lap, calm: 'Sedative कड़वा होता है, स्नेहा।'",
+      "frame": {
+        "kind": "generated",
+        "prompt_file": "<repo>/content/series1/episodes/s1e01/frames/prompts/s05.txt",
+        "out": "<repo>/content/series1/episodes/s1e01/frames/s05.png"
+      },
+      "refs": [
+        "<repo>/content/series1/refs/aditya.png",
+        "<repo>/content/series1/refs/bedroom_bed.png",
+        "<repo>/content/series1/refs/key_thread.png",
+        "<repo>/content/series1/episodes/s1e01/frames/s04.png"
+      ],
+      "camera_move": {
+        "preset": "push-in",
+        "intensity": 0.2,
+        "focus": {
+          "x": 0.5,
+          "y": 0.32
+        }
+      },
+      "on_screen": [
+        "aditya"
+      ],
+      "faces_in_frame": 1,
+      "light_state": "bedroom_night",
+      "state": [
+        "Sitting up against the bolster, glasses on, hands in his lap below the frame.",
+        "Red thread and the bow of the brass key at the bottom of the frame.",
+        "Patch pocket below the frame (framed out on purpose: s03 draws it on the wrong side).",
+        "Watch below the frame.",
+        "Kiran off screen at the stool (picture-right)."
+      ],
+      "subtitle_safe": true,
+      "note": "Was a second framing of s03 (1.22 to 1.3). Spent the 28th frame here under D-023 rule 4.8. Attempt 1 run (83.3 s, manifest row). By eye: MCU, no pocket, no hands, key bow low in the frame (inside the bottom fifth; the key is not the action of this shot). The editor's edit.json still holds the old second-framing custom move for s05 (scale 1.22 to 1.3 on the source); it should be replaced by the push-in above or a hold. Waiting for the frame check (S9). [S7 retake run, 26 Nov 2026, under D-023 decisions 2 and 4.6; storyboard artist's own look at full resolution, not the retake check]",
+      "refs_note": "Aditya sheet, bedroom_bed plate, key_thread, s04 anchor. s03 is NOT attached: it carries the pocket fault. kiran_phone is not attached; the phone is below the frame."
+    },
+    {
+      "id": "s06",
+      "scene": "sc1_bedroom",
+      "beat_id": "b2",
+      "setup": "b2 insert",
+      "line_ids": [
+        "l03"
+      ],
+      "line_part": "from 'इसीलिए केसर' / 'That's why the saffron' to the end of l03",
+      "silent_lead_s": 0.0,
+      "duration_hi_s": 2.41,
+      "duration_en_s": 2.58,
+      "duration_s": 2.58,
+      "framing": "Insert, 100 mm macro, three-quarter from above on the tray.",
+      "action": "The steel tumbler on the tray, untouched, a few saffron threads on the milk; the open fold beside it. He does not touch the glass.",
+      "frame": {
+        "kind": "generated",
+        "prompt_file": "<repo>/content/series1/episodes/s1e01/frames/prompts/s06.txt",
+        "out": "<repo>/content/series1/episodes/s1e01/frames/s06.png"
+      },
+      "refs": [
+        "<repo>/content/series1/refs/bedroom_window.png",
+        "<repo>/content/series1/refs/glass_and_fold.png",
+        "<repo>/content/series1/episodes/s1e01/frames/s04.png"
+      ],
+      "camera_move": {
+        "preset": "push-in",
+        "intensity": 0.4,
+        "focus": {
+          "x": 0.48,
+          "y": 0.42
+        }
+      },
+      "on_screen": [],
+      "faces_in_frame": 0,
+      "light_state": "bedroom_night",
+      "state": [
+        "Tumbler full, untouched, saffron threads on top.",
+        "Fold open on the tray beside it, half the powder in the crease.",
+        "No hand in frame."
+      ],
+      "subtitle_safe": true
+    },
+    {
+      "id": "s07",
+      "scene": "sc1_bedroom",
+      "beat_id": "b3",
+      "setup": "b3 set-up 1",
+      "line_ids": [],
+      "silent_lead_s": 1.5,
+      "duration_hi_s": 1.5,
+      "duration_en_s": 1.5,
+      "duration_s": 1.5,
+      "framing": "Medium-wide, 35 mm, from the edge of the bed towards the door (bedroom_door direction).",
+      "action": "Silent. Kiran at the pale-blue double door, back to camera, her right hand on the iron bolt; left arm against her body under the pallu.",
+      "frame": {
+        "kind": "generated",
+        "prompt_file": "<repo>/content/series1/episodes/s1e01/frames/prompts/s07.txt",
+        "out": "<repo>/content/series1/episodes/s1e01/frames/s07.png"
+      },
+      "refs": [
+        "<repo>/content/series1/refs/kiran_p1.png",
+        "<repo>/content/series1/refs/bedroom_door.png",
+        "<repo>/content/series1/refs/padlock_hasp.png",
+        "<repo>/content/series1/episodes/s1e01/frames/s04.png"
+      ],
+      "camera_move": {
+        "preset": "push-in",
+        "intensity": 0.2,
+        "focus": {
+          "x": 0.55,
+          "y": 0.42
+        }
+      },
+      "on_screen": [
+        "kiran (back)"
+      ],
+      "faces_in_frame": 0,
+      "light_state": "bedroom_night",
+      "state": [
+        "Back to camera; right hand (picture-right) gripping the iron bolt; right cuff pushed up near the elbow.",
+        "Left arm (picture-left) against her body under the pallu, not visible.",
+        "Pallu still over her head.",
+        "Bolt shot, hasp closed, padlock locked.",
+        "Aditya on the bed behind the camera."
+      ],
+      "subtitle_safe": true,
+      "note": "Silent 1.5 s: bare feet, the bolt rattles, the padlock knocks once and holds (sfx)."
+    },
+    {
+      "id": "s08",
+      "scene": "sc1_bedroom",
+      "beat_id": "b3",
+      "setup": "b3 insert 1",
+      "line_ids": [
+        "l04"
+      ],
+      "line_part": "'ताला मैंने लगाया है।' / 'I put the padlock on.'",
+      "silent_lead_s": 0.0,
+      "duration_hi_s": 2.02,
+      "duration_en_s": 1.63,
+      "duration_s": 2.02,
+      "framing": "Insert, 100 mm macro, front-on at chest height on the inside of the door.",
+      "action": "The iron bolt and hasp shut with the brass padlock.",
+      "frame": {
+        "kind": "generated",
+        "prompt_file": "<repo>/content/series1/episodes/s1e01/frames/prompts/s08.txt",
+        "out": "<repo>/content/series1/episodes/s1e01/frames/s08.png"
+      },
+      "refs": [
+        "<repo>/content/series1/refs/bedroom_door.png",
+        "<repo>/content/series1/refs/padlock_hasp.png",
+        "<repo>/content/series1/episodes/s1e01/frames/s04.png"
+      ],
+      "camera_move": {
+        "preset": "push-in",
+        "intensity": 0.45,
+        "focus": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      },
+      "on_screen": [],
+      "faces_in_frame": 0,
+      "light_state": "bedroom_night",
+      "state": [
+        "Bolt shot, hasp closed over the staple, brass padlock locked through it, hanging still (padlock_hasp view 1).",
+        "No hand."
+      ],
+      "subtitle_safe": true,
+      "note": "Source frame for s22."
+    },
+    {
+      "id": "s09",
+      "scene": "sc1_bedroom",
+      "beat_id": "b3",
+      "setup": "b3 insert 2",
+      "line_ids": [
+        "l04"
+      ],
+      "line_part": "'चाबी यहाँ है।' / 'The key is here.'",
+      "silent_lead_s": 0.0,
+      "duration_hi_s": 1.91,
+      "duration_en_s": 1.58,
+      "duration_s": 1.91,
+      "framing": "Insert, 100 mm macro, his chest, facing him.",
+      "action": "The brass key on its doubled red thread against his cream kurta, two fingers of his right hand lifting it a little off the cloth.",
+      "frame": {
+        "kind": "generated",
+        "prompt_file": "<repo>/content/series1/episodes/s1e01/frames/prompts/s09.txt",
+        "out": "<repo>/content/series1/episodes/s1e01/frames/s09.png"
+      },
+      "refs": [
+        "<repo>/content/series1/refs/aditya.png",
+        "<repo>/content/series1/refs/bedroom_bed.png",
+        "<repo>/content/series1/refs/key_thread.png",
+        "<repo>/content/series1/episodes/s1e01/frames/s04.png"
+      ],
+      "camera_move": {
+        "preset": "push-in",
+        "intensity": 0.3,
+        "focus": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      },
+      "on_screen": [
+        "aditya (chest and right hand)"
+      ],
+      "faces_in_frame": 0,
+      "light_state": "bedroom_night",
+      "state": [
+        "Key lifted a centimetre or two off the kurta by the index and middle finger of his right hand (from picture-left); thread taut to his neck.",
+        "His left hand and watch not in frame.",
+        "Photograph inside the patch pocket (picture-left), not visible.",
+        "Face above the frame (chin at the top edge at most)."
+      ],
+      "subtitle_safe": true
+    },
+    {
+      "id": "s10",
+      "scene": "sc1_bedroom",
+      "beat_id": "b4",
+      "setup": "b4 set-up 1",
+      "line_ids": [
+        "l05"
+      ],
+      "line_part": "'Set पीतल का है।' / 'The set is brass.'",
+      "silent_lead_s": 0.0,
+      "duration_hi_s": 1.57,
+      "duration_en_s": 1.63,
+      "duration_s": 1.63,
+      "framing": "Medium shot, 50 mm, from near the door towards the almirah wall.",
+      "action": "Aditya at the open almirah, the red velvet box open in his hands: a set that reads as gold, one scratched link showing dull brass.",
+      "frame": {
+        "kind": "generated",
+        "prompt_file": "<repo>/content/series1/episodes/s1e01/frames/prompts/s10.txt",
+        "out": "<repo>/content/series1/episodes/s1e01/frames/s10.png"
+      },
+      "refs": [
+        "<repo>/content/series1/refs/aditya.png",
+        "<repo>/content/series1/refs/bedroom_bed.png",
+        "<repo>/content/series1/refs/brass_set.png",
+        "<repo>/content/series1/refs/key_thread.png",
+        "<repo>/content/series1/episodes/s1e01/frames/s04.png"
+      ],
+      "camera_move": {
+        "preset": "drift",
+        "intensity": 0.4
+      },
+      "on_screen": [
+        "aditya"
+      ],
+      "faces_in_frame": 1,
+      "light_state": "bedroom_night",
+      "state": [
+        "Almirah doors open behind him.",
+        "Box open in both hands at chest height, tilted to the lens.",
+        "Key at mid-chest above the box; watch on the wrist at picture-right, unreadable.",
+        "Chair and maroon bag out of frame.",
+        "Kiran at the door, off screen."
+      ],
+      "subtitle_safe": true
+    },
+    {
+      "id": "s11",
+      "scene": "sc1_bedroom",
+      "beat_id": "b4",
+      "setup": "b4 set-up 2",
+      "line_ids": [
+        "l05"
+      ],
+      "line_part": "from 'घर एक महीने के rent पे है।' / 'The house is rented by the month.' to the end of l05, now including its third sentence 'यहाँ चुराने को कुछ नहीं।' / 'There's nothing here to steal.' (b4 set-up 2: second and third sentences)",
+      "silent_lead_s": 0.0,
+      "duration_hi_s": 4.28,
+      "duration_en_s": 4.14,
+      "duration_s": 4.28,
+      "framing": "Insert, 50 mm, the wall above the almirah.",
+      "action": "The bare lime-washed wall above the almirah, one bare nail, nothing else.",
+      "frame": {
+        "kind": "generated",
+        "prompt_file": "<repo>/content/series1/episodes/s1e01/frames/prompts/s11.txt",
+        "out": "<repo>/content/series1/episodes/s1e01/frames/s11.png"
+      },
+      "refs": [
+        "<repo>/content/series1/refs/bedroom_bed.png",
+        "<repo>/content/series1/episodes/s1e01/frames/s04.png"
+      ],
+      "camera_move": {
+        "preset": "push-in",
+        "intensity": 0.3,
+        "focus": {
+          "x": 0.5,
+          "y": 0.38
+        }
+      },
+      "on_screen": [],
+      "faces_in_frame": 0,
+      "light_state": "bedroom_night",
+      "state": [
+        "Wall bare except one iron nail with nothing on it.",
+        "Almirah top at the lower edge.",
+        "No people."
+      ],
+      "subtitle_safe": true
+    },
+    {
+      "id": "s12",
+      "scene": "sc1_bedroom",
+      "beat_id": "b4",
+      "setup": "b4 insert (l06)",
+      "line_ids": [
+        "l06"
+      ],
+      "silent_lead_s": 0.0,
+      "duration_hi_s": 3.93,
+      "duration_en_s": 3.61,
+      "duration_s": 3.93,
+      "framing": "Insert, 100 mm macro, steeply from above on the sheet.",
+      "action": "Kiran's black phone in its dark-red cover lying screen up on the white sheet among marigold petals; overlay 'No network' (not in the image). Kiran stays at the door; she does not pick it up.",
+      "frame": {
+        "kind": "generated",
+        "prompt_file": "<repo>/content/series1/episodes/s1e01/frames/prompts/s12.txt",
+        "out": "<repo>/content/series1/episodes/s1e01/frames/s12.png"
+      },
+      "refs": [
+        "<repo>/content/series1/refs/bedroom_bed.png",
+        "<repo>/content/series1/refs/kiran_phone.png",
+        "<repo>/content/series1/episodes/s1e01/frames/s04.png"
+      ],
+      "camera_move": {
+        "preset": "push-in",
+        "intensity": 0.35,
+        "focus": {
+          "x": 0.5,
+          "y": 0.42
+        }
+      },
+      "on_screen": [],
+      "faces_in_frame": 0,
+      "light_state": "bedroom_night",
+      "state": [
+        "Phone face up on the sheet where it has lain since b2; screen a plain dim even glow with nothing on it (overlay 'No network' added in assembly).",
+        "SIM out (with Aditya); no tray or card visible.",
+        "No hand."
+      ],
+      "subtitle_safe": true,
+      "overlay": "'No network' on the screen area, assembly only."
+    },
+    {
+      "id": "s13",
+      "scene": "sc1_bedroom",
+      "beat_id": "b4",
+      "setup": "b4 insert (l07)",
+      "line_ids": [
+        "l07"
+      ],
+      "silent_lead_s": 0.0,
+      "duration_hi_s": 2.41,
+      "duration_en_s": 1.77,
+      "duration_s": 2.41,
+      "framing": "Close insert, 85 mm, at his eye level.",
+      "action": "A SIM card held up between his index and middle finger, his glasses and the key soft behind it.",
+      "frame": {
+        "kind": "generated",
+        "prompt_file": "<repo>/content/series1/episodes/s1e01/frames/prompts/s13.txt",
+        "out": "<repo>/content/series1/episodes/s1e01/frames/s13.png"
+      },
+      "refs": [
+        "<repo>/content/series1/refs/aditya.png",
+        "<repo>/content/series1/refs/bedroom_bed.png",
+        "<repo>/content/series1/refs/kiran_phone.png",
+        "<repo>/content/series1/refs/key_thread.png",
+        "<repo>/content/series1/episodes/s1e01/frames/s04.png"
+      ],
+      "camera_move": {
+        "preset": "push-in",
+        "intensity": 0.3,
+        "focus": {
+          "x": 0.45,
+          "y": 0.3
+        }
+      },
+      "on_screen": [
+        "aditya"
+      ],
+      "faces_in_frame": 1,
+      "light_state": "bedroom_night",
+      "state": [
+        "SIM between the index and middle finger of his right hand (from lower picture-left), gold contacts to camera, no printing.",
+        "Right wrist bare; watch hand not in frame.",
+        "Box put away, not in frame; phone on the bed, not in frame.",
+        "Face soft behind, glasses on, key soft at mid-chest."
+      ],
+      "subtitle_safe": true
+    },
+    {
+      "id": "s14",
+      "scene": "sc2_lane",
+      "beat_id": "b5",
+      "setup": "b5 set-up 1",
+      "line_ids": [
+        "l08"
+      ],
+      "silent_lead_s": 0.8,
+      "duration_hi_s": 4.57,
+      "duration_en_s": 4.97,
+      "duration_s": 4.97,
+      "framing": "Wide, 35 mm at f/2.8, standing in the lane (lane_night direction).",
+      "action": "Cut out to the lane: empty lane of shuttered houses; Billu's old white sedan under the single streetlight; above it across the lane the warm square of the first-floor window behind its grille, a marigold string dark across it. Overlay '1:40'. Billu's l08 plays over the wide.",
+      "frame": {
+        "kind": "generated",
+        "prompt_file": "<repo>/content/series1/episodes/s1e01/frames/prompts/s14.txt",
+        "out": "<repo>/content/series1/episodes/s1e01/frames/s14.png"
+      },
+      "refs": [
+        "<repo>/content/series1/refs/lane_night.png",
+        "<repo>/content/series1/refs/billu_car.png",
+        "<repo>/content/series1/episodes/s1e01/frames/s15.png"
+      ],
+      "camera_move": {
+        "preset": "drift",
+        "intensity": 0.3
+      },
+      "on_screen": [
+        "billu (unreadable shape at the wheel)"
+      ],
+      "faces_in_frame": 0,
+      "light_state": "lane_night",
+      "state": [
+        "Car parked on picture-left, engine and lights off; a dim unreadable shape at the right-hand wheel.",
+        "Old motorbike parked behind it, nobody near it.",
+        "Lit first-floor window across the lane on picture-right, grille, marigold string.",
+        "Nobody in the lane."
+      ],
+      "subtitle_safe": true,
+      "overlay": "'1:40' at upper picture-left, assembly only.",
+      "note": "Waits for the D-021 retake check on lane_night (boot-lid mark). Source frame for s16."
+    },
+    {
+      "id": "s15",
+      "scene": "sc2_lane",
+      "beat_id": "b5",
+      "setup": "b5 set-up 2",
+      "scene_anchor": true,
+      "line_ids": [
+        "l09",
+        "l27"
+      ],
+      "silent_lead_s": 0.0,
+      "duration_hi_s": 7.15,
+      "duration_en_s": 5.91,
+      "duration_s": 7.15,
+      "framing": "Medium close-up, 50 mm, through the open driver's window.",
+      "action": "Billu in the driver's seat, toothpick in the right corner of his mouth, key hooked on his right index finger, phone at his ear, eyes turned up to the window. Mausi (l09) on his phone.",
+      "frame": {
+        "kind": "generated",
+        "prompt_file": "<repo>/content/series1/episodes/s1e01/frames/prompts/s15.txt",
+        "out": "<repo>/content/series1/episodes/s1e01/frames/s15.png"
+      },
+      "refs": [
+        "<repo>/content/series1/refs/billu.png",
+        "<repo>/content/series1/refs/billu_car.png",
+        "<repo>/content/series1/refs/bedroom_bed.png"
+      ],
+      "refs_note": "bedroom_bed.png attached last as the series style frame, labelled rendering-only; the lane_night plate is not attached so the anchor does not wait on the D-021 retake check, and the close framing needs only the car.",
+      "camera_move": {
+        "preset": "push-in",
+        "intensity": 0.35,
+        "focus": {
+          "x": 0.5,
+          "y": 0.35
+        }
+      },
+      "on_screen": [
+        "billu"
+      ],
+      "faces_in_frame": 1,
+      "light_state": "lane_night",
+      "state": [
+        "Toothpick in, right corner of his mouth (picture-left).",
+        "Car key on its steel ring hooked on his right index finger (picture-left), hanging just outside the sill.",
+        "Phone in his left hand at his left ear (picture-right), back to camera.",
+        "Driver's window down; engine and lights off; nobody else in the car or lane."
+      ],
+      "subtitle_safe": true,
+      "note": "SCENE ANCHOR for sc2_lane. Generate and check before s14.",
+      "line_part": "all of l09, then l27 to the pause after 'आज वो स्नेहा बनी है,' / 'Tonight she's playing Sneha,'",
+      "supers": [
+        {
+          "id": "su2",
+          "kind": "name_role",
+          "with_line": "l09",
+          "beat_id": "b5",
+          "text_hi": "बिल्लू · मौसी का driver",
+          "text_en": "Billu · Mausi's driver",
+          "from": "script beat supers (D-024 ruling 3.5); drawn by the edit through the overlay layer"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "scene": "sc2_lane",
+      "beat_id": "b5",
+      "setup": "b5 set-up 3",
+      "line_ids": [
+        "l27",
+        "l10"
+      ],
+      "silent_lead_s": 0.0,
+      "duration_hi_s": 7.52,
+      "duration_en_s": 7.64,
+      "duration_s": 7.64,
+      "framing": "Second framing of s14: slow push onto the lit window and its marigold string.",
+      "action": "Mausi's l10 over the lit window ('किरण' is heard for the first time). Script asked for a low angle from beside the car; see storyboard_notes.",
+      "frame": {
+        "kind": "second_framing",
+        "source_shot": "s14",
+        "image": "<repo>/content/series1/episodes/s1e01/frames/s14.png"
+      },
+      "refs": [],
+      "camera_move": {
+        "preset": "custom",
+        "easing": "ease-in-out",
+        "from": {
+          "scale": 1.15,
+          "x": -0.5,
+          "y": 0.5
+        },
+        "to": {
+          "scale": 1.3,
+          "x": -0.8,
+          "y": 0.7
+        }
+      },
+      "on_screen": [],
+      "faces_in_frame": 0,
+      "light_state": "lane_night",
+      "state": [
+        "As s14."
+      ],
+      "subtitle_safe": true,
+      "note": "5.85 s, under 8 s, so no cut back to Billu is needed (S3 note on l10).",
+      "line_part": "l27 from 'पर है तो मेरी किरण।' / 'but she's still my Kiran.' to its end, then all of l10",
+      "cut_on_word": {
+        "hi": "पर",
+        "en": "but"
+      }
+    },
+    {
+      "id": "s17",
+      "scene": "sc1_bedroom",
+      "beat_id": "b6",
+      "setup": "b6 set-up 1",
+      "line_ids": [
+        "l11"
+      ],
+      "silent_lead_s": 0.0,
+      "duration_hi_s": 2.89,
+      "duration_en_s": 3.61,
+      "duration_s": 3.61,
+      "framing": "Close-up, 85 mm, from the bed towards the door.",
+      "action": "Back in the bedroom. Kiran CU at the door; she has pushed the pallu back off her head and 'Sneha' is gone from her face. 'ठीक है। Police हो?'",
+      "frame": {
+        "kind": "generated",
+        "prompt_file": "<repo>/content/series1/episodes/s1e01/frames/prompts/s17.txt",
+        "out": "<repo>/content/series1/episodes/s1e01/frames/s17.png"
+      },
+      "refs": [
+        "<repo>/content/series1/refs/kiran_p1.png",
+        "<repo>/content/series1/refs/bedroom_door.png",
+        "<repo>/content/series1/episodes/s1e01/frames/s04.png"
+      ],
+      "camera_move": {
+        "preset": "push-in",
+        "intensity": 0.25,
+        "focus": {
+          "x": 0.5,
+          "y": 0.35
+        }
+      },
+      "on_screen": [
+        "kiran"
+      ],
+      "faces_in_frame": 1,
+      "light_state": "bedroom_night",
+      "state": [
+        "Pallu off her head, lying on her left shoulder (picture-right), its fall forward over her left arm.",
+        "Hands out of frame.",
+        "Bolt, hasp and padlock below the frame."
+      ],
+      "subtitle_safe": true,
+      "note": "Source frame for s24."
+    },
+    {
+      "id": "s18",
+      "scene": "sc1_bedroom",
+      "beat_id": "b6",
+      "setup": "b6 set-up 2",
+      "line_ids": [
+        "l12",
+        "l28"
+      ],
+      "silent_lead_s": 0.0,
+      "duration_hi_s": 7.54,
+      "duration_en_s": 7.14,
+      "duration_s": 7.54,
+      "framing": "Medium close-up, 50 mm, waist up, from near the door towards the bed.",
+      "action": "Aditya back on the edge of the bed: 'Pharmacist. सच में।'",
+      "frame": {
+        "kind": "generated",
+        "prompt_file": "<repo>/content/series1/episodes/s1e01/frames/prompts/s18.txt",
+        "out": "<repo>/content/series1/episodes/s1e01/frames/s18.png"
+      },
+      "refs": [
+        "<repo>/content/series1/refs/aditya.png",
+        "<repo>/content/series1/refs/bedroom_bed.png",
+        "<repo>/content/series1/refs/key_thread.png",
+        "<repo>/content/series1/episodes/s1e01/frames/s04.png"
+      ],
+      "camera_move": {
+        "preset": "push-in",
+        "intensity": 0.2,
+        "focus": {
+          "x": 0.5,
+          "y": 0.33
+        }
+      },
+      "on_screen": [
+        "aditya"
+      ],
+      "faces_in_frame": 1,
+      "light_state": "bedroom_night",
+      "state": [
+        "Seated on the foot edge of the bed facing the door, hands resting together in his lap.",
+        "Glasses; key at mid-chest; watch at picture-right wrist.",
+        "Photograph in the chest pocket, not visible; SIM not shown."
+      ],
+      "subtitle_safe": true,
+      "note": "Source frame for s19.",
+      "line_part": "all of l12, then all of l28 (b6 set-up 2: l12, then l28)"
+    },
+    {
+      "id": "s19",
+      "scene": "sc1_bedroom",
+      "beat_id": "b6",
+      "setup": "b6 set-up 3",
+      "line_ids": [
+        "l13"
+      ],
+      "silent_lead_s": 0.0,
+      "duration_hi_s": 5.93,
+      "duration_en_s": 6.09,
+      "duration_s": 6.09,
+      "framing": "Aditya tighter, the key on its thread in frame: second framing of s18.",
+      "action": "'Bureau, गाड़ी में भैया, phone पे मौसी, सुबह तक दुल्हन ग़ायब।' Room tone only under it.",
+      "frame": {
+        "kind": "second_framing",
+        "source_shot": "s18",
+        "image": "<repo>/content/series1/episodes/s1e01/frames/s18.png"
+      },
+      "refs": [],
+      "camera_move": {
+        "preset": "custom",
+        "easing": "linear",
+        "from": {
+          "scale": 1.18,
+          "x": 0.0,
+          "y": 0.2
+        },
+        "to": {
+          "scale": 1.3,
+          "x": 0.0,
+          "y": 0.25
+        }
+      },
+      "on_screen": [
+        "aditya"
+      ],
+      "faces_in_frame": 1,
+      "light_state": "bedroom_night",
+      "state": [
+        "As s18."
+      ],
+      "subtitle_safe": true,
+      "note": "Longest set-up in the episode, 6.09 s (en)."
+    },
+    {
+      "id": "s20",
+      "scene": "sc1_bedroom",
+      "beat_id": "b6",
+      "setup": "b6 set-up 4",
+      "line_ids": [
+        "l14"
+      ],
+      "silent_lead_s": 0.0,
+      "duration_hi_s": 5.85,
+      "duration_en_s": 4.57,
+      "duration_s": 5.85,
+      "framing": "Two-shot across the room's width, 35 mm, from beside the almirah towards the window wall, turned a little towards the door.",
+      "action": "Kiran at the door and Aditya on the bed, the stool with the tray and tumbler between them. 'चौदह महीने लगे, तुम्हारी party बनने में।'",
+      "frame": {
+        "kind": "generated",
+        "prompt_file": "<repo>/content/series1/episodes/s1e01/frames/prompts/s20.txt",
+        "out": "<repo>/content/series1/episodes/s1e01/frames/s20.png"
+      },
+      "refs": [
+        "<repo>/content/series1/refs/pair_kiran_aditya_p1.png",
+        "<repo>/content/series1/refs/bedroom_window.png",
+        "<repo>/content/series1/refs/bedroom_door.png",
+        "<repo>/content/series1/refs/padlock_hasp.png",
+        "<repo>/content/series1/episodes/s1e01/frames/s04.png"
+      ],
+      "refs_note": "Checker retake: bedroom_door replaces glass_and_fold as Image 3, because the door came out as a single raised-panel leaf. The tray is in the s04 anchor and is described in words. Before that change: five slots, the pair sheet (replaces both single sheets, D-017 amendment 2), a plate, two prop sheets and the anchor. key_thread is not attached: the key is drawn on the pair sheet (D-017 amendment 3, first drop) and is written in words. Kiran's phone is staged hidden behind his body.",
+      "camera_move": {
+        "preset": "drift",
+        "intensity": 0.25
+      },
+      "on_screen": [
+        "aditya",
+        "kiran"
+      ],
+      "faces_in_frame": 2,
+      "light_state": "bedroom_night",
+      "state": [
+        "Aditya seated on the foot edge of the bed at picture-left, facing picture-right, hands in his lap; key at mid-chest.",
+        "Kiran standing with her back to the shut door at picture-right, facing picture-left; pallu off her head; her left arm (nearer the camera) under the fall of the pallu; right hand hidden behind her on the door.",
+        "Stool between them in the background before the window: tumbler full, fold open on the tray.",
+        "Bolt, hasp and padlock locked on the door beside her at chest height.",
+        "Kiran's phone on the sheet, hidden from the camera by his body."
+      ],
+      "subtitle_safe": true,
+      "note": "Two sheet faces, the limit (D-021 decision 8). RETAKE RUN (attempt 2, 94.8 s; attempt 1 kept as s20.prev1.png) with bedroom_door as Image 3 and the checker's door, watch and pocket wording. D-021 retake check: still no report found for pair_kiran_aditya_p1 (searched content/series1/refs, docs). I ran the retake because D-023 decision 2 orders one retake of s20 with no hold on that check, and its concern (the backs of Kiran's hands) is not in this frame: her right hand is behind her and her left arm under the pallu. By eye at full size: a plank door with the bolt above and the hasp and brass padlock below; Aditya's near wrist bare, no watch visible; no cuff of Kiran's visible. Whether the door reads as two leaves is for the retake check. Waiting for the retake check (S9). [S7 retake run, 26 Nov 2026, under D-023 decisions 2 and 4.6; storyboard artist's own look at full resolution, not the retake check]"
+    },
+    {
+      "id": "s21",
+      "scene": "sc1_bedroom",
+      "beat_id": "b6",
+      "setup": "b6 set-up 5",
+      "line_ids": [
+        "l15"
+      ],
+      "silent_lead_s": 0.0,
+      "duration_hi_s": 4.81,
+      "duration_en_s": 4.57,
+      "duration_s": 4.81,
+      "framing": "Medium close-up, 50 mm, from the upper chest up, from the bed towards the door (restaged under D-023 rule 4.6: the right forearm and cuff are below the frame).",
+      "action": "Kiran MCU, chin up, bargaining: 'ये मेरी last शादी है। मौसी के पास मेरे अठारह लाख हैं।'",
+      "frame": {
+        "kind": "generated",
+        "prompt_file": "<repo>/content/series1/episodes/s1e01/frames/prompts/s21.txt",
+        "out": "<repo>/content/series1/episodes/s1e01/frames/s21.png"
+      },
+      "refs": [
+        "<repo>/content/series1/refs/kiran_p1.png",
+        "<repo>/content/series1/refs/bedroom_door.png",
+        "<repo>/content/series1/episodes/s1e01/frames/s04.png"
+      ],
+      "refs_note": "kiran_p1, bedroom_door, s04 anchor. kiran_hands is not attached (D-023 rule 4.6). The prompt lists the anchor's cuff and waist-up framing under do-not-copy.",
+      "camera_move": {
+        "preset": "push-in",
+        "intensity": 0.2,
+        "focus": {
+          "x": 0.5,
+          "y": 0.3
+        }
+      },
+      "on_screen": [
+        "kiran"
+      ],
+      "faces_in_frame": 1,
+      "light_state": "bedroom_night",
+      "state": [
+        "Right hand (picture-left) pressed flat on the door behind her, below the frame; only the top of the right upper arm shows at the picture-left side.",
+        "Right cuff pushed up below the elbow, below the frame: not visible (D-023 rule 4.6).",
+        "Left arm (picture-right) under the fall of the pallu, below the frame.",
+        "Pallu off her head, on her left shoulder (picture-right).",
+        "Bolt and padlock out of frame."
+      ],
+      "subtitle_safe": true,
+      "note": "RETAKE RUN (attempt 2, 134.8 s; attempt 1 kept as s21.prev1.png), restaged chest-up under D-023 rule 4.6 (the checker's own fallback for this shot). By eye at full size: no hand, forearm or cuff in the frame; hoop on the picture-right side of the nose; pallu off her head. The hand on the door is now carried by the state only (as in s20, s27 and s33, where it is out of frame); no shot shows it. Source frame for s25. Waiting for the retake check (S9). [S7 retake run, 26 Nov 2026, under D-023 decisions 2 and 4.6; storyboard artist's own look at full resolution, not the retake check]"
+    },
+    {
+      "id": "s22",
+      "scene": "sc1_bedroom",
+      "beat_id": "b6",
+      "setup": "b6 insert (l16)",
+      "line_ids": [
+        "l16"
+      ],
+      "silent_lead_s": 0.0,
+      "duration_hi_s": 3.77,
+      "duration_en_s": 3.37,
+      "duration_s": 3.77,
+      "framing": "The brass padlock on the hasp again: second framing of s08.",
+      "action": "'सब ले लो। ताला खोलो।' over the padlock.",
+      "frame": {
+        "kind": "second_framing",
+        "source_shot": "s08",
+        "image": "<repo>/content/series1/episodes/s1e01/frames/s08.png"
+      },
+      "refs": [],
+      "camera_move": {
+        "preset": "custom",
+        "easing": "ease-out",
+        "from": {
+          "scale": 1.2,
+          "x": 0.0,
+          "y": 0.0
+        },
+        "to": {
+          "scale": 1.3,
+          "x": 0.0,
+          "y": 0.05
+        }
+      },
+      "on_screen": [],
+      "faces_in_frame": 0,
+      "light_state": "bedroom_night",
+      "state": [
+        "As s08: locked."
+      ],
+      "subtitle_safe": true
+    },
+    {
+      "id": "s23",
+      "scene": "sc1_bedroom",
+      "beat_id": "b6",
+      "setup": "b6 set-up 6",
+      "line_ids": [
+        "l17"
+      ],
+      "silent_lead_s": 0.0,
+      "duration_hi_s": 4.01,
+      "duration_en_s": 3.77,
+      "duration_s": 4.01,
+      "framing": "Close-up, 85 mm, from near the door towards the bed.",
+      "action": "Aditya CU: 'पैसा नहीं चाहिए। Police को proof चाहिए।'",
+      "frame": {
+        "kind": "generated",
+        "prompt_file": "<repo>/content/series1/episodes/s1e01/frames/prompts/s23.txt",
+        "out": "<repo>/content/series1/episodes/s1e01/frames/s23.png"
+      },
+      "refs": [
+        "<repo>/content/series1/refs/aditya.png",
+        "<repo>/content/series1/refs/bedroom_bed.png",
+        "<repo>/content/series1/refs/key_thread.png",
+        "<repo>/content/series1/episodes/s1e01/frames/s04.png"
+      ],
+      "camera_move": {
+        "preset": "push-in",
+        "intensity": 0.3,
+        "focus": {
+          "x": 0.5,
+          "y": 0.35
+        }
+      },
+      "on_screen": [
+        "aditya"
+      ],
+      "faces_in_frame": 1,
+      "light_state": "bedroom_night",
+      "state": [
+        "As s18; key just visible at the bottom of the frame."
+      ],
+      "subtitle_safe": true
+    },
+    {
+      "id": "s24",
+      "scene": "sc1_bedroom",
+      "beat_id": "b6",
+      "setup": "b6 set-up 7",
+      "line_ids": [
+        "l18"
+      ],
+      "silent_lead_s": 0.0,
+      "duration_hi_s": 4.73,
+      "duration_en_s": 4.01,
+      "duration_s": 4.73,
+      "framing": "Kiran CU under Aditya's voice: second framing of s17, pushing towards her eyes.",
+      "action": "She hears that the target is Mausi. 'और मुझे वो औरत, जो ये दुल्हनें भेजती है।'",
+      "frame": {
+        "kind": "second_framing",
+        "source_shot": "s17",
+        "image": "<repo>/content/series1/episodes/s1e01/frames/s17.png"
+      },
+      "refs": [],
+      "camera_move": {
+        "preset": "custom",
+        "easing": "ease-in-out",
+        "from": {
+          "scale": 1.12,
+          "x": 0.0,
+          "y": 0.2
+        },
+        "to": {
+          "scale": 1.28,
+          "x": 0.0,
+          "y": 0.3
+        }
+      },
+      "on_screen": [
+        "kiran"
+      ],
+      "faces_in_frame": 1,
+      "light_state": "bedroom_night",
+      "state": [
+        "As s17."
+      ],
+      "subtitle_safe": true
+    },
+    {
+      "id": "s25",
+      "scene": "sc1_bedroom",
+      "beat_id": "b6",
+      "setup": "b6 set-up 8",
+      "line_ids": [
+        "l19"
+      ],
+      "silent_lead_s": 0.0,
+      "duration_hi_s": 2.97,
+      "duration_en_s": 2.65,
+      "duration_s": 2.97,
+      "framing": "Kiran MCU: second framing of s21 (chest-up), a slow push towards her face. Same shot size as its source, so it is not a wide standing in for a close (D-023 rule 4.8).",
+      "action": "'मौसी से क्या दुश्मनी है?' Her left arm stays under the pallu.",
+      "frame": {
+        "kind": "second_framing",
+        "source_shot": "s21",
+        "image": "<repo>/content/series1/episodes/s1e01/frames/s21.png"
+      },
+      "refs": [],
+      "camera_move": {
+        "preset": "custom",
+        "easing": "ease-in-out",
+        "from": {
+          "scale": 1.1,
+          "x": 0.0,
+          "y": 0.15
+        },
+        "to": {
+          "scale": 1.17,
+          "x": 0.0,
+          "y": 0.2
+        }
+      },
+      "on_screen": [
+        "kiran"
+      ],
+      "faces_in_frame": 1,
+      "light_state": "bedroom_night",
+      "state": [
+        "As s21."
+      ],
+      "subtitle_safe": true,
+      "note": "s21 was restaged chest-up (D-023 rule 4.6), so the old drift towards her hand on the door (x 0.4 to 0.5) would now find no hand; the move is re-aimed at her face. The script's set-up 8 hand-on-door is carried in state only (fallback c: the cuff is framed out). The editor's edit.json still holds the old s25 move; it should take this one. s21 retake is in; this shot inherits its retake-check verdict. [S7 retake run, 26 Nov 2026, under D-023 decisions 2 and 4.6; storyboard artist's own look at full resolution, not the retake check]"
+    },
+    {
+      "id": "s26",
+      "scene": "sc1_bedroom",
+      "beat_id": "b8",
+      "setup": "b8 set-up 1",
+      "line_ids": [
+        "l20"
+      ],
+      "silent_lead_s": 0.0,
+      "duration_hi_s": 5.21,
+      "duration_en_s": 4.81,
+      "duration_s": 5.21,
+      "framing": "Aditya CU, eyes down at his hands: second framing of s28 at its tightest.",
+      "action": "For the first time not looking at her: 'मेरा छोटा भाई, मोहित। मौसी ने उसकी शादी करवाई थी।'",
+      "frame": {
+        "kind": "second_framing",
+        "source_shot": "s28",
+        "image": "<repo>/content/series1/episodes/s1e01/frames/s28.png"
+      },
+      "refs": [],
+      "camera_move": {
+        "preset": "custom",
+        "easing": "linear",
+        "from": {
+          "scale": 1.24,
+          "x": 0.0,
+          "y": 0.55
+        },
+        "to": {
+          "scale": 1.3,
+          "x": 0.0,
+          "y": 0.62
+        }
+      },
+      "on_screen": [
+        "aditya"
+      ],
+      "faces_in_frame": 1,
+      "light_state": "bedroom_night",
+      "state": [
+        "As s28."
+      ],
+      "subtitle_safe": true
+    },
+    {
+      "id": "s27",
+      "scene": "sc1_bedroom",
+      "beat_id": "b8",
+      "setup": "b8 set-up 2",
+      "line_ids": [
+        "l21"
+      ],
+      "silent_lead_s": 0.0,
+      "duration_hi_s": 3.53,
+      "duration_en_s": 3.21,
+      "duration_s": 3.53,
+      "framing": "Close-up, 85 mm, three-quarter (nose towards picture-left), from the bed towards the door.",
+      "action": "Kiran CU: the name Mohit has landed; she does not move. Aditya's l21 over her.",
+      "frame": {
+        "kind": "generated",
+        "prompt_file": "<repo>/content/series1/episodes/s1e01/frames/prompts/s27.txt",
+        "out": "<repo>/content/series1/episodes/s1e01/frames/s27.png"
+      },
+      "refs": [
+        "<repo>/content/series1/refs/kiran_p1.png",
+        "<repo>/content/series1/refs/bedroom_door.png",
+        "<repo>/content/series1/episodes/s1e01/frames/s04.png"
+      ],
+      "camera_move": {
+        "preset": "push-in",
+        "intensity": 0.2,
+        "focus": {
+          "x": 0.5,
+          "y": 0.35
+        }
+      },
+      "on_screen": [
+        "kiran"
+      ],
+      "faces_in_frame": 1,
+      "light_state": "bedroom_night",
+      "state": [
+        "Pallu off her head on her left shoulder (picture-right).",
+        "Right hand on the door, out of frame.",
+        "Hands out of frame."
+      ],
+      "subtitle_safe": true
+    },
+    {
+      "id": "s28",
+      "scene": "sc1_bedroom",
+      "beat_id": "b8",
+      "setup": "b8 set-up 3",
+      "line_ids": [
+        "l22"
+      ],
+      "silent_lead_s": 0.0,
+      "duration_hi_s": 5.05,
+      "duration_en_s": 5.21,
+      "duration_s": 5.21,
+      "framing": "Medium shot, 50 mm, from the knees up, from near the door towards the bed.",
+      "action": "Aditya MCU, the breath going out of him: 'Reception हुआ ही नहीं।'",
+      "frame": {
+        "kind": "generated",
+        "prompt_file": "<repo>/content/series1/episodes/s1e01/frames/prompts/s28.txt",
+        "out": "<repo>/content/series1/episodes/s1e01/frames/s28.png"
+      },
+      "refs": [
+        "<repo>/content/series1/refs/aditya.png",
+        "<repo>/content/series1/refs/bedroom_bed.png",
+        "<repo>/content/series1/refs/key_thread.png",
+        "<repo>/content/series1/episodes/s1e01/frames/s04.png"
+      ],
+      "camera_move": {
+        "preset": "push-in",
+        "intensity": 0.15,
+        "focus": {
+          "x": 0.5,
+          "y": 0.4
+        }
+      },
+      "on_screen": [
+        "aditya"
+      ],
+      "faces_in_frame": 1,
+      "light_state": "bedroom_night",
+      "state": [
+        "Seated on the foot edge of the bed, shoulders dropped, head bowed a little, eyes down at his hands loosely clasped in his lap.",
+        "Key at mid-chest; glasses; watch at picture-right wrist.",
+        "Photograph still in the pocket."
+      ],
+      "subtitle_safe": true,
+      "note": "Generated wider than the script's 'MCU' so that s26 can be its tighter second framing. Source frame for s26."
+    },
+    {
+      "id": "s29",
+      "scene": "sc1_bedroom",
+      "beat_id": "b8",
+      "setup": "b8 insert",
+      "line_ids": [
+        "l23"
+      ],
+      "silent_lead_s": 0.0,
+      "duration_hi_s": 4.73,
+      "duration_en_s": 4.01,
+      "duration_s": 4.73,
+      "framing": "Insert, 100 mm macro, his chest, facing him.",
+      "action": "His right hand drawing a creased 4x6 print from the kurta's chest pocket, its white back to camera. 'Bureau ने photo नहीं भेजी। Phone दुल्हन ले गई।'",
+      "frame": {
+        "kind": "generated",
+        "prompt_file": "<repo>/content/series1/episodes/s1e01/frames/prompts/s29.txt",
+        "out": "<repo>/content/series1/episodes/s1e01/frames/s29.png"
+      },
+      "refs": [
+        "<repo>/content/series1/refs/aditya.png",
+        "<repo>/content/series1/refs/photograph.png",
+        "<repo>/content/series1/refs/key_thread.png",
+        "<repo>/content/series1/episodes/s1e01/frames/s04.png"
+      ],
+      "camera_move": {
+        "preset": "push-in",
+        "intensity": 0.3,
+        "focus": {
+          "x": 0.4,
+          "y": 0.42
+        }
+      },
+      "on_screen": [
+        "aditya (chest and right hand)"
+      ],
+      "faces_in_frame": 0,
+      "light_state": "bedroom_night",
+      "state": [
+        "Right hand (picture-left) drawing the print half out of the patch pocket on his right chest (picture-left), plain white back to camera.",
+        "Key on its thread at mid-chest.",
+        "No face; watch hand not in frame."
+      ],
+      "subtitle_safe": true,
+      "note": "The pocket is the patch pocket on his right chest as drawn on his sheet (style.json locks_source), not the script's side pocket."
+    },
+    {
+      "id": "s30",
+      "scene": "sc1_bedroom",
+      "beat_id": "b9",
+      "setup": "b9 set-up 1",
+      "line_ids": [
+        "l24"
+      ],
+      "silent_lead_s": 0.0,
+      "duration_hi_s": 4.17,
+      "duration_en_s": 3.93,
+      "duration_s": 4.17,
+      "framing": "Medium close-up, 50 mm, from the almirah side of the bed.",
+      "action": "Aditya holds the creased print up towards her at arm's length, picture side to her, its white back to us; glasses and key in frame. 'बस ये बची। मंदिर से भेजी थी उसने।'",
+      "frame": {
+        "kind": "generated",
+        "prompt_file": "<repo>/content/series1/episodes/s1e01/frames/prompts/s30.txt",
+        "out": "<repo>/content/series1/episodes/s1e01/frames/s30.png"
+      },
+      "refs": [
+        "<repo>/content/series1/refs/aditya.png",
+        "<repo>/content/series1/refs/bedroom_bed.png",
+        "<repo>/content/series1/refs/photograph.png",
+        "<repo>/content/series1/refs/key_thread.png",
+        "<repo>/content/series1/episodes/s1e01/frames/s04.png"
+      ],
+      "camera_move": {
+        "preset": "push-in",
+        "intensity": 0.2,
+        "focus": {
+          "x": 0.5,
+          "y": 0.35
+        }
+      },
+      "on_screen": [
+        "aditya"
+      ],
+      "faces_in_frame": 1,
+      "light_state": "bedroom_night",
+      "state": [
+        "Print in his right hand at arm's length towards picture-right, at shoulder height; picture side away from camera; white back to camera.",
+        "Key at mid-chest; glasses; watch wrist hidden.",
+        "Pocket now empty."
+      ],
+      "subtitle_safe": true,
+      "note": "Source frame for s34."
+    },
+    {
+      "id": "s31",
+      "scene": "sc1_bedroom",
+      "beat_id": "b9",
+      "setup": "b9 insert",
+      "line_ids": [
+        "l29"
+      ],
+      "silent_lead_s": 0.0,
+      "silent_tail_s": 2.0,
+      "duration_hi_s": 6.97,
+      "duration_en_s": 5.93,
+      "duration_s": 6.97,
+      "framing": "The photograph full frame.",
+      "action": "Silent, after l24: the one approved image (story_locks.photograph): two hands on a stone temple step; a bride's LEFT hand, no henna, a dozen thin red glass bangles, the pale crescent scar; the edge of a red veil.",
+      "frame": {
+        "kind": "reused_asset",
+        "image": "<repo>/content/series1/refs/photograph.png",
+        "rule": "style.json key_props.photograph and D-007 direction 15: cropped or re-framed, never regenerated."
+      },
+      "refs": [],
+      "camera_move": {
+        "preset": "custom",
+        "easing": "ease-in-out",
+        "from": {
+          "scale": 1.24,
+          "x": 0.0,
+          "y": 0.0
+        },
+        "to": {
+          "scale": 1.3,
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "on_screen": [],
+      "faces_in_frame": 0,
+      "light_state": "n/a (approved asset)",
+      "state": [
+        "The print's content exactly as the asset."
+      ],
+      "subtitle_safe": true,
+      "note": "Silent; no subtitle over it.",
+      "line_part": "all of l29 over the photograph, then the 2.0 s silence of b9 (b9 insert: l29, then silent)"
+    },
+    {
+      "id": "s32",
+      "scene": "sc1_bedroom",
+      "beat_id": "b10",
+      "setup": "b10 set-up 1",
+      "line_ids": [
+        "l25"
+      ],
+      "silent_lead_s": 0.0,
+      "duration_hi_s": 3.85,
+      "duration_en_s": 4.09,
+      "duration_s": 4.09,
+      "framing": "Medium close-up, 50 mm, waist up, from near the door towards the bed.",
+      "action": "Aditya MCU, the print lowered to his chest beside the key; said flat: 'मोहित ग्यारह दिन बाद पंखे से लटका मिला।' The death is never pictured.",
+      "frame": {
+        "kind": "generated",
+        "prompt_file": "<repo>/content/series1/episodes/s1e01/frames/prompts/s32.txt",
+        "out": "<repo>/content/series1/episodes/s1e01/frames/s32.png"
+      },
+      "refs": [
+        "<repo>/content/series1/refs/aditya.png",
+        "<repo>/content/series1/refs/bedroom_bed.png",
+        "<repo>/content/series1/refs/photograph.png",
+        "<repo>/content/series1/refs/key_thread.png",
+        "<repo>/content/series1/episodes/s1e01/frames/s04.png"
+      ],
+      "camera_move": {
+        "preset": "push-in",
+        "intensity": 0.15,
+        "focus": {
+          "x": 0.5,
+          "y": 0.35
+        }
+      },
+      "on_screen": [
+        "aditya"
+      ],
+      "faces_in_frame": 1,
+      "light_state": "bedroom_night",
+      "state": [
+        "Print held flat against his chest in his right hand (picture-left), beside the key, white back out.",
+        "Seated on the foot edge of the bed.",
+        "No ceiling fan anywhere."
+      ],
+      "subtitle_safe": true
+    },
+    {
+      "id": "s33",
+      "scene": "sc1_bedroom",
+      "beat_id": "b10",
+      "setup": "b10 set-up 2",
+      "line_ids": [],
+      "silent_lead_s": 0.0,
+      "silent_tail_s": 2.2,
+      "duration_hi_s": 2.2,
+      "duration_en_s": 2.2,
+      "duration_s": 2.2,
+      "framing": "Big close-up, 85 mm, frontal, from the bed towards the door.",
+      "action": "Silent hold on Kiran's face: she did not know. No tear, no movement; her right hand still against the door.",
+      "frame": {
+        "kind": "generated",
+        "prompt_file": "<repo>/content/series1/episodes/s1e01/frames/prompts/s33.txt",
+        "out": "<repo>/content/series1/episodes/s1e01/frames/s33.png"
+      },
+      "refs": [
+        "<repo>/content/series1/refs/kiran_p1.png",
+        "<repo>/content/series1/refs/bedroom_door.png",
+        "<repo>/content/series1/episodes/s1e01/frames/s04.png"
+      ],
+      "camera_move": {
+        "preset": "push-in",
+        "intensity": 0.2,
+        "focus": {
+          "x": 0.5,
+          "y": 0.4
+        }
+      },
+      "on_screen": [
+        "kiran"
+      ],
+      "faces_in_frame": 1,
+      "light_state": "bedroom_night",
+      "state": [
+        "Pallu on her left shoulder at the picture-right edge.",
+        "Right hand on the door, out of frame.",
+        "Eyes dry."
+      ],
+      "subtitle_safe": true,
+      "note": "Crickets drop out under l25 and stay out through this hold (sfx)."
+    },
+    {
+      "id": "s34",
+      "scene": "sc1_bedroom",
+      "beat_id": "b11",
+      "setup": "b11 set-up 1",
+      "line_ids": [
+        "l26"
+      ],
+      "silent_lead_s": 0.0,
+      "duration_hi_s": 2.65,
+      "duration_en_s": 1.85,
+      "duration_s": 2.65,
+      "framing": "Aditya closer, the print beside him: second framing of s30.",
+      "action": "'मुझे ये हाथ चाहिए।' His eyes are on her face, not her hands.",
+      "frame": {
+        "kind": "second_framing",
+        "source_shot": "s30",
+        "image": "<repo>/content/series1/episodes/s1e01/frames/s30.png"
+      },
+      "refs": [],
+      "camera_move": {
+        "preset": "custom",
+        "easing": "ease-in-out",
+        "from": {
+          "scale": 1.22,
+          "x": 0.1,
+          "y": 0.3
+        },
+        "to": {
+          "scale": 1.3,
+          "x": 0.1,
+          "y": 0.35
+        }
+      },
+      "on_screen": [
+        "aditya"
+      ],
+      "faces_in_frame": 1,
+      "light_state": "bedroom_night",
+      "state": [
+        "As s30: the print held up, white back to camera."
+      ],
+      "subtitle_safe": true,
+      "note": "Bed and music duck right down under l26 (sfx)."
+    },
+    {
+      "id": "s35",
+      "scene": "sc1_bedroom",
+      "beat_id": "b11",
+      "setup": "b11 set-up 2",
+      "line_ids": [],
+      "silent_lead_s": 0.0,
+      "silent_tail_s": 2.5,
+      "duration_hi_s": 2.5,
+      "duration_en_s": 2.5,
+      "duration_s": 2.5,
+      "framing": "Low and close insert, 100 mm macro, beside her left side, behind the fall of her pallu; framed to mirror s31.",
+      "action": "Silent. Her LEFT forearm, back of the forearm to camera, crossing the frame at the same angle as the bride's forearm in the print; the cuff still pushed up towards the elbow; below it, about three fingers above the wrist bone, the same pale crescent in the lamplight, at the same position and scale as in the photograph.",
+      "frame": {
+        "kind": "generated",
+        "prompt_file": "<repo>/content/series1/episodes/s1e01/frames/prompts/s35.txt",
+        "out": "<repo>/content/series1/episodes/s1e01/frames/s35.png"
+      },
+      "refs": [
+        "<repo>/content/series1/refs/kiran_hands.png",
+        "<repo>/content/series1/refs/photograph.png",
+        "<repo>/content/series1/episodes/s1e01/frames/s04.png"
+      ],
+      "refs_note": "kiran_hands view 3 is the authority for the scar (style.json continuity_notes, D-021 decision 4). photograph.png is attached for composition only. The chooda sheet is not attached: the cuff is drawn on kiran_hands (D-017 amendment 3).",
+      "camera_move": {
+        "preset": "push-in",
+        "intensity": 0.3,
+        "focus": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      },
+      "on_screen": [
+        "kiran (left forearm only)"
+      ],
+      "faces_in_frame": 0,
+      "light_state": "bedroom_night",
+      "state": [
+        "Her LEFT forearm hanging at her side, back of the forearm and hand to camera, fingers pointing down the picture, thumb on picture-left.",
+        "Left cuff pushed up towards the elbow and bunched near the top of the frame (kiran_hands view 3).",
+        "Scar bare: crescent across the forearm, curve bulging down towards the hand, horns pointing up towards the elbow, about three fingers above the wrist bone.",
+        "Henna: fingertips dipped, back of the hand plain; no ring, no glass bangles.",
+        "Right hand not in frame; Aditya not in frame."
+      ],
+      "subtitle_safe": true,
+      "note": "The one time the left forearm is uncovered in s1e01 (production lock). Low sustained note swells here (music_note)."
+    },
+    {
+      "id": "s36",
+      "scene": "sc1_bedroom",
+      "beat_id": "b11",
+      "setup": "b11 set-up 3",
+      "line_ids": [],
+      "silent_lead_s": 0.0,
+      "silent_tail_s": 1.5,
+      "duration_hi_s": 1.5,
+      "duration_en_s": 1.5,
+      "duration_s": 1.5,
+      "framing": "The same framing as s35.",
+      "action": "Silent. One change: her right hand has slid the cuff down and the crescent is gone under the red. Cut to black.",
+      "frame": {
+        "kind": "generated",
+        "prompt_file": "<repo>/content/series1/episodes/s1e01/frames/prompts/s36.txt",
+        "out": "<repo>/content/series1/episodes/s1e01/frames/s36.png"
+      },
+      "refs": [
+        "<repo>/content/series1/refs/kiran_hands.png",
+        "<repo>/content/series1/refs/photograph.png",
+        "<repo>/content/series1/episodes/s1e01/frames/s04.png"
+      ],
+      "camera_move": {
+        "preset": "hold"
+      },
+      "transition_out": {
+        "type": "cut",
+        "note": "Cut to black; the bangle click is the last sound."
+      },
+      "on_screen": [
+        "kiran (left forearm only)"
+      ],
+      "faces_in_frame": 0,
+      "light_state": "bedroom_night",
+      "state": [
+        "Left cuff slid down, at rest just above the wrist bone, closed over the scar (kiran_hands view 2); no scar visible.",
+        "Right hand has already left the frame.",
+        "End state = continuity.json s1e01 end_state (left cuff over the scar; right cuff still pushed up, off screen)."
+      ],
+      "subtitle_safe": true
+    }
+  ],
+  "not_verified": [
+    "No JSON parser was run on this file and no frame was generated: this session has Read, Write, Edit, Grep and Glob, and no shell. The frame runner's first step should parse it.",
+    "Clip lengths are the manifest's duration_s values as written by S10; I did not re-probe any mp3. hi l04 take 2 (3.68 s) and the two l16 take 2 rows have no review.json verdict yet; if take 1 is chosen for hi l04 (3.28 s), s08 and s09 shrink by 0.4 s in Hindi.",
+    "Split points inside l01 to l05 are estimates by sentence length; review.json pauses were not read line by line.",
+    "I did not open any reference image. Picture-side wording follows the plate and sheet prompts and the rewritten locks in style.json, not my own look at the pngs.",
+    "Whether Codex holds the exact s01 framing in s02, and the photograph's arm angle in s35 and s36, is untested."
+  ],
+  "edit_notes_for_episode_editor": {
+    "cut_on_word": [
+      {
+        "line": "l27",
+        "word": {
+          "hi": "पर",
+          "en": "but"
+        },
+        "occurrence": 1,
+        "shot": "s16",
+        "why": "New split (clarity remap). b5 set-up 3 asked for l27 then l10 on s16; that is 9.4 s hi / 9.6 s en on a second framing, past the 8 s lock. l27 is split at its comma pause (hi 1.54-2.18 s, en 1.71-2.26 s in the clarity takes), so 'Kiran' still lands on the lit window. Without this entry the build cuts on the first word after the split pause, which is the same word."
+      }
+    ],
+    "about": "Copy cut_on_word into edit.json layout.cut_on_word (the build reads only edit.json). Each entry names the shot the cut starts; words per language; occurrence 1-based. Written by S7 Storyboard artist, clarity remap (D-025 item 8)."
+  },
+  "remap_notes": {
+    "by": "S7 Storyboard artist, clarity remap (D-025 item 8)",
+    "date": "2026-11-26",
+    "ruling": "D-024 ruling 3.5 (supers onto shots); D-025 items 4 and 8 (P26 remap, cut-on-word anchors, speaker-visible starts)",
+    "scope": "line_ids, line_part, duration_hi_s/duration_en_s/duration_s, per-shot supers and cut_on_word, edit_notes_for_episode_editor, estimated_seconds. No shot added, removed or reordered; frames, prompts, refs, camera moves and silent_lead_s unchanged. Scripts not edited (no super has an on_shot field, so none is wrong).",
+    "items": [
+      "Added lines mapped: l27 (b5 set-up 3, split s15/s16, see below), l28 (s18 after l12, b6 set-up 2), l29 (s31, the photograph insert, before its 2.0 s silence, b9).",
+      "Deviation from the b5 action: it puts l27 then l10 on set-up 3 (s16). With the clarity takes that is 9.4 s hi / 9.6 s en planned on a second framing, past the 8 s lock (D-024: spread over the beat's other shots, or hold). l27 is split instead: its first clause rides on s15 (Billu on the phone, after l09) and the cut to the lit window lands on 'पर' / 'but', so 'मेरी किरण' / 'my Kiran' still plays over the window. s15 7.15 / 5.91 s, s16 7.52 / 7.64 s. If the orchestrator prefers the action as written, put l27 back as the first line of s16 only and hold s16 on its camera move.",
+      "l05 now has a third sentence; it stays on s11 (b4 set-up 2: second and third sentences). edit.json cut_on_word for l05 (hi 'घर', en second 'the') still matches the new text, as do l01 to l04.",
+      "edit.json (not edited, for the episode editor): (1) add the l27 cut_on_word entry from edit_notes_for_episode_editor; without it the build cuts on the first word after l27's split pause, which is the same word. (2) s31 now carries l29, so layout.silent_frames.s31 (60) no longer applies (silent_frames is read only for shots with no lines); the 2.0 s b9 hold after l29 needs layout.tail.s31 of about 48 frames. (3) The amb_lane_night bed ducks only under l10 (segments); l27 is also Mausi on the phone over the lane and may want the same duck. (4) s05's camera move is untouched here; edit.json already carries no per-shot move copies, so it uses the shots.json push-in (handoff step 3).",
+      "Supers copied onto shots: su1 (time, with l02) on s03; su2 (Billu name_role, with l09) on s15. s03 is planned 2.2 s hi but 1.5 s en. The build holds a super 3.0 s by default and lets it run on into s04, which is the same beat and has no plot overlay; the scratch layout put su1 at 3.0 s in both languages. su2 is on s15, not s14, because s14 carries the 1:40 overlay.",
+      "heard_as (script metadata, S2/S5, not edited): l29 is Aditya off frame over the photograph insert and has no heard_as. Older lines in the same position (l06 on s12, l16 on s22) have none either.",
+      "Planned durations: shots whose lines were re-voiced are shifted by (clarity take - previous take); remapped shots are timed from the clarity takes. Planned total is now hi 136.37 / en 127.17 s per cut (longer-language sum 138.58 s; was 111.3 / 102.74 / 112.85). These are clip-length estimates; the build times from speech.",
+      "Scratch check (copy of the episode in a scratch folder, build_timeline.py only, with the l27 entry added to a scratch edit.json): both languages lay out with no layout problem. The cut lands on 'पर' / 'but', no shot is over 8 s, and the layout runs hi 128.3 s / en 121.6 s. The cut on disk is 106.0 / 99.5 s, and the real edit.json was not changed."
+    ]
+  }
+}

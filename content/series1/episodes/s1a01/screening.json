@@ -1,0 +1,211 @@
+{
+  "episode": "series1/s1a01",
+  "reviewer": "S15 Screening",
+  "kind": "first screening of the first edit (path A episode 1, after the vote), both languages; lean pass per the orchestrator brief",
+  "date": "2026-11-26",
+  "files_screened": {
+    "hi": "render/s1a01.hi.mp4 (131.50 s container, 131.47 s timeline, sha1 208226c59113...) and render/s1a01.hi.review.mp4 (sha1 ecbb9b723a07...)",
+    "en": "render/s1a01.en.mp4 (133.35 s container, 133.23 s timeline, sha1 1c0fc42328ff...) and render/s1a01.en.review.mp4 (sha1 597854d3bc68...)",
+    "note": "The clean and review cuts carry byte-identical audio (md5 of the decoded audio: hi 5b183222..., en bb8aecaf...). The 720p files were not screened."
+  },
+  "pass": true,
+  "scored": true,
+  "final_score": {
+    "hi": 8,
+    "en": 8
+  },
+  "gate": "D-023 pass rule: 7/10 or more and no blocking fault. Met in both languages.",
+  "verdict": "Pass at 8/10 in both languages, with no blocking fault. All 39 shots are real frames (0 slates, 0 placeholder dialogue or sound). whisper.cpp hears all 29 lines in substance in both languages, though six hi windows and one en window needed a re-run, split or language switch (see transcript_vs_script). Integrated loudness is -14.5 LUFS (hi) and -14.2 LUFS (en), sample peak -1.0 / -1.1 dBFS. All three supers are drawn and legible. Read cold after the vote, the story is clear. It opens at 0 s on the vote's line, 'हाँ मौसी, पी लिया' / 'Yes, Mausi. He drank it.', over the phone insert. Kiran explains the other code and Mohit, then sets the cover: a thief who married a thief, with a brass set and a rented house. Billu is won over by the brass joke. In the car Aditya sells himself as the pharmacist, and Mausi checks by phone and says bring him. At the bureau, Mausi delights in the brass and Chhoti is named as the next bride. Aditya whispers about the burnt-wrist Rekha. Then comes the order to take the chooda off for Chhoti, and Mausi's hand starts the first ivory bangle towards Kiran's knuckles while Aditya watches from an arm's length. The ending question rests on s1e01/s1e02 (the scar under the cuff). l24 re-plants the burnt wrist ten seconds earlier. The three missing plot overlays do not block understanding (see brief_checks). The weaknesses are small. su2 ('Shakun Mausi') is drawn over Kiran's half of the s31 two-shot. s36 reuses the s32 laughing frame 7 s later. The s30 'he let go' beat is legible but small, at the bottom corners. A few words need an ear check: hi l19 (phone, quiet), hi l21's opening 'आ गई मेरी बच्ची', and hi l01's 'हाँ'. Caveat: nobody listened or watched in motion. This screening is built from sampled frames, whisper.cpp and ffmpeg measurements.",
+  "precondition": {
+    "slates": "0 in all four renders (assemble.log '39 shots (0 slate)' for hi, hi-review, en, en-review; timeline meta.placeholders.frames_slated empty in both languages).",
+    "placeholders": "dialogue 0, sound 0 in both timelines (29 dialogue clips, 10 music, 44 sfx, 3 supers each).",
+    "integrated_lufs": {
+      "hi": -14.5,
+      "en": -14.2
+    },
+    "peak_dbfs": {
+      "hi": -1.0,
+      "en": -1.1,
+      "note": "ebur128 peak=true reported 'Peak' at these values. The master log for en review gives an encoded true peak of -1.19 dBTP after a second limiter pass. hi true peak sits at the -1.0 line, which is not over it."
+    },
+    "lra_lu": {
+      "hi": 8.2,
+      "en": 6.9
+    },
+    "duration_s": {
+      "hi": 131.47,
+      "en": 133.23
+    },
+    "video": "h264 1080x1920 30 fps, aac 48 kHz stereo, all four files.",
+    "hi_en_differ": "yes (different cut points, durations and audio).",
+    "subtitle_validation": "ok in both (hi 47 cues, max 12.0 graphemes/s; en 45 cues, max 16.9 g/s), no problems, no warnings.",
+    "result": "met"
+  },
+  "scores": {
+    "hi": {
+      "transcript_vs_script": {
+        "score": 7,
+        "basis": "whisper.cpp ggml-small on each line's window (start-0.15 s to end+0.15 s from timeline.hi.json), cut from the clean mix, -l hi. 29 of 29 lines heard in substance; six windows needed a second run. l21 looped on the whole window ('आगा आगा ...'). Split at 102.6 s, it gives 'अग, आग, मेरी बश्...' and 'बची मत्री खाए की नहीं?', so the line is there but the opening 'आ गई मेरी बच्ची' is slurred to the model. l19 (phone, quiet) came back in Perso-Arabic and Tamil script as 'لیا, بிட்டा' (le aa, beta), with 'हम्म' not heard. l09's 'किरण?' was dropped in the long window and came back as 'किरें?' on a 2 s window. l01 'हाँ मौसी, पी लिया' was heard as 'रामोसी पिल्या': 'पी लिया' is there, 'हाँ' is merged. l28 'हर ... थोड़ी' was heard as 'और ... छोड़ी', and l18 'टूट' as 'तुब'. The rest is spelling (मुसी/मोसी, दामाज, पीटल)."
+      },
+      "subtitles": {
+        "score": 8,
+        "basis": "Validation ok, max 12.0 g/s, no cue across a cut. Burned text is legible in all 67 sampled review frames, and every line-start frame shows its own cue. No cue covers a beat-carrying detail: on s38/s39 the cue sits below the ivory bangle at the knuckles, and on s33 it sits over Chhoti's lap, not her held-out hand. hi cue timing uses grapheme interpolation inside measured speech (wordTiming 'graphemes'), not ASR word times."
+      },
+      "intelligibility_over_music": {
+        "score": 8,
+        "basis": "0.5 s RMS: non-dialogue stretches carry sound, not dead air. s03-s04 run -25 to -34 dBFS, s12-s13 -20 to -36, s18 -32 to -41, s26-s27 -21 to -33 and s29-s30 -20 to -32. The end has the bangle chink at -22, then -58. Every line was recovered by whisper, but l19 (phone) and l21's head needed a second pass, which suggests those two are the quietest or least clear. Ducking was not measured line by line."
+      },
+      "audio_levels": {
+        "score": 8,
+        "basis": "-14.5 LUFS, peak -1.0 dBFS, LRA 8.2 LU; clean = review."
+      },
+      "picture_completeness": {
+        "score": 8,
+        "basis": "39/39 real frames. su1, su2 and su3 are drawn. The three plot overlays ('मौसी' and 2:00 on s02, 3:00 on s13, 'मौसी' on Billu's phone in s23) are not drawn (accepted, deferred; judged non-blocking in brief_checks)."
+      },
+      "continuity": {
+        "score": 8,
+        "basis": "Kiran goes from the red saree to grey kurta-salwar off screen (s10), as written. The red velvet box travels s11 > s12-s17 > s32 > s37 (on the desk). The print goes into Aditya's pocket on s27. Both cuffs are whole throughout, and s38's first ivory bangle is at the knuckles. Logged S9 drift: Kiran's held hand side on s28 is not noticeable at phone size. s36 is a 1.3x second framing of the s32 laughing image, so Mausi is caught mid-laugh, with Billu's hand at the frame edge, again 7 s later on l26. That reads as a repeat but not a continuity break."
+      },
+      "pacing": {
+        "score": 7,
+        "basis": "131.5 s. The b3 talk (10.3-34.8 s) is five shots cut between two set-ups (s05/s07/s09 Kiran, s06/s08 Aditya), with s07 at 6.4 s and s08 at 6.7 s. It is the episode's slowest stretch, held on push-ins. The car and bureau beats move at 2-5 s per shot."
+      },
+      "opening": {
+        "score": 9,
+        "basis": "l01 at 0.07 s is the vote's own line, 'हाँ मौसी, पी लिया।', on Kiran's mouth, then the phone insert with Mausi's voice. The viewer who voted sees their choice land in the first two seconds."
+      },
+      "cliffhanger": {
+        "score": 8,
+        "basis": "s38/s39: Mausi's green-bangled hands start the first ivory bangle towards Kiran's knuckles, and Aditya, an arm's length away, looks down at the wrist. The cut lands on the bangle chink, then hard black. The question 'will he see the scar?' is plain to a viewer of s1e01/s1e02. l24's 'burnt wrist' re-plants it 10 s before."
+      },
+      "clarity": {
+        "score": 8,
+        "basis": "See brief_checks."
+      },
+      "length": {
+        "score": 10,
+        "basis": "131.5 s, under the 150 s ceiling (target 139.1 s)."
+      },
+      "overall": 8
+    },
+    "en": {
+      "transcript_vs_script": {
+        "score": 8,
+        "basis": "whisper.cpp per line window, -l en: 29/29 essentially word-for-word. Differences are Hinglish words and names: 'Mausi' as 'Mossy/Morsi/Maasi', 'Damaad ji' as 'Dhammaji/Damaji', 'meri bachchi' as 'my dear/my baby', 'chooda' as 'Judah/chudder', 'beta' as 'Rita/son', 'Chhoti' as 'shorty', 'Didi' as 'Bebe', and 'bride and groom' as 'Brighton Groom'. l12's 'Arre, Jijaji!' came back as nothing in the long window and 'Oh, man.' in a 1.6 s window, but re-run with -l hi it is 'अरे जीजा जी', so the words are there. l09's 'Kiran?' was heard as 'Kirin/Kiddered'."
+      },
+      "subtitles": {
+        "score": 8,
+        "basis": "Validation ok, max 16.9 g/s (just under the 17 limit, with no exception needed). Viewed frames are legible. Two-line cues ('I always take the chooda, these / wedding bangles, off in the car.') sit over the kurta, not faces. The cue position over the s38 hands matches hi."
+      },
+      "intelligibility_over_music": {
+        "score": 8,
+        "basis": "0.5 s RMS non-dialogue stretches are -18 to -39 dBFS; the end is the chink at -23, then digital silence. All lines were recovered by whisper."
+      },
+      "audio_levels": {
+        "score": 8,
+        "basis": "-14.2 LUFS, peak -1.1 dBFS (-1.19 dBTP per the master log, review cut), LRA 6.9 LU; clean = review."
+      },
+      "picture_completeness": {
+        "score": 8,
+        "basis": "Same as hi: 39/39 real frames, three supers drawn, three plot overlays not drawn (accepted)."
+      },
+      "continuity": {
+        "score": 8,
+        "basis": "Same images as hi; same notes (s36 repeats the s32 laugh)."
+      },
+      "pacing": {
+        "score": 7,
+        "basis": "133.2 s. The b3 talk is as in hi (s07 5.5 s, s08 6.4 s). s16 holds the brass-box insert 4.6 s across l11 and l12. s31 runs 4.7 s and s32 5.4 s."
+      },
+      "opening": {
+        "score": 9,
+        "basis": "'Yes, Mausi. He drank it.' at 0.03 s."
+      },
+      "cliffhanger": {
+        "score": 8,
+        "basis": "As hi; 'Who buys a new set for every wedding?' is on the hands insert, and the cut lands on the chink."
+      },
+      "clarity": {
+        "score": 8,
+        "basis": "See brief_checks. The inline glosses ('the chooda, these wedding bangles'; 'saale sahab, my wife's brother'; l12 'For my sister's husband') make the kinship joke and the chooda readable to an English-only viewer, at some cost to naturalness."
+      },
+      "length": {
+        "score": 10,
+        "basis": "133.2 s, under the 150 s ceiling."
+      },
+      "overall": 8
+    }
+  },
+  "blocking": [],
+  "brief_checks": {
+    "missing_plot_overlays": {
+      "s02_caller_name_and_2_00": "Not blocking. l01 'हाँ मौसी' / 'Yes, Mausi' names the caller before the insert, and l02 is phone-treated with Mausi's voice. The black screen reads as a phone mid-call. The '2:00' time is not needed: l02 itself says 'तीन बजे' / 'at three'.",
+      "s13_3_00": "Not blocking. l02 sets 'three', then s13 shows the stairs and s14 Billu at the street door. The time is implied by the cut; the overlay would only confirm it.",
+      "s23_mausi_on_billus_phone": "Not blocking. l16 'मौसी को बता दिया ... अब तुझसे सुनेंगी' / 'Told Mausi... Now she wants to hear from you' over Billu's hand holding the phone out. Then the phone voice says 'दामाद जी' / 'Damaad ji'. The caller is named aloud before she speaks."
+    },
+    "s28_s30_logged_drift": "s28 (Kiran's held hand side) is not noticeable at phone size: the hands meet at mid-frame and s29's insert carries the beat (his fingers over the cuff). The last frame of s30's push-in (hi 100.76 s, en 101.26 s, viewed at 540x960) still shows both hands apart at the bottom corners: Aditya's open hand bottom-left, Kiran's chooda wrist and hennaed fingers bottom-right, with Mausi centred in the shutter. The 'he let go' beat survives the push-in, but it is small and low in frame; it reads as a background detail rather than a beat. Not blocking (see fixes, ear/eye list).",
+    "l24_whisper": "hi: whisper.cpp heard it word-perfect ('जली कलाई वाली रेखा कहाँ है?'). en: word-perfect. In both, Aditya's head is bent to Kiran's ear on s34, so it reads as a whisper in picture. Delivery level was not judged by ear.",
+    "clarity_lines": {
+      "l03_l04_l05": "Clear: the other code would have sent the boys up, so why not say it? 'Mohit', and what happened to him (s1e01), so she would not set the boys on him. The reason is spoken; no confession.",
+      "l06_l29": "Clear plan: Mausi meets only a useful man, so he goes in as a thief who married a thief, with a brass set and a rented house as proof. l29 plants 'brass' for l11/l22.",
+      "l07_l08": "Clear: her routine is to take the chooda off; he overrules: arrive as bride and groom. This sets up why the chooda is still on at the bureau.",
+      "l11_l12": "Clear in both. The brass joke pays off l29, and l12 glosses Jijaji as 'sister's husband' (Billu's cover as the bride's brother).",
+      "l14_l15": "Clear: any pharmacist could taste their powder; 'I run a medical store, the right dose, for a share.' It pays off in l26 'you make the sachet'.",
+      "l16_l17_l18_l19": "Clear chain: Billu reports the groom was awake; Mausi asks why Kiran said he drank it; Kiran: if the boys had come up, the deal was dead; Mausi: bring him.",
+      "l22": "Clear: Mausi sees the brass set and reads the groom as one of their own line.",
+      "l23_su3": "Clear: Chhoti, the next bride, shows a half-done henna hand.",
+      "l24_l25": "Clear: Aditya expects Rekha (Kiran's s1e02 lie: she does Mausi's accounts) and asks for her by the burnt wrist; Kiran stalls.",
+      "l26_l27_l28": "Clear: Aditya makes the drug for Chhoti's wedding; Kiran's chooda goes to Chhoti tomorrow; the set is recycled. The order to take the chooda off lands in front of the man hunting the wrist under it."
+    },
+    "new_line_flat_or_expository": "None blocking. The closest are l29 ('Brass set, rented house. Mausi will believe you.'), which is plain plan-talk but short and functional, and l24's 'the one with the burnt wrist' (written as a re-plant; its excuse is that he is whispering an identifier to her). en l07's appositive 'these wedding bangles' and l11's 'my wife's brother' are glosses an English speaker would not say aloud. Both are accepted for an English-only viewer. Delivery flatness was not judged: nobody listened.",
+    "line_answering_something_unheard": "None. l17 answers l16, which is now spoken. l04 answers l03. l25 answers l24. l22 answers the box Billu sets down in picture. l21's 'मठरी खाई कि नहीं?' / 'Did you eat the mathri?' refers to nothing earlier, but it is Mausi's small-talk warmth, not an answer.",
+    "speakers_identifiable": "All 29. Lines spoken off-face are carried by context. l11 is Aditya over the insert of his own hands, with his kurta and key on screen. l12 is Billu off screen over the box: the same voice as l09, and 'बहन के पति' / 'sister's husband' is his cover. l15 is Aditya over Kiran's profile, continuing l14's voice and topic. l16 is Billu over his denim-sleeved hand holding the phone. l17/l19 are phone-treated and named by l16. l26 is on Mausi's single, and l28 is over her green-bangled hands. l24 is on the whispering two-shot.",
+    "supers": "su1 'मौसी का marriage bureau' / 'Mausi's marriage bureau' is on s28 (arrival at the grey shutter) and fades over s29. It is a place super, so it attaches to nothing wrong. su2 'शकुन मौसी · bureau चलाती हैं' / 'Shakun Mausi · runs the bureau' is on s31, drawn in the left column over Kiran's grey kurta beside Kiran's face, while Mausi is on the right. 'मौसी' plus the older woman speaking makes the attribution recoverable, but it sits on the wrong person (fix below, optional). su3 'छोटी · अगली दुल्हन' / 'Chhoti · the next bride' is on s33, Chhoti alone, exactly the shot length. All three are legible at 360x640."
+  },
+  "known_accepted_not_scored_against": [
+    "Plot overlays not drawn: caller name 'मौसी'/'Mausi' and 2:00 on s02, 3:00 on s13, 'मौसी' on Billu's phone in s23 (no overlay-text layer yet).",
+    "s28 Kiran's held hand side and s30's low placement (approved with logged drift, S9).",
+    "l24 whispered (hi whispered; en measured 0.39, accepted as a whisper; ear list)."
+  ],
+  "measurements": {
+    "frames_sampled": "Per language: one frame at each shot's midpoint plus 0.25 s after each line start, deduped within 0.4 s (67 per language), from the review cuts, viewed as 5x2 contact sheets at 360x640. Viewed: all 67 hi frames; 40 en frames (sheets 2, 3, 5, 6, 7: s07-s17 and s23-s39). Plus the last frame of s30 at 540x960 in both languages. The other 27 en frames (s01-s07, s17-s23) were extracted but not viewed; en uses the same images as hi.",
+    "whisper": "/opt/homebrew/bin/whisper-cli, ~/.whisper-models/ggml-small.bin, 16 kHz mono of the clean mixes, one window per line (start-0.15 s to end+0.15 s from timeline.<lang>.json), -l hi / -l en. Re-runs: hi l19 (87.0-89.8 s, and 85.5-89.9 s), hi l21 split at 102.6 s, hi l09 (44.7-46.7 s), en l12 (55.2-56.8 s with -l en; 55.2-57.2 s and 55.2-60.7 s with -l hi), en l09 (45.3-47.3 s).",
+    "levels": "ffmpeg ebur128 peak=true on both clean files; astats RMS in 0.5 s windows over both files, read at the non-dialogue stretches listed under intelligibility_over_music.",
+    "audio_identity": "md5 of the decoded audio stream, clean vs review, both languages."
+  },
+  "not_checked": [
+    "Nothing was listened to or watched in motion: delivery, tone, whisper level, ducking by ear, and the effects on beats (padlock clack, shutter rattle, bangle chink).",
+    "Subtitle sync per cue was not measured beyond the validator and the line-start frames.",
+    "27 of 67 en sample frames were not viewed.",
+    "The 720p renders.",
+    "hi true peak was read as 'Peak -1.0 dBFS' from ebur128; the hi master log line was not read."
+  ],
+  "fixes": [
+    {
+      "owner": "Owner (ear list)",
+      "severity": "low",
+      "issue": "whisper needed re-runs or splits on hi l19 (Mausi on the phone, 'हम्म... ले आ, बेटा', quiet), hi l21's opening 'आ गई मेरी बच्ची', hi l09's 'किरण?' and hi l01's 'हाँ'. In en, 'Arre, Jijaji!' (l12) was only recovered with -l hi.",
+      "fix": "Listen to hi 0.0-2.3 s, 44.7-46.8 s, 87.0-89.8 s and 100.7-102.8 s, and en 55.2-57.0 s. Retake only a line whose words are not heard; otherwise close, no change."
+    },
+    {
+      "owner": "Owner (eye list)",
+      "severity": "low",
+      "issue": "s30's 'he let go' beat: the two hands are apart at the bottom corners through the end of the push-in, but they are small and low.",
+      "fix": "Watch hi 98.3-100.8 s / en 98.8-101.3 s on a phone. If the parting hands do not register, the episode editor's change is to lower s30's push-in intensity, or move its focus y down, so the hands stay larger in the last frames. Otherwise close; it is logged drift already."
+    },
+    {
+      "owner": "Episode editor (supers)",
+      "severity": "low, optional",
+      "issue": "su2 'Shakun Mausi' is drawn over Kiran's half of the s31 two-shot (the renderer draws supers in the left column), so the name card sits beside the wrong face.",
+      "fix": "Start su2 at the s30 cut, where Mausi stands alone and centred in the shutter (hi frame 2949 instead of 3024; en frame 2964 instead of 3039), keeping its 90-frame length so it runs on 15 frames into s31. That is the same remedy proposed for s1b01's su1. Not needed for the gate."
+    },
+    {
+      "owner": "Episode editor",
+      "severity": "low, optional",
+      "issue": "s36 (l26) is a 1.3x second framing of s32, so Mausi's identical open-mouthed laugh, with Billu's hand at the frame edge, returns 7 s later, on a line meant as 'all business'.",
+      "fix": "If a distinct Mausi single is cheap, generate s36 as written (Mausi close at her desk, not laughing). Otherwise keep it: the line reads, and the repeat is a polish note, not a fault."
+    }
+  ],
+  "no_change": "No other change is asked for. The b3 talk's 6-7 s holds (s07, s08) were not watched in motion, so leave them unless the owner, watching, finds the stretch slow."
+}

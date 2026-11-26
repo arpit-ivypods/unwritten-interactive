@@ -1,0 +1,153 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,120"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 120
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,120",
+				"to": "00:00:00,300"
+			},
+			"offsets": {
+				"from": 120,
+				"to": 300
+			},
+			"text": " The"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,300",
+				"to": "00:00:00,890"
+			},
+			"offsets": {
+				"from": 300,
+				"to": 890
+			},
+			"text": " bureau"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,890",
+				"to": "00:00:01,290"
+			},
+			"offsets": {
+				"from": 890,
+				"to": 1290
+			},
+			"text": " sent"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,290",
+				"to": "00:00:01,490"
+			},
+			"offsets": {
+				"from": 1290,
+				"to": 1490
+			},
+			"text": " no"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,490",
+				"to": "00:00:02,300"
+			},
+			"offsets": {
+				"from": 1490,
+				"to": 2300
+			},
+			"text": " photo."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,300",
+				"to": "00:00:02,520"
+			},
+			"offsets": {
+				"from": 2300,
+				"to": 2520
+			},
+			"text": " The"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,520",
+				"to": "00:00:02,950"
+			},
+			"offsets": {
+				"from": 2520,
+				"to": 2950
+			},
+			"text": " bride"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,950",
+				"to": "00:00:03,300"
+			},
+			"offsets": {
+				"from": 2950,
+				"to": 3300
+			},
+			"text": " took"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,300",
+				"to": "00:00:03,550"
+			},
+			"offsets": {
+				"from": 3300,
+				"to": 3550
+			},
+			"text": " his"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,550",
+				"to": "00:00:05,280"
+			},
+			"offsets": {
+				"from": 3550,
+				"to": 5280
+			},
+			"text": " phone."
+		}
+	]
+}

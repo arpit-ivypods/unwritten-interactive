@@ -1,0 +1,153 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,230"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 230
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,230",
+				"to": "00:00:00,280"
+			},
+			"offsets": {
+				"from": 230,
+				"to": 280
+			},
+			"text": " One"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,280",
+				"to": "00:00:00,940"
+			},
+			"offsets": {
+				"from": 280,
+				"to": 940
+			},
+			"text": " brother"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,940",
+				"to": "00:00:01,320"
+			},
+			"offsets": {
+				"from": 940,
+				"to": 1320
+			},
+			"text": " died"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,320",
+				"to": "00:00:01,500"
+			},
+			"offsets": {
+				"from": 1320,
+				"to": 1500
+			},
+			"text": " of"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,500",
+				"to": "00:00:02,290"
+			},
+			"offsets": {
+				"from": 1500,
+				"to": 2290
+			},
+			"text": " shame."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,290",
+				"to": "00:00:02,570"
+			},
+			"offsets": {
+				"from": 2290,
+				"to": 2570
+			},
+			"text": " Who'll"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,570",
+				"to": "00:00:02,760"
+			},
+			"offsets": {
+				"from": 2570,
+				"to": 2760
+			},
+			"text": " ask"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,760",
+				"to": "00:00:03,080"
+			},
+			"offsets": {
+				"from": 2760,
+				"to": 3080
+			},
+			"text": " about"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,080",
+				"to": "00:00:03,270"
+			},
+			"offsets": {
+				"from": 3080,
+				"to": 3270
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,270",
+				"to": "00:00:03,840"
+			},
+			"offsets": {
+				"from": 3270,
+				"to": 3840
+			},
+			"text": " other?"
+		}
+	]
+}

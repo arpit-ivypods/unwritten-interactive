@@ -1,0 +1,941 @@
+{
+  "series_id": "series2",
+  "library_id": "series2-sound-library",
+  "status": "planned",
+  "status_note": "Planned only. Nothing generated, nothing listened to. A separate runner generates each cue once through the connector, fits it to planned_duration_s with ffmpeg and records generation ids, probed lengths and credits in content/series2/sound/manifest.jsonl.",
+  "authority": [
+    "D-011 reuse: one ambience per location per series, one effects library per series (a recurring sound is made once), one small theme set (bed, tension, sting, ending).",
+    "D-009 route b (ElevenLabs connector); D-0M4 production method approved; D-019 Gate 2 for series2 (s2e02, s2a01, s2b01 held for their critic read: their cues are planned here from the current scripts and may need a touch-up after it).",
+    "D-014 / D-0M2: shots follow measured voice, so every cue here is placed by the episode cue sheet against measured dialogue, not by fixed timings."
+  ],
+  "sources": [
+    "content/series2/bible.json (locations, key_props, production_locks, glimpses)",
+    "content/series2/episodes/*/script.hi.json (beats[].action, sfx_notes, music_note), all nine",
+    "content/proof/*/sound/cues.json and manifest.jsonl (prompt style and measured behaviour)"
+  ],
+  "inclusion_rule": "Ambiences: every location plate in the bible (seven). Layers: time-of-day and phone textures shared by two or more beds. Effects: a sound used in two or more episodes, or more than once in one episode, or one a script names as a shared series effect, plus the phone family. Anything used once lives in that episode's own sound/cues.json.",
+  "how_to_use": [
+    "Episode cue sheets (content/series2/episodes/<id>/sound/cues.json) reference library cues by cue_id and only add one-offs.",
+    "Beds are built as base ambience + layers listed in each ambience's time_layers.",
+    "Loopable cues (loop true) are cut to a seamless loop by crossfading the tail into the head, as done for the proof's amb_malkhana_night.",
+    "The connector exposes no duration or prompt_influence controls (proof flat2d status_note): planned_duration_s is a fitting target, not a request parameter. Effects came back 0.5 to 8 s raw in the proofs; ambiences 30 s.",
+    "Glimpse A (s2ga) is cut from s2a01 and reuses its cues; Glimpse B (s2gb) is cut from s2b01 likewise."
+  ],
+  "mix": {
+    "dialogue_first": true,
+    "loudness_target": "-14 LUFS integrated, -1 dBTP; tolerance +/-0.5 LU (D-0M4)",
+    "starting_gains_db": {
+      "music": -18,
+      "music_duck_under_dialogue": -8,
+      "ambience": -24,
+      "ambience_layer": -28,
+      "sfx": -10
+    },
+    "gains_note": "Starting points copied from the proof flat2d mix; S13 sets the final levels per episode.",
+    "phone_filters": {
+      "earpiece": "band-pass about 300-3400 Hz, light saturation, lyr_phone_line_hiss under it; narrowest (the DSP at Nandini's ear, s2e03 b6; on Pushpa's phone, s2b02 b10; desk phone, s2e01 b8).",
+      "small_speaker": "band-pass a little wider, small room echo (Nirala's keypad on speaker, s2e03 b2-b3).",
+      "handset_on_wool": "narrow band plus a short hollow tin-shed echo for the godown voices and the steps on gravel (s2b01 b7-b11); wide enough that every consonant survives.",
+      "pa": "light room reverb on the press-conference PA lines (s2a03); l05 and l08 stay dry."
+    }
+  },
+  "one_offs_left_to_episode_sheets": [
+    "s2e01: pigeon wings (b1), tea poured into a glass (b3), lobby door swinging shut (b2-b4), crossing gate bell + train passing (b5), registers sliding (b10), cloth knot and file opening (b11), thumb riffling a stack (b12)",
+    "s2e02: wool pulled off the ball (b2), wooden stair steps and bicycle bell (b3), receipt tearing (b4), envelope on wood (b6), medal tink (b7), booth grille creak (b8)",
+    "s2e03: knitting bag thump and Pushpa's breath (b4)",
+    "s2a01: cloth bag drawstring and bulb switch (b2), barred door clang (b4, also Glimpse A), helmet lifted (b5), truck gear change and pull-away over the rails, gate arm creak (b7), cloth brush at the collar (b8), almirah padlock click and door groan (b10), moth at the bulb and lamp (b1-b2, b11)",
+    "s2a02: needles set down (b2), ink pad tin lid and thumb presses (b4, b7), steel tumbler on stone and glasses (b6, b8), wall lamp buzz dying (b7), pressure-cooker whistle far off (b9), hurried footsteps (b11)",
+    "s2a03: mic feedback squeal and tap, PA pop, palm on mic (b1, b3), steel key on wool jingle (b5), peanuts pattering, shield scrape and knock (b8), cables and chair scrape (b9), van door bang and van pulling away (b10-b11)",
+    "s2b01: palm on wrists, belt and buckle, starched cloth, safety pin, button (b1-b3), wood into holster and press stud (b4), smartphone taps, record beep, phone into cloth (b5), cloth rustle against the mic (b11)",
+    "s2b02: paper on steel and pen rolling (b2), scale needle creak, palm on jute (b3, b7), three blows on the steel shutter (b4), ballpoint click (b6), truck key from the cab lock, clink into wool pocket (b8), engine cutting out (b9), sack creak, shell crushed in a fist (b11)",
+    "s2b03: pen taps on wood and on the rail (b1-b2), brass hand bell (b3), leather creak of sunglasses (b6), envelope and wax scrape (b7), ribbon and metal disc slide (b8), footsteps on wood, far door, strap button, cloth drag (b9), cardboard tokens rattling on string (b11)"
+  ],
+  "ambiences": [
+    {
+      "cue_id": "amb_real_thana",
+      "type": "ambience",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "Room tone inside a small, bare Indian small-town police station office: a slow old ceiling fan turning with a soft rhythmic whir and a faint creak, the low steady electrical hum of a tube light, a hard plaster room with a little echo. Calm, flat and steady. No voices, no footsteps, no traffic, no birds, no crickets, no phone. Seamless loop.",
+      "planned_duration_s": 30,
+      "loop": true,
+      "time_layers": {
+        "night": [
+          "lyr_night_crickets"
+        ],
+        "day_press": [
+          "lyr_press_murmur"
+        ]
+      },
+      "used_in": [
+        "s2e01",
+        "s2e02",
+        "s2a01",
+        "s2a02",
+        "s2a03"
+      ],
+      "notes": "Time-neutral base for the real thana; scripts ask for 'tube-light hum, slow ceiling fan' (s2a01, s2a02, s2e02 b11) and 'slow ceiling fan, flat and steady' by day (s2e01 b6-b9). Night: add lyr_night_crickets low. s2a03 press day: add lyr_press_murmur and sfx_camera_shutters. s2e01 b9, s2e02 b11 and s2a03 b4 want 'the fan alone': mute layers, keep this. Cut to a seamless loop as in the proof (crossfade the tail into the head)."
+    },
+    {
+      "cue_id": "amb_talkies_lobby",
+      "type": "ambience",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "Room tone of a big, empty, shut old cinema lobby: high ceiling, terrazzo floor, hard walls, a hollow airy reverb with nothing happening in it, and the faint thin hum of one bare light bulb. Very quiet and steady. No voices, no footsteps, no clock, no traffic, no music. Seamless loop.",
+      "planned_duration_s": 30,
+      "loop": true,
+      "time_layers": {
+        "night": [
+          "lyr_night_crickets",
+          "sfx_wall_clock_tick"
+        ],
+        "morning": [
+          "lyr_morning_birds"
+        ]
+      },
+      "used_in": [
+        "s2e01",
+        "s2e02",
+        "s2e03",
+        "s2a01",
+        "s2b01",
+        "s2b03"
+      ],
+      "notes": "The most used bed in the series. Clock kept out of the base on purpose: add sfx_wall_clock_tick where the scripts ask for it (s2e02 b4, s2e03 whole episode, s2b01 b1-b5). Night (s2e03, s2a01 b1-b2, s2b01 b1-b5): add lyr_night_crickets as if through open doors. Morning (s2b03 b11): add lyr_morning_birds. s2e01 b1's pigeon wings and s2a01's moth at the bulb are one-offs for the episode cue sheets."
+    },
+    {
+      "cue_id": "amb_projection_room",
+      "type": "ambience",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "Close, dry, quiet room tone of a narrow dusty storeroom upstairs in an old building: small and dead-sounding, shelves full of paper, the very faint muffled sound of a small-town street far below through one small closed window. Still, intimate, steady. No voices, no footsteps, no fan, no music. Seamless loop.",
+      "planned_duration_s": 30,
+      "loop": true,
+      "used_in": [
+        "s2e01",
+        "s2e02"
+      ],
+      "notes": "s2e01 b11-b12 ('room tone smaller and closer than the lobby') and s2e02 b1-b2 ('dry quiet, a faint street outside the small window, dust'). Day only."
+    },
+    {
+      "cue_id": "amb_crossing_stall",
+      "type": "ambience",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "Open air beside a railway level crossing in a small Indian town with a roadside tea stall: a blackened kettle simmering softly on a coal stove, the coals ticking, the slow regular tick of a railway signal relay, the faint electrical buzz of a hanging bulb and a signal lamp. Wide, empty and still. No train, no horn, no traffic, no voices, no dogs. Seamless loop.",
+      "planned_duration_s": 30,
+      "loop": true,
+      "time_layers": {
+        "night": [
+          "lyr_night_crickets"
+        ],
+        "dawn": [
+          "lyr_morning_birds"
+        ]
+      },
+      "used_in": [
+        "s2e01",
+        "s2a01",
+        "s2a02",
+        "s2b01",
+        "s2b02"
+      ],
+      "notes": "Base for day (s2e01 b5), night (s2a01 b3/b6/b7, s2b01 b6-b11, s2b02 b1) and dawn (s2a02 b8). Night: add lyr_night_crickets; s2b01 b6 wants it 'wider and emptier than the lobby', s2b01 b7-b11 'very low'. Dawn: add lyr_morning_birds. s2e01 b5's gate bell, horn and passing train are an episode one-off. 'No train' is written into several beats, so the base carries none."
+    },
+    {
+      "cue_id": "amb_godown_night",
+      "type": "ambience",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "Inside a high tin-roofed grain warehouse at night: the metal roof ticking and pinging now and then as it cools, the low hum of one bare light bulb on a long wire, a faint dry rustle of stacked jute sacks, a big hollow shed with a soft boomy echo. Low, still, a little uneasy. No voices, no engines, no footsteps, no crickets. Seamless loop.",
+      "planned_duration_s": 30,
+      "loop": true,
+      "time_layers": {
+        "after_shutter_up": [
+          "lyr_night_crickets"
+        ]
+      },
+      "used_in": [
+        "s2b01",
+        "s2b02"
+      ],
+      "notes": "s2b02 b2-b12 bed; s2b02 b12 ducks to 'the bulb hum alone'. Crickets kept out of the base: s2b02 b5 brings 'night air and crickets' in only once the shutter is up, so add lyr_night_crickets from then. s2b01 only sees the godown from across the track (b8 shot 1), so it uses the crossing bed there; the godown voices in s2b01 come through Pushpa's handset with a 'little godown echo', which is processing, not this bed."
+    },
+    {
+      "cue_id": "amb_lane_doorway",
+      "type": "ambience",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "Outdoors in a very narrow brick lane between old houses in a small Indian town, late and very quiet: close hard brick walls, still air, the faint buzz of a small wall lamp on a bracket, the distant hush of a sleeping town. Calm and steady. No voices, no footsteps, no birds, no crickets, no dogs, no traffic. Seamless loop.",
+      "planned_duration_s": 30,
+      "loop": true,
+      "time_layers": {
+        "night": [
+          "lyr_night_crickets"
+        ],
+        "dawn": [
+          "lyr_morning_birds"
+        ],
+        "morning": [
+          "lyr_morning_birds",
+          "lyr_morning_town"
+        ]
+      },
+      "used_in": [
+        "s2a01",
+        "s2a02"
+      ],
+      "notes": "Time-neutral base; the light runs 1 a.m. to 10 a.m. across s2a02, so the time comes from layers: night lyr_night_crickets (s2a01 b11, s2a02 b3-b6) with sfx_far_train_horn used once as the 'far-off goods train'; dawn swap to lyr_morning_birds at s2a02 b7 (the lamp buzz in this base fades out with it); morning lyr_morning_town at b9-b11."
+    },
+    {
+      "cue_id": "amb_magistrate_room",
+      "type": "ambience",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "Room tone of a small, quiet Indian courtroom by day: a large room with hard walls and a wooden floor, a slow ceiling fan turning, faint birds and distant light traffic far off through high open windows. Calm, formal and steady, nothing loud. No voices, no footsteps, no gavel, no bell, no paper. Seamless loop.",
+      "planned_duration_s": 30,
+      "loop": true,
+      "used_in": [
+        "s2b03"
+      ],
+      "notes": "s2b03 b1-b10. b9 'the bed thins' as the room empties: pull it down; footsteps and the far door are episode one-offs. Only one episode, but it is a location plate, so it gets its ambience here (D-011)."
+    }
+  ],
+  "ambience_layers": [
+    {
+      "cue_id": "lyr_night_crickets",
+      "type": "ambience_layer",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "Crickets chirping steadily outdoors on a warm night in a small Indian town, soft and even, a little distant, a dense calm texture. No dogs, no frogs, no voices, no traffic, no wind. Seamless loop.",
+      "planned_duration_s": 30,
+      "loop": true,
+      "used_in": [
+        "s2e03",
+        "s2a01",
+        "s2a02",
+        "s2b01",
+        "s2b02"
+      ],
+      "notes": "The night layer for every outdoor or open-door night bed (talkies, crossing, lane, godown after the shutter). Kept separate so the base ambiences can be reused by day. Gain set per location: lowest under the talkies (outside the doors), highest at the crossing."
+    },
+    {
+      "cue_id": "lyr_morning_birds",
+      "type": "ambience_layer",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "Early morning birds in a small Indian town: sparse chirps of sparrows and mynas, a few crows cawing far off, soft and spacious, gentle daylight feel. No voices, no traffic, no dogs, no music. Seamless loop.",
+      "planned_duration_s": 30,
+      "loop": true,
+      "used_in": [
+        "s2a02",
+        "s2a03",
+        "s2b03"
+      ],
+      "notes": "s2a02 b7 'the first bird' (fade in from silence) and b8 dawn tea; s2a03 b10 'crows' outdoors in the yard; s2b03 b11 'birds through the high windows' of the lobby (high-pass and lower it there)."
+    },
+    {
+      "cue_id": "lyr_morning_town",
+      "type": "ambience_layer",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A quiet small Indian town waking up, heard from a narrow lane: a scooter passing far away now and then, the faint creak and splash of a hand pump some streets off, very distant soft household sounds. Gentle, sparse, steady. No voices, no crowd, no horns, no music. Seamless loop.",
+      "planned_duration_s": 30,
+      "loop": true,
+      "used_in": [
+        "s2a02",
+        "s2a03"
+      ],
+      "notes": "s2a02 b9-b11 ('a distant scooter ... never voices, never a crowd') and s2a03 b1-b10 ('a scooter far off in the yard', 'a far handpump'). The pressure-cooker whistle in s2a02 b9 is a one-off for the episode sheet, not in this loop, so it does not repeat every 30 s."
+    },
+    {
+      "cue_id": "lyr_press_murmur",
+      "type": "ambience_layer",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A small room full of waiting local reporters, heard but never seen: a low, unintelligible murmur of many people talking quietly, shuffling, a chair creaking now and then, papers. Steady and contained, indoors. No clear words, no applause, no camera clicks, no music. Seamless loop.",
+      "planned_duration_s": 30,
+      "loop": true,
+      "used_in": [
+        "s2a03"
+      ],
+      "notes": "One episode only, but it is the location's press-day state and runs under b1-b9 of s2a03, so it is made once as a loop here. Drop it a step under the PA lines; it thins to nothing in b9 (fade)."
+    },
+    {
+      "cue_id": "lyr_phone_line_hiss",
+      "type": "ambience_layer",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "Faint, steady telephone line hiss and soft static heard from a phone earpiece, very quiet and continuous. No tones, no beeps, no voices. Seamless loop.",
+      "planned_duration_s": 10,
+      "loop": true,
+      "used_in": [
+        "s2e01",
+        "s2e03",
+        "s2b01",
+        "s2b02"
+      ],
+      "notes": "Sits under every phone-filtered voice: the DSP on the desk phone (s2e01 b8), the DSP at Nandini's ear (s2e03 b6) and on Pushpa's phone (s2b02 b10), the open call through Pushpa's handset (s2b01 b7-b11, lower). The proof's amb_s04_line_hiss prompt, which worked."
+    }
+  ],
+  "effects": [
+    {
+      "cue_id": "sfx_cuffs_ratchet",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "Steel police handcuffs closing: two quick dry metallic ratchet clicks, one per wrist, very close and exposed in a quiet room. No chain rattle, no voices.",
+      "planned_duration_s": 1.5,
+      "loop": false,
+      "used_in": [
+        "s2a01",
+        "s2a02",
+        "s2ga"
+      ],
+      "notes": "s2a01 b1 (on frame one, two clicks; also the first moment of Glimpse A, s2ga) and s2a02 b1 (one cuff on her own wrist: use the first click only)."
+    },
+    {
+      "cue_id": "sfx_cuffs_unlock",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "One single dry metallic click of a steel handcuff being unlocked and springing open, close, in a quiet room. Nothing after it.",
+      "planned_duration_s": 0.6,
+      "loop": false,
+      "used_in": [
+        "s2e03",
+        "s2a03"
+      ],
+      "notes": "s2e03 b10 (must be over before l27) and s2a03 b2 (follow with sfx_cuff_chain_clink as it changes hands)."
+    },
+    {
+      "cue_id": "sfx_cuff_chain_clink",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A short light clink of the steel chain between two handcuffs, one small movement, close and dry. One clink only.",
+      "planned_duration_s": 0.8,
+      "loop": false,
+      "used_in": [
+        "s2a01",
+        "s2a02",
+        "s2a03",
+        "s2b01",
+        "s2e02"
+      ],
+      "notes": "The most reused effect: every out-of-step stride and lifted glass in s2a02 (b2, b5, b8, b11), s2a01 b3 and b9 (against an iron bar), s2a03 b1-b2, the cuffs dropping into the pouch in s2b01 b1 and drawn out in s2e02 b1. Vary pitch by +/-1 semitone and level per use so repeats do not sound looped. If the take holds several clinks, keep them all as alternates."
+    },
+    {
+      "cue_id": "sfx_pouch_flap_snap",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A small stiff leather belt pouch flap snapped shut with a press stud: one short firm snap of leather and metal, close.",
+      "planned_duration_s": 0.6,
+      "loop": false,
+      "used_in": [
+        "s2e02",
+        "s2b01"
+      ],
+      "notes": "s2e02 b1 (flap opens: use as is before the chain clink), s2e02 b10 and s2b01 b1 (cuffs go in, flap snaps shut). Pair with sfx_cuff_chain_clink."
+    },
+    {
+      "cue_id": "sfx_holster_unbutton",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A brown leather holster flap being unbuttoned: a soft leather creak and the small pop of a press stud opening, close and quiet. No metal gun sounds.",
+      "planned_duration_s": 1.0,
+      "loop": false,
+      "used_in": [
+        "s2e03",
+        "s2b02"
+      ],
+      "notes": "s2e03 b8 and s2b02 b3. The revolver is wood: never add a metallic gun foley to it (s2e03 b8 'not a metallic sound')."
+    },
+    {
+      "cue_id": "sfx_wood_revolver_knock",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A small carved wooden object laid down on a wooden table: one light, dry, hollow knock of wood on wood, close. Not metal, no rattle.",
+      "planned_duration_s": 0.6,
+      "loop": false,
+      "used_in": [
+        "s2e03",
+        "s2b02"
+      ],
+      "notes": "s2e03 b8 (wood on wood). s2b02 b3 'one dull knock of wood on jute' (low-pass it, take some level off) and b11 'a light wooden knock against her palm' (softer still). One take, three treatments."
+    },
+    {
+      "cue_id": "sfx_keypad_vibrate",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "An old cheap keypad mobile phone on silent-vibrate, rattling hard against a wooden counter in a quiet room: buzz pulses about 0.7 seconds long with short gaps, steady repeating rhythm, the wood rattling with it.",
+      "planned_duration_s": 3.0,
+      "loop": false,
+      "used_in": [
+        "s2e03",
+        "s2b01"
+      ],
+      "notes": "Named a shared series effect in s2e03 b1 ('make it once'): 1.5 s before l01, then stops dead. s2b01 b5's action has Pushpa's handset 'buzzing in her palm' before it rings: use a short burst, low-passed and without the wood (or skip if the ring alone reads). Prompt follows the proof's sfx_s08_phone_buzz, which worked."
+    },
+    {
+      "cue_id": "sfx_keypad_ring",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "An old cheap keypad mobile phone ringing: a monophonic, shrill electronic beeping ringtone, one ring only, close in a quiet room.",
+      "planned_duration_s": 2.0,
+      "loop": false,
+      "used_in": [
+        "s2b01"
+      ],
+      "notes": "s2b01 b5 calls it the 'shared series keypad tone, monophonic', so it is made once here; cut by sfx_keypad_key_click. Prompt adapted from the proof's sfx_s03_phone_ring. Any later keypad ring in a recut uses this file."
+    },
+    {
+      "cue_id": "sfx_keypad_key_click",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A single small plastic keypad button click on an old mobile phone, dry, close-mic.",
+      "planned_duration_s": 0.5,
+      "loop": false,
+      "used_in": [
+        "s2e03",
+        "s2b01",
+        "s2b02"
+      ],
+      "notes": "s2e03 b2 (speaker on), s2b01 b5 (answer and record), s2b02 b1 (cuts the dead tone) and b10 (with sfx_dtmf_dialling). The proof's sfx_s04_key_click prompt, which worked."
+    },
+    {
+      "cue_id": "sfx_keypad_call_end",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A small click, then three short electronic call-ended beeps from an old mobile phone loudspeaker, thin and evenly spaced, then silence.",
+      "planned_duration_s": 1.6,
+      "loop": false,
+      "used_in": [
+        "s2e03"
+      ],
+      "notes": "s2e03 b3. Part of the keypad-phone family, so it lives with the others; the proof's call-end came back 1.6 s, so 1.6 s is planned."
+    },
+    {
+      "cue_id": "sfx_dead_line_tone",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "The flat, thin, continuous tone of a dead telephone line from a small mobile phone handset, steady and unbroken, quiet. No beeps, no voices. Seamless loop.",
+      "planned_duration_s": 5.0,
+      "loop": true,
+      "used_in": [
+        "s2b01",
+        "s2b02"
+      ],
+      "notes": "The seam sound across the B episodes: s2b01 b11 ends on it (1.0 s, down under l27, faint in the hold) and s2b02 b1 opens on it (alone for the first half-second, then under l01 until the key click). The same file on both sides of the cut keeps the seam. Loopable."
+    },
+    {
+      "cue_id": "sfx_dtmf_dialling",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "Push-button telephone dial tones: about seven quick touch-tone beeps of a number being dialled, close, dry, in a quiet room.",
+      "planned_duration_s": 1.5,
+      "loop": false,
+      "used_in": [
+        "s2e01",
+        "s2e02",
+        "s2b02"
+      ],
+      "notes": "s2e01 b8 (desk phone, 1.2 s planned), s2e02 b12 (desk phone) and s2b02 b10 (keypad phone: high-pass slightly so it reads smaller). Trim the beep count to the shot."
+    },
+    {
+      "cue_id": "sfx_ringback_pickup",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "Heard through a telephone receiver: one Indian-style ring-back tone, a double purr, then a short pause and the small click of the call being picked up at the other end.",
+      "planned_duration_s": 3.0,
+      "loop": false,
+      "used_in": [
+        "s2e02",
+        "s2b02"
+      ],
+      "notes": "s2e02 b12 ('one ring-back tone, a click as it is picked up') and s2b02 b10 ('one ring, the click of pick-up'). Keep it in the room for s2e02 (no phone filter, per the script); for s2b02 run it through the earpiece filter."
+    },
+    {
+      "cue_id": "sfx_desk_phone_lift",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "An old black desk telephone handset lifted off its cradle: a plastic clack, the cradle switch releasing, the coiled cord rattling briefly against the desk, close.",
+      "planned_duration_s": 0.8,
+      "loop": false,
+      "used_in": [
+        "s2e01",
+        "s2e02"
+      ],
+      "notes": "s2e01 b8 (0.8 s, over Tripathi's raised palm) and s2e02 b12. Same desk phone, same sound."
+    },
+    {
+      "cue_id": "sfx_desk_phone_hangup",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "An old black desk telephone receiver set down hard on its cradle: one solid plastic click and clack, close, then silence.",
+      "planned_duration_s": 0.8,
+      "loop": false,
+      "used_in": [
+        "s2e01"
+      ],
+      "notes": "s2e01 b9 ('a hard click. Then nothing'). Made with sfx_desk_phone_lift so the thana desk phone sounds like one object if a recut needs it again."
+    },
+    {
+      "cue_id": "sfx_rubber_stamp",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A wooden-handled rubber stamp brought down once on paper on a wooden counter: one dry, firm wooden thunk, close, in a big quiet room.",
+      "planned_duration_s": 0.8,
+      "loop": false,
+      "used_in": [
+        "s2e01",
+        "s2e02"
+      ],
+      "notes": "Nirala's signature sound: s2e01 b1 (in the 0.5 s before the series' first line, off screen) and s2e02 b4 (between l12 and l13). s2a02 b4's thumb presses are softer: use this at low level with the top cut, or the episode sheet's own cue."
+    },
+    {
+      "cue_id": "sfx_pen_scratch",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A ballpoint pen writing quickly on paper on a hard desk: a dry, light scratching, a few short words, close-mic.",
+      "planned_duration_s": 2.5,
+      "loop": false,
+      "used_in": [
+        "s2e02",
+        "s2a01",
+        "s2a02",
+        "s2b02"
+      ],
+      "notes": "s2a01 b2 (the tag under l05), s2e02 b4 and b8, s2a02 b4 and b5 (the pen strike), s2b02 b6-b7 (pen on carbon paper, keep quiet). Always under the line, low."
+    },
+    {
+      "cue_id": "sfx_page_turn",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "One page of a heavy old ledger turned over: a dry paper lift and soft flop, close, in a quiet room.",
+      "planned_duration_s": 1.0,
+      "loop": false,
+      "used_in": [
+        "s2e01",
+        "s2e02",
+        "s2a01",
+        "s2a02",
+        "s2a03"
+      ],
+      "notes": "s2e01 b12, s2e02 b8, s2a01 b10, s2a02 b7 (several, in a loose rhythm: reuse with small level changes), s2a03 b4 and b5."
+    },
+    {
+      "cue_id": "sfx_register_thump",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A large heavy cloth-bound register laid down hard on a wooden desk: one dull, heavy paper-and-board thump, with a faint puff of dust.",
+      "planned_duration_s": 1.0,
+      "loop": false,
+      "used_in": [
+        "s2e01",
+        "s2a01",
+        "s2a02",
+        "s2a03"
+      ],
+      "notes": "s2e01 b10 (the nine registers: slide plus thump), s2a01 b10 (out of the almirah), s2a02 b11 (cover thumped shut before l27) and s2a03 b3 (among the microphones; add the small PA pop there)."
+    },
+    {
+      "cue_id": "sfx_paper_slip",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A small sheet of thin printed paper unfolded and handed over: a short crisp paper rustle, close and dry.",
+      "planned_duration_s": 1.0,
+      "loop": false,
+      "used_in": [
+        "s2a01",
+        "s2a02",
+        "s2a03",
+        "s2b01",
+        "s2b02",
+        "s2b03"
+      ],
+      "notes": "The movement slip and the other papers: s2a01 b6, s2a02 b9 (the receipt), s2a03 b9 (slide), s2b01 b9 (0.8 s, through the handset filter), s2b02 b3 (trembling, under l07-l08) and b7, s2b03 b7 (with the envelope). Proof's paper rustle came back 6 s raw: pick the cleanest second."
+    },
+    {
+      "cue_id": "sfx_match_wax",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A wooden match struck and flaring, a short hiss, then a few soft drips of hot sealing wax onto cloth, close and quiet.",
+      "planned_duration_s": 2.5,
+      "loop": false,
+      "used_in": [
+        "s2e02",
+        "s2a01"
+      ],
+      "notes": "Nirala's seal ritual: s2e02 b8 (under l23) and s2a01 b2 (on the knot of the cloth bag)."
+    },
+    {
+      "cue_id": "sfx_knitting_needles",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "Two steel knitting needles clicking softly and steadily as someone knits wool, close, an even relaxed rhythm in a quiet room. No voices, no music. Seamless loop.",
+      "planned_duration_s": 10,
+      "loop": true,
+      "used_in": [
+        "s2e01",
+        "s2e02",
+        "s2a01",
+        "s2b01"
+      ],
+      "notes": "Pushpa's signature. s2e01 b6/b11-b12, s2e02 b2 and b11, s2a01 b9, s2b01 b7-b10. Its STOP is a cue several times (s2e01 b12, s2a01 b9, s2b01 b10 on the laugh): cut it clean on a gap, no fade. s2b01 b9 wants it slowing: time-stretch the last 2 s or use spaced single clicks from the loop."
+    },
+    {
+      "cue_id": "sfx_peanut_crack",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "Roasted peanuts in the shell being cracked between fingers: three or four small dry crisp cracks a second or so apart, close, in a quiet room.",
+      "planned_duration_s": 3.0,
+      "loop": false,
+      "used_in": [
+        "s2e01",
+        "s2e02",
+        "s2b02"
+      ],
+      "notes": "Tripathi's signature. s2e01 b6 (under l09-l10, small), s2e02 b11 (under l31), s2b02 b9 (once, before l23). Its stopping is the cue in s2e01 b9 and s2e02 b11. s2b02 b11's 'shell crushed in a fist' is a one-off for that episode sheet."
+    },
+    {
+      "cue_id": "sfx_keyring_jingle",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A heavy ring of old iron and brass keys swinging lazily on one finger: a soft, slow, rhythmic jingle, close. No footsteps, no voices.",
+      "planned_duration_s": 4.0,
+      "loop": false,
+      "used_in": [
+        "s2e02",
+        "s2a03",
+        "s2b02"
+      ],
+      "notes": "Bhaiyaji's godown keys. s2e02 b6-b7 (light under l17; then walks out of the door and fades into b8), s2a03 b6 (faint, stops after l16), s2b02 b2 and b6 (softly, never over a word; stops on l15)."
+    },
+    {
+      "cue_id": "sfx_wall_clock_tick",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A slow old mechanical wall clock ticking steadily in a quiet room, one dry tick a second, close-ish. Nothing else. Seamless loop.",
+      "planned_duration_s": 8.0,
+      "loop": true,
+      "used_in": [
+        "s2e02",
+        "s2e03",
+        "s2a01",
+        "s2b01"
+      ],
+      "notes": "Kept out of the talkies ambience so it can be placed. s2e02 b4 (under l14), s2e03 whole episode and b5, s2b01 b1-b5 (lobby), s2a01 b5 in the real thana (one tick louder as the hands meet: raise one tick 4-6 dB)."
+    },
+    {
+      "cue_id": "sfx_bench_creak",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "An old wooden bench creaking once as someone shifts their weight and stands, a single dry wooden creak, close.",
+      "planned_duration_s": 1.0,
+      "loop": false,
+      "used_in": [
+        "s2a01",
+        "s2a03",
+        "s2b03"
+      ],
+      "notes": "s2a01 b9 (he stands), s2a03 b11 (once), s2b03 b4 (the wooden witness stand, one creak). s2b02 b11's creaking sack is different: an episode one-off."
+    },
+    {
+      "cue_id": "sfx_camera_shutters",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A burst of press camera shutters in a room: a dozen quick mechanical and digital camera clicks from several cameras at once, overlapping, then stopping.",
+      "planned_duration_s": 3.0,
+      "loop": false,
+      "used_in": [
+        "s2a03"
+      ],
+      "notes": "One episode, but it recurs through it (b1, b2 on 'शाबाश', b4 where it must stop dead after 'उगाही', b7 going steadily through the 2.0 s silence). Build b7's steady run by chaining two copies."
+    },
+    {
+      "cue_id": "sfx_padlock_rusted",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "An old rusted iron padlock: a key forced into it and grinding, the lock refusing twice, then giving with a stiff metallic clack as the shackle springs open, close up.",
+      "planned_duration_s": 3.0,
+      "loop": false,
+      "used_in": [
+        "s2a01",
+        "s2a02",
+        "s2ga"
+      ],
+      "notes": "The lockup padlock. s2a01 b4 (grinding and refusing under l06, then giving; also in Glimpse A) and s2a02 b1 (opens the episode over black: the key grinding). Proof's sfx_s06_padlock prompt as a base."
+    },
+    {
+      "cue_id": "sfx_signature_knock",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "Knuckles knocking on an old wooden double door at night in a quiet lane: exactly three knocks in a fixed rhythm, two slow knocks and then one quick knock, firm and polite, dry, close.",
+      "planned_duration_s": 2.0,
+      "loop": false,
+      "used_in": [
+        "s2a01",
+        "s2a02"
+      ],
+      "notes": "NIRALA'S KNOCK, made once and reused exactly (s2a02 b3 and b10 say so). s2a01 b10's 'two knocks on wood' pre-lap is his knock too: use the two slow knocks of this file. If the take does not hold the two-slow-one-quick rhythm, cut it from separate knocks of the same take rather than regenerating."
+    },
+    {
+      "cue_id": "sfx_door_chain_stop",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "An old wooden door pulled open a hand's width and stopping hard on an iron chain latch: a short wooden creak, then the chain snapping taut with a metallic rattle, close.",
+      "planned_duration_s": 1.5,
+      "loop": false,
+      "used_in": [
+        "s2a01",
+        "s2a02"
+      ],
+      "notes": "Every complainant's door: s2a01 b11 (before l26) and s2a02 b3 and b10 (inside the 1.5 s silence before the line, after the knock)."
+    },
+    {
+      "cue_id": "sfx_door_chain_slide",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "An iron door chain latch slid out of its slot and dropped: a short metallic slide and a light clink as the chain falls against the wood, close.",
+      "planned_duration_s": 1.2,
+      "loop": false,
+      "used_in": [
+        "s2a02"
+      ],
+      "notes": "s2a02 b3 and b10 (under the end of l25). Twice in one episode with the same door."
+    },
+    {
+      "cue_id": "sfx_door_shut_bolt",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "An old wooden double door pushed shut, then a heavy iron bolt shot home: one solid wooden thud and a firm metallic slide-and-clack, close, then quiet.",
+      "planned_duration_s": 1.5,
+      "loop": false,
+      "used_in": [
+        "s2a01",
+        "s2a02"
+      ],
+      "notes": "s2a01 b11 (after l27, then near silence for the hold) and s2a02 b11 ('a door shutting'; use the thud and leave out the bolt if it reads wrong)."
+    },
+    {
+      "cue_id": "sfx_shutter_rattle_slam",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A large corrugated steel rolling shutter on a warehouse being pulled down: a long loud metallic rattle as it rolls, ending in one heavy slam on the ground, with a big hollow echo.",
+      "planned_duration_s": 4.0,
+      "loop": false,
+      "used_in": [
+        "s2b01",
+        "s2b02"
+      ],
+      "notes": "The godown shutter. s2b01 b8 shot 1 (heard far across the track: low-pass and push back; must be dead a full second before l16). s2b02 b5 needs the shutter 'rattling up, loud and long': reuse the rattle section of this take without the slam, before trying a new generation. s2b02 b4's three blows on the shutter are an episode one-off."
+    },
+    {
+      "cue_id": "sfx_car_door",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A heavy old car door shut outdoors on a gravel yard: one solid, clean metal clunk, then quiet.",
+      "planned_duration_s": 1.0,
+      "loop": false,
+      "used_in": [
+        "s2e02",
+        "s2a02",
+        "s2b02"
+      ],
+      "notes": "Bhaiyaji's car (s2e02 b5), the DSP's car (s2a02 b12, before l28) and Tripathi's (s2b02 b9). s2a02 calls it 'opening (one clean clunk)': use as is."
+    },
+    {
+      "cue_id": "sfx_car_idle",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "An old petrol car engine idling outdoors in a yard, low and steady, slightly rough, heard from a little distance. No doors, no horn, no voices. Seamless loop.",
+      "planned_duration_s": 8.0,
+      "loop": true,
+      "used_in": [
+        "s2a02",
+        "s2b02"
+      ],
+      "notes": "s2a02 b12 (in the yard, ducked under l28-l29) and s2b02 b9 ('idling and cutting out': fade the tail fast or add an engine-off one-off)."
+    },
+    {
+      "cue_id": "sfx_headlight_hum",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A faint low steady electrical hum, like the glare of vehicle headlights at night, soft and continuous. Seamless loop.",
+      "planned_duration_s": 4.0,
+      "loop": true,
+      "used_in": [
+        "s2a01",
+        "s2b02",
+        "s2ga"
+      ],
+      "notes": "Both scripts ask for headlight glare 'as a faint electrical hum': s2a01 b6 (and Glimpse A's last moment) and s2b02 b9 (a sweep: fade it in and out over about a second). Quiet sweetener only."
+    },
+    {
+      "cue_id": "sfx_truck_idle",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A big old loaded diesel truck idling close by at night, a low heavy rumbling idle, steady. No horn, no gear change, no voices. Seamless loop.",
+      "planned_duration_s": 8.0,
+      "loop": true,
+      "used_in": [
+        "s2a01",
+        "s2ga"
+      ],
+      "notes": "The series has one truck design and one engine. s2a01 b6 (duck right down under l08, the last line of Glimpse A s2ga) and the head of b7. The gear change, pull-away and wheels on the rails in b7 are an s2a01 one-off."
+    },
+    {
+      "cue_id": "sfx_steps_terrazzo",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "Footsteps in sandals and shoes walking across a terrazzo floor in a big empty hall: about eight steady steps, hard floor, a little hollow echo.",
+      "planned_duration_s": 4.0,
+      "loop": false,
+      "used_in": [
+        "s2e02",
+        "s2e03"
+      ],
+      "notes": "s2e02 b6 (Bhaiyaji's sandals) and b10 (Pushpa out of the door), s2e03 b4 (quick: speed up with a small pitch-neutral tempo change)."
+    },
+    {
+      "cue_id": "sfx_steps_gravel",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "Slow footsteps in sandals on loose gravel outdoors, about eight steps, crunching, close. No voices.",
+      "planned_duration_s": 4.0,
+      "loop": false,
+      "used_in": [
+        "s2e02",
+        "s2a02",
+        "s2b01",
+        "s2b02"
+      ],
+      "notes": "s2e02 b5 (coming closer under l15), s2a02 b12, s2b01 b6 (walking away and fading) and b7 (through the handset filter), s2b02 b9 (slow, heavy: drop pitch slightly)."
+    },
+    {
+      "cue_id": "sfx_steps_ballast",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "Two or three people walking across railway track ballast at night, out of step with one another: loose stones crunching under long even strides and short brisk steps, about eight seconds, close. No train, no voices.",
+      "planned_duration_s": 8.0,
+      "loop": false,
+      "used_in": [
+        "s2a01",
+        "s2b02"
+      ],
+      "notes": "s2a01 b3 (three rhythms; add sfx_cuff_chain_clink for the small careful steps) and s2b02 b1 (long even strides and short brisk steps)."
+    },
+    {
+      "cue_id": "sfx_far_dog",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A single dog barking twice far away across a sleeping small town at night, distant and echoing, then silence.",
+      "planned_duration_s": 2.5,
+      "loop": false,
+      "used_in": [
+        "s2e03",
+        "s2a01",
+        "s2a03",
+        "s2b01"
+      ],
+      "notes": "s2e03 b5 (one far bark), s2a01 b8 and b11, s2b01 b6. s2a03 b10 is morning: use it lower. Never under a line."
+    },
+    {
+      "cue_id": "sfx_far_train_horn",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A distant Indian goods-train horn, one long low blast far away across a town, fading out, soft and melancholy. No rumble close by, no bell.",
+      "planned_duration_s": 4.0,
+      "loop": false,
+      "used_in": [
+        "s2e03",
+        "s2a02",
+        "s2b03"
+      ],
+      "notes": "s2e03 b7 (only after the last word of l20; fades under b8), s2a02 lane night ('a far-off goods train', once), s2b03 b11 (once in the 1.5 s opening wide). s2e01 b5's close train passing is a one-off."
+    }
+  ],
+  "themes": [
+    {
+      "cue_id": "mus_theme_caper_bed",
+      "type": "music",
+      "model": "music_v2_5",
+      "api_model_id": "eleven_music_v2_5",
+      "instrumental": true,
+      "prompt": "Instrumental deadpan small-town Indian caper underscore. A dry, sparse, plucked procedural motif on a single string instrument (pizzicato or a muted plucked lute), a few notes per bar, playful but straight-faced, with very soft hand percussion (a dry tabla or ghatam tick). Around 92 BPM. Light, warm, a little sly, never slapstick. Steady level, no build, no drop, no stinger at the end, no melody hook loud enough to fight speech, no vocals.",
+      "planned_duration_s": 40,
+      "structure": "one even section throughout; cut and loop at bar lines",
+      "used_in": [
+        "s2e01",
+        "s2e02",
+        "s2a02"
+      ],
+      "notes": "The series bed. s2e01 b4 and b10, s2e02 b3-b4, s2a02 b3-b11 (that script also asks for 'a soft clarinet': reuse this bed rather than making a second one, and accept the missing clarinet). Never under a punchline (s2e01). Duck 8 dB under dialogue as in the proof mix. Generated at 40 s so it can be cut at bar lines and looped."
+    },
+    {
+      "cue_id": "mus_theme_caper_slow",
+      "type": "music",
+      "model": "music_v2_5",
+      "api_model_id": "eleven_music_v2_5",
+      "instrumental": true,
+      "prompt": "Instrumental. The same deadpan plucked caper motif slowed right down, around 70 BPM: a single plucked string instrument, very quiet and sparse, with the faintest soft hand percussion tick, building just a little in density and warmth over its length, as if things are being counted off one by one. Tense but light, small and dry. No big swell, no drums, no vocals, no ending sting.",
+      "planned_duration_s": 40,
+      "structure": "0-40 s: one slow section, density rising slightly",
+      "used_in": [
+        "s2a01",
+        "s2b02"
+      ],
+      "notes": "Both scripts ask for 'the series' caper motif, slowed': s2a01 b9-b10 (stops dead on the second knock) and s2b02 b6-b8 (builds item by item, stops dead on the headlights). Stops are hard cuts at a gap, not fades. Fallback if the motif does not match the bed by ear: time-stretch mus_theme_caper_bed to about 0.75x with ffmpeg rubberband and ramp its gain, which costs nothing."
+    },
+    {
+      "cue_id": "mus_tension_note",
+      "type": "music",
+      "model": "music_v2_5",
+      "api_model_id": "eleven_music_v2_5",
+      "instrumental": true,
+      "prompt": "Instrumental minimal tension underscore. A single low sustained string note (cellos and basses), barely audible, held and slowly breathing, cold and uneasy, almost subliminal. No melody, no chord changes, no pulse, no percussion, no risers, no vocals. Very steady level throughout so any section can be used.",
+      "planned_duration_s": 40,
+      "structure": "one sustained note, steady 0-40 s",
+      "used_in": [
+        "s2e01",
+        "s2e02",
+        "s2e03",
+        "s2a01",
+        "s2a02",
+        "s2a03",
+        "s2b01",
+        "s2b02",
+        "s2b03"
+      ],
+      "notes": "The workhorse: almost every script asks for 'a single low sustained (string) note, barely audible'. s2e01 b11-b12, s2e02 b6-b7 and b12 (the 'low drone'), s2e03 b6 and b10, s2a01 b7, s2a02 b12, s2a03 b7, s2b01 b5-b6 and b10-b11, s2b02 b11-b12, s2b03 b6-b8. Always ducked under lines; most uses end in a hard cut to silence. Prompt kept close to the proof's mus_drone_bed, minus its pulse."
+    },
+    {
+      "cue_id": "mus_sting",
+      "type": "music_sting",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A single short dry pizzicato string stab with one muted low tabla hit underneath, abrupt, tense, a small question mark. One hit only, no reverb tail.",
+      "planned_duration_s": 1.5,
+      "loop": false,
+      "used_in": [
+        "s2a02"
+      ],
+      "notes": "Only s2a02 b12 asks for a sting (the final insert of Pushpa's hand, then cut to black); s2e01, s2e02, s2e03, s2b01 and s2b03 all rule stings out, so it is used once. The proof's mus_stop_sting prompt; that one came back quiet (peak -22 dB) and needed gain, so expect to add some."
+    },
+    {
+      "cue_id": "mus_theme_warm_ending",
+      "type": "music",
+      "model": "music_v2_5",
+      "api_model_id": "eleven_music_v2_5",
+      "instrumental": true,
+      "prompt": "Instrumental warm small-town resolution. A soft sustained warm string chord, gentle and slow, then a single solo instrument (a soft plucked string or a mellow clarinet) plays the deadpan caper motif slowly and tenderly over it, and the piece resolves calmly onto a held major chord in the last few seconds. Quiet, sincere, unhurried, no percussion, no vocals, no big swell.",
+      "planned_duration_s": 40,
+      "structure": "0-12 s warm chord alone; 12-34 s solo motif over chord; 34-40 s resolve and hold",
+      "used_in": [
+        "s2e02",
+        "s2a03",
+        "s2b03"
+      ],
+      "notes": "Ending theme for both finales: s2a03 b10 shot 4 to the end (one instrument; rises a little into the engine fade) and s2b03 b10-b11 (warm chord carried across the cut; lifts on l25, ducks under l26, resolves on the hold). s2e02 b10's 'soft single sustained chord that resolves under l30' can use its opening chord. Use the resolution as the last seconds of each finale."
+    }
+  ],
+  "counts": {
+    "ambiences": 7,
+    "ambience_layers": 5,
+    "effects": 42,
+    "themes": 5,
+    "total_cues": 59,
+    "sound_model_generations": 55,
+    "music_model_generations": 4
+  },
+  "credit_estimate": {
+    "basis": "Proof manifests: every eleven_text_to_sound_v3 generation cost 17 credits regardless of length; every music_v2_5 generation cost 900.",
+    "one_take_each": 4535,
+    "note": "Estimate, one take each, not measured for this library. Retakes add 17 per effect and 900 per music cue."
+  }
+}

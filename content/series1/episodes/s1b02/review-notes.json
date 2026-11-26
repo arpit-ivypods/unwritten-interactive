@@ -1,0 +1,82 @@
+{
+  "continuity": {
+    "ok": true,
+    "by": "S4 Continuity keeper, 26 Nov 2026",
+    "ledger": "content/series1/continuity.json (problem id P04)",
+    "fixed": [],
+    "problems": [
+      {"id": "P04", "severity": "low", "owner": "S2, then S7", "line": "writer_notes: 'b4, for the ledger only: the paper tapped is the night-one fold'. That fold still holds half a sachet (s1e01 b1; l02 'आधी पुड़िया पड़ी है'), and s1b03 l11 says 'दूध में बस केसर था।'", "fix": "b4 action and writer note only: 'she taps the night-one fold on the steel rim still folded shut; nothing falls; it goes back on the tray, still half full'. No dialogue change."}
+    ]
+  },
+  "critic_round": 1,
+  "pass": true,
+  "score": 7.9,
+  "must_fix": [
+    "CONTINUITY (must fix), b9, read with b8 shot 3. The script never says where Mausi and Billu are looking when Aditya's eye opens. The b9 geometry puts the bed behind Kiran with Mausi facing her, so the pillow is in Mausi's line of sight: shot 2 is framed over her shoulder straight onto it. b8 ends with Billu in the doorway, 'his eyes on the bed'. The ending_question ('ये सिर्फ़ किरण जानती है') and the bible's b9 reveal ('Mausi does not know') only hold if neither of them sees the eye. Fix, action only, no line or time change. Replace 'Geometry: Mausi stands facing Kiran; Kiran stands with her back to the bed; Aditya lies on the bed behind Kiran.' with 'Geometry: Mausi stands close in front of Kiran, her back to the doorway, one hand at Kiran's cheek, her eyes on Kiran's face; Kiran's body blocks her view of the pillow. Billu has crossed to the stool on the window side and is bent over the tray wiping the glass, his back to the bed. Aditya lies on the bed behind Kiran.' In shot 2, change 'back of her head and green pallu only' to 'back of her head, green pallu and her hand at Kiran's cheek only'. Add to sfx_notes b9: 'a cloth on steel under shots 1 to 3'. s1b03 b1 (Billu steps toward the bed) still follows, and no frame gains a third sheet face.",
+    "PERFORMABILITY (must fix), l08 '[hesitant] बारह। [flatly] मौसी ने कहा है।'. Two tags from the 'verify in casting first' group sit on a 21-character line, and the first one tags a one-word segment. 'बारह' is the figure D-007 direction 8 makes binding ('so the gap is heard'), and s1b03 b2 builds on it. At five words the line gets at most three takes; D-011 allows four only for lines of one to three words. Fix: use one tag, '[hesitant] बारह। मौसी ने कहा है।', with emotion_tags ['[hesitant]'] and target_seconds 3.2 unchanged. If the voice ignores it, fall back to '[quietly] बारह। मौसी ने कहा है।'. Keep the slowness in the picture (the toothpick dead still) and add to sfx_notes b2: 'the bed ducks under l08 so बारह is clear'."
+  ],
+  "medium": [
+    "PERFORMABILITY (medium), l29 and b8. Billu's 'हाँ मौसी' is meant to come late (his voice_note and writer_notes), but no time is set aside for it. b8's 1.0 s silence plays before l28, so the timeline (D-014 rule 6) will put l29 0.3 s after l28 and the delay is lost. Fix without changing any total: move l28 to the end of b7 as shot 6 (Mausi single, turning toward the doorway). b8 becomes: 'Shot 1, silent before (1.0 s): Billu single in the doorway, toothpick in, key still; he has heard the money and the order. Shot 2, l29, same framing.' Set b8 on_screen to ['billu']. Spoken time, the 18 speaker changes and 124.8 s all stay the same, because l27 to l28 is the same speaker.",
+    "STILLS-ONLY STAGING (medium), b4 shots 4 and 5. The unheard whisper, which the bible withholds on purpose, and the drinking share 3.0 s, about 1.5 s per still. That is short for a still to read on a phone. Fix: raise b4 silent_seconds from 3.0 to 4.0 (whisper 2.2 s, drinking 1.8 s) and target_total_seconds from 124.8 to 125.8, still under the 135 ceiling.",
+    "CLIFFHANGER (medium), b9. The eye opening a slit is the proof that he is alive, but it gets only 1.4 s, and the bible lists it as untested as a still. Fix inside the same 6.0 s: shot 1 (fist) 2.0 s, shot 2 (over the shoulder) 1.4 s, shot 3 (eye open) 1.8 s, shot 4 (eye shut) 0.8 s.",
+    "CONTINUITY (medium), props not placed for the ledger. At Gate 0 (D-008) the faults were in props, not faces. (a) The night-one fold, half emptied, is on the tray in s1b01's location text but is never mentioned here. It is the likeliest 'paper tapped on steel' in b4, and a third fold near the two in b9 could confuse the inserts. (b) Aditya's notebook and photograph are not placed (Mausi closed the notebook on the print in s1b01 b11), and s1b03 b5 needs the print on the sheet beside him. Fix: add to the b1 action 'On the tray beside the old glass: the night-one fold, half emptied, as left in s1e01. Aditya's black notebook, the photograph inside it, lies on the sheet beside Mausi.' Add to writer_notes for b4: 'for the ledger only, the paper tapped is the night-one fold; nothing is shown.'",
+    "HINGLISH (medium). The Hindi is natural and spoken: ये/वो, पे, तूने, endearments in Mausi's lines, no bookish forms. But code-mixing is light: four Latin-script words in 4 of 29 lines (party, dry, clear, booking). Kiran has one English word in 10 lines and Aditya none, against register.kiran (party, plan, time, tension) and the bible's note asking for English verbs. Optional fixes that leave the targets unchanged or nearly so: l07 '[quietly] पिछली party में बाईस तोला आया था। तुझे कितना बताया?' ('party' is the trade word for a groom; 4 more characters, the 5.4 s target holds) and l03 'बिल्लू fresh दूध गरम करके ले आएगा।' (target 2.8 to 3.2 s).",
+    "STILLS-ONLY STAGING (minor), b6 shot 2. l19 and l20 (Chhoti, 7.4 s of targets) play over one Mausi single. Chhoti's casting takes ran at about 6.5 to 9 characters a second, so the real takes may pass the 8 s shot ceiling. Fix: play l20 over shot 3 (Kiran single, watching the phone) together with l21.",
+    "PERFORMABILITY (minor). [calm] is on 10 of 29 lines (6 of Mausi's 12) and [quietly] on 6 more, so the room scenes risk sitting at one level. l03 has no tag. Optional: l03 '[calm] बिल्लू गरम दूध ले आएगा।' and l26 '[warmly] तू मेरी बेटी है। बेटियों का हिसाब नहीं होता।'. Mausi's casting test lines used [warmly], but nobody has listened to them yet, so keep [calm] as the fallback.",
+    "METADATA (minor). series_id is 's1' here but 'series1' in s1b03, and path_position is not a key in the proof script or the skill template. Use one series_id form across all eight scripts (the bible's series_id is 's1'), and keep or drop path_position the same way everywhere."
+  ],
+  "summary": "VERDICT: pass, no fatal problem. Overall 7.9. Sub-scores: hook 7.5, stakes 8.5, choice null, branch_distinct 9, cliffhanger 8, hinglish 7.5, performability 7.5, length 8, continuity 7.5. File: <repo>/content/series1/episodes/s1b02/script.hi.json.\n\nTools: this session has only Read, Grep and Glob, so no shell and no Write. Reading and scoring needed nothing more, so I went ahead. Because of that, review-notes.json was not written. An agent with Write should save this round under critic round 1 in <repo>/content/series1/episodes/s1b02/review-notes.json.\n\nChecks I ran, all by Grep and hand arithmetic, none by script:\n- JSON: not parsed. Pattern checks found no comma before a closing bracket or brace, no missing comma between lines, no backslash or tab, and no stray quote inside a value. The key counts fit 9 beats and 29 lines, each with id, speaker, text, emotion_tags and target_seconds.\n- Ids: every speaker and on_screen id (kiran, aditya, mausi, billu, chhoti, the_boys) and both locations (bedroom, stairwell) exist in the bible.\n- Tags: emotion_tags equal the inline tags on all 29 lines, checked by reading every line; the Grep line count is consistent.\n- Timing: spoken 102.6 s, plus 18 speaker changes x 0.3 = 5.4 s, plus silences 16.8 s, equals 124.8 s, which is target_total_seconds.\n- Lines and density: 29 lines. About 829 dialogue characters without tags, by hand count, under D-007's 1,050. Average about 8.1 characters a second; the highest line is about 8.9 (l19), and none is over 12.\n- Kiran is on screen in 7 of 9 beats.\n- यह/वह: the only hit is the rule text in writer_notes.\n- No frame holds more than two sheet faces, the boys never show a face, and no set-up runs past 8 s on its targets.\n- The hi/en id check could not be run because script.en.json does not exist yet (S5's step).\n\nWhat works:\n- The episode is a different story from s1a02.\n- It follows the bible beats and the binding D-007 directions: 8 (Billu says 'बारह' against 'बाईस तोला'), 9 (the boys' hands tighten, 'पी लो। नहीं तो ये पिला देंगे।', then the unheard whisper), 16, 17 and 18.\n- The reveal in l26 and l27 lands hard ('अब जाएगी कहाँ? अपने हाथ से पिलाया है तूने।').\n- The last spoken line, l29, does not answer the ending question.\n- It opens inside s1b01's last image, and s1b03 opens inside its last image.\n\nWhy the hook scores 7.5: the first 5 s are the palm insert carried over from s1b01 and a practical stalling line. That works for path-B viewers and is weak for anyone coming in cold. No change is required.\n\nLength (estimate, not measured): the series casting takes in <repo>/content/series1/casting/manifest.jsonl run at about 9.6 to 13 characters a second for Kiran, Mausi, Aditya and Billu, and about 6.5 to 9 for Chhoti's giggled lines. The proof's v4 takes ran 5 to 108 per cent over their targets (30 per cent over in total), but those targets were set near 10 characters a second; this script's average 8.1. I project about 85 to 110 s spoken and about 107 to 132 s of running time. That is inside the 135 ceiling and the 100 to 150 fatal band. The risk is the cut running short, not long. Mausi's coldest lines (l26, l27) may also come out faster than her voice note wants; that is for the voice director to correct.\n\nMust-fix: two items, both cheap. In b9, place Mausi's and Billu's eyes so neither can see Aditya's eye open; the ending question depends on it. In l08, drop to one tag so the binding figure 'बारह' is heard cleanly.\n\nNot verified: that the eye-slit still and silhouette-only boys work in a frame; whether the voices obey any tag; the real cut length.",
+  "writer_response": [
+    {
+      "item": "must_fix[0]",
+      "action": "applied as written",
+      "reason": "b9 geometry replaced with the critic's text word for word; shot 2 now reads 'back of her head, green pallu and her hand at Kiran's cheek only' as asked; sfx_notes b9 gains a cloth on steel under shots 1 to 3. One addition of mine: b9 action states that Billu stays outside the frame in every shot (the stool is outside shot 2, to its right), so on_screen stays kiran, aditya, mausi and no frame gains a third sheet face. writer_notes on the b9 geometry and on D-007 direction 16 updated to match. No line or time changed by this item."
+    },
+    {
+      "item": "must_fix[1]",
+      "action": "applied as written",
+      "reason": "l08 is now '[hesitant] बारह। मौसी ने कहा है।', emotion_tags ['[hesitant]'], target_seconds 3.2 unchanged. Fallback '[quietly] बारह। मौसी ने कहा है।' recorded in writer_notes. sfx_notes b2 gains 'The bed ducks under l08 so बारह is clear.' The toothpick stays dead still in b2 shot 4."
+    },
+    {
+      "item": "medium[0]",
+      "action": "applied",
+      "reason": "l28 moved, unchanged, to the end of b7 as shot 6 (Mausi single, turning toward the doorway). b8 is now silence (1.0 s, Billu single in the doorway, he has heard the money and the order) then l29 in the same framing; I kept the critic's framing and added 'his eyes now gone to the bed; he does not move' as the one visible change for the second still, which also sets up his look toward the bed before b9 puts his back to it. b8 on_screen is ['billu']. sfx_notes b8 notes that the silence sits between l28 and l29. Line ids and order are unchanged; speaker changes stay 18."
+    },
+    {
+      "item": "medium[1]",
+      "action": "applied",
+      "reason": "b4 silent_seconds 3.0 to 4.0, with shot 4 (whisper) about 2.2 s and shot 5 (drinking) about 1.8 s written into the action."
+    },
+    {
+      "item": "medium[2]",
+      "action": "applied",
+      "reason": "b9 shots now about 2.0 s, 1.4 s, 1.8 s and 0.8 s, inside the same 6.0 s."
+    },
+    {
+      "item": "medium[3]",
+      "action": "applied",
+      "reason": "b1 action gains the critic's sentence placing the night-one fold on the tray and Aditya's black notebook, photograph inside, on the sheet beside Mausi. writer_notes gain a b4 ledger note: the paper tapped is the night-one fold, nothing is shown, and in b9 the two crisp folds in Kiran's palm are the only folds in frame."
+    },
+    {
+      "item": "medium[4]",
+      "action": "applied, l03 in a shorter form",
+      "reason": "l07 now reads '[quietly] पिछली party में बाईस तोला आया था। तुझे कितना बताया?', target 5.4 s unchanged. For l03 I used 'बिल्लू fresh दूध ले आएगा।' rather than 'बिल्लू fresh दूध गरम करके ले आएगा।': the longer form is about 34 characters and would need about 3.8 s at the script's 8 characters a second, beyond the critic's 2.8 to 3.2 s, and Gate 0b says real takes already run long on short lines. The shorter form is about 25 characters at 3.0 s (target raised from 2.8). 'Fresh' carries the same meaning (a new glass, not the old one), and Kiran still asks for milk to be heated through the action that follows in b3's sound (milk coming to the boil). Aditya stays without English: two low lines, both short, and forcing a word in would be padding."
+    },
+    {
+      "item": "medium[5]",
+      "action": "applied",
+      "reason": "b6 shot 2 now carries l19 only; shot 3 (Kiran single, watching the phone) carries l20 and l21."
+    },
+    {
+      "item": "medium[6]",
+      "action": "applied",
+      "reason": "l03 tagged '[calm]' (combined with the medium[4] change: '[calm] बिल्लू fresh दूध ले आएगा।'). l26 tagged '[warmly]' with [calm] as the recorded fallback, since no one has listened to Mausi's [warmly] casting takes yet. [calm] is now on 10 lines (l03 added, l26 removed), [quietly] on 6, [warmly] on 1."
+    },
+    {
+      "item": "medium[7]",
+      "action": "applied to this file only; other files not touched",
+      "reason": "s1b02 keeps series_id 's1' (the bible's form) and keeps path_position, as s1a02, s1b01 and s1e02 do. My brief covers s1b02's script only, so I did not edit s1b03 (series_id 'series1', no path_position) or the four scripts without path_position. The orchestrator should pick one rule for path_position and have s1b03's series_id changed to 's1'."
+    }
+  ],
+  "writer_response_note": "Saved by the S2 writer, 26 Nov. The critic could not write this file, so the S2 writer wrote it. Everything from pass through summary is the critic's output, copied word for word; critic_round, writer_response and this note were added by the writer. New totals in script.hi.json: spoken 102.8 s (l03 2.8 to 3.0 s), 18 speaker changes at 0.3 s = 5.4 s, silences 17.8 s (b4 3.0 to 4.0 s), target_total_seconds 126.0 s, under the 135 s ceiling. About 838 dialogue characters (hand count), 29 lines. Not verified: the S2 session has Read, Write, Edit, Grep and Glob but no Bash, so script.hi.json was not run through a JSON parser; edits were checked by Grep and by eye, and the character count and arithmetic are by hand. One thing seen but not changed, as it is outside this file: s1b03 b1 opens 'inside s1b02's last image' with lamp, streetlight and landing bulb, while s1b02 b9 is in light state 3 (pre-dawn blue at the window). The s1b03 writer should check that the light carries over."
+}

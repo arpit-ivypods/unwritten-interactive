@@ -1,0 +1,131 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,010"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 10
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,010",
+				"to": "00:00:01,500"
+			},
+			"offsets": {
+				"from": 10,
+				"to": 1500
+			},
+			"text": " अंस्पैक्तर"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,500",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 1500,
+				"to": 2000
+			},
+			"text": " साभ"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,000",
+				"to": "00:00:02,250"
+			},
+			"offsets": {
+				"from": 2000,
+				"to": 2250
+			},
+			"text": " इस"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,250",
+				"to": "00:00:03,000"
+			},
+			"offsets": {
+				"from": 2250,
+				"to": 3000
+			},
+			"text": " महीनेका"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,000",
+				"to": "00:00:04,000"
+			},
+			"offsets": {
+				"from": 3000,
+				"to": 4000
+			},
+			"text": " अंस्पैक्तर"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,000",
+				"to": "00:00:05,000"
+			},
+			"offsets": {
+				"from": 4000,
+				"to": 5000
+			},
+			"text": " साभ"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,000",
+				"to": "00:00:05,000"
+			},
+			"offsets": {
+				"from": 5000,
+				"to": 5000
+			},
+			"text": " इस"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,000",
+				"to": "00:00:05,000"
+			},
+			"offsets": {
+				"from": 5000,
+				"to": 5000
+			},
+			"text": " महीनेका"
+		}
+	]
+}

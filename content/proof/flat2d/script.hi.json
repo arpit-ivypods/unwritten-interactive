@@ -1,0 +1,207 @@
+{
+  "id": "proof-flat2d",
+  "title": "लड्डू",
+  "logline": "रात के दो बजे जलेबीगंज थाने के मालखाने का locker खाली मिलता है: बीस लाख का ज़ब्त cash गायब, उसकी जगह एक मोतीचूर का लड्डू। Lock टूटा नहीं है, चाबियाँ सिर्फ़ दो हैं, और एक Sub-Inspector मीनू रावत की जेब में है।",
+  "language": "Hinglish: Hindi written in Devanagari, English words written in Latin script",
+  "language_code": "hi",
+  "look": "Flat 2D digital illustration, bold black outlines, cel shading, limited warm night palette (khaki, teal, tungsten yellow, deep blue shadows).",
+  "lead_character_id": "meenu",
+  "total_target_seconds": 30.3,
+  "speech_target_seconds": 25.0,
+  "timing_note": "silent_seconds sits where silent_position says: 'before' the beat's first line, 'after' its last line, 'whole_beat' when the beat has no lines, 'none' when it is 0. Each target_seconds is the slot for that line and includes the short gap at the speaker change; the dialogue was trimmed in revision 2 so the slots hold. Beat totals are unchanged from revision 1, so shots.json durations still match. All figures are estimates: no audio has been generated. Build the final timeline from the measured audio, not from these targets.",
+  "characters": [
+    {
+      "id": "meenu",
+      "name": "Sub-Inspector मीनाक्षी \"मीनू\" रावत",
+      "age": 32,
+      "look": "Lean, upright, medium-brown skin. Black hair in a tight low bun with one loose strand falling over the left temple. Thick straight eyebrows, a small mole under the right eye, tired sharp eyes. Khaki full-sleeve uniform shirt with sleeves rolled to the elbow, dark teal epaulettes with two plain white bars, a round teal shoulder patch showing a white lantern (the fictional Jalebiganj Police emblem), black belt, a steel-strap wristwatch on the left wrist. No cap. Carries a small ring with one long brass key.",
+      "voice_note": "Low-mid female voice, dry and clipped, north-Indian small-town Hindi with crisp English nouns. Tired authority; gets quieter, not louder, when she is actually scared. Fast on the short lines."
+    },
+    {
+      "id": "bablu",
+      "name": "Constable बबलू तिवारी",
+      "age": 46,
+      "look": "Short and round with a pot belly, lighter brown skin, thick salt-and-pepper handlebar moustache, round cheeks, receding hairline. Khaki uniform with the same teal epaulettes (no bars) and lantern shoulder patch, a maroon sleeveless sweater-vest pulled over the shirt, a grey muffler round the neck. Holds a chunky yellow plastic torch in his right hand at all times.",
+      "voice_note": "Warm, slightly nasal male tenor, eager to please, speaks a beat too slowly when delivering bad news and trails off. Earnest, never joking: the comedy is that he means it."
+    }
+  ],
+  "location": "Malkhana (case-property store room) of the fictional Jalebiganj Police thana: a cramped back room with a grey steel almirah-style locker, shelves of tagged bundles and dented trunks, a wooden desk with a ledger and a phone lying face up (Meenu's own phone, left there when she went for chai), a slow ceiling fan, one bare tungsten bulb in the corridor behind the doorway. No flags, no national emblems, no portraits.",
+  "time_of_day": "Night, about 2 a.m. The room is dark except for the torch beam and warm corridor light from the doorway.",
+  "beats": [
+    {
+      "id": "b01",
+      "action": "COLD OPEN, no establishing shot. One frame, from inside the empty locker looking out (the locker's point of view): Bablu's face and chest lit from below by his own torch, eyes wide, moustache trembling. Small in the far doorway behind him, a still silhouette (Meenu). Torch click and locker creak in the silence, then he speaks without turning round.",
+      "lead_in_shot": false,
+      "silent_seconds": 0.8,
+      "silent_position": "before",
+      "lines": [
+        {
+          "id": "l01",
+          "speaker": "bablu",
+          "text": "[nervous] Madam... locker खाली है।",
+          "emotion_tags": ["[nervous]"],
+          "target_seconds": 2.0
+        }
+      ]
+    },
+    {
+      "id": "b02",
+      "action": "Medium shot: Meenu in the doorway, backlit by the corridor bulb, a glass of cutting chai halfway to her mouth. She stops. Bablu, in the foreground edge of frame, finally turns to her. Her phone is not on her: she left it on the malkhana desk when she went for chai.",
+      "lead_in_shot": true,
+      "silent_seconds": 0,
+      "silent_position": "none",
+      "lines": [
+        {
+          "id": "l02",
+          "speaker": "meenu",
+          "text": "खाली मतलब?",
+          "emotion_tags": [],
+          "target_seconds": 1.2
+        },
+        {
+          "id": "l03",
+          "speaker": "bablu",
+          "text": "मतलब... बीस लाख cash गायब, madam।",
+          "emotion_tags": [],
+          "target_seconds": 2.5
+        }
+      ]
+    },
+    {
+      "id": "b03",
+      "action": "Two frames. Cut on Meenu crossing the room (off-screen: the chai glass clinks down on the steel rack and she shoves Bablu's torch hand up to aim it herself). Frame 1, INSERT, torch-lit: the bare middle shelf where the cash bundles were; one orange motichoor laddoo sits on a small paper plate. One second of silence on the laddoo, then l04 plays over it. Frame 2: close-up of Meenu staring down at it. l05 is hers; l06 plays off-screen over her unmoving face until the next shot cuts him off mid-word.",
+      "lead_in_shot": true,
+      "silent_seconds": 1.0,
+      "silent_position": "before",
+      "lines": [
+        {
+          "id": "l04",
+          "speaker": "bablu",
+          "text": "बस... एक लड्डू रखा है।",
+          "emotion_tags": [],
+          "target_seconds": 2.0
+        },
+        {
+          "id": "l05",
+          "speaker": "meenu",
+          "text": "[deadpan] लड्डू?",
+          "emotion_tags": ["[deadpan]"],
+          "target_seconds": 1.0
+        },
+        {
+          "id": "l06",
+          "speaker": "bablu",
+          "text": "[earnest] मोतीचूर का है, ma—",
+          "emotion_tags": ["[earnest]"],
+          "target_seconds": 1.5
+        }
+      ]
+    },
+    {
+      "id": "b04",
+      "action": "Meenu cuts him off, turning on him. Medium two-shot, her finger almost on his chest; Bablu leans back, torch beam swinging up to the ceiling fan.",
+      "lead_in_shot": true,
+      "silent_seconds": 0,
+      "silent_position": "none",
+      "lines": [
+        {
+          "id": "l07",
+          "speaker": "meenu",
+          "text": "[angry] बबलू! नौ बजे ये cash court में produce करना है!",
+          "emotion_tags": ["[angry]"],
+          "target_seconds": 3.0
+        }
+      ]
+    },
+    {
+      "id": "b05",
+      "action": "One tall close frame built for a tilt: low in frame, Meenu's left hand (steel wristwatch) lifts the heavy brass padlock hanging open on the locker hasp and turns it in the torchlight, not a scratch on it; her face is above it, looking down. The camera tilts up from the lock to her face as the anger drains and she works it out. The first half of l08 lands on the padlock, the whispered half on her face.",
+      "lead_in_shot": true,
+      "silent_seconds": 0,
+      "silent_position": "none",
+      "lines": [
+        {
+          "id": "l08",
+          "speaker": "meenu",
+          "text": "Lock टूटा नहीं... [whispers] चाबी से खुला है।",
+          "emotion_tags": ["[whispers]"],
+          "target_seconds": 3.2
+        }
+      ]
+    },
+    {
+      "id": "b06",
+      "action": "One readable frame, held: Meenu has drawn the key ring from her trouser pocket and the single long brass key lies on her open right palm, catching the torch. Bablu is already half a step back, looking not at the key but at her. He counts the keys aloud, she finishes his sentence quietly (voiced, not whispered), and his last line is cut off by the phone.",
+      "lead_in_shot": true,
+      "silent_seconds": 0,
+      "silent_position": "none",
+      "lines": [
+        {
+          "id": "l09",
+          "speaker": "bablu",
+          "text": "[hesitant] चाबी दो ही हैं, madam। एक आपके पास...",
+          "emotion_tags": ["[hesitant]"],
+          "target_seconds": 2.8
+        },
+        {
+          "id": "l10",
+          "speaker": "meenu",
+          "text": "[quietly] और दूसरी... बड़े साहब के पास।",
+          "emotion_tags": ["[quietly]"],
+          "target_seconds": 2.5
+        },
+        {
+          "id": "l11",
+          "speaker": "bablu",
+          "text": "[confused] पर वो तो leave पर—",
+          "emotion_tags": ["[confused]"],
+          "target_seconds": 1.5
+        }
+      ]
+    },
+    {
+      "id": "b07",
+      "action": "SILENT BEAT. A phone buzzes. INSERT: Meenu's phone face up on the wooden desk beside the ledger, vibrating, its screen the only cold light in the room. Incoming call, contact photo of a heavy-set man in aviator sunglasses. The caller name \"बड़े साहब\" is added as an overlay in assembly, not painted into the frame. The music stops dead on the first buzz.",
+      "lead_in_shot": false,
+      "silent_seconds": 2.5,
+      "silent_position": "whole_beat",
+      "lines": []
+    },
+    {
+      "id": "b08",
+      "action": "Tight close-up on Meenu, lit blue-white from below by the phone, the key clenched in her right fist. Bablu is a soft shape behind her shoulder. She does not reach for the phone. She asks the question in a low, clear, fully voiced tone (not a whisper), in the gap between two buzz pulses. Hold on her face one beat after the line, the buzz still going. Cut to black mid-buzz.",
+      "lead_in_shot": true,
+      "silent_seconds": 1.0,
+      "silent_position": "after",
+      "lines": [
+        {
+          "id": "l12",
+          "speaker": "meenu",
+          "text": "[low voice] साहब को कैसे पता चला?",
+          "emotion_tags": ["[low voice]"],
+          "target_seconds": 1.8
+        }
+      ]
+    }
+  ],
+  "performance_notes": [
+    "Meenu's volume steps down through the scene and never repeats a level: l07 loud and angry; l08 starts in her normal voice and drops to the scene's only whisper on 'चाबी से खुला है'; l10 quiet but voiced; l12 low, slow and clear, fully voiced.",
+    "l12 is the ending question and must be intelligible on a phone speaker with subtitles off. If [low voice] comes out whispered or muffled, retake without the tag.",
+    "l12 says 'साहब' aloud so the caller is named in speech as well as by the b07 overlay ('बड़े साहब', set up in l10).",
+    "l02 and l05 are very short turns, the least stable case for the dialogue model: budget 3 to 4 takes each. l05 is flat disbelief, not weariness.",
+    "l06 is cut off mid-word by l07. 'ma—' is the first syllable of 'madam'; keep it as 'ma—' in subtitles.",
+    "Bablu means every word: l06 earnest and helpful, l09 hesitant as he realises who is holding the key, l11 puzzled."
+  ],
+  "sfx_notes": [
+    "Ambience loop under the whole scene: night crickets outside, slow creaking ceiling fan, faint tube-light hum from the corridor.",
+    "b01: torch switch click, steel locker door creak as it swings a little.",
+    "b03: chai glass set down on the steel rack (small clink), off-screen at the head of the laddoo insert.",
+    "b04: Bablu's sharp intake of breath, torch rattle.",
+    "b05: heavy brass padlock knocking against the steel hasp.",
+    "b06: key ring jingle, cloth rustle from the pocket.",
+    "b07: phone vibration buzzing on a wooden desk, three pulses, loud in the silence; ambience ducks under it.",
+    "b08: the buzz continues but must not mask l12: place the line in the gap between two pulses, or duck the buzz well under the line. Buzz back at full level for the one-beat hold; hard cut to silence on the cut to black."
+  ],
+  "music_note": "Instrumental. A light, sneaky caper motif from b02: pizzicato strings and a soft ghatam/tabla tick, slightly comic through the laddoo exchange. Thins to a single low held note at l08 when the scene turns. Stops completely on the first phone buzz in b07; no music to the end.",
+  "ending_question": "The officer who holds the only other key is on leave, so why is he calling at 2 a.m., the very minute the empty locker is found, and will Meenu pick up?"
+}

@@ -1,0 +1,186 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,130"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 130
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,130",
+				"to": "00:00:00,190"
+			},
+			"offsets": {
+				"from": 130,
+				"to": 190
+			},
+			"text": " At"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,190",
+				"to": "00:00:00,760"
+			},
+			"offsets": {
+				"from": 190,
+				"to": 760
+			},
+			"text": " most,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,760",
+				"to": "00:00:00,940"
+			},
+			"offsets": {
+				"from": 760,
+				"to": 940
+			},
+			"text": " if"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,940",
+				"to": "00:00:01,120"
+			},
+			"offsets": {
+				"from": 940,
+				"to": 1120
+			},
+			"text": " a"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,120",
+				"to": "00:00:01,510"
+			},
+			"offsets": {
+				"from": 1120,
+				"to": 1510
+			},
+			"text": " groom"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,510",
+				"to": "00:00:01,980"
+			},
+			"offsets": {
+				"from": 1510,
+				"to": 1980
+			},
+			"text": " wakes"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,980",
+				"to": "00:00:02,590"
+			},
+			"offsets": {
+				"from": 1980,
+				"to": 2590
+			},
+			"text": " up,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,590",
+				"to": "00:00:02,640"
+			},
+			"offsets": {
+				"from": 2590,
+				"to": 2640
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,640",
+				"to": "00:00:03,020"
+			},
+			"offsets": {
+				"from": 2640,
+				"to": 3020
+			},
+			"text": " loose"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,020",
+				"to": "00:00:03,340"
+			},
+			"offsets": {
+				"from": 3020,
+				"to": 3340
+			},
+			"text": " boys"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,340",
+				"to": "00:00:03,680"
+			},
+			"offsets": {
+				"from": 3340,
+				"to": 3680
+			},
+			"text": " slap"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,680",
+				"to": "00:00:03,880"
+			},
+			"offsets": {
+				"from": 3680,
+				"to": 3880
+			},
+			"text": " him"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,880",
+				"to": "00:00:04,800"
+			},
+			"offsets": {
+				"from": 3880,
+				"to": 4800
+			},
+			"text": " once."
+		}
+	]
+}

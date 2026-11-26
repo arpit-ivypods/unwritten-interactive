@@ -1,0 +1,175 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,070"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 70
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,070",
+				"to": "00:00:00,290"
+			},
+			"offsets": {
+				"from": 70,
+				"to": 290
+			},
+			"text": " The"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,290",
+				"to": "00:00:00,750"
+			},
+			"offsets": {
+				"from": 290,
+				"to": 750
+			},
+			"text": " other"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,750",
+				"to": "00:00:01,270"
+			},
+			"offsets": {
+				"from": 750,
+				"to": 1270
+			},
+			"text": " code,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,270",
+				"to": "00:00:01,480"
+			},
+			"offsets": {
+				"from": 1270,
+				"to": 1480
+			},
+			"text": " and"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,480",
+				"to": "00:00:01,720"
+			},
+			"offsets": {
+				"from": 1480,
+				"to": 1720
+			},
+			"text": " two"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,720",
+				"to": "00:00:01,910"
+			},
+			"offsets": {
+				"from": 1720,
+				"to": 1910
+			},
+			"text": " boys"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,910",
+				"to": "00:00:02,230"
+			},
+			"offsets": {
+				"from": 1910,
+				"to": 2230
+			},
+			"text": " would"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,230",
+				"to": "00:00:02,360"
+			},
+			"offsets": {
+				"from": 2230,
+				"to": 2360
+			},
+			"text": " be"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,360",
+				"to": "00:00:02,490"
+			},
+			"offsets": {
+				"from": 2360,
+				"to": 2490
+			},
+			"text": " on"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,490",
+				"to": "00:00:02,810"
+			},
+			"offsets": {
+				"from": 2490,
+				"to": 2810
+			},
+			"text": " those"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,810",
+				"to": "00:00:03,190"
+			},
+			"offsets": {
+				"from": 2810,
+				"to": 3190
+			},
+			"text": " stairs"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,190",
+				"to": "00:00:03,440"
+			},
+			"offsets": {
+				"from": 3190,
+				"to": 3440
+			},
+			"text": " now."
+		}
+	]
+}

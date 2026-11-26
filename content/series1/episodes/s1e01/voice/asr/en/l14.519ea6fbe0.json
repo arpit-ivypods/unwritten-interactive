@@ -1,0 +1,186 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,120"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 120
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,120",
+				"to": "00:00:00,160"
+			},
+			"offsets": {
+				"from": 120,
+				"to": 160
+			},
+			"text": " It"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,160",
+				"to": "00:00:00,480"
+			},
+			"offsets": {
+				"from": 160,
+				"to": 480
+			},
+			"text": " took"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,480",
+				"to": "00:00:00,770"
+			},
+			"offsets": {
+				"from": 480,
+				"to": 770
+			},
+			"text": " me"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,770",
+				"to": "00:00:01,110"
+			},
+			"offsets": {
+				"from": 770,
+				"to": 1110
+			},
+			"text": " 14"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,110",
+				"to": "00:00:01,590"
+			},
+			"offsets": {
+				"from": 1110,
+				"to": 1590
+			},
+			"text": " months"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,590",
+				"to": "00:00:01,760"
+			},
+			"offsets": {
+				"from": 1590,
+				"to": 1760
+			},
+			"text": " to"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,760",
+				"to": "00:00:02,270"
+			},
+			"offsets": {
+				"from": 1760,
+				"to": 2270
+			},
+			"text": " become"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,270",
+				"to": "00:00:02,540"
+			},
+			"offsets": {
+				"from": 2270,
+				"to": 2540
+			},
+			"text": " your"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,540",
+				"to": "00:00:03,150"
+			},
+			"offsets": {
+				"from": 2540,
+				"to": 3150
+			},
+			"text": " party,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,150",
+				"to": "00:00:03,280"
+			},
+			"offsets": {
+				"from": 3150,
+				"to": 3280
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,280",
+				"to": "00:00:03,670"
+			},
+			"offsets": {
+				"from": 3280,
+				"to": 3670
+			},
+			"text": " groom"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,670",
+				"to": "00:00:03,910"
+			},
+			"offsets": {
+				"from": 3670,
+				"to": 3910
+			},
+			"text": " you"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,910",
+				"to": "00:00:04,240"
+			},
+			"offsets": {
+				"from": 3910,
+				"to": 4240
+			},
+			"text": " rob."
+		}
+	]
+}

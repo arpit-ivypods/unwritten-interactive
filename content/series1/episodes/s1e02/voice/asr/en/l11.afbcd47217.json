@@ -1,0 +1,164 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,160"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 160
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,160",
+				"to": "00:00:00,220"
+			},
+			"offsets": {
+				"from": 160,
+				"to": 220
+			},
+			"text": " No"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,220",
+				"to": "00:00:00,830"
+			},
+			"offsets": {
+				"from": 220,
+				"to": 830
+			},
+			"text": " code."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,830",
+				"to": "00:00:01,410"
+			},
+			"offsets": {
+				"from": 830,
+				"to": 1410
+			},
+			"text": " A"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,410",
+				"to": "00:00:01,590"
+			},
+			"offsets": {
+				"from": 1410,
+				"to": 1590
+			},
+			"text": " mother"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,590",
+				"to": "00:00:01,930"
+			},
+			"offsets": {
+				"from": 1590,
+				"to": 1930
+			},
+			"text": " asks"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,930",
+				"to": "00:00:02,210"
+			},
+			"offsets": {
+				"from": 1930,
+				"to": 2210
+			},
+			"text": " how"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,210",
+				"to": "00:00:02,450"
+			},
+			"offsets": {
+				"from": 2210,
+				"to": 2450
+			},
+			"text": " her"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,450",
+				"to": "00:00:03,130"
+			},
+			"offsets": {
+				"from": 2450,
+				"to": 3130
+			},
+			"text": " daughter"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,130",
+				"to": "00:00:03,800"
+			},
+			"offsets": {
+				"from": 3130,
+				"to": 3800
+			},
+			"text": " is."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,800",
+				"to": "00:00:03,960"
+			},
+			"offsets": {
+				"from": 3800,
+				"to": 3960
+			},
+			"text": " That's"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,960",
+				"to": "00:00:04,300"
+			},
+			"offsets": {
+				"from": 3960,
+				"to": 4300
+			},
+			"text": " all."
+		}
+	]
+}

@@ -1,0 +1,190 @@
+{
+ "episode": "series1/s1e01",
+ "reviewer": "S15 Screening",
+ "round": 3,
+ "date": "2026-11-26",
+ "pass": false,
+ "scored": false,
+ "final_score": null,
+ "status": "not screened: precondition not met (slate s05, retake never ran)",
+ "verdict": "The real render now exists and meets every D-015 rule 3 condition, but it carries a slate for s05, and s05's one retake has never run. D-023 rule 4.1 and this brief's precondition forbid screening while such a slate stands, so the one full screening is still unspent and the episode is not scored. Gate 4 for s1e01 stays open. Next: S7 retakes s05 once, S9 runs the retake check, the editor re-renders, and then the full screening runs.",
+ "precondition": {
+  "voice_manifest_placeholder_rows": 0,
+  "sound_manifest_placeholder_rows": 0,
+  "sound_note": "sound/manifest.jsonl: sfx_s1e01_bare_feet status ok, file present. timeline meta.placeholders.sound is empty in both languages.",
+  "integrated_lufs": {
+   "hi": -14.1,
+   "en": -14.1
+  },
+  "true_peak_dbfs": {
+   "hi": -1.1,
+   "en": -1.1
+  },
+  "duration_s": {
+   "hi": 106.1,
+   "en": 99.6
+  },
+  "hi_en_differ": "yes (different sha1, different lengths)",
+  "slates": "FAIL: timeline.hi.json and timeline.en.json meta.placeholders.frames_slated = ['s05']. s05 is type 'slate' (hi frames 273-372, 9.1-12.4 s; en frames 250-325, 8.3-10.9 s). Frame at 10.5 s in both renders shows the card 'Shot s05 — in production'.",
+  "why_s05_is_a_slate": "frames/review.json: s05 attempt 1, verdict rejected (eyeline picture-left; screen direction needs picture-right). No s05.a2 codex log, no s05.prev1.png, so the retake (D-013 rule 11, D-023 rule 1) never ran.",
+  "result": "not met: D-023 rule 4.1 / this brief: no screening while a slate stands for a shot whose retake never ran"
+ },
+ "editor_report_checked": {
+  "s05_slate": "confirmed in the timelines and by a frame grab of each render (my own look at 10.5 s).",
+  "loudness_and_length": "re-measured with ffmpeg ebur128: -14.1 LUFS and -1.1 dBTP for both; 106.1 s hi and 99.6 s en. Matches the editor's earlier figures within rounding.",
+  "other_items": "The en l04/l05 cut-on-word, the bare-feet placement and the lamp hum were not checked: they belong to the full screening, which was not run."
+ },
+ "observed_in_passing": [
+  "The English render's s05 slate prints the Hindi line ('Sedative कड़वा होता है, स्नेहा।'). D-023 rule 3 says slates print the cut's own language. It doesn't matter for s1e01 once s05 has a frame, but s2e01 and wave 2 slates could have the same fault. The cause was not traced in code."
+ ],
+ "not_checked": [
+  "None of the scored screening checks ran: sampled frames at every shot and cue, whisper.cpp against scripts and subs, sync, intelligibility over music, music and effects on beats, continuity, the opening and the cliffhanger. Spending the one full screening on a cut with a standing slate is what D-023 rule 4.1 forbids.",
+  "The review renders (*.review.mp4) were not opened.",
+  "No listening at all.",
+  "The editor's edit.json changes were not diffed against the saved before-file."
+ ],
+ "fixes": [
+  {
+   "owner": "S7 Frames (storyboard/frame runner)",
+   "issue": "s05 attempt 1 was rejected for eyeline (picture-left) and its one retake never ran.",
+   "fix": "Run one retake through production/scripts/codex-frame.sh with the same refs and prompt, adding S9's wording from frames/review.json s05.fix to SHOT, STATE and FINAL CHECK (quarter turn to picture-right, irises in the picture-right corners). Do not attach s03, and do not mirror. This is a retake, not a new frame, so the 28-frame budget holds."
+  },
+  {
+   "owner": "S9 Visual checker",
+   "issue": "The s05 retake needs the single retake check.",
+   "fix": "Check the retake. If it still looks picture-left, accept the better take and log it (D-013 rule 11) so no slate stands."
+  },
+  {
+   "owner": "Editor",
+   "issue": "The render carries the s05 slate.",
+   "fix": "After S9's verdict, rerun assemble.sh in the real folder and confirm meta.placeholders.frames_slated is empty, then hand on to the one full screening."
+  },
+  {
+   "owner": "Toolsmith (orchestrator-run, D-0M4)",
+   "issue": "The English cut's slate prints the Hindi line, against D-023 rule 3 ('slates print the cut's own language').",
+   "fix": "Take the slate note from the cut's own script language, or from an English description. Low priority for s1e01, since the fault goes once s05 has a frame. Check s2e01's slates."
+  },
+  {
+   "owner": "Orchestrator",
+   "issue": "Morning report and Gate 4 status.",
+   "fix": "Log s1e01 as blocked on the s05 retake. The full screening is still unspent. The D-023 pass rule (7/10, no blocking fault) applies when that screening runs."
+  }
+ ],
+ "previous_rounds": [
+  {
+   "episode": "series1/s1e01",
+   "reviewer": "S15 Screening",
+   "round": 2,
+   "date": "2026-11-26",
+   "pass": false,
+   "scored": false,
+   "status": "not screened (round 2: changed items only)",
+   "verdict": "Round 2, changed items only. The episode is still unscored because D-015 rule 3 is not met: there is no render. The editor's s33 fix is accepted. None of the four toolsmith fixes landed and the frames retakes were not made, so the real build still crashes at build_timeline.py line 807. The editor's report checks out. Next: the orchestrator runs the toolsmith step, frames makes the four retakes, the editor reruns assemble.sh in the real folder, and then the first full scored screening. This round was changed items only, so the full screening is still unused.",
+   "precondition_D015_rule3": {
+    "voice_manifest_placeholder_rows": 0,
+    "voice_manifest_note": "58 rows (hi 30, en 28), all status ok",
+    "sound_manifest_placeholder_rows": 0,
+    "sound_manifest_note": "content/series1/sound/manifest.jsonl: 63 rows, all status ok. The episode's one new cue sfx_s1e01_bare_feet has no row and no file; sound/cues.json is still status planned. Its fallback (bolt rattle carries b3) is allowed by the cue sheet.",
+    "render_exists": false,
+    "integrated_lufs_above_minus30": "not measurable: no render",
+    "hi_en_differ": "not measurable: no render",
+    "result": "not met, so the episode is not scored"
+   },
+   "why_the_scratch_diagnostic_was_not_screened": "The editor's diagnostic renders (scratchpad/s13/root/.../render/) were built from altered copies of frames/review.json and shots.json with second framings re-linked by hand. They are not the deliverable, and D-015 rule 5 allows one full screening per episode. Spending it on a scratch build would leave the real cut with only a changed-items pass.",
+   "editor_report_checked": {
+    "build_crash": "confirmed by reading code, not by running it: production/scripts/episode/build_timeline.py line 118 loads frames/review.json with a list default and line 806 iterates it as a list of rows keyed shot_id; the real file is a dict {episode, by, anchor_check, frame_check, frames:[...]} whose rows use the key 'shot', not 'shot_id'. Converting the file to a list alone would not be enough: rows must also be read by 'shot'.",
+    "missing_frame_files": "confirmed: no frames/<id>.png for s05, s16, s19, s22, s24, s25, s26, s34 (frame.kind second_framing, with frame.image pointing at the source shot) and s31 (frame.kind reused_asset, image content/series1/refs/photograph.png).",
+    "rejected_without_retake": "confirmed in frames/review.json: s02, s03, s20, s21 verdict rejected. s05 and s25 are second framings of s03 and s21 and are marked HELD in shots.json.",
+    "en_cut_on_word": "confirmed from script.en.json: l04 'I put the padlock on. The key is here.' and l05 'The set is brass. The house is rented...' each have an earlier 'the', so cutting on the first match lands on the wrong word.",
+    "whisper_cache_written": "voice/asr/hi/ exists in the real folder with cache files, as reported."
+   },
+   "not_checked": [
+    "Everything the screening brief lists: frame samples at every shot and cue, whisper.cpp transcription against the scripts and subtitles, sync, intelligibility over music, ducking, music and effects on their beats, continuity against continuity.json, the opening and the cliffhanger, measured length. None of these can be checked without a render.",
+    "The editor's diagnostic numbers (106.0 s / 99.5 s, -14.13 / -14.15 LUFS, 46 / 44 cues) were not re-measured.",
+    "build_timeline.py was not run (it writes into the real episode folder).",
+    "Nobody has listened to anything."
+   ],
+   "fixes": [
+    {
+     "owner": "toolsmith (orchestrator-run step, D-0M4); editor reruns after",
+     "issue": "build_timeline.py crashes on the real frames/review.json (dict with 'frames' list, rows keyed 'shot').",
+     "fix": "At line 118 unwrap: if the loaded value is a dict, use its 'frames' list. At line 806 read the id as r.get('shot_id') or r.get('shot'). Treat verdicts 'approved' and 'approved with logged drift' as pass, 'rejected' as reject."
+    },
+    {
+     "owner": "toolsmith (orchestrator-run step); editor reruns after",
+     "issue": "Shots with frame.kind second_framing or reused_asset have no frames/<id>.png and would become slates (s05, s16, s19, s22, s24, s25, s26, s31, s34).",
+     "fix": "When frames/<id>.png is missing, use shots.json frame.image (the source shot's png or refs/photograph.png) with the shot's own camera_move. A second framing inherits its source's review verdict, so s05 and s25 stay slates until s03 and s21 are retaken and approved."
+    },
+    {
+     "owner": "toolsmith (orchestrator-run step); editor reruns after",
+     "issue": "Lines l01-l05 are listed in two shots each (s01/s02, s03/s04, s05/s06, s08/s09, s10/s11), so the build would place each clip twice.",
+     "fix": "Place each line_id once, at its first shot, and use the cut-on-word entries already in edit.json to set where the second shot starts. Do not edit shots.json: it describes the split correctly."
+    },
+    {
+     "owner": "toolsmith (orchestrator-run step)",
+     "issue": "Cut-on-word matches the first occurrence, case-insensitive, so en l04 and l05 cut one word late and 'The' is heard over s08 and s10.",
+     "fix": "Support an occurrence index (or a character offset) in the cut-on-word entry; the editor then sets en l04 to the 2nd 'the' and en l05 to the 2nd 'the'."
+    },
+    {
+     "owner": "frames",
+     "issue": "s02, s03, s20 and s21 are rejected and their retakes were never generated; s05 and s25 depend on s03 and s21.",
+     "fix": "Run one retake each through production/scripts/codex-frame.sh against the frame-check notes in frames/review.json, then the single retake check (D-015 rule 5). If a retake fails, accept the best take and log it rather than leaving a slate."
+    },
+    {
+     "owner": "sound",
+     "issue": "sfx_s1e01_bare_feet was never generated; cues.json still says planned.",
+     "fix": "Generate the one cue per the cue sheet (D-011, one take), or mark it dropped in cues.json so the fallback is recorded. Not blocking."
+    },
+    {
+     "owner": "editor",
+     "issue": "No render and no subs in the real folder. s33 is closed (deliberate silence, noted in edit.json).",
+     "fix": "After the toolsmith fixes and frame retakes land, rerun assemble.sh in the real folder with the existing edit.json. That makes render/s1e01.{hi,en}.mp4 and .review.mp4 plus subs.hi.json and subs.en.json. Set the en l04 and l05 cut_on_word to the second 'the' once the tool supports it. Then ask for the full screening."
+    }
+   ],
+   "changed_items": {
+    "rule": "D-015 rule 5: only what changed since round 1 (screening.json written 12:50) is checked.",
+    "method": "Listed every file newer than screening.json under the episode folder and under production/; read edit.json notes, render/assemble.log, frames/review.json, sound/cues.json and build_timeline.py lines 110-125 and 800-810. Nothing was run or listened to.",
+    "items": [
+     {
+      "fix": "toolsmith: build_timeline.py review.json crash",
+      "status": "not landed",
+      "evidence": "No file under production/ is newer than screening.json; build_timeline.py mtime 11:21. Line 118 still loads frames/review.json with a list default, and line 806 still reads r['shot_id']. render/assemble.log shows AttributeError at line 807 for both hi and en."
+     },
+     {
+      "fix": "toolsmith: second-framing and reused-asset shots fall back to frame.image",
+      "status": "not landed",
+      "evidence": "No change under production/."
+     },
+     {
+      "fix": "toolsmith: place l01-l05 once",
+      "status": "not landed",
+      "evidence": "No change under production/."
+     },
+     {
+      "fix": "toolsmith: cut-on-word occurrence index",
+      "status": "not landed",
+      "evidence": "No change under production/. edit.json cut_on_word entries were not changed (the only edit.json change is a notes line), which is right while the tool cannot take an index."
+     },
+     {
+      "fix": "frames: one retake each of s02, s03, s20, s21",
+      "status": "not done",
+      "evidence": "frames/review.json (12:32) still says rejected for s02, s03, s20 and s21. No frame file is newer than screening.json. The pngs dated 12:13-12:20 came before round 1 and are the takes that were rejected."
+     },
+     {
+      "fix": "sound: generate or drop sfx_s1e01_bare_feet",
+      "status": "not done (not blocking)",
+      "evidence": "sound/cues.json is still status 'planned' (10:35). edit.json notes record the cue as dropped with the bolt-rattle fallback, but cues.json, where the fix asked for it, does not."
+     },
+     {
+      "fix": "editor: real render and subs, s33 room tone or note",
+      "status": "partly done",
+      "evidence": "The s33 note is in edit.json notes and its reasoning holds against cues.json b10-b11 ('near-silence (lamp-hum stretch at most)', 'or silence'), so the s33 point is closed. edit.json parses. assemble.sh was run in the real folder and failed as reported, so render/ holds only assemble.log and there is no subs.hi.json or subs.en.json. The editor was right not to patch production/scripts (D-0M4)."
+     }
+    ],
+    "editor_report_checked": "Accurate. One side effect it did not mention: the real run also wrote voice/fx/phone/{hi,en}/l09 and l10 (.wav and .src), derived phone-filter files. They are harmless and are rebuilt on the next run.",
+    "result": "Still blocked by the toolsmith step. Of the seven round-1 fixes, one is closed (s33)."
+   },
+   "final_score": null
+  }
+ ]
+}

@@ -1,0 +1,164 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,090"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 90
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,090",
+				"to": "00:00:00,160"
+			},
+			"offsets": {
+				"from": 90,
+				"to": 160
+			},
+			"text": " I"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,160",
+				"to": "00:00:00,540"
+			},
+			"offsets": {
+				"from": 160,
+				"to": 540
+			},
+			"text": " don't"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,540",
+				"to": "00:00:00,900"
+			},
+			"offsets": {
+				"from": 540,
+				"to": 900
+			},
+			"text": " want"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,900",
+				"to": "00:00:01,540"
+			},
+			"offsets": {
+				"from": 900,
+				"to": 1540
+			},
+			"text": " money."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,540",
+				"to": "00:00:01,710"
+			},
+			"offsets": {
+				"from": 1540,
+				"to": 1710
+			},
+			"text": " The"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,710",
+				"to": "00:00:02,130"
+			},
+			"offsets": {
+				"from": 1710,
+				"to": 2130
+			},
+			"text": " police"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,130",
+				"to": "00:00:02,420"
+			},
+			"offsets": {
+				"from": 2130,
+				"to": 2420
+			},
+			"text": " told"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,420",
+				"to": "00:00:02,560"
+			},
+			"offsets": {
+				"from": 2420,
+				"to": 2560
+			},
+			"text": " me"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,560",
+				"to": "00:00:02,700"
+			},
+			"offsets": {
+				"from": 2560,
+				"to": 2700
+			},
+			"text": " to"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,700",
+				"to": "00:00:03,050"
+			},
+			"offsets": {
+				"from": 2700,
+				"to": 3050
+			},
+			"text": " bring"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,050",
+				"to": "00:00:03,440"
+			},
+			"offsets": {
+				"from": 3050,
+				"to": 3440
+			},
+			"text": " proof."
+		}
+	]
+}

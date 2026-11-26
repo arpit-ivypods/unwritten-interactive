@@ -1,0 +1,148 @@
+/*
+ * Global stylesheet. OWNER: design-system engineer.
+ *
+ * Order matters:
+ *   1. Tailwind (preflight in @layer base, utilities in @layer utilities).
+ *   2. tokens.css: every design token as a CSS variable, light and dark
+ *      (data-theme on <html>, or on any element for a themed subtree).
+ *   3. bundle.css: the design system's component classes (uw-*), verbatim,
+ *      in @layer components so a Tailwind utility can still override them.
+ *   4. extensions.css: what the app needs beyond the bundle (video in the
+ *      stage, live progress, links in the rail, lang="hi" rules for Tailwind
+ *      type utilities). Also @layer components.
+ *   5. lang.css: lang="hi" rules for Tailwind type utilities, unlayered
+ *      so they beat the utilities layer.
+ *
+ * In Tailwind, use the token names: bg-glass, text-ink-muted, text-brand-text,
+ * rounded-2xl, rounded-stage, rounded-pill, shadow-panel, backdrop-blur-glass,
+ * ease-out, text-display-title, text-caption, font-sans, and dark:...
+ * Colours and shadows follow the theme of the nearest data-theme ancestor.
+ */
+@import "tailwindcss";
+@import "./tokens.css";
+@import "./bundle.css" layer(components);
+@import "./extensions.css" layer(components);
+@import "./lang.css";
+
+/* dark: applies inside data-theme="dark" (on <html> or on a subtree). */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/*
+ * Themed tokens. `inline` makes each utility read the variable where it is
+ * used, so a data-theme subtree gets its own values. The token variables
+ * themselves are defined in tokens.css.
+ */
+@theme inline {
+  --color-ground: var(--ground);
+  --color-veil: var(--veil);
+  --color-glass: var(--glass);
+  --color-glass-strong: var(--glass-strong);
+  --color-glass-border: var(--glass-border);
+  --color-hairline: var(--hairline);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-on-ink: var(--on-ink);
+  --color-brand: var(--brand);
+  --color-brand-text: var(--brand-text);
+  --color-on-brand: var(--on-brand);
+  --color-brand-soft: var(--brand-soft);
+  --color-saffron: var(--saffron);
+  --color-saffron-text: var(--saffron-text);
+  --color-on-saffron: var(--on-saffron);
+  --color-live: var(--live);
+  --color-alert: var(--alert);
+  --color-stage: var(--stage);
+  --color-on-stage: var(--on-stage);
+  --color-stage-glass: var(--stage-glass);
+  --color-stage-glass-border: var(--stage-glass-border);
+  --color-scrim: var(--scrim);
+  --color-subtitle-plate: var(--subtitle-plate);
+  --color-subtitle-active: var(--subtitle-active);
+
+  --shadow-float: var(--shadow-float);
+  --shadow-panel: var(--shadow-panel);
+  --shadow-stage: var(--shadow-stage);
+  --shadow-brand: var(--shadow-brand);
+  --shadow-sheet: var(--shadow-sheet);
+}
+
+/*
+ * Static tokens. `static` emits every variable even when no utility uses it,
+ * because bundle.css reads them directly (var(--radius-xl) and so on).
+ */
+@theme static {
+  /* Plus Jakarta Sans for Latin, Anek Devanagari for Devanagari, one stack.
+     The two variables are set by next/font (src/styles/fonts.ts). */
+  --font-sans: var(--font-jakarta), var(--font-anek), "Plus Jakarta Sans", "Anek Devanagari", system-ui, sans-serif;
+
+  --radius-sm: 8px;
+  --radius-md: 15px;
+  --radius-lg: 22px;
+  --radius-xl: 28px;
+  --radius-2xl: 36px;
+  --radius-stage: 48px;
+  --radius-pill: 999px;
+
+  --blur-chip: 18px;
+  --blur-glass: 34px;
+  --blur-ambient: 70px;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  /* Type scale (tokens.json "type"). text-label is uppercase only for Latin. */
+  --text-display-hero: 78px;
+  --text-display-hero--line-height: 0.96;
+  --text-display-hero--font-weight: 800;
+  --text-display-hero--letter-spacing: -0.05em;
+  --text-display-title: 34px;
+  --text-display-title--line-height: 1.05;
+  --text-display-title--font-weight: 800;
+  --text-display-title--letter-spacing: -0.04em;
+  --text-display-heading: 24px;
+  --text-display-heading--line-height: 1.1;
+  --text-display-heading--font-weight: 800;
+  --text-display-heading--letter-spacing: -0.03em;
+  --text-lead: 18px;
+  --text-lead--line-height: 1.5;
+  --text-lead--font-weight: 400;
+  --text-body: 15px;
+  --text-body--line-height: 22px;
+  --text-body--font-weight: 500;
+  --text-caption: 13px;
+  --text-caption--line-height: 1.45;
+  --text-caption--font-weight: 500;
+  --text-label: 12px;
+  --text-label--line-height: 1.3;
+  --text-label--font-weight: 700;
+  --text-label--letter-spacing: 0.12em;
+  --text-subtitle: 20px;
+  --text-subtitle--line-height: 1.4;
+  --text-subtitle--font-weight: 700;
+  --text-subtitle-speaker: 12px;
+  --text-subtitle-speaker--line-height: 1.2;
+  --text-subtitle-speaker--font-weight: 800;
+  --text-subtitle-speaker--letter-spacing: 0.08em;
+}
+
+/* Durations as Tailwind utilities: duration-tap, duration-move, duration-scene. */
+@utility duration-tap {
+  transition-duration: var(--dur-tap);
+}
+@utility duration-move {
+  transition-duration: var(--dur-move);
+}
+@utility duration-scene {
+  transition-duration: var(--dur-scene);
+}
+
+@layer base {
+  html {
+    background: var(--ground);
+    color: var(--ink);
+  }
+  body {
+    margin: 0;
+    min-height: 100dvh;
+  }
+}

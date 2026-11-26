@@ -1,0 +1,572 @@
+{
+ "about": "s2e01 per-episode edit choices (S13 editor, 26 Nov; revised after the D-023 toolsmith step and screening.json fixes). Inputs: shots.json, sound/cues.json, sound/manifest.jsonl, frames/review.json, screening.json fixes.",
+ "render_name": "s2e01",
+ "max_seconds": 150,
+ "voice_models": [
+  "v4"
+ ],
+ "layout": {
+  "cut_on_word": [
+   {
+    "line": "l09",
+    "word": {
+     "hi": "Zero",
+     "en": "Zero"
+    }
+   }
+  ],
+  "tail": {
+   "s09": 30,
+   "s37": 75,
+   "s20": 8,
+   "s18": 36
+  },
+  "lead": {
+   "s35": 12
+  }
+ },
+ "supers": {
+  "items": {
+   "su5": {
+    "position": "upper"
+   }
+  }
+ },
+ "voice_fx": {
+  "phone": {
+   "speakers": [
+    "dsp"
+   ]
+  }
+ },
+ "shots": {
+  "s33": {
+   "move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.25,
+     "x": 0.9,
+     "y": 0.9
+    },
+    "to": {
+     "scale": 1.3,
+     "x": 1,
+     "y": 1
+    }
+   }
+  },
+  "s01": {
+   "layers": [
+    {
+     "src": "frames/s01.png",
+     "depth": 1
+    },
+    {
+     "src": "overlays/s01-ov_token_7.png",
+     "depth": 1
+    }
+   ]
+  },
+  "s11": {
+   "layers": [
+    {
+     "src": "frames/s11.png",
+     "depth": 1
+    },
+    {
+     "src": "overlays/s11-ov_token_7.png",
+     "depth": 1
+    }
+   ]
+  },
+  "s05": {
+   "layers": [
+    {
+     "src": "frames/s05.png",
+     "depth": 1
+    },
+    {
+     "src": "overlays/s05-ov_fake_board.{lang}.png",
+     "depth": 1
+    }
+   ]
+  },
+  "s13": {
+   "layers": [
+    {
+     "src": "frames/s13.png",
+     "depth": 1
+    },
+    {
+     "src": "overlays/s13-ov_shield.png",
+     "depth": 1
+    }
+   ]
+  },
+  "s14": {
+   "layers": [
+    {
+     "src": "frames/s14.png",
+     "depth": 1
+    },
+    {
+     "src": "overlays/s14-ov_shield.png",
+     "depth": 1
+    }
+   ]
+  },
+  "s20": {
+   "layers": [
+    {
+     "src": "frames/s14.png",
+     "depth": 1
+    },
+    {
+     "src": "overlays/s14-ov_shield.png",
+     "depth": 1
+    }
+   ]
+  },
+  "s15": {
+   "layers": [
+    {
+     "src": "frames/s15.png",
+     "depth": 1
+    },
+    {
+     "src": "overlays/s15-ov_shield.png",
+     "depth": 1
+    }
+   ]
+  },
+  "s17": {
+   "layers": [
+    {
+     "src": "frames/s17.png",
+     "depth": 1
+    },
+    {
+     "src": "overlays/s17-ov_shield.png",
+     "depth": 1
+    }
+   ]
+  },
+  "s24": {
+   "layers": [
+    {
+     "src": "frames/s17.png",
+     "depth": 1
+    },
+    {
+     "src": "overlays/s17-ov_shield.png",
+     "depth": 1
+    }
+   ]
+  },
+  "s18": {
+   "layers": [
+    {
+     "src": "frames/s18.png",
+     "depth": 1
+    },
+    {
+     "src": "overlays/s18-ov_shield.png",
+     "depth": 1
+    }
+   ]
+  },
+  "s22": {
+   "layers": [
+    {
+     "src": "frames/s22.png",
+     "depth": 1
+    },
+    {
+     "src": "overlays/s22-ov_shield.png",
+     "depth": 1
+    }
+   ]
+  },
+  "s32": {
+   "layers": [
+    {
+     "src": "frames/s32.png",
+     "depth": 1
+    },
+    {
+     "src": "overlays/s32-ov_refusal_date.{lang}.png",
+     "depth": 1
+    }
+   ]
+  }
+ },
+ "sound": [
+  {
+   "cue": "amb_talkies_lobby",
+   "id": "#A",
+   "kind": "bed",
+   "from": 0,
+   "to": "s09.end",
+   "window_s": [
+    8.0,
+    29.0
+   ],
+   "loop_xf": 15,
+   "gain_db": -7,
+   "fade_in": 2,
+   "fade_out": 1
+  },
+  {
+   "cue": "amb_crossing_stall",
+   "kind": "bed",
+   "from": "s10.start",
+   "to": "s11.end",
+   "loop": true,
+   "gain_db": -4,
+   "fade_in": 0,
+   "fade_out": 1
+  },
+  {
+   "cue": "amb_real_thana",
+   "kind": "bed",
+   "from": "s12.start",
+   "to": "s25.end",
+   "loop": true,
+   "gain_db": -9,
+   "fade_in": 0,
+   "fade_out": 1,
+   "segments": [
+    {
+     "from": "l14.speech_start - 6",
+     "to": "l16.speech_end + 6",
+     "db": -10
+    }
+   ]
+  },
+  {
+   "cue": "amb_talkies_lobby",
+   "id": "#D",
+   "kind": "bed",
+   "from": "s26.start",
+   "to": "s29.end",
+   "window_s": [
+    8.0,
+    29.0
+   ],
+   "loop_xf": 15,
+   "gain_db": -7,
+   "fade_in": 0,
+   "fade_out": 1
+  },
+  {
+   "cue": "amb_projection_room",
+   "kind": "bed",
+   "from": "s30.start",
+   "to": "end",
+   "loop": true,
+   "gain_db": -4,
+   "fade_in": 0,
+   "fade_out": 1
+  },
+  {
+   "cue": "lyr_phone_line_hiss",
+   "kind": "bed",
+   "from": "l14.speech_start - 1",
+   "to": "l16.speech_end + 3",
+   "loop": true,
+   "gain_db": -1,
+   "fade_in": 3,
+   "fade_out": 3
+  },
+  {
+   "cue": "sfx_rubber_stamp",
+   "at": 2,
+   "until": "l01.speech_start - 3",
+   "gain_db": -6
+  },
+  {
+   "cue": "sfx_paper_slip",
+   "at": "l03.speech_start",
+   "trim": "0.1s",
+   "len": 8,
+   "gain_db": -8,
+   "fade_out": 2
+  },
+  {
+   "cue": "s2e01_sfx_tea_pour",
+   "at": "s04.start",
+   "until": "l04.speech_end",
+   "gain_db": -6,
+   "segments": [
+    {
+     "from": "l04.speech_start",
+     "db": -8
+    }
+   ],
+   "fade_out": 6
+  },
+  {
+   "cue": "s2e01_sfx_lobby_door_swing",
+   "at": "l08.speech_end + 2",
+   "until": "s10.start + 6",
+   "fade_out": 6,
+   "gain_db": -8
+  },
+  {
+   "cue": "s2e01_sfx_crossing_train",
+   "at": "s10.start",
+   "until": "s11.end",
+   "fade_out": 9,
+   "gain_db": -12
+  },
+  {
+   "cue": "sfx_peanut_crack",
+   "id": "#a",
+   "at": "l09.split1_start + 1",
+   "len": 10,
+   "gain_db": -12
+  },
+  {
+   "cue": "sfx_peanut_crack",
+   "id": "#b",
+   "at": "l09.speech_end + 1",
+   "trim": "0.5s",
+   "len": 10,
+   "gain_db": -12
+  },
+  {
+   "cue": "sfx_peanut_crack",
+   "id": "#c",
+   "at": "l10.split1_start + 1",
+   "trim": "1.25s",
+   "len": 10,
+   "gain_db": -12
+  },
+  {
+   "cue": "sfx_knitting_needles",
+   "id": "#b7",
+   "kind": "bed",
+   "from": "s16.start",
+   "to": "l12.split1_start",
+   "loop": true,
+   "gain_db": -10,
+   "fade_in": 0,
+   "fade_out": 20
+  },
+  {
+   "cue": "sfx_desk_phone_lift",
+   "at": "s18.start",
+   "until": "l30.speech_start",
+   "gain_db": -15,
+   "fade_out": 3
+  },
+  {
+   "cue": "sfx_dtmf_dialling",
+   "at": "l30.speech_end + 2",
+   "until": "s19.start",
+   "gain_db": -12,
+   "fade_out": 4
+  },
+  {
+   "cue": "sfx_desk_phone_hangup",
+   "at": "s22.start",
+   "gain_db": -12
+  },
+  {
+   "cue": "sfx_register_thump",
+   "at": "l19.speech_end + 3",
+   "gain_db": -10
+  },
+  {
+   "cue": "s2e01_sfx_file_untie_riffle",
+   "at": "s30.start",
+   "until": "l22.speech_start - 2",
+   "fade_out": 4,
+   "id": "#knot",
+   "len": "1.9s",
+   "gain_db": 0
+  },
+  {
+   "cue": "sfx_knitting_needles",
+   "id": "#b11",
+   "kind": "bed",
+   "from": "s30.start",
+   "to": "s35.start",
+   "loop": true,
+   "gain_db": -14,
+   "fade_in": 6,
+   "fade_out": 0
+  },
+  {
+   "cue": "sfx_page_turn",
+   "id": "#turn",
+   "at": "s34.start + 2",
+   "gain_db": 5
+  },
+  {
+   "cue": "s2e01_sfx_file_untie_riffle",
+   "id": "#riffle",
+   "at": "s34.start + 22",
+   "until": "s35.start",
+   "trim": "1.9s",
+   "gain_db": -2,
+   "fade_out": 3
+  },
+  {
+   "cue": "mus_theme_caper_bed",
+   "id": "#b4",
+   "at": "l04.speech_end + 3",
+   "until": "l06.speech_start",
+   "gain_db": -7,
+   "fade_in": 6,
+   "fade_out": 9,
+   "duck": true
+  },
+  {
+   "cue": "mus_theme_caper_bed",
+   "id": "#b4exit",
+   "at": "l08.speech_end + 1",
+   "until": "s09.end",
+   "trim": "24s",
+   "gain_db": -7,
+   "fade_in": 4,
+   "fade_out": 6,
+   "duck": true
+  },
+  {
+   "cue": "mus_theme_caper_bed",
+   "id": "#b10",
+   "at": "s26.start",
+   "until": "s29.end",
+   "gain_db": -7,
+   "fade_in": 6,
+   "fade_out": 15,
+   "duck": true
+  },
+  {
+   "cue": "mus_tension_note",
+   "id": "#a",
+   "kind": "bed",
+   "from": "s30.start",
+   "to": "s30.start + 390",
+   "trim": "2s",
+   "loop": false,
+   "gain_db": -16,
+   "fade_in": 15,
+   "fade_out": 15,
+   "duck": true,
+   "segments": [
+    {
+     "from": "s30.start + 0",
+     "to": "s30.start + 101",
+     "db": 0.0
+    },
+    {
+     "from": "s30.start + 101",
+     "to": "s30.start + 202",
+     "db": 0.5
+    },
+    {
+     "from": "s30.start + 202",
+     "to": "s30.start + 303",
+     "db": 1.0
+    },
+    {
+     "from": "s30.start + 303",
+     "to": "s30.start + 404",
+     "db": 1.5
+    },
+    {
+     "from": "s30.start + 404",
+     "to": "s30.start + 505",
+     "db": 2.0
+    },
+    {
+     "from": "s30.start + 505",
+     "to": "s30.start + 606",
+     "db": 2.5
+    },
+    {
+     "from": "s30.start + 606",
+     "to": "l26.speech_start - 6",
+     "db": 3.0
+    }
+   ]
+  },
+  {
+   "cue": "mus_tension_note",
+   "id": "#b",
+   "kind": "bed",
+   "from": "s30.start + 375",
+   "to": "l26.speech_start - 6",
+   "trim": "2s",
+   "loop": false,
+   "gain_db": -16,
+   "fade_in": 15,
+   "fade_out": 4,
+   "duck": true,
+   "segments": [
+    {
+     "from": "s30.start + 0",
+     "to": "s30.start + 101",
+     "db": 0.0
+    },
+    {
+     "from": "s30.start + 101",
+     "to": "s30.start + 202",
+     "db": 0.5
+    },
+    {
+     "from": "s30.start + 202",
+     "to": "s30.start + 303",
+     "db": 1.0
+    },
+    {
+     "from": "s30.start + 303",
+     "to": "s30.start + 404",
+     "db": 1.5
+    },
+    {
+     "from": "s30.start + 404",
+     "to": "s30.start + 505",
+     "db": 2.0
+    },
+    {
+     "from": "s30.start + 505",
+     "to": "s30.start + 606",
+     "db": 2.5
+    },
+    {
+     "from": "s30.start + 606",
+     "to": "l26.speech_start - 6",
+     "db": 3.0
+    }
+   ]
+  },
+  {
+   "cue": "mus_tension_note",
+   "id": "#c",
+   "kind": "bed",
+   "from": "l26.speech_start - 6",
+   "to": "end",
+   "trim": "2s + l26.speech_start - 6 - s30.start - 375",
+   "loop": false,
+   "gain_db": -36,
+   "fade_in": 4,
+   "fade_out": 1,
+   "duck": true
+  }
+ ],
+ "notes": [
+  "Toolchain after the D-023 toolsmith step: camera moves come from shots.json (the copied shots.<id>.move entries are removed); second framings show their source frame, so the frames/<shot>.png copies are no longer needed (the toolchain ignores them, with a note); frames/review.json is the one dict format.",
+  "s33 move overridden (screening fix, D-023 rule 1): aimed at Nandini's face on s31 at scale 1.3 (x 0.9 to 1, y 0.9 to 1), no new frame. Still a mid shot, not a close.",
+  "Overlays (screening fix): text layers in overlays/, drawn by the S13 editor with CoreText (scratch tool, the flat2d proof's method), text from bible.json overlays, placed on each surface as measured on the approved frame and masked to the surface colour so anything in front stays in front. ov_token_7 on s01 and s11; ov_fake_board per language on s05; ov_shield on s13, s14 (and s20, cropped from s14), s15, s17 (and s24, cropped from s17), s18, s22; ov_refusal_date per language on s32. The token is not overlaid in its small wrist appearances (s02, s13, s17-s19, s21, s26, s31-s36). Positions were checked on stills, not in motion.",
+  "Sound (screening fixes): mus_theme_caper_bed raised 6 dB (-13 to -7). mus_tension_note is taken from the file's steady 2-15 s stretch in two pieces (#a 390 frames, #b from trim 2 s again with a 15-frame crossfade) with a +3 dB stepped ramp (0.5 dB every 101 frames from s30.start), then #c at -36 dB under l26 and the hold, continuing the file position.",
+  "One-off cues now exist (sound/manifest.jsonl, all status ok, none listened to): gains set from their measured levels: crossing_train -12, lobby_door_swing -8, tea_pour -6 (dips -8 under l04), file_untie_riffle 0 for the knot and cover (first 1.9 s) and -2 for the riffle slice (trim 1.9 s) after the page turn; the riffle replaces the sfx_page_turn fallback. Pigeon wings are not placed: the gap after l01 is under 0.5 s (cue sheet: drop rather than put it under l02).",
+  "s35 lead 12 frames: the knitting stops on the cut into s35, 0.4 s before l25 (cue sheet: 0.3-0.5 s of room tone).",
+  "s20 tail 8 frames (default 6): kept. The round(onset) vs floor(onset) gap between the cut-on-word cut and read_end is still open in the toolchain (README 'Not verified').",
+  "Not done, needs the toolsmith (D-0M4): screening's en c030/c031 split at the pause (edit.json has no subtitle-split override and measure.pause_min_s is global only).",
+  "Clarity re-edit (S13, 26 Nov): layout.tail.s18 36 frames (S7 remap note b8: 1.2 s of dial tones after l30 before the cut to s19). su5 'position': 'upper': in the lower third it covered the wool ball and the stamped envelope on s16. su4 stays on s15 although the build flags the s15-ov_shield layer (ruling 3.3): every b6 shot after s12 carries the shield, s15 is the script's and S7's chosen shot, the plate sits in the top quarter and the super in the lower third, and taking the layer off s15 would show a blank plate straight after the s14 'ZERO CRIME' insert. su2 on s05 stays: ov_fake_board is dressing (script b3, shots.json s05 placement note), not a plot overlay. Sound for b8 re-placed to the clarity action (the cue sheet predates l30): sfx_desk_phone_lift from s18.start until l30.speech_start (was len 24, which ran 3 frames under l30); sfx_dtmf_dialling now in the 1.2 s after l30 (at l30.speech_end + 2 until s19.start, fade 4), not from s18.start + 24 to l14, where it lay under l30 and l31."
+ ]
+}

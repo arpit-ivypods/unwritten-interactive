@@ -1,0 +1,935 @@
+{
+  "id": "series1-photoreal",
+  "series_id": "series1",
+  "title": "नौवीं पहली रात",
+  "written_by": "S6 Art director",
+  "date": "2026-11-26",
+  "status": "Gate 3 passed (D-021): all 47 pngs in content/series1/refs/ are the reference set for Phase 4. Character and wardrobe locks rewritten from the approved sheets (D-013 rule 4); style_frame set.",
+  "governed_by": [
+    "content/series1/bible.json (revision 2)",
+    "docs/decisions.md D-003, D-005, D-007, D-008, D-013, D-021 (decisions govern over the bible)",
+    "content/proof/photoreal/style.json (format and look)"
+  ],
+  "look": "Photoreal, cinematic, fictional Indian cast, in the photoreal proof's look carried to a dry late-April night in a small central-Indian city. Locked-room con thriller in close-ups: warm lamp against cold streetlight; branch A becomes a pale daylight sting, branch B a night siege ending in grey dawn.",
+  "style_block": "STYLE: Photorealistic live-action film still, a single frame from a contemporary Indian crime thriller set in a small city in central India, shot on a full-frame digital cinema camera. Vertical 9:16 portrait composition. Late April: a warm, dry night or the first hours of the next day; no rain, no wet surfaces, a little dust in the air. Real-looking fictional Indian people with natural, un-retouched skin: visible pores, fine lines, a faint sheen of heat, no beauty smoothing, no glamour make-up; every face reads its stated age and no older. Lighting is motivated and low-key, and comes only from the sources the shot's light state names (a lamp, a bare bulb, a tube light, a streetlight, headlights, dawn or daylight through a door or window); shadows fall to deep teal-black but keep detail; no studio fill, no flat even lighting, no light from nowhere. Colour grade: warm practical light (amber lamp, yellow bulb, low sun) against cool ambient light (blue-white streetlight, pre-dawn blue, dusk), teal-leaning shadows, muted mid-tone saturation; sindoor red is the strongest colour in any frame it is in; skin stays a true warm brown; blacks very slightly lifted, never crushed. Daylight scenes keep the same grade, paler and dustier, with soft contrast. Lens: spherical prime look, 35 mm for rooms and two-shots, 50 mm for mediums, 85 mm for close-ups, 100 mm macro for hand and object inserts, near f/2 with shallow depth of field, soft round bokeh, gentle halation around bare bulbs and lamps, slight natural vignette. Camera at the eye level of the person in the shot, seated or standing, steady, level horizon, no wide-angle distortion, no Dutch tilt. Fine 35 mm film grain over the whole frame. Composed for vertical video: one clear subject, the main face in the upper-middle of the frame, the bottom fifth of the frame free of faces, important hands and essential action, and nothing important within the outer 6 percent of any edge, so the frame can be slowly pushed in or panned.",
+  "negative_rules": "AVOID: No text of any kind anywhere in the image: no captions, subtitles, titles, labels, shop signs or signboard lettering, number plates, phone-screen characters or icons, readable register, ledger or notebook entries, newsprint, clock or watch digits; any written or printed surface is blank or an illegible blur. No watermarks, signatures, logos, brand names, borders, frames or split panels. No police crest, badge, insignia, flag or portrait, no national flag, no government emblem, no deity image, idol or religious symbol, no real or recognisable people. No extra people beyond those named in the shot; Billu's two helpers never show a face (head cropped, turned away or in full shadow). No weapons, no blood, no wound other than Kiran's old healed scar, no nudity, no intimacy. Do not change any character's face, age, skin tone, hair, wardrobe, jewellery, henna or chooda from the reference sheet; do not add or remove glasses, bindi, sindoor, nose ring, rings, earrings, watch, chain, cap, beard or moustache. Kiran's nose ring is in her LEFT nostril and her scar is on her LEFT forearm only. Right-hand-drive car only: the steering wheel and the driver are on the right side of the car. No ceiling fan in the bedroom. No extra, missing or fused fingers, no distorted hands, no duplicated limbs. No rain, no wet streets. No illustration, anime, cartoon, 3D render, CGI gloss, HDR glow, plastic skin, beauty filter or over-saturated colour.",
+  "palette": [
+    "#0E1619",
+    "#1D3A44",
+    "#E3A04A",
+    "#F2C35C",
+    "#AFC6D6",
+    "#5E7385",
+    "#E58A3A",
+    "#D7E3D2",
+    "#B3122A",
+    "#9E1328",
+    "#EDE3CC",
+    "#9C4A1E",
+    "#9C9C97",
+    "#E6DAC0",
+    "#B58B3A",
+    "#C8202B",
+    "#1F5A3A",
+    "#C99A2E",
+    "#D8A72A",
+    "#6F8CAB",
+    "#5E1A24",
+    "#B9C9A8",
+    "#8FB3C9",
+    "#D99AA6",
+    "#E6D79A",
+    "#F0A020",
+    "#8B6E52"
+  ],
+  "palette_roles": {
+    "#0E1619": "shadow floor, teal-black (never pure black)",
+    "#1D3A44": "deep teal night shadow and ambience",
+    "#E3A04A": "amber bedside lamp, the bedroom key",
+    "#F2C35C": "bare yellow bulb (stairwell landing, bureau back room)",
+    "#AFC6D6": "cool blue-white streetlight through the grille and in the lane",
+    "#5E7385": "pre-dawn blue and dawn grey (branch B end; highway)",
+    "#E58A3A": "low sun at dawn (car, bureau exterior)",
+    "#D7E3D2": "fluorescent tube light, pale green-white (bureau)",
+    "#B3122A": "Kiran's sindoor-red saree and blouse; sindoor; bindi",
+    "#9E1328": "chooda deep red",
+    "#EDE3CC": "chooda ivory bands",
+    "#9C4A1E": "block henna, deep orange-brown",
+    "#9C9C97": "Kiran's ash-grey salwar-kurta (period 2)",
+    "#E6DAC0": "Aditya's cream kurta and churidar",
+    "#B58B3A": "brass: Aditya's key, padlock, the fake gold set",
+    "#C8202B": "red thread of the key; Mohit's wrist thread",
+    "#1F5A3A": "Mausi's bottle-green saree",
+    "#C99A2E": "Mausi's mustard border and blouse",
+    "#D8A72A": "Chhoti's mustard-yellow kurta",
+    "#6F8CAB": "Billu's faded denim jacket",
+    "#5E1A24": "Kiran's maroon travel bag",
+    "#B9C9A8": "bedroom lime-wash pale green",
+    "#8FB3C9": "bedroom door pale blue",
+    "#D99AA6": "bureau faded pink walls",
+    "#E6D79A": "chowki pale-yellow wall",
+    "#F0A020": "marigolds",
+    "#8B6E52": "wheat-brown skin mid-tone (Kiran) under warm light"
+  },
+  "grade": {
+    "night": "Warm practicals (amber lamp about 2700 K, yellow bulb about 2400 K) against cool blue-white streetlight about 6500 K; shadows teal-black with detail; mid-tone saturation pulled down about a fifth; sindoor red and marigold are the only fully saturated colours; skin a true warm brown; blacks lifted slightly.",
+    "dawn": "Blue-grey ambience warming to low orange sun; low contrast; the same teal-leaning shadows.",
+    "day": "Branch A daylight: pale, dusty, soft contrast, fluorescent green-white against warm daylight, saturation held down; it should feel exposed rather than bright.",
+    "film": "Fine 35 mm grain on every frame, gentle halation round bare bulbs and lamps, slight natural vignette."
+  },
+  "lens_look": {
+    "format": "Full-frame digital cinema camera, vertical 9:16, spherical primes.",
+    "focal_lengths": {
+      "rooms_and_two_shots": "35 mm",
+      "mediums": "50 mm",
+      "close_ups": "85 mm",
+      "hand_and_object_inserts": "100 mm macro"
+    },
+    "aperture": "Near f/2 (f/2.8 for exteriors and daylight wides).",
+    "camera": "Eye level of the person in the shot, seated or standing; steady; level horizon; no wide-angle distortion; no Dutch tilt.",
+    "composition": "One clear subject; main face in the upper-middle; bottom fifth free of faces and key action; nothing important in the outer 6 percent."
+  },
+  "style_frame": {
+    "id": "bedroom_bed",
+    "file": "content/series1/refs/bedroom_bed.png",
+    "decided_by": "D-021 decision 3 (Gate 3). Used for all of Phase 4; it is not a stand-in for an episode anchor.",
+    "rule": "Copy only the rendering, not the room, props or light.",
+    "rendering_means": "Grade, grain, lens, skin and surface texture.",
+    "when_attached": "Only on the first frame of a new scene, last in the reference list, in the scene anchor's slot (D-013 rule 2). When the scene's own plate is bedroom_bed, attach the file once.",
+    "prompt_label": "Image N is the series style frame. Match only its rendering. Do not copy its room, furniture, props or light; the light comes from the LIGHT line.",
+    "watch_for": "The bedroom's marigold garlands, the window grille, the amber lamp or the night light turning up in other settings. If wave 1's first-of-scene frames copy its room or props in more than one frame in five, drop it from those frames and give its slot to a prop sheet. If day scenes inherit its night light, bureau_front.png becomes the style frame for day scenes (D-021, would change it)."
+  },
+  "characters": [
+    {
+      "id": "kiran",
+      "name": "Kiran ('Sneha')",
+      "height_cm": 160,
+      "principal": true,
+      "sheets": {
+        "period_1": "kiran_p1",
+        "period_2": "kiran_p2",
+        "period_3": "kiran_p3",
+        "hands": "kiran_hands"
+      },
+      "character_lock": "Indian woman, 27, reads late twenties (never older); about 160 cm, slight and wiry; wheat-brown skin with a few faint freckles on the cheeks; long oval face narrowing to a small pointed chin; straight dark brows; large dark-brown eyes with black kajal smudged into soft dark circles underneath; small straight nose; full lower lip, mouth closed and unsmiling; no other make-up; black hair with a clean centre parting and a thin line of red sindoor along it, pulled back into a low bun at the nape, several fine loose strands falling at both temples and beside the ears; small round red bindi between the brows; a thin plain gold hoop in her LEFT nostril (picture-right when she faces camera; seen in her three-quarter view with her nose to picture-left, hidden in her right profile with her nose to picture-right); small gold ball studs in both ear lobes; a short black-bead mangalsutra at the base of the throat with small gold beads and one larger gold bead at the centre.",
+      "wardrobe_locks": {
+        "period_1": "Kiran: Indian woman, 27, reads late twenties (never older); about 160 cm, slight and wiry; wheat-brown skin with a few faint freckles on the cheeks; long oval face narrowing to a small pointed chin; straight dark brows; large dark-brown eyes with black kajal smudged into soft dark circles underneath; small straight nose; full lower lip, mouth closed and unsmiling; no other make-up; black hair with a clean centre parting and a thin line of red sindoor along it, pulled back into a low bun at the nape, several fine loose strands falling at both temples and beside the ears; small round red bindi between the brows; a thin plain gold hoop in her LEFT nostril (picture-right when she faces camera; seen in her three-quarter view with her nose to picture-left, hidden in her right profile with her nose to picture-right); small gold ball studs in both ear lobes; a short black-bead mangalsutra at the base of the throat with small gold beads and one larger gold bead at the centre; plain sindoor-red matte cotton-silk saree with a narrow plain gold border, the pallu over her LEFT shoulder (picture-right when she faces camera) and hanging down her back, not over her head; plain red blouse with sleeves ending just above the elbow, so both cuffs show in full; barefoot; block henna as drawn: one solid deep orange-brown disc in the centre of each PALM, every fingertip dipped to the first joint (the dipped tips show from both sides); the backs of both hands are plain wheat-brown skin with no disc, spot or mark; nails short and unpainted; on each forearm a chooda that reads as one glossy deep-red cuff about 10 cm long with two ivory bangles at each end, starting just above the wrist bone; no other jewellery: no rings, no watch, no necklace set, no anklets.",
+        "period_2": "Kiran: Indian woman, 27, reads late twenties (never older); about 160 cm, slight and wiry; wheat-brown skin with a few faint freckles on the cheeks; long oval face narrowing to a small pointed chin; straight dark brows; large dark-brown eyes with black kajal smudged into soft dark circles underneath; small straight nose; full lower lip, mouth closed and unsmiling; no other make-up; black hair with a clean centre parting and a thin line of red sindoor along it, pulled back into a low bun at the nape, several fine loose strands falling at both temples and beside the ears; small round red bindi between the brows; a thin plain gold hoop in her LEFT nostril (picture-right when she faces camera; seen in her three-quarter view with her nose to picture-left, hidden in her right profile with her nose to picture-right); small gold ball studs in both ear lobes; a short black-bead mangalsutra at the base of the throat with small gold beads and one larger gold bead at the centre; plain ash-grey crinkled cotton salwar-kurta: knee-length kurta with a round neck, side slits and sleeves ending just below the elbow, loose grey salwar gathered at the ankle; plain grey cotton dupatta over her LEFT shoulder (picture-right when she faces camera), falling in folds down the front to about the knee; flat black toe-post sandals; block henna as drawn: one solid deep orange-brown disc in the centre of each PALM, every fingertip dipped to the first joint (the dipped tips show from both sides); the backs of both hands are plain wheat-brown skin with no disc, spot or mark; nails short and unpainted; on each forearm a chooda that reads as one glossy deep-red cuff about 10 cm long with two ivory bangles at each end, starting just above the wrist bone; no other jewellery: no rings, no watch, no necklace set, no anklets.",
+        "period_3_branch_A": "Kiran: exactly as in her grey salwar-kurta (period 2) in face, hair, sindoor, bindi, LEFT-nostril hoop, ear studs, mangalsutra, henna, dupatta and sandals, except: her LEFT forearm (picture-right when she faces camera) is bare; on its outer side (the side continuous with the back of the hand), about three fingers above the wrist bone, in the lower third of the forearm, is a pale, slightly shiny, faintly raised crescent burn scar about 4 cm tip to tip lying ACROSS the forearm, its curve bulging towards the hand and both horns pointing towards the elbow (with the arm hanging and the back of the hand to camera it reads as a shallow U); never red or raw; her RIGHT forearm (picture-left) still wears the deep-red chooda cuff with two ivory bangles at each end; the scar is hidden when her palm faces camera.",
+        "period_3_branch_B_last_scene": "Kiran (last scene of s1b03 only): exactly as in her grey salwar-kurta (period 2) in face, hair, sindoor, bindi, LEFT-nostril hoop, ear studs, mangalsutra and henna, except: BOTH forearms are bare, the pale crescent scar on the outer LEFT forearm about three fingers above the wrist bone (curve towards the hand, horns towards the elbow), faint pressure lines where the bangles sat; Mausi's steel ring of keys knotted into her dupatta at her LEFT hip (picture-right when she faces camera)."
+      },
+      "periods": {
+        "period_1": "Red saree. s1e01, s1e02, s1a01 b1 to b3 (and b5 until she changes), all of s1b01, s1b02, s1b03 b1 to b7.",
+        "period_2": "Grey salwar-kurta, both cuffs on. s1a01 from b5 (after the almirah cut) to s1a03 b2.",
+        "period_3_branch_A": "Grey salwar-kurta, LEFT forearm bare with the scar, RIGHT cuff on. s1a03 b3 (once the bangles are off) to b11.",
+        "period_3_branch_B_last_scene": "Grey salwar-kurta, both forearms bare, Mausi's keys at her LEFT hip. s1b03 b9 and b10."
+      },
+      "continuity_notes": [
+        "Nose ring, pallu (p1) and dupatta (p2) are all on HER LEFT: picture-right when she faces camera. In her right profile (nose pointing picture-right) the ring is hidden.",
+        "s1e01 b1 to b10: her LEFT forearm is never in frame uncovered: under the fall of the pallu or against her body; only her RIGHT hand works the tray, the door and the phone (production lock). Both stacks are pushed up toward the elbows in s1e01 b1 to b11; b11 shows the scar and her right hand slides the left stack down over it.",
+        "s1e02 b2 to b4: three bangles (two ivory, one red) are off the LEFT cuff and lie on the white sheet; the cuff still covers the scar. In b4 she slides them back on, red first. From b5 the left cuff is complete.",
+        "The scar is drawn once, on kiran_hands view 3. Any frame that shows it attaches kiran_hands (or kiran_p3) and states its orientation in picture terms: crescent across the forearm, curve towards the hand, horns towards the elbow.",
+        "Henna, chooda, sindoor, bindi, ring, studs and mangalsutra do not change between periods 1 and 2. Bare forearms only in the two endings (period 3).",
+        "Pallu over her head only in her first moments as 'Sneha' in s1e01 (b2); otherwise on the shoulder.",
+        "s1b01 b5a and b6: she sits on the floor against the pale-blue door, knees up, LEFT arm folded under the pallu. Same framing both beats (time jump by overlay only).",
+        "s1b02 b9 and s1b03 b1: her LEFT fist opens behind her back on two folded paper folds lying on the henna disc."
+      ],
+      "locks_source": "Rewritten by S6 under D-013 rule 4 and D-021 decision 7 from the approved sheets kiran_p1, kiran_p2, kiran_p3 and kiran_hands: whole sheets viewed at 1125x2000, plus full-resolution crops of the kiran_p3 face, the kiran_p3 forearms and the kiran_hands view 3 scar. kiran_hands view 3 is the authority for the scar's place; kiran_p3 draws it slightly higher (logged)."
+    },
+    {
+      "id": "aditya",
+      "name": "Aditya Verma",
+      "height_cm": 183,
+      "principal": true,
+      "sheets": {
+        "base": "aditya"
+      },
+      "character_lock": "Indian man, 33, reads early thirties; about 183 cm, tall and narrow with sloping shoulders, standing straight; light-brown skin; long narrow clean-shaven face with a faint shadow of beard, high forehead, straight dark brows, calm deep-set dark eyes, long straight nose, thin closed mouth, ears standing slightly out; short neat black hair with soft volume on top, side-parted on his LEFT (picture-right when he faces camera) and combed over towards picture-left; thin rimless rectangular glasses with thin metal arms, always on.",
+      "wardrobe_locks": {
+        "base": "Aditya: Indian man, 33, reads early thirties; about 183 cm, tall and narrow with sloping shoulders, standing straight; light-brown skin; long narrow clean-shaven face with a faint shadow of beard, high forehead, straight dark brows, calm deep-set dark eyes, long straight nose, thin closed mouth, ears standing slightly out; short neat black hair with soft volume on top, side-parted on his LEFT (picture-right when he faces camera) and combed over towards picture-left; thin rimless rectangular glasses with thin metal arms, always on, even with his eyes shut; plain cream slub-cotton kurta to just below the knee with a band collar, three cloth-covered buttons down a short placket and no embroidery, long sleeves folded back once so the turned cuffs sit just above the wrists, one square patch pocket on his RIGHT chest (picture-left when he faces camera), side slits; plain cream churidar gathered at the ankles; an old-fashioned brass key about 5 cm long, oval bow, hanging on a doubled red cotton thread outside the kurta at mid-chest, in every shot; a plain watch with a steel case, a pale dial and a brown leather strap on his LEFT wrist (picture-right when he faces camera), face unreadable; barefoot in the bedroom, tan leather sandals with crossed straps and a toe loop elsewhere; no rings, no chain, no tilak, no turban."
+      },
+      "continuity_notes": [
+        "Glasses and the brass key on its red thread are in every shot of him, both branches, to the last frame, including lying with his eyes shut (s1b02 b5 to b9).",
+        "Kurta patch pocket is on HIS RIGHT CHEST (picture-left when he faces camera), as drawn on his sheet and pair sheets: the photograph and, in branch A, the paper fold live there.",
+        "Watch on his LEFT wrist, never readable; time is always an overlay.",
+        "Barefoot in the bedroom; tan sandals on the stairs, in the lane, car, bureau and chowki. Kurta visibly creased from s1a02 on.",
+        "One outfit for the whole story; never changes."
+      ],
+      "locks_source": "Rewritten by S6 under D-013 rule 4 and D-021 decision 7 from the approved sheet aditya (whole sheet at 1125x2000, full-resolution crops of the face and of the chest pocket and watch). The sheet drew the pocket as a patch pocket on his right chest, not a side pocket; the pair sheets carry it the same way, so the lock follows the sheet."
+    },
+    {
+      "id": "mausi",
+      "name": "Shakun Mausi",
+      "height_cm": 157,
+      "principal": true,
+      "sheets": {
+        "base": "mausi"
+      },
+      "character_lock": "Indian woman, 56, reads mid-fifties; about 157 cm, broad, soft and heavy-shouldered; brown skin with fine lines at the eyes and mouth; round full face with a soft double chin, heavy-lidded shrewd dark eyes, broad nose, wide mouth with muted rose-red lips, a warm closed or open smile; large round maroon bindi; one small plain gold stud in her LEFT nostril only (picture-right when she faces camera); black hair with grey streaks along the hairline and temples, oiled flat and combed straight back into a tight low round bun at the back of the head.",
+      "wardrobe_locks": {
+        "base": "Shakun Mausi: Indian woman, 56, reads mid-fifties; about 157 cm, broad, soft and heavy-shouldered; brown skin with fine lines at the eyes and mouth; round full face with a soft double chin, heavy-lidded shrewd dark eyes, broad nose, wide mouth with muted rose-red lips, a warm closed or open smile; large round maroon bindi; one small plain gold stud in her LEFT nostril only (picture-right when she faces camera); black hair with grey streaks along the hairline and temples, oiled flat and combed straight back into a tight low round bun at the back of the head; starched bottle-green cotton saree with a narrow mustard-yellow border, the pallu over her LEFT shoulder (picture-right when she faces camera), held at the shoulder with a small gold pin and falling down her back; plain mustard-yellow blouse with sleeves ending just above the elbow; a thin gold chain; a short stack of about eight thin green glass bangles on each wrist; one thin plain gold band on a finger of her RIGHT hand (picture-left when she faces camera), as drawn on her sheet; a steel ring of about five plain flat steel keys hooked into the saree at her LEFT hip (picture-right when she faces camera), unless the STATE line says it is gone; black rubber toe-post slippers; no earrings, no glasses, no other rings."
+      },
+      "continuity_notes": [
+        "Not seen in s1e01 or s1e02 (voice only). First image: s1a01 b9 (shutter) or s1b01 b9 (doorway).",
+        "Keys at her LEFT hip (picture-right when she faces camera). Branch A: on her hip until s1a02 b5, where Kiran's right hand unhooks them; gone from her hip from s1a02 b6 on (s1a03 b5: her hand finds nothing). Branch B: on her hip until s1b03 b6, where Kiran takes them; gone in s1b03 b8 and b9.",
+        "The same saree day and night, both branches. Wrists unmarked (Aditya checks them in s1a01 b10).",
+        "Profile rule (D-021 decision 4): no close right profile of her (nose pointing to picture-right), because her sheet's right profile wrongly shows a stud. If a shot needs one, the prompt says 'no nose stud is visible on this side of her nose'. Front and three-quarter views (nose to picture-left) follow the sheet: one stud, on picture-right in front views.",
+        "The gold band on her RIGHT hand (picture-left in front views) is in every frame that shows that hand, as on her sheet and her pair sheets."
+      ],
+      "locks_source": "Rewritten by S6 under D-013 rule 4 and D-021 decision 7 from the approved sheet mausi (whole sheet at 1125x2000, full-resolution crops of the front face, the three-quarter view, the picture-left hand and the keys). The crop shows a thin gold band on her picture-left hand (her RIGHT hand); D-021 decision 6 says frames keep it consistently and no image is remade, so the lock now includes it. The keys on the sheet number about five, not eight."
+    },
+    {
+      "id": "billu",
+      "name": "Billu",
+      "height_cm": 170,
+      "principal": true,
+      "sheets": {
+        "base": "billu"
+      },
+      "character_lock": "Indian man, 30, reads about thirty; about 170 cm, wiry and restless; brown skin, slightly rough, with faint dark circles; long narrow face with hollow cheeks and a sharp jaw, thick dark brows, quick narrowed dark eyes, patchy stubble on the cheeks, chin and upper lip, a half smirk; thick black hair gelled straight back from the forehead with a wet look, the ends kicking into loose waves at the crown and nape.",
+      "wardrobe_locks": {
+        "base": "Billu: Indian man, 30, reads about thirty; about 170 cm, wiry and restless; brown skin, slightly rough, with faint dark circles; long narrow face with hollow cheeks and a sharp jaw, thick dark brows, quick narrowed dark eyes, patchy stubble on the cheeks, chin and upper lip, a half smirk; thick black hair gelled straight back from the forehead with a wet look, the ends kicking into loose waves at the crown and nape; faded, worn light-blue denim trucker jacket with two buttoned chest pockets, worn open, sleeves rolled to mid-forearm, over a plain black round-neck T-shirt; dark indigo slim jeans; scuffed grey-white lace-up sneakers; a wooden toothpick in the RIGHT corner of his mouth (picture-left when he faces camera), unless the STATE line says it is out; a car key with a black plastic head and a brass blade on a steel ring hooked on his RIGHT index finger (picture-left when he faces camera); no chain, no watch, no rings, no cap, no weapon."
+      },
+      "continuity_notes": [
+        "Toothpick in the RIGHT corner of his mouth (picture-left when he faces camera). Out only when he is shaken: s1b01 b2 (he spits it out; a fresh one is back in his mouth by s1b02 b2, where it 'stops') and from s1b03 b3, where he takes it out, to the end.",
+        "Car key on a steel ring hooked on his RIGHT index finger.",
+        "Drives front right (right-hand drive). In the car his eyes are shown in the rear-view mirror; from the rear seat he is seen from behind on picture-right.",
+        "No weapon is ever shown on him."
+      ],
+      "locks_source": "Rewritten by S6 under D-013 rule 4 and D-021 decision 7 from the approved sheet billu (whole sheet at 1125x2000, full-resolution crops of the front face, the profile and the key hand). The sheet's profile view (nose to picture-left, his right side) shows no toothpick; a shot of that side with the toothpick in states it in the prompt."
+    },
+    {
+      "id": "chhoti",
+      "name": "Chhoti",
+      "height_cm": 155,
+      "principal": true,
+      "sheets": {
+        "base": "chhoti",
+        "last_scene_s1b03": "chhoti_final"
+      },
+      "character_lock": "Adult Indian woman, 19, reads about twenty, never a child; about 155 cm, slight, with adult proportions; light-brown skin with a few faint blemishes on the cheeks; soft oval face with a rounded chin, straight brows, wide dark eyes with a thin line of kajal, small nose, a small closed-lip smile; no bindi, no nose ring, no earrings; black hair with a centre parting and loose wisps at the temples, in one long thick braid over her RIGHT shoulder (picture-left when she faces camera), tied with a plain black band at about chest height, the loose tail below it reaching the waist.",
+      "wardrobe_locks": {
+        "base": "Chhoti: adult Indian woman, 19, reads about twenty, never a child; about 155 cm, slight, with adult proportions; light-brown skin with a few faint blemishes on the cheeks; soft oval face with a rounded chin, straight brows, wide dark eyes with a thin line of kajal, small nose, a small closed-lip smile; no bindi, no nose ring, no earrings; black hair with a centre parting and loose wisps at the temples, in one long thick braid over her RIGHT shoulder (picture-left when she faces camera), tied with a plain black band at about chest height, the loose tail below it reaching the waist; plain mustard-yellow slub-cotton kurta to just above the knee with a round neck, short sleeves and side slits; loose white cotton salwar gathered at the ankle; plain white crinkled cotton dupatta draped round the front of her neck with both ends over her shoulders and down her back; grey rubber toe-post slippers; two thin green glass bangles on her RIGHT wrist (picture-left when she faces camera), her LEFT wrist bare; block henna on her LEFT hand only (picture-right when she faces camera): a solid deep orange-brown disc in the palm and every fingertip dipped, the back of that hand plain; her RIGHT hand bare; a phone in a plain pink cover in her RIGHT hand (picture-left), back of the phone to camera; no other jewellery.",
+        "last_scene_s1b03": "Chhoti (last scene of s1b03 only): adult Indian woman, 19, reads about twenty, never a child; about 155 cm, slight, with adult proportions; light-brown skin with a few faint blemishes on the cheeks; soft oval face with a rounded chin, straight brows, wide dark eyes with a thin line of kajal, small nose, a small closed-lip smile; no bindi, no nose ring, no earrings; black hair with a centre parting and loose wisps at the temples, in one long thick braid over her RIGHT shoulder (picture-left when she faces camera), tied with a plain black band at about chest height, the loose tail below it reaching the waist; plain mustard-yellow slub-cotton kurta to just above the knee with a round neck, short sleeves and side slits; loose white cotton salwar gathered at the ankle; plain white crinkled cotton dupatta draped round the front of her neck with both ends over her shoulders and down her back; grey rubber toe-post slippers; exactly as her sheet except: block henna finished on BOTH hands, a solid disc in each palm and every fingertip dipped, backs of the hands plain; Kiran's deep-red chooda cuffs, each with two ivory bangles at each end, on BOTH her forearms just above the wrist; the two green glass bangles are off; her pink-cover phone lies on the cot beside her, not in her hand; no other jewellery."
+      },
+      "continuity_notes": [
+        "D-007 direction 14 governs over the bible's look: she reads as an adult woman. Round cheeks, gap teeth and the ribbon are dropped; a plain white dupatta is added. Gate 3 rejects any sheet or frame where she reads as a child.",
+        "Branch A (s1a01 to s1a03): henna on her LEFT palm and fingertips only; right hand bare.",
+        "s1b02: voice only, not seen.",
+        "s1b03 b9 and b10: henna finished on both palms; Kiran's chooda on both her forearms; the two green glass bangles are off. Her phone lies on the cot beside her (an art-direction call: her hands hold the paper fold and the glass in this scene)."
+      ],
+      "locks_source": "Rewritten by S6 under D-013 rule 4 and D-021 decision 7 from the approved sheets chhoti and chhoti_final (whole sheets at 1125x2000, full-resolution crop of the chhoti front face). Her footwear is not in the bible; the lock follows the sheet."
+    }
+  ],
+  "non_sheet_figures": [
+    {
+      "id": "the_boys",
+      "rule": "No face reference sheet (bible production_locks, D-005 change 17). Never a face: backs, hands, boots, backlit silhouettes, heads cropped, turned away or in full shadow. They never speak.",
+      "shape_lock": "Two fixed shapes. Boy 1: heavy-set, shaved head, maroon zip-up track jacket, dark trousers. Boy 2: thin, faded blue-and-white checked shirt, grey cloth cap, dark trousers. Both in worn rubber-soled shoes. In the lane they stand by an old black motorbike.",
+      "continuity": "In shot or implied from s1b01 b9 to s1b02 b5 with their hands on Aditya's shoulders (D-007 direction 17); present in s1b01 b10, b11 and s1b02 b1 even where `who` omits them. Not seen again in branch A after s1a01 b2."
+    },
+    {
+      "id": "constable",
+      "rule": "No sheet. Never a face.",
+      "shape_lock": "A plain khaki shirt sleeve with no badge, crest, name tag or shoulder insignia, a broad brown middle-aged hand, a steel-capped ballpoint pen; at most the edge of a khaki shoulder.",
+      "continuity": "s1a03 b8 (at the bureau shutter, a hand on the shutter and the ledger and keys carried out under a khaki arm) and s1a03 b10 (the pen at the chowki register)."
+    },
+    {
+      "id": "mohit",
+      "rule": "Seen only inside the photograph (prop `photograph`). Never a face; his death is never pictured.",
+      "shape_lock": "A young man's right hand, palm up, light-brown skin, a red thread at the wrist, a cream kurta cuff."
+    }
+  ],
+  "pair_sheets": {
+    "pair_kiran_aditya_p1": "Kiran and Aditya in the bedroom and on the stairs at night: s1e01, s1e02, s1a01 b1 to b3, s1b01, s1b02, s1b03 b1 to b7. Aditya barefoot.",
+    "pair_kiran_aditya_p2": "Kiran and Aditya in branch A daylight: s1a01 b6 to b11, s1a02, s1a03 up to b2 (for s1a03 b3 on, attach kiran_p3 as well when a slot is free).",
+    "pair_kiran_mausi_p1": "Branch B bedroom: s1b01 b9 to s1b03 b6.",
+    "pair_kiran_mausi_p2": "Branch A bureau: s1a01 b10 to s1a03 b8 (s1a02 b5, the hair oiling, is the key two-shot).",
+    "pair_kiran_billu_p1": "Branch B: s1b02 b2 (landing), s1b03 b2, b3, b6.",
+    "pair_kiran_billu_p2": "Branch A: s1a01 b6 (stairwell), b7 to b9 (car), s1a02, s1a03 b4.",
+    "pair_kiran_chhoti": "s1a02 b4 (back room), s1a03 b7, and s1b03 b9 and b10 (state line puts both forearms bare on Kiran and the chooda on Chhoti; attach chhoti_final when a slot is free).",
+    "pair_aditya_mausi": "s1a02 b1 (his hand over hers), s1a03 b2 to b4, s1b02 b3 (two calm people), s1b03 b4.",
+    "pair_aditya_billu": "s1a01 b6 (stairwell), s1a01 b7 to b9 (car), s1a02 b2 (the hug and the lifted print), s1b01 b9.",
+    "pair_mausi_billu": "s1a02 b7 (he puts the print in front of her), s1a03 b4, s1b03 b1, b6, b8 (Mausi in the back seat).",
+    "pair_mausi_chhoti": "s1a01 b10 and b11, s1a02 b6 (through the curtain gap), s1b03 b9 (Mausi at the desk behind; Kiran in the foreground is the third face, so stage it as a two-shot plus a single).",
+    "pair_aditya_chhoti": "s1a01 b10 (his eyes go to Chhoti's wrist) and s1a03 b7, if staged as a two-shot."
+  },
+  "pairs_not_made": "Billu and Chhoti are in the same room only in s1a01 b10 and s1a03 b7, where Billu is on his way out; neither beat needs them in one frame, so no pair sheet is made. If the storyboard stages them together, add one using the pair_mausi_chhoti prompt as the template.",
+  "locations": [
+    {
+      "id": "bedroom",
+      "plates": {
+        "bedroom_bed": "From the door towards the bed and headboard. Window wall picture-RIGHT, almirah, chair and bag picture-LEFT, lamp at the left of the headboard. Use for Aditya on the bed, Kiran at the stool and tray, two-shots across the bed.",
+        "bedroom_door": "From the bed towards the shut door (bolt, hasp and locked padlock). Window wall picture-LEFT, almirah, chair and bag picture-RIGHT. Use for Kiran at the door (s1e01 b3), Kiran against the door (s1b01 b5a, b6), the hasp tearing (s1b01 b8), Mausi in the doorway (b9).",
+        "bedroom_window": "From the almirah towards the window. Headboard picture-LEFT, door edge picture-RIGHT, stool and tray by the window. Use for Kiran backing to the window side (s1b01 b7), headlights on the ceiling, dawn at the window."
+      },
+      "geography": "Facing the headboard: window in the RIGHT wall, almirah and chair (maroon bag on it) against the LEFT wall, door behind. Lamp on the almirah side of the headboard; stool with the tray on the window side of the bed. No ceiling fan, no ceiling light.",
+      "story_props_in_plate": "The plates hold the maroon bag on the chair, the empty steel tray on the stool and (bedroom_door) the locked padlock, because these are the base state for most bedroom frames. The glass and paper fold are not in the plates: their position changes beat to beat and comes from the STATE line and the glass_and_fold sheet."
+    },
+    {
+      "id": "stairwell",
+      "plates": {
+        "stairwell_up": "From the street door up the flight to the landing and the pale-blue door. Use for Billu at the bedroom door (s1b01 b4), Aditya coming down behind Kiran (s1a01 b6), boots on the stairs.",
+        "stairwell_down": "From the landing down to the street door. Use for Kiran and Billu on the landing (s1b02 b2) and the walk down at first light (s1b03 b7)."
+      },
+      "geography": "One straight narrow flight; pale-blue bedroom door at the top (no lock on the landing side); dark-grey iron-sheet street door at the bottom; bare bulb over the landing."
+    },
+    {
+      "id": "lane",
+      "plates": {
+        "lane_night": "Billu's car on picture-LEFT under the one streetlight, motorbike behind it nearer camera; the house across the lane on picture-RIGHT with the lit first-floor window above its street door."
+      },
+      "geography": "Car parked opposite the house. From the car, the lit window is across the lane and up."
+    },
+    {
+      "id": "car",
+      "plates": {
+        "car_forward": "Rear bench looking forward: driver (Billu) picture-RIGHT, front passenger (Kiran) picture-LEFT, mirror top centre. Aditya's point of view and Billu's eyes in the mirror.",
+        "car_rear": "Between the front seats looking back at the rear bench: Aditya's place (rear left, behind Kiran) is on picture-RIGHT."
+      },
+      "geography": "Right-hand drive. Billu front right, Kiran front left, Aditya rear left behind Kiran. At the shutter Aditya gets out on the left and opens Kiran's door, so he takes her LEFT hand."
+    },
+    {
+      "id": "bureau",
+      "plates": {
+        "bureau_front": "From the shutter into the room: desk and cashbox centre back, marigold curtain behind it, mirror wall picture-LEFT, cot picture-RIGHT, mannequin back-left corner.",
+        "bureau_reverse": "From behind the desk towards the shutter: mirror wall picture-RIGHT, cot picture-LEFT, desk and cashbox soft in the foreground.",
+        "bureau_back_room": "Through the marigold curtain into the store: steel trunk with sarees, blouse rail, small mirror, back door to the alley. s1a02 b4; Mausi fitting Chhoti's blouse (s1a02 b6); Billu's exit (s1a03 b7).",
+        "bureau_exterior": "The grey shutter from the street, down, at 5:40 am with low sun from picture-left. s1a01 b9 (the car arrives; attach billu_car)."
+      },
+      "geography": "Facing in from the shutter: mirror wall with bulbs and two parlour chairs LEFT, cot RIGHT, desk at the back facing the shutter with the cashbox on it, marigold curtain behind the desk to the back room, mannequin in the back-left corner beside the curtain. D-007 direction 16: the mirror wall stays out of wide shots; never show the camera or an unplanned face in a mirror."
+    },
+    {
+      "id": "chowki",
+      "plates": {
+        "chowki": "From the constable's side of the desk: register and tumbler in the foreground, visitor's chair across the desk, bench against the pale-yellow wall behind, barred window picture-LEFT, open door to the bright yard picture-RIGHT."
+      },
+      "geography": "Kiran sits across the desk facing camera; the bench and the open door are behind her, so Aditya in the doorway (s1a03 b11) is behind her on picture-right."
+    }
+  ],
+  "light_states": {
+    "bedroom": [
+      {
+        "id": "bedroom_night",
+        "beats": "s1e01, s1e02, s1a01 b1 to b5, s1b01 b1 to b6",
+        "rule": "Amber bedside lamp (almirah side) as key, cool blue-white streetlight through the window grille as rim with soft bar shadows, deep teal shadows. No overhead light."
+      },
+      {
+        "id": "bedroom_headlights",
+        "beats": "s1b01 b7",
+        "rule": "Base state plus white headlight beams from the lane sweeping across the ceiling through the grille."
+      },
+      {
+        "id": "bedroom_landing_spill",
+        "beats": "s1b01 b8 (a thin warm line under the door) and from b9, when the door is open, to s1b02 b5",
+        "rule": "Base state plus warm yellow light from the bare landing bulb spilling in through the open pale-blue door, throwing long shadows across the floor towards the bed."
+      },
+      {
+        "id": "bedroom_predawn",
+        "beats": "s1b02 b6 to b9, s1b03 b1 to b3",
+        "rule": "Lamp still on and the landing spill continues; the window has turned deep blue, so the cool rim becomes a soft blue fill and the streetlight looks weaker."
+      },
+      {
+        "id": "bedroom_dawn",
+        "beats": "s1b03 b4 to b6",
+        "rule": "Grey dawn light through the window becomes the main light, flat and cool; the lamp is a weak warm glow; the landing bulb is a small warm point through the door."
+      }
+    ],
+    "stairwell": [
+      {
+        "id": "stairwell_night",
+        "beats": "s1a01 b6, s1b01 b4, b5, s1b02 b2",
+        "rule": "One bare yellow bulb over the landing; the flight falls into shadow towards the street door."
+      },
+      {
+        "id": "stairwell_first_light",
+        "beats": "s1b03 b7",
+        "rule": "The street door at the bottom stands open on grey first light, which comes up the flight cool and soft; the bulb is still on above."
+      }
+    ],
+    "lane": [
+      {
+        "id": "lane_night",
+        "beats": "s1e01 b5, s1e02 b9, b12, s1a01 b2, s1b01 b2",
+        "rule": "One cool blue-white streetlight over Billu's car; the warm amber square of the bedroom window is the only warm light."
+      },
+      {
+        "id": "lane_dawn",
+        "beats": "s1b03 b8",
+        "rule": "Grey first light, cool and flat; the streetlight is off; the bedroom window is a faint warm square."
+      }
+    ],
+    "car": [
+      {
+        "id": "car_dawn_blue",
+        "beats": "s1a01 b7",
+        "rule": "Soft blue-grey dawn through the windscreen; faces cool and low contrast."
+      },
+      {
+        "id": "car_first_sun",
+        "beats": "s1a01 b8",
+        "rule": "The first sun, low and red-orange, through the car's left-side windows; it glows through Kiran's chooda."
+      },
+      {
+        "id": "bureau_arrival",
+        "beats": "s1a01 b9 (outside, at the shutter)",
+        "rule": "About 5:40 am: low warm sun from picture-left raking across the grey shutter; long soft shadows; blue-grey sky."
+      }
+    ],
+    "bureau": [
+      {
+        "id": "bureau_morning",
+        "beats": "s1a01 b9 (once the shutter is up) to b11, s1a02 b1 to b9",
+        "rule": "Shutter up: pale daylight from the front, fluorescent tube on (pale green-white), mirror bulbs off. Back room: bare bulb on."
+      },
+      {
+        "id": "bureau_shutter_down",
+        "beats": "s1a03 b1 to b7",
+        "rule": "Shutter down: tube light and the row of bare mirror bulbs only; warm bulbs against green-white tube; no daylight. In b7 hard white light also comes through the slats of the shutter."
+      },
+      {
+        "id": "bureau_shutter_up",
+        "beats": "s1a03 b8",
+        "rule": "The shutter goes up and flat bright daylight floods in from the front behind the khaki sleeve; tube still on."
+      },
+      {
+        "id": "bureau_evening",
+        "beats": "s1b03 b9, b10",
+        "rule": "Tube light on, mirror bulbs on; blue dusk at the half-open shutter."
+      }
+    ],
+    "chowki": [
+      {
+        "id": "chowki_day",
+        "beats": "s1a03 b10, b11",
+        "rule": "Flat late-morning daylight from the barred window and the open door; the yard bright."
+      }
+    ]
+  },
+  "key_props": {
+    "photograph": "The one image of the print (D-007 direction 15). Every insert in which its content can be read uses this asset, cropped or re-framed, never regenerated. In wider shots the print is a small creased rectangle and its content must not contradict this asset (no face, no henna, red glass bangles, scar). Owners: Aditya (shared, s1a02 until Billu lifts it in b2), Mausi (s1a02 b7 to s1a03 b2, then face down on her desk), the chowki bench (s1a03 b11); branch B: Aditya, Mausi reads it (s1b01 b10), Kiran keeps it (s1b03 b7).",
+    "chooda": "Loose and stacked bangles for s1e02 b2 to b4 (three on the sheet: two ivory, one red), s1a03 b3 (bangles dropped one by one on the desk by the cashbox) and on Chhoti in s1b03 b9 and b10.",
+    "glass_and_fold": "Shared: the glass has half a fold in it and is never drunk; the half-empty fold stays on the tray. Branch A: Aditya pockets the fold (s1a01 b5) and tips it out at the bureau (s1a03 b8). Branch B: two fresh folds (s1b01 b11), never opened; a fresh warm glass in s1b02 b4. s1b03 b9 and b10 use a different steel glass at the bureau (same design is acceptable).",
+    "padlock_hasp": "Locked from s1e01 to s1a01 b5 (opened with the key; view 2) or to s1b01 b8 (screws torn out from outside, padlock hanging still locked; view 3). The landing side of the door shows no lock.",
+    "key_thread": "Round Aditya's neck in every shot; inserts in s1e01 b3 and when it opens the padlock (s1a01 b5).",
+    "brass_set": "s1e01 b4 (from the almirah), s1a01 b6 (opened for Billu), s1a01 b10 (Mausi laughs at it).",
+    "kiran_phone": "On the bed with no network (overlay) and the SIM out in s1e01 b4; SIM back in s1e02 b4; on the bed on speaker between them in s1e02 b10 to b13 and s1a01 b1 / s1b01 b1. Screen content is always an overlay; when the screen must be seen, frame it dark or as a plain glow (D-013 rule 7: state its orientation in the STATE line).",
+    "aditya_phone": "Photographs the ledger (s1a02 b6); face down in s1b01 b6; pocketed by Billu in s1b01 b9.",
+    "maroon_bag": "On the wooden chair beside the almirah all night (in the bedroom plates). Side pocket unzipped by Aditya in s1e02 b10 (the dabba of mathri). Grey salwar-kurta in the main pocket.",
+    "notebook": "Branch B only: on the sheet with the photograph (s1b01 b6), read by Mausi (b10), kept by Kiran (s1b03 b7).",
+    "key_bunch": "On Mausi's LEFT hip until taken (see Mausi's continuity notes); in Kiran's hand in s1a02 b5 and b6 and held out in s1a03 b5; knotted at Kiran's LEFT hip in s1b03 b6 to b9.",
+    "cashbox_ledger": "On Mausi's desk in every bureau frame (in the bureau plates, closed). Opened in s1a02 b2 and b6; the ledger carried out under a khaki arm in s1a03 b8; Mausi writes in it in s1b03 b9.",
+    "billu_car": "Parked in the lane (lane_night plate), driven in s1a01 b7 to b9, starts in s1b03 b8 with Mausi in the back seat."
+  },
+  "prompt_assembly": {
+    "reference_assets": "Every file in refs/prompts/ is a complete prompt. Run it verbatim with production/scripts/codex-frame.sh <refs_dir> <id> <prompt_file> [refs in the listed order]; do NOT append style_block or negative_rules. Generate in the order of `assets` below; an asset may only be run once every ref it lists exists and has passed the sheet gate.",
+    "shot_frames": "Opening line 'Use your image generation tool to create ONE new vertical 9:16 image.' + reference labels by order ('Image 1 is the line-up sheet for Kiran and Aditya; Image 2 is the location plate for the bedroom seen from the door; Image 3 is ...; match them exactly') + the shot description (framing in picture terms, action, expression) + the light-state rule + the STATE block from the continuity file (D-013 rule 3) + the wardrobe_lock for every on-screen principal, verbatim, plus shape_lock for the boys or the constable if they are in frame + style_block + negative_rules.",
+    "reference_order_and_budget": "At most 5. Order: (1) the people: the pair sheet for a two-shot, else the single sheet (kiran_hands for hand inserts; kiran_p3 or chhoti_final in the endings); (2) the location plate chosen by camera direction; (3) the sheet of every prop visible; (4) the scene anchor (D-013 rule 2) last. Over 5: drop the plate first when the anchor shows the same setting (D-013 rule 1), then a single sheet that the pair sheet already covers.",
+    "faces_per_frame": "No more than two sheet faces in a frame until a Gate 3 frame shows three holding (D-007 direction 16). Beats with three or more principals are cut as singles and two-shots.",
+    "framing_for_motion": "Raw frames are about 941x1672, upscaled to 1440x2560 by the runner and moved with slow pushes and pans. Faces and hands that matter stay off the outer 6 percent and out of the bottom fifth (subtitles).",
+    "shell_quoting": "Prompts contain apostrophes (Kiran's, viewer's). Always pass a prompt file to codex-frame.sh; never paste a prompt inside single quotes."
+  },
+  "sheet_gate": {
+    "who_checks": "Visual checker with a shell (D-013 rule 10), before any asset that names the sheet as a ref is generated, and again at Gate 3.",
+    "reject_and_regenerate_if": [
+      "The views on one sheet do not show the same face, or a face reads more than about five years older or younger than the stated age (the proof's Tara drift).",
+      "Any view adds or drops jewellery, a bindi, sindoor, glasses, facial hair, a watch, rings or text; or the bangles are a different colour pattern from a red cuff with ivory ends.",
+      "Side errors, checked in picture terms on the front views: Kiran's nose ring not on picture-right; Aditya's parting not on picture-right or his watch not on picture-right; Mausi's keys or pallu not on picture-right; Billu's toothpick or car key not on picture-left; Chhoti's braid, phone and bangles not on picture-left, or her henna on the wrong palm.",
+      "kiran_hands: the scar on the right arm, on the palm side, along the forearm instead of across it, red or raw, or with horns pointing to the hand; henna on the backs of the hands; any view showing the scar through a complete cuff.",
+      "photograph: any henna on the bride's hand, a chooda instead of thin glass bangles, a face, an idol, or a scar that does not match kiran_hands view 3.",
+      "Chhoti (either sheet) reads as a child rather than an adult woman (D-007 direction 14). If two regenerations still read young, her look is redesigned older and taller per D-007, not shipped.",
+      "Pair sheets: the crown-height relation stated in the prompt is visibly wrong (measure: ratio of head-top heights above the shared floor line, within about 3 percent of the cm ratio), or either face departs from its single sheet.",
+      "Plates: any person, readable text, idol, ceiling fan (bedroom) or left-hand-drive car; geography mirrored against the plate prompt (for example the window on the wrong side)."
+    ],
+    "recrop_not_regenerate_if": "The only fault is that a view enters the outer 10 percent border (D-013 rule 8): re-crop or re-pad from the .raw.png with ffmpeg and keep the take.",
+    "after_the_gate": "Done (S6, 26 Nov, under D-021 decision 7): every character_lock and wardrobe_lock in this file is rewritten from the approved sheet (age read, face shape, hair side, jewellery and marks in picture-side terms); see each character's locks_source. A shot prompt may not contradict its sheet.",
+    "retakes": "One retake per sheet as a rule (D-013 rule 11); the sheet gate may ask for a second only for a fault in the reject list, since a flawed sheet is copied into every frame."
+  },
+  "usage_notes": [
+    "Pick Kiran's sheet by period (characters.kiran.periods). Period 1 frames never attach kiran_p2 and vice versa: the sheet is the wardrobe authority.",
+    "Any frame that shows Kiran's hands or forearms close (the hook, the wrist check, the folds in her palm, the chowki desk) attaches kiran_hands. Any frame that shows the scar states it in picture terms and attaches kiran_hands or kiran_p3.",
+    "Two-shots attach the pair sheet for that pair and period instead of two single sheets (D-013 rule 5); add a single sheet only if a slot is free and the face is large in frame.",
+    "Every prop visible in a frame attaches its prop sheet (D-013 rule 1; the proof's props drifted because their sheets were never attached). Small hand props: the STATE line gives the orientation ('back of the phone to camera'), and framings that hide what cannot be controlled are preferred; inserts carry the detail (D-013 rule 7).",
+    "The boys and the constable have no sheets: copy their shape_lock into the prompt and frame them as backs, hands, boots or silhouettes only.",
+    "All readable text (time, caller name, shop name, ledger rows, the 'मौसी' caller ID) is an overlay added in assembly. Frames leave a plain, dark or blurred surface where the overlay goes.",
+    "The scene anchor (D-013 rule 2) for the first frame of a new scene is the series style frame, content/series1/refs/bedroom_bed.png (D-021; see style_frame): attached last, labelled, and copied for rendering only, not the room, props or light.",
+    "Mirrors (bureau mirror wall, rear-view mirror): state in the shot what the mirror shows; keep the mirror wall out of wides (D-007 direction 16).",
+    "Light: copy the light-state rule for the beat from light_states into every shot prompt. The bedroom's branch B states follow D-007 direction 18; the beat ranges are this file's call and the storyboard may move a boundary by one beat if it logs it.",
+    "Timing (frame-generation skill): about 55 s per sheet or plate; 47 assets is about 43 minutes of Codex time on one lane, about 22 minutes on two, before retakes.",
+    "Sheet retake round (S6, 26 Nov): every sheet and plate png is now the raw fitted inside the centre 1152x2048 box and padded to 1440x2560 with the raw's corner colour (no crop-fill). The 14 regenerated assets used their one retake (D-013 rule 11); the older takes are kept as <id>.prev1.png / .prev1.raw.png and the old prompts as prompts/<id>.prev1.txt.",
+    "Drift logged, mausi (retake stands, better than take 1): front and three-quarter views show ONE stud, picture-right, correct. The right-profile view (nose to picture-right) still shows a stud on the visible right nostril, which the lock forbids. Storyboards avoid Mausi's right profile in close shots, or the shot prompt states 'no nose stud visible on this side'. Her close views are cut as rectangular panels.",
+    "Drift logged, lane_night (retake stands): Image 2 was stairwell_down, not stairwell_up as the checker's fix said, because stairwell_up looks up the stairs and does not show the street door. Result: a dark-grey iron-sheet door with a black latch, no shutter on the house, no hanging lamp in the window. The grille is vertical bars with one horizontal mid-rail; the door has a centre seam and may read as two leaves; the neighbour's roll-down shutter shows at the right edge.",
+    "Drift logged, kiran_p3 (retake stands): the scar is now in the lower third of the left forearm, about a quarter of the forearm's length above the wrist, still slightly higher than in kiran_hands view 3. kiran_hands stays the authority for the scar's place.",
+    "Drift logged, pair_aditya_chhoti (retake stands): the crown ratio is still about 0.87 against 0.847 expected (inside 3%); Chhoti's crown sits at Aditya's chin, not his collar. Two-shots keep her crown at his collar in the prompt. The back of her left hand is plain and her left wrist bare.",
+    "Drift logged, pair_mausi_chhoti (retake stands): all three locks fixed (plain hand backs, bare left wrist, one Mausi stud picture-right). Possible faint orange on Chhoti's right fingertips around the phone, unclear at raw resolution."
+  ],
+  "art_director_notes": [
+    "Gate 3 passed (D-021). The locks in characters were rewritten from the approved sheets on 26 Nov; where a sheet differs from the bible (Aditya's chest pocket, Mausi's ring and five keys, Kiran's and Chhoti's toe-post footwear) the lock follows the sheet.",
+    "Lane light: the bible calls the lane's one streetlight sodium orange, but the bedroom's window light 'cool blue-white streetlight' and the tone line 'warm lamp against cold streetlight'. Both cannot be true of the same lamp. This file makes the lane's streetlight a cool blue-white lamp, so the bedroom's light is motivated and the only warm thing in the lane is the lit window. Flag for S1/the Arbiter if the sodium look is wanted; it would change lane_night and bedroom_night.",
+    "Chhoti follows D-007 direction 14 over the bible: 'adult woman, 19' opens her description; round cheeks, gap teeth and the ribbon are dropped; a plain white dupatta (colour chosen here) is added. Her phone is off her hand in the last scene (s1b03 b9, b10) because her hands hold the fold and the glass.",
+    "Choices the bible leaves open, set here: Mausi's nose stud on her LEFT nostril; Mausi's slippers black; the boys' trousers, shoes and Boy 2's shirt colour; Billu's car as a boxy late-1990s small sedan with blank plates; the bureau's mannequin in the back-left corner, the tube light over the curtain, a terrazzo floor and a blank pink signboard (for the name overlay); the chowki door on picture-right of the constable's view; the padlock key design.",
+    "Plates carry no one-off marks (D-013 rule 6): no stains, tears or cracks are written into any plate, and the bible's 'damp-stained' stairwell walls become 'evenly aged'. The only story marks are the torn-out hasp (a prop sheet view) and the scar (kiran_hands).",
+    "No ceiling fan in the bedroom: Mohit was found hanging from one, and the bible says his death is never pictured; a fan in the room would invite the image.",
+    "Kiran has three wardrobe sheets plus a hand sheet because each pair sheet stands in for two single sheets (D-013 rule 5) and must carry the right clothes: hence p1 and p2 versions of the Kiran-Aditya, Kiran-Mausi and Kiran-Billu pairs.",
+    "Not made: a Billu-Chhoti pair (see pairs_not_made), face sheets for the boys and the constable (bible production locks), a sheet for Mohit (he exists only in the photograph). D-005 expected about nine plates for six locations; this file has twelve, because the car needs both directions and the bureau needs its exterior and back room."
+  ],
+  "assets": [
+    {
+      "order": 1,
+      "id": "kiran_p1",
+      "kind": "character_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/kiran_p1.txt",
+      "refs": [],
+      "out": "<repo>/content/series1/refs/kiran_p1.png"
+    },
+    {
+      "order": 2,
+      "id": "kiran_hands",
+      "kind": "hands_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/kiran_hands.txt",
+      "refs": [
+        "<repo>/content/series1/refs/kiran_p1.png"
+      ],
+      "out": "<repo>/content/series1/refs/kiran_hands.png"
+    },
+    {
+      "order": 3,
+      "id": "chooda",
+      "kind": "prop_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/chooda.txt",
+      "refs": [
+        "<repo>/content/series1/refs/kiran_hands.png"
+      ],
+      "out": "<repo>/content/series1/refs/chooda.png"
+    },
+    {
+      "order": 4,
+      "id": "kiran_p2",
+      "kind": "character_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/kiran_p2.txt",
+      "refs": [
+        "<repo>/content/series1/refs/kiran_p1.png"
+      ],
+      "out": "<repo>/content/series1/refs/kiran_p2.png"
+    },
+    {
+      "order": 5,
+      "id": "kiran_p3",
+      "kind": "character_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/kiran_p3.txt",
+      "refs": [
+        "<repo>/content/series1/refs/kiran_p2.png",
+        "<repo>/content/series1/refs/kiran_hands.png"
+      ],
+      "out": "<repo>/content/series1/refs/kiran_p3.png"
+    },
+    {
+      "order": 6,
+      "id": "aditya",
+      "kind": "character_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/aditya.txt",
+      "refs": [],
+      "out": "<repo>/content/series1/refs/aditya.png"
+    },
+    {
+      "order": 7,
+      "id": "mausi",
+      "kind": "character_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/mausi.txt",
+      "refs": [],
+      "out": "<repo>/content/series1/refs/mausi.png"
+    },
+    {
+      "order": 8,
+      "id": "billu",
+      "kind": "character_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/billu.txt",
+      "refs": [],
+      "out": "<repo>/content/series1/refs/billu.png"
+    },
+    {
+      "order": 9,
+      "id": "chhoti",
+      "kind": "character_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/chhoti.txt",
+      "refs": [],
+      "out": "<repo>/content/series1/refs/chhoti.png"
+    },
+    {
+      "order": 10,
+      "id": "chhoti_final",
+      "kind": "character_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/chhoti_final.txt",
+      "refs": [
+        "<repo>/content/series1/refs/chhoti.png",
+        "<repo>/content/series1/refs/chooda.png"
+      ],
+      "out": "<repo>/content/series1/refs/chhoti_final.png"
+    },
+    {
+      "order": 11,
+      "id": "pair_kiran_aditya_p1",
+      "kind": "pair_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/pair_kiran_aditya_p1.txt",
+      "refs": [
+        "<repo>/content/series1/refs/kiran_p1.png",
+        "<repo>/content/series1/refs/aditya.png"
+      ],
+      "out": "<repo>/content/series1/refs/pair_kiran_aditya_p1.png"
+    },
+    {
+      "order": 12,
+      "id": "pair_kiran_aditya_p2",
+      "kind": "pair_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/pair_kiran_aditya_p2.txt",
+      "refs": [
+        "<repo>/content/series1/refs/kiran_p2.png",
+        "<repo>/content/series1/refs/aditya.png"
+      ],
+      "out": "<repo>/content/series1/refs/pair_kiran_aditya_p2.png"
+    },
+    {
+      "order": 13,
+      "id": "pair_kiran_mausi_p1",
+      "kind": "pair_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/pair_kiran_mausi_p1.txt",
+      "refs": [
+        "<repo>/content/series1/refs/kiran_p1.png",
+        "<repo>/content/series1/refs/mausi.png"
+      ],
+      "out": "<repo>/content/series1/refs/pair_kiran_mausi_p1.png"
+    },
+    {
+      "order": 14,
+      "id": "pair_kiran_mausi_p2",
+      "kind": "pair_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/pair_kiran_mausi_p2.txt",
+      "refs": [
+        "<repo>/content/series1/refs/kiran_p2.png",
+        "<repo>/content/series1/refs/mausi.png"
+      ],
+      "out": "<repo>/content/series1/refs/pair_kiran_mausi_p2.png"
+    },
+    {
+      "order": 15,
+      "id": "pair_kiran_billu_p1",
+      "kind": "pair_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/pair_kiran_billu_p1.txt",
+      "refs": [
+        "<repo>/content/series1/refs/kiran_p1.png",
+        "<repo>/content/series1/refs/billu.png"
+      ],
+      "out": "<repo>/content/series1/refs/pair_kiran_billu_p1.png"
+    },
+    {
+      "order": 16,
+      "id": "pair_kiran_billu_p2",
+      "kind": "pair_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/pair_kiran_billu_p2.txt",
+      "refs": [
+        "<repo>/content/series1/refs/kiran_p2.png",
+        "<repo>/content/series1/refs/billu.png"
+      ],
+      "out": "<repo>/content/series1/refs/pair_kiran_billu_p2.png"
+    },
+    {
+      "order": 17,
+      "id": "pair_kiran_chhoti",
+      "kind": "pair_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/pair_kiran_chhoti.txt",
+      "refs": [
+        "<repo>/content/series1/refs/kiran_p2.png",
+        "<repo>/content/series1/refs/chhoti.png"
+      ],
+      "out": "<repo>/content/series1/refs/pair_kiran_chhoti.png"
+    },
+    {
+      "order": 18,
+      "id": "pair_aditya_mausi",
+      "kind": "pair_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/pair_aditya_mausi.txt",
+      "refs": [
+        "<repo>/content/series1/refs/aditya.png",
+        "<repo>/content/series1/refs/mausi.png"
+      ],
+      "out": "<repo>/content/series1/refs/pair_aditya_mausi.png"
+    },
+    {
+      "order": 19,
+      "id": "pair_aditya_billu",
+      "kind": "pair_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/pair_aditya_billu.txt",
+      "refs": [
+        "<repo>/content/series1/refs/aditya.png",
+        "<repo>/content/series1/refs/billu.png"
+      ],
+      "out": "<repo>/content/series1/refs/pair_aditya_billu.png"
+    },
+    {
+      "order": 20,
+      "id": "pair_mausi_billu",
+      "kind": "pair_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/pair_mausi_billu.txt",
+      "refs": [
+        "<repo>/content/series1/refs/mausi.png",
+        "<repo>/content/series1/refs/billu.png"
+      ],
+      "out": "<repo>/content/series1/refs/pair_mausi_billu.png"
+    },
+    {
+      "order": 21,
+      "id": "pair_mausi_chhoti",
+      "kind": "pair_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/pair_mausi_chhoti.txt",
+      "refs": [
+        "<repo>/content/series1/refs/mausi.png",
+        "<repo>/content/series1/refs/chhoti.png"
+      ],
+      "out": "<repo>/content/series1/refs/pair_mausi_chhoti.png"
+    },
+    {
+      "order": 22,
+      "id": "pair_aditya_chhoti",
+      "kind": "pair_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/pair_aditya_chhoti.txt",
+      "refs": [
+        "<repo>/content/series1/refs/aditya.png",
+        "<repo>/content/series1/refs/chhoti.png"
+      ],
+      "out": "<repo>/content/series1/refs/pair_aditya_chhoti.png"
+    },
+    {
+      "order": 23,
+      "id": "photograph",
+      "kind": "prop_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/photograph.txt",
+      "refs": [
+        "<repo>/content/series1/refs/kiran_hands.png"
+      ],
+      "out": "<repo>/content/series1/refs/photograph.png"
+    },
+    {
+      "order": 24,
+      "id": "key_thread",
+      "kind": "prop_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/key_thread.txt",
+      "refs": [
+        "<repo>/content/series1/refs/aditya.png"
+      ],
+      "out": "<repo>/content/series1/refs/key_thread.png"
+    },
+    {
+      "order": 25,
+      "id": "glass_and_fold",
+      "kind": "prop_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/glass_and_fold.txt",
+      "refs": [],
+      "out": "<repo>/content/series1/refs/glass_and_fold.png"
+    },
+    {
+      "order": 26,
+      "id": "padlock_hasp",
+      "kind": "prop_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/padlock_hasp.txt",
+      "refs": [],
+      "out": "<repo>/content/series1/refs/padlock_hasp.png"
+    },
+    {
+      "order": 27,
+      "id": "brass_set",
+      "kind": "prop_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/brass_set.txt",
+      "refs": [],
+      "out": "<repo>/content/series1/refs/brass_set.png"
+    },
+    {
+      "order": 28,
+      "id": "kiran_phone",
+      "kind": "prop_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/kiran_phone.txt",
+      "refs": [],
+      "out": "<repo>/content/series1/refs/kiran_phone.png"
+    },
+    {
+      "order": 29,
+      "id": "aditya_phone",
+      "kind": "prop_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/aditya_phone.txt",
+      "refs": [],
+      "out": "<repo>/content/series1/refs/aditya_phone.png"
+    },
+    {
+      "order": 30,
+      "id": "maroon_bag",
+      "kind": "prop_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/maroon_bag.txt",
+      "refs": [],
+      "out": "<repo>/content/series1/refs/maroon_bag.png"
+    },
+    {
+      "order": 31,
+      "id": "notebook",
+      "kind": "prop_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/notebook.txt",
+      "refs": [],
+      "out": "<repo>/content/series1/refs/notebook.png"
+    },
+    {
+      "order": 32,
+      "id": "key_bunch",
+      "kind": "prop_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/key_bunch.txt",
+      "refs": [
+        "<repo>/content/series1/refs/mausi.png"
+      ],
+      "out": "<repo>/content/series1/refs/key_bunch.png"
+    },
+    {
+      "order": 33,
+      "id": "cashbox_ledger",
+      "kind": "prop_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/cashbox_ledger.txt",
+      "refs": [],
+      "out": "<repo>/content/series1/refs/cashbox_ledger.png"
+    },
+    {
+      "order": 34,
+      "id": "billu_car",
+      "kind": "prop_sheet",
+      "prompt_file": "<repo>/content/series1/refs/prompts/billu_car.txt",
+      "refs": [],
+      "out": "<repo>/content/series1/refs/billu_car.png"
+    },
+    {
+      "order": 35,
+      "id": "bedroom_bed",
+      "kind": "location_plate",
+      "prompt_file": "<repo>/content/series1/refs/prompts/bedroom_bed.txt",
+      "refs": [
+        "<repo>/content/series1/refs/maroon_bag.png"
+      ],
+      "out": "<repo>/content/series1/refs/bedroom_bed.png"
+    },
+    {
+      "order": 36,
+      "id": "bedroom_door",
+      "kind": "location_plate",
+      "prompt_file": "<repo>/content/series1/refs/prompts/bedroom_door.txt",
+      "refs": [
+        "<repo>/content/series1/refs/bedroom_bed.png",
+        "<repo>/content/series1/refs/padlock_hasp.png",
+        "<repo>/content/series1/refs/maroon_bag.png"
+      ],
+      "out": "<repo>/content/series1/refs/bedroom_door.png"
+    },
+    {
+      "order": 37,
+      "id": "bedroom_window",
+      "kind": "location_plate",
+      "prompt_file": "<repo>/content/series1/refs/prompts/bedroom_window.txt",
+      "refs": [
+        "<repo>/content/series1/refs/bedroom_bed.png"
+      ],
+      "out": "<repo>/content/series1/refs/bedroom_window.png"
+    },
+    {
+      "order": 38,
+      "id": "stairwell_up",
+      "kind": "location_plate",
+      "prompt_file": "<repo>/content/series1/refs/prompts/stairwell_up.txt",
+      "refs": [
+        "<repo>/content/series1/refs/bedroom_door.png"
+      ],
+      "out": "<repo>/content/series1/refs/stairwell_up.png"
+    },
+    {
+      "order": 39,
+      "id": "stairwell_down",
+      "kind": "location_plate",
+      "prompt_file": "<repo>/content/series1/refs/prompts/stairwell_down.txt",
+      "refs": [
+        "<repo>/content/series1/refs/stairwell_up.png"
+      ],
+      "out": "<repo>/content/series1/refs/stairwell_down.png"
+    },
+    {
+      "order": 40,
+      "id": "lane_night",
+      "kind": "location_plate",
+      "prompt_file": "<repo>/content/series1/refs/prompts/lane_night.txt",
+      "refs": [
+        "<repo>/content/series1/refs/billu_car.png"
+      ],
+      "out": "<repo>/content/series1/refs/lane_night.png"
+    },
+    {
+      "order": 41,
+      "id": "car_forward",
+      "kind": "location_plate",
+      "prompt_file": "<repo>/content/series1/refs/prompts/car_forward.txt",
+      "refs": [
+        "<repo>/content/series1/refs/billu_car.png"
+      ],
+      "out": "<repo>/content/series1/refs/car_forward.png"
+    },
+    {
+      "order": 42,
+      "id": "car_rear",
+      "kind": "location_plate",
+      "prompt_file": "<repo>/content/series1/refs/prompts/car_rear.txt",
+      "refs": [
+        "<repo>/content/series1/refs/car_forward.png"
+      ],
+      "out": "<repo>/content/series1/refs/car_rear.png"
+    },
+    {
+      "order": 43,
+      "id": "bureau_front",
+      "kind": "location_plate",
+      "prompt_file": "<repo>/content/series1/refs/prompts/bureau_front.txt",
+      "refs": [
+        "<repo>/content/series1/refs/cashbox_ledger.png"
+      ],
+      "out": "<repo>/content/series1/refs/bureau_front.png"
+    },
+    {
+      "order": 44,
+      "id": "bureau_reverse",
+      "kind": "location_plate",
+      "prompt_file": "<repo>/content/series1/refs/prompts/bureau_reverse.txt",
+      "refs": [
+        "<repo>/content/series1/refs/bureau_front.png",
+        "<repo>/content/series1/refs/cashbox_ledger.png"
+      ],
+      "out": "<repo>/content/series1/refs/bureau_reverse.png"
+    },
+    {
+      "order": 45,
+      "id": "bureau_back_room",
+      "kind": "location_plate",
+      "prompt_file": "<repo>/content/series1/refs/prompts/bureau_back_room.txt",
+      "refs": [
+        "<repo>/content/series1/refs/bureau_front.png"
+      ],
+      "out": "<repo>/content/series1/refs/bureau_back_room.png"
+    },
+    {
+      "order": 46,
+      "id": "bureau_exterior",
+      "kind": "location_plate",
+      "prompt_file": "<repo>/content/series1/refs/prompts/bureau_exterior.txt",
+      "refs": [
+        "<repo>/content/series1/refs/bureau_reverse.png"
+      ],
+      "out": "<repo>/content/series1/refs/bureau_exterior.png"
+    },
+    {
+      "order": 47,
+      "id": "chowki",
+      "kind": "location_plate",
+      "prompt_file": "<repo>/content/series1/refs/prompts/chowki.txt",
+      "refs": [],
+      "out": "<repo>/content/series1/refs/chowki.png"
+    }
+  ]
+}

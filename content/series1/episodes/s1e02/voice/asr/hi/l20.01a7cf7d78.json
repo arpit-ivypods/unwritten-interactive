@@ -1,0 +1,175 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,180"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 180
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,180",
+				"to": "00:00:00,570"
+			},
+			"offsets": {
+				"from": 180,
+				"to": 570
+			},
+			"text": " और"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,570",
+				"to": "00:00:01,530"
+			},
+			"offsets": {
+				"from": 570,
+				"to": 1530
+			},
+			"text": " मैं,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,530",
+				"to": "00:00:01,970"
+			},
+			"offsets": {
+				"from": 1530,
+				"to": 1970
+			},
+			"text": " मुसी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,970",
+				"to": "00:00:02,430"
+			},
+			"offsets": {
+				"from": 1970,
+				"to": 2430
+			},
+			"text": " गई,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,430",
+				"to": "00:00:02,750"
+			},
+			"offsets": {
+				"from": 2430,
+				"to": 2750
+			},
+			"text": " तो"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,750",
+				"to": "00:00:03,230"
+			},
+			"offsets": {
+				"from": 2750,
+				"to": 3230
+			},
+			"text": " मेरे"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,230",
+				"to": "00:00:03,460"
+			},
+			"offsets": {
+				"from": 3230,
+				"to": 3460
+			},
+			"text": " 18"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,460",
+				"to": "00:00:03,910"
+			},
+			"offsets": {
+				"from": 3460,
+				"to": 3910
+			},
+			"text": " लाग"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,910",
+				"to": "00:00:04,130"
+			},
+			"offsets": {
+				"from": 3910,
+				"to": 4130
+			},
+			"text": " भी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,130",
+				"to": "00:00:04,730"
+			},
+			"offsets": {
+				"from": 4130,
+				"to": 4730
+			},
+			"text": " गए,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,730",
+				"to": "00:00:04,960"
+			},
+			"offsets": {
+				"from": 4730,
+				"to": 4960
+			},
+			"text": " गर"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,960",
+				"to": "00:00:05,320"
+			},
+			"offsets": {
+				"from": 4960,
+				"to": 5320
+			},
+			"text": " भी."
+		}
+	]
+}

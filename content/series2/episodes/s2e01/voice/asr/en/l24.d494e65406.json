@@ -1,0 +1,131 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,080"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 80
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,080",
+				"to": "00:00:00,360"
+			},
+			"offsets": {
+				"from": 80,
+				"to": 360
+			},
+			"text": " SHO"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,360",
+				"to": "00:00:01,320"
+			},
+			"offsets": {
+				"from": 360,
+				"to": 1320
+			},
+			"text": " Tripathi"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,320",
+				"to": "00:00:02,050"
+			},
+			"offsets": {
+				"from": 1320,
+				"to": 2050
+			},
+			"text": " said"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,050",
+				"to": "00:00:02,270"
+			},
+			"offsets": {
+				"from": 2050,
+				"to": 2270
+			},
+			"text": " FIR"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,270",
+				"to": "00:00:02,640"
+			},
+			"offsets": {
+				"from": 2270,
+				"to": 2640
+			},
+			"text": " will"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,640",
+				"to": "00:00:03,000"
+			},
+			"offsets": {
+				"from": 2640,
+				"to": 3000
+			},
+			"text": " not"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,000",
+				"to": "00:00:03,240"
+			},
+			"offsets": {
+				"from": 3000,
+				"to": 3240
+			},
+			"text": " be"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,240",
+				"to": "00:00:04,200"
+			},
+			"offsets": {
+				"from": 3240,
+				"to": 4200
+			},
+			"text": " written."
+		}
+	]
+}

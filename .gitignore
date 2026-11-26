@@ -1,0 +1,21 @@
+node_modules/
+.next/
+.DS_Store
+*.log
+.env*
+production/remotion/out/tmp/
+work/
+outputs/
+.cache/
+.lock.*/
+*.codex.log.tmp
+.*.tmp.*
+__pycache__/
+scratchpad/
+# Heavy production media stays off the public repo (frames, takes, renders)
+content/**/*.png
+content/**/*.mp4
+content/**/*.mp3
+content/**/*.wav
+content/**/*.webp
+production/**/*.mp4

@@ -1,0 +1,186 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,040"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 40
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,040",
+				"to": "00:00:00,530"
+			},
+			"offsets": {
+				"from": 40,
+				"to": 530
+			},
+			"text": " बहुट"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,530",
+				"to": "00:00:01,220"
+			},
+			"offsets": {
+				"from": 530,
+				"to": 1220
+			},
+			"text": " हूँ,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,220",
+				"to": "00:00:01,370"
+			},
+			"offsets": {
+				"from": 1220,
+				"to": 1370
+			},
+			"text": " तो"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,370",
+				"to": "00:00:01,900"
+			},
+			"offsets": {
+				"from": 1370,
+				"to": 1900
+			},
+			"text": " जागने"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,900",
+				"to": "00:00:02,330"
+			},
+			"offsets": {
+				"from": 1900,
+				"to": 2330
+			},
+			"text": " वाले"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,330",
+				"to": "00:00:02,660"
+			},
+			"offsets": {
+				"from": 2330,
+				"to": 2660
+			},
+			"text": " को"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,660",
+				"to": "00:00:02,960"
+			},
+			"offsets": {
+				"from": 2660,
+				"to": 2960
+			},
+			"text": " बिल्लू"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,960",
+				"to": "00:00:03,060"
+			},
+			"offsets": {
+				"from": 2960,
+				"to": 3060
+			},
+			"text": " के"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,060",
+				"to": "00:00:03,300"
+			},
+			"offsets": {
+				"from": 3060,
+				"to": 3300
+			},
+			"text": " लगकों"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,300",
+				"to": "00:00:03,630"
+			},
+			"offsets": {
+				"from": 3300,
+				"to": 3630
+			},
+			"text": " का"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,630",
+				"to": "00:00:03,760"
+			},
+			"offsets": {
+				"from": 3630,
+				"to": 3760
+			},
+			"text": " एक"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,760",
+				"to": "00:00:04,040"
+			},
+			"offsets": {
+				"from": 3760,
+				"to": 4040
+			},
+			"text": " ख़ब"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,040",
+				"to": "00:00:04,400"
+			},
+			"offsets": {
+				"from": 4040,
+				"to": 4400
+			},
+			"text": " पर."
+		}
+	]
+}

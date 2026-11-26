@@ -1,0 +1,1153 @@
+[
+ {
+  "line_id": "l01",
+  "lang": "hi",
+  "model": "eleven_v4",
+  "file": "voice/hi/l01.mp3",
+  "transcript": "आदम, लोकर खाली है.",
+  "transcript_latin_pass": "Madam, locker is empty.",
+  "transcript_source": "local whisper.cpp ggml-small, no prompt (connector Scribe ran but its text is not retrievable with the available tools)",
+  "duration_s": 2.88,
+  "target_s": 2.0,
+  "speech_s": 2.576,
+  "speech_vs_target_pct": 28.8,
+  "raw_vs_target_pct": 44.0,
+  "lead_silence_s": 0.056,
+  "trail_silence_s": 0.249,
+  "pauses": [],
+  "mean_db": -25.7,
+  "peak_db": -7.4,
+  "speech_mean_db": -25.2,
+  "segments": [
+   {
+    "t": [
+     0.06,
+     2.63
+    ],
+    "rms_db": -25.3,
+    "voiced_ratio": 0.63,
+    "frames": 252
+   }
+  ],
+  "take_text": "[nervous] [hushed] Madam... locker खाली है।",
+  "verdict": "retake",
+  "reason": "Words match (whisper heard 'आदम' for Madam; Latin pass 'Madam, locker'). No tag spoken. Hush works (-25.3 dB speech, about 5 dB under Bablu's plain lines, still voiced). Length fails: speech 2.57 s against 2.0 s (+28%), raw file 2.88 s (+44%), with no internal pause, so the time is slow delivery. Cold open, not a comic beat. Take 2 drops [hushed] (the script's own text). If take 2 comes out at full level, keep it and lower it in the mix rather than re-adding the tag.",
+  "retake_text": "[nervous] Madam... locker खाली है।",
+  "retake_take_no": 2,
+  "retake_est_credits": 42
+ },
+ {
+  "line_id": "l02",
+  "lang": "hi",
+  "model": "eleven_v4",
+  "file": "voice/hi/l02.mp3",
+  "transcript": "खाली मतलः?",
+  "transcript_latin_pass": "What do you mean?",
+  "transcript_source": "local whisper.cpp ggml-small, no prompt (connector Scribe ran but its text is not retrievable with the available tools)",
+  "duration_s": 1.12,
+  "target_s": 1.2,
+  "speech_s": 0.559,
+  "speech_vs_target_pct": -53.4,
+  "raw_vs_target_pct": -6.7,
+  "lead_silence_s": 0.216,
+  "trail_silence_s": 0.344,
+  "pauses": [],
+  "mean_db": -24.3,
+  "peak_db": -4.4,
+  "speech_mean_db": -21.3,
+  "segments": [
+   {
+    "t": [
+     0.22,
+     0.78
+    ],
+    "rms_db": -21.3,
+    "voiced_ratio": 0.72,
+    "frames": 53
+   }
+  ],
+  "take_text": "[curt] खाली मतलब?",
+  "verdict": "ok",
+  "reason": "Words match ('खाली मतलः?': final ब soft, file not truncated, 0.34 s tail). No tag spoken. Speech 0.56 s is 53% under 1.2 s (raw 1.12 s, -7%); short is right for a curt turn and the slot gap absorbs it.",
+  "retake_text": null,
+  "retake_take_no": null,
+  "retake_est_credits": null
+ },
+ {
+  "line_id": "l03",
+  "lang": "hi",
+  "model": "eleven_v4",
+  "file": "voice/hi/l03.mp3",
+  "transcript": "मतलब... बीस ला केश गायब मैंदम",
+  "transcript_latin_pass": "I mean, 20 lakh cash is missing, madam.",
+  "transcript_source": "local whisper.cpp ggml-small, no prompt (connector Scribe ran but its text is not retrievable with the available tools)",
+  "duration_s": 4.16,
+  "target_s": 2.5,
+  "speech_s": 3.815,
+  "speech_vs_target_pct": 52.6,
+  "raw_vs_target_pct": 66.4,
+  "lead_silence_s": 0.057,
+  "trail_silence_s": 0.288,
+  "pauses": [
+   {
+    "start": 1.178,
+    "end": 1.501,
+    "dur": 0.323
+   }
+  ],
+  "mean_db": -20.9,
+  "peak_db": -3.7,
+  "speech_mean_db": -20.6,
+  "segments": [
+   {
+    "t": [
+     0.06,
+     1.18
+    ],
+    "rms_db": -21.4,
+    "voiced_ratio": 0.72,
+    "frames": 98
+   },
+   {
+    "t": [
+     1.5,
+     3.87
+    ],
+    "rms_db": -20.0,
+    "voiced_ratio": 0.67,
+    "frames": 231
+   }
+  ],
+  "take_text": "[hesitant] मतलब... [apologetic] बीस लाख cash गायब, madam।",
+  "verdict": "retake",
+  "reason": "Words match, including 'cash' and 'madam' (Latin pass: '20 lakh cash is missing, madam'). No tag spoken. Length fails: speech 3.81 s against 2.5 s (+52%). The take note says to drop [hesitant] if it overruns badly.",
+  "retake_text": "मतलब... [apologetic] बीस लाख cash गायब, madam।",
+  "retake_take_no": 2,
+  "retake_est_credits": 58
+ },
+ {
+  "line_id": "l04",
+  "lang": "hi",
+  "model": "eleven_v4",
+  "file": "voice/hi/l04.mp3",
+  "transcript": "बस एक लद्दू रखा है",
+  "transcript_latin_pass": "That's it, I have kept one laddo.",
+  "transcript_source": "local whisper.cpp ggml-small, no prompt (connector Scribe ran but its text is not retrievable with the available tools)",
+  "duration_s": 3.28,
+  "target_s": 2.0,
+  "speech_s": 2.961,
+  "speech_vs_target_pct": 48.0,
+  "raw_vs_target_pct": 64.0,
+  "lead_silence_s": 0.098,
+  "trail_silence_s": 0.221,
+  "pauses": [
+   {
+    "start": 1.257,
+    "end": 1.643,
+    "dur": 0.386
+   }
+  ],
+  "mean_db": -20.7,
+  "peak_db": -1.0,
+  "speech_mean_db": -20.3,
+  "segments": [
+   {
+    "t": [
+     0.1,
+     1.26
+    ],
+    "rms_db": -29.3,
+    "voiced_ratio": 0.28,
+    "frames": 111
+   },
+   {
+    "t": [
+     1.64,
+     3.06
+    ],
+    "rms_db": -17.4,
+    "voiced_ratio": 0.45,
+    "frames": 139
+   }
+  ],
+  "take_text": "[sheepish] बस... [matter-of-fact] एक लड्डू रखा है।",
+  "verdict": "ok",
+  "reason": "Words match ('बस एक लद्दू रखा है'). No tag spoken. Overruns: speech 2.96 s against 2.0 s (+48%), with a 0.39 s pause after 'बस...'. This is the comic reveal (b03, 1.0 s of silence before it), so the cut can absorb it by holding the laddoo shot about 1 s longer, or by trimming the pause to about 0.25 s. Flag: 'बस...' is 12 dB under the rest of the line and largely unvoiced, so check by ear that it is audible. Fallback if the cut cannot hold: '[sheepish] बस... एक लड्डू रखा है।'.",
+  "retake_text": null,
+  "retake_take_no": null,
+  "retake_est_credits": null
+ },
+ {
+  "line_id": "l05",
+  "lang": "hi",
+  "model": "eleven_v4",
+  "file": "voice/hi/l05.mp3",
+  "transcript": "रद्दू",
+  "transcript_latin_pass": "Ladoo?",
+  "transcript_source": "local whisper.cpp ggml-small, no prompt (connector Scribe ran but its text is not retrievable with the available tools)",
+  "duration_s": 1.2,
+  "target_s": 1.0,
+  "speech_s": 0.707,
+  "speech_vs_target_pct": -29.3,
+  "raw_vs_target_pct": 20.0,
+  "lead_silence_s": 0.168,
+  "trail_silence_s": 0.326,
+  "pauses": [],
+  "mean_db": -26.2,
+  "peak_db": -9.6,
+  "speech_mean_db": -23.9,
+  "segments": [
+   {
+    "t": [
+     0.17,
+     0.87
+    ],
+    "rms_db": -23.9,
+    "voiced_ratio": 0.76,
+    "frames": 68
+   }
+  ],
+  "take_text": "[deadpan] लड्डू?",
+  "verdict": "ok",
+  "reason": "Word matches: the Devanagari pass heard 'रद्दू', the Latin pass 'Ladoo?'. No tag spoken. Speech 0.70 s is 30% under 1.0 s; raw 1.20 s is +20%. Short is fine for a one-word turn. Level and voicing normal (-23.9 dB, 0.76).",
+  "retake_text": null,
+  "retake_take_no": null,
+  "retake_est_credits": null
+ },
+ {
+  "line_id": "l06",
+  "lang": "hi",
+  "model": "eleven_v4",
+  "file": "voice/hi/l06.mp3",
+  "transcript": "मुती चूर का है! मा!",
+  "transcript_latin_pass": "Moti Chur ka hai, maa?",
+  "transcript_source": "local whisper.cpp ggml-small, no prompt (connector Scribe ran but its text is not retrievable with the available tools)",
+  "duration_s": 2.0,
+  "target_s": 1.5,
+  "speech_s": 1.624,
+  "speech_vs_target_pct": 8.3,
+  "raw_vs_target_pct": 33.3,
+  "lead_silence_s": 0.116,
+  "trail_silence_s": 0.259,
+  "pauses": [],
+  "mean_db": -17.3,
+  "peak_db": -0.5,
+  "speech_mean_db": -16.4,
+  "segments": null,
+  "take_text": "[earnest] [eager] मोतीचूर का है, ma—",
+  "verdict": "ok",
+  "reason": "Words match ('मुती चूर का है! मा!'). The stub is one syllable, not 'madam' and not 'em-ay'. No tag spoken. Speech 1.62 s against 1.5 s (+8%). Flag: whisper times the 'मा' at about 0.4 s, so it may be stretched toward 'maa'. Ear check. Assembly hard-cuts the tail at l07 in any case.",
+  "retake_text": null,
+  "retake_take_no": null,
+  "retake_est_credits": null
+ },
+ {
+  "line_id": "l07",
+  "lang": "hi",
+  "model": "eleven_v4",
+  "file": "voice/hi/l07.mp3",
+  "transcript": "बभी। ना बजे ये काश कोट में प्रदूस करना है।",
+  "transcript_latin_pass": "Babu, at 9 o'clock we have to produce this cash in the court.",
+  "transcript_source": "local whisper.cpp ggml-small, no prompt (connector Scribe ran but its text is not retrievable with the available tools)",
+  "duration_s": 3.52,
+  "target_s": 3.0,
+  "speech_s": 3.265,
+  "speech_vs_target_pct": 8.8,
+  "raw_vs_target_pct": 17.3,
+  "lead_silence_s": 0.0,
+  "trail_silence_s": 0.255,
+  "pauses": [
+   {
+    "start": 0.595,
+    "end": 0.897,
+    "dur": 0.302
+   }
+  ],
+  "mean_db": -21.8,
+  "peak_db": -6.2,
+  "speech_mean_db": -21.5,
+  "segments": [
+   {
+    "t": [
+     0.0,
+     0.59
+    ],
+    "rms_db": -19.9,
+    "voiced_ratio": 0.87,
+    "frames": 55
+   },
+   {
+    "t": [
+     0.9,
+     3.27
+    ],
+    "rms_db": -21.4,
+    "voiced_ratio": 0.72,
+    "frames": 220
+   }
+  ],
+  "take_text": "[angry] [sharply] बबलू! [furious, fast] नौ बजे ये cash court में produce करना है!",
+  "verdict": "ok",
+  "reason": "English nouns match: 'काश कोट में प्रदूस' (Latin pass: 'produce this cash in the court'). No tag spoken. Speech 3.26 s against 3.0 s (+9%), with a 0.30 s pause after the name. Two flags. (1) The name was heard as 'बभी' and 'Babu' in both passes (same recogniser, so not independent): it may be soft. (2) The sentence measures -21.4 dB, no louder than her curt l02 (-21.3 dB), although this is meant to be her loudest line. Gain can fix the level, but whether the anger reads is an ear call.",
+  "retake_text": null,
+  "retake_take_no": null,
+  "retake_est_credits": null
+ },
+ {
+  "line_id": "l08",
+  "lang": "hi",
+  "model": "eleven_v4",
+  "file": "voice/hi/l08.mp3",
+  "transcript": "लोग तूटा नहीं जाभी से खुला है",
+  "transcript_latin_pass": "Lock is not broken, it's opened with a key.",
+  "transcript_source": "local whisper.cpp ggml-small, no prompt (connector Scribe ran but its text is not retrievable with the available tools)",
+  "duration_s": 4.0,
+  "target_s": 3.2,
+  "speech_s": 3.524,
+  "speech_vs_target_pct": 10.1,
+  "raw_vs_target_pct": 25.0,
+  "lead_silence_s": 0.191,
+  "trail_silence_s": 0.285,
+  "pauses": [
+   {
+    "start": 1.768,
+    "end": 2.32,
+    "dur": 0.553
+   }
+  ],
+  "mean_db": -30.6,
+  "peak_db": -11.5,
+  "speech_mean_db": -30.1,
+  "segments": [
+   {
+    "t": [
+     0.19,
+     1.77
+    ],
+    "rms_db": -28.3,
+    "voiced_ratio": 0.8,
+    "frames": 131
+   },
+   {
+    "t": [
+     2.32,
+     3.71
+    ],
+    "rms_db": -32.7,
+    "voiced_ratio": 0.0,
+    "frames": 125
+   }
+  ],
+  "take_text": "[thinking aloud] Lock टूटा नहीं... [whispers] [slowly] चाबी से खुला है।",
+  "verdict": "ok",
+  "reason": "Words match, including 'Lock' (Latin pass: 'Lock is not broken, it's opened with a key'). No tag spoken. Speech 3.52 s against 3.2 s (+10%); raw 4.00 s. A 0.55 s pause at the ellipsis gives a clean D-014 split. The whisper switch is measured: first half voiced 0.80 at -28.3 dB, second half voiced 0.00 at -32.7 dB, and the whispered words still transcribe ('जाभी से खुला है').",
+  "retake_text": null,
+  "retake_take_no": null,
+  "retake_est_credits": null
+ },
+ {
+  "line_id": "l09",
+  "lang": "hi",
+  "model": "eleven_v4",
+  "file": "voice/hi/l09.mp3",
+  "transcript": "चाभी तो ही है मैंडम एक आपके पास?",
+  "transcript_latin_pass": "There are only two keys, ma'am. One for you.",
+  "transcript_source": "local whisper.cpp ggml-small, no prompt (connector Scribe ran but its text is not retrievable with the available tools)",
+  "duration_s": 4.64,
+  "target_s": 2.8,
+  "speech_s": 4.278,
+  "speech_vs_target_pct": 52.8,
+  "raw_vs_target_pct": 65.7,
+  "lead_silence_s": 0.072,
+  "trail_silence_s": 0.29,
+  "pauses": [
+   {
+    "start": 2.658,
+    "end": 3.017,
+    "dur": 0.36
+   }
+  ],
+  "mean_db": -21.9,
+  "peak_db": -4.8,
+  "speech_mean_db": -21.5,
+  "segments": null,
+  "take_text": "[hesitant] [carefully] चाबी दो ही हैं, madam। [uneasy] एक आपके पास...",
+  "verdict": "retake",
+  "reason": "Words match ('चाभी तो ही है मैंडम एक आपके पास'; Latin pass: 'only two keys, ma'am'). No tag spoken. Length fails: speech 4.28 s against 2.8 s (+53%), the largest overrun in the scene. Ladder per the take note: script text with [hesitant] only.",
+  "retake_text": "[hesitant] चाबी दो ही हैं, madam। एक आपके पास...",
+  "retake_take_no": 2,
+  "retake_est_credits": 60
+ },
+ {
+  "line_id": "l10",
+  "lang": "hi",
+  "model": "eleven_v4",
+  "file": "voice/hi/l10.mp3",
+  "transcript": "और तुस्री बड़े साभ के पास",
+  "transcript_latin_pass": "And the other one is with the big boss.",
+  "transcript_source": "local whisper.cpp ggml-small, no prompt (connector Scribe ran but its text is not retrievable with the available tools)",
+  "duration_s": 2.96,
+  "target_s": 2.5,
+  "speech_s": 2.473,
+  "speech_vs_target_pct": -1.1,
+  "raw_vs_target_pct": 18.4,
+  "lead_silence_s": 0.176,
+  "trail_silence_s": 0.311,
+  "pauses": [
+   {
+    "start": 1.099,
+    "end": 1.449,
+    "dur": 0.35
+   }
+  ],
+  "mean_db": -30.4,
+  "peak_db": -6.9,
+  "speech_mean_db": -29.6,
+  "segments": [
+   {
+    "t": [
+     0.18,
+     1.1
+    ],
+    "rms_db": -29.1,
+    "voiced_ratio": 0.44,
+    "frames": 82
+   },
+   {
+    "t": [
+     1.45,
+     2.65
+    ],
+    "rms_db": -30.5,
+    "voiced_ratio": 0.25,
+    "frames": 104
+   }
+  ],
+  "take_text": "[quietly] [grim] और दूसरी... बड़े साहब के पास।",
+  "verdict": "retake",
+  "reason": "Words match ('और तुस्री बड़े साभ के पास'). No tag spoken. Speech 2.47 s against 2.5 s. Fails the direction 'quiet but voiced, reject if whispered': after the pause, voiced frames fall to 0.00-0.25 across 'बड़े साहब के पास' (0.25 for the segment against 0.72-0.87 for her plain lines), and that segment is only 2.2 dB above the l08 whisper. The retake text is the take note's fallback.",
+  "retake_text": "[grim] और दूसरी... बड़े साहब के पास।",
+  "retake_take_no": 2,
+  "retake_est_credits": 45
+ },
+ {
+  "line_id": "l11",
+  "lang": "hi",
+  "model": "eleven_v4",
+  "file": "voice/hi/l11.mp3",
+  "transcript": "पर वो तो लीख पर",
+  "transcript_latin_pass": "But that's on the leaf!",
+  "transcript_source": "local whisper.cpp ggml-small, no prompt (connector Scribe ran but its text is not retrievable with the available tools)",
+  "duration_s": 1.76,
+  "target_s": 1.5,
+  "speech_s": 1.482,
+  "speech_vs_target_pct": -1.2,
+  "raw_vs_target_pct": 17.3,
+  "lead_silence_s": 0.0,
+  "trail_silence_s": 0.278,
+  "pauses": [],
+  "mean_db": -17.5,
+  "peak_db": -3.2,
+  "speech_mean_db": -16.7,
+  "segments": [
+   {
+    "t": [
+     0.0,
+     1.48
+    ],
+    "rms_db": -16.8,
+    "voiced_ratio": 0.86,
+    "frames": 145
+   }
+  ],
+  "take_text": "[confused] [protesting] पर वो तो leave पर—",
+  "verdict": "ok",
+  "reason": "Words match ('पर वो तो लीख पर'; Latin pass: 'on the leaf' = leave). Nothing after the dash. No tag spoken. Speech 1.48 s against 1.5 s.",
+  "retake_text": null,
+  "retake_take_no": null,
+  "retake_est_credits": null
+ },
+ {
+  "line_id": "l12",
+  "lang": "hi",
+  "model": "eleven_v4",
+  "file": "voice/hi/l12.mp3",
+  "transcript": "साभ को कैसे पता चला?",
+  "transcript_latin_pass": "How did you find out?",
+  "transcript_source": "local whisper.cpp ggml-small, no prompt (connector Scribe ran but its text is not retrievable with the available tools)",
+  "duration_s": 2.08,
+  "target_s": 1.8,
+  "speech_s": 1.59,
+  "speech_vs_target_pct": -11.7,
+  "raw_vs_target_pct": 15.6,
+  "lead_silence_s": 0.218,
+  "trail_silence_s": 0.273,
+  "pauses": [],
+  "mean_db": -27.2,
+  "peak_db": -9.0,
+  "speech_mean_db": -26.1,
+  "segments": [
+   {
+    "t": [
+     0.22,
+     1.81
+    ],
+    "rms_db": -27.2,
+    "voiced_ratio": 0.17,
+    "frames": 134
+   }
+  ],
+  "take_text": "[low voice] [tense, measured] साहब को कैसे पता चला?",
+  "verdict": "retake",
+  "reason": "Words match ('साभ को कैसे पता चला?'). No tag spoken. Speech 1.59 s against 1.8 s (-12%). Fails the direction 'fully voiced, not breathy': voiced ratio 0.17, against 0.63 for the v3 take of the same text and 0.72-0.87 for her plain lines. It came out whispered. Ladder step 1 per the take note; step 2 is the bare 'साहब को कैसे पता चला?'. Alternative at no cost: the v3 take hi/l12.v3.mp3 is voiced and passes (see ab.json); using it is an owner or orchestrator call under D-009.",
+  "retake_text": "[tense, measured] साहब को कैसे पता चला?",
+  "retake_take_no": 2,
+  "retake_est_credits": 49
+ },
+ {
+  "line_id": "l01",
+  "lang": "en",
+  "model": "eleven_v4",
+  "file": "voice/en/l01.mp3",
+  "transcript": "Madam, the locker is empty.",
+  "transcript_latin_pass": null,
+  "transcript_source": "local whisper.cpp ggml-small, no prompt (connector Scribe ran but its text is not retrievable with the available tools)",
+  "duration_s": 2.56,
+  "target_s": 2.0,
+  "speech_s": 2.268,
+  "speech_vs_target_pct": 13.4,
+  "raw_vs_target_pct": 28.0,
+  "lead_silence_s": 0.0,
+  "trail_silence_s": 0.292,
+  "pauses": [],
+  "mean_db": -26.5,
+  "peak_db": -8.6,
+  "speech_mean_db": -26.0,
+  "segments": [
+   {
+    "t": [
+     0.0,
+     2.27
+    ],
+    "rms_db": -26.1,
+    "voiced_ratio": 0.47,
+    "frames": 210
+   }
+  ],
+  "take_text": "[nervous] [hushed] Madam... the locker is empty.",
+  "verdict": "ok",
+  "reason": "Exact transcript: 'Madam, the locker is empty.' No tag spoken. Speech 2.27 s against 2.0 s (+13.5%); raw 2.56 s. Hush is measurable: -26.1 dB, about 6 dB under Bablu's plain en lines.",
+  "retake_text": null,
+  "retake_take_no": null,
+  "retake_est_credits": null
+ },
+ {
+  "line_id": "l02",
+  "lang": "en",
+  "model": "eleven_v4",
+  "file": "voice/en/l02.mp3",
+  "transcript": "Empty means?",
+  "transcript_latin_pass": null,
+  "transcript_source": "local whisper.cpp ggml-small, no prompt (connector Scribe ran but its text is not retrievable with the available tools)",
+  "duration_s": 1.2,
+  "target_s": 1.2,
+  "speech_s": 0.813,
+  "speech_vs_target_pct": -32.2,
+  "raw_vs_target_pct": 0.0,
+  "lead_silence_s": 0.1,
+  "trail_silence_s": 0.286,
+  "pauses": [],
+  "mean_db": -24.1,
+  "peak_db": -4.3,
+  "speech_mean_db": -22.4,
+  "segments": [
+   {
+    "t": [
+     0.1,
+     0.91
+    ],
+    "rms_db": -22.5,
+    "voiced_ratio": 0.69,
+    "frames": 75
+   }
+  ],
+  "take_text": "[curt] Empty means?",
+  "verdict": "ok",
+  "reason": "Exact transcript: 'Empty means?' No tag spoken. Speech 0.81 s is 32% under 1.2 s (raw 1.20 s); short is right for a curt turn.",
+  "retake_text": null,
+  "retake_take_no": null,
+  "retake_est_credits": null
+ },
+ {
+  "line_id": "l03",
+  "lang": "en",
+  "model": "eleven_v4",
+  "file": "voice/en/l03.mp3",
+  "transcript": "Means 20 lakh cash is gone madam.",
+  "transcript_latin_pass": null,
+  "transcript_source": "local whisper.cpp ggml-small, no prompt (connector Scribe ran but its text is not retrievable with the available tools)",
+  "duration_s": 3.68,
+  "target_s": 2.5,
+  "speech_s": 3.221,
+  "speech_vs_target_pct": 28.8,
+  "raw_vs_target_pct": 47.2,
+  "lead_silence_s": 0.144,
+  "trail_silence_s": 0.315,
+  "pauses": [
+   {
+    "start": 1.068,
+    "end": 1.43,
+    "dur": 0.362
+   }
+  ],
+  "mean_db": -23.3,
+  "peak_db": -8.1,
+  "speech_mean_db": -22.7,
+  "segments": [
+   {
+    "t": [
+     0.14,
+     1.07
+    ],
+    "rms_db": -20.4,
+    "voiced_ratio": 0.61,
+    "frames": 90
+   },
+   {
+    "t": [
+     1.43,
+     3.37
+    ],
+    "rms_db": -23.8,
+    "voiced_ratio": 0.67,
+    "frames": 184
+   }
+  ],
+  "take_text": "[hesitant] Means... [apologetic] twenty lakh cash is gone, madam.",
+  "verdict": "retake",
+  "reason": "Transcript 'Means 20 lakh cash is gone madam.' matches. No tag spoken. Length fails: speech 3.22 s against 2.5 s (+29%). The 'laakh' versus 'lack' pronunciation is not verified, because the recogniser spells the word either way. Take 2 mirrors the hi ladder and drops [hesitant].",
+  "retake_text": "Means... [apologetic] twenty lakh cash is gone, madam.",
+  "retake_take_no": 2,
+  "retake_est_credits": 68
+ },
+ {
+  "line_id": "l04",
+  "lang": "en",
+  "model": "eleven_v4",
+  "file": "voice/en/l04.mp3",
+  "transcript": "Just... One laddo is kept there.",
+  "transcript_latin_pass": null,
+  "transcript_source": "local whisper.cpp ggml-small, no prompt (connector Scribe ran but its text is not retrievable with the available tools)",
+  "duration_s": 3.52,
+  "target_s": 2.0,
+  "speech_s": 3.282,
+  "speech_vs_target_pct": 64.1,
+  "raw_vs_target_pct": 76.0,
+  "lead_silence_s": 0.06,
+  "trail_silence_s": 0.178,
+  "pauses": [
+   {
+    "start": 1.461,
+    "end": 1.866,
+    "dur": 0.406
+   }
+  ],
+  "mean_db": -20.1,
+  "peak_db": -1.3,
+  "speech_mean_db": -19.8,
+  "segments": [
+   {
+    "t": [
+     0.06,
+     1.46
+    ],
+    "rms_db": -32.6,
+    "voiced_ratio": 0.3,
+    "frames": 122
+   },
+   {
+    "t": [
+     1.87,
+     3.34
+    ],
+    "rms_db": -16.6,
+    "voiced_ratio": 0.54,
+    "frames": 143
+   }
+  ],
+  "take_text": "[sheepish] Just... [matter-of-fact] one laddoo is kept there.",
+  "verdict": "ok",
+  "reason": "Transcript 'Just... One laddo is kept there.' matches. No tag spoken. Overruns: speech 3.28 s against 2.0 s (+64%), with a 0.41 s pause after 'Just...'. Comic reveal (b03), so the cut can absorb it as in hi l04 (hold the shot, or trim the pause). Flag: 'Just...' is 16 dB under the rest of the line. Fallback if needed: '[sheepish] Just... one laddoo is kept there.'.",
+  "retake_text": null,
+  "retake_take_no": null,
+  "retake_est_credits": null
+ },
+ {
+  "line_id": "l05",
+  "lang": "en",
+  "model": "eleven_v4",
+  "file": "voice/en/l05.mp3",
+  "transcript": "Laddu?",
+  "transcript_latin_pass": null,
+  "transcript_source": "local whisper.cpp ggml-small, no prompt (connector Scribe ran but its text is not retrievable with the available tools)",
+  "duration_s": 1.2,
+  "target_s": 1.0,
+  "speech_s": 0.745,
+  "speech_vs_target_pct": -25.5,
+  "raw_vs_target_pct": 20.0,
+  "lead_silence_s": 0.123,
+  "trail_silence_s": 0.332,
+  "pauses": [],
+  "mean_db": -25.9,
+  "peak_db": -10.3,
+  "speech_mean_db": -23.9,
+  "segments": [
+   {
+    "t": [
+     0.12,
+     0.87
+    ],
+    "rms_db": -23.9,
+    "voiced_ratio": 0.76,
+    "frames": 72
+   }
+  ],
+  "take_text": "[deadpan] Laddoo?",
+  "verdict": "ok",
+  "reason": "Transcript 'Laddu?' matches. No tag spoken. Speech 0.75 s is 25% under 1.0 s (raw 1.20 s, +20%). One-word turn.",
+  "retake_text": null,
+  "retake_take_no": null,
+  "retake_est_credits": null
+ },
+ {
+  "line_id": "l06",
+  "lang": "en",
+  "model": "eleven_v4",
+  "file": "voice/en/l06.mp3",
+  "transcript": "It's Moti Chur, maa.",
+  "transcript_latin_pass": null,
+  "transcript_source": "local whisper.cpp ggml-small, no prompt (connector Scribe ran but its text is not retrievable with the available tools)",
+  "duration_s": 1.84,
+  "target_s": 1.5,
+  "speech_s": 1.581,
+  "speech_vs_target_pct": 5.4,
+  "raw_vs_target_pct": 22.7,
+  "lead_silence_s": 0.0,
+  "trail_silence_s": 0.259,
+  "pauses": [],
+  "mean_db": -16.3,
+  "peak_db": -1.0,
+  "speech_mean_db": -15.7,
+  "segments": null,
+  "take_text": "[earnest] [eager] It's motichoor, ma—",
+  "verdict": "ok",
+  "reason": "Transcript 'It's Moti Chur, maa.' matches. The stub is one syllable of about 0.24 s, with no 'em-ay' and no completed word. No tag spoken. Speech 1.58 s against 1.5 s. Ear check that it is 'ma', not a held 'maa'; it is hard-cut either way.",
+  "retake_text": null,
+  "retake_take_no": null,
+  "retake_est_credits": null
+ },
+ {
+  "line_id": "l07",
+  "lang": "en",
+  "model": "eleven_v4",
+  "file": "voice/en/l07.mp3",
+  "transcript": "Bablu, that cash has to be in court at 9am.",
+  "transcript_latin_pass": null,
+  "transcript_source": "local whisper.cpp ggml-small, no prompt (connector Scribe ran but its text is not retrievable with the available tools)",
+  "duration_s": 3.76,
+  "target_s": 3.0,
+  "speech_s": 3.499,
+  "speech_vs_target_pct": 16.6,
+  "raw_vs_target_pct": 25.3,
+  "lead_silence_s": 0.0,
+  "trail_silence_s": 0.261,
+  "pauses": [
+   {
+    "start": 0.583,
+    "end": 1.009,
+    "dur": 0.426
+   }
+  ],
+  "mean_db": -22.4,
+  "peak_db": -4.1,
+  "speech_mean_db": -22.1,
+  "segments": [
+   {
+    "t": [
+     0.0,
+     0.58
+    ],
+    "rms_db": -19.7,
+    "voiced_ratio": 0.75,
+    "frames": 53
+   },
+   {
+    "t": [
+     1.01,
+     3.5
+    ],
+    "rms_db": -22.3,
+    "voiced_ratio": 0.62,
+    "frames": 227
+   }
+  ],
+  "take_text": "[angry] [sharply] Bablu! [furious, fast] That cash has to be in court at nine a.m.!",
+  "verdict": "ok",
+  "reason": "Exact transcript: 'Bablu, that cash has to be in court at 9am.' No tag spoken. Speech 3.50 s against 3.0 s (+16.7%). Flag: the sentence is at -22.3 dB, no louder than her plain en lines (-22.5/-23.9), although this is her loudest line. Raise it in the mix; the anger is an ear call.",
+  "retake_text": null,
+  "retake_take_no": null,
+  "retake_est_credits": null
+ },
+ {
+  "line_id": "l08",
+  "lang": "en",
+  "model": "eleven_v4",
+  "file": "voice/en/l08.mp3",
+  "transcript": "The lock isn't broken, it was opened with a key.",
+  "transcript_latin_pass": null,
+  "transcript_source": "local whisper.cpp ggml-small, no prompt (connector Scribe ran but its text is not retrievable with the available tools)",
+  "duration_s": 4.48,
+  "target_s": 3.2,
+  "speech_s": 4.123,
+  "speech_vs_target_pct": 28.8,
+  "raw_vs_target_pct": 40.0,
+  "lead_silence_s": 0.108,
+  "trail_silence_s": 0.249,
+  "pauses": [
+   {
+    "start": 1.789,
+    "end": 2.354,
+    "dur": 0.565
+   }
+  ],
+  "mean_db": -33.4,
+  "peak_db": -8.8,
+  "speech_mean_db": -33.0,
+  "segments": [
+   {
+    "t": [
+     0.11,
+     1.79
+    ],
+    "rms_db": -30.4,
+    "voiced_ratio": 0.59,
+    "frames": 148
+   },
+   {
+    "t": [
+     2.35,
+     4.23
+    ],
+    "rms_db": -39.9,
+    "voiced_ratio": 0.11,
+    "frames": 124
+   }
+  ],
+  "take_text": "[thinking aloud] The lock isn't broken... [whispers] [slowly] it was opened with a key.",
+  "verdict": "retake",
+  "reason": "Exact transcript: 'The lock isn't broken, it was opened with a key.' No tag spoken. The whisper switch is good: voiced 0.59 to 0.11, -30.4 to -39.9 dB, still transcribed. Length fails: speech 4.12 s against 3.2 s (+29%). The 0.57 s ellipsis pause is intended, but the whispered half runs 1.88 s. Take 2 per the ladder drops [thinking aloud] and [slowly]. If take 2 loses the voiced-to-whisper switch, keep take 1 and trim the pause to about 0.35 s in the edit (about 3.9 s, +22%).",
+  "retake_text": "The lock isn't broken... [whispers] it was opened with a key.",
+  "retake_take_no": 2,
+  "retake_est_credits": 76
+ },
+ {
+  "line_id": "l09",
+  "lang": "en",
+  "model": "eleven_v4",
+  "file": "voice/en/l09.mp3",
+  "transcript": "There are only two keys, madam. One is with you.",
+  "transcript_latin_pass": null,
+  "transcript_source": "local whisper.cpp ggml-small, no prompt (connector Scribe ran but its text is not retrievable with the available tools)",
+  "duration_s": 4.0,
+  "target_s": 2.8,
+  "speech_s": 3.595,
+  "speech_vs_target_pct": 28.4,
+  "raw_vs_target_pct": 42.9,
+  "lead_silence_s": 0.1,
+  "trail_silence_s": 0.305,
+  "pauses": [
+   {
+    "start": 2.179,
+    "end": 2.589,
+    "dur": 0.41
+   }
+  ],
+  "mean_db": -21.7,
+  "peak_db": -3.8,
+  "speech_mean_db": -21.3,
+  "segments": null,
+  "take_text": "[hesitant] [carefully] There are only two keys, madam. [uneasy] One is with you...",
+  "verdict": "retake",
+  "reason": "Exact transcript: 'There are only two keys, madam. One is with you.' No tag spoken. Length fails: speech 3.59 s against 2.8 s (+28%).",
+  "retake_text": "[hesitant] There are only two keys, madam. One is with you...",
+  "retake_take_no": 2,
+  "retake_est_credits": 76
+ },
+ {
+  "line_id": "l10",
+  "lang": "en",
+  "model": "eleven_v4",
+  "file": "voice/en/l10.mp3",
+  "transcript": "And the other is with Bada Sahab.",
+  "transcript_latin_pass": null,
+  "transcript_source": "local whisper.cpp ggml-small, no prompt (connector Scribe ran but its text is not retrievable with the available tools)",
+  "duration_s": 2.72,
+  "target_s": 2.5,
+  "speech_s": 2.395,
+  "speech_vs_target_pct": -4.2,
+  "raw_vs_target_pct": 8.8,
+  "lead_silence_s": 0.189,
+  "trail_silence_s": 0.136,
+  "pauses": [
+   {
+    "start": 1.035,
+    "end": 1.455,
+    "dur": 0.421
+   }
+  ],
+  "mean_db": -31.2,
+  "peak_db": -14.7,
+  "speech_mean_db": -30.6,
+  "segments": [
+   {
+    "t": [
+     0.19,
+     1.03
+    ],
+    "rms_db": -28.2,
+    "voiced_ratio": 0.61,
+    "frames": 82
+   },
+   {
+    "t": [
+     1.46,
+     2.58
+    ],
+    "rms_db": -33.2,
+    "voiced_ratio": 0.02,
+    "frames": 82
+   }
+  ],
+  "take_text": "[quietly] [grim] And the other... is with Bada Sahab.",
+  "verdict": "retake",
+  "reason": "Transcript 'And the other is with Bada Sahab.' matches. No tag spoken. Speech 2.39 s against 2.5 s. Fails 'quiet but voiced, reject if whispered': after the ellipsis, voiced frames drop to 0.00-0.05 for every window of 'is with Bada Sahab' (segment 0.02, -33.2 dB). That part is a whisper. Take 2 mirrors the hi fallback.",
+  "retake_text": "[grim] And the other... is with Bada Sahab.",
+  "retake_take_no": 2,
+  "retake_est_credits": 54
+ },
+ {
+  "line_id": "l11",
+  "lang": "en",
+  "model": "eleven_v4",
+  "file": "voice/en/l11.mp3",
+  "transcript": "But he's on leave.",
+  "transcript_latin_pass": null,
+  "transcript_source": "local whisper.cpp ggml-small, no prompt (connector Scribe ran but its text is not retrievable with the available tools)",
+  "duration_s": 1.84,
+  "target_s": 1.5,
+  "speech_s": 1.53,
+  "speech_vs_target_pct": 2.0,
+  "raw_vs_target_pct": 22.7,
+  "lead_silence_s": 0.05,
+  "trail_silence_s": 0.259,
+  "pauses": [],
+  "mean_db": -18.8,
+  "peak_db": -2.0,
+  "speech_mean_db": -18.0,
+  "segments": [
+   {
+    "t": [
+     0.05,
+     1.58
+    ],
+    "rms_db": -18.1,
+    "voiced_ratio": 0.69,
+    "frames": 151
+   }
+  ],
+  "take_text": "[confused] [protesting] But he's on leave—",
+  "verdict": "ok",
+  "reason": "Transcript 'But he's on leave.' matches. Nothing after the dash. No tag spoken. Speech 1.53 s against 1.5 s.",
+  "retake_text": null,
+  "retake_take_no": null,
+  "retake_est_credits": null
+ },
+ {
+  "line_id": "l12",
+  "lang": "en",
+  "model": "eleven_v4",
+  "file": "voice/en/l12.mp3",
+  "transcript": "How did Sahag come to know?",
+  "transcript_latin_pass": null,
+  "transcript_source": "local whisper.cpp ggml-small, no prompt (connector Scribe ran but its text is not retrievable with the available tools)",
+  "duration_s": 2.24,
+  "target_s": 1.8,
+  "speech_s": 1.798,
+  "speech_vs_target_pct": -0.1,
+  "raw_vs_target_pct": 24.4,
+  "lead_silence_s": 0.16,
+  "trail_silence_s": 0.282,
+  "pauses": [],
+  "mean_db": -27.8,
+  "peak_db": -5.7,
+  "speech_mean_db": -26.9,
+  "segments": [
+   {
+    "t": [
+     0.16,
+     1.96
+    ],
+    "rms_db": -27.7,
+    "voiced_ratio": 0.38,
+    "frames": 166
+   }
+  ],
+  "take_text": "[low voice] [tense, measured] How did Sahab come to know?",
+  "verdict": "ok",
+  "reason": "Transcript 'How did Sahag come to know?': 'Sahab' was heard as 'Sahag', the only word miss. No tag spoken. Speech 1.80 s against 1.8 s. Voicing is mixed (0.38 overall): 'How did' and 'come to know' are voiced (0.60-0.84), 'Sahab' is breathy. Not whispered like hi l12, so ok. Ear check that 'Sahab' is understood on a phone speaker; if not, use the ladder '[tense, measured] How did Sahab come to know?'.",
+  "retake_text": null,
+  "retake_take_no": null,
+  "retake_est_credits": null
+ },
+ {
+  "line_id": "l07",
+  "lang": "hi",
+  "model": "eleven_v3",
+  "file": "voice/hi/l07.v3.mp3",
+  "transcript": "बब्लू नाव बजे ये काश कोट पे प्रदूस करना है",
+  "transcript_latin_pass": "Bablu, we have to produce this cash code at 9 o'clock.",
+  "transcript_source": "local whisper.cpp ggml-small, no prompt (connector Scribe ran but its text is not retrievable with the available tools)",
+  "duration_s": 3.52,
+  "target_s": 3.0,
+  "speech_s": 3.014,
+  "speech_vs_target_pct": 0.5,
+  "raw_vs_target_pct": 17.3,
+  "lead_silence_s": 0.056,
+  "trail_silence_s": 0.45,
+  "pauses": [
+   {
+    "start": 0.504,
+    "end": 0.877,
+    "dur": 0.373
+   }
+  ],
+  "mean_db": -16.4,
+  "peak_db": -1.1,
+  "speech_mean_db": -15.7,
+  "segments": [
+   {
+    "t": [
+     0.06,
+     0.5
+    ],
+    "rms_db": -14.3,
+    "voiced_ratio": 0.98,
+    "frames": 42
+   },
+   {
+    "t": [
+     0.88,
+     3.07
+    ],
+    "rms_db": -15.4,
+    "voiced_ratio": 0.78,
+    "frames": 207
+   }
+  ],
+  "take_text": "[angry] [sharply] बबलू! [furious, fast] नौ बजे ये cash court में produce करना है!",
+  "verdict": "ok",
+  "reason": "Comparison take. Words match except a possible 'में' to 'पे' ('बब्लू नाव बजे ये काश कोट पे प्रदूस करना है'); the Latin pass gives 'cash code' for 'court'. The name is clear ('Bablu' in both passes). No tag spoken. Speech 3.01 s against 3.0 s. Hot: -15.4 dB sentence, about 6 dB above the v4 take. Not in production unless the D-009 owner pick selects it.",
+  "retake_text": null,
+  "retake_take_no": null,
+  "retake_est_credits": null
+ },
+ {
+  "line_id": "l08",
+  "lang": "hi",
+  "model": "eleven_v3",
+  "file": "voice/hi/l08.v3.mp3",
+  "transcript": "लोग तूटा नहीं चाभी से ठूला है",
+  "transcript_latin_pass": "Lock is not broken, it's opened with a key.",
+  "transcript_source": "local whisper.cpp ggml-small, no prompt (connector Scribe ran but its text is not retrievable with the available tools)",
+  "duration_s": 3.6,
+  "target_s": 3.2,
+  "speech_s": 3.534,
+  "speech_vs_target_pct": 10.4,
+  "raw_vs_target_pct": 12.5,
+  "lead_silence_s": 0.066,
+  "trail_silence_s": 0.0,
+  "pauses": [
+   {
+    "start": 1.559,
+    "end": 2.439,
+    "dur": 0.879
+   }
+  ],
+  "mean_db": -22.3,
+  "peak_db": -6.4,
+  "speech_mean_db": -22.2,
+  "segments": [
+   {
+    "t": [
+     0.07,
+     1.56
+    ],
+    "rms_db": -20.9,
+    "voiced_ratio": 0.91,
+    "frames": 137
+   },
+   {
+    "t": [
+     2.44,
+     3.6
+    ],
+    "rms_db": -21.4,
+    "voiced_ratio": 0.64,
+    "frames": 113
+   }
+  ],
+  "take_text": "[thinking aloud] Lock टूटा नहीं... [whispers] [slowly] चाबी से खुला है।",
+  "verdict": "retake",
+  "reason": "Comparison take, rejected and not re-run; the v4 take stands. Words mostly match ('लोग तूटा नहीं चाभी से ठूला है': 'खुला' was heard as 'ठूला'). No tag spoken. Speech 3.53 s against 3.2 s (+10%). Fails the direction 'reject if none of it is whispered': the [whispers] half is voiced 0.64 at -21.4 dB, against 0.91 at -20.9 dB for the first half, so the model ignored [whispers].",
+  "retake_text": null,
+  "retake_take_no": null,
+  "retake_est_credits": null
+ },
+ {
+  "line_id": "l12",
+  "lang": "hi",
+  "model": "eleven_v3",
+  "file": "voice/hi/l12.v3.mp3",
+  "transcript": "साहःप को कैसे पता चला?",
+  "transcript_latin_pass": "How did you find out?",
+  "transcript_source": "local whisper.cpp ggml-small, no prompt (connector Scribe ran but its text is not retrievable with the available tools)",
+  "duration_s": 2.0,
+  "target_s": 1.8,
+  "speech_s": 1.855,
+  "speech_vs_target_pct": 3.1,
+  "raw_vs_target_pct": 11.1,
+  "lead_silence_s": 0.145,
+  "trail_silence_s": 0.0,
+  "pauses": [],
+  "mean_db": -23.8,
+  "peak_db": -9.5,
+  "speech_mean_db": -23.5,
+  "segments": [
+   {
+    "t": [
+     0.14,
+     2.0
+    ],
+    "rms_db": -23.9,
+    "voiced_ratio": 0.63,
+    "frames": 158
+   }
+  ],
+  "take_text": "[low voice] [tense, measured] साहब को कैसे पता चला?",
+  "verdict": "ok",
+  "reason": "Comparison take. Words match ('साहःप को कैसे पता चला?'). No tag spoken. Speech 1.86 s against 1.8 s (+3%). Fully voiced (0.63, against 0.17 for v4), as the line asks. Usable in place of a hi l12 v4 retake if the owner or orchestrator allows it under D-009.",
+  "retake_text": null,
+  "retake_take_no": null,
+  "retake_est_credits": null
+ }
+]

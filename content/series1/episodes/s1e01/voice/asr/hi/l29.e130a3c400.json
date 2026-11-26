@@ -1,0 +1,153 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,070"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 70
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,070",
+				"to": "00:00:00,640"
+			},
+			"offsets": {
+				"from": 70,
+				"to": 640
+			},
+			"text": " दूल्हन"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,640",
+				"to": "00:00:00,860"
+			},
+			"offsets": {
+				"from": 640,
+				"to": 860
+			},
+			"text": " की"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,860",
+				"to": "00:00:01,290"
+			},
+			"offsets": {
+				"from": 860,
+				"to": 1290
+			},
+			"text": " कलाई"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,290",
+				"to": "00:00:01,500"
+			},
+			"offsets": {
+				"from": 1290,
+				"to": 1500
+			},
+			"text": " पे"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,500",
+				"to": "00:00:01,820"
+			},
+			"offsets": {
+				"from": 1500,
+				"to": 1820
+			},
+			"text": " जला"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,820",
+				"to": "00:00:02,340"
+			},
+			"offsets": {
+				"from": 1820,
+				"to": 2340
+			},
+			"text": " निशान"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,340",
+				"to": "00:00:02,660"
+			},
+			"offsets": {
+				"from": 2340,
+				"to": 2660
+			},
+			"text": " है"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,160",
+				"to": "00:00:03,290"
+			},
+			"offsets": {
+				"from": 3160,
+				"to": 3290
+			},
+			"text": " आदे"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,290",
+				"to": "00:00:03,800"
+			},
+			"offsets": {
+				"from": 3290,
+				"to": 3800
+			},
+			"text": " चान"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,800",
+				"to": "00:00:04,660"
+			},
+			"offsets": {
+				"from": 3800,
+				"to": 4660
+			},
+			"text": " जैसा"
+		}
+	]
+}

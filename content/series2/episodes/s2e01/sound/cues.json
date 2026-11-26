@@ -1,0 +1,453 @@
+{
+  "episode_id": "s2e01",
+  "series_id": "series2",
+  "status": "planned",
+  "status_note": "Planned only. Nothing generated, nothing listened to. A separate runner generates the one-off cues below once each through the connector (D-009 route b) and records ids, probed lengths and credits in this folder's manifest.jsonl; library cues come from content/series2/sound/ and are not generated again here (D-011 reuse).",
+  "authority": [
+    "D-011 reuse: library cues by cue_id, one-offs only for sounds the library lacks.",
+    "D-014 / D-0M2: shots follow measured voice; every placement is anchored to a beat or line id, not to seconds.",
+    "D-0M4: -14 LUFS integrated, -1 dBTP, +/-0.5 LU.",
+    "D-019: s2e01 passed Gate 2 (critic 7.7)."
+  ],
+  "sources": [
+    "content/series2/episodes/s2e01/script.hi.json (beats, silent_seconds, sfx_notes, music_note)",
+    "content/series2/episodes/s2e01/script.en.json (same beat and line ids, same sfx_notes and music_note)",
+    "content/series2/sound/library.json (cues, mix.phone_filters, one_offs_left_to_episode_sheets)",
+    "content/series2/episodes/s2a03/sound/cues.json (sheet format)"
+  ],
+  "timebase": "Line and beat anchors only. No voice is measured yet; S13 converts anchors to seconds from the measured timeline. The English cut uses the same anchors by line id. There is no l13 in this script (ids run l12 to l14).",
+  "library_cues": [
+    {
+      "cue_id": "amb_talkies_lobby",
+      "where": "b1 to b4, b10",
+      "gain_db": -24,
+      "notes": "Day: base only, no layers (no clock, no crickets: the script asks for neither). Big hollow room tone under every line in b1 to b4. Cuts on the b4 to b5 picture cut, after the door swing; back in on the b9 to b10 cut."
+    },
+    {
+      "cue_id": "amb_crossing_stall",
+      "where": "b5",
+      "gain_db": -22,
+      "notes": "Day use, no layers. The kettle on the coal stove is in the base. A little louder than the indoor beds because b5 has no dialogue; it sits under s2e01_sfx_crossing_train. Cuts hard on the b5 to b6 cut (b6 opens mid-report)."
+    },
+    {
+      "cue_id": "amb_real_thana",
+      "where": "b6 to b9",
+      "gain_db": -24,
+      "notes": "The slow ceiling fan, flat and steady, layers muted throughout (day). Pulled down to about -34 under l14 to l16 (phone lines). In b9 the fan is the only sound for the stopped-peanut shot (the 1.5 s before l17) back at -24."
+    },
+    {
+      "cue_id": "amb_projection_room",
+      "where": "b11 to b12",
+      "gain_db": -24,
+      "notes": "Smaller and closer than the lobby. Carries the 2.5 s hold after l26 alone (with the tension note ducked away), then cuts to silence on the cut to black."
+    },
+    {
+      "cue_id": "lyr_phone_line_hiss",
+      "where": "b8, under l14, l15, l16 only",
+      "gain_db": -32,
+      "notes": "Faint, inside the earpiece filter chain with the DSP's voice. In with the first syllable of l14 (0.1 s fade), out 0.1 s after l16 ends."
+    },
+    {
+      "cue_id": "sfx_rubber_stamp",
+      "where": "b1, inside the 0.5 s silence before l01",
+      "gain_db": -10,
+      "notes": "Once, a dry wooden thunk, off screen. Its tail must be gone before l01 starts: nothing under l01."
+    },
+    {
+      "cue_id": "sfx_paper_slip",
+      "where": "b2 shot 2, under the start of l03, low",
+      "gain_db": -18,
+      "notes": "Stand-in for 'paper squared on the counter' (Nirala squaring the receipt onto the stack): pick a short edge-tap moment of the take, not the unfolding rustle. If nothing in the take reads as a tap, drop it; do not generate."
+    },
+    {
+      "cue_id": "sfx_peanut_crack",
+      "where": "b6 under l09 and l10, small",
+      "gain_db": -20,
+      "notes": "Two or three cracks spread across l09 and l10, placed between words where the take allows. None in b7 to b9: the stopped chewing in b9 is the cue, so the last crack is under or just after l10."
+    },
+    {
+      "cue_id": "sfx_knitting_needles",
+      "where": "b7 under l11 (fading out over l12); b11 head to the stop before l25 in b12",
+      "gain_db": -24,
+      "notes": "b7: under l11, steady, ease out to nothing under l12 (Pushpa keeps knitting, it just leaves the mix). b11 to b12: faint, -28, from the b11 head; STOP cut clean on a gap, no fade, before l25 (at the start of b12 shot 4, Pushpa's stopped hands). The stop is the sound cue, so the 0.3 to 0.5 s before l25 is room tone only."
+    },
+    {
+      "cue_id": "sfx_desk_phone_lift",
+      "where": "b8, first 0.8 s of the 2.0 s silence",
+      "gain_db": -12,
+      "notes": "Handset off the cradle."
+    },
+    {
+      "cue_id": "sfx_dtmf_dialling",
+      "where": "b8, the 1.2 s after the lift, before l14",
+      "gain_db": -14,
+      "notes": "Push-button tones over Tripathi's raised palm. Trim the beep count to the 1.2 s; must end before l14."
+    },
+    {
+      "cue_id": "sfx_desk_phone_hangup",
+      "where": "b9 head, first moment of the 1.5 s silence before l17",
+      "gain_db": -10,
+      "notes": "'A hard click. Then nothing.' After it the fan alone."
+    },
+    {
+      "cue_id": "sfx_register_thump",
+      "where": "b10 shot 3, the push of the nine registers, between l19 and l20 (or under the first word of l20 at -16 if there is no gap)",
+      "gain_db": -10,
+      "notes": "Library note: slide plus thump covers the script's 'registers slide across the counter, one heavy paper thump'. No one-off for the slide."
+    },
+    {
+      "cue_id": "sfx_page_turn",
+      "where": "b12 shot 3, first part of the 1.5 s silence after l24",
+      "gain_db": -12,
+      "notes": "One page turn, then s2e01_sfx_file_untie_riffle (riffle slice) in the rest of the silence."
+    },
+    {
+      "cue_id": "mus_theme_caper_bed",
+      "where": "b4 (under l05, back on the exit still) and b10",
+      "gain_db": -18,
+      "notes": "See music_in_out. Ducked -8 under l05 and under b10's lines. Never under l06, l07, l08."
+    },
+    {
+      "cue_id": "mus_tension_note",
+      "where": "b11 head to the cut to black at the end of b12",
+      "gain_db": -20,
+      "notes": "Barely audible: starts at -20, rising very slightly (about +3 dB, to -17) across b11 and b12, ducked -8 under lines, then ducked right down (about -40, effectively gone) under l26 and through the 2.5 s hold. Hard cut on the cut to black."
+    }
+  ],
+  "one_off_cues": [
+    {
+      "cue_id": "s2e01_sfx_pigeon_wings",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 2.0,
+      "loop": false,
+      "prompt": "A single pigeon's wings flapping briefly high up under the ceiling of a big empty hall, a soft fluttering burst then settling on a ledge, distant and echoing. No coos, no voices, no music.",
+      "used_at": [
+        "b1, after l01 ends and into the b1 to b2 change (high, faint)"
+      ],
+      "notes": "Script asks for it in b1, but b1's 0.5 s silence is the stamp's and nothing goes under l01; so the wings sit in the gap after l01 at about -24, reverb wet. If the edit leaves no gap, drop it rather than put it under l02.",
+      "status": "generated"
+    },
+    {
+      "cue_id": "s2e01_sfx_tea_pour",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 3.0,
+      "loop": false,
+      "prompt": "Hot tea poured from a small metal kettle into a thick glass tumbler on a wooden counter, a thin steady stream rising in pitch as the glass fills, then the kettle set down with a light tap. Close, quiet room. No voices.",
+      "used_at": [
+        "b3 shot 2, starting in the 1.5 s silence and continuing low under l04"
+      ],
+      "notes": "Starts at -14 in the silence and dips to -22 once l04 begins; the kettle-down tap after l04's first sentence or dropped.",
+      "status": "generated"
+    },
+    {
+      "cue_id": "s2e01_sfx_lobby_door_swing",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 1.5,
+      "loop": false,
+      "prompt": "A heavy old wooden cinema lobby door with a brass push plate swinging shut on its spring hinge, a short creak then a soft heavy thud against the frame, echoing in a big hard empty hall. No voices, no footsteps.",
+      "used_at": [
+        "b4 exit still, the 0.8 s after l08"
+      ],
+      "notes": "Not sfx_door_shut_bolt (a lane house door with a bolt). Thud lands near the end of the 0.8 s; the tail may ring across the cut into b5's open air for 0.2 s and no more.",
+      "status": "generated"
+    },
+    {
+      "cue_id": "s2e01_sfx_crossing_train",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 4.0,
+      "loop": false,
+      "prompt": "At a small-town railway level crossing in the afternoon: an electric gate bell ringing steadily, a diesel train horn sounding once, close, then a long goods train rumbling and clattering past over the rails, unseen. Open air. No voices, no traffic, no music.",
+      "used_at": [
+        "b5, the whole 3.0 s silent beat"
+      ],
+      "notes": "One generation for bell, horn and passing train. sfx_far_train_horn (library) is a far horn and is kept for its own uses; this one is close. Fit: bell from frame one, horn peak about 1 s in (in silence, as the script asks: b5 has no line), rumble to the b5 to b6 cut with a 0.3 s fade so nothing bleeds into b6's mid-report open. If the raw take is long, keep the bell-horn-rumble core, not the tail.",
+      "status": "generated"
+    },
+    {
+      "cue_id": "s2e01_sfx_file_untie_riffle",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 4.0,
+      "loop": false,
+      "prompt": "Close, in a small dusty room: a cloth tape knot pulled loose from a thick paper file, the heavy cardboard cover flopping open with a soft puff, then after a pause a thumb riffling slowly along the edge of a thick stack of old paper pages, a soft fluttering flick. No voices, no music.",
+      "used_at": [
+        "b11 shot 2 (knot and cover, in the 2.5 s silence before l22)",
+        "b12 shot 3 (riffle slice, after sfx_page_turn, in the 1.5 s after l24)"
+      ],
+      "notes": "Two moments from one generation: split at the pause. Knot and cover at -12, riffle at -16. If the take has no usable riffle, b12 uses a second sfx_page_turn at -18 instead; do not generate again.",
+      "status": "generated"
+    }
+  ],
+  "placement_by_beat": [
+    {
+      "beat": "b1",
+      "bed": [
+        "amb_talkies_lobby"
+      ],
+      "events": [
+        {
+          "cue_id": "sfx_rubber_stamp",
+          "anchor": "in the 0.5 s silence before l01; tail gone before l01"
+        },
+        {
+          "cue_id": "s2e01_sfx_pigeon_wings",
+          "anchor": "after l01 ends, into the cut to b2; faint"
+        }
+      ]
+    },
+    {
+      "beat": "b2",
+      "bed": [
+        "amb_talkies_lobby"
+      ],
+      "events": [
+        {
+          "cue_id": "sfx_paper_slip",
+          "anchor": "shot 2, edge tap under the start of l03, low"
+        }
+      ]
+    },
+    {
+      "beat": "b3",
+      "bed": [
+        "amb_talkies_lobby"
+      ],
+      "events": [
+        {
+          "cue_id": "s2e01_sfx_tea_pour",
+          "anchor": "shot 2 head, in the 1.5 s silence, low under l04"
+        },
+        {
+          "cue_id": "mus_theme_caper_bed",
+          "anchor": "enters after l04 ends (in the l04 to l05 gap)"
+        }
+      ]
+    },
+    {
+      "beat": "b4",
+      "bed": [
+        "amb_talkies_lobby"
+      ],
+      "events": [
+        {
+          "cue_id": "mus_theme_caper_bed",
+          "anchor": "under l05 (ducked); out before l06 with a 0.3 s fade ending at l06's first syllable; back for the 0.8 s exit still after l08"
+        },
+        {
+          "cue_id": "s2e01_sfx_lobby_door_swing",
+          "anchor": "exit still, 0.8 s after l08"
+        }
+      ]
+    },
+    {
+      "beat": "b5",
+      "bed": [
+        "amb_crossing_stall"
+      ],
+      "events": [
+        {
+          "cue_id": "s2e01_sfx_crossing_train",
+          "anchor": "whole beat; horn peak about 1 s in"
+        },
+        {
+          "cue_id": "mus_theme_caper_bed",
+          "anchor": "out on the b4 to b5 cut (0.2 s fade): no music at the crossing"
+        }
+      ]
+    },
+    {
+      "beat": "b6",
+      "bed": [
+        "amb_real_thana"
+      ],
+      "events": [
+        {
+          "cue_id": "sfx_peanut_crack",
+          "anchor": "under l09 and l10, small, between words"
+        }
+      ]
+    },
+    {
+      "beat": "b7",
+      "bed": [
+        "amb_real_thana"
+      ],
+      "events": [
+        {
+          "cue_id": "sfx_knitting_needles",
+          "anchor": "under l11, easing out under l12"
+        }
+      ]
+    },
+    {
+      "beat": "b8",
+      "bed": [
+        "amb_real_thana (down to about -34 under l14 to l16)"
+      ],
+      "events": [
+        {
+          "cue_id": "sfx_desk_phone_lift",
+          "anchor": "first 0.8 s of the silence"
+        },
+        {
+          "cue_id": "sfx_dtmf_dialling",
+          "anchor": "next 1.2 s, ends before l14"
+        },
+        {
+          "cue_id": "lyr_phone_line_hiss",
+          "anchor": "under l14, l15, l16 only, inside the earpiece chain"
+        }
+      ]
+    },
+    {
+      "beat": "b9",
+      "bed": [
+        "amb_real_thana"
+      ],
+      "events": [
+        {
+          "cue_id": "sfx_desk_phone_hangup",
+          "anchor": "head of the 1.5 s silence; then the fan alone through the stopped-peanut shot, l17, the 0.5 s still and l18"
+        }
+      ]
+    },
+    {
+      "beat": "b10",
+      "bed": [
+        "amb_talkies_lobby"
+      ],
+      "events": [
+        {
+          "cue_id": "mus_theme_caper_bed",
+          "anchor": "enters at the b10 head (1.0 s silence, helmet on the bench), ducked under l19 to l21, out on the b10 to b11 cut with a 0.5 s fade"
+        },
+        {
+          "cue_id": "sfx_register_thump",
+          "anchor": "shot 3, between l19 and l20"
+        }
+      ]
+    },
+    {
+      "beat": "b11",
+      "bed": [
+        "amb_projection_room"
+      ],
+      "events": [
+        {
+          "cue_id": "mus_tension_note",
+          "anchor": "enters at the b11 head, barely audible"
+        },
+        {
+          "cue_id": "sfx_knitting_needles",
+          "anchor": "faint from the b11 head (Pushpa at the stair top)"
+        },
+        {
+          "cue_id": "s2e01_sfx_file_untie_riffle",
+          "anchor": "shot 2 insert: knot and cover, before l22"
+        }
+      ]
+    },
+    {
+      "beat": "b12",
+      "bed": [
+        "amb_projection_room"
+      ],
+      "events": [
+        {
+          "cue_id": "sfx_page_turn",
+          "anchor": "shot 3, start of the 1.5 s after l24"
+        },
+        {
+          "cue_id": "s2e01_sfx_file_untie_riffle",
+          "anchor": "riffle slice, rest of that 1.5 s"
+        },
+        {
+          "cue_id": "sfx_knitting_needles",
+          "anchor": "STOP, clean cut on a gap, before l25 (shot 4 head)"
+        },
+        {
+          "cue_id": "mus_tension_note",
+          "anchor": "rising very slightly through b12; ducked right down under l26 and the 2.5 s hold; hard cut to silence on the cut to black"
+        }
+      ]
+    }
+  ],
+  "mix": {
+    "dialogue_first": true,
+    "loudness_target": "-14 LUFS integrated, -1 dBTP, +/-0.5 LU (D-0M4)",
+    "starting_gains_db": {
+      "music": -18,
+      "music_duck_under_dialogue": -8,
+      "ambience": -24,
+      "ambience_layer": -28,
+      "sfx": -10
+    },
+    "ducking": [
+      "Music ducks -8 dB under every line (library default); the tension note goes to about -40 under l26 and the hold after it.",
+      "b8: everything except the phone chain is pulled right down under l14 to l16 (fan to about -34); no effect sits on a filtered word.",
+      "b12: nothing under l26 but amb_projection_room.",
+      "Effects under lines (tea pour, peanut cracks, knitting, paper tap) sit at -18 or lower and between words where the take allows."
+    ],
+    "filters": {
+      "phone_lines": [
+        "l14",
+        "l15",
+        "l16"
+      ],
+      "phone": "Library mix.phone_filters.earpiece: band-pass about 300-3400 Hz, light saturation, lyr_phone_line_hiss under it, wide enough that consonants survive. Nandini's own lines in b8 have none; she is dry in the room.",
+      "dry_lines": "Every other line is dry. l01 is off screen (Nirala from the desk) but in the same room: dry, a touch of the lobby reverb, no filter."
+    },
+    "music_in_out": [
+      {
+        "cue_id": "mus_theme_caper_bed",
+        "in": "after l04 ends",
+        "out": "before l06 (0.3 s fade, gone at l06's first syllable)"
+      },
+      {
+        "cue_id": "mus_theme_caper_bed",
+        "in": "b4 exit still, after l08 ends",
+        "out": "b4 to b5 cut, 0.2 s fade"
+      },
+      {
+        "cue_id": "mus_theme_caper_bed",
+        "in": "b10 head",
+        "out": "b10 to b11 cut, 0.5 s fade"
+      },
+      {
+        "cue_id": "mus_tension_note",
+        "in": "b11 head",
+        "out": "hard cut on the cut to black after b12's 2.5 s hold"
+      }
+    ],
+    "no_music": "b1 to b3 until l04 ends; l06 to l08; b5 (train and bell only); b6 to b9 (out completely for the DSP call in b8).",
+    "hard_rules": [
+      "Nothing under l01; the stamp is finished before it.",
+      "No music under l06, l07, l08 (the punchlines play dry).",
+      "The train horn peaks in silence, never under a line.",
+      "No effect on top of a filtered DSP word.",
+      "No peanut crack after l10: the stopped chewing in b9 is the cue.",
+      "The knitting stop before l25 is a clean cut, not a fade.",
+      "No sting anywhere.",
+      "The episode ends on silence: the room tone and the tension note cut with the picture."
+    ]
+  },
+  "editor_notes": [
+    "b5 is 3.0 s; bell, close horn and passing train fit only as a compressed event. If the screening finds it rushed, b5 can take about 1 s more within the 150 s ceiling (D-019); flagged for S13 and the editor, not changed here.",
+    "b1's 0.5 s holds the stamp only, so the pigeon wings move to the gap after l01 or are dropped."
+  ],
+  "counts": {
+    "library_cues_used": 16,
+    "one_off_cues_new": 5,
+    "one_off_planned_seconds": 14.5,
+    "one_off_credit_estimate": 85
+  },
+  "not_verified": [
+    "Nothing generated or heard. Gains are starting points for S13.",
+    "The paper-tap use of sfx_paper_slip, the riffle slice and the compressed b5 train depend on what the takes contain; each has a stated fallback that needs no new generation.",
+    "Credit estimate assumes the proof's 17 credits per sound generation."
+  ]
+}

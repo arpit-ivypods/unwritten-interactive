@@ -1,0 +1,450 @@
+{
+  "episode_id": "s1a03",
+  "series_id": "series1",
+  "status": "planned",
+  "status_note": "Cue sheet only; nothing generated, no ElevenLabs call made. Library cues come from content/series1/sound/library.json; the five new_cues are this episode's only one-offs, all five named in the library's episode_specific_not_in_library list for s1a03. Placements are anchored to beat and line ids, not seconds: no shots.json or measured voice exists yet. S13 places them against each language's measured timeline (D-014 rule 6, D-0M2).",
+  "written_by": "S11 Sound designer",
+  "date": "2026-11-26",
+  "governing": [
+    "D-009",
+    "D-011 (reuse rules)",
+    "D-014",
+    "D-0M2",
+    "D-0M4",
+    "D-018"
+  ],
+  "sources": [
+    "content/series1/episodes/s1a03/script.hi.json (beats[].action, silent_seconds, sfx_notes, music_note, writer_notes)",
+    "content/series1/episodes/s1a03/script.en.json (same beat and line ids, identical music_note)",
+    "content/series1/episodes/s1a03/review-notes.json (critic must-fix: b3, b3a, b8, b11 protected)",
+    "content/series1/sound/library.json (cue ids, prompts, notes, mix rules)",
+    "content/series1/episodes/s1b03/sound/cues.json (sheet format)"
+  ],
+  "languages": "One sheet for both cuts. Hindi and English have the same beat and line ids, so every anchor applies to both; each cut is built on its own measured clip lengths. Word anchors quote the Hindi; in English use the matching words (l05 'ran off a year back, Damaad ji'; l26 final 'Tulsi').",
+  "anchor_convention": "Anchors name a beat, a line id, a word inside a line, a set-up cut or a script silence (silent_seconds/silent_position). There is no b9: the beats run b8a to b10.",
+  "counts": {
+    "library_cues_used": 21,
+    "library_placements": 30,
+    "new_one_off_cues": 5,
+    "new_cue_placements": 5,
+    "cues_to_generate_for_this_episode": 5,
+    "estimated_credits_new_cues": 85
+  },
+  "library_cues_used": [
+    "amb_bureau_room",
+    "amb_chowki_day",
+    "mus_bed_drone",
+    "mus_ending_lullaby",
+    "sfx_bangle_slide_off",
+    "sfx_bangles_drop_desk",
+    "sfx_birds_dawn_loop",
+    "sfx_boots_concrete_shift",
+    "sfx_car_approach_idle",
+    "sfx_fist_shutter",
+    "sfx_glass_bangles_chink",
+    "sfx_keyring_chink",
+    "sfx_marigold_curtain",
+    "sfx_paper_fold_crinkle",
+    "sfx_pen_ledger_loop",
+    "sfx_photo_print",
+    "sfx_sandals_steps",
+    "sfx_shutter_down",
+    "sfx_shutter_up",
+    "sfx_slippers_tile",
+    "sfx_street_morning_layer"
+  ],
+  "new_cues": [
+    {
+      "cue_id": "sfx_s1a03_starched_cotton",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A woman's hand pressing and sliding against the stiff starched cotton of a sari at her hip, a single soft crisp rustle of thick ironed cloth, then still. Extremely close, intimate, quiet room, no jewellery, no voices.",
+      "planned_duration_s": 1.5,
+      "loop": false,
+      "prompt_influence": 0.6,
+      "beat": "b5a",
+      "notes": "Library one-off list: s1a03 b5a. The keys' absence; nothing chinks.",
+      "status": "generated",
+      "file": "sound/sfx_s1a03_starched_cotton.mp3"
+    },
+    {
+      "cue_id": "sfx_s1a03_back_door_bang",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A wooden back door of a small shop slammed shut once in another room, heard from inside through a doorway and a curtain, a single hollow wooden bang with a short rattle of the frame. Distant, off-screen, no footsteps, no voices.",
+      "planned_duration_s": 1.5,
+      "loop": false,
+      "prompt_influence": 0.6,
+      "beat": "b7a",
+      "notes": "Library one-off list: s1a03 b7a. Billu's exit; he is not seen again.",
+      "status": "generated",
+      "file": "sound/sfx_s1a03_back_door_bang.mp3"
+    },
+    {
+      "cue_id": "sfx_s1a03_paan_cot",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "Two quiet close sounds in a small room, with a short gap between them: first a fresh betel leaf being folded between fingers, a tiny crisp leafy crackle; then, after a pause, an old wooden cot with a woven rope seat creaking softly once as a slight girl sits on its edge. Close, quiet, no voices.",
+      "planned_duration_s": 3.0,
+      "loop": false,
+      "prompt_influence": 0.6,
+      "beat": "b7a",
+      "notes": "Library one-off list: s1a03 b7a (paan leaf crackle; cot creak). One generation, two slices. If the model blends them, use the crackle only and let the cot creak go (plays on the bed); sfx_bed_creak_petals is not a substitute because its petal rustle belongs to the wedding bed.",
+      "status": "generated",
+      "file": "sound/sfx_s1a03_paan_cot.mp3"
+    },
+    {
+      "cue_id": "sfx_s1a03_powder_tile",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A small folded paper packet tipped over and fine dry white powder falling a short distance onto a hard ceramic tile floor, a faint soft dry patter and hiss, then the paper flicked once empty. Extremely close, intimate, quiet, no liquid, no voices.",
+      "planned_duration_s": 2.0,
+      "loop": false,
+      "prompt_influence": 0.7,
+      "beat": "b8",
+      "notes": "Library one-off list: s1a03 b8. Answer to s1e01's 'पूरी पुड़िया'; sfx_powder_into_milk is powder into liquid and does not fit.",
+      "status": "generated",
+      "file": "sound/sfx_s1a03_powder_tile.mp3"
+    },
+    {
+      "cue_id": "sfx_s1a03_pen_cap_click",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "The steel cap of a cheap ballpoint pen pulled off and clicked onto the back of the pen, one small sharp metallic click, on a cloth-covered wooden desk. Close, quiet office, no writing, no voices.",
+      "planned_duration_s": 1.0,
+      "loop": false,
+      "prompt_influence": 0.6,
+      "beat": "b10",
+      "notes": "Library one-off list: s1a03 b10, before l23.",
+      "status": "generated",
+      "file": "sound/sfx_s1a03_pen_cap_click.mp3"
+    }
+  ],
+  "one_offs_considered_and_declined": [
+    {
+      "sound": "b8 distant horn",
+      "why_declined": "Inside sfx_street_morning_layer's prompt."
+    },
+    {
+      "sound": "b8a constable footsteps on tile",
+      "why_declined": "A low 1 s slice of sfx_boots_concrete_shift under the slippers."
+    },
+    {
+      "sound": "b7 siren whoop (critic option)",
+      "why_declined": "Writer took the slat-gap option; the lock is engine and three blows only."
+    },
+    {
+      "sound": "b5 Aditya taking the keys on the cut",
+      "why_declined": "sfx_notes give the keys one chink in b5; the take is silent."
+    },
+    {
+      "sound": "b10b pen touching the page",
+      "why_declined": "One slice of sfx_pen_ledger_loop, as the library note plans."
+    },
+    {
+      "sound": "Mausi's chuckle (l05)",
+      "why_declined": "Voice take ([chuckles] tag), not an effect."
+    },
+    {
+      "sound": "b1-b7a tube hum, mirror-bulb buzz, fan; chowki fan, crow, hand pump",
+      "why_declined": "Inside amb_bureau_room and amb_chowki_day."
+    }
+  ],
+  "placements": [
+    {
+      "cue_id": "amb_bureau_room",
+      "beat": "b1-b8a",
+      "anchor": "from the first frame of b1 (already running, no sting) to the hard cut into b10",
+      "level": "bed, about -30 dBFS before ducking",
+      "treatment": "Tube hum, mirror-bulb buzz and slow fan (the fan is allowed in the bureau; library no_fan_rule). Continuous across every bureau cut: no new bed at any cut. Ducks 6 dB under every line."
+    },
+    {
+      "cue_id": "sfx_street_morning_layer",
+      "beat": "b1-b1a",
+      "anchor": "from the first frame of b1 until the shutter clang in b2",
+      "level": "about -6 dB under the bureau bed",
+      "treatment": "Shutter-up state carried from the s1a02 last frame. No voices."
+    },
+    {
+      "cue_id": "sfx_street_morning_layer",
+      "beat": "b2-b7a",
+      "anchor": "from the shutter clang to the shutter rattle in b8",
+      "level": "a further -6 dB (half), high-cut about 1.5 kHz",
+      "treatment": "Shutter-down state: 'outside sound drops by half', muffled and thin (sfx_notes bed b1-b7a; library amb_bureau_room note)."
+    },
+    {
+      "cue_id": "sfx_street_morning_layer",
+      "beat": "b8-b8a",
+      "anchor": "comes up full as the shutter rises in b8, holds to the cut into b10",
+      "level": "full layer, about -3 dB under the bureau bed, then ducked 6 dB under l21 and 12 dB under l22",
+      "treatment": "'Daylight street air floods in': the open-up is a fast 0.5 s filter sweep (high-cut opening to full range) riding the shutter rattle. The layer's distant horn is the script's horn; no extra horn cue."
+    },
+    {
+      "cue_id": "sfx_birds_dawn_loop",
+      "beat": "b8-b8a",
+      "anchor": "enters with the street layer as the shutter goes up in b8, to the cut into b10",
+      "level": "thin, about -10 dB under the street layer",
+      "treatment": "Morning birds outside the open shutter (library note s1a03 b8). Out on the hard cut to the chowki."
+    },
+    {
+      "cue_id": "sfx_glass_bangles_chink",
+      "beat": "b1",
+      "anchor": "as Mausi lowers the print, between set-up 1 and the first word of l01, inside the 0.5 s opening silence",
+      "level": "soft, close",
+      "treatment": "One chink. If the 0.5 s is cut, it sits under the first syllable of l01, low."
+    },
+    {
+      "cue_id": "sfx_shutter_down",
+      "beat": "b1a-b2",
+      "anchor": "starts after l03 ends, as Billu's hand pulls the strap; runs under b2's 1.5 s opening silence and ends in the hard clang on the floor before l04",
+      "level": "loud, the episode's first big sound, peak about -8 dBFS, nothing under it but the bed",
+      "treatment": "Long metallic rattle down. The street layer drops to its shutter-down state on the clang. If b2's silence is trimmed to 1.0 s (writer trim order), the rattle may start under the tail of l03's last word; the clang must land before l04."
+    },
+    {
+      "cue_id": "sfx_photo_print",
+      "beat": "b2a",
+      "anchor": "under the second half of l05 ('...भाग गई, दामाद जी।' / 'ran off a year back, Damaad ji'), as the print is laid face down",
+      "level": "low, dry, about -6 dB under the line, placed in a gap between words",
+      "treatment": "One dry tap of a photograph laid face down on the wooden desk; her hand settling flat on it is silent."
+    },
+    {
+      "cue_id": "sfx_bangle_slide_off",
+      "beat": "b3",
+      "anchor": "after l07 ends, inside the 2.5 s closing silence (set-up 2)",
+      "level": "exposed, close, about -12 dBFS; bed dipped 4 dB",
+      "treatment": "Each bangle clicks against the next as it slides over her hand. No music (music_note: no score under b1 to b3)."
+    },
+    {
+      "cue_id": "sfx_bangles_drop_desk",
+      "beat": "b3",
+      "anchor": "follows the slides directly, over set-up 3 (the desk insert), the last bangle rolling and settling",
+      "level": "exposed, close, as loud as the slides",
+      "treatment": "Signature moment of finale A: left in the open, nothing under it but the dipped bed. b3 is protected in the trim order; if the slide plus drop runs longer than the 2.5 s silence, the silence grows in the edit to fit the drop's settle (D-0M2: the sound sets the length here), up to about 1.5 s extra."
+    },
+    {
+      "cue_id": "mus_bed_drone",
+      "beat": "b3a-b6",
+      "anchor": "in at the head of b3a's 2.0 s silence, on the scar insert, then holds very quietly through b6",
+      "level": "very low, about -28 dBFS, below the bed; ducks 8 dB under every line",
+      "treatment": "The music_note's 'single low sustained string note'. Discard the file's first ~4 s (fade-in); start from a steady point with a 0.8 s fade-in so it is felt rather than heard arriving. Loop with a 2 s crossfade if b3a-b6 runs over the usable length. Cut dead (no fade) on the first fist blow in b7."
+    },
+    {
+      "cue_id": "sfx_paper_fold_crinkle",
+      "beat": "b4",
+      "anchor": "inside b4's 1.5 s opening silence, on the insert of the fold coming out of the pocket",
+      "level": "close, small",
+      "treatment": "Paper crinkle of the half-full fold."
+    },
+    {
+      "cue_id": "sfx_slippers_tile",
+      "beat": "b4",
+      "anchor": "from the cut to set-up 2 (Mausi round the desk) into the first words of l10; 2-3 steps",
+      "level": "low, about -8 dB under l10",
+      "treatment": "Mausi's slippers. Slice to three steps; they stop before 'दाम बोलिए'."
+    },
+    {
+      "cue_id": "sfx_keyring_chink",
+      "beat": "b5",
+      "anchor": "once, as Kiran's hand opens in the insert (set-up 2), in the gap before l12's first word or under it",
+      "level": "clear but soft",
+      "treatment": "Mausi's keys heard in Kiran's hand (sfx_notes b5). Once only: Aditya taking them on the cut is silent."
+    },
+    {
+      "cue_id": "sfx_glass_bangles_chink",
+      "beat": "b5a",
+      "anchor": "inside the 1.0 s opening silence, as Mausi's hand goes to her hip",
+      "level": "soft",
+      "treatment": "One chink, then the starched-cotton rustle (one-off) where the keys should be."
+    },
+    {
+      "cue_id": "sfx_s1a03_starched_cotton",
+      "beat": "b5a",
+      "anchor": "directly after the bangle chink, still inside the 1.0 s silence, ending before l13",
+      "level": "close, quiet",
+      "treatment": "The absence beat: the hand finds only cloth. Nothing under l13 ('तूने...?' / 'You...?')."
+    },
+    {
+      "cue_id": "sfx_keyring_chink",
+      "beat": "b6",
+      "anchor": "at the top of the beat, before l15, as the ring goes into Aditya's kurta pocket",
+      "level": "soft, slightly muffled (low-pass about 5 kHz, cloth)",
+      "treatment": "Use a second slice of the file so it does not repeat b5's exact chink."
+    },
+    {
+      "cue_id": "sfx_car_approach_idle",
+      "beat": "b6-b7",
+      "anchor": "pre-laps in under the last ~1 s of b6's 1.8 s closing silence, idles under b7",
+      "level": "high-cut about 1.2 kHz, about -10 dB under the bed at first, rising 4 dB as it stops",
+      "treatment": "The police are an engine heard through the shutter. Starts after l17 ends, never under it. Idles low under l18, then fades out over b7a's first second (it stays outside; the script gives it no exit)."
+    },
+    {
+      "cue_id": "sfx_fist_shutter",
+      "beat": "b7",
+      "anchor": "inside b7's 1.2 s opening silence, over set-up 1 (light through the slats); the first blow cuts mus_bed_drone dead",
+      "level": "loud, booming steel, peak about -8 dBFS",
+      "treatment": "Three blows. The library file is 2.5 s; if it overruns 1.2 s, the edit lengthens the silence to fit the third blow, or l18 begins on the last blow's decay, never across a blow. No siren, no voices (locked: engine and three blows)."
+    },
+    {
+      "cue_id": "sfx_marigold_curtain",
+      "beat": "b7a",
+      "anchor": "at the head of b7a's 1.8 s silence, as Billu goes through (off screen; his exit is sound only)",
+      "level": "medium, slightly off-axis",
+      "treatment": "Plastic marigold curtain rattle."
+    },
+    {
+      "cue_id": "sfx_s1a03_back_door_bang",
+      "beat": "b7a",
+      "anchor": "about 0.5 s after the curtain, still in the silence",
+      "level": "distant, off, about -10 dB under the curtain",
+      "treatment": "Billu out of the back door, once. Not seen."
+    },
+    {
+      "cue_id": "sfx_s1a03_paan_cot",
+      "beat": "b7a",
+      "anchor": "paan crackle: on the Mausi still, after the door bang, before l19. Cot creak: on the cut to Chhoti (set-up 2), just before or under the first word of l19",
+      "level": "paan very close and tiny; cot creak low, under l19 at -10 dB if it overlaps",
+      "treatment": "One file with two events, sliced: a paan leaf folded, then a cot creak. Nothing else under l19 (whisper)."
+    },
+    {
+      "cue_id": "sfx_marigold_curtain",
+      "beat": "b8",
+      "anchor": "at the top of b8, as Chhoti goes out (sound only)",
+      "level": "medium, slightly off-axis",
+      "treatment": "Second slice of the curtain file (not the same rattle as b7a)."
+    },
+    {
+      "cue_id": "sfx_shutter_up",
+      "beat": "b8",
+      "anchor": "straight after the curtain, over set-up 1 (khaki sleeve on the bottom bar)",
+      "level": "loud, peak about -8 dBFS",
+      "treatment": "Rattle up; street layer and birds flood in on it."
+    },
+    {
+      "cue_id": "sfx_s1a03_powder_tile",
+      "beat": "b8",
+      "anchor": "over set-up 2, the powder insert (about 1.8 s), ending before l21",
+      "level": "very close, faint, on a dipped street layer (-6 dB while it plays)",
+      "treatment": "Aditya pours the dose away. It must read under the newly opened street: dip the street and birds for the insert, then let them back before l21. Protected beat."
+    },
+    {
+      "cue_id": "sfx_keyring_chink",
+      "beat": "b8",
+      "anchor": "at the end of l21, after its last word, as the khaki hand takes the ring",
+      "level": "soft",
+      "treatment": "Third slice of the file. Must start after l21's last word."
+    },
+    {
+      "cue_id": "sfx_slippers_tile",
+      "beat": "b8a",
+      "anchor": "inside b8a's 2.2 s opening silence, under the ledger being carried out: steps going out",
+      "level": "low, receding (gain falling 6 dB and high-cut closing over the steps)",
+      "treatment": "Mausi and the constable going out (sfx_notes b8a). A second slice of the slippers file plus, very low under it, a 1 s slice of sfx_boots_concrete_shift for the khaki feet; both stop before the hair tuck."
+    },
+    {
+      "cue_id": "sfx_boots_concrete_shift",
+      "beat": "b8a",
+      "anchor": "1 s slice, under the slippers in b8a's silence",
+      "level": "very low, -6 dB under the slippers",
+      "treatment": "The constable's steps. Library file is concrete; at this level on tile it passes. Optional: drop it if it reads as a crowd."
+    },
+    {
+      "cue_id": "sfx_glass_bangles_chink",
+      "beat": "b8a",
+      "anchor": "as Mausi's hand tucks the strand behind Kiran's ear, before l22",
+      "level": "soft, close",
+      "treatment": "Once. Then everything ducks under l22."
+    },
+    {
+      "cue_id": "amb_chowki_day",
+      "beat": "b10-b11",
+      "anchor": "hard cut in on the first frame of b10, runs to the cut to black",
+      "level": "low and dry, about -32 dBFS; ducked 6 dB under l23-l25, almost to nothing (-20 dB) under l26",
+      "treatment": "Fan, single crow, far hand pump (sfx_notes chowki bed). No traffic, no voices, no radio. In b11 it returns to its own level after l26 and carries to the cut; fan and crow continue to the cut (sfx_notes b11). Set-up 2 of b11 (open doorway to the bright yard) may lift the bed 2 dB with the crow nearer; no new layer."
+    },
+    {
+      "cue_id": "sfx_s1a03_pen_cap_click",
+      "beat": "b10",
+      "anchor": "inside b10's 1.2 s opening silence, on the khaki hand and pen, before l23",
+      "level": "small, close, clear",
+      "treatment": "The pen cap clicks before l23 ('नाम?' / 'Name?')."
+    },
+    {
+      "cue_id": "sfx_pen_ledger_loop",
+      "beat": "b10b",
+      "anchor": "one short scratch (about 0.4 s slice) on the last word of l26 ('रखा था' / 'Tulsi' in the English line's final word)",
+      "level": "quiet, under the dropped chowki bed",
+      "treatment": "The pen writes for the first time on her real name. One scratch, then the pen stops."
+    },
+    {
+      "cue_id": "sfx_sandals_steps",
+      "beat": "b11",
+      "anchor": "set-up 2: Aditya's sandals on the chowki floor toward the bench, then out into the yard, fading",
+      "level": "low; recedes over 2 s and is gone before the cut to black",
+      "treatment": "Aditya's sandals (library). Slice: the photograph tap comes between the last floor step and the yard steps."
+    },
+    {
+      "cue_id": "sfx_photo_print",
+      "beat": "b11",
+      "anchor": "set-up 2, the creased photograph set down face up on the wooden bench",
+      "level": "faint, dry",
+      "treatment": "This tap starts mus_ending_lullaby."
+    },
+    {
+      "cue_id": "mus_ending_lullaby",
+      "beat": "b11",
+      "anchor": "in on the photograph tap; carries over the cut to black",
+      "level": "quiet, about -24 dBFS, sitting just over the chowki bed",
+      "treatment": "Discard the first ~4 s (fade-in); start on the first harmonium note so the tap and the note land together. Release, not a sting. Over black: let the current phrase ring about 2-3 s past the cut and fade over 1.5 s on its open, unresolved note; if the file's open note falls later, fade early rather than resolve. Chowki bed cuts with the picture; only the lullaby crosses the black."
+    }
+  ],
+  "music_map": {
+    "b1-b3": "No score (music_note). Room tone and objects carry it; b3's bangles are exposed.",
+    "b3a-b6": "mus_bed_drone: one low held string note, in on the scar insert at the head of b3a, very quiet through b6.",
+    "b7": "Drone cut dead on the first fist blow. No fade.",
+    "b7-b8a": "No music.",
+    "b10-b10b": "No music: silence (chowki bed only) under the three names.",
+    "b11": "mus_ending_lullaby: in on the photograph tap on the bench, carries over the cut to black and fades on an open note about 2-3 s into black.",
+    "stings": "None. The library's stings are not used in this finale (music_note: a release, not a sting)."
+  },
+  "mix": {
+    "dialogue_first": true,
+    "loudness_target": "-14 LUFS integrated, -1 dBTP, tolerance +/-0.5 LU (D-0M4); master each language cut separately.",
+    "ducking": [
+      "Beds duck 6 dB under every line; music ducks 8 dB under every line unless stated.",
+      "b3a l08-l09 (the confession and its answer): drone down 10 dB, bed down 8 dB.",
+      "b6 l16-l17: the drone ducks a little more (10 dB) and nothing else plays (sfx_notes b6).",
+      "l19 [whispers]: beds and street ducked 10 dB; the whisper is ridden up by hand to sit at speech level so every word survives; nothing placed under it except an overlapping cot creak tail at -10 dB.",
+      "l22: duck everything (bed, street, birds) by 12 dB (sfx_notes b8a).",
+      "b10-b10b: chowki bed low and dry under l23, l24, l25 (6 dB duck); under l26 almost to nothing (about -20 dB). The pen scratch on l26's last word sits on top of that."
+    ],
+    "filters_and_space": [
+      "No phone voice in this episode: nobody speaks through a phone (Chhoti holds hers, l20 tells her to switch it off). The library's phone band-pass is not used.",
+      "Bureau b1-b8a: dry small-room tone on all lines, no added reverb.",
+      "Street layer: shutter-up full range (b1-b1a, b8-b8a); shutter-down -6 dB and high-cut about 1.5 kHz (b2-b7a).",
+      "b7 engine: high-cut about 1.2 kHz, heard through the steel shutter.",
+      "Chowki b10-b11: a short, low early-reflection room on all four lines (decay about 0.3 s, very low wet), the same on each so the three names match; none on effects. l23 and l24 are [flatly]: no compression beyond the dialogue bus."
+    ],
+    "transitions": [
+      "Opening: the bureau bed is already running on the first frame; no sting, no fade-in.",
+      "b2: the shutter clang switches the street to its shutter-down state.",
+      "b7: the first fist blow cuts the drone dead.",
+      "b8: the shutter rattle opens the street layer and birds in.",
+      "b8a to b10: hard sound cut from the bureau (street, birds) to the chowki bed on the picture cut.",
+      "End: the chowki bed cuts with the picture to black; only the lullaby crosses into black and fades on its open note."
+    ],
+    "no_fan_rule": "The fan is allowed here: it is in the bureau and chowki beds only (library no_fan_rule).",
+    "timing": "Point effects are placed against measured voice and edited shot lengths (D-014 rule 6, D-0M2). If silences are trimmed in the writer's order (b2 1.5 to 1.0 s, b10a and b10b 1.5 to 1.2 s, b6 tail 1.8 to 1.2 s), effects in those silences move and shorten with them: the shutter-down rattle may overlap l03's tail; the engine pre-lap shortens. b3, b3a, b8 and b11 are protected: their sounds (bangle drop, scar hold, powder, lullaby start) are never cut to save time."
+  },
+  "fallback": "If mus_bed_drone or mus_ending_lullaby is missing (plan 7.8), b3a-b6 runs on the bureau bed alone and b11 on the chowki bed, fading to black with the picture. If any one-off is missing, that moment plays on the bed alone; no stand-in is generated.",
+  "open_questions": [
+    "b3 length: the bangle slides plus drop (library 4.0 s + 5.0 s files) will likely run past the 2.5 s silence. This sheet asks the edit to let the silence grow to fit the last bangle's settle (b3 is protected). If S13 must keep 2.5 s, slice to three slides and a two-bangle drop with the roll.",
+    "b7 length: three fist blows in a 1.2 s silence is tight; either the silence grows about 1 s, or l18 starts on the third blow's decay.",
+    "Lullaby over black: how long the episode holds black (end card) is S13's; this sheet assumes about 3 s."
+  ],
+  "not_verified": [
+    "No cue has been generated or heard; levels in dB are starting points for S13, not measurements.",
+    "No shots.json, storyboard or measured voice exists for s1a03, so no anchor is in seconds; whether the gaps between lines (b5 chink, b2a tap) are long enough is unknown until the edit.",
+    "Whether sfx_s1a03_paan_cot comes back as two separable events, and whether the library files slice as planned (three keyring chinks, two curtain rattles, one pen scratch).",
+    "The 17-credit figure per one-off is the proof manifests' measured price, not checked for these prompts."
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "episode": "series2/s2e03",
+  "reviewer": "S15 Screening",
+  "round": 1,
+  "kind": "First full screening of the first edit (S13, 26 Nov, no slates) in both languages. Series 2's question episode: the viewer votes after it. I kept the pass lean, as asked. I took one frame per shot plus frames around line changes, ran whisper.cpp on every line window, measured levels with ffmpeg, checked the subtitle cues against the picture cuts and the speech, and checked super su9 and the overlays. No connector transcription was used.",
+  "date": "2026-11-26",
+  "pass": true,
+  "scored": true,
+  "gate": "D-023: 7/10 and no blocking fault. Met in both languages.",
+  "scores": {
+    "hi": 8,
+    "en": 8
+  },
+  "verdict": "Pass, hi 8/10 and en 8/10, with no blocking fault. Nobody has listened to this cut or watched it in motion. The verdict comes from sampled frames, per-line whisper.cpp transcripts and level measurements. A cold viewer reaches the vote knowing both roads, their costs and their gains (D-025). Cuff him: l18 says he stays in her lockup, alive. l19 gives the cost: the SHO stamps the slip and she cannot stop a truck that carries his stamp (l29 set up that the SHO stamps if Nirala refuses, and l07 says the cargo is the town's ration). Let him go: l20 says only he can get into the godown, carrying her phone. l35 gives the gain, Bhaiyaji's own voice recorded red-handed. l32 gives her cost: on her word, against orders. That pays off the DSP's threat in l17, 'Any officer who helps him will be named in the same FIR', which lands on her held close-up (s21) about 20 s earlier. His danger is carried by l06 'Do come alone', l34 'Whether it is a trap, nobody knows', 'Alive' in l18, and l24 'He has a real one'. l27 then asks the question in the words of the two roads. D-025 F5 (l33) is clear in both languages, and whisper hears it word for word in en. It plays over the wide two-shot with the red-cloth file and registers on the desk, so 'the complaint files' has a picture. Every line follows something heard: l28 'As always?' echoes l06, l13 answers l30 (the raid request is now heard), and l10 follows Pushpa's 'the door shut'. Speakers can be identified. Bhaiyaji is named by the caller-ID overlay on s01 and by l01, and he plays through the small-speaker band. The DSP is addressed in l30 before he speaks, and his voice plays through the phone chain while she holds the phone (s17, s18, s21). Three things hold the score at 8 and none blocks. (1) s08 holds one wide second framing for 12.5 s (hi) and 13.7 s (en), and l33, the F5 line, plays at the end of it, where attention is lowest. This is the one set-up that drags. s16 (9 s, Nirala's close, his own two lines) and s25 (8 s, Nandini's close, then the horn) do not. (2) b7 is reasoning spoken aloud to a silent Pushpa, and l35 states its point outright. That is by design (D-025) and short, but it is the most expository stretch. (3) Off-screen phone voices still carry no speaker label in the subtitles (the D-024 heard_as item carried over from s2e01). A small new picture fault: s05 reuses s01's phone frame without its caller-ID overlay, so the lit screen that read 'Bhaiyaji' 9 s earlier is blank.",
+  "blocking": [],
+  "files_screened": [
+    "content/series2/episodes/s2e03/render/s2e03.hi.mp4",
+    "content/series2/episodes/s2e03/render/s2e03.en.mp4",
+    "content/series2/episodes/s2e03/render/s2e03.hi.review.mp4",
+    "content/series2/episodes/s2e03/render/s2e03.en.review.mp4"
+  ],
+  "measurements": {
+    "probe": "All four are h264 1080x1920 at 30/1 with aac 48 kHz. Frames: hi 4235 (141.2 s), en 4091 (136.4 s). Both are under the 150 s ceiling (timeline meta length_ok). Both are shorter than the script targets (hi 161.9 s, en 154 s). No line was lost: every line is in the timeline and is heard by whisper.",
+    "md5": {
+      "hi": "9bf55cedce51005ba8b0a074c59cdb41",
+      "en": "f61234e6ca953d7c9993bb8c8820fa9d",
+      "hi.review": "13cef8e411de277c7dfee98ccccdd5fc",
+      "en.review": "1c90d9b01fb22686394856dc142f76e0"
+    },
+    "loudness_ebur128": "hi -14.3 LUFS, LRA 6.4. en -14.4 LUFS, LRA 5.9. The review cuts are identical to the clean cuts. The assemble log reports true peak -1.13 dBTP for en.review after its pass-2 redo. My ebur128 true-peak readout did not print, so I did not measure true peak.",
+    "per_line_level_dbfs": "Mean volume over each line window (it includes the in-line pauses). hi -13.8 to -21.8, en -14.4 to -21.7. The quietest lines are l07, l23 and l26, all tagged [quietly], plus l09/l11 (Pushpa, level). Each was still recognised by whisper. Phone lines: DSP hi l15 -20.7, l17 -18.0; en l15 -18.3, l17 -17.4. Bhaiyaji l03-l06 is -17.4 to -19.7. Nothing is buried. The s01 buzz-only open measures -22.9 (hi) and -21.3 (en) mean, so the buzz is present from frame 0.",
+    "scratch": "<scratch>"
+  },
+  "transcript_vs_script": {
+    "method": "whisper.cpp ggml-small on each line's window in the clean mix (timeline start -0.1 s to end +0.1 s), 34 lines per language. Where a head was missed, I re-ran on a wider window and on the dry take.",
+    "en": "All 34 lines are recognised in full and in order. Several differences are ASR spellings, not take errors: 'Bye, yaji', 'Bariyaji', 'go-down', 'Tana', 'Nerala', and 'read on' for 'raid on' in l15. l25 came back as 'I'm not police' from the mix but 'I am not police' from the dry take, so the contraction is unconfirmed (Nirala speaks with no contractions). l33 is heard exactly as scripted: 'And Bhaiyaji would know this thana isn't in his pay. Then he'd have the complaint files taken too.'",
+    "hi": "All 34 lines are recognised in substance. On l03 the line-window pass dropped the head 'Inspector साहब!'. A run on the head with -l en returns '(laughs) Inspector Sahab.' from the mix, so the head is present. l33: 'और भ्याजी जान जाते की ये ताना बिका नहीं किर फायल्स भी उप्वाले ते', which is the line. l17: 'जो अफसर उसकी मडद करेगा उसी अफिर में उसका नाम होगा', which is intelligible through the phone chain. l16's verb came back as 'दागी है' for 'डालिए' (a short sharp phone line). 'उसे अभी लोकव में' is heard and the subtitle carries the rest. Everything else matches the script word for word, apart from ASR spelling."
+  },
+  "subtitles_vs_picture": "subs.hi.json (64 cues) and subs.en.json (61 cues): validation ok, with max 15.9 / 17.0 graphemes a second. No cue crosses a picture cut. Cue text equals the script minus tags. I sampled the burned subtitles on every shot in both review cuts. Every shot that has speech at its 60% point shows the matching cue. The one blank sample, en s31 at 128.27 s, falls in the planned gap between c058 and c059 at the pause in l26. The l08 split (hi 'शाम', en 'This') lands on the s10/s11 cut. Cues are not labelled for off-screen voices (see fixes).",
+  "supers_and_overlays": "su9 'रात 10:30' (hi) and '10:30 p.m.' (en) come in on the cut into s02, 5 frames before l01, hold 3.0 s and fade into s03. They are legible and clear of the subtitle band. The ov_caller_bhaiyaji overlay is drawn per language on s01 ('भैयाजी' / 'Bhaiyaji'), sits centred on the lit screen and is legible at 360 px. It is not drawn on s05, a second framing of the same s01 image: that screen is lit and blank (new, see fixes). Known and deferred: the s04 tilted screen, ov_fake_board on s16/s26/s29/s30 (the board reads as a blank white panel), and the 'black for a breath' (the buzz starts on frame 0).",
+  "long_setups": {
+    "s08": "hi 12.5 s, en 13.7 s. Second framing of s02, push 1.12 to 1.2. It holds the call-end tones, 1 s of hum, then l28, l29 and l33. Faces stay readable and Nirala is in frame for his own answer, as the beat asks. But it is the same composition the viewer saw at 1.5 s, held for most of 14 s with almost no change, and the F5 line comes last. This drags (medium, not blocking). Fix F1.",
+    "s16": "9 s. Nirala's close under the bulb for l12 and l34, his own lines, with a real ellipsis pause. Acceptable: a speaking close-up carries 9 s.",
+    "s25": "hi 8 s, en 7.8 s. Nandini's close for l35 and l32, then the horn. Acceptable. It is the decision beat, and the horn gives the tail a reason."
+  },
+  "cold_viewer": {
+    "both_choices_costs_and_gains": "Stated and understood, in both languages, before the vote. Cuff: safe and alive (l18) against the grain going out under the SHO's stamp (l19). Let go: evidence in Bhaiyaji's own voice (l20, l35) against her name in the same FIR (l32 against orders, set up by l17) and his life (l06, l34, l18 'Alive', l24). The only link a viewer must make for themselves is from l32 'against orders' to l17's FIR, about 20 s apart. l17 is the held close-up line, so I expect it to carry.",
+    "F5_l33": "Clear. 'If I refused, SHO sahab would stamp it' (l29), then l33: refusing would show Bhaiyaji this thana isn't bought, and he would have the complaint files taken. This explains why Nirala has stamped every month and gives letting him go a further stake. The only weakness is placement (F1).",
+    "new_lines_flat_or_expository": "l28, l29 and l33 play as dialogue. l34 'Whether it is a trap, nobody knows' is on the nose but short, and it is Nirala's register. l35 is the most expository line, but it is her stating the gain aloud as D-025 asks. In en, l33's contractions ('isn't', 'he'd') break Nirala's no-contractions voice note (F4). Delivery was not heard, so 'flat' is judged on text only.",
+    "answers_to_unheard": "None found. l13 follows l30, l28 echoes l06, and l16's 'him' is Nirala, named in l14.",
+    "speakers_identifiable": "Yes. Bhaiyaji: caller ID, l01 and the speaker band. DSP: addressed in l30, phone at her ear on s17/s18/s21. The only moment of doubt is s19, where the DSP's l15 plays over Nirala's dark phone on the desk. That is intended ('the phone the DSP is dismissing'), and the phone-chain voice and 'SI Joshi' resolve it. Off-screen voices are unlabelled in the subtitles (F3)."
+  },
+  "fixes": [
+    {
+      "id": "F1",
+      "owner": "S7 Storyboard artist (shots.json), then S13 Editor",
+      "severity": "medium",
+      "issue": "s08 holds one wide second framing of s02 for 12.5 s (hi) / 13.7 s (en), and l33 (D-025 F5) comes last in it.",
+      "fix": "Split s08 at l33's first speech. s08 keeps the tones, the hum, l28 and l29 on its current move (about 7.4 s hi / 7.4 s en). A new s08b is a second framing of frames/s02.png at scale 1.3 centred on Nirala and the red-cloth file (focus about x 0.68, y 0.45, slow push to 1.3), holding l33 (about 4.9 s hi / 6.3 s en). No generation, no length change. S13 rebuilds both cuts; S12's cues do not move."
+    },
+    {
+      "id": "F2",
+      "owner": "S13 Editor",
+      "severity": "low",
+      "issue": "s05 is a second framing of s01 but renders frames/s01.png without the overlay layer. The phone screen that read 'Bhaiyaji' 9 s earlier is lit and blank on l04.",
+      "fix": "In both timelines, give s05 the same layers as s01 (frames/s01.png plus overlays/s01-ov_caller_bhaiyaji.<lang>.png) under its existing custom move, so the overlay scales with the plate."
+    },
+    {
+      "id": "F3",
+      "owner": "S12 Subtitle editor (with the D-024 heard_as tooling item)",
+      "severity": "low",
+      "issue": "The phone voices (Bhaiyaji l03-l06, DSP l13 and l15-l17) carry no speaker label. With sound on, the voice chain and the picture identify them, so this does not block. Sound-off viewers lose who is speaking on s19/s20.",
+      "fix": "When the heard_as label lands series-wide, mark these cues (for example 'भैयाजी (phone):' / 'Bhaiyaji (phone):', 'DSP:'). The fix belongs to the toolchain, not to this episode."
+    },
+    {
+      "id": "F4",
+      "owner": "S5 English adapter, then S10 Voice director",
+      "severity": "low",
+      "issue": "en l33 uses 'isn't' and 'he'd'. Nirala's voice_note says 'No contractions tonight'. Every other Nirala line obeys this.",
+      "fix": "Change en l33 to '[quietly] And Bhaiyaji would know this thana is not in his pay. Then he would have the complaint files taken too.' Re-voice en l33 only, and keep the current take if the owner prefers not to spend a voice call on it. If it is re-voiced, S13 re-fits s08/s08b and S12 rebuilds the en cues."
+    },
+    {
+      "id": "F5",
+      "owner": "owner (ear)",
+      "severity": "low",
+      "issue": "Nobody has listened. Whisper's mix pass heard en l25 as 'I'm not police' while the dry take reads 'I am not police'. hi l16's 'डालिए' did not survive ASR through the phone chain. The tension bed, the horn and the cuff click have not been heard.",
+      "fix": "Listen to en 123.3-126.0 s (l25), hi 80.7-82.4 s (l16), and the b7-to-b8 horn (hi 112-116 s, en 109-112 s). If l16 is unclear by ear, S13 raises its phone-chain gain by 2 dB in edit.json only."
+    }
+  ],
+  "checks_run": [
+    "ffprobe codec, size, fps, frame counts and duration on all four renders; md5 of all four",
+    "ffmpeg ebur128 on all four (integrated loudness and LRA; the true-peak readout did not print)",
+    "volumedetect over each line window in both clean mixes (68 windows) and over the s01 buzz",
+    "one frame per shot at 60% of its length in both review cuts (66 frames), viewed as contact sheets with subtitles burned in; 540 px views of s08 start and end, s32 and s33 (en)",
+    "whisper.cpp ggml-small on every line window in both mixes (68 runs); re-runs on wider windows and on dry takes for hi l03 and en l25",
+    "cue lists of subs.hi.json and subs.en.json against the dialogue timeline, the shot cuts and the script text; validation blocks read",
+    "timeline meta read for second framings, the placed super, overlay layers and the S13 notes"
+  ],
+  "not_checked": [
+    "Nobody has listened. Delivery, emotion tags, the mix balance, the tension bed and the effects were judged from levels and ASR only.",
+    "Nothing was watched in motion. Moves were sampled at 60% of each shot, plus the start and end of s08 only.",
+    "True peak was not measured by me (the assemble log figure is quoted).",
+    "Faces against the character sheets: S9's check, not repeated.",
+    "The question card and the vote screen after s33 are outside this render."
+  ]
+}

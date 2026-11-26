@@ -1,0 +1,153 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,090"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 90
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,090",
+				"to": "00:00:00,940"
+			},
+			"offsets": {
+				"from": 90,
+				"to": 940
+			},
+			"text": " नमस्ते,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,940",
+				"to": "00:00:01,690"
+			},
+			"offsets": {
+				"from": 940,
+				"to": 1690
+			},
+			"text": " दामाज"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,690",
+				"to": "00:00:02,080"
+			},
+			"offsets": {
+				"from": 1690,
+				"to": 2080
+			},
+			"text": " जी,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,080",
+				"to": "00:00:02,460"
+			},
+			"offsets": {
+				"from": 2080,
+				"to": 2460
+			},
+			"text": " दर्वाजे"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,460",
+				"to": "00:00:02,620"
+			},
+			"offsets": {
+				"from": 2460,
+				"to": 2620
+			},
+			"text": " का"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,620",
+				"to": "00:00:02,820"
+			},
+			"offsets": {
+				"from": 2620,
+				"to": 2820
+			},
+			"text": " बुरा"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,820",
+				"to": "00:00:03,710"
+			},
+			"offsets": {
+				"from": 2820,
+				"to": 3710
+			},
+			"text": " मत्मानिये,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,710",
+				"to": "00:00:04,160"
+			},
+			"offsets": {
+				"from": 3710,
+				"to": 4160
+			},
+			"text": " कुन्दी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,160",
+				"to": "00:00:04,610"
+			},
+			"offsets": {
+				"from": 4160,
+				"to": 4610
+			},
+			"text": " तोडनी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,610",
+				"to": "00:00:05,000"
+			},
+			"offsets": {
+				"from": 4610,
+				"to": 5000
+			},
+			"text": " पडी।"
+		}
+	]
+}

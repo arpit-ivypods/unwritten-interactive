@@ -1,0 +1,97 @@
+{
+  "continuity": {
+    "ok": true,
+    "by": "S4 Continuity keeper, 26 Nov 2026",
+    "ledger": "content/series1/continuity.json (problem ids P05, P11, P12, P15)",
+    "fixed": [],
+    "problems": [
+      {"id": "P05", "severity": "low", "owner": "S2", "line": "b1: Kiran 'standing in front of the desk', Aditya beside her; s1a02 b7 and b8 left them 'across the room by the mannequin near the shutter'.", "fix": "In s1a02 b9 shot 1, not here: 'Kiran and Aditya have crossed from the mannequin to the front of the desk at her look'."},
+      {"id": "P11", "severity": "nit", "owner": "S7", "line": "b8a: 'the thick red cloth ledger from the open cashbox'; the cashbox was locked in s1a02 b6 and the keys reach the khaki hand only at the end of b8.", "fix": "b8a STATE line: 'cashbox lid up, unlocked by the khaki hand with Mausi's ring'."},
+      {"id": "P12", "severity": "nit", "owner": "S6", "line": "Chhoti look: 'a plain white dupatta'; s1a01, s1a02 and s1b03 say only 'a plain dupatta'.", "fix": "S6 locks white on the Chhoti sheet and in style.json; no script change."},
+      {"id": "P15", "severity": "info", "owner": "S1", "line": "l05 'साल भर पहले' against bible story_locks.rekha 'दो साल पहले'.", "fix": "The script is right (wedding six was about fourteen months ago). S1 updates the bible in the next errata."}
+    ]
+  },
+  "pass": true,
+  "score": 8.1,
+  "must_fix": [
+    "STILLS-ONLY STAGING (must fix), b3a: the scar insert is the moment Aditya and the viewer finally see the scar on Kiran's arm, the payoff of all five episodes. It gets only the 0.8 s of \"silent_seconds\" before l08, then cuts to Kiran's single. A pale scar on a still held under a second will not read. Fix: set b3a \"silent_seconds\" from 0.8 to 2.0, holding the insert silent, and leave l08 \"[quietly] रेखा कोई नहीं है। मोहित की दुल्हन मैं थी।\" over set-up 2 as written. target_total_seconds goes from 122.3 to 123.5. Take b3 and b3a off the writer's trim list.",
+    "STILLS-ONLY STAGING (must fix), b5, b7a, b8 and writer_notes: silent set-ups run far under the skill's 3-5 s shot norm. b7a puts three silent set-ups in 1.8 s (about 0.6 s each). b8 puts three in 3.0 s (1.0 s each), and the third is the powder poured on the floor: Aditya giving up the dose, the visual answer to s1e01's 'पूरी पुड़िया'. b5 puts two in 1.2 s, and one of them is the keys held out. Then writer_notes says 'cut silences first (b8, b7a, b11 and b3 hold the most)', which would cut the very images that carry the ending. Fix, with no change to the total: (a) b7a: drop set-up 1, the curtain swinging, because the curtain rattle and back-door bang in sfx_notes already carry Billu's exit. Mausi with the paan then gets the 1.8 s. (b) b8: drop set-up 1, the empty cot, because Chhoti's exit is already in b7a and in the curtain sound. Give the shutter-up still with the khaki sleeve about 1.2 s and the powder insert about 1.8 s. (c) b5: play l12 \"[calm] हिसाब तुम्हारे phone में है। किताब भी ले जाओ।\" over set-up 2, the keys insert, and drop the Kiran single or move it under the tail of l12. (d) Replace the trim order with: protect b3, b3a, b8 and b11; trim first b2 silence 1.5 to 1.0 s, b10a and b10b 1.5 to 1.2 s each, b6 tail 1.8 to 1.2 s, then shorten l04 to \"[calm] रेखा कहाँ है, मौसी जी?\"."
+  ],
+  "medium": [
+    "CONTINUITY (medium), l05 \"[chuckles] रेखा? वो तो दो साल पहले भाग गई, दामाद जी।\": two years ago is before Mohit's temple wedding, about 14 months ago (s1e01 b8, 'fourteen months'). Taken literally, Mausi's cover says Rekha could not be the bride in the photograph, and Aditya knows the date. This is the D-005 default line and it is quoted in bible story_locks.rekha, but it is not in locked_lines. Fix: \"[chuckles] रेखा? वो तो साल भर पहले भाग गई, दामाद जी।\" It is the same length and does the same job. S1 errata should update story_locks.rekha to match.",
+    "CONTINUITY (medium), b5 to b8a, hand state (D-013 rule 3): after b5 Aditya has the key ring in one hand and the fold in the other. In b6 'his hand picks the face-down print up' with no hand free. In b8a the key ring is on the ledger under a khaki arm, but nobody is shown handing it over. Fix: one clause in b6, e.g. 'he drops the key ring into his kurta pocket, then picks up the print with that hand and pockets it too'. Then state in b8a that the khaki hand has the ring, or keep the ring out of that still.",
+    "CLARITY (medium), b7 l18 \"[nervous] मौसी! Police की गाड़ी!\": from behind a closed shutter Billu hears only an engine and three blows, and sfx_notes says 'no voices'. He never heard Aditya's half-hour line in s1a02. Fix: in the b7 action put Billu's eye at a gap in the slats, or add to b7 sfx 'one short siren whoop as the engine pulls up'. Both stay inside the 'police are an engine, light through shutter slats' lock.",
+    "CRAFT (medium), b2a set-up 3: the insert of the print laid face down, placed 'between l05 and l06', gets 0 s. Both lines are Mausi's, so there is no speaker gap, and the schema allows no silence between lines. Fix: put the insert under the second half of l05 ('...भाग गई, दामाद जी।') or under the opening words of l06.",
+    "LENGTH (medium, estimate): the short-turn targets are optimistic against Gate 0b. The shortest measured Hindi v4 clips in content/proof/photoreal/voice/manifest.jsonl are 1.36 s for 9 characters and 1.68 s for 12. Fix: l23 0.8 to 1.1, l24 1.0 to 1.2, l25 0.9 to 1.1, l13 1.2 to 1.4, l11 1.6 to 2.0, l18 2.0 to 2.4 (+1.9 s). With must-fix 1 the total becomes about 125.4 s. My projected running time is 123-140 s (estimate), so the top end can pass the 135 ceiling, which is why the trim order in must-fix 2 matters.",
+    "CRAFT (medium): I count about 50 set-ups in 122.3 s, an average of 2.4 s against the skill's 3-5 s. Must-fix 2 removes two. The writer could also merge b1a set-ups 2 and 3, and b10b's extra 'pen touches the page' still into set-up 2.",
+    "PERFORMABILITY (minor): 20 of the 27 tags are [calm] or [quietly]. That fits the bible's hushed voices, but it gives S10 a flat map for the climax. Optional: in writer_notes, give S10 the subtext for l08 (a confession after a pause), l09 (stunned, slower), l14 (no triumph) and l22 (tender), so the layered tags differ. [hesitant] in l16 and [flatly] in l23 and l24 are untested; the writer has already given swaps.",
+    "CONTINUITY (minor), b1 opens 'inside the last frame of s1a02', but s1a02 b9 has Billu 'soft behind her shoulder' and the key ring in Kiran's 'right fist'. s1a03 b1 has Billu 'near the shutter' and the ring 'hooked on its little finger'. Fix: in b1, Billu behind Mausi's chair, crossing to the shutter on l03; in s1a03 b1, the ring in Kiran's right fist, shifted to her little finger before b3.",
+    "HINGLISH (minor, optional): only 7 English words in 26 lines (party, shutter, phone, reception, Police, police, Phone) and no English verbs. Aditya has none, although his voice_note lists his trade nouns. That is defensible for a Hindi-heavy finale; no change is required.",
+    "METADATA (minor): the file lacks the logline_id and path_position keys that s1a02 has. target_total_seconds includes 6.0 s for 20 speaker changes; the skill allows this, but the gaps that fall across silent beats are counted twice. script.en.json does not exist yet, so the hi/en id check could not run. That is S5's step."
+  ],
+  "summary": "Tool limits: this session has no Write tool and no shell. So `review-notes.json` is not written, and the JSON was checked with search patterns only, not parsed. An agent that can write needs to save this review to `<repo>/content/series1/episodes/s1a03/review-notes.json` under \"critic\", round 1.\n\n**Verdict: pass, round 1, no fatal problem. Score 8.1:** hook 8.5, stakes 8.5, choice null, branch_distinct 9, cliffhanger 8.5, hinglish 7.5, performability 7.5, length 7, continuity 8. File: `<repo>/content/series1/episodes/s1a03/script.hi.json`.\n\n**Checks I ran**\n- **JSON, by search pattern:** no comma before a closing bracket, no missing comma between lines, no backslashes or tabs, no stray text after a value's closing quote.\n- **Ids:** all six speakers and both locations are in the bible.\n- **Tags:** `emotion_tags` match the inline tags on all 26 lines, checked by reading each one.\n- **Durations, by hand arithmetic:** spoken 85.6 s + silences 30.7 s over 18 beats + 20 speaker changes × 0.3 s = 122.3 s, which matches `target_total_seconds`.\n- **Line count:** 26, inside 25-40.\n- **Characters (hand count):** about 762 characters of dialogue, under the D-007 limit of about 1,050, at 8.9 a second. The densest line is l18 at 11.0 a second; none is over 12.\n- **Lead on screen:** Kiran is on screen in 14 of 18 beats.\n- **यह/वह search:** no hits in spoken lines. The l20 hit is inside यहाँ.\n- **Branch B overlap:** searched s1b03 for this episode's key lines; none is shared.\n- **Not run:** the hi/en id check, because `script.en.json` does not exist yet.\n\n**Length projection (estimate):** I used the 10 Hindi v4 proof takes as a yardstick. They were 283 characters in 33.5 s, 30% over their targets. On that basis this script speaks for about 86-100 s and runs about 123-140 s in all, so the top end passes the 135 s ceiling.\n\n**What works**\n- The opening line turns the s1a02 cliffhanger inside 5 s: Mausi names the man (\"मोहित के भाई\") instead of naming the hand.\n- All four points the bible keeps apart between the two finales hold:\n  - Mausi never reaches for the wrist.\n  - \"आपने ही सिखाया है\" is said only here.\n  - Mausi's knowing comes out through Kiran's question and her silence.\n  - Mausi says only \"तूने...?\", with no \"since fourteen\" appeal.\n- Following D-007 direction 11, nothing calls the half sachet lethal.\n- No frame shows more than two faces.\n- The props are traced through the episode: print, sachet, keys, chooda.\n- The ending is real, and l26 is calm, unwhispered and over a ducked bed.\n- The Hindi is natural spoken Hindi.\n- Dialogue stays under the length limit, with no padding.\n\n**Must fix**\n1. The scar reveal in b3a is held for 0.8 s. Hold it silent for 2.0 s.\n2. Silent stills in b5, b7a and b8 run 0.6-1.0 s each, including the powder being poured away. The writer's trim order would also cut the silences that carry the ending. Concrete fixes for both are in `must_fix`; neither changes the total length.\n\nThe medium items, including the \"दो साल पहले\" date in l05 contradicting the 14-month timeline, are in `medium` with replacement wording. The script passes as it stands; S2 should apply both must-fix items before storyboard.",
+  "critic_round": 1,
+  "writer_response": [
+    {
+      "item": "must_fix 0 (b3a scar hold)",
+      "action": "applied",
+      "detail": "b3a silent_seconds 0.8 to 2.0, insert held silent; l08 unchanged over set-up 2. b3 and b3a are now on the protect list."
+    },
+    {
+      "item": "must_fix 1 (b5, b7a, b8 short stills and trim order)",
+      "action": "applied, all four parts",
+      "detail": "(a) b7a: curtain set-up dropped; Billu's exit is sound only; Mausi with the paan holds the whole 1.8 s (her pallu business cut so the still has one change); l19 over Chhoti, l20 over Kiran. (b) b8: empty-cot set-up dropped; shutter-up still about 1.2 s, powder insert about 1.8 s, l21 over set-up 3; b7a now says Chhoti's exit is the curtain sound at the top of b8. (c) b5: l12 plays over the keys insert; the Kiran single is dropped; Aditya takes the ring on the cut (chink is sound). (d) writer_notes trim order replaced word for word with the critic's order; no locked or default line is touched."
+    },
+    {
+      "item": "medium 0 (l05 date)",
+      "action": "applied",
+      "detail": "l05 now '[chuckles] रेखा? वो तो साल भर पहले भाग गई, दामाद जी।'. Same character count. It changes the D-005 default wording, which D-005 offers as a default, not a lock, and the line is not in locked_lines. S1 errata needed: story_locks.rekha in bible.json still quotes 'दो साल पहले'. The writer has not edited the bible (S1's file)."
+    },
+    {
+      "item": "medium 1 (key-ring hand state)",
+      "action": "applied",
+      "detail": "b6 now states he drops the ring into his kurta pocket (sound, with a b6 sfx note) so the free hand pockets the print. b8 l21 set-up has him holding the ring out to the khaki sleeve; b8a says the khaki hand took it at the end of b8; b8 sfx adds the chink. The continuity writer_note is updated."
+    },
+    {
+      "item": "medium 2 (l18 clarity)",
+      "action": "applied, first option",
+      "detail": "b7 l18 set-up: Billu at the shutter, one eye to a gap in the slats, a bar of daylight on his face. No siren added, so the sound stays as locked (engine, three blows)."
+    },
+    {
+      "item": "medium 3 (b2a insert placement)",
+      "action": "applied",
+      "detail": "The face-down print insert now plays under the second half of l05."
+    },
+    {
+      "item": "medium 4 (short-turn targets)",
+      "action": "applied",
+      "detail": "l23 1.1, l24 1.2, l25 1.1, l13 1.4, l11 2.0, l18 2.4. By my hand sum these add 1.7 s, not the 1.9 s the note states (0.3 + 0.2 + 0.2 + 0.2 + 0.4 + 0.4). New totals by hand arithmetic: spoken 87.3 s, silences 31.9 s, speaker changes 6.0 s, target_total_seconds 125.2 s."
+    },
+    {
+      "item": "medium 5 (set-up count)",
+      "action": "applied",
+      "detail": "b1a set-ups 2 and 3 merged into one Billu single under l03, with Mausi's voice over him. b10b's pen-touch still removed; the pen touching the page is the existing sfx scratch only. With must-fix 1 that removes five short set-ups in all (b5, b7a, b8, b1a, b10b)."
+    },
+    {
+      "item": "medium 6 (performability subtext)",
+      "action": "applied",
+      "detail": "writer_notes now give S10 subtext for l08, l09, l14 and l22. Tags unchanged."
+    },
+    {
+      "item": "medium 7 (b1 continuity with s1a02 b9)",
+      "action": "applied",
+      "detail": "b1: ring closed in Kiran's right fist, Billu soft behind Mausi's chair; he crosses to the shutter on l03 (b1a); b3 states she shifts the ring to her little finger. Checked against s1a02 b9 by search: it has 'right fist' and 'Billu soft behind her shoulder'."
+    },
+    {
+      "item": "medium 8 (Hinglish density)",
+      "action": "no change",
+      "detail": "The critic says no change is required. Adding English to a Hindi-heavy finale would be padding against the Gate 0b length finding."
+    },
+    {
+      "item": "medium 9 (metadata)",
+      "action": "applied in part",
+      "detail": "logline_id 'a05' and path_position 5 added, taken from bible.json episodes entry for s1a03. The speaker-change arithmetic is kept as the skill allows and now described in writer_notes as slightly long; it is not reworked, because the timeline is built from measured audio. script.en.json is S5's step and was not written."
+    }
+  ],
+  "writer_response_note": "Saved by the S2 writer, 26 Nov. The critic could not write this file, so the S2 writer wrote it. Everything above critic_round is the critic's output, copied word for word. The S2 session has no shell: script.hi.json has not been run through a JSON parser after these edits, and all totals are hand arithmetic."
+}

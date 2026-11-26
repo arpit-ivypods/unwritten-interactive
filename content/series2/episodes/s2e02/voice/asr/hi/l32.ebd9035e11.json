@@ -1,0 +1,131 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,130"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 130
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,130",
+				"to": "00:00:01,200"
+			},
+			"offsets": {
+				"from": 130,
+				"to": 1200
+			},
+			"text": " नहीं,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,200",
+				"to": "00:00:01,720"
+			},
+			"offsets": {
+				"from": 1200,
+				"to": 1720
+			},
+			"text": " S-H-O"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,720",
+				"to": "00:00:02,840"
+			},
+			"offsets": {
+				"from": 1720,
+				"to": 2840
+			},
+			"text": " सहब,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,840",
+				"to": "00:00:03,160"
+			},
+			"offsets": {
+				"from": 2840,
+				"to": 3160
+			},
+			"text": " माडम"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,160",
+				"to": "00:00:03,580"
+			},
+			"offsets": {
+				"from": 3160,
+				"to": 3580
+			},
+			"text": " फाइस"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,580",
+				"to": "00:00:03,880"
+			},
+			"offsets": {
+				"from": 3580,
+				"to": 3880
+			},
+			"text": " पड़"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,880",
+				"to": "00:00:04,520"
+			},
+			"offsets": {
+				"from": 3880,
+				"to": 4520
+			},
+			"text": " रहीं"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,520",
+				"to": "00:00:04,520"
+			},
+			"offsets": {
+				"from": 4520,
+				"to": 4520
+			},
+			"text": " हैं"
+		}
+	]
+}

@@ -1,0 +1,303 @@
+{
+  "series_id": "s2",
+  "stage": "loglines",
+  "status": "Three candidates from the S1 Showrunner. Not yet reviewed. The Script critic and the Arbiter pick one and record the reasoning in docs/decisions.md.",
+  "look": "Flat 2D digital illustration with bold outlines",
+  "genre": "Small-town cop caper: comic, warm, with real stakes",
+  "format": {
+    "episodes_on_any_path": 6,
+    "shared": ["e01", "e02", "e03"],
+    "choice_after": "e03",
+    "A": ["a04", "a05", "a06"],
+    "B": ["b04", "b05", "b06"],
+    "episodes_to_produce": 9,
+    "glimpses": 2,
+    "episode_length": "about two minutes"
+  },
+  "designed_within": [
+    "Principal cast of 5 or 6 per candidate, each with a distinct silhouette and one fixed outfit",
+    "6 recurring locations per candidate",
+    "No crowd-dependent beats: groups appear as objects (forty envelopes, thirty thumbprints in a register) or as two or three faces",
+    "Action carried by single strong images (hands, objects, reactions, close-ups); nothing depends on continuous movement",
+    "Fictional police force and insignia, no national flag or emblem, no real people, no child on screen",
+    "Readable text in a frame (signboards, token numbers, caller names) is added as an overlay in assembly, not painted by the image model"
+  ],
+  "not_reused": "None of the three concept-note stories (The Billionaire's Secret, The Last Local, The Wedding Tape) is used. A search of outputs/Unwritten-Interactive-Concept-Note.html for police, thana, inspector and constable found nothing, so there is no overlap of premise.",
+  "loglines": [
+    {
+      "id": "s2-laddoo",
+      "title": "लड्डू (Laddoo)",
+      "title_i18n": {"hi": "लड्डू", "en": "Laddoo"},
+      "logline": "At 2 a.m. in sleepy Jalebiganj, Sub-Inspector Meenu Rawat finds the thana's evidence locker opened with a key: twenty lakh rupees of seized committee cash gone, one motichoor laddoo left in its place. There are only two keys, one is in her pocket, and in seven hours that cash has to be in front of a magistrate.",
+      "logline_hi": "रात के दो बजे जलेबीगंज थाने का locker चाबी से खुला मिलता है: committee का बीस लाख cash गायब, और उसकी जगह एक मोतीचूर का लड्डू। चाबियाँ दो ही हैं, एक Sub-Inspector मीनू रावत की जेब में है, और सात घंटे बाद ये cash court में पेश होना है।",
+      "hook": "Cold open, no establishing shot. Second one: a torch beam finds a single orange laddoo on a paper plate on a bare steel shelf. Constable Bablu, not turning round: 'Madam... locker खाली है।' Inside twenty seconds we know it was twenty lakh, the lock is not broken, there are two keys and one is in Meenu's hand. Her phone buzzes: the SHO who holds the other key, on leave, calling at 2 a.m. She does not pick up: 'साहब को कैसे पता चला?' From the lockup ten feet away the man whose cash it was, committee operator PP Chaurasia, watches and smiles. Episode 1 ends on the malkhana register: an 11:40 p.m. entry in her name, in a signature she never made.",
+      "choice": "End of e03, 7 a.m. Meenu has found the cash in the wedding-house storeroom, being counted into forty named envelopes by the women PP cheated. They took back their own money with a copy of her key and left a laddoo because you do not leave a house empty-handed. Guddi Chachi holds the bag out to her; the SHO's jeep is at the end of the lane. Meenu asks: 'Cash court ले जाऊँ, या इन्हें बाँटने दूँ?' / 'Take the cash to court, or let them keep it?' A = Court ले जाओ (Take it to court). B = बाँटने दो (Let them keep it).",
+      "cost_each_way": "A, take it to court: she walks in clean at nine, the frame against her dies and PP's case lives. It costs forty families their savings for as long as the case runs (years), she takes the bag out of Guddi Chachi's hands, and she has to book the women who took it, Bablu's wife among them. B, let them keep it: forty families have their money by breakfast. It costs her the uniform and probably her freedom: at nine the locker is empty, the forged entry and her key say she did it, and with the evidence gone PP walks out free.",
+      "endings": "A: the cash reaches court at 8:58, PP turns on the SHO to save himself and the SHO falls, but the money is sealed for years; last image, Meenu at the sweet-shop counter filling in claim form one of forty while Guddi Chachi slides her a laddoo without looking at her. B: Meenu is arrested for the empty locker and PP walks, then the aunties and Bablu catch PP paying the SHO his cut in a sweet box; she stays charged and suspended; last image, Meenu in plain clothes at the wedding, a laddoo in one hand and a court summons in the other.",
+      "detail": {
+        "world": "Jalebiganj, a fictional small town. One night, 2 a.m. to mid-morning; the endings land the same day.",
+        "lead": "Sub-Inspector Meenakshi 'Meenu' Rawat, 32. Dry, clipped, tired authority; second-in-command of the thana and holder of one of the two malkhana keys.",
+        "cast": [
+          "meenu: lead. Tall, lean, sleeves rolled, steel watch, loose strand of hair (as described for the proof scene)",
+          "bablu: Constable Bablu Tiwari, 46. Short and round, handlebar moustache, maroon sweater-vest, yellow torch (as described for the proof scene). Earnest; his wife's savings are in the missing cash",
+          "bade_sahab: Inspector Raghubir Chauhan, 54, the SHO. Heavy-set, aviator sunglasses even at night, safari jacket over uniform trousers. Holds the second key; was paid to make the cash vanish and to leave Meenu holding the blame",
+          "guddi: Guddi Chachi, 58, halwai and treasurer of the women's savings committee. Small, wide, flour-dusted orange sari, steel ladle in hand. Leader of the politest theft in the district",
+          "kamla: Kamla Tiwari, 42, Bablu's wife. Thin, quick, green glass bangles, a cloth bag always on her shoulder. Guddi's second",
+          "pp: Prem Prakash 'PP' Chaurasia, 45, the committee operator in the lockup. Narrow, oiled hair, shiny purple shirt, gold chain. Watches everything through the bars"
+        ],
+        "locations": [
+          "malkhana: the evidence store room (plate already designed for the proof scene)",
+          "thana_front: front office with the lockup grille and the register desk",
+          "sweet_shop: Guddi's sweet-shop kitchen at 3 a.m., kadhai on the fire, trays of boondi",
+          "wedding_store: storeroom of the wedding house at dawn, stacked sweet boxes, a mat on the floor",
+          "jeep_bridge: the thana jeep and the single-lane bridge on the road to court",
+          "court_corridor: an empty corridor outside the magistrate's room, one bench, one wall clock"
+        ],
+        "shared_episodes": [
+          "e01 लड्डू (Laddoo). The empty locker, the laddoo, two keys, the SHO's 2 a.m. call she does not answer, PP smiling from the lockup. Ends on a REVEAL: the malkhana register shows an 11:40 p.m. entry in Meenu's name that she never signed. Someone set her up before the cash was even gone.",
+          "e02 मोतीचूर (Motichoor). 3 a.m. at the only kitchen in town still frying: Guddi Chachi feeds them and lies sweetly. Meenu finds the shape of her own key pressed into a lump of dough, and Bablu finds his wife's name on the committee list. Ends on an ARRIVAL: headlights at the thana gate at 4:30 a.m. The SHO is back from leave, aviators on, asking for her key.",
+          "e03 हिसाब (The Count). Meenu slips the SHO, follows the sweet boxes to the wedding house and finds the cash being counted into forty named envelopes. The women never knew there were only two keys. She also learns the SHO came for the cash himself at midnight and found the laddoo. Guddi Chachi holds the bag out to her. Ends on the DECISION."
+        ],
+        "choice_detail": {
+          "asked_at": "end of e03",
+          "question": {"hi": "Cash court ले जाऊँ, या इन्हें बाँटने दूँ?", "en": "Take the cash to court, or let them keep it?"},
+          "A": {
+            "label": {"hi": "Court ले जाओ", "en": "Take it to court"},
+            "gain": "She walks into court clean at nine, the frame against her collapses, the case against PP stays alive and she is free to go after the SHO.",
+            "cost": "Forty families lose their savings for as long as the case runs. She takes the bag out of Guddi Chachi's hands and books the women who took it, Bablu's wife among them."
+          },
+          "B": {
+            "label": {"hi": "बाँटने दो", "en": "Let them keep it"},
+            "gain": "Forty families have their money back by breakfast, on the morning of a wedding.",
+            "cost": "At nine the locker is empty and the forged entry and her key say she did it: suspension and arrest. With the evidence gone PP walks free and the SHO gets what he was paid for."
+          },
+          "why_hard": "A is lawful, keeps her free and keeps the swindler on the hook, but takes the money out of the victims' hands for years. B is justice this morning, paid for with her uniform and with both villains winning on paper. The women do not force her: they offer the bag back, so either way it is her doing."
+        },
+        "branch_A": {
+          "story": "A race to court against her own SHO, then a hearing where the only witness who can clear her is the man she arrested.",
+          "episodes": [
+            "a04 रास्ता (The Road). Meenu takes the bag. Bablu drives, his wife's envelope somewhere inside it and not a word said. Single images: the bag on her lap, his knuckles on the wheel, aviators in the mirror. Ends on a THREAT: the SHO's jeep is parked across the bridge, his hand out: 'Bag मुझे दो, Rawat। पेश मैं कर दूँगा।'",
+            "a05 पेशी (The Hearing). Bablu, for once, does not brake, and she reaches the corridor at 8:58. The SHO gets there too and tells the court reader that she stole the cash and he recovered it; the forged entry is his proof. Ends on a REVERSAL: PP, brought up from the lockup and watching his cash sealed for good, asks to make a statement about who came to the locker at midnight.",
+            "a06 रसीद (The Receipt). Resolution. PP's statement puts the SHO at the locker with the second key, and the SHO leaves in the back of his own jeep. The cash is counted and sealed; the women are booked and bailed the same afternoon and the wedding goes ahead on credit. Meenu starts the long way round: forty claim forms."
+          ],
+          "final_image": "Night, the sweet-shop counter. Meenu fills in claim form one of forty. Guddi Chachi slides a laddoo across to her without looking up.",
+          "lead_state": "Still in uniform in a town that has gone cold on her. She chose the long road and has stayed to walk it."
+        },
+        "branch_B": {
+          "story": "A heist in reverse, getting the money out to forty homes before nine, then the fall, then the aunties' own sting.",
+          "episodes": [
+            "b04 चालीस डिब्बे (Forty Boxes). Meenu pushes the bag back. The cash has to leave the house before the SHO searches it: forty envelopes go under the laddoos in forty wedding sweet boxes and out on Kamla's bicycle carrier. Single images: an envelope under a layer of laddoos, the SHO lifting a lid and helping himself to one. Ends on a THREAT: 8:55, the court corridor. Meenu walks in with nothing in her hands and the SHO is waiting with handcuffs.",
+            "b05 खाली हाथ (Empty-Handed). She tells the court the locker is empty and gives no name. Her own SHO arrests her. PP is discharged for want of evidence and walks out past the lockup she is now sitting in. Ends on an ARRIVAL: Guddi Chachi at the bars with a tiffin, Kamla behind her, Bablu holding the lockup keys: 'खाली हाथ किसी के घर नहीं जाते, बेटा।'",
+            "b06 मिठाई का डिब्बा (The Sweet Box). Resolution. PP, sure the SHO made the cash vanish as agreed, comes to pay him his cut. The aunties supply the box, Bablu supplies the witness and the seizure memo, and the SHO and PP are booked. None of it gives Meenu her locker back: she stays charged for the missing evidence and suspended."
+          ],
+          "final_image": "The wedding, morning light. Meenu in a plain salwar-kurta, a laddoo in one hand, a court summons in the other, her epaulettes in her pocket.",
+          "lead_state": "Out of uniform and, for the first time, not tired. She chose the town over the rule and is paying the bill herself."
+        },
+        "glimpse_seeds": {
+          "A": "From a04: the bag on her lap, Bablu's eyes on it, aviators filling the mirror, the jeep across the bridge. Ends on the SHO's open hand and 'Bag मुझे दो।' Must not reveal whether the cash reaches court, or that PP turns.",
+          "B": "From b04: an envelope pressed under laddoos, the SHO lifting a box lid, Meenu at the court door at 8:55 with empty hands. Ends on the handcuffs. Must not reveal what the court does, PP's release or the sweet-box sting."
+        },
+        "production_fit": "The first scene of e01 is the flat 2D proof scene, which the Script critic passed at 8 out of 10 (content/proof/flat2d/review-notes.json). The proof's style lock, the sheet and plate prompts for Meenu, Bablu and the malkhana, and the lantern insignia carry straight over (content/proof/flat2d/style.json). I found no rendered flat 2D sheet images under production/proof when I looked, so the saving is in approved designs and prompts, not finished sheets. Almost everything is night or dawn, which keeps the palette tight. Six cast, six locations.",
+        "risks": [
+          "The choice may lean towards B: viewers like handing victims their money. Two counterweights are built in: the women offer the bag back themselves, and B lets both villains win on paper. If the critic still reads it as lopsided, raise what B costs the women (they are holding stolen evidence) instead of softening A.",
+          "Two thefts are planned for the same night, the women's and the SHO's. That is the one piece of plot that needs careful laying out across e01 to e03.",
+          "Forty women must never appear as a crowd: envelopes with names, and two faces.",
+          "It grows out of the proof scene. The proof is not one of the three concept-note stories, but if 'brand new' is meant to exclude it too, this candidate is out."
+        ],
+        "content_notes": [
+          "Fictional police force and insignia; no national flag; no real people",
+          "No violence on screen beyond an arrest",
+          "The crime is an informal savings-committee fraud; no real scheme or company is named"
+        ]
+      }
+    },
+    {
+      "id": "s2-duplicate-thana",
+      "title": "Duplicate थाना (The Duplicate Thana)",
+      "title_i18n": {"hi": "Duplicate थाना", "en": "The Duplicate Thana"},
+      "logline": "Six weeks into her first posting, Sub-Inspector Nandini Joshi finds out why nobody in Imlipur brings a complaint to her thana: across the railway line, in a shut-down cinema, a man in a perfect uniform runs a second police station, and runs it better. Her orders are to arrest him by morning. But the only case against the town's strongman is in the fake inspector's files, and the strongman thinks he is the one officer he has bought.",
+      "logline_hi": "Posting के छठे हफ़्ते में Sub-Inspector नंदिनी जोशी को पता चलता है कि इमलीपुर में कोई उसके थाने क्यों नहीं आता: railway line के उस पार, बंद पड़े talkies में, एक आदमी पूरी वर्दी पहनकर दूसरा थाना चला रहा है, और उससे अच्छा चला रहा है। Order है कि सुबह तक उसे arrest करो। पर कस्बे के दबंग भैयाजी के ख़िलाफ़ इकलौता case उसी नक़ली Inspector की files में है, और भैयाजी उसे अपना ख़रीदा हुआ अफ़सर समझते हैं।",
+      "hook": "Opens mid-scene, no explanation. Second one: a khaki sleeve with two stars holds a cardboard token, number 7, on a complainants' bench. At the desk an inspector stamps a paper: 'अगला! Token सात।' Nandini stands: 'मैं इस इलाके की SI हूँ। और ये थाना मेरे record में है ही नहीं।' He looks at her stars, then pours her tea: 'बैठिए madam। पहले चाय, फिर complaint।' Behind him the lockup is a cinema ticket booth. She reports it up the line and is told: arrest him by ten tomorrow and your city transfer is signed. Episode 1 ends as she seizes his registers and opens the thickest file: thirty complaints against the strongman Bhaiyaji, each marked with the date her own thana turned it away.",
+      "choice": "End of e03, 11 p.m. Bhaiyaji, who believes the fake thana is a new outpost he has bought, wants 'Inspector sahab' at his cold storage at midnight, alone, while eight hundred sacks of ration grain leave town. Nandini cannot raid: her own SHO is on Bhaiyaji's payroll and may already have told him the inspector is a fake. The fake inspector, Sudhir Nirala, whose revolver is carved wood, holds out his wrists and leaves it to her. Nandini asks: 'इसे हथकड़ी लगाऊँ, या आज रात Inspector बनने दूँ?' / 'Do I cuff him, or let him be Inspector tonight?' A = हथकड़ी (Cuff him). B = एक रात और (One more night).",
+      "cost_each_way": "A, cuff him: he is alive and safe in her lockup, the order is obeyed and her transfer out is hers. It costs the town its one way into Bhaiyaji's godown: the truck leaves tonight, thirty complainants are left holding receipts from a thana that never existed, and she is the officer who jailed the only policeman Imlipur trusted. B, one more night: a real chance to catch Bhaiyaji with the grain and her SHO beside him. It makes her his accomplice the moment he walks in: she abets impersonation on her own authority, with no order and no backup, and her badge goes if it ever comes out. And she sends an unarmed civilian with a wooden pistol to a man who may already know what he is.",
+      "endings": "A: the grain is gone for good, but with Nirala cuffed to her wrist and vouching for her door to door she registers thirty real FIRs before the DSP's press conference, and Bhaiyaji and her SHO are booked on paper nobody can bury; Nirala goes to prison and she tears up the transfer; last image, his salute through the prison-van grille, returned. B: Bhaiyaji and the SHO are caught with the truck, and in court she tells the truth about who sent the fake inspector in, which saves the case and gets her suspended and charged alongside him; last image, the cinema lobby under a new hand-painted help-desk board, Nandini in a plain kurta at the desk, Nirala calling 'अगला! Token एक।'",
+      "detail": {
+        "world": "Imlipur, a fictional small town cut in two by a railway line. One day and one night; the endings land within days.",
+        "lead": "Sub-Inspector Nandini Joshi, 28. Academy topper on her first posting: exact, impatient, privately bored. She reports the fake thana up the line herself, which is what starts the clock.",
+        "cast": [
+          "nandini: lead. Tall, straight-backed, crisp new uniform, low ponytail, scooter helmet under one arm",
+          "nirala: 'Inspector' Sudhir Nirala, 40. Slight, pencil moustache, over-starched uniform a size too big, peaked cap never off, one star too many, a revolver carved from wood. Failed the police entrance nine times by one centimetre of chest. Keeps better records than any real thana",
+          "tripathi: Inspector Dayashankar Tripathi, 56, the real SHO. Large, slow, collar open, gamchha on one shoulder, always eating. Has not registered an FIR in fourteen months and has a zero-crime shield to show for it",
+          "bhaiyaji: Balram 'Bhaiyaji' Thakur, 45. Broad, white kurta, gold watch, sunglasses pushed up on his head, an unhurried smile. Runs the ration godown and most of the town",
+          "pushpa: Head Constable Pushpa Kumari, 50. Short, solid, cardigan over her uniform, knitting needles in her bun. Knows everything and has waited years for someone to ask",
+          "dsp: the DSP. A voice on the phone until the last episode of branch A, where he appears"
+        ],
+        "locations": [
+          "real_thana: the Imlipur thana office: the zero-crime shield, the SHO's locked almirah, an empty lockup",
+          "talkies_lobby: the lobby of the shut Roopam Talkies fitted out as a police station: desk, complainants' bench, a ticket booth for a lockup",
+          "projection_room: the fake thana's malkhana: shelves of dated, sealed envelopes where the film cans were",
+          "crossing_stall: the tea stall at the railway crossing, halfway between the two thanas",
+          "cold_storage: Bhaiyaji's cold storage: stacked sacks, a weighing scale, one truck, one hanging bulb",
+          "magistrate_room: a magistrate's desk and a witness stand (branch B only)"
+        ],
+        "shared_episodes": [
+          "e01 Token सात (Token Seven). A real sub-inspector waits her turn in a police station that is not on her map. She reports it; the DSP wants an arrest by ten tomorrow. Ends on a REVEAL: his thickest file holds thirty complaints against Bhaiyaji, each marked with the date her own thana refused it. The fake thana exists because the real one said no.",
+          "e02 Charge (Handing Over). Nirala does not run. He asks for one day to hand over charge properly, and she shadows him: a dispute settled in ten minutes, a stamped receipt, a malkhana where every bribe Bhaiyaji ever paid him is sealed and dated with the note numbers written down. Bhaiyaji thinks he has bought a new outpost. Ends on a THREAT: alone in the real thana, her SHO dials Bhaiyaji: 'एक बात बतानी थी... वो talkies वाली चौकी के बारे में।' Cut.",
+          "e03 बारह बजे (Midnight). Bhaiyaji's invitation arrives: midnight, the cold storage, Inspector sahab to come alone while eight hundred sacks of ration grain leave town. Nandini cannot raid without tipping him off, and the DSP will not move on a conman's word. Nirala shows her the wooden revolver, then his wrists. Ends on the DECISION."
+        ],
+        "choice_detail": {
+          "asked_at": "end of e03",
+          "question": {"hi": "इसे हथकड़ी लगाऊँ, या आज रात Inspector बनने दूँ?", "en": "Do I cuff him, or let him be Inspector tonight?"},
+          "A": {
+            "label": {"hi": "हथकड़ी", "en": "Cuff him"},
+            "gain": "Nirala is alive and safe in her lockup, the order is obeyed, the law is intact and her transfer to the city is signed.",
+            "cost": "The truck leaves tonight and the one door into Bhaiyaji's godown shuts. Thirty complainants are left with receipts from a thana that never existed, and she is the officer who jailed the only policeman the town trusted."
+          },
+          "B": {
+            "label": {"hi": "एक रात और", "en": "One more night"},
+            "gain": "One real chance to catch Bhaiyaji with the grain and her own SHO beside him, on evidence a fake thana spent two years collecting.",
+            "cost": "She is his accomplice from the moment he walks in: abetting impersonation on her own authority, with no order and no backup. And she sends an unarmed civilian with a wooden pistol to a man who may already know he is a fake."
+          },
+          "why_hard": "A protects a man who cannot protect himself and keeps her clean, and the town pays for it. B bets his safety and her badge on one night, for the town. The viewer has heard the SHO start that phone call and does not know how it ended."
+        },
+        "branch_A": {
+          "story": "A night of paperwork played as a thriller: the real thana has to earn, in six hours, the trust the fake one built in two years.",
+          "episodes": [
+            "a04 हवालात (Lockup). Nirala becomes the first occupant of the real lockup in fourteen months. From the crossing Nandini watches the truck leave and can do nothing lawful about it. Through the bars he tells her what is left: thirty complainants, if they will sign a real FIR. Ends on a REVERSAL: at the first door, at 1 a.m., the complainant looks at her uniform and shuts it: 'असली थाने में एक बार जा चुके हैं, madam।'",
+            "a05 तीस FIR (Thirty FIRs). She takes Nirala out of the lockup cuffed to her own wrist and goes door to door: the fake inspector vouching for the real one. The register fills, one thumbprint at a time. Ends on an ARRIVAL: 9:55 a.m., the DSP's car at the gate for the press conference, and stepping out beside him as guest of honour, Bhaiyaji.",
+            "a06 Zero. Resolution. She produces the impersonator in cuffs, as ordered, and with him thirty registered FIRs the DSP cannot bury in front of microphones. Bhaiyaji and Tripathi are booked for extortion; the grain is gone for good. Nirala gets his sentence. She tears up the transfer."
+          ],
+          "final_image": "The prison van's grille: Nirala salutes through it, cap straight, and she returns the salute. On the thana bench behind her, for the first time, people are waiting.",
+          "lead_state": "Still in uniform, staying by choice. She has learnt what the uniform is for from a man who was never allowed to wear it."
+        },
+        "branch_B": {
+          "story": "A sting with a fake policeman as bait, then a courtroom where the truth about the bait is the price of the conviction.",
+          "episodes": [
+            "b04 वर्दी (Uniform). She fixes his uniform, takes one star off his shoulder, puts her own phone in his pocket as a recorder and lets him walk in. She listens from the tea stall. Ends on a REVERSAL: Bhaiyaji's laugh on the line: 'नक़ली Inspector! आइए... आप ही का तो इंतज़ार था।' A fake policeman is the perfect man to blame for stolen grain. The line goes dead.",
+            "b05 गोदाम (Godown). Nirala is locked in with the sacks and a confession to sign; Tripathi is on his way to arrest the fake police gang and close the file. Nandini has no backup, so she walks in in full uniform with Pushpa and does what Nirala taught her: writes the seizure memo, out loud, item by item. Ends on a THREAT: Tripathi, cornered, points at her: 'Madam को सब पता था। Court में मैं यही बोलूँगा।'",
+            "b06 बयान (Statement). Resolution. In court the defence makes the whole case about the fake inspector. If she says she never knew, he falls alone and she is safe; she says she sent him. The memo and the envelopes hold: Bhaiyaji and Tripathi are charged and refused bail. She is suspended and charged alongside Nirala."
+          ],
+          "final_image": "The cinema lobby under a new hand-painted board for a citizens' help desk. Nandini in a plain kurta at the desk; Nirala beside her, out on bail, calling: 'अगला! Token एक।'",
+          "lead_state": "Out of uniform and doing the job anyway. She no longer needs the stars to know what she is."
+        },
+        "glimpse_seeds": {
+          "A": "From a04: the lockup door closing on a man in full uniform, the truck's tail-lights crossing the railway line while she stands and watches, his voice through the bars: 'FIR लिखिए, madam।' Ends on the first door shutting in her face. Must not reveal whether anyone signs, or the handcuffed walk.",
+          "B": "From b04: her fingers taking a star off his shoulder, the wooden revolver going into a real holster, a small figure walking into the dark mouth of the cold storage. Ends on the shutter coming down behind him. Must not reveal that Bhaiyaji already knows, or anything that happens inside."
+        },
+        "production_fit": "Five on-screen cast plus one phone voice, six locations. The two uniforms (hers correct, his over-perfect) and the cinema turned thana give the 2D artist strong, funny design work, and the fake thana is one rich set used in most episodes. It needs more readable signage than the other two (thana boards, token numbers, receipts), all of which must be overlay text. All sheets and plates are new; only the force insignia and palette carry over from the proof.",
+        "risks": [
+          "Heaviest set-up of the three: why the fake thana exists, why the real one tolerates it and why Bhaiyaji trusts it all have to land in e01 and e02 without a narrator.",
+          "The choice may lean towards B because sending him in is the more exciting option. The e02 phone call is there to make A feel like protecting him, not like giving up; it has to be staged so the threat is real.",
+          "The premise resembles news reports of fake police stations in India. That is from memory and was not looked up in this session. Town, people and events here are invented and no real case is followed.",
+          "Branch A's climax is paperwork. It works only if the cuffed door-to-door walk in a05 is as funny and warm as intended.",
+          "Impersonating the police is the comic engine, so the fictional insignia must read as fictional in every frame."
+        ],
+        "content_notes": [
+          "Fictional police force and insignia; no national flag; no real people",
+          "No violence on screen; the only weapon shown is a wooden one",
+          "The crime is diverted ration grain and extortion; no party, office-holder or real scheme is named"
+        ]
+      }
+    },
+    {
+      "id": "s2-pichkari",
+      "title": "पिचकारी (Pichkari)",
+      "title_i18n": {"hi": "पिचकारी", "en": "Pichkari"},
+      "logline": "On the day before Holi, ten hours from his farewell after thirty-eight spotless years, ASI Ramavtar 'Dadda' Shukla opens his holster for the last armoury check and finds a green plastic pichkari where his loaded service revolver should be. Sub-Inspector Aditi Solanki, the rookie he trained, has until six to get it back without writing the report that would cost him his pension. The trail leads to the one man in Gendapur Dadda would never arrest.",
+      "logline_hi": "होली से एक दिन पहले, अड़तीस साल की बेदाग़ नौकरी के आख़िरी दिन, ASI रामअवतार 'दद्दा' शुक्ला का holster खुलता है और loaded revolver की जगह हरी plastic की पिचकारी निकलती है। शाम छह बजे farewell है। Sub-Inspector अदिति सोलंकी को उससे पहले revolver ढूँढनी है, वो report लिखे बिना जो दद्दा की pension ले डूबेगी। और सुराग़ उस आदमी तक जाता है जिसे दद्दा कभी arrest नहीं करेंगे।",
+      "hook": "Second one: close on a cracked leather holster on an old policeman's belt, a marigold garland already round his neck. His thumb pops the flap and a neon-green plastic nozzle pokes out. Dadda: 'ये... मेरी नहीं है।' Aditi: 'दद्दा... आपकी revolver कहाँ है?' He squeezes the trigger and a thin jet of water hits the armoury log book. Inside twenty seconds we know: six rounds loaded, weapon due back at six, a lost weapon means an inquiry and no pension. They hide it from the armoury clerk and retrace the places he took his belt off yesterday. Episode 1 ends at the colour stall: Dadda bought eleven green pichkaris for his grandchildren and all eleven are in his bag. The one in the holster is a twelfth. Somebody put it there.",
+      "choice": "End of e03, 1 p.m. The revolver is with Master Girish, Dadda's oldest friend, whose house the moneylender Seth Banwari takes at five today. Dadda has known since last night: he put the toy in his own holster and has been walking Aditi slowly round town, because for once in thirty-eight years he decided to arrive late. If she reports it, an armed team comes for a 63-year-old schoolteacher. If she does not, she and Dadda have four hours to take a loaded gun off a desperate man. Her hand is on the wireless handset. Aditi asks: 'पाँच बजे तक चुप रहूँ, या अभी report कर दूँ?' / 'Do I stay quiet till five, or report it now?' A = चुप रहो (Stay quiet). B = Report करो (Report it).",
+      "cost_each_way": "A, stay quiet till five: if they get the gun back nobody ever knows, Dadda retires with his pension and his name, and Master ji never becomes a criminal. It costs her the thing she is: she signs a false armoury log and lies to her SHO on record, and if that revolver fires, a man is dead by a police weapon she chose not to report. B, report it now: the Seth is guarded, the gun is the whole district's problem and she is clean. It costs her Dadda: he is arrested in his farewell garland for hiding a lost weapon, the pension and the farewell go, and Master ji becomes an armed suspect hunted by men who have never met him.",
+      "endings": "A: at five Master ji pulls the trigger on the Seth and green water runs down a white kurta, because Aditi and Dadda swapped the guns in his bag an hour before; Dadda is garlanded at six, the Seth leaves without the house keys, and the armoury clerk, who saw the corrected log, says nothing; last image, the green pichkari locked in her desk drawer. B: Aditi reaches Master ji before the armed team does and takes the revolver from his hand, six rounds unfired, then puts his fourteen buried complaints into her report; Dadda's pension is frozen and there is no farewell; last image, the garlanded empty chair in the thana yard at six, and Dadda at the gate in his own kurta, saluting her first.",
+      "detail": {
+        "world": "Gendapur, a fictional small town, on the day before Holi. One day, 8 a.m. to 6 p.m. Colour stalls and heaps of gulal appear everywhere as objects; no festival crowd is shown.",
+        "lead": "Sub-Inspector Aditi Solanki, 27. First posting, by the book because the book is all she has had time to learn. Dadda taught her everything that is not in it.",
+        "cast": [
+          "aditi: lead. Small, quick, uniform a little too neat, short bob under a cap, a wireless handset on her belt",
+          "dadda: ASI Ramavtar 'Dadda' Shukla, 60. Tall, stooped, white walrus moustache, faded uniform with a cracked brown holster, a marigold garland from e01 on. Thirty-eight years and he has never once fired the revolver",
+          "masterji: Girish Babu, 63, retired primary teacher and Dadda's chess partner. Thin, bald, thick glasses, white kurta, chalk on his cuffs, a cloth jhola on his shoulder",
+          "seth: Seth Banwari Lal, 55, moneylender. Round, spotless white kurta, red ledger under his arm, rings on every finger",
+          "munshi: Kailash, 48, the armoury clerk. Narrow, pencil behind his ear, sleeve garters, a fat log book. Counts everything twice",
+          "dsp: the DSP. A voice on the wireless in e03; on screen only in branch B"
+        ],
+        "locations": [
+          "armoury: the thana armoury counter and weapons rack, with the log book",
+          "thana_yard: the thana courtyard and gate, with the garlanded farewell chair set out from the morning",
+          "barber: a two-chair barber shop with a cracked mirror and a hot-towel steamer",
+          "colour_stall: a Holi stall: heaps of gulal, a row of hanging green pichkaris",
+          "veranda: Master ji's house front: veranda, chessboard, a seizure notice pasted by the door",
+          "schoolroom: the shut primary-school classroom where he taught, empty for the holiday (branch B only)"
+        ],
+        "shared_episodes": [
+          "e01 पिचकारी (Pichkari). The holster, the toy, the jet of water on the log book. They hide it from the armoury clerk and retrace the places Dadda took his belt off yesterday. Ends on a REVEAL: he bought eleven pichkaris for his grandchildren and all eleven are in his bag. The one in the holster is a twelfth. This was no mix-up.",
+          "e02 हजामत (The Shave). At the barber's: Dadda slept twenty minutes under a hot towel, and the next chair held Master Girish, who never pays for a shave. Aditi learns that Seth Banwari takes Master ji's house at five today over a forty-thousand loan grown to nine lakh, and that Dadda wrote up fourteen complaints for him that died on the SHO's table. Ends on a REVERSAL: the stall's chit falls out of Dadda's own pocket: one green pichkari, bought at nine last night. He put the toy in his holster himself.",
+          "e03 देर (Late). Dadda tells her: he woke under the towel with a light holster and an empty chair beside him, understood, and for once in thirty-eight years decided to arrive late. He meant to write the report himself after five and pay with his pension. Aditi's hand is on the wireless. A report brings an armed team for an old schoolteacher; silence leaves her and Dadda four hours. Ends on the DECISION."
+        ],
+        "choice_detail": {
+          "asked_at": "end of e03",
+          "question": {"hi": "पाँच बजे तक चुप रहूँ, या अभी report कर दूँ?", "en": "Do I stay quiet till five, or report it now?"},
+          "A": {
+            "label": {"hi": "चुप रहो", "en": "Stay quiet"},
+            "gain": "If she and Dadda get the gun back by five, nobody ever knows: he retires with his pension and his name, and Master ji never becomes a criminal.",
+            "cost": "She signs a false armoury log and lies to her SHO on record: from that minute she is an accessory. If the revolver fires, a man is dead by a police weapon she chose not to report."
+          },
+          "B": {
+            "label": {"hi": "Report करो", "en": "Report it"},
+            "gain": "The district seals the town, the Seth is guarded, the gun stops being hers alone to find, and her record stays clean.",
+            "cost": "Dadda is arrested in his farewell garland for hiding a lost weapon: no pension, no farewell, thirty-eight years ending in her lockup. Master ji becomes an armed suspect hunted by men who have never met him."
+          },
+          "why_hard": "Reporting is right and safe for everyone except the two old men she cares about, and an armed search for a frightened man is a danger of its own. Silence can save both of them, and costs her the one thing she has been sure of, with a death on her hands if she is slow."
+        },
+        "branch_A": {
+          "story": "A two-person pickpocket caper against a friend, played with a real gun and a toy that feel the same inside a cloth bag.",
+          "episodes": [
+            "a04 झोला (The Cloth Bag). Aditi signs the noon armoury log: all weapons present. The revolver is in Master ji's jhola under a stack of school notebooks, and she and Dadda need that bag for thirty seconds. The plan is farewell tea and one last chess game on the veranda: the twelfth pichkari goes in, the revolver comes out. Ends on an ARRIVAL: Dadda's hand is in the bag when the armoury clerk cycles up to the veranda with his log book. The SHO wants a re-count at four.",
+            "a05 पाँच बजे (Five O'Clock). The swap was made in a scramble, both things wrapped in the same cloth, and neither of them is sure what is now in whose bag. At the re-count the clerk counts Dadda's holster by its buttoned flap and moves on. At five the Seth climbs the veranda steps for the keys and Master ji's hand goes into the jhola. Ends on a THREAT: his finger tightening inside the cloth, the Seth's back filling the frame. Cut.",
+            "a06 रंग (Colour). Resolution. Green water runs down a white kurta. Master ji stares at his own hand. The Seth demands an attempt-to-murder case; Aditi puts fourteen complaints on the table and offers to register his and all of those today. He leaves without the keys. At six Dadda hands in a clean revolver and six rounds and is garlanded. The armoury clerk closes the log over the corrected time, looks at her and says nothing."
+          ],
+          "final_image": "Her desk drawer, locked. Inside it, the green pichkari.",
+          "lead_state": "No longer the officer who has only the book. She has learnt to be late, and one man in the thana knows it."
+        },
+        "branch_B": {
+          "story": "A manhunt she starts herself and then has to outrun, with her teacher in her own lockup.",
+          "episodes": [
+            "b04 Wireless. She keys the handset. Within the hour the DSP's team is at the gate, Dadda is in the lockup in his farewell garland, and the alert goes out: armed suspect, do not approach. Aditi is taken off the case. Ends on a THREAT: she watches the team load rifles for a man who has never held anything heavier than chalk.",
+            "b05 पाठशाला (The Schoolroom). She goes alone, against orders, to the one place he would go: his old classroom, shut for the holiday. The revolver is on the teacher's desk; on the blackboard he has written fourteen dates. He will not hand it over. Ends on an ARRIVAL: footsteps in the corridor, and the man who walks in is not the police. Master ji asked the Seth to come here for the keys.",
+            "b06 छह बजे (Six O'Clock). Resolution. Aditi stands between them until Master ji puts the revolver in her hand: six rounds, unfired. She walks him out by the elbow, not the collar, before the team reaches the door, and writes the fourteen dates into her report so the DSP has to open them. Dadda is suspended on his last day, pension frozen pending inquiry. There is no farewell."
+          ],
+          "final_image": "Six o'clock in the thana yard: the garlanded chair, empty. At the gate Dadda, in his own kurta, turns and salutes her first.",
+          "lead_state": "A real officer, and lonelier. She did it right and it cost the man who taught her what right was."
+        },
+        "glimpse_seeds": {
+          "A": "From a04: her pen signing the false log line, the jhola on the veranda with something heavy under the notebooks, Dadda's hand going in. Ends on a bicycle bell and the clerk's log book at the gate. Must not reveal which object ends up in which bag, or the water.",
+          "B": "From b04: her thumb on the handset, Dadda behind bars in a marigold garland, rifles being loaded. Ends on the words 'armed suspect' over Master ji's empty veranda. Must not reveal where he is, the Seth's arrival or whether a shot is fired."
+        },
+        "production_fit": "Five on-screen cast plus the DSP, six locations. One object carries the hook, the clock and the climax, and the difference between toy and gun is a difference of colour, which flat 2D shows in a single still. Heaps of Holi colour give the series a palette of its own. Daylight throughout. All sheets and plates are new; only the force insignia carries over from the proof.",
+        "risks": [
+          "Guns are in many frames. Image models can refuse or soften weapon shots. Default staging is holstered, on a table or inside a cloth bag; no frame needs a gun pointed at the camera or at a face.",
+          "Darkest of the three: an old man planning to shoot a moneylender. The comedy has to come from the toy and from Dadda, not from the threat.",
+          "Branch B is more drama than caper, and its comedy is thinner than A's.",
+          "The lead is not the one in danger until she chooses. The scripts must keep the choice and its cost on her face.",
+          "Dadda's grandchildren are mentioned only; no child appears."
+        ],
+        "content_notes": [
+          "Fictional police force and insignia; no national flag; no real people",
+          "A loaded revolver and a planned shooting drive the plot; no one is shot on screen in either branch",
+          "Holi appears as a season and a palette only; no religious ritual is staged and no community is singled out"
+        ]
+      }
+    }
+  ],
+  "showrunner_notes": {
+    "what_differs": "s2-laddoo is a locked-room puzzle against a 9 a.m. deadline, and its choice sets the law against the victims. s2-duplicate-thana is an odd-couple story, and its choice sets one man's safety against the town's one chance. s2-pichkari is a mentor story on a ten-hour clock, and its choice sets loyalty against duty. Each has its own town, lead and cast.",
+    "lean": "Opinion, not a decision: s2-pichkari first, s2-duplicate-thana second, s2-laddoo third. Pichkari has the cleanest single image, the tightest clock and, in my judgement, the closest split. Duplicate थाना is the funniest and most original but carries the most set-up. Laddoo is the cheapest and safest to make and its opening has already passed the critic, but its choice is the likeliest to lean one way.",
+    "what_would_change_the_lean": "If the proof run shows weapon frames being refused or softened, prefer s2-duplicate-thana. If the overnight schedule turns out to be the binding limit, prefer s2-laddoo for the designs it reuses.",
+    "shared_look": "All three can wear the proof scene's fictional uniform (khaki, teal epaulettes, white lantern patch), so the flat 2D style lock carries over whichever is picked.",
+    "not_verified": [
+      "This file was written by hand and checked with pattern searches for unbalanced quotes and for missing or trailing commas. It was not run through a JSON parser, because this session has no shell.",
+      "The expected vote splits are my judgement. Nothing was tested with viewers.",
+      "No dialogue was timed. The episode lines are one-line sketches, not beat outlines.",
+      "The resemblance of s2-duplicate-thana to real incidents is from memory and was not looked up."
+    ]
+  }
+}

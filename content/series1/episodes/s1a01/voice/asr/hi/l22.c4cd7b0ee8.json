@@ -1,0 +1,142 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,040"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 40
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,040",
+				"to": "00:00:01,520"
+			},
+			"offsets": {
+				"from": 40,
+				"to": 1520
+			},
+			"text": " पीतल"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,520",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 1520,
+				"to": 2000
+			},
+			"text": " दामाच"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,000",
+				"to": "00:00:02,130"
+			},
+			"offsets": {
+				"from": 2000,
+				"to": 2130
+			},
+			"text": " जी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,130",
+				"to": "00:00:02,330"
+			},
+			"offsets": {
+				"from": 2130,
+				"to": 2330
+			},
+			"text": " तो"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,330",
+				"to": "00:00:02,720"
+			},
+			"offsets": {
+				"from": 2330,
+				"to": 2720
+			},
+			"text": " अपनी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,720",
+				"to": "00:00:02,900"
+			},
+			"offsets": {
+				"from": 2720,
+				"to": 2900
+			},
+			"text": " ही"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,900",
+				"to": "00:00:03,280"
+			},
+			"offsets": {
+				"from": 2900,
+				"to": 3280
+			},
+			"text": " लाईन"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,280",
+				"to": "00:00:03,480"
+			},
+			"offsets": {
+				"from": 3280,
+				"to": 3480
+			},
+			"text": " के"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,480",
+				"to": "00:00:04,160"
+			},
+			"offsets": {
+				"from": 3480,
+				"to": 4160
+			},
+			"text": " निकले"
+		}
+	]
+}

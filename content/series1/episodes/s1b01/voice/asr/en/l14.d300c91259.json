@@ -1,0 +1,197 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,170"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 170
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,170",
+				"to": "00:00:00,510"
+			},
+			"offsets": {
+				"from": 170,
+				"to": 510
+			},
+			"text": " touch"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,510",
+				"to": "00:00:00,690"
+			},
+			"offsets": {
+				"from": 510,
+				"to": 690
+			},
+			"text": " me"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,690",
+				"to": "00:00:01,000"
+			},
+			"offsets": {
+				"from": 690,
+				"to": 1000
+			},
+			"text": " and"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,000",
+				"to": "00:00:01,380"
+			},
+			"offsets": {
+				"from": 1000,
+				"to": 1380
+			},
+			"text": " I'll"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,380",
+				"to": "00:00:02,510"
+			},
+			"offsets": {
+				"from": 1380,
+				"to": 2510
+			},
+			"text": " scream."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,510",
+				"to": "00:00:02,580"
+			},
+			"offsets": {
+				"from": 2510,
+				"to": 2580
+			},
+			"text": " Then"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,580",
+				"to": "00:00:02,720"
+			},
+			"offsets": {
+				"from": 2580,
+				"to": 2720
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,720",
+				"to": "00:00:02,920"
+			},
+			"offsets": {
+				"from": 2720,
+				"to": 2920
+			},
+			"text": " boys"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,920",
+				"to": "00:00:03,830"
+			},
+			"offsets": {
+				"from": 2920,
+				"to": 3830
+			},
+			"text": " outside"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,830",
+				"to": "00:00:03,880"
+			},
+			"offsets": {
+				"from": 3830,
+				"to": 3880
+			},
+			"text": " will"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,880",
+				"to": "00:00:04,140"
+			},
+			"offsets": {
+				"from": 3880,
+				"to": 4140
+			},
+			"text": " break"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,140",
+				"to": "00:00:04,340"
+			},
+			"offsets": {
+				"from": 4140,
+				"to": 4340
+			},
+			"text": " down"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,340",
+				"to": "00:00:04,490"
+			},
+			"offsets": {
+				"from": 4340,
+				"to": 4490
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,490",
+				"to": "00:00:04,880"
+			},
+			"offsets": {
+				"from": 4490,
+				"to": 4880
+			},
+			"text": " door."
+		}
+	]
+}

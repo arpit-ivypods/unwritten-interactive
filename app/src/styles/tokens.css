@@ -1,0 +1,92 @@
+/*
+ * Design tokens as CSS variables. Generated from docs/design-system/project/tokens.json
+ * (version 1). Themed tokens (colour, shadow) are set for light on :root and on
+ * any element with data-theme="light", and for dark on data-theme="dark", so a subtree
+ * can carry its own theme (the /ds review page shows both side by side).
+ * Static tokens (radius, blur, easing, type) are in the @theme block of globals.css,
+ * which also emits them as variables of the same names.
+ */
+
+:root,
+[data-theme="light"] {
+  color-scheme: light;
+  --ground: #ece8f4;
+  --veil: rgba(248,245,253,0.78);
+  --glass: rgba(255,255,255,0.56);
+  --glass-strong: rgba(255,255,255,0.84);
+  --glass-border: rgba(255,255,255,0.9);
+  --hairline: rgba(21,19,28,0.12);
+  --ink: #15131c;
+  --ink-muted: #3d394d;
+  --on-ink: #ffffff;
+  --brand: #4a2fd0;
+  --brand-text: #4a2fd0;
+  --on-brand: #ffffff;
+  --brand-soft: #e4defb;
+  --saffron: #f6a21e;
+  --saffron-text: #8a4300;
+  --on-saffron: #15131c;
+  --live: #1b7a45;
+  --alert: #b3261e;
+  --stage: #0a0812;
+  --on-stage: #ffffff;
+  --stage-glass: rgba(255,255,255,0.22);
+  --stage-glass-border: rgba(255,255,255,0.55);
+  --scrim: rgba(10,8,18,0.82);
+  --subtitle-plate: rgba(10,8,18,0.66);
+  --subtitle-active: #ffd166;
+  --shadow-float: 0 18px 50px rgba(40,30,80,0.14);
+  --shadow-panel: 0 40px 90px rgba(40,30,80,0.18);
+  --shadow-stage: 0 60px 120px rgba(30,20,70,0.38);
+  --shadow-brand: 0 16px 36px rgba(74,47,208,0.35);
+  --shadow-sheet: 0 -20px 60px rgba(40,30,80,0.16);
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --ground: #0f0d16;
+  --veil: rgba(15,13,22,0.72);
+  --glass: rgba(28,25,40,0.56);
+  --glass-strong: rgba(40,36,56,0.86);
+  --glass-border: rgba(255,255,255,0.14);
+  --hairline: rgba(255,255,255,0.14);
+  --ink: #f4f1fa;
+  --ink-muted: #c3bed3;
+  --on-ink: #15131c;
+  --brand: #6a52ee;
+  --brand-text: #b3a6ff;
+  --on-brand: #ffffff;
+  --brand-soft: #2a2350;
+  --saffron: #f6a21e;
+  --saffron-text: #ffc266;
+  --on-saffron: #15131c;
+  --live: #5fd896;
+  --alert: #ff8a80;
+  --stage: #0a0812;
+  --on-stage: #ffffff;
+  --stage-glass: rgba(255,255,255,0.22);
+  --stage-glass-border: rgba(255,255,255,0.55);
+  --scrim: rgba(10,8,18,0.82);
+  --subtitle-plate: rgba(10,8,18,0.66);
+  --subtitle-active: #ffd166;
+  --shadow-float: 0 18px 50px rgba(0,0,0,0.5);
+  --shadow-panel: 0 40px 90px rgba(0,0,0,0.55);
+  --shadow-stage: 0 60px 120px rgba(0,0,0,0.7);
+  --shadow-brand: 0 16px 36px rgba(106,82,238,0.4);
+  --shadow-sheet: 0 -20px 60px rgba(0,0,0,0.55);
+}
+
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-9: 36px;
+  --space-14: 56px;
+  --space-18: 72px;
+  --dur-tap: 160ms;
+  --dur-move: 420ms;
+  --dur-scene: 900ms;
+}

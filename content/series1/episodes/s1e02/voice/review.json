@@ -1,0 +1,5059 @@
+[
+ {
+  "line_id": "l01",
+  "lang": "hi",
+  "speaker": "aditya",
+  "file": "voice/hi/l01.mp3",
+  "take": 1,
+  "take_text": "[calm] हाथ दिखाओ। दोनों।",
+  "voice_id": "zCXXiWzuZO7d9fERssmF",
+  "model": "eleven_v4",
+  "transcript": "हाद दिखाओ दोनो",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard)",
+  "transcript_latin_pass": "(speaking in foreign language)",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 2.08,
+  "target_s": 2.3,
+  "speech_s": 1.74,
+  "speech_vs_target_pct": -24.3,
+  "lead_silence_s": 0.12,
+  "trail_silence_s": 0.22,
+  "pauses": [
+   [
+    0.76,
+    1.4,
+    0.64
+   ]
+  ],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": [
+    [
+     0.78,
+     1.4,
+     0.62
+    ]
+   ]
+  },
+  "speech_rms_db": -15.7,
+  "ff_mean_db": -18.5,
+  "ff_max_db": -1.1,
+  "voiced_ratio": 0.87,
+  "median_hz": 133,
+  "spectral_centroid_hz": 1176,
+  "spectral_flatness": 0.021,
+  "segments": [
+   {
+    "t": [
+     0.12,
+     0.76
+    ],
+    "rms_db": -16.3,
+    "voiced_ratio": 0.78,
+    "longest_unvoiced_s": 0.08,
+    "median_hz": 138,
+    "spectral_centroid_hz": 1489,
+    "spectral_flatness": 0.022
+   },
+   {
+    "t": [
+     1.4,
+     1.86
+    ],
+    "rms_db": -15.0,
+    "voiced_ratio": 1.0,
+    "longest_unvoiced_s": 0.0,
+    "median_hz": 118,
+    "spectral_centroid_hz": 977,
+    "spectral_flatness": 0.019
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard ('हाद' for हाथ, 'दोनो' for दोनों: small-model spellings); the Latin pass returned no words. No tag spoken. Fully voiced (0.87). Speech starts at 0.12 s, so the line opens inside 2 s. Beat before 'दोनों।' measured at 0.64 s.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l02",
+  "lang": "hi",
+  "speaker": "aditya",
+  "file": "voice/hi/l02.mp3",
+  "take": 1,
+  "take_text": "[quietly] एक-एक करके। मुझे जल्दी नहीं है।",
+  "voice_id": "zCXXiWzuZO7d9fERssmF",
+  "model": "eleven_v4",
+  "transcript": "एक एक करके मुझे जल्दी नहीं है।",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard)",
+  "transcript_latin_pass": "I'm not in a hurry to do it one by one.",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 2.88,
+  "target_s": 3.4,
+  "speech_s": 2.68,
+  "speech_vs_target_pct": -21.2,
+  "lead_silence_s": 0.0,
+  "trail_silence_s": 0.2,
+  "pauses": [],
+  "short_gaps_150_300ms": [
+   [
+    1.24,
+    1.46,
+    0.22
+   ]
+  ],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -23.8,
+  "ff_mean_db": -24.6,
+  "ff_max_db": -8.6,
+  "voiced_ratio": 0.73,
+  "median_hz": 108,
+  "spectral_centroid_hz": 1874,
+  "spectral_flatness": 0.054,
+  "segments": [
+   {
+    "t": [
+     0.0,
+     2.68
+    ],
+    "rms_db": -23.8,
+    "voiced_ratio": 0.73,
+    "longest_unvoiced_s": 0.2,
+    "median_hz": 108,
+    "spectral_centroid_hz": 1874,
+    "spectral_flatness": 0.054
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim. No tag spoken. [quietly] obeyed and voiced: -23.8 dB against -15.7 to -18.6 dB on his [calm] lines, voiced 0.73 (the note's rung trigger is under 0.6). Gap after 'करके।' 0.22 s, under the 300 ms pause size.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l03",
+  "lang": "hi",
+  "speaker": "kiran",
+  "file": "voice/hi/l03.mp3",
+  "take": 1,
+  "take_text": "[flatly] मुझे तो नींद आ जाएगी।",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "transcript": "मुझे तो नींद आजाएगे।",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard)",
+  "transcript_latin_pass": "I will feel sleepy.",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 2.0,
+  "target_s": 2.7,
+  "speech_s": 1.56,
+  "speech_vs_target_pct": -42.2,
+  "lead_silence_s": 0.12,
+  "trail_silence_s": 0.32,
+  "pauses": [],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.316,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -19.0,
+  "ff_mean_db": -20.1,
+  "ff_max_db": -6.6,
+  "voiced_ratio": 0.81,
+  "median_hz": 186,
+  "spectral_centroid_hz": 1883,
+  "spectral_flatness": 0.044,
+  "segments": [
+   {
+    "t": [
+     0.12,
+     1.68
+    ],
+    "rms_db": -19.0,
+    "voiced_ratio": 0.81,
+    "longest_unvoiced_s": 0.06,
+    "median_hz": 186,
+    "spectral_centroid_hz": 1899,
+    "spectral_flatness": 0.044
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard; 'नींद' clear in the transcript ('आजाएगे' for आ जाएगी is spelling). No tag spoken. Voiced 0.81.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l04",
+  "lang": "hi",
+  "speaker": "aditya",
+  "file": "voice/hi/l04.mp3",
+  "take": 1,
+  "take_text": "[sharply] रखो। सो गईं, तो मौसी तक कौन ले जाएगा?",
+  "voice_id": "zCXXiWzuZO7d9fERssmF",
+  "model": "eleven_v4",
+  "transcript": "रख हो! सोगएई, तो मुसी तक तो लेजाएगा!",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard)",
+  "transcript_latin_pass": "Rakhon! If you fall asleep, who will take your aunt?",
+  "transcript_checks": "segment 1.9-3.4 s: small hi 'तु मुसी तक तुन लेजाएगा।', base hi 'تو ماسیتا کن لی جائے گا'; segment 0.0-0.7 s: small 'जखो!'; full take small -bs 5: same as greedy",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 3.52,
+  "target_s": 3.6,
+  "speech_s": 3.22,
+  "speech_vs_target_pct": -10.6,
+  "lead_silence_s": 0.04,
+  "trail_silence_s": 0.26,
+  "pauses": [
+   [
+    0.52,
+    1.06,
+    0.54
+   ],
+   [
+    1.6,
+    1.98,
+    0.38
+   ]
+  ],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": [
+    [
+     0.55,
+     1.01,
+     0.46
+    ],
+    [
+     1.6,
+     1.98,
+     0.38
+    ]
+   ]
+  },
+  "speech_rms_db": -15.5,
+  "ff_mean_db": -17.5,
+  "ff_max_db": -0.7,
+  "voiced_ratio": 0.84,
+  "median_hz": 200,
+  "spectral_centroid_hz": 2159,
+  "spectral_flatness": 0.027,
+  "segments": [
+   {
+    "t": [
+     0.04,
+     0.52
+    ],
+    "rms_db": -12.7,
+    "voiced_ratio": 0.62,
+    "longest_unvoiced_s": 0.1,
+    "median_hz": 140,
+    "spectral_centroid_hz": 1992,
+    "spectral_flatness": 0.032
+   },
+   {
+    "t": [
+     1.06,
+     1.6
+    ],
+    "rms_db": -16.0,
+    "voiced_ratio": 0.78,
+    "longest_unvoiced_s": 0.12,
+    "median_hz": 211,
+    "spectral_centroid_hz": 2462,
+    "spectral_flatness": 0.021
+   },
+   {
+    "t": [
+     1.98,
+     3.26
+    ],
+    "rms_db": -17.2,
+    "voiced_ratio": 0.95,
+    "longest_unvoiced_s": 0.06,
+    "median_hz": 205,
+    "spectral_centroid_hz": 2294,
+    "spectral_flatness": 0.025
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Words heard: 'रख हो' (रखो), 'सोगएई' (सो गईं), 'मुसी' (मौसी). 'कौन' is weak: the full-take small pass writes 'तो', but the segment re-run (1.9-3.4 s) gives 'तुन' (small) and 'کن' (base), and the Latin pass has 'who will take', so the word is there. No tag spoken. Not a D-0M2 retake. The note's 'reject if shouted' is an acting call that D-0M2 does not list, so it goes to the ear: 'रखो।' is his loudest stretch in the episode (-12.7 dB, peak -0.7 dBFS) and the pitch goes up to about 200 to 211 Hz on the second and third phrases, against 108 to 143 Hz on every other Aditya take. That is about 9 to 10 semitones up, where a raised voice would be.",
+  "retake_text": null,
+  "ear_check": "Shouted or raised? Pitch about 200 to 211 Hz against his usual 108 to 133. If the ear hears a raised voice, rung 1: '[calm] रखो। सो गईं, तो मौसी तक कौन ले जाएगा?'. Also: is 'कौन' clear?"
+ },
+ {
+  "line_id": "l05",
+  "lang": "hi",
+  "speaker": "kiran",
+  "file": "voice/hi/l05.mp3",
+  "take": 1,
+  "take_text": "[calm] जली कलाई वाली? रेखा। अब मौसी का हिसाब लिखती है।",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "transcript": "जली कलाइवाली रेखा अब मुसी का हिसाब लिकती है",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard)",
+  "transcript_latin_pass": "Jallikalai Wali? Rekha. Ab Mausi Ka Hissaab Likti Hai.",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 4.8,
+  "target_s": 5.0,
+  "speech_s": 4.42,
+  "speech_vs_target_pct": -11.6,
+  "lead_silence_s": 0.14,
+  "trail_silence_s": 0.24,
+  "pauses": [
+   [
+    1.14,
+    1.74,
+    0.6
+   ],
+   [
+    2.2,
+    2.8,
+    0.6
+   ]
+  ],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": [
+    [
+     1.13,
+     1.74,
+     0.61
+    ],
+    [
+     2.23,
+     2.79,
+     0.56
+    ]
+   ]
+  },
+  "speech_rms_db": -19.2,
+  "ff_mean_db": -21.2,
+  "ff_max_db": -2.7,
+  "voiced_ratio": 0.84,
+  "median_hz": 216,
+  "spectral_centroid_hz": 2136,
+  "spectral_flatness": 0.045,
+  "segments": [
+   {
+    "t": [
+     0.14,
+     1.14
+    ],
+    "rms_db": -21.8,
+    "voiced_ratio": 0.94,
+    "longest_unvoiced_s": 0.04,
+    "median_hz": 276,
+    "spectral_centroid_hz": 2079,
+    "spectral_flatness": 0.043
+   },
+   {
+    "t": [
+     1.74,
+     2.2
+    ],
+    "rms_db": -20.7,
+    "voiced_ratio": 0.62,
+    "longest_unvoiced_s": 0.08,
+    "median_hz": 182,
+    "spectral_centroid_hz": 2175,
+    "spectral_flatness": 0.057
+   },
+   {
+    "t": [
+     2.8,
+     4.56
+    ],
+    "rms_db": -18.0,
+    "voiced_ratio": 0.83,
+    "longest_unvoiced_s": 0.06,
+    "median_hz": 211,
+    "spectral_centroid_hz": 1977,
+    "spectral_flatness": 0.045
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard. 'रेखा' is clear in both passes (Latin pass 'Rekha'), so the casting doubt ('Reika'/'Rika', ear check 8) does not recur here. No tag spoken. Voiced 0.84. Pauses 0.60 s after 'वाली?' and 0.60 s after 'रेखा।'.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l06",
+  "lang": "hi",
+  "speaker": "kiran",
+  "file": "voice/hi/l06.mp3",
+  "take": 1,
+  "take_text": "[flatly] मेरे बिना मौसी का shutter नहीं खुलेगा।",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "transcript": "मेरे बिना मोसी का शटर नहीं कुलेगा.",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard)",
+  "transcript_latin_pass": "Without me, Moshi's shutter won't open.",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 2.96,
+  "target_s": 4.0,
+  "speech_s": 2.44,
+  "speech_vs_target_pct": -39.0,
+  "lead_silence_s": 0.2,
+  "trail_silence_s": 0.32,
+  "pauses": [],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -18.5,
+  "ff_mean_db": -19.4,
+  "ff_max_db": -4.7,
+  "voiced_ratio": 0.84,
+  "median_hz": 205,
+  "spectral_centroid_hz": 1799,
+  "spectral_flatness": 0.035,
+  "segments": [
+   {
+    "t": [
+     0.2,
+     2.64
+    ],
+    "rms_db": -18.5,
+    "voiced_ratio": 0.84,
+    "longest_unvoiced_s": 0.06,
+    "median_hz": 205,
+    "spectral_centroid_hz": 1753,
+    "spectral_flatness": 0.036
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard; 'shutter' said as a word ('शटर'; Latin pass 'shutter'). 'मोसी' and 'कुलेगा' are spellings. No tag spoken. Voiced 0.84. Speech 2.44 s against a 4.0 s target is quick; length is the edit's.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l07",
+  "lang": "hi",
+  "speaker": "kiran",
+  "file": "voice/hi/l07.mp3",
+  "take": 1,
+  "take_text": "[quietly] दो बजे मौसी का phone। बंद मिला, तो बिल्लू ऊपर।",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "transcript": "तो बजे मासी का फोन बन्द मिला तो भिल्लू उपर",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard)",
+  "transcript_latin_pass": "Two o'clock. Maasi ka phone. Bandh mila to Billu upar.",
+  "transcript_checks": "segment 0.2-1.9 s: small hi 'तोब जे मासी का फुन', small en '2 o'clock. Maasi's phone.', base hi 'تو بجے مازی کا فون'; base full take 'تو بجھے ماصی کا فون بند ملا تو بلو اوپر'",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 4.4,
+  "target_s": 4.8,
+  "speech_s": 3.9,
+  "speech_vs_target_pct": -18.7,
+  "lead_silence_s": 0.26,
+  "trail_silence_s": 0.24,
+  "pauses": [
+   [
+    1.82,
+    2.42,
+    0.6
+   ],
+   [
+    3.08,
+    3.42,
+    0.34
+   ]
+  ],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": [
+    [
+     1.95,
+     2.42,
+     0.47
+    ]
+   ]
+  },
+  "speech_rms_db": -19.9,
+  "ff_mean_db": -22.3,
+  "ff_max_db": -1.0,
+  "voiced_ratio": 0.69,
+  "median_hz": 195,
+  "spectral_centroid_hz": 2104,
+  "spectral_flatness": 0.066,
+  "segments": [
+   {
+    "t": [
+     0.26,
+     1.82
+    ],
+    "rms_db": -30.8,
+    "voiced_ratio": 0.46,
+    "longest_unvoiced_s": 0.18,
+    "median_hz": 186,
+    "spectral_centroid_hz": 3227,
+    "spectral_flatness": 0.084
+   },
+   {
+    "t": [
+     2.42,
+     3.08
+    ],
+    "rms_db": -15.8,
+    "voiced_ratio": 1.0,
+    "longest_unvoiced_s": 0.0,
+    "median_hz": 242,
+    "spectral_centroid_hz": 1690,
+    "spectral_flatness": 0.034
+   },
+   {
+    "t": [
+     3.42,
+     4.16
+    ],
+    "rms_db": -19.5,
+    "voiced_ratio": 0.82,
+    "longest_unvoiced_s": 0.06,
+    "median_hz": 182,
+    "spectral_centroid_hz": 1421,
+    "spectral_flatness": 0.029
+   }
+  ],
+  "verdict": "retake",
+  "reason": "Lost whisper on a protected must-be-heard phrase. The note: ''दो बजे', 'phone', 'बंद' and 'बिल्लू ऊपर' must all be heard ... check voiced_ratio is 0.6 or more; a whisper is a lost-whisper retake (D-0M2) and goes straight to the [low voice] rung.' The whole take reads 0.69, but the first sentence 'दो बजे मौसी का phone।' (0.26-1.82 s) is voiced 0.46 at -30.8 dB, with spectral flatness 0.084 and centroid 3,227 Hz. Kiran's whispers measure flatness 0.084 to 0.10 (kiran_t3, s1e01 en l16), her voiced lines 0.03 to 0.06 and 1.7 to 2.3 kHz. The second and third phrases are fully voiced (1.00 and 0.82) at -15.8 and -19.5 dB, so the line jumps about 15 dB in the middle and the timetable half sits under the bed. Words survive: the segment re-run gives '2 o'clock. Maasi's phone.' (small, -l en), and 'बिल्लू' is heard as 'भिल्लू'/'Billu'. No tag spoken. Pause 0.60 s after 'phone।'.",
+  "retake_text": "[calm] दो बजे मौसी का phone। बंद मिला, तो बिल्लू ऊपर।",
+  "ear_check": "If the [low voice] take also whispers the first sentence, the note says to use the bare line with the level set in the mix (cast.json kiran.switch_if is then in play).",
+  "d022_line_class": "voice-wanted",
+  "retake_text_reviewer": "[low voice] दो बजे मौसी का phone। बंद मिला, तो बिल्लू ऊपर।",
+  "retake_model": "eleven_v4",
+  "retake_take": 2,
+  "rule": "D-022",
+  "d022_note": "D-022 rule 1: script text with every quiet-family tag deleted, [calm] added because no tag was left"
+ },
+ {
+  "line_id": "l08",
+  "lang": "hi",
+  "speaker": "aditya",
+  "file": "voice/hi/l08.mp3",
+  "take": 1,
+  "take_text": "[calm] पहले मौसी। रेखा बाद में।",
+  "voice_id": "zCXXiWzuZO7d9fERssmF",
+  "model": "eleven_v4",
+  "transcript": "पहले मोसी रेखा बाद में",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard)",
+  "transcript_latin_pass": "PAHLE MAUSI REKHA BAADME",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 3.28,
+  "target_s": 3.1,
+  "speech_s": 2.96,
+  "speech_vs_target_pct": -4.5,
+  "lead_silence_s": 0.1,
+  "trail_silence_s": 0.22,
+  "pauses": [
+   [
+    1.16,
+    1.76,
+    0.6
+   ]
+  ],
+  "short_gaps_150_300ms": [
+   [
+    2.24,
+    2.48,
+    0.24
+   ]
+  ],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": [
+    [
+     1.14,
+     1.75,
+     0.61
+    ]
+   ]
+  },
+  "speech_rms_db": -16.6,
+  "ff_mean_db": -18.5,
+  "ff_max_db": -1.7,
+  "voiced_ratio": 0.84,
+  "median_hz": 119,
+  "spectral_centroid_hz": 1441,
+  "spectral_flatness": 0.024,
+  "segments": [
+   {
+    "t": [
+     0.1,
+     1.16
+    ],
+    "rms_db": -15.5,
+    "voiced_ratio": 0.89,
+    "longest_unvoiced_s": 0.04,
+    "median_hz": 123,
+    "spectral_centroid_hz": 1385,
+    "spectral_flatness": 0.022
+   },
+   {
+    "t": [
+     1.76,
+     3.06
+    ],
+    "rms_db": -18.1,
+    "voiced_ratio": 0.79,
+    "longest_unvoiced_s": 0.08,
+    "median_hz": 116,
+    "spectral_centroid_hz": 1395,
+    "spectral_flatness": 0.025
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard ('रेखा' clear). No tag spoken. Voiced 0.84. Beat between the sentences 0.60 s.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l09",
+  "lang": "hi",
+  "speaker": "aditya",
+  "file": "voice/hi/l09.mp3",
+  "take": 1,
+  "take_text": "[quietly] और झूठ निकला, तो कलाई मैं ख़ुद check करूँगा।",
+  "voice_id": "zCXXiWzuZO7d9fERssmF",
+  "model": "eleven_v4",
+  "transcript": "और जूट निकला तो कलाई मैं खुट जैक करूंगा।",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard)",
+  "transcript_latin_pass": "And if it's a lie, I will check it myself.",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 3.76,
+  "target_s": 4.6,
+  "speech_s": 3.44,
+  "speech_vs_target_pct": -25.2,
+  "lead_silence_s": 0.12,
+  "trail_silence_s": 0.2,
+  "pauses": [],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -23.0,
+  "ff_mean_db": -23.9,
+  "ff_max_db": -6.4,
+  "voiced_ratio": 0.7,
+  "median_hz": 108,
+  "spectral_centroid_hz": 1713,
+  "spectral_flatness": 0.048,
+  "segments": [
+   {
+    "t": [
+     0.12,
+     3.56
+    ],
+    "rms_db": -23.0,
+    "voiced_ratio": 0.7,
+    "longest_unvoiced_s": 0.24,
+    "median_hz": 108,
+    "spectral_centroid_hz": 1848,
+    "spectral_flatness": 0.048
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Protected words heard: 'कलाई' in the Hindi pass; 'check' comes out 'जैक' in Hindi and 'I will check it myself' in the Latin pass. 'जूट'/'खुट' for झूठ/ख़ुद are spellings. No tag spoken. Quiet and voiced: -23.0 dB, 0.70.",
+  "retake_text": null,
+  "ear_check": "Is 'check' crisp (Hindi pass wrote 'जैक')?"
+ },
+ {
+  "line_id": "l10",
+  "lang": "hi",
+  "speaker": "aditya",
+  "file": "voice/hi/l10.mp3",
+  "take": 1,
+  "take_text": "[calm] तो, कोई code?",
+  "voice_id": "zCXXiWzuZO7d9fERssmF",
+  "model": "eleven_v4",
+  "transcript": "तो कोई कोड",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard)",
+  "transcript_latin_pass": "So... any code?",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 2.08,
+  "target_s": 1.8,
+  "speech_s": 1.64,
+  "speech_vs_target_pct": -8.9,
+  "lead_silence_s": 0.12,
+  "trail_silence_s": 0.32,
+  "pauses": [],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.326,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -17.9,
+  "ff_mean_db": -19.6,
+  "ff_max_db": -4.7,
+  "voiced_ratio": 0.76,
+  "median_hz": 113,
+  "spectral_centroid_hz": 768,
+  "spectral_flatness": 0.018,
+  "segments": [
+   {
+    "t": [
+     0.12,
+     1.76
+    ],
+    "rms_db": -17.9,
+    "voiced_ratio": 0.76,
+    "longest_unvoiced_s": 0.08,
+    "median_hz": 113,
+    "spectral_centroid_hz": 764,
+    "spectral_flatness": 0.018
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard ('कोड'; Latin pass 'So... any code?'). No tag spoken. Voiced 0.76.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l11",
+  "lang": "hi",
+  "speaker": "kiran",
+  "file": "voice/hi/l11.mp3",
+  "take": 1,
+  "take_text": "[calm] कोई code नहीं। माँ बेटी का हाल पूछती है। बस।",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "transcript": "कोई कोड नहीं माबेटी का हाल पूछते है. बस.",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard)",
+  "transcript_latin_pass": "No code. The mother and daughter are in the same situation. That's it.",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 4.4,
+  "target_s": 4.6,
+  "speech_s": 4.04,
+  "speech_vs_target_pct": -12.2,
+  "lead_silence_s": 0.12,
+  "trail_silence_s": 0.24,
+  "pauses": [
+   [
+    1.0,
+    1.58,
+    0.58
+   ],
+   [
+    3.24,
+    3.72,
+    0.48
+   ]
+  ],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": [
+    [
+     0.99,
+     1.58,
+     0.59
+    ],
+    [
+     3.24,
+     3.73,
+     0.49
+    ]
+   ]
+  },
+  "speech_rms_db": -20.7,
+  "ff_mean_db": -22.7,
+  "ff_max_db": -4.6,
+  "voiced_ratio": 0.71,
+  "median_hz": 190,
+  "spectral_centroid_hz": 2272,
+  "spectral_flatness": 0.059,
+  "segments": [
+   {
+    "t": [
+     0.12,
+     1.0
+    ],
+    "rms_db": -19.0,
+    "voiced_ratio": 0.83,
+    "longest_unvoiced_s": 0.06,
+    "median_hz": 178,
+    "spectral_centroid_hz": 1849,
+    "spectral_flatness": 0.048
+   },
+   {
+    "t": [
+     1.58,
+     3.24
+    ],
+    "rms_db": -20.6,
+    "voiced_ratio": 0.76,
+    "longest_unvoiced_s": 0.1,
+    "median_hz": 205,
+    "spectral_centroid_hz": 2084,
+    "spectral_flatness": 0.053
+   },
+   {
+    "t": [
+     3.72,
+     4.16
+    ],
+    "rms_db": -32.0,
+    "voiced_ratio": 0.32,
+    "longest_unvoiced_s": 0.28,
+    "median_hz": 104,
+    "spectral_centroid_hz": 7868,
+    "spectral_flatness": 0.101
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard. No tag spoken. Pauses 0.58 s after 'नहीं।' and 0.48 s before 'बस।'. 'बस।' (3.72-4.16 s) is soft: -32.0 dB, voiced 0.32, centroid 7.9 kHz. Most of that segment is the स fricative, which is unvoiced by nature, and the word is transcribed, so this is not read as a whisper.",
+  "retake_text": null,
+  "ear_check": "Is 'बस।' final and audible, not trailed away 12 dB under the rest?"
+ },
+ {
+  "line_id": "l12",
+  "lang": "hi",
+  "speaker": "kiran",
+  "file": "voice/hi/l12.mp3",
+  "take": 1,
+  "take_text": "[hesitant] हम बस गहने लेते हैं। किसी को हाथ नहीं लगाते।",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "transcript": "अम बस गहने लेते हैं किसी को हाथ नहीं लगाके।",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard)",
+  "transcript_latin_pass": "We just wear clothes. We don't touch anyone.",
+  "transcript_checks": "segment 2.8-4.5 s: small hi 'किसी को हात नहीं लगाके', base hi 'کسی کو ہاتھ نہیں لگا گے'; full take small -bs 5 'अम बस गहने लेते हैं किसी को हाथ नहीं लगाके।'",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 4.56,
+  "target_s": 4.6,
+  "speech_s": 4.26,
+  "speech_vs_target_pct": -7.4,
+  "lead_silence_s": 0.08,
+  "trail_silence_s": 0.22,
+  "pauses": [],
+  "short_gaps_150_300ms": [
+   [
+    2.7,
+    2.94,
+    0.24
+   ]
+  ],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -20.2,
+  "ff_mean_db": -21.0,
+  "ff_max_db": -3.4,
+  "voiced_ratio": 0.73,
+  "median_hz": 222,
+  "spectral_centroid_hz": 2239,
+  "spectral_flatness": 0.048,
+  "segments": [
+   {
+    "t": [
+     0.08,
+     4.34
+    ],
+    "rms_db": -20.2,
+    "voiced_ratio": 0.73,
+    "longest_unvoiced_s": 0.22,
+    "median_hz": 222,
+    "spectral_centroid_hz": 2218,
+    "spectral_flatness": 0.048
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Words heard, with one doubt: the last word comes out 'लगाके' (small greedy, beam 5 and the segment re-run) and 'لگا گے' (base), not 'लगाते'. The Latin pass gives 'We don't touch anyone', and the model was sent 'लगाते', so I read it as a soft त. On this evidence it is an ear check, not a word retake. 'अम' for हम is spelling. No tag spoken. Voiced 0.73. The catch before 'किसी को' is a 0.24 s gap, under the 300 ms pause size: acting, not a retake reason.",
+  "retake_text": null,
+  "ear_check": "'लगाते' or 'लगाके'? If the ear hears a wrong word, rung 1: '[nervous] हम बस गहने लेते हैं। किसी को हाथ नहीं लगाते।'. Is there any hesitation before 'किसी को'?"
+ },
+ {
+  "line_id": "l13",
+  "lang": "hi",
+  "speaker": "kiran",
+  "file": "voice/hi/l13.mp3",
+  "take": 1,
+  "take_text": "[flatly] बहुत हुआ, तो जागने वाले को लड़कों का एक थप्पड़।",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "transcript": "बहुत हुआ तो जागनेवाले को लगकों का एक थब पड़",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard)",
+  "transcript_latin_pass": "(speaking in foreign language)",
+  "transcript_checks": "segment 1.3-4.1 s: small hi 'तो जागने वाले को लगकों का एक थब पर.', base hi 'تو جاغنے والے کو لڑکوں کا ایک تھا پڑا'; base full take 'بہت ہوا. تو جاگ نیوالے کو لڑکوں کا ایک تبڑا.'",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 4.24,
+  "target_s": 4.4,
+  "speech_s": 3.94,
+  "speech_vs_target_pct": -10.5,
+  "lead_silence_s": 0.02,
+  "trail_silence_s": 0.28,
+  "pauses": [
+   [
+    0.96,
+    1.36,
+    0.4
+   ]
+  ],
+  "short_gaps_150_300ms": [
+   [
+    3.18,
+    3.36,
+    0.18
+   ]
+  ],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": [
+    [
+     1.01,
+     1.32,
+     0.31
+    ]
+   ]
+  },
+  "speech_rms_db": -17.8,
+  "ff_mean_db": -19.4,
+  "ff_max_db": -2.2,
+  "voiced_ratio": 0.82,
+  "median_hz": 200,
+  "spectral_centroid_hz": 2123,
+  "spectral_flatness": 0.039,
+  "segments": [
+   {
+    "t": [
+     0.02,
+     0.96
+    ],
+    "rms_db": -18.9,
+    "voiced_ratio": 0.75,
+    "longest_unvoiced_s": 0.14,
+    "median_hz": 174,
+    "spectral_centroid_hz": 2022,
+    "spectral_flatness": 0.059
+   },
+   {
+    "t": [
+     1.36,
+     3.96
+    ],
+    "rms_db": -17.4,
+    "voiced_ratio": 0.86,
+    "longest_unvoiced_s": 0.08,
+    "median_hz": 205,
+    "spectral_centroid_hz": 2000,
+    "spectral_flatness": 0.035
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Words heard: small writes 'लगकों' and 'थब पड़', but base gives 'لڑکوں کا ایک تھا پڑا' on the segment, so 'लड़कों' and 'थप्पड़' are there. The Latin pass returned no words. No tag spoken. Voiced 0.82. Pause 0.40 s after 'बहुत हुआ,'.",
+  "retake_text": null,
+  "ear_check": "Is 'थप्पड़' crisp?"
+ },
+ {
+  "line_id": "l14",
+  "lang": "hi",
+  "speaker": "aditya",
+  "file": "voice/hi/l14.mp3",
+  "take": 1,
+  "take_text": "[quietly] मोहित को भी किसी ने हाथ नहीं लगाया।",
+  "voice_id": "zCXXiWzuZO7d9fERssmF",
+  "model": "eleven_v4",
+  "transcript": "मुहिद को भी किसीने हाथ नहीं लबाया।",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard)",
+  "transcript_latin_pass": "Mohit also didn't touch anyone.",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 2.72,
+  "target_s": 3.6,
+  "speech_s": 2.34,
+  "speech_vs_target_pct": -35.0,
+  "lead_silence_s": 0.02,
+  "trail_silence_s": 0.36,
+  "pauses": [],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -21.5,
+  "ff_mean_db": -22.1,
+  "ff_max_db": -6.7,
+  "voiced_ratio": 0.67,
+  "median_hz": 116,
+  "spectral_centroid_hz": 1730,
+  "spectral_flatness": 0.048,
+  "segments": [
+   {
+    "t": [
+     0.02,
+     2.36
+    ],
+    "rms_db": -21.5,
+    "voiced_ratio": 0.67,
+    "longest_unvoiced_s": 0.22,
+    "median_hz": 116,
+    "spectral_centroid_hz": 1728,
+    "spectral_flatness": 0.046
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard: 'मुहिद' for मोहित, and the Latin pass has 'Mohit'. 'लबाया' for लगाया is spelling. No tag spoken. Quiet and voiced: -21.5 dB, 0.67.",
+  "retake_text": null,
+  "ear_check": "The catch on 'मोहित' that the note allows: is it there, and only there?"
+ },
+ {
+  "line_id": "l15",
+  "lang": "hi",
+  "speaker": "aditya",
+  "file": "voice/hi/l15.mp3",
+  "take": 1,
+  "take_text": "[calm] माँ के कंगन थे। ग्यारह दिन गली उस पर हँसी।",
+  "voice_id": "zCXXiWzuZO7d9fERssmF",
+  "model": "eleven_v4",
+  "transcript": "माके कंगन ते गयारा दिन गली उस पर हसी",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard)",
+  "transcript_latin_pass": "'Maa ke kangan the' 'Gyara din gali uspar haasi'",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 4.0,
+  "target_s": 4.6,
+  "speech_s": 3.62,
+  "speech_vs_target_pct": -21.3,
+  "lead_silence_s": 0.14,
+  "trail_silence_s": 0.24,
+  "pauses": [
+   [
+    1.3,
+    1.86,
+    0.56
+   ]
+  ],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": [
+    [
+     1.34,
+     1.86,
+     0.53
+    ]
+   ]
+  },
+  "speech_rms_db": -17.1,
+  "ff_mean_db": -18.3,
+  "ff_max_db": -1.5,
+  "voiced_ratio": 0.91,
+  "median_hz": 119,
+  "spectral_centroid_hz": 1380,
+  "spectral_flatness": 0.025,
+  "segments": [
+   {
+    "t": [
+     0.14,
+     1.3
+    ],
+    "rms_db": -16.2,
+    "voiced_ratio": 0.88,
+    "longest_unvoiced_s": 0.06,
+    "median_hz": 113,
+    "spectral_centroid_hz": 1236,
+    "spectral_flatness": 0.023
+   },
+   {
+    "t": [
+     1.86,
+     3.76
+    ],
+    "rms_db": -17.7,
+    "voiced_ratio": 0.92,
+    "longest_unvoiced_s": 0.04,
+    "median_hz": 121,
+    "spectral_centroid_hz": 1556,
+    "spectral_flatness": 0.026
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard ('माके कंगन ते', 'गयारा दिन'; Latin pass 'Gyara din gali uspar haasi'). No tag spoken. Voiced 0.91. Beat 0.56 s.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l16",
+  "lang": "hi",
+  "speaker": "aditya",
+  "file": "voice/hi/l16.mp3",
+  "take": 1,
+  "take_text": "[calm] मौसी और उनका ledger, police को। वो हाथ नहीं।",
+  "voice_id": "zCXXiWzuZO7d9fERssmF",
+  "model": "eleven_v4",
+  "transcript": "मासी और उनका लेजर पूलीस को वो हाथ नहीं",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard)",
+  "transcript_latin_pass": "Mossy and his laser. Police. They're not hands.",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 4.24,
+  "target_s": 4.5,
+  "speech_s": 3.96,
+  "speech_vs_target_pct": -12.0,
+  "lead_silence_s": 0.1,
+  "trail_silence_s": 0.18,
+  "pauses": [
+   [
+    1.76,
+    2.16,
+    0.4
+   ],
+   [
+    2.72,
+    3.14,
+    0.42
+   ]
+  ],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": [
+    [
+     1.77,
+     2.11,
+     0.34
+    ],
+    [
+     2.77,
+     3.15,
+     0.38
+    ]
+   ]
+  },
+  "speech_rms_db": -18.6,
+  "ff_mean_db": -19.8,
+  "ff_max_db": -3.7,
+  "voiced_ratio": 0.88,
+  "median_hz": 119,
+  "spectral_centroid_hz": 1432,
+  "spectral_flatness": 0.028,
+  "segments": [
+   {
+    "t": [
+     0.1,
+     1.76
+    ],
+    "rms_db": -18.3,
+    "voiced_ratio": 0.88,
+    "longest_unvoiced_s": 0.06,
+    "median_hz": 118,
+    "spectral_centroid_hz": 1377,
+    "spectral_flatness": 0.025
+   },
+   {
+    "t": [
+     2.16,
+     2.72
+    ],
+    "rms_db": -19.8,
+    "voiced_ratio": 0.86,
+    "longest_unvoiced_s": 0.04,
+    "median_hz": 110,
+    "spectral_centroid_hz": 1313,
+    "spectral_flatness": 0.036
+   },
+   {
+    "t": [
+     3.14,
+     4.06
+    ],
+    "rms_db": -18.3,
+    "voiced_ratio": 0.89,
+    "longest_unvoiced_s": 0.06,
+    "median_hz": 127,
+    "spectral_centroid_hz": 1270,
+    "spectral_flatness": 0.027
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard; 'ledger' ('लेजर') and 'police' ('पूलीस') said as words. No tag spoken. Voiced 0.88. Stops of 0.40 s after 'ledger,' and 0.42 s before 'वो हाथ नहीं।'.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l17",
+  "lang": "hi",
+  "speaker": "kiran",
+  "file": "voice/hi/l17.mp3",
+  "take": 1,
+  "take_text": "[quietly] उस हाथ का क्या करोगे?",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "transcript": "उस हाथ का क्या करोगे?",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard)",
+  "transcript_latin_pass": "What will you do with that hand?",
+  "transcript_checks": "base hi 'اس ہاتھ کا کیا کر ہوگئے'",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 2.0,
+  "target_s": 2.6,
+  "speech_s": 1.72,
+  "speech_vs_target_pct": -33.8,
+  "lead_silence_s": 0.12,
+  "trail_silence_s": 0.16,
+  "pauses": [],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -26.3,
+  "ff_mean_db": -27.3,
+  "ff_max_db": -4.1,
+  "voiced_ratio": 0.51,
+  "median_hz": 205,
+  "spectral_centroid_hz": 3026,
+  "spectral_flatness": 0.082,
+  "segments": [
+   {
+    "t": [
+     0.12,
+     1.84
+    ],
+    "rms_db": -26.3,
+    "voiced_ratio": 0.51,
+    "longest_unvoiced_s": 0.2,
+    "median_hz": 205,
+    "spectral_centroid_hz": 3026,
+    "spectral_flatness": 0.082
+   }
+  ],
+  "verdict": "retake",
+  "reason": "Lost whisper. The note: 'Must be heard: check voiced_ratio is 0.6 or more; a whisper is a lost-whisper retake (D-0M2) and goes straight to the [low voice] rung.' Whole take voiced 0.51 at -26.3 dB, flatness 0.082, centroid 3,026 Hz. That is about 0.09 under the line, which is more than this method's spread against the s1e01 review (mean +0.006, sd 0.034 over 50 takes). The spectrum is near Kiran's whispers (0.084 to 0.10) and well off her voiced lines (0.03 to 0.06, 1.7 to 2.3 kHz). Words verbatim ('उस हाथ का क्या करोगे?'; Latin pass 'What will you do with that hand?'). No tag spoken.",
+  "retake_text": "[calm] उस हाथ का क्या करोगे?",
+  "ear_check": null,
+  "d022_line_class": "voice-wanted",
+  "retake_text_reviewer": "[low voice] उस हाथ का क्या करोगे?",
+  "retake_model": "eleven_v4",
+  "retake_take": 2,
+  "rule": "D-022",
+  "d022_note": "D-022 rule 1: script text with every quiet-family tag deleted, [calm] added because no tag was left"
+ },
+ {
+  "line_id": "l18",
+  "lang": "hi",
+  "speaker": "aditya",
+  "file": "voice/hi/l18.mp3",
+  "take": 1,
+  "take_text": "[calm] मोहित ग्यारह दिन जिया। उसे भी ग्यारह दिन। फिर एक dose।",
+  "voice_id": "zCXXiWzuZO7d9fERssmF",
+  "model": "eleven_v4",
+  "transcript": "मुहित 11 दिन जिया। उसे भी 11 दिन फिर 1 दोज",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard)",
+  "transcript_latin_pass": "Mohit lives 11 days. He also lives 11 days. Then one dose.",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 5.12,
+  "target_s": 5.6,
+  "speech_s": 4.68,
+  "speech_vs_target_pct": -16.4,
+  "lead_silence_s": 0.16,
+  "trail_silence_s": 0.28,
+  "pauses": [
+   [
+    1.6,
+    2.14,
+    0.54
+   ],
+   [
+    3.12,
+    3.72,
+    0.6
+   ]
+  ],
+  "short_gaps_150_300ms": [
+   [
+    3.98,
+    4.22,
+    0.24
+   ]
+  ],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": [
+    [
+     1.61,
+     2.15,
+     0.54
+    ],
+    [
+     3.14,
+     3.72,
+     0.58
+    ]
+   ]
+  },
+  "speech_rms_db": -17.8,
+  "ff_mean_db": -19.7,
+  "ff_max_db": -4.0,
+  "voiced_ratio": 0.82,
+  "median_hz": 111,
+  "spectral_centroid_hz": 1327,
+  "spectral_flatness": 0.029,
+  "segments": [
+   {
+    "t": [
+     0.16,
+     1.6
+    ],
+    "rms_db": -16.0,
+    "voiced_ratio": 0.86,
+    "longest_unvoiced_s": 0.06,
+    "median_hz": 113,
+    "spectral_centroid_hz": 1230,
+    "spectral_flatness": 0.027
+   },
+   {
+    "t": [
+     2.14,
+     3.12
+    ],
+    "rms_db": -19.4,
+    "voiced_ratio": 0.84,
+    "longest_unvoiced_s": 0.06,
+    "median_hz": 108,
+    "spectral_centroid_hz": 1315,
+    "spectral_flatness": 0.027
+   },
+   {
+    "t": [
+     3.72,
+     4.84
+    ],
+    "rms_db": -21.0,
+    "voiced_ratio": 0.75,
+    "longest_unvoiced_s": 0.08,
+    "median_hz": 113,
+    "spectral_centroid_hz": 1576,
+    "spectral_flatness": 0.033
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard ('मुहित' for मोहित; 'दोज' for dose, Latin pass 'Then one dose'). No tag spoken. Voiced 0.82. Beats 0.54 s and 0.60 s after the first two sentences; 0.24 s before 'dose'.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l19",
+  "lang": "hi",
+  "speaker": "aditya",
+  "file": "voice/hi/l19.mp3",
+  "take": 1,
+  "take_text": "[quietly] मुझे पता है कितनी में नींद आती है, और कितनी में आँख नहीं खुलती।",
+  "voice_id": "zCXXiWzuZO7d9fERssmF",
+  "model": "eleven_v4",
+  "transcript": "मुझे पता है कितनी में नीदाती है और कितनी में आख नहीं कुलती",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard)",
+  "transcript_latin_pass": "I know how much sleep comes in and how much the eyes don't open.",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 4.56,
+  "target_s": 6.4,
+  "speech_s": 4.24,
+  "speech_vs_target_pct": -33.8,
+  "lead_silence_s": 0.04,
+  "trail_silence_s": 0.28,
+  "pauses": [],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.392,
+   "pauses_ge300ms": [
+    [
+     2.2,
+     2.66,
+     0.46
+    ]
+   ]
+  },
+  "speech_rms_db": -26.2,
+  "ff_mean_db": -27.1,
+  "ff_max_db": -7.9,
+  "voiced_ratio": 0.71,
+  "median_hz": 121,
+  "spectral_centroid_hz": 1739,
+  "spectral_flatness": 0.048,
+  "segments": [
+   {
+    "t": [
+     0.04,
+     4.28
+    ],
+    "rms_db": -26.2,
+    "voiced_ratio": 0.71,
+    "longest_unvoiced_s": 0.24,
+    "median_hz": 121,
+    "spectral_centroid_hz": 1739,
+    "spectral_flatness": 0.048
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard ('नीदाती' for नींद आती, 'आख' and 'कुलती' are spellings). No tag spoken. Low and voiced: -26.2 dB, 0.71, pitch 121 Hz. The comma pause does not reach this review's threshold. ffmpeg silencedetect at -40 dB finds 0.46 s at 2.20-2.66 s, so it is a low dip rather than silence. Speech 4.24 s against a 6.4 s target; length is the edit's.",
+  "retake_text": null,
+  "ear_check": "Never rising to the last word?"
+ },
+ {
+  "line_id": "l20",
+  "lang": "hi",
+  "speaker": "kiran",
+  "file": "voice/hi/l20.mp3",
+  "take": 1,
+  "take_text": "[hesitant] और मैं?",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "transcript": "और में?",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard)",
+  "transcript_latin_pass": "And me?",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 1.84,
+  "target_s": 1.6,
+  "speech_s": 1.54,
+  "speech_vs_target_pct": -3.8,
+  "lead_silence_s": 0.08,
+  "trail_silence_s": 0.22,
+  "pauses": [],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -23.9,
+  "ff_mean_db": -24.7,
+  "ff_max_db": -10.3,
+  "voiced_ratio": 0.75,
+  "median_hz": 229,
+  "spectral_centroid_hz": 1699,
+  "spectral_flatness": 0.043,
+  "segments": [
+   {
+    "t": [
+     0.08,
+     1.62
+    ],
+    "rms_db": -23.9,
+    "voiced_ratio": 0.75,
+    "longest_unvoiced_s": 0.14,
+    "median_hz": 229,
+    "spectral_centroid_hz": 1699,
+    "spectral_flatness": 0.043
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Both words heard ('और में?'; Latin pass 'And me?'). No tag spoken. Voiced 0.75; not a whisper.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l21",
+  "lang": "hi",
+  "speaker": "aditya",
+  "file": "voice/hi/l21.mp3",
+  "take": 1,
+  "take_text": "[calm] मौसी तक पहुँचा दो, फिर तुमसे कोई काम नहीं।",
+  "voice_id": "zCXXiWzuZO7d9fERssmF",
+  "model": "eleven_v4",
+  "transcript": "मुहसी तक पहुटादो फिर तुमसे कोई काम नहीं।",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard)",
+  "transcript_latin_pass": "Take him to the aunt, then you'll be fine.",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 3.28,
+  "target_s": 4.2,
+  "speech_s": 2.82,
+  "speech_vs_target_pct": -32.9,
+  "lead_silence_s": 0.1,
+  "trail_silence_s": 0.36,
+  "pauses": [
+   [
+    1.2,
+    1.6,
+    0.4
+   ]
+  ],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.378,
+   "pauses_ge300ms": [
+    [
+     1.2,
+     1.61,
+     0.42
+    ]
+   ]
+  },
+  "speech_rms_db": -19.4,
+  "ff_mean_db": -20.9,
+  "ff_max_db": -4.6,
+  "voiced_ratio": 0.89,
+  "median_hz": 119,
+  "spectral_centroid_hz": 1428,
+  "spectral_flatness": 0.03,
+  "segments": [
+   {
+    "t": [
+     0.1,
+     1.2
+    ],
+    "rms_db": -18.4,
+    "voiced_ratio": 0.96,
+    "longest_unvoiced_s": 0.02,
+    "median_hz": 125,
+    "spectral_centroid_hz": 1568,
+    "spectral_flatness": 0.029
+   },
+   {
+    "t": [
+     1.6,
+     2.92
+    ],
+    "rms_db": -20.6,
+    "voiced_ratio": 0.82,
+    "longest_unvoiced_s": 0.1,
+    "median_hz": 113,
+    "spectral_centroid_hz": 1348,
+    "spectral_flatness": 0.032
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard ('मुहसी', 'पहुटादो' are spellings). No tag spoken. Voiced 0.89. Stop at the comma 0.40 s.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l22",
+  "lang": "hi",
+  "speaker": "aditya",
+  "file": "voice/hi/l22.mp3",
+  "take": 1,
+  "take_text": "[quietly] तुम जा सकती हो, स्नेहा।",
+  "voice_id": "zCXXiWzuZO7d9fERssmF",
+  "model": "eleven_v4",
+  "transcript": "तुम जासकती हो स्नेया",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard)",
+  "transcript_latin_pass": "You can go, Sneha.",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 2.4,
+  "target_s": 3.0,
+  "speech_s": 2.08,
+  "speech_vs_target_pct": -30.7,
+  "lead_silence_s": 0.0,
+  "trail_silence_s": 0.32,
+  "pauses": [],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.387,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -25.7,
+  "ff_mean_db": -26.5,
+  "ff_max_db": -7.0,
+  "voiced_ratio": 0.61,
+  "median_hz": 111,
+  "spectral_centroid_hz": 1963,
+  "spectral_flatness": 0.057,
+  "segments": [
+   {
+    "t": [
+     0.0,
+     2.08
+    ],
+    "rms_db": -25.7,
+    "voiced_ratio": 0.61,
+    "longest_unvoiced_s": 0.14,
+    "median_hz": 111,
+    "spectral_centroid_hz": 1963,
+    "spectral_flatness": 0.057
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Name heard ('स्नेया'; Latin pass 'You can go, Sneha.'). No tag spoken. Voiced 0.61 at -25.7 dB, which is at the note's 0.6 rung trigger but not under it, with an ordinary spectrum (flatness 0.057). Not a retake. Nearest call on Aditya in Hindi.",
+  "retake_text": null,
+  "ear_check": "Quiet but voiced, not breathy, with 'स्नेहा' clear? If the ear hears breath, rung 1: '[low voice] तुम जा सकती हो, स्नेहा।'."
+ },
+ {
+  "line_id": "l23",
+  "lang": "hi",
+  "speaker": "mausi",
+  "file": "voice/hi/l23.mp3",
+  "take": 1,
+  "take_text": "[calm] दो बजे दूध का पूछूँगी।",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "transcript": "तो बजे दूद का पुछ हूंगे",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard)",
+  "transcript_latin_pass": "2 o'clock I will ask about milk.",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 2.32,
+  "target_s": 2.6,
+  "speech_s": 1.86,
+  "speech_vs_target_pct": -28.5,
+  "lead_silence_s": 0.12,
+  "trail_silence_s": 0.34,
+  "pauses": [],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.35,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -25.2,
+  "ff_mean_db": -26.6,
+  "ff_max_db": -9.5,
+  "voiced_ratio": 0.81,
+  "median_hz": 200,
+  "spectral_centroid_hz": 1876,
+  "spectral_flatness": 0.049,
+  "segments": [
+   {
+    "t": [
+     0.12,
+     1.98
+    ],
+    "rms_db": -25.2,
+    "voiced_ratio": 0.81,
+    "longest_unvoiced_s": 0.12,
+    "median_hz": 200,
+    "spectral_centroid_hz": 1874,
+    "spectral_flatness": 0.047
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard ('तो बजे' for दो बजे, but the Latin pass gives '2 o'clock'; 'दूद' for दूध). No tag spoken. Voiced 0.81.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l24",
+  "lang": "hi",
+  "speaker": "mausi",
+  "file": "voice/hi/l24.mp3",
+  "take": 1,
+  "take_text": "[calm] पी लिया बोले, तो तीन बजे गाड़ी। दूध फट गया बोले, तो लड़के ऊपर।",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "transcript": "पी लिया बोले तो तीन बजे गाडी दूद फ़द गया बोले तो लडके उपर",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard)",
+  "transcript_latin_pass": "(speaking in foreign language)",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 5.2,
+  "target_s": 6.0,
+  "speech_s": 4.74,
+  "speech_vs_target_pct": -21.0,
+  "lead_silence_s": 0.1,
+  "trail_silence_s": 0.36,
+  "pauses": [
+   [
+    2.16,
+    2.74,
+    0.58
+   ]
+  ],
+  "short_gaps_150_300ms": [
+   [
+    0.96,
+    1.2,
+    0.24
+   ],
+   [
+    1.3,
+    1.46,
+    0.16
+   ],
+   [
+    3.98,
+    4.2,
+    0.22
+   ]
+  ],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.337,
+   "pauses_ge300ms": [
+    [
+     2.16,
+     2.76,
+     0.6
+    ]
+   ]
+  },
+  "speech_rms_db": -22.6,
+  "ff_mean_db": -24.4,
+  "ff_max_db": -5.9,
+  "voiced_ratio": 0.89,
+  "median_hz": 229,
+  "spectral_centroid_hz": 2064,
+  "spectral_flatness": 0.044,
+  "segments": [
+   {
+    "t": [
+     0.1,
+     2.16
+    ],
+    "rms_db": -22.6,
+    "voiced_ratio": 0.84,
+    "longest_unvoiced_s": 0.1,
+    "median_hz": 242,
+    "spectral_centroid_hz": 2391,
+    "spectral_flatness": 0.046
+   },
+   {
+    "t": [
+     2.74,
+     4.84
+    ],
+    "rms_db": -22.6,
+    "voiced_ratio": 0.94,
+    "longest_unvoiced_s": 0.04,
+    "median_hz": 222,
+    "spectral_centroid_hz": 2020,
+    "spectral_flatness": 0.042
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All protected phrases heard: 'पी लिया बोले', 'तीन बजे गाडी', 'दूद फ़द गया', 'लडके उपर'. The Latin pass returned no words. No tag spoken. Voiced 0.89. Beat between the halves 0.58 s.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l25",
+  "lang": "hi",
+  "speaker": "mausi",
+  "file": "voice/hi/l25.mp3",
+  "take": 1,
+  "take_text": "[calm] कुछ और बोले, या चुप रहे, तब भी ऊपर।",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "transcript": "कुछ और बूले या चुप रहे, तब भी उपर.",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard)",
+  "transcript_latin_pass": "Kuch aur bole ya chup rahe tab bhi upar.",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 3.6,
+  "target_s": 3.6,
+  "speech_s": 3.28,
+  "speech_vs_target_pct": -8.9,
+  "lead_silence_s": 0.04,
+  "trail_silence_s": 0.28,
+  "pauses": [
+   [
+    0.96,
+    1.36,
+    0.4
+   ],
+   [
+    2.1,
+    2.58,
+    0.48
+   ]
+  ],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.31,
+   "pauses_ge300ms": [
+    [
+     0.95,
+     1.36,
+     0.42
+    ],
+    [
+     2.09,
+     2.59,
+     0.5
+    ]
+   ]
+  },
+  "speech_rms_db": -24.8,
+  "ff_mean_db": -27.1,
+  "ff_max_db": -10.1,
+  "voiced_ratio": 0.75,
+  "median_hz": 216,
+  "spectral_centroid_hz": 2153,
+  "spectral_flatness": 0.058,
+  "segments": [
+   {
+    "t": [
+     0.04,
+     0.96
+    ],
+    "rms_db": -23.8,
+    "voiced_ratio": 0.86,
+    "longest_unvoiced_s": 0.08,
+    "median_hz": 222,
+    "spectral_centroid_hz": 1893,
+    "spectral_flatness": 0.047
+   },
+   {
+    "t": [
+     1.36,
+     2.1
+    ],
+    "rms_db": -25.8,
+    "voiced_ratio": 0.83,
+    "longest_unvoiced_s": 0.06,
+    "median_hz": 205,
+    "spectral_centroid_hz": 2656,
+    "spectral_flatness": 0.076
+   },
+   {
+    "t": [
+     2.58,
+     3.32
+    ],
+    "rms_db": -25.5,
+    "voiced_ratio": 0.56,
+    "longest_unvoiced_s": 0.24,
+    "median_hz": 205,
+    "spectral_centroid_hz": 2044,
+    "spectral_flatness": 0.046
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard; 'चुप रहे' and 'उपर' (ऊपर) clear in the transcript and the Latin pass. No tag spoken. Pauses 0.40 s and 0.48 s at the commas. Voiced 0.75 overall. 'तब भी ऊपर' is 0.56, but its spectrum is ordinary (flatness 0.046), so it is not a whisper.",
+  "retake_text": null,
+  "ear_check": "Is the last 'ऊपर' full voice?"
+ },
+ {
+  "line_id": "l27",
+  "lang": "hi",
+  "speaker": "mausi",
+  "file": "voice/hi/l27.mp3",
+  "take": 1,
+  "take_text": "[calm] बाक़ी मैं देख लूँगी।",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "transcript": "बाखी मैं देख लूंगी",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard)",
+  "transcript_latin_pass": "Baaki, main dekh lunge.",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 2.16,
+  "target_s": 2.4,
+  "speech_s": 1.78,
+  "speech_vs_target_pct": -25.8,
+  "lead_silence_s": 0.14,
+  "trail_silence_s": 0.24,
+  "pauses": [],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -29.8,
+  "ff_mean_db": -31.0,
+  "ff_max_db": -17.7,
+  "voiced_ratio": 0.65,
+  "median_hz": 200,
+  "spectral_centroid_hz": 3125,
+  "spectral_flatness": 0.079,
+  "segments": [
+   {
+    "t": [
+     0.14,
+     1.92
+    ],
+    "rms_db": -29.8,
+    "voiced_ratio": 0.65,
+    "longest_unvoiced_s": 0.26,
+    "median_hz": 200,
+    "spectral_centroid_hz": 3134,
+    "spectral_flatness": 0.08
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard ('बाखी' for बाक़ी). No tag spoken. Quieter and breathier than her other drill lines: -29.8 dB against -22.6 to -25.2, flatness 0.080, centroid 3.1 kHz, voiced 0.65. That is above 0.6, so it is voiced, not a whisper. Level is set in the mix.",
+  "retake_text": null,
+  "ear_check": "'Fully voiced, never a whisper': does it sound breathy on the phone filter?"
+ },
+ {
+  "line_id": "l28",
+  "lang": "hi",
+  "speaker": "mausi",
+  "file": "voice/hi/l28.mp3",
+  "take": 1,
+  "take_text": "[warmly] खाना खाया? [chuckles] झूठ मत बोल। Bag की side वाली जेब में मठरी रखी है।",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "transcript": "खाना काया? जुट मत बोल बाग की साइट वाली जेब में मतरी रखी है",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard)",
+  "transcript_latin_pass": "Did you eat? Don't lie. There is a mud in the side pocket of the bag.",
+  "transcript_checks": "segment 0-2.76 s: small hi 'खाना काया? जूट मद बोल!'; segment 3.0-5.84 s: small hi 'बाग की साएड वाली जेब में मत्री रखी है.'; segment 1.14-2.76 s, small en: 'Don't lie.'",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 5.84,
+  "target_s": 5.8,
+  "speech_s": 5.56,
+  "speech_vs_target_pct": -4.1,
+  "lead_silence_s": 0.06,
+  "trail_silence_s": 0.22,
+  "pauses": [
+   [
+    0.78,
+    1.14,
+    0.36
+   ]
+  ],
+  "short_gaps_150_300ms": [
+   [
+    2.76,
+    3.0,
+    0.24
+   ]
+  ],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": [
+    [
+     0.76,
+     1.14,
+     0.38
+    ]
+   ]
+  },
+  "speech_rms_db": -25.2,
+  "ff_mean_db": -26.1,
+  "ff_max_db": -7.0,
+  "voiced_ratio": 0.79,
+  "median_hz": 211,
+  "spectral_centroid_hz": 2265,
+  "spectral_flatness": 0.043,
+  "segments": [
+   {
+    "t": [
+     0.06,
+     0.78
+    ],
+    "rms_db": -25.2,
+    "voiced_ratio": 0.75,
+    "longest_unvoiced_s": 0.08,
+    "median_hz": 200,
+    "spectral_centroid_hz": 2072,
+    "spectral_flatness": 0.039
+   },
+   {
+    "t": [
+     1.14,
+     5.62
+    ],
+    "rms_db": -25.2,
+    "voiced_ratio": 0.8,
+    "longest_unvoiced_s": 0.2,
+    "median_hz": 216,
+    "spectral_centroid_hz": 2317,
+    "spectral_flatness": 0.045
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard. Segment re-runs: 'खाना काया? जूट मद बोल!' (0-2.76 s) and 'बाग की साएड वाली जेब में मत्री रखी है.' (3.0-5.84 s); the Latin pass has 'Don't lie' and 'side pocket of the bag'. 'मठरी' comes out 'मतरी/मत्री'. 'chuckles' is not spoken. 'झूठ' is not swallowed. The 0.36 s gap after 'खाया?' holds no separate non-word sound, so whether a chuckle happened needs the ear. The breath before 'Bag की' is 0.24 s (2.76-3.00 s), the cut point. Voiced 0.79.",
+  "retake_text": null,
+  "ear_check": "Is there a chuckle at all between 'खाया?' and 'झूठ', and is it fond, not a cackle? Is 'मठरी' clear? Ear check 3, Kiran against Mausi: pitch 211 Hz here against Kiran's 186 to 229 Hz in this episode."
+ },
+ {
+  "line_id": "l29",
+  "lang": "hi",
+  "speaker": "mausi",
+  "file": "voice/hi/l29.mp3",
+  "take": 1,
+  "take_text": "[warmly] अच्छा सुन... दामाद जी ने दूध पी लिया, बेटा?",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "transcript": "आचा सुन दामाजीने दूट पीलिया मिता",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard)",
+  "transcript_latin_pass": "Listen, let's drink the milk of Damajji, dear.",
+  "transcript_checks": "segment 0.0-0.8 s: small 'अचा सुन', base 'आजा सुन.'; segment 1.1-3.3 s: small 'दामाजीने दूट पीलिया मिता', base 'داما جینے دوٹ پیلیا. - میٹا.'; segment 2.4-3.3 s: small 'बिटा', base 'میٹھا'",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 3.36,
+  "target_s": 4.6,
+  "speech_s": 2.98,
+  "speech_vs_target_pct": -35.2,
+  "lead_silence_s": 0.04,
+  "trail_silence_s": 0.34,
+  "pauses": [
+   [
+    0.76,
+    1.14,
+    0.38
+   ]
+  ],
+  "short_gaps_150_300ms": [
+   [
+    2.54,
+    2.7,
+    0.16
+   ]
+  ],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.351,
+   "pauses_ge300ms": [
+    [
+     0.73,
+     1.15,
+     0.42
+    ]
+   ]
+  },
+  "speech_rms_db": -25.6,
+  "ff_mean_db": -27.1,
+  "ff_max_db": -11.3,
+  "voiced_ratio": 0.9,
+  "median_hz": 235,
+  "spectral_centroid_hz": 2288,
+  "spectral_flatness": 0.053,
+  "segments": [
+   {
+    "t": [
+     0.04,
+     0.76
+    ],
+    "rms_db": -27.0,
+    "voiced_ratio": 0.77,
+    "longest_unvoiced_s": 0.1,
+    "median_hz": 229,
+    "spectral_centroid_hz": 2338,
+    "spectral_flatness": 0.06
+   },
+   {
+    "t": [
+     1.14,
+     3.02
+    ],
+    "rms_db": -25.1,
+    "voiced_ratio": 0.96,
+    "longest_unvoiced_s": 0.04,
+    "median_hz": 242,
+    "spectral_centroid_hz": 2230,
+    "spectral_flatness": 0.052
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Hard cut passes: the pause after 'अच्छा सुन...' is 0.38 s (0.76-1.14 s; silencedetect -40 dB 0.42 s), over the note's 0.3 s line. The segment 0-0.8 s transcribes alone as 'अचा सुन'. Words: 'दामाजीने' (ear check 7, as in casting), 'दूट पीलिया'. 'बेटा' comes out 'मिता' (small), 'बिटा' (small, segment) and 'میٹا' (base), and the Latin pass translates it as 'dear', so the word is there with a soft ब. No tag spoken. Fully voiced (0.90).",
+  "retake_text": null,
+  "ear_check": "Locked line: is 'बेटा' heard as बेटा (the models write 'मिता'/'बिटा')? Ear check 7: 'दामाद जी' against 'दामाजी'."
+ },
+ {
+  "line_id": "l30",
+  "lang": "hi",
+  "speaker": "mausi",
+  "file": "voice/hi/l30.mp3",
+  "take": 1,
+  "take_text": "[warmly] हाँ बेटा? पी लिया?",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "transcript": "अ, बिट्टा पीलिया?",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l hi, greedy, no prompt, script not given); transcript_latin_pass = same model -l en (translates more than it transliterates; shows whether the English words were heard)",
+  "transcript_latin_pass": "Yeah, baby, did you drink it?",
+  "transcript_checks": "base hi (answered in English) 'Yes, dear. Have you eaten?'",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 1.84,
+  "target_s": 2.4,
+  "speech_s": 1.42,
+  "speech_vs_target_pct": -40.8,
+  "lead_silence_s": 0.06,
+  "trail_silence_s": 0.36,
+  "pauses": [
+   [
+    0.66,
+    1.06,
+    0.4
+   ]
+  ],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.362,
+   "pauses_ge300ms": [
+    [
+     0.64,
+     1.06,
+     0.42
+    ]
+   ]
+  },
+  "speech_rms_db": -23.7,
+  "ff_mean_db": -26.4,
+  "ff_max_db": -10.7,
+  "voiced_ratio": 0.88,
+  "median_hz": 216,
+  "spectral_centroid_hz": 2244,
+  "spectral_flatness": 0.042,
+  "segments": [
+   {
+    "t": [
+     0.06,
+     0.66
+    ],
+    "rms_db": -25.1,
+    "voiced_ratio": 0.79,
+    "longest_unvoiced_s": 0.08,
+    "median_hz": 205,
+    "spectral_centroid_hz": 1847,
+    "spectral_flatness": 0.031
+   },
+   {
+    "t": [
+     1.06,
+     1.48
+    ],
+    "rms_db": -22.4,
+    "voiced_ratio": 1.0,
+    "longest_unvoiced_s": 0.0,
+    "median_hz": 258,
+    "spectral_centroid_hz": 2642,
+    "spectral_flatness": 0.044
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Words heard, though weak: 'अ, बिट्टा पीलिया?'. The Latin pass gives 'Yeah, baby, did you drink it?' (हाँ, बेटा, पी लिया). No tag spoken. Voiced 0.88. Pause 0.40 s after 'बेटा?'. Clean tail: 0.36 s after the last word.",
+  "retake_text": null,
+  "ear_check": "Is 'हाँ' audible (the Hindi pass writes only 'अ')?"
+ },
+ {
+  "line_id": "l01",
+  "lang": "en",
+  "speaker": "aditya",
+  "file": "voice/en/l01.mp3",
+  "take": 1,
+  "take_text": "[calm] Show me your hands. Both.",
+  "voice_id": "zCXXiWzuZO7d9fERssmF",
+  "model": "eleven_v4",
+  "transcript": "Show me your hands. Both.",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l en, greedy, no prompt, script not given)",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 2.4,
+  "target_s": 2.2,
+  "speech_s": 1.98,
+  "speech_vs_target_pct": -10.0,
+  "lead_silence_s": 0.1,
+  "trail_silence_s": 0.32,
+  "pauses": [
+   [
+    1.08,
+    1.62,
+    0.54
+   ]
+  ],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": [
+    [
+     1.09,
+     1.63,
+     0.54
+    ]
+   ]
+  },
+  "speech_rms_db": -18.1,
+  "ff_mean_db": -20.3,
+  "ff_max_db": -3.4,
+  "voiced_ratio": 0.83,
+  "median_hz": 131,
+  "spectral_centroid_hz": 1641,
+  "spectral_flatness": 0.026,
+  "segments": [
+   {
+    "t": [
+     0.1,
+     1.08
+    ],
+    "rms_db": -17.3,
+    "voiced_ratio": 0.86,
+    "longest_unvoiced_s": 0.12,
+    "median_hz": 131,
+    "spectral_centroid_hz": 1628,
+    "spectral_flatness": 0.025
+   },
+   {
+    "t": [
+     1.62,
+     2.08
+    ],
+    "rms_db": -20.4,
+    "voiced_ratio": 0.78,
+    "longest_unvoiced_s": 0.06,
+    "median_hz": 136,
+    "spectral_centroid_hz": 1613,
+    "spectral_flatness": 0.04
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim. No tag spoken. Voiced 0.83. Beat before 'Both.' 0.54 s. Speech starts at 0.10 s.",
+  "retake_text": null,
+  "ear_check": "Indian English, no drift?"
+ },
+ {
+  "line_id": "l02",
+  "lang": "en",
+  "speaker": "aditya",
+  "file": "voice/en/l02.mp3",
+  "take": 1,
+  "take_text": "[quietly] One at a time. I am in no hurry.",
+  "voice_id": "zCXXiWzuZO7d9fERssmF",
+  "model": "eleven_v4",
+  "transcript": "One at a time. I'm in no hurry.",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l en, greedy, no prompt, script not given)",
+  "transcript_checks": "small.en, base, small -bs 5 and segment 1.5-2.7 s (small, base): all 'I'm in no hurry.'",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 2.72,
+  "target_s": 3.2,
+  "speech_s": 2.46,
+  "speech_vs_target_pct": -23.1,
+  "lead_silence_s": 0.08,
+  "trail_silence_s": 0.18,
+  "pauses": [
+   [
+    1.14,
+    1.56,
+    0.42
+   ]
+  ],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": [
+    [
+     1.22,
+     1.58,
+     0.36
+    ]
+   ]
+  },
+  "speech_rms_db": -18.3,
+  "ff_mean_db": -19.6,
+  "ff_max_db": -6.5,
+  "voiced_ratio": 0.82,
+  "median_hz": 108,
+  "spectral_centroid_hz": 1316,
+  "spectral_flatness": 0.03,
+  "segments": [
+   {
+    "t": [
+     0.08,
+     1.14
+    ],
+    "rms_db": -18.7,
+    "voiced_ratio": 0.72,
+    "longest_unvoiced_s": 0.18,
+    "median_hz": 108,
+    "spectral_centroid_hz": 1470,
+    "spectral_flatness": 0.032
+   },
+   {
+    "t": [
+     1.56,
+     2.54
+    ],
+    "rms_db": -17.9,
+    "voiced_ratio": 0.94,
+    "longest_unvoiced_s": 0.04,
+    "median_hz": 105,
+    "spectral_centroid_hz": 1072,
+    "spectral_flatness": 0.026
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Words heard, with one doubt: 'I am' comes out 'I'm' in small, small.en, base and the segment re-run. Elsewhere this voice's uncontracted forms transcribe as written ('it is', 'I will' in l09; 'You are' in l22; 'does not' in l16), so he probably contracted. The series' precedent (s2e03 l25) treats a contraction as an ear check, not a wrong word. No tag spoken. Voiced 0.82. The take is barely quieter than his [calm] lines (-18.3 against -18.1 dB on l01), so [quietly] is weakly obeyed. Pause 0.42 s.",
+  "retake_text": null,
+  "ear_check": "'I am' or 'I'm'? The note asks for no contraction. If the ear hears 'I'm', rung 1: '[low voice] One at a time. I am in no hurry.'."
+ },
+ {
+  "line_id": "l03",
+  "lang": "en",
+  "speaker": "kiran",
+  "file": "voice/en/l03.mp3",
+  "take": 1,
+  "take_text": "[flatly] It'll put me to sleep, though.",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "transcript": "It'll put me to sleep though.",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l en, greedy, no prompt, script not given)",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 1.84,
+  "target_s": 2.6,
+  "speech_s": 1.44,
+  "speech_vs_target_pct": -44.6,
+  "lead_silence_s": 0.12,
+  "trail_silence_s": 0.28,
+  "pauses": [],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -21.9,
+  "ff_mean_db": -23.1,
+  "ff_max_db": -4.7,
+  "voiced_ratio": 0.62,
+  "median_hz": 178,
+  "spectral_centroid_hz": 1909,
+  "spectral_flatness": 0.058,
+  "segments": [
+   {
+    "t": [
+     0.12,
+     1.56
+    ],
+    "rms_db": -21.9,
+    "voiced_ratio": 0.62,
+    "longest_unvoiced_s": 0.18,
+    "median_hz": 178,
+    "spectral_centroid_hz": 1834,
+    "spectral_flatness": 0.058
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim. No tag spoken. Voiced 0.62, ordinary spectrum (flatness 0.058).",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l04",
+  "lang": "en",
+  "speaker": "aditya",
+  "file": "voice/en/l04.mp3",
+  "take": 1,
+  "take_text": "[sharply] Put it down. If you're asleep, who takes me to Mausi?",
+  "voice_id": "zCXXiWzuZO7d9fERssmF",
+  "model": "eleven_v4",
+  "transcript": "Put it down! If you're asleep, who takes me to Morsi?",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l en, greedy, no prompt, script not given)",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 3.6,
+  "target_s": 4.0,
+  "speech_s": 3.18,
+  "speech_vs_target_pct": -20.5,
+  "lead_silence_s": 0.04,
+  "trail_silence_s": 0.38,
+  "pauses": [
+   [
+    0.74,
+    1.06,
+    0.32
+   ]
+  ],
+  "short_gaps_150_300ms": [
+   [
+    1.96,
+    2.12,
+    0.16
+   ]
+  ],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.34,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -16.2,
+  "ff_mean_db": -17.5,
+  "ff_max_db": -0.6,
+  "voiced_ratio": 0.87,
+  "median_hz": 216,
+  "spectral_centroid_hz": 2184,
+  "spectral_flatness": 0.032,
+  "segments": [
+   {
+    "t": [
+     0.04,
+     0.74
+    ],
+    "rms_db": -14.1,
+    "voiced_ratio": 0.86,
+    "longest_unvoiced_s": 0.06,
+    "median_hz": 163,
+    "spectral_centroid_hz": 1915,
+    "spectral_flatness": 0.025
+   },
+   {
+    "t": [
+     1.06,
+     3.22
+    ],
+    "rms_db": -17.2,
+    "voiced_ratio": 0.88,
+    "longest_unvoiced_s": 0.06,
+    "median_hz": 229,
+    "spectral_centroid_hz": 2294,
+    "spectral_flatness": 0.035
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard ('Morsi' for Mausi, as the note expects). No tag spoken. Not a D-0M2 retake. The note's 'reject if shouted' goes to the ear: 'Put it down!' is -14.1 dB, peak -0.6 dBFS, and the second phrase sits at about 229 Hz median against his usual 108 to 143 Hz.",
+  "retake_text": null,
+  "ear_check": "Shouted or raised? If so, rung 1: '[calm] Put it down. If you're asleep, who takes me to Mausi?'."
+ },
+ {
+  "line_id": "l05",
+  "lang": "en",
+  "speaker": "kiran",
+  "file": "voice/en/l05.mp3",
+  "take": 1,
+  "take_text": "[calm] The one with the burnt wrist? Rekha. She does Mausi's accounts now.",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "transcript": "The one with the burnt wrist? Rekha. She does Mossy's accounts now.",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l en, greedy, no prompt, script not given)",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 4.56,
+  "target_s": 5.2,
+  "speech_s": 4.32,
+  "speech_vs_target_pct": -16.9,
+  "lead_silence_s": 0.08,
+  "trail_silence_s": 0.16,
+  "pauses": [
+   [
+    1.56,
+    2.08,
+    0.52
+   ],
+   [
+    2.54,
+    2.92,
+    0.38
+   ]
+  ],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": [
+    [
+     1.58,
+     2.09,
+     0.51
+    ],
+    [
+     2.57,
+     2.91,
+     0.33
+    ]
+   ]
+  },
+  "speech_rms_db": -19.5,
+  "ff_mean_db": -20.9,
+  "ff_max_db": -1.7,
+  "voiced_ratio": 0.78,
+  "median_hz": 211,
+  "spectral_centroid_hz": 1957,
+  "spectral_flatness": 0.04,
+  "segments": [
+   {
+    "t": [
+     0.08,
+     1.56
+    ],
+    "rms_db": -20.5,
+    "voiced_ratio": 0.75,
+    "longest_unvoiced_s": 0.22,
+    "median_hz": 216,
+    "spectral_centroid_hz": 1659,
+    "spectral_flatness": 0.035
+   },
+   {
+    "t": [
+     2.08,
+     2.54
+    ],
+    "rms_db": -16.9,
+    "voiced_ratio": 0.91,
+    "longest_unvoiced_s": 0.04,
+    "median_hz": 211,
+    "spectral_centroid_hz": 2060,
+    "spectral_flatness": 0.056
+   },
+   {
+    "t": [
+     2.92,
+     4.4
+    ],
+    "rms_db": -19.6,
+    "voiced_ratio": 0.77,
+    "longest_unvoiced_s": 0.1,
+    "median_hz": 205,
+    "spectral_centroid_hz": 2319,
+    "spectral_flatness": 0.04
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim; 'Rekha' heard exactly. No tag spoken. Voiced 0.78. Pauses 0.52 s before and 0.38 s after 'Rekha.'.",
+  "retake_text": null,
+  "ear_check": "'Rekha' said RAY-khaa?"
+ },
+ {
+  "line_id": "l06",
+  "lang": "en",
+  "speaker": "kiran",
+  "file": "voice/en/l06.mp3",
+  "take": 1,
+  "take_text": "[flatly] Without me, Mausi's shutter won't open for you.",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "transcript": "Without me, Mossy's shutter won't open for you.",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l en, greedy, no prompt, script not given)",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 3.2,
+  "target_s": 3.7,
+  "speech_s": 3.08,
+  "speech_vs_target_pct": -16.8,
+  "lead_silence_s": 0.12,
+  "trail_silence_s": 0.0,
+  "pauses": [],
+  "short_gaps_150_300ms": [
+   [
+    2.9,
+    3.18,
+    0.28
+   ]
+  ],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -21.3,
+  "ff_mean_db": -22.1,
+  "ff_max_db": -2.7,
+  "voiced_ratio": 0.63,
+  "median_hz": 200,
+  "spectral_centroid_hz": 1848,
+  "spectral_flatness": 0.04,
+  "segments": [
+   {
+    "t": [
+     0.12,
+     3.2
+    ],
+    "rms_db": -21.3,
+    "voiced_ratio": 0.63,
+    "longest_unvoiced_s": 0.2,
+    "median_hz": 200,
+    "spectral_centroid_hz": 1822,
+    "spectral_flatness": 0.039
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim (small, small.en, base). No tag spoken. Voiced 0.63. The tail reads 0.0 because a 20 ms non-silent frame sits at the very end of the file (3.18-3.20 s). The last word ends at about 2.90 s and the segment 2.5-3.2 s transcribes as 'for you.', so nothing is clipped.",
+  "retake_text": null,
+  "ear_check": "A click at the very end of the file? The edit can trim it."
+ },
+ {
+  "line_id": "l07",
+  "lang": "en",
+  "speaker": "kiran",
+  "file": "voice/en/l07.mp3",
+  "take": 1,
+  "take_text": "[quietly] Mausi calls at two. If the phone's off, Billu comes up.",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "transcript": "Morsi calls it too. If the phone's off, Willou comes up.",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l en, greedy, no prompt, script not given)",
+  "transcript_checks": "small.en 'Mossey calls it too. If the phone's off, Billoo comes up.'; base 'Morsi calls it too, if the phones off, will look arms up.'",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 4.16,
+  "target_s": 4.6,
+  "speech_s": 3.96,
+  "speech_vs_target_pct": -13.9,
+  "lead_silence_s": 0.04,
+  "trail_silence_s": 0.16,
+  "pauses": [
+   [
+    1.42,
+    1.94,
+    0.52
+   ]
+  ],
+  "short_gaps_150_300ms": [
+   [
+    2.94,
+    3.14,
+    0.2
+   ]
+  ],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": [
+    [
+     1.4,
+     1.94,
+     0.54
+    ]
+   ]
+  },
+  "speech_rms_db": -27.0,
+  "ff_mean_db": -28.7,
+  "ff_max_db": -9.3,
+  "voiced_ratio": 0.58,
+  "median_hz": 178,
+  "spectral_centroid_hz": 2368,
+  "spectral_flatness": 0.087,
+  "segments": [
+   {
+    "t": [
+     0.04,
+     1.42
+    ],
+    "rms_db": -33.1,
+    "voiced_ratio": 0.53,
+    "longest_unvoiced_s": 0.1,
+    "median_hz": 182,
+    "spectral_centroid_hz": 3204,
+    "spectral_flatness": 0.088
+   },
+   {
+    "t": [
+     1.94,
+     4.0
+    ],
+    "rms_db": -25.2,
+    "voiced_ratio": 0.61,
+    "longest_unvoiced_s": 0.2,
+    "median_hz": 178,
+    "spectral_centroid_hz": 2348,
+    "spectral_flatness": 0.074
+   }
+  ],
+  "verdict": "retake",
+  "reason": "Lost whisper, the HIGH RISK case the note names. Whole take voiced 0.58 at -27.0 dB, under the note's 0.6, with whole-take flatness 0.087. That equals the two known Kiran whispers (kiran_t3 0.091, s1e01 en l16 0.087); her voiced lines run 0.03 to 0.06. 'Mausi calls at two.' (0.04-1.42 s) is the worst part: voiced 0.53 at -33.1 dB, flatness 0.088, centroid 3,204 Hz. Words are weak too: 'at two' is heard as 'it too' by all three models, and 'Billu' as 'Willou' (small), 'Billoo' (small.en) and 'will look' (base). The note: 'under 0.6, or words lost in the transcript, go straight to the [low voice] rung with no second [quietly] try.' No tag spoken.",
+  "retake_text": "[calm] Mausi calls at two. If the phone's off, Billu comes up.",
+  "ear_check": "If [low voice] also whispers, use the bare line with the level set in the mix and log it (cast.json kiran.switch_if, a casting call). S5 may retag this line to [low voice] in script.en.json.",
+  "d022_line_class": "voice-wanted",
+  "retake_text_reviewer": "[low voice] Mausi calls at two. If the phone's off, Billu comes up.",
+  "retake_model": "eleven_v4",
+  "retake_take": 2,
+  "rule": "D-022",
+  "d022_note": "D-022 rule 1: script text with every quiet-family tag deleted, [calm] added because no tag was left"
+ },
+ {
+  "line_id": "l08",
+  "lang": "en",
+  "speaker": "aditya",
+  "file": "voice/en/l08.mp3",
+  "take": 1,
+  "take_text": "[calm] Mausi first. Rekha can wait.",
+  "voice_id": "zCXXiWzuZO7d9fERssmF",
+  "model": "eleven_v4",
+  "transcript": "Mosse first, Rekha can wait.",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l en, greedy, no prompt, script not given)",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 2.64,
+  "target_s": 3.0,
+  "speech_s": 2.22,
+  "speech_vs_target_pct": -26.0,
+  "lead_silence_s": 0.12,
+  "trail_silence_s": 0.3,
+  "pauses": [
+   [
+    1.02,
+    1.4,
+    0.38
+   ]
+  ],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": [
+    [
+     1.03,
+     1.41,
+     0.38
+    ]
+   ]
+  },
+  "speech_rms_db": -19.1,
+  "ff_mean_db": -20.8,
+  "ff_max_db": -3.6,
+  "voiced_ratio": 0.76,
+  "median_hz": 136,
+  "spectral_centroid_hz": 1763,
+  "spectral_flatness": 0.038,
+  "segments": [
+   {
+    "t": [
+     0.12,
+     1.02
+    ],
+    "rms_db": -17.9,
+    "voiced_ratio": 0.77,
+    "longest_unvoiced_s": 0.12,
+    "median_hz": 143,
+    "spectral_centroid_hz": 2300,
+    "spectral_flatness": 0.056
+   },
+   {
+    "t": [
+     1.4,
+     2.34
+    ],
+    "rms_db": -20.8,
+    "voiced_ratio": 0.76,
+    "longest_unvoiced_s": 0.06,
+    "median_hz": 127,
+    "spectral_centroid_hz": 1717,
+    "spectral_flatness": 0.025
+   }
+  ],
+  "verdict": "ok",
+  "reason": "All words heard ('Mosse' for Mausi). No tag spoken. Voiced 0.76. Beat 0.38 s.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l09",
+  "lang": "en",
+  "speaker": "aditya",
+  "file": "voice/en/l09.mp3",
+  "take": 1,
+  "take_text": "[quietly] And if it is a lie, I will check the wrist myself.",
+  "voice_id": "zCXXiWzuZO7d9fERssmF",
+  "model": "eleven_v4",
+  "transcript": "And if it is a lie, I will check the rest myself.",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l en, greedy, no prompt, script not given)",
+  "transcript_checks": "small.en 'And if it is a lie, I will check the rest myself.'; base 'And if it is a lie, I will check the wrist myself.'",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 3.68,
+  "target_s": 4.4,
+  "speech_s": 3.54,
+  "speech_vs_target_pct": -19.5,
+  "lead_silence_s": 0.06,
+  "trail_silence_s": 0.08,
+  "pauses": [],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": [
+    [
+     1.65,
+     1.95,
+     0.3
+    ]
+   ]
+  },
+  "speech_rms_db": -23.9,
+  "ff_mean_db": -24.2,
+  "ff_max_db": -8.6,
+  "voiced_ratio": 0.67,
+  "median_hz": 110,
+  "spectral_centroid_hz": 1797,
+  "spectral_flatness": 0.053,
+  "segments": [
+   {
+    "t": [
+     0.06,
+     3.6
+    ],
+    "rms_db": -23.9,
+    "voiced_ratio": 0.67,
+    "longest_unvoiced_s": 0.24,
+    "median_hz": 110,
+    "spectral_centroid_hz": 1797,
+    "spectral_flatness": 0.053
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Words heard, with one doubt: 'wrist' comes out 'rest' in small and small.en, and 'wrist' in base. Precedent (s1e01 en l25, 'Mohit') treats one model's split of a word as an ear check, not a lost word. No tag spoken. Quiet and voiced: -23.9 dB, 0.67. Protected line.",
+  "retake_text": null,
+  "ear_check": "'wrist', not 'rest'? If the ear hears 'rest', rung 1: '[low voice] And if it is a lie, I will check the wrist myself.'."
+ },
+ {
+  "line_id": "l10",
+  "lang": "en",
+  "speaker": "aditya",
+  "file": "voice/en/l10.mp3",
+  "take": 1,
+  "take_text": "[calm] So. Is there a code?",
+  "voice_id": "zCXXiWzuZO7d9fERssmF",
+  "model": "eleven_v4",
+  "transcript": "So, is there a code?",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l en, greedy, no prompt, script not given)",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 2.4,
+  "target_s": 1.9,
+  "speech_s": 2.1,
+  "speech_vs_target_pct": 10.5,
+  "lead_silence_s": 0.02,
+  "trail_silence_s": 0.28,
+  "pauses": [
+   [
+    0.78,
+    1.18,
+    0.4
+   ]
+  ],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": [
+    [
+     0.78,
+     1.19,
+     0.41
+    ]
+   ]
+  },
+  "speech_rms_db": -20.6,
+  "ff_mean_db": -22.2,
+  "ff_max_db": -5.4,
+  "voiced_ratio": 0.61,
+  "median_hz": 111,
+  "spectral_centroid_hz": 1380,
+  "spectral_flatness": 0.044,
+  "segments": [
+   {
+    "t": [
+     0.02,
+     0.78
+    ],
+    "rms_db": -21.1,
+    "voiced_ratio": 0.41,
+    "longest_unvoiced_s": 0.22,
+    "median_hz": 129,
+    "spectral_centroid_hz": 1418,
+    "spectral_flatness": 0.052
+   },
+   {
+    "t": [
+     1.18,
+     2.12
+    ],
+    "rms_db": -20.2,
+    "voiced_ratio": 0.78,
+    "longest_unvoiced_s": 0.06,
+    "median_hz": 111,
+    "spectral_centroid_hz": 1382,
+    "spectral_flatness": 0.043
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim ('So, is there a code?'). No tag spoken. 'So.' is breathy (voiced 0.41), and the line asks for no voicing level. Voiced 0.61 overall. Pause 0.40 s after 'So.'.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l11",
+  "lang": "en",
+  "speaker": "kiran",
+  "file": "voice/en/l11.mp3",
+  "take": 1,
+  "take_text": "[calm] No code. A mother asks how her daughter is. That's all.",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "transcript": "No code. A mother asks how her daughter is. That's all.",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l en, greedy, no prompt, script not given)",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 4.4,
+  "target_s": 4.5,
+  "speech_s": 4.1,
+  "speech_vs_target_pct": -8.9,
+  "lead_silence_s": 0.14,
+  "trail_silence_s": 0.16,
+  "pauses": [
+   [
+    0.92,
+    1.4,
+    0.48
+   ],
+   [
+    3.4,
+    3.8,
+    0.4
+   ]
+  ],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": [
+    [
+     0.92,
+     1.41,
+     0.49
+    ],
+    [
+     3.45,
+     3.79,
+     0.34
+    ]
+   ]
+  },
+  "speech_rms_db": -19.2,
+  "ff_mean_db": -20.8,
+  "ff_max_db": -3.8,
+  "voiced_ratio": 0.66,
+  "median_hz": 211,
+  "spectral_centroid_hz": 1826,
+  "spectral_flatness": 0.038,
+  "segments": [
+   {
+    "t": [
+     0.14,
+     0.92
+    ],
+    "rms_db": -18.5,
+    "voiced_ratio": 0.72,
+    "longest_unvoiced_s": 0.1,
+    "median_hz": 205,
+    "spectral_centroid_hz": 1386,
+    "spectral_flatness": 0.033
+   },
+   {
+    "t": [
+     1.4,
+     3.4
+    ],
+    "rms_db": -18.9,
+    "voiced_ratio": 0.62,
+    "longest_unvoiced_s": 0.32,
+    "median_hz": 216,
+    "spectral_centroid_hz": 1879,
+    "spectral_flatness": 0.037
+   },
+   {
+    "t": [
+     3.8,
+     4.24
+    ],
+    "rms_db": -25.5,
+    "voiced_ratio": 0.76,
+    "longest_unvoiced_s": 0.08,
+    "median_hz": 170,
+    "spectral_centroid_hz": 1791,
+    "spectral_flatness": 0.038
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim. No tag spoken. Voiced 0.66. Pauses 0.48 s and 0.40 s.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l12",
+  "lang": "en",
+  "speaker": "kiran",
+  "file": "voice/en/l12.mp3",
+  "take": 1,
+  "take_text": "[hesitant] We only take the jewellery. We never touch anyone.",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "transcript": "We only take the jewelry. We never touch anyone.",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l en, greedy, no prompt, script not given)",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 3.84,
+  "target_s": 4.4,
+  "speech_s": 3.42,
+  "speech_vs_target_pct": -22.3,
+  "lead_silence_s": 0.1,
+  "trail_silence_s": 0.32,
+  "pauses": [],
+  "short_gaps_150_300ms": [
+   [
+    2.1,
+    2.28,
+    0.18
+   ]
+  ],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -18.0,
+  "ff_mean_db": -18.9,
+  "ff_max_db": -4.6,
+  "voiced_ratio": 0.81,
+  "median_hz": 200,
+  "spectral_centroid_hz": 2235,
+  "spectral_flatness": 0.049,
+  "segments": [
+   {
+    "t": [
+     0.1,
+     3.52
+    ],
+    "rms_db": -18.0,
+    "voiced_ratio": 0.81,
+    "longest_unvoiced_s": 0.18,
+    "median_hz": 200,
+    "spectral_centroid_hz": 2226,
+    "spectral_flatness": 0.048
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim ('jewelry' is the US spelling). No tag spoken. Voiced 0.81. The catch before 'We never' is 0.18 s, under the 300 ms pause size: acting.",
+  "retake_text": null,
+  "ear_check": "'jewellery' said JOO-el-ree?"
+ },
+ {
+  "line_id": "l13",
+  "lang": "en",
+  "speaker": "kiran",
+  "file": "voice/en/l13.mp3",
+  "take": 1,
+  "take_text": "[flatly] At most, if a groom wakes up, the boys slap him once.",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "transcript": "At most, if a groom wakes up, the boys slap him once.",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l en, greedy, no prompt, script not given)",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 4.08,
+  "target_s": 4.3,
+  "speech_s": 3.72,
+  "speech_vs_target_pct": -13.5,
+  "lead_silence_s": 0.18,
+  "trail_silence_s": 0.18,
+  "pauses": [],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -19.6,
+  "ff_mean_db": -20.4,
+  "ff_max_db": -4.6,
+  "voiced_ratio": 0.6,
+  "median_hz": 205,
+  "spectral_centroid_hz": 1912,
+  "spectral_flatness": 0.038,
+  "segments": [
+   {
+    "t": [
+     0.18,
+     3.9
+    ],
+    "rms_db": -19.6,
+    "voiced_ratio": 0.6,
+    "longest_unvoiced_s": 0.32,
+    "median_hz": 205,
+    "spectral_centroid_hz": 1868,
+    "spectral_flatness": 0.038
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim. No tag spoken. Voiced 0.60, ordinary spectrum (flatness 0.038).",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l14",
+  "lang": "en",
+  "speaker": "aditya",
+  "file": "voice/en/l14.mp3",
+  "take": 1,
+  "take_text": "[quietly] Nobody touched Mohit either.",
+  "voice_id": "zCXXiWzuZO7d9fERssmF",
+  "model": "eleven_v4",
+  "transcript": "Nobody touched Mohit either.",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l en, greedy, no prompt, script not given)",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 2.24,
+  "target_s": 3.0,
+  "speech_s": 1.9,
+  "speech_vs_target_pct": -36.7,
+  "lead_silence_s": 0.06,
+  "trail_silence_s": 0.28,
+  "pauses": [],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -18.5,
+  "ff_mean_db": -19.2,
+  "ff_max_db": -6.3,
+  "voiced_ratio": 0.78,
+  "median_hz": 108,
+  "spectral_centroid_hz": 1137,
+  "spectral_flatness": 0.033,
+  "segments": [
+   {
+    "t": [
+     0.06,
+     1.96
+    ],
+    "rms_db": -18.5,
+    "voiced_ratio": 0.78,
+    "longest_unvoiced_s": 0.08,
+    "median_hz": 108,
+    "spectral_centroid_hz": 1143,
+    "spectral_flatness": 0.034
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim, 'Mohit' heard. No tag spoken. Voiced 0.78. The take is about as loud as his [calm] lines (-18.5 dB), so [quietly] is weakly obeyed; that is not a retake reason.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l15",
+  "lang": "en",
+  "speaker": "aditya",
+  "file": "voice/en/l15.mp3",
+  "take": 1,
+  "take_text": "[calm] Our mother's bangles. The lane laughed at him for eleven days.",
+  "voice_id": "zCXXiWzuZO7d9fERssmF",
+  "model": "eleven_v4",
+  "transcript": "Our mother's bangles. The lane laughed at him for 11 days.",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l en, greedy, no prompt, script not given)",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 4.72,
+  "target_s": 5.0,
+  "speech_s": 4.48,
+  "speech_vs_target_pct": -10.4,
+  "lead_silence_s": 0.1,
+  "trail_silence_s": 0.14,
+  "pauses": [
+   [
+    1.46,
+    1.94,
+    0.48
+   ]
+  ],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": [
+    [
+     1.48,
+     1.95,
+     0.47
+    ]
+   ]
+  },
+  "speech_rms_db": -17.3,
+  "ff_mean_db": -18.1,
+  "ff_max_db": -1.3,
+  "voiced_ratio": 0.86,
+  "median_hz": 123,
+  "spectral_centroid_hz": 1391,
+  "spectral_flatness": 0.024,
+  "segments": [
+   {
+    "t": [
+     0.1,
+     1.46
+    ],
+    "rms_db": -17.4,
+    "voiced_ratio": 0.85,
+    "longest_unvoiced_s": 0.08,
+    "median_hz": 127,
+    "spectral_centroid_hz": 1203,
+    "spectral_flatness": 0.021
+   },
+   {
+    "t": [
+     1.94,
+     4.58
+    ],
+    "rms_db": -17.3,
+    "voiced_ratio": 0.87,
+    "longest_unvoiced_s": 0.1,
+    "median_hz": 123,
+    "spectral_centroid_hz": 1430,
+    "spectral_flatness": 0.025
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim. No tag spoken. Voiced 0.86. Beat 0.48 s.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l16",
+  "lang": "en",
+  "speaker": "aditya",
+  "file": "voice/en/l16.mp3",
+  "take": 1,
+  "take_text": "[calm] Mausi and her ledger go to the police. That hand does not.",
+  "voice_id": "zCXXiWzuZO7d9fERssmF",
+  "model": "eleven_v4",
+  "transcript": "Mossy and her ledger go to the police. That hand does not.",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l en, greedy, no prompt, script not given)",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 4.56,
+  "target_s": 4.6,
+  "speech_s": 4.3,
+  "speech_vs_target_pct": -6.5,
+  "lead_silence_s": 0.12,
+  "trail_silence_s": 0.14,
+  "pauses": [
+   [
+    2.54,
+    2.9,
+    0.36
+   ]
+  ],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": [
+    [
+     2.53,
+     2.92,
+     0.39
+    ]
+   ]
+  },
+  "speech_rms_db": -19.3,
+  "ff_mean_db": -20.0,
+  "ff_max_db": -3.3,
+  "voiced_ratio": 0.79,
+  "median_hz": 114,
+  "spectral_centroid_hz": 1486,
+  "spectral_flatness": 0.028,
+  "segments": [
+   {
+    "t": [
+     0.12,
+     2.54
+    ],
+    "rms_db": -18.8,
+    "voiced_ratio": 0.81,
+    "longest_unvoiced_s": 0.12,
+    "median_hz": 118,
+    "spectral_centroid_hz": 1440,
+    "spectral_flatness": 0.026
+   },
+   {
+    "t": [
+     2.9,
+     4.42
+    ],
+    "rms_db": -20.3,
+    "voiced_ratio": 0.77,
+    "longest_unvoiced_s": 0.1,
+    "median_hz": 110,
+    "spectral_centroid_hz": 1582,
+    "spectral_flatness": 0.036
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim ('Mossy'). No tag spoken. Voiced 0.79. Stop before 'That hand does not.' 0.36 s.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l17",
+  "lang": "en",
+  "speaker": "kiran",
+  "file": "voice/en/l17.mp3",
+  "take": 1,
+  "take_text": "[quietly] What will you do with that hand?",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "transcript": "What will you do with that hand?",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l en, greedy, no prompt, script not given)",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 2.24,
+  "target_s": 2.8,
+  "speech_s": 1.82,
+  "speech_vs_target_pct": -35.0,
+  "lead_silence_s": 0.14,
+  "trail_silence_s": 0.28,
+  "pauses": [],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -24.0,
+  "ff_mean_db": -24.9,
+  "ff_max_db": -4.5,
+  "voiced_ratio": 0.6,
+  "median_hz": 205,
+  "spectral_centroid_hz": 2015,
+  "spectral_flatness": 0.055,
+  "segments": [
+   {
+    "t": [
+     0.14,
+     1.96
+    ],
+    "rms_db": -24.0,
+    "voiced_ratio": 0.6,
+    "longest_unvoiced_s": 0.18,
+    "median_hz": 205,
+    "spectral_centroid_hz": 2015,
+    "spectral_flatness": 0.055
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim. No tag spoken. Voiced 0.60 at -24.0 dB, which is at the note's line but not under it. The spectrum is ordinary for her (flatness 0.055, centroid 2,015 Hz; her whispers measure 0.084 to 0.10 and 3.2 to 3.9 kHz), so I do not read it as a whisper. Not a retake, but this is the nearest call on Kiran.",
+  "retake_text": null,
+  "ear_check": "Voiced, not breathy? If the ear hears a whisper, rung 1: '[low voice] What will you do with that hand?'."
+ },
+ {
+  "line_id": "l18",
+  "lang": "en",
+  "speaker": "aditya",
+  "file": "voice/en/l18.mp3",
+  "take": 1,
+  "take_text": "[calm] Mohit lasted eleven days. She gets eleven days too. Then one dose.",
+  "voice_id": "zCXXiWzuZO7d9fERssmF",
+  "model": "eleven_v4",
+  "transcript": "Mohit lasted 11 days. She gets 11 days too. Then, one dose.",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l en, greedy, no prompt, script not given)",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 5.44,
+  "target_s": 5.6,
+  "speech_s": 5.18,
+  "speech_vs_target_pct": -7.5,
+  "lead_silence_s": 0.1,
+  "trail_silence_s": 0.16,
+  "pauses": [
+   [
+    1.88,
+    2.28,
+    0.4
+   ]
+  ],
+  "short_gaps_150_300ms": [
+   [
+    3.72,
+    4.0,
+    0.28
+   ],
+   [
+    4.36,
+    4.58,
+    0.22
+   ]
+  ],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": [
+    [
+     1.89,
+     2.29,
+     0.39
+    ],
+    [
+     3.7,
+     4.0,
+     0.31
+    ]
+   ]
+  },
+  "speech_rms_db": -18.6,
+  "ff_mean_db": -19.6,
+  "ff_max_db": -4.0,
+  "voiced_ratio": 0.82,
+  "median_hz": 143,
+  "spectral_centroid_hz": 1531,
+  "spectral_flatness": 0.025,
+  "segments": [
+   {
+    "t": [
+     0.1,
+     1.88
+    ],
+    "rms_db": -17.2,
+    "voiced_ratio": 0.88,
+    "longest_unvoiced_s": 0.1,
+    "median_hz": 133,
+    "spectral_centroid_hz": 1398,
+    "spectral_flatness": 0.025
+   },
+   {
+    "t": [
+     2.28,
+     5.28
+    ],
+    "rms_db": -19.9,
+    "voiced_ratio": 0.79,
+    "longest_unvoiced_s": 0.12,
+    "median_hz": 160,
+    "spectral_centroid_hz": 1699,
+    "spectral_flatness": 0.024
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim. No tag spoken. Voiced 0.82. Beats 0.40 s and 0.28 s.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l19",
+  "lang": "en",
+  "speaker": "aditya",
+  "file": "voice/en/l19.mp3",
+  "take": 1,
+  "take_text": "[quietly] I know how much puts you to sleep, and how much means you never wake up.",
+  "voice_id": "zCXXiWzuZO7d9fERssmF",
+  "model": "eleven_v4",
+  "transcript": "I know how much puts you to sleep and how much means you never wake up.",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l en, greedy, no prompt, script not given)",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 4.88,
+  "target_s": 6.2,
+  "speech_s": 4.74,
+  "speech_vs_target_pct": -23.5,
+  "lead_silence_s": 0.06,
+  "trail_silence_s": 0.08,
+  "pauses": [
+   [
+    2.08,
+    2.44,
+    0.36
+   ]
+  ],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": [
+    [
+     2.07,
+     2.44,
+     0.37
+    ]
+   ]
+  },
+  "speech_rms_db": -21.9,
+  "ff_mean_db": -22.6,
+  "ff_max_db": -8.4,
+  "voiced_ratio": 0.71,
+  "median_hz": 113,
+  "spectral_centroid_hz": 1413,
+  "spectral_flatness": 0.042,
+  "segments": [
+   {
+    "t": [
+     0.06,
+     2.08
+    ],
+    "rms_db": -21.2,
+    "voiced_ratio": 0.62,
+    "longest_unvoiced_s": 0.08,
+    "median_hz": 118,
+    "spectral_centroid_hz": 1512,
+    "spectral_flatness": 0.048
+   },
+   {
+    "t": [
+     2.44,
+     4.8
+    ],
+    "rms_db": -22.7,
+    "voiced_ratio": 0.78,
+    "longest_unvoiced_s": 0.14,
+    "median_hz": 111,
+    "spectral_centroid_hz": 1130,
+    "spectral_flatness": 0.038
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim. No tag spoken. Voiced 0.71 (first half 0.62). Pause at the comma 0.36 s.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l20",
+  "lang": "en",
+  "speaker": "kiran",
+  "file": "voice/en/l20.mp3",
+  "take": 1,
+  "take_text": "[hesitant] And me?",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "transcript": "And me?",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l en, greedy, no prompt, script not given)",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 1.6,
+  "target_s": 1.6,
+  "speech_s": 1.24,
+  "speech_vs_target_pct": -22.5,
+  "lead_silence_s": 0.18,
+  "trail_silence_s": 0.18,
+  "pauses": [],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -20.2,
+  "ff_mean_db": -21.5,
+  "ff_max_db": -10.3,
+  "voiced_ratio": 0.73,
+  "median_hz": 216,
+  "spectral_centroid_hz": 1964,
+  "spectral_flatness": 0.042,
+  "segments": [
+   {
+    "t": [
+     0.18,
+     1.42
+    ],
+    "rms_db": -20.2,
+    "voiced_ratio": 0.73,
+    "longest_unvoiced_s": 0.18,
+    "median_hz": 216,
+    "spectral_centroid_hz": 1938,
+    "spectral_flatness": 0.041
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim. No tag spoken. Voiced 0.73; not a whisper.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l21",
+  "lang": "en",
+  "speaker": "aditya",
+  "file": "voice/en/l21.mp3",
+  "take": 1,
+  "take_text": "[calm] Get me to Mausi. After that, I want nothing from you.",
+  "voice_id": "zCXXiWzuZO7d9fERssmF",
+  "model": "eleven_v4",
+  "transcript": "Get me to Mosse. After that, I want nothing from you.",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l en, greedy, no prompt, script not given)",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 4.0,
+  "target_s": 4.1,
+  "speech_s": 3.56,
+  "speech_vs_target_pct": -13.2,
+  "lead_silence_s": 0.14,
+  "trail_silence_s": 0.3,
+  "pauses": [
+   [
+    1.1,
+    1.56,
+    0.46
+   ]
+  ],
+  "short_gaps_150_300ms": [
+   [
+    2.24,
+    2.44,
+    0.2
+   ]
+  ],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.313,
+   "pauses_ge300ms": [
+    [
+     1.14,
+     1.56,
+     0.42
+    ]
+   ]
+  },
+  "speech_rms_db": -19.5,
+  "ff_mean_db": -21.0,
+  "ff_max_db": -1.6,
+  "voiced_ratio": 0.87,
+  "median_hz": 114,
+  "spectral_centroid_hz": 1403,
+  "spectral_flatness": 0.03,
+  "segments": [
+   {
+    "t": [
+     0.14,
+     1.1
+    ],
+    "rms_db": -18.9,
+    "voiced_ratio": 0.85,
+    "longest_unvoiced_s": 0.04,
+    "median_hz": 118,
+    "spectral_centroid_hz": 1460,
+    "spectral_flatness": 0.032
+   },
+   {
+    "t": [
+     1.56,
+     3.7
+    ],
+    "rms_db": -19.9,
+    "voiced_ratio": 0.88,
+    "longest_unvoiced_s": 0.12,
+    "median_hz": 114,
+    "spectral_centroid_hz": 1332,
+    "spectral_flatness": 0.03
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim ('Mosse'). No tag spoken. Voiced 0.87. Stop after 'Get me to Mausi.' 0.46 s.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l22",
+  "lang": "en",
+  "speaker": "aditya",
+  "file": "voice/en/l22.mp3",
+  "take": 1,
+  "take_text": "[quietly] You are free to go, Sneha.",
+  "voice_id": "zCXXiWzuZO7d9fERssmF",
+  "model": "eleven_v4",
+  "transcript": "You are free to go, Sneha.",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l en, greedy, no prompt, script not given)",
+  "transcript_checks": "small.en and base: 'You are free to go, Sneha.'",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 2.08,
+  "target_s": 2.8,
+  "speech_s": 1.78,
+  "speech_vs_target_pct": -36.4,
+  "lead_silence_s": 0.0,
+  "trail_silence_s": 0.3,
+  "pauses": [],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.308,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -23.0,
+  "ff_mean_db": -23.6,
+  "ff_max_db": -7.2,
+  "voiced_ratio": 0.45,
+  "median_hz": 110,
+  "spectral_centroid_hz": 1581,
+  "spectral_flatness": 0.053,
+  "segments": [
+   {
+    "t": [
+     0.0,
+     1.78
+    ],
+    "rms_db": -23.0,
+    "voiced_ratio": 0.45,
+    "longest_unvoiced_s": 0.16,
+    "median_hz": 110,
+    "spectral_centroid_hz": 1558,
+    "spectral_flatness": 0.051
+   }
+  ],
+  "verdict": "retake",
+  "reason": "Wrong whisper by the note's own trigger. Note: 'Quiet but fully voiced, never a whisper; under voiced 0.6 go to the [low voice] rung.' Voiced 0.45 at -23.0 dB, 0.15 under the trigger. That is the breathy level the note warns of (aditya_t2's last sentence, 0.45). The frame map shows voicing broken all through 'You are free to go,'; only 'Sneha' (about 1.4-1.8 s) is steadily voiced. The spectrum is not a whisper's (flatness 0.053), so this is breathy or creaky rather than whispered, and the owner's ear may overrule. Words verbatim in small, small.en and base; the name is heard. No tag spoken.",
+  "retake_text": "[calm] You are free to go, Sneha.",
+  "ear_check": null,
+  "d022_line_class": "voice-wanted",
+  "retake_text_reviewer": "[low voice] You are free to go, Sneha.",
+  "retake_model": "eleven_v4",
+  "retake_take": 2,
+  "rule": "D-022",
+  "d022_note": "D-022 rule 1: script text with every quiet-family tag deleted, [calm] added because no tag was left"
+ },
+ {
+  "line_id": "l23",
+  "lang": "en",
+  "speaker": "mausi",
+  "file": "voice/en/l23.mp3",
+  "take": 1,
+  "take_text": "[calm] At two, I'll ask about the milk.",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "transcript": "At two, I'll ask about the milk.",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l en, greedy, no prompt, script not given)",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 2.48,
+  "target_s": 2.8,
+  "speech_s": 2.38,
+  "speech_vs_target_pct": -15.0,
+  "lead_silence_s": 0.1,
+  "trail_silence_s": 0.0,
+  "pauses": [],
+  "short_gaps_150_300ms": [
+   [
+    0.86,
+    1.04,
+    0.18
+   ]
+  ],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -26.2,
+  "ff_mean_db": -27.7,
+  "ff_max_db": -9.0,
+  "voiced_ratio": 0.64,
+  "median_hz": 200,
+  "spectral_centroid_hz": 1807,
+  "spectral_flatness": 0.048,
+  "segments": [
+   {
+    "t": [
+     0.1,
+     2.48
+    ],
+    "rms_db": -26.2,
+    "voiced_ratio": 0.64,
+    "longest_unvoiced_s": 0.2,
+    "median_hz": 200,
+    "spectral_centroid_hz": 1807,
+    "spectral_flatness": 0.048
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim (small, small.en, base). No tag spoken. Voiced 0.64. The tail reads 0.0 because the file ends on a faint non-silent frame. The last word ends at about 2.32 s and the segment 1.8-2.48 s transcribes as 'the milk.'.",
+  "retake_text": null,
+  "ear_check": "Anything at the end of the file after 'milk'? The edit can trim it."
+ },
+ {
+  "line_id": "l24",
+  "lang": "en",
+  "speaker": "mausi",
+  "file": "voice/en/l24.mp3",
+  "take": 1,
+  "take_text": "[calm] 'He drank it', the car at three. 'The milk has split', the boys go up.",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "transcript": "He drank it, the car at three. The milk has split, the boys go up.",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l en, greedy, no prompt, script not given)",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 5.36,
+  "target_s": 6.0,
+  "speech_s": 4.96,
+  "speech_vs_target_pct": -17.3,
+  "lead_silence_s": 0.14,
+  "trail_silence_s": 0.26,
+  "pauses": [
+   [
+    2.3,
+    2.9,
+    0.6
+   ]
+  ],
+  "short_gaps_150_300ms": [
+   [
+    1.04,
+    1.28,
+    0.24
+   ],
+   [
+    4.08,
+    4.36,
+    0.28
+   ]
+  ],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": [
+    [
+     0.99,
+     1.29,
+     0.3
+    ],
+    [
+     2.28,
+     2.92,
+     0.64
+    ],
+    [
+     4.07,
+     4.38,
+     0.31
+    ]
+   ]
+  },
+  "speech_rms_db": -24.9,
+  "ff_mean_db": -26.6,
+  "ff_max_db": -8.6,
+  "voiced_ratio": 0.64,
+  "median_hz": 200,
+  "spectral_centroid_hz": 2437,
+  "spectral_flatness": 0.066,
+  "segments": [
+   {
+    "t": [
+     0.14,
+     2.3
+    ],
+    "rms_db": -26.6,
+    "voiced_ratio": 0.6,
+    "longest_unvoiced_s": 0.26,
+    "median_hz": 186,
+    "spectral_centroid_hz": 2676,
+    "spectral_flatness": 0.071
+   },
+   {
+    "t": [
+     2.9,
+     5.1
+    ],
+    "rms_db": -23.6,
+    "voiced_ratio": 0.67,
+    "longest_unvoiced_s": 0.16,
+    "median_hz": 205,
+    "spectral_centroid_hz": 2291,
+    "spectral_flatness": 0.061
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim; all four protected phrases heard. No tag spoken. Voiced 0.64 (first half 0.60). Beat between the halves 0.60 s.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l25",
+  "lang": "en",
+  "speaker": "mausi",
+  "file": "voice/en/l25.mp3",
+  "take": 1,
+  "take_text": "[calm] Anything else, or silence, they still go up.",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "transcript": "Anything else, or silence, they still go up.",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l en, greedy, no prompt, script not given)",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 3.84,
+  "target_s": 3.7,
+  "speech_s": 3.38,
+  "speech_vs_target_pct": -8.6,
+  "lead_silence_s": 0.18,
+  "trail_silence_s": 0.28,
+  "pauses": [
+   [
+    2.46,
+    2.8,
+    0.34
+   ]
+  ],
+  "short_gaps_150_300ms": [
+   [
+    1.08,
+    1.36,
+    0.28
+   ]
+  ],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": [
+    [
+     2.45,
+     2.82,
+     0.37
+    ]
+   ]
+  },
+  "speech_rms_db": -26.2,
+  "ff_mean_db": -27.6,
+  "ff_max_db": -7.8,
+  "voiced_ratio": 0.66,
+  "median_hz": 216,
+  "spectral_centroid_hz": 2248,
+  "spectral_flatness": 0.051,
+  "segments": [
+   {
+    "t": [
+     0.18,
+     2.46
+    ],
+    "rms_db": -26.7,
+    "voiced_ratio": 0.65,
+    "longest_unvoiced_s": 0.32,
+    "median_hz": 205,
+    "spectral_centroid_hz": 2265,
+    "spectral_flatness": 0.05
+   },
+   {
+    "t": [
+     2.8,
+     3.56
+    ],
+    "rms_db": -25.2,
+    "voiced_ratio": 0.7,
+    "longest_unvoiced_s": 0.14,
+    "median_hz": 222,
+    "spectral_centroid_hz": 1573,
+    "spectral_flatness": 0.04
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim. No tag spoken. Voiced 0.66. Pause before 'they still go up' 0.34 s.",
+  "retake_text": null,
+  "ear_check": null
+ },
+ {
+  "line_id": "l27",
+  "lang": "en",
+  "speaker": "mausi",
+  "file": "voice/en/l27.mp3",
+  "take": 1,
+  "take_text": "[calm] I'll see to the rest.",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "transcript": "I'll see you to the rest.",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l en, greedy, no prompt, script not given)",
+  "transcript_checks": "small.en 'I'll see to the rest.'; base 'I'll see you to the rest.'",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 1.52,
+  "target_s": 2.3,
+  "speech_s": 1.04,
+  "speech_vs_target_pct": -54.8,
+  "lead_silence_s": 0.18,
+  "trail_silence_s": 0.3,
+  "pauses": [],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.329,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -26.9,
+  "ff_mean_db": -28.3,
+  "ff_max_db": -10.2,
+  "voiced_ratio": 0.47,
+  "median_hz": 178,
+  "spectral_centroid_hz": 2770,
+  "spectral_flatness": 0.076,
+  "segments": [
+   {
+    "t": [
+     0.18,
+     1.22
+    ],
+    "rms_db": -26.9,
+    "voiced_ratio": 0.47,
+    "longest_unvoiced_s": 0.26,
+    "median_hz": 178,
+    "spectral_centroid_hz": 2839,
+    "spectral_flatness": 0.074
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Words heard. small.en gives 'I'll see to the rest.'; small and base add 'you' ('I'll see you to the rest'), so that is an ear check, not a wrong word. No tag spoken. Breathy: voiced 0.47 at -26.9 dB, flatness 0.074, centroid 2.8 kHz, against 0.60 to 0.85 on her other English lines. The frame map shows the vowels voiced and the end ('-st' and the release) unvoiced, so it is not a whisper (whispers here run 0.10 to 0.35). This note sets no number, so it is not a retake.",
+  "retake_text": null,
+  "ear_check": "'Fully voiced, never a whisper': is it breathy on the phone filter, and is there an extra 'you'? If so, the only rung is the bare line 'I'll see to the rest.'."
+ },
+ {
+  "line_id": "l28",
+  "lang": "en",
+  "speaker": "mausi",
+  "file": "voice/en/l28.mp3",
+  "take": 1,
+  "take_text": "[warmly] Did you eat? [chuckles] Don't lie to me. There's mathri in the side pocket of your bag.",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "transcript": "Did you eat? Don't lie to me. There's matri in the side pocket of your bag.",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l en, greedy, no prompt, script not given)",
+  "transcript_checks": "segment 0-0.9 s small en 'Did you eat?'; segment 1.2-5.36 s 'Don't lie to me. There's matri in the side pocket of your bag.'",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 5.36,
+  "target_s": 6.2,
+  "speech_s": 5.0,
+  "speech_vs_target_pct": -19.4,
+  "lead_silence_s": 0.2,
+  "trail_silence_s": 0.16,
+  "pauses": [
+   [
+    0.88,
+    1.22,
+    0.34
+   ]
+  ],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": [
+    [
+     0.87,
+     1.23,
+     0.36
+    ]
+   ]
+  },
+  "speech_rms_db": -26.3,
+  "ff_mean_db": -27.3,
+  "ff_max_db": -7.7,
+  "voiced_ratio": 0.77,
+  "median_hz": 195,
+  "spectral_centroid_hz": 2070,
+  "spectral_flatness": 0.05,
+  "segments": [
+   {
+    "t": [
+     0.2,
+     0.88
+    ],
+    "rms_db": -27.2,
+    "voiced_ratio": 0.84,
+    "longest_unvoiced_s": 0.08,
+    "median_hz": 190,
+    "spectral_centroid_hz": 2394,
+    "spectral_flatness": 0.056
+   },
+   {
+    "t": [
+     1.22,
+     5.2
+    ],
+    "rms_db": -26.1,
+    "voiced_ratio": 0.76,
+    "longest_unvoiced_s": 0.22,
+    "median_hz": 195,
+    "spectral_centroid_hz": 2031,
+    "spectral_flatness": 0.046
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Words verbatim apart from 'matri' for mathri (segment re-runs: 'Did you eat?' / 'Don't lie to me. There's matri in the side pocket of your bag.'). 'chuckles' is not spoken and 'Don't' is not swallowed. The gap after 'eat?' (0.88-1.22 s) holds only a brief unvoiced puff at about 0.80-0.86 s, so whether a chuckle happened needs the ear. Voiced 0.77.",
+  "retake_text": null,
+  "ear_check": "A fond chuckle after 'Did you eat?', or none? 'mathri' said MUTH-ree?"
+ },
+ {
+  "line_id": "l29",
+  "lang": "en",
+  "speaker": "mausi",
+  "file": "voice/en/l29.mp3",
+  "take": 1,
+  "take_text": "[warmly] Listen... did Damaad ji drink his milk, beta?",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "transcript": "Listen, did Dhammaji drink his milk, beta?",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l en, greedy, no prompt, script not given)",
+  "transcript_checks": "small.en 'Listen, did Damaji drink his milk better?'; base 'Listen, did Damaji drink his milk, dear?'; segment 1.2-3.44 s small 'Did Damajji drink his milk, beta?'",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 3.44,
+  "target_s": 4.2,
+  "speech_s": 3.0,
+  "speech_vs_target_pct": -28.6,
+  "lead_silence_s": 0.2,
+  "trail_silence_s": 0.24,
+  "pauses": [
+   [
+    0.98,
+    1.34,
+    0.36
+   ]
+  ],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": [
+    [
+     0.94,
+     1.41,
+     0.48
+    ]
+   ]
+  },
+  "speech_rms_db": -26.4,
+  "ff_mean_db": -27.5,
+  "ff_max_db": -10.7,
+  "voiced_ratio": 0.82,
+  "median_hz": 229,
+  "spectral_centroid_hz": 1980,
+  "spectral_flatness": 0.051,
+  "segments": [
+   {
+    "t": [
+     0.2,
+     0.98
+    ],
+    "rms_db": -32.2,
+    "voiced_ratio": 0.61,
+    "longest_unvoiced_s": 0.14,
+    "median_hz": 186,
+    "spectral_centroid_hz": 1541,
+    "spectral_flatness": 0.051
+   },
+   {
+    "t": [
+     1.34,
+     3.2
+    ],
+    "rms_db": -25.2,
+    "voiced_ratio": 0.91,
+    "longest_unvoiced_s": 0.04,
+    "median_hz": 235,
+    "spectral_centroid_hz": 1994,
+    "spectral_flatness": 0.048
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Hard cut passes: pause after 'Listen...' 0.36 s (0.98-1.34 s; silencedetect -40 dB 0.48 s), over the 0.3 s line. The segment 0-1.1 s transcribes alone as 'Listen.'. Words: 'Dhammaji'/'Damajji' (ear check 7, as in casting); 'beta' heard by small, 'better' by small.en, 'dear' by base. No tag spoken. Voiced 0.82. 'Listen...' itself is soft (-32.2 dB, voiced 0.61).",
+  "retake_text": null,
+  "ear_check": "Ear check 7 ('Damaad ji'); 'beta' not 'better'?"
+ },
+ {
+  "line_id": "l30",
+  "lang": "en",
+  "speaker": "mausi",
+  "file": "voice/en/l30.mp3",
+  "take": 1,
+  "take_text": "[warmly] Hello, beta? Did he drink it?",
+  "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+  "model": "eleven_v4",
+  "transcript": "Hello, beta. Did he drink it?",
+  "transcript_source": "local whisper.cpp (whisper-cli, ggml-small.bin, -l en, greedy, no prompt, script not given)",
+  "measure_source": "S10 local measure (pure Python + ffmpeg 16 kHz mono): speech frames = 20 ms RMS within 35 dB of the take's loudest frame (floor -55 dBFS); speech_s = first to last speech frame; pauses = speech-internal runs below that threshold of 300 ms or more (short_gaps_150_300ms listed apart); voiced_ratio = share of speech frames with normalised autocorrelation >= 0.6 (8 kHz, 60-1000 Hz band, 70-450 Hz lags), the casting/s1e01 method (checked against 50 unchanged s1e01 takes: mean +0.006, sd 0.034); segments split at pauses >= 300 ms; spectral centroid/flatness = ffmpeg aspectralstats medians after silenceremove at -45 dB; ffmpeg_silencedetect_40db uses d=0.3 s, so a lead or trail under 0.3 s shows 0. None of these hears acting, accent or timbre.",
+  "duration_s": 2.48,
+  "target_s": 2.6,
+  "speech_s": 2.18,
+  "speech_vs_target_pct": -16.2,
+  "lead_silence_s": 0.12,
+  "trail_silence_s": 0.18,
+  "pauses": [
+   [
+    1.06,
+    1.48,
+    0.42
+   ]
+  ],
+  "short_gaps_150_300ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.0,
+   "trail_s": 0.0,
+   "pauses_ge300ms": [
+    [
+     1.04,
+     1.48,
+     0.44
+    ]
+   ]
+  },
+  "speech_rms_db": -26.2,
+  "ff_mean_db": -28.1,
+  "ff_max_db": -10.6,
+  "voiced_ratio": 0.85,
+  "median_hz": 211,
+  "spectral_centroid_hz": 2075,
+  "spectral_flatness": 0.054,
+  "segments": [
+   {
+    "t": [
+     0.12,
+     1.06
+    ],
+    "rms_db": -27.0,
+    "voiced_ratio": 0.88,
+    "longest_unvoiced_s": 0.08,
+    "median_hz": 195,
+    "spectral_centroid_hz": 1803,
+    "spectral_flatness": 0.038
+   },
+   {
+    "t": [
+     1.48,
+     2.3
+    ],
+    "rms_db": -25.4,
+    "voiced_ratio": 0.81,
+    "longest_unvoiced_s": 0.06,
+    "median_hz": 216,
+    "spectral_centroid_hz": 2201,
+    "spectral_flatness": 0.068
+   }
+  ],
+  "verdict": "ok",
+  "reason": "Verbatim. No tag spoken. Voiced 0.85. Pause 0.42 s after 'beta?'. Tail 0.18 s.",
+  "retake_text": null,
+  "ear_check": "Ear check 3 (Kiran against Mausi) across l28 to l30; 211 to 229 Hz here."
+ },
+ {
+  "line_id": "l07",
+  "lang": "hi",
+  "speaker": "kiran",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "file": "content/series1/episodes/s1e02/voice/hi/l07_t2.mp3",
+  "take": 2,
+  "take_text": "[calm] दो बजे मौसी का phone। बंद मिला, तो बिल्लू ऊपर।",
+  "generation_id": "LYztRzoUIuIqWOliMiOG",
+  "script_text_bare": "दो बजे मौसी का phone। बंद मिला, तो बिल्लू ऊपर।",
+  "transcript": "दो बजे मुसी का फोन बन मिला तो भिल्लू उपर",
+  "transcript_en_pass": "2 o'clock auntie's phone. When the phone was switched off, the cat was upstairs.",
+  "transcript_base": "2 بجے موسی کا فون بند ملا تو بلو اوپر",
+  "transcript_checks": null,
+  "transcript_source": "local whisper.cpp 1.8.x (/opt/homebrew/bin/whisper-cli), ggml-small.bin forced to the take's language (transcript), Hindi takes also -l en (transcript_en_pass), ggml-base.bin second pass (transcript_base); greedy, no prompt, script not given; cut re-runs in transcript_checks",
+  "duration_s": 4.64,
+  "speech_s": 4.18,
+  "lead_silence_s": 0.13,
+  "trail_silence_s": 0.33,
+  "gaps_ge150ms": [
+   [
+    1.86,
+    2.41,
+    0.55
+   ],
+   [
+    3.02,
+    3.48,
+    0.46
+   ]
+  ],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.138,
+   "trail_s": 0.306,
+   "pauses_ge300ms": [
+    [
+     1.86,
+     2.42,
+     0.56
+    ]
+   ]
+  },
+  "speech_rms_db": -18.2,
+  "ff_mean_db": -20.0,
+  "ff_max_db": -3.3,
+  "voiced_ratio": 0.84,
+  "median_hz": 186,
+  "spectral_centroid_hz": 1616,
+  "spectral_flatness": 0.033,
+  "segments": [
+   {
+    "t": [
+     0.14,
+     1.86
+    ],
+    "rms_db": -18.7,
+    "voiced_ratio": 0.84,
+    "longest_unvoiced_s": 0.08,
+    "median_hz": 186
+   },
+   {
+    "t": [
+     2.4,
+     3.02
+    ],
+    "rms_db": -17.2,
+    "voiced_ratio": 1.0,
+    "longest_unvoiced_s": 0.0,
+    "median_hz": 235
+   },
+   {
+    "t": [
+     3.48,
+     4.3
+    ],
+    "rms_db": -18.0,
+    "voiced_ratio": 0.76,
+    "longest_unvoiced_s": 0.06,
+    "median_hz": 170
+   }
+  ],
+  "segments_ge0_5s_under_0_6": [],
+  "earlier_takes": [
+   {
+    "take": 1,
+    "text": "[quietly] दो बजे मौसी का phone। बंद मिला, तो बिल्लू ऊपर।",
+    "voiced_ratio": 0.71,
+    "min_segment_ge0_5s": 0.46,
+    "transcript": "तो बजे मासी का फोन बन्द मिला तो भिल्लू उपर",
+    "file": "series1/episodes/s1e02/voice/hi/l07.t1.mp3"
+   }
+  ],
+  "measure_method": "ffmpeg decode, pure Python (copies of scratchpad s10_s1e01_review meas.py and seg.py, unchanged). Speech frames: 20 ms RMS within 35 dB of the take's loudest frame, floor -55 dBFS. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, lags 70-450 Hz) is 0.6 or more. segments: speech runs split at gaps of 150 ms or more, each with its own voiced_ratio. D-022 test: whole take and every segment of 0.5 s or more under 0.6 fails on a voice-wanted line. Nobody listened.",
+  "verdict": "ok",
+  "reason": "Script words present (transcript 'दो बजे मुसी का फोन बन मिला तो भिल्लू उपर', en pass '2 o'clock auntie's phone. When the phone was switched off, the cat was upstairs.', base '2 بجے موسی کا فون بند ملا تو بلو اوپر'). No tag spoken. Voiced 0.84 whole take, lowest segment of 0.5 s or more 0.76. D-022 test passed (0.6).",
+  "edit_note": null,
+  "retake_text": null,
+  "retake_model": null,
+  "retake_take": null,
+  "rule": "D-022",
+  "d022_line_class": "voice-wanted",
+  "review_scope": "D-022",
+  "ear_check": null,
+  "reviewer": "S10 voice director, D-022 round 2 (did not generate these takes)",
+  "date": "2026-11-26"
+ },
+ {
+  "line_id": "l17",
+  "lang": "hi",
+  "speaker": "kiran",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "file": "content/series1/episodes/s1e02/voice/hi/l17_t2.mp3",
+  "take": 2,
+  "take_text": "[calm] उस हाथ का क्या करोगे?",
+  "generation_id": "nSVbPGqU2sYJloJhT23X",
+  "script_text_bare": "उस हाथ का क्या करोगे?",
+  "transcript": "उस हाथ का क्या करोगे?",
+  "transcript_en_pass": "What will you do with that hand?",
+  "transcript_base": "اُس ہاتھ کا کیا کر ہوگئے؟",
+  "transcript_checks": null,
+  "transcript_source": "local whisper.cpp 1.8.x (/opt/homebrew/bin/whisper-cli), ggml-small.bin forced to the take's language (transcript), Hindi takes also -l en (transcript_en_pass), ggml-base.bin second pass (transcript_base); greedy, no prompt, script not given; cut re-runs in transcript_checks",
+  "duration_s": 2.08,
+  "speech_s": 1.66,
+  "lead_silence_s": 0.09,
+  "trail_silence_s": 0.33,
+  "gaps_ge150ms": [
+   [
+    0.89,
+    1.07,
+    0.18
+   ]
+  ],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.101,
+   "trail_s": 0.341,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -22.7,
+  "ff_mean_db": -24.4,
+  "ff_max_db": -8.1,
+  "voiced_ratio": 0.74,
+  "median_hz": 229,
+  "spectral_centroid_hz": 2122,
+  "spectral_flatness": 0.049,
+  "segments": [
+   {
+    "t": [
+     0.1,
+     0.88
+    ],
+    "rms_db": -23.0,
+    "voiced_ratio": 0.65,
+    "longest_unvoiced_s": 0.18,
+    "median_hz": 250
+   },
+   {
+    "t": [
+     1.06,
+     1.74
+    ],
+    "rms_db": -22.4,
+    "voiced_ratio": 0.84,
+    "longest_unvoiced_s": 0.04,
+    "median_hz": 186
+   }
+  ],
+  "segments_ge0_5s_under_0_6": [],
+  "earlier_takes": [
+   {
+    "take": 1,
+    "text": "[quietly] उस हाथ का क्या करोगे?",
+    "voiced_ratio": 0.49,
+    "min_segment_ge0_5s": 0.49,
+    "transcript": "उस हाथ का क्या करोगे?",
+    "file": "series1/episodes/s1e02/voice/hi/l17.t1.mp3"
+   }
+  ],
+  "measure_method": "ffmpeg decode, pure Python (copies of scratchpad s10_s1e01_review meas.py and seg.py, unchanged). Speech frames: 20 ms RMS within 35 dB of the take's loudest frame, floor -55 dBFS. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, lags 70-450 Hz) is 0.6 or more. segments: speech runs split at gaps of 150 ms or more, each with its own voiced_ratio. D-022 test: whole take and every segment of 0.5 s or more under 0.6 fails on a voice-wanted line. Nobody listened.",
+  "verdict": "ok",
+  "reason": "Script words present (transcript 'उस हाथ का क्या करोगे?', en pass 'What will you do with that hand?', base 'اُس ہاتھ کا کیا کر ہوگئے؟'). No tag spoken. Voiced 0.74 whole take, lowest segment of 0.5 s or more 0.65. D-022 test passed (0.6).",
+  "edit_note": null,
+  "retake_text": null,
+  "retake_model": null,
+  "retake_take": null,
+  "rule": "D-022",
+  "d022_line_class": "voice-wanted",
+  "review_scope": "D-022",
+  "ear_check": null,
+  "reviewer": "S10 voice director, D-022 round 2 (did not generate these takes)",
+  "date": "2026-11-26"
+ },
+ {
+  "line_id": "l07",
+  "lang": "en",
+  "speaker": "kiran",
+  "voice_id": "FtcqBL9uKtROtyotPjvE",
+  "model": "eleven_v4",
+  "file": "content/series1/episodes/s1e02/voice/en/l07_t2.mp3",
+  "take": 2,
+  "take_text": "[calm] Mausi calls at two. If the phone's off, Billu comes up.",
+  "generation_id": "bXc6GMNGaD5aVf74BgOx",
+  "script_text_bare": "Mausi calls at two. If the phone's off, Billu comes up.",
+  "transcript": "Morsi calls it too. If the phone's off, Billu comes up.",
+  "transcript_base": "More C calls at 2. If the phones off, Billu comes up.",
+  "transcript_checks": null,
+  "transcript_source": "local whisper.cpp 1.8.x (/opt/homebrew/bin/whisper-cli), ggml-small.bin forced to the take's language (transcript), Hindi takes also -l en (transcript_en_pass), ggml-base.bin second pass (transcript_base); greedy, no prompt, script not given; cut re-runs in transcript_checks",
+  "duration_s": 4.08,
+  "speech_s": 3.67,
+  "lead_silence_s": 0.14,
+  "trail_silence_s": 0.27,
+  "gaps_ge150ms": [
+   [
+    1.42,
+    1.79,
+    0.37
+   ],
+   [
+    2.79,
+    3.05,
+    0.26
+   ]
+  ],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.15,
+   "trail_s": 0.165,
+   "pauses_ge300ms": [
+    [
+     1.41,
+     1.79,
+     0.38
+    ]
+   ]
+  },
+  "speech_rms_db": -20.1,
+  "ff_mean_db": -21.7,
+  "ff_max_db": -1.8,
+  "voiced_ratio": 0.75,
+  "median_hz": 200,
+  "spectral_centroid_hz": 1672,
+  "spectral_flatness": 0.04,
+  "segments": [
+   {
+    "t": [
+     0.14,
+     1.42
+    ],
+    "rms_db": -20.0,
+    "voiced_ratio": 0.83,
+    "longest_unvoiced_s": 0.1,
+    "median_hz": 203
+   },
+   {
+    "t": [
+     1.78,
+     2.7
+    ],
+    "rms_db": -20.4,
+    "voiced_ratio": 0.8,
+    "longest_unvoiced_s": 0.08,
+    "median_hz": 205
+   },
+   {
+    "t": [
+     3.04,
+     3.8
+    ],
+    "rms_db": -18.9,
+    "voiced_ratio": 0.8,
+    "longest_unvoiced_s": 0.08,
+    "median_hz": 180
+   }
+  ],
+  "segments_ge0_5s_under_0_6": [],
+  "earlier_takes": [
+   {
+    "take": 1,
+    "text": "[quietly] Mausi calls at two. If the phone's off, Billu comes up.",
+    "voiced_ratio": 0.54,
+    "min_segment_ge0_5s": 0.53,
+    "transcript": "Morsi calls it too. If the phone's off, Willou comes up.",
+    "file": "series1/episodes/s1e02/voice/en/l07.t1.mp3"
+   }
+  ],
+  "measure_method": "ffmpeg decode, pure Python (copies of scratchpad s10_s1e01_review meas.py and seg.py, unchanged). Speech frames: 20 ms RMS within 35 dB of the take's loudest frame, floor -55 dBFS. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, lags 70-450 Hz) is 0.6 or more. segments: speech runs split at gaps of 150 ms or more, each with its own voiced_ratio. D-022 test: whole take and every segment of 0.5 s or more under 0.6 fails on a voice-wanted line. Nobody listened.",
+  "verdict": "ok",
+  "reason": "Script words present (transcript 'Morsi calls it too. If the phone's off, Billu comes up.', base 'More C calls at 2. If the phones off, Billu comes up.'). No tag spoken. Voiced 0.75 whole take, lowest segment of 0.5 s or more 0.8. D-022 test passed (0.6).",
+  "edit_note": null,
+  "retake_text": null,
+  "retake_model": null,
+  "retake_take": null,
+  "rule": "D-022",
+  "d022_line_class": "voice-wanted",
+  "review_scope": "D-022",
+  "ear_check": null,
+  "reviewer": "S10 voice director, D-022 round 2 (did not generate these takes)",
+  "date": "2026-11-26"
+ },
+ {
+  "line_id": "l22",
+  "lang": "en",
+  "speaker": "aditya",
+  "voice_id": "zCXXiWzuZO7d9fERssmF",
+  "model": "eleven_v4",
+  "file": "content/series1/episodes/s1e02/voice/en/l22_t2.mp3",
+  "take": 2,
+  "take_text": "[calm] You are free to go, Sneha.",
+  "generation_id": "N5tXMEN8zBDJ4uhChSri",
+  "script_text_bare": "You are free to go, Sneha.",
+  "transcript": "You are free to go Sneha.",
+  "transcript_base": "You are free to go, Snéha.",
+  "transcript_checks": null,
+  "transcript_source": "local whisper.cpp 1.8.x (/opt/homebrew/bin/whisper-cli), ggml-small.bin forced to the take's language (transcript), Hindi takes also -l en (transcript_en_pass), ggml-base.bin second pass (transcript_base); greedy, no prompt, script not given; cut re-runs in transcript_checks",
+  "duration_s": 1.92,
+  "speech_s": 1.5,
+  "lead_silence_s": 0.14,
+  "trail_silence_s": 0.28,
+  "gaps_ge150ms": [],
+  "ffmpeg_silencedetect_40db": {
+   "lead_s": 0.151,
+   "trail_s": 0.299,
+   "pauses_ge300ms": []
+  },
+  "speech_rms_db": -19.2,
+  "ff_mean_db": -20.3,
+  "ff_max_db": -5.2,
+  "voiced_ratio": 0.87,
+  "median_hz": 118,
+  "spectral_centroid_hz": 1230,
+  "spectral_flatness": 0.026,
+  "segments": [
+   {
+    "t": [
+     0.14,
+     1.64
+    ],
+    "rms_db": -19.2,
+    "voiced_ratio": 0.88,
+    "longest_unvoiced_s": 0.14,
+    "median_hz": 118
+   }
+  ],
+  "segments_ge0_5s_under_0_6": [],
+  "earlier_takes": [
+   {
+    "take": 1,
+    "text": "[quietly] You are free to go, Sneha.",
+    "voiced_ratio": 0.51,
+    "min_segment_ge0_5s": 0.51,
+    "transcript": "You are free to go, Sneha.",
+    "file": "series1/episodes/s1e02/voice/en/l22.t1.mp3"
+   }
+  ],
+  "measure_method": "ffmpeg decode, pure Python (copies of scratchpad s10_s1e01_review meas.py and seg.py, unchanged). Speech frames: 20 ms RMS within 35 dB of the take's loudest frame, floor -55 dBFS. voiced_ratio: share of speech frames whose normalised autocorrelation (8 kHz, lags 70-450 Hz) is 0.6 or more. segments: speech runs split at gaps of 150 ms or more, each with its own voiced_ratio. D-022 test: whole take and every segment of 0.5 s or more under 0.6 fails on a voice-wanted line. Nobody listened.",
+  "verdict": "ok",
+  "reason": "Script words present (transcript 'You are free to go Sneha.', base 'You are free to go, Snéha.'). No tag spoken. Voiced 0.87 whole take, lowest segment of 0.5 s or more 0.88. D-022 test passed (0.6).",
+  "edit_note": null,
+  "retake_text": null,
+  "retake_model": null,
+  "retake_take": null,
+  "rule": "D-022",
+  "d022_line_class": "voice-wanted",
+  "review_scope": "D-022",
+  "ear_check": null,
+  "reviewer": "S10 voice director, D-022 round 2 (did not generate these takes)",
+  "date": "2026-11-26"
+ },
+ {
+  "line_id": "l03",
+  "lang": "hi",
+  "speaker": "kiran",
+  "file": "voice/hi/l03.c1.mp3",
+  "take": 2,
+  "model": "eleven_v4",
+  "verdict": "ok",
+  "reason": "Words heard: 'तो ये दूद मही पीरेते हूं'; Latin pass 'So, I drink this milk only.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.79 whole take; lowest word-carrying segment of 0.5 s or more 0.79. No tag word in either transcript. Language: auto-id hi (0.99). No cut-off: 0.12 s before the first speech frame, 0.223 s of silence after the last; peak -2.9 dB. Emotion and accent not judged: nobody listened (ear list).",
+  "transcript": "तो ये दूद मही पीरेते हूं",
+  "voiced_ratio": 0.79,
+  "duration_s": 2.64,
+  "retake_text": null,
+  "retake_model": null,
+  "retake_take_no": null,
+  "reviewer": "S10 voice director, D-025 clarity take-1 review",
+  "rule": "D-025/D-022",
+  "review_scope": "clarity",
+  "date": "26 Nov 2026",
+  "detail": "voice/review.clarity.json",
+  "pass": "clarity"
+ },
+ {
+  "line_id": "l06",
+  "lang": "hi",
+  "speaker": "kiran",
+  "file": "voice/hi/l06.c1.mp3",
+  "take": 2,
+  "model": "eleven_v4",
+  "verdict": "ok",
+  "reason": "Words heard: 'मेरे बिना मोसी का दर्वाजा नहीं खुलेगा'; Latin pass 'My aunt's door won't open without me.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.87 whole take; lowest word-carrying segment of 0.5 s or more 0.9. No tag word in either transcript. Language: auto-id hi (0.88). No cut-off: 0.2 s before the first speech frame, 0.223 s of silence after the last; peak -2.7 dB. Emotion and accent not judged: nobody listened (ear list).",
+  "transcript": "मेरे बिना मोसी का दर्वाजा नहीं खुलेगा.",
+  "voiced_ratio": 0.87,
+  "duration_s": 3.04,
+  "retake_text": null,
+  "retake_model": null,
+  "retake_take_no": null,
+  "reviewer": "S10 voice director, D-025 clarity take-1 review",
+  "rule": "D-025/D-022",
+  "review_scope": "clarity",
+  "date": "26 Nov 2026",
+  "detail": "voice/review.clarity.json",
+  "pass": "clarity"
+ },
+ {
+  "line_id": "l13",
+  "lang": "hi",
+  "speaker": "kiran",
+  "file": "voice/hi/l13.c1.mp3",
+  "take": 2,
+  "model": "eleven_v4",
+  "verdict": "retake",
+  "reason": "Voiced 0.85, all segments pass. Doubtful word: 'थप्पड़' is heard with a 'ख' by three passes (ggml-small -l hi 'खब पड', -l en 'khap pad', ggml-base 'خبر'); on the earlier take of this line the same model heard 'थब पड़'. 'थप्पड़' is the line's last word and its point. Large-v3 is not installed, so this is not confirmed. My note: wrong words, resend the same text once. Emotion and accent not judged: nobody listened (ear list).",
+  "transcript": "बहुत हूँ तो जागने वाले को बिल्लू के लगकों का एक खब पड.",
+  "voiced_ratio": 0.85,
+  "duration_s": 4.56,
+  "retake_text": "[flatly] बहुत हुआ, तो जागने वाले को बिल्लू के लड़कों का एक थप्पड़।",
+  "retake_model": "eleven_v4",
+  "retake_take_no": 3,
+  "reviewer": "S10 voice director, D-025 clarity take-1 review",
+  "rule": "D-025/D-022",
+  "review_scope": "clarity",
+  "date": "26 Nov 2026",
+  "detail": "voice/review.clarity.json",
+  "pass": "clarity"
+ },
+ {
+  "line_id": "l20",
+  "lang": "hi",
+  "speaker": "kiran",
+  "file": "voice/hi/l20.c1.mp3",
+  "take": 2,
+  "model": "eleven_v4",
+  "verdict": "ok",
+  "reason": "Words heard: 'और मैं, मुसी गई, तो मेरे 18 लाग भी गय, गर भी'; Latin pass 'And when I went to the aunt, my 18 lakhs went home too.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.81 whole take; lowest word-carrying segment of 0.5 s or more 0.73. No tag word in either transcript. Language: auto-id hi (0.99). No cut-off: 0.17 s before the first speech frame, 0.248 s of silence after the last; peak -4.5 dB. Emotion and accent not judged: nobody listened (ear list).",
+  "transcript": "और मैं, मुसी गई, तो मेरे 18 लाग भी गय, गर भी.",
+  "voiced_ratio": 0.81,
+  "duration_s": 5.6,
+  "retake_text": null,
+  "retake_model": null,
+  "retake_take_no": null,
+  "reviewer": "S10 voice director, D-025 clarity take-1 review",
+  "rule": "D-025/D-022",
+  "review_scope": "clarity",
+  "date": "26 Nov 2026",
+  "detail": "voice/review.clarity.json",
+  "pass": "clarity"
+ },
+ {
+  "line_id": "l23",
+  "lang": "hi",
+  "speaker": "mausi",
+  "file": "voice/hi/l23.c1.mp3",
+  "take": 2,
+  "model": "eleven_v4",
+  "verdict": "ok",
+  "reason": "Words heard: 'दोबजे किरन से पूछूँँँँँँँँँँँँँँँ. दामाज जीने दूद पीलिया'; Latin pass '(Speaks in Hindi)'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.89 whole take; lowest word-carrying segment of 0.5 s or more 0.85. No tag word in either transcript. Language: auto-id hi (1.00). No cut-off: 0.14 s before the first speech frame, 0.341 s of silence after the last; peak -8.7 dB. Emotion and accent not judged: nobody listened (ear list).",
+  "transcript": "दोबजे किरन से पूछूँँँँँँँँँँँँँँँ. दामाज जीने दूद पीलिया.",
+  "voiced_ratio": 0.89,
+  "duration_s": 4.16,
+  "retake_text": null,
+  "retake_model": null,
+  "retake_take_no": null,
+  "reviewer": "S10 voice director, D-025 clarity take-1 review",
+  "rule": "D-025/D-022",
+  "review_scope": "clarity",
+  "date": "26 Nov 2026",
+  "detail": "voice/review.clarity.json",
+  "pass": "clarity"
+ },
+ {
+  "line_id": "l31",
+  "lang": "hi",
+  "speaker": "aditya",
+  "file": "voice/hi/l31.c1.mp3",
+  "take": 1,
+  "model": "eleven_v4",
+  "verdict": "ok",
+  "reason": "Words heard: 'तुम वो हुतीं तो ये नाम नहीं देतीं।'; Latin pass 'If you are that person, then you don't give this name.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.88 whole take; lowest word-carrying segment of 0.5 s or more 0.87. No tag word in either transcript. Language: auto-id hi (0.80). No cut-off: 0.06 s before the first speech frame, 0.191 s of silence after the last; peak -5.4 dB. Emotion and accent not judged: nobody listened (ear list).",
+  "transcript": "तुम वो हुतीं तो ये नाम नहीं देतीं।",
+  "voiced_ratio": 0.88,
+  "duration_s": 2.96,
+  "retake_text": null,
+  "retake_model": null,
+  "retake_take_no": null,
+  "reviewer": "S10 voice director, D-025 clarity take-1 review",
+  "rule": "D-025/D-022",
+  "review_scope": "clarity",
+  "date": "26 Nov 2026",
+  "detail": "voice/review.clarity.json",
+  "pass": "clarity"
+ },
+ {
+  "line_id": "l32",
+  "lang": "hi",
+  "speaker": "kiran",
+  "file": "voice/hi/l32.c1.mp3",
+  "take": 1,
+  "model": "eleven_v4",
+  "verdict": "ok",
+  "reason": "Words heard: 'सब टीक रहा, तो तीन बजे गाडी हमें माँसी तक लेजाएगी'; Latin pass 'Everything was fine, so at 3 o'clock the car would take us to the auntie.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.85 whole take; lowest word-carrying segment of 0.5 s or more 0.86. No tag word in either transcript. Language: auto-id hi (1.00). No cut-off: 0.09 s before the first speech frame, 0.221 s of silence after the last; peak -4.2 dB. Emotion and accent not judged: nobody listened (ear list).",
+  "transcript": "सब टीक रहा, तो तीन बजे गाडी हमें माँसी तक लेजाएगी.",
+  "voiced_ratio": 0.85,
+  "duration_s": 4.48,
+  "retake_text": null,
+  "retake_model": null,
+  "retake_take_no": null,
+  "reviewer": "S10 voice director, D-025 clarity take-1 review",
+  "rule": "D-025/D-022",
+  "review_scope": "clarity",
+  "date": "26 Nov 2026",
+  "detail": "voice/review.clarity.json",
+  "pass": "clarity"
+ },
+ {
+  "line_id": "l33",
+  "lang": "hi",
+  "speaker": "billu",
+  "file": "voice/hi/l33.c1.mp3",
+  "take": 1,
+  "model": "eleven_v4",
+  "verdict": "ok",
+  "reason": "Words heard: 'जी मोसी बुलो'; Latin pass 'Yes auntie, tell me.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.91 whole take; lowest word-carrying segment of 0.5 s or more 0.9. No tag word in either transcript. Language: auto-id hi (0.96). No cut-off: 0.01 s before the first speech frame, 0.307 s of silence after the last; peak -8.0 dB. Emotion and accent not judged: nobody listened (ear list).",
+  "transcript": "जी मोसी बुलो",
+  "voiced_ratio": 0.91,
+  "duration_s": 1.52,
+  "retake_text": null,
+  "retake_model": null,
+  "retake_take_no": null,
+  "reviewer": "S10 voice director, D-025 clarity take-1 review",
+  "rule": "D-025/D-022",
+  "review_scope": "clarity",
+  "date": "26 Nov 2026",
+  "detail": "voice/review.clarity.json",
+  "pass": "clarity"
+ },
+ {
+  "line_id": "l34",
+  "lang": "hi",
+  "speaker": "kiran",
+  "file": "voice/hi/l34.c1.mp3",
+  "take": 1,
+  "model": "eleven_v4",
+  "verdict": "ok",
+  "reason": "Words heard: 'और सुभातक दुल्हन गायब'; Latin pass 'And in the morning, the bride is gone.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.75 whole take; lowest word-carrying segment of 0.5 s or more 0.75. No tag word in either transcript. Language: auto-id says ar (0.98), but the forced -l hi transcript is the script in hi and the auto text is the same words in another script ('وصباتك دلان غيب'): accent, not wrong language. No cut-off: 0.1 s before the first speech frame, 0.233 s of silence after the last; peak -7.8 dB. Emot",
+  "transcript": "और सुभातक दुल्हन गायब.",
+  "voiced_ratio": 0.75,
+  "duration_s": 2.56,
+  "retake_text": null,
+  "retake_model": null,
+  "retake_take_no": null,
+  "reviewer": "S10 voice director, D-025 clarity take-1 review",
+  "rule": "D-025/D-022",
+  "review_scope": "clarity",
+  "date": "26 Nov 2026",
+  "detail": "voice/review.clarity.json",
+  "pass": "clarity"
+ },
+ {
+  "line_id": "l35",
+  "lang": "hi",
+  "speaker": "mausi",
+  "file": "voice/hi/l35.c1.mp3",
+  "take": 1,
+  "model": "eleven_v4",
+  "verdict": "ok",
+  "reason": "Words heard: 'उसे पता है क्या बून्ना है'; Latin pass 'Usse pata hai kya boonna hai.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.88 whole take; lowest word-carrying segment of 0.5 s or more 0.9. No tag word in either transcript. Language: auto-id hi (1.00). No cut-off: 0.15 s before the first speech frame, 0.252 s of silence after the last; peak -9.0 dB. Emotion and accent not judged: nobody listened (ear list).",
+  "transcript": "उसे पता है क्या बून्ना है",
+  "voiced_ratio": 0.88,
+  "duration_s": 2.08,
+  "retake_text": null,
+  "retake_model": null,
+  "retake_take_no": null,
+  "reviewer": "S10 voice director, D-025 clarity take-1 review",
+  "rule": "D-025/D-022",
+  "review_scope": "clarity",
+  "date": "26 Nov 2026",
+  "detail": "voice/review.clarity.json",
+  "pass": "clarity"
+ },
+ {
+  "line_id": "l36",
+  "lang": "hi",
+  "speaker": "mausi",
+  "file": "voice/hi/l36.c1.mp3",
+  "take": 1,
+  "model": "eleven_v4",
+  "verdict": "ok",
+  "reason": "Words heard: 'तेरे लिये खुद बनाई है'; Latin pass 'Tere liye khud banai hai.'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.87 whole take; lowest word-carrying segment of 0.5 s or more 0.88. No tag word in either transcript. Language: auto-id hi (0.96). No cut-off: 0.04 s before the first speech frame, 0.327 s of silence after the last; peak -8.6 dB. Emotion and accent not judged: nobody listened (ear list).",
+  "transcript": "तेरे लिये खुद बनाई है",
+  "voiced_ratio": 0.87,
+  "duration_s": 1.84,
+  "retake_text": null,
+  "retake_model": null,
+  "retake_take_no": null,
+  "reviewer": "S10 voice director, D-025 clarity take-1 review",
+  "rule": "D-025/D-022",
+  "review_scope": "clarity",
+  "date": "26 Nov 2026",
+  "detail": "voice/review.clarity.json",
+  "pass": "clarity"
+ },
+ {
+  "line_id": "l03",
+  "lang": "en",
+  "speaker": "kiran",
+  "file": "voice/en/l03.c1.mp3",
+  "take": 2,
+  "model": "eleven_v4",
+  "verdict": "ok",
+  "reason": "Words heard: 'then I'll drink this milk myself'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.68 whole take; lowest word-carrying segment of 0.5 s or more 0.78. No tag word in either transcript. Language: auto-id en (0.99). No cut-off: 0.0 s before the first speech frame, 0.231 s of silence after the last; peak -2.3 dB. Emotion and accent not judged: nobody listened (ear list).",
+  "transcript": "then I'll drink this milk myself.",
+  "voiced_ratio": 0.68,
+  "duration_s": 2.24,
+  "retake_text": null,
+  "retake_model": null,
+  "retake_take_no": null,
+  "reviewer": "S10 voice director, D-025 clarity take-1 review",
+  "rule": "D-025/D-022",
+  "review_scope": "clarity",
+  "date": "26 Nov 2026",
+  "detail": "voice/review.clarity.json",
+  "pass": "clarity"
+ },
+ {
+  "line_id": "l06",
+  "lang": "en",
+  "speaker": "kiran",
+  "file": "voice/en/l06.c1.mp3",
+  "take": 2,
+  "model": "eleven_v4",
+  "verdict": "ok",
+  "reason": "Words heard: 'Without me, Mossy's door won't open for you'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.8 whole take; lowest word-carrying segment of 0.5 s or more 0.81. No tag word in either transcript. Language: auto-id en (0.99). No cut-off: 0.13 s before the first speech frame, 0.157 s of silence after the last; peak -1.7 dB. Emotion and accent not judged: nobody listened (ear list).",
+  "transcript": "Without me, Mossy's door won't open for you.",
+  "voiced_ratio": 0.8,
+  "duration_s": 3.04,
+  "retake_text": null,
+  "retake_model": null,
+  "retake_take_no": null,
+  "reviewer": "S10 voice director, D-025 clarity take-1 review",
+  "rule": "D-025/D-022",
+  "review_scope": "clarity",
+  "date": "26 Nov 2026",
+  "detail": "voice/review.clarity.json",
+  "pass": "clarity"
+ },
+ {
+  "line_id": "l13",
+  "lang": "en",
+  "speaker": "kiran",
+  "file": "voice/en/l13.c1.mp3",
+  "take": 2,
+  "model": "eleven_v4",
+  "verdict": "ok",
+  "reason": "Words heard: 'At most, if a groom wakes up, will those boys slap him once'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.7 whole take; lowest word-carrying segment of 0.5 s or more 0.76. No tag word in either transcript. Language: auto-id en (0.99). No cut-off: 0.12 s before the first speech frame, 0.154 s of silence after the last; peak -4.1 dB. Emotion and accent not judged: nobody listened (ear list).",
+  "transcript": "At most, if a groom wakes up, will those boys slap him once.",
+  "voiced_ratio": 0.7,
+  "duration_s": 4.4,
+  "retake_text": null,
+  "retake_model": null,
+  "retake_take_no": null,
+  "reviewer": "S10 voice director, D-025 clarity take-1 review",
+  "rule": "D-025/D-022",
+  "review_scope": "clarity",
+  "date": "26 Nov 2026",
+  "detail": "voice/review.clarity.json",
+  "pass": "clarity"
+ },
+ {
+  "line_id": "l20",
+  "lang": "en",
+  "speaker": "kiran",
+  "file": "voice/en/l20.c1.mp3",
+  "take": 2,
+  "model": "eleven_v4",
+  "verdict": "ok",
+  "reason": "Whole take 0.78; 'And me?' (0.12-1.26 s) is 0.51 voiced: 0.12-0.36 s is an unvoiced in-breath at -38 to -47 dB before the word, 'And me' (0.38-0.88 s) is voiced at -13 to -35 dB, 0.90-1.26 s a tail. The low segment's words are voiced at speaking level; its unvoiced frames are consonants and breath or release tails 15 to 30 dB below the vowels (frame dump), not a whisper. It still fails the D-022 segment test as written, so it is retaken; see the diagnosis. Rung 2, the bare line. Emotion and accent not judged: nobody listened (ear list).",
+  "transcript": "And me? If mossy goes, my 18 lakh goes too. And my home.",
+  "voiced_ratio": 0.78,
+  "duration_s": 5.76,
+  "retake_text": "And me? If Mausi goes, my eighteen lakh goes too. And my home.",
+  "retake_model": "eleven_v4",
+  "retake_take_no": 3,
+  "reviewer": "S10 voice director, D-025 clarity take-1 review",
+  "rule": "D-025/D-022",
+  "review_scope": "clarity",
+  "date": "26 Nov 2026",
+  "detail": "voice/review.clarity.json",
+  "pass": "clarity",
+  "waived": "orchestrator D-026: segment test waived, words voiced"
+ },
+ {
+  "line_id": "l23",
+  "lang": "en",
+  "speaker": "mausi",
+  "file": "voice/en/l23.c1.mp3",
+  "take": 2,
+  "model": "eleven_v4",
+  "verdict": "ok",
+  "reason": "Words heard: 'At two, I'll ask Kiran, did Bamaji the groom drink his milk?'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.86 whole take; lowest word-carrying segment of 0.5 s or more 0.81. No tag word in either transcript. Language: auto-id en (0.95). No cut-off: 0.09 s before the first speech frame, 0.125 s of silence after the last; peak -11.7 dB. Emotion and accent not judged: nobody listened (ear list).",
+  "transcript": "At two, I'll ask Kiran, did Bamaji the groom drink his milk?",
+  "voiced_ratio": 0.86,
+  "duration_s": 5.04,
+  "retake_text": null,
+  "retake_model": null,
+  "retake_take_no": null,
+  "reviewer": "S10 voice director, D-025 clarity take-1 review",
+  "rule": "D-025/D-022",
+  "review_scope": "clarity",
+  "date": "26 Nov 2026",
+  "detail": "voice/review.clarity.json",
+  "pass": "clarity"
+ },
+ {
+  "line_id": "l31",
+  "lang": "en",
+  "speaker": "aditya",
+  "file": "voice/en/l31.c1.mp3",
+  "take": 1,
+  "model": "eleven_v4",
+  "verdict": "ok",
+  "reason": "Words heard: 'If you were her, you would not hand me a name'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.88 whole take; lowest word-carrying segment of 0.5 s or more 0.84. No tag word in either transcript. Language: auto-id en (0.99). No cut-off: 0.0 s before the first speech frame, 0.3 s of silence after the last; peak -6.4 dB. Emotion and accent not judged: nobody listened (ear list).",
+  "transcript": "If you were her, you would not hand me a name.",
+  "voiced_ratio": 0.88,
+  "duration_s": 3.2,
+  "retake_text": null,
+  "retake_model": null,
+  "retake_take_no": null,
+  "reviewer": "S10 voice director, D-025 clarity take-1 review",
+  "rule": "D-025/D-022",
+  "review_scope": "clarity",
+  "date": "26 Nov 2026",
+  "detail": "voice/review.clarity.json",
+  "pass": "clarity"
+ },
+ {
+  "line_id": "l32",
+  "lang": "en",
+  "speaker": "kiran",
+  "file": "voice/en/l32.c1.mp3",
+  "take": 1,
+  "model": "eleven_v4",
+  "verdict": "ok",
+  "reason": "Words heard: 'If all's well, the car comes at three and takes us to Morsi'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.72 whole take; lowest word-carrying segment of 0.5 s or more 0.77. No tag word in either transcript. Language: auto-id en (0.99). No cut-off: 0.04 s before the first speech frame, 0.271 s of silence after the last; peak -3.2 dB. Emotion and accent not judged: nobody listened (ear list).",
+  "transcript": "If all's well, the car comes at three and takes us to Morsi.",
+  "voiced_ratio": 0.72,
+  "duration_s": 4.0,
+  "retake_text": null,
+  "retake_model": null,
+  "retake_take_no": null,
+  "reviewer": "S10 voice director, D-025 clarity take-1 review",
+  "rule": "D-025/D-022",
+  "review_scope": "clarity",
+  "date": "26 Nov 2026",
+  "detail": "voice/review.clarity.json",
+  "pass": "clarity"
+ },
+ {
+  "line_id": "l33",
+  "lang": "en",
+  "speaker": "billu",
+  "file": "voice/en/l33.c1.mp3",
+  "take": 1,
+  "model": "eleven_v4",
+  "verdict": "ok",
+  "reason": "Words heard: '\"Gee, Mossy, tell me.\"'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.84 whole take; lowest word-carrying segment of 0.5 s or more 0.88. No tag word in either transcript. Language: auto-id says hi (0.61), but the forced -l en transcript is the script in en and the auto text is the same words in another script ('जी मोसी जल मी'): accent, not wrong language. No cut-off: 0.01 s before the first speech frame, 0.181 s of silence after the last; peak -8.8 dB. Emotion and accent not judged: nobody listened (ear list)",
+  "transcript": "\"Gee, Mossy, tell me.\"",
+  "voiced_ratio": 0.84,
+  "duration_s": 1.92,
+  "retake_text": null,
+  "retake_model": null,
+  "retake_take_no": null,
+  "reviewer": "S10 voice director, D-025 clarity take-1 review",
+  "rule": "D-025/D-022",
+  "review_scope": "clarity",
+  "date": "26 Nov 2026",
+  "detail": "voice/review.clarity.json",
+  "pass": "clarity"
+ },
+ {
+  "line_id": "l34",
+  "lang": "en",
+  "speaker": "kiran",
+  "file": "voice/en/l34.c1.mp3",
+  "take": 1,
+  "model": "eleven_v4",
+  "verdict": "ok",
+  "reason": "Words heard: 'and the bride's gone by morning'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.86 whole take; lowest word-carrying segment of 0.5 s or more 0.87. No tag word in either transcript. Language: auto-id en (0.99). No cut-off: 0.11 s before the first speech frame, 0.341 s of silence after the last; peak -4.5 dB. Emotion and accent not judged: nobody listened (ear list).",
+  "transcript": "and the bride's gone by morning.",
+  "voiced_ratio": 0.86,
+  "duration_s": 2.16,
+  "retake_text": null,
+  "retake_model": null,
+  "retake_take_no": null,
+  "reviewer": "S10 voice director, D-025 clarity take-1 review",
+  "rule": "D-025/D-022",
+  "review_scope": "clarity",
+  "date": "26 Nov 2026",
+  "detail": "voice/review.clarity.json",
+  "pass": "clarity"
+ },
+ {
+  "line_id": "l35",
+  "lang": "en",
+  "speaker": "mausi",
+  "file": "voice/en/l35.c1.mp3",
+  "take": 1,
+  "model": "eleven_v4",
+  "verdict": "ok",
+  "reason": "Words heard: 'She knows what to say'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.65 whole take; lowest word-carrying segment of 0.5 s or more 0.71. No tag word in either transcript. Language: auto-id en (0.99). No cut-off: 0.18 s before the first speech frame, 0.231 s of silence after the last; peak -9.3 dB. Emotion and accent not judged: nobody listened (ear list).",
+  "transcript": "She knows what to say.",
+  "voiced_ratio": 0.65,
+  "duration_s": 1.68,
+  "retake_text": null,
+  "retake_model": null,
+  "retake_take_no": null,
+  "reviewer": "S10 voice director, D-025 clarity take-1 review",
+  "rule": "D-025/D-022",
+  "review_scope": "clarity",
+  "date": "26 Nov 2026",
+  "detail": "voice/review.clarity.json",
+  "pass": "clarity"
+ },
+ {
+  "line_id": "l36",
+  "lang": "en",
+  "speaker": "mausi",
+  "file": "voice/en/l36.c1.mp3",
+  "take": 1,
+  "model": "eleven_v4",
+  "verdict": "ok",
+  "reason": "Words heard: 'Made them myself. For you. Your Salty Matri'. Differences from the script are ASR spellings (aspirates, nasal marks, names, English words in Devanagari). Voiced 0.8 whole take; lowest word-carrying segment of 0.5 s or more 0.84. No tag word in either transcript. Language: auto-id en (0.94). No cut-off: 0.22 s before the first speech frame, 0.138 s of silence after the last; peak -8.4 dB. Emotion and accent not judged: nobody listened (ear list).",
+  "transcript": "Made them myself. For you. Your Salty Matri.",
+  "voiced_ratio": 0.8,
+  "duration_s": 3.68,
+  "retake_text": null,
+  "retake_model": null,
+  "retake_take_no": null,
+  "reviewer": "S10 voice director, D-025 clarity take-1 review",
+  "rule": "D-025/D-022",
+  "review_scope": "clarity",
+  "date": "26 Nov 2026",
+  "detail": "voice/review.clarity.json",
+  "pass": "clarity"
+ },
+ {
+  "line_id": "l13",
+  "lang": "hi",
+  "speaker": "kiran",
+  "file": "voice/hi/l13.c1.mp3",
+  "take": 3,
+  "model": "eleven_v4",
+  "verdict": "ok",
+  "reason": "Voiced 0.85, all segments pass. Doubtful word: 'थप्पड़' is heard with a 'ख' by three passes (ggml-small -l hi 'खब पड', -l en 'khap pad', ggml-base 'خبر'); on the earlier take of this line the same model heard 'थब पड़'. 'थप्पड़' is the line's last word and its point. Large-v3 is not installed, so this is not confirmed. My note: wrong words, resend the same text once. Emotion and accent not judged: nobody listened (ear list).",
+  "transcript": "बहुत हूँ तो जागने वाले को बिल्लू के लगकों का एक खब पड.",
+  "voiced_ratio": 0.85,
+  "duration_s": 4.56,
+  "retake_text": "[flatly] बहुत हुआ, तो जागने वाले को बिल्लू के लड़कों का एक थप्पड़।",
+  "retake_model": "eleven_v4",
+  "retake_take_no": 3,
+  "reviewer": "S10 voice director, D-025 clarity take-1 review",
+  "rule": "D-025/D-022",
+  "review_scope": "clarity",
+  "date": "26 Nov 2026",
+  "detail": "voice/review.clarity.json",
+  "pass": "clarity",
+  "reasons": [
+   "clarity take 2; whisper still hears थप्पड़ with ख (small and base models), likely ASR; ear-list"
+  ],
+  "ear_check": true
+ }
+]

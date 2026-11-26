@@ -1,0 +1,442 @@
+{
+  "episode_id": "s2a03",
+  "series_id": "series2",
+  "status": "planned",
+  "status_note": "Planned only. Nothing generated, nothing listened to. A separate runner generates the one-off cues below once each through the connector (D-009 route b) and records ids, probed lengths and credits in this folder's manifest.jsonl; library cues come from content/series2/sound/ and are not generated again here (D-011 reuse).",
+  "authority": [
+    "D-011 reuse: library cues by cue_id, one-offs only for sounds used once.",
+    "D-014 / D-0M2: shots follow measured voice; every placement here is anchored to a beat or line id, not to seconds.",
+    "D-0M4: -14 LUFS integrated, -1 dBTP, +/-0.5 LU.",
+    "D-019: s2a03 passed Gate 2 (critic 7.9); l18 is the post-review line naming both men."
+  ],
+  "sources": [
+    "content/series2/episodes/s2a03/script.hi.json (beats, sfx_notes, music_note)",
+    "content/series2/sound/library.json",
+    "content/proof/flat2d/sound/cues.json (format, prompt style)"
+  ],
+  "timebase": "Line and beat anchors only. No voice is measured yet; S13 converts anchors to seconds from the measured timeline. The English cut (script.en.json) uses the same anchors by line id.",
+  "library_cues": [
+    {
+      "cue_id": "amb_real_thana",
+      "where": "b1 to b9, and b11",
+      "gain_db": -24,
+      "notes": "The fan and tube-light base. Runs alone (layers muted) in the near-silence after 'उगाही' (b4, under the l07 to l08 change) and in b11. Out for b10 (outdoors): cut on the b9 to b10 picture cut, back in on the b10 to b11 cut."
+    },
+    {
+      "cue_id": "lyr_press_murmur",
+      "where": "b1 to b9",
+      "gain_db": -28,
+      "notes": "Under every line; a further -3 dB under the PA lines (l01, l02, l06, l07, l11, l17). Cuts with the shutters after 'उगाही' (b4) and fades back in over about 1 s from the end of l08. Thins through b9: fade from the start of b9 to nothing by the end of l22. Not in b10 or b11."
+    },
+    {
+      "cue_id": "lyr_morning_town",
+      "where": "b1 to b9 (far, very low) and b10",
+      "gain_db": -30,
+      "notes": "A scooter far off in the yard, the far handpump. b1 to b9 at -30 under the murmur; b10 at -24 as half of the outdoor bed. Not in b11 (the script wants inside room tone there)."
+    },
+    {
+      "cue_id": "lyr_morning_birds",
+      "where": "b10",
+      "gain_db": -26,
+      "notes": "The crows for the outdoor yard. With lyr_morning_town it is the whole b10 bed; both down another 4 dB under l25 and l26 ('bed low')."
+    },
+    {
+      "cue_id": "sfx_camera_shutters",
+      "where": "b1 (burst after the feedback tap), b2 (burst on 'शाबाश' in l02), b4 (running from 'बलराम ठाकुर' in l07, stop dead after 'उगाही'), b7 (steady through the 2.0 s silence, two copies chained, thinning under l17 to nothing by its end)",
+      "gain_db": -14,
+      "notes": "No shutters in b3, b5, b6, b8 to b11: after the dead stop the press is stunned, and they come back only in b7 as the DSP recovers. The b4 stop is a hard cut on the last syllable of 'उगाही', not a fade."
+    },
+    {
+      "cue_id": "sfx_steps_terrazzo",
+      "where": "b1 shot 2, in the doorway, from 'zero crime'",
+      "gain_db": -16,
+      "notes": "Two sets of steps stepping forward together. Layer the take with itself offset by about 0.15 s for the second person. Not in the library's s2a03 list, but the real thana floor is the same surface; no new cue needed."
+    },
+    {
+      "cue_id": "sfx_cuff_chain_clink",
+      "where": "b1 shot 2 (faint, on the steps), b2 shot 3 (short rattle after sfx_cuffs_unlock as the cuff changes hands)",
+      "gain_db": -14,
+      "notes": "Different pitch (+/-1 semitone) for each use, per the library note. b1 at -18."
+    },
+    {
+      "cue_id": "sfx_cuffs_unlock",
+      "where": "b2 shot 3, in the 1.5 s silence after l03",
+      "gain_db": -10,
+      "notes": "Dry click, then sfx_cuff_chain_clink."
+    },
+    {
+      "cue_id": "sfx_register_thump",
+      "where": "b3 silence, before l04",
+      "gain_db": -10,
+      "notes": "The heavy register set down among the microphones; layer the tap slice of s2a03_sfx_mic_feedback_tap under it at -16 as the small PA pop."
+    },
+    {
+      "cue_id": "sfx_page_turn",
+      "where": "b4 silence before l06; b5 under l11 (a page, low)",
+      "gain_db": -12,
+      "notes": "b5 use at -16, between words if the take allows."
+    },
+    {
+      "cue_id": "sfx_keyring_jingle",
+      "where": "b5 under l10 (one light chink only, see notes); b6 under l13, faint, through l14 to l16, stop after l16",
+      "gain_db": -20,
+      "notes": "b6 is Bhaiyaji's ring (library use). b5 is Pushpa's single steel key on wool: take one light chink from the take, pitch up 2 semitones, high-pass about 2 kHz, -22 dB. This avoids a one-off for a sound under a line; if it reads as a ring of keys, drop it rather than generate. b6: nothing over -20 on l15; out cleanly by the end of l16 so shot 4 (keys stopped) is still."
+    },
+    {
+      "cue_id": "sfx_paper_slip",
+      "where": "b9 shot 2, under l23",
+      "gain_db": -14,
+      "notes": "The transfer application drawn out of the file. Pick the cleanest second of the take."
+    },
+    {
+      "cue_id": "sfx_far_dog",
+      "where": "b10, one bark at the start of shot 4 (the silence after l26)",
+      "gain_db": -24,
+      "notes": "Morning, so lower than the library default (library note). Never under a line. If the music entry on shot 4 crowds it, move it to the b10 head before the van door bang, still never under a line."
+    },
+    {
+      "cue_id": "sfx_bench_creak",
+      "where": "b11, once, at the head of the shot before l27",
+      "gain_db": -14,
+      "notes": "Exactly one creak; nothing under l27."
+    },
+    {
+      "cue_id": "mus_tension_note",
+      "where": "b7 head (enters under the 2.0 s silence) to the end of l18",
+      "gain_db": -18,
+      "notes": "Ducks -8 under l17 and l18. Out for b8 and b9: ends on the b7 to b8 cut with a 0.2 s fade (no click), so the peanuts land in a hole."
+    },
+    {
+      "cue_id": "mus_theme_warm_ending",
+      "where": "b10 shot 4 (on the salute) to the end of b11",
+      "gain_db": -18,
+      "notes": "One instrument. Enters at the start of b10 shot 4 with a 1 s fade-in, carries across the b10 to b11 cut, ducks right down under l27 (-12, more than the usual -8), then rises about 3 dB into the engine fade. Use the opening phrase from the entry and the theme's resolution as the last seconds (library note): S13 crossfades the opening into the resolution so it resolves on the end of the 3.0 s hold."
+    }
+  ],
+  "one_off_cues": [
+    {
+      "cue_id": "s2a03_sfx_mic_feedback_tap",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 1.5,
+      "loop": false,
+      "prompt": "A sharp high whine of microphone feedback through a small public-address speaker in a plaster room, about half a second long, cut off abruptly by a single dull thump of a finger tapping the microphone head, which pops once through the speaker. Then silence. No voices, no music.",
+      "used_at": [
+        "b1 frame one",
+        "b3 (tap slice only, as the PA pop and the palm thud)"
+      ],
+      "notes": "Covers three script sounds with one generation: the b1 squeal-and-tap, the b3 PA pop under the register thump, and the b3 muffled palm over the mic head (the tap slice again, low-passed about 800 Hz and 4 dB down). If the take has no clean tap, the b3 uses fall back to sfx_register_thump alone and the palm thud is dropped; do not generate again for it.",
+      "status": "generated"
+    },
+    {
+      "cue_id": "s2a03_sfx_peanuts_patter",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 2.0,
+      "loop": false,
+      "prompt": "A paper cone dropped on old wooden floorboards and a handful of roasted peanuts in their shells spilling out, pattering and rolling a short way across the boards, close and quiet, in a still room. No voices.",
+      "used_at": [
+        "b8 silence before l19"
+      ],
+      "notes": "sfx_peanut_crack (library) is shells cracking in a hand, a different sound, so this is a one-off. Must be finished before l19.",
+      "status": "generated"
+    },
+    {
+      "cue_id": "s2a03_sfx_shield_scrape_knock",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 2.0,
+      "loop": false,
+      "prompt": "A wooden plaque shield lifted off an iron nail on a plaster wall with a short dry scrape, then after a beat laid face down on a wooden desk with one soft hollow wooden knock. Close, quiet room. No voices.",
+      "used_at": [
+        "b8 under l19 (scrape) and at the end of l19 (knock)"
+      ],
+      "notes": "Split the take at the gap if needed: scrape and knock are placed separately.",
+      "status": "generated"
+    },
+    {
+      "cue_id": "s2a03_sfx_press_packing",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 4.0,
+      "loop": false,
+      "prompt": "A room emptying after a press conference, with no voices: microphone cables dragged and pulled across a wooden table and a stone floor, a plug pulled, one metal chair scraped back across the floor. Sparse, unhurried, a plaster room with a little echo.",
+      "used_at": [
+        "b9 silence and under l22 low"
+      ],
+      "notes": "One cue for the script's 'cables pulled, a chair scraped'. Keep the chair scrape out of every line.",
+      "status": "generated"
+    },
+    {
+      "cue_id": "s2a03_sfx_van_door_bang",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 1.2,
+      "loop": false,
+      "prompt": "The heavy steel rear door of an old police van slammed shut outdoors in a yard, one hard metallic bang with a rattle of a barred grille and a latch catching, short decay in open air. No voices, no engine.",
+      "used_at": [
+        "b10 head, before l25"
+      ],
+      "notes": "Must decay fully before l25. The library's sfx_car_door is a car door, too light for a van with a grille.",
+      "status": "generated"
+    },
+    {
+      "cue_id": "s2a03_sfx_van_pull_away",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 8.0,
+      "loop": false,
+      "prompt": "An old diesel police van outdoors: the starter cranks and the engine turns over and catches, idles for a moment, a gear engages, and the van pulls away slowly across a dirt yard and fades into the distance, heard from inside a doorway. Morning, open air. No horn, no voices, no siren.",
+      "used_at": [
+        "b11 after l27, through the 3.0 s hold"
+      ],
+      "notes": "Starts only after l27 has finished. The library has idles (sfx_truck_idle, sfx_car_idle) but no start and pull-away, so this is a one-off. Heard from inside: low-pass about 6 kHz and keep it under the music's rise.",
+      "status": "generated"
+    }
+  ],
+  "placement_by_beat": [
+    {
+      "beat": "b1",
+      "bed": [
+        "amb_real_thana",
+        "lyr_press_murmur",
+        "lyr_morning_town"
+      ],
+      "events": [
+        {
+          "cue_id": "s2a03_sfx_mic_feedback_tap",
+          "anchor": "frame one of b1, inside the 0.8 s silence; the tap lands about 0.5 s in and l01 starts after it"
+        },
+        {
+          "cue_id": "sfx_camera_shutters",
+          "anchor": "burst straight after the tap, under the start of l01, low"
+        },
+        {
+          "cue_id": "sfx_steps_terrazzo",
+          "anchor": "b1 shot 2 start ('zero crime'), under l01, low"
+        },
+        {
+          "cue_id": "sfx_cuff_chain_clink",
+          "anchor": "with the steps, faint (-18)"
+        }
+      ]
+    },
+    {
+      "beat": "b2",
+      "events": [
+        {
+          "cue_id": "sfx_camera_shutters",
+          "anchor": "burst on 'शाबाश' in l02"
+        },
+        {
+          "cue_id": "sfx_cuffs_unlock",
+          "anchor": "b2 shot 3, about 0.3 s into the 1.5 s silence after l03"
+        },
+        {
+          "cue_id": "sfx_cuff_chain_clink",
+          "anchor": "straight after the unlock, as Pushpa takes the cuff"
+        }
+      ]
+    },
+    {
+      "beat": "b3",
+      "events": [
+        {
+          "cue_id": "sfx_register_thump",
+          "anchor": "in the 1.0 s silence before l04, with the PA pop (tap slice of s2a03_sfx_mic_feedback_tap at -16)"
+        },
+        {
+          "cue_id": "s2a03_sfx_mic_feedback_tap",
+          "anchor": "tap slice only, low-passed, in the 0.3 s gap between l04 and l05: the DSP's palm over the mic head"
+        }
+      ]
+    },
+    {
+      "beat": "b4",
+      "events": [
+        {
+          "cue_id": "sfx_page_turn",
+          "anchor": "in the 1.0 s silence before l06"
+        },
+        {
+          "cue_id": "sfx_camera_shutters",
+          "anchor": "from 'बलराम ठाकुर' in l07; hard stop on the end of 'उगाही'"
+        },
+        {
+          "cue_id": "lyr_press_murmur",
+          "anchor": "cuts with the shutters; fan only under the l07 to l08 speaker change; fades back over 1 s from the end of l08"
+        }
+      ]
+    },
+    {
+      "beat": "b5",
+      "events": [
+        {
+          "cue_id": "sfx_keyring_jingle",
+          "anchor": "one light chink under l10 (single key on wool treatment)"
+        },
+        {
+          "cue_id": "sfx_page_turn",
+          "anchor": "under l11, low"
+        }
+      ]
+    },
+    {
+      "beat": "b6",
+      "events": [
+        {
+          "cue_id": "sfx_keyring_jingle",
+          "anchor": "faint, from l13 through l16; out by the end of l16; silence after (shot 4) has none"
+        }
+      ]
+    },
+    {
+      "beat": "b7",
+      "events": [
+        {
+          "cue_id": "mus_tension_note",
+          "anchor": "enters at the head of the 2.0 s silence; holds under l17 and l18; out on the b7 to b8 cut"
+        },
+        {
+          "cue_id": "sfx_camera_shutters",
+          "anchor": "steady through the 2.0 s silence (two copies chained), thinning under l17 to nothing"
+        }
+      ]
+    },
+    {
+      "beat": "b8",
+      "events": [
+        {
+          "cue_id": "s2a03_sfx_peanuts_patter",
+          "anchor": "in the 1.5 s silence before l19"
+        },
+        {
+          "cue_id": "s2a03_sfx_shield_scrape_knock",
+          "anchor": "scrape under l19 from about 'zero नहीं' (not its first words), knock in the gap after l19, before l20"
+        }
+      ]
+    },
+    {
+      "beat": "b9",
+      "events": [
+        {
+          "cue_id": "s2a03_sfx_press_packing",
+          "anchor": "in the 1.5 s silence and low under l22 (cables); the chair scrape only in the silence"
+        },
+        {
+          "cue_id": "lyr_press_murmur",
+          "anchor": "fades to nothing from the start of b9 to the end of l22"
+        },
+        {
+          "cue_id": "sfx_paper_slip",
+          "anchor": "under l23"
+        }
+      ]
+    },
+    {
+      "beat": "b10",
+      "bed": [
+        "lyr_morning_birds",
+        "lyr_morning_town"
+      ],
+      "events": [
+        {
+          "cue_id": "s2a03_sfx_van_door_bang",
+          "anchor": "on the b9 to b10 cut, before l25; fully decayed before l25 starts"
+        },
+        {
+          "cue_id": "sfx_far_dog",
+          "anchor": "start of shot 4, in the 1.5 s silence after l26"
+        },
+        {
+          "cue_id": "mus_theme_warm_ending",
+          "anchor": "enters on shot 4 (the salute)"
+        }
+      ]
+    },
+    {
+      "beat": "b11",
+      "bed": [
+        "amb_real_thana"
+      ],
+      "events": [
+        {
+          "cue_id": "sfx_bench_creak",
+          "anchor": "once, at the head of the shot, before l27"
+        },
+        {
+          "cue_id": "mus_theme_warm_ending",
+          "anchor": "continues; ducked -12 under l27; rises about 3 dB into the engine fade; resolves at the end"
+        },
+        {
+          "cue_id": "s2a03_sfx_van_pull_away",
+          "anchor": "only after l27 has finished; fades through the 3.0 s hold"
+        }
+      ]
+    }
+  ],
+  "mix": {
+    "dialogue_first": true,
+    "loudness_target": "-14 LUFS integrated, -1 dBTP, +/-0.5 LU (D-0M4)",
+    "starting_gains_db": {
+      "music": -18,
+      "music_duck_under_dialogue": -8,
+      "ambience": -24,
+      "ambience_layer": -28,
+      "sfx": -10
+    },
+    "ducking": [
+      "Music ducks -8 dB under every line (library default); mus_theme_warm_ending ducks -12 under l27.",
+      "lyr_press_murmur sits under every line and a further -3 dB under the PA lines.",
+      "b10 outdoor bed down a further 4 dB under l25 and l26.",
+      "b11: l27 on a clear bed: amb_real_thana only, nothing else under it."
+    ],
+    "filters": {
+      "pa_lines": [
+        "l01",
+        "l02",
+        "l06",
+        "l07",
+        "l11",
+        "l17"
+      ],
+      "pa": "Library mix.phone_filters.pa: light room reverb (short plaster room, about 0.7 s decay, wet low), high-pass about 120 Hz; every consonant intelligible. Light on l06 and l07 (script b4).",
+      "dry_lines": "All other lines are dry. Named by the script: l05 (off the PA, close), l08 (off screen, dry, a little hot). Judgement calls, no PA: l03, l04, l12 (said to Tripathi), l18 (turned to Pushpa), l09, l10, l13 to l16, l19 to l27.",
+      "phone": "None in this episode.",
+      "heard_from_inside": "s2a03_sfx_van_pull_away low-passed about 6 kHz (from inside the doorway).",
+      "palm_on_mic": "Tap slice of s2a03_sfx_mic_feedback_tap low-passed about 800 Hz for the b3 palm thud."
+    },
+    "music_in_out": [
+      {
+        "cue_id": "mus_tension_note",
+        "in": "b7 head, under the 2.0 s silence",
+        "out": "b7 to b8 cut, 0.2 s fade"
+      },
+      {
+        "cue_id": "mus_theme_warm_ending",
+        "in": "b10 shot 4 start (salute), 1 s fade-in",
+        "out": "end of b11's 3.0 s hold, on its resolution"
+      }
+    ],
+    "no_music": "b1 to b6 (the shutters and the PA are the score) and b8 to b9; b10 shots 1 to 3.",
+    "hard_rules": [
+      "Shutters stop dead on the end of 'उगाही' (l07): hard cut, murmur with them.",
+      "The van door bang is before l25, never under it.",
+      "The van engine starts only after l27 has ended.",
+      "Nothing loud on l15; the keys are out by the end of l16.",
+      "No effect over the first words of l19; the shield knock falls after l19."
+    ],
+    "editor_notes": [
+      "b10 has no silence before l25: the van door bang needs about 0.6 to 0.8 s of head on b10 shot 1 before l25 starts (D-0M2 fixes length in the edit). Flagged for S13 and the editor."
+    ]
+  },
+  "counts": {
+    "library_cues_used": 16,
+    "one_off_cues_new": 6,
+    "one_off_planned_seconds": 18.7
+  },
+  "not_verified": [
+    "Nothing generated or heard. Gains are starting points for S13.",
+    "The single-key treatment of sfx_keyring_jingle in b5 and the reuse of the tap slice in b3 depend on what the takes contain."
+  ]
+}

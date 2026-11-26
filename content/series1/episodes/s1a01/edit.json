@@ -1,0 +1,472 @@
+{
+ "about": "s1a01 first edit (S13 Editor, 26 Nov; clarity scripts). Per-episode choices only; the shared toolchain is production/scripts/episode/.",
+ "render_name": "s1a01",
+ "slate_color": "#1d2430",
+ "max_seconds": 150,
+ "voice_models": [
+  "v4"
+ ],
+ "voice_fx": {
+  "phone": {
+   "speakers": []
+  },
+  "speaker": {
+   "chain": "highpass=f=250:poles=2,lowpass=f=5000:poles=2,volume=4dB,asoftclip=type=tanh,volume=-4dB,aecho=0.85:0.6:14:0.12"
+  },
+  "stairwell": {
+   "chain": "aecho=0.9:0.6:31|53:0.14|0.08"
+  }
+ },
+ "lines": {
+  "l02": {
+   "fx": "speaker"
+  },
+  "l17": {
+   "fx": "phone"
+  },
+  "l19": {
+   "fx": "phone"
+  },
+  "l09": {
+   "fx": "stairwell"
+  },
+  "l10": {
+   "fx": "stairwell"
+  },
+  "l11": {
+   "fx": "stairwell"
+  },
+  "l12": {
+   "fx": "stairwell"
+  }
+ },
+ "layout": {
+  "first_lead": 4,
+  "lead_default": 5,
+  "use_silent_lead": true,
+  "gap_default": 8,
+  "tail_default": 6,
+  "tail": {
+   "s09": 36,
+   "s32": 30
+  },
+  "min_last_segment": 24,
+  "read_cps": 17,
+  "end_black": 12,
+  "cutoffs": [
+   {
+    "line": "l09",
+    "run": 2,
+    "next_lead": 2
+   }
+  ]
+ },
+ "sound": [
+  {
+   "cue": "amb_bedroom_night",
+   "id": "#b1",
+   "kind": "bed",
+   "from": 0,
+   "to": "s04.start",
+   "loop": true,
+   "fade_in": 0,
+   "fade_out": 1,
+   "segments": [
+    {
+     "from": "l02.speech_start - 0.2s",
+     "to": "l02.speech_end + 0.1s",
+     "db": -4
+    }
+   ]
+  },
+  {
+   "cue": "sfx_phone_call_end",
+   "at": "l02.speech_end + 2f",
+   "len": "0.7s",
+   "db": -8,
+   "fade_out": 3,
+   "filter": {
+    "highpass_hz": 250,
+    "lowpass_hz": 5000
+   }
+  },
+  {
+   "cue": "sfx_s1a01_breath_out",
+   "at": "s03.start + 0.4s",
+   "until": "s04.start",
+   "db": 0,
+   "fade_out": 3
+  },
+  {
+   "cue": "amb_lane_night",
+   "id": "#b2",
+   "kind": "bed",
+   "from": "s04.start",
+   "to": "s05.start",
+   "loop": true,
+   "fade_in": 0,
+   "fade_out": 1
+  },
+  {
+   "cue": "sfx_motorbike_start_away",
+   "at": "s04.start + 0.2s",
+   "trim": "1.6s",
+   "until": "s05.start",
+   "db": -4,
+   "fade_out": 9
+  },
+  {
+   "cue": "amb_bedroom_night",
+   "id": "#b3-b5",
+   "kind": "bed",
+   "from": "s05.start",
+   "to": "s13.start",
+   "loop": true,
+   "fade_in": 0,
+   "fade_out": 1
+  },
+  {
+   "cue": "mus_bed_drone",
+   "id": "#b3-b5",
+   "kind": "bed",
+   "from": "l05.speech_start",
+   "to": "s13.start",
+   "loop": true,
+   "gain_db": -24,
+   "fade_in": 30,
+   "fade_out": 60
+  },
+  {
+   "cue": "sfx_dog_far",
+   "at": "l29.speech_end + 0.3s",
+   "len": "0.8s",
+   "db": -16,
+   "fade_out": 6
+  },
+  {
+   "cue": "sfx_paper_fold_crinkle",
+   "at": "s12.start",
+   "db": -4,
+   "fade_out": 3
+  },
+  {
+   "cue": "sfx_photo_print",
+   "at": "s12.start + 0.7s",
+   "len": "0.6s",
+   "db": 0,
+   "fade_out": 4
+  },
+  {
+   "cue": "sfx_padlock_knock",
+   "at": "s12.start + 1.45s",
+   "len": "0.35s",
+   "db": -8,
+   "fade_out": 3
+  },
+  {
+   "cue": "sfx_bolt_draw",
+   "at": "s12.start + 2.0s",
+   "trim": "0.5s",
+   "until": "s13.start",
+   "db": -8,
+   "fade_out": 1
+  },
+  {
+   "cue": "amb_stairwell_landing",
+   "id": "#b6",
+   "kind": "bed",
+   "from": "s13.start",
+   "to": "s18.start",
+   "loop": true,
+   "fade_in": 0,
+   "fade_out": 1
+  },
+  {
+   "cue": "amb_lane_night",
+   "id": "#b6-spill",
+   "kind": "bed",
+   "from": "s13.start",
+   "to": "s18.start",
+   "loop": true,
+   "fade_in": 0,
+   "fade_out": 1,
+   "db": -10,
+   "filter": {
+    "lowpass_hz": 3000
+   }
+  },
+  {
+   "cue": "sfx_front_door_iron_creak",
+   "at": "s13.start",
+   "trim": "0.6s",
+   "until": "l09.speech_start - 1f",
+   "db": -6,
+   "fade_out": 3
+  },
+  {
+   "cue": "sfx_velvet_box_hinge",
+   "at": "s16.start - 0.85s",
+   "db": -8,
+   "fade_out": 3
+  },
+  {
+   "cue": "amb_car_highway_dawn",
+   "id": "#b7-ext",
+   "kind": "bed",
+   "from": "s18.start",
+   "to": "s19.start",
+   "loop": true,
+   "fade_in": 0,
+   "fade_out": 1,
+   "db": -9,
+   "filter": {
+    "lowpass_hz": 5000
+   }
+  },
+  {
+   "cue": "amb_car_highway_dawn",
+   "id": "#b7-b8",
+   "kind": "bed",
+   "from": "s19.start",
+   "to": "s28.start + 2f",
+   "loop": true,
+   "fade_in": 1,
+   "fade_out": 2,
+   "db": -6,
+   "segments": [
+    {
+     "from": "l13.speech_start - 0.2s",
+     "to": "l16.speech_end + 0.1s",
+     "db": -6
+    },
+    {
+     "from": "l17.speech_start - 0.2s",
+     "to": "l19.speech_end + 0.1s",
+     "db": -12
+    }
+   ]
+  },
+  {
+   "cue": "mus_road_pluck",
+   "kind": "bed",
+   "from": "s18.start",
+   "to": "s29.start + 1.3s",
+   "gain_db": -18,
+   "fade_in": 15,
+   "fade_out": 1,
+   "segments": [
+    {
+     "from": "l17.speech_start - 0.2s",
+     "to": "l19.speech_end + 0.2s",
+     "db": -6
+    },
+    {
+     "from": "s26.start",
+     "to": "s29.start + 1.3s",
+     "db": 2
+    }
+   ]
+  },
+  {
+   "cue": "mus_bed_drone",
+   "id": "#b7-b9",
+   "kind": "bed",
+   "from": "s18.start",
+   "to": "s29.start + 1.3s",
+   "loop": true,
+   "gain_db": -26,
+   "fade_in": 30,
+   "fade_out": 1,
+   "segments": [
+    {
+     "from": "l17.speech_start - 0.2s",
+     "to": "l19.speech_end + 0.2s",
+     "db": -4
+    }
+   ]
+  },
+  {
+   "cue": "sfx_birds_dawn_loop",
+   "kind": "bed",
+   "from": "s26.start",
+   "to": "s31.start + 1s",
+   "loop": true,
+   "fade_in": 30,
+   "fade_out": 30,
+   "db": -4,
+   "segments": [
+    {
+     "from": "s28.start",
+     "to": "s31.start + 1s",
+     "db": 4
+    }
+   ]
+  },
+  {
+   "cue": "sfx_car_idle_engine_off",
+   "at": "s28.start",
+   "trim": "2.4s + s28.start - l20.speech_end",
+   "until": "s29.start + 1.0s",
+   "db": -4,
+   "fade_out": 3,
+   "filter": {
+    "lowpass_hz": 4000
+   },
+   "segments": [
+    {
+     "from": "l20.speech_start - 0.2s",
+     "to": "l20.speech_end",
+     "db": -6
+    }
+   ]
+  },
+  {
+   "cue": "sfx_car_door_clunk",
+   "at": "s29.start + 0.4s",
+   "db": -10,
+   "fade_out": 3
+  },
+  {
+   "cue": "sfx_shutter_up",
+   "at": "s29.start + 1.3s",
+   "until": "s31.start",
+   "db": -2,
+   "fade_out": 3
+  },
+  {
+   "cue": "amb_bureau_room",
+   "id": "#b10-b11",
+   "kind": "bed",
+   "from": "s31.start",
+   "to": "s39.end - 0.5s - 1f",
+   "loop": true,
+   "fade_in": 3,
+   "fade_out": 1,
+   "db": -3,
+   "filter": {
+    "highpass_hz": 200
+   },
+   "segments": [
+    {
+     "from": "l27.speech_start - 0.2s",
+     "to": "l28.speech_end + 0.2s",
+     "db": -14
+    }
+   ]
+  },
+  {
+   "cue": "sfx_street_morning_layer",
+   "kind": "bed",
+   "from": "s31.start",
+   "to": "s39.end - 0.5s - 1f",
+   "loop": true,
+   "fade_in": 3,
+   "fade_out": 1,
+   "db": -10,
+   "segments": [
+    {
+     "from": "l27.speech_start - 0.2s",
+     "to": "l28.speech_end + 0.2s",
+     "db": -40
+    }
+   ]
+  },
+  {
+   "cue": "sfx_glass_bangles_chink",
+   "id": "#l21",
+   "at": "s31.start",
+   "trim": "0.3s",
+   "len": "0.5s",
+   "db": -8,
+   "fade_out": 3
+  },
+  {
+   "cue": "sfx_keyring_chink",
+   "id": "#l21",
+   "at": "s31.start + 1f",
+   "trim": "0.35s",
+   "len": "0.4s",
+   "db": -10,
+   "fade_out": 3
+  },
+  {
+   "cue": "sfx_keyring_chink",
+   "id": "#l22",
+   "at": "s32.start - 1f",
+   "trim": "0.35s",
+   "len": "0.4s",
+   "db": -12,
+   "fade_out": 3
+  },
+  {
+   "cue": "sfx_s1a01_paan_cough",
+   "at": "l22.speech_end + 1f",
+   "db": -4,
+   "fade_out": 3
+  },
+  {
+   "cue": "sfx_keyring_chink",
+   "id": "#l24-l25",
+   "at": "l24.speech_end + 1f",
+   "trim": "0.4s",
+   "len": "0.3s",
+   "db": -14,
+   "fade_out": 2
+  },
+  {
+   "cue": "sfx_glass_bangles_chink",
+   "id": "#l25",
+   "at": "l25.speech_start - 0.35s",
+   "trim": "0.3s",
+   "len": "0.3s",
+   "db": -14,
+   "fade_out": 2
+  },
+  {
+   "cue": "mus_bed_drone",
+   "id": "#b10-b11",
+   "kind": "bed",
+   "from": "s31.start",
+   "to": "s39.end - 0.5s - 1f",
+   "loop": true,
+   "gain_db": -28,
+   "fade_in": 30,
+   "fade_out": 1,
+   "segments": [
+    {
+     "from": "l27.speech_start - 0.2s",
+     "to": "l28.speech_end + 0.2s",
+     "db": 3
+    }
+   ]
+  },
+  {
+   "cue": "sfx_chooda_click",
+   "at": "s39.start + 0.3s",
+   "db": -6,
+   "fade_out": 3
+  },
+  {
+   "cue": "sfx_glass_bangles_chink",
+   "id": "#last",
+   "at": "s39.end - 0.5s",
+   "trim": "0.3s",
+   "db": 0
+  }
+ ],
+ "notes": [
+  "No split line in this episode (S7 remap): no cut_on_word.",
+  "Beat silences: tail.s09 36 holds Kiran 1.2 s after l29 while she waits for his answer (b3 silent_seconds 1.2 after; S7 put l29 on the silent-after frame). Silent shots use their planned duration_s (s03, s04, s12, s13, s18, s26, s27, s29, s30, s39).",
+  "l09 is a hard-cut take ending on 'रहा'/'He' (S10 review): cutoffs l09 run 2, next_lead 2, so the cut to s15 and Kiran's l10 land on Billu's last syllable.",
+  "tail.s32 30: room for sfx_s1a01_paan_cough after l22's laugh before Chhoti's l23.",
+  "voice_fx: 'speaker' (250-5000 Hz band-pass, light tanh saturation, 14 ms reflection) on l02, Mausi on Kiran's speaker in the bedroom; the built-in 'phone' chain on l17 and l19, Mausi on Billu's phone in the car; 'stairwell', a light two-tap concrete echo (31 and 53 ms at 0.14 and 0.08), on l09-l12. All loudness-matched to the clean take; not listened to. The bureau lines are dry.",
+  "Levels set against the files' measured levels and the s1e01/s1e02 conventions (beds near the bedroom bed's -46 dB mean; mus_bed_drone -24 in b3/b5, -26 in the car, -28 in the bureau; mus_road_pluck -18, peaks about -19 dB). The cue sheet's level_db values are read as relative starting points, not absolute gains. Not listened to.",
+  "Bed ducking: no per-line bed dips beyond those the cue sheet singles out (l02 -4 dB; car bed -6 under l13-l16 and -12 under l17-l19; bureau bed -14 and the street layer muted under l27-l28). Music ducks under every line through the timeline's ducking (-8 dB); road pluck and drone go a further -6 / -4 dB under l17-l19.",
+  "b9: the engine-off shudder is set about 0.3 s after l20 by trimming the idle file (trim expression); the car door clunk 0.4 s into s29; sfx_shutter_up starts 1.3 s into s29 and stops (file 2.8 s) about 2.1 s into s30, with Mausi in the shutter. mus_road_pluck and the drone stop dead (1 frame) on the shutter's first frame.",
+  "Ending: the timeline cuts audio hard at the picture end, so the last glass-bangle chink is placed 0.5 s before the s39 cut, with the bureau bed, street layer and drone out a frame before it; the chink rings 0.5 s alone, then black. sfx_chooda_click sits in the s39 hold (0.9 s in), not under l28.",
+  "sfx_almirah_door is left unplaced (optional on the cue sheet, 'only if the shot shows the door moving'; s10 is a still with the door already open). sfx_birds_dawn_loop tails 1 s into b10, as the cue sheet allows.",
+  "s28 is a slate: attempt 1 rejected (hand sides and henna); attempt 2 is on disk with no review row. su1 is therefore drawn over the slate (meta.checks.supers). It stays where S7 put it; once s28's retake is approved it sits on the picture.",
+  "s30: its only review row says attempt 1 approved, but manifest attempt 1 failed (no image) and the png on disk is attempt 2, so the build lists it as an unchecked take and shows it.",
+  "Plot overlays (caller name and 2:00 on s02, 3:00 on s13, 'मौसी' on Billu's phone in s23) are not drawn: there are no overlay images and the overlay layer is still open in the toolchain."
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "about": "edit.json that reproduces content/proof/photoreal's cut (its build_timeline.py constants, as data). Used by test/run_proof_test.sh on a scratch copy.",
+ "render_name": "proof",
+ "slate_color": "#1d2430",
+ "voice_models": ["v4"],
+ "voice_fx": {"phone": {"speakers": ["caller"]}},
+ "layout": {
+  "first_lead": 4, "lead_default": 0, "use_silent_lead": true,
+  "lead_min": {"s04": 4, "s08": 18},
+  "gap_default": 8,
+  "tail_default": 4, "tail": {"s03": 6, "s06": 6, "s09": 12},
+  "min_last_segment": 24,
+  "end_black": 12,
+  "silent_min_end": {"s07": "l08.speech_end + 1.33s + 0.6s"},
+  "cutoffs": [{"line": "l06", "run": 3, "read_cps": 17, "next_lead": 0}],
+  "cut_on_word": [{"line": "l08", "word": {"hi": "driver", "en": "driver"}}]
+ },
+ "shots": {
+  "s07": {"move": {"preset": "push-in", "intensity": 0.1, "easing": "linear", "focus": {"x": 0.40, "y": 0.19}}}
+ },
+ "sound": [
+  {"cue": "mus_drone_bed", "kind": "bed", "from": "s03.start", "to": "s06.end", "trim": "2.0s", "fade_in": 6, "fade_out": 1,
+   "segments": [{"from": "l08.split1_end - 0.3s", "to": "l08.speech_end + 0.2s", "db": -12}]},
+  {"cue": "mus_end_sting", "at": "max(s09.start + 0.2s, end - len(mus_end_sting))", "until": "end", "fade_out": 1},
+  {"cue": "amb_rain_roof", "kind": "bed", "from": 0, "to": "end", "loop": true, "fade_in": 2, "fade_out": 1,
+   "segments": [{"from": "l08.split1_end - 0.3s", "to": "l08.speech_end + 0.2s", "db": -12}]},
+  {"cue": "sfx_s01_breath_leather", "at": "s01.start"},
+  {"cue": "sfx_s01_zip_pull", "at": "s02.start - 3.2s"},
+  {"cue": "sfx_s02_paper_rustle", "at": "s02.start + 0.7s", "until": "l03.speech_start + 0.1s", "fade_out": 4},
+  {"cue": "sfx_s03_phone_ring", "kind": "bed", "from": "s03.start", "to": "min(s03.end - 2, s03.start + len(sfx_s03_phone_ring))",
+   "fade_in": 0, "fade_out": 1, "segments": [{"from": "l04.speech_start - 3", "to": "s03.end - 2", "db": -18}]},
+  {"cue": "sfx_s04_key_click", "at": "s03.end - 2"},
+  {"cue": "amb_s04_line_hiss", "kind": "bed", "from": "s04.start", "to": "l08.speech_end", "loop": true, "fade_in": 2, "fade_out": 3},
+  {"cue": "sfx_s06_call_end", "at": "l08.speech_end"},
+  {"cue": "amb_s07_dead_line", "at": "l08.speech_end + 1.33s", "until": "s08.start", "fade_out": 1},
+  {"cue": "sfx_s08_lock_clunk", "at": "s08.start", "until": "l09.speech_start", "fade_out": 6},
+  {"cue": "sfx_s09_headlight_click", "at": "s09.start"},
+  {"cue": "sfx_s09_ignition_idle", "at": "s09.start + 0.5s", "until": "end", "fade_out": 1,
+   "segments": [{"from": "l10.speech_start", "db": -6}], "fill_tail": true}
+ ],
+ "notes": [
+  "Caller lines (speaker caller): phone filter, band-pass 300-3400 Hz + light tanh saturation, loudness-matched.",
+  "l06 is cut 3 frames before its last speech (no earlier than its last cue needs at 17 cps); l07's first speech is on the s04/s05 cut.",
+  "s05/s06 cut on the word 'driver' in l08.",
+  "mus_drone_bed starts 2.0 s into the file (its head is a ~4 s fade-in); rain -12 dB and drone extra -12 dB under l08's question.",
+  "End sting right-aligned on the hard cut; ignition idle 0.5 s into s09, -6 dB under l10, steady tail repeated to the cut."
+ ]
+}

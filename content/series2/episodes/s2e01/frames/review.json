@@ -1,0 +1,260 @@
+{
+ "schema": "frames-review/1",
+ "episode": "s2e01",
+ "by": "verdicts as written in the list-format file (see 'notes' and each row's 'source')",
+ "notes": [
+  "Written by the S13 editor (26 Nov) to carry S9's verdicts into build_timeline.py. Updated by S9 (26 Nov, retake check): the s14, s16 and s26 attempt-1 reject rows are replaced by their attempt-2 verdicts (the old verdict is kept under 'supersedes'), because the current build_timeline.py slates any shot that has ANY reject row, so a later pass row alone would not lift the slate. s28 and s29 attempt 1 added; s20 inherits s14. Shape kept as a list keyed shot_id (rows also carry 'shot') because the current build_timeline.py reads that; D-023 rule 4.9's dict shape waits on the toolsmith step. file_md5 identifies the judged take."
+ ],
+ "frames": [
+  {
+   "shot": "s02",
+   "attempt": 1,
+   "verdict": "approved",
+   "file_md5": "7b0c5f7a615030c24b1ee0fccdd0e5b3",
+   "source": "frames/anchor-check.s9.json"
+  },
+  {
+   "shot": "s10",
+   "attempt": 1,
+   "verdict": "approved",
+   "file_md5": "ea9ae0ab10b5b0aaddf6509ea88e54c4",
+   "source": "frames/anchor-check.s9.json"
+  },
+  {
+   "shot": "s13",
+   "attempt": 1,
+   "verdict": "approved",
+   "file_md5": "05eb0ac800e082908637cac207efe20b",
+   "source": "frames/anchor-check.s9.json"
+  },
+  {
+   "shot": "s31",
+   "attempt": 1,
+   "verdict": "approved",
+   "file_md5": "0f4d26cfeb1c54da6be2254bfb59bfc2",
+   "source": "frames/anchor-check.s9.json"
+  },
+  {
+   "shot": "s01",
+   "attempt": 1,
+   "verdict": "approved",
+   "file_md5": "778ea25a35bdec0783696472694ef541",
+   "source": "frames/frame-check.s9.json"
+  },
+  {
+   "shot": "s03",
+   "attempt": 1,
+   "verdict": "approved",
+   "file_md5": "f94725b9ea06896ce87c22a5278b6446",
+   "source": "frames/frame-check.s9.json"
+  },
+  {
+   "shot": "s05",
+   "attempt": 1,
+   "verdict": "approved",
+   "file_md5": "57e54bdece0a78f9f2482051ee9da44f",
+   "source": "frames/frame-check.s9.json"
+  },
+  {
+   "shot": "s06",
+   "attempt": 1,
+   "verdict": "approved",
+   "file_md5": "9bfb6dded9603267d9cbad25b7456ff5",
+   "source": "frames/frame-check.s9.json"
+  },
+  {
+   "shot": "s07",
+   "attempt": 1,
+   "verdict": "approved",
+   "file_md5": "34d5fbda16ac81166008a8e88bdc29f9",
+   "source": "frames/frame-check.s9.json"
+  },
+  {
+   "shot": "s09",
+   "attempt": 1,
+   "verdict": "approved",
+   "file_md5": "0fc0806898f5b48cf2c6a0f61fc88cbe",
+   "source": "frames/frame-check.s9.json"
+  },
+  {
+   "shot": "s11",
+   "attempt": 1,
+   "verdict": "approved",
+   "file_md5": "7c7d3246c32ef24fbaf6a1789cc4e0b9",
+   "source": "frames/frame-check.s9.json"
+  },
+  {
+   "shot": "s12",
+   "attempt": 1,
+   "verdict": "approved",
+   "file_md5": "0c91e14e236b585fc597ce3f20a316ff",
+   "source": "frames/frame-check.s9.json"
+  },
+  {
+   "shot": "s15",
+   "attempt": 1,
+   "verdict": "approved",
+   "file_md5": "111e5d5719cfd435932afa00bae7274d",
+   "source": "frames/frame-check.s9.json"
+  },
+  {
+   "shot": "s17",
+   "attempt": 1,
+   "verdict": "approved",
+   "file_md5": "23d81e849770dd6ced7275a8ad92ccac",
+   "source": "frames/frame-check.s9.json"
+  },
+  {
+   "shot": "s18",
+   "attempt": 1,
+   "verdict": "approved",
+   "file_md5": "678e489bb1990ee133575d7a521c782d",
+   "source": "frames/frame-check.s9.json"
+  },
+  {
+   "shot": "s19",
+   "attempt": 1,
+   "verdict": "approved",
+   "file_md5": "fefe561a633ee2d79fc111dd00a5a270",
+   "source": "frames/frame-check.s9.json"
+  },
+  {
+   "shot": "s22",
+   "attempt": 1,
+   "verdict": "approved",
+   "file_md5": "66425dad537b1b97785dc39ecd597981",
+   "source": "frames/frame-check.s9.json"
+  },
+  {
+   "shot": "s23",
+   "attempt": 1,
+   "verdict": "approved",
+   "file_md5": "f61af199a7e0db7c969236dc30895f34",
+   "source": "frames/frame-check.s9.json"
+  },
+  {
+   "shot": "s30",
+   "attempt": 1,
+   "verdict": "approved",
+   "file_md5": "eb08f09e3a2ea2c8ba54426cd3ea69aa",
+   "source": "frames/frame-check.s9.json"
+  },
+  {
+   "shot": "s32",
+   "attempt": 1,
+   "verdict": "approved",
+   "file_md5": "78a8160a537a92e0d29680ba05ee8725",
+   "source": "frames/frame-check.s9.json"
+  },
+  {
+   "shot": "s34",
+   "attempt": 1,
+   "verdict": "approved",
+   "file_md5": "dd2384a2008ce814a0e77deb04946f17",
+   "source": "frames/frame-check.s9.json"
+  },
+  {
+   "shot": "s36",
+   "attempt": 1,
+   "verdict": "approved",
+   "file_md5": "a52cec021fdebbdc362766a68cc7bb2f",
+   "source": "frames/frame-check.s9.json"
+  },
+  {
+   "shot": "s37",
+   "attempt": 1,
+   "verdict": "approved",
+   "file_md5": "2f9bf1d7f44ec9204077cd2a53eaa64e",
+   "source": "frames/frame-check.s9.json"
+  },
+  {
+   "shot": "s14",
+   "attempt": 2,
+   "verdict": "approved",
+   "file_md5": "d2f8f03869f0626e9d964f73c82f0525",
+   "drift": [
+    "Peanut hand reaches 22.8% across (prompt asked left of 18%); its top is at 76.3% down. Nothing of it lies inside s20's window at either end of the s20 move (23.1-100% x 0-76.9% at the start, 21.9-98.8% x 1.2-78.1% at the end): 0 pixels, margin under 1%.",
+    "Shield drawn larger than asked (ring top about 10%, point about 71% down; asked 12-54%). Plate measured 29.8-45.0% down, 32.9-83.1% across, matching ov_shield.surface in shots.json."
+   ],
+   "source": "frames/retake-check.s9.json",
+   "supersedes": {
+    "attempt": 1,
+    "verdict": "reject",
+    "file_md5": "7a107efeb4143ff26d4e87ef670106a2",
+    "kept_as": "frames/s14.prev1.png",
+    "source": "frames/frame-check.s9.json"
+   }
+  },
+  {
+   "shot": "s16",
+   "attempt": 2,
+   "verdict": "approved",
+   "file_md5": "6829d9c4e308f8257509a3226613f45c",
+   "drift": [
+    "Pushpa sits nearly square to camera rather than three-quarters towards picture-left.",
+    "Envelope's left end about 2% from the picture-left edge (inside the 8% margin); the violet ring at about 14-18% across stays in frame under the push-in."
+   ],
+   "source": "frames/retake-check.s9.json",
+   "supersedes": {
+    "attempt": 1,
+    "verdict": "reject",
+    "file_md5": "675001de2317962c61534917ac76e697",
+    "kept_as": "frames/s16.prev1.png",
+    "source": "frames/frame-check.s9.json"
+   }
+  },
+  {
+   "shot": "s26",
+   "attempt": 2,
+   "verdict": "approved",
+   "file_md5": "3f967728b04677b3769f0751c0058519",
+   "drift": [
+    "Helmet's left edge about 4% from the picture-left edge, inside the 8% margin; the s26 push-in (focus 0.45, intensity 0.2) keeps it in frame.",
+    "Pushpa stands nearly square to camera rather than three-quarters towards picture-left.",
+    "Pair height not measurable directly (Nandini bends at the waist); by the feet-to-head spans it reads within the sheet's ratio."
+   ],
+   "source": "frames/retake-check.s9.json",
+   "supersedes": {
+    "attempt": 1,
+    "verdict": "reject",
+    "file_md5": "c597c1b19cbb4b4ddeb8a80a77a32299",
+    "kept_as": "frames/s26.prev1.png",
+    "source": "frames/anchor-check.s9.json"
+   }
+  },
+  {
+   "shot": "s28",
+   "attempt": 1,
+   "verdict": "approved",
+   "file_md5": "58df90276484e05d5bfd95da50087af2",
+   "drift": [
+    "EIGHT registers in the stack, not nine (l20 says 'one to nine'); not countable in a 2.5 s push-in, logged not retaken.",
+    "Both hands shown whole and the uniform reads fitted, not one size too big (lock says sleeves over the hands); same lock drift S9 logged on s03.",
+    "Stack runs to about 74% down (safe band 48-68%), still above the subtitle fifth; kettle touches the picture-right edge."
+   ],
+   "source": "frames/retake-check.s9.json"
+  },
+  {
+   "shot": "s29",
+   "attempt": 1,
+   "verdict": "approved",
+   "file_md5": "8685bbf2c2bb4843f3c83e29ae6a50d5",
+   "drift": [
+    "Nirala's sleeves do not cover his hands and the uniform reads fitted (same lock drift as s03/s28).",
+    "Pushpa's bag edge about 5.6% from the picture-right edge (not a key prop)."
+   ],
+   "source": "frames/retake-check.s9.json"
+  },
+  {
+   "shot": "s20",
+   "attempt": null,
+   "verdict": "approved",
+   "file_md5": null,
+   "inherits": "s14",
+   "drift": [
+    "Second framing of s14 (no png of its own). Verdict inherited from s14 attempt 2; s14 measured clean of the hand inside both ends of the s20 window. The current build_timeline.py still slates s20 because frames/s20.png does not exist; the toolsmith step (D-023 rule 3, second_framing) or the editor maps it."
+   ],
+   "source": "frames/retake-check.s9.json"
+  }
+ ]
+}

@@ -1,0 +1,186 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,070"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 70
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,070",
+				"to": "00:00:00,370"
+			},
+			"offsets": {
+				"from": 70,
+				"to": 370
+			},
+			"text": " \"So,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,370",
+				"to": "00:00:00,700"
+			},
+			"offsets": {
+				"from": 370,
+				"to": 700
+			},
+			"text": " this"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,700",
+				"to": "00:00:00,830"
+			},
+			"offsets": {
+				"from": 700,
+				"to": 830
+			},
+			"text": " is"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,830",
+				"to": "00:00:01,380"
+			},
+			"offsets": {
+				"from": 830,
+				"to": 1380
+			},
+			"text": " Mohit's"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,380",
+				"to": "00:00:02,300"
+			},
+			"offsets": {
+				"from": 1380,
+				"to": 2300
+			},
+			"text": " brother."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,300",
+				"to": "00:00:02,840"
+			},
+			"offsets": {
+				"from": 2300,
+				"to": 2840
+			},
+			"text": " Yes,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,840",
+				"to": "00:00:02,840"
+			},
+			"offsets": {
+				"from": 2840,
+				"to": 2840
+			},
+			"text": " I"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,840",
+				"to": "00:00:03,830"
+			},
+			"offsets": {
+				"from": 2840,
+				"to": 3830
+			},
+			"text": " heard."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,830",
+				"to": "00:00:03,980"
+			},
+			"offsets": {
+				"from": 3830,
+				"to": 3980
+			},
+			"text": " The"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,980",
+				"to": "00:00:04,230"
+			},
+			"offsets": {
+				"from": 3980,
+				"to": 4230
+			},
+			"text": " boy"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,230",
+				"to": "00:00:04,650"
+			},
+			"offsets": {
+				"from": 4230,
+				"to": 4650
+			},
+			"text": " turned"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,650",
+				"to": "00:00:04,870"
+			},
+			"offsets": {
+				"from": 4650,
+				"to": 4870
+			},
+			"text": " out"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,870",
+				"to": "00:00:05,520"
+			},
+			"offsets": {
+				"from": 4870,
+				"to": 5520
+			},
+			"text": " weak.\""
+		}
+	]
+}

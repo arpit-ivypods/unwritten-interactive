@@ -1,0 +1,312 @@
+[
+  {
+    "line_id": "l01",
+    "lang": "hi",
+    "speaker": "mausi",
+    "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+    "model": "eleven_v4",
+    "text": "[calm] दरवाज़ा भेड़ देना, बिल्लू। सुबह मकान-मालिक देख लेगा।",
+    "target_seconds": 5.6,
+    "note": "Opens after 1.2 s of silence. Mausi turned to the door, talking over her shoulder to Billu: housekeeping, the job is done and the body is someone else's problem. Even and unhurried, 'बिल्लू' tossed off, the second sentence almost bored. 'मकान-मालिक' clear. Low, warm, grainy, unhurried; fully voiced, never a whisper (bible). Cast note: soften with [gently], never [warmly] (in casting [warmly] lifted her pitch toward Kiran's). If she comes out higher than Kiran, log it for the Kiran/Mausi pair ear check (cast.json ear_check 3), not a retake. Longest single-frame hold (5.6 s target): if the take passes 8 s the editor splits it with a punch-in; do not retake for length. Budget up to 3 takes (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper (D-0M2); length is settled in the edit. Transient errors: retry 3x (plan 7.8). Fallbacks in order: script text '[gently] दरवाज़ा भेड़ देना, बिल्लू। सुबह मकान-मालिक देख लेगा।', then the bare line 'दरवाज़ा भेड़ देना, बिल्लू। सुबह मकान-मालिक देख लेगा।', then eleven_v3 with the original text. Then, only if a cast switch_if condition is met, the backup Kahani G (ZthnDvLLxYzM9qeFVSJe). Fallback prompts change tags only; the words and the subtitle text stay the script's. Last resort: a silent placeholder of target length, status placeholder, logged in docs/morning-report.md."
+  },
+  {
+    "line_id": "l02",
+    "lang": "hi",
+    "speaker": "mausi",
+    "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+    "model": "eleven_v4",
+    "text": "[calm] चल बेटा, घर।",
+    "target_seconds": 1.8,
+    "note": "Half-turned to Kiran (the key chink carries the turn): warm, as if collecting a child from school. 'बेटा' tender, a small beat before 'घर'. Short line: check for a clipped start. First in the writer's trim order; generate it anyway. Low, warm, grainy, unhurried; fully voiced, never a whisper (bible). Cast note: soften with [gently], never [warmly] (in casting [warmly] lifted her pitch toward Kiran's). If she comes out higher than Kiran, log it for the Kiran/Mausi pair ear check (cast.json ear_check 3), not a retake. Budget up to 4 takes (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper (D-0M2); length is settled in the edit. Transient errors: retry 3x (plan 7.8). Fallbacks in order: script text '[gently] चल बेटा, घर।', then the bare line 'चल बेटा, घर।', then eleven_v3 with the original text. Then, only if a cast switch_if condition is met, the backup Kahani G (ZthnDvLLxYzM9qeFVSJe). Fallback prompts change tags only; the words and the subtitle text stay the script's. Last resort: a silent placeholder of target length, status placeholder, logged in docs/morning-report.md."
+  },
+  {
+    "line_id": "l03",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[quietly] रुक, बिल्लू। पहले हिसाब check कर ले।",
+    "target_seconds": 3.8,
+    "note": "Kiran steps into Billu's path. Low and exact, an instruction to a younger brother (तू), not a plea and not a threat. A short beat after 'रुक, बिल्लू।'. 'check' is everyday English inside the Hindi, said the Indian way and not stressed. Transcript check: 'check' heard (en pass). Quiet but FULLY VOICED: reject a whisper (voiced_ratio below 0.6). Her Hindi [quietly] stayed voiced in casting (kiran_t2: 6 to 7 dB down, voiced 0.87), so keep the tag. Keep her low in her own range: in casting Mausi sat 1 to 2.4 semitones above Kiran, and the two share b1 to b6. Budget up to 3 takes (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper (D-0M2); length is settled in the edit. Transient errors: retry 3x (plan 7.8). Fallbacks in order: '[calm] रुक, बिल्लू। पहले हिसाब check कर ले।' (D-022 rule 1); then the bare line 'रुक, बिल्लू। पहले हिसाब check कर ले।' (D-022); then eleven_v3 with the original text. Then, only if a cast switch_if condition is met, the backup Rudrika (2kb0BzqPNMYVxWCj9dqt). Fallback prompts change tags only; the words and the subtitle text stay the script's. Last resort: a silent placeholder of target length, status placeholder, logged in docs/morning-report.md."
+  },
+  {
+    "line_id": "l04",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[calm] सातवीं शादी में सोलह तोला। तुझे कितना बताया?",
+    "target_seconds": 4.2,
+    "note": "The bookkeeper's voice: flat, quick, factual, weight on 'सोलह तोला'. Then the question to Billu straight and level, almost gentle: she already knows the answer. Keep her low in her own range: in casting Mausi sat 1 to 2.4 semitones above Kiran, and the two share b1 to b6. Budget up to 3 takes (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper (D-0M2); length is settled in the edit. Transient errors: retry 3x (plan 7.8). Fallbacks in order: the bare line 'सातवीं शादी में सोलह तोला। तुझे कितना बताया?', then eleven_v3 with the original text. Then, only if a cast switch_if condition is met, the backup Rudrika (2kb0BzqPNMYVxWCj9dqt). Fallback prompts change tags only; the words and the subtitle text stay the script's. Last resort: a silent placeholder of target length, status placeholder, logged in docs/morning-report.md."
+  },
+  {
+    "line_id": "l31",
+    "lang": "hi",
+    "speaker": "billu",
+    "voice_id": "7b9mYhmnp0y2qSH1FnBL",
+    "model": "eleven_v4",
+    "text": "[nervous] आठ।",
+    "target_seconds": 1.2,
+    "note": "Billu's own figure, out before he can stop it, eyes sliding to Mausi. Small, unsure, not comic. One word, unstable on v4: budget up to 4 takes; never pad the words. Reject a stammer, an added syllable or breath, or a spoken tag. 'आठ' must be clear. Budget up to 4 takes (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper (D-0M2); length is settled in the edit. Transient errors: retry 3x (plan 7.8). Fallbacks in order: script text '[quietly] आठ।', then the bare line 'आठ।', then eleven_v3 with the original text. Then, only if a cast switch_if condition is met, the backup Sujit (3RfQOFdEQ7vZM7w2xR57). Fallback prompts change tags only; the words and the subtitle text stay the script's. Last resort: a silent placeholder of target length, status placeholder, logged in docs/morning-report.md."
+  },
+  {
+    "line_id": "l05",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[quietly] छठी में मोहित की माँ के कंगन। नौ तोला।",
+    "target_seconds": 4.4,
+    "note": "Second wedding on the list, lower: this one is Aditya's family and he is lying there listening (his jaw tightens on 'मोहित'). A small beat before 'नौ तोला।', placed like a total. Not cruel. Quiet but FULLY VOICED: reject a whisper (voiced_ratio below 0.6). Her Hindi [quietly] stayed voiced in casting (kiran_t2: 6 to 7 dB down, voiced 0.87), so keep the tag. Keep her low in her own range: in casting Mausi sat 1 to 2.4 semitones above Kiran, and the two share b1 to b6. Budget up to 3 takes (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper (D-0M2); length is settled in the edit. Transient errors: retry 3x (plan 7.8). Fallbacks in order: '[calm] छठी में मोहित की माँ के कंगन। नौ तोला।' (D-022 rule 1); then the bare line 'छठी में मोहित की माँ के कंगन। नौ तोला।' (D-022); then eleven_v3 with the original text. Then, only if a cast switch_if condition is met, the backup Rudrika (2kb0BzqPNMYVxWCj9dqt). Fallback prompts change tags only; the words and the subtitle text stay the script's. Last resort: a silent placeholder of target length, status placeholder, logged in docs/morning-report.md."
+  },
+  {
+    "line_id": "l06",
+    "lang": "hi",
+    "speaker": "billu",
+    "voice_id": "7b9mYhmnp0y2qSH1FnBL",
+    "model": "eleven_v4",
+    "text": "[nervous] चार बोला था मौसी ने।",
+    "target_seconds": 2.4,
+    "note": "He does the sum as he says it: four against nine. Quick, then trailing, the first crack in his loyalty. Not loud. Reject a stammer or a spoken tag. Budget up to 3 takes (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper (D-0M2); length is settled in the edit. Transient errors: retry 3x (plan 7.8). Fallbacks in order: script text '[quietly] चार बोला था मौसी ने।', then the bare line 'चार बोला था मौसी ने।', then eleven_v3 with the original text. Then, only if a cast switch_if condition is met, the backup Sujit (3RfQOFdEQ7vZM7w2xR57). Fallback prompts change tags only; the words and the subtitle text stay the script's. Last resort: a silent placeholder of target length, status placeholder, logged in docs/morning-report.md."
+  },
+  {
+    "line_id": "l07",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[calm] बाक़ी सब भी same। और गाड़ी तेरे नाम पे है।",
+    "target_seconds": 4.4,
+    "note": "Plain and quick: the rest in one breath, then the turn on 'गाड़ी' (the picture cuts to the car key there). 'same' is everyday English inside the Hindi, said the Indian way. Transcript check: 'same' heard (en pass). Weight on 'तेरे नाम'. Keep her low in her own range: in casting Mausi sat 1 to 2.4 semitones above Kiran, and the two share b1 to b6. Budget up to 3 takes (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper (D-0M2); length is settled in the edit. Transient errors: retry 3x (plan 7.8). Fallbacks in order: the bare line 'बाक़ी सब भी same। और गाड़ी तेरे नाम पे है।', then eleven_v3 with the original text. Then, only if a cast switch_if condition is met, the backup Rudrika (2kb0BzqPNMYVxWCj9dqt). Fallback prompts change tags only; the words and the subtitle text stay the script's. Last resort: a silent placeholder of target length, status placeholder, logged in docs/morning-report.md."
+  },
+  {
+    "line_id": "l08",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[sharply] आज की लाश भी तेरे सिर आती।",
+    "target_seconds": 3.0,
+    "note": "[sharply] means low and fast, not loud (writer_notes): the line lands like a slap said at conversation level. Under pressure she gets quieter and more exact, never shrill. Reject a raised or shouted take. Budget up to 3 takes (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper (D-0M2); length is settled in the edit. Transient errors: retry 3x (plan 7.8). Fallbacks in order: script text '[flatly] आज की लाश भी तेरे सिर आती।', then the bare line 'आज की लाश भी तेरे सिर आती।', then eleven_v3 with the original text. Then, only if a cast switch_if condition is met, the backup Rudrika (2kb0BzqPNMYVxWCj9dqt). Fallback prompts change tags only; the words and the subtitle text stay the script's. Last resort: a silent placeholder of target length, status placeholder, logged in docs/morning-report.md."
+  },
+  {
+    "line_id": "l09",
+    "lang": "hi",
+    "speaker": "billu",
+    "voice_id": "7b9mYhmnp0y2qSH1FnBL",
+    "model": "eleven_v4",
+    "text": "[angry] मौसी, ये क्या बोल रही है?",
+    "target_seconds": 2.4,
+    "note": "Billu's one loud line, turning to Mausi: surprised and angry, but at the situation, asking her to fix it. Loud for one line only. Cast note: billu_t2 [loud] went to 281 Hz median, about 8 to 11 semitones above his other takes; reject a squeal or crack by ear. Every word must transcribe and the line must end on 'है?'. Budget up to 3 takes (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper (D-0M2); length is settled in the edit. Transient errors: retry 3x (plan 7.8). Fallbacks in order: script text '[alarmed] मौसी, ये क्या बोल रही है?', then the bare line 'मौसी, ये क्या बोल रही है?', then eleven_v3 with the original text. Then, only if a cast switch_if condition is met, the backup Sujit (3RfQOFdEQ7vZM7w2xR57). Fallback prompts change tags only; the words and the subtitle text stay the script's. Last resort: a silent placeholder of target length, status placeholder, logged in docs/morning-report.md."
+  },
+  {
+    "line_id": "l10",
+    "lang": "hi",
+    "speaker": "mausi",
+    "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+    "model": "eleven_v4",
+    "text": "[quietly] बच्ची थक गई है, बिल्लू।",
+    "target_seconds": 2.8,
+    "note": "Smiling, softer than ever: the colder the move, the softer and slower she gets. 'बच्ची' indulgent, dismissing Kiran as overtired; 'बिल्लू' a soothing hand on his arm. Low, warm, grainy, unhurried; fully voiced, never a whisper (bible). Cast note: soften with [gently], never [warmly] (in casting [warmly] lifted her pitch toward Kiran's). If she comes out higher than Kiran, log it for the Kiran/Mausi pair ear check (cast.json ear_check 3), not a retake. Her [quietly] must stay fully voiced; reject a whisper (voiced_ratio below 0.6). Budget up to 3 takes (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper (D-0M2); length is settled in the edit. Transient errors: retry 3x (plan 7.8). Fallbacks in order: '[calm] बच्ची थक गई है, बिल्लू।' (D-022 rule 1); then the bare line 'बच्ची थक गई है, बिल्लू।' (D-022); then eleven_v3 with the original text. Then, only if a cast switch_if condition is met, the backup Kahani G (ZthnDvLLxYzM9qeFVSJe). Fallback prompts change tags only; the words and the subtitle text stay the script's. Last resort: a silent placeholder of target length, status placeholder, logged in docs/morning-report.md."
+  },
+  {
+    "line_id": "l11",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[calm] दोनों पुड़िया बंद हैं, मौसी। दूध में बस केसर था।",
+    "target_seconds": 5.2,
+    "note": "Level and plain, holding out her left palm: the evidence speaks, she does not push it. A small beat between the sentences: Aditya sits up over 'दूध में बस केसर था', so that half must be clear and unhurried. 'पुड़िया' and 'केसर' clear. Keep her low in her own range: in casting Mausi sat 1 to 2.4 semitones above Kiran, and the two share b1 to b6. Budget up to 3 takes (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper (D-0M2); length is settled in the edit. Transient errors: retry 3x (plan 7.8). Fallbacks in order: the bare line 'दोनों पुड़िया बंद हैं, मौसी। दूध में बस केसर था।', then eleven_v3 with the original text. Then, only if a cast switch_if condition is met, the backup Rudrika (2kb0BzqPNMYVxWCj9dqt). Fallback prompts change tags only; the words and the subtitle text stay the script's. Last resort: a silent placeholder of target length, status placeholder, logged in docs/morning-report.md."
+  },
+  {
+    "line_id": "l12",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[quietly] तेरे हाथ पे ख़ून नहीं लगने दिया। मौसी लगवा रही थीं।",
+    "target_seconds": 5.6,
+    "note": "To Billu, low and exact: the turn of the scene. First sentence a fact she did for him; second sentence the verdict on Mausi, no louder, weight on 'मौसी'. Must be heard by the whole room. Longest single-frame hold (5.6 s target): do not retake for length. Quiet but FULLY VOICED: reject a whisper (voiced_ratio below 0.6). Her Hindi [quietly] stayed voiced in casting (kiran_t2: 6 to 7 dB down, voiced 0.87), so keep the tag. Keep her low in her own range: in casting Mausi sat 1 to 2.4 semitones above Kiran, and the two share b1 to b6. Budget up to 3 takes (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper (D-0M2); length is settled in the edit. Transient errors: retry 3x (plan 7.8). Fallbacks in order: '[calm] तेरे हाथ पे ख़ून नहीं लगने दिया। मौसी लगवा रही थीं।' (D-022 rule 1); then the bare line 'तेरे हाथ पे ख़ून नहीं लगने दिया। मौसी लगवा रही थीं।' (D-022); then eleven_v3 with the original text. Then, only if a cast switch_if condition is met, the backup Rudrika (2kb0BzqPNMYVxWCj9dqt). Fallback prompts change tags only; the words and the subtitle text stay the script's. Last resort: a silent placeholder of target length, status placeholder, logged in docs/morning-report.md."
+  },
+  {
+    "line_id": "l13",
+    "lang": "hi",
+    "speaker": "mausi",
+    "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+    "model": "eleven_v4",
+    "text": "[quietly] चौदह की थी तू। चाचा की रसोई में तवे से जली थी।",
+    "target_seconds": 5.2,
+    "note": "Faces close, warm, an appeal to their shared past: an aunt reminding a girl who saved her. Slow, intimate, a small beat between the sentences; 'चौदह' and 'तवे' clear (this is the only place the scar's origin is spoken). Never a threat in the volume. Second half is second in the trim order; generate the whole line. Low, warm, grainy, unhurried; fully voiced, never a whisper (bible). Cast note: soften with [gently], never [warmly] (in casting [warmly] lifted her pitch toward Kiran's). If she comes out higher than Kiran, log it for the Kiran/Mausi pair ear check (cast.json ear_check 3), not a retake. Her [quietly] must stay fully voiced; reject a whisper (voiced_ratio below 0.6). Budget up to 3 takes (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper (D-0M2); length is settled in the edit. Transient errors: retry 3x (plan 7.8). Fallbacks in order: '[calm] चौदह की थी तू। चाचा की रसोई में तवे से जली थी।' (D-022 rule 1); then the bare line 'चौदह की थी तू। चाचा की रसोई में तवे से जली थी।' (D-022); then eleven_v3 with the original text. Then, only if a cast switch_if condition is met, the backup Kahani G (ZthnDvLLxYzM9qeFVSJe). Fallback prompts change tags only; the words and the subtitle text stay the script's. Last resort: a silent placeholder of target length, status placeholder, logged in docs/morning-report.md."
+  },
+  {
+    "line_id": "l14",
+    "lang": "hi",
+    "speaker": "mausi",
+    "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+    "model": "eleven_v4",
+    "text": "[calm] पट्टी मैंने बाँधी थी, मेरी बच्ची।",
+    "target_seconds": 3.6,
+    "note": "Her hand closes on Kiran's wrist as she says it: tender on the surface, a grip underneath. 'मेरी बच्ची' loving, slow. Low, warm, grainy, unhurried; fully voiced, never a whisper (bible). Cast note: soften with [gently], never [warmly] (in casting [warmly] lifted her pitch toward Kiran's). If she comes out higher than Kiran, log it for the Kiran/Mausi pair ear check (cast.json ear_check 3), not a retake. Budget up to 3 takes (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper (D-0M2); length is settled in the edit. Transient errors: retry 3x (plan 7.8). Fallbacks in order: script text '[gently] पट्टी मैंने बाँधी थी, मेरी बच्ची।', then the bare line 'पट्टी मैंने बाँधी थी, मेरी बच्ची।', then eleven_v3 with the original text. Then, only if a cast switch_if condition is met, the backup Kahani G (ZthnDvLLxYzM9qeFVSJe). Fallback prompts change tags only; the words and the subtitle text stay the script's. Last resort: a silent placeholder of target length, status placeholder, logged in docs/morning-report.md."
+  },
+  {
+    "line_id": "l15",
+    "lang": "hi",
+    "speaker": "mausi",
+    "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+    "model": "eleven_v4",
+    "text": "[calm] दामाद जी, देख लीजिए। जिस हाथ को ढूँढ रहे थे, यही है।",
+    "target_seconds": 5.6,
+    "note": "Bible anchor line (b4). Turned to Aditya, courteous as a hostess showing a guest the room, while she bares the scar: the colder the move, the softer and slower she gets. A real beat after 'देख लीजिए।'; 'यही है' placed, final, no triumph. 'दामाद जी' both syllables (casting heard 'दामाजी'; an ear check, not a retake). Low, warm, grainy, unhurried; fully voiced, never a whisper (bible). Cast note: soften with [gently], never [warmly] (in casting [warmly] lifted her pitch toward Kiran's). If she comes out higher than Kiran, log it for the Kiran/Mausi pair ear check (cast.json ear_check 3), not a retake. Budget up to 3 takes (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper (D-0M2); length is settled in the edit. Transient errors: retry 3x (plan 7.8). Fallbacks in order: script text '[gently] दामाद जी, देख लीजिए। जिस हाथ को ढूँढ रहे थे, यही है।', then the bare line 'दामाद जी, देख लीजिए। जिस हाथ को ढूँढ रहे थे, यही है।', then eleven_v3 with the original text. Then, only if a cast switch_if condition is met, the backup Kahani G (ZthnDvLLxYzM9qeFVSJe). Fallback prompts change tags only; the words and the subtitle text stay the script's. Last resort: a silent placeholder of target length, status placeholder, logged in docs/morning-report.md."
+  },
+  {
+    "line_id": "l16",
+    "lang": "hi",
+    "speaker": "aditya",
+    "voice_id": "zCXXiWzuZO7d9fERssmF",
+    "model": "eleven_v4",
+    "text": "[quietly] तुम।",
+    "target_seconds": 1.2,
+    "note": "After 1.8 s of silence, eyes going from the print to her arm. One word, almost to himself; the one place his voice may catch (bible voice_note). Low and fully voiced, not breathy. One word, unstable on v4: budget up to 4 takes; reject an added syllable, a sigh or a spoken tag. Writer's option after three unstable takes: '[quietly] तुम... तुम थीं।', but only after S2 changes the script and the subtitle to match; never send it otherwise. Budget up to 4 takes (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper (D-0M2); length is settled in the edit. Transient errors: retry 3x (plan 7.8). Fallbacks in order: '[calm] तुम।' (D-022 rule 1); then the bare line 'तुम।' (D-022); then eleven_v3 with the original text. Then, only if a cast switch_if condition is met, the backup Arjun (3GWSpjn7tfVISB5tun6E). Fallback prompts change tags only; the words and the subtitle text stay the script's. Last resort: a silent placeholder of target length, status placeholder, logged in docs/morning-report.md."
+  },
+  {
+    "line_id": "l17",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[calm] हाँ। मैं।",
+    "target_seconds": 1.8,
+    "note": "Chin level, she does not pull the bangles down. Two words, a short beat between them, no apology and no pride. Flat, close. Short turn, unstable on v4: budget up to 4 takes; reject an added syllable or a spoken tag. Keep her low in her own range: in casting Mausi sat 1 to 2.4 semitones above Kiran, and the two share b1 to b6. Budget up to 4 takes (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper (D-0M2); length is settled in the edit. Transient errors: retry 3x (plan 7.8). Fallbacks in order: script text '[flatly] हाँ। मैं।', then the bare line 'हाँ। मैं।', then eleven_v3 with the original text. Then, only if a cast switch_if condition is met, the backup Rudrika (2kb0BzqPNMYVxWCj9dqt). Fallback prompts change tags only; the words and the subtitle text stay the script's. Last resort: a silent placeholder of target length, status placeholder, logged in docs/morning-report.md."
+  },
+  {
+    "line_id": "l18",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[calm] हिसाब अब मैं रखूँगी, मौसी।",
+    "target_seconds": 2.8,
+    "note": "Bible's own b6 line, locked (kept apart in the two finales). Said as she unhooks the key ring: plain, certain, respectful to Mausi in form (आप-forms), no gloating. Weight on 'मैं'. Must be clear. Keep her low in her own range: in casting Mausi sat 1 to 2.4 semitones above Kiran, and the two share b1 to b6. Budget up to 3 takes (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper (D-0M2); length is settled in the edit. Transient errors: retry 3x (plan 7.8). Fallbacks in order: the bare line 'हिसाब अब मैं रखूँगी, मौसी।', then eleven_v3 with the original text. Then, only if a cast switch_if condition is met, the backup Rudrika (2kb0BzqPNMYVxWCj9dqt). Fallback prompts change tags only; the words and the subtitle text stay the script's. Last resort: a silent placeholder of target length, status placeholder, logged in docs/morning-report.md."
+  },
+  {
+    "line_id": "l19",
+    "lang": "hi",
+    "speaker": "mausi",
+    "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+    "model": "eleven_v4",
+    "text": "[chuckles] ले ले। भारी होती हैं, बेटा।",
+    "target_seconds": 3.0,
+    "note": "She lets her take them, almost amused: a small real chuckle before 'ले ले', then the warning dressed as advice, 'भारी' slow. Not a cackle. Check that 'chuckles' is not spoken as a word. Third in the trim order; generate it anyway. Low, warm, grainy, unhurried; fully voiced, never a whisper (bible). Cast note: soften with [gently], never [warmly] (in casting [warmly] lifted her pitch toward Kiran's). If she comes out higher than Kiran, log it for the Kiran/Mausi pair ear check (cast.json ear_check 3), not a retake. Budget up to 3 takes (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper (D-0M2); length is settled in the edit. Transient errors: retry 3x (plan 7.8). Fallbacks in order: script text '[gently] ले ले। भारी होती हैं, बेटा।', then the bare line 'ले ले। भारी होती हैं, बेटा।', then eleven_v3 with the original text. Then, only if a cast switch_if condition is met, the backup Kahani G (ZthnDvLLxYzM9qeFVSJe). Fallback prompts change tags only; the words and the subtitle text stay the script's. Last resort: a silent placeholder of target length, status placeholder, logged in docs/morning-report.md."
+  },
+  {
+    "line_id": "l20",
+    "lang": "hi",
+    "speaker": "billu",
+    "voice_id": "7b9mYhmnp0y2qSH1FnBL",
+    "model": "eleven_v4",
+    "text": "[nervous] और मौसी का क्या?",
+    "target_seconds": 1.8,
+    "note": "Toothpick gone, the jokes stopped; he asks Kiran, not Mausi. Slower than his usual pace, unsure who gives orders now. Not loud. Reject a stammer or a spoken tag. Budget up to 3 takes (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper (D-0M2); length is settled in the edit. Transient errors: retry 3x (plan 7.8). Fallbacks in order: script text '[quietly] और मौसी का क्या?', then the bare line 'और मौसी का क्या?', then eleven_v3 with the original text. Then, only if a cast switch_if condition is met, the backup Sujit (3RfQOFdEQ7vZM7w2xR57). Fallback prompts change tags only; the words and the subtitle text stay the script's. Last resort: a silent placeholder of target length, status placeholder, logged in docs/morning-report.md."
+  },
+  {
+    "line_id": "l21",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[calm] मौसी अब शादियाँ नहीं करेंगी। Bureau में बैठ के हिसाब लिखेंगी।",
+    "target_seconds": 5.6,
+    "note": "The sentence passed on Mausi, plainly, like reading out a duty roster. A beat between the sentences; 'Bureau' everyday English, said the Indian way. Transcript check: 'Bureau' heard (en pass). Longest single-frame hold (5.6 s target): do not retake for length. Keep her low in her own range: in casting Mausi sat 1 to 2.4 semitones above Kiran, and the two share b1 to b6. Budget up to 3 takes (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper (D-0M2); length is settled in the edit. Transient errors: retry 3x (plan 7.8). Fallbacks in order: the bare line 'मौसी अब शादियाँ नहीं करेंगी। Bureau में बैठ के हिसाब लिखेंगी।', then eleven_v3 with the original text. Then, only if a cast switch_if condition is met, the backup Rudrika (2kb0BzqPNMYVxWCj9dqt). Fallback prompts change tags only; the words and the subtitle text stay the script's. Last resort: a silent placeholder of target length, status placeholder, logged in docs/morning-report.md."
+  },
+  {
+    "line_id": "l22",
+    "lang": "hi",
+    "speaker": "aditya",
+    "voice_id": "zCXXiWzuZO7d9fERssmF",
+    "model": "eleven_v4",
+    "text": "[calm] Police के पास जाऊँगा, किरण।",
+    "target_seconds": 2.8,
+    "note": "On the stairs, first grey light. Soft-spoken and even, a pharmacist stating what he will do; तुम-level, her real name used deliberately. 'Police' said the Indian way. Under pressure he slows and drops in volume; never shouts. Budget up to 3 takes (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper (D-0M2); length is settled in the edit. Transient errors: retry 3x (plan 7.8). Fallbacks in order: the bare line 'Police के पास जाऊँगा, किरण।', then eleven_v3 with the original text. Then, only if a cast switch_if condition is met, the backup Arjun (3GWSpjn7tfVISB5tun6E). Fallback prompts change tags only; the words and the subtitle text stay the script's. Last resort: a silent placeholder of target length, status placeholder, logged in docs/morning-report.md."
+  },
+  {
+    "line_id": "l23",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[calm] जाओ। Complaint में क्या लिखवाओगे? कि बीवी भाग गई?",
+    "target_seconds": 4.8,
+    "note": "'जाओ।' first, almost permission. Then two questions, practical, not mocking: she is showing him the wall he will hit. 'Complaint' everyday English, said the Indian way. Transcript check: 'Complaint' heard (en pass). A small beat before 'कि बीवी भाग गई?'. Budget up to 3 takes (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper (D-0M2); length is settled in the edit. Transient errors: retry 3x (plan 7.8). Fallbacks in order: the bare line 'जाओ। Complaint में क्या लिखवाओगे? कि बीवी भाग गई?', then eleven_v3 with the original text. Then, only if a cast switch_if condition is met, the backup Rudrika (2kb0BzqPNMYVxWCj9dqt). Fallback prompts change tags only; the words and the subtitle text stay the script's. Last resort: a silent placeholder of target length, status placeholder, logged in docs/morning-report.md."
+  },
+  {
+    "line_id": "l24",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[quietly] मोहित ने भी नहीं लिखवाई थी।",
+    "target_seconds": 3.0,
+    "note": "Lower: the fact that closes the argument, said to the print she holds against her body. Not cruel; almost sorry. 'मोहित' clear. Fourth in the trim order; generate it anyway. Quiet but FULLY VOICED: reject a whisper (voiced_ratio below 0.6). Her Hindi [quietly] stayed voiced in casting (kiran_t2: 6 to 7 dB down, voiced 0.87), so keep the tag. Budget up to 3 takes (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper (D-0M2); length is settled in the edit. Transient errors: retry 3x (plan 7.8). Fallbacks in order: '[calm] मोहित ने भी नहीं लिखवाई थी।' (D-022 rule 1); then the bare line 'मोहित ने भी नहीं लिखवाई थी।' (D-022); then eleven_v3 with the original text. Then, only if a cast switch_if condition is met, the backup Rudrika (2kb0BzqPNMYVxWCj9dqt). Fallback prompts change tags only; the words and the subtitle text stay the script's. Last resort: a silent placeholder of target length, status placeholder, logged in docs/morning-report.md."
+  },
+  {
+    "line_id": "l25",
+    "lang": "hi",
+    "speaker": "aditya",
+    "voice_id": "zCXXiWzuZO7d9fERssmF",
+    "model": "eleven_v4",
+    "text": "[quietly] तुम जा सकती थीं।",
+    "target_seconds": 2.0,
+    "note": "Looking up at her: not an accusation, a question he cannot help. Low, slow, fully voiced; not breathy (casting: his quietest stretch, aditya_t2's last sentence, was voiced 0.45; reject below 0.6). Budget up to 3 takes (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper (D-0M2); length is settled in the edit. Transient errors: retry 3x (plan 7.8). Fallbacks in order: '[calm] तुम जा सकती थीं।' (D-022 rule 1); then the bare line 'तुम जा सकती थीं।' (D-022); then eleven_v3 with the original text. Then, only if a cast switch_if condition is met, the backup Arjun (3GWSpjn7tfVISB5tun6E). Fallback prompts change tags only; the words and the subtitle text stay the script's. Last resort: a silent placeholder of target length, status placeholder, logged in docs/morning-report.md."
+  },
+  {
+    "line_id": "l26",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[sighs] कहाँ?",
+    "target_seconds": 1.8,
+    "note": "A short real sigh, then one word: there was nowhere to go. Not self-pity, flat. Check that 'sighs' is not spoken as a word and that the sigh does not swallow 'कहाँ'. One word, unstable on v4: budget up to 4 takes. Budget up to 4 takes (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper (D-0M2); length is settled in the edit. Transient errors: retry 3x (plan 7.8). Fallbacks in order: script text '[quietly] कहाँ?', then the bare line 'कहाँ?', then eleven_v3 with the original text. Then, only if a cast switch_if condition is met, the backup Rudrika (2kb0BzqPNMYVxWCj9dqt). Fallback prompts change tags only; the words and the subtitle text stay the script's. Last resort: a silent placeholder of target length, status placeholder, logged in docs/morning-report.md."
+  },
+  {
+    "line_id": "l27",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[calm] घर जाओ, आदित्य। दुकान खोलो।",
+    "target_seconds": 3.0,
+    "note": "Sending him home alive with nothing: kind and final, his name used once. A beat between the sentences; 'दुकान खोलो' plain, like advice to a neighbour. Not cold. He has already turned away. Budget up to 3 takes (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper (D-0M2); length is settled in the edit. Transient errors: retry 3x (plan 7.8). Fallbacks in order: the bare line 'घर जाओ, आदित्य। दुकान खोलो।', then eleven_v3 with the original text. Then, only if a cast switch_if condition is met, the backup Rudrika (2kb0BzqPNMYVxWCj9dqt). Fallback prompts change tags only; the words and the subtitle text stay the script's. Last resort: a silent placeholder of target length, status placeholder, logged in docs/morning-report.md."
+  },
+  {
+    "line_id": "l28",
+    "lang": "hi",
+    "speaker": "chhoti",
+    "voice_id": "2lLgWMtK52t50e2eLKAk",
+    "model": "eleven_v4",
+    "text": "[chuckles] दीदी, मेरी शादी भी film जैसी होगी ना?",
+    "target_seconds": 3.8,
+    "note": "Evening, the bureau. A 19-year-old bride-in-training, giggling at Kiran with a fold trembling in her fingers: a small real chuckle at the start, then bright and dreamy, 'film' said the Indian way, 'ना' lifting. A young woman, not a child; reject if shrill or childish (cheerful casting takes reached about 444 Hz) or if the tag is spoken. Budget up to 3 takes (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper (D-0M2); length is settled in the edit. Transient errors: retry 3x (plan 7.8). Fallbacks in order: script text '[cheerful] दीदी, मेरी शादी भी film जैसी होगी ना?', then the bare line 'दीदी, मेरी शादी भी film जैसी होगी ना?', then eleven_v3 with the original text. Then, only if a cast switch_if condition is met, the backup Shreya G (KawjuInLhxYsnVJlqveG). Fallback prompts change tags only; the words and the subtitle text stay the script's. Last resort: a silent placeholder of target length, status placeholder, logged in docs/morning-report.md."
+  },
+  {
+    "line_id": "l29",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[quietly] हाथ मत काँपने दे।",
+    "target_seconds": 2.0,
+    "note": "She does not answer the question. Her hand closes over Chhoti's and holds it still: a teacher's instruction, low and kind, already in Mausi's unhurried rhythm. Quiet but FULLY VOICED: reject a whisper (voiced_ratio below 0.6). Her Hindi [quietly] stayed voiced in casting (kiran_t2: 6 to 7 dB down, voiced 0.87), so keep the tag. Budget up to 3 takes (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper (D-0M2); length is settled in the edit. Transient errors: retry 3x (plan 7.8). Fallbacks in order: '[calm] हाथ मत काँपने दे।' (D-022 rule 1); then the bare line 'हाथ मत काँपने दे।' (D-022); then eleven_v3 with the original text. Then, only if a cast switch_if condition is met, the backup Rudrika (2kb0BzqPNMYVxWCj9dqt). Fallback prompts change tags only; the words and the subtitle text stay the script's. Last resort: a silent placeholder of target length, status placeholder, logged in docs/morning-report.md."
+  },
+  {
+    "line_id": "l30",
+    "lang": "hi",
+    "speaker": "kiran",
+    "voice_id": "FtcqBL9uKtROtyotPjvE",
+    "model": "eleven_v4",
+    "text": "[calm] पूरी पुड़िया डाल दे, छोटी। आधी में नींद नहीं आती।",
+    "target_seconds": 5.0,
+    "note": "Cliffhanger line, D-007 direction 12 word for word; locked. Level and warm, in Mausi's unhurried rhythm: the same lesson Mausi once gave her, now hers to give. A beat after 'छोटी।'; 'आधी में नींद नहीं आती' slow and plain, no menace, the ambiguity left in. Unfiltered; the music bed ducks under it. Must be clear. Budget up to 3 takes (D-011). Retake only for wrong words, a spoken tag, a lost or wrong whisper (D-0M2); length is settled in the edit. Transient errors: retry 3x (plan 7.8). Fallbacks in order: the bare line 'पूरी पुड़िया डाल दे, छोटी। आधी में नींद नहीं आती।', then eleven_v3 with the original text. Then, only if a cast switch_if condition is met, the backup Rudrika (2kb0BzqPNMYVxWCj9dqt). Fallback prompts change tags only; the words and the subtitle text stay the script's. Last resort: a silent placeholder of target length, status placeholder, logged in docs/morning-report.md."
+  }
+]

@@ -1,0 +1,153 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,120"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 120
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,120",
+				"to": "00:00:00,540"
+			},
+			"offsets": {
+				"from": 120,
+				"to": 540
+			},
+			"text": " खॉल"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,540",
+				"to": "00:00:01,450"
+			},
+			"offsets": {
+				"from": 540,
+				"to": 1450
+			},
+			"text": " शामकी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,450",
+				"to": "00:00:02,250"
+			},
+			"offsets": {
+				"from": 1450,
+				"to": 2250
+			},
+			"text": " बूलावा"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,250",
+				"to": "00:00:02,640"
+			},
+			"offsets": {
+				"from": 2250,
+				"to": 2640
+			},
+			"text": " राद"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,640",
+				"to": "00:00:03,000"
+			},
+			"offsets": {
+				"from": 2640,
+				"to": 3000
+			},
+			"text": " का"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,000",
+				"to": "00:00:03,270"
+			},
+			"offsets": {
+				"from": 3000,
+				"to": 3270
+			},
+			"text": " और"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,270",
+				"to": "00:00:03,800"
+			},
+			"offsets": {
+				"from": 3270,
+				"to": 3800
+			},
+			"text": " शब्द"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,800",
+				"to": "00:00:04,210"
+			},
+			"offsets": {
+				"from": 3800,
+				"to": 4210
+			},
+			"text": " वही"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,210",
+				"to": "00:00:04,710"
+			},
+			"offsets": {
+				"from": 4210,
+				"to": 4710
+			},
+			"text": " हर"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,710",
+				"to": "00:00:06,000"
+			},
+			"offsets": {
+				"from": 4710,
+				"to": 6000
+			},
+			"text": " महीनेवाले"
+		}
+	]
+}

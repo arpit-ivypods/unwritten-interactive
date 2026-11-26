@@ -1,0 +1,193 @@
+{
+  "scene_id": "proof-flat2d",
+  "status": "generated",
+  "status_note": "All 9 cues generated 2026-11-26 through the ElevenLabs connector (flow cV1wMueye1TrA5FOcwtt), one generation each, 1,036 credits. Files are fitted to planned length; per-cue generation ids, probes, edits and QC notes are in manifest.jsonl. The connector exposes no duration or prompt_influence controls, so those fields below were not applied. mus_caper_bed does not match its structure section (drop arrives at about 22 s, not 12 s); see its manifest row. Nobody has listened to any cue.",
+  "sources": [
+    "script.hi.json (music_note, sfx_notes, beats)",
+    "shots.json (duration_s per shot)"
+  ],
+  "timebase": "seconds from scene start, derived from shots.json durations; script.hi.json says timings are estimates, so S13 should re-anchor point effects to measured dialogue",
+  "shot_starts_s": {
+    "s01": 0.0,
+    "s02": 2.8,
+    "s03": 6.5,
+    "s04": 9.5,
+    "s05": 12.0,
+    "s06": 15.0,
+    "s07": 18.2,
+    "s08": 25.0,
+    "s09": 27.5,
+    "end": 30.3
+  },
+  "mix": {
+    "dialogue_first": true,
+    "music_gain_db": -18,
+    "music_duck_under_dialogue_db": -8,
+    "ambience_gain_db": -24,
+    "sfx_gain_db": -10,
+    "loudness_target": "-14 LUFS integrated, -1 dBTP (plan 7.1)",
+    "hard_rule": "Music stops dead at 25.0 (first phone buzz, s08). No music after that. Hard cut to total silence at 30.3 (cut to black)."
+  },
+  "cues": [
+    {
+      "id": "mus_caper_bed",
+      "type": "music",
+      "model": "music_v2_5",
+      "instrumental": true,
+      "duration_s": 35,
+      "start_s": 2.8,
+      "end_s": 25.0,
+      "trim_note": "Generated ~35 s per brief for headroom; script only wants music from b02 (2.8) to the first buzz (25.0), 22.2 s of use. S13 trims the tail; use the first ~22 s.",
+      "structure": [
+        {
+          "music_s": "0-9",
+          "scene_s": "2.8-12.0",
+          "content": "sneaky caper motif: pizzicato strings, soft ghatam tick, playful"
+        },
+        {
+          "music_s": "9-12",
+          "scene_s": "12.0-15.0",
+          "content": "same motif, a touch more comic and agitated (Meenu turns on Bablu)"
+        },
+        {
+          "music_s": "12-22",
+          "scene_s": "15.0-25.0",
+          "content": "thins out to a single low held cello note (l08, the scene turns), suspense"
+        },
+        {
+          "music_s": "22-35",
+          "scene_s": "unused",
+          "content": "held low note continues and fades, headroom only"
+        }
+      ],
+      "prompt": "Instrumental comic-noir caper cue for an Indian small-town police station at 2 a.m. Light, sneaky, tiptoeing pizzicato strings with a soft dry ghatam and tabla tick, around 96 BPM, playful and slightly comic. First 12 seconds: the sneaky motif, getting a little more agitated and comic near the end. At about 12 seconds everything drops away except one single low sustained cello note, quiet and tense, held to the end with no new melody. No vocals, no drums kit, no build-up, sparse and intimate.",
+      "gain_db": -18
+    },
+    {
+      "id": "mus_stop_sting",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "duration_s": 1.5,
+      "loop": false,
+      "prompt_influence": 0.6,
+      "start_s": 25.0,
+      "role": "the ending sting the brief asks for. The script forbids music after the first buzz, so the sting is the music's last event: one short dry stab that marks the dead stop, landing with the first buzz pulse, then silence except the buzz.",
+      "prompt": "A single short dry pizzicato string stab with a muted low tabla hit, one hit only, abrupt, tense, no reverb tail.",
+      "gain_db": -14
+    },
+    {
+      "id": "amb_malkhana_night",
+      "type": "ambience",
+      "model": "eleven_text_to_sound_v3",
+      "duration_s": 20,
+      "loop": true,
+      "prompt_influence": 0.4,
+      "start_s": 0.0,
+      "end_s": 30.3,
+      "shot": "s01-s09",
+      "automation": [
+        {
+          "at_s": 25.0,
+          "gain_db": -34,
+          "note": "ducks under the phone buzz (b07)"
+        },
+        {
+          "at_s": 30.3,
+          "gain_db": "cut",
+          "note": "hard cut to silence"
+        }
+      ],
+      "prompt": "Quiet night room tone inside a small Indian police station store room: distant crickets outside the window, a slow creaking ceiling fan turning, faint electrical hum of a tube light from the corridor. Steady, calm, no voices, no traffic, seamless loop.",
+      "gain_db": -24
+    },
+    {
+      "id": "sfx_s01_torch_locker",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "duration_s": 2.0,
+      "loop": false,
+      "prompt_influence": 0.6,
+      "start_s": 0.0,
+      "shot": "s01",
+      "note": "Lands in the 0.8 s silence before l01.",
+      "prompt": "A plastic torch flashlight switch clicking on, then a thin steel locker door creaking as it swings open a little, in a quiet room.",
+      "gain_db": -10
+    },
+    {
+      "id": "sfx_s03_chai_clink",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "duration_s": 1.0,
+      "loop": false,
+      "prompt_influence": 0.6,
+      "start_s": 6.5,
+      "shot": "s03",
+      "note": "Off-screen, at the head of the laddoo insert, inside the 1.0 s silence before l04. Slightly distant.",
+      "prompt": "A small glass tumbler of tea set down on a steel shelf, one light clink, close and dry.",
+      "gain_db": -12
+    },
+    {
+      "id": "sfx_s05_breath_torch",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "duration_s": 1.5,
+      "loop": false,
+      "prompt_influence": 0.5,
+      "start_s": 12.0,
+      "shot": "s05",
+      "note": "Bablu's sharp intake as Meenu cuts him off; keep under l07 onset.",
+      "prompt": "A man's sharp startled intake of breath, followed by a handheld metal torch rattling in his hand.",
+      "gain_db": -12
+    },
+    {
+      "id": "sfx_s06_padlock",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "duration_s": 2.0,
+      "loop": false,
+      "prompt_influence": 0.6,
+      "start_s": 15.0,
+      "shot": "s06",
+      "note": "Under the first half of l08.",
+      "prompt": "A heavy old brass padlock being lifted and turned, knocking twice against a steel hasp, metallic, close up.",
+      "gain_db": -11
+    },
+    {
+      "id": "sfx_s07_keyring",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "duration_s": 2.0,
+      "loop": false,
+      "prompt_influence": 0.6,
+      "start_s": 18.2,
+      "shot": "s07",
+      "note": "Before l09; key drawn from trouser pocket.",
+      "prompt": "Cloth rustle of a key ring being pulled out of a trouser pocket, a small brass key ring jingling once, then still.",
+      "gain_db": -12
+    },
+    {
+      "id": "sfx_s08_phone_buzz",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "duration_s": 6.0,
+      "loop": true,
+      "prompt_influence": 0.7,
+      "start_s": 25.0,
+      "end_s": 30.3,
+      "shot": "s08-s09",
+      "note": "Three pulses in b07 (25.0-27.5), continues through b08. Place l12 in a gap between pulses or duck the buzz about -12 dB under the line; back to full for the one-beat hold; hard cut at 30.3 mid-buzz.",
+      "automation": [
+        {
+          "during": "l12",
+          "gain_db": -12
+        },
+        {
+          "at_s": 30.3,
+          "gain_db": "cut"
+        }
+      ],
+      "prompt": "A mobile phone vibrating face up on a wooden desk, loud in a silent room: buzz pulses about 0.7 seconds long with about 0.6 second gaps, rattling the wood, steady repeating rhythm.",
+      "gain_db": -6
+    }
+  ]
+}

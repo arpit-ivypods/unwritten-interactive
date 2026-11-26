@@ -1,0 +1,247 @@
+{
+  "episode_id": "s2b03",
+  "series_id": "series2",
+  "status": "planned",
+  "status_note": "Planned only. No audio generated, nothing listened to. The separate runner generates the one-off cues below once each through the connector (library cues come from content/series2/sound/), fits them to planned_duration_s with ffmpeg and records ids, probes and credits in this folder's manifest.jsonl.",
+  "authority": [
+    "D-011 reuse: library cues by cue_id; only sounds the library lacks are one-offs here.",
+    "D-014 rule 6 / D-0M2: shots follow measured voice, so every cue is anchored to a beat, a line id or a word, never to fixed seconds. S13 places them against measured takes.",
+    "D-0M4: -14 LUFS integrated, true peak about -1 dBTP, tolerance +/-0.5 LU.",
+    "D-019: series2 Gate 2."
+  ],
+  "sources": [
+    "content/series2/episodes/s2b03/script.hi.json and script.en.json (beats, sfx_notes, music_note, silences)",
+    "content/series2/sound/library.json (cue ids, mix starting gains, notes for s2b03)"
+  ],
+  "languages": "One cue sheet for both cuts. Line ids l01 to l26 and the beat silences are the same in Hindi and English; where a cue sits on a word, both words are given.",
+  "anchor_format": "at: 'lNN.start' / 'lNN.end' = start / end of the measured take; 'lNN@word' = on that word in the take; 'bN.silence' = the beat's scripted silence; 'bN.shotK' = that still.",
+  "library_cues_used": [
+    {
+      "cue_id": "amb_magistrate_room",
+      "role": "bed",
+      "span": "b1 frame one to the b10/b11 cut",
+      "notes": "Starts with picture (0.5 s room tone alone before l01). Base level through b1-b8, including the whole b4 hold (fan only, no lift, no music). Extra duck under l12. b9: 'the bed thins' as the room empties: down about 4 dB from b9 shot 1 to the end of b10, and a gentle low-pass (about 6 kHz) so the far birds and traffic recede. Hard cut out at the b10/b11 cut; the warm chord carries across, not the bed."
+    },
+    {
+      "cue_id": "amb_talkies_lobby",
+      "role": "bed",
+      "span": "b11 frame one to the end",
+      "time_layer": "morning",
+      "notes": "New bed on the cut, no crossfade with the court. Ducks under l26 so it stays fully clear, back to base for the final 1.2 s hold of lobby tone. No wall clock (sfx_wall_clock_tick is a night layer, not used)."
+    },
+    {
+      "cue_id": "lyr_morning_birds",
+      "role": "layer on amb_talkies_lobby",
+      "span": "b11 whole beat",
+      "notes": "Birds through the high windows: high-pass about 400 Hz, a little room reverb, at layer gain minus a further 3 dB. Follows the lobby bed's ducks."
+    },
+    {
+      "cue_id": "sfx_far_train_horn",
+      "role": "point",
+      "at": "b11.shot1 (the 1.5 s opening wide, before l23)",
+      "notes": "Once. Start at the head of the wide; let the tail fade under the start of l23 at about -6 dB below sfx gain, low-passed, so it reads far off and never competes with l23."
+    },
+    {
+      "cue_id": "sfx_bench_creak",
+      "role": "point",
+      "at": "b4.silence, about the middle of shot 1 (Nandini at the rail)",
+      "notes": "One creak of the wooden witness stand, the only event in the 3.5 s hold besides the fan. Pull down 3 dB from sfx gain: it is weight shifting, not a stand-up."
+    },
+    {
+      "cue_id": "sfx_paper_slip",
+      "role": "point",
+      "at": "b9.shot1, as Pushpa holds up the open office envelope, just before l18.start",
+      "notes": "A short paper rustle for the suspension order (open, no wax, unlike the exhibits). The library note pencils this cue for b7; b7's sealed-envelope-and-wax sound is a different object, so it is the one-off sfx_s2b03_envelope_wax_turn and paper_slip moves here. Pick the cleanest second; keep it under l18's first word or just before it."
+    },
+    {
+      "cue_id": "mus_tension_note",
+      "role": "music",
+      "span": "l10.start to the b8/b9 cut",
+      "notes": "Enters under l10 ('बहुरूपिये...' / 'A phone found...') with a 1.5 s fade-in from silence. Ducks right down under l12 (see mix). Holds thinly through b7 and under b8's order (l15-l17). Out at the b8/b9 cut with a 0.3 s fade: no music in b9. Any section can be used (steady level by design); loop by crossfade if the measured span exceeds 40 s."
+    },
+    {
+      "cue_id": "mus_theme_warm_ending",
+      "role": "music",
+      "span": "b10.silence (shot 3, the held two-shot over the medal, after l22.end) across the cut to the end of b11",
+      "notes": "Opening warm chord (music 0 s) enters on the b10 shot 3 hold and carries across the cut into b11. The music_note asks for no melody hook, so skip the solo-motif section (music 12-34 s): hold the chord section, then crossfade (about 2 s, under l24 or the gap after it) into the resolution (music 34-40 s), timed back from the end so the held major chord lands on the final 1.2 s hold after l26. Lift about +2 dB on 'बुलाइए' / 'Call them in' (l25), duck under l26, resolve on the hold. Last frame: let the chord ring to the end of picture with a 0.5 s fade at the very end, no hard cut to black silence (the episode is a resolution)."
+    }
+  ],
+  "one_off_cues": [
+    {
+      "cue_id": "sfx_s2b03_pen_taps",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A ballpoint pen tapping lightly on a wooden rail in a quiet room: about eight dry, regular, unhurried taps, one every half second, close-mic. No writing, no voices, no paper.",
+      "planned_duration_s": 5.0,
+      "loop": true,
+      "used_at": [
+        {
+          "at": "l01@'हाँ या ना' / 'Yes or no'",
+          "beat": "b1",
+          "note": "One single tap only, cut from the cleanest tap in the file."
+        },
+        {
+          "at": "l02.start to l03.end",
+          "beat": "b2",
+          "note": "Light and regular under both lines, about -6 dB below sfx gain so it never masks consonants. Stops dead with the last word of l03 (no tap after it). Loop the regular section if the measured span is longer than the file."
+        }
+      ],
+      "why_one_off": "Pen taps appear only in s2b03 (library one_offs list). One file serves both b1 and b2.",
+      "status": "generated"
+    },
+    {
+      "cue_id": "sfx_s2b03_hand_bell",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A small brass hand bell on a desk struck once by a flat palm: one sharp, bright ring that decays quickly to nothing within about half a second, in a quiet room. One ring only, no voices.",
+      "planned_duration_s": 1.0,
+      "loop": false,
+      "used_at": [
+        {
+          "at": "l04.end (on the dash, cutting Nirala off), into b3.silence",
+          "beat": "b3",
+          "note": "Hits exactly where l04 is cut (trim l04 hard at the dash). The ring must decay fully inside the 0.5 s silence: fade its tail to silence by 0.45 s so it is gone before l05.start. Full sfx gain: it is the loudest effect in the episode."
+        }
+      ],
+      "why_one_off": "Library lists the brass hand bell as an s2b03 one-off.",
+      "status": "generated"
+    },
+    {
+      "cue_id": "sfx_s2b03_leather_grip",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A hand closing hard around a pair of folded sunglasses: one small, tight creak of leather and skin with the faintest click of a plastic frame, very close, in a quiet room. No voices.",
+      "planned_duration_s": 1.0,
+      "loop": false,
+      "used_at": [
+        {
+          "at": "l12.end, on b6.shot5 (Bhaiyaji's fist)",
+          "beat": "b6",
+          "note": "After the last word of l12, never under it. Small: about -4 dB below sfx gain."
+        }
+      ],
+      "why_one_off": "Library lists it as an s2b03 one-off.",
+      "status": "generated"
+    },
+    {
+      "cue_id": "sfx_s2b03_envelope_wax_turn",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A sealed stiff brown paper envelope lifted off a wooden table and turned over in the hand: a soft dry paper scrape and a faint brittle tick of a hard wax seal, close and quiet. No tearing, no voices.",
+      "planned_duration_s": 1.5,
+      "loop": false,
+      "used_at": [
+        {
+          "at": "b7.silence (the 1.0 s before l13), tail under l13.start",
+          "beat": "b7",
+          "note": "The magistrate's hand lifts and turns the envelope; the wax is unbroken, so no crack. Keep under l13 at -6 dB if it overlaps."
+        }
+      ],
+      "why_one_off": "Library lists the envelope and wax scrape as an s2b03 one-off.",
+      "status": "generated"
+    },
+    {
+      "cue_id": "sfx_s2b03_medal_slide",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A small brass medal on a striped cloth ribbon slid a short way across a wooden table by a hand: a dry soft slide of cloth and a light metal disc on wood, close, about one second. No clink, no voices.",
+      "planned_duration_s": 1.0,
+      "loop": false,
+      "used_at": [
+        {
+          "at": "b8.silence (the 1.0 s before l15), on b8.shot1",
+          "beat": "b8",
+          "note": "Sound only (the still shows the hand resting on the medal). Must finish before l15.start: under l15 to l17 nothing else but the thin tension note."
+        }
+      ],
+      "why_one_off": "Library lists the ribbon and metal disc slide as an s2b03 one-off.",
+      "status": "generated"
+    },
+    {
+      "cue_id": "sfx_s2b03_steps_far_door",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "In a large quiet room with a wooden floor: a few people's footsteps walking away on the wooden boards, fading off into the distance, then a heavy wooden door closing softly far away. No voices, no music.",
+      "planned_duration_s": 4.0,
+      "loop": false,
+      "used_at": [
+        {
+          "at": "b9 head (the cut in time), from frame one to l18.start",
+          "beat": "b9",
+          "note": "The room emptying. Footsteps already fading as b9 opens, the far door just before or under the start of l18 at low level (about -8 dB below sfx gain, low-passed). If the measured gap before l18 is short, keep the steps under l18 well down rather than delaying the line."
+        }
+      ],
+      "why_one_off": "Wooden-floor steps and a far door occur only here; sfx_steps_terrazzo is the wrong surface and the library's doors are a lane door with chain and bolt. One combined file.",
+      "status": "generated"
+    },
+    {
+      "cue_id": "sfx_s2b03_strap_button_cloth",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A shoulder epaulette slid off a khaki uniform shirt: one faint small click of a plastic shirt button coming undone, then a soft short drag of stiff cloth, very close and quiet. No voices.",
+      "planned_duration_s": 1.5,
+      "loop": false,
+      "used_at": [
+        {
+          "at": "b9.silence (the 1.2 s between l18.end and l19.start), on b9.shot2",
+          "beat": "b9",
+          "note": "Faint, about -6 dB below sfx gain; the thinned bed and this are the only sounds in the silence. No music."
+        }
+      ],
+      "why_one_off": "Library lists the strap button and cloth drag as an s2b03 one-off.",
+      "status": "generated"
+    },
+    {
+      "cue_id": "sfx_s2b03_token_string",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "prompt": "A string of small thin cardboard tokens held up and shaken lightly in one hand: a soft, light, dry rattle and flutter of card on string, close, in a big quiet hall. No metal, no voices.",
+      "planned_duration_s": 2.0,
+      "loop": false,
+      "used_at": [
+        {
+          "at": "b11.shot3, as Nirala holds the token string up, under the start of l24 or just before it",
+          "beat": "b11",
+          "note": "Light, about -6 dB below sfx gain."
+        },
+        {
+          "at": "l26@'Token एक' / 'Token one', b11.shot5 (first token lifted off the string)",
+          "beat": "b11",
+          "note": "Optional, one short flick only and only after 'एक' / 'one' has landed; the script says l26 stays fully clear, so drop it if it touches the word."
+        }
+      ],
+      "why_one_off": "Library lists the cardboard tokens on string as an s2b03 one-off.",
+      "status": "generated"
+    }
+  ],
+  "mix": {
+    "dialogue_first": true,
+    "loudness_target": "-14 LUFS integrated, -1 dBTP, tolerance +/-0.5 LU (D-0M4)",
+    "starting_gains_db": "From library mix: music -18, music under dialogue -8 further, ambience -24, ambience layer -28, sfx -10. Per-cue offsets above are relative to these. S13 sets final levels.",
+    "phone_filter": "None in this episode. l12 is Nandini quoting the recording, not the recording played: keep it dry and unfiltered (script sfx_notes b6). lyr_phone_line_hiss is not used.",
+    "ducking": [
+      "All music ducks -8 dB under every line (library default).",
+      "l12: the bed ducks a further 4 dB and mus_tension_note ducks 'right down' (about a further 6 dB, near inaudible) for the whole line, so every word of the quote is clear; both return after l12.end, before the leather grip.",
+      "l26: lobby bed and birds duck a further 4 dB and mus_theme_warm_ending ducks under the line; l26 must stay fully clear ('एक' / 'one' not swallowed). Bed returns to base for the 1.2 s hold.",
+      "b9-b10: the court bed thins (about -4 dB, low-passed) and stays thinned to the cut."
+    ],
+    "music_in_out": [
+      "b1-b5: no music at all. Court is room tone and the pen. No sting in b4.",
+      "mus_tension_note IN at l10.start (1.5 s fade-in), thin through b7 and b8, OUT at the b8/b9 cut (0.3 s fade).",
+      "b9 and b10 up to l22.end: no music.",
+      "mus_theme_warm_ending IN on b10.silence (shot 3 hold after l22), carried across the cut into b11, +2 dB on l25's last word, ducked under l26, resolves on the final 1.2 s hold; 0.5 s fade at the last frame."
+    ],
+    "hard_rules": [
+      "l04 is cut hard on its dash by the bell; the bell is fully gone before l05.start.",
+      "The b8 medal slide ends before l15.start; under l15 to l17 nothing but the thin tension note and the bed.",
+      "Court bed hard-cuts at b10/b11; the lobby bed starts on the cut."
+    ],
+    "trim_order_sound_note": "If the writer's trim order shortens the b4 hold (3.5 to 2.5 s) or the b8/b9/b11 silences, the point cues in those silences stay and are not moved into lines; the bench creak keeps its place mid-hold."
+  },
+  "counts": {
+    "library_cues_used": 8,
+    "one_off_cues": 8,
+    "one_off_generations": 8
+  },
+  "credit_note": "Not estimated here from a measurement. The proofs' effects came back 0.5 to 8 s raw; eight short one-offs are the only new generation this episode needs."
+}

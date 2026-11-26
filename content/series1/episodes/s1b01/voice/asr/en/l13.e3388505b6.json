@@ -1,0 +1,153 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,120"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 120
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,120",
+				"to": "00:00:00,240"
+			},
+			"offsets": {
+				"from": 120,
+				"to": 240
+			},
+			"text": " You"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,240",
+				"to": "00:00:00,550"
+			},
+			"offsets": {
+				"from": 240,
+				"to": 550
+			},
+			"text": " said"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,550",
+				"to": "00:00:00,940"
+			},
+			"offsets": {
+				"from": 550,
+				"to": 940
+			},
+			"text": " there"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,940",
+				"to": "00:00:01,180"
+			},
+			"offsets": {
+				"from": 940,
+				"to": 1180
+			},
+			"text": " was"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,180",
+				"to": "00:00:01,340"
+			},
+			"offsets": {
+				"from": 1180,
+				"to": 1340
+			},
+			"text": " no"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,340",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 1340,
+				"to": 2000
+			},
+			"text": " code."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,000",
+				"to": "00:00:02,260"
+			},
+			"offsets": {
+				"from": 2000,
+				"to": 2260
+			},
+			"text": " Show"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,260",
+				"to": "00:00:02,400"
+			},
+			"offsets": {
+				"from": 2260,
+				"to": 2400
+			},
+			"text": " me"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,400",
+				"to": "00:00:02,650"
+			},
+			"offsets": {
+				"from": 2400,
+				"to": 2650
+			},
+			"text": " your"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,650",
+				"to": "00:00:03,000"
+			},
+			"offsets": {
+				"from": 2650,
+				"to": 3000
+			},
+			"text": " hands."
+		}
+	]
+}

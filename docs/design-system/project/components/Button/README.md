@@ -1,0 +1,3 @@
+# Button
+
+Pill-shaped actions in three weights. Use one `uw-btn--primary` per screen for the step that moves the story forward (play, cast ballot). `uw-btn--ink` is for confirmations inside glass panels and `uw-btn--glass` for everything secondary. Default height 54px, `uw-btn--sm` 44px, `uw-btn--icon` a 44px circle with an `aria-label`; `uw-btn--block` fills its container. A disabled button turns to quiet glass with muted text, never a faded version of its colour, and its label says why ("Voting closed"). You provide the label and, optionally, an 18px stroke icon before it. Never put two primary buttons side by side, and never write a label that is only "OK" or "Next": say what happens.

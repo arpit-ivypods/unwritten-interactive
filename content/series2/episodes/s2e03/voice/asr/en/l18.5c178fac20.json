@@ -1,0 +1,164 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,050"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 50
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,050",
+				"to": "00:00:00,210"
+			},
+			"offsets": {
+				"from": 50,
+				"to": 210
+			},
+			"text": " If"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,210",
+				"to": "00:00:00,310"
+			},
+			"offsets": {
+				"from": 210,
+				"to": 310
+			},
+			"text": " I"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,310",
+				"to": "00:00:00,940"
+			},
+			"offsets": {
+				"from": 310,
+				"to": 940
+			},
+			"text": " arrest"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,940",
+				"to": "00:00:01,230"
+			},
+			"offsets": {
+				"from": 940,
+				"to": 1230
+			},
+			"text": " him"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,230",
+				"to": "00:00:01,740"
+			},
+			"offsets": {
+				"from": 1230,
+				"to": 1740
+			},
+			"text": " now,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,740",
+				"to": "00:00:02,030"
+			},
+			"offsets": {
+				"from": 1740,
+				"to": 2030
+			},
+			"text": " he's"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,030",
+				"to": "00:00:02,180"
+			},
+			"offsets": {
+				"from": 2030,
+				"to": 2180
+			},
+			"text": " in"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,180",
+				"to": "00:00:02,320"
+			},
+			"offsets": {
+				"from": 2180,
+				"to": 2320
+			},
+			"text": " my"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,320",
+				"to": "00:00:02,670"
+			},
+			"offsets": {
+				"from": 2320,
+				"to": 2670
+			},
+			"text": " lock"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,670",
+				"to": "00:00:03,200"
+			},
+			"offsets": {
+				"from": 2670,
+				"to": 3200
+			},
+			"text": " up,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,200",
+				"to": "00:00:03,720"
+			},
+			"offsets": {
+				"from": 3200,
+				"to": 3720
+			},
+			"text": " alive."
+		}
+	]
+}

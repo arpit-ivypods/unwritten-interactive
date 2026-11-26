@@ -1,0 +1,131 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,060"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 60
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,060",
+				"to": "00:00:00,700"
+			},
+			"offsets": {
+				"from": 60,
+				"to": 700
+			},
+			"text": " बह्याजी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,700",
+				"to": "00:00:00,810"
+			},
+			"offsets": {
+				"from": 700,
+				"to": 810
+			},
+			"text": " की"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,810",
+				"to": "00:00:01,170"
+			},
+			"offsets": {
+				"from": 810,
+				"to": 1170
+			},
+			"text": " अपनी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,170",
+				"to": "00:00:01,530"
+			},
+			"offsets": {
+				"from": 1170,
+				"to": 1530
+			},
+			"text": " आवाज"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,530",
+				"to": "00:00:02,160"
+			},
+			"offsets": {
+				"from": 1530,
+				"to": 2160
+			},
+			"text": " रेकोर्ट"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,160",
+				"to": "00:00:02,790"
+			},
+			"offsets": {
+				"from": 2160,
+				"to": 2790
+			},
+			"text": " होगी,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,790",
+				"to": "00:00:03,540"
+			},
+			"offsets": {
+				"from": 2790,
+				"to": 3540
+			},
+			"text": " रंगे"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,540",
+				"to": "00:00:04,160"
+			},
+			"offsets": {
+				"from": 3540,
+				"to": 4160
+			},
+			"text": " हाथ"
+		}
+	]
+}

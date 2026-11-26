@@ -1,0 +1,277 @@
+{
+ "about": "edit.json that reproduces content/proof/flat2d's cut (its build_timeline.py constants, as data). Used by test/run_proof_test.sh on a scratch copy.",
+ "render_name": "proof",
+ "slate_color": "#1b2440",
+ "voice_models": [
+  "v4"
+ ],
+ "words": {
+  "asr_match": "midpoint"
+ },
+ "subs": {
+  "join_gap": 0,
+  "clamped_words": "squeeze"
+ },
+ "measure": {
+  "merge_blip_ms": 30,
+  "edge_tol_ms": 30
+ },
+ "layout": {
+  "first_lead": 4,
+  "lead_default": 5,
+  "use_silent_lead": false,
+  "lead": {
+   "s01": 27,
+   "s03": 30,
+   "s04": 10,
+   "s05": 0,
+   "s06": 8,
+   "s07": 21,
+   "s09": {
+    "after_pulse": {
+     "cue": "sfx_s08_phone_buzz",
+     "from": "s08.start"
+    },
+    "plus": 1
+   }
+  },
+  "gap_default": 8,
+  "gap": {
+   "l02>l03": 6,
+   "l09>l10": 5,
+   "l10>l11": 6
+  },
+  "tail_default": 8,
+  "min_last_segment": 0,
+  "tail": {
+   "s09": {
+    "frames": 30,
+    "in_pulse": {
+     "cue": "sfx_s08_phone_buzz",
+     "from": "s08.start",
+     "frames": 9
+    }
+   }
+  },
+  "end_black": 12,
+  "cutoffs": [
+   {
+    "line": "l06",
+    "run": 2,
+    "trunc": 7,
+    "next_lead": 0
+   },
+   {
+    "line": "l11",
+    "run": 2,
+    "clip": "speech"
+   }
+  ]
+ },
+ "lines": {
+  "l01": {
+   "gain_db": {
+    "hi": -4.0
+   }
+  },
+  "l04": {
+   "segment_gain_db": {
+    "hi": 5.0,
+    "en": 8.0
+   }
+  },
+  "l07": {
+   "gain_db": 4.0
+  },
+  "l08": {
+   "gain_db": {
+    "hi": 3.0,
+    "en": 5.0
+   }
+  },
+  "l12": {
+   "gain_db": 2.0
+  }
+ },
+ "shots": {
+  "s06": {
+   "move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.27,
+     "x": 1.0,
+     "y": -1.0
+    },
+    "to": {
+     "scale": 1.27,
+     "x": 0.5,
+     "y": 1.0
+    }
+   }
+  },
+  "s07": {
+   "punch": {
+    "line": "l10",
+    "lead": 4,
+    "id": "s07-punch",
+    "min_part": 30,
+    "first_move": {
+     "preset": "push-in",
+     "intensity": 0.5
+    },
+    "move": {
+     "preset": "custom",
+     "easing": "ease-in-out",
+     "from": {
+      "scale": 1.55,
+      "x": 1.0,
+      "y": 0.17
+     },
+     "to": {
+      "scale": 1.6,
+      "x": 1.0,
+      "y": 0.26
+     }
+    }
+   }
+  },
+  "s08": {
+   "jitter": {
+    "cue": "sfx_s08_phone_buzz",
+    "scale": 1.012,
+    "amp": 0.55,
+    "step": 2,
+    "seed": 8
+   },
+   "layers": [
+    {
+     "src": "frames/s08.png",
+     "depth": 1
+    },
+    {
+     "src": "frames/s08-name.{lang}.png",
+     "depth": 1
+    }
+   ]
+  }
+ },
+ "sound": [
+  {
+   "cue": "mus_caper_bed",
+   "id": "#motif",
+   "at": "s02.start",
+   "until": "s06.start",
+   "end_on_grid": {
+    "grid": "2.5s",
+    "max": "20.0s"
+   },
+   "fade_in": 12,
+   "fade_in_untrimmed": 4,
+   "fade_out": 6,
+   "duck": true
+  },
+  {
+   "cue": "mus_caper_bed",
+   "kind": "bed",
+   "id": "#held",
+   "from": "s06.start",
+   "to": "s08.start",
+   "window_s": [
+    24.0,
+    29.7
+   ],
+   "loop_xf": 15,
+   "db": 14,
+   "fade_in": 12,
+   "fade_out": 1,
+   "duck": true
+  },
+  {
+   "cue": "amb_malkhana_night",
+   "kind": "bed",
+   "from": 0,
+   "to": "end",
+   "loop": true,
+   "gain_db": -5,
+   "fade_in": 2,
+   "fade_out": 1,
+   "segments": [
+    {
+     "from": "s08.start",
+     "to": "end",
+     "db": -10
+    }
+   ]
+  },
+  {
+   "cue": "sfx_s01_torch_locker",
+   "id": "#click",
+   "at": 0,
+   "until": 9,
+   "len": 9,
+   "db": 8
+  },
+  {
+   "cue": "sfx_s01_torch_locker",
+   "id": "#creak",
+   "at": 9,
+   "until": "l01.speech_start + 6",
+   "trim": "1.1s",
+   "fade_out": 6
+  },
+  {
+   "cue": "sfx_s03_chai_clink",
+   "at": "s03.start",
+   "until": "l04.speech_start"
+  },
+  {
+   "cue": "sfx_s05_breath_torch",
+   "at": "s05.start",
+   "until": "s06.start"
+  },
+  {
+   "cue": "sfx_s06_padlock",
+   "at": "s06.start",
+   "until": "s07.start"
+  },
+  {
+   "cue": "sfx_s07_keyring",
+   "at": "s07.start",
+   "until": "l09.speech_start + 8",
+   "trim": "1.1s",
+   "db": 15,
+   "fade_in": 3,
+   "fade_out": 6
+  },
+  {
+   "cue": "mus_stop_sting",
+   "bus": "sfx",
+   "at": "s08.start",
+   "until": "end",
+   "db": 15
+  },
+  {
+   "cue": "sfx_s08_phone_buzz",
+   "kind": "bed",
+   "from": "s08.start",
+   "to": "end",
+   "loop": true,
+   "gain_db": -8,
+   "fade_in": 0,
+   "fade_out": 1,
+   "segments": [
+    {
+     "from": "l12.speech_start - 4",
+     "to": "l12.speech_end + 4",
+     "db": -20
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "Music, option (b) of the sound QC note: motif from the s02 cut, ending on the file's 2.5 s bar line at the s06 cut; then the quiet held layer (file 24.0-29.7 s, +14 dB) looped with 15-frame crossfades to the hard stop on the first buzz.",
+  "l06 is a cut-off stub (onset + 7 frames); l11 is cut off by the first buzz pulse on the s07/s08 cut.",
+  "s09: first speech one frame after the buzz pulse running at the cut ends; the cut to black lands at least 9 frames into a pulse."
+ ]
+}

@@ -1,0 +1,371 @@
+{
+  "episode_id": "s1b02",
+  "series_id": "series1",
+  "status": "planned",
+  "status_note": "Cue sheet by S11; nothing generated. The runner generates only the three one_off_cues (one take each, D-011) into this folder and logs credits in sound/manifest.jsonl; every other cue is a series library file from content/series1/sound/, plus one reused s1b01 one-off file.",
+  "written_by": "S11 Sound designer",
+  "date": "2026-11-26",
+  "governing": [
+    "D-009",
+    "D-011 (reuse rules)",
+    "D-014",
+    "D-0M2",
+    "D-0M4",
+    "D-018"
+  ],
+  "sources": [
+    "content/series1/episodes/s1b02/script.hi.json (beats, sfx_notes, music_note)",
+    "content/series1/episodes/s1b02/script.en.json (same beats b1-b9 and line ids l01-l29; sfx_notes identical except the quoted words in b2 and b8)",
+    "content/series1/episodes/s1b02/voice/takes.*.json (checked for a swallow take: none)",
+    "content/series1/sound/library.json",
+    "content/series1/episodes/s1b01/sound/cues.json (bed continuity, chair one-off)"
+  ],
+  "timebase": "Anchored to beat and line ids, not seconds: no storyboard or measured takes exist yet. Offsets are against the script's silent_seconds; S13 places every point effect against the measured voice and the edited shot lengths (D-014 rule 6, D-0M2). Both language cuts use the same cues and the same anchors; only the line timings differ.",
+  "counts": {
+    "library_cues_used": 19,
+    "library_placements": 22,
+    "one_off_cues": 3,
+    "one_off_placements": 3,
+    "reused_other_episode_one_offs": 1,
+    "reused_other_episode_placements": 1
+  },
+  "library_cues_used": [
+    "amb_bedroom_night",
+    "amb_stairwell_landing",
+    "mus_bed_drone",
+    "mus_ending_lullaby",
+    "mus_rise_thin",
+    "mus_sting_cut",
+    "mus_swell_reveal",
+    "sfx_bed_creak_petals",
+    "sfx_birds_dawn_loop",
+    "sfx_car_key_tick",
+    "sfx_dog_far",
+    "sfx_glass_bangles_chink",
+    "sfx_keyring_chink",
+    "sfx_paper_fold_crinkle",
+    "sfx_phone_ring_cheap",
+    "sfx_powder_into_milk",
+    "sfx_sneakers_concrete",
+    "sfx_steel_glass_tray",
+    "sfx_truck_far_pass"
+  ],
+  "reused_episode_cues": [
+    {
+      "cue_id": "sfx_s1b01_chair_scrape",
+      "from": "content/series1/episodes/s1b01/sound/",
+      "use": "b4 under l17, final creak slice only",
+      "why": "Same wooden chair by the almirah; reused instead of a new cue (D-011 reuse). If s1b01's file is missing or unusable, drop the placement."
+    }
+  ],
+  "one_off_cues": [
+    {
+      "cue_id": "sfx_s1b02_milk_boil_below",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 6.0,
+      "loop": false,
+      "prompt_influence": 0.6,
+      "prompt": "A steel saucepan of milk heating on a gas flame in a small kitchen, heard faintly from a floor above through an open stairwell: the low steady hiss of a gas burner, a faint metallic tick of the pan, the milk slowly coming up to the boil with soft bubbling and a rising froth at the end. Distant, muffled, quiet night, no voices, no music.",
+      "why_not_library": "Listed by the library as an s1b02 one-off (b3); no kitchen sound elsewhere in the series.",
+      "status": "generated",
+      "file": "sound/sfx_s1b02_milk_boil_below.mp3"
+    },
+    {
+      "cue_id": "sfx_s1b02_swallows",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 2.0,
+      "loop": false,
+      "prompt_influence": 0.7,
+      "prompt": "A man drinking from a steel tumbler, two quiet human swallows of warm milk, close and soft, in a silent room at night. No breathing, no voice, no gulping, no music.",
+      "why_not_library": "The library assigns b4's swallows to 'voice take / episode cue sheet'; s1b02/voice/takes.hi.json and takes.en.json have no swallow take (checked by grep), and the whisper shot must carry no voice or breath a transcript could catch, so it is made as an effect, not a voice take.",
+      "status": "generated",
+      "file": "sound/sfx_s1b02_swallows.mp3"
+    },
+    {
+      "cue_id": "sfx_s1b02_cloth_wipe_steel",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 5.5,
+      "loop": false,
+      "prompt_influence": 0.6,
+      "prompt": "A dry cotton cloth slowly wiping the inside and outside of a steel tumbler, soft rhythmic rubbing strokes on thin steel with a faint metallic ring, a few metres away in a quiet small room at night. Unhurried, steady, no clinks, no voices, no music.",
+      "why_not_library": "Library lists it as an s1b02 b9 one-off with sfx_steel_glass_tray as an alternative; that file is a lift-scrape and a clink, not a sustained cloth wipe for ~5 s, so the slice is kept only as the fallback.",
+      "status": "generated",
+      "file": "sound/sfx_s1b02_cloth_wipe_steel.mp3"
+    }
+  ],
+  "placements": [
+    {
+      "cue_id": "amb_bedroom_night",
+      "source": "library",
+      "beat": "b1",
+      "anchor": "episode start, continuous with s1b01 b11's bedroom room tone (same file, same level); runs under every bedroom beat b1, b3-b9",
+      "level_db": -24,
+      "duck": "-6 dB under every line; deeper dips in b4 (whisper/drinking), b6 (Chhoti), b7 (l27) and b9: see mix.ducking",
+      "note": "No ceiling fan. From b6 head the crickets come down 4-6 dB (pre-dawn state 3): high-shelf cut ~-4 dB above 3 kHz on the same file, as the library notes; no new bed."
+    },
+    {
+      "cue_id": "sfx_paper_fold_crinkle",
+      "source": "library",
+      "beat": "b1",
+      "anchor": "~0.2 s into the 1.2 s opening silence, shot 1 insert, as Mausi's fingers leave the folds",
+      "level_db": -24,
+      "slice": "one short soft crinkle (~0.5 s)"
+    },
+    {
+      "cue_id": "sfx_glass_bangles_chink",
+      "source": "library",
+      "beat": "b1",
+      "anchor": "~0.5 s into the opening silence, with the hand withdrawing",
+      "level_db": -26
+    },
+    {
+      "cue_id": "sfx_keyring_chink",
+      "source": "library",
+      "beat": "b1",
+      "anchor": "~0.9 s into the opening silence (she settles on the bed's edge); must end before l01",
+      "level_db": -28,
+      "note": "Soft settle, not a jangle. If the silence is shortened in the edit (D-0M2), keep the crinkle and the bangles and drop this."
+    },
+    {
+      "cue_id": "sfx_dog_far",
+      "source": "library",
+      "beat": "b1",
+      "anchor": "in the gap after l03, before l04",
+      "level_db": -32,
+      "note": "One far dog. Never under a word."
+    },
+    {
+      "cue_id": "amb_stairwell_landing",
+      "source": "library",
+      "beat": "b2",
+      "anchor": "b2 head to b2 end, hard cut in and out with the picture",
+      "level_db": -22,
+      "note": "Concrete landing with the bare-bulb hum. amb_bedroom_night continues beneath at about -36 dB, low-passed ~2 kHz (the door is pulled almost to). Short hard concrete reverb on l05-l08 is a mix setting."
+    },
+    {
+      "cue_id": "sfx_car_key_tick",
+      "source": "library",
+      "beat": "b2",
+      "anchor": "in the 0.8 s silence before l05, then once more in the gap between l06 and l07",
+      "level_db": -24,
+      "slice": "two or three ticks of the key on its ring per placement",
+      "note": "Billu's signature prop. Stops before l08: the key and the toothpick go still on 'बारह'. No sound for the toothpick stopping."
+    },
+    {
+      "cue_id": "sfx_sneakers_concrete",
+      "source": "library",
+      "beat": "b2",
+      "anchor": "right after l08 ends, to the cut back to the bedroom",
+      "level_db": -18,
+      "note": "Down the narrow flight, going away; let the last steps carry ~0.5 s over the b3 head at -30 dB, low-passed (heard from the bedroom)."
+    },
+    {
+      "cue_id": "sfx_dog_far",
+      "source": "library",
+      "beat": "b3",
+      "anchor": "in the 0.6 s silence before l09 or the gap after l10",
+      "level_db": -32,
+      "note": "Second and last dog of the episode."
+    },
+    {
+      "cue_id": "sfx_truck_far_pass",
+      "source": "library",
+      "beat": "b3",
+      "anchor": "starts in the gap after l10, peaks between l11 and l12, gone before l13",
+      "level_db": -34,
+      "note": "Placed once, very low, a far highway wash under the bedroom bed. Not under any protected line (l05-l08, l17, l26, l27)."
+    },
+    {
+      "cue_id": "sfx_s1b02_milk_boil_below",
+      "source": "episode",
+      "beat": "b3",
+      "anchor": "from b3 head (with the drone entering) to b3 end",
+      "level_db": -34,
+      "filter": "far below through floor and stairwell: low-pass ~1.5 kHz, a little stairwell reverb",
+      "duck": "-4 dB under each line",
+      "note": "Billu at the kitchen gas downstairs. Fades up slowly; the boil rises only in the last second, then out on the cut to b4."
+    },
+    {
+      "cue_id": "sfx_powder_into_milk",
+      "source": "library",
+      "beat": "b4",
+      "anchor": "starts a few frames before l14 and runs under it",
+      "level_db": -24,
+      "slice": "the two dry paper taps and a soft fingertip stir only; NOT the powder hiss",
+      "note": "Library note: nothing else from the tray. Nothing falls; the hiss part of the file must not be used here (s1b03 l11: only kesar in the milk)."
+    },
+    {
+      "cue_id": "sfx_s1b01_chair_scrape",
+      "source": "episode (s1b01 one-off, reused)",
+      "beat": "b4",
+      "anchor": "under l17, with shot 3 (the boys' hands tightening)",
+      "level_db": -28,
+      "file": "content/series1/episodes/s1b01/sound/sfx_s1b01_chair_scrape (as named in that folder's manifest)",
+      "slice": "the final wooden-joint creak only (~0.5 s), no scrape",
+      "note": "Same chair by the almirah as s1b01 b9. Place in the gap after 'पी लो।' so it never sits on a word of l17 (protected). The cloth part of 'cloth and creak' is left to the creak; no cloth cue is made for it."
+    },
+    {
+      "cue_id": "sfx_s1b02_swallows",
+      "source": "episode",
+      "beat": "b4",
+      "anchor": "shot 5, the drinking (~1.8 s after the whisper shot)",
+      "level_db": -26,
+      "note": "Two quiet swallows, ~0.6 s apart. Under the dipped bed, no music. Nothing in shot 4 (the whisper): no voice, no breath."
+    },
+    {
+      "cue_id": "sfx_steel_glass_tray",
+      "source": "library",
+      "beat": "b5",
+      "anchor": "~0.3 s into the 2.2 s silence before, shot 1 (the empty glass on the tray)",
+      "level_db": -22,
+      "slice": "the set-down clink only; no lift scrape"
+    },
+    {
+      "cue_id": "sfx_bed_creak_petals",
+      "source": "library",
+      "beat": "b5",
+      "anchor": "shot 2, ~1.2 s into the silence, as he is laid down",
+      "level_db": -22,
+      "note": "Must finish before l18."
+    },
+    {
+      "cue_id": "sfx_glass_bangles_chink",
+      "source": "library",
+      "beat": "b5",
+      "anchor": "in the comma gap of l18, between 'शाबाश,' and 'मेरी बच्ची।' (en: the matching gap)",
+      "level_db": -28,
+      "note": "Once, as she strokes Kiran's hair. If the measured take has no usable gap, move it into the 0.1-0.2 s just before l18."
+    },
+    {
+      "cue_id": "sfx_phone_ring_cheap",
+      "source": "library",
+      "beat": "b5-b6",
+      "anchor": "first ring lands on the b5 shot 4 fist insert, right after l18's last word; the ring runs across the cut into b6 and stops on the b6 shot 1 insert (she answers)",
+      "level_db": -16,
+      "slice": "one ring plus the start of the second, cut dead when she answers",
+      "note": "Signature phone sound, generic, no song."
+    },
+    {
+      "cue_id": "sfx_birds_dawn_loop",
+      "source": "library",
+      "beat": "b7",
+      "anchor": "one single isolated call under l26 (in the gap after 'तू मेरी बेटी है।'), then a very thin layer to b7 end",
+      "level_db": -34,
+      "slice": "one isolated call for the first placement",
+      "note": "'A first bird outside the grille'. Out under l27 with the bed."
+    },
+    {
+      "cue_id": "sfx_s1b02_cloth_wipe_steel",
+      "source": "episode",
+      "beat": "b9",
+      "anchor": "shots 1-3 (~0 to ~5.2 s into the 6.0 s beat), stops dead before shot 4",
+      "level_db": -26,
+      "filter": "off screen, a few metres away to the right: slight room reverb, low-pass ~6 kHz",
+      "note": "Billu wiping the glass at the tray, heard only. Slow, unhurried strokes."
+    },
+    {
+      "cue_id": "sfx_birds_dawn_loop",
+      "source": "library",
+      "beat": "b9",
+      "anchor": "shot 2 (over Mausi's shoulder), one early bird",
+      "level_db": -34,
+      "slice": "one isolated call"
+    },
+    {
+      "cue_id": "mus_bed_drone",
+      "source": "library",
+      "beat": "b3",
+      "anchor": "enters at b3 head, under Mausi's l09; holds very low under all of b3 and b4 l14-l17; OUT completely at the last word of l17",
+      "level_db": -30,
+      "trim": "discard first ~4 s (fade-in); 2 s crossfade loop",
+      "duck": "-8 dB under every line",
+      "out": "0.5 s fade out on the end of l17, so the whisper shot (b4 shot 4) and the drinking (shot 5) have no music",
+      "note": "Two calm people. Nothing in b1 and b2."
+    },
+    {
+      "cue_id": "mus_ending_lullaby",
+      "source": "library",
+      "beat": "b7",
+      "anchor": "under l26 'तू मेरी बेटी है' (en: the matching sentence); ducks out under l27",
+      "level_db": -30,
+      "slice": "one single warm, slightly detuned harmonium-like held note (~3-5 s) taken from the file, not the melody",
+      "out": "1.0 s fade out starting on the first word of l27",
+      "note": "Plants the finale's motif (library note). If no clean held note can be cut from the file, drop this placement rather than use a phrase of melody; do not make a new cue."
+    },
+    {
+      "cue_id": "mus_swell_reveal",
+      "source": "library",
+      "beat": "b9",
+      "anchor": "shot 1, on the fist opening (the two crisp folds)",
+      "level_db": -22,
+      "note": "One low note. Cut hard at the end of shot 1 or let it sit under mus_rise_thin; never ring past shot 3."
+    },
+    {
+      "cue_id": "mus_rise_thin",
+      "source": "library",
+      "beat": "b9",
+      "anchor": "shot 3, on the eye open a slit; continues into shot 4 (eye shut)",
+      "level_db": -26,
+      "out": "cut dead with the picture at the cut to black",
+      "note": "Thin rising tone. Ends on silence, not a resolve."
+    },
+    {
+      "cue_id": "mus_sting_cut",
+      "source": "library",
+      "beat": "b9",
+      "anchor": "after the cut to black, following one beat (~0.8 s) of total silence",
+      "level_db": -16,
+      "note": "Short end sting; the episode's last sound. Then end."
+    }
+  ],
+  "music": {
+    "in_out": [
+      "b1, b2: no music (room, paper, bulb). s1b01 ended with music cut dead on l28, so the episode opens on the bed alone.",
+      "mus_bed_drone in at b3 head, very low through b3 and b4 l14-l17; fully out at the end of l17. The whisper and drinking shots have no music.",
+      "b5, b6: no music. Nothing under Chhoti's call.",
+      "b7: one held harmonium-like note (slice of mus_ending_lullaby) under l26, ducking out over the first words of l27. Nothing under l28.",
+      "b8: no music; room tone only under l29.",
+      "b9: mus_swell_reveal on the fist opening, mus_rise_thin on the eye, cut to black on silence, ~0.8 s of total silence, then mus_sting_cut. End."
+    ],
+    "glimpse": "Any glimpse cut from this episode uses this sheet over its own range and cuts bed and music dead with the picture. No glimpse-only sound (library reuse_rules)."
+  },
+  "mix": {
+    "dialogue_first": true,
+    "loudness_target": "-14 LUFS integrated, -1 dBTP, tolerance +/-0.5 LU (D-0M4)",
+    "ducking": [
+      "Ambience beds duck 6 dB under every line; the drone ducks 8 dB.",
+      "l08 (protected, 'बारह' / 'Twelve'): landing bed and bedroom spill duck 10 dB, nothing else under it; the key ticks stop before it.",
+      "b4 shot 4 (the unheard whisper, ~2.2 s) and shot 5 (drinking, ~1.8 s): bedroom bed dips a further 8 dB (about -38) and holds flat; no effect in shot 4, only the swallows in shot 5.",
+      "l19, l20 (Chhoti on speaker): bed ducks 8 dB, no music, no effect under them.",
+      "l27 (protected): bed ducks right down (12 dB) so every word is clear; the harmonium note is gone by its second word.",
+      "l26 (protected): bed ducks 6 dB; the note and the single bird sit in the gap after the first sentence, never on a word.",
+      "b8: 1.0 s silence before l29 is room tone only (no key sound); nothing under l29 but room tone.",
+      "b9: bed at about -36 (near silence) under the cloth, bird and stings; at the cut to black everything cuts dead with the picture, then ~0.8 s of digital silence before the sting.",
+      "Point effects never sit on a word; when a measured take moves, the effect moves to the nearest gap."
+    ],
+    "voice_processing": [
+      "l19, l20 (Chhoti, Mausi's phone held flat on speaker in the bedroom): band-pass ~300-3400 Hz, light saturation, light colour (speaker in the room), every consonant survives, fully voiced (library mix.phone_voice_fx).",
+      "l21 (Mausi): in the room, unfiltered.",
+      "l05-l08 (landing): short hard concrete reverb, low send (mix setting, not a cue).",
+      "All bedroom lines: dry. From b4 the door is open: a low landing spill (amb_stairwell_landing at about -36 dB, low-passed) may sit under the bedroom bed if S13 finds the open door reads too dead; optional."
+    ],
+    "perspective": "Bedroom-side perspective for everything off screen (sneakers going away, milk below, Billu's cloth in b9): low-passed and quieter.",
+    "no_fan": "No ceiling fan in any part of this mix (script sfx_notes; library mix.no_fan_rule).",
+    "levels_note": "level_db values are starting points relative to full scale before the -14 LUFS master; S13 sets final levels against dialogue."
+  },
+  "fallback": "If a one-off fails or comes back unusable after its one take (plan 7.8): milk boil -> drop (b3 then has bed, dog, truck and drone); swallows -> drop (the shot plays on the dipped bed; never use a voice breath); cloth wipe -> slow-scrape slice of sfx_steel_glass_tray at -28 dB, repeated twice with gaps. If music fails: raise the bedroom bed 3 dB in b3-b4; for b9 keep the cut to black on silence and end without a sting.",
+  "credit_estimate": {
+    "one_offs": 51,
+    "basis": "17 credits per eleven_text_to_sound_v3 generation, one take (proof manifests, library credit_estimate). Library and reused cues cost nothing here."
+  },
+  "not_verified": [
+    "No cue generated or heard.",
+    "Anchors and offsets are from the script; no storyboard (S7) or measured takes exist for s1b02 yet.",
+    "Whether mus_ending_lullaby contains a clean single held note to slice for b7.",
+    "Whether sfx_powder_into_milk's taps and stir can be cut free of its powder hiss.",
+    "Whether s1b01's chair one-off has a usable isolated creak at its end."
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "episode": "series2/s2e02",
+  "reviewer": "S15 Screening",
+  "round": 1,
+  "kind": "First full screening of the s2e02 cut (re-assembled with the approved s11, no slates, 26 Nov) in both languages, judged as a cold viewer coming from s2e01. Lean pass, as asked. I took one frame per shot plus targeted frames around line changes, ran whisper.cpp on every line window, measured levels with ffmpeg, checked the subtitle cues against the picture cuts and the speech, and checked supers su7/su8 and the overlays. No connector transcription was used.",
+  "date": "2026-11-26",
+  "pass": true,
+  "scored": true,
+  "gate": "D-023: 7/10 and no blocking fault. Met in both languages.",
+  "scores": {
+    "hi": 8,
+    "en": 8
+  },
+  "verdict": "Pass, hi 8/10 and en 8/10, with no blocking fault. Nobody has listened to this cut or watched it in motion. The verdict comes from sampled frames, per-line whisper.cpp transcripts and level measurements. The episode reads cleanly for a cold viewer of episode 2. The cuffs are out from the hook. Charge handover (l02) sets up her terms at the end (l29, l30). Pushpa's l06-l09 explains the fake thana and why Tripathi has kept quiet, with the ZERO CRIME shield insert landing on 'shield'. The cycle side scene now works: l12 states the complaint and the find, l36 gives the ruling, and l37 names the witnesses while both neighbours' hands are on the handlebar in frame (checked at the l37 frame in both languages). l13 then plays as his rule, and l14 'Settled in ten minutes' over her look at the clock pays it off. The bribe scene is clear: su8 names Bhaiyaji and his trade on his first frame, l17 tells us Tripathi is also paid, and l35 'He pays to keep the files asleep, madam. They are wide awake.' pays off l18's 'still asleep' and turns the envelope into evidence. The ending holds: l32 'Madam is reading the files' leads into Tripathi's call (l33, l34), and l09 has already told the viewer what he could now say. Speakers can be identified throughout. Every off-screen line (l01, l10, l28, l36, l37) is Nirala's voice running on from a shot of him, or the neighbour, whose hands are in frame. Every line follows something heard. Three things hold the score at 8, and none blocks. (1) Picture does not carry the spoken numbers. 'Token eight' plays over a blank grey tag, and l20 'Date, amount, every note's number' leads into a blank tag on the s27 envelope. Both overlays are known and deferred (ov_token_8, ov_envelope_tag). (2) s12 holds one top-down still for 10.2 s (en) and 10.4 s (hi) across three off-screen lines (l12, l36, l37). Speech fills about 9.3 s of it, and a new cue comes in every 2 to 2.5 s, so I judge that it does not drag. But nothing in the picture changes on the ruling: the 'one hand lets go' beat is not drawn (F1, optional). (3) l13 'Whatever you write, say it aloud, madam' is a plant for later episodes. Addressed to her here, it is slightly odd, but it reads as his rule after l36/l37. l35 is the most written line, but it is short and pays off l18.",
+  "blocking": [],
+  "files_screened": [
+    "content/series2/episodes/s2e02/render/s2e02.hi.mp4",
+    "content/series2/episodes/s2e02/render/s2e02.en.mp4",
+    "content/series2/episodes/s2e02/render/s2e02.hi.review.mp4",
+    "content/series2/episodes/s2e02/render/s2e02.en.review.mp4"
+  ],
+  "measurements": {
+    "probe": "All four are h264 1080x1920 at 30/1 with aac 48 kHz. Frames: hi 3983 (132.8 s), en 4044 (container 135.0 s, timeline 134.8 s). The picture cuts to black at frame 3971 (hi) and 4032 (en), followed by 12 black frames. Both are under the 150 s ceiling. All 37 lines (including l35-l37) are in both timelines and whisper hears each of them.",
+    "md5": {
+      "hi": "3437922d68725d366137f33c5fe9e5ed",
+      "en": "8594e956a9a5c2b270807e07039e487c",
+      "hi.review": "ca7da8e3dceaef06e110d74c60e7cdc7",
+      "en.review": "e2f0b67526c17ab7d3bc6b11cc4c2652"
+    },
+    "loudness_ebur128": "hi -14.4 LUFS, LRA 6.8 LU, true peak -1.0 dBFS. en -14.2 LUFS, LRA 5.7 LU, true peak -1.1 dBFS (ffmpeg ebur128 peak=true). The review cuts measure the same as the clean cuts. The assemble log reports encoded true peaks of -1.04 (hi) and -1.16 (en) dBTP after pass-2 redos. hi sits right at the -1 ceiling, with no margin.",
+    "per_line_level_dbfs": "Mean volume over each line window (it includes the in-line pauses). hi -15.5 (l21) to -23.9 (l30). en -15.9 (l21) to -22.6 (l30). The quietest lines are l30, l04, l05 (hi), l25 (hi), l28 and l31-l34: all are tagged [quietly] or are Tripathi's low register. Each was still recognised by whisper. Nothing is buried.",
+    "scratch": "<scratch>"
+  },
+  "transcript_vs_script": {
+    "method": "whisper.cpp ggml-small on each line's window in the clean mix (timeline start -0.1 s to end +0.2 s), 37 lines per language (74 runs). Doubtful lines were re-run on the dry take (hi l18, l29, l32; en l15, l16, l34) and on a wider mix window (hi l29, en l16).",
+    "en": "All 37 lines are recognised in full and in order. The differences are ASR spellings or mishearings, not take errors: 'George, handover' (l03), 'An S.H.O. Sir?' (l07), 'Nirdhla ji' (l10), 'complained' (l12), 'You too' (l37), 'Tripati', 'chess' (l28) and 'Bhaiyajing' (l33). l15 'Brother, madam' in the mix is heard as 'Bhaiyaji, madam' on the dry take. l16 came back as 'this month' on both the line window and the dry take, but the wider mix window returns 'this month's', so the take is fine. l34 (take 3, accepted at the take limit) is heard word for word: 'Had to tell you one thing about that talkies outpost.' Its delivery is for the ear list.",
+    "hi": "All 37 lines are recognised in substance (Devanagari ASR spellings: 'ताना' for 'थाना', 'तोकीज', 'पाल में' for 'File में', 'दूगी' for 'duty'). l18 drops the head 'वो' in the mix, but the dry take has it. l32 'पढ़ रही हैं' comes back as 'पड़गे हैं' in the mix and 'पड रहीं हैं' on the dry take, so the take is fine. One open item: on l29 the mix returns 'अगर'/'तब' for the head 'कल' twice (line window and a wider window), while the dry take returns 'कल 10 बजे से पहले'. 'कल' (tomorrow) is the deadline word. It is probably ASR, but it goes on the ear list (F2). New lines l35, l36 and l37 are heard as scripted."
+  },
+  "subtitles_vs_picture": "subs.hi.json (59 cues) and subs.en.json (56 cues): validation ok, with max 15.0 / 17.0 graphemes a second. My own check of every cue against the meta cut list found no cue crossing a picture cut. I sampled the burned subtitles on every shot in both review cuts. Every shot with speech at its 60% point shows the matching cue. The blank samples are planned gaps: hi s08 at frame 690 falls between c011 and c012 at the pause in l08, and samples at cue edges show nothing beyond the edge itself. The split lines land on their cuts: l08 'shield' on the shield insert (s09), l15 'lockup' on the pointing shot (s16) and l17 'Cheaper/त्रिपाठी जी' on the grille (s20). s11 (approved with logged drift): the review cue 'Token eight.' / 'Token आठ।' sits over the bicycle fork and the neighbour's grey forearm. The token tag (left of the cue), both hands on the handlebar and the red helmet on the bench all stay clear of it, so the cue hides nothing the scene needs.",
+  "supers_and_overlays": "su8 'Bhaiyaji · owns the ration godown' / 'भैयाजी · राशन godown के मालिक' sits upper-left on s18, on the cut 5 frames before l16, and holds 3.0 s. It is legible at 360 px and clear of his face and of the subtitle band. su7 'That evening' / 'उसी शाम' comes in on the cut into s34 and holds 2.2-2.3 s. It sits lower-left over the top of the desk phone, about 0.6 of the frame height below the shield. It does not touch the new ZERO CRIME plate (checked at 540 px in both languages). The ov_shield overlay is drawn on s09, s34, s38 and s39, and its ZERO CRIME plate is consistent from the projection-room insert to the thana. Known and deferred, not new: ov_token_8 is not drawn on s11, where the tag is a blank grey square while 'Token eight' is said. ov_envelope_tag is not drawn on s27, where the tag is blank while l20/l23 describe it. ov_fake_board is not drawn on the lobby board (s11-s16, s18, s33), which reads as a blank white panel.",
+  "long_setups": {
+    "s12": "en 10.2 s, hi 10.4 s. A top-down composite of the neighbours' hands on the handlebar (top) and his register and receipt (bottom), on a custom slow push from 1.0 to 1.14. It carries l12, l36 and l37 back to back, with a new cue every 2 to 2.5 s and speech filling about 9.3 s. Both hands stay in frame through l37 in both languages, so 'You two are the witnesses' has its picture. Judgement: it does not drag, because it is a dense insert with continuous speech. But the picture does not change on the ruling (l36): the hands never let go. Optional fix F1.",
+    "s27": "en 7.6 s, hi 5.7 s. The sealed-envelope insert for l23 and l35. Acceptable: two of Nirala's lines with his hand in frame. The blank tag is the known ov_envelope_tag gap.",
+    "s10": "7.2 s. The two-shot for l09, one 7 s line with Pushpa's needles. Acceptable."
+  },
+  "cold_viewer": {
+    "clarity_lines_l35_l37": "Clear in both languages. l36 is heard as the ruling and l37 as naming the witnesses, with both of their hands in frame. l35 links the money to l18's 'asleep' files and says why he keeps it: as evidence that the files are awake.",
+    "cycle_side_scene_l12_l14_l37": "Reads as one small case solved properly in ten minutes: complaint on record, cycle found, returned, witnessed, then her look at the clock and 'Settled in ten minutes'. Nirala's 'Token eight' over a blank tag is the only gap, and it is deferred.",
+    "new_lines_flat_or_expository": "l36 is procedural by design. l35 is the most written line ('wide awake'), but it pays off a planted word. In this episode, l13 is the only line that sounds like a plant more than a reply. Delivery was not heard, so 'flat' is judged on text only.",
+    "answers_to_unheard": "None found. l15 'Bhaiyaji.' follows the car door (sfx_car_door 0.7 s before the line). l06 'I sent them' follows l04 'The complaints are real'. l19 answers l18. l24 follows the ledger insert. l32 answers l31.",
+    "speakers_identifiable": "Yes. Nirala's off-screen l01 runs into his close on l02. l10 is the neighbour, whose hands are in frame. l28 runs on from his l27 close. su8 names Bhaiyaji on his first frame. l31 is Tripathi on screen and is named in l17 and as 'SHO sahab' by Pushpa in l32. l33 and l34 are his mouth on the receiver."
+  },
+  "fixes": [
+    {
+      "id": "F1",
+      "owner": "S7 Storyboard artist (shots.json), then S13 Editor",
+      "severity": "low (optional)",
+      "issue": "s12 holds one top-down still for 10.2 s (en) / 10.4 s (hi) across l12, l36 and l37. Nothing in the picture changes on the ruling, and the hands insert the script asks for (b4 shot 2) shares the frame with the register.",
+      "fix": "Split s12 at l36's first speech (en frame 1277, hi 1217). s12 keeps l12 on its current move. A new s12b is a second framing of frames/s12.png at scale 1.3, focused on the handlebar hands (focus about x 0.5, y 0.12), with a slow push, carrying l36 and l37 so the named witnesses fill the frame. Check that the crop keeps both hands. No generation, no length change. S12's cues do not cross the new cut (c019/c020 en, c019/c020 hi already break there)."
+    },
+    {
+      "id": "F2",
+      "owner": "S11 Sound designer (ear list)",
+      "severity": "low",
+      "issue": "hi l29: whisper misses the head 'कल' (tomorrow, the deadline word) in the mix twice but hears it on the dry take. Possible masking by sfx_pouch_flap_snap#b10 (hi frame 3240, l29 at 3255) or the start of mus_theme_warm_ending (3179).",
+      "fix": "Listen to hi 108.0-109.5 s. If 'कल' is masked, move sfx_pouch_flap_snap#b10 10 frames earlier (to 3230) or drop it 3 dB on the hi cue sheet and re-master hi. If it is clear, close the item."
+    },
+    {
+      "id": "F3",
+      "owner": "S10 Overlay artist (already deferred)",
+      "severity": "low (known, deferred)",
+      "issue": "ov_token_8 (s11) and ov_envelope_tag (s27) are not drawn, so 'Token eight' and l20's 'date, amount, every note's number' play over blank tags. ov_fake_board is still a blank panel.",
+      "fix": "No new action. When the deferred overlays land, add them as layers on s11 and s27 (and on the board shots) in both timelines and re-render. Not blocking at this screening."
+    },
+    {
+      "id": "F4",
+      "owner": "Owner (ear list)",
+      "severity": "low",
+      "issue": "en l34 (take 3, accepted at the take limit): the words are confirmed by whisper, but the delivery is unheard. It is the episode's last line.",
+      "fix": "Listen to en 130.8-134.4 s for the [quietly] register and the clipped end before the cut to black. A retake is only needed if it sounds read rather than confided."
+    }
+  ],
+  "checks_run": [
+    "ffprobe codec, size, fps, frame counts and duration on all four renders; md5 of all four",
+    "ffmpeg ebur128 with peak=true on all four (integrated loudness, LRA, true peak); assemble.log true-peak lines read",
+    "volumedetect over each line window in both clean mixes (74 windows)",
+    "one frame per shot at 60% of its length in both review cuts (78 frames), viewed as contact sheets with subtitles burned in",
+    "540 px check frames: s11 review and clean (en), s12 start, l37 and end (en; l37 in hi), s34 with su7 (hi and en); su8 on s18 seen in the per-shot sheets",
+    "whisper.cpp ggml-small on every line window in both mixes (74 runs); dry-take re-runs on hi l18, l29, l32 and en l15, l16, l34; wider mix windows on hi l29 and en l16",
+    "cue lists of subs.hi.json and subs.en.json against the meta cut list (no cue crosses a cut) and against the script text; validation blocks read",
+    "timeline meta read for layers and overlays, split lines, supers placement, takes and notes; sfx and music cue positions read around l15 and l29"
+  ],
+  "not_checked": [
+    "Nobody has listened. Delivery, emotion tags, the mix balance, the music and the effects were judged from levels and ASR only.",
+    "Nothing was watched in motion. Moves were sampled at 60% of each shot, plus the start, l37 and end frames of s12.",
+    "Faces against the character sheets: S9's check, not repeated.",
+    "The 720p derivatives (s2e02.*.720p.mp4) were probed only."
+  ]
+}

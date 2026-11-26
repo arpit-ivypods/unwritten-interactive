@@ -1,0 +1,164 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,190"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 190
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,190",
+				"to": "00:00:00,300"
+			},
+			"offsets": {
+				"from": 190,
+				"to": 300
+			},
+			"text": " 14"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,300",
+				"to": "00:00:01,050"
+			},
+			"offsets": {
+				"from": 300,
+				"to": 1050
+			},
+			"text": " महीने"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,050",
+				"to": "00:00:01,470"
+			},
+			"offsets": {
+				"from": 1050,
+				"to": 1470
+			},
+			"text": " लगे"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,470",
+				"to": "00:00:02,060"
+			},
+			"offsets": {
+				"from": 1470,
+				"to": 2060
+			},
+			"text": " तुमहारी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,060",
+				"to": "00:00:02,520"
+			},
+			"offsets": {
+				"from": 2060,
+				"to": 2520
+			},
+			"text": " पार्टी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,520",
+				"to": "00:00:02,830"
+			},
+			"offsets": {
+				"from": 2520,
+				"to": 2830
+			},
+			"text": " बनने"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,830",
+				"to": "00:00:03,160"
+			},
+			"offsets": {
+				"from": 2830,
+				"to": 3160
+			},
+			"text": " में"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,160",
+				"to": "00:00:03,710"
+			},
+			"offsets": {
+				"from": 3160,
+				"to": 3710
+			},
+			"text": " यानी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,710",
+				"to": "00:00:04,380"
+			},
+			"offsets": {
+				"from": 3710,
+				"to": 4380
+			},
+			"text": " लुटने"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,380",
+				"to": "00:00:04,950"
+			},
+			"offsets": {
+				"from": 4380,
+				"to": 4950
+			},
+			"text": " वाला"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,950",
+				"to": "00:00:05,580"
+			},
+			"offsets": {
+				"from": 4950,
+				"to": 5580
+			},
+			"text": " दूला"
+		}
+	]
+}

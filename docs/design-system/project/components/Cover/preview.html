@@ -1,0 +1,48 @@
+<!-- @dsCard height=300 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap">
+<style>
+body{margin:0}
+.cover{position:relative;width:960px;height:300px;overflow:hidden;background:var(--ground);font-family:var(--font-sans)}
+.cover svg{position:absolute;inset:0}
+.slab{fill:var(--ink)}
+.violet{fill:var(--brand)}
+.warm{fill:var(--saffron)}
+.tint{fill:var(--brand-soft)}
+.cut{fill:var(--ground)}
+.name{position:absolute;left:56px;bottom:74px;margin:0;font-size:80px;line-height:.95;font-weight:800;letter-spacing:-.05em;color:var(--ink)}
+.tag{position:absolute;left:58px;bottom:44px;margin:0;width:400px;font-size:14px;line-height:1.4;font-weight:500;color:var(--ink-muted)}
+</style>
+</head>
+<body>
+<div class="cover">
+<svg viewBox="0 0 960 300" width="960" height="300" aria-hidden="true">
+<!--
+blocks: ink 168x340 (the stage), brand 200x168, brand-soft 120x96, saffron disc 88
+arrangement: one tall slab bleeding off the top with three satellites, like the stage and its panels
+pattern: pills from radius-pill, because the product is soft glass and every control is a pill; they read as the episode rail and subtitle lines
+scales: gaps space-2 and space-4, corners radius-stage 48, radius-2xl 36, radius-xl 28, pills half their height
+-->
+<rect class="tint" x="496" y="172" width="120" height="96" rx="28"/>
+<circle class="warm" cx="560" cy="100" r="44"/>
+<rect class="slab" x="640" y="-40" width="168" height="340" rx="48"/>
+<rect class="violet" x="832" y="40" width="200" height="168" rx="36"/>
+<rect class="cut" x="664" y="212" width="120" height="12" rx="6"/>
+<rect class="warm" x="664" y="232" width="72" height="12" rx="6"/>
+<rect class="cut" x="744" y="232" width="40" height="12" rx="6"/>
+<rect class="cut" x="664" y="252" width="96" height="12" rx="6"/>
+<rect class="violet" x="832" y="232" width="40" height="16" rx="8"/>
+<rect class="violet" x="880" y="232" width="40" height="16" rx="8"/>
+<rect class="warm" x="928" y="232" width="40" height="16" rx="8"/>
+<rect class="tint" x="832" y="256" width="40" height="16" rx="8"/>
+<rect class="tint" x="880" y="256" width="40" height="16" rx="8"/>
+<rect class="tint" x="928" y="256" width="40" height="16" rx="8"/>
+</svg>
+<p class="name">Unwritten</p>
+<p class="tag">Two-minute dramas where the audience picks the ending.</p>
+</div>
+</body>
+</html>

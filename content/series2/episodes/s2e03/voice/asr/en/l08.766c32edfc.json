@@ -1,0 +1,153 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,120"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 120
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,120",
+				"to": "00:00:01,800"
+			},
+			"offsets": {
+				"from": 120,
+				"to": 1800
+			},
+			"text": " Madame,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,800",
+				"to": "00:00:02,030"
+			},
+			"offsets": {
+				"from": 1800,
+				"to": 2030
+			},
+			"text": " this"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,030",
+				"to": "00:00:02,750"
+			},
+			"offsets": {
+				"from": 2030,
+				"to": 2750
+			},
+			"text": " evening,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,750",
+				"to": "00:00:03,470"
+			},
+			"offsets": {
+				"from": 2750,
+				"to": 3470
+			},
+			"text": " S.H.O."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,470",
+				"to": "00:00:03,800"
+			},
+			"offsets": {
+				"from": 3470,
+				"to": 3800
+			},
+			"text": " Sahab"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,800",
+				"to": "00:00:04,200"
+			},
+			"offsets": {
+				"from": 3800,
+				"to": 4200
+			},
+			"text": " phoned"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,200",
+				"to": "00:00:05,150"
+			},
+			"offsets": {
+				"from": 4200,
+				"to": 5150
+			},
+			"text": " Bhaiyaji."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,150",
+				"to": "00:00:05,160"
+			},
+			"offsets": {
+				"from": 5150,
+				"to": 5160
+			},
+			"text": " It"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,160",
+				"to": "00:00:05,450"
+			},
+			"offsets": {
+				"from": 5160,
+				"to": 5450
+			},
+			"text": " went"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,450",
+				"to": "00:00:06,000"
+			},
+			"offsets": {
+				"from": 5450,
+				"to": 6000
+			},
+			"text": " through."
+		}
+	]
+}

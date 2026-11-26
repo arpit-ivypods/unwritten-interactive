@@ -1,0 +1,2295 @@
+{
+ "id": "s1a01",
+ "series_id": "series1",
+ "title": "मौसी किसी से नहीं मिलतीं",
+ "title_en": "Mausi meets no one",
+ "made_by": "S7 Storyboard artist",
+ "date": "2026-11-26",
+ "lead_character": "kiran",
+ "governed_by": [
+  "content/series1/episodes/s1a01/script.hi.json and script.en.json (same beats b1, b2, b3, b5 to b11, lines l01 to l28, speakers; b4 is a gap)",
+  "content/series1/episodes/s1a01/voice/manifest.jsonl and voice/review.json (final takes: hi l04, l16, l20, l24 take 2; en l16 take 2; every line final, hi l24 accept_logged)",
+  "content/series1/style.json (locks rewritten after Gate 3, style_frame, light_states, key_props, prompt_assembly)",
+  "content/series1/continuity.json (s1e02 end_state, s1a01 end_state, wardrobe_changes, P01, P08 as fixed in the script)",
+  "docs/decisions.md D-010, D-012, D-013, D-014, D-015, D-017, D-018, D-019, D-020, D-021, D-022, D-023, D-0M2, D-0M4"
+ ],
+ "frames_dir": "<repo>/content/series1/episodes/s1a01/frames",
+ "prompts_dir": "<repo>/content/series1/episodes/s1a01/frames/prompts",
+ "runner": "production/scripts/codex-frame.sh <frames_dir> <shot_id> <frames/prompts/<shot_id>.txt> [refs in the order listed in the shot]. Only shots with frame.kind = generated go to the runner, in generation_order.",
+ "shot_count": 39,
+ "frame_budget": {
+  "budget_D010": 28,
+  "generated": 28,
+  "second_framings": 10,
+  "reused_approved_assets": 1,
+  "generated_ids": [
+   "s01",
+   "s03",
+   "s04",
+   "s05",
+   "s06",
+   "s10",
+   "s11",
+   "s12",
+   "s14",
+   "s15",
+   "s16",
+   "s18",
+   "s19",
+   "s20",
+   "s21",
+   "s22",
+   "s24",
+   "s26",
+   "s27",
+   "s28",
+   "s29",
+   "s30",
+   "s31",
+   "s32",
+   "s33",
+   "s34",
+   "s37",
+   "s38"
+  ],
+  "second_framing_ids": [
+   "s07",
+   "s08",
+   "s09",
+   "s13",
+   "s17",
+   "s23",
+   "s25",
+   "s35",
+   "s36",
+   "s39"
+  ],
+  "reused_ids": [
+   "s02"
+  ],
+  "note": "28 new frames for 39 shots. Second framings reuse a generated frame of this episode with a custom move at scale 1.3 or less (D-010). No second framing takes a close from a wide (D-023 rule 4.8): the b3 closes come from generated close-ups (s05, s06), the l17 close and l19 insert from the medium close-up s22, the l26 single from the medium single s32. s02 is the approved s1e01 frame s12 (the same phone on the same sheet), not a new frame. Retakes (D-023 rule 4.1) are retakes, not budget."
+ },
+ "estimated_seconds": {
+  "hi_from_own_clips": 136.76,
+  "en_from_own_clips": 137.32,
+  "picture_timeline_longer_language": 142.92,
+  "ceiling_per_cut_D018": 150,
+  "basis": "Final-take clip lengths measured with ffprobe on voice/hi/lXX.mp3 and voice/en/lXX.mp3 (these files hold the final takes; they equal manifest duration_s of the latest take), plus 0.25 s after each line (s1e01's convention; none after l09, which l10 cuts straight in on), plus the script's beat silences (b1 1.2, b2 2.0, b3 1.2, b5 3.0, b6 1.0, b7 2.0, b8 4.5, b9 4.5, b10 0, b11 3.0 = 22.4 s). Speech (whole clips, including their own lead and trail silence): hi 90.80 s, en 89.76 s. duration_s per shot is the longer language; each cut is rebuilt from its own clips (D-014 rule 6). hi l24 (take 2, accept_logged) carries 1.56 s of lead silence and 0.94 s of trail: the Hindi s34 can lose up to about 1.5 s in the edit (D-014 rule 2: the cue starts at first speech).",
+  "clarity_remap_D025": "2026-11-26, S7 Storyboard artist, clarity remap (D-025 item 8): totals re-summed from the shots after the remap. Shots that gained lines or changed split are timed from the clarity takes (voice/manifest.jsonl, highest ok take per line): whole clip length + 0.25 s after each line, plus the beat silence the shot carries; split parts at the midpoint of the measured pause (silencedetect -40 dB, 0.15 s). Other voiced shots are shifted by (clarity take - previous take) for each re-voiced line. Planned only: the build times voiced shots from speech."
+ },
+ "longest_setup": {
+  "shot": "s19",
+  "seconds": 5.53,
+  "rule": "No set-up held past 8 s (bible production_locks; D-018 on measured lengths). Every shot is under 8 s in both languages, and so is every run of consecutive shots on one frame: s16+s17 6.66 s (en), s34+s35 5.06 s (hi), s38+s39 6.53 s (en)."
+ },
+ "ref_index": {
+  "kiran_p1": "<repo>/content/series1/refs/kiran_p1.png",
+  "kiran_p2": "<repo>/content/series1/refs/kiran_p2.png",
+  "kiran_hands": "<repo>/content/series1/refs/kiran_hands.png",
+  "aditya": "<repo>/content/series1/refs/aditya.png",
+  "billu": "<repo>/content/series1/refs/billu.png",
+  "mausi": "<repo>/content/series1/refs/mausi.png",
+  "chhoti": "<repo>/content/series1/refs/chhoti.png",
+  "pair_kiran_aditya_p1": "<repo>/content/series1/refs/pair_kiran_aditya_p1.png",
+  "pair_kiran_aditya_p2": "<repo>/content/series1/refs/pair_kiran_aditya_p2.png",
+  "pair_kiran_mausi_p2": "<repo>/content/series1/refs/pair_kiran_mausi_p2.png",
+  "bedroom_bed": "<repo>/content/series1/refs/bedroom_bed.png",
+  "bedroom_door": "<repo>/content/series1/refs/bedroom_door.png",
+  "bedroom_window": "<repo>/content/series1/refs/bedroom_window.png",
+  "lane_night": "<repo>/content/series1/refs/lane_night.png",
+  "stairwell_up": "<repo>/content/series1/refs/stairwell_up.png",
+  "stairwell_down": "<repo>/content/series1/refs/stairwell_down.png",
+  "car_forward": "<repo>/content/series1/refs/car_forward.png",
+  "car_rear": "<repo>/content/series1/refs/car_rear.png",
+  "bureau_exterior": "<repo>/content/series1/refs/bureau_exterior.png",
+  "bureau_front": "<repo>/content/series1/refs/bureau_front.png",
+  "bureau_reverse": "<repo>/content/series1/refs/bureau_reverse.png",
+  "glass_and_fold": "<repo>/content/series1/refs/glass_and_fold.png",
+  "kiran_phone": "<repo>/content/series1/refs/kiran_phone.png",
+  "maroon_bag": "<repo>/content/series1/refs/maroon_bag.png",
+  "brass_set": "<repo>/content/series1/refs/brass_set.png",
+  "padlock_hasp": "<repo>/content/series1/refs/padlock_hasp.png",
+  "key_thread": "<repo>/content/series1/refs/key_thread.png",
+  "billu_car": "<repo>/content/series1/refs/billu_car.png",
+  "key_bunch": "<repo>/content/series1/refs/key_bunch.png",
+  "cashbox_ledger": "<repo>/content/series1/refs/cashbox_ledger.png",
+  "style_frame": "<repo>/content/series1/refs/bedroom_bed.png",
+  "anchor_s03": "<repo>/content/series1/episodes/s1a01/frames/s03.png",
+  "anchor_s04": "<repo>/content/series1/episodes/s1a01/frames/s04.png",
+  "anchor_s15": "<repo>/content/series1/episodes/s1a01/frames/s15.png",
+  "anchor_s21": "<repo>/content/series1/episodes/s1a01/frames/s21.png",
+  "anchor_s28": "<repo>/content/series1/episodes/s1a01/frames/s28.png",
+  "anchor_s31": "<repo>/content/series1/episodes/s1a01/frames/s31.png",
+  "reused_s1e01_s12": "<repo>/content/series1/episodes/s1e01/frames/s12.png"
+ },
+ "scenes": [
+  {
+   "id": "sc1_bedroom",
+   "beats": [
+    "b1",
+    "b3",
+    "b5"
+   ],
+   "anchor_shot": "s03",
+   "anchor_reason": "First frame of the scene with the lead's face and the room: the b1 two-shot across the bed (Kiran, Aditya, phone, tray, both light sources). s01 is an extreme close-up of her lower face and carries none of the room, so it attaches the anchor. b5 (after the off-screen change) is the same room and night; its prompts list the grey wardrobe and the moved dabba under do-not-copy.",
+   "style_frame_on": "s03 only; its plate is bedroom_bed, the style frame itself, so the file is attached once and labelled as both (style.json style_frame.when_attached).",
+   "light_state": "bedroom_night",
+   "kiran_period": "period 1 (red saree) b1 and b3; period 2 (grey) b5"
+  },
+  {
+   "id": "sc2_lane",
+   "beats": [
+    "b2"
+   ],
+   "anchor_shot": "s04",
+   "anchor_reason": "The scene's only frame. Billu is the only face. It is first of scene, so it carries the style frame.",
+   "style_frame_on": "s04",
+   "light_state": "lane_night"
+  },
+  {
+   "id": "sc3_stairwell",
+   "beats": [
+    "b6"
+   ],
+   "anchor_shot": "s15",
+   "anchor_reason": "First frame of the scene with the lead's face: Kiran and Aditya on the stairs, the bulb, the flight. s13 is a pull on it; s14 and s16 attach it.",
+   "style_frame_on": "s15",
+   "light_state": "stairwell_night"
+  },
+  {
+   "id": "sc4_car",
+   "beats": [
+    "b7",
+    "b8"
+   ],
+   "anchor_shot": "s21",
+   "anchor_reason": "First frame of the scene that shows the lead (s18 is a wide with no readable face, s19 the mirror, s20 Aditya): Kiran in profile in the front seat, the dashboard, the dawn window. b8's frames attach it and list its blue light under do-not-copy (car_first_sun).",
+   "style_frame_on": "s21",
+   "light_state": "car_dawn_blue (b7), car_first_sun (b8)"
+  },
+  {
+   "id": "sc5_shutter",
+   "beats": [
+    "b9"
+   ],
+   "anchor_shot": "s28",
+   "anchor_reason": "b9 is outside the car at the bureau's shutter, a new setting and light; the car anchor shows none of it. s28 is the first frame with the lead's face there.",
+   "style_frame_on": "s28",
+   "light_state": "bureau_arrival (s30 also shows the bureau_morning room through the risen shutter)"
+  },
+  {
+   "id": "sc6_bureau",
+   "beats": [
+    "b10",
+    "b11"
+   ],
+   "anchor_shot": "s31",
+   "anchor_reason": "First frame inside the bureau and the first with the lead's face there: Mausi holding Kiran's face.",
+   "style_frame_on": "s31",
+   "light_state": "bureau_morning"
+  }
+ ],
+ "generation_order": [
+  "s03",
+  "s04",
+  "s15",
+  "s21",
+  "s28",
+  "s31",
+  "s01",
+  "s05",
+  "s06",
+  "s10",
+  "s11",
+  "s12",
+  "s14",
+  "s16",
+  "s18",
+  "s19",
+  "s20",
+  "s22",
+  "s24",
+  "s26",
+  "s27",
+  "s29",
+  "s30",
+  "s32",
+  "s33",
+  "s34",
+  "s37",
+  "s38"
+ ],
+ "generation_gates": [
+  "D-015 rule 7 and D-013 rule 2: generate the six anchors (s03, s04, s15, s21, s28, s31), run the anchor check, then the other 22. Every later frame attaches its anchor's png, so none can run before its anchor is approved. s04 is the lane's only frame.",
+  "D-023 rule 4.1: the frame check, one retake for each rejected frame plus the first attempt of any frame waiting on a rejected anchor, the retake check, and only then the edit. Second framings inherit their source frame's verdict; s02 inherits s1e01 s12's 'approved'.",
+  "D-021 decision 6 (retake check of the regenerated sheets) was to finish before the first anchor that attaches a sheet it names. I found no report of it (S9 found none for s1e01 either, D-023 not verified). Frames here attaching named sheets: mausi (s30, s32, s38), pair_kiran_mausi_p2 (s31, s37), the Kiran pairs pair_kiran_aditya_p1 (s03) and pair_kiran_aditya_p2 (s15, s24, s28, s34), lane_night (s04, s14). style.json locks_source records S6's full-resolution crops of Mausi's face, hand and keys, which covers part of that check. Whether to hold these frames is the orchestrator's call; I have not held them.",
+  "D-021 style-frame watch: s21 (car dawn), s28 (shutter, low sun) and s31 (bureau day) attach the night style frame bedroom_bed. The anchor check should say whether they copy its garlands, grille or lamp, or inherit its night light; if so, D-021's fallback (bureau_front as the day style frame) applies before the other day frames run.",
+  "D-017 height watch: s34 is the first same-depth Kiran-Aditya two-shot in this episode with the line-up sheet attached (s15 and s28 put him a step up or at a different depth). If his height is wrong there, D-017's restage applies to its retake (never side by side at the same depth).",
+  "D-023 rule 4.6 (Series 1 right-cuff rule) does not bite in s1a01: s1e02 b1 brought the right cuff down (P02), so both cuffs are at rest in every shot. kiran_hands is attached only to shots whose cuff state is 'at rest' (s10, s26, s29, s38), and every one of those prompts lists its view 3 (cuff pushed up, scar bare) under do-not-copy; view 2 (back of the hand, cuff at rest) is the matching view.",
+  "Glimpse A (s1ga, bible glimpses.A) may cut from s01, s12, s18 to s21, s28 and must end on s29 before the shutter rattle. It must not use s30 (Mausi's face, the shutter open), s27 (Billu has seen the print) or anything from b10 and b11."
+ ],
+ "screen_direction": [
+  "Bedroom b1 and b3 (geography from style.json: facing the headboard, window in the right wall, almirah and chair on the left wall, door behind): Kiran sits on the window-side edge of the bed by the stool; Aditya stands by the chair at the almirah wall. The line runs between them across the bed. Every camera stays on the door side of it. The two-shot s03 (bedroom_bed, from the door) has Aditya on picture-left facing right and Kiran on picture-right facing left. Kiran's singles (s01, s05; bedroom_window) have her look just past the picture-left edge of the lens; Aditya's single (s06; bedroom_bed turned to the almirah wall) has him look just past the picture-right edge.",
+  "Bedroom b5: Kiran at the open almirah (s10, picture-left of the room, she looks towards picture-right); Aditya at the foot of the bed on the window side (s11, bedroom_window from beside the almirah, he looks just past the picture-left edge). s12 is at the door.",
+  "Stairwell b6: s15 and s13 look up the flight from the street door (handrail on the picture-right wall); s14 is the reverse, down the flight to Billu in the open street door; s16 and s17 are Aditya's hands seen from Billu's position.",
+  "Car b7 and b8 (right-hand drive; Billu front right, Kiran front left, Aditya rear left behind Kiran): s21, s22, s23, s25 and s26 look across from the driver's side, so Kiran is in right profile facing picture-right (hoop hidden). s19, s24 and s27 look forward from the rear bench (driver picture-right). s20 looks back from between the front seats (Aditya picture-right, as car_rear).",
+  "Shutter b9: the car stands at the kerb, its left side to the shop fronts, nose away from the camera. s28 looks forward along its left side from behind the left rear corner, so the joined hands (her LEFT, his RIGHT) are on the near side; shops on picture-left; low sun from behind the camera. s29 is the same side, macro, her hand towards picture-left. s30 is the reverse, low from the car door towards the risen shutter.",
+  "Bureau b10 and b11: s31 and s37 face into the room (bureau_front direction) with Kiran picture-left facing right and Mausi picture-right facing left, so Mausi's left side (her one stud, her keys) is towards the camera and her right profile is never shown (D-021 decision 4). s32 faces her at the desk. s33 and s34 face the shutter (bureau_reverse): the cot on picture-left, the mirror wall kept out of frame (D-007 direction 16). s38 is an insert at the desk with Aditya beyond the hands."
+ ],
+ "state_ledger": {
+  "source": "continuity.json has no beat-level ledger for s1a01. Built from continuity.json (s1e02 end_state, s1a01 end_state, wardrobe_changes, P01 and P08 as now written in the script), style.json characters and key_props, and the script's action lines. Sides are the character's own; every prompt converts them to picture terms (D-013 rule 3).",
+  "constant": [
+   "Kiran: chooda complete and at rest on both forearms in every shot (left cuff complete since s1e02 b4; right cuff brought down in s1e02 b1, P02). The scar is never in frame (writer_notes: no frame shows the scar).",
+   "Aditya: glasses and the brass key on its doubled red thread in every shot; watch on his LEFT wrist; patch pocket on his RIGHT chest (style.json lock over the script's 'right kurta pocket'). Barefoot in the bedroom (b1 to b5), tan sandals from b6.",
+   "Billu: toothpick in the RIGHT corner of his mouth throughout; key on his RIGHT index finger in b2 and b6, in the ignition from b7 to b9; no weapon.",
+   "Mausi (from b9): keys at her LEFT hip, green glass bangles on both wrists, thin gold band on her RIGHT hand, one stud in her LEFT nostril; never a close right profile.",
+   "Chhoti (b10): henna on her LEFT palm and fingertips only; pink phone in her RIGHT hand; two green bangles on her RIGHT wrist; left wrist bare."
+  ],
+  "b1": "2:00 am. Kiran (period 1, red saree) seated on the window-side edge of the bed by the stool, the fall of the pallu over her LEFT forearm in her lap. Her phone face up on the sheet between them, on speaker. Aditya across the room by the chair, the steel dabba in his hand (P01). Tray on the stool: tumbler full and untouched, fold open, half full. Padlock locked. Print on the sheet, not shown. Maroon bag on the chair, side pocket open and empty.",
+  "b2": "Lane. Billu leaning on the bonnet, pocketing his phone with his right hand, key on his right index finger. The boys riding off on the motorbike, backs only.",
+  "b3": "As b1; Kiran still seated, her left forearm under the pallu; Aditya by the chair, dabba in his hand below frame.",
+  "b5": "Kiran in period 2 (grey salwar-kurta, grey dupatta on her LEFT shoulder, black sandals) at the open almirah, her right hand on her left cuff; red saree folded over the chair; dabba back in the bag's side pocket, lid showing. Aditya, barefoot, with the closed red velvet box in his LEFT hand. Then: the fold folded shut and the print both in his RIGHT chest pocket (P08); his key, still on its thread, turned in the padlock, shackle open, hasp still closed, bolt still shot.",
+  "b6": "3:00 am. Kiran down the stairs first; Aditya a step above, tan sandals, the closed box in his LEFT hand, then opened in both hands (brass set). Billu in the open street door, key on his right finger.",
+  "b7": "Dawn. Billu driving, key in the ignition, his LEFT hand holding his phone flat over the gear lever towards Kiran from l16 to l19. Kiran front left. Aditya rear left, print and fold in his pocket.",
+  "b8": "First sun. Kiran's LEFT hand loose in her lap, palm down, cuff glowing. Aditya slides the print back into his RIGHT chest pocket; Billu's eyes in the mirror follow it (Billu has seen the print).",
+  "b9": "About 5:40 am, at the bureau shutter. Aditya at the open front-left door holding Kiran's LEFT hand in his RIGHT; his fingers close over the middle of her cuff; the stack shifts, nothing shows. Shutter rises on Mausi; the hands come apart.",
+  "b10": "About 5:45 am, bureau front room, shutter up, tube on. Mausi holds Kiran's face, forearms bare and unmarked. Mausi at the desk with the open velvet box (Billu's left hand sets it down) and the closed cashbox. Chhoti on the cot, LEFT hand out flat, back up, outer forearm bare. Kiran and Aditya side by side inside the shutter.",
+  "b11": "Mausi and Kiran standing at the desk. Mausi's RIGHT hand (gold band, green bangles) on Kiran's LEFT wrist; the first ivory bangle worked over Kiran's knuckles; the rest of the cuff still on. Aditya an arm's length away. End state matches continuity.json s1a01 end_state."
+ },
+ "field_notes": {
+  "duration_s": "Longer language, this shot (max of duration_hi_s and duration_en_s). silent_s is the part of the shot that is a script beat silence; silent-only shots have no line_ids and run duration_s (build_timeline silent_frames).",
+  "silent_lead_s": "0 on every line shot: no beat silence sits before a line inside a line shot; each 'before' silence is its own shot (s04, s13, s18, s26, s27).",
+  "camera_move": "Move in production/remotion/src/types.ts. For 'custom', from/to are CameraKey {scale, x, y}: x positive looks further left, y positive looks further up (camera.ts), clamped to -1..1. Every custom key is at scale 1.3 or less.",
+  "refs": "Absolute paths, at most five, in the order the prompt labels them: people (pair or single sheet, hand sheet), plate, prop sheets, then the scene anchor or, on an anchor, the style frame last (D-013 rule 1, D-017 amendment 3, D-021 decision 3).",
+  "frame.prompt_sha": "sha256 of the prompt file, first 12 characters, the same measure the runner writes to the manifest.",
+  "subtitle_safe": "true = faces, hands that matter and the key object are above the bottom fifth of the frame (as prompted; not yet checked on a picture)."
+ },
+ "storyboard_notes": [
+  "39 shots for 10 beats, 28 generated frames (D-010), 10 second framings, 1 reused approved frame. Every script set-up is covered; where two set-ups share one frame it is listed below.",
+  "Departures to stay inside 28 frames, each logged so the one-frame fix is clear if it reads wrong in the cut: (1) s02 (b1 shot 2) is the approved s1e01 s12 phone insert. (2) b3's four set-ups and its silence use two generated close-ups: s07 and s09 push in on s05, s08 on s06. (3) b5's two silent inserts are one set-up, s12, with a pan from the pocket (fold and print already in it) to the key in the padlock; the folding of the paper over the tray is not shown. (4) s13 (b6 silent before) is a pull on the s15 two-shot, not a view from behind Billu's head. (5) s17 (l12, Billu's laugh) plays over a closer framing of the brass set, not on Billu. (6) s25 (l19) is a push on s22 and keeps its blue light; the warm turn lands on the cut to s26. (7) l24 and l25 share the s34 two-shot; the script's Aditya close for l24 is not made. (8) l28's insert and b11's held set-up share s38; the focus pull is a camera move from the hands up to his eyes.",
+  "Departures forced by the stills or the geography: (1) s19: the toothpick is not in frame (the camera is behind Billu and the toothpick is on the far corner of his mouth). (2) s20: Billu's eyes in the mirror are dropped; a camera facing the rear bench cannot see the mirror glass. (3) s24 and s27: the mirror shows only a blur in s24 (to keep two faces at most) and Billu's eyes in s27.",
+  "Light: the script calls the lane and the stairwell door's light sodium; style.json makes the lane's streetlight cool blue-white (art_director_notes), and the prompts follow style.json, as s1e01 did.",
+  "Locks over script wording: Aditya's pocket is the patch pocket on his RIGHT chest (style.json); Kiran's grey sleeves end just below the elbow (style.json), so b5's 'a hand's width of bare forearm above the cuff' is kept and the script's 'three-quarter sleeves' is not; Mausi's lips are muted rose-red (lock), her 'paan smile' is played as a warm closed smile.",
+  "Readable text is overlay only: 'मौसी' / 'Mausi' and '2:00' on the phone screen in s02; '3:00' on the plain dark wall area s15 leaves at upper picture-left, used in s13; 'मौसी' / 'Mausi' on the phone screen at the lower picture-left edge of s23. The bureau signboard is blank.",
+  "Faces per frame: never more than two sheet faces (D-021 decision 8). Two-face frames: s03, s15 (and s13), s24 (Aditya only as a soft glasses edge), s28, s31, s34 (and s35), s37. Billu's boys are backs only (s04). Mausi is never in a close right profile.",
+  "The scar is in no frame. Every shot that attaches kiran_hands (s10, s26, s29, s38) states the cuff at rest, frames out any forearm skin near the scar's place, and lists the sheet's scar view under do-not-copy.",
+  "Mohit, the photograph's picture side and the boys' faces are in no frame. The print appears only as its white back (s12, s20, s27)."
+ ],
+ "shots": [
+  {
+   "id": "s01",
+   "scene": "sc1_bedroom",
+   "beat_id": "b1",
+   "setup": "b1 shot 1",
+   "line_ids": [
+    "l01"
+   ],
+   "silent_s": 0.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 2.33,
+   "duration_en_s": 2.81,
+   "duration_s": 2.81,
+   "framing": "Extreme close-up, 100 mm, Kiran's lower face from the tip of her nose to the mangalsutra, from the almirah side of the room at her seated eye level.",
+   "action": "HOOK, lands at 0 s, inside the same breath that ended s1e02: Kiran says the all-clear to Mausi, calm, the groom awake across the room.",
+   "frame": {
+    "kind": "generated",
+    "prompt_file": "<repo>/content/series1/episodes/s1a01/frames/prompts/s01.txt",
+    "out": "<repo>/content/series1/episodes/s1a01/frames/s01.png",
+    "prompt_sha": "5b8b82953422",
+    "prompt_chars": 10439
+   },
+   "refs": [
+    "<repo>/content/series1/refs/kiran_p1.png",
+    "<repo>/content/series1/refs/bedroom_window.png",
+    "<repo>/content/series1/episodes/s1a01/frames/s03.png"
+   ],
+   "camera_move": {
+    "preset": "push-in",
+    "intensity": 0.2,
+    "focus": {
+     "x": 0.5,
+     "y": 0.42
+    }
+   },
+   "on_screen": [
+    "kiran"
+   ],
+   "faces_in_frame": 1,
+   "light_state": "bedroom_night",
+   "state": [
+    "Kiran sits on the window-side edge of the bed beside the stool, her head turned three-quarters towards the picture-left and tipped slightly down towards her phone, which lies on the sheet below the frame on the picture-left.",
+    "Her left forearm (on the picture-right) lies in her lap under the long fall of the red pallu; no part of it is in this frame.",
+    "Her right hand is below the frame. Both chooda cuffs are complete and at rest at the wrists, out of this frame.",
+    "Nothing in her hands. Nobody else in the frame."
+   ],
+   "subtitle_safe": true
+  },
+  {
+   "id": "s02",
+   "scene": "sc1_bedroom",
+   "beat_id": "b1",
+   "setup": "b1 shot 2",
+   "line_ids": [
+    "l02"
+   ],
+   "silent_s": 0.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 5.21,
+   "duration_en_s": 5.13,
+   "duration_s": 5.21,
+   "framing": "Insert, 100 mm macro, steeply from above on the sheet (s1e01 s12 as approved).",
+   "action": "Mausi on speaker through the phone, chuckling: all well, Billu at three. Overlays: caller name 'मौसी' (hi) / 'Mausi' (en) and '2:00' on the dark screen.",
+   "frame": {
+    "kind": "reused_asset",
+    "image": "<repo>/content/series1/episodes/s1e01/frames/s12.png",
+    "rule": "Approved s1e01 frame s12 (frames/review.json: approved): Kiran's black phone in its dark-red cover lying screen up on the white sheet among marigold petals, screen a plain dark surface. It is the same phone on the same sheet; s1a01 b1 asks for exactly this insert (caller name and 2:00 as overlays). Re-used under D-010's second-framing rule at scale 1.3 or less; it inherits s12's verdict (D-023 toolsmith step: reused_asset)."
+   },
+   "refs": [],
+   "camera_move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.06,
+     "x": 1.0,
+     "y": 1.0
+    },
+    "to": {
+     "scale": 1.16,
+     "x": 0.44,
+     "y": 0.73
+    }
+   },
+   "on_screen": [
+    "kiran_phone"
+   ],
+   "faces_in_frame": 0,
+   "light_state": "bedroom_night",
+   "state": [
+    "Phone face up on the white sheet between them, on speaker, screen a plain dark surface (the caller name and 2:00 are overlays added in assembly).",
+    "Marigold petals on the sheet round it. No hands in frame."
+   ],
+   "subtitle_safe": true,
+   "note": "Overlay placement: inside the phone's screen, which spans roughly x 0.27-0.75, y 0.21-0.70 of s12. The SIM is back in since s1e02 b4; the frame shows no SIM tray, so it does not contradict that."
+  },
+  {
+   "id": "s03",
+   "scene": "sc1_bedroom",
+   "beat_id": "b1",
+   "setup": "b1 silent after (two-shot)",
+   "line_ids": [],
+   "silent_s": 1.2,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 1.2,
+   "duration_en_s": 1.2,
+   "duration_s": 1.2,
+   "framing": "Wide two-shot across the bed, 35 mm, from just inside the door (bedroom_bed direction), standing eye level.",
+   "action": "Call-ended tone. A room's width apart: Aditya by the chair with the steel dabba still in his hand lets out a breath and lowers his eyes; Kiran on the window-side edge of the bed, the untouched glass on the stool beside her, the phone on the sheet between them.",
+   "frame": {
+    "kind": "generated",
+    "prompt_file": "<repo>/content/series1/episodes/s1a01/frames/prompts/s03.txt",
+    "out": "<repo>/content/series1/episodes/s1a01/frames/s03.png",
+    "prompt_sha": "32cb772fc804",
+    "prompt_chars": 14946
+   },
+   "refs": [
+    "<repo>/content/series1/refs/pair_kiran_aditya_p1.png",
+    "<repo>/content/series1/refs/bedroom_bed.png",
+    "<repo>/content/series1/refs/glass_and_fold.png",
+    "<repo>/content/series1/refs/kiran_phone.png",
+    "<repo>/content/series1/refs/maroon_bag.png"
+   ],
+   "camera_move": {
+    "preset": "push-in",
+    "intensity": 0.15,
+    "focus": {
+     "x": 0.55,
+     "y": 0.4
+    }
+   },
+   "on_screen": [
+    "kiran",
+    "aditya"
+   ],
+   "faces_in_frame": 2,
+   "light_state": "bedroom_night",
+   "state": [
+    "Aditya, on the picture-left: standing beside the wooden chair against the left wall, his body turned towards the picture-right (towards Kiran), so his RIGHT side is nearer the camera; in his right hand (the near hand) the small round plain steel dabba of mathri, lid on, held at his waist; glasses on; the brass key on its doubled red thread at mid-chest; the patch pocket on the near side of his chest; his watch on his far (left) wrist, out of sight; barefoot; eyes lowered to the floor.",
+    "Kiran, on the picture-right: seated on the window-side edge of the bed beside the stool, turned towards the picture-left (towards him), so her LEFT side is nearer the camera; the pallu on her left shoulder and its long fall lying over her left forearm and hand in her lap, hiding the forearm; her right hand rests on her right knee on the far side; both chooda cuffs complete and at rest just above the wrists; barefoot; her face still, eyes on him.",
+    "Her phone (black, dark-red cover) lies face up on the white sheet in the middle of the bed between them, screen dark.",
+    "On the stool beside her, window side: the round steel tray with the steel tumbler full of kesar milk, untouched, and the small white paper fold lying open beside it with half its powder still in the crease.",
+    "The maroon bag on the seat of the wooden chair beside Aditya, its side pocket unzipped and empty.",
+    "The almirah is shut. The door is behind the camera (bolt shot, padlock locked; not in view). The photograph is not in view."
+   ],
+   "subtitle_safe": true,
+   "scene_anchor": true
+  },
+  {
+   "id": "s04",
+   "scene": "sc2_lane",
+   "beat_id": "b2",
+   "setup": "b2 one still",
+   "line_ids": [],
+   "silent_s": 2.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 2.0,
+   "duration_en_s": 2.0,
+   "duration_s": 2.0,
+   "framing": "Medium-wide, 35 mm at f/2.8, standing in the lane at Billu's eye level (lane_night direction).",
+   "action": "Billu pockets his phone after the call; behind him the two boys ride off on the motorbike, its red tail light moving away. Billu is the only face.",
+   "frame": {
+    "kind": "generated",
+    "prompt_file": "<repo>/content/series1/episodes/s1a01/frames/prompts/s04.txt",
+    "out": "<repo>/content/series1/episodes/s1a01/frames/s04.png",
+    "prompt_sha": "459dcfa655d9",
+    "prompt_chars": 10556
+   },
+   "refs": [
+    "<repo>/content/series1/refs/billu.png",
+    "<repo>/content/series1/refs/lane_night.png",
+    "<repo>/content/series1/refs/billu_car.png",
+    "<repo>/content/series1/refs/bedroom_bed.png"
+   ],
+   "camera_move": {
+    "preset": "push-in",
+    "intensity": 0.2,
+    "focus": {
+     "x": 0.42,
+     "y": 0.4
+    }
+   },
+   "on_screen": [
+    "billu",
+    "the_boys"
+   ],
+   "faces_in_frame": 1,
+   "light_state": "lane_night",
+   "state": [
+    "Billu leans back against the front edge of the bonnet of his white car, facing the camera, his weight on his heels.",
+    "His RIGHT hand (on the picture-left) is pushing his phone into the front pocket of his jeans; the car key with its black plastic head hangs on its steel ring hooked on his right index finger.",
+    "His LEFT hand (on the picture-right) rests flat on the bonnet beside him.",
+    "Wooden toothpick in the RIGHT corner of his mouth (picture-left).",
+    "Car parked, lights off. Deep in the lane behind him, the old black motorbike rides away from the camera with the two boys on it, its small red tail light lit.",
+    "The boys: backs only, heads turned away, faces never seen. Nobody else in the lane."
+   ],
+   "subtitle_safe": true,
+   "scene_anchor": true
+  },
+  {
+   "id": "s05",
+   "scene": "sc1_bedroom",
+   "beat_id": "b3",
+   "setup": "b3 shot 1",
+   "line_ids": [
+    "l03"
+   ],
+   "silent_s": 0.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 4.01,
+   "duration_en_s": 3.77,
+   "duration_s": 4.01,
+   "framing": "Close-up, 85 mm, head and shoulders, from the almirah side (door end), her seated eye level; she looks just past the picture-left edge of the lens.",
+   "action": "Kiran drops into her own register, flat and quick: the other code would have brought two boys up the stairs.",
+   "frame": {
+    "kind": "generated",
+    "prompt_file": "<repo>/content/series1/episodes/s1a01/frames/prompts/s05.txt",
+    "out": "<repo>/content/series1/episodes/s1a01/frames/s05.png",
+    "prompt_sha": "2a431c0d2df2",
+    "prompt_chars": 10320
+   },
+   "refs": [
+    "<repo>/content/series1/refs/kiran_p1.png",
+    "<repo>/content/series1/refs/bedroom_window.png",
+    "<repo>/content/series1/episodes/s1a01/frames/s03.png"
+   ],
+   "camera_move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.0,
+     "x": 0.0,
+     "y": 0.0
+    },
+    "to": {
+     "scale": 1.08,
+     "x": 0.81,
+     "y": 1.0
+    }
+   },
+   "on_screen": [
+    "kiran"
+   ],
+   "faces_in_frame": 1,
+   "light_state": "bedroom_night",
+   "state": [
+    "Kiran seated on the window-side edge of the bed, turned towards the picture-left.",
+    "Left forearm (picture-right) in her lap under the fall of the pallu, out of frame.",
+    "Right hand out of frame. Both cuffs complete and at rest, out of frame.",
+    "Glass, fold and phone out of frame."
+   ],
+   "subtitle_safe": true
+  },
+  {
+   "id": "s06",
+   "scene": "sc1_bedroom",
+   "beat_id": "b3",
+   "setup": "b3 shot 2",
+   "line_ids": [
+    "l04"
+   ],
+   "silent_s": 0.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 2.57,
+   "duration_en_s": 2.49,
+   "duration_s": 2.57,
+   "framing": "Close-up, 85 mm, head and shoulders, from the window side (door end) towards the almirah wall, his standing eye level; he looks just past the picture-right edge of the lens.",
+   "action": "Aditya, very still in the lamp's key light: then why didn't you say it?",
+   "frame": {
+    "kind": "generated",
+    "prompt_file": "<repo>/content/series1/episodes/s1a01/frames/prompts/s06.txt",
+    "out": "<repo>/content/series1/episodes/s1a01/frames/s06.png",
+    "prompt_sha": "cd1791dc631d",
+    "prompt_chars": 10782
+   },
+   "refs": [
+    "<repo>/content/series1/refs/aditya.png",
+    "<repo>/content/series1/refs/bedroom_bed.png",
+    "<repo>/content/series1/refs/maroon_bag.png",
+    "<repo>/content/series1/episodes/s1a01/frames/s03.png"
+   ],
+   "camera_move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.0,
+     "x": 0.0,
+     "y": 0.0
+    },
+    "to": {
+     "scale": 1.08,
+     "x": -0.54,
+     "y": 1.0
+    }
+   },
+   "on_screen": [
+    "aditya"
+   ],
+   "faces_in_frame": 1,
+   "light_state": "bedroom_night",
+   "state": [
+    "Aditya standing by the wooden chair at the almirah wall, turned towards the picture-right (towards Kiran), so his RIGHT side is nearer the camera.",
+    "Glasses on; the doubled red thread at his collar running down to the brass key at mid-chest (the key at the lower edge of the frame).",
+    "The steel dabba still in his right hand (the hand nearer the camera), at his waist, below the frame. Watch on his LEFT wrist (the far arm), out of frame.",
+    "Behind him, soft: the grey-green almirah, shut; the wooden chair with the maroon bag on it."
+   ],
+   "subtitle_safe": true
+  },
+  {
+   "id": "s07",
+   "scene": "sc1_bedroom",
+   "beat_id": "b3",
+   "setup": "b3 shot 3",
+   "line_ids": [
+    "l05"
+   ],
+   "silent_s": 0.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 6.65,
+   "duration_en_s": 5.61,
+   "duration_s": 6.65,
+   "framing": "Tighter on Kiran's face (second framing of s05).",
+   "action": "She gives the name after a breath: Mohit.",
+   "frame": {
+    "kind": "second_framing",
+    "source_shot": "s05",
+    "image": "<repo>/content/series1/episodes/s1a01/frames/s05.png"
+   },
+   "refs": [],
+   "camera_move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.15,
+     "x": 0.46,
+     "y": 1.0
+    },
+    "to": {
+     "scale": 1.25,
+     "x": 0.3,
+     "y": 1.0
+    }
+   },
+   "on_screen": [
+    "kiran"
+   ],
+   "faces_in_frame": 1,
+   "light_state": "bedroom_night",
+   "state": [
+    "As s05."
+   ],
+   "subtitle_safe": true,
+   "note": "The b3 close (D-023 rule 4.8) is taken from a close-up, not from a wide: s05 is generated as a close-up so this push stays a close."
+  },
+  {
+   "id": "s08",
+   "scene": "sc1_bedroom",
+   "beat_id": "b3",
+   "setup": "b3 shot 3b",
+   "line_ids": [
+    "l06"
+   ],
+   "silent_s": 0.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 6.97,
+   "duration_en_s": 6.49,
+   "duration_s": 6.97,
+   "framing": "Aditya close (second framing of s06).",
+   "action": "Aditya holds on her while she goes straight to business off his face: Mausi only meets a man she can use, so now he is a thief too.",
+   "frame": {
+    "kind": "second_framing",
+    "source_shot": "s06",
+    "image": "<repo>/content/series1/episodes/s1a01/frames/s06.png"
+   },
+   "refs": [],
+   "camera_move": {
+    "preset": "custom",
+    "easing": "linear",
+    "from": {
+     "scale": 1.14,
+     "x": -0.33,
+     "y": 1.0
+    },
+    "to": {
+     "scale": 1.3,
+     "x": -0.17,
+     "y": 1.0
+    }
+   },
+   "on_screen": [
+    "aditya"
+   ],
+   "faces_in_frame": 1,
+   "light_state": "bedroom_night",
+   "state": [
+    "As s06."
+   ],
+   "subtitle_safe": true,
+   "note": "Kiran's l06 plays off screen over his face, as the script stages it."
+  },
+  {
+   "id": "s09",
+   "scene": "sc1_bedroom",
+   "beat_id": "b3",
+   "setup": "b3 silent after",
+   "line_ids": [
+    "l29"
+   ],
+   "silent_s": 1.2,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 5.77,
+   "duration_en_s": 5.45,
+   "duration_s": 5.77,
+   "framing": "Kiran close, held (second framing of s05).",
+   "action": "Kiran waits for his answer.",
+   "frame": {
+    "kind": "second_framing",
+    "source_shot": "s05",
+    "image": "<repo>/content/series1/episodes/s1a01/frames/s05.png"
+   },
+   "refs": [],
+   "camera_move": {
+    "preset": "custom",
+    "easing": "ease-out",
+    "from": {
+     "scale": 1.25,
+     "x": 0.3,
+     "y": 1.0
+    },
+    "to": {
+     "scale": 1.3,
+     "x": 0.26,
+     "y": 1.0
+    }
+   },
+   "on_screen": [
+    "kiran"
+   ],
+   "faces_in_frame": 1,
+   "light_state": "bedroom_night",
+   "state": [
+    "As s05."
+   ],
+   "subtitle_safe": true,
+   "line_part": "all of l29, then the 1.2 s hold while she waits for his answer (b3 shot 4)"
+  },
+  {
+   "id": "s10",
+   "scene": "sc1_bedroom",
+   "beat_id": "b5",
+   "setup": "b5 shot 1",
+   "line_ids": [
+    "l07"
+   ],
+   "silent_s": 0.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 3.05,
+   "duration_en_s": 4.65,
+   "duration_s": 4.65,
+   "framing": "Medium shot, 50 mm, from near the door looking towards the almirah corner (bedroom_bed direction, turned a little to the picture-left), standing eye level.",
+   "action": "Changed off screen into the grey salwar-kurta; her routine: the chooda comes off in the car.",
+   "frame": {
+    "kind": "generated",
+    "prompt_file": "<repo>/content/series1/episodes/s1a01/frames/prompts/s10.txt",
+    "out": "<repo>/content/series1/episodes/s1a01/frames/s10.png",
+    "prompt_sha": "fad895d3b937",
+    "prompt_chars": 14584,
+    "attempt": 2
+   },
+   "refs": [
+    "<repo>/content/series1/refs/kiran_p2.png",
+    "<repo>/content/series1/refs/bedroom_bed.png",
+    "<repo>/content/series1/refs/kiran_hands.png",
+    "<repo>/content/series1/refs/maroon_bag.png",
+    "<repo>/content/series1/episodes/s1a01/frames/s03.png"
+   ],
+   "camera_move": {
+    "preset": "push-in",
+    "intensity": 0.2,
+    "focus": {
+     "x": 0.42,
+     "y": 0.4
+    }
+   },
+   "on_screen": [
+    "kiran"
+   ],
+   "faces_in_frame": 1,
+   "light_state": "bedroom_night",
+   "state": [
+    "Kiran stands beside the open grey-green almirah door against the left wall, in the ash-grey salwar-kurta, grey dupatta over her LEFT shoulder, flat black sandals; her body turned three-quarters towards the picture-right, towards Aditya off screen, so her RIGHT side is nearer the camera.",
+    "Her left forearm (the far arm) lies across the front of her waist, its hand towards the picture-left; her right hand (the near hand, on the picture-left of her body) rests on that forearm's red cuff, covering part of it. The left cuff is complete, at rest, from just above the wrist bone; between the end of the grey sleeve and the top of the cuff a hand's width of plain bare forearm shows. No scar or mark anywhere.",
+    "She wears TWO chooda cuffs. The arm from her picture-left shoulder (her right, the near arm) also wears its own complete glossy deep-red cuff with two ivory bangles at each end, from just above its wrist bone, clearly visible between the grey sleeve and the hand resting on the other cuff.",
+    "The red saree folded over the back of the wooden chair beside her (on the picture-right of her); the maroon bag on the chair's seat, its side pocket half unzipped and facing the camera, the round lid of the steel dabba showing in the opening.",
+    "The almirah door stands open; inside, plain folded clothes on shelves, nothing readable.",
+    "Aditya, the bed, the tray and the phone are out of this frame."
+   ],
+   "subtitle_safe": true,
+   "drift": [
+    "Retake (attempt 2, D-023) after the frame check rejected attempt 1 (kept as frames/s10.prev1.png): the near (right) forearm had no chooda. Attempt 2 stands as the better take; no further retake (D-013 rule 11).",
+    "Fixed in attempt 2: both forearms wear a complete deep-red cuff with two ivory bangles at each end; ear studs are plain gold balls with no drop; nose hoop on the picture-right nostril; backs of both hands plain with dipped fingertips; bag pocket half unzipped with the steel dabba lid showing; red saree on the chair.",
+    "Remaining drift (S7 eye reading of a crop, not checked by S9): the near (right) cuff sits a few centimetres up the forearm from the wrist bone, leaving a narrow band of bare skin between the cuff and the resting hand, rather than starting just above the wrist bone; it still reads as worn and at rest, not pushed up. Both cuffs read slightly chunkier than the sheet."
+   ]
+  },
+  {
+   "id": "s11",
+   "scene": "sc1_bedroom",
+   "beat_id": "b5",
+   "setup": "b5 shot 2",
+   "line_ids": [
+    "l08"
+   ],
+   "silent_s": 0.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 3.37,
+   "duration_en_s": 3.37,
+   "duration_s": 3.37,
+   "framing": "Medium shot, 50 mm, from beside the almirah towards the window wall (bedroom_window direction), standing eye level; he looks just past the picture-left edge of the lens.",
+   "action": "Aditya overrules the routine: leave it on, we arrive as bride and groom. The red velvet box from the almirah in his left hand.",
+   "frame": {
+    "kind": "generated",
+    "prompt_file": "<repo>/content/series1/episodes/s1a01/frames/prompts/s11.txt",
+    "out": "<repo>/content/series1/episodes/s1a01/frames/s11.png",
+    "prompt_sha": "a4d0982524e2",
+    "prompt_chars": 10888
+   },
+   "refs": [
+    "<repo>/content/series1/refs/aditya.png",
+    "<repo>/content/series1/refs/bedroom_window.png",
+    "<repo>/content/series1/refs/brass_set.png",
+    "<repo>/content/series1/episodes/s1a01/frames/s03.png"
+   ],
+   "camera_move": {
+    "preset": "push-in",
+    "intensity": 0.2,
+    "focus": {
+     "x": 0.5,
+     "y": 0.36
+    }
+   },
+   "on_screen": [
+    "aditya"
+   ],
+   "faces_in_frame": 1,
+   "light_state": "bedroom_night",
+   "state": [
+    "Aditya stands at the foot of the bed on the window side, facing the camera and turned a little towards the picture-left (towards Kiran at the almirah, behind the camera).",
+    "His LEFT hand (on the picture-right) holds the closed red velvet box against his side at waist height; the steel watch on that wrist.",
+    "His RIGHT hand (on the picture-left) hangs empty at his side.",
+    "Glasses on; key on its doubled red thread at mid-chest; barefoot.",
+    "Behind him by the window, the stool and tray: the steel tumbler full and untouched, the paper fold still lying open beside it.",
+    "Kiran's phone and the photograph are on the sheet out of this frame."
+   ],
+   "subtitle_safe": true
+  },
+  {
+   "id": "s12",
+   "scene": "sc1_bedroom",
+   "beat_id": "b5",
+   "setup": "b5 silent after, inserts (1) and (2) in one set-up",
+   "line_ids": [],
+   "silent_s": 3.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 3.0,
+   "duration_en_s": 3.0,
+   "duration_s": 3.0,
+   "framing": "Close insert, 85 mm, from beside his right shoulder looking past his chest at the door fitting; pans from the pocket to the padlock.",
+   "action": "The fold, folded shut, and the creased print are in his right chest pocket; the brass key, still on its red thread from his neck, turned in the brass padlock on the inside hasp, the shackle open. Padlock clack.",
+   "frame": {
+    "kind": "generated",
+    "prompt_file": "<repo>/content/series1/episodes/s1a01/frames/prompts/s12.txt",
+    "out": "<repo>/content/series1/episodes/s1a01/frames/s12.png",
+    "prompt_sha": "95a43d192725",
+    "prompt_chars": 11697
+   },
+   "refs": [
+    "<repo>/content/series1/refs/aditya.png",
+    "<repo>/content/series1/refs/bedroom_door.png",
+    "<repo>/content/series1/refs/padlock_hasp.png",
+    "<repo>/content/series1/refs/key_thread.png",
+    "<repo>/content/series1/episodes/s1a01/frames/s03.png"
+   ],
+   "camera_move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.25,
+     "x": 1.0,
+     "y": 1.0
+    },
+    "to": {
+     "scale": 1.22,
+     "x": -0.89,
+     "y": -0.55
+    }
+   },
+   "on_screen": [
+    "aditya (chest and hand only)"
+   ],
+   "faces_in_frame": 0,
+   "light_state": "bedroom_night",
+   "state": [
+    "Aditya stands close to the shut pale-blue door, stooping a little, his face out of frame above the top edge.",
+    "On his RIGHT chest the square patch pocket: from its mouth the white edge of the creased print (white back outward, no picture showing) and, beside it, the edge of the small white paper fold, now folded shut into a small square.",
+    "The doubled red thread runs from the top edge of the frame (his neck) taut down to the brass key, which is pushed into the small brass padlock; the fingers of his RIGHT hand (nearer the camera, from the picture-left) turn it.",
+    "Padlock: its shackle has just sprung open, still hanging through the staple of the hasp; the hasp is still closed over its staple; the black iron bolt above is still shot. The door is still shut.",
+    "No watch in frame (it is on his left wrist, the far arm, out of frame). No face in frame."
+   ],
+   "subtitle_safe": true
+  },
+  {
+   "id": "s13",
+   "scene": "sc3_stairwell",
+   "beat_id": "b6",
+   "setup": "b6 silent before (looking up the stairs)",
+   "line_ids": [],
+   "silent_s": 1.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 1.0,
+   "duration_en_s": 1.0,
+   "duration_s": 1.0,
+   "framing": "The two on the stair, wider (second framing of s15); overlay '3:00' on the plain wall at upper picture-left.",
+   "action": "3:00. Kiran coming down first in grey, Aditya a step above her, awake.",
+   "frame": {
+    "kind": "second_framing",
+    "source_shot": "s15",
+    "image": "<repo>/content/series1/episodes/s1a01/frames/s15.png"
+   },
+   "refs": [],
+   "camera_move": {
+    "preset": "custom",
+    "easing": "ease-out",
+    "from": {
+     "scale": 1.12,
+     "x": 0.0,
+     "y": 1.0
+    },
+    "to": {
+     "scale": 1.04,
+     "x": 0.0,
+     "y": 1.0
+    }
+   },
+   "on_screen": [
+    "kiran",
+    "aditya"
+   ],
+   "faces_in_frame": 2,
+   "light_state": "stairwell_night",
+   "state": [
+    "As s15."
+   ],
+   "subtitle_safe": true,
+   "note": "Script asks for this from behind Billu's head in the doorway. That would be a 29th frame; it is a slow pull on the s15 two-shot instead, and Billu's place is set by s14. '3:00' overlay goes on the plain dark wall area s15 leaves at the upper picture-left."
+  },
+  {
+   "id": "s14",
+   "scene": "sc3_stairwell",
+   "beat_id": "b6",
+   "setup": "b6 shot 2",
+   "line_ids": [
+    "l09"
+   ],
+   "silent_s": 0.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 2.0,
+   "duration_en_s": 2.32,
+   "duration_s": 2.32,
+   "framing": "Medium close-up, 50 mm, from a few steps up looking down the flight at Billu in the open street door.",
+   "action": "Billu, toothpick in, eyes wide: Kiran? This one's awake...",
+   "frame": {
+    "kind": "generated",
+    "prompt_file": "<repo>/content/series1/episodes/s1a01/frames/prompts/s14.txt",
+    "out": "<repo>/content/series1/episodes/s1a01/frames/s14.png",
+    "prompt_sha": "9797dc1aa04a",
+    "prompt_chars": 9527
+   },
+   "refs": [
+    "<repo>/content/series1/refs/billu.png",
+    "<repo>/content/series1/refs/stairwell_down.png",
+    "<repo>/content/series1/refs/lane_night.png",
+    "<repo>/content/series1/episodes/s1a01/frames/s15.png"
+   ],
+   "camera_move": {
+    "preset": "push-in",
+    "intensity": 0.25,
+    "focus": {
+     "x": 0.5,
+     "y": 0.42
+    }
+   },
+   "on_screen": [
+    "billu"
+   ],
+   "faces_in_frame": 1,
+   "light_state": "stairwell_night",
+   "state": [
+    "Billu stands in the open dark-grey iron-sheet street door at the bottom of the flight, one sneaker on the bottom step, facing up the stairs (towards the camera).",
+    "Toothpick in the RIGHT corner of his mouth (picture-left).",
+    "His RIGHT hand (on the picture-left) on the door's edge, the car key on its steel ring hooked on his right index finger; his LEFT hand at his side.",
+    "Behind him through the open door: the night lane, the cool streetlight, the white car's flank, soft. Nobody else."
+   ],
+   "subtitle_safe": true
+  },
+  {
+   "id": "s15",
+   "scene": "sc3_stairwell",
+   "beat_id": "b6",
+   "setup": "b6 shot 3",
+   "line_ids": [
+    "l10"
+   ],
+   "silent_s": 0.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 3.37,
+   "duration_en_s": 3.61,
+   "duration_s": 3.61,
+   "framing": "Two-shot, 35 mm, low from beside the street door looking up the flight.",
+   "action": "Kiran in front, calm: he's coming with us, he wants a deal with Mausi. Aditya a step behind her, his eyes on the back of her head: he has just heard her working name.",
+   "frame": {
+    "kind": "generated",
+    "prompt_file": "<repo>/content/series1/episodes/s1a01/frames/prompts/s15.txt",
+    "out": "<repo>/content/series1/episodes/s1a01/frames/s15.png",
+    "prompt_sha": "96548cef7f1b",
+    "prompt_chars": 12584
+   },
+   "refs": [
+    "<repo>/content/series1/refs/pair_kiran_aditya_p2.png",
+    "<repo>/content/series1/refs/stairwell_up.png",
+    "<repo>/content/series1/refs/brass_set.png",
+    "<repo>/content/series1/refs/bedroom_bed.png"
+   ],
+   "camera_move": {
+    "preset": "push-in",
+    "intensity": 0.2,
+    "focus": {
+     "x": 0.5,
+     "y": 0.36
+    }
+   },
+   "on_screen": [
+    "kiran",
+    "aditya"
+   ],
+   "faces_in_frame": 2,
+   "light_state": "stairwell_night",
+   "state": [
+    "Kiran three steps above the bottom of the flight, coming down first, facing the camera, in the ash-grey salwar-kurta, grey dupatta over her LEFT shoulder (picture-right), flat black sandals.",
+    "Her LEFT hand (on the picture-right) rests on the iron handrail on the picture-right wall; her left cuff at rest at the wrist. Her RIGHT hand (picture-left) at her side, right cuff at rest.",
+    "Aditya one step above and just behind her, a little to the picture-right of her, his head well above hers; tan leather sandals; glasses; key at mid-chest; eyes lowered onto the back of her head.",
+    "The closed red velvet box in his LEFT hand (on the picture-right) at his side; watch on that wrist.",
+    "The pale-blue bedroom door at the top of the flight stands open behind them. The bare yellow bulb on over the landing.",
+    "Billu is behind the camera at the street door, not in frame."
+   ],
+   "subtitle_safe": true,
+   "scene_anchor": true
+  },
+  {
+   "id": "s16",
+   "scene": "sc3_stairwell",
+   "beat_id": "b6",
+   "setup": "b6 shot 4",
+   "line_ids": [
+    "l11"
+   ],
+   "silent_s": 0.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 3.21,
+   "duration_en_s": 4.81,
+   "duration_s": 4.81,
+   "framing": "Insert, 100 mm macro, from below at Billu's eye line, on Aditya's hands at his waist.",
+   "action": "His hands open the red velvet box: the set inside. 'It's only brass, saale sahab.'",
+   "frame": {
+    "kind": "generated",
+    "prompt_file": "<repo>/content/series1/episodes/s1a01/frames/prompts/s16.txt",
+    "out": "<repo>/content/series1/episodes/s1a01/frames/s16.png",
+    "prompt_sha": "dc2746f9bc56",
+    "prompt_chars": 9771
+   },
+   "refs": [
+    "<repo>/content/series1/refs/aditya.png",
+    "<repo>/content/series1/refs/brass_set.png",
+    "<repo>/content/series1/episodes/s1a01/frames/s15.png"
+   ],
+   "camera_move": {
+    "preset": "push-in",
+    "intensity": 0.2,
+    "focus": {
+     "x": 0.5,
+     "y": 0.5
+    }
+   },
+   "on_screen": [
+    "aditya (hands only)"
+   ],
+   "faces_in_frame": 0,
+   "light_state": "stairwell_night",
+   "state": [
+    "Aditya's LEFT hand (on the picture-right) holds the base of the open red velvet box out towards the camera, palm up; the steel watch with its brown strap on that wrist.",
+    "His RIGHT hand (on the picture-left) holds the lid up and back, his thumb on its edge; bare wrist.",
+    "Inside on the cream satin: the necklace of overlapping gold-coloured leaves and the two leaf earrings; on one leaf near the clasp a small scratch shows dull brass.",
+    "The brass key on its red thread hangs at the top edge of the frame against the cream kurta. No face in frame."
+   ],
+   "subtitle_safe": true
+  },
+  {
+   "id": "s17",
+   "scene": "sc3_stairwell",
+   "beat_id": "b6",
+   "setup": "b6 shot 5",
+   "line_ids": [
+    "l12"
+   ],
+   "silent_s": 0.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 5.37,
+   "duration_en_s": 5.53,
+   "duration_s": 5.53,
+   "framing": "Tighter on the brass set (second framing of s16).",
+   "action": "Billu laughs once in spite of himself, off screen, over the brass: 'Arre, Jijaji!'",
+   "frame": {
+    "kind": "second_framing",
+    "source_shot": "s16",
+    "image": "<repo>/content/series1/episodes/s1a01/frames/s16.png"
+   },
+   "refs": [],
+   "camera_move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.14,
+     "x": 0.0,
+     "y": -0.33
+    },
+    "to": {
+     "scale": 1.3,
+     "x": 0.0,
+     "y": -0.17
+    }
+   },
+   "on_screen": [
+    "aditya (hands only)"
+   ],
+   "faces_in_frame": 0,
+   "light_state": "stairwell_night",
+   "state": [
+    "As s16."
+   ],
+   "subtitle_safe": true,
+   "note": "Departure: the script has Billu single, laughing. A still cannot laugh, and a 29th frame is not in the budget; the laugh plays over the brass it is aimed at. If this reads wrong in the cut, s14 at scale 1.2 is the fallback."
+  },
+  {
+   "id": "s18",
+   "scene": "sc4_car",
+   "beat_id": "b7",
+   "setup": "b7 silent before (wide exterior)",
+   "line_ids": [],
+   "silent_s": 2.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 2.0,
+   "duration_en_s": 2.0,
+   "duration_s": 2.0,
+   "framing": "Wide exterior, 35 mm at f/2.8, from the roadside at standing eye level.",
+   "action": "Dawn. The old white sedan alone on an empty two-lane highway through flat fields, ground mist, blue-grey light; no face readable.",
+   "frame": {
+    "kind": "generated",
+    "prompt_file": "<repo>/content/series1/episodes/s1a01/frames/prompts/s18.txt",
+    "out": "<repo>/content/series1/episodes/s1a01/frames/s18.png",
+    "prompt_sha": "8227b4db9774",
+    "prompt_chars": 7588
+   },
+   "refs": [
+    "<repo>/content/series1/refs/billu_car.png",
+    "<repo>/content/series1/refs/car_forward.png",
+    "<repo>/content/series1/episodes/s1a01/frames/s21.png"
+   ],
+   "camera_move": {
+    "preset": "pan-left",
+    "intensity": 0.2
+   },
+   "on_screen": [
+    "billu_car"
+   ],
+   "faces_in_frame": 0,
+   "light_state": "car_dawn_blue",
+   "state": [
+    "Car driving towards the picture-left along the empty highway, seen side-on from a little ahead, headlights on low.",
+    "Windows read as dark glass with the sky reflected; no face readable inside.",
+    "Nothing else on the road: no vehicles, no people, no signs."
+   ],
+   "subtitle_safe": true
+  },
+  {
+   "id": "s19",
+   "scene": "sc4_car",
+   "beat_id": "b7",
+   "setup": "b7 shot 2",
+   "line_ids": [
+    "l13"
+   ],
+   "silent_s": 0.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 5.53,
+   "duration_en_s": 5.45,
+   "duration_s": 5.53,
+   "framing": "Close insert, 85 mm, from the rear bench looking up at the rear-view mirror.",
+   "action": "Billu's eyes in the rear-view mirror; he does not turn round: 'So Jijaji wants to meet Mausi? Mausi meets no one.'",
+   "frame": {
+    "kind": "generated",
+    "prompt_file": "<repo>/content/series1/episodes/s1a01/frames/prompts/s19.txt",
+    "out": "<repo>/content/series1/episodes/s1a01/frames/s19.png",
+    "prompt_sha": "03e17fcbb29a",
+    "prompt_chars": 9230
+   },
+   "refs": [
+    "<repo>/content/series1/refs/billu.png",
+    "<repo>/content/series1/refs/car_forward.png",
+    "<repo>/content/series1/episodes/s1a01/frames/s21.png"
+   ],
+   "camera_move": {
+    "preset": "push-in",
+    "intensity": 0.25,
+    "focus": {
+     "x": 0.5,
+     "y": 0.3
+    }
+   },
+   "on_screen": [
+    "billu (eyes in the mirror)"
+   ],
+   "faces_in_frame": 1,
+   "light_state": "car_dawn_blue",
+   "state": [
+    "Billu drives from the right-hand seat; the car key is in the ignition, not on his finger.",
+    "In the rear-view mirror: his eyes, thick brows and the bridge of his nose, looking back into the mirror towards the rear seat.",
+    "The lemon-and-green-chilli charm hangs below the mirror on its black thread; the marigold string lies along the dashboard.",
+    "At the picture-right edge, soft: the back of his gelled head and the collar of his faded denim jacket. Kiran is out of frame."
+   ],
+   "subtitle_safe": true
+  },
+  {
+   "id": "s20",
+   "scene": "sc4_car",
+   "beat_id": "b7",
+   "setup": "b7 shot 3",
+   "line_ids": [
+    "l14"
+   ],
+   "silent_s": 0.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 5.29,
+   "duration_en_s": 4.49,
+   "duration_s": 5.29,
+   "framing": "Medium close-up, 50 mm, from between the front seats looking back at the rear bench (car_rear direction).",
+   "action": "Aditya in the back seat, the faint smile of a greedy man: she'll meet me; half a sachet didn't even make me drowsy.",
+   "frame": {
+    "kind": "generated",
+    "prompt_file": "<repo>/content/series1/episodes/s1a01/frames/prompts/s20.txt",
+    "out": "<repo>/content/series1/episodes/s1a01/frames/s20.png",
+    "prompt_sha": "f1e55624dac9",
+    "prompt_chars": 9424
+   },
+   "refs": [
+    "<repo>/content/series1/refs/aditya.png",
+    "<repo>/content/series1/refs/car_rear.png",
+    "<repo>/content/series1/episodes/s1a01/frames/s21.png"
+   ],
+   "camera_move": {
+    "preset": "push-in",
+    "intensity": 0.2,
+    "focus": {
+     "x": 0.56,
+     "y": 0.36
+    }
+   },
+   "on_screen": [
+    "aditya"
+   ],
+   "faces_in_frame": 1,
+   "light_state": "car_dawn_blue",
+   "state": [
+    "Aditya sits on the rear seat on the picture-right (behind the front passenger seat), leaning back at ease, facing forward (towards the camera).",
+    "Glasses on; the brass key on its doubled red thread at mid-chest; tan sandals out of frame.",
+    "The patch pocket on his RIGHT chest (picture-left): only a thin white edge of paper at its mouth.",
+    "Hands loose in his lap; the watch on his LEFT wrist (picture-right).",
+    "Only the tops of the grey front seat-backs at the bottom corners. Billu and Kiran out of frame."
+   ],
+   "subtitle_safe": true
+  },
+  {
+   "id": "s21",
+   "scene": "sc4_car",
+   "beat_id": "b7",
+   "setup": "b7 shot 3b",
+   "line_ids": [
+    "l15"
+   ],
+   "silent_s": 0.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 5.05,
+   "duration_en_s": 4.73,
+   "duration_s": 5.05,
+   "framing": "Medium close-up profile, 85 mm, from the driver's side at her seated eye level, looking across at her.",
+   "action": "Kiran in profile, eyes on the road, giving nothing away while he sells the lie she set up: 'I run a medical store. The right dose, for a share.'",
+   "frame": {
+    "kind": "generated",
+    "prompt_file": "<repo>/content/series1/episodes/s1a01/frames/prompts/s21.txt",
+    "out": "<repo>/content/series1/episodes/s1a01/frames/s21.png",
+    "prompt_sha": "08fff95d99b1",
+    "prompt_chars": 10318
+   },
+   "refs": [
+    "<repo>/content/series1/refs/kiran_p2.png",
+    "<repo>/content/series1/refs/car_forward.png",
+    "<repo>/content/series1/refs/bedroom_bed.png"
+   ],
+   "camera_move": {
+    "preset": "push-in",
+    "intensity": 0.2,
+    "focus": {
+     "x": 0.55,
+     "y": 0.35
+    }
+   },
+   "on_screen": [
+    "kiran"
+   ],
+   "faces_in_frame": 1,
+   "light_state": "car_dawn_blue",
+   "state": [
+    "Kiran sits in the front passenger seat (the car's left), facing the road ahead, which is towards the picture-right; we see her right profile, so the nostril hoop (in her LEFT nostril) is hidden.",
+    "Grey dupatta over her LEFT shoulder, on the far side by the window; mangalsutra at her throat.",
+    "Hands in her lap below the frame; both cuffs at rest.",
+    "Behind her the side window: flat dry fields, ground mist, blue dawn. The dashboard's end with marigolds at the lower picture-right.",
+    "Billu (driver) and Aditya (behind her) out of frame."
+   ],
+   "subtitle_safe": true,
+   "scene_anchor": true
+  },
+  {
+   "id": "s22",
+   "scene": "sc4_car",
+   "beat_id": "b7",
+   "setup": "b7 shot 4",
+   "line_ids": [
+    "l16"
+   ],
+   "silent_s": 0.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 4.97,
+   "duration_en_s": 4.73,
+   "duration_s": 4.97,
+   "framing": "Medium close-up, 50 mm, from the driver's side behind Billu's shoulder: his left hand with the phone in the foreground, Kiran in profile beyond.",
+   "action": "Billu's LEFT hand holds his phone out on speaker over the gear lever towards Kiran: Mausi wants to hear it herself. He keeps holding it there through l19.",
+   "frame": {
+    "kind": "generated",
+    "prompt_file": "<repo>/content/series1/episodes/s1a01/frames/prompts/s22.txt",
+    "out": "<repo>/content/series1/episodes/s1a01/frames/s22.png",
+    "prompt_sha": "05a648dda863",
+    "prompt_chars": 12608
+   },
+   "refs": [
+    "<repo>/content/series1/refs/kiran_p2.png",
+    "<repo>/content/series1/refs/billu.png",
+    "<repo>/content/series1/refs/car_forward.png",
+    "<repo>/content/series1/episodes/s1a01/frames/s21.png"
+   ],
+   "camera_move": {
+    "preset": "push-in",
+    "intensity": 0.15,
+    "focus": {
+     "x": 0.5,
+     "y": 0.45
+    }
+   },
+   "on_screen": [
+    "kiran",
+    "billu (left hand and forearm only)"
+   ],
+   "faces_in_frame": 1,
+   "light_state": "car_dawn_blue",
+   "state": [
+    "Billu's LEFT hand and forearm enter from the picture-left: faded light-blue denim sleeve rolled to mid-forearm, no watch, no ring; the hand holds a plain black phone flat, screen up, out over the gear lever towards Kiran.",
+    "The phone's screen is a plain, softly lit, blank surface (the caller name is an overlay added later); back of the phone down.",
+    "The car key is in the ignition, out of frame. Billu's face out of frame.",
+    "Kiran in the front passenger seat, right profile, her head turned a little down towards the phone; hands in her lap below the frame; both cuffs at rest.",
+    "The top of the gear lever knob just below the phone."
+   ],
+   "subtitle_safe": true
+  },
+  {
+   "id": "s23",
+   "scene": "sc4_car",
+   "beat_id": "b7",
+   "setup": "b7 shot 5",
+   "line_ids": [
+    "l17"
+   ],
+   "silent_s": 0.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 4.17,
+   "duration_en_s": 3.69,
+   "duration_s": 4.17,
+   "framing": "Kiran close, the phone at the frame edge (second framing of s22); overlay 'मौसी' / 'Mausi' on the phone's screen.",
+   "action": "Mausi on speaker: Damaad ji was awake, and you told me he drank it?",
+   "frame": {
+    "kind": "second_framing",
+    "source_shot": "s22",
+    "image": "<repo>/content/series1/episodes/s1a01/frames/s22.png"
+   },
+   "refs": [],
+   "camera_move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.2,
+     "x": -1.0,
+     "y": 1.0
+    },
+    "to": {
+     "scale": 1.3,
+     "x": -0.87,
+     "y": 1.0
+    }
+   },
+   "on_screen": [
+    "kiran"
+   ],
+   "faces_in_frame": 1,
+   "light_state": "car_dawn_blue",
+   "state": [
+    "As s22."
+   ],
+   "subtitle_safe": true,
+   "note": "At scale 1.3 aimed at her face, the phone (about x 0.38, y 0.55 of s22) stays at the lower picture-left edge for the caller-name overlay."
+  },
+  {
+   "id": "s24",
+   "scene": "sc4_car",
+   "beat_id": "b7",
+   "setup": "b7 shot 5b",
+   "line_ids": [
+    "l18"
+   ],
+   "silent_s": 0.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 3.77,
+   "duration_en_s": 3.53,
+   "duration_s": 3.77,
+   "framing": "Medium shot, 35 mm, from the rear bench beside Aditya, over his right shoulder, looking forward.",
+   "action": "Kiran leans to the phone in Billu's hand: if the boys came up, the deal was dead, Mausi. Aditya's shoulder and glasses soft in the foreground.",
+   "frame": {
+    "kind": "generated",
+    "prompt_file": "<repo>/content/series1/episodes/s1a01/frames/prompts/s24.txt",
+    "out": "<repo>/content/series1/episodes/s1a01/frames/s24.png",
+    "prompt_sha": "7ecd5242b4df",
+    "prompt_chars": 14489
+   },
+   "refs": [
+    "<repo>/content/series1/refs/pair_kiran_aditya_p2.png",
+    "<repo>/content/series1/refs/billu.png",
+    "<repo>/content/series1/refs/car_forward.png",
+    "<repo>/content/series1/episodes/s1a01/frames/s21.png"
+   ],
+   "camera_move": {
+    "preset": "push-in",
+    "intensity": 0.2,
+    "focus": {
+     "x": 0.42,
+     "y": 0.4
+    }
+   },
+   "on_screen": [
+    "kiran",
+    "aditya (shoulder and glasses, soft)",
+    "billu (back of head)"
+   ],
+   "faces_in_frame": 2,
+   "light_state": "car_dawn_blue",
+   "state": [
+    "Camera on the rear bench in the middle, beside Aditya, who sits behind Kiran on the picture-left.",
+    "In the soft foreground at the picture-left edge: Aditya's right shoulder in the cream kurta, the red thread at his neck, his ear and the right arm and lens edge of his rimless glasses; his face turned away towards her.",
+    "Kiran in the front passenger seat on the picture-left of the windscreen, leaning towards the centre of the car, her head turned to her right towards the phone, so her right profile faces the picture-right; grey dupatta on her far (left) shoulder.",
+    "In the centre between the front seats, over the gear lever: Billu's LEFT hand holding the black phone flat, screen up, blank.",
+    "Billu in the driver's seat on the picture-right, seen only from behind: the back of his gelled head and his denim collar; the mirror's glass shows only a soft dark blur.",
+    "Key in the ignition, out of sight."
+   ],
+   "subtitle_safe": true
+  },
+  {
+   "id": "s25",
+   "scene": "sc4_car",
+   "beat_id": "b7",
+   "setup": "b7 shot 6",
+   "line_ids": [
+    "l19"
+   ],
+   "silent_s": 0.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 2.73,
+   "duration_en_s": 2.65,
+   "duration_s": 2.73,
+   "framing": "Insert on the phone in Billu's left hand (second framing of s22).",
+   "action": "Mausi, quiet, after a pause: Hmm... bring him, beta.",
+   "frame": {
+    "kind": "second_framing",
+    "source_shot": "s22",
+    "image": "<repo>/content/series1/episodes/s1a01/frames/s22.png"
+   },
+   "refs": [],
+   "camera_move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.2,
+     "x": 1.0,
+     "y": -0.6
+    },
+    "to": {
+     "scale": 1.3,
+     "x": 0.95,
+     "y": -0.52
+    }
+   },
+   "on_screen": [
+    "billu (left hand)"
+   ],
+   "faces_in_frame": 0,
+   "light_state": "car_dawn_blue",
+   "state": [
+    "As s22."
+   ],
+   "subtitle_safe": true,
+   "note": "The script asks for the light going orange here; a second framing keeps s22's blue light. The warm turn arrives on the cut to s26 (car_first_sun). The phone is a close object in a medium close-up, so this is not a wide standing in for a close (D-023 rule 4.8)."
+  },
+  {
+   "id": "s26",
+   "scene": "sc4_car",
+   "beat_id": "b8",
+   "setup": "b8 set-up 1",
+   "line_ids": [],
+   "silent_s": 2.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 2.0,
+   "duration_en_s": 2.0,
+   "duration_s": 2.0,
+   "framing": "Insert, 100 mm macro, from the driver's side looking down at her lap.",
+   "action": "Kiran's LEFT hand loose in her lap on the grey kurta, the first red sun coming through the chooda; the full cuff covers the forearm.",
+   "frame": {
+    "kind": "generated",
+    "prompt_file": "<repo>/content/series1/episodes/s1a01/frames/prompts/s26.txt",
+    "out": "<repo>/content/series1/episodes/s1a01/frames/s26.png",
+    "prompt_sha": "fe8f73183245",
+    "prompt_chars": 11488
+   },
+   "refs": [
+    "<repo>/content/series1/refs/kiran_hands.png",
+    "<repo>/content/series1/refs/kiran_p2.png",
+    "<repo>/content/series1/refs/car_forward.png",
+    "<repo>/content/series1/episodes/s1a01/frames/s21.png"
+   ],
+   "camera_move": {
+    "preset": "push-in",
+    "intensity": 0.2,
+    "focus": {
+     "x": 0.5,
+     "y": 0.48
+    }
+   },
+   "on_screen": [
+    "kiran (left hand and forearm)"
+   ],
+   "faces_in_frame": 0,
+   "light_state": "car_first_sun",
+   "state": [
+    "Her LEFT forearm lies across her lap on the grey kurta, the hand towards the picture-right (the front of the car), palm down, the back of the hand up: plain wheat-brown skin, fingertips dipped in henna, fingers loose.",
+    "The left chooda cuff complete and at rest, covering the forearm from just above the wrist bone; the glossy red glass glows where the sun comes through it.",
+    "No scar, no mark, no bare skin above the cuff in this frame (the frame's upper-left edge cuts just past the cuff's upper ivory bangles, on the grey sleeve).",
+    "Her right hand is not in frame. Nothing in her hands."
+   ],
+   "subtitle_safe": true
+  },
+  {
+   "id": "s27",
+   "scene": "sc4_car",
+   "beat_id": "b8",
+   "setup": "b8 set-up 2",
+   "line_ids": [],
+   "silent_s": 2.5,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 2.5,
+   "duration_en_s": 2.5,
+   "duration_s": 2.5,
+   "framing": "From the middle of the rear bench, 50 mm, past Aditya's chest pocket (soft foreground) to the rear-view mirror (sharp).",
+   "action": "Aditya's long fingers slide the creased print back into his right kurta pocket, its white edge the brightest thing in frame; in the mirror Billu's eyes follow that edge into the pocket.",
+   "frame": {
+    "kind": "generated",
+    "prompt_file": "<repo>/content/series1/episodes/s1a01/frames/prompts/s27.txt",
+    "out": "<repo>/content/series1/episodes/s1a01/frames/s27.png",
+    "prompt_sha": "77bedd8b2cef",
+    "prompt_chars": 13915,
+    "attempt": 2
+   },
+   "refs": [
+    "<repo>/content/series1/refs/aditya.png",
+    "<repo>/content/series1/refs/billu.png",
+    "<repo>/content/series1/episodes/s1a01/frames/s24.png",
+    "<repo>/content/series1/episodes/s1a01/frames/s21.png"
+   ],
+   "camera_move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.15,
+     "x": 1.0,
+     "y": -1.0
+    },
+    "to": {
+     "scale": 1.25,
+     "x": 0.0,
+     "y": 1.0
+    }
+   },
+   "on_screen": [
+    "aditya (chest and hand)",
+    "billu (eyes in the mirror; back of head behind the wheel)"
+   ],
+   "faces_in_frame": 1,
+   "light_state": "car_first_sun",
+   "state": [
+    "Camera on the middle of the rear bench beside Aditya, who sits on the picture-left behind Kiran's seat.",
+    "Soft foreground, lower picture-left: Aditya's right chest in the cream kurta with the square patch pocket; the fingers of his RIGHT hand (no watch on that wrist) slide the creased 4x6 print into it, white back outward, half of it still out; no picture side visible. His face is out of frame above.",
+    "Sharp background, upper centre: the rear-view mirror; in its glass Billu's eyes, turned down towards the rear seat, following the print.",
+    "The lemon-and-chilli charm below the mirror; the marigolds on the dashboard; the low sun outside.",
+    "Kiran's seat back and the top of her head soft at the left of the windscreen; her face not visible.",
+    "Billu sits in the driver's seat on the picture-right, seen only from behind: the back of his gelled black head and his faded-denim collar above the seat back, his hands on the wheel; his face is seen only in the mirror."
+   ],
+   "subtitle_safe": true,
+   "drift": [
+    "Retake (attempt 2, D-023) after the frame check rejected attempt 1 (kept as frames/s27.prev1.png): the driver's seat was empty. Ref car_forward replaced by the approved s24 (same rear-bench view, Billu from behind), per the checker's fix. Attempt 2 stands as the better take; no further retake (D-013 rule 11).",
+    "Fixed in attempt 2: Billu behind the wheel on the picture-right, back of his gelled head and denim jacket, right hand on the wheel; his eyes in the mirror. Pocket on Aditya's right chest, print white back out, right hand with no watch, red thread and key, charm, marigolds and right-hand drive kept.",
+    "Remaining drift (S7 eye reading, not checked by S9): the low sun disc is visible on the horizon through the windscreen at the picture-left rather than only coming in through the left-side windows; in the mirror Billu's eyes look roughly at the lens/rear seat rather than clearly down at the pocket; only his right hand is visible on the wheel."
+   ]
+  },
+  {
+   "id": "s28",
+   "scene": "sc5_shutter",
+   "beat_id": "b9",
+   "setup": "b9 shot 1",
+   "line_ids": [
+    "l20"
+   ],
+   "silent_s": 0.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 2.17,
+   "duration_en_s": 2.01,
+   "duration_s": 2.17,
+   "framing": "Medium-wide two-shot, 35 mm at f/2.8, from the pavement behind the car's left rear corner, looking along its left side.",
+   "action": "The car stopped at the grey shutter. Aditya at the open front-left door takes Kiran's LEFT hand, the bangle hand, to help her out, playing the husband for Billu: 'Watch your step, Kiran.'",
+   "frame": {
+    "kind": "generated",
+    "prompt_file": "<repo>/content/series1/episodes/s1a01/frames/prompts/s28.txt",
+    "out": "<repo>/content/series1/episodes/s1a01/frames/s28.png",
+    "prompt_sha": "763620de1399",
+    "prompt_chars": 13948,
+    "attempt": 2
+   },
+   "refs": [
+    "<repo>/content/series1/refs/pair_kiran_aditya_p2.png",
+    "<repo>/content/series1/refs/billu_car.png",
+    "<repo>/content/series1/refs/bureau_exterior.png",
+    "<repo>/content/series1/refs/bedroom_bed.png"
+   ],
+   "camera_move": {
+    "preset": "push-in",
+    "intensity": 0.2,
+    "focus": {
+     "x": 0.5,
+     "y": 0.45
+    }
+   },
+   "on_screen": [
+    "kiran",
+    "aditya"
+   ],
+   "faces_in_frame": 2,
+   "light_state": "bureau_arrival",
+   "state": [
+    "The white car stands at the kerb along the shop fronts, its left side to the pavement, its nose pointing away from the camera; engine off.",
+    "The front-left (passenger) door is open towards the pavement.",
+    "Kiran is half out of the passenger seat, one black sandal on the pavement, rising, her body turned towards the picture-left; her LEFT hand, with its red cuff at rest, is held in Aditya's RIGHT hand on the side nearer the camera.",
+    "Aditya stands on the pavement in the opening of the door, facing the picture-right, towards her; tan sandals; glasses; key at mid-chest; watch on his far (left) wrist, out of sight.",
+    "The bureau's grey shutter is still down and locked, on the picture-left behind them; the blank pink signboard above it.",
+    "Billu is in the driver's seat on the far side of the car, hidden by the car's roof. Nobody else in the street."
+   ],
+   "subtitle_safe": true,
+   "scene_anchor": true,
+   "drift": [
+    "Retake (attempt 2, D-023 rule 4.1) after the anchor check rejected attempt 1 (kept as frames/s28.prev1.png). Attempt 2 stands as the better take; no further retake (D-013 rule 11).",
+    "Fixed in attempt 2: Aditya in profile facing picture-right, patch pocket and reaching RIGHT arm towards camera, watch wrist hidden; Kiran's nose to picture-left with the gold hoop on her near (left) nostril; her other hand hidden, not in her lap; back of her held hand plain with dipped fingertips only (henna lock restored); cuff at rest.",
+    "Remaining drift (S7 eye reading, not checked by S9): Kiran's torso is turned about three-quarters to the camera rather than side-on; the dupatta sits on her picture-right shoulder and the reaching arm appears to come from her picture-left shoulder, so the hand Aditya holds is most likely her RIGHT hand, not the LEFT the STATE asks for. Per the checker's fallback the s29 macro carries the hand side (her LEFT hand, cuff over the scar, in his RIGHT hand). At 35 mm medium-wide the hand side is hard to read on screen."
+   ],
+   "supers": [
+    {
+     "id": "su1",
+     "kind": "place",
+     "with_line": "l20",
+     "beat_id": "b9",
+     "text_hi": "मौसी का marriage bureau",
+     "text_en": "Mausi's marriage bureau",
+     "from": "script beat supers (D-024 ruling 3.5); drawn by the edit through the overlay layer"
+    }
+   ]
+  },
+  {
+   "id": "s29",
+   "scene": "sc5_shutter",
+   "beat_id": "b9",
+   "setup": "b9 silent after, set-up 1",
+   "line_ids": [],
+   "silent_s": 2.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 2.0,
+   "duration_en_s": 2.0,
+   "duration_s": 2.0,
+   "framing": "Insert, 100 mm macro, the joined hands at waist height, same side as s28.",
+   "action": "His fingers closed over her cuff; the stack shifts a little under them; no skin shows above or below it. Late in the set-up the shutter starts to rattle up (sound). Glimpse A ends here, cut before the rattle.",
+   "frame": {
+    "kind": "generated",
+    "prompt_file": "<repo>/content/series1/episodes/s1a01/frames/prompts/s29.txt",
+    "out": "<repo>/content/series1/episodes/s1a01/frames/s29.png",
+    "prompt_sha": "c0ffeda7a951",
+    "prompt_chars": 12081
+   },
+   "refs": [
+    "<repo>/content/series1/refs/kiran_hands.png",
+    "<repo>/content/series1/refs/aditya.png",
+    "<repo>/content/series1/episodes/s1a01/frames/s28.png"
+   ],
+   "camera_move": {
+    "preset": "push-in",
+    "intensity": 0.25,
+    "focus": {
+     "x": 0.48,
+     "y": 0.5
+    }
+   },
+   "on_screen": [
+    "kiran (left hand)",
+    "aditya (right hand)"
+   ],
+   "faces_in_frame": 0,
+   "light_state": "bureau_arrival",
+   "state": [
+    "Kiran's LEFT forearm comes in from the picture-right edge, the hand towards the picture-left, back of the hand up, the thumb on the side nearer the camera; fingertips dipped in henna; back of the hand plain.",
+    "Aditya's RIGHT hand comes in from the picture-left and has closed round the middle of her deep-red cuff; the ivory bangles at the ends have shifted a little under his grip.",
+    "The cuff still covers her forearm completely from just above the wrist bone; the frame's picture-right edge cuts just past the cuff's upper ivory bangles. No bare forearm, no scar or mark in frame.",
+    "His kurta sleeve folded back once at his wrist; no watch on this wrist.",
+    "Background: soft grey of the car door and the pavement in low sun."
+   ],
+   "subtitle_safe": true
+  },
+  {
+   "id": "s30",
+   "scene": "sc5_shutter",
+   "beat_id": "b9",
+   "setup": "b9 silent after, set-up 2",
+   "line_ids": [],
+   "silent_s": 2.5,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 2.5,
+   "duration_en_s": 2.5,
+   "duration_s": 2.5,
+   "framing": "Reverse, low, 35 mm, from the car door's height looking up at the risen shutter.",
+   "action": "The shutter is up; Shakun Mausi stands in it, green saree, keys at her left hip, paan smile. In the soft foreground the two hands are apart: he has looked up and let go. (Mausi's first image. Not in Glimpse A.)",
+   "frame": {
+    "kind": "generated",
+    "prompt_file": "<repo>/content/series1/episodes/s1a01/frames/prompts/s30.txt",
+    "out": "<repo>/content/series1/episodes/s1a01/frames/s30.png",
+    "prompt_sha": "9941cc92504e",
+    "prompt_chars": 11589
+   },
+   "refs": [
+    "<repo>/content/series1/refs/mausi.png",
+    "<repo>/content/series1/refs/key_bunch.png",
+    "<repo>/content/series1/refs/bureau_exterior.png",
+    "<repo>/content/series1/refs/bureau_front.png",
+    "<repo>/content/series1/episodes/s1a01/frames/s28.png"
+   ],
+   "camera_move": {
+    "preset": "push-in",
+    "intensity": 0.25,
+    "focus": {
+     "x": 0.5,
+     "y": 0.33
+    }
+   },
+   "on_screen": [
+    "mausi",
+    "kiran (hand, soft)",
+    "aditya (hand, soft)"
+   ],
+   "faces_in_frame": 1,
+   "light_state": "bureau_arrival",
+   "state": [
+    "The grey shutter rolled up into its box above the opening.",
+    "Mausi stands in the opening on the low step, front-on to the camera, full figure to the knees: bottle-green saree, mustard blouse, the steel ring of keys hooked at her LEFT hip (picture-right), green glass bangles on both wrists, the thin gold band on her RIGHT hand (picture-left); one nose stud, picture-right; a warm closed-lip smile.",
+    "Behind her, soft: the pink front room, the tube light on above the marigold curtain, the desk with the grey cashbox.",
+    "In the soft foreground at the lower picture-left: Aditya's right hand, lowered and open; at the lower picture-right: Kiran's left hand with its red cuff, dropping; a clear gap of air between them.",
+    "No other face. The mirror wall out of sight."
+   ],
+   "subtitle_safe": true
+  },
+  {
+   "id": "s31",
+   "scene": "sc6_bureau",
+   "beat_id": "b10",
+   "setup": "b10 shot 1",
+   "line_ids": [
+    "l21"
+   ],
+   "silent_s": 0.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 4.09,
+   "duration_en_s": 4.65,
+   "duration_s": 4.65,
+   "framing": "Medium close two-shot, 50 mm, inside the front room near the shutter, side-on to them, their eye level.",
+   "action": "Mausi holds Kiran's face in both hands: there you are, meri bachchi; did you eat the mathri? Kiran's eyes drop from hers. Mausi's forearms in frame, bare and unmarked under the green bangles.",
+   "frame": {
+    "kind": "generated",
+    "prompt_file": "<repo>/content/series1/episodes/s1a01/frames/prompts/s31.txt",
+    "out": "<repo>/content/series1/episodes/s1a01/frames/s31.png",
+    "prompt_sha": "34e1f5170795",
+    "prompt_chars": 12041
+   },
+   "refs": [
+    "<repo>/content/series1/refs/pair_kiran_mausi_p2.png",
+    "<repo>/content/series1/refs/bureau_front.png",
+    "<repo>/content/series1/refs/key_bunch.png",
+    "<repo>/content/series1/refs/bedroom_bed.png"
+   ],
+   "camera_move": {
+    "preset": "push-in",
+    "intensity": 0.2,
+    "focus": {
+     "x": 0.5,
+     "y": 0.35
+    }
+   },
+   "on_screen": [
+    "mausi",
+    "kiran"
+   ],
+   "faces_in_frame": 2,
+   "light_state": "bureau_morning",
+   "state": [
+    "Kiran on the picture-left, facing the picture-right (towards Mausi), so her RIGHT side is nearer the camera; grey kurta; dupatta on her far (left) shoulder; hands down at her sides, below the frame; eyes lowered.",
+    "Mausi on the picture-right, facing the picture-left (towards Kiran), so her LEFT side is nearer the camera: the nose stud on her near (left) nostril visible.",
+    "Mausi's LEFT hand (the near hand) cups Kiran's near (right) cheek; her RIGHT hand (far) cups Kiran's far cheek, its thin gold band just visible behind Kiran's jaw.",
+    "Mausi's near forearm bare and unmarked under about eight thin green glass bangles.",
+    "The key ring at Mausi's LEFT hip, at the lower picture-right edge or just below the frame.",
+    "Behind them, soft: the desk with the closed grey cashbox, the marigold curtain, the tube light."
+   ],
+   "subtitle_safe": true,
+   "scene_anchor": true,
+   "supers": [
+    {
+     "id": "su2",
+     "kind": "name_role",
+     "with_line": "l21",
+     "beat_id": "b10",
+     "text_hi": "शकुन मौसी · bureau चलाती हैं",
+     "text_en": "Shakun Mausi · runs the bureau",
+     "from": "script beat supers (D-024 ruling 3.5); drawn by the edit through the overlay layer"
+    }
+   ]
+  },
+  {
+   "id": "s32",
+   "scene": "sc6_bureau",
+   "beat_id": "b10",
+   "setup": "b10 shot 2",
+   "line_ids": [
+    "l22"
+   ],
+   "silent_s": 0.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 4.49,
+   "duration_en_s": 4.73,
+   "duration_s": 4.73,
+   "framing": "Medium shot, 50 mm, from in front of the desk at her seated eye level (bureau_front direction).",
+   "action": "Mausi at her desk, the red velvet box open in front of her (Billu's hand at frame edge setting it down, no face), laughing till she coughs: brass! Damaad ji turned out to be in our line.",
+   "frame": {
+    "kind": "generated",
+    "prompt_file": "<repo>/content/series1/episodes/s1a01/frames/prompts/s32.txt",
+    "out": "<repo>/content/series1/episodes/s1a01/frames/s32.png",
+    "prompt_sha": "9ee57fee77aa",
+    "prompt_chars": 12631
+   },
+   "refs": [
+    "<repo>/content/series1/refs/mausi.png",
+    "<repo>/content/series1/refs/bureau_front.png",
+    "<repo>/content/series1/refs/brass_set.png",
+    "<repo>/content/series1/refs/cashbox_ledger.png",
+    "<repo>/content/series1/episodes/s1a01/frames/s31.png"
+   ],
+   "camera_move": {
+    "preset": "push-in",
+    "intensity": 0.2,
+    "focus": {
+     "x": 0.5,
+     "y": 0.33
+    }
+   },
+   "on_screen": [
+    "mausi",
+    "billu (hand only)"
+   ],
+   "faces_in_frame": 1,
+   "light_state": "bureau_morning",
+   "state": [
+    "Mausi sits on the wooden chair behind the desk, facing the camera; her keys at her LEFT hip (picture-right) are hidden by the desk.",
+    "On the desk in front of her: the red velvet box, open towards her, the leaf necklace inside; to its picture-left the grey steel cashbox, closed and locked.",
+    "Her RIGHT hand (picture-left, gold band) rests on the desk beside the box; her LEFT hand (picture-right) is raised to her chest as the laugh turns into a cough.",
+    "At the picture-right edge: Billu's LEFT hand in a rolled faded-denim sleeve, just withdrawing from the box; no face, no more of him.",
+    "Behind her the marigold curtain and the tube light."
+   ],
+   "subtitle_safe": true
+  },
+  {
+   "id": "s33",
+   "scene": "sc6_bureau",
+   "beat_id": "b10",
+   "setup": "b10 shot 3",
+   "line_ids": [
+    "l23"
+   ],
+   "silent_s": 0.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 2.97,
+   "duration_en_s": 2.81,
+   "duration_s": 2.97,
+   "framing": "Medium shot, 50 mm, from behind the desk towards the shutter (bureau_reverse direction), her seated eye level.",
+   "action": "Chhoti on the cot, pink phone in her right hand, LEFT hand held out flat, back up, fingertips dipped, the outer forearm bare and unmarked: Didi! Look, one hand's ready.",
+   "frame": {
+    "kind": "generated",
+    "prompt_file": "<repo>/content/series1/episodes/s1a01/frames/prompts/s33.txt",
+    "out": "<repo>/content/series1/episodes/s1a01/frames/s33.png",
+    "prompt_sha": "bd8854c806c9",
+    "prompt_chars": 9913
+   },
+   "refs": [
+    "<repo>/content/series1/refs/chhoti.png",
+    "<repo>/content/series1/refs/bureau_reverse.png",
+    "<repo>/content/series1/episodes/s1a01/frames/s31.png"
+   ],
+   "camera_move": {
+    "preset": "push-in",
+    "intensity": 0.2,
+    "focus": {
+     "x": 0.45,
+     "y": 0.4
+    }
+   },
+   "on_screen": [
+    "chhoti"
+   ],
+   "faces_in_frame": 1,
+   "light_state": "bureau_morning",
+   "state": [
+    "Chhoti sits on the edge of the low wooden cot, turned three-quarters towards the picture-right (towards the shutter end, where Kiran is), so her RIGHT side is nearer the camera.",
+    "Her LEFT hand held out flat at chest height towards the picture-right, back of the hand up, fingers spread: plain back, fingertips dipped deep orange-brown; her outer left forearm bare and unmarked; her left wrist bare.",
+    "Her RIGHT hand (nearer the camera) holds the phone in its plain pink cover in her lap, back of the phone to camera; two thin green glass bangles on her right wrist; her right hand bare of henna.",
+    "Long braid over her RIGHT shoulder (near side). White dupatta round her neck.",
+    "Behind her the bright open shutter, nothing readable. Nobody else in frame."
+   ],
+   "subtitle_safe": true,
+   "supers": [
+    {
+     "id": "su3",
+     "kind": "name_role",
+     "with_line": "l23",
+     "beat_id": "b10",
+     "text_hi": "छोटी · अगली दुल्हन",
+     "text_en": "Chhoti · the next bride",
+     "from": "script beat supers (D-024 ruling 3.5); drawn by the edit through the overlay layer"
+    }
+   ]
+  },
+  {
+   "id": "s34",
+   "scene": "sc6_bureau",
+   "beat_id": "b10",
+   "setup": "b10 shots 4 and 5 (l24 on this set-up)",
+   "line_ids": [
+    "l24"
+   ],
+   "silent_s": 0.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 2.73,
+   "duration_en_s": 3.53,
+   "duration_s": 3.53,
+   "framing": "Medium two-shot, 50 mm, from the middle of the room facing the open shutter, standing eye level.",
+   "action": "Kiran and Aditya side by side just inside the shutter; his head bent and turned to her, whispering: where is Rekha? Hers not to him.",
+   "frame": {
+    "kind": "generated",
+    "prompt_file": "<repo>/content/series1/episodes/s1a01/frames/prompts/s34.txt",
+    "out": "<repo>/content/series1/episodes/s1a01/frames/s34.png",
+    "prompt_sha": "2d625bc4ce60",
+    "prompt_chars": 11452
+   },
+   "refs": [
+    "<repo>/content/series1/refs/pair_kiran_aditya_p2.png",
+    "<repo>/content/series1/refs/bureau_reverse.png",
+    "<repo>/content/series1/episodes/s1a01/frames/s31.png"
+   ],
+   "camera_move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.05,
+     "x": -1.0,
+     "y": 1.0
+    },
+    "to": {
+     "scale": 1.15,
+     "x": -1.0,
+     "y": 1.0
+    }
+   },
+   "on_screen": [
+    "kiran",
+    "aditya"
+   ],
+   "faces_in_frame": 2,
+   "light_state": "bureau_morning",
+   "state": [
+    "Kiran on the picture-left and Aditya on the picture-right, standing side by side a little apart just inside the open shutter, both facing roughly towards the camera (towards the desk).",
+    "Aditya's head bent and turned towards her (towards the picture-left), his mouth near her ear level, whispering; glasses; key at mid-chest; his watch on his LEFT wrist (picture-right).",
+    "Kiran looks straight ahead past the camera, not at him; her face composed; hands at her sides, both cuffs at rest.",
+    "Behind them the bright open shutter and the empty street, nothing readable. The cot edge at the picture-left edge, soft. Nobody else in frame."
+   ],
+   "subtitle_safe": true
+  },
+  {
+   "id": "s35",
+   "scene": "sc6_bureau",
+   "beat_id": "b10",
+   "setup": "b10 shot 5",
+   "line_ids": [
+    "l25"
+   ],
+   "silent_s": 0.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 1.53,
+   "duration_en_s": 1.61,
+   "duration_s": 1.61,
+   "framing": "Drift towards Kiran on the same two-shot (second framing of s34).",
+   "action": "Kiran, not turning to him: not now.",
+   "frame": {
+    "kind": "second_framing",
+    "source_shot": "s34",
+    "image": "<repo>/content/series1/episodes/s1a01/frames/s34.png"
+   },
+   "refs": [],
+   "camera_move": {
+    "preset": "custom",
+    "easing": "ease-out",
+    "from": {
+     "scale": 1.15,
+     "x": 1.0,
+     "y": 1.0
+    },
+    "to": {
+     "scale": 1.25,
+     "x": 1.0,
+     "y": 1.0
+    }
+   },
+   "on_screen": [
+    "kiran",
+    "aditya"
+   ],
+   "faces_in_frame": 2,
+   "light_state": "bureau_morning",
+   "state": [
+    "As s34."
+   ],
+   "subtitle_safe": true,
+   "note": "The script gives l24 an Aditya close ('his eyes going from one wrist to the other') and l25 this side-by-side. To stay at 28 frames both lines play on the one two-shot the script gives l25, which already has his head turned to her. His look at the wrists is carried by s31 (Mausi's bare forearm) and s33 (Chhoti's bare forearm)."
+  },
+  {
+   "id": "s36",
+   "scene": "sc6_bureau",
+   "beat_id": "b11",
+   "setup": "b11 shot 1",
+   "line_ids": [
+    "l26"
+   ],
+   "silent_s": 0.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 4.65,
+   "duration_en_s": 4.01,
+   "duration_s": 4.65,
+   "framing": "Mausi single at her desk, closer (second framing of s32).",
+   "action": "Mausi to Aditya, all business and all warmth: you make the sachet, Damaad ji; it's Chhoti's first wedding.",
+   "frame": {
+    "kind": "second_framing",
+    "source_shot": "s32",
+    "image": "<repo>/content/series1/episodes/s1a01/frames/s32.png"
+   },
+   "refs": [],
+   "camera_move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.15,
+     "x": 0.0,
+     "y": 1.0
+    },
+    "to": {
+     "scale": 1.3,
+     "x": 0.0,
+     "y": 1.0
+    }
+   },
+   "on_screen": [
+    "mausi"
+   ],
+   "faces_in_frame": 1,
+   "light_state": "bureau_morning",
+   "state": [
+    "As s32; at this scale Billu's hand at the right edge is cropped out."
+   ],
+   "subtitle_safe": true,
+   "note": "s32 is prompted as a broad warm open laugh so that a closer framing also reads as Mausi's warmth for l26."
+  },
+  {
+   "id": "s37",
+   "scene": "sc6_bureau",
+   "beat_id": "b11",
+   "setup": "b11 shot 2",
+   "line_ids": [
+    "l27"
+   ],
+   "silent_s": 0.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 4.09,
+   "duration_en_s": 3.93,
+   "duration_s": 4.09,
+   "framing": "Medium two-shot, 50 mm, standing eye level, facing the back wall (bureau_front direction), the desk beside them.",
+   "action": "Mausi and Kiran standing at the desk: and you take the chooda off, beta; tomorrow it goes on Chhoti.",
+   "frame": {
+    "kind": "generated",
+    "prompt_file": "<repo>/content/series1/episodes/s1a01/frames/prompts/s37.txt",
+    "out": "<repo>/content/series1/episodes/s1a01/frames/s37.png",
+    "prompt_sha": "1bf0ac7f5860",
+    "prompt_chars": 12742
+   },
+   "refs": [
+    "<repo>/content/series1/refs/pair_kiran_mausi_p2.png",
+    "<repo>/content/series1/refs/brass_set.png",
+    "<repo>/content/series1/refs/cashbox_ledger.png",
+    "<repo>/content/series1/refs/key_bunch.png",
+    "<repo>/content/series1/episodes/s1a01/frames/s31.png"
+   ],
+   "camera_move": {
+    "preset": "push-in",
+    "intensity": 0.2,
+    "focus": {
+     "x": 0.5,
+     "y": 0.33
+    }
+   },
+   "on_screen": [
+    "mausi",
+    "kiran"
+   ],
+   "faces_in_frame": 2,
+   "light_state": "bureau_morning",
+   "state": [
+    "Kiran on the picture-left, facing the picture-right (towards Mausi), so her RIGHT side is nearer the camera; eyes on Mausi; both cuffs at rest; her hands at her sides.",
+    "Mausi on the picture-right, facing the picture-left (towards Kiran), so her LEFT side is nearer the camera: the nose stud on her near nostril; the keys at her LEFT hip on the near side, visible.",
+    "Mausi's LEFT hand (near) open at waist height, palm up, towards Kiran's wrists, as if asking; her RIGHT hand (far, gold band) on the edge of the desk.",
+    "The desk just behind them on the picture-right: the red velvet box open with the leaf necklace, the grey cashbox closed and locked.",
+    "Behind: the marigold curtain and the tube light. Nobody else in frame; Chhoti and Aditya out of this frame."
+   ],
+   "subtitle_safe": true
+  },
+  {
+   "id": "s38",
+   "scene": "sc6_bureau",
+   "beat_id": "b11",
+   "setup": "b11 shot 3 (insert) on the closing set-up",
+   "line_ids": [
+    "l28"
+   ],
+   "silent_s": 0.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 3.45,
+   "duration_en_s": 3.53,
+   "duration_s": 3.53,
+   "framing": "Close insert with depth, 85 mm at about f/4, at waist height beside the desk: the two women's hands sharp in the middle of the frame, Aditya an arm's length beyond them.",
+   "action": "Mausi's hand with its green bangles closes on Kiran's LEFT wrist and starts the first ivory bangle of the cuff towards her hennaed knuckles: who buys a new set for every wedding? Aditya, an arm's length away, watches the hands.",
+   "frame": {
+    "kind": "generated",
+    "prompt_file": "<repo>/content/series1/episodes/s1a01/frames/prompts/s38.txt",
+    "out": "<repo>/content/series1/episodes/s1a01/frames/s38.png",
+    "prompt_sha": "1da78c4c3f72",
+    "prompt_chars": 16764
+   },
+   "refs": [
+    "<repo>/content/series1/refs/kiran_hands.png",
+    "<repo>/content/series1/refs/kiran_p2.png",
+    "<repo>/content/series1/refs/mausi.png",
+    "<repo>/content/series1/refs/aditya.png",
+    "<repo>/content/series1/episodes/s1a01/frames/s31.png"
+   ],
+   "camera_move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.15,
+     "x": 0.31,
+     "y": -0.77
+    },
+    "to": {
+     "scale": 1.25,
+     "x": 0.2,
+     "y": -0.5
+    }
+   },
+   "on_screen": [
+    "kiran (left hand)",
+    "mausi (right hand)",
+    "aditya"
+   ],
+   "faces_in_frame": 1,
+   "light_state": "bureau_morning",
+   "state": [
+    "Kiran's LEFT forearm held out at waist height across the middle of the frame, coming in from the picture-right edge, the hand towards the picture-left, palm down: back of the hand plain, fingertips dipped, thumb on the side nearer the camera.",
+    "Her deep-red cuff at rest on the forearm; the first ivory bangle (the one nearest her hand) has been worked off the cuff and sits at the base of her fingers, over her hennaed knuckles; the rest of the cuff, red with its other ivory bangles, still covers the forearm. No scar, no mark, no bare forearm.",
+    "Mausi's RIGHT hand comes in from the picture-left: about eight thin green glass bangles on her bare, unmarked wrist, a thin plain gold band on one finger; her fingers hold Kiran's wrist and her thumb pushes the ivory bangle over the knuckles.",
+    "Behind the hands, an arm's length beyond, standing: Aditya, glasses on, the brass key on its red thread at mid-chest, eyes lowered onto the hands; a little softer than the hands but his face clearly readable.",
+    "The faces of Kiran and Mausi are out of frame. Chhoti out of frame. The desk edge soft at the lower picture-right."
+   ],
+   "subtitle_safe": true
+  },
+  {
+   "id": "s39",
+   "scene": "sc6_bureau",
+   "beat_id": "b11",
+   "setup": "b11 silent after (held set-up)",
+   "line_ids": [],
+   "silent_s": 3.0,
+   "silent_lead_s": 0.0,
+   "duration_hi_s": 3.0,
+   "duration_en_s": 3.0,
+   "duration_s": 3.0,
+   "framing": "From the hands up to Aditya's eyes on the same frame (second framing of s38).",
+   "action": "Held: the first ivory bangle at Kiran's knuckles in the foreground; Aditya an arm's length away, eyes on the hands. Cut on a dry glass-bangle chink.",
+   "frame": {
+    "kind": "second_framing",
+    "source_shot": "s38",
+    "image": "<repo>/content/series1/episodes/s1a01/frames/s38.png"
+   },
+   "refs": [],
+   "camera_move": {
+    "preset": "custom",
+    "easing": "ease-in-out",
+    "from": {
+     "scale": 1.25,
+     "x": 0.2,
+     "y": 0.0
+    },
+    "to": {
+     "scale": 1.3,
+     "x": -0.43,
+     "y": 1.0
+    }
+   },
+   "on_screen": [
+    "kiran (left hand)",
+    "mausi (right hand)",
+    "aditya"
+   ],
+   "faces_in_frame": 1,
+   "light_state": "bureau_morning",
+   "state": [
+    "As s38."
+   ],
+   "subtitle_safe": true,
+   "note": "The script's focus pull from the hands to his eyes is played as this camera move on one deep-focus frame; a still has no focus pull."
+  }
+ ],
+ "not_verified": [
+  "No frame was generated and no Codex call was made: this step writes the storyboard and prompts only. The runner (S8) runs them in generation_order.",
+  "Clip lengths: I measured every final clip with ffprobe (all 56 match the manifest's latest-take duration_s). The 0.25 s per line and the beat silences are the script's and s1e01's figures, not measurements; the editor's real gaps and silence trims will move the totals.",
+  "Reference images were viewed by me only as downscaled contact sheets (about 360x640 each) of the sheets, pair sheets, plates and the prop sheets used here; no full-resolution crops. Sheet view positions named in the labels (which view is closed, which shows the scar) come from that look.",
+  "The D-021 decision 6 retake check report was not found; see generation_gates.",
+  "Whether Codex holds: the depth staging of s38 (sharp hands, readable face behind), the macro hand orientation in s29 and s38 (her left hand pointing to picture-left, mirrored from the hand sheet's layout), the side-on geometry of s28, and Billu's eyes in a mirror (s19, s27). These are the riskiest prompts.",
+  "The s1e01 s12 frame was viewed whole at 360x640; its suitability for a live call (screen dark under an overlay) is a judgement.",
+  "I did not render any move; the custom keys are computed from the intended points with camera.ts's formula and clamped."
+ ],
+ "remap_notes": {
+  "by": "S7 Storyboard artist, clarity remap (D-025 item 8)",
+  "date": "2026-11-26",
+  "ruling": "D-024 ruling 3.5 (supers onto shots); D-025 items 4 and 8 (P26 remap, cut-on-word anchors, speaker-visible starts)",
+  "scope": "line_ids, line_part, duration_hi_s/duration_en_s/duration_s, per-shot supers and cut_on_word, edit_notes_for_episode_editor, estimated_seconds. No shot added, removed or reordered; frames, prompts, refs, camera moves and silent_lead_s unchanged. Scripts not edited (no super has an on_shot field, so none is wrong).",
+  "items": [
+   "Added line mapped: l29 on s09 (b3 shot 4, the silent-after frame: Kiran says l29, then holds 1.2 s for his answer). s09 is a second framing; its move is unchanged.",
+   "No split line in this episode, so no cut_on_word entries.",
+   "Supers copied onto shots: su1 (place, with l20) on s28, su2 (Mausi, with l21) on s31, su3 (Chhoti, with l23) on s33. s28 is planned 2.17 s hi / 2.01 s en, at the 2 s minimum; if the measured shot is shorter, the super carries into s29 (no plot overlay).",
+   "Planned total is now hi 136.76 / en 137.32 s per cut (longer-language sum 142.92 s; was 119.95 / 118.91 / 123.47).",
+   "Scratch check (build_timeline.py on a scratch copy, default layout): no layout problem in either language. The layout runs hi 130.0 / en 131.8 s, a floor because default tails do not lay out beat silences inside voiced shots."
+  ]
+ }
+}

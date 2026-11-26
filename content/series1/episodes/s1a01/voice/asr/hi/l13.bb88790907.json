@@ -1,0 +1,175 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,050"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 50
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,050",
+				"to": "00:00:00,630"
+			},
+			"offsets": {
+				"from": 50,
+				"to": 630
+			},
+			"text": " जिजा"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,630",
+				"to": "00:00:00,830"
+			},
+			"offsets": {
+				"from": 630,
+				"to": 830
+			},
+			"text": " जी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,830",
+				"to": "00:00:01,090"
+			},
+			"offsets": {
+				"from": 830,
+				"to": 1090
+			},
+			"text": " को"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,090",
+				"to": "00:00:01,640"
+			},
+			"offsets": {
+				"from": 1090,
+				"to": 1640
+			},
+			"text": " मुसी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,640",
+				"to": "00:00:01,920"
+			},
+			"offsets": {
+				"from": 1640,
+				"to": 1920
+			},
+			"text": " से"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,920",
+				"to": "00:00:02,620"
+			},
+			"offsets": {
+				"from": 1920,
+				"to": 2620
+			},
+			"text": " मिलना"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,620",
+				"to": "00:00:03,060"
+			},
+			"offsets": {
+				"from": 2620,
+				"to": 3060
+			},
+			"text": " है,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,060",
+				"to": "00:00:03,450"
+			},
+			"offsets": {
+				"from": 3060,
+				"to": 3450
+			},
+			"text": " मुसी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,450",
+				"to": "00:00:03,850"
+			},
+			"offsets": {
+				"from": 3450,
+				"to": 3850
+			},
+			"text": " किसी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,850",
+				"to": "00:00:04,050"
+			},
+			"offsets": {
+				"from": 3850,
+				"to": 4050
+			},
+			"text": " से"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,050",
+				"to": "00:00:04,440"
+			},
+			"offsets": {
+				"from": 4050,
+				"to": 4440
+			},
+			"text": " नहीं"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,440",
+				"to": "00:00:05,000"
+			},
+			"offsets": {
+				"from": 4440,
+				"to": 5000
+			},
+			"text": " मिलती।"
+		}
+	]
+}

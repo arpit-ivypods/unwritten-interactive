@@ -1,0 +1,442 @@
+{
+  "episode_id": "s1b01",
+  "series_id": "series1",
+  "status": "planned",
+  "status_note": "Cue sheet by S11; nothing generated. The runner generates only the three one_off_cues (one take each, D-011) into this folder and logs credits in sound/manifest.jsonl; every other cue is a series library file from content/series1/sound/.",
+  "written_by": "S11 Sound designer",
+  "date": "2026-11-26",
+  "governing": [
+    "D-009",
+    "D-011 (reuse rules)",
+    "D-014",
+    "D-0M2",
+    "D-0M4",
+    "D-018"
+  ],
+  "sources": [
+    "content/series1/episodes/s1b01/script.hi.json (beats, sfx_notes, music_note)",
+    "content/series1/episodes/s1b01/script.en.json (same beats and line ids; sfx_notes identical)",
+    "content/series1/sound/library.json"
+  ],
+  "timebase": "Anchored to beat and line ids, not seconds: no storyboard or measured takes exist yet. Offsets ('~1.0 s into b2') are against the script's silent_seconds; S13 places every point effect against the measured voice and the edited shot lengths (D-014 rule 6, D-0M2). Both language cuts use the same cues and the same anchors; only the line timings differ.",
+  "counts": {
+    "library_cues_used": 26,
+    "library_placements": 33,
+    "one_off_cues": 3,
+    "one_off_placements": 3
+  },
+  "library_cues_used": [
+    "amb_bedroom_night",
+    "amb_lane_night",
+    "amb_stairwell_landing",
+    "mus_bed_drone",
+    "mus_tension_pulse",
+    "sfx_bed_creak_petals",
+    "sfx_bolt_rattle",
+    "sfx_boots_concrete_shift",
+    "sfx_boots_stairs_up",
+    "sfx_car_approach_idle",
+    "sfx_car_door_clunk",
+    "sfx_car_pull_away",
+    "sfx_dog_far",
+    "sfx_door_hinge_wood",
+    "sfx_fist_wooden_door",
+    "sfx_glass_bangles_chink",
+    "sfx_hasp_tear",
+    "sfx_keyring_chink",
+    "sfx_keys_on_stairs",
+    "sfx_motorbike_start_away",
+    "sfx_padlock_knock",
+    "sfx_paper_fold_crinkle",
+    "sfx_phone_call_end",
+    "sfx_phone_set_down_sheet",
+    "sfx_photo_print",
+    "sfx_zip_pocket"
+  ],
+  "one_off_cues": [
+    {
+      "cue_id": "sfx_s1b01_toothpick_tarmac",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 1.5,
+      "loop": false,
+      "prompt_influence": 0.7,
+      "prompt": "A single thin wooden toothpick dropping onto an asphalt road at night, landing with two or three tiny dry ticks as it bounces, very close microphone, quiet still night air behind it, no voices, no music.",
+      "why_not_library": "The library's sfx_toothpick_click is a click between teeth or fingers (s1e01 b5); the library itself lists this tarmac drop as an s1b01 one-off.",
+      "status": "generated",
+      "file": "sound/sfx_s1b01_toothpick_tarmac.mp3"
+    },
+    {
+      "cue_id": "sfx_s1b01_chair_scrape",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 2.0,
+      "loop": false,
+      "prompt_influence": 0.6,
+      "prompt": "A wooden chair scraping a short way across a hard stone floor in a small room as a man is pushed down onto it, one creak of the wooden joints as his weight lands, close and dry, no voices, no music.",
+      "why_not_library": "Listed by the library as an s1b01 one-off; no chair sound elsewhere in the series.",
+      "status": "generated",
+      "file": "sound/sfx_s1b01_chair_scrape.mp3"
+    },
+    {
+      "cue_id": "sfx_s1b01_notebook_page",
+      "type": "sfx",
+      "model": "eleven_text_to_sound_v3",
+      "planned_duration_s": 1.0,
+      "loop": false,
+      "prompt_influence": 0.6,
+      "prompt": "A single page of a small paper notebook being turned slowly, soft dry paper sound, close and quiet, small quiet room, no voices, no music.",
+      "why_not_library": "Listed by the library as an s1b01 one-off; sfx_photo_print and sfx_paper_fold_crinkle are a photo and a paper fold, not a page.",
+      "status": "generated",
+      "file": "sound/sfx_s1b01_notebook_page.mp3"
+    }
+  ],
+  "placements": [
+    {
+      "cue_id": "amb_bedroom_night",
+      "source": "library",
+      "beat": "b1",
+      "anchor": "episode start, continuous with s1e02 b13's bedroom bed (same file, same level) through b11",
+      "level_db": -24,
+      "duck": "-6 dB under l01 (locked line, one whole take, never cut) and under every line after; see mix.ducking",
+      "note": "Bed runs under every bedroom beat: b1, b3, b4 set-ups 2-3, b5a, b6, b7, b8, b9, b10, b11. No ceiling fan."
+    },
+    {
+      "cue_id": "sfx_phone_call_end",
+      "source": "library",
+      "beat": "b1",
+      "anchor": "right after l02 ends, in the 1.2 s silence",
+      "level_db": -18,
+      "filter": "phone speaker in the room (light colour, as l02)",
+      "note": "Three short call-ended beeps. Trim to the beeps if the file runs longer than the 1.2 s silence; nothing else in b1."
+    },
+    {
+      "cue_id": "amb_lane_night",
+      "source": "library",
+      "beat": "b2",
+      "anchor": "b2 head to b2 end (3.0 s silent beat)",
+      "level_db": -20,
+      "note": "Sodium-lit lane, night. Hard cut in and out with the picture."
+    },
+    {
+      "cue_id": "sfx_s1b01_toothpick_tarmac",
+      "source": "episode",
+      "beat": "b2",
+      "anchor": "~0.3 s into b2, as the toothpick falls from Billu's lips",
+      "level_db": -16
+    },
+    {
+      "cue_id": "sfx_car_door_clunk",
+      "source": "library",
+      "beat": "b2",
+      "anchor": "~0.9 s into b2",
+      "level_db": -14,
+      "note": "Billu's car door, sound only."
+    },
+    {
+      "cue_id": "sfx_motorbike_start_away",
+      "source": "library",
+      "beat": "b2",
+      "anchor": "~1.5 s into b2",
+      "level_db": -16,
+      "slice": "first ~1.0 s only (side-stand clack); no kick or rev"
+    },
+    {
+      "cue_id": "sfx_boots_concrete_shift",
+      "source": "library",
+      "beat": "b2",
+      "anchor": "~2.0 s into b2, to the cut",
+      "level_db": -15,
+      "note": "Two pairs of boots on the road; add slight outdoor air."
+    },
+    {
+      "cue_id": "sfx_boots_stairs_up",
+      "source": "library",
+      "beat": "b3",
+      "anchor": "b3 head (0.5 s silence) to just after l06 ends",
+      "level_db": "-28 rising to -16",
+      "filter": "heard from the bedroom through the shut door: low-pass ~3 kHz, a little stairwell reverb",
+      "note": "Rises steadily under l03-l06, ducked 6 dB under each line, stops dead just after l06."
+    },
+    {
+      "cue_id": "mus_bed_drone",
+      "source": "library",
+      "beat": "b3",
+      "anchor": "enters with the first boot at b3 head; holds under b4 and b5; out at the end of l12 (b5 end)",
+      "level_db": -26,
+      "trim": "discard first ~4 s (fade-in); 2 s crossfade loop",
+      "duck": "-8 dB under every line",
+      "out": "2 s fade out on the last word of l12, so b5a starts with no music"
+    },
+    {
+      "cue_id": "sfx_fist_wooden_door",
+      "source": "library",
+      "beat": "b4",
+      "anchor": "b4 head, before l07 (landing set-up 1 opens on the fist raised from the bang)",
+      "level_db": -10,
+      "note": "One bang only."
+    },
+    {
+      "cue_id": "amb_stairwell_landing",
+      "source": "library",
+      "beat": "b4",
+      "anchor": "b4 set-up 1 (landing, l07) and all of b5",
+      "level_db": -22,
+      "note": "Small hard landing acoustic. On b4 set-ups 2-3 (bedroom plate) switch to amb_bedroom_night with this bed under it at about -34 dB, low-passed."
+    },
+    {
+      "cue_id": "sfx_bolt_rattle",
+      "source": "library",
+      "beat": "b4",
+      "anchor": "right after l08 ends, in the 0.8 s silence",
+      "level_db": -14,
+      "note": "The door rattles once against the hasp and holds. Bedroom-side perspective, close."
+    },
+    {
+      "cue_id": "sfx_boots_concrete_shift",
+      "source": "library",
+      "beat": "b5a",
+      "anchor": "in the 2.5 s silence after l14, ~0.3 s in",
+      "level_db": -26,
+      "slice": "one short scuff (~0.6 s)",
+      "filter": "through the door: low-pass ~2.5 kHz",
+      "note": "Stands in for 'one creak of a foot shifting on the landing'. It is a scuff, not a creak: if S13 finds it does not read as the landing, the fallback is the first ~0.5 s of sfx_door_hinge_wood at -30 dB (the door leaf taking weight). No new cue made for it."
+    },
+    {
+      "cue_id": "sfx_bed_creak_petals",
+      "source": "library",
+      "beat": "b5a",
+      "anchor": "~1.2 s into the silence after l14, as Aditya sits back on the bed (set-up 3)",
+      "level_db": -20
+    },
+    {
+      "cue_id": "sfx_dog_far",
+      "source": "library",
+      "beat": "b6",
+      "anchor": "in the 2.0 s silence before l15, ~0.5 s in",
+      "level_db": -30,
+      "note": "The only dog in the episode. The time cut to 4:10 is carried by the overlay, not by sound: bed unchanged."
+    },
+    {
+      "cue_id": "sfx_phone_set_down_sheet",
+      "source": "library",
+      "beat": "b6",
+      "anchor": "under the end of l18 (set-up 4, the phone going face down)",
+      "level_db": -22,
+      "slice": "first tap only",
+      "note": "Soft; must not cover the last word of l18. If it lands on the word, move it into the gap after the line."
+    },
+    {
+      "cue_id": "amb_lane_night",
+      "source": "library",
+      "beat": "b7",
+      "anchor": "b7 set-up 1 (~2.5 s)",
+      "level_db": -30,
+      "filter": "heard from the bedroom through the grille: low-pass ~2 kHz",
+      "note": "Thin outside layer under the car; drops out at set-up 2."
+    },
+    {
+      "cue_id": "sfx_car_approach_idle",
+      "source": "library",
+      "beat": "b7",
+      "anchor": "b7 head",
+      "level_db": -20,
+      "slice": "last ~1.2 s (approach into idle)",
+      "filter": "through the grille: low-pass ~2.5 kHz, distance"
+    },
+    {
+      "cue_id": "sfx_car_door_clunk",
+      "source": "library",
+      "beat": "b7",
+      "anchor": "~1.2 s into b7",
+      "level_db": -22,
+      "filter": "as above"
+    },
+    {
+      "cue_id": "sfx_car_pull_away",
+      "source": "library",
+      "beat": "b7",
+      "anchor": "~1.4 s into b7, tail runs under set-up 2's first second",
+      "level_db": -20,
+      "filter": "as above",
+      "note": "It does not wait: no idle after the door."
+    },
+    {
+      "cue_id": "sfx_keys_on_stairs",
+      "source": "library",
+      "beat": "b7",
+      "anchor": "set-up 2 (~2.5 s into b7) to b7 end",
+      "level_db": "-30 rising to -20",
+      "slice": "a ~3.0 s stretch, step-by-step chinks, ending on a step",
+      "filter": "through the shut door: low-pass ~3.5 kHz, stairwell reverb",
+      "note": "No music under the keys. Keys stop at the cut to b8."
+    },
+    {
+      "cue_id": "sfx_hasp_tear",
+      "source": "library",
+      "beat": "b8",
+      "anchor": "b8 head, on the insert of the torn hasp",
+      "level_db": -10,
+      "note": "One dry crack of screws tearing out of old wood. Signature door moment."
+    },
+    {
+      "cue_id": "sfx_padlock_knock",
+      "source": "library",
+      "beat": "b8",
+      "anchor": "right after the hasp crack",
+      "level_db": -14,
+      "note": "Padlock swinging and knocking twice against the door. Then a breath of silence (bed only) to l19."
+    },
+    {
+      "cue_id": "mus_tension_pulse",
+      "source": "library",
+      "beat": "b8",
+      "anchor": "enters on the hasp crack at b8 head; runs to the last word of l28",
+      "level_db": -28,
+      "trim": "discard first ~4 s; 2 s crossfade loop",
+      "duck": "-10 dB under l19; -12 dB under l28; -6 dB under the other lines",
+      "out": "cut dead (10 ms) on the last word of l28, with the picture"
+    },
+    {
+      "cue_id": "sfx_door_hinge_wood",
+      "source": "library",
+      "beat": "b9",
+      "anchor": "b9 head, in the 2.0 s silence before l20",
+      "level_db": -14,
+      "note": "Aditya pulls the door open."
+    },
+    {
+      "cue_id": "amb_stairwell_landing",
+      "source": "library",
+      "beat": "b9",
+      "anchor": "from the door opening to episode end",
+      "level_db": -34,
+      "note": "Landing spill through the open door, low under the bedroom bed."
+    },
+    {
+      "cue_id": "sfx_keyring_chink",
+      "source": "library",
+      "beat": "b9",
+      "anchor": "~0.8 s into the silence before l20, at Mausi's left hip",
+      "level_db": -18
+    },
+    {
+      "cue_id": "sfx_glass_bangles_chink",
+      "source": "library",
+      "beat": "b9",
+      "anchor": "~1.4 s into the silence before l20, as she reaches for Kiran's face",
+      "level_db": -20,
+      "note": "Clear of l20's first word."
+    },
+    {
+      "cue_id": "sfx_s1b01_chair_scrape",
+      "source": "episode",
+      "beat": "b9",
+      "anchor": "under the second sentence of l21 ('दरवाज़े का बुरा मत मानिए।' / 'Please don't mind the door.'), set-up 4 insert",
+      "level_db": -24,
+      "note": "Kept under Mausi's voice; if it masks a word, start it in the gap between the two sentences."
+    },
+    {
+      "cue_id": "sfx_zip_pocket",
+      "source": "library",
+      "beat": "b10",
+      "anchor": "b10 head, set-up 1 (first ~1.0 s of the 3.0 s silence)",
+      "level_db": -20,
+      "note": "Billu's jacket pocket as the phone goes in."
+    },
+    {
+      "cue_id": "sfx_s1b01_notebook_page",
+      "source": "episode",
+      "beat": "b10",
+      "anchor": "set-up 2 (~1.0-2.0 s into the silence)",
+      "level_db": -22
+    },
+    {
+      "cue_id": "sfx_photo_print",
+      "source": "library",
+      "beat": "b10",
+      "anchor": "set-up 3 (~2.0-3.0 s into the silence), the flick of the print",
+      "level_db": -20,
+      "slice": "the flick only (~0.5 s)"
+    },
+    {
+      "cue_id": "sfx_glass_bangles_chink",
+      "source": "library",
+      "beat": "b10",
+      "anchor": "optional: one faint chink as the print is held (set-up 3), only if the flick leaves room",
+      "level_db": -28
+    },
+    {
+      "cue_id": "sfx_photo_print",
+      "source": "library",
+      "beat": "b11",
+      "anchor": "set-up 1, on the notebook tapped once on the photograph, in a gap around l24",
+      "level_db": -26,
+      "slice": "one dry tap (~0.3 s), as for s1a03 b2a",
+      "note": "Optional; not in sfx_notes. Drop if it falls on a word."
+    },
+    {
+      "cue_id": "sfx_paper_fold_crinkle",
+      "source": "library",
+      "beat": "b11",
+      "anchor": "l28 set-up 5 insert: start in the gap between 'बेटा।' and 'अपने हाथ से।' (en: 'beta.' / 'With your own hands.')",
+      "level_db": -26,
+      "note": "Folds pressed into the palm. Under the line, never over a word."
+    },
+    {
+      "cue_id": "sfx_glass_bangles_chink",
+      "source": "library",
+      "beat": "b11",
+      "anchor": "with the crinkle, as Mausi's fingers close Kiran's",
+      "level_db": -28
+    }
+  ],
+  "music": {
+    "in_out": [
+      "b1, b2: no music. The episode opens inside s1e02's closing in-breath; s1e02's pulse was cut to silence there, so s1b01 starts on the bed and the call only.",
+      "mus_bed_drone in with the first boot at b3 head; under b3, b4, b5; 2 s fade out on the last word of l12.",
+      "b5a, b6, b7: no music (time cut carried by the overlay; b7 is engine and keys alone).",
+      "mus_tension_pulse in on the hasp crack at b8 head; held low under all of Mausi's scenes (b8-b11).",
+      "Cut dead on the last word of l28 with the picture; then 0.5 s of bedroom room tone only, then end."
+    ],
+    "glimpse_B": "Glimpse B ends on l19: it uses this sheet from its own start to the end of l19, then cuts pulse and bed dead with the picture. No glimpse-only sound."
+  },
+  "mix": {
+    "dialogue_first": true,
+    "loudness_target": "-14 LUFS integrated, -1 dBTP, tolerance +/-0.5 LU (D-0M4)",
+    "ducking": [
+      "l01: locked line, one whole take, no cut-off; bed ducked 6 dB, nothing else under it.",
+      "Ambience beds duck 6 dB under every line; music ducks 8 dB (drone) or 6 dB (pulse) under ordinary lines.",
+      "l19: bed and pulse duck 10 dB; nothing else under it (padlock knocks finish before it).",
+      "l28: bed and pulse duck right down (12 dB) so every word is clear; the crinkle and bangle sit in the gap between its two sentences.",
+      "Point effects never sit on a word; when a measured take moves, the effect moves to the nearest gap."
+    ],
+    "voice_processing": [
+      "l02 (Mausi, Kiran's phone on speaker in the bedroom): band-pass ~300-3400 Hz, light saturation, light colour, every consonant survives (library mix.phone_voice_fx).",
+      "l10, l11 (Mausi on Billu's phone at his ear on the landing): same band-pass, a little more colour than l02; fully voiced; plus the landing reverb at low send.",
+      "l07 (Billu): the script's sfx_notes ask for loud, through the door, muffled but clear on the bedroom side. Set-up 1 is the landing shot, so: dry and close with landing reverb while the picture is on the landing; if the edit puts any of l07 over the bedroom plate, that part gets a gentle low-pass (~4 kHz) at the same level. S13 to judge this against the cut.",
+      "l09 (Billu on the landing, on the phone): landing reverb, unfiltered.",
+      "l12 (Billu through the door crack): loud and close, dry, slight landing reverb. Not muffled.",
+      "l19 (Mausi through the shut door): lightly muffled (low-pass ~5 kHz, small door resonance), fully voiced, warm and clear.",
+      "b3-b5 bedroom lines and b4 l08: bedroom, dry. b4 set-up 1 and b5: landing reverb, small and hard (mix setting, not a cue)."
+    ],
+    "perspective": "Bedroom-side perspective for everything outside the door (boots, keys, car, landing creak): low-passed and quieter. From b9, the door is open: a low landing spill (amb_stairwell_landing at -34 dB) joins the bedroom bed.",
+    "silences": [
+      "b10: after l23, 0.8 s with no answer: bedroom bed and held pulse only, no effect.",
+      "b11: 0.5 s of bedroom room tone after l28's last word, music already cut."
+    ],
+    "no_fan": "No ceiling fan in any part of this mix (library mix.no_fan_rule).",
+    "levels_note": "level_db values are starting points relative to full scale before the -14 LUFS master; S13 sets final levels by ear-proxy measurement against dialogue."
+  },
+  "fallback": "If a one-off fails or comes back unusable after its one take: toothpick tarmac -> sfx_toothpick_click slice at -20 dB; chair scrape -> drop (the hands on the shoulders carry it); page turn -> a short slice of sfx_paper_fold_crinkle. If music fails, plan 7.8: raise the bedroom bed 3 dB in b3-b5 and b8-b11.",
+  "credit_estimate": {
+    "one_offs": 51,
+    "basis": "17 credits per eleven_text_to_sound_v3 generation, one take (proof manifests, library credit_estimate)"
+  },
+  "not_verified": [
+    "No cue generated or heard.",
+    "Anchors and offsets are from the script; no storyboard (S7) or measured takes exist for s1b01 yet.",
+    "Whether the boots scuff reads as the 'creak' in b5a.",
+    "The l07 perspective choice depends on the edit."
+  ]
+}

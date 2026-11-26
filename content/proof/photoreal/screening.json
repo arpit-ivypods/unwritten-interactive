@@ -1,0 +1,363 @@
+{
+ "scene": "proof/photoreal",
+ "reviewer": "S15 Screening",
+ "round": 3,
+ "date": "2026-11-26",
+ "pass": true,
+ "verdict": "Pass, 8/10. Real voice and sound are in both cuts, hi and en differ, loudness is on target, every line is intelligible to whisper.cpp in the full mix, every clip lands where the timeline puts it, 27 of 29 cues start within 0.2 s of speech, and the regenerated s05/s06/s09 fix the round-2 bag, phone and face findings. There are no blocking issues. Six minor fixes remain, listed below. Nobody listened: performance, emotion and how the mix feels are not judged.",
+ "precondition_D015_rule3": {
+  "voice_manifest_placeholder_rows": 0,
+  "sound_manifest_placeholder_rows": 0,
+  "sound_manifest_note": "14 rows, all status ok, placeholder false, with generation ids",
+  "integrated_lufs_above_minus30": true,
+  "hi_en_differ": true,
+  "result": "met, so this cut is scored"
+ },
+ "files_screened": [
+  "render/proof.hi.mp4",
+  "render/proof.en.mp4",
+  "render/proof.hi.review.mp4",
+  "render/proof.en.review.mp4"
+ ],
+ "editor_report_checked": {
+  "durations_frames_md5": "match: hi 1112 frames/37.10 s md5 8a8204e6..., en 1076/35.90 s md5 061a1999..., review md5s 6fe93e2a... and 91eee5b9...",
+  "loudness": "match: ebur128 I -14.3 LUFS and true peak -1.1 dBFS on all four files; LRA hi 7.8 LU, en 8.3 LU",
+  "review_cuts": "audio stream identical to their main cut (hi 22fa19f8..., en b0cd3b6f...); only the video differs (burned subtitles)",
+  "t2_takes_words": "closed: I transcribed all six _t2 takes. Each says the script words (hi l01, l03, l07; en l01, l03, l10). hi l03_t2 stays at whisper level in both halves (-29.8 and -28.5 dB, against -21.1 dB for plain hi l01_t2), so the round-1 'lost whisper' fault is gone on this level proxy",
+  "cut_on_driver": "en: whisper puts 'driver' at 1.17 s into l08, and the cut is 35 frames in (1.167 s). hi: the cut is at 23.43 s, and whisper on the full mix puts द्रीवर at 23.32 s"
+ },
+ "scores": {
+  "sync": {
+   "score": 8,
+   "basis": "Envelope cross-correlation puts all 20 dialogue clips at the timeline position (lag 0 ms; one at 10 ms). Cue start against measured speech: 18 of 20 lines within 0.06 s. Cue end: within 0.11 s, except the clamped l06 (cut-off line) and hi l05, which is held 0.2 s. Two cue starts are early: hi c09 starts about 0.65 s before 'निशा', on the chuckle, and hi c06 starts 0.21 s early, on a 45 ms click at the head of l05. Burn-in in the review cuts: every cue is off on its endFrame and on on its last frame. Some cues show a partial render one frame before startFrame (33 ms, negligible)."
+  },
+  "audio_levels": {
+   "score": 8,
+   "basis": "I -14.3 LUFS (target -14 +-1) and true peak -1.1 dBFS, below the -1 dBTP ceiling. whisper.cpp small transcribes all 10 lines from the full mix in both languages, so the dialogue is intelligible over the bed. Momentary loudness is -10 to -15 LUFS on dialogue and -30 to -44 in the rain-only gaps. The ring runs 5-8 LU above dialogue at -6 LUFS momentary; the script asks for 'far too loud'. In the low band (<120 Hz), the extra duck under the second half of l08 shows as a 10-15 dB drop (hi 25.5-28.5 s, en 25.5-28 s). The general -8 dB dialogue duck cannot be separated from voice energy in the mix trace."
+  },
+  "phone_filter": {
+   "score": 8,
+   "basis": "Measured on voice/phonefx against the clean takes: below 250 Hz is down 9-11 dB, above 4 kHz is down 5-11 dB, and overall loudness is within 1 dB. The filter is present but moderate. Consonants survive: whisper hears every caller word through it ('who he is driving' exact on the filtered en l08). The audible character (enough 'phone' against Tara's clean voice) is unheard."
+  },
+  "music": {
+   "score": 8,
+   "basis": "Against script music_note: there is no music before the first ring (the drone enters at the ring, hi 10.57 s, en 10.70 s), the drone has an extra duck under the l08 question, there is no music under the lock clunk (the drone ends at s07, the sting starts 2.1 s after the clunk), and the sting sits under l10. Audio goes to silence within one frame of the cut to black (hi 36.69 s against 36.667, en 35.49 against 35.467). The sub-pulse 'heartbeat from b5' was not found, so it is unverified."
+  },
+  "sound_effects": {
+   "score": 7,
+   "basis": "Confirmed in the mix at the timeline frame by cross-correlation (lag 0, r 0.77-0.99): ring on the s03 cut, key click (high band), call-end beeps on l08's last speech, lock clunk on the s08 cut, headlight click on the s09 cut, ignition. Beats match the script. The zip's loud finish (3.0-3.5 s into the file) falls on the s01/s02 cut, but most of it is buried under l01 (expected). Two misses: the paper rustle at the reveal measures at about rain-bed level (file RMS -42 to -46 dB at -14 dB gain), and the ring is not 'cut dead by the key click': its tail ends 13 frames (hi) or 4 frames (en) before the click."
+  },
+  "subtitles": {
+   "score": 9,
+   "basis": "Independent check: cue text joined per line equals both scripts with tags removed (0 mismatches). hi has 15 cues and en 14. Minimum gap is 2 frames, with no overlaps. Max reading speed is 13.4 graphemes/s for hi and 17.0 chars/s for en. No cue ends within 12 frames after a cut. One cue crosses a cut on purpose (l08 'driver'), with 17-32 frames on each side. Line breaks hold in burn-in (c01 in hi and en). Devanagari and mixed-script lines shape correctly in the review frames."
+  },
+  "continuity": {
+   "score": 8,
+   "basis": "Regenerated s05, s06 and s09 resolve three round-2 majors. Her face now matches s03/s04 at about 30. The tan duffel is on her lap in s06 and s09, open with bundles in s09. The phone is back-outward at her right ear in s05 and s06, and held back-to-camera in s09. Still open: s01 reads older (heavier face, deeper lines), but laughing explains part of it. The s08 door has a lever handle and no window crank, where s04 shows both."
+  },
+  "pacing": {
+   "score": 7,
+   "basis": "hi runs 37.1 s and en 35.9 s, against 31.7 s planned. D-0M2 accepts this. The silent beats match the script's silent_seconds: reveal gap 1.6 s (plan 1.5), ring before l04 1.5 s (1.5), dead line and clunk before l09 2.5 s (2.2), headlights before l10 0.9 s (0.8). s01 is 6.9 s (plan 4.7), the longest stretch, carried by l01 and l02."
+  },
+  "completeness": {
+   "score": 9,
+   "basis": "No placeholders. All 9 frames, 10 of 10 lines in each language and 14 of 14 cues are real. en l07 uses a take that voice review marked 'retake' for a contraction."
+  },
+  "grip_and_ending": {
+   "score": 7,
+   "basis": "Structurally sound. The reveal, the call, the 'driver' cut onto the driver over-shoulder, the locks, the headlights and the hard cut on 'मत उठाना' all land on the frames the script names. Performance, emotion tags and tension by ear are not judged."
+  },
+  "overall": 8
+ },
+ "measurements": {
+  "hi": {
+   "frames": 1112,
+   "video_s": 37.066,
+   "audio_s": 37.1,
+   "I_lufs": -14.3,
+   "true_peak_dbfs": -1.1,
+   "lra_lu": 7.8,
+   "cuts": [
+    207,
+    317,
+    404,
+    540,
+    703,
+    874,
+    926,
+    970,
+    1100
+   ],
+   "tail_silence_from_s": 36.69
+  },
+  "en": {
+   "frames": 1076,
+   "video_s": 35.866,
+   "audio_s": 35.9,
+   "I_lufs": -14.3,
+   "true_peak_dbfs": -1.1,
+   "lra_lu": 8.3,
+   "cuts": [
+    197,
+    321,
+    399,
+    519,
+    714,
+    836,
+    888,
+    938,
+    1064
+   ],
+   "tail_silence_from_s": 35.488
+  },
+  "cue_vs_speech_s": {
+   "hi": {
+    "l01": [
+     0.0,
+     0.02
+    ],
+    "l02": [
+     -0.02,
+     0.03
+    ],
+    "l03": [
+     -0.03,
+     0.1
+    ],
+    "l04": [
+     0.0,
+     -0.01
+    ],
+    "l05": [
+     -0.21,
+     0.2
+    ],
+    "l06": [
+     -0.01,
+     -0.14
+    ],
+    "l07": [
+     "-0.03 vs first sound; about -0.65 vs first word (chuckle lead)",
+     0.09
+    ],
+    "l08": [
+     -0.03,
+     -0.01
+    ],
+    "l09": [
+     -0.03,
+     0.07
+    ],
+    "l10": [
+     -0.03,
+     0.02
+    ]
+   },
+   "en": {
+    "l01": [
+     0.0,
+     0.02
+    ],
+    "l02": [
+     -0.02,
+     0.02
+    ],
+    "l03": [
+     -0.03,
+     0.03
+    ],
+    "l04": [
+     0.03,
+     0.03
+    ],
+    "l05": [
+     -0.05,
+     0.01
+    ],
+    "l06": [
+     -0.02,
+     -0.04
+    ],
+    "l07": [
+     "+1.24 vs chuckle; on first word by design",
+     -0.01
+    ],
+    "l08": [
+     -0.04,
+     0.03
+    ],
+    "l09": [
+     -0.02,
+     0.0
+    ],
+    "l10": [
+     -0.02,
+     0.01
+    ]
+   },
+   "method": "[start, end] = cue minus speech. Speech is from silencedetect -40 dB d=0.05 on the exact source played (phonefx WAV for caller lines, after trimBefore), mapped to render time. Clip placement in the render was confirmed by envelope cross-correlation (lag 0)."
+  },
+  "phone_filter_db": {
+   "hi l05": {
+    "clean_lt250": -33.7,
+    "phone_lt250": -44.4,
+    "clean_gt4k": -48.3,
+    "phone_gt4k": -59.6
+   },
+   "en l08": {
+    "clean_lt250": -32.3,
+    "phone_lt250": -42.9,
+    "clean_gt4k": -44.2,
+    "phone_gt4k": -51.8
+   }
+  },
+  "whisper_full_mix": {
+   "hi": "चालिस लाग इम्रान और उसे दाूड तक नहीं हूँ / पहले गिन लो / रद्दी, ये क्या है? / पुन माद उटाना / बग पसन दाया, तारा / रोंग नंबा, यहां कोई तारा / निशा तो तुम आज बनी थी, मैं तारा से बात कर रहा हूं / अब अबने द्रीवर से पुछो, आज राथ वो किस के लिए गाडी चला रहा है? / इम्रान / बोला थाना, मद उटाना",
+   "en": "40 lakh Imran and he didn't suspect a thing. / Count it first. / Newspaper. What is this? / Don't pick up. / Did you like the bag Tara? / Wrong number. There's no Tara. / Nisha is who you were today. I'm speaking to Tara. / Now ask that driver of yours who he's driving for tonight. / Imran. / I told you. Don't pick up.",
+   "note": "The hi differences are small-model spelling of the same words; all 10 lines are present. en 'I'm' (l07) is also heard on the clean and filtered take. en 'he's' (l08) is mix-only: the filtered l08 alone transcribes 'he is'."
+  }
+ },
+ "shot_by_shot": [
+  {
+   "shot": "s01",
+   "hi": "0.00-6.90",
+   "en": "0.00-6.57",
+   "note": "Laughing, hands on zip, bag on lap. l01 + l02. Face reads older than s03-s09."
+  },
+  {
+   "shot": "s02",
+   "hi": "6.90-10.57",
+   "en": "6.57-10.70",
+   "note": "Bag insert, bundles and keypad phone. l03 split at the ellipsis pause. Rustle is quiet."
+  },
+  {
+   "shot": "s03",
+   "hi": "10.57-13.47",
+   "en": "10.70-13.30",
+   "note": "Green glow. Ring on the cut, l04 over the ducked ring; the ring tail ends before the key click."
+  },
+  {
+   "shot": "s04",
+   "hi": "13.47-18.00",
+   "en": "13.30-17.30",
+   "note": "Profile at the window. l05 (phone), l06 cut off by the s05 cut, with caller crosstalk."
+  },
+  {
+   "shot": "s05",
+   "hi": "18.00-23.43",
+   "en": "17.30-23.80",
+   "note": "Regenerated close-up; face and phone now match. l07, then l08 start; cut on 'driver'."
+  },
+  {
+   "shot": "s06",
+   "hi": "23.43-29.13",
+   "en": "23.80-27.87",
+   "note": "Regenerated over-shoulder; bag on lap. l08 question with the bed ducked hard; beeps on the last word."
+  },
+  {
+   "shot": "s07",
+   "hi": "29.13-30.87",
+   "en": "27.87-29.60",
+   "note": "Mirror eyes, dead line, no music."
+  },
+  {
+   "shot": "s08",
+   "hi": "30.87-32.33",
+   "en": "29.60-31.27",
+   "note": "Clunk on the cut, then l09. Door lever, no crank."
+  },
+  {
+   "shot": "s09",
+   "hi": "32.33-36.67",
+   "en": "31.27-35.47",
+   "note": "Regenerated; headlights click on the cut, ignition, l10 over the sting, hard cut to black and silence."
+  }
+ ],
+ "round_2_status": {
+  "voice_missing": "fixed",
+  "sound_missing": "fixed",
+  "silent_mix": "fixed (-14.3 LUFS)",
+  "en_identical_to_hi": "fixed (md5 differ, own timeline)",
+  "morning_report": "not checked this round (outside the scene folder)",
+  "subtitle_timing_from_audio": "fixed (D-014 b, measured)",
+  "subs_method_md_stale": "still open: subs.method.md is dated 02:16 and still describes the placeholder method and old numbers",
+  "face_age_drift": "fixed for s05/s09; s01 open",
+  "bag_vanishes": "fixed (s06, s09)",
+  "phone_handling": "fixed (s05, s06, s09)",
+  "set_dressing": "crank still missing in s08; tape not re-checked",
+  "length_overrun": "accepted by D-0M2",
+  "episode_tsx_newline": "fixed (line breaks hold in burn-in for hi and en c01)",
+  "mix_on_paper": "ring duck, clunk exposure and sting under l10 confirmed in the mix by measurement; drone pulse still unverified"
+ },
+ "problems": [
+  {
+   "owner": "voice",
+   "severity": "minor",
+   "issue": "en l07 says 'I'm speaking to Tara' according to whisper.cpp small on the clean take, the phone-filtered take and the full mix. The script and the burned subtitle say 'I am'. The take in the cut was marked 'retake' in voice/review.json and no retake exists.",
+   "fix": "Owner ear check first (voice review asked for it). If it is contracted: one eleven_v4 retake of en l07 with the same voice and text '[chuckles] [gently] Nisha is who you were today. [calm, certain] I am speaking to Tara.', with 'I am' kept as two stressed words (for example add [deliberate]). Accept only if whisper.cpp small hears 'I am'. Save it as voice/en/l07_t2.mp3 and log it in voice/manifest.jsonl. The editor then rebuilds en only (build_timeline.py en, build_subs.py en, render, master)."
+  },
+  {
+   "owner": "editor",
+   "severity": "minor",
+   "issue": "Sync: hi c09 (l07) starts at frame 540, on the chuckle, about 0.65 s before the first word 'निशा'. A whisper of the first 0.85 s of voice/hi/l07_t2.mp3 returns only a non-word, and the line starts after it. en c08 already waits for the first word. hi c06 (l05) starts at frame 408, 0.21 s before speech, triggered by a 45 ms click at the head of the clip.",
+   "fix": "In build_subs.py: (1) ignore bursts shorter than 80 ms when finding first speech; (2) for lines with a [chuckles]/[laughs] lead of 0.3 s or more, start the cue at the first ASR word, as en l07 does. Expected result: hi c09 starts at about frame 559 (533 + 0.85-0.91 s) and hi c06 at about frame 414. Re-run the validator and re-render the hi review cut only (the main cut has no burned subtitles)."
+  },
+  {
+   "owner": "sound",
+   "severity": "minor",
+   "issue": "Paper rustle at the s02 reveal is at about rain-bed level: file RMS -42 to -46 dB, played at 0.1995 (-14 dB). The reveal gap measures -33 to -44 LUFS momentary, and the rustle does not show clearly in the mix (correlation peak r 0.6, offset 0.4 s).",
+   "fix": "Raise sfx_s02_paper_rustle to volume 0.5 (+8 dB) in build_timeline.py, or regenerate a louder, closer rustle. Check that it peaks at least 6 dB above the rain bed between 7.6 and 8.3 s (hi) and 7.3-8.0 s (en). Editor re-renders."
+  },
+  {
+   "owner": "sound",
+   "severity": "minor",
+   "issue": "The script says the ring is 'cut dead by a key click when she answers'. The ducked ring tail (sfx_s03_phone_ring#1) ends at frame 389 in hi and 393 in en, but the key click is at 402 in hi and 397 in en. In hi the ring stops 0.43 s before the click.",
+   "fix": "Extend sfx_s03_phone_ring#1 to end on the key-click frame (hi 402, en 397) with fadeOut 0, so the click cuts it. Editor re-renders."
+  },
+  {
+   "owner": "frames",
+   "severity": "minor",
+   "issue": "s01 is the only Tara shot not regenerated. It still reads older and heavier-faced than s03-s09, though the laugh accounts for part of this. It is the opening shot.",
+   "fix": "One retake of s01 with refs/tara.png and frames/s06.png attached, keeping the laugh, wardrobe, bag and hands on the zip, with an explicit 'about 30, lean face' line. If it does not match s06 side by side, accept and log it (D-015 rule 5)."
+  },
+  {
+   "owner": "frames",
+   "severity": "minor",
+   "issue": "Set dressing: s04 shows a door handle and a window crank, while s08 shows the lever handle only.",
+   "fix": "Accept and log. This is not worth a retake on its own. Fold it into any future s08 regeneration by attaching frames/s04.png."
+  },
+  {
+   "owner": "sound",
+   "severity": "minor",
+   "issue": "The 'slow sub pulse like a heartbeat from b5' in the music note is not identifiable in mus_drone_bed. The editor's loudness scan found no pulse, and the low-band trace shows no regular beat.",
+   "fix": "Either generate a separate low pulse cue (about 60 bpm sub, 7 s) placed from the s05 cut to l08's ellipsis pause and ducked with the drone, or log the pulse as dropped. Ear check by the owner."
+  },
+  {
+   "owner": "editor",
+   "severity": "minor",
+   "issue": "Stale documentation. subs.method.md (02:16) still describes the placeholder method and old numbers. The en timeline meta notes say both 'cut 2 frames before l06's last speech' and 'l06 is cut 3 frames before its last speech'.",
+   "fix": "Regenerate subs.method.md from build_subs.py, or replace it with a pointer to the D-014 (b) method in subs.*.json. Drop the generic '3 frames' note from the en meta."
+  }
+ ],
+ "checks_run": [
+  "Tool check: ffmpeg, ffprobe, whisper-cli and ~/.whisper-models/ggml-small.bin present",
+  "D-015 rule 3 precondition: manifests (0 placeholder rows), ebur128 on all four renders, md5 hi vs en",
+  "ffprobe streams; md5 of files and of each audio/video stream (review cuts share audio with their main cut)",
+  "ebur128 integrated, LRA and true peak; momentary loudness trace at 0.5 s resolution; low-band (<120 Hz) RMS trace for drone ducking; silencedetect on the tail",
+  "whisper.cpp small (local), segment and word level, on the full-mix audio of hi and en; also on all six _t2 takes and their t1, on the filtered en l07/l08, and on split parts of hi l07_t2",
+  "Envelope cross-correlation of every dialogue clip (as played, after trimBefore) and 9 key sound cues against the render mix, to confirm placement",
+  "Cue start and end against measured speech of the exact played source, for all 29 cues",
+  "Burn-in check: subtitle band of the review cut against the main cut at startFrame-1, startFrame, endFrame-1 and endFrame for all 29 cues",
+  "Independent subtitle validation: text against script, gaps, overlaps, reading speed, cues crossing or ending just after cuts",
+  "Phone filter: band levels (<250 Hz, >4 kHz) of phonefx WAVs against clean takes for l05, l07, l08 in both languages",
+  "Frames: mid-shot frame of all 9 shots from both main cuts; one frame per cue from both review cuts; source frames s01, s03, s05, s06, s09 side by side"
+ ],
+ "checks_not_run": [
+  "Listening of any kind: performance, emotion tags, whether the laugh, chuckle and sigh read as intended, Hindi pronunciation of code-mixed words, how the phone filter and ring feel, and whether the mix feels balanced. No agent can hear.",
+  "The zip and ignition are confirmed only partly (the zip's loud finish is by level arithmetic, not correlation). The drone pulse is unverified.",
+  "General -8 dB ducking under dialogue: it could not be isolated from voice energy in the mix; only the l08 extra duck is visible.",
+  "Seat-tape continuity was not re-checked at full size. s02, s04, s07 and s08 were judged from the render frames only.",
+  "whisper.cpp word times were used as rough checks (they are quantised on the en mix); timing conclusions rest on silencedetect plus cross-correlation.",
+  "docs/morning-report.md was not checked (outside the scene folder)."
+ ]
+}

@@ -1,0 +1,204 @@
+{
+ "pass": "D-025 clarity re-voice, take 1 direction (waves 1-2)",
+ "written_by": "S10 voice director, 26 Nov 2026",
+ "episode": "s1b01",
+ "series": "series1",
+ "lang": "hi",
+ "source": "content/revoice-clarity.json rows (retired rows excluded); text from script.hi.json; voice ids from content/series1/cast.json",
+ "entry_format": "Same keys as takes.hi.json (text = script text, as D-022 rule 3 requires) plus text_sent, quiet_free, whisper_wanted, change, out_path, current_final.",
+ "takes": [
+  {
+   "line_id": "l11",
+   "lang": "hi",
+   "speaker": "mausi",
+   "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+   "model": "eleven_v4",
+   "text": "[calm] मेरा इंतज़ार कर। उसे हाथ मत लगाना।",
+   "target_seconds": 3.4,
+   "note": "CLARITY PASS (D-025), reworded. Hindi only: 'हाथ मत लगाना' gets its object ('उसे'), matching the English. Heard as phone. Phone. The order the b5a logic rests on: two short sentences, fully voiced. Softer and slower than l10: the colder, the softer. 'उसे हाथ मत लगाना' clear through the phone filter. Generate clean. No quiet-family tag; take 1 is the script text, which is also the D-022 rung-1 text. Retake ladder (D-022; a rung already used is skipped, no quiet-family tag on any retake, [low voice] is never a rung): rung 2 the bare line 'मेरा इंतज़ार कर। उसे हाथ मत लगाना।'. A recast is cast-wide and decided by S10 under cast.json switch_if, never a one-line swap. Voice-wanted in this pass: retake only for wrong or missing words (a lost name counts), a spoken tag, or a take under 0.6 voiced (whole take, or any segment of 0.5 s or more that carries script words); never for length, which the edit absorbs (D-0M2). Wrong or missing words: resend the same text once, then the next rung; a spoken tag goes to the next rung. Ear-only faults (comic, filmi, brisk, accent) go to the owner's ear list. Max 3 takes in this pass (D-011), then accept the most-voiced take that has all its words and log it. Never re-call generate on a pending result. Write take 1 to voice/hi/l11.c1.mp3 (take n to l11.c{n}.mp3); never overwrite the current final (voice/hi/l11.mp3, take 1), which stays on disk. Voice: Savitri - Grounded and Nurturing (cast_provisional): low, warm, unhurried; the colder, the softer; fully voiced, never whispered. If the ear cannot tell her from Kiran, it is Mausi who changes (cast.json switch_if).",
+   "text_sent": "[calm] मेरा इंतज़ार कर। उसे हाथ मत लगाना।",
+   "quiet_free": false,
+   "whisper_wanted": false,
+   "change": "reworded",
+   "out_path": "content/series1/episodes/s1b01/voice/hi/l11.c1.mp3",
+   "current_final": {
+    "file": "voice/hi/l11.mp3",
+    "take": 1,
+    "text": "[calm] मेरा इंतज़ार कर। हाथ मत लगाना।"
+   }
+  },
+  {
+   "line_id": "l14",
+   "lang": "hi",
+   "speaker": "kiran",
+   "voice_id": "FtcqBL9uKtROtyotPjvE",
+   "model": "eleven_v4",
+   "text": "[quietly] हाथ लगाया तो चिल्लाऊँगी। फिर बाहर से लड़के दरवाज़ा तोड़ देंगे।",
+   "target_seconds": 6.0,
+   "note": "CLARITY PASS (D-025), reworded. Says why he stops: a scream brings the boys through the door. Protected line. On the floor, back to the door: a threat said low and exact, not frightened, never shrill; the quieter, the more certain. 'हाथ लगाया तो चिल्लाऊँगी।' then 'फिर बाहर से लड़के दरवाज़ा तोड़ देंगे।' as the consequence, level. 'चिल्लाऊँगी' clear. Low in the mix, but the take must be voiced (0.6 or more). Take 1 is quiet-free (D-025 item 6, D-022 rule 1): the script text keeps [quietly], the runner sends '[calm] हाथ लगाया तो चिल्लाऊँगी। फिर बाहर से लड़के दरवाज़ा तोड़ देंगे।'. The edit sets the level the note wants; subtitles stay the script text; the manifest logs text_sent. Retake ladder (D-022; a rung already used is skipped, no quiet-family tag on any retake, [low voice] is never a rung): rung 2 the bare line 'हाथ लगाया तो चिल्लाऊँगी। फिर बाहर से लड़के दरवाज़ा तोड़ देंगे।'. A recast is cast-wide and decided by S10 under cast.json switch_if, never a one-line swap. Voice-wanted in this pass: retake only for wrong or missing words (a lost name counts), a spoken tag, or a take under 0.6 voiced (whole take, or any segment of 0.5 s or more that carries script words); never for length, which the edit absorbs (D-0M2). Wrong or missing words: resend the same text once, then the next rung; a spoken tag goes to the next rung. Ear-only faults (comic, filmi, brisk, accent) go to the owner's ear list. Max 3 takes in this pass (D-011), then accept the most-voiced take that has all its words and log it. Never re-call generate on a pending result. Write take 1 to voice/hi/l14.c1.mp3 (take n to l14.c{n}.mp3); never overwrite the current final (series1/episodes/s1b01/voice/hi/l14_t2.mp3, take 2), which stays on disk. Voice: Yashvi G – Real Conversational Voice (cast_provisional): flat, blunt, quick; under pressure quieter and more exact, never shrill. Her English [quietly] whispered in casting (kiran_t3, 0.23) and her [quietly] lines in s1e01 and s1b01 were queued for whisper retakes (D-022), so no take in this pass sends a quiet-family tag on her. A voice change (Rudrika) is cast-wide, only under cast.json kiran.casting_review.switch_if.",
+   "text_sent": "[calm] हाथ लगाया तो चिल्लाऊँगी। फिर बाहर से लड़के दरवाज़ा तोड़ देंगे।",
+   "quiet_free": true,
+   "whisper_wanted": false,
+   "change": "reworded",
+   "out_path": "content/series1/episodes/s1b01/voice/hi/l14.c1.mp3",
+   "current_final": {
+    "file": "series1/episodes/s1b01/voice/hi/l14_t2.mp3",
+    "take": 2,
+    "text": "[calm] हाथ लगाया तो चिल्लाऊँगी। फिर ये दरवाज़ा नहीं बचेगा।"
+   }
+  },
+  {
+   "line_id": "l15",
+   "lang": "hi",
+   "speaker": "kiran",
+   "voice_id": "FtcqBL9uKtROtyotPjvE",
+   "model": "eleven_v4",
+   "text": "[sharply] Police बुलाओगे? क्या दिखाओगे उन्हें?",
+   "target_seconds": 3.4,
+   "note": "CLARITY PASS (D-025), reworded. Splits the taunt so l16 and l17 answer 'what will you show them'. First of the three short turns: a fast taunt at the phone in his hand, flat and quick, not loud. 'Police बुलाओगे?' then 'क्या दिखाओगे उन्हें?' sharper. No quiet-family tag; take 1 is the script text, which is also the D-022 rung-1 text. Retake ladder (D-022; a rung already used is skipped, no quiet-family tag on any retake, [low voice] is never a rung): rung 2 the bare line 'Police बुलाओगे? क्या दिखाओगे उन्हें?'. A recast is cast-wide and decided by S10 under cast.json switch_if, never a one-line swap. Voice-wanted in this pass: retake only for wrong or missing words (a lost name counts), a spoken tag, or a take under 0.6 voiced (whole take, or any segment of 0.5 s or more that carries script words); never for length, which the edit absorbs (D-0M2). Wrong or missing words: resend the same text once, then the next rung; a spoken tag goes to the next rung. Ear-only faults (comic, filmi, brisk, accent) go to the owner's ear list. Max 3 takes in this pass (D-011), then accept the most-voiced take that has all its words and log it. Never re-call generate on a pending result. Write take 1 to voice/hi/l15.c1.mp3 (take n to l15.c{n}.mp3); never overwrite the current final (voice/hi/l15.mp3, take 1), which stays on disk. Voice: Yashvi G – Real Conversational Voice (cast_provisional): flat, blunt, quick; under pressure quieter and more exact, never shrill. Her English [quietly] whispered in casting (kiran_t3, 0.23) and her [quietly] lines in s1e01 and s1b01 were queued for whisper retakes (D-022), so no take in this pass sends a quiet-family tag on her. A voice change (Rudrika) is cast-wide, only under cast.json kiran.casting_review.switch_if.",
+   "text_sent": "[sharply] Police बुलाओगे? क्या दिखाओगे उन्हें?",
+   "quiet_free": false,
+   "whisper_wanted": false,
+   "change": "reworded",
+   "out_path": "content/series1/episodes/s1b01/voice/hi/l15.c1.mp3",
+   "current_final": {
+    "file": "voice/hi/l15.mp3",
+    "take": 1,
+    "text": "[sharply] Police को दिखाओगे क्या?"
+   }
+  },
+  {
+   "line_id": "l16",
+   "lang": "hi",
+   "speaker": "kiran",
+   "voice_id": "FtcqBL9uKtROtyotPjvE",
+   "model": "eleven_v4",
+   "text": "[calm] ताला तुमने लगाया है। Bureau में नाम भी तुम्हारा नकली है।",
+   "target_seconds": 5.6,
+   "note": "CLARITY PASS (D-025), reworded. 'Your name is fake' leans on s1e01 l28: his name at the bureau is fake. Second turn: two facts laid down, stress on 'तुमने' and 'नकली'. Level and blunt. A beat between the sentences (the padlock insert sits under the first). 'Bureau' plain. No quiet-family tag; take 1 is the script text, which is also the D-022 rung-1 text. Retake ladder (D-022; a rung already used is skipped, no quiet-family tag on any retake, [low voice] is never a rung): rung 2 the bare line 'ताला तुमने लगाया है। Bureau में नाम भी तुम्हारा नकली है।'. A recast is cast-wide and decided by S10 under cast.json switch_if, never a one-line swap. Voice-wanted in this pass: retake only for wrong or missing words (a lost name counts), a spoken tag, or a take under 0.6 voiced (whole take, or any segment of 0.5 s or more that carries script words); never for length, which the edit absorbs (D-0M2). Wrong or missing words: resend the same text once, then the next rung; a spoken tag goes to the next rung. Ear-only faults (comic, filmi, brisk, accent) go to the owner's ear list. Max 3 takes in this pass (D-011), then accept the most-voiced take that has all its words and log it. Never re-call generate on a pending result. Write take 1 to voice/hi/l16.c1.mp3 (take n to l16.c{n}.mp3); never overwrite the current final (voice/hi/l16.mp3, take 1), which stays on disk. Voice: Yashvi G – Real Conversational Voice (cast_provisional): flat, blunt, quick; under pressure quieter and more exact, never shrill. Her English [quietly] whispered in casting (kiran_t3, 0.23) and her [quietly] lines in s1e01 and s1b01 were queued for whisper retakes (D-022), so no take in this pass sends a quiet-family tag on her. A voice change (Rudrika) is cast-wide, only under cast.json kiran.casting_review.switch_if.",
+   "text_sent": "[calm] ताला तुमने लगाया है। Bureau में नाम भी तुम्हारा नकली है।",
+   "quiet_free": false,
+   "whisper_wanted": false,
+   "change": "reworded",
+   "out_path": "content/series1/episodes/s1b01/voice/hi/l16.c1.mp3",
+   "current_final": {
+    "file": "voice/hi/l16.mp3",
+    "take": 1,
+    "text": "[calm] ताला तुमने लगाया है। नाम तुम्हारा नकली है।"
+   }
+  },
+  {
+   "line_id": "l21",
+   "lang": "hi",
+   "speaker": "mausi",
+   "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+   "model": "eleven_v4",
+   "text": "[calm] नमस्ते, दामाद जी। दरवाज़े का बुरा मत मानिए। कुंडी तोड़नी पड़ी।",
+   "target_seconds": 6.0,
+   "note": "CLARITY PASS (D-025), reworded. Adds 'we had to break the latch', speaking the torn hasp once. Turned to Aditya, palms joined: a hostess's courtesy, warm, a smile in it. Three short sentences with clear beats (two set-ups); 'कुंडी तोड़नी पड़ी।' as a polite apology for a small inconvenience, never a threat. No quiet-family tag; take 1 is the script text, which is also the D-022 rung-1 text. Retake ladder (D-022; a rung already used is skipped, no quiet-family tag on any retake, [low voice] is never a rung): rung 2 the bare line 'नमस्ते, दामाद जी। दरवाज़े का बुरा मत मानिए। कुंडी तोड़नी पड़ी।'. A recast is cast-wide and decided by S10 under cast.json switch_if, never a one-line swap. Voice-wanted in this pass: retake only for wrong or missing words (a lost name counts), a spoken tag, or a take under 0.6 voiced (whole take, or any segment of 0.5 s or more that carries script words); never for length, which the edit absorbs (D-0M2). Wrong or missing words: resend the same text once, then the next rung; a spoken tag goes to the next rung. Ear-only faults (comic, filmi, brisk, accent) go to the owner's ear list. Max 3 takes in this pass (D-011), then accept the most-voiced take that has all its words and log it. Never re-call generate on a pending result. Write take 1 to voice/hi/l21.c1.mp3 (take n to l21.c{n}.mp3); never overwrite the current final (voice/hi/l21.mp3, take 1), which stays on disk. Voice: Savitri - Grounded and Nurturing (cast_provisional): low, warm, unhurried; the colder, the softer; fully voiced, never whispered. If the ear cannot tell her from Kiran, it is Mausi who changes (cast.json switch_if).",
+   "text_sent": "[calm] नमस्ते, दामाद जी। दरवाज़े का बुरा मत मानिए। कुंडी तोड़नी पड़ी।",
+   "quiet_free": false,
+   "whisper_wanted": false,
+   "change": "reworded",
+   "out_path": "content/series1/episodes/s1b01/voice/hi/l21.c1.mp3",
+   "current_final": {
+    "file": "voice/hi/l21.mp3",
+    "take": 1,
+    "text": "[calm] नमस्ते, दामाद जी। दरवाज़े का बुरा मत मानिए।"
+   }
+  },
+  {
+   "line_id": "l22",
+   "lang": "hi",
+   "speaker": "mausi",
+   "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+   "model": "eleven_v4",
+   "text": "[calm] तो ये मोहित का भाई है। हाँ, ख़बर आई थी। लड़का कमज़ोर निकला।",
+   "target_seconds": 6.6,
+   "note": "CLARITY PASS (D-025), reworded. 'Mohit's brother' becomes a discovery: 'So this is Mohit's brother.' Protected line, the near miss. Three sentences, real beats between (300 ms or more): 'तो ये मोहित का भाई है।' a discovery from the notebook and print, mild; 'हाँ, ख़बर आई थी।' as her look lands on Kiran's forearm; 'लड़का कमज़ोर निकला।' softer and slower, flat, no pity. No knowing stress anywhere. Timed slow on purpose. No quiet-family tag; take 1 is the script text, which is also the D-022 rung-1 text. Retake ladder (D-022; a rung already used is skipped, no quiet-family tag on any retake, [low voice] is never a rung): rung 2 the bare line 'तो ये मोहित का भाई है। हाँ, ख़बर आई थी। लड़का कमज़ोर निकला।'. A recast is cast-wide and decided by S10 under cast.json switch_if, never a one-line swap. Voice-wanted in this pass: retake only for wrong or missing words (a lost name counts), a spoken tag, or a take under 0.6 voiced (whole take, or any segment of 0.5 s or more that carries script words); never for length, which the edit absorbs (D-0M2). Wrong or missing words: resend the same text once, then the next rung; a spoken tag goes to the next rung. Ear-only faults (comic, filmi, brisk, accent) go to the owner's ear list. Max 3 takes in this pass (D-011), then accept the most-voiced take that has all its words and log it. Never re-call generate on a pending result. Write take 1 to voice/hi/l22.c1.mp3 (take n to l22.c{n}.mp3); never overwrite the current final (voice/hi/l22.mp3, take 1), which stays on disk. Voice: Savitri - Grounded and Nurturing (cast_provisional): low, warm, unhurried; the colder, the softer; fully voiced, never whispered. If the ear cannot tell her from Kiran, it is Mausi who changes (cast.json switch_if).",
+   "text_sent": "[calm] तो ये मोहित का भाई है। हाँ, ख़बर आई थी। लड़का कमज़ोर निकला।",
+   "quiet_free": false,
+   "whisper_wanted": false,
+   "change": "reworded",
+   "out_path": "content/series1/episodes/s1b01/voice/hi/l22.c1.mp3",
+   "current_final": {
+    "file": "voice/hi/l22.mp3",
+    "take": 1,
+    "text": "[calm] मोहित का भाई। हाँ, ख़बर आई थी। लड़का कमज़ोर निकला।"
+   }
+  },
+  {
+   "line_id": "l23",
+   "lang": "hi",
+   "speaker": "kiran",
+   "voice_id": "FtcqBL9uKtROtyotPjvE",
+   "model": "eleven_v4",
+   "text": "[hesitant] आपको पता था कि मोहित नहीं रहा, मौसी?",
+   "target_seconds": 3.6,
+   "note": "CLARITY PASS (D-025), reworded. 'Knew what?' answered: that Mohit is dead. Protected line. The one crack in her: small, younger, आप to Mausi, the question she half does not want answered. 'आपको पता था कि मोहित नहीं रहा,' hesitant, 'मौसी?' barely. Not an accusation, not a whisper. A 0.8 s hold follows. A plain-sounding read is an ear note, not a retake. No quiet-family tag; take 1 is the script text, which is also the D-022 rung-1 text. Retake ladder (D-022; a rung already used is skipped, no quiet-family tag on any retake, [low voice] is never a rung): rung 2 the bare line 'आपको पता था कि मोहित नहीं रहा, मौसी?'. A recast is cast-wide and decided by S10 under cast.json switch_if, never a one-line swap. Voice-wanted in this pass: retake only for wrong or missing words (a lost name counts), a spoken tag, or a take under 0.6 voiced (whole take, or any segment of 0.5 s or more that carries script words); never for length, which the edit absorbs (D-0M2). Wrong or missing words: resend the same text once, then the next rung; a spoken tag goes to the next rung. Ear-only faults (comic, filmi, brisk, accent) go to the owner's ear list. Max 3 takes in this pass (D-011), then accept the most-voiced take that has all its words and log it. Never re-call generate on a pending result. Write take 1 to voice/hi/l23.c1.mp3 (take n to l23.c{n}.mp3); never overwrite the current final (voice/hi/l23.mp3, take 1), which stays on disk. Voice: Yashvi G – Real Conversational Voice (cast_provisional): flat, blunt, quick; under pressure quieter and more exact, never shrill. Her English [quietly] whispered in casting (kiran_t3, 0.23) and her [quietly] lines in s1e01 and s1b01 were queued for whisper retakes (D-022), so no take in this pass sends a quiet-family tag on her. A voice change (Rudrika) is cast-wide, only under cast.json kiran.casting_review.switch_if.",
+   "text_sent": "[hesitant] आपको पता था कि मोहित नहीं रहा, मौसी?",
+   "quiet_free": false,
+   "whisper_wanted": false,
+   "change": "reworded",
+   "out_path": "content/series1/episodes/s1b01/voice/hi/l23.c1.mp3",
+   "current_final": {
+    "file": "voice/hi/l23.mp3",
+    "take": 1,
+    "text": "[hesitant] आपको पता था?"
+   }
+  },
+  {
+   "line_id": "l26",
+   "lang": "hi",
+   "speaker": "mausi",
+   "voice_id": "q1RcEXDXpiVKpD9oeCVh",
+   "model": "eleven_v4",
+   "text": "[calm] तो सब यही कहेंगे: दुल्हन भाग गई, दूल्हा सुबह उठा ही नहीं।",
+   "target_seconds": 6.4,
+   "note": "CLARITY PASS (D-025), reworded. The cover story for tonight gets its 'so': 'So they'll all say...'. To Aditya, the old story told back to him as a plan: plain, almost a lullaby. 'तो सब यही कहेंगे:' a beat at the colon; 'दुल्हन भाग गई,' then 'दूल्हा सुबह उठा ही नहीं।' softer and slower. No villain colour; the colder, the softer. No quiet-family tag; take 1 is the script text, which is also the D-022 rung-1 text. Retake ladder (D-022; a rung already used is skipped, no quiet-family tag on any retake, [low voice] is never a rung): rung 2 the bare line 'तो सब यही कहेंगे: दुल्हन भाग गई, दूल्हा सुबह उठा ही नहीं।'. A recast is cast-wide and decided by S10 under cast.json switch_if, never a one-line swap. Voice-wanted in this pass: retake only for wrong or missing words (a lost name counts), a spoken tag, or a take under 0.6 voiced (whole take, or any segment of 0.5 s or more that carries script words); never for length, which the edit absorbs (D-0M2). Wrong or missing words: resend the same text once, then the next rung; a spoken tag goes to the next rung. Ear-only faults (comic, filmi, brisk, accent) go to the owner's ear list. Max 3 takes in this pass (D-011), then accept the most-voiced take that has all its words and log it. Never re-call generate on a pending result. Write take 1 to voice/hi/l26.c1.mp3 (take n to l26.c{n}.mp3); never overwrite the current final (voice/hi/l26.mp3, take 1), which stays on disk. Voice: Savitri - Grounded and Nurturing (cast_provisional): low, warm, unhurried; the colder, the softer; fully voiced, never whispered. If the ear cannot tell her from Kiran, it is Mausi who changes (cast.json switch_if).",
+   "text_sent": "[calm] तो सब यही कहेंगे: दुल्हन भाग गई, दूल्हा सुबह उठा ही नहीं।",
+   "quiet_free": false,
+   "whisper_wanted": false,
+   "change": "reworded",
+   "out_path": "content/series1/episodes/s1b01/voice/hi/l26.c1.mp3",
+   "current_final": {
+    "file": "voice/hi/l26.mp3",
+    "take": 1,
+    "text": "[calm] दुल्हन भाग गई, दूल्हा सुबह उठा ही नहीं।"
+   }
+  },
+  {
+   "line_id": "l29",
+   "lang": "hi",
+   "speaker": "aditya",
+   "voice_id": "zCXXiWzuZO7d9fERssmF",
+   "model": "eleven_v4",
+   "text": "[quietly] बोला था ना? झूठ निकला, तो कलाई मैं ख़ुद check करूँगा।",
+   "target_seconds": 5.4,
+   "note": "CLARITY PASS (D-025), new. New: why he comes for her hands (her 'no code' was a lie; he said a lie means he checks the wrist himself). The pharmacist keeping his word, even and courteous, no anger: 'बोला था ना?' mild, a beat; 'झूठ निकला, तो कलाई मैं ख़ुद check करूँगा।' level, a stated procedure. 'कलाई' clear. Low but voiced. Take 1 is quiet-free (D-025 item 6, D-022 rule 1): the script text keeps [quietly], the runner sends '[calm] बोला था ना? झूठ निकला, तो कलाई मैं ख़ुद check करूँगा।'. The edit sets the level the note wants; subtitles stay the script text; the manifest logs text_sent. Retake ladder (D-022; a rung already used is skipped, no quiet-family tag on any retake, [low voice] is never a rung): rung 2 the bare line 'बोला था ना? झूठ निकला, तो कलाई मैं ख़ुद check करूँगा।'. A recast is cast-wide and decided by S10 under cast.json switch_if, never a one-line swap. Voice-wanted in this pass: retake only for wrong or missing words (a lost name counts), a spoken tag, or a take under 0.6 voiced (whole take, or any segment of 0.5 s or more that carries script words); never for length, which the edit absorbs (D-0M2). Wrong or missing words: resend the same text once, then the next rung; a spoken tag goes to the next rung. Ear-only faults (comic, filmi, brisk, accent) go to the owner's ear list. Max 3 takes in this pass (D-011), then accept the most-voiced take that has all its words and log it. Never re-call generate on a pending result. Write take 1 to voice/hi/l29.c1.mp3 (take n to l29.c{n}.mp3); never overwrite the current final; this line has no earlier take. Voice: Amit Wadhwa - Friendly and Conversational Voice (cast): even, courteous, almost kind, a pharmacist reading out a prescription; no menace, no smile in the voice. [quietly] and [low voice] whispered on him (s1a01 hi l04, l20; s1e01 hi l04), hence the quiet-free sends.",
+   "text_sent": "[calm] बोला था ना? झूठ निकला, तो कलाई मैं ख़ुद check करूँगा।",
+   "quiet_free": true,
+   "whisper_wanted": false,
+   "change": "new",
+   "out_path": "content/series1/episodes/s1b01/voice/hi/l29.c1.mp3",
+   "current_final": null
+  },
+  {
+   "line_id": "l30",
+   "lang": "hi",
+   "speaker": "kiran",
+   "voice_id": "FtcqBL9uKtROtyotPjvE",
+   "model": "eleven_v4",
+   "text": "[quietly] और हम में से किसी को बताया तक नहीं?",
+   "target_seconds": 3.6,
+   "note": "CLARITY PASS (D-025), new. New: the second half of her turning point (Mausi told none of them). Follows l23 after the hold: the hurt finding words, small and steady, not an accusation thrown. 'और हम में से किसी को' slow, 'बताया तक नहीं?' quieter. Low in the mix but voiced (0.6 or more), never a whisper. Take 1 is quiet-free (D-025 item 6, D-022 rule 1): the script text keeps [quietly], the runner sends '[calm] और हम में से किसी को बताया तक नहीं?'. The edit sets the level the note wants; subtitles stay the script text; the manifest logs text_sent. Retake ladder (D-022; a rung already used is skipped, no quiet-family tag on any retake, [low voice] is never a rung): rung 2 the bare line 'और हम में से किसी को बताया तक नहीं?'. A recast is cast-wide and decided by S10 under cast.json switch_if, never a one-line swap. Voice-wanted in this pass: retake only for wrong or missing words (a lost name counts), a spoken tag, or a take under 0.6 voiced (whole take, or any segment of 0.5 s or more that carries script words); never for length, which the edit absorbs (D-0M2). Wrong or missing words: resend the same text once, then the next rung; a spoken tag goes to the next rung. Ear-only faults (comic, filmi, brisk, accent) go to the owner's ear list. Max 3 takes in this pass (D-011), then accept the most-voiced take that has all its words and log it. Never re-call generate on a pending result. Write take 1 to voice/hi/l30.c1.mp3 (take n to l30.c{n}.mp3); never overwrite the current final; this line has no earlier take. Voice: Yashvi G – Real Conversational Voice (cast_provisional): flat, blunt, quick; under pressure quieter and more exact, never shrill. Her English [quietly] whispered in casting (kiran_t3, 0.23) and her [quietly] lines in s1e01 and s1b01 were queued for whisper retakes (D-022), so no take in this pass sends a quiet-family tag on her. A voice change (Rudrika) is cast-wide, only under cast.json kiran.casting_review.switch_if.",
+   "text_sent": "[calm] और हम में से किसी को बताया तक नहीं?",
+   "quiet_free": true,
+   "whisper_wanted": false,
+   "change": "new",
+   "out_path": "content/series1/episodes/s1b01/voice/hi/l30.c1.mp3",
+   "current_final": null
+  }
+ ],
+ "skipped_identical": []
+}

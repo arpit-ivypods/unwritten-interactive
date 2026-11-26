@@ -1,0 +1,164 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,100"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 100
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,100",
+				"to": "00:00:00,360"
+			},
+			"offsets": {
+				"from": 100,
+				"to": 360
+			},
+			"text": " I'm"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,360",
+				"to": "00:00:01,170"
+			},
+			"offsets": {
+				"from": 360,
+				"to": 1170
+			},
+			"text": " fine."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,170",
+				"to": "00:00:01,200"
+			},
+			"offsets": {
+				"from": 1170,
+				"to": 1200
+			},
+			"text": " The"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,200",
+				"to": "00:00:01,600"
+			},
+			"offsets": {
+				"from": 1200,
+				"to": 1600
+			},
+			"text": " lock's"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,600",
+				"to": "00:00:01,730"
+			},
+			"offsets": {
+				"from": 1600,
+				"to": 1730
+			},
+			"text": " on"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,730",
+				"to": "00:00:01,880"
+			},
+			"offsets": {
+				"from": 1730,
+				"to": 1880
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,880",
+				"to": "00:00:02,710"
+			},
+			"offsets": {
+				"from": 1880,
+				"to": 2710
+			},
+			"text": " inside."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,710",
+				"to": "00:00:02,910"
+			},
+			"offsets": {
+				"from": 2710,
+				"to": 2910
+			},
+			"text": " Key's"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,910",
+				"to": "00:00:03,300"
+			},
+			"offsets": {
+				"from": 2910,
+				"to": 3300
+			},
+			"text": " round"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,300",
+				"to": "00:00:03,440"
+			},
+			"offsets": {
+				"from": 3300,
+				"to": 3440
+			},
+			"text": " his"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,440",
+				"to": "00:00:03,920"
+			},
+			"offsets": {
+				"from": 3440,
+				"to": 3920
+			},
+			"text": " neck."
+		}
+	]
+}

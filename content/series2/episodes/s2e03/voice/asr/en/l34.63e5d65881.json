@@ -1,0 +1,120 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,150"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 150
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,150",
+				"to": "00:00:00,620"
+			},
+			"offsets": {
+				"from": 150,
+				"to": 620
+			},
+			"text": " Whether"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,620",
+				"to": "00:00:00,850"
+			},
+			"offsets": {
+				"from": 620,
+				"to": 850
+			},
+			"text": " it"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,850",
+				"to": "00:00:00,960"
+			},
+			"offsets": {
+				"from": 850,
+				"to": 960
+			},
+			"text": " is"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,960",
+				"to": "00:00:01,040"
+			},
+			"offsets": {
+				"from": 960,
+				"to": 1040
+			},
+			"text": " a"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,040",
+				"to": "00:00:01,730"
+			},
+			"offsets": {
+				"from": 1040,
+				"to": 1730
+			},
+			"text": " trap,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,730",
+				"to": "00:00:02,120"
+			},
+			"offsets": {
+				"from": 1730,
+				"to": 2120
+			},
+			"text": " nobody"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,120",
+				"to": "00:00:02,960"
+			},
+			"offsets": {
+				"from": 2120,
+				"to": 2960
+			},
+			"text": " knows."
+		}
+	]
+}

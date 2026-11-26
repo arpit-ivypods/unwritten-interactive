@@ -1,0 +1,142 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,050"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 50
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,050",
+				"to": "00:00:00,440"
+			},
+			"offsets": {
+				"from": 50,
+				"to": 440
+			},
+			"text": " Only"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,440",
+				"to": "00:00:00,880"
+			},
+			"offsets": {
+				"from": 440,
+				"to": 880
+			},
+			"text": " this"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,880",
+				"to": "00:00:01,940"
+			},
+			"offsets": {
+				"from": 880,
+				"to": 1940
+			},
+			"text": " survived."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,940",
+				"to": "00:00:02,240"
+			},
+			"offsets": {
+				"from": 1940,
+				"to": 2240
+			},
+			"text": " Mohit"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,240",
+				"to": "00:00:02,480"
+			},
+			"offsets": {
+				"from": 2240,
+				"to": 2480
+			},
+			"text": " sent"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,480",
+				"to": "00:00:02,650"
+			},
+			"offsets": {
+				"from": 2480,
+				"to": 2650
+			},
+			"text": " it"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,650",
+				"to": "00:00:02,840"
+			},
+			"offsets": {
+				"from": 2650,
+				"to": 2840
+			},
+			"text": " from"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,840",
+				"to": "00:00:03,020"
+			},
+			"offsets": {
+				"from": 2840,
+				"to": 3020
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,020",
+				"to": "00:00:03,560"
+			},
+			"offsets": {
+				"from": 3020,
+				"to": 3560
+			},
+			"text": " temple."
+		}
+	]
+}

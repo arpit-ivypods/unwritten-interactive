@@ -1,0 +1,92 @@
+{
+  "episode": "series2/s2e01",
+  "reviewer": "S15 Screening",
+  "round": 3,
+  "kind": "changed-items pass after the D-024/D-025 clarity re-edit (D-023 rule 1, D-024 'Screening'). It covers only the changed lines (content/revoice-clarity.json: hi l02 l03 l05 l07 l09 l15 l16 l19 l20 l22 and new l27-l32; en the same plus l21), the six supers su1-su6, the s18 tail with the moved handset lift and dial tones around l30, the l09 cut moved to 'Zero', and l15 now whole on s20. It also judges each of them as a first-time viewer would. It is not a full screening; screening.json (round 2, 8/10) stands for everything else.",
+  "date": "2026-11-26",
+  "pass": true,
+  "gate": "D-023: 7/10 and no blocking fault. Met in both languages.",
+  "scores": {
+    "hi": 8,
+    "en": 8
+  },
+  "verdict": "Pass, hi 8/10 and en 8/10, with no blocking fault. Nobody has listened to this render or watched it in motion. The judgement comes from sampled frames, whisper.cpp transcripts and level measurements. All four of the owner's D-024 order faults are fixed on screen and in the mix. (1) Why she is there: l27 'Six weeks, not one complaint at my police station. So I took a token too.' is on her own face (s02), over the tokens on the wall and the one in her fist. (2) The cinema: su2 'Roopam Talkies cinema · Imlipur' on the first wide (s05), then l05 'Roopam Talkies Thana' and l28 'This is a shut cinema.' (3) The railway: l05 says 'railway line' in words, and su3 'The railway crossing' labels s10. (4) The reply to an unheard line: l29 'SHO sahab, there's a fake thana in Roopam Talkies.' now comes before Tripathi's 'Talkies?', and 'Arre' is gone. Names now come early. Nandini is named at 2.8 s, in speech and on a super (she was first named at 58 s before). Tripathi's role is spoken in l29 at 44 s, and su4 names him at 55.8 s (hi) / 57.1 s (en), where before he was named at 92 s. That makes l24 'SHO Tripathi said...' land as a payoff. Pushpa, never named before, is named by su5. Every line I checked now follows from something heard or seen. Tripathi's raised palm in s18 motivates l30 'Don't go over my head to DSP sahab', and l31 names the DSP before the phone voice speaks. 'Form is ready' sits over the pen and blank form in s09. 'Got a shield for it' cuts to the shield on 'Zero'. 'At your own thana, press conference...' plays over the ZERO CRIME shield. Three things hold the score at 8. First, heard_as lines are still unmarked in the subtitles, which D-024 asks for: l03 and l07 are Nandini's lines subtitled over Nirala's face, and the DSP lines have no label. With sound on, the voice makes the speaker clear, so this is not blocking. Second, a few glosses are tacked on: en l21 'The evidence room.' and en/hi l22 'of the ration godown'. Third, s02 holds a single still for about 9.3 s. None of the new lines reads as 'as you know' exposition. l02 and su1 say her name at the same moment, which is redundant but motivated: she is introducing herself at a counter.",
+  "blocking": [],
+  "files_screened": [
+    "content/series2/episodes/s2e01/render/s2e01.hi.mp4",
+    "content/series2/episodes/s2e01/render/s2e01.en.mp4",
+    "content/series2/episodes/s2e01/render/s2e01.hi.review.mp4",
+    "content/series2/episodes/s2e01/render/s2e01.en.review.mp4"
+  ],
+  "measurements": {
+    "probe": "all four: h264 1080x1920 30/1, aac 48 kHz; frames counted hi 4109 (136.97 s), en 4096 (136.53 s). Inside D-024's 130-140 s target and under the 150 s ceiling.",
+    "md5": {
+      "hi": "67d666abda864db065d493818acbdd01",
+      "en": "a92e68d88f668e44fb832c19e4553183",
+      "hi.review": "defaddfb852fcec88fb7c7f7d101a569",
+      "en.review": "bb1d8b95c5386162041fe6be55b110f8"
+    },
+    "loudness_ebur128": "hi -14.2 LUFS LRA 7.4; en -14.3 LUFS LRA 7.3; review cuts identical. The assemble log reports true peak -1.1 dBTP for en.review after its pass-2 redo; I did not measure true peak.",
+    "per_line_speech_rms_dbfs": "New and changed takes sit inside the range of the unchanged takes of the same speaker. Nandini: new -14.2 to -20.2, old -16.8 to -20.6 (hi). Nirala: new -15.7 to -17.8, old -14.8 to -17.2 (hi). Tripathi: hi l30 [quietly] is -22.5, against -20.4 for l10, so it is quiet as tagged, not lost; en l30 is -20.0. The en figures are within the same spreads.",
+    "scratch": "<scratch>"
+  },
+  "changed_items": {
+    "transcript_vs_script": "whisper.cpp ggml-small on both full mixes, plus short windows where the long pass skipped lines. English: every changed and new line is recognised word for word: 'Six weeks. Not one complaint at my police station. So, I took a token too.', 'This is a shut cinema.', 'And nobody in our force wears a cap. You do.', 'Form is ready.', 'Don't go over my head to DSP Sahab, madam.', 'DSP Sahab, SI Joshi. I've found a fake Thana.', 'At your own Thana, press conference at 10 tomorrow. Second zero crime year.', 'Before that, I want the fake Thana's man in your lock up.', 'Nirala Ji, all registers seized.', 'All present, madam. In order.', '...the Malkhana. The evidence room.', '...Bhaiyaji of the ration go down.' The ASR spellings 'Rupam Toki's', 'shat cinema' and 'As such' are its errors. 'SHO sahab' at l29's head transcribes as 'As such' in the mix and 'Asya cho sahab' from the clip alone; whisper also mangled SHO in round 1, so I take it as an ASR limit, but nobody has confirmed it by ear (fix F3). Hindi: every changed line is recognised in substance from the full pass or windows: 34.7 s 'फाम तैयार है' (l32); 43.5 s 'असे चो सहब रूपं तोकीज में नकली ताना है' (l29); 48.4 s 'तोकीस? तो साल से इस ताने में एक अफीर नहीं जीरो क्रिम का शील्ड मिला है' (l09); 69.8 s 'दिस्पी साहप को मत बता ये मैंडम' (l30); 73.9 s 'दिस्पी सहाब एससी जोशी एक नकली ताना मिला है' (l31); 80.6 s '...कल दस बजे प्रस्कोंट्रन्स हैं जीरो क्रीम का दूसरा साल' (l15); full pass '...नकली ताने वाला आपके लोकुप में चाही है' (l16), 'निराला जी, सारे रजिस्टर जबत, हाजर है मैंटम, क्रम से' (l19/l20), '...सब में एक ही नाम, गोडाउन वाले बहिया जी' (l22), 'चे हबते से मेरे ठाने में एक कंप्लेंट नहीं आई तो मैं बी टोकन लेकर आगगे' (l27), 'ये तो बंद तोकीज है' (l28), '...काप कोई नहीं बहनता. आप पहनते है' (l07).",
+    "subtitles_vs_picture": "Cue text equals script text minus tags; the builder's validation is ok, max 16.6 / 17.0 graphemes/s, and no cue crosses a cut. In the review cuts I looked at changed-line cues on their shots. Each new line plays over its speaker's shot, except the lines marked heard_as: l27 on Nandini (s02); l28 on Nandini (s07); l32 on Nirala with the pen over the blank form (s09); l29 off screen over the empty bench (s12); l30 on the s18 two-shot, Tripathi's palm raised; l31 on her close with the handset (s19); l15 over the shield (s20); l16 on her close (s21); l19 on her close (s27); l20 on Nirala sliding the registers (s28); l21 on the Nirala/Pushpa two-shot (s29). The first cue of each changed line starts within about 0.05 s of measured speech onset, except hi/en l09's first cue, which leads 'Talkies?' by 0.22 s (the [chuckles] head; harmless). Fault, not blocking: heard_as lines have no italics and no speaker label (see F1). l03 ('And this thana of yours...') and l07 ('...nobody in our force wears a cap. You do.') are subtitled over Nirala's face. A muted viewer could take them for his lines; with sound, the female voice settles it.",
+    "supers": "All six are burned into the clean and the review cuts in both languages, with the right text: su1 'नंदिनी जोशी · Sub-Inspector' / 'Nandini Joshi · Sub-Inspector' on s02; su2 'रूपम Talkies · इमलीपुर' / 'Roopam Talkies cinema · Imlipur' on s05; su3 'Railway फाटक' / 'The railway crossing' on s10; su6 'इमलीपुर थाना' / 'Imlipur thana' on s12 with l29; su4 'दयाशंकर त्रिपाठी · SHO, थाना प्रभारी' / 'Dayashankar Tripathi · SHO, head of the thana' on s15 with l10; su5 'पुष्पा कुमारी · Head Constable' / 'Pushpa Kumari · Head Constable' on s16, upper. Each is 90 frames (3.0 s) except su3, which is 60 frames (2.0 s with 6-frame fades, so about 1.6 s at full opacity). Each sits inside its shot. The lower supers sit at about 60% of frame height, clear of the subtitle band (about 74-82%), and no super touches a face. su5 (upper) sits top left, clear of Pushpa's face, bun needles and knitting. su4 against the shield plate: at the first (hi 1682 / en 1719), middle and last (hi 1758 / en 1795) full-opacity frames, the ZERO CRIME plate stays in the top ~8% of the frame and su4 at ~60%. They never touch, across the push-in. su4 does sit over part of the peanut cone and his forearm, but the cone's top and the peanuts still read, so I propose no change. Note for the record: s15 carries ov_shield, so su4 is on a shot with a plot overlay, which is against the letter of D-024 ruling 3.3. Every b6 shot after s12 carries the shield, the plate is never touched, and the brief accepts this placement.",
+    "s18_tail_and_l30": "Sound order in both languages: handset lift at s18's head (hi 69.8-69.9 s, -30 dBFS peak 0.1 s window), then quiet, then l30 (hi 70.5-72.9 s; en 70.2-73.1 s), then DTMF tones 2 frames after l30's speech ends (pulses about -30/-45 dBFS, hi 72.93-74.07 s, en 73.2-74.33 s), all ending at the cut to s19. l31 starts 2 frames (hi) / 3 frames (en) after the cut. The s18 tail of 36 frames is in edit.json and the timeline. This matches the beat: lift, his plea, she dials anyway. Small mismatch, not a fault: s18 is one still with her finger already on the keypad all through l30. Also, l31 follows the last tone with no ring or pick-up beat. That reads as a stylised cut.",
+    "l09_cut_on_zero": "Measured onset of 'Zero' in the mix: hi 53.88-53.90 s against the s14 cut at 53.93 s (frame 1618); en 53.30 s against 53.33 s (frame 1600). Both within one frame. 'Talkies? ... एक FIR नहीं।' / '...Not one case.' plays on the s13 two-shot with Tripathi chuckling. 'Zero crime...shield' lands on the shield insert. s14 is 1.9 s in hi and 3.7 s in en.",
+    "l15_on_s20": "Whole line on s20 in both languages: hi s20 2424-2580, l15 speech 2429-2572; en s20 2425-2578, l15 2430-2570. l16 starts on s21 (hi 2585, en 2583). The phone voice over the ZERO CRIME shield ('...press conference at ten tomorrow. Second zero-crime year.') is the right picture for the line."
+  },
+  "cold_viewer_read": {
+    "b1_b2": "'Next! Token number seven.' over the token, then her name, rank and reason: the premise is clear by 12 s. l27 is the one line that explains her disguise; it reads natural, not expository, because it is said to the man at the counter.",
+    "b3_b4": "The place super plus 'Roopam Talkies Thana' plus 'This is a shut cinema' make the fake police station in a cinema unmistakable. 'Imlipur has only one thana. Mine.' -> 'This is a shut cinema.' -> 'And nobody in our force wears a cap. You do.' (over his cap) builds a case. 'Form is ready.' is a thin, deadpan bridge to 'Then kindly dictate: Thana has been stolen.' It reads as him ignoring her charges and treating her as a complainant. It works, and is the flattest of the new lines.",
+    "b6": "Fixed: the viewer hears the report before 'Talkies?'. 'Two years, not one FIR in my thana. Not one case.' glosses FIR in passing.",
+    "b7_b8": "Pushpa is named. The transfer line is answered by 'what is an SI for?'. Tripathi's 'Don't go over my head to DSP sahab' glosses DSP as his superior without a lecture. The DSP is identified by her greeting before he speaks.",
+    "b10_b11": "'Nirala ji' tells us we are back at the talkies. en 'The evidence room.' glosses malkhana; it is tacked on, but Nirala, eager to help, is a believable source. 'Bhaiyaji, of the ration godown' gives the one identifying clause D-024 asks for. It is a little stiff in English; the Hindi 'godown वाले भैयाजी' is natural.",
+    "ending": "Unchanged lines now land. 'my own thana' is known to be Imlipur thana (su6, l27), 'SHO Tripathi' is the man with the peanuts (l29, su4), and 'before ten tomorrow' is the DSP's press conference (l15). So 'who do I arrest?' poses the real dilemma.",
+    "language_parity": "Hindi and English carry the same information on the same shots. Hindi is slightly more natural in l22 and l30; English adds the glosses Hindi does not need (l09 'Not one case', l21 'The evidence room')."
+  },
+  "checks_run": [
+    "ffprobe count_frames, codecs, size, fps on all four; md5 of all four",
+    "ffmpeg ebur128 on all four (integrated loudness, LRA)",
+    "whisper.cpp ggml-small (local) on both full mixes; windows hi 34.7+2.2, 34.7+5.5, 43.5+5.2, 48.4+7.6, 69.8+3.5, 73.9+4.8, 80.6+5.5 s; en 34.2+1.6, 43.5+4.5, 69.8+3.6, 80.7+5.2 s; l29 clip alone in both languages",
+    "frames viewed (review cuts): super midpoints (6 per language); su4 and su5 first and last full-opacity frames; su3 start and end; s20 first and last; changed-line shots s02 (x2), s03, s07, s09 (x2), s13, s14, s15 (x2), s18 (x3), s19, s20/s21, s28, s29, s31 in both languages; clean cuts at su1, su4, su5 and s18 in both languages",
+    "50 ms / 100 ms RMS envelopes of the mix around the s13/s14 cut and across s18-s19 in both languages",
+    "per-line speech RMS for all lines in both mixes (subtitle speechFrames)",
+    "cue-start vs speech-onset check for the cues of changed lines (20 ms RMS, -32 dBFS threshold; continuation cues ignored where the previous word bleeds in)",
+    "timeline.{hi,en}.json shots, supers, dialogue and sfx placement against edit.json (layout.cut_on_word l09 'Zero', tail s18 36, supers su5 upper) and shots.json remap_notes",
+    "subs.{hi,en}.json cue text and validation block read"
+  ],
+  "not_checked": [
+    "Nobody listened. Voice quality, delivery and emotion of the new takes (flatness as performance), the handset-lift and DTMF sounds, and the phone filter on l15/l16 were judged from ASR and levels only.",
+    "Nothing watched in motion: super fades and push-ins were checked at first, middle and last frames only.",
+    "True peak of the clean cuts (taken from the assemble log for en.review only).",
+    "Unchanged items (frames, music, the cliffhanger tail, items from round 2) were not re-screened; round 2's findings stand.",
+    "No phone-size viewing of super legibility."
+  ],
+  "fixes": [
+    {
+      "id": "F1",
+      "owner": "toolsmith (subtitle builder + Remotion), then S12 / editor",
+      "severity": "medium (not blocking)",
+      "issue": "D-024's edit-only fix for heard_as lines has not landed. Subtitles are plain, with no italics and no speaker label. In s2e01, l03 and l07 (Nandini, heard_as off_screen) are subtitled over Nirala's face (s03, s08). l29 plays over the empty bench, and the DSP's phone lines l14-l16 play over her face and the shield. l01 is off screen over the token.",
+      "fix": "Add heard_as styling to build_subs.py and the Remotion subtitle layer: italic for every heard_as cue, plus a speaker label on the first heard_as cue of each speaker in a scene. Labels: hi 'नंदिनी:' on l03 (c007), 'DSP (फ़ोन):' on l14 (c032); en 'Nandini:' on l03 (c008), 'DSP (phone):' on l14 (c033). Leave l01, l07 and l29 italic only, since Nandini's voice is already established by then. Re-render both languages. A changed-items look at the subtitle band of l01, l03, l07, l29 and l14-l16 is then enough."
+    },
+    {
+      "id": "F2",
+      "owner": "owner (ear)",
+      "severity": "low",
+      "issue": "Nobody has heard the new takes. whisper turns 'SHO sahab' at l29's head into 'As such' / 'असे चो' (also from the clip alone). The hi l30 [quietly] sits about 2 dB under Tripathi's l10. l31 follows the last dial tone with no ring.",
+      "fix": "Listen to hi 44.9-48.3 s and en 44.3-47.5 s (l29), and hi 69.7-78.6 s and en 69.4-78.5 s (lift, l30, tones, l31). If 'SHO' is unclear, S10 retakes l29 only. If l30 is lost, the editor adds +2 dB on hi l30 in edit.json. No other change."
+    },
+    {
+      "id": "F3",
+      "owner": "none (recorded, no action)",
+      "severity": "low",
+      "issue": "Points held below 9, none needing work now. s02 holds one still for about 9.3 s for l02 and l27, which D-024 ruling 1.3 allows. su4 covers part of the peanut cone; the only alternative position, upper, would sit on the shield. su3 is about 1.6 s at full opacity against the 2 s minimum, measured including fades. en l21 'The evidence room.' and l22 'of the ration godown' are tacked-on glosses; D-024 ruling 4.4 forbids cutting clarity lines.",
+      "fix": "None. If the owner finds s02 slow, the editor can give s02 a stronger push-in in edit.json only. If su3 must be 2 s at full opacity, extend su3 by 12 frames into s11 (s11 carries ov_token_7, which is dressing in s2e01)."
+    }
+  ],
+  "previous": "screening.json (round 2, 8/10, pass) covers picture and sound before the clarity re-edit and stays as it is."
+}

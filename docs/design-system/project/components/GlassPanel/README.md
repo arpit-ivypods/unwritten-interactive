@@ -1,0 +1,3 @@
+# GlassPanel
+
+The frosted surface every piece of interface sits on. `uw-glass` is the hero panel (radius-2xl, space-9, dropping to space-6 on phones); add `uw-glass--compact` for supporting cards and `uw-glass--sheet` for the phone bottom sheet, which adds a `uw-sheet-grabber` and casts `shadow-sheet` upward. A panel only works over the ambient backdrop (`uw-ambient` with a blurred still and the veil), so never place it on a flat colour. Do not nest glass in glass: inside a panel use `glass-strong` rows instead. `uw-stack` spaces a panel's contents. On desktop the two side panels may tilt up to 7 degrees toward the stage; on phones they never tilt.

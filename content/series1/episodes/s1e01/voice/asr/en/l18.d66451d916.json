@@ -1,0 +1,164 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,200"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 200
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,200",
+				"to": "00:00:00,250"
+			},
+			"offsets": {
+				"from": 200,
+				"to": 250
+			},
+			"text": " For"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,250",
+				"to": "00:00:00,580"
+			},
+			"offsets": {
+				"from": 250,
+				"to": 580
+			},
+			"text": " that"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,580",
+				"to": "00:00:01,270"
+			},
+			"offsets": {
+				"from": 580,
+				"to": 1270
+			},
+			"text": " proof,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,270",
+				"to": "00:00:01,360"
+			},
+			"offsets": {
+				"from": 1270,
+				"to": 1360
+			},
+			"text": " I"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,360",
+				"to": "00:00:01,570"
+			},
+			"offsets": {
+				"from": 1360,
+				"to": 1570
+			},
+			"text": " need"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,570",
+				"to": "00:00:01,790"
+			},
+			"offsets": {
+				"from": 1570,
+				"to": 1790
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,790",
+				"to": "00:00:02,160"
+			},
+			"offsets": {
+				"from": 1790,
+				"to": 2160
+			},
+			"text": " woman"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,160",
+				"to": "00:00:02,400"
+			},
+			"offsets": {
+				"from": 2160,
+				"to": 2400
+			},
+			"text": " who"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,400",
+				"to": "00:00:02,750"
+			},
+			"offsets": {
+				"from": 2400,
+				"to": 2750
+			},
+			"text": " sends"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,750",
+				"to": "00:00:03,120"
+			},
+			"offsets": {
+				"from": 2750,
+				"to": 3120
+			},
+			"text": " these"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,120",
+				"to": "00:00:04,000"
+			},
+			"offsets": {
+				"from": 3120,
+				"to": 4000
+			},
+			"text": " brides."
+		}
+	]
+}

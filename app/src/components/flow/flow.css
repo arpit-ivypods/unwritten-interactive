@@ -1,0 +1,555 @@
+/*
+ * Layout for the flow screens and the app chrome. OWNER: flow engineer.
+ *
+ * The design system's classes (uw-*, src/styles/bundle.css) draw every
+ * component; this file only places them: the nav pill and dock, the room for
+ * them, the stage with its panels, and a few lists the bundle has no class
+ * for. Every value is a token. Same cascade layer as the bundle, so a Tailwind
+ * utility still wins.
+ *
+ * For other teams: a page inside AppChrome starts below the nav pill and ends
+ * above the phone dock without doing anything. To let your Ambient backdrop
+ * run behind them, as the flow screens do, put `flow-bleed` on the screen
+ * root (it pulls the root up and pads it back by the same amount).
+ */
+@layer components {
+  /* --- Chrome: the nav pill, the phone dock and the room they take ------- */
+  .flow-chrome {
+    --chrome-top: 0px;
+    --chrome-bottom: 0px;
+    min-height: 100dvh;
+    padding-top: var(--chrome-top);
+    padding-bottom: var(--chrome-bottom);
+  }
+  .flow-chrome[data-chrome="full"],
+  .flow-chrome[data-chrome="nav"] {
+    --chrome-top: calc(var(--space-4) + 52px + var(--space-4));
+  }
+  .flow-chrome[data-chrome="full"] {
+    --chrome-bottom: calc(var(--space-3) + 62px + var(--space-3) + env(safe-area-inset-bottom, 0px));
+  }
+  .uw-nav.flow-nav {
+    position: fixed;
+    z-index: 40;
+    top: var(--space-4);
+    left: var(--space-4);
+    right: var(--space-4);
+  }
+  .uw-nav.flow-nav--desktop {
+    display: none;
+  }
+  @media (min-width: 768px) {
+    .flow-chrome[data-chrome="full"],
+    .flow-chrome[data-chrome="nav"] {
+      --chrome-top: calc(var(--space-6) + 60px + var(--space-6));
+      --chrome-bottom: 0px;
+    }
+    .uw-nav.flow-nav--phone,
+    .uw-dock.flow-dock {
+      display: none;
+    }
+    .uw-nav.flow-nav--desktop {
+      display: flex;
+      top: var(--space-6);
+      left: 50%;
+      right: auto;
+      width: min(980px, calc(100% - 2 * var(--space-6)));
+      transform: translateX(-50%);
+    }
+  }
+  /* The wordmark is held down to open the presenter drawer: no text selection, no link menu. */
+  .uw-wordmark {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+  }
+  .flow-nav .uw-chip {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* --- A screen root that runs behind the chrome -------------------------- */
+  .flow-bleed {
+    margin-top: calc(-1 * var(--chrome-top, 0px));
+    margin-bottom: calc(-1 * var(--chrome-bottom, 0px));
+    padding-top: var(--chrome-top, 0px);
+    padding-bottom: var(--chrome-bottom, 0px);
+  }
+  .flow-screen {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-9);
+    /* clip, not hidden: the bundle's hidden would stop the stage from sticking. */
+    overflow: clip;
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+  }
+  .flow-screen::after {
+    /* Space under the last block, above the dock. */
+    content: "";
+    height: var(--space-2);
+    flex: none;
+  }
+  @media (min-width: 900px) {
+    .flow-screen {
+      padding-left: var(--space-9);
+      padding-right: var(--space-9);
+    }
+  }
+
+  /* --- The stage and its panels ------------------------------------------- */
+  .flow-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "stage" "sheet" "other";
+    gap: var(--space-4);
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .flow-layout > * {
+    min-width: 0;
+  }
+  .flow-stage {
+    grid-area: stage;
+  }
+  .flow-side {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+  .flow-layout[data-sheet="right"] > .flow-right,
+  .flow-layout[data-sheet="left"] > .flow-left {
+    grid-area: sheet;
+  }
+  .flow-layout[data-sheet="right"] > .flow-left,
+  .flow-layout[data-sheet="left"] > .flow-right {
+    grid-area: other;
+  }
+  .flow-stage .uw-stage {
+    width: 100%;
+  }
+  .flow-layout[data-dock] {
+    grid-template-areas: "stage" "sheet" "dock" "other";
+  }
+  .flow-series-dock {
+    grid-area: dock;
+  }
+
+  /* Phones: 5px bezel, and a sheet over the lower part of the stage. */
+  @media (max-width: 899.98px) {
+    .flow-stage .uw-stage {
+      border-width: 5px;
+      border-radius: var(--radius-2xl);
+    }
+    /* The stage shows as a window when a sheet covers the rest of it. */
+    .flow-layout[data-stage="window"] .flow-stage .uw-stage {
+      aspect-ratio: auto;
+      height: clamp(260px, 42dvh, 400px);
+    }
+    .flow-layout[data-stage="window"] > [class*="flow-"]:not(.flow-stage) {
+      position: relative;
+      z-index: 1;
+    }
+    .flow-layout[data-stage="window"][data-sheet="right"] > .flow-right,
+    .flow-layout[data-stage="window"][data-sheet="left"] > .flow-left {
+      margin-top: calc(-1 * (var(--space-9) + var(--space-4)));
+    }
+    /* The first panel of the sheet side takes the sheet's shape. */
+    .flow-sheet.uw-glass {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+      border-radius: var(--radius-2xl);
+      padding: var(--space-3) var(--space-4) var(--space-4);
+      box-shadow: var(--shadow-sheet);
+    }
+    .flow-sheet.uw-glass::before {
+      content: "";
+      align-self: center;
+      flex: none;
+      width: 40px;
+      height: 5px;
+      border-radius: var(--radius-pill);
+      background: var(--ink-muted);
+      opacity: 0.45;
+    }
+  }
+
+  /* Tablets and small laptops: the stage on the left, the panels beside it. */
+  @media (min-width: 900px) {
+    .flow-layout {
+      grid-template-columns: auto minmax(0, 520px);
+      grid-template-areas: "stage sheet" "stage other";
+      grid-template-rows: auto 1fr;
+      justify-content: center;
+      align-items: start;
+      column-gap: var(--space-9);
+      max-width: none;
+      padding-top: var(--space-2);
+    }
+    .flow-stage .uw-stage {
+      width: auto;
+      height: min(calc(100dvh - var(--chrome-top, 0px) - var(--space-14)), 680px);
+      min-height: 420px;
+    }
+    .flow-stage {
+      position: sticky;
+      top: calc(var(--chrome-top, 0px) + var(--space-2));
+    }
+    .flow-layout[data-dock] {
+      grid-template-areas: "stage sheet" "stage other" "dock dock";
+      grid-template-rows: auto 1fr auto;
+      row-gap: var(--space-6);
+    }
+  }
+
+  /* Desktop: the stage in the centre, a panel on each side, tilted toward it. */
+  @media (min-width: 1240px) {
+    .flow-layout {
+      grid-template-columns: minmax(0, 430px) auto minmax(0, 430px);
+      grid-template-areas: "left stage right";
+      grid-template-rows: auto;
+      align-items: center;
+      min-height: calc(100dvh - var(--chrome-top, 0px) - var(--space-18));
+      perspective: 1800px;
+    }
+    .flow-layout[data-dock] {
+      grid-template-areas: "left stage right" "dock dock dock";
+      grid-template-rows: 1fr auto;
+    }
+    .flow-layout[data-sheet] > .flow-left {
+      grid-area: left;
+    }
+    .flow-layout[data-sheet] > .flow-right {
+      grid-area: right;
+    }
+    .flow-stage {
+      position: static;
+    }
+    .flow-left {
+      transform: rotateY(6deg);
+      transform-origin: left center;
+    }
+    .flow-right {
+      transform: rotateY(-6deg);
+      transform-origin: right center;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .flow-left,
+    .flow-right {
+      transform: none;
+    }
+  }
+
+  /* --- Text drawn on the stage --------------------------------------------- */
+  .flow-stage-caption {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    width: 100%;
+    padding: 0 var(--space-2);
+    text-align: left;
+  }
+  .flow-stage-caption small {
+    font-size: 12px;
+    line-height: 1.3;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .flow-stage-caption strong {
+    font-size: 24px;
+    line-height: 1.1;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+  }
+  .flow-stage-caption strong:lang(hi) {
+    line-height: 1.35;
+    font-weight: 700;
+  }
+  .flow-stage-caption span {
+    font-size: 14px;
+    line-height: 1.45;
+    font-weight: 500;
+  }
+  /* A play control that is a link (the stage outside the player). */
+  a.uw-stage-play {
+    text-decoration: none;
+  }
+  /* On a phone window stage the play control sits above the sheet's edge. */
+  @media (max-width: 899.98px) {
+    .flow-layout[data-stage="window"] .uw-stage-play {
+      top: 44%;
+    }
+    .flow-layout[data-stage="window"] .uw-stage-bottom {
+      bottom: calc(var(--space-9) + var(--space-5));
+    }
+    .flow-layout[data-stage="window"] .uw-question {
+      bottom: calc(var(--space-9) + var(--space-2));
+    }
+  }
+
+  /* --- Panels --------------------------------------------------------------- */
+  .flow-hero.uw-hero {
+    font-size: 34px;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+    overflow-wrap: break-word;
+  }
+  @media (min-width: 1240px) {
+    /* display-hero is 78px; a series title has to fit a 430px panel, so it is set
+       between display-title and display-hero. */
+    .flow-hero.uw-hero {
+      font-size: 54px;
+      line-height: 1;
+      letter-spacing: -0.05em;
+    }
+  }
+  .flow-hero.uw-hero:lang(hi) {
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+  .flow-lead {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: var(--ink-muted);
+  }
+  .flow-between {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-2);
+  }
+  .flow-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+  .flow-actions > .uw-btn {
+    flex: 1 1 auto;
+  }
+  .flow-pair {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-3);
+  }
+  .flow-rules {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .flow-rules li {
+    display: flex;
+    gap: var(--space-3);
+    align-items: baseline;
+    font-size: 14px;
+    line-height: 1.45;
+    font-weight: 500;
+  }
+  .flow-rules li b {
+    flex: none;
+    min-width: 44px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--brand-text);
+  }
+
+  /* A glass-strong row inside a panel (never glass in glass). */
+  .flow-row {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-2) var(--space-3) var(--space-2) var(--space-2);
+    border-radius: var(--radius-lg);
+    background: var(--glass-strong);
+    border: 1px solid var(--hairline);
+  }
+  .flow-row-text {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 15px;
+    line-height: 1.3;
+    font-weight: 700;
+  }
+  .flow-row-text small {
+    font-size: 12px;
+    line-height: 1.45;
+    font-weight: 500;
+    color: var(--ink-muted);
+  }
+  .flow-portrait {
+    flex: none;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: var(--brand-soft);
+  }
+  .flow-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  /* Endings under the episode rail and in My choices. */
+  .flow-branch {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+  .flow-branch-name {
+    font-size: 14px;
+    line-height: 1.35;
+    font-weight: 700;
+  }
+  .flow-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .flow-chips .uw-chip {
+    white-space: normal;
+    height: auto;
+    min-height: 34px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  /* --- Home: the series dock and the shelves ------------------------------- */
+  .flow-series-dock {
+    display: flex;
+    justify-content: center;
+  }
+  .flow-series-dock .uw-seg {
+    max-width: 100%;
+  }
+  .flow-series-dock .uw-seg button {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .flow-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    width: 100%;
+    max-width: 820px;
+    margin: 0 auto;
+  }
+  .flow-shelf {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(220px, 72%);
+    gap: var(--space-3);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    margin: 0 calc(-1 * var(--space-4));
+    padding: var(--space-1) var(--space-4) var(--space-2);
+    list-style: none;
+  }
+  .flow-shelf::-webkit-scrollbar {
+    display: none;
+  }
+  .flow-shelf > * {
+    scroll-snap-align: center;
+  }
+  @media (min-width: 640px) {
+    .flow-shelf {
+      grid-auto-flow: row;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      overflow: visible;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  /* --- My choices ----------------------------------------------------------- */
+  .flow-page {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-top: var(--space-2);
+  }
+  .flow-history {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-5);
+  }
+  .flow-history-poster {
+    width: 100%;
+    max-width: 160px;
+  }
+  @media (min-width: 720px) {
+    .flow-history {
+      grid-template-columns: 200px minmax(0, 1fr);
+      align-items: start;
+    }
+    .flow-history-poster {
+      max-width: none;
+    }
+  }
+  .flow-columns {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-4);
+  }
+  @media (min-width: 900px) {
+    .flow-columns {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  /* --- Welcome ---------------------------------------------------------------- */
+  .flow-welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100dvh;
+    padding: var(--space-6) var(--space-4);
+  }
+  .flow-welcome > .uw-glass {
+    width: 100%;
+    max-width: 460px;
+  }
+
+  /* --- Share card ------------------------------------------------------------- */
+  .flow-share-frame {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* --- Toasts: with no dock on the screen, they sit just above the bottom edge --- */
+  @media (max-width: 767.98px) {
+    .flow-chrome:not([data-chrome="full"]) ~ .uw-toast-region {
+      bottom: calc(var(--space-5) + env(safe-area-inset-bottom, 0px));
+    }
+  }
+
+  /* --- Presenter drawer --------------------------------------------------------- */
+  .flow-drawer-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: var(--space-2);
+  }
+}

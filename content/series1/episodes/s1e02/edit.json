@@ -1,0 +1,348 @@
+{
+ "about": "s1e02 first edit (S13 Editor, 26 Nov; clarity scripts). Per-episode choices only; the shared toolchain is production/scripts/episode/.",
+ "render_name": "s1e02",
+ "slate_color": "#1d2430",
+ "max_seconds": 150,
+ "voice_models": [
+  "v4"
+ ],
+ "voice_fx": {
+  "phone": {
+   "speakers": [
+    "mausi"
+   ]
+  },
+  "speaker": {
+   "chain": "highpass=f=200:poles=2,lowpass=f=5000:poles=2,volume=4dB,asoftclip=type=tanh,volume=-4dB,aecho=0.85:0.6:14:0.12"
+  }
+ },
+ "lines": {
+  "l28": {
+   "fx": "speaker"
+  },
+  "l36": {
+   "fx": "speaker"
+  },
+  "l29": {
+   "fx": "speaker"
+  },
+  "l30": {
+   "fx": "speaker"
+  }
+ },
+ "layout": {
+  "first_lead": 4,
+  "lead_default": 5,
+  "use_silent_lead": true,
+  "lead": {
+   "s12": 45,
+   "s31": 8,
+   "s33": 5
+  },
+  "gap_default": 8,
+  "gap": {
+   "l36>l29": 18
+  },
+  "tail_default": 6,
+  "tail": {
+   "s06": 30,
+   "s13": 30,
+   "s17": 36,
+   "s32": 22
+  },
+  "min_last_segment": 24,
+  "read_cps": 17,
+  "end_black": 12,
+  "cut_on_word": [
+   {
+    "line": "l15",
+    "word": {
+     "hi": "ग्यारह",
+     "en": "the"
+    },
+    "occurrence": 1,
+    "shot": "s17"
+   },
+   {
+    "line": "l28",
+    "word": {
+     "hi": "Bag",
+     "en": "there's"
+    },
+    "occurrence": 1,
+    "shot": "s32"
+   },
+   {
+    "line": "l29",
+    "word": {
+     "hi": "दामाद",
+     "en": "did"
+    },
+    "occurrence": 1,
+    "shot": "s34"
+   }
+  ]
+ },
+ "sound": [
+  {
+   "cue": "amb_bedroom_night",
+   "id": "#b1-b7",
+   "kind": "bed",
+   "from": 0,
+   "to": "s26.start",
+   "loop": true,
+   "fade_in": 0,
+   "fade_out": 1
+  },
+  {
+   "cue": "sfx_dog_far",
+   "at": "s02.start + 0.1s",
+   "len": "1.0s",
+   "db": -14,
+   "fade_out": 6
+  },
+  {
+   "cue": "sfx_bangle_slide_off",
+   "id": "#b2c1",
+   "at": "s04.start + 0.05s",
+   "trim": "2.0s",
+   "len": "0.4s",
+   "db": -3,
+   "fade_out": 3
+  },
+  {
+   "cue": "sfx_bangle_slide_off",
+   "id": "#b2c2",
+   "at": "s04.start + 0.45s",
+   "trim": "2.0s",
+   "len": "0.4s",
+   "db": -5,
+   "fade_out": 3
+  },
+  {
+   "cue": "sfx_bangle_slide_off",
+   "id": "#b2c3",
+   "at": "s04.start + 0.85s",
+   "trim": "2.0s",
+   "len": "0.4s",
+   "db": -4,
+   "fade_out": 3
+  },
+  {
+   "cue": "sfx_steel_glass_tray",
+   "id": "#lift",
+   "at": "s05.start - 0.1s",
+   "len": "0.4s",
+   "db": 0,
+   "fade_out": 3
+  },
+  {
+   "cue": "sfx_steel_glass_tray",
+   "id": "#setdown",
+   "at": "l04.speech_end + 0.1s",
+   "trim": "0.85s",
+   "len": "0.6s",
+   "db": -6,
+   "fade_out": 4
+  },
+  {
+   "cue": "mus_bed_drone",
+   "kind": "bed",
+   "from": "s07.start",
+   "to": "s30.start + 1s",
+   "loop": true,
+   "gain_db": -24,
+   "fade_in": 30,
+   "fade_out": 60,
+   "segments": [
+    {
+     "from": "s26.start",
+     "to": "s30.start - 1s",
+     "db": 2
+    }
+   ]
+  },
+  {
+   "cue": "sfx_phone_sim_chime",
+   "at": "s12.start",
+   "db": -6
+  },
+  {
+   "cue": "sfx_bangle_slide_off",
+   "id": "#b4c1",
+   "at": "l11.speech_end + 0.05s",
+   "trim": "2.0s",
+   "len": "0.35s",
+   "db": -6,
+   "fade_out": 3
+  },
+  {
+   "cue": "sfx_bangle_slide_off",
+   "id": "#b4c2",
+   "at": "l11.speech_end + 0.35s",
+   "trim": "2.0s",
+   "len": "0.35s",
+   "db": -8,
+   "fade_out": 3
+  },
+  {
+   "cue": "sfx_bangle_slide_off",
+   "id": "#b4c3",
+   "at": "l11.speech_end + 0.65s",
+   "trim": "2.0s",
+   "len": "0.35s",
+   "db": -7,
+   "fade_out": 3
+  },
+  {
+   "cue": "sfx_bed_creak_petals",
+   "at": "s21.start - 0.35s",
+   "trim": "0.6s",
+   "until": "l19.speech_start + 0.3s",
+   "db": 0,
+   "fade_out": 4
+  },
+  {
+   "cue": "amb_lane_night",
+   "id": "#b9",
+   "kind": "bed",
+   "from": "s26.start",
+   "to": "s30.start",
+   "loop": true,
+   "fade_in": 0,
+   "fade_out": 1,
+   "segments": [
+    {
+     "from": "l23.speech_start - 0.2s",
+     "to": "l27.speech_end + 0.1s",
+     "db": -6
+    }
+   ]
+  },
+  {
+   "cue": "sfx_truck_far_pass",
+   "at": "s26.start",
+   "trim": "3.5s",
+   "until": "l23.speech_start",
+   "db": -4,
+   "fade_out": 15
+  },
+  {
+   "cue": "amb_bedroom_night",
+   "id": "#b10",
+   "kind": "bed",
+   "from": "s30.start",
+   "to": "s35.start",
+   "loop": true,
+   "fade_in": 1,
+   "fade_out": 1,
+   "segments": [
+    {
+     "from": "l29.speech_start - 0.2s",
+     "to": "s35.start",
+     "db": -6
+    }
+   ]
+  },
+  {
+   "cue": "mus_tension_pulse",
+   "kind": "bed",
+   "from": "s30.start - 1s",
+   "to": "s38.start",
+   "loop": true,
+   "gain_db": -22,
+   "fade_in": 60,
+   "fade_out": 1,
+   "segments": [
+    {
+     "from": "l29.speech_start - 0.2s",
+     "to": "l29.speech_end + 0.2s",
+     "db": -4
+    },
+    {
+     "from": "l30.speech_start - 0.2s",
+     "to": "l30.speech_end + 0.2s",
+     "db": -4
+    }
+   ]
+  },
+  {
+   "cue": "sfx_phone_vibrate",
+   "at": "s30.start + 0.3s",
+   "until": "s31.start",
+   "db": -16,
+   "fade_out": 1
+  },
+  {
+   "cue": "sfx_phone_set_down_sheet",
+   "at": "s31.start - 0.1s",
+   "trim": "0.6s",
+   "len": "0.3s",
+   "db": -6,
+   "fade_out": 2
+  },
+  {
+   "cue": "sfx_zip_pocket",
+   "at": "s32.start + 0.1s",
+   "db": 0,
+   "fade_out": 4
+  },
+  {
+   "cue": "amb_lane_night",
+   "id": "#b12",
+   "kind": "bed",
+   "from": "s35.start",
+   "to": "s36.start",
+   "loop": true,
+   "fade_in": 0,
+   "fade_out": 1
+  },
+  {
+   "cue": "sfx_boots_concrete_shift",
+   "at": "s35.start + 0.8s",
+   "trim": "0.6s",
+   "len": "1.0s",
+   "db": -12,
+   "fade_out": 4
+  },
+  {
+   "cue": "amb_bedroom_night",
+   "id": "#b13",
+   "kind": "bed",
+   "from": "s36.start",
+   "to": "s38.start",
+   "loop": true,
+   "fade_in": 0,
+   "fade_out": 1,
+   "segments": [
+    {
+     "from": "l30.speech_start - 0.2s",
+     "to": "l30.speech_end + 0.1s",
+     "db": -6
+    }
+   ]
+  },
+  {
+   "cue": "sfx_s1e02_b13_inbreath",
+   "at": "s38.start + 0.5s",
+   "db": 5,
+   "fade_out": 2
+  }
+ ],
+ "notes": [
+  "cut_on_word copied from shots.json edit_notes_for_episode_editor (S7 clarity remap): l15 s16/s17 on 'ग्यारह'/'The' (D-025 item 4: l15 starts on Aditya, the speaker), l28 s31/s32 on 'Bag'/'There's' (the fallback would cut on 'झूठ'/'Don't'), l29 s33/s34 on 'दामाद'/'did', the first word after the pause after 'अच्छा सुन...'/'Listen...'.",
+  "s33: S7 suggestion taken. lead.s33 5 (default) overrides silent_lead_s 0.6, and the 0.6 s sits as gap 'l36>l29' 18 frames before 'अच्छा सुन...'/'Listen...', while Aditya looks at the dabba a second too long.",
+  "Beat silences inside voiced shots: tail.s06 30 (b3 1.0 s after l04, the glass set down), tail.s13 30 (b4 1.0 s after l11, the clinks), tail.s17 36 (b5 1.2 s after l15). b9's 1.0 s before l33 is s26 silent_lead_s. Silent shots use their planned duration_s (s02, s04, s22, s25, s30, s35, s37, s38).",
+  "lead.s12 45: the SIM click and network chime (whole file, chime at 1.25 s) play before l10, as the cue sheet asks (between l09 and l10). lead.s31 8: Mausi's voice starts after the speaker tap.",
+  "tail.s32 22: en c055 'There's mathri in the side pocket of your bag.' read at 19.9 graphemes/s with the default tail (the cue cannot run past the s32/s33 cut). The same tail applies in hi.",
+  "s09 (hi 7.5 s) and s26 (en 8.1 s) run about 8 s: held on their shots.json camera moves (D-024 ruling 1 item 3 text), no other change.",
+  "voice_fx: phone (built-in) for Mausi on Billu's phone in the lane (l23, l35, l24, l25, l27). 'speaker' for Mausi on speaker in the room (l28, l36, l29, l30): lighter colour per the cue sheet, 200-5000 Hz band-pass, light tanh saturation and a 14 ms reflection at 0.12, loudness-matched to the clean take. Not listened to.",
+  "Sound levels are set against the files' measured levels (library manifest mean/max dB), as in s1e01: beds at 0 dB, mus_bed_drone gain_db -24 (s1e01's level), mus_tension_pulse -22 (its file is 2 dB quieter). Not listened to.",
+  "b2 and b4 clinks: sfx_bangle_slide_off has only one clear clink (file 2.05-2.45 s; the 0.45-0.85 s event is at bed level), so it is placed three times (library QC: 'S13 may need to reuse one'); b4 is 3 dB softer than b2.",
+  "b10: drone crossfades into mus_tension_pulse over 2 s centred on the cut to s30; the vibrate's second buzz is cut at s31.start, with the speaker tap (second tap of sfx_phone_set_down_sheet) on the cut. Bedroom bed -6 dB from l29; pulse a further -4 dB (with the -8 dB auto duck, about -12) under l29 and l30.",
+  "sfx_zip_pocket: about 20 dB under Mausi (file peak -37 dB). No panning in the toolchain, so it is not panned away from the phone as the cue sheet asks.",
+  "b13: Kiran's in-breath is the contingency cue sfx_s1e02_b13_inbreath (ElevenLabs sound v3, one take, sound/manifest.jsonl), placed at s38.start + 0.5s; there is no voice line or take for it. The file peaks at -30.5 dBFS. At db +10.5 the mastered renders put it at -10.8 dBFS (hi) / -10.1 dBFS (en) peak, about 9 dB above the cue gain (master loudnorm is about +3.7 dB of that), so it is db +5 (cue-sheet sfx gain 0) for about -16 dBFS peak in the mastered mix: clearly audible on a phone in the silent ending, well under the -1 dBTP master ceiling. The picture hard-cuts to black and silence at s38's end, 1.0 s into the 1.2 s file, so the breath's decaying tail is cut there; fade_out 2 frames keeps that cut from clicking. Music and the bedroom bed cut to silence on the cut to s38 (1-frame fade; 10 ms is under one frame), so the breath is the only sound in s38. Not checked by ear (sheet fallback: drop it and leave the silence).",
+  "sfx_car_door_clunk is left unplaced on purpose (cue sheet: library_cues_listed_for_s1e02_but_not_used). sfx_boots_concrete_shift (optional on the sheet) is placed low in the b12 still.",
+  "Plot overlays (s11 '1:52' and 'No network', s12 network bars, s30 '2:00' and caller name) are not drawn: there are no overlay layer images and the overlay layer is still open in the toolchain (README, D-023 rule 3)."
+ ]
+}

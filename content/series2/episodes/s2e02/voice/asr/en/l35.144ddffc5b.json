@@ -1,0 +1,175 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,140"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 140
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,140",
+				"to": "00:00:00,160"
+			},
+			"offsets": {
+				"from": 140,
+				"to": 160
+			},
+			"text": " He"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,160",
+				"to": "00:00:00,420"
+			},
+			"offsets": {
+				"from": 160,
+				"to": 420
+			},
+			"text": " pays"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,420",
+				"to": "00:00:00,550"
+			},
+			"offsets": {
+				"from": 420,
+				"to": 550
+			},
+			"text": " to"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,550",
+				"to": "00:00:00,840"
+			},
+			"offsets": {
+				"from": 550,
+				"to": 840
+			},
+			"text": " keep"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,840",
+				"to": "00:00:01,120"
+			},
+			"offsets": {
+				"from": 840,
+				"to": 1120
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,120",
+				"to": "00:00:01,400"
+			},
+			"offsets": {
+				"from": 1120,
+				"to": 1400
+			},
+			"text": " files"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,400",
+				"to": "00:00:01,960"
+			},
+			"offsets": {
+				"from": 1400,
+				"to": 1960
+			},
+			"text": " asleep,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,960",
+				"to": "00:00:02,750"
+			},
+			"offsets": {
+				"from": 1960,
+				"to": 2750
+			},
+			"text": " madam."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,750",
+				"to": "00:00:02,930"
+			},
+			"offsets": {
+				"from": 2750,
+				"to": 2930
+			},
+			"text": " They"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,930",
+				"to": "00:00:03,090"
+			},
+			"offsets": {
+				"from": 2930,
+				"to": 3090
+			},
+			"text": " are"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,090",
+				"to": "00:00:03,300"
+			},
+			"offsets": {
+				"from": 3090,
+				"to": 3300
+			},
+			"text": " wide"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,300",
+				"to": "00:00:03,760"
+			},
+			"offsets": {
+				"from": 3300,
+				"to": 3760
+			},
+			"text": " awake."
+		}
+	]
+}

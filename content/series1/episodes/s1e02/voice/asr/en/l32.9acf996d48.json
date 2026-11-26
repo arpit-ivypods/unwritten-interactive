@@ -1,0 +1,186 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,060"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 60
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,060",
+				"to": "00:00:00,200"
+			},
+			"offsets": {
+				"from": 60,
+				"to": 200
+			},
+			"text": " If"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,200",
+				"to": "00:00:00,700"
+			},
+			"offsets": {
+				"from": 200,
+				"to": 700
+			},
+			"text": " all's"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,700",
+				"to": "00:00:01,330"
+			},
+			"offsets": {
+				"from": 700,
+				"to": 1330
+			},
+			"text": " well,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,330",
+				"to": "00:00:01,520"
+			},
+			"offsets": {
+				"from": 1330,
+				"to": 1520
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,520",
+				"to": "00:00:01,710"
+			},
+			"offsets": {
+				"from": 1520,
+				"to": 1710
+			},
+			"text": " car"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,710",
+				"to": "00:00:02,130"
+			},
+			"offsets": {
+				"from": 1710,
+				"to": 2130
+			},
+			"text": " comes"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,130",
+				"to": "00:00:02,210"
+			},
+			"offsets": {
+				"from": 2130,
+				"to": 2210
+			},
+			"text": " at"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,210",
+				"to": "00:00:02,520"
+			},
+			"offsets": {
+				"from": 2210,
+				"to": 2520
+			},
+			"text": " three"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,520",
+				"to": "00:00:02,720"
+			},
+			"offsets": {
+				"from": 2520,
+				"to": 2720
+			},
+			"text": " and"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,720",
+				"to": "00:00:03,190"
+			},
+			"offsets": {
+				"from": 2720,
+				"to": 3190
+			},
+			"text": " takes"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,190",
+				"to": "00:00:03,230"
+			},
+			"offsets": {
+				"from": 3190,
+				"to": 3230
+			},
+			"text": " us"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,230",
+				"to": "00:00:03,370"
+			},
+			"offsets": {
+				"from": 3230,
+				"to": 3370
+			},
+			"text": " to"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,370",
+				"to": "00:00:03,840"
+			},
+			"offsets": {
+				"from": 3370,
+				"to": 3840
+			},
+			"text": " Morsi."
+		}
+	]
+}

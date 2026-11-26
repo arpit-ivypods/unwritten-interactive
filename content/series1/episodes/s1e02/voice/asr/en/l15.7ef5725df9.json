@@ -1,0 +1,164 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,120"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 120
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,120",
+				"to": "00:00:00,300"
+			},
+			"offsets": {
+				"from": 120,
+				"to": 300
+			},
+			"text": " Our"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,300",
+				"to": "00:00:01,110"
+			},
+			"offsets": {
+				"from": 300,
+				"to": 1110
+			},
+			"text": " mother's"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,110",
+				"to": "00:00:02,070"
+			},
+			"offsets": {
+				"from": 1110,
+				"to": 2070
+			},
+			"text": " bangles."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,070",
+				"to": "00:00:02,310"
+			},
+			"offsets": {
+				"from": 2070,
+				"to": 2310
+			},
+			"text": " The"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,310",
+				"to": "00:00:02,630"
+			},
+			"offsets": {
+				"from": 2310,
+				"to": 2630
+			},
+			"text": " lane"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,630",
+				"to": "00:00:03,180"
+			},
+			"offsets": {
+				"from": 2630,
+				"to": 3180
+			},
+			"text": " laughed"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,180",
+				"to": "00:00:03,400"
+			},
+			"offsets": {
+				"from": 3180,
+				"to": 3400
+			},
+			"text": " at"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,400",
+				"to": "00:00:03,580"
+			},
+			"offsets": {
+				"from": 3400,
+				"to": 3580
+			},
+			"text": " him"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,580",
+				"to": "00:00:03,820"
+			},
+			"offsets": {
+				"from": 3580,
+				"to": 3820
+			},
+			"text": " for"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,820",
+				"to": "00:00:04,280"
+			},
+			"offsets": {
+				"from": 3820,
+				"to": 4280
+			},
+			"text": " 11"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,280",
+				"to": "00:00:05,600"
+			},
+			"offsets": {
+				"from": 4280,
+				"to": 5600
+			},
+			"text": " days."
+		}
+	]
+}

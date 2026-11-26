@@ -1,0 +1,252 @@
+{
+  "episode_id": "s1b03",
+  "series_id": "series1",
+  "status": "planned",
+  "status_note": "Cue sheet by S11; nothing generated, no ElevenLabs call made. Library cues are generated once at series level (content/series1/sound/library.json) and only referenced here. This episode needs no one-off cue: every sound the script names is covered by a library cue, so the runner has nothing to generate for s1b03.",
+  "written_by": "S11 Sound designer",
+  "date": "2026-11-26",
+  "governing": [
+    "D-009",
+    "D-011 (reuse rules)",
+    "D-014",
+    "D-0M2",
+    "D-0M4",
+    "D-018",
+    "D-019",
+    "D-020"
+  ],
+  "sources": [
+    "content/series1/episodes/s1b03/script.hi.json (beats, silent_seconds, sfx_notes, music_note, writer_notes)",
+    "content/series1/episodes/s1b03/script.en.json (same beat and line ids)",
+    "content/series1/episodes/s1b03/review-notes.json (writer_response: b1 key chink carries Mausi's turn, b2 key insert, b4 end-state still)",
+    "content/series1/sound/library.json (cue ids, notes, mix rules)"
+  ],
+  "timebase": "Anchors are beat and line ids (and words inside lines, set-up cuts and script silences), not seconds. No storyboard or measured takes existed when this was written. S13 places every cue against the measured voice and the edited shot lengths (D-014 rule 6, D-0M2). One sheet serves both hi and en cuts: same line ids. Word anchors quote the Hindi; in English use the matching word ('car' for 'गाड़ी', 'only saffron' for 'बस केसर', 'half' for 'आधी'). Play order is beats-array order: l31 sits between l04 and l05.",
+  "library_cues_used": [
+    {
+      "cue_id": "amb_bedroom_night",
+      "type": "ambience",
+      "where": "b1-b6",
+      "placement": "Anchor: from the first frame of b1 to the cut into b7. Level: bed, about -30 dBFS before ducking. Pre-dawn state: crickets down 4-6 dB against the night beds of s1b01/s1b02 (high-shelf cut about -4 dB above 3 kHz, where the crickets sit). Lamp hum stays. NO birds layered in b1-b6, which differs from the library note: this script puts the first birds in b7 ('first birds through the open front door'). No ceiling fan (library no_fan_rule). Continuous across b1-b6: no new bed at any cut. Ducks 6 dB under every line, 10 dB under l15 (sfx_notes b4)."
+    },
+    {
+      "cue_id": "sfx_dog_far",
+      "type": "sfx",
+      "where": "b1",
+      "placement": "Anchor: inside the 1.2 s opening silence (fold insert), first two barks only, ending before l01 starts. Level: very low, about -12 dB below the bed peak. The script's 'one dog far off'. Placed once for b1-b6, never under a line."
+    },
+    {
+      "cue_id": "sfx_keyring_chink",
+      "type": "sfx",
+      "where": "b1",
+      "placement": "Anchor: l02, on the onset of 'चल'. Level: clear but small. One chink only. The frame is Billu (set-up 3); the chink carries Mausi's unseen half-turn. Do not duck it under the line; duck the line's room tone instead if needed."
+    },
+    {
+      "cue_id": "sfx_sneakers_concrete",
+      "type": "sfx",
+      "where": "b1-b2",
+      "placement": "Anchor: starts with l02 (Billu steps toward the bed, b1 set-up 3); stops dead in b2's 0.5 s silence when Kiran steps into his path. Level: low. Use 2-3 steps only, a level-floor slice, not the stair descent; kill the stairwell reverb tail with a high-cut about 4 kHz and a short gate. The stop is the point: the last step lands just before l03."
+    },
+    {
+      "cue_id": "sfx_car_key_tick",
+      "type": "sfx",
+      "where": "b2",
+      "placement": "Anchor: one tick on the cut to set-up 7, i.e. on 'गाड़ी' in l07. Level: small, close. Use one tick from the file, not two or three; held still through l08 (no more ticks)."
+    },
+    {
+      "cue_id": "sfx_boots_concrete_shift",
+      "type": "sfx",
+      "where": "b2 and b3",
+      "placement": "b2: Anchor: in the speaker gap after l08 ('आज की लाश भी तेरे सिर आती।') and before l09. Level: low, slightly off to the door side. 'A boot shifts by the door': one scuff from one pair only, the first ~0.6 s of the file. If the gap is under 0.4 s after the edit, slide it onto the tail of l08. b3: Anchor: first half (~1 s) of the 2.0 s silence after l12: the boots stepping back toward the door. Level: low-mid, the loudest boots in the episode. Two pairs step back, slow; let the last scuff fall at the cut to Billu's single. Billu's toothpick out is silent."
+    },
+    {
+      "cue_id": "sfx_bed_creak_petals",
+      "type": "sfx",
+      "where": "b3",
+      "placement": "Anchor: under the second sentence of l11, 'दूध में बस केसर था', on the cut to set-up 2 (Aditya sits up). Level: under the line, about -8 dB relative to dialogue. Creak plus the petal rustle carries 'marigold garlands rustle'. Aditya sits up over the line, not in a gap (writer_notes), so keep the creak's peak off the consonants of 'केसर'."
+    },
+    {
+      "cue_id": "mus_bed_drone",
+      "type": "music_bed",
+      "where": "b4-b5",
+      "placement": "Anchor: IN on the cut to b4 set-up 2 (the wrist grab), at the head of l14; OUT fading over the 1.8 s silence of b5 and under l16-l17, gone by the end of l17 so the 0.8 s silence that opens b6 is drone-free. Level: barely audible, about -26 dBFS before ducking. One low single note per music_note. Use the library file from after its ~4 s fade-in. Fade in over ~0.8 s (not a hit). Ducks 8 dB under l14, 12 dB under l15 (locked line), 8 dB under l16 and l17. In the b5 silence it may rise back to its own level. Fade out ~1.5 s, finishing on the last syllable of l17 'मैं'."
+    },
+    {
+      "cue_id": "sfx_glass_bangles_chink",
+      "type": "sfx",
+      "where": "b4",
+      "placement": "Anchor: head of l14, on the cut to the hands insert (Mausi's green-bangled hand closes on the wrist). Level: clear, a few frames before or on the first word. One chink. Lands with the drone's entry."
+    },
+    {
+      "cue_id": "sfx_chooda_click",
+      "type": "sfx",
+      "where": "b4",
+      "placement": "Anchor: in the speaker gap between l14 and l15, just before the cut to set-up 3. Level: small, dry. 'The chooda's dry slide up the forearm': use the slide portion of the file without the final settling click. The library file slides down; a slide up reads the same at this size. Do not reverse it."
+    },
+    {
+      "cue_id": "sfx_paper_fold_crinkle",
+      "type": "sfx",
+      "where": "b4",
+      "placement": "Anchor: two short slices (~80-120 ms each, ~150 ms apart) straddling the cut to set-up 3, the second landing before 'दामाद जी' in l15. Level: tiny. 'Two tiny paper ticks as the folds land on the sheet'. They carry the drop the still does not show (writer_notes, production_locks). Take the two driest transients from the crinkle; muffle slightly (high-cut about 6 kHz) since they land on cloth. If the edit leaves no gap, put both under the first syllable of l15 at -6 dB rather than delaying the line."
+    },
+    {
+      "cue_id": "sfx_keyring_unhook",
+      "type": "sfx",
+      "where": "b6",
+      "placement": "Anchor: long chink (first part of the file) under the 0.8 s silence before l18 (insert, unhooking from Mausi's hip); shorter chink (last part) on the cut to set-up 3, the tail of l19. Level: clear; the second chink lower and under the line. This is Mausi's sound passing to Kiran: the series' keys (same timbre as sfx_keyring_chink) must be recognisable. Slice the file at its gap; do not let the long jangle run into l18."
+    },
+    {
+      "cue_id": "amb_stairwell_landing",
+      "type": "ambience",
+      "where": "b7",
+      "placement": "Anchor: from the cut into b7 to the cut into b8. Level: low, about -6 dB against its night use. Dawn state: landing bulb buzz kept (the bulb is still on), crickets down. Dialogue in b7 gets the short concrete room reverb (mix, not a cue)."
+    },
+    {
+      "cue_id": "sfx_birds_dawn_loop",
+      "type": "ambience_layer",
+      "where": "b7-b8",
+      "placement": "Anchor: b7: from the first frame (the open front door at the foot of the flight); b8: as the lead bed. Level: b7: thin, distant, through the doorway (high-cut about 5 kHz, -8 dB under the stairwell bed); b8: up to full bed level. b7 is the first time birds are heard in the episode. Rise across the b7/b8 cut so the lane feels like stepping outside. Duck 6 dB under b7 lines."
+    },
+    {
+      "cue_id": "sfx_sandals_steps",
+      "type": "sfx",
+      "where": "b7",
+      "placement": "Anchor: a short slice (1-2 steps) in the 0.8 s opening silence; then the main walk from the end of l27 as Aditya turns down toward the doorway, carried over the cut into b8 and faded under the lane. Level: low, in the stairwell acoustic. 'Sandals on concrete steps'. Add the stairwell reverb to the file. No steps under l22-l27."
+    },
+    {
+      "cue_id": "amb_lane_night",
+      "type": "ambience",
+      "where": "b8",
+      "placement": "Anchor: optional, whole beat. Level: at most -12 dB under the birds, or omitted. Dawn: the script asks for birds and the car only ('Nothing else'). If used, high-cut about 2 kHz so the sodium buzz is gone (the streetlight is dead). S13's choice; default is omitted."
+    },
+    {
+      "cue_id": "sfx_car_ignition_idle",
+      "type": "sfx",
+      "where": "b8",
+      "placement": "Anchor: key turn and crank start ~0.5 s before the cut to set-up 2 (a pre-lap under Aditya looking up at the window); the engine catches on the cut to the car. Level: mid, outdoor, a few metres off. 'The engine starts as sound.' Use the crank, catch and ~1 s of idle only."
+    },
+    {
+      "cue_id": "sfx_car_pull_away",
+      "type": "sfx",
+      "where": "b8",
+      "placement": "Anchor: crossfaded from the ignition's idle about 1 s into set-up 2; runs to the cut into b9. Level: mid, receding. The pull-away will not finish in 2.3 s: fade it over the last ~0.4 s of b8 and stop at the cut. Do not carry it into b9 (the time jump to evening is a hard sound cut). Birds stay under it."
+    },
+    {
+      "cue_id": "amb_bureau_room",
+      "type": "ambience",
+      "where": "b9-b10",
+      "placement": "Anchor: from the cut into b9 to the end of the episode's 1.8 s final silence. Level: low. Evening, shut to customers: tube-light hum is the named sound; pull the ceiling fan down as far as the file allows (the script names only the hum; library allows S13 to pull it). Ducks 6 dB under l28 and l29 and right down (about -15 dB, near silent) under l30."
+    },
+    {
+      "cue_id": "sfx_street_morning_layer",
+      "type": "ambience_layer",
+      "where": "b9-b10",
+      "placement": "Anchor: whole of b9-b10. Level: very low, about -10 dB under the bureau bed, high-cut about 1.5 kHz (shutter down). The library's evening state. Optional if it reads as morning; out entirely under l30."
+    },
+    {
+      "cue_id": "sfx_pen_ledger_loop",
+      "type": "sfx",
+      "where": "b9-b10",
+      "placement": "Anchor: continuous from the first frame of b9 (Mausi writing at the desk) to the final cut to black. Level: low, from the back of the room (slight distance, -3 dB high-shelf). 'Continuous under the scene.' Duck 6 dB under l28 and l29 and about 10 dB under l30. After l30 it comes back up to its own level and is the only sound over the 1.8 s final image, then hard cut to black with the picture."
+    },
+    {
+      "cue_id": "mus_ending_lullaby",
+      "type": "music_ending",
+      "where": "b9-b10",
+      "placement": "Anchor: IN under b9's 1.6 s opening silence; continues under l28, l29; ducked under l30; the last phrase is CUT, unresolved, on the cut to the final image (end of l30). Level: faint, about -24 dBFS before ducking. Same file as s1a03's release, here Mausi's and now Kiran's. Use from after the ~4 s fade-in; fade in over ~1 s. Duck 6 dB under l28 and l29, about 14 dB under l30 so every word is clear. Do not let it resolve: cut it on an open note (20-30 ms fade) at the frame where set-up 3 begins, so the final 1.8 s is pen scratch only (sfx_notes b10). If the phrase structure does not offer an open note near that point, pick the nearest held note before it and end there."
+    },
+    {
+      "cue_id": "sfx_powder_into_milk",
+      "type": "sfx",
+      "where": "b10",
+      "placement": "Anchor: paper tap (first tap only) in the speaker gap after l29, with Kiran's hand steadying Chhoti's; powder hiss under the second sentence of l30, 'आधी में नींद नहीं आती', ending with the line. Level: tap clear but small; hiss very low, below the dialogue's sibilants. The series' signature sound. sfx_notes b10 wants the tap and hiss, and 'after l30 only the pen scratch', so the hiss ends with l30. The final image shows the powder falling in silence apart from the pen (see open_questions). If the hiss masks any consonant of l30, cut it under the line and keep only the tap."
+    }
+  ],
+  "new_cues": [],
+  "one_offs_considered_and_declined": [
+    {
+      "sound": "b4 paper folds landing on the sheet",
+      "why_declined": "Two short dry slices of sfx_paper_fold_crinkle, as the library note for s1b03 b4 already plans."
+    },
+    {
+      "sound": "b4 chooda sliding up (library file slides down)",
+      "why_declined": "A slide slice of sfx_chooda_click reads the same at this size and keeps Kiran's chooda one sound all series."
+    },
+    {
+      "sound": "b3 marigold garland rustle",
+      "why_declined": "sfx_bed_creak_petals already carries the petal rustle with the creak."
+    },
+    {
+      "sound": "b9 tube-light hum, b1-b6 lamp hum",
+      "why_declined": "Both are inside the location beds (amb_bureau_room, amb_bedroom_night)."
+    },
+    {
+      "sound": "Mausi's chuckle (l19), Chhoti's giggle (l28)",
+      "why_declined": "Voice takes ([chuckles] tags), not effects."
+    },
+    {
+      "sound": "Billu's toothpick out (b3), Chhoti's fold trembling (b9), 'शाम' overlay",
+      "why_declined": "The script gives them no sound; adding one would clutter the quiet beats."
+    }
+  ],
+  "voice_owned_not_cues": [
+    "Mausi's [chuckles] in l19 and Chhoti's [chuckles] in l28 are in their voice takes, not effects.",
+    "Kiran's [sighs] on l26 is in her take; nothing is placed under it."
+  ],
+  "mix": {
+    "dialogue_first": true,
+    "loudness_target": "-14 LUFS integrated, -1 dBTP, tolerance +/-0.5 LU (D-0M4); master each language cut separately.",
+    "ducking": [
+      "Beds duck 6 dB under every line; music ducks 8 dB under every line unless stated.",
+      "l15 (locked, the scar line): bedroom bed down 10 dB and drone down 12 dB (sfx_notes b4).",
+      "l30 (locked, the cliffhanger line): bureau bed, street layer, lullaby and pen all pulled right down (about -14 to -15 dB) so every word is clear; l30 is [calm] and unfiltered.",
+      "l18 (locked, kept apart in the two finales): no effect under it; the long key chink must finish before it starts.",
+      "Short turns l31, l16, l17, l26: nothing placed under them; let them sit on the bed alone."
+    ],
+    "filters_and_space": [
+      "No phone voice in this episode: nobody speaks through a phone (Chhoti holds hers in b9-b10 but is not on a call). The library's phone band-pass is not used.",
+      "b1 l01: Mausi talks over her shoulder toward the door; a slight off-axis tone (about -2 dB above 4 kHz) is allowed, not a filter.",
+      "b7: all six lines get a short concrete stairwell reverb (pre-delay ~10 ms, decay ~0.4-0.6 s, low wet level), matched to amb_stairwell_landing.",
+      "b9-b10: dry, small-room tone for l28-l30; no reverb on l30.",
+      "l09 is Billu 'loud for one line': ride the line by hand, do not let the bus limiter flatten it; l08 [sharply] is low and fast, not loud."
+    ],
+    "transitions": [
+      "b6 to b7: hard cut from the bedroom bed to the stairwell bed with dawn birds through the door.",
+      "b7 to b8: Aditya's sandals and the birds carry over the cut; the birds rise to full bed level.",
+      "b8 to b9: hard sound cut on the time jump to evening; the car pull-away is faded out over the last ~0.4 s of b8, never carried into b9.",
+      "End: everything cuts with the picture to black; no tail."
+    ],
+    "no_fan_rule": "No ceiling fan in the bedroom or stairwell mix (library). The bureau's fan is allowed but pulled down; the script names only the tube hum.",
+    "timing": "Point effects are placed against measured voice and edited shot lengths (D-014 rule 6, D-0M2). If silences are shortened in the edit, effects that sit in a silence (b1 dog, b3 boots, b5 drone-only hold, b6 long chink, b7 sandals) move with it and shorten; none is a reason to keep a silence long.",
+    "music_map": {
+      "b1-b3": "No score (music_note).",
+      "b4-b5": "mus_bed_drone: in on the wrist grab (head of l14), held through b5, out by the end of l17.",
+      "b6-b8": "Sound only. No music.",
+      "b9-b10": "mus_ending_lullaby: in under b9's opening silence, ducked under l30, cut unresolved on the cut to the final image.",
+      "end": "Final 1.8 s: bureau bed (near silent) and pen scratch only, then a hard cut to black with the picture. No sting (the library's stings are not used in this finale)."
+    }
+  },
+  "fallback": "Plan 7.8: If mus_bed_drone or mus_ending_lullaby is missing (plan 7.8), b4-b5 runs on the bedroom bed at +2 dB, and b9-b10 on the bureau bed and pen alone; the final image is unchanged (pen only). If any effect is missing, that moment plays on the bed alone; no stand-in is generated for this episode.",
+  "counts": {
+    "library_cues_used": 23,
+    "library_placements": 24,
+    "new_cues": 0,
+    "music_library": 2,
+    "ambience_library": 6,
+    "effects_library": 15
+  },
+  "credit_estimate": {
+    "new_cues": 0,
+    "basis": "No one-off cue to generate; library cues are costed in library.json."
+  },
+  "open_questions": [
+    "b10 final image: the picture shows the powder falling, while sfx_notes say 'after l30 only the pen scratch'. This sheet follows sfx_notes: the powder hiss ends with l30 and the final 1.8 s is pen only. The alternative, for the director or S13: let the hiss tail ~0.5 s into the final image under the pen. One sentence in the edit either way; no new cue needed.",
+    "Library amb_bedroom_night note layers dawn birds thinly in s1b03 b1-b6; this sheet does not, because the script's first birds are in b7. If the library owner prefers its note, the birds go in only from b6 (grille greying)."
+  ],
+  "not_verified": [
+    "No cue has been generated or heard; levels in dB are starting points for S13, not measurements.",
+    "No shots.json, storyboard or measured voice exists for s1b03, so no anchor is in seconds; whether the speaker gaps (l14-l15, l29-l30, after l08) are long enough for the effects placed in them is unknown until the edit.",
+    "Whether the library files slice as planned (keyring_unhook into two chinks, crinkle into two ticks, chooda slide without its click, one tick from car_key_tick) depends on what the model returns.",
+    "Whether mus_ending_lullaby offers an open note near the end of l30 to cut on."
+  ]
+}

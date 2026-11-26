@@ -1,0 +1,80 @@
+{
+  "continuity": {
+    "ok": true,
+    "by": "S4 Continuity keeper, 26 Nov 2026",
+    "ledger": "content/series1/continuity.json (problem id P02)",
+    "fixed": [],
+    "problems": [
+      {"id": "P02", "severity": "low", "owner": "S2", "line": "b1 set-up 2: 'the red cuff whole on both forearms'. s1e01 pushes BOTH cuffs toward the elbows (b1, look) and slides only the LEFT one down (b11); no script brings the right one down.", "fix": "b1 set-up 2 only, add: 'both cuffs at rest just above the wrist bone; she slid the right one down on her way from the door'."}
+    ]
+  },
+  "pass": true,
+  "score": 7.8,
+  "must_fix": [
+    "LENGTH (must fix): The dialogue is about 1,087 characters by my hand count (the writer counted 1,090), which is over D-007 direction 1's 'at or under about 1,050'. 'S1e02 may use the ceiling' refers to the 135 s running time, not to the character measure. The short-line targets (l01, l03, l08, l17, l20, l22, l23, l27, l30, set at 9-10 chars/s) are optimistic: in the photoreal proof, Gate 0b measured short v4 lines at 6.5-7.5 chars/s. With honest short-line targets the finished cut comes out at about 140 s (estimate), over 135. FIX, without touching any protected item: (1) Change l10 from '[calm] यही पूछेंगी ना, दूल्हा सोया? कोई code?' to '[calm] तो, कोई code?'. This is D-007's own default plus a carrier word so it is not a bare two-word turn: -26 chars, target 4.0 -> 1.8 s. Asking about a code already shows he knows the call is the gang's check, so D-005 7a still holds. (2) Cut l26 '[chuckles] हाँ मौसी, याद है।' (-17 chars, -1.6 s, two fewer speaker changes). Billu's grin in b9 set-up 4 carries it. If the writer keeps l26, cut 'अच्छा सुन... ' from l29 instead (-13). Backup if a machine count is still over 1,050: 'रखो। ' from l04 (-5), since the picture already shows him taking the glass. (3) Re-set targets: l01 2.3, l03 2.7, l08 3.1, l17 2.6, l20 1.6, l22 3.0, l23 2.6, l27 2.4, l30 2.4, and recompute target_total_seconds. With (1) and (2) that is about 1,044 chars and about 131.7 s (112.5 spoken + 11 x 0.3 + 15.9 silence). If a machine count still shows more than 1,050 characters or more than 135 s, log it for the Arbiter (D-007 'would change it'). Never cut b5, b7, b13, l07, l09, l24, l25 or the mathri.",
+    "CONTINUITY (must fix): b1 says it 'opens in the same second s1e01 ended', but it puts Kiran 'at the edge of the bed' and Aditya 'sitting up against the dark headboard'. s1e01 left her at the pale-blue door, a room's width away (s1e01 b3, b6 set-up 4, and b10 'her right hand still against the door'), and left him on the edge of the bed (b6 set-up 2). Anyone watching e01 then e02 sees her jump across the room. FIX in b1 action, no line added: 'Set-up 1 (l01, inside the first 2 s): two-shot across the room's width, as s1e01 left them: Aditya on the edge of the bed, glasses on, the brass key at mid-chest, the creased print still raised in his right hand; Kiran at the pale-blue door, her right hand against it, pallu over her left shoulder. Set-up 2 (the silence after, 1.0 -> 1.5 s): she has crossed to the window side of the bed, by the stool, and holds both hands out to him over the white sheet, palms up...' Keep the rest as written. Putting her by the stool also sets up her reach for the glass in b3. The extra 0.5 s comes out of the slack the length fix leaves."
+  ],
+  "medium": [
+    "CONTINUITY (medium): b13 does not say where Aditya is or whether he still holds the dabba. b10 set-up 4 leaves him at the chair by the almirah wall with it in his hand, and s1a01 b1 opens with them 'a room's width apart'. FIX: b13 set-up 1 'Aditya beyond her' -> 'Aditya across the room by the chair, the steel dabba still in his hand'; set-up 2 -> 'Aditya close, the dabba in his hand, glasses, key, his eyes on her mouth'.",
+    "CONTINUITY (medium, cross-episode; owner is the s1b01 writer or S4): s1b01 b1 opens 'inside the in-breath' with the phone in Kiran's right hand. s1e02 b13 and s1a01 b1 both have it face up on the sheet. The simplest fix is for s1b01 b1 to match the sheet.",
+    "PERFORMABILITY (medium): Mausi is tagged [calm] on all seven of her lines, and 16 of the 30 lines are [calm]. The casting takes of this exact l28 and l29 text used [warmly] and [laughs] (content/series1/casting/manifest.jsonl, mausi_t1 and mausi_t2). FIX: keep [calm] for the lane drill (l23-l25, l27) and use [warmly] on l28, l29 and l30. The code then sounds cold and the call warm, which is the contrast her voice_note describes.",
+    "HINGLISH (medium): the code-mixing is light: 9 English words in 30 lines, no English verbs and no cut-offs, while plan section 3 asks for English nouns and verbs inside Hindi. Optional, and it saves characters: l09 '[quietly] और झूठ निकला, तो कलाई मैं ख़ुद check करूँगा।' (44 chars, -4). It does the same job as D-007's default and says outright that he will come back to the wrist, which s1a02 b3 and s1b01 b5a pay off. Optional for l15: 'ग्यारह दिन मोहल्ला उस पर हँसा।' is more idiomatic than 'गली उस पर हँसी' (+3).",
+    "CRAFT (medium, no change required): with 'तुम वो होतीं...' dropped, his reasons to stop are priority (l08), the threat (l09) and a 1:52 clock. Eight minutes is plenty of time to slide off a few more bangles. The scene still works because of the unspoken reason, which l04 half-says: he needs her composed on the call. The l09 'check करूँगा' wording above firms it up if wanted.",
+    "CLARITY (minor): l16 'हाथ नहीं' comes straight after two uses of 'हाथ लगाना' in b5 (l12, l14), so for a moment it can be heard as 'no violence'. l17 resolves it. Optional: 'वो हाथ नहीं।' (+3).",
+    "PERFORMABILITY (minor): l20 'और मैं?' is a two-word turn, and [flatly] (l03, l06, l13) and [hesitant] (l12, l20) were used in Kiran's casting takes but nobody has listened to them. Extra takes, as the writer already flagged.",
+    "CONTINUITY (minor): the b10 sfx 'The side-pocket zip, slow and close' contradicts bible b10 'Without a sound Aditya unzips'. Either keep the zip well under the call and off the phone's pickup, or note the departure."
+  ],
+  "summary": "Tool gap: this session has only Read, Grep and Glob, with no Bash and no Write. I could not run the mechanical checks by script or parse the JSON, and <repo>/content/series1/episodes/s1e02/review-notes.json was not written. I went ahead because scoring and fixes only need reading; every check below says how it was done. The orchestrator should save this verdict to that file.\n\nVERDICT: pass, 7.8, nothing fatal. Hook 9, stakes 8.5, choice 8, branch_distinct null, cliffhanger 9, hinglish 7.5, performability 7.5, length 6, continuity 7. File: <repo>/content/series1/episodes/s1e02/script.hi.json. Apply the two must-fix items before S4. A second critic round is not needed unless a machine count after the trims is still over 1,050 characters or 135 s.\n\nChecks run (by hand or Grep, none by script):\n- JSON: Grep found no string with an embedded double quote and no trailing comma, on one line or across lines. This is not a parse.\n- Ids: all speaker, on_screen and location ids exist in the bible. Beat ids match bible beat_outlines (b1-b7, b9, b10, b12, b13).\n- Tags: emotion_tags equal the inline tags on all 30 lines.\n- Durations: 112.8 s spoken + 15.9 s silence + 13 speaker changes x 0.3 s = 132.6 s, which equals target_total_seconds.\n- Lines: 30. No line is over 12 chars/s (highest about 10.7, l13).\n- Lead on screen: 9 of 11 beats.\n- यह/वह: the Grep's only spoken-line hit is the substring inside 'यही', so there are no real cases.\n- hi/en: not checked, because there is no script.en.json yet.\n- Dialogue count: about 1,087 characters by my hand count.\n\nLength evidence (my character counts over measured durations, so estimates): the photoreal proof's Hindi v4 takes run about 8.4 chars/s, and short lines 6.5-7.5. The Series 1 casting Hindi takes run about 10.5 chars/s on longer lines. That puts the finished cut at about 140 s, over the 135 s ceiling.\n\nWhat works: the hook lands inside 2 s on the hand demand. All five balance levers are on screen. Both choices cost Kiran something. 'या चुप रहे, तब भी ऊपर' turns her silence at the end into the alarm, so the cliffhanger is open, audible and carried by sound rather than a caption. Every D-007 must-survive item is present, and the knowledge, name and prop tracking is careful.\n\nMust fix:\n1. LENGTH: the dialogue is over the 1,050 measure and the short-line targets are optimistic.\n2. CONTINUITY: s1e01 ends with Kiran at the door, but b1 opens 'in the same second' with her at the bed.",
+  "writer_response": [
+    {
+      "item": "must_fix 0 (length)",
+      "action": "applied, with two optional trims from the medium list on top",
+      "reason": "(1) l10 is now '[calm] तो, कोई code?', target 1.8 (my hand count: -25 characters; the critic's -26). (2) l26 is cut. The id l26 is not reused, so there is a gap from l25 to l27, as with the beat gaps; b9 set-up 4 now plays over l27 only, and Billu's grin carries the beat. 'अच्छा सुन...' stays in l29. (3) Targets re-set to the critic's figures: l01 2.3, l03 2.7, l08 3.1, l17 2.6, l20 1.6, l22 3.0, l23 2.6, l27 2.4, l30 2.4. I also took the medium l09 rewording (-4) and the minor l16 'वो हाथ नहीं।' (+3), with targets of 4.6 and 4.5. The dialogue is now about 1,047 characters on the writer's earlier count, or about 1,043 on the critic's. Both figures are the old hand counts adjusted by my hand-counted deltas; neither is a machine count. Totals: 112.4 s spoken + 11 speaker changes x 0.3 s (3.3 s) + 16.4 s silence (b1 is now 1.5 s, see must_fix 1) = 132.1 s. The backup trim ('रखो। ' from l04) is not applied, because by my count the episode is already under 1,050. It is first in the trim order in writer_notes if a machine count comes out over. None of b5, b7, b13, l07, l24, l25 or the mathri is touched; l09 is reworded, not cut (see medium 3)."
+    },
+    {
+      "item": "must_fix 1 (b1 continuity with s1e01)",
+      "action": "applied",
+      "reason": "b1 set-up 1 now uses the critic's wording: a two-shot across the room's width as s1e01 left them, with Aditya on the edge of the bed and the print still raised, and Kiran at the pale-blue door with her right hand against it. In set-up 2 she has crossed to the window side of the bed, by the stool, and holds both hands out over the white sheet. The rest of the action is unchanged. b1 silent_seconds goes from 1.0 to 1.5. I checked s1e01 (b6 set-up 4 'Kiran at the door', b10 'her right hand still against the door') and the bible's bedroom layout (stool on the window side of the bed) with Grep."
+    },
+    {
+      "item": "medium 0 (b13: where Aditya is, the dabba)",
+      "action": "applied",
+      "reason": "b13 set-up 1: 'Aditya across the room by the chair, the steel dabba still in his hand'. Set-up 2: 'Aditya close, the dabba in his hand, glasses, the brass key on its red thread, his eyes on her mouth'. The continuity note in writer_notes says he stays by the chair from b10 set-up 3 to the end."
+    },
+    {
+      "item": "medium 1 (s1b01 b1 phone in hand vs on the sheet)",
+      "action": "not applied here; passed on",
+      "reason": "This belongs to the s1b01 writer or S4. s1e02 keeps the phone face up on the sheet, which matches s1a01 b1. writer_notes flags that s1b01 b1 should match the sheet."
+    },
+    {
+      "item": "medium 2 (Mausi's tags)",
+      "action": "applied",
+      "reason": "l23, l24, l25 and l27 (the lane drill) stay [calm]. l28 is now '[warmly] खाना खाया? [chuckles] झूठ मत बोल। ...', and l29 and l30 open with [warmly]. [warmly] is not in the skill's tag table, so it is listed as a tag to verify. The casting manifest uses it, but nobody has listened to those takes."
+    },
+    {
+      "item": "medium 3 (Hinglish: l09, l15)",
+      "action": "l09 applied; l15 not applied",
+      "reason": "l09 is now '[quietly] और झूठ निकला, तो कलाई मैं ख़ुद check करूँगा।'. It does the job D-007 direction 4 sets (he puts the wrist off, he does not drop it) and states it more plainly, and it adds an English verb. D-007 allows an equivalent. l15 is unchanged: the +3 would eat into a margin of only a few characters under 1,050, and 'गली उस पर हँसी' is natural enough."
+    },
+    {
+      "item": "medium 4 (craft: his reasons to stop)",
+      "action": "no change needed; the l09 rewording covers it",
+      "reason": "'कलाई मैं ख़ुद check करूँगा' tells the viewer he means to come back to the wrist. l04 still carries his unspoken reason: he needs her composed for the call."
+    },
+    {
+      "item": "minor 5 (l16 clarity)",
+      "action": "applied",
+      "reason": "l16 is now '[calm] मौसी और उनका ledger, police को। वो हाथ नहीं।', target 4.5."
+    },
+    {
+      "item": "minor 6 (l20 and the unheard tags)",
+      "action": "kept as flagged",
+      "reason": "l20 still gets extra takes. [flatly] and [hesitant] stay on the verify list, with fallbacks to [calm] or [quietly]."
+    },
+    {
+      "item": "minor 7 (b10 zip vs bible 'without a sound')",
+      "action": "applied as a noted departure",
+      "reason": "In a stills-only cut the zip has to be heard for the pocket opening to register. The b10 sfx now keeps it very soft, well under Mausi's voice and nowhere near the phone's pickup, so she cannot hear it in-story. writer_notes records this as a departure from bible b10."
+    }
+  ]
+}

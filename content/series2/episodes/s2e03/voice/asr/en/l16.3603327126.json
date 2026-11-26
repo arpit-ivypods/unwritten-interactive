@@ -1,0 +1,120 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,120"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 120
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,120",
+				"to": "00:00:00,210"
+			},
+			"offsets": {
+				"from": 120,
+				"to": 210
+			},
+			"text": " Put"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,210",
+				"to": "00:00:00,420"
+			},
+			"offsets": {
+				"from": 210,
+				"to": 420
+			},
+			"text": " him"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,420",
+				"to": "00:00:00,560"
+			},
+			"offsets": {
+				"from": 420,
+				"to": 560
+			},
+			"text": " in"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,560",
+				"to": "00:00:00,780"
+			},
+			"offsets": {
+				"from": 560,
+				"to": 780
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,780",
+				"to": "00:00:01,200"
+			},
+			"offsets": {
+				"from": 780,
+				"to": 1200
+			},
+			"text": " lock"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,200",
+				"to": "00:00:01,510"
+			},
+			"offsets": {
+				"from": 1200,
+				"to": 1510
+			},
+			"text": " up,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,510",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 1510,
+				"to": 2000
+			},
+			"text": " now!"
+		}
+	]
+}

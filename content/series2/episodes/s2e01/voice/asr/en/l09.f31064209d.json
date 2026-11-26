@@ -1,0 +1,252 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,050"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 50
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,050",
+				"to": "00:00:01,940"
+			},
+			"offsets": {
+				"from": 50,
+				"to": 1940
+			},
+			"text": " Talkies?"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,940",
+				"to": "00:00:02,010"
+			},
+			"offsets": {
+				"from": 1940,
+				"to": 2010
+			},
+			"text": " Two"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,010",
+				"to": "00:00:02,990"
+			},
+			"offsets": {
+				"from": 2010,
+				"to": 2990
+			},
+			"text": " years."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,990",
+				"to": "00:00:03,280"
+			},
+			"offsets": {
+				"from": 2990,
+				"to": 3280
+			},
+			"text": " Not"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,280",
+				"to": "00:00:03,680"
+			},
+			"offsets": {
+				"from": 3280,
+				"to": 3680
+			},
+			"text": " one"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,680",
+				"to": "00:00:04,080"
+			},
+			"offsets": {
+				"from": 3680,
+				"to": 4080
+			},
+			"text": " FIR"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,080",
+				"to": "00:00:04,350"
+			},
+			"offsets": {
+				"from": 4080,
+				"to": 4350
+			},
+			"text": " in"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,350",
+				"to": "00:00:04,620"
+			},
+			"offsets": {
+				"from": 4350,
+				"to": 4620
+			},
+			"text": " my"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,620",
+				"to": "00:00:05,470"
+			},
+			"offsets": {
+				"from": 4620,
+				"to": 5470
+			},
+			"text": " thana."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,470",
+				"to": "00:00:05,740"
+			},
+			"offsets": {
+				"from": 5470,
+				"to": 5740
+			},
+			"text": " Not"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,740",
+				"to": "00:00:05,980"
+			},
+			"offsets": {
+				"from": 5740,
+				"to": 5980
+			},
+			"text": " one"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,980",
+				"to": "00:00:06,830"
+			},
+			"offsets": {
+				"from": 5980,
+				"to": 6830
+			},
+			"text": " case."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:06,830",
+				"to": "00:00:07,140"
+			},
+			"offsets": {
+				"from": 6830,
+				"to": 7140
+			},
+			"text": " Zero"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:07,140",
+				"to": "00:00:08,050"
+			},
+			"offsets": {
+				"from": 7140,
+				"to": 8050
+			},
+			"text": " crime."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:08,050",
+				"to": "00:00:08,170"
+			},
+			"offsets": {
+				"from": 8050,
+				"to": 8170
+			},
+			"text": " Got"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:08,170",
+				"to": "00:00:08,240"
+			},
+			"offsets": {
+				"from": 8170,
+				"to": 8240
+			},
+			"text": " a"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:08,240",
+				"to": "00:00:08,530"
+			},
+			"offsets": {
+				"from": 8240,
+				"to": 8530
+			},
+			"text": " shield"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:08,530",
+				"to": "00:00:08,720"
+			},
+			"offsets": {
+				"from": 8530,
+				"to": 8720
+			},
+			"text": " for"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:08,720",
+				"to": "00:00:09,040"
+			},
+			"offsets": {
+				"from": 8720,
+				"to": 9040
+			},
+			"text": " it."
+		}
+	]
+}

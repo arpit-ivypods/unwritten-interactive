@@ -1,0 +1,642 @@
+{
+ "lang": "hi",
+ "fps": 30,
+ "method": "subs.method.md (D-014, measured takes)",
+ "notes": [
+  "l02 'खाली मतलब?': held 4 frames past its last speech (minimum 800 ms).",
+  "l05 'लड्डू?': held 2 frames past its last speech (minimum 800 ms).",
+  "l06: speech runs 2 frames past the cut at 475; cue clamped to the cut.",
+  "l07 'बबलू!': held 6 frames past its last speech (minimum 800 ms).",
+  "l11: speech runs 2 frames past the cut at 978; cue clamped to the cut."
+ ],
+ "cues": [
+  {
+   "id": "c01",
+   "line_id": "l01",
+   "speaker": "bablu",
+   "startMs": 900,
+   "endMs": 3700,
+   "startFrame": 27,
+   "endFrame": 111,
+   "speechFrames": [
+    27,
+    111
+   ],
+   "text": "Madam... locker खाली है।",
+   "words": [
+    {
+     "text": "Madam...",
+     "startMs": 900,
+     "endMs": 2386
+    },
+    {
+     "text": "locker",
+     "startMs": 2386,
+     "endMs": 2936
+    },
+    {
+     "text": "खाली",
+     "startMs": 2936,
+     "endMs": 3526
+    },
+    {
+     "text": "है।",
+     "startMs": 3526,
+     "endMs": 3700
+    }
+   ],
+   "wordTiming": "whisper"
+  },
+  {
+   "id": "c02",
+   "line_id": "l02",
+   "speaker": "meenu",
+   "startMs": 4133,
+   "endMs": 4866,
+   "startFrame": 124,
+   "endFrame": 146,
+   "speechFrames": [
+    124,
+    142
+   ],
+   "text": "खाली मतलब?",
+   "words": [
+    {
+     "text": "खाली",
+     "startMs": 4133,
+     "endMs": 4363
+    },
+    {
+     "text": "मतलब?",
+     "startMs": 4363,
+     "endMs": 4866
+    }
+   ],
+   "wordTiming": "whisper"
+  },
+  {
+   "id": "c03",
+   "line_id": "l03",
+   "speaker": "bablu",
+   "startMs": 4933,
+   "endMs": 5766,
+   "startFrame": 148,
+   "endFrame": 173,
+   "speechFrames": [
+    148,
+    173
+   ],
+   "text": "मतलब...",
+   "words": [
+    {
+     "text": "मतलब...",
+     "startMs": 4933,
+     "endMs": 5766
+    }
+   ],
+   "wordTiming": "graphemes"
+  },
+  {
+   "id": "c04",
+   "line_id": "l03",
+   "speaker": "bablu",
+   "startMs": 6166,
+   "endMs": 8600,
+   "startFrame": 185,
+   "endFrame": 258,
+   "speechFrames": [
+    185,
+    258
+   ],
+   "text": "बीस लाख cash गायब, madam।",
+   "words": [
+    {
+     "text": "बीस",
+     "startMs": 6166,
+     "endMs": 6383
+    },
+    {
+     "text": "लाख",
+     "startMs": 6383,
+     "endMs": 6933
+    },
+    {
+     "text": "cash",
+     "startMs": 6933,
+     "endMs": 7383
+    },
+    {
+     "text": "गायब,",
+     "startMs": 7383,
+     "endMs": 7923
+    },
+    {
+     "text": "madam।",
+     "startMs": 7923,
+     "endMs": 8600
+    }
+   ],
+   "wordTiming": "whisper"
+  },
+  {
+   "id": "c05",
+   "line_id": "l04",
+   "speaker": "bablu",
+   "startMs": 9866,
+   "endMs": 11066,
+   "startFrame": 296,
+   "endFrame": 332,
+   "speechFrames": [
+    296,
+    332
+   ],
+   "text": "बस...",
+   "words": [
+    {
+     "text": "बस...",
+     "startMs": 9866,
+     "endMs": 11066
+    }
+   ],
+   "wordTiming": "graphemes"
+  },
+  {
+   "id": "c06",
+   "line_id": "l04",
+   "speaker": "bablu",
+   "startMs": 11433,
+   "endMs": 12866,
+   "startFrame": 343,
+   "endFrame": 386,
+   "speechFrames": [
+    343,
+    386
+   ],
+   "text": "एक लड्डू रखा है।",
+   "words": [
+    {
+     "text": "एक",
+     "startMs": 11433,
+     "endMs": 11990
+    },
+    {
+     "text": "लड्डू",
+     "startMs": 11990,
+     "endMs": 12500
+    },
+    {
+     "text": "रखा",
+     "startMs": 12500,
+     "endMs": 12730
+    },
+    {
+     "text": "है।",
+     "startMs": 12730,
+     "endMs": 12866
+    }
+   ],
+   "wordTiming": "whisper"
+  },
+  {
+   "id": "c07",
+   "line_id": "l05",
+   "speaker": "meenu",
+   "startMs": 13466,
+   "endMs": 14266,
+   "startFrame": 404,
+   "endFrame": 428,
+   "speechFrames": [
+    404,
+    426
+   ],
+   "text": "लड्डू?",
+   "words": [
+    {
+     "text": "लड्डू?",
+     "startMs": 13466,
+     "endMs": 14266
+    }
+   ],
+   "wordTiming": "graphemes"
+  },
+  {
+   "id": "c08",
+   "line_id": "l06",
+   "speaker": "bablu",
+   "startMs": 14466,
+   "endMs": 15766,
+   "startFrame": 434,
+   "endFrame": 473,
+   "speechFrames": [
+    434,
+    477
+   ],
+   "text": "मोतीचूर का है, ma—",
+   "words": [
+    {
+     "text": "मोतीचूर",
+     "startMs": 14466,
+     "endMs": 14986
+    },
+    {
+     "text": "का",
+     "startMs": 14986,
+     "endMs": 15116
+    },
+    {
+     "text": "है,",
+     "startMs": 15116,
+     "endMs": 15376
+    },
+    {
+     "text": "ma—",
+     "startMs": 15376,
+     "endMs": 15766
+    }
+   ],
+   "wordTiming": "graphemes"
+  },
+  {
+   "id": "c09",
+   "line_id": "l07",
+   "speaker": "meenu",
+   "startMs": 15833,
+   "endMs": 16633,
+   "startFrame": 475,
+   "endFrame": 499,
+   "speechFrames": [
+    475,
+    493
+   ],
+   "text": "बबलू!",
+   "words": [
+    {
+     "text": "बबलू!",
+     "startMs": 15833,
+     "endMs": 16633
+    }
+   ],
+   "wordTiming": "graphemes"
+  },
+  {
+   "id": "c10",
+   "line_id": "l07",
+   "speaker": "meenu",
+   "startMs": 16700,
+   "endMs": 19100,
+   "startFrame": 501,
+   "endFrame": 573,
+   "speechFrames": [
+    501,
+    573
+   ],
+   "text": "नौ बजे ये cash court में produce करना है!",
+   "words": [
+    {
+     "text": "नौ",
+     "startMs": 16700,
+     "endMs": 16792
+    },
+    {
+     "text": "बजे",
+     "startMs": 16792,
+     "endMs": 16976
+    },
+    {
+     "text": "ये",
+     "startMs": 16976,
+     "endMs": 17069
+    },
+    {
+     "text": "cash",
+     "startMs": 17069,
+     "endMs": 17438
+    },
+    {
+     "text": "court",
+     "startMs": 17438,
+     "endMs": 17900
+    },
+    {
+     "text": "में",
+     "startMs": 17900,
+     "endMs": 17992
+    },
+    {
+     "text": "produce",
+     "startMs": 17992,
+     "endMs": 18638
+    },
+    {
+     "text": "करना",
+     "startMs": 18638,
+     "endMs": 18915
+    },
+    {
+     "text": "है!",
+     "startMs": 18915,
+     "endMs": 19100
+    }
+   ],
+   "wordTiming": "graphemes"
+  },
+  {
+   "id": "c11",
+   "line_id": "l08",
+   "speaker": "meenu",
+   "startMs": 19633,
+   "endMs": 21266,
+   "startFrame": 589,
+   "endFrame": 638,
+   "speechFrames": [
+    589,
+    638
+   ],
+   "text": "Lock टूटा नहीं...",
+   "words": [
+    {
+     "text": "Lock",
+     "startMs": 19633,
+     "endMs": 20076
+    },
+    {
+     "text": "टूटा",
+     "startMs": 20076,
+     "endMs": 20726
+    },
+    {
+     "text": "नहीं...",
+     "startMs": 20726,
+     "endMs": 21266
+    }
+   ],
+   "wordTiming": "whisper"
+  },
+  {
+   "id": "c12",
+   "line_id": "l08",
+   "speaker": "meenu",
+   "startMs": 21766,
+   "endMs": 23200,
+   "startFrame": 653,
+   "endFrame": 696,
+   "speechFrames": [
+    653,
+    696
+   ],
+   "text": "चाबी से खुला है।",
+   "words": [
+    {
+     "text": "चाबी",
+     "startMs": 21766,
+     "endMs": 22066
+    },
+    {
+     "text": "से",
+     "startMs": 22066,
+     "endMs": 22366
+    },
+    {
+     "text": "खुला",
+     "startMs": 22366,
+     "endMs": 22966
+    },
+    {
+     "text": "है।",
+     "startMs": 22966,
+     "endMs": 23200
+    }
+   ],
+   "wordTiming": "whisper"
+  },
+  {
+   "id": "c13",
+   "line_id": "l09",
+   "speaker": "bablu",
+   "startMs": 24166,
+   "endMs": 26300,
+   "startFrame": 725,
+   "endFrame": 789,
+   "speechFrames": [
+    725,
+    789
+   ],
+   "text": "चाबी दो ही हैं, madam।",
+   "words": [
+    {
+     "text": "चाबी",
+     "startMs": 24166,
+     "endMs": 24522
+    },
+    {
+     "text": "दो",
+     "startMs": 24522,
+     "endMs": 24700
+    },
+    {
+     "text": "ही",
+     "startMs": 24700,
+     "endMs": 24877
+    },
+    {
+     "text": "हैं,",
+     "startMs": 24877,
+     "endMs": 25233
+    },
+    {
+     "text": "madam।",
+     "startMs": 25233,
+     "endMs": 26300
+    }
+   ],
+   "wordTiming": "graphemes"
+  },
+  {
+   "id": "c14",
+   "line_id": "l09",
+   "speaker": "bablu",
+   "startMs": 26600,
+   "endMs": 27933,
+   "startFrame": 798,
+   "endFrame": 838,
+   "speechFrames": [
+    798,
+    838
+   ],
+   "text": "एक आपके पास...",
+   "words": [
+    {
+     "text": "एक",
+     "startMs": 26600,
+     "endMs": 26866
+    },
+    {
+     "text": "आपके",
+     "startMs": 26866,
+     "endMs": 27266
+    },
+    {
+     "text": "पास...",
+     "startMs": 27266,
+     "endMs": 27933
+    }
+   ],
+   "wordTiming": "graphemes"
+  },
+  {
+   "id": "c15",
+   "line_id": "l10",
+   "speaker": "meenu",
+   "startMs": 28100,
+   "endMs": 29233,
+   "startFrame": 843,
+   "endFrame": 877,
+   "speechFrames": [
+    843,
+    877
+   ],
+   "text": "और दूसरी...",
+   "words": [
+    {
+     "text": "और",
+     "startMs": 28100,
+     "endMs": 28383
+    },
+    {
+     "text": "दूसरी...",
+     "startMs": 28383,
+     "endMs": 29233
+    }
+   ],
+   "wordTiming": "graphemes"
+  },
+  {
+   "id": "c16",
+   "line_id": "l10",
+   "speaker": "meenu",
+   "startMs": 29666,
+   "endMs": 30966,
+   "startFrame": 890,
+   "endFrame": 929,
+   "speechFrames": [
+    890,
+    929
+   ],
+   "text": "बड़े साहब के पास।",
+   "words": [
+    {
+     "text": "बड़े",
+     "startMs": 29666,
+     "endMs": 29955
+    },
+    {
+     "text": "साहब",
+     "startMs": 29955,
+     "endMs": 30388
+    },
+    {
+     "text": "के",
+     "startMs": 30388,
+     "endMs": 30533
+    },
+    {
+     "text": "पास।",
+     "startMs": 30533,
+     "endMs": 30966
+    }
+   ],
+   "wordTiming": "graphemes"
+  },
+  {
+   "id": "c17",
+   "line_id": "l11",
+   "speaker": "bablu",
+   "startMs": 31166,
+   "endMs": 32600,
+   "startFrame": 935,
+   "endFrame": 978,
+   "speechFrames": [
+    935,
+    980
+   ],
+   "text": "पर वो तो leave पर—",
+   "words": [
+    {
+     "text": "पर",
+     "startMs": 31166,
+     "endMs": 31405
+    },
+    {
+     "text": "वो",
+     "startMs": 31405,
+     "endMs": 31644
+    },
+    {
+     "text": "तो",
+     "startMs": 31644,
+     "endMs": 31883
+    },
+    {
+     "text": "leave",
+     "startMs": 31883,
+     "endMs": 32275
+    },
+    {
+     "text": "पर—",
+     "startMs": 32275,
+     "endMs": 32600
+    }
+   ],
+   "wordTiming": "whisper"
+  },
+  {
+   "id": "c18",
+   "line_id": "l12",
+   "speaker": "meenu",
+   "startMs": 35666,
+   "endMs": 37366,
+   "startFrame": 1070,
+   "endFrame": 1121,
+   "speechFrames": [
+    1070,
+    1121
+   ],
+   "text": "साहब को कैसे पता चला?",
+   "words": [
+    {
+     "text": "साहब",
+     "startMs": 35666,
+     "endMs": 36130
+    },
+    {
+     "text": "को",
+     "startMs": 36130,
+     "endMs": 36284
+    },
+    {
+     "text": "कैसे",
+     "startMs": 36284,
+     "endMs": 36593
+    },
+    {
+     "text": "पता",
+     "startMs": 36593,
+     "endMs": 36903
+    },
+    {
+     "text": "चला?",
+     "startMs": 36903,
+     "endMs": 37366
+    }
+   ],
+   "wordTiming": "graphemes"
+  }
+ ],
+ "checks": {
+  "passed": true,
+  "problems": [],
+  "max_cps": 10.8,
+  "min_cue_ms": 733,
+  "min_gap_frames": 2
+ }
+}
