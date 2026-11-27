@@ -541,6 +541,8 @@ function SubtitleLayer({ store, track, series, lang }: { store: PlaybackStore; t
   const key = useClock(store, (clock) => (track && track.lang === clock.lang ? subtitleFrameKey(track, clock.positionMs) : ""), "");
   const frame = subtitleFrameFromKey(track, key);
   if (!frame) return null;
-  const speaker = frame.showSpeaker ? <span lang={lang === "hi" ? "hi" : undefined}>{speakerName(series, frame.cue.speaker, lang)}</span> : undefined;
-  return <Subtitles speaker={speaker} words={plateWords(frame.cue)} activeWord={frame.activeWord} lang={lang} />;
+  const speaker = frame.showSpeaker ? (
+    <span lang={lang === "hi" ? "hi" : undefined}>{speakerName(series, frame.cue.speaker, lang, frame.cue.speaker_label)}</span>
+  ) : undefined;
+  return <Subtitles speaker={speaker} words={plateWords(frame.cue)} activeWord={frame.activeWord} lang={lang} heardAs={frame.cue.heard_as} />;
 }

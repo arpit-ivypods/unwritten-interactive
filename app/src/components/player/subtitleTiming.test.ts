@@ -157,6 +157,17 @@ describe("speakerChangesAt", () => {
     expect(speakerChangesAt(track, 3)).toBe(true);
   });
 
+  it("follows the track's label markers for phone and off-screen voices", () => {
+    const [first, next, other, last] = track.cues;
+    const marked: SubtitleTrack = { ...track, cues: [
+      first,
+      { ...next, heard_as: "phone", speaker_label: "Meera" },
+      { ...other, heard_as: "off_screen" },
+      { ...last, heard_as: "off_screen", speaker_label: "Meera" },
+    ] };
+    expect(marked.cues.map((_, i) => speakerChangesAt(marked, i))).toEqual([true, true, false, true]);
+  });
+
   it("is false for an index outside the track", () => {
     expect(speakerChangesAt(track, -1)).toBe(false);
     expect(speakerChangesAt(track, 99)).toBe(false);

@@ -58,6 +58,7 @@ export function SeriesCard({ href, poster, posterPosition, title, lang, meta, st
 // ---------------------------------------------------------------------------
 
 export interface TeaserTileProps {
+  poster?: string;
   hook: ReactNode;
   title: ReactNode;
   /** "Live action", "2D animation". */
@@ -67,14 +68,26 @@ export interface TeaserTileProps {
   className?: string;
 }
 
-/** A series announced without episodes or artwork. Not a link, no hover. At most three. */
-export function TeaserTile({ hook, title, visualStyle, lang, chip = "Coming next", className }: TeaserTileProps) {
+/** An announced series with no playable episodes. */
+export function TeaserTile({ poster, hook, title, visualStyle, lang, chip = "Coming next", className }: TeaserTileProps) {
   const l = storyLang(lang);
+  if (poster) {
+    return (
+      <article className={clsx("uw-teaser uw-teaser--poster", className)}>
+        <img className="uw-teaser-art" src={poster} alt="" loading="lazy" />
+        <div className="uw-teaser-copy">
+          <h3 className="uw-teaser-title" lang={l}>{title}</h3>
+          <p className="uw-teaser-meta">{visualStyle}</p>
+          <p className="uw-teaser-description" lang={l}>{hook}</p>
+        </div>
+      </article>
+    );
+  }
   return (
     <div className={clsx("uw-teaser", className)}>
-      <StatusChip kind="plain" style={{ alignSelf: "flex-start" }}>
+      {chip ? <StatusChip kind="plain" style={{ alignSelf: "flex-start" }}>
         {chip}
-      </StatusChip>
+      </StatusChip> : null}
       <div>
         <p className="uw-teaser-hook" lang={l}>
           {hook}

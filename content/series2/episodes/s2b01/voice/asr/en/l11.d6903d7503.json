@@ -1,0 +1,142 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,120"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 120
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,120",
+				"to": "00:00:00,320"
+			},
+			"offsets": {
+				"from": 120,
+				"to": 320
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,320",
+				"to": "00:00:01,060"
+			},
+			"offsets": {
+				"from": 320,
+				"to": 1060
+			},
+			"text": " slip,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,060",
+				"to": "00:00:01,310"
+			},
+			"offsets": {
+				"from": 1060,
+				"to": 1310
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,310",
+				"to": "00:00:01,720"
+			},
+			"offsets": {
+				"from": 1310,
+				"to": 1720
+			},
+			"text": " sack"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,720",
+				"to": "00:00:02,360"
+			},
+			"offsets": {
+				"from": 1720,
+				"to": 2360
+			},
+			"text": " count"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,360",
+				"to": "00:00:02,510"
+			},
+			"offsets": {
+				"from": 2360,
+				"to": 2510
+			},
+			"text": " and"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,510",
+				"to": "00:00:03,410"
+			},
+			"offsets": {
+				"from": 2510,
+				"to": 3410
+			},
+			"text": " Bhaiyaji's"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,410",
+				"to": "00:00:03,670"
+			},
+			"offsets": {
+				"from": 3410,
+				"to": 3670
+			},
+			"text": " own"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,670",
+				"to": "00:00:04,160"
+			},
+			"offsets": {
+				"from": 3670,
+				"to": 4160
+			},
+			"text": " voice."
+		}
+	]
+}

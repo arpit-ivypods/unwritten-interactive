@@ -1,6 +1,21 @@
 # Morning report — Unwritten POC build
 
-_Last updated: 26 Nov 2026, ~21:30 IST (session 2). Updated as the build goes._
+_Last updated: 27 Nov 2026 (Codex session). Updated as the build goes._
+
+## Codex session (27 Nov)
+
+- **Scope (D-028):** only s2a01 and s2b01 remain in production. The seven previously screened episodes are installed. Claude accepted all 38 clarity re-voice takes for the two Series 2 branches.
+- **Local app:** restarted `pnpm dev` on `127.0.0.1:3210` and confirmed HTTP 200. Cloudflare work is parked on its own branch.
+- **Storyboards complete:** s2a01 has 34 planned shots and s2b01 has 35. Each calls for 28 new stills with second framings covering the rest. A separate S9 pass confirmed all dialogue lines and supers are mapped in both languages. Shot durations are projections from the accepted takes until assembly.
+- **Uniform (s2b01)** passed independent screening at 8/10 in Hindi and English and is installed locally. It uses 28 approved source stills across 35 shots with seven retakes. The 128.23 s and 127.67 s masters and 720p previews are in the episode's render folder. The screening report records the remaining ear checks and brief writing-hand caption overlap.
+- **Lockup (s2a01)** passed independent screening at 8/10 in both languages and is installed locally. It uses 28 approved source stills across 34 shots with four retakes. The 130.93 s and 129.83 s masters and 720p previews are in the episode's render folder. English l10 over the truck is on the ear list.
+- **Viewer flow** ends each branch after episode 1 in both series. All eight old watch URLs return 404, while the source assets are kept. Both voting days and the second-ending ballot transition passed independent code review and the phone and desktop tests. Unit tests 371/371, typecheck passed, production E2E 142/142.
+- **Toolsmith work** is installed in all nine episodes. The player shows italic phone and off-screen cues with localized first-speaker labels, and Series 1 has plot text on nine phone or clock shots. The builder supports per-language line splits and reads cue sheets containing prose gains. Both proof scenes reproduced byte-identical clean masters. The known English s1b01 reading-speed exception and review-only s1a01 s23 overlap are recorded in D-031.
+- **Final app checks** passed with 375 unit tests, a clean typecheck and production build, 142 production browser tests, and zero media validation warnings. Direct Chromium checks verified subtitle styling and localized roles on phone and desktop in both languages. The local dev server was restarted after media installation.
+- **Concept note** reflects all nine episodes, their branch endpoints and measured production costs. The refreshed file passed offline checks at eight viewport sizes, including the story lab, voting, the simulator and PNG export. The v1 file is preserved.
+- **Tonight and Series follow-up (D-033)** adds both Live Now covers, all three Coming Next posters and nine cast portraits. The Day badge sits above the cards, and the ending cards show each branch's episode and access state. Five viewport checks, 375 unit tests, typecheck, media validation and 142 production browser tests passed.
+- **Remaining work** is the four optional glimpse masters and any later owner ear review or publication. The excluded episodes remain outside the POC scope. See the final section of `docs/handoff.md` for review details and commits.
+- **App baseline:** 362 unit tests passed before the branch-flow change.
 
 
 ## Session 2 summary (26 Nov evening) — read this first

@@ -1,0 +1,142 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,050"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 50
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,050",
+				"to": "00:00:01,020"
+			},
+			"offsets": {
+				"from": 50,
+				"to": 1020
+			},
+			"text": " कमप्लेंट"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,020",
+				"to": "00:00:01,400"
+			},
+			"offsets": {
+				"from": 1020,
+				"to": 1400
+			},
+			"text": " वही"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,400",
+				"to": "00:00:02,050"
+			},
+			"offsets": {
+				"from": 1400,
+				"to": 2050
+			},
+			"text": " च़कर"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,050",
+				"to": "00:00:02,180"
+			},
+			"offsets": {
+				"from": 2050,
+				"to": 2180
+			},
+			"text": " एप"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,180",
+				"to": "00:00:02,360"
+			},
+			"offsets": {
+				"from": 2180,
+				"to": 2360
+			},
+			"text": " एप"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,360",
+				"to": "00:00:02,630"
+			},
+			"offsets": {
+				"from": 2360,
+				"to": 2630
+			},
+			"text": " यार"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,630",
+				"to": "00:00:02,990"
+			},
+			"offsets": {
+				"from": 2630,
+				"to": 2990
+			},
+			"text": " बनती"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,990",
+				"to": "00:00:03,240"
+			},
+			"offsets": {
+				"from": 2990,
+				"to": 3240
+			},
+			"text": " है"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,240",
+				"to": "00:00:03,320"
+			},
+			"offsets": {
+				"from": 3240,
+				"to": 3320
+			},
+			"text": " मैंदम"
+		}
+	]
+}

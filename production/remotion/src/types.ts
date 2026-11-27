@@ -45,6 +45,21 @@ export type Layer = {
 export type TransitionIn = {type: 'cut' | 'crossfade' | 'fade'; frames?: number};
 export type TransitionOut = {type: 'cut' | 'fade'; frames?: number};
 
+export type PlotText = {
+	text: string;
+	lang?: 'hi' | 'en';
+	/** Centre of the text block in 0..1 coordinates. */
+	x: number;
+	y: number;
+	fontSize: number;
+	/** Follow the base image camera by default. */
+	space?: 'image' | 'screen';
+	/** Degrees clockwise about the centre of the text. */
+	rotation?: number;
+	color?: string;
+	plate?: boolean;
+};
+
 export type Shot = {
 	id: string;
 	type?: 'image' | 'slate';
@@ -52,6 +67,7 @@ export type Shot = {
 	image?: string;
 	/** Parallax layers, back to front. Used instead of `image`. */
 	layers?: Layer[];
+	plotText?: PlotText[];
 	start: number;
 	duration: number;
 	move?: Move;

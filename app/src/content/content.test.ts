@@ -26,22 +26,27 @@ describe("the bundled content", () => {
     expect(getSeries("nope")).toBeUndefined();
   });
 
-  it("series 1: 2 shared + 3 + 3 episodes, choice after episode 2", () => {
+  it("series 1: 2 shared episodes and one episode per branch", () => {
     const s = getSeries("series1")!;
     expect(s.branchAfterEpisode).toBe(2);
     expect(sharedEpisodes(s).map((e) => e.id)).toEqual(["s1e01", "s1e02"]);
-    expect(branchEpisodes(s, "A").map((e) => e.id)).toEqual(["s1a01", "s1a02", "s1a03"]);
-    expect(branchEpisodes(s, "B").map((e) => e.id)).toEqual(["s1b01", "s1b02", "s1b03"]);
-    expect(s.episodes).toHaveLength(8);
+    expect(branchEpisodes(s, "A").map((e) => e.id)).toEqual(["s1a01"]);
+    expect(branchEpisodes(s, "B").map((e) => e.id)).toEqual(["s1b01"]);
+    expect(s.episodes).toHaveLength(4);
   });
 
-  it("series 2: 3 shared + 3 + 3 episodes, choice after episode 3", () => {
+  it("series 2: 3 shared episodes and one episode per branch", () => {
     const s = getSeries("series2")!;
     expect(s.branchAfterEpisode).toBe(3);
     expect(sharedEpisodes(s).map((e) => e.id)).toEqual(["s2e01", "s2e02", "s2e03"]);
-    expect(branchEpisodes(s, "A").map((e) => e.id)).toEqual(["s2a01", "s2a02", "s2a03"]);
-    expect(branchEpisodes(s, "B").map((e) => e.id)).toEqual(["s2b01", "s2b02", "s2b03"]);
-    expect(s.episodes).toHaveLength(9);
+    expect(branchEpisodes(s, "A").map((e) => e.id)).toEqual(["s2a01"]);
+    expect(branchEpisodes(s, "B").map((e) => e.id)).toEqual(["s2b01"]);
+    expect(s.episodes).toHaveLength(5);
+  });
+
+  it("lists only finished episodes", () => {
+    const placeholders = allSeries.flatMap((s) => s.episodes.filter((e) => e.placeholder).map((e) => e.id));
+    expect(placeholders).toEqual([]);
   });
 
   it("every file a manifest names is on disk", () => {

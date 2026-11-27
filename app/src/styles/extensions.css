@@ -31,6 +31,45 @@
 .uw-sub-line:lang(hi) {
   line-height: 1.45;
 }
+.uw-sub-line[data-heard-as] {
+  font-style: italic;
+}
+
+.uw-teaser--poster {
+  height: 100%;
+  justify-content: flex-start;
+  gap: 0;
+  aspect-ratio: auto;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--glass-border);
+  background: var(--glass-strong);
+}
+.uw-teaser-art {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+.uw-teaser-copy {
+  display: grid;
+  gap: var(--space-1);
+  padding: var(--space-3) var(--space-4) var(--space-4);
+}
+.uw-teaser-title,
+.uw-teaser-copy p {
+  margin: 0;
+}
+.uw-teaser-title {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+.uw-teaser-description {
+  padding-top: var(--space-1);
+  font-size: 14px;
+  line-height: 1.45;
+}
 
 /* --- Hero line: display-hero on desktop, display-title on phones ---------- */
 .uw-hero {

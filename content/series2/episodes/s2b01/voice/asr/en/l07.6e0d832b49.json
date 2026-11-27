@@ -1,0 +1,153 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,110"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 110
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,110",
+				"to": "00:00:00,480"
+			},
+			"offsets": {
+				"from": 110,
+				"to": 480
+			},
+			"text": " Don't"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,480",
+				"to": "00:00:00,770"
+			},
+			"offsets": {
+				"from": 480,
+				"to": 770
+			},
+			"text": " take"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,770",
+				"to": "00:00:01,030"
+			},
+			"offsets": {
+				"from": 770,
+				"to": 1030
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,030",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 1030,
+				"to": 2000
+			},
+			"text": " revolver"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,000",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 2000,
+				"to": 2000
+			},
+			"text": " out."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,000",
+				"to": "00:00:02,810"
+			},
+			"offsets": {
+				"from": 2000,
+				"to": 2810
+			},
+			"text": " Bhriyaji"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,810",
+				"to": "00:00:03,120"
+			},
+			"offsets": {
+				"from": 2810,
+				"to": 3120
+			},
+			"text": " has"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,120",
+				"to": "00:00:03,220"
+			},
+			"offsets": {
+				"from": 3120,
+				"to": 3220
+			},
+			"text": " a"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,220",
+				"to": "00:00:03,600"
+			},
+			"offsets": {
+				"from": 3220,
+				"to": 3600
+			},
+			"text": " real"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,600",
+				"to": "00:00:04,000"
+			},
+			"offsets": {
+				"from": 3600,
+				"to": 4000
+			},
+			"text": " one."
+		}
+	]
+}

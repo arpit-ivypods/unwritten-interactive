@@ -1,0 +1,665 @@
+{
+  "about": "s2b01 per-episode edit. Approved frame rows, final accepted voice in both languages, S7 clarity mapping and the existing sound library.",
+  "render_name": "s2b01",
+  "max_seconds": 150,
+  "layout": {
+    "cut_on_word": [
+      {
+        "line": "l28",
+        "shot": "s06",
+        "word": {
+          "hi": "Inspector",
+          "en": "as"
+        }
+      },
+      {
+        "line": "l24",
+        "shot": "s31",
+        "word": {
+          "hi": "आप",
+          "en": "it's"
+        }
+      }
+    ],
+    "lead": {
+      "s04": 1,
+      "s23": 5
+    },
+    "tail": {
+      "s03": 1,
+      "s28": 24,
+      "s31": 30,
+      "s33": 0,
+      "s35": 45
+    },
+    "silent_frames": {
+      "s01": 30,
+      "s09": 30,
+      "s13": 45,
+      "s18": 30,
+      "s20": 90,
+      "s22": 75,
+      "s34": 30
+    }
+  },
+  "voice_fx": {
+    "handset_on_wool": {
+      "chain": "highpass=f=300,lowpass=f=3400,aecho=0.85:0.72:35:0.13"
+    }
+  },
+  "lines": {
+    "l15": {
+      "fx": "handset_on_wool"
+    },
+    "l30": {
+      "fx": "handset_on_wool"
+    },
+    "l16": {
+      "fx": "handset_on_wool"
+    },
+    "l17": {
+      "fx": "handset_on_wool"
+    },
+    "l18": {
+      "fx": "handset_on_wool"
+    },
+    "l19": {
+      "fx": "handset_on_wool"
+    },
+    "l20": {
+      "fx": "handset_on_wool"
+    },
+    "l21": {
+      "fx": "handset_on_wool"
+    },
+    "l23": {
+      "fx": "handset_on_wool"
+    },
+    "l32": {
+      "fx": "handset_on_wool"
+    },
+    "l24": {
+      "fx": "handset_on_wool"
+    },
+    "l26": {
+      "fx": "handset_on_wool"
+    }
+  },
+  "supers": {
+    "items": {
+      "su_b1": {
+        "at": "s22.start",
+        "until": "s22.end"
+      }
+    }
+  },
+  "shots": {
+    "s04": {
+      "layers": [
+        {
+          "src": "frames/s04.png",
+          "depth": 1
+        },
+        {
+          "src": "overlays/s04-ov_fake_board.{lang}.png",
+          "depth": 1
+        }
+      ]
+    },
+    "s16": {
+      "layers": [
+        {
+          "src": "frames/s16.png",
+          "depth": 1
+        },
+        {
+          "src": "overlays/s16-ov_fake_board.{lang}.png",
+          "depth": 1
+        }
+      ]
+    },
+    "s24": {
+      "move": {
+        "preset": "custom",
+        "easing": "ease-in-out",
+        "from": {
+          "scale": 1.11,
+          "x": 0,
+          "y": -0.9
+        },
+        "to": {
+          "scale": 1.16,
+          "x": 0,
+          "y": -0.9
+        }
+      }
+    },
+    "s28": {
+      "move": {
+        "preset": "custom",
+        "easing": "ease-in-out",
+        "from": {
+          "scale": 1.16,
+          "x": 0,
+          "y": -0.9
+        },
+        "to": {
+          "scale": 1.21,
+          "x": 0,
+          "y": -0.9
+        }
+      }
+    },
+    "s34": {
+      "move": {
+        "preset": "custom",
+        "easing": "ease-in-out",
+        "from": {
+          "scale": 1.12,
+          "x": 0,
+          "y": 0.72
+        },
+        "to": {
+          "scale": 1.12,
+          "x": 0,
+          "y": 0.72
+        }
+      }
+    }
+  },
+  "ducking": {
+    "amountDb": -8
+  },
+  "sound": [
+    {
+      "cue": "amb_talkies_lobby",
+      "kind": "bed",
+      "from": "start",
+      "to": "s18.start",
+      "gain_db": -7,
+      "id": "#lobby",
+      "window_s": [
+        8,
+        29
+      ],
+      "loop_xf": 15,
+      "fade_in": 2,
+      "fade_out": 3
+    },
+    {
+      "cue": "lyr_night_crickets",
+      "kind": "bed",
+      "from": "start",
+      "to": "s18.start",
+      "gain_db": -8,
+      "id": "#lobby",
+      "loop": true,
+      "fade_in": 2,
+      "fade_out": 6,
+      "filter": {
+        "highpass_hz": 300
+      }
+    },
+    {
+      "cue": "sfx_wall_clock_tick",
+      "kind": "bed",
+      "from": "start",
+      "to": "s18.start",
+      "gain_db": -7,
+      "id": "#lobby",
+      "loop": true,
+      "fade_in": 4,
+      "fade_out": 4
+    },
+    {
+      "cue": "amb_crossing_stall",
+      "kind": "bed",
+      "from": "s18.start",
+      "to": "s21.start",
+      "gain_db": -5,
+      "id": "#approach",
+      "loop": true,
+      "fade_in": 5,
+      "fade_out": 5,
+      "filter": {
+        "lowpass_hz": 1900
+      }
+    },
+    {
+      "cue": "amb_crossing_stall",
+      "kind": "bed",
+      "from": "s21.start - 5f",
+      "to": "end",
+      "gain_db": -9,
+      "id": "#listen",
+      "loop": true,
+      "fade_in": 5,
+      "fade_out": 1,
+      "filter": {
+        "lowpass_hz": 1900
+      },
+      "segments": [
+        {
+          "from": "l15.speech_start - 3f",
+          "to": "l30.speech_end + 2f",
+          "db": -3
+        },
+        {
+          "from": "l16.speech_start - 3f",
+          "to": "l16.speech_end + 2f",
+          "db": -4
+        },
+        {
+          "from": "l17.speech_start - 3f",
+          "to": "s30.start",
+          "db": -3
+        },
+        {
+          "from": "l24.speech_start",
+          "to": "s32.end",
+          "db": -7
+        },
+        {
+          "from": "s33.start",
+          "to": "l26.speech_end",
+          "db": -5
+        },
+        {
+          "from": "l27.speech_start - 3f",
+          "to": "end",
+          "db": -8
+        }
+      ]
+    },
+    {
+      "cue": "lyr_night_crickets",
+      "kind": "bed",
+      "from": "s18.start",
+      "to": "s21.start",
+      "gain_db": -1,
+      "id": "#approach",
+      "loop": true,
+      "fade_in": 6,
+      "fade_out": 5
+    },
+    {
+      "cue": "lyr_night_crickets",
+      "kind": "bed",
+      "from": "s21.start - 5f",
+      "to": "s30.start",
+      "gain_db": -8,
+      "id": "#listen",
+      "loop": true,
+      "fade_in": 5,
+      "fade_out": 4,
+      "segments": [
+        {
+          "from": "l15.speech_start",
+          "to": "s30.start",
+          "db": -3
+        }
+      ]
+    },
+    {
+      "cue": "s2b01_sfx_palm_on_wrists",
+      "at": "s01.start + 3f",
+      "gain_db": -5,
+      "len": "0.4s",
+      "filter": {
+        "lowpass_hz": 3200
+      },
+      "fade_out": 3
+    },
+    {
+      "cue": "sfx_cuff_chain_clink",
+      "at": "s02.start + 7f",
+      "gain_db": -10,
+      "len": "0.19s",
+      "fade_out": 1
+    },
+    {
+      "cue": "sfx_pouch_flap_snap",
+      "at": "s02.start + 16f",
+      "gain_db": -5,
+      "id": "#pouch",
+      "trim": "0.24s",
+      "len": "0.24s",
+      "fade_out": 2
+    },
+    {
+      "cue": "s2b01_sfx_uniform_dressing",
+      "at": "s05.start + 2f",
+      "gain_db": -5,
+      "id": "#belt",
+      "trim": "0s",
+      "len": "0.9s",
+      "fade_out": 3
+    },
+    {
+      "cue": "s2b01_sfx_uniform_dressing",
+      "at": "s06.start + 2f",
+      "gain_db": -14,
+      "id": "#shoulders",
+      "trim": "1.2s",
+      "until": "s07.start - 2f",
+      "len": "1.75s",
+      "fade_out": 2
+    },
+    {
+      "cue": "s2b01_sfx_uniform_dressing",
+      "at": "s07.start + 1f",
+      "gain_db": -3,
+      "id": "#cuff",
+      "trim": "3.1s",
+      "len": "0.67s",
+      "fade_out": 3
+    },
+    {
+      "cue": "s2b01_sfx_pin_and_button",
+      "at": "s09.start + 6f",
+      "gain_db": -10,
+      "id": "#pin",
+      "len": "0.18s",
+      "fade_out": 1
+    },
+    {
+      "cue": "s2b01_sfx_pin_and_button",
+      "at": "s10.start + 7f",
+      "gain_db": -8,
+      "id": "#button",
+      "trim": "1.56s",
+      "len": "0.37s",
+      "fade_out": 2
+    },
+    {
+      "cue": "s2b01_sfx_holster_wood_slide",
+      "at": "s11.start",
+      "gain_db": -7,
+      "trim": "0.66s",
+      "until": "s11.start + 20f",
+      "fade_in": 2,
+      "fade_out": 2
+    },
+    {
+      "cue": "sfx_pouch_flap_snap",
+      "at": "s11.start + 19f",
+      "gain_db": -8,
+      "id": "#holster",
+      "trim": "0.24s",
+      "until": "l07.speech_start - 1f",
+      "filter": "asetrate=41624,aresample=44100,lowpass=f=4400",
+      "fade_out": 1
+    },
+    {
+      "cue": "s2b01_sfx_phone_taps_record_beep",
+      "at": "s13.start",
+      "gain_db": 5,
+      "id": "#tap1",
+      "trim": "0.07s",
+      "len": "0.14s",
+      "fade_out": 2
+    },
+    {
+      "cue": "s2b01_sfx_phone_taps_record_beep",
+      "at": "s13.start + 7f",
+      "gain_db": 5,
+      "id": "#tap2",
+      "trim": "0.34s",
+      "len": "0.14s",
+      "fade_out": 2
+    },
+    {
+      "cue": "sfx_keypad_ring",
+      "at": "s13.start + 13f",
+      "gain_db": -13,
+      "len": "0.6s",
+      "fade_in": 1,
+      "fade_out": 1
+    },
+    {
+      "cue": "sfx_keypad_key_click",
+      "at": "s13.start + 31f",
+      "gain_db": -3,
+      "trim": "0.24s",
+      "len": "0.16s",
+      "fade_out": 1
+    },
+    {
+      "cue": "s2b01_sfx_phone_taps_record_beep",
+      "at": "s13.start + 36f",
+      "gain_db": 7,
+      "id": "#beep",
+      "trim": "0.75s",
+      "len": "0.28s",
+      "fade_out": 2
+    },
+    {
+      "cue": "s2b01_sfx_phone_into_pocket",
+      "at": "s15.start + 3f",
+      "gain_db": 15,
+      "trim": "0.15s",
+      "len": "1.14s",
+      "fade_in": 3,
+      "fade_out": 4
+    },
+    {
+      "cue": "mus_tension_note",
+      "kind": "bed",
+      "from": "s15.start",
+      "to": "s21.start",
+      "gain_db": -12,
+      "id": "#wiring",
+      "window_s": [
+        2,
+        14.8
+      ],
+      "loop_xf": 16,
+      "fade_in": 36,
+      "fade_out": 55,
+      "duck": true
+    },
+    {
+      "cue": "sfx_far_dog",
+      "at": "s18.start + 3f",
+      "gain_db": -13,
+      "len": "0.76s",
+      "fade_out": 5,
+      "filter": {
+        "lowpass_hz": 2400
+      }
+    },
+    {
+      "cue": "sfx_steps_gravel",
+      "at": "s20.start + 2f",
+      "gain_db": -7,
+      "id": "#walk",
+      "trim": "0.12s",
+      "until": "s20.end",
+      "fade_in": 2,
+      "fade_out": 21
+    },
+    {
+      "cue": "lyr_phone_line_hiss",
+      "kind": "bed",
+      "from": "s21.start",
+      "to": "l26.speech_end",
+      "gain_db": 4,
+      "id": "#line",
+      "loop": true,
+      "fade_in": 4,
+      "fade_out": 1,
+      "filter": "highpass=f=300,lowpass=f=3600",
+      "segments": [
+        {
+          "from": "s30.start",
+          "to": "l24.speech_start",
+          "db": -4
+        }
+      ]
+    },
+    {
+      "cue": "sfx_steps_gravel",
+      "at": "s21.start + 2f",
+      "gain_db": -4,
+      "id": "#speaker",
+      "trim": "1.5s",
+      "until": "l15.speech_start - 2f",
+      "filter": "highpass=f=300,lowpass=f=3400,aecho=0.85:0.72:35:0.13",
+      "fade_in": 2,
+      "fade_out": 4
+    },
+    {
+      "cue": "sfx_knitting_needles",
+      "kind": "bed",
+      "from": "s21.start",
+      "to": "s26.start",
+      "gain_db": 0,
+      "id": "#steady",
+      "loop": true,
+      "fade_in": 5,
+      "fade_out": 4,
+      "segments": [
+        {
+          "from": "s22.start",
+          "to": "s23.end",
+          "db": -5
+        }
+      ]
+    },
+    {
+      "cue": "sfx_shutter_rattle_slam",
+      "at": "s22.start",
+      "gain_db": -11,
+      "trim": "0.95s",
+      "len": "1.2s",
+      "filter": {
+        "lowpass_hz": 2250
+      },
+      "fade_in": 6,
+      "fade_out": 6
+    },
+    {
+      "cue": "sfx_door_shut_bolt",
+      "at": "s22.start + 35f",
+      "gain_db": -11,
+      "id": "#shutter-slam",
+      "trim": "0.37s",
+      "until": "s22.start + 44f",
+      "filter": "lowpass=f=1750,aecho=0.85:0.65:45:0.15",
+      "fade_out": 3
+    },
+    {
+      "cue": "sfx_knitting_needles",
+      "kind": "bed",
+      "from": "s26.start",
+      "to": "s30.start",
+      "gain_db": -4,
+      "id": "#slowing",
+      "window_s": [
+        0,
+        9
+      ],
+      "filter": "atempo=0.75",
+      "loop": true,
+      "fade_in": 5,
+      "fade_out": 4
+    },
+    {
+      "cue": "sfx_knitting_needles",
+      "at": "s30.start + 5f",
+      "gain_db": -2,
+      "id": "#last",
+      "trim": "3s",
+      "until": "l24.speech_start",
+      "len": "0.8s",
+      "fade_in": 1,
+      "fade_out": 1
+    },
+    {
+      "cue": "sfx_paper_slip",
+      "at": "s28.end - 20f",
+      "gain_db": -3,
+      "trim": "0.07s",
+      "until": "s28.end - 1f",
+      "filter": "highpass=f=300,lowpass=f=3400,aecho=0.85:0.72:35:0.13",
+      "fade_out": 4
+    },
+    {
+      "cue": "mus_tension_note",
+      "at": "l24.speech_start",
+      "gain_db": -14,
+      "id": "#laugh",
+      "trim": "9.4s",
+      "until": "l31.speech_end",
+      "fade_in": 22,
+      "fade_out": 6,
+      "duck": true,
+      "segments": [
+        {
+          "from": "l25.speech_start",
+          "db": -8
+        }
+      ]
+    },
+    {
+      "cue": "s2b01_sfx_pocket_mic_rustle",
+      "at": "l24.speech_end + 2f",
+      "gain_db": 26,
+      "trim": "0.07s",
+      "until": "s31.end - 2f",
+      "len": "0.76s",
+      "filter": "highpass=f=300,lowpass=f=3400,aecho=0.85:0.72:35:0.13",
+      "fade_in": 2,
+      "fade_out": 5
+    },
+    {
+      "cue": "sfx_dead_line_tone",
+      "kind": "bed",
+      "from": "l26.speech_end",
+      "to": "end",
+      "gain_db": -23,
+      "id": "#dead",
+      "loop": true,
+      "filter": "highpass=f=300,lowpass=f=3600",
+      "fade_in": 0,
+      "fade_out": 1,
+      "segments": [
+        {
+          "from": "s34.end",
+          "to": "l27.speech_end",
+          "db": -19
+        },
+        {
+          "from": "l27.speech_end",
+          "to": "end",
+          "db": -10
+        }
+      ]
+    },
+    {
+      "cue": "mus_tension_note",
+      "at": "s34.start",
+      "gain_db": -21,
+      "id": "#dead",
+      "trim": "17.5s",
+      "until": "end",
+      "fade_in": 10,
+      "fade_out": 1,
+      "duck": true,
+      "segments": [
+        {
+          "from": "l27.speech_start",
+          "db": -7
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "The s24/s28 frame moves bias toward the lap to keep the pen action above its unshifted position. s29 is the dedicated clean tip insert. The s34 upward crop emphasizes the medal pocket and the two eyelines.",
+    "The first take of each sound effect is already present. Optional keypad vibration is omitted so the two taps, one ring, key click, and record beep fit inside 45 frames.",
+    "Existing shutter recording was measured without a slam. Layer the heavy transient from sfx_door_shut_bolt under the low-passed rattle at distance. Every part ends by frame 44 of the 75-frame shutter image; following dialogue is at least one second later.",
+    "Phone treatment follows the final scripts’ twelve heard_as=phone rows, including l30 and l32. Hiss and handset voices end with l26 and a level-controlled dead tone. Use no train sound or cue suggesting a working stall.",
+    "Two quiet tension entries begin when the smartphone goes into Nirala’s pocket and when the laugh begins. The second ducks at l25, falls away before l26 and resumes low under the dead-line tone. Cuts end with a hard drop and black.",
+    "Cue placement and gain use the manifest envelope, accepted takes, and subtitle readability checks. Listening and full screening belong to the separate reviewer."
+  ]
+}

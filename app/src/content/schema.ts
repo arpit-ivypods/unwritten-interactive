@@ -162,7 +162,7 @@ export interface Series {
 // Catalog (home screen)
 // ---------------------------------------------------------------------------
 
-/** A "coming next" tile: announced, no episodes, no artwork, not a link. */
+/** An announced series with optional poster art and no episodes. */
 export interface Teaser {
   id: string;
   title: Localized;
@@ -170,6 +170,7 @@ export interface Teaser {
   hook: Localized;
   /** Visual style label for the tile. Interface text, so English. */
   visualStyle: string;
+  poster?: string;
   placeholder: boolean;
 }
 
@@ -192,6 +193,9 @@ export interface SubtitleWord {
   endMs: number;
 }
 
+const SUBTITLE_VOICE_MODES = ["off_screen", "phone"] as const;
+export type SubtitleVoiceMode = (typeof SUBTITLE_VOICE_MODES)[number];
+
 export interface SubtitleCue {
   /** Unique in the track, e.g. "c001". */
   id: string;
@@ -199,6 +203,9 @@ export interface SubtitleCue {
   line_id: string;
   /** Cast member id of the speaker. The app shows that cast member's name. */
   speaker: string;
+  heard_as?: SubtitleVoiceMode;
+  /** First marked cue for this speaker in the scene; text is the fallback when the cast has no display name. */
+  speaker_label?: string;
   startMs: number;
   endMs: number;
   /** Exactly what is spoken, without emotion tags. Two lines of about 32 characters at most. */
@@ -320,6 +327,7 @@ const teaserSchema = z.object({
   title: localized(text),
   hook: localized(text),
   visualStyle: text,
+  poster: imagePath.optional(),
   placeholder: z.boolean(),
 });
 
@@ -338,6 +346,8 @@ const subtitleCueSchema = z
     id: text,
     line_id: text,
     speaker: text,
+    heard_as: z.enum(SUBTITLE_VOICE_MODES).optional(),
+    speaker_label: text.optional(),
     startMs: ms,
     endMs: ms,
     text,

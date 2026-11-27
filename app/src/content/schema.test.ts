@@ -154,6 +154,18 @@ describe("validateSubtitleTrack", () => {
     expect(validateSubtitleTrack({ lang: "en", cues: [] }).ok).toBe(true);
   });
 
+  it("retains the voice mode and first speaker label when parsing a subtitle", () => {
+    const marked = withCue((t) => {
+      t.cues[0].heard_as = "phone";
+      t.cues[0].speaker_label = "डीएसपी";
+    });
+    expect(validateSubtitleTrack(marked)).toMatchObject({
+      ok: true,
+      value: { cues: [{ heard_as: "phone", speaker_label: "डीएसपी" }, {}] },
+    });
+    expect(validateSubtitleTrack({ ...marked, cues: [{ ...marked.cues[0], heard_as: "unknown" }] }).ok).toBe(false);
+  });
+
   it("rejects an unknown language or a missing field", () => {
     expect(validateSubtitleTrack({ lang: "hinglish", cues: [] }).ok).toBe(false);
     expect(validateSubtitleTrack(withCue((t) => delete (t.cues[0] as Partial<SubtitleTrack["cues"][0]>).line_id)).ok).toBe(false);

@@ -11,7 +11,8 @@
  * - A cue is on screen from its startMs up to, not including, its endMs.
  * - The highlight is on whole words. Between two words it stays on the word
  *   just spoken; before the first word of a cue nothing is highlighted.
- * - The speaker tag is shown when the speaker changes: on the first cue of
+ * - Marked phone and off-screen cues show the label when the track supplies one.
+ *   Otherwise the speaker tag is shown when the speaker changes: on the first cue of
  *   the track and on every cue whose speaker differs from the cue before it.
  *   A long line split into several cues shows the tag once.
  * - A cue's text may hold the subtitler's line break ("\n") between two
@@ -55,10 +56,11 @@ export function activeWordAt(cue: SubtitleCue, positionMs: number): number {
   return index;
 }
 
-/** True when the cue at `cueIndex` is spoken by someone other than the cue before it (or is the first cue). */
+/** Whether this cue needs a label, as marked for off-screen voices or inferred for other lines. */
 export function speakerChangesAt(track: SubtitleTrack, cueIndex: number): boolean {
   const cue = track.cues[cueIndex];
   if (!cue) return false;
+  if (cue.heard_as) return cue.speaker_label !== undefined;
   const previous = track.cues[cueIndex - 1];
   return !previous || previous.speaker !== cue.speaker;
 }

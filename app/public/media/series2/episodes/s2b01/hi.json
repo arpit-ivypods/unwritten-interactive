@@ -1,216 +1,2174 @@
 {
   "lang": "hi",
-  "placeholder": true,
+  "fps": 30,
+  "method": "D-014 (b): measured speech + silencedetect pauses; production/scripts/episode/build_subs.py",
+  "cuts": [
+    30,
+    127,
+    291,
+    425,
+    479,
+    544,
+    658,
+    750,
+    780,
+    859,
+    1005,
+    1102,
+    1147,
+    1232,
+    1353,
+    1633,
+    1817,
+    1847,
+    1906,
+    1996,
+    2200,
+    2275,
+    2361,
+    2493,
+    2600,
+    2679,
+    2816,
+    3037,
+    3277,
+    3421,
+    3509,
+    3619,
+    3696,
+    3726
+  ],
   "cues": [
     {
       "id": "c001",
       "line_id": "l01",
       "speaker": "nandini",
-      "startMs": 300,
-      "endMs": 3700,
-      "text": "यह s2b01 का placeholder है।",
+      "startMs": 1150,
+      "endMs": 2750,
+      "startFrame": 35,
+      "endFrame": 83,
+      "speechFrames": [
+        35,
+        72
+      ],
+      "wordTiming": "asr",
+      "text": "एक रात और।",
       "words": [
         {
-          "text": "यह",
-          "startMs": 300,
-          "endMs": 664
+          "text": "एक",
+          "startMs": 1150,
+          "endMs": 1463
         },
         {
-          "text": "s2b01",
-          "startMs": 664,
-          "endMs": 1393
+          "text": "रात",
+          "startMs": 1463,
+          "endMs": 2123
         },
         {
-          "text": "का",
-          "startMs": 1393,
-          "endMs": 1757
-        },
-        {
-          "text": "placeholder",
-          "startMs": 1757,
-          "endMs": 3214
-        },
-        {
-          "text": "है।",
-          "startMs": 3214,
-          "endMs": 3700
+          "text": "और।",
+          "startMs": 2123,
+          "endMs": 2750
         }
+      ],
+      "notes": [
+        "held 72->83 over the pause"
       ]
     },
     {
       "id": "c002",
-      "line_id": "l02",
-      "speaker": "nirala",
-      "startMs": 4300,
-      "endMs": 7700,
-      "text": "असली episode अभी studio में बन रहा है।",
+      "line_id": "l01",
+      "speaker": "nandini",
+      "startMs": 2817,
+      "endMs": 4017,
+      "startFrame": 85,
+      "endFrame": 121,
+      "speechFrames": [
+        85,
+        121
+      ],
+      "wordTiming": "graphemes",
+      "text": "मेरी ज़िम्मेदारी पर।",
       "words": [
         {
-          "text": "असली",
-          "startMs": 4300,
-          "endMs": 4736
+          "text": "मेरी",
+          "startMs": 2817,
+          "endMs": 3113
         },
         {
-          "text": "episode",
-          "startMs": 4736,
-          "endMs": 5433
+          "text": "ज़िम्मेदारी",
+          "startMs": 3113,
+          "endMs": 3628
         },
         {
-          "text": "अभी",
-          "startMs": 5433,
-          "endMs": 5782
-        },
-        {
-          "text": "studio",
-          "startMs": 5782,
-          "endMs": 6392
-        },
-        {
-          "text": "में",
-          "startMs": 6392,
-          "endMs": 6741
-        },
-        {
-          "text": "बन",
-          "startMs": 6741,
-          "endMs": 7003
-        },
-        {
-          "text": "रहा",
-          "startMs": 7003,
-          "endMs": 7351
-        },
-        {
-          "text": "है।",
-          "startMs": 7351,
-          "endMs": 7700
+          "text": "पर।",
+          "startMs": 3628,
+          "endMs": 4017
         }
       ]
     },
     {
       "id": "c003",
-      "line_id": "l03",
-      "speaker": "tripathi",
-      "startMs": 8300,
-      "endMs": 11700,
-      "text": "Subtitles ऐसे ही दिखेंगे: हिंदी और English साथ में।",
+      "line_id": "l02",
+      "speaker": "pushpa",
+      "startMs": 4383,
+      "endMs": 6650,
+      "startFrame": 132,
+      "endFrame": 200,
+      "speechFrames": [
+        132,
+        200
+      ],
+      "wordTiming": "graphemes",
+      "text": "Madam, DSP साहब का order है।",
       "words": [
         {
-          "text": "Subtitles",
-          "startMs": 8300,
-          "endMs": 8954
+          "text": "Madam,",
+          "startMs": 4383,
+          "endMs": 5071
         },
         {
-          "text": "ऐसे",
-          "startMs": 8954,
-          "endMs": 9215
+          "text": "DSP",
+          "startMs": 5071,
+          "endMs": 5406
         },
         {
-          "text": "ही",
-          "startMs": 9215,
-          "endMs": 9412
+          "text": "साहब",
+          "startMs": 5406,
+          "endMs": 5742
         },
         {
-          "text": "दिखेंगे:",
-          "startMs": 9412,
-          "endMs": 10000
+          "text": "का",
+          "startMs": 5742,
+          "endMs": 5854
         },
         {
-          "text": "हिंदी",
-          "startMs": 10000,
-          "endMs": 10392
+          "text": "order",
+          "startMs": 5854,
+          "endMs": 6413
         },
         {
-          "text": "और",
-          "startMs": 10392,
-          "endMs": 10588
-        },
-        {
-          "text": "English",
-          "startMs": 10588,
-          "endMs": 11112
-        },
-        {
-          "text": "साथ",
-          "startMs": 11112,
-          "endMs": 11373
-        },
-        {
-          "text": "में।",
-          "startMs": 11373,
-          "endMs": 11700
+          "text": "है।",
+          "startMs": 6413,
+          "endMs": 6650
         }
       ]
     },
     {
       "id": "c004",
-      "line_id": "l04",
-      "speaker": "bhaiyaji",
-      "startMs": 12300,
-      "endMs": 15700,
-      "text": "रुको! यह file किसने खोली?",
+      "line_id": "l02",
+      "speaker": "pushpa",
+      "startMs": 7150,
+      "endMs": 9650,
+      "startFrame": 215,
+      "endFrame": 290,
+      "speechFrames": [
+        215,
+        290
+      ],
+      "wordTiming": "graphemes",
+      "text": "मदद करने वाले का नाम भी FIR में—",
       "words": [
         {
-          "text": "रुको!",
-          "startMs": 12300,
-          "endMs": 13085
+          "text": "मदद",
+          "startMs": 7150,
+          "endMs": 7620
         },
         {
-          "text": "यह",
-          "startMs": 13085,
-          "endMs": 13477
+          "text": "करने",
+          "startMs": 7620,
+          "endMs": 8056
         },
         {
-          "text": "file",
-          "startMs": 13477,
-          "endMs": 14131
+          "text": "वाले",
+          "startMs": 8056,
+          "endMs": 8347
         },
         {
-          "text": "किसने",
-          "startMs": 14131,
-          "endMs": 14915
+          "text": "का",
+          "startMs": 8347,
+          "endMs": 8492
         },
         {
-          "text": "खोली?",
-          "startMs": 14915,
-          "endMs": 15700
+          "text": "नाम",
+          "startMs": 8492,
+          "endMs": 8783
+        },
+        {
+          "text": "भी",
+          "startMs": 8783,
+          "endMs": 8929
+        },
+        {
+          "text": "FIR",
+          "startMs": 8929,
+          "endMs": 9365
+        },
+        {
+          "text": "में—",
+          "startMs": 9365,
+          "endMs": 9650
         }
       ]
     },
     {
       "id": "c005",
-      "line_id": "l05",
-      "speaker": "pushpa",
-      "startMs": 16300,
-      "endMs": 19700,
-      "text": "आगे क्या होगा? देखते रहिए।",
+      "line_id": "l03",
+      "speaker": "nandini",
+      "startMs": 9717,
+      "endMs": 11217,
+      "startFrame": 292,
+      "endFrame": 337,
+      "speechFrames": [
+        292,
+        330
+      ],
+      "wordTiming": "asr",
+      "text": "Order मैंने सुना है,",
       "words": [
         {
-          "text": "आगे",
-          "startMs": 16300,
-          "endMs": 16804
+          "text": "Order",
+          "startMs": 9717,
+          "endMs": 9913
         },
         {
-          "text": "क्या",
-          "startMs": 16804,
-          "endMs": 17433
+          "text": "मैंने",
+          "startMs": 9913,
+          "endMs": 10413
         },
         {
-          "text": "होगा?",
-          "startMs": 17433,
-          "endMs": 18189
+          "text": "सुना",
+          "startMs": 10413,
+          "endMs": 10793
         },
         {
-          "text": "देखते",
-          "startMs": 18189,
-          "endMs": 18944
+          "text": "है,",
+          "startMs": 10793,
+          "endMs": 11217
+        }
+      ],
+      "notes": [
+        "held 330->337 over the pause"
+      ]
+    },
+    {
+      "id": "c006",
+      "line_id": "l03",
+      "speaker": "nandini",
+      "startMs": 11283,
+      "endMs": 12083,
+      "startFrame": 339,
+      "endFrame": 363,
+      "speechFrames": [
+        339,
+        355
+      ],
+      "wordTiming": "asr",
+      "text": "पुष्पा जी।",
+      "words": [
+        {
+          "text": "पुष्पा",
+          "startMs": 11283,
+          "endMs": 11693
         },
         {
-          "text": "रहिए।",
-          "startMs": 18944,
-          "endMs": 19700
+          "text": "जी।",
+          "startMs": 11693,
+          "endMs": 12083
+        }
+      ],
+      "notes": [
+        "held 355->363 (min 24 frames)"
+      ]
+    },
+    {
+      "id": "c007",
+      "line_id": "l03",
+      "speaker": "nandini",
+      "startMs": 12417,
+      "endMs": 13950,
+      "startFrame": 373,
+      "endFrame": 419,
+      "speechFrames": [
+        373,
+        419
+      ],
+      "wordTiming": "graphemes",
+      "text": "नाम मेरा ही लिखा जाएगा।",
+      "words": [
+        {
+          "text": "नाम",
+          "startMs": 12417,
+          "endMs": 12715
+        },
+        {
+          "text": "मेरा",
+          "startMs": 12715,
+          "endMs": 12987
+        },
+        {
+          "text": "ही",
+          "startMs": 12987,
+          "endMs": 13124
+        },
+        {
+          "text": "लिखा",
+          "startMs": 13124,
+          "endMs": 13396
+        },
+        {
+          "text": "जाएगा।",
+          "startMs": 13396,
+          "endMs": 13950
+        }
+      ]
+    },
+    {
+      "id": "c008",
+      "line_id": "l28",
+      "speaker": "nandini",
+      "startMs": 15150,
+      "endMs": 15883,
+      "startFrame": 455,
+      "endFrame": 477,
+      "speechFrames": [
+        455,
+        479
+      ],
+      "wordTiming": "graphemes",
+      "text": "भैयाजी के सामने",
+      "words": [
+        {
+          "text": "भैयाजी",
+          "startMs": 15150,
+          "endMs": 15522
+        },
+        {
+          "text": "के",
+          "startMs": 15522,
+          "endMs": 15637
+        },
+        {
+          "text": "सामने",
+          "startMs": 15637,
+          "endMs": 15883
+        }
+      ],
+      "cutFragment": true,
+      "notes": [
+        "split at the cut at frame 479",
+        "end 479->477 (2-frame gap)"
+      ]
+    },
+    {
+      "id": "c009",
+      "line_id": "l28",
+      "speaker": "nandini",
+      "startMs": 15950,
+      "endMs": 17917,
+      "startFrame": 479,
+      "endFrame": 538,
+      "speechFrames": [
+        479,
+        538
+      ],
+      "wordTiming": "graphemes",
+      "text": "Inspector बनकर जाना है।",
+      "words": [
+        {
+          "text": "Inspector",
+          "startMs": 15950,
+          "endMs": 17011
+        },
+        {
+          "text": "बनकर",
+          "startMs": 17011,
+          "endMs": 17469
+        },
+        {
+          "text": "जाना",
+          "startMs": 17469,
+          "endMs": 17698
+        },
+        {
+          "text": "है।",
+          "startMs": 17698,
+          "endMs": 17917
+        }
+      ],
+      "cutFragment": true,
+      "notes": [
+        "split at the cut at frame 479"
+      ]
+    },
+    {
+      "id": "c010",
+      "line_id": "l04",
+      "speaker": "nirala",
+      "startMs": 18283,
+      "endMs": 21717,
+      "startFrame": 549,
+      "endFrame": 652,
+      "speechFrames": [
+        549,
+        652
+      ],
+      "wordTiming": "asr",
+      "text": "पहली बार ये वर्दी नाप की लग रही है, madam।",
+      "words": [
+        {
+          "text": "पहली",
+          "startMs": 18283,
+          "endMs": 18663
+        },
+        {
+          "text": "बार",
+          "startMs": 18663,
+          "endMs": 18993
+        },
+        {
+          "text": "ये",
+          "startMs": 18993,
+          "endMs": 19193
+        },
+        {
+          "text": "वर्दी",
+          "startMs": 19193,
+          "endMs": 19793
+        },
+        {
+          "text": "नाप",
+          "startMs": 19793,
+          "endMs": 20033
+        },
+        {
+          "text": "की",
+          "startMs": 20033,
+          "endMs": 20263
+        },
+        {
+          "text": "लग",
+          "startMs": 20263,
+          "endMs": 20453
+        },
+        {
+          "text": "रही",
+          "startMs": 20453,
+          "endMs": 20773
+        },
+        {
+          "text": "है,",
+          "startMs": 20773,
+          "endMs": 21313
+        },
+        {
+          "text": "madam।",
+          "startMs": 21313,
+          "endMs": 21717
+        }
+      ]
+    },
+    {
+      "id": "c011",
+      "line_id": "l05",
+      "speaker": "nandini",
+      "startMs": 22083,
+      "endMs": 24783,
+      "startFrame": 663,
+      "endFrame": 744,
+      "speechFrames": [
+        663,
+        744
+      ],
+      "wordTiming": "asr",
+      "text": "मेरी force में ऐसा medal नहीं होता।",
+      "words": [
+        {
+          "text": "मेरी",
+          "startMs": 22083,
+          "endMs": 22367
+        },
+        {
+          "text": "force",
+          "startMs": 22367,
+          "endMs": 22867
+        },
+        {
+          "text": "में",
+          "startMs": 22867,
+          "endMs": 23167
+        },
+        {
+          "text": "ऐसा",
+          "startMs": 23167,
+          "endMs": 23647
+        },
+        {
+          "text": "medal",
+          "startMs": 23647,
+          "endMs": 23967
+        },
+        {
+          "text": "नहीं",
+          "startMs": 23967,
+          "endMs": 24367
+        },
+        {
+          "text": "होता।",
+          "startMs": 24367,
+          "endMs": 24783
+        }
+      ]
+    },
+    {
+      "id": "c012",
+      "line_id": "l06",
+      "speaker": "nandini",
+      "startMs": 26150,
+      "endMs": 28417,
+      "startFrame": 785,
+      "endFrame": 853,
+      "speechFrames": [
+        785,
+        853
+      ],
+      "wordTiming": "graphemes",
+      "text": "लौटकर अपना medal ले लीजिएगा।",
+      "words": [
+        {
+          "text": "लौटकर",
+          "startMs": 26150,
+          "endMs": 26676
+        },
+        {
+          "text": "अपना",
+          "startMs": 26676,
+          "endMs": 27047
+        },
+        {
+          "text": "medal",
+          "startMs": 27047,
+          "endMs": 27664
+        },
+        {
+          "text": "ले",
+          "startMs": 27664,
+          "endMs": 27788
+        },
+        {
+          "text": "लीजिएगा।",
+          "startMs": 27788,
+          "endMs": 28417
+        }
+      ]
+    },
+    {
+      "id": "c013",
+      "line_id": "l07",
+      "speaker": "nandini",
+      "startMs": 29417,
+      "endMs": 31483,
+      "startFrame": 883,
+      "endFrame": 945,
+      "speechFrames": [
+        883,
+        935
+      ],
+      "wordTiming": "asr",
+      "text": "Revolver निकालिएगा मत।",
+      "words": [
+        {
+          "text": "Revolver",
+          "startMs": 29417,
+          "endMs": 30123
+        },
+        {
+          "text": "निकालिएगा",
+          "startMs": 30123,
+          "endMs": 31033
+        },
+        {
+          "text": "मत।",
+          "startMs": 31033,
+          "endMs": 31483
+        }
+      ],
+      "notes": [
+        "held 935->945 over the pause"
+      ]
+    },
+    {
+      "id": "c014",
+      "line_id": "l07",
+      "speaker": "nandini",
+      "startMs": 31550,
+      "endMs": 33283,
+      "startFrame": 947,
+      "endFrame": 999,
+      "speechFrames": [
+        947,
+        999
+      ],
+      "wordTiming": "graphemes",
+      "text": "भैयाजी के पास असली है।",
+      "words": [
+        {
+          "text": "भैयाजी",
+          "startMs": 31550,
+          "endMs": 32046
+        },
+        {
+          "text": "के",
+          "startMs": 32046,
+          "endMs": 32199
+        },
+        {
+          "text": "पास",
+          "startMs": 32199,
+          "endMs": 32504
+        },
+        {
+          "text": "असली",
+          "startMs": 32504,
+          "endMs": 32962
+        },
+        {
+          "text": "है।",
+          "startMs": 32962,
+          "endMs": 33283
+        }
+      ]
+    },
+    {
+      "id": "c015",
+      "line_id": "l08",
+      "speaker": "nirala",
+      "startMs": 33650,
+      "endMs": 36517,
+      "startFrame": 1010,
+      "endFrame": 1096,
+      "speechFrames": [
+        1010,
+        1096
+      ],
+      "wordTiming": "asr",
+      "text": "दो साल से नहीं निकाली, madam।",
+      "words": [
+        {
+          "text": "दो",
+          "startMs": 33650,
+          "endMs": 33917
+        },
+        {
+          "text": "साल",
+          "startMs": 33917,
+          "endMs": 34307
+        },
+        {
+          "text": "से",
+          "startMs": 34307,
+          "endMs": 34567
+        },
+        {
+          "text": "नहीं",
+          "startMs": 34567,
+          "endMs": 35077
+        },
+        {
+          "text": "निकाली,",
+          "startMs": 35077,
+          "endMs": 35887
+        },
+        {
+          "text": "madam।",
+          "startMs": 35887,
+          "endMs": 36517
+        }
+      ]
+    },
+    {
+      "id": "c016",
+      "line_id": "l09",
+      "speaker": "pushpa",
+      "startMs": 38383,
+      "endMs": 39983,
+      "startFrame": 1152,
+      "endFrame": 1200,
+      "speechFrames": [
+        1152,
+        1190
+      ],
+      "wordTiming": "asr",
+      "text": "Recording चालू है, madam।",
+      "words": [
+        {
+          "text": "Recording",
+          "startMs": 38383,
+          "endMs": 38830
+        },
+        {
+          "text": "चालू",
+          "startMs": 38830,
+          "endMs": 39130
+        },
+        {
+          "text": "है,",
+          "startMs": 39130,
+          "endMs": 39290
+        },
+        {
+          "text": "madam।",
+          "startMs": 39290,
+          "endMs": 39983
+        }
+      ],
+      "notes": [
+        "held 1190->1200 over the pause"
+      ]
+    },
+    {
+      "id": "c017",
+      "line_id": "l09",
+      "speaker": "pushpa",
+      "startMs": 40050,
+      "endMs": 40850,
+      "startFrame": 1202,
+      "endFrame": 1226,
+      "speechFrames": [
+        1202,
+        1226
+      ],
+      "wordTiming": "asr",
+      "text": "मेरे phone में।",
+      "words": [
+        {
+          "text": "मेरे",
+          "startMs": 40050,
+          "endMs": 40470
+        },
+        {
+          "text": "phone",
+          "startMs": 40470,
+          "endMs": 40790
+        },
+        {
+          "text": "में।",
+          "startMs": 40790,
+          "endMs": 40850
+        }
+      ]
+    },
+    {
+      "id": "c018",
+      "line_id": "l29",
+      "speaker": "nandini",
+      "startMs": 41217,
+      "endMs": 43617,
+      "startFrame": 1237,
+      "endFrame": 1309,
+      "speechFrames": [
+        1237,
+        1299
+      ],
+      "wordTiming": "graphemes",
+      "text": "मेरा phone आपकी जेब में रहेगा।",
+      "words": [
+        {
+          "text": "मेरा",
+          "startMs": 41217,
+          "endMs": 41498
+        },
+        {
+          "text": "phone",
+          "startMs": 41498,
+          "endMs": 42089
+        },
+        {
+          "text": "आपकी",
+          "startMs": 42089,
+          "endMs": 42444
+        },
+        {
+          "text": "जेब",
+          "startMs": 42444,
+          "endMs": 42680
+        },
+        {
+          "text": "में",
+          "startMs": 42680,
+          "endMs": 42798
+        },
+        {
+          "text": "रहेगा।",
+          "startMs": 42798,
+          "endMs": 43617
+        }
+      ],
+      "notes": [
+        "held 1299->1309 over the pause"
+      ]
+    },
+    {
+      "id": "c019",
+      "line_id": "l29",
+      "speaker": "nandini",
+      "startMs": 43683,
+      "endMs": 44883,
+      "startFrame": 1311,
+      "endFrame": 1347,
+      "speechFrames": [
+        1311,
+        1347
+      ],
+      "wordTiming": "graphemes",
+      "text": "Call चालू रहेगी।",
+      "words": [
+        {
+          "text": "Call",
+          "startMs": 43683,
+          "endMs": 44177
+        },
+        {
+          "text": "चालू",
+          "startMs": 44177,
+          "endMs": 44408
+        },
+        {
+          "text": "रहेगी।",
+          "startMs": 44408,
+          "endMs": 44883
+        }
+      ]
+    },
+    {
+      "id": "c020",
+      "line_id": "l10",
+      "speaker": "nandini",
+      "startMs": 45250,
+      "endMs": 46183,
+      "startFrame": 1358,
+      "endFrame": 1386,
+      "speechFrames": [
+        1358,
+        1386
+      ],
+      "wordTiming": "asr",
+      "text": "जो देखें,",
+      "words": [
+        {
+          "text": "जो",
+          "startMs": 45250,
+          "endMs": 45727
+        },
+        {
+          "text": "देखें,",
+          "startMs": 45727,
+          "endMs": 46183
+        }
+      ]
+    },
+    {
+      "id": "c021",
+      "line_id": "l10",
+      "speaker": "nandini",
+      "startMs": 46683,
+      "endMs": 48117,
+      "startFrame": 1401,
+      "endFrame": 1444,
+      "speechFrames": [
+        1401,
+        1433
+      ],
+      "wordTiming": "graphemes",
+      "text": "बोलकर देखिए।",
+      "words": [
+        {
+          "text": "बोलकर",
+          "startMs": 46683,
+          "endMs": 47223
+        },
+        {
+          "text": "देखिए।",
+          "startMs": 47223,
+          "endMs": 48117
+        }
+      ],
+      "notes": [
+        "held 1433->1444 over the pause"
+      ]
+    },
+    {
+      "id": "c022",
+      "line_id": "l10",
+      "speaker": "nandini",
+      "startMs": 48183,
+      "endMs": 49550,
+      "startFrame": 1446,
+      "endFrame": 1487,
+      "speechFrames": [
+        1446,
+        1487
+      ],
+      "wordTiming": "graphemes",
+      "text": "ताकि गवाह सुन ले।",
+      "words": [
+        {
+          "text": "ताकि",
+          "startMs": 48183,
+          "endMs": 48526
+        },
+        {
+          "text": "गवाह",
+          "startMs": 48526,
+          "endMs": 48971
+        },
+        {
+          "text": "सुन",
+          "startMs": 48971,
+          "endMs": 49267
+        },
+        {
+          "text": "ले।",
+          "startMs": 49267,
+          "endMs": 49550
+        }
+      ]
+    },
+    {
+      "id": "c023",
+      "line_id": "l11",
+      "speaker": "nandini",
+      "startMs": 49817,
+      "endMs": 50783,
+      "startFrame": 1495,
+      "endFrame": 1524,
+      "speechFrames": [
+        1495,
+        1515
+      ],
+      "wordTiming": "graphemes",
+      "text": "Slip,",
+      "words": [
+        {
+          "text": "Slip,",
+          "startMs": 49817,
+          "endMs": 50783
+        }
+      ],
+      "notes": [
+        "held 1515->1524 over the pause"
+      ]
+    },
+    {
+      "id": "c024",
+      "line_id": "l11",
+      "speaker": "nandini",
+      "startMs": 50850,
+      "endMs": 52183,
+      "startFrame": 1526,
+      "endFrame": 1566,
+      "speechFrames": [
+        1526,
+        1557
+      ],
+      "wordTiming": "graphemes",
+      "text": "बोरी की गिनती,",
+      "words": [
+        {
+          "text": "बोरी",
+          "startMs": 50850,
+          "endMs": 51161
+        },
+        {
+          "text": "की",
+          "startMs": 51161,
+          "endMs": 51307
+        },
+        {
+          "text": "गिनती,",
+          "startMs": 51307,
+          "endMs": 52183
+        }
+      ],
+      "notes": [
+        "held 1557->1566 over the pause"
+      ]
+    },
+    {
+      "id": "c025",
+      "line_id": "l11",
+      "speaker": "nandini",
+      "startMs": 52250,
+      "endMs": 54217,
+      "startFrame": 1568,
+      "endFrame": 1627,
+      "speechFrames": [
+        1568,
+        1627
+      ],
+      "wordTiming": "graphemes",
+      "text": "और भैयाजी की अपनी आवाज़।",
+      "words": [
+        {
+          "text": "और",
+          "startMs": 52250,
+          "endMs": 52571
+        },
+        {
+          "text": "भैयाजी",
+          "startMs": 52571,
+          "endMs": 53021
+        },
+        {
+          "text": "की",
+          "startMs": 53021,
+          "endMs": 53170
+        },
+        {
+          "text": "अपनी",
+          "startMs": 53170,
+          "endMs": 53620
+        },
+        {
+          "text": "आवाज़।",
+          "startMs": 53620,
+          "endMs": 54217
+        }
+      ]
+    },
+    {
+      "id": "c026",
+      "line_id": "l12",
+      "speaker": "nandini",
+      "startMs": 54583,
+      "endMs": 57983,
+      "startFrame": 1638,
+      "endFrame": 1740,
+      "speechFrames": [
+        1638,
+        1740
+      ],
+      "wordTiming": "graphemes",
+      "text": "ख़तरा लगे तो कहिएगा: 'चाय ठंडी हो गई।'",
+      "words": [
+        {
+          "text": "ख़तरा",
+          "startMs": 54583,
+          "endMs": 55015
+        },
+        {
+          "text": "लगे",
+          "startMs": 55015,
+          "endMs": 55271
+        },
+        {
+          "text": "तो",
+          "startMs": 55271,
+          "endMs": 55399
+        },
+        {
+          "text": "कहिएगा:",
+          "startMs": 55399,
+          "endMs": 56038
+        },
+        {
+          "text": "'चाय",
+          "startMs": 56038,
+          "endMs": 56986
+        },
+        {
+          "text": "ठंडी",
+          "startMs": 56986,
+          "endMs": 57271
+        },
+        {
+          "text": "हो",
+          "startMs": 57271,
+          "endMs": 57413
+        },
+        {
+          "text": "गई।'",
+          "startMs": 57413,
+          "endMs": 57983
+        }
+      ]
+    },
+    {
+      "id": "c027",
+      "line_id": "l13",
+      "speaker": "nirala",
+      "startMs": 58250,
+      "endMs": 60350,
+      "startFrame": 1748,
+      "endFrame": 1811,
+      "speechFrames": [
+        1748,
+        1811
+      ],
+      "wordTiming": "asr",
+      "text": "चाय ठंडी हो गई।",
+      "words": [
+        {
+          "text": "चाय",
+          "startMs": 58250,
+          "endMs": 58827
+        },
+        {
+          "text": "ठंडी",
+          "startMs": 58827,
+          "endMs": 59557
+        },
+        {
+          "text": "हो",
+          "startMs": 59557,
+          "endMs": 59867
+        },
+        {
+          "text": "गई।",
+          "startMs": 59867,
+          "endMs": 60350
+        }
+      ]
+    },
+    {
+      "id": "c028",
+      "line_id": "l14",
+      "speaker": "nandini",
+      "startMs": 61717,
+      "endMs": 62550,
+      "startFrame": 1852,
+      "endFrame": 1877,
+      "speechFrames": [
+        1852,
+        1869
+      ],
+      "wordTiming": "graphemes",
+      "text": "जाइए,",
+      "words": [
+        {
+          "text": "जाइए,",
+          "startMs": 61717,
+          "endMs": 62550
+        }
+      ],
+      "notes": [
+        "held 1869->1877 over the pause"
+      ]
+    },
+    {
+      "id": "c029",
+      "line_id": "l14",
+      "speaker": "nandini",
+      "startMs": 62617,
+      "endMs": 63417,
+      "startFrame": 1879,
+      "endFrame": 1903,
+      "speechFrames": [
+        1879,
+        1900
+      ],
+      "wordTiming": "graphemes",
+      "text": "निराला जी।",
+      "words": [
+        {
+          "text": "निराला",
+          "startMs": 62617,
+          "endMs": 63047
+        },
+        {
+          "text": "जी।",
+          "startMs": 63047,
+          "endMs": 63417
+        }
+      ],
+      "notes": [
+        "held 1900->1903 (min 24 frames)"
+      ]
+    },
+    {
+      "id": "c030",
+      "line_id": "l15",
+      "speaker": "bhaiyaji",
+      "startMs": 68517,
+      "endMs": 71217,
+      "startFrame": 2056,
+      "endFrame": 2137,
+      "speechFrames": [
+        2056,
+        2137
+      ],
+      "wordTiming": "graphemes",
+      "text": "आइए, आइए, Inspector साहब।",
+      "words": [
+        {
+          "text": "आइए,",
+          "startMs": 68517,
+          "endMs": 69044
+        },
+        {
+          "text": "आइए,",
+          "startMs": 69044,
+          "endMs": 69554
+        },
+        {
+          "text": "Inspector",
+          "startMs": 69554,
+          "endMs": 70703
+        },
+        {
+          "text": "साहब।",
+          "startMs": 70703,
+          "endMs": 71217
+        }
+      ],
+      "heard_as": "phone",
+      "speaker_label": "bhaiyaji"
+    },
+    {
+      "id": "c031",
+      "line_id": "l30",
+      "speaker": "nirala",
+      "startMs": 71483,
+      "endMs": 73117,
+      "startFrame": 2145,
+      "endFrame": 2194,
+      "speechFrames": [
+        2145,
+        2194
+      ],
+      "wordTiming": "asr",
+      "text": "नमस्कार, भैयाजी।",
+      "words": [
+        {
+          "text": "नमस्कार,",
+          "startMs": 71483,
+          "endMs": 72310
+        },
+        {
+          "text": "भैयाजी।",
+          "startMs": 72310,
+          "endMs": 73117
+        }
+      ],
+      "heard_as": "phone",
+      "speaker_label": "nirala"
+    },
+    {
+      "id": "c032",
+      "line_id": "l16",
+      "speaker": "nirala",
+      "startMs": 75983,
+      "endMs": 78483,
+      "startFrame": 2280,
+      "endFrame": 2355,
+      "speechFrames": [
+        2280,
+        2355
+      ],
+      "wordTiming": "graphemes",
+      "text": "Shutter क्यों गिरा दिया गया, भैयाजी?",
+      "words": [
+        {
+          "text": "Shutter",
+          "startMs": 75983,
+          "endMs": 76934
+        },
+        {
+          "text": "क्यों",
+          "startMs": 76934,
+          "endMs": 77065
+        },
+        {
+          "text": "गिरा",
+          "startMs": 77065,
+          "endMs": 77325
+        },
+        {
+          "text": "दिया",
+          "startMs": 77325,
+          "endMs": 77586
+        },
+        {
+          "text": "गया,",
+          "startMs": 77586,
+          "endMs": 77977
+        },
+        {
+          "text": "भैयाजी?",
+          "startMs": 77977,
+          "endMs": 78483
+        }
+      ],
+      "heard_as": "phone"
+    },
+    {
+      "id": "c033",
+      "line_id": "l17",
+      "speaker": "bhaiyaji",
+      "startMs": 78850,
+      "endMs": 82883,
+      "startFrame": 2366,
+      "endFrame": 2487,
+      "speechFrames": [
+        2366,
+        2487
+      ],
+      "wordTiming": "asr",
+      "text": "आज माल ज़्यादा है, Inspector साहब।\nनज़र ना लगे।",
+      "words": [
+        {
+          "text": "आज",
+          "startMs": 78850,
+          "endMs": 79167
+        },
+        {
+          "text": "माल",
+          "startMs": 79167,
+          "endMs": 79617
+        },
+        {
+          "text": "ज़्यादा",
+          "startMs": 79617,
+          "endMs": 80517
+        },
+        {
+          "text": "है,",
+          "startMs": 80517,
+          "endMs": 80867
+        },
+        {
+          "text": "Inspector",
+          "startMs": 80867,
+          "endMs": 81497
+        },
+        {
+          "text": "साहब।",
+          "startMs": 81497,
+          "endMs": 81867
+        },
+        {
+          "text": "नज़र",
+          "startMs": 81867,
+          "endMs": 82227
+        },
+        {
+          "text": "ना",
+          "startMs": 82227,
+          "endMs": 82467
+        },
+        {
+          "text": "लगे।",
+          "startMs": 82467,
+          "endMs": 82883
+        }
+      ],
+      "heard_as": "phone"
+    },
+    {
+      "id": "c034",
+      "line_id": "l18",
+      "speaker": "nirala",
+      "startMs": 83250,
+      "endMs": 85250,
+      "startFrame": 2498,
+      "endFrame": 2558,
+      "speechFrames": [
+        2498,
+        2548
+      ],
+      "wordTiming": "asr",
+      "text": "Truck पूरा भरा है, भैयाजी।",
+      "words": [
+        {
+          "text": "Truck",
+          "startMs": 83250,
+          "endMs": 83620
+        },
+        {
+          "text": "पूरा",
+          "startMs": 83620,
+          "endMs": 83920
+        },
+        {
+          "text": "भरा",
+          "startMs": 83920,
+          "endMs": 84280
+        },
+        {
+          "text": "है,",
+          "startMs": 84280,
+          "endMs": 84470
+        },
+        {
+          "text": "भैयाजी।",
+          "startMs": 84470,
+          "endMs": 85250
+        }
+      ],
+      "heard_as": "phone",
+      "speaker_label": "nirala",
+      "notes": [
+        "held 2548->2558 over the pause"
+      ]
+    },
+    {
+      "id": "c035",
+      "line_id": "l18",
+      "speaker": "nirala",
+      "startMs": 85317,
+      "endMs": 86450,
+      "startFrame": 2560,
+      "endFrame": 2594,
+      "speechFrames": [
+        2560,
+        2594
+      ],
+      "wordTiming": "asr",
+      "text": "तिरपाल तक बोरियाँ।",
+      "words": [
+        {
+          "text": "तिरपाल",
+          "startMs": 85317,
+          "endMs": 86020
+        },
+        {
+          "text": "तक",
+          "startMs": 86020,
+          "endMs": 86290
+        },
+        {
+          "text": "बोरियाँ।",
+          "startMs": 86290,
+          "endMs": 86450
+        }
+      ],
+      "heard_as": "phone"
+    },
+    {
+      "id": "c036",
+      "line_id": "l19",
+      "speaker": "bhaiyaji",
+      "startMs": 86817,
+      "endMs": 89083,
+      "startFrame": 2605,
+      "endFrame": 2673,
+      "speechFrames": [
+        2605,
+        2673
+      ],
+      "wordTiming": "asr",
+      "text": "आज रात ही crossing पार हो जाएगा।",
+      "words": [
+        {
+          "text": "आज",
+          "startMs": 86817,
+          "endMs": 86973
+        },
+        {
+          "text": "रात",
+          "startMs": 86973,
+          "endMs": 87183
+        },
+        {
+          "text": "ही",
+          "startMs": 87183,
+          "endMs": 87333
+        },
+        {
+          "text": "crossing",
+          "startMs": 87333,
+          "endMs": 87903
+        },
+        {
+          "text": "पार",
+          "startMs": 87903,
+          "endMs": 88143
+        },
+        {
+          "text": "हो",
+          "startMs": 88143,
+          "endMs": 88263
+        },
+        {
+          "text": "जाएगा।",
+          "startMs": 88263,
+          "endMs": 89083
+        }
+      ],
+      "heard_as": "phone"
+    },
+    {
+      "id": "c037",
+      "line_id": "l20",
+      "speaker": "nirala",
+      "startMs": 89450,
+      "endMs": 91383,
+      "startFrame": 2684,
+      "endFrame": 2742,
+      "speechFrames": [
+        2684,
+        2731
+      ],
+      "wordTiming": "graphemes",
+      "text": "Slip दीजिए, भैयाजी।",
+      "words": [
+        {
+          "text": "Slip",
+          "startMs": 89450,
+          "endMs": 89987
+        },
+        {
+          "text": "दीजिए,",
+          "startMs": 89987,
+          "endMs": 90495
+        },
+        {
+          "text": "भैयाजी।",
+          "startMs": 90495,
+          "endMs": 91383
+        }
+      ],
+      "heard_as": "phone",
+      "notes": [
+        "held 2731->2742 over the pause"
+      ]
+    },
+    {
+      "id": "c038",
+      "line_id": "l20",
+      "speaker": "nirala",
+      "startMs": 91450,
+      "endMs": 92517,
+      "startFrame": 2744,
+      "endFrame": 2776,
+      "speechFrames": [
+        2744,
+        2767
+      ],
+      "wordTiming": "graphemes",
+      "text": "आठ सौ बोरी...",
+      "words": [
+        {
+          "text": "आठ",
+          "startMs": 91450,
+          "endMs": 91657
+        },
+        {
+          "text": "सौ",
+          "startMs": 91657,
+          "endMs": 91751
+        },
+        {
+          "text": "बोरी...",
+          "startMs": 91751,
+          "endMs": 92517
+        }
+      ],
+      "heard_as": "phone",
+      "notes": [
+        "held 2767->2776 over the pause"
+      ]
+    },
+    {
+      "id": "c039",
+      "line_id": "l20",
+      "speaker": "nirala",
+      "startMs": 92583,
+      "endMs": 93650,
+      "startFrame": 2778,
+      "endFrame": 2810,
+      "speechFrames": [
+        2778,
+        2810
+      ],
+      "wordTiming": "graphemes",
+      "text": "सरकारी छाप वाली।",
+      "words": [
+        {
+          "text": "सरकारी",
+          "startMs": 92583,
+          "endMs": 93070
+        },
+        {
+          "text": "छाप",
+          "startMs": 93070,
+          "endMs": 93297
+        },
+        {
+          "text": "वाली।",
+          "startMs": 93297,
+          "endMs": 93650
+        }
+      ],
+      "heard_as": "phone"
+    },
+    {
+      "id": "c040",
+      "line_id": "l21",
+      "speaker": "bhaiyaji",
+      "startMs": 94017,
+      "endMs": 96450,
+      "startFrame": 2821,
+      "endFrame": 2894,
+      "speechFrames": [
+        2821,
+        2885
+      ],
+      "wordTiming": "asr",
+      "text": "पूरी आठ सौ।",
+      "words": [
+        {
+          "text": "पूरी",
+          "startMs": 94017,
+          "endMs": 94963
+        },
+        {
+          "text": "आठ",
+          "startMs": 94963,
+          "endMs": 96033
+        },
+        {
+          "text": "सौ।",
+          "startMs": 96033,
+          "endMs": 96450
+        }
+      ],
+      "heard_as": "phone",
+      "notes": [
+        "held 2885->2894 over the pause"
+      ]
+    },
+    {
+      "id": "c041",
+      "line_id": "l21",
+      "speaker": "bhaiyaji",
+      "startMs": 96517,
+      "endMs": 97317,
+      "startFrame": 2896,
+      "endFrame": 2920,
+      "speechFrames": [
+        2896,
+        2916
+      ],
+      "wordTiming": "graphemes",
+      "text": "गिन लीजिए।",
+      "words": [
+        {
+          "text": "गिन",
+          "startMs": 96517,
+          "endMs": 96756
+        },
+        {
+          "text": "लीजिए।",
+          "startMs": 96756,
+          "endMs": 97317
+        }
+      ],
+      "heard_as": "phone",
+      "notes": [
+        "held 2916->2920 (min 24 frames)"
+      ]
+    },
+    {
+      "id": "c042",
+      "line_id": "l22",
+      "speaker": "nandini",
+      "startMs": 97450,
+      "endMs": 98250,
+      "startFrame": 2924,
+      "endFrame": 2948,
+      "speechFrames": [
+        2924,
+        2942
+      ],
+      "wordTiming": "graphemes",
+      "text": "आठ सौ।",
+      "words": [
+        {
+          "text": "आठ",
+          "startMs": 97450,
+          "endMs": 97765
+        },
+        {
+          "text": "सौ।",
+          "startMs": 97765,
+          "endMs": 98250
+        }
+      ],
+      "notes": [
+        "held 2942->2948 (min 24 frames)"
+      ]
+    },
+    {
+      "id": "c043",
+      "line_id": "l22",
+      "speaker": "nandini",
+      "startMs": 98550,
+      "endMs": 99650,
+      "startFrame": 2957,
+      "endFrame": 2990,
+      "speechFrames": [
+        2957,
+        2978
+      ],
+      "wordTiming": "graphemes",
+      "text": "सरकारी।",
+      "words": [
+        {
+          "text": "सरकारी।",
+          "startMs": 98550,
+          "endMs": 99650
+        }
+      ],
+      "notes": [
+        "held 2978->2990 over the pause"
+      ]
+    },
+    {
+      "id": "c044",
+      "line_id": "l22",
+      "speaker": "nandini",
+      "startMs": 99717,
+      "endMs": 100517,
+      "startFrame": 2992,
+      "endFrame": 3016,
+      "speechFrames": [
+        2992,
+        3013
+      ],
+      "wordTiming": "asr",
+      "text": "आज रात।",
+      "words": [
+        {
+          "text": "आज",
+          "startMs": 99717,
+          "endMs": 99873
+        },
+        {
+          "text": "रात।",
+          "startMs": 99873,
+          "endMs": 100517
+        }
+      ],
+      "notes": [
+        "held 3013->3016 (min 24 frames)"
+      ]
+    },
+    {
+      "id": "c045",
+      "line_id": "l23",
+      "speaker": "nirala",
+      "startMs": 101383,
+      "endMs": 106050,
+      "startFrame": 3042,
+      "endFrame": 3182,
+      "speechFrames": [
+        3042,
+        3182
+      ],
+      "wordTiming": "graphemes",
+      "text": "Slip पर तो SHO साहब के\nsign पहले से हैं, भैयाजी...",
+      "words": [
+        {
+          "text": "Slip",
+          "startMs": 101383,
+          "endMs": 102046
+        },
+        {
+          "text": "पर",
+          "startMs": 102046,
+          "endMs": 102354
+        },
+        {
+          "text": "तो",
+          "startMs": 102354,
+          "endMs": 102508
+        },
+        {
+          "text": "SHO",
+          "startMs": 102508,
+          "endMs": 102969
+        },
+        {
+          "text": "साहब",
+          "startMs": 102969,
+          "endMs": 103430
+        },
+        {
+          "text": "के",
+          "startMs": 103430,
+          "endMs": 103584
+        },
+        {
+          "text": "sign",
+          "startMs": 103584,
+          "endMs": 104200
+        },
+        {
+          "text": "पहले",
+          "startMs": 104200,
+          "endMs": 104661
+        },
+        {
+          "text": "से",
+          "startMs": 104661,
+          "endMs": 104815
+        },
+        {
+          "text": "हैं,",
+          "startMs": 104815,
+          "endMs": 105123
+        },
+        {
+          "text": "भैयाजी...",
+          "startMs": 105123,
+          "endMs": 106050
+        }
+      ],
+      "heard_as": "phone"
+    },
+    {
+      "id": "c046",
+      "line_id": "l32",
+      "speaker": "nirala",
+      "startMs": 106317,
+      "endMs": 109017,
+      "startFrame": 3190,
+      "endFrame": 3271,
+      "speechFrames": [
+        3190,
+        3271
+      ],
+      "wordTiming": "graphemes",
+      "text": "तो फिर मुझे किसलिए बुलाया गया?",
+      "words": [
+        {
+          "text": "तो",
+          "startMs": 106317,
+          "endMs": 106513
+        },
+        {
+          "text": "फिर",
+          "startMs": 106513,
+          "endMs": 106873
+        },
+        {
+          "text": "मुझे",
+          "startMs": 106873,
+          "endMs": 107232
+        },
+        {
+          "text": "किसलिए",
+          "startMs": 107232,
+          "endMs": 107951
+        },
+        {
+          "text": "बुलाया",
+          "startMs": 107951,
+          "endMs": 108491
+        },
+        {
+          "text": "गया?",
+          "startMs": 108491,
+          "endMs": 109017
+        }
+      ],
+      "heard_as": "phone"
+    },
+    {
+      "id": "c047",
+      "line_id": "l24",
+      "speaker": "bhaiyaji",
+      "startMs": 110717,
+      "endMs": 113950,
+      "startFrame": 3322,
+      "endFrame": 3419,
+      "speechFrames": [
+        3322,
+        3421
+      ],
+      "wordTiming": "graphemes",
+      "text": "नक़ली Inspector! आइए...",
+      "words": [
+        {
+          "text": "नक़ली",
+          "startMs": 110717,
+          "endMs": 111283
+        },
+        {
+          "text": "Inspector!",
+          "startMs": 111283,
+          "endMs": 113005
+        },
+        {
+          "text": "आइए...",
+          "startMs": 113005,
+          "endMs": 113950
+        }
+      ],
+      "heard_as": "phone",
+      "cutFragment": true,
+      "notes": [
+        "split at the cut at frame 3421",
+        "end 3421->3419 (2-frame gap)"
+      ]
+    },
+    {
+      "id": "c048",
+      "line_id": "l24",
+      "speaker": "bhaiyaji",
+      "startMs": 114017,
+      "endMs": 115917,
+      "startFrame": 3421,
+      "endFrame": 3478,
+      "speechFrames": [
+        3421,
+        3478
+      ],
+      "wordTiming": "graphemes",
+      "text": "आप ही का तो इंतज़ार था।",
+      "words": [
+        {
+          "text": "आप",
+          "startMs": 114017,
+          "endMs": 114383
+        },
+        {
+          "text": "ही",
+          "startMs": 114383,
+          "endMs": 114555
+        },
+        {
+          "text": "का",
+          "startMs": 114555,
+          "endMs": 114728
+        },
+        {
+          "text": "तो",
+          "startMs": 114728,
+          "endMs": 114900
+        },
+        {
+          "text": "इंतज़ार",
+          "startMs": 114900,
+          "endMs": 115589
+        },
+        {
+          "text": "था।",
+          "startMs": 115589,
+          "endMs": 115917
+        }
+      ],
+      "heard_as": "phone",
+      "cutFragment": true,
+      "notes": [
+        "split at the cut at frame 3421"
+      ]
+    },
+    {
+      "id": "c049",
+      "line_id": "l25",
+      "speaker": "nandini",
+      "startMs": 117117,
+      "endMs": 118517,
+      "startFrame": 3514,
+      "endFrame": 3556,
+      "speechFrames": [
+        3514,
+        3556
+      ],
+      "wordTiming": "graphemes",
+      "text": "भैयाजी को पता था।",
+      "words": [
+        {
+          "text": "भैयाजी",
+          "startMs": 117117,
+          "endMs": 117664
+        },
+        {
+          "text": "को",
+          "startMs": 117664,
+          "endMs": 117832
+        },
+        {
+          "text": "पता",
+          "startMs": 117832,
+          "endMs": 118166
+        },
+        {
+          "text": "था।",
+          "startMs": 118166,
+          "endMs": 118517
+        }
+      ]
+    },
+    {
+      "id": "c050",
+      "line_id": "l31",
+      "speaker": "nandini",
+      "startMs": 118783,
+      "endMs": 120417,
+      "startFrame": 3564,
+      "endFrame": 3613,
+      "speechFrames": [
+        3564,
+        3613
+      ],
+      "wordTiming": "asr",
+      "text": "ये बुलावा जाल था।",
+      "words": [
+        {
+          "text": "ये",
+          "startMs": 118783,
+          "endMs": 119000
+        },
+        {
+          "text": "बुलावा",
+          "startMs": 119000,
+          "endMs": 119900
+        },
+        {
+          "text": "जाल",
+          "startMs": 119900,
+          "endMs": 120350
+        },
+        {
+          "text": "था।",
+          "startMs": 120350,
+          "endMs": 120417
+        }
+      ]
+    },
+    {
+      "id": "c051",
+      "line_id": "l26",
+      "speaker": "bhaiyaji",
+      "startMs": 120783,
+      "endMs": 123183,
+      "startFrame": 3624,
+      "endFrame": 3696,
+      "speechFrames": [
+        3624,
+        3696
+      ],
+      "wordTiming": "asr",
+      "text": "और ये जेब में phone किसका है?",
+      "words": [
+        {
+          "text": "और",
+          "startMs": 120783,
+          "endMs": 120943
+        },
+        {
+          "text": "ये",
+          "startMs": 120943,
+          "endMs": 121153
+        },
+        {
+          "text": "जेब",
+          "startMs": 121153,
+          "endMs": 121463
+        },
+        {
+          "text": "में",
+          "startMs": 121463,
+          "endMs": 121793
+        },
+        {
+          "text": "phone",
+          "startMs": 121793,
+          "endMs": 122113
+        },
+        {
+          "text": "किसका",
+          "startMs": 122113,
+          "endMs": 122663
+        },
+        {
+          "text": "है?",
+          "startMs": 122663,
+          "endMs": 123183
+        }
+      ],
+      "heard_as": "phone"
+    },
+    {
+      "id": "c052",
+      "line_id": "l27",
+      "speaker": "pushpa",
+      "startMs": 124350,
+      "endMs": 125250,
+      "startFrame": 3731,
+      "endFrame": 3758,
+      "speechFrames": [
+        3731,
+        3750
+      ],
+      "wordTiming": "graphemes",
+      "text": "Madam...",
+      "words": [
+        {
+          "text": "Madam...",
+          "startMs": 124350,
+          "endMs": 125250
+        }
+      ],
+      "notes": [
+        "held 3750->3758 over the pause"
+      ]
+    },
+    {
+      "id": "c053",
+      "line_id": "l27",
+      "speaker": "pushpa",
+      "startMs": 125317,
+      "endMs": 126317,
+      "startFrame": 3760,
+      "endFrame": 3790,
+      "speechFrames": [
+        3760,
+        3790
+      ],
+      "wordTiming": "graphemes",
+      "text": "line कट गई।",
+      "words": [
+        {
+          "text": "line",
+          "startMs": 125317,
+          "endMs": 125772
+        },
+        {
+          "text": "कट",
+          "startMs": 125772,
+          "endMs": 125984
+        },
+        {
+          "text": "गई।",
+          "startMs": 125984,
+          "endMs": 126317
         }
       ]
     }
-  ]
+  ],
+  "validation": {
+    "ok": true,
+    "problems": [],
+    "warnings": [],
+    "max_cps": 13.8,
+    "min_cue_frames": 22,
+    "min_gap_frames": 2,
+    "checked": [
+      "per-frame burn-in: no two cues on one frame, each cue on exactly its frames",
+      "cues >= 2 frames apart and in time order",
+      "no cue across a picture cut",
+      "cue start = first speech of its segment",
+      "<= 2 lines of <= 32 graphemes",
+      "duration >= 800 ms where there is room (a warning, not a failure)",
+      "<= 17 graphemes/s",
+      "no emotion tags",
+      "words spell the text",
+      "words inside their cue",
+      "ends inside the video (250 ms)",
+      "per-line text = script minus tags"
+    ]
+  }
 }

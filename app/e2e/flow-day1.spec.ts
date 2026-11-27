@@ -13,7 +13,7 @@
 import path from "node:path";
 import type { Choice, Lang } from "../src/content/schema";
 import { readState } from "./state";
-import { artifactDir, doWelcome, expect, expectHindiMarked, expectPath, facts, openMyChoices, other, playAll, pngSize, screen, test, visible } from "./flows/fixtures";
+import { artifactDir, doWelcome, expect, expectHindiMarked, expectPath, facts, openMyChoices, other, playAll, playToEnd, pngSize, screen, test, visible } from "./flows/fixtures";
 
 test.use({ actionTimeout: 15_000, navigationTimeout: 30_000 });
 
@@ -44,11 +44,18 @@ for (const seriesId of SERIES_IDS) {
         await expect(home.getByTestId("day-status")).toHaveText("Day 1 · both endings open");
         const live = home.locator('[data-part="live"]');
         await expect(live.locator("a")).toHaveCount(2);
+        await expect(live.locator(".uw-chip")).toHaveText("Day 1");
+        await expect(live.locator("a .uw-chip")).toHaveCount(0);
         for (const id of SERIES_IDS) await expect(live.locator(`a[href="/series/${id}"]`)).toHaveCount(1);
         const shelf = home.locator(".flow-shelf > li");
         await expect(shelf).toHaveCount(3);
+        await expect(home.getByRole("heading", { name: "Coming next" })).toBeVisible();
         await expect(home.locator(".flow-shelf a")).toHaveCount(0);
-        for (const tile of await shelf.all()) await expect(tile).toContainText("Coming next");
+        for (const poster of await home.locator('[data-part="live"] img, .flow-shelf img').all()) {
+          await poster.scrollIntoViewIfNeeded();
+          await expect.poll(() => poster.evaluate((img: HTMLImageElement) => img.naturalWidth)).toBeGreaterThan(0);
+        }
+        await expect(home.locator(".flow-shelf img")).toHaveCount(3);
         await expect(home.locator('[data-part="hero"]')).toContainText("Day 1 ends in");
         if (seriesId !== "series1") {
           await home.getByRole("group", { name: "Series on the stage" }).getByRole("button", { name: s.title[lang] }).click();
@@ -65,6 +72,12 @@ for (const seriesId of SERIES_IDS) {
         const page3 = await screen(page, "series");
         await expect(page3.locator("h1")).toContainText(s.title[lang]);
         await expect(page3).toContainText(s.synopsis[lang].slice(0, 30));
+        const portraits = page3.locator('[data-part="cast"] img');
+        await expect(portraits).toHaveCount(s.cast.length);
+        for (const portrait of await portraits.all()) {
+          await portrait.scrollIntoViewIfNeeded();
+          await expect.poll(() => portrait.evaluate((img: HTMLImageElement) => img.naturalWidth)).toBeGreaterThan(0);
+        }
         for (const member of s.cast) await expect(page3.getByRole("button", { name: `Play the voice of ${member.name.en}` })).toBeVisible();
         const voice = page3.getByRole("button", { name: `Play the voice of ${s.cast[0].name.en}` });
         await voice.click();
@@ -72,11 +85,14 @@ for (const seriesId of SERIES_IDS) {
         await page3.getByRole("button", { name: `Stop the voice of ${s.cast[0].name.en}` }).click();
         await expect(page3.getByRole("list", { name: "Shared episodes and the choice" }).locator("li")).toHaveCount(f.shared.length + 1);
         for (const c of ["A", "B"] as Choice[]) {
+          const ending = page3.locator(`[data-branch="${c}"]`);
           const rail = page3.getByRole("list", { name: `Ending ${c}` }).locator("li");
-          await expect(rail).toHaveCount(f.branch[c].length);
-          await expect(page3.getByRole("list", { name: `Ending ${c}` }).locator("li.is-locked")).toHaveCount(f.branch[c].length);
+          await expect(ending.getByRole("heading", { name: `Ending ${c}` })).toBeVisible();
+          await expect(ending.locator(".uw-chip")).toHaveText("Locked");
+          await expect(rail).toHaveCount(1);
+          await expect(page3.getByRole("list", { name: `Ending ${c}` }).locator("li.is-locked")).toHaveCount(1);
           // The choices are not named before the question.
-          await expect(page3.locator(`[data-branch="${c}"]`)).not.toContainText(s.choices[c].label[lang]);
+          await expect(ending).not.toContainText(s.choices[c].label[lang]);
         }
         await snap("series");
         await page3.locator('[data-part="hero"]').getByRole("link", { name: "Play episode 1" }).click();
@@ -160,23 +176,26 @@ for (const seriesId of SERIES_IDS) {
       });
 
       // 8. Chosen branch to its ending
-      await test.step(`branch ${vote} plays to its ending`, async () => {
-        await expectPath(page, `/watch/${seriesId}/${f.branch[vote][0]}`);
-        await playAll(page, f.branch[vote], lang);
+      await test.step(`branch ${vote} ends after its first episode`, async () => {
+        const episodeId = f.branch[vote][0];
+        await expectPath(page, `/watch/${seriesId}/${episodeId}`);
+        await playToEnd(page, episodeId, { lang });
         await expectPath(page, `/series/${seriesId}/ending/${vote}`);
         const e = await screen(page, "ending");
         await expect(e).toContainText("Your ending");
         await expect(e.locator('[data-part="split"]')).toContainText("How the audience is voting");
         await expect(e.locator('[data-part="split"]')).toContainText("Simulated demo ballots");
         await expect(e.getByRole("link", { name: "Watch the other ending" })).toBeVisible();
+        await expect(e).toContainText("1 episode · only open on day 1");
         await snap("ending-own");
         await e.getByRole("link", { name: "Watch the other ending" }).click();
       });
 
       // 9. The other ending
-      await test.step(`other ending ${other(vote)} plays, then keep or move`, async () => {
-        await expectPath(page, `/watch/${seriesId}/${f.branch[other(vote)][0]}`);
-        await playAll(page, f.branch[other(vote)], lang);
+      await test.step(`other ending ${other(vote)} ends after its first episode, then keep or move`, async () => {
+        const episodeId = f.branch[other(vote)][0];
+        await expectPath(page, `/watch/${seriesId}/${episodeId}`);
+        await playToEnd(page, episodeId, { lang });
         await expectPath(page, `/series/${seriesId}/keep-or-move`);
       });
 

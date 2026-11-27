@@ -56,7 +56,7 @@
         "hi": "/media/series1/cast/kiran.hi.mp3",
         "en": "/media/series1/cast/kiran.en.mp3"
       },
-      "portrait": "/media/series1/cast/kiran.jpg",
+      "portrait": "/media/series1/art/cast/kiran.webp",
       "placeholder": true
     },
     {
@@ -73,7 +73,7 @@
         "hi": "/media/series1/cast/aditya.hi.mp3",
         "en": "/media/series1/cast/aditya.en.mp3"
       },
-      "portrait": "/media/series1/cast/aditya.jpg",
+      "portrait": "/media/series1/art/cast/aditya.webp",
       "placeholder": true
     },
     {
@@ -90,7 +90,7 @@
         "hi": "/media/series1/cast/mausi.hi.mp3",
         "en": "/media/series1/cast/mausi.en.mp3"
       },
-      "portrait": "/media/series1/cast/mausi.jpg",
+      "portrait": "/media/series1/art/cast/mausi.webp",
       "placeholder": true
     },
     {
@@ -107,11 +107,11 @@
         "hi": "/media/series1/cast/billu.hi.mp3",
         "en": "/media/series1/cast/billu.en.mp3"
       },
-      "portrait": "/media/series1/cast/billu.jpg",
+      "portrait": "/media/series1/art/cast/billu.webp",
       "placeholder": true
     }
   ],
-  "poster": "/media/series1/poster.jpg",
+  "poster": "/media/series1/art/cover.webp",
   "backdrop": "/media/series1/backdrop.jpg",
   "branchAfterEpisode": 2,
   "episodes": [
@@ -1773,198 +1773,6 @@
       "placeholder": false
     },
     {
-      "id": "s1a02",
-      "number": 4,
-      "kind": "branchA",
-      "title": {
-        "hi": "भाग 4",
-        "en": "Part 4"
-      },
-      "video": {
-        "hi": "/media/series1/episodes/s1a02/hi.mp4",
-        "en": "/media/series1/episodes/s1a02/en.mp4"
-      },
-      "durationMs": {
-        "hi": 20000,
-        "en": 19000
-      },
-      "subtitles": {
-        "hi": "/media/series1/episodes/s1a02/hi.json",
-        "en": "/media/series1/episodes/s1a02/en.json"
-      },
-      "shots": [
-        {
-          "id": "s01",
-          "still": "/media/series1/episodes/s1a02/shots/s01.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 0,
-              "endMs": 4000
-            },
-            "en": {
-              "startMs": 0,
-              "endMs": 3000
-            }
-          }
-        },
-        {
-          "id": "s02",
-          "still": "/media/series1/episodes/s1a02/shots/s02.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 4000,
-              "endMs": 8000
-            },
-            "en": {
-              "startMs": 3000,
-              "endMs": 7500
-            }
-          }
-        },
-        {
-          "id": "s03",
-          "still": "/media/series1/episodes/s1a02/shots/s03.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 8000,
-              "endMs": 12000
-            },
-            "en": {
-              "startMs": 7500,
-              "endMs": 11000
-            }
-          }
-        },
-        {
-          "id": "s04",
-          "still": "/media/series1/episodes/s1a02/shots/s04.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 12000,
-              "endMs": 16000
-            },
-            "en": {
-              "startMs": 11000,
-              "endMs": 15000
-            }
-          }
-        },
-        {
-          "id": "s05",
-          "still": "/media/series1/episodes/s1a02/shots/s05.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 16000,
-              "endMs": 20000
-            },
-            "en": {
-              "startMs": 15000,
-              "endMs": 19000
-            }
-          }
-        }
-      ],
-      "poster": "/media/series1/episodes/s1a02/poster.jpg",
-      "placeholder": true,
-      "placeholderNote": "Generated test card. Replace with the finished render (docs/contracts.md, \"Replacing a placeholder\")."
-    },
-    {
-      "id": "s1a03",
-      "number": 5,
-      "kind": "branchA",
-      "title": {
-        "hi": "भाग 5",
-        "en": "Part 5"
-      },
-      "video": {
-        "hi": "/media/series1/episodes/s1a03/hi.mp4",
-        "en": "/media/series1/episodes/s1a03/en.mp4"
-      },
-      "durationMs": {
-        "hi": 20000,
-        "en": 19000
-      },
-      "subtitles": {
-        "hi": "/media/series1/episodes/s1a03/hi.json",
-        "en": "/media/series1/episodes/s1a03/en.json"
-      },
-      "shots": [
-        {
-          "id": "s01",
-          "still": "/media/series1/episodes/s1a03/shots/s01.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 0,
-              "endMs": 4000
-            },
-            "en": {
-              "startMs": 0,
-              "endMs": 3000
-            }
-          }
-        },
-        {
-          "id": "s02",
-          "still": "/media/series1/episodes/s1a03/shots/s02.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 4000,
-              "endMs": 8000
-            },
-            "en": {
-              "startMs": 3000,
-              "endMs": 7500
-            }
-          }
-        },
-        {
-          "id": "s03",
-          "still": "/media/series1/episodes/s1a03/shots/s03.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 8000,
-              "endMs": 12000
-            },
-            "en": {
-              "startMs": 7500,
-              "endMs": 11000
-            }
-          }
-        },
-        {
-          "id": "s04",
-          "still": "/media/series1/episodes/s1a03/shots/s04.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 12000,
-              "endMs": 16000
-            },
-            "en": {
-              "startMs": 11000,
-              "endMs": 15000
-            }
-          }
-        },
-        {
-          "id": "s05",
-          "still": "/media/series1/episodes/s1a03/shots/s05.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 16000,
-              "endMs": 20000
-            },
-            "en": {
-              "startMs": 15000,
-              "endMs": 19000
-            }
-          }
-        }
-      ],
-      "poster": "/media/series1/episodes/s1a03/poster.jpg",
-      "placeholder": true,
-      "placeholderNote": "Generated test card. Replace with the finished render (docs/contracts.md, \"Replacing a placeholder\")."
-    },
-    {
       "id": "s1b01",
       "number": 3,
       "kind": "branchB",
@@ -2562,198 +2370,6 @@
       ],
       "poster": "/media/series1/episodes/s1b01/poster.jpg",
       "placeholder": false
-    },
-    {
-      "id": "s1b02",
-      "number": 4,
-      "kind": "branchB",
-      "title": {
-        "hi": "भाग 4",
-        "en": "Part 4"
-      },
-      "video": {
-        "hi": "/media/series1/episodes/s1b02/hi.mp4",
-        "en": "/media/series1/episodes/s1b02/en.mp4"
-      },
-      "durationMs": {
-        "hi": 20000,
-        "en": 19000
-      },
-      "subtitles": {
-        "hi": "/media/series1/episodes/s1b02/hi.json",
-        "en": "/media/series1/episodes/s1b02/en.json"
-      },
-      "shots": [
-        {
-          "id": "s01",
-          "still": "/media/series1/episodes/s1b02/shots/s01.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 0,
-              "endMs": 4000
-            },
-            "en": {
-              "startMs": 0,
-              "endMs": 3000
-            }
-          }
-        },
-        {
-          "id": "s02",
-          "still": "/media/series1/episodes/s1b02/shots/s02.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 4000,
-              "endMs": 8000
-            },
-            "en": {
-              "startMs": 3000,
-              "endMs": 7500
-            }
-          }
-        },
-        {
-          "id": "s03",
-          "still": "/media/series1/episodes/s1b02/shots/s03.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 8000,
-              "endMs": 12000
-            },
-            "en": {
-              "startMs": 7500,
-              "endMs": 11000
-            }
-          }
-        },
-        {
-          "id": "s04",
-          "still": "/media/series1/episodes/s1b02/shots/s04.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 12000,
-              "endMs": 16000
-            },
-            "en": {
-              "startMs": 11000,
-              "endMs": 15000
-            }
-          }
-        },
-        {
-          "id": "s05",
-          "still": "/media/series1/episodes/s1b02/shots/s05.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 16000,
-              "endMs": 20000
-            },
-            "en": {
-              "startMs": 15000,
-              "endMs": 19000
-            }
-          }
-        }
-      ],
-      "poster": "/media/series1/episodes/s1b02/poster.jpg",
-      "placeholder": true,
-      "placeholderNote": "Generated test card. Replace with the finished render (docs/contracts.md, \"Replacing a placeholder\")."
-    },
-    {
-      "id": "s1b03",
-      "number": 5,
-      "kind": "branchB",
-      "title": {
-        "hi": "भाग 5",
-        "en": "Part 5"
-      },
-      "video": {
-        "hi": "/media/series1/episodes/s1b03/hi.mp4",
-        "en": "/media/series1/episodes/s1b03/en.mp4"
-      },
-      "durationMs": {
-        "hi": 20000,
-        "en": 19000
-      },
-      "subtitles": {
-        "hi": "/media/series1/episodes/s1b03/hi.json",
-        "en": "/media/series1/episodes/s1b03/en.json"
-      },
-      "shots": [
-        {
-          "id": "s01",
-          "still": "/media/series1/episodes/s1b03/shots/s01.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 0,
-              "endMs": 4000
-            },
-            "en": {
-              "startMs": 0,
-              "endMs": 3000
-            }
-          }
-        },
-        {
-          "id": "s02",
-          "still": "/media/series1/episodes/s1b03/shots/s02.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 4000,
-              "endMs": 8000
-            },
-            "en": {
-              "startMs": 3000,
-              "endMs": 7500
-            }
-          }
-        },
-        {
-          "id": "s03",
-          "still": "/media/series1/episodes/s1b03/shots/s03.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 8000,
-              "endMs": 12000
-            },
-            "en": {
-              "startMs": 7500,
-              "endMs": 11000
-            }
-          }
-        },
-        {
-          "id": "s04",
-          "still": "/media/series1/episodes/s1b03/shots/s04.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 12000,
-              "endMs": 16000
-            },
-            "en": {
-              "startMs": 11000,
-              "endMs": 15000
-            }
-          }
-        },
-        {
-          "id": "s05",
-          "still": "/media/series1/episodes/s1b03/shots/s05.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 16000,
-              "endMs": 20000
-            },
-            "en": {
-              "startMs": 15000,
-              "endMs": 19000
-            }
-          }
-        }
-      ],
-      "poster": "/media/series1/episodes/s1b03/poster.jpg",
-      "placeholder": true,
-      "placeholderNote": "Generated test card. Replace with the finished render (docs/contracts.md, \"Replacing a placeholder\")."
     }
   ],
   "glimpses": {

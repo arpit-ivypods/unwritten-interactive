@@ -1,0 +1,131 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,060"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 60
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,060",
+				"to": "00:00:00,240"
+			},
+			"offsets": {
+				"from": 60,
+				"to": 240
+			},
+			"text": " और"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,240",
+				"to": "00:00:00,450"
+			},
+			"offsets": {
+				"from": 240,
+				"to": 450
+			},
+			"text": " फिर"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,450",
+				"to": "00:00:00,660"
+			},
+			"offsets": {
+				"from": 450,
+				"to": 660
+			},
+			"text": " भी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,660",
+				"to": "00:00:01,170"
+			},
+			"offsets": {
+				"from": 660,
+				"to": 1170
+			},
+			"text": " बहींगी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,170",
+				"to": "00:00:01,350"
+			},
+			"offsets": {
+				"from": 1170,
+				"to": 1350
+			},
+			"text": " ने"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,350",
+				"to": "00:00:01,710"
+			},
+			"offsets": {
+				"from": 1350,
+				"to": 1710
+			},
+			"text": " आपको"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,710",
+				"to": "00:00:02,160"
+			},
+			"offsets": {
+				"from": 1710,
+				"to": 2160
+			},
+			"text": " अखेले"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,160",
+				"to": "00:00:03,000"
+			},
+			"offsets": {
+				"from": 2160,
+				"to": 3000
+			},
+			"text": " बुलाया"
+		}
+	]
+}

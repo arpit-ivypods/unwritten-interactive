@@ -1957,3 +1957,59 @@ Numbering: D-018 is the Series 1 Gate 2 entry, written minutes before this one, 
 - **Decision:** both pass Gate 4 (D-023: 7/10, no blocking fault). D-025's "fix fails" trigger is not met, so no critic round. The s2e01 placement of su4 on s15 under the shield plate is accepted (plate top 8%, super at ~60% height, never touching), an exception to D-024 ruling 3.3.
 - **Deferred, not blocking (owner's usage limit):** s2e01 F1 subtitle marking of off-screen/phone lines (italics + labels) goes into the app install step, since the app draws subtitles from subs.*.json; s1e01 optional polish (lead before l20, missing "1:40" and "No network" overlays, louder chooda click, s18/s19 static stretch).
 - **Owner ear list adds:** s1e01 en l11 ("Fine"), l27; s2e01 l29 ("SHO"), the s18 phone call level.
+
+## D-028 Local POC scope and ending point (27 Nov 2026, owner)
+
+- Each path ends after its first branch episode. The seven screened episodes remain part of the POC. Series 2 adds s2a01 and s2b01, using the clarity takes Claude already generated and accepted.
+- The Codex pass takes those two episodes through storyboard, independent frame review, assembly, independent screening and local installation. It then ends all four app paths at their first branch episode, applies the deferred toolsmith polish and refreshes the concept note.
+- The remaining eight branch episodes are out of scope. The owner superseded the earlier ten-episode assignment. No board or frame for those eight was written during the brief initial assignment.
+- Publication remains with the owner and Claude. The public snapshot, live site and parked Cloudflare branch are outside this pass.
+
+## D-029 Gate 4 for Uniform (s2b01, 27 Nov 2026)
+
+- Independent screening scores Hindi and English 8/10 with no blocking fault. The 35-shot cuts run 128.23 s and 127.67 s. Each has 32 dialogue lines and zero slates or missing audio. All 28 source stills have an approved review row. Seven received one retake each.
+- The shot of Nandini writing has brief caption overlap. The dedicated pen insert still shows the action. The final dialogue-free hold carries the cue-sheet dead tone to the picture cut. The ear list retains two English pronunciations and the opening of Hindi l24.
+- Both cuts are installed locally. The phone subtitle treatment is handled in the shared toolsmith step.
+
+## D-030 Gate 4 for Lockup (s2a01, 27 Nov 2026)
+
+- Independent screening scores Hindi and English 8/10 with no blocking fault. The 34-shot cuts run 130.93 s and 129.83 s. Each has 30 dialogue lines and zero slates or missing audio. All 28 source stills passed review after four single retakes.
+- The movement-slip mark, brass shield and bilingual time super register in the cut. Both knocks precede the door opening. The English l10 line over the truck stays on the ear list after full-mix transcription recovered its wording.
+- Both cuts are installed locally. This completes the nine-episode content scope set in D-028.
+
+## D-031 Subtitle attribution and plot text (27 Nov 2026)
+
+- The player italicizes marked phone and off-screen cues. The first marked cue for a speaker in a scene includes a localized label. Older tracks keep their speaker-change behavior. The content checker and player share the speaker label rules.
+- The subtitle builder accepts an optional per-language list of word boundaries to split a line. The default remains measured pauses and punctuation. Picture cuts, cue spacing and reading-speed checks continue to apply. Prose starting gains in the sound cue sheet are skipped so numeric defaults and explicit cue gains still apply.
+- Nine shots in four Series 1 episodes now carry phone or clock text. The four cuts in each episode were rebuilt from the same shot timing, camera and audio placement. Independent review sampled 108 views across both languages and the clean and review renders. The caller name in s1a01 s23 has brief overlap with the burned review subtitle plate. The viewer's subtitle plate clears it on phone and desktop.
+- Retained the previously screened English s1b01 l16 cue at 18.2 graphemes/s. The measured words cannot be split within the existing timing to reach 17. The strict episode validator still reports this one known exception. The app track meets its playback contract.
+- Rebuilt and reinstalled both subtitle tracks for all nine finished episodes. Series 2 videos stayed in their screened cuts.
+
+## D-032 Concept note evidence and local release (27 Nov 2026)
+
+- The note reflects the nine screened episodes and what viewers see after a single branch episode. The pilot interactions retain the original fictional stories, vote simulation and economics model. The original v1 file is preserved.
+- The 18 language cuts total 39.79 minutes. The nine episode manifests record 36,303 voice credits and 612 one-off sound credits. The two sound libraries add 9,138 credits. The scoped total is 46,053 credits, about 1,157 per rendered language minute, excluding proof and casting spend. The simulator's rupee assumptions remain planning inputs.
+- Local release checks passed. Viewer retention and sharing lift remain questions for the audience experiment. Publication stays with the owner and Claude.
+
+## D-033 Viewer browse artwork and ending cards (27 Nov 2026)
+
+- Tonight uses approved episode stills for both Live Now covers and moves the shared Day badge into the panel header. Coming Next tiles retain their announced titles and hooks and now carry local teaser art.
+- Series uses portrait crops from approved character reference sheets. Ending cards show each branch, its episode and the current access state. Choice titles stay hidden until the shared cliffhanger is reached.
+- The built-in ImageGen tool made the three teaser posters from original scene descriptions. Covers and cast portraits are in `app/public/media/series1/art/` and `app/public/media/series2/art/`. Teasers are in `app/public/media/teasers/`.
+
+<details>
+<summary>Teaser poster prompts</summary>
+
+```text
+Use case photorealistic-natural. Create one vertical 3:4 cinematic streaming poster background, no lettering. The Last Local, an original Indian midnight railway mystery. Straight-on intimate view down the aisle of a near-empty Mumbai suburban local carriage, framed around ONE conspicuously empty blue bench seat in the middle of the image. Window streaks from rain, desaturated midnight teal metal, soft amber light from a distant platform. Strong silhouettes and readable forms at thumbnail scale. Contemporary Indian suburban rail, realistic film still, restrained grain. No signs, no written characters, no logos, no watermarks.
+```
+
+```text
+Use case illustration-story. Create one vertical 3:4 artwork for an original Indian 2D comedy mystery teaser called Wedding, Cancelled, with no typography. A switched-off black smartphone with a blank dark display leans against a brass tray of bright marigolds in the central foreground. Beyond an open carved doorway an Indian baraat has arrived, with softly simplified silhouettes, one dhol player and warm string lights. Flat 2D editorial animation, clearly drawn outlines, bold shapes, plum and marigold palette. Make the focal phone and festive entrance easily read at thumbnail size. No logo, no text, no lettering, no watermark.
+```
+
+```text
+Use case photorealistic-natural. Create one vertical 3:4 cinematic streaming teaser poster image with no typography for an original Indian hostel mystery, Room 207. A closed green-painted wooden room door with an unmarked brass plaque, straight-on in a silent old Indian student hostel corridor. A thin warm line of light under the door, cool moonlight on pale green walls and terrazzo. Quiet apprehension, realistic film texture, strong central silhouette, clearly readable at thumbnail size. The plaque stays blank. No people, no text or numbers, no brand, no watermark.
+```
+
+</details>

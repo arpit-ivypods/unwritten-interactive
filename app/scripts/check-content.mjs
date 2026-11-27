@@ -19,6 +19,8 @@ import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { speakerChangesAt } from "../src/components/player/subtitleTiming.ts";
+import { speakerName } from "../src/content/helpers.ts";
 import { validateCatalog, validateSeries, validateSubtitleTrack } from "../src/content/schema.ts";
 
 const APP_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -82,7 +84,6 @@ function probe(file) {
 function checkPlayable(series, label, playable) {
   for (const shot of playable.shots) mustExist(shot.still, `${label} shot ${shot.id}`);
   mustExist(playable.poster, `${label} poster`);
-  const castIds = new Set(series.cast.map((c) => c.id));
   for (const lang of ["hi", "en"]) {
     const video = mustExist(playable.video[lang], `${label} video.${lang}`);
     if (video) {
@@ -113,8 +114,14 @@ function checkPlayable(series, label, playable) {
           for (const e of result.errors) errors.push(`${label} subtitles.${lang}: ${e}`);
         } else {
           if (result.value.lang !== lang) errors.push(`${label} subtitles.${lang}: file says lang "${result.value.lang}"`);
-          const unknown = [...new Set(result.value.cues.map((c) => c.speaker))].filter((s) => !castIds.has(s));
-          if (unknown.length) warnings.push(`${label} subtitles.${lang}: speaker not in cast: ${unknown.join(", ")} (the app will show the id as written)`);
+          const unknown = new Set();
+          for (const [index, cue] of result.value.cues.entries()) {
+            if (!speakerChangesAt(result.value, index)) continue;
+            // The builder uses the ID with spaces as a label marker when no localized role is supplied.
+            const role = cue.speaker_label === cue.speaker.replaceAll("_", " ") ? "" : cue.speaker_label;
+            if (!speakerName(series, cue.speaker, lang, role ?? "")) unknown.add(cue.speaker);
+          }
+          if (unknown.size) warnings.push(`${label} subtitles.${lang}: speaker tags have no display name: ${[...unknown].join(", ")}`);
           if (result.value.cues.length === 0) warnings.push(`${label} subtitles.${lang}: no cues`);
         }
       }
@@ -157,6 +164,7 @@ if (catalogJson) {
       if (checkSeries(seriesId)) seriesCount++;
     }
     for (const teaser of result.value.teasers) {
+      if (teaser.poster) mustExist(teaser.poster, `teaser ${teaser.id} poster`);
       if (teaser.placeholder) placeholders.push(`teaser ${teaser.id}`);
     }
   }

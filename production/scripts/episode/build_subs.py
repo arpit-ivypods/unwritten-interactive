@@ -42,6 +42,11 @@ CUT_GUARD = 12
 JOIN_GAP_DEFAULT = 15  # edit.json subs.join_gap overrides (0 = never hold a cue over a pause)
 MIN_GAP = 2
 TAG = re.compile(r"\[[^\]]*\]")
+HEARD_AS = ("off_screen", "phone")
+ROLE_LABELS = {
+    "dsp": {"hi": "डीएसपी", "en": "DSP"},
+    "neighbour_voice": {"hi": "पड़ोसी", "en": "Neighbour"},
+}
 
 
 def fms(f):
@@ -72,10 +77,32 @@ def split_range(words, i0, i1):
     return split_range(words, i0, k) + split_range(words, k, i1)
 
 
+def split_overrides(config, lang):
+    """One-based word counts after which a line must start a new cue."""
+    if not isinstance(config, dict):
+        raise SystemExit("subs.split_after_words must be an object keyed by line ID")
+    selected = {}
+    for lid, spec in config.items():
+        option = f"subs.split_after_words.{lid}"
+        if isinstance(spec, dict):
+            if spec.keys() - {"hi", "en"}:
+                raise SystemExit(f"{option} only accepts hi and en language keys")
+            if lang not in spec:
+                continue
+            option += f".{lang}"
+            spec = spec[lang]
+        if (not isinstance(spec, list) or any(type(k) is not int or k < 1 for k in spec)
+                or spec != sorted(set(spec))):
+            raise SystemExit(f"{option} must be a strictly increasing list of positive word counts")
+        selected[lid] = tuple(spec)
+    return selected
+
+
 def build(ED, lang):
     sub_cfg = (load(ED / "edit.json", {}) or {}).get("subs") or {}
     JOIN_GAP = int(sub_cfg.get("join_gap", JOIN_GAP_DEFAULT))
     squeeze = sub_cfg.get("clamped_words", "keep") == "squeeze"
+    overrides = split_overrides(sub_cfg.get("split_after_words", {}), lang)
     script = load(ED / f"script.{lang}.json")
     place = load(ED / f"dialogue-placement.{lang}.json")
     tl = load(ED / f"timeline.{lang}.json")
@@ -83,19 +110,38 @@ def build(ED, lang):
     cuts = sorted({c for c in tl.get("meta", {}).get("cuts", []) if 0 < c < END}
                   or {s["start"] for s in tl["shots"] if s["start"] > 0 and not s.get("subshot_of")})
     P = {p["line_id"]: p for p in place["lines"]}
-    lines = [(l["id"], l["speaker"], strip_tags(l["text"])) for b in script["beats"] for l in b["lines"] if l["id"] in P]
+    script_lines = {
+        line["id"]: (line, beat.get("id", index))
+        for index, beat in enumerate(script["beats"])
+        for line in beat["lines"] if line["id"] in P
+    }
+    lines = [(lid, l["speaker"], strip_tags(l["text"])) for lid, (l, _) in script_lines.items()]
+    unknown = overrides.keys() - script_lines.keys()
+    if unknown:
+        raise SystemExit(f"{lang}: subs.split_after_words lines are not placed: {', '.join(sorted(unknown))}")
     cues = []
     for lid, spk, text in lines:
         p = P[lid]
         words = [w["text"] for w in p["words"]]
         if " ".join(words) != text:
             raise SystemExit(f"{lang} {lid}: placement words do not spell the script text")
-        for seg in p["segments"]:
-            for i0, i1 in split_range(words, seg["i0"], seg["i1"]):
+        segments = p["segments"]
+        if lid in overrides:
+            boundaries = overrides[lid]
+            if boundaries and boundaries[-1] >= len(words):
+                raise SystemExit(f"{lang} {lid}: a subtitle split must precede the last word ({len(words)})")
+            edges = (0, *boundaries, len(words))
+            ranges = zip(edges, edges[1:])
+        else:
+            ranges = ((seg["i0"], seg["i1"]) for seg in segments)
+        for start, end in ranges:
+            for i0, i1 in split_range(words, start, end):
                 f0 = int(math.floor(p["words"][i0]["startFrame"] + 1e-6))
                 f1 = int(math.ceil(p["words"][i1 - 1]["endFrame"] - 1e-6))
+                sources = {seg["source"] for seg in segments if i0 < seg["i1"] and seg["i0"] < i1}
                 cues.append(dict(line_id=lid, speaker=spk, i0=i0, i1=i1, f0=f0, f1=f1, speech=(f0, f1),
-                                 timing=seg["source"], words=p["words"], notes=[], placeholder=p.get("placeholder", False)))
+                                 timing=sources.pop() if len(sources) == 1 else "mixed",
+                                 words=p["words"], notes=[], placeholder=p.get("placeholder", False)))
     cues.sort(key=lambda c: c["f0"])
 
     def text(c):
@@ -166,6 +212,8 @@ def build(ED, lang):
             for j in (i - 1, i + 1):
                 if 0 <= j < len(cues) and cues[j]["line_id"] == c["line_id"]:
                     a, b = (cues[j], c) if j < i else (c, cues[j])
+                    if b["i0"] in overrides.get(c["line_id"], ()):
+                        continue
                     merged = " ".join(a["words"][k]["text"] for k in range(a["i0"], b["i1"]))
                     if wrap(merged) and not any(a["f0"] < k <= b["f0"] for k in cuts):
                         a["notes"].append(f"merged with the {'next' if j > i else 'previous'} segment "
@@ -183,6 +231,22 @@ def build(ED, lang):
             a["notes"].append(f"end {a['f1']}->{b['f0'] - MIN_GAP} (2-frame gap)")
             a["f1"] = b["f0"] - MIN_GAP
 
+    heard_as = {lid: l["heard_as"] for lid, (l, _) in script_lines.items() if l.get("heard_as")}
+    for lid, mode in heard_as.items():
+        if mode not in HEARD_AS:
+            raise SystemExit(f"{lang} {lid}: heard_as must be off_screen or phone")
+    board = load(ED / "shots.json", {}) if heard_as else {}
+    scenes = {shot["id"]: shot["scene"] for shot in board.get("shots", []) if shot.get("scene")}
+
+    def scene_at(c):
+        f = c["f0"]
+        shot = next((s for s in tl["shots"] if s["start"] <= f < s["start"] + s["duration"]), None)
+        lid = c["line_id"]
+        scene = scenes.get(shot.get("subshot_of") or shot["id"]) if shot is not None else None
+        scene = scene or scenes.get(P[lid].get("shot"))
+        return ("scene", scene) if scene else ("beat", script_lines[lid][1])
+
+    marked_speakers = set()
     out = []
     for n, c in enumerate(cues, 1):
         s, e = fms(c["f0"]), fms(c["f1"])
@@ -204,6 +268,13 @@ def build(ED, lang):
                "startMs": s, "endMs": e, "startFrame": c["f0"], "endFrame": c["f1"],
                "speechFrames": list(c["speech"]), "wordTiming": c["timing"],
                "text": "\n".join(lines_), "words": ws}
+        if c["line_id"] in heard_as:
+            cue["heard_as"] = heard_as[c["line_id"]]
+            speaker = c["speaker"]
+            key = (scene_at(c), speaker)
+            if key not in marked_speakers:
+                cue["speaker_label"] = ROLE_LABELS.get(speaker, {}).get(lang, speaker.replace("_", " "))
+                marked_speakers.add(key)
         if c["placeholder"]:
             cue["placeholder"] = True
         if c.get("cut_fragment"):

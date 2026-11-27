@@ -279,6 +279,18 @@
    "start": 1675,
    "duration": 127,
    "image": "frames/s18.png",
+   "plotText": [
+    {
+     "text": "4:10",
+     "x": 0.157,
+     "y": 0.136,
+     "fontSize": 54,
+     "space": "screen",
+     "color": "#ffffff",
+     "plate": true,
+     "lang": "hi"
+    }
+   ],
    "move": {
     "preset": "hold"
    }
@@ -1994,7 +2006,6 @@
    "First edit (S13, 26 Nov). Lines split over shots (l08, l21, l22 twice, l26, l28) cut on the words S7 gave in shots.json edit_notes_for_episode_editor (copied as is into layout.cut_on_word). l29 plays on s15 after l13 (b5a hold on its move); l27 stays on s39 (S7 remap_notes).",
    "Silences from the script, set as shot tails: tail.s10 24 (b4's 0.8 s after l08, the bolt rattle sits in it); tail.s36 24 (b10's 0.8 s hold after l23/l30, Mausi does not answer); tail.s41 15 (b11's 0.5 s room tone after l28, pulse already cut). lead.s08 12: the fist bang lands on the cut, before l07.",
    "Camera moves overridden from S9's frames/review.json editor_notes: s01 custom 1.0 to 1.06 looking down (y -1), so the lit phone stays at about the frame's own 78-85 % instead of the push-in's 84-91 %; s27 push-in focus y 0.7 so the palms stay at about 68-79 %; s40 custom 1.12 to 1.16 shifted right (x 0.68 to 0.4) to crop the empty chair and bag at the picture-right edge (keeps about x 2-91 % of the frame at the start). Arithmetic from camera.ts, not checked on a rendered still.",
-   "The '4:10' time overlay on s18 (shots.json overlay, 'assembly only') is not drawn: the toolchain has no plot-overlay text layer yet (README 'Not verified'), as for s1e01's '1:40'.",
    "Voice fx: l02, l10, l11 phone (Mausi on a phone); l19 through_door (low-pass 5 kHz, loudness matched). No landing reverb on l07, l09, l12 (no reverb chain in the toolchain; not attempted).",
    "Levels: the cue sheet's level_db is read as a target peak, so point gain = level_db - the file's max_db (library manifest). Beds: the bedroom bed at 0 dB (file mean -46 dB), as in s1e01; other beds offset from it by the sheet's level difference. mus_bed_drone -24 dB (as s1e01), mus_tension_pulse -26 dB (sheet 2 dB under the drone).",
    "Ducking: the beds are on the music bus, so the global ducking (-8 dB, toolchain default) takes them and both music cues down under every line (sheet: beds 6, drone 8, pulse 6). l19 and l28 get a further -2 / -4 dB segment on the bedroom bed and the pulse (sheet: 10 and 12 dB).",
@@ -2003,7 +2014,8 @@
    "Dropped as optional on the cue sheet: the faint bangle chink with the print in b10 and the notebook tap on the photograph in b11 (b11 has no gap around l24 wider than 8 frames).",
    "The paper crinkle and the bangle chink on l28 start in the pause between its two sentences, at about the s40/s41 cut; they run a little under 'अपने' / 'With' at -20 / -24 dB.",
    "Nothing in this mix has been listened to; levels and placements are by measurement and arithmetic only.",
-   "OPEN (first edit, 26 Nov): en subs c026 (l16 'You're the one who put the lock on.', 35 graphemes) reads at 18.2 graphemes/s and fails build_subs validation, so assemble.sh exits 1. The cue starts on l16's first speech (frame 1831) and can hold only to 2 frames before 'Even' (1889), because the take's pause between the sentences is about 0.4 s; it needs 62 frames and gets 56. No edit.json key moves a cue start or a within-line split (layout gaps, tails and cut-on-word act between lines or at cuts), so this needs a longer pause in the en l16 take (S10), a shorter first sentence (writer), or a subtitle split override (toolsmith). hi passes."
+   "OPEN (first edit, 26 Nov): en subs c026 (l16 'You're the one who put the lock on.', 35 graphemes) reads at 18.2 graphemes/s and fails build_subs validation, so assemble.sh exits 1. The cue starts on l16's first speech (frame 1831) and can hold only to 2 frames before 'Even' (1889), because the take's pause between the sentences is about 0.4 s; it needs 62 frames and gets 56. No edit.json key moves a cue start or a within-line split (layout gaps, tails and cut-on-word act between lines or at cuts), so this needs a longer pause in the en l16 take (S10), a shorter first sentence (writer), or a subtitle split override (toolsmith). hi passes.",
+   "Series 1 plot text uses the measured clock and phone placements in shots.*.plot_text."
   ]
  }
 }

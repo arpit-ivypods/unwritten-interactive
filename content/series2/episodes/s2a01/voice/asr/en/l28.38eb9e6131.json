@@ -1,0 +1,175 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,060"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 60
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,060",
+				"to": "00:00:00,240"
+			},
+			"offsets": {
+				"from": 60,
+				"to": 240
+			},
+			"text": " The"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,240",
+				"to": "00:00:00,870"
+			},
+			"offsets": {
+				"from": 240,
+				"to": 870
+			},
+			"text": " register"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,870",
+				"to": "00:00:01,030"
+			},
+			"offsets": {
+				"from": 870,
+				"to": 1030
+			},
+			"text": " is"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,030",
+				"to": "00:00:01,190"
+			},
+			"offsets": {
+				"from": 1030,
+				"to": 1190
+			},
+			"text": " in"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,190",
+				"to": "00:00:01,510"
+			},
+			"offsets": {
+				"from": 1190,
+				"to": 1510
+			},
+			"text": " this"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,510",
+				"to": "00:00:02,250"
+			},
+			"offsets": {
+				"from": 1510,
+				"to": 2250
+			},
+			"text": " Almira"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,250",
+				"to": "00:00:02,480"
+			},
+			"offsets": {
+				"from": 2250,
+				"to": 2480
+			},
+			"text": " and"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,480",
+				"to": "00:00:02,950"
+			},
+			"offsets": {
+				"from": 2480,
+				"to": 2950
+			},
+			"text": " SHO"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,950",
+				"to": "00:00:03,750"
+			},
+			"offsets": {
+				"from": 2950,
+				"to": 3750
+			},
+			"text": " Sahab"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,750",
+				"to": "00:00:03,950"
+			},
+			"offsets": {
+				"from": 3750,
+				"to": 3950
+			},
+			"text": " has"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,950",
+				"to": "00:00:04,190"
+			},
+			"offsets": {
+				"from": 3950,
+				"to": 4190
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,190",
+				"to": "00:00:04,540"
+			},
+			"offsets": {
+				"from": 4190,
+				"to": 4540
+			},
+			"text": " key."
+		}
+	]
+}

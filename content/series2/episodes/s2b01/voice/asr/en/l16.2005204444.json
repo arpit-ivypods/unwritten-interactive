@@ -1,0 +1,131 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,140"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 140
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,140",
+				"to": "00:00:00,220"
+			},
+			"offsets": {
+				"from": 140,
+				"to": 220
+			},
+			"text": " Why"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,220",
+				"to": "00:00:00,440"
+			},
+			"offsets": {
+				"from": 220,
+				"to": 440
+			},
+			"text": " has"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,440",
+				"to": "00:00:00,660"
+			},
+			"offsets": {
+				"from": 440,
+				"to": 660
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,660",
+				"to": "00:00:01,180"
+			},
+			"offsets": {
+				"from": 660,
+				"to": 1180
+			},
+			"text": " shutter"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,180",
+				"to": "00:00:01,470"
+			},
+			"offsets": {
+				"from": 1180,
+				"to": 1470
+			},
+			"text": " been"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,470",
+				"to": "00:00:01,990"
+			},
+			"offsets": {
+				"from": 1470,
+				"to": 1990
+			},
+			"text": " brought"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,990",
+				"to": "00:00:02,520"
+			},
+			"offsets": {
+				"from": 1990,
+				"to": 2520
+			},
+			"text": " down,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,520",
+				"to": "00:00:02,720"
+			},
+			"offsets": {
+				"from": 2520,
+				"to": 2720
+			},
+			"text": " Bhaiyaji?"
+		}
+	]
+}

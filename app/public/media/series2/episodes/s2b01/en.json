@@ -1,216 +1,2257 @@
 {
   "lang": "en",
-  "placeholder": true,
+  "fps": 30,
+  "method": "D-014 (b): measured speech + silencedetect pauses; production/scripts/episode/build_subs.py",
+  "cuts": [
+    30,
+    128,
+    297,
+    423,
+    501,
+    539,
+    638,
+    741,
+    771,
+    839,
+    971,
+    1067,
+    1112,
+    1198,
+    1313,
+    1572,
+    1767,
+    1797,
+    1852,
+    1942,
+    2156,
+    2231,
+    2321,
+    2459,
+    2570,
+    2658,
+    2809,
+    3033,
+    3246,
+    3394,
+    3474,
+    3584,
+    3667,
+    3697
+  ],
   "cues": [
     {
       "id": "c001",
       "line_id": "l01",
       "speaker": "nandini",
-      "startMs": 300,
-      "endMs": 2700,
-      "text": "This is a placeholder for s2b01.",
+      "startMs": 1150,
+      "endMs": 2583,
+      "startFrame": 35,
+      "endFrame": 78,
+      "speechFrames": [
+        35,
+        66
+      ],
+      "wordTiming": "asr",
+      "text": "One more night.",
       "words": [
         {
-          "text": "This",
-          "startMs": 300,
-          "endMs": 664
+          "text": "One",
+          "startMs": 1150,
+          "endMs": 1393
         },
         {
-          "text": "is",
-          "startMs": 664,
-          "endMs": 882
+          "text": "more",
+          "startMs": 1393,
+          "endMs": 1823
         },
         {
-          "text": "a",
-          "startMs": 882,
-          "endMs": 1027
-        },
-        {
-          "text": "placeholder",
-          "startMs": 1027,
-          "endMs": 1900
-        },
-        {
-          "text": "for",
-          "startMs": 1900,
-          "endMs": 2191
-        },
-        {
-          "text": "s2b01.",
-          "startMs": 2191,
-          "endMs": 2700
+          "text": "night.",
+          "startMs": 1823,
+          "endMs": 2583
         }
+      ],
+      "notes": [
+        "held 66->78 over the pause"
       ]
     },
     {
       "id": "c002",
-      "line_id": "l02",
-      "speaker": "nirala",
-      "startMs": 3300,
-      "endMs": 7200,
-      "text": "The real episode is still in the studio.",
+      "line_id": "l01",
+      "speaker": "nandini",
+      "startMs": 2650,
+      "endMs": 4050,
+      "startFrame": 80,
+      "endFrame": 122,
+      "speechFrames": [
+        80,
+        122
+      ],
+      "wordTiming": "asr",
+      "text": "My responsibility.",
       "words": [
         {
-          "text": "The",
-          "startMs": 3300,
-          "endMs": 3680
+          "text": "My",
+          "startMs": 2650,
+          "endMs": 2833
         },
         {
-          "text": "real",
-          "startMs": 3680,
-          "endMs": 4156
-        },
-        {
-          "text": "episode",
-          "startMs": 4156,
-          "endMs": 4917
-        },
-        {
-          "text": "is",
-          "startMs": 4917,
-          "endMs": 5202
-        },
-        {
-          "text": "still",
-          "startMs": 5202,
-          "endMs": 5773
-        },
-        {
-          "text": "in",
-          "startMs": 5773,
-          "endMs": 6059
-        },
-        {
-          "text": "the",
-          "startMs": 6059,
-          "endMs": 6439
-        },
-        {
-          "text": "studio.",
-          "startMs": 6439,
-          "endMs": 7200
+          "text": "responsibility.",
+          "startMs": 2833,
+          "endMs": 4050
         }
       ]
     },
     {
       "id": "c003",
-      "line_id": "l03",
-      "speaker": "tripathi",
-      "startMs": 7800,
-      "endMs": 10700,
-      "text": "Subtitles will look like this, word by word.",
+      "line_id": "l02",
+      "speaker": "pushpa",
+      "startMs": 4417,
+      "endMs": 6817,
+      "startFrame": 133,
+      "endFrame": 205,
+      "speechFrames": [
+        133,
+        193
+      ],
+      "wordTiming": "asr",
+      "text": "Madam, DSP sahab's order.",
       "words": [
         {
-          "text": "Subtitles",
-          "startMs": 7800,
-          "endMs": 8444
+          "text": "Madam,",
+          "startMs": 4417,
+          "endMs": 5163
         },
         {
-          "text": "will",
-          "startMs": 8444,
-          "endMs": 8767
+          "text": "DSP",
+          "startMs": 5163,
+          "endMs": 5383
         },
         {
-          "text": "look",
-          "startMs": 8767,
-          "endMs": 9089
+          "text": "sahab's",
+          "startMs": 5383,
+          "endMs": 6203
         },
         {
-          "text": "like",
-          "startMs": 9089,
-          "endMs": 9411
-        },
-        {
-          "text": "this,",
-          "startMs": 9411,
-          "endMs": 9798
-        },
-        {
-          "text": "word",
-          "startMs": 9798,
-          "endMs": 10120
-        },
-        {
-          "text": "by",
-          "startMs": 10120,
-          "endMs": 10313
-        },
-        {
-          "text": "word.",
-          "startMs": 10313,
-          "endMs": 10700
+          "text": "order.",
+          "startMs": 6203,
+          "endMs": 6817
         }
+      ],
+      "notes": [
+        "held 193->205 over the pause"
       ]
     },
     {
       "id": "c004",
-      "line_id": "l04",
-      "speaker": "bhaiyaji",
-      "startMs": 11300,
-      "endMs": 14700,
-      "text": "Wait! Who opened this file?",
+      "line_id": "l02",
+      "speaker": "pushpa",
+      "startMs": 6883,
+      "endMs": 9850,
+      "startFrame": 207,
+      "endFrame": 296,
+      "speechFrames": [
+        207,
+        296
+      ],
+      "wordTiming": "asr",
+      "text": "Whoever helps him is\nnamed in the same FIR—",
       "words": [
         {
-          "text": "Wait!",
-          "startMs": 11300,
-          "endMs": 12029
+          "text": "Whoever",
+          "startMs": 6883,
+          "endMs": 7443
         },
         {
-          "text": "Who",
-          "startMs": 12029,
-          "endMs": 12514
+          "text": "helps",
+          "startMs": 7443,
+          "endMs": 7783
         },
         {
-          "text": "opened",
-          "startMs": 12514,
-          "endMs": 13364
+          "text": "him",
+          "startMs": 7783,
+          "endMs": 8063
         },
         {
-          "text": "this",
-          "startMs": 13364,
-          "endMs": 13971
+          "text": "is",
+          "startMs": 8063,
+          "endMs": 8193
         },
         {
-          "text": "file?",
-          "startMs": 13971,
-          "endMs": 14700
+          "text": "named",
+          "startMs": 8193,
+          "endMs": 8553
+        },
+        {
+          "text": "in",
+          "startMs": 8553,
+          "endMs": 8733
+        },
+        {
+          "text": "the",
+          "startMs": 8733,
+          "endMs": 9003
+        },
+        {
+          "text": "same",
+          "startMs": 9003,
+          "endMs": 9453
+        },
+        {
+          "text": "FIR—",
+          "startMs": 9453,
+          "endMs": 9850
         }
       ]
     },
     {
       "id": "c005",
-      "line_id": "l05",
-      "speaker": "pushpa",
-      "startMs": 15300,
-      "endMs": 18700,
-      "text": "What happens next? Keep watching.",
+      "line_id": "l03",
+      "speaker": "nandini",
+      "startMs": 9917,
+      "endMs": 11450,
+      "startFrame": 298,
+      "endFrame": 344,
+      "speechFrames": [
+        298,
+        344
+      ],
+      "wordTiming": "graphemes",
+      "text": "I heard it, Pushpa ji.",
       "words": [
         {
-          "text": "What",
-          "startMs": 15300,
-          "endMs": 15800
+          "text": "I",
+          "startMs": 9917,
+          "endMs": 10031
         },
         {
-          "text": "happens",
-          "startMs": 15800,
-          "endMs": 16600
+          "text": "heard",
+          "startMs": 10031,
+          "endMs": 10447
         },
         {
-          "text": "next?",
-          "startMs": 16600,
-          "endMs": 17200
+          "text": "it,",
+          "startMs": 10447,
+          "endMs": 10697
         },
         {
-          "text": "Keep",
-          "startMs": 17200,
-          "endMs": 17700
+          "text": "Pushpa",
+          "startMs": 10697,
+          "endMs": 11196
         },
         {
-          "text": "watching.",
-          "startMs": 17700,
-          "endMs": 18700
+          "text": "ji.",
+          "startMs": 11196,
+          "endMs": 11450
+        }
+      ]
+    },
+    {
+      "id": "c006",
+      "line_id": "l03",
+      "speaker": "nandini",
+      "startMs": 12050,
+      "endMs": 14017,
+      "startFrame": 362,
+      "endFrame": 421,
+      "speechFrames": [
+        362,
+        417
+      ],
+      "wordTiming": "asr",
+      "text": "The name they\nwrite will be mine.",
+      "words": [
+        {
+          "text": "The",
+          "startMs": 12050,
+          "endMs": 12253
+        },
+        {
+          "text": "name",
+          "startMs": 12253,
+          "endMs": 12543
+        },
+        {
+          "text": "they",
+          "startMs": 12543,
+          "endMs": 12823
+        },
+        {
+          "text": "write",
+          "startMs": 12823,
+          "endMs": 13233
+        },
+        {
+          "text": "will",
+          "startMs": 13233,
+          "endMs": 13483
+        },
+        {
+          "text": "be",
+          "startMs": 13483,
+          "endMs": 13623
+        },
+        {
+          "text": "mine.",
+          "startMs": 13623,
+          "endMs": 14017
+        }
+      ],
+      "notes": [
+        "held 417->421 (min 59 frames)"
+      ]
+    },
+    {
+      "id": "c007",
+      "line_id": "l28",
+      "speaker": "nandini",
+      "startMs": 15083,
+      "endMs": 16617,
+      "startFrame": 453,
+      "endFrame": 499,
+      "speechFrames": [
+        453,
+        501
+      ],
+      "wordTiming": "asr",
+      "text": "You have to face Bhaiyaji",
+      "words": [
+        {
+          "text": "You",
+          "startMs": 15083,
+          "endMs": 15273
+        },
+        {
+          "text": "have",
+          "startMs": 15273,
+          "endMs": 15593
+        },
+        {
+          "text": "to",
+          "startMs": 15593,
+          "endMs": 15753
+        },
+        {
+          "text": "face",
+          "startMs": 15753,
+          "endMs": 16073
+        },
+        {
+          "text": "Bhaiyaji",
+          "startMs": 16073,
+          "endMs": 16617
+        }
+      ],
+      "cutFragment": true,
+      "notes": [
+        "split at the cut at frame 501",
+        "end 501->499 (2-frame gap)"
+      ]
+    },
+    {
+      "id": "c008",
+      "line_id": "l28",
+      "speaker": "nandini",
+      "startMs": 16683,
+      "endMs": 17750,
+      "startFrame": 501,
+      "endFrame": 533,
+      "speechFrames": [
+        501,
+        533
+      ],
+      "wordTiming": "asr",
+      "text": "as an Inspector.",
+      "words": [
+        {
+          "text": "as",
+          "startMs": 16683,
+          "endMs": 16893
+        },
+        {
+          "text": "an",
+          "startMs": 16893,
+          "endMs": 17033
+        },
+        {
+          "text": "Inspector.",
+          "startMs": 17033,
+          "endMs": 17750
+        }
+      ],
+      "cutFragment": true,
+      "notes": [
+        "split at the cut at frame 501"
+      ]
+    },
+    {
+      "id": "c009",
+      "line_id": "l04",
+      "speaker": "nirala",
+      "startMs": 18117,
+      "endMs": 21050,
+      "startFrame": 544,
+      "endFrame": 632,
+      "speechFrames": [
+        544,
+        632
+      ],
+      "wordTiming": "asr",
+      "text": "For the first time,\nthis uniform fits, madam.",
+      "words": [
+        {
+          "text": "For",
+          "startMs": 18117,
+          "endMs": 18253
+        },
+        {
+          "text": "the",
+          "startMs": 18253,
+          "endMs": 18563
+        },
+        {
+          "text": "first",
+          "startMs": 18563,
+          "endMs": 18953
+        },
+        {
+          "text": "time,",
+          "startMs": 18953,
+          "endMs": 19563
+        },
+        {
+          "text": "this",
+          "startMs": 19563,
+          "endMs": 19693
+        },
+        {
+          "text": "uniform",
+          "startMs": 19693,
+          "endMs": 20413
+        },
+        {
+          "text": "fits,",
+          "startMs": 20413,
+          "endMs": 20683
+        },
+        {
+          "text": "madam.",
+          "startMs": 20683,
+          "endMs": 21050
+        }
+      ]
+    },
+    {
+      "id": "c010",
+      "line_id": "l05",
+      "speaker": "nandini",
+      "startMs": 21417,
+      "endMs": 24483,
+      "startFrame": 643,
+      "endFrame": 735,
+      "speechFrames": [
+        643,
+        735
+      ],
+      "wordTiming": "asr",
+      "text": "In my force,\nwe don't wear a medal like this.",
+      "words": [
+        {
+          "text": "In",
+          "startMs": 21417,
+          "endMs": 21520
+        },
+        {
+          "text": "my",
+          "startMs": 21520,
+          "endMs": 21740
+        },
+        {
+          "text": "force,",
+          "startMs": 21740,
+          "endMs": 22690
+        },
+        {
+          "text": "we",
+          "startMs": 22690,
+          "endMs": 22740
+        },
+        {
+          "text": "don't",
+          "startMs": 22740,
+          "endMs": 23090
+        },
+        {
+          "text": "wear",
+          "startMs": 23090,
+          "endMs": 23380
+        },
+        {
+          "text": "a",
+          "startMs": 23380,
+          "endMs": 23450
+        },
+        {
+          "text": "medal",
+          "startMs": 23450,
+          "endMs": 23830
+        },
+        {
+          "text": "like",
+          "startMs": 23830,
+          "endMs": 24150
+        },
+        {
+          "text": "this.",
+          "startMs": 24150,
+          "endMs": 24483
+        }
+      ]
+    },
+    {
+      "id": "c011",
+      "line_id": "l06",
+      "speaker": "nandini",
+      "startMs": 25850,
+      "endMs": 27817,
+      "startFrame": 776,
+      "endFrame": 835,
+      "speechFrames": [
+        776,
+        833
+      ],
+      "wordTiming": "asr",
+      "text": "Come back and\ncollect your medal.",
+      "words": [
+        {
+          "text": "Come",
+          "startMs": 25850,
+          "endMs": 26057
+        },
+        {
+          "text": "back",
+          "startMs": 26057,
+          "endMs": 26377
+        },
+        {
+          "text": "and",
+          "startMs": 26377,
+          "endMs": 26577
+        },
+        {
+          "text": "collect",
+          "startMs": 26577,
+          "endMs": 27167
+        },
+        {
+          "text": "your",
+          "startMs": 27167,
+          "endMs": 27367
+        },
+        {
+          "text": "medal.",
+          "startMs": 27367,
+          "endMs": 27817
+        }
+      ],
+      "notes": [
+        "held 833->835 (min 59 frames)"
+      ]
+    },
+    {
+      "id": "c012",
+      "line_id": "l07",
+      "speaker": "nandini",
+      "startMs": 28750,
+      "endMs": 30650,
+      "startFrame": 863,
+      "endFrame": 920,
+      "speechFrames": [
+        863,
+        911
+      ],
+      "wordTiming": "graphemes",
+      "text": "Don't take the revolver out.",
+      "words": [
+        {
+          "text": "Don't",
+          "startMs": 28750,
+          "endMs": 29101
+        },
+        {
+          "text": "take",
+          "startMs": 29101,
+          "endMs": 29365
+        },
+        {
+          "text": "the",
+          "startMs": 29365,
+          "endMs": 29564
+        },
+        {
+          "text": "revolver",
+          "startMs": 29564,
+          "endMs": 30093
+        },
+        {
+          "text": "out.",
+          "startMs": 30093,
+          "endMs": 30650
+        }
+      ],
+      "notes": [
+        "held 911->920 over the pause"
+      ]
+    },
+    {
+      "id": "c013",
+      "line_id": "l07",
+      "speaker": "nandini",
+      "startMs": 30717,
+      "endMs": 32150,
+      "startFrame": 922,
+      "endFrame": 965,
+      "speechFrames": [
+        922,
+        965
+      ],
+      "wordTiming": "graphemes",
+      "text": "Bhaiyaji has a real one.",
+      "words": [
+        {
+          "text": "Bhaiyaji",
+          "startMs": 30717,
+          "endMs": 31312
+        },
+        {
+          "text": "has",
+          "startMs": 31312,
+          "endMs": 31519
+        },
+        {
+          "text": "a",
+          "startMs": 31519,
+          "endMs": 31588
+        },
+        {
+          "text": "real",
+          "startMs": 31588,
+          "endMs": 31863
+        },
+        {
+          "text": "one.",
+          "startMs": 31863,
+          "endMs": 32150
+        }
+      ]
+    },
+    {
+      "id": "c014",
+      "line_id": "l08",
+      "speaker": "nirala",
+      "startMs": 32517,
+      "endMs": 35350,
+      "startFrame": 976,
+      "endFrame": 1061,
+      "speechFrames": [
+        976,
+        1061
+      ],
+      "wordTiming": "asr",
+      "text": "I have not taken it out\nin two years, madam.",
+      "words": [
+        {
+          "text": "I",
+          "startMs": 32517,
+          "endMs": 32613
+        },
+        {
+          "text": "have",
+          "startMs": 32613,
+          "endMs": 32933
+        },
+        {
+          "text": "not",
+          "startMs": 32933,
+          "endMs": 33163
+        },
+        {
+          "text": "taken",
+          "startMs": 33163,
+          "endMs": 33583
+        },
+        {
+          "text": "it",
+          "startMs": 33583,
+          "endMs": 33763
+        },
+        {
+          "text": "out",
+          "startMs": 33763,
+          "endMs": 33943
+        },
+        {
+          "text": "in",
+          "startMs": 33943,
+          "endMs": 34113
+        },
+        {
+          "text": "two",
+          "startMs": 34113,
+          "endMs": 34383
+        },
+        {
+          "text": "years,",
+          "startMs": 34383,
+          "endMs": 34923
+        },
+        {
+          "text": "madam.",
+          "startMs": 34923,
+          "endMs": 35350
+        }
+      ]
+    },
+    {
+      "id": "c015",
+      "line_id": "l09",
+      "speaker": "pushpa",
+      "startMs": 37217,
+      "endMs": 38917,
+      "startFrame": 1117,
+      "endFrame": 1168,
+      "speechFrames": [
+        1117,
+        1159
+      ],
+      "wordTiming": "asr",
+      "text": "Recording is on, madam.",
+      "words": [
+        {
+          "text": "Recording",
+          "startMs": 37217,
+          "endMs": 37990
+        },
+        {
+          "text": "is",
+          "startMs": 37990,
+          "endMs": 38190
+        },
+        {
+          "text": "on,",
+          "startMs": 38190,
+          "endMs": 38580
+        },
+        {
+          "text": "madam.",
+          "startMs": 38580,
+          "endMs": 38917
+        }
+      ],
+      "notes": [
+        "held 1159->1168 over the pause"
+      ]
+    },
+    {
+      "id": "c016",
+      "line_id": "l09",
+      "speaker": "pushpa",
+      "startMs": 38983,
+      "endMs": 39783,
+      "startFrame": 1170,
+      "endFrame": 1194,
+      "speechFrames": [
+        1170,
+        1192
+      ],
+      "wordTiming": "asr",
+      "text": "On my phone.",
+      "words": [
+        {
+          "text": "On",
+          "startMs": 38983,
+          "endMs": 39420
+        },
+        {
+          "text": "my",
+          "startMs": 39420,
+          "endMs": 39490
+        },
+        {
+          "text": "phone.",
+          "startMs": 39490,
+          "endMs": 39783
+        }
+      ],
+      "notes": [
+        "held 1192->1194 (min 24 frames)"
+      ]
+    },
+    {
+      "id": "c017",
+      "line_id": "l29",
+      "speaker": "nandini",
+      "startMs": 40083,
+      "endMs": 42117,
+      "startFrame": 1203,
+      "endFrame": 1264,
+      "speechFrames": [
+        1203,
+        1254
+      ],
+      "wordTiming": "asr",
+      "text": "My phone stays in your pocket.",
+      "words": [
+        {
+          "text": "My",
+          "startMs": 40083,
+          "endMs": 40127
+        },
+        {
+          "text": "phone",
+          "startMs": 40127,
+          "endMs": 40537
+        },
+        {
+          "text": "stays",
+          "startMs": 40537,
+          "endMs": 40947
+        },
+        {
+          "text": "in",
+          "startMs": 40947,
+          "endMs": 41107
+        },
+        {
+          "text": "your",
+          "startMs": 41107,
+          "endMs": 41427
+        },
+        {
+          "text": "pocket.",
+          "startMs": 41427,
+          "endMs": 42117
+        }
+      ],
+      "notes": [
+        "held 1254->1264 over the pause"
+      ]
+    },
+    {
+      "id": "c018",
+      "line_id": "l29",
+      "speaker": "nandini",
+      "startMs": 42183,
+      "endMs": 43550,
+      "startFrame": 1266,
+      "endFrame": 1307,
+      "speechFrames": [
+        1266,
+        1307
+      ],
+      "wordTiming": "graphemes",
+      "text": "The call stays on.",
+      "words": [
+        {
+          "text": "The",
+          "startMs": 42183,
+          "endMs": 42484
+        },
+        {
+          "text": "call",
+          "startMs": 42484,
+          "endMs": 42839
+        },
+        {
+          "text": "stays",
+          "startMs": 42839,
+          "endMs": 43283
+        },
+        {
+          "text": "on.",
+          "startMs": 43283,
+          "endMs": 43550
+        }
+      ]
+    },
+    {
+      "id": "c019",
+      "line_id": "l10",
+      "speaker": "nandini",
+      "startMs": 43917,
+      "endMs": 45150,
+      "startFrame": 1318,
+      "endFrame": 1355,
+      "speechFrames": [
+        1318,
+        1347
+      ],
+      "wordTiming": "graphemes",
+      "text": "Whatever you see,",
+      "words": [
+        {
+          "text": "Whatever",
+          "startMs": 43917,
+          "endMs": 44440
+        },
+        {
+          "text": "you",
+          "startMs": 44440,
+          "endMs": 44627
+        },
+        {
+          "text": "see,",
+          "startMs": 44627,
+          "endMs": 45150
+        }
+      ],
+      "notes": [
+        "held 1347->1355 over the pause"
+      ]
+    },
+    {
+      "id": "c020",
+      "line_id": "l10",
+      "speaker": "nandini",
+      "startMs": 45217,
+      "endMs": 46450,
+      "startFrame": 1357,
+      "endFrame": 1394,
+      "speechFrames": [
+        1357,
+        1384
+      ],
+      "wordTiming": "graphemes",
+      "text": "say it aloud.",
+      "words": [
+        {
+          "text": "say",
+          "startMs": 45217,
+          "endMs": 45486
+        },
+        {
+          "text": "it",
+          "startMs": 45486,
+          "endMs": 45641
+        },
+        {
+          "text": "aloud.",
+          "startMs": 45641,
+          "endMs": 46450
+        }
+      ],
+      "notes": [
+        "held 1384->1394 over the pause"
+      ]
+    },
+    {
+      "id": "c021",
+      "line_id": "l10",
+      "speaker": "nandini",
+      "startMs": 46517,
+      "endMs": 47883,
+      "startFrame": 1396,
+      "endFrame": 1437,
+      "speechFrames": [
+        1396,
+        1437
+      ],
+      "wordTiming": "asr",
+      "text": "So the witness hears.",
+      "words": [
+        {
+          "text": "So",
+          "startMs": 46517,
+          "endMs": 46797
+        },
+        {
+          "text": "the",
+          "startMs": 46797,
+          "endMs": 47077
+        },
+        {
+          "text": "witness",
+          "startMs": 47077,
+          "endMs": 47537
+        },
+        {
+          "text": "hears.",
+          "startMs": 47537,
+          "endMs": 47883
+        }
+      ]
+    },
+    {
+      "id": "c022",
+      "line_id": "l11",
+      "speaker": "nandini",
+      "startMs": 48150,
+      "endMs": 49017,
+      "startFrame": 1445,
+      "endFrame": 1471,
+      "speechFrames": [
+        1445,
+        1463
+      ],
+      "wordTiming": "asr",
+      "text": "The slip,",
+      "words": [
+        {
+          "text": "The",
+          "startMs": 48150,
+          "endMs": 48387
+        },
+        {
+          "text": "slip,",
+          "startMs": 48387,
+          "endMs": 49017
+        }
+      ],
+      "notes": [
+        "held 1463->1471 over the pause"
+      ]
+    },
+    {
+      "id": "c023",
+      "line_id": "l11",
+      "speaker": "nandini",
+      "startMs": 49083,
+      "endMs": 50317,
+      "startFrame": 1473,
+      "endFrame": 1510,
+      "speechFrames": [
+        1473,
+        1502
+      ],
+      "wordTiming": "asr",
+      "text": "the sack count,",
+      "words": [
+        {
+          "text": "the",
+          "startMs": 49083,
+          "endMs": 49377
+        },
+        {
+          "text": "sack",
+          "startMs": 49377,
+          "endMs": 49787
+        },
+        {
+          "text": "count,",
+          "startMs": 49787,
+          "endMs": 50317
+        }
+      ],
+      "notes": [
+        "held 1502->1510 over the pause"
+      ]
+    },
+    {
+      "id": "c024",
+      "line_id": "l11",
+      "speaker": "nandini",
+      "startMs": 50383,
+      "endMs": 52183,
+      "startFrame": 1512,
+      "endFrame": 1566,
+      "speechFrames": [
+        1512,
+        1566
+      ],
+      "wordTiming": "asr",
+      "text": "and Bhaiyaji's own voice.",
+      "words": [
+        {
+          "text": "and",
+          "startMs": 50383,
+          "endMs": 50577
+        },
+        {
+          "text": "Bhaiyaji's",
+          "startMs": 50577,
+          "endMs": 51477
+        },
+        {
+          "text": "own",
+          "startMs": 51477,
+          "endMs": 51737
+        },
+        {
+          "text": "voice.",
+          "startMs": 51737,
+          "endMs": 52183
+        }
+      ]
+    },
+    {
+      "id": "c025",
+      "line_id": "l12",
+      "speaker": "nandini",
+      "startMs": 52550,
+      "endMs": 54583,
+      "startFrame": 1577,
+      "endFrame": 1638,
+      "speechFrames": [
+        1577,
+        1629
+      ],
+      "wordTiming": "graphemes",
+      "text": "If there's danger,",
+      "words": [
+        {
+          "text": "If",
+          "startMs": 52550,
+          "endMs": 52799
+        },
+        {
+          "text": "there's",
+          "startMs": 52799,
+          "endMs": 53541
+        },
+        {
+          "text": "danger,",
+          "startMs": 53541,
+          "endMs": 54583
+        }
+      ],
+      "notes": [
+        "held 1629->1638 over the pause"
+      ]
+    },
+    {
+      "id": "c026",
+      "line_id": "l12",
+      "speaker": "nandini",
+      "startMs": 54650,
+      "endMs": 56383,
+      "startFrame": 1640,
+      "endFrame": 1692,
+      "speechFrames": [
+        1640,
+        1680
+      ],
+      "wordTiming": "graphemes",
+      "text": "say: 'The tea has gone cold.'",
+      "words": [
+        {
+          "text": "say:",
+          "startMs": 54650,
+          "endMs": 54908
+        },
+        {
+          "text": "'The",
+          "startMs": 54908,
+          "endMs": 55125
+        },
+        {
+          "text": "tea",
+          "startMs": 55125,
+          "endMs": 55287
+        },
+        {
+          "text": "has",
+          "startMs": 55287,
+          "endMs": 55450
+        },
+        {
+          "text": "gone",
+          "startMs": 55450,
+          "endMs": 55666
+        },
+        {
+          "text": "cold.'",
+          "startMs": 55666,
+          "endMs": 56383
+        }
+      ],
+      "notes": [
+        "held 1680->1692 (min 52 frames)"
+      ]
+    },
+    {
+      "id": "c027",
+      "line_id": "l13",
+      "speaker": "nirala",
+      "startMs": 56450,
+      "endMs": 58650,
+      "startFrame": 1694,
+      "endFrame": 1760,
+      "speechFrames": [
+        1694,
+        1760
+      ],
+      "wordTiming": "asr",
+      "text": "The tea has gone cold.",
+      "words": [
+        {
+          "text": "The",
+          "startMs": 56450,
+          "endMs": 56827
+        },
+        {
+          "text": "tea",
+          "startMs": 56827,
+          "endMs": 57287
+        },
+        {
+          "text": "has",
+          "startMs": 57287,
+          "endMs": 57517
+        },
+        {
+          "text": "gone",
+          "startMs": 57517,
+          "endMs": 57987
+        },
+        {
+          "text": "cold.",
+          "startMs": 57987,
+          "endMs": 58650
+        }
+      ]
+    },
+    {
+      "id": "c028",
+      "line_id": "l14",
+      "speaker": "nandini",
+      "startMs": 60050,
+      "endMs": 61517,
+      "startFrame": 1802,
+      "endFrame": 1846,
+      "speechFrames": [
+        1802,
+        1846
+      ],
+      "wordTiming": "asr",
+      "text": "Go ahead, Nirala ji.",
+      "words": [
+        {
+          "text": "Go",
+          "startMs": 60050,
+          "endMs": 60127
+        },
+        {
+          "text": "ahead,",
+          "startMs": 60127,
+          "endMs": 60647
+        },
+        {
+          "text": "Nirala",
+          "startMs": 60647,
+          "endMs": 61137
+        },
+        {
+          "text": "ji.",
+          "startMs": 61137,
+          "endMs": 61517
+        }
+      ]
+    },
+    {
+      "id": "c029",
+      "line_id": "l15",
+      "speaker": "bhaiyaji",
+      "startMs": 66717,
+      "endMs": 69683,
+      "startFrame": 2002,
+      "endFrame": 2091,
+      "speechFrames": [
+        2002,
+        2091
+      ],
+      "wordTiming": "asr",
+      "text": "Come in, come in,\nInspector sahab.",
+      "words": [
+        {
+          "text": "Come",
+          "startMs": 66717,
+          "endMs": 67133
+        },
+        {
+          "text": "in,",
+          "startMs": 67133,
+          "endMs": 67623
+        },
+        {
+          "text": "come",
+          "startMs": 67623,
+          "endMs": 67923
+        },
+        {
+          "text": "in,",
+          "startMs": 67923,
+          "endMs": 68313
+        },
+        {
+          "text": "Inspector",
+          "startMs": 68313,
+          "endMs": 69203
+        },
+        {
+          "text": "sahab.",
+          "startMs": 69203,
+          "endMs": 69683
+        }
+      ],
+      "heard_as": "phone",
+      "speaker_label": "bhaiyaji"
+    },
+    {
+      "id": "c030",
+      "line_id": "l30",
+      "speaker": "nirala",
+      "startMs": 69950,
+      "endMs": 71650,
+      "startFrame": 2099,
+      "endFrame": 2150,
+      "speechFrames": [
+        2099,
+        2150
+      ],
+      "wordTiming": "graphemes",
+      "text": "Namaskar, Bhaiyaji.",
+      "words": [
+        {
+          "text": "Namaskar,",
+          "startMs": 69950,
+          "endMs": 70808
+        },
+        {
+          "text": "Bhaiyaji.",
+          "startMs": 70808,
+          "endMs": 71650
+        }
+      ],
+      "heard_as": "phone",
+      "speaker_label": "nirala"
+    },
+    {
+      "id": "c031",
+      "line_id": "l16",
+      "speaker": "nirala",
+      "startMs": 74517,
+      "endMs": 77350,
+      "startFrame": 2236,
+      "endFrame": 2321,
+      "speechFrames": [
+        2236,
+        2308
+      ],
+      "wordTiming": "graphemes",
+      "text": "Why has the shutter been\nbrought down, Bhaiyaji?",
+      "words": [
+        {
+          "text": "Why",
+          "startMs": 74517,
+          "endMs": 74710
+        },
+        {
+          "text": "has",
+          "startMs": 74710,
+          "endMs": 74883
+        },
+        {
+          "text": "the",
+          "startMs": 74883,
+          "endMs": 75057
+        },
+        {
+          "text": "shutter",
+          "startMs": 75057,
+          "endMs": 75461
+        },
+        {
+          "text": "been",
+          "startMs": 75461,
+          "endMs": 75692
+        },
+        {
+          "text": "brought",
+          "startMs": 75692,
+          "endMs": 76097
+        },
+        {
+          "text": "down,",
+          "startMs": 76097,
+          "endMs": 76386
+        },
+        {
+          "text": "Bhaiyaji?",
+          "startMs": 76386,
+          "endMs": 77350
+        }
+      ],
+      "heard_as": "phone",
+      "notes": [
+        "held 2308->2321 (min 85 frames)"
+      ]
+    },
+    {
+      "id": "c032",
+      "line_id": "l17",
+      "speaker": "bhaiyaji",
+      "startMs": 77517,
+      "endMs": 81750,
+      "startFrame": 2326,
+      "endFrame": 2453,
+      "speechFrames": [
+        2326,
+        2453
+      ],
+      "wordTiming": "asr",
+      "text": "Big load today, Inspector sahab.\nLet no eye fall on it.",
+      "words": [
+        {
+          "text": "Big",
+          "startMs": 77517,
+          "endMs": 77743
+        },
+        {
+          "text": "load",
+          "startMs": 77743,
+          "endMs": 78023
+        },
+        {
+          "text": "today,",
+          "startMs": 78023,
+          "endMs": 78513
+        },
+        {
+          "text": "Inspector",
+          "startMs": 78513,
+          "endMs": 79153
+        },
+        {
+          "text": "sahab.",
+          "startMs": 79153,
+          "endMs": 80073
+        },
+        {
+          "text": "Let",
+          "startMs": 80073,
+          "endMs": 80293
+        },
+        {
+          "text": "no",
+          "startMs": 80293,
+          "endMs": 80423
+        },
+        {
+          "text": "eye",
+          "startMs": 80423,
+          "endMs": 80763
+        },
+        {
+          "text": "fall",
+          "startMs": 80763,
+          "endMs": 81213
+        },
+        {
+          "text": "on",
+          "startMs": 81213,
+          "endMs": 81433
+        },
+        {
+          "text": "it.",
+          "startMs": 81433,
+          "endMs": 81750
+        }
+      ],
+      "heard_as": "phone"
+    },
+    {
+      "id": "c033",
+      "line_id": "l18",
+      "speaker": "nirala",
+      "startMs": 82117,
+      "endMs": 85450,
+      "startFrame": 2464,
+      "endFrame": 2564,
+      "speechFrames": [
+        2464,
+        2564
+      ],
+      "wordTiming": "graphemes",
+      "text": "The truck is full, Bhaiyaji.\nSacks up to the tarpaulin.",
+      "words": [
+        {
+          "text": "The",
+          "startMs": 82117,
+          "endMs": 82354
+        },
+        {
+          "text": "truck",
+          "startMs": 82354,
+          "endMs": 82712
+        },
+        {
+          "text": "is",
+          "startMs": 82712,
+          "endMs": 82856
+        },
+        {
+          "text": "full,",
+          "startMs": 82856,
+          "endMs": 83214
+        },
+        {
+          "text": "Bhaiyaji.",
+          "startMs": 83214,
+          "endMs": 83859
+        },
+        {
+          "text": "Sacks",
+          "startMs": 83859,
+          "endMs": 84218
+        },
+        {
+          "text": "up",
+          "startMs": 84218,
+          "endMs": 84361
+        },
+        {
+          "text": "to",
+          "startMs": 84361,
+          "endMs": 84505
+        },
+        {
+          "text": "the",
+          "startMs": 84505,
+          "endMs": 84720
+        },
+        {
+          "text": "tarpaulin.",
+          "startMs": 84720,
+          "endMs": 85450
+        }
+      ],
+      "heard_as": "phone",
+      "speaker_label": "nirala"
+    },
+    {
+      "id": "c034",
+      "line_id": "l19",
+      "speaker": "bhaiyaji",
+      "startMs": 85817,
+      "endMs": 88383,
+      "startFrame": 2575,
+      "endFrame": 2652,
+      "speechFrames": [
+        2575,
+        2652
+      ],
+      "wordTiming": "asr",
+      "text": "It goes over the\ncrossing tonight itself.",
+      "words": [
+        {
+          "text": "It",
+          "startMs": 85817,
+          "endMs": 85963
+        },
+        {
+          "text": "goes",
+          "startMs": 85963,
+          "endMs": 86233
+        },
+        {
+          "text": "over",
+          "startMs": 86233,
+          "endMs": 86493
+        },
+        {
+          "text": "the",
+          "startMs": 86493,
+          "endMs": 86723
+        },
+        {
+          "text": "crossing",
+          "startMs": 86723,
+          "endMs": 87273
+        },
+        {
+          "text": "tonight",
+          "startMs": 87273,
+          "endMs": 87873
+        },
+        {
+          "text": "itself.",
+          "startMs": 87873,
+          "endMs": 88383
+        }
+      ],
+      "heard_as": "phone"
+    },
+    {
+      "id": "c035",
+      "line_id": "l20",
+      "speaker": "nirala",
+      "startMs": 88750,
+      "endMs": 90817,
+      "startFrame": 2663,
+      "endFrame": 2725,
+      "speechFrames": [
+        2663,
+        2714
+      ],
+      "wordTiming": "graphemes",
+      "text": "Kindly show me the slip,\nBhaiyaji.",
+      "words": [
+        {
+          "text": "Kindly",
+          "startMs": 88750,
+          "endMs": 89114
+        },
+        {
+          "text": "show",
+          "startMs": 89114,
+          "endMs": 89346
+        },
+        {
+          "text": "me",
+          "startMs": 89346,
+          "endMs": 89462
+        },
+        {
+          "text": "the",
+          "startMs": 89462,
+          "endMs": 89636
+        },
+        {
+          "text": "slip,",
+          "startMs": 89636,
+          "endMs": 89925
+        },
+        {
+          "text": "Bhaiyaji.",
+          "startMs": 89925,
+          "endMs": 90817
+        }
+      ],
+      "heard_as": "phone",
+      "notes": [
+        "held 2714->2725 over the pause"
+      ]
+    },
+    {
+      "id": "c036",
+      "line_id": "l20",
+      "speaker": "nirala",
+      "startMs": 90883,
+      "endMs": 93417,
+      "startFrame": 2727,
+      "endFrame": 2803,
+      "speechFrames": [
+        2727,
+        2803
+      ],
+      "wordTiming": "graphemes",
+      "text": "Eight hundred sacks...\ngovernment stamped.",
+      "words": [
+        {
+          "text": "Eight",
+          "startMs": 90883,
+          "endMs": 91241
+        },
+        {
+          "text": "hundred",
+          "startMs": 91241,
+          "endMs": 91704
+        },
+        {
+          "text": "sacks...",
+          "startMs": 91704,
+          "endMs": 92234
+        },
+        {
+          "text": "government",
+          "startMs": 92234,
+          "endMs": 92897
+        },
+        {
+          "text": "stamped.",
+          "startMs": 92897,
+          "endMs": 93417
+        }
+      ],
+      "heard_as": "phone"
+    },
+    {
+      "id": "c037",
+      "line_id": "l21",
+      "speaker": "bhaiyaji",
+      "startMs": 93783,
+      "endMs": 96383,
+      "startFrame": 2814,
+      "endFrame": 2892,
+      "speechFrames": [
+        2814,
+        2885
+      ],
+      "wordTiming": "graphemes",
+      "text": "All eight hundred.",
+      "words": [
+        {
+          "text": "All",
+          "startMs": 93783,
+          "endMs": 94239
+        },
+        {
+          "text": "eight",
+          "startMs": 94239,
+          "endMs": 94969
+        },
+        {
+          "text": "hundred.",
+          "startMs": 94969,
+          "endMs": 96383
+        }
+      ],
+      "heard_as": "phone",
+      "notes": [
+        "held 2885->2892 over the pause"
+      ]
+    },
+    {
+      "id": "c038",
+      "line_id": "l21",
+      "speaker": "bhaiyaji",
+      "startMs": 96450,
+      "endMs": 97250,
+      "startFrame": 2894,
+      "endFrame": 2918,
+      "speechFrames": [
+        2894,
+        2914
+      ],
+      "wordTiming": "asr",
+      "text": "Count them.",
+      "words": [
+        {
+          "text": "Count",
+          "startMs": 96450,
+          "endMs": 96740
+        },
+        {
+          "text": "them.",
+          "startMs": 96740,
+          "endMs": 97250
+        }
+      ],
+      "heard_as": "phone",
+      "notes": [
+        "held 2914->2918 (min 24 frames)"
+      ]
+    },
+    {
+      "id": "c039",
+      "line_id": "l22",
+      "speaker": "nandini",
+      "startMs": 97383,
+      "endMs": 98217,
+      "startFrame": 2922,
+      "endFrame": 2947,
+      "speechFrames": [
+        2922,
+        2945
+      ],
+      "wordTiming": "graphemes",
+      "text": "Eight hundred.",
+      "words": [
+        {
+          "text": "Eight",
+          "startMs": 97383,
+          "endMs": 97711
+        },
+        {
+          "text": "hundred.",
+          "startMs": 97711,
+          "endMs": 98217
+        }
+      ],
+      "notes": [
+        "held 2945->2947 (min 25 frames)"
+      ]
+    },
+    {
+      "id": "c040",
+      "line_id": "l22",
+      "speaker": "nandini",
+      "startMs": 98650,
+      "endMs": 99683,
+      "startFrame": 2960,
+      "endFrame": 2991,
+      "speechFrames": [
+        2960,
+        2982
+      ],
+      "wordTiming": "graphemes",
+      "text": "Government.",
+      "words": [
+        {
+          "text": "Government.",
+          "startMs": 98650,
+          "endMs": 99683
+        }
+      ],
+      "notes": [
+        "held 2982->2991 over the pause"
+      ]
+    },
+    {
+      "id": "c041",
+      "line_id": "l22",
+      "speaker": "nandini",
+      "startMs": 99750,
+      "endMs": 100550,
+      "startFrame": 2993,
+      "endFrame": 3017,
+      "speechFrames": [
+        2993,
+        3009
+      ],
+      "wordTiming": "graphemes",
+      "text": "Tonight.",
+      "words": [
+        {
+          "text": "Tonight.",
+          "startMs": 99750,
+          "endMs": 100550
+        }
+      ],
+      "notes": [
+        "held 3009->3017 (min 24 frames)"
+      ]
+    },
+    {
+      "id": "c042",
+      "line_id": "l23",
+      "speaker": "nirala",
+      "startMs": 101250,
+      "endMs": 105150,
+      "startFrame": 3038,
+      "endFrame": 3155,
+      "speechFrames": [
+        3038,
+        3155
+      ],
+      "wordTiming": "graphemes",
+      "text": "But SHO sahab has already\nsigned this slip, Bhaiyaji...",
+      "words": [
+        {
+          "text": "But",
+          "startMs": 101250,
+          "endMs": 101537
+        },
+        {
+          "text": "SHO",
+          "startMs": 101537,
+          "endMs": 101783
+        },
+        {
+          "text": "sahab",
+          "startMs": 101783,
+          "endMs": 102193
+        },
+        {
+          "text": "has",
+          "startMs": 102193,
+          "endMs": 102438
+        },
+        {
+          "text": "already",
+          "startMs": 102438,
+          "endMs": 103012
+        },
+        {
+          "text": "signed",
+          "startMs": 103012,
+          "endMs": 103503
+        },
+        {
+          "text": "this",
+          "startMs": 103503,
+          "endMs": 103831
+        },
+        {
+          "text": "slip,",
+          "startMs": 103831,
+          "endMs": 104241
+        },
+        {
+          "text": "Bhaiyaji...",
+          "startMs": 104241,
+          "endMs": 105150
+        }
+      ],
+      "heard_as": "phone"
+    },
+    {
+      "id": "c043",
+      "line_id": "l32",
+      "speaker": "nirala",
+      "startMs": 105417,
+      "endMs": 107983,
+      "startFrame": 3163,
+      "endFrame": 3240,
+      "speechFrames": [
+        3163,
+        3240
+      ],
+      "wordTiming": "asr",
+      "text": "Then why was I\ninvited here at all?",
+      "words": [
+        {
+          "text": "Then",
+          "startMs": 105417,
+          "endMs": 105697
+        },
+        {
+          "text": "why",
+          "startMs": 105697,
+          "endMs": 105877
+        },
+        {
+          "text": "was",
+          "startMs": 105877,
+          "endMs": 106097
+        },
+        {
+          "text": "I",
+          "startMs": 106097,
+          "endMs": 106307
+        },
+        {
+          "text": "invited",
+          "startMs": 106307,
+          "endMs": 106677
+        },
+        {
+          "text": "here",
+          "startMs": 106677,
+          "endMs": 106967
+        },
+        {
+          "text": "at",
+          "startMs": 106967,
+          "endMs": 107127
+        },
+        {
+          "text": "all?",
+          "startMs": 107127,
+          "endMs": 107983
+        }
+      ],
+      "heard_as": "phone"
+    },
+    {
+      "id": "c044",
+      "line_id": "l24",
+      "speaker": "bhaiyaji",
+      "startMs": 109683,
+      "endMs": 113050,
+      "startFrame": 3291,
+      "endFrame": 3392,
+      "speechFrames": [
+        3291,
+        3394
+      ],
+      "wordTiming": "asr",
+      "text": "Fake Inspector! Come in...",
+      "words": [
+        {
+          "text": "Fake",
+          "startMs": 109683,
+          "endMs": 110600
+        },
+        {
+          "text": "Inspector!",
+          "startMs": 110600,
+          "endMs": 112220
+        },
+        {
+          "text": "Come",
+          "startMs": 112220,
+          "endMs": 112650
+        },
+        {
+          "text": "in...",
+          "startMs": 112650,
+          "endMs": 113050
+        }
+      ],
+      "heard_as": "phone",
+      "cutFragment": true,
+      "notes": [
+        "split at the cut at frame 3394",
+        "end 3394->3392 (2-frame gap)"
+      ]
+    },
+    {
+      "id": "c045",
+      "line_id": "l24",
+      "speaker": "bhaiyaji",
+      "startMs": 113117,
+      "endMs": 114783,
+      "startFrame": 3394,
+      "endFrame": 3444,
+      "speechFrames": [
+        3394,
+        3444
+      ],
+      "wordTiming": "asr",
+      "text": "it's you I was waiting for.",
+      "words": [
+        {
+          "text": "it's",
+          "startMs": 113117,
+          "endMs": 113420
+        },
+        {
+          "text": "you",
+          "startMs": 113420,
+          "endMs": 113620
+        },
+        {
+          "text": "I",
+          "startMs": 113620,
+          "endMs": 113690
+        },
+        {
+          "text": "was",
+          "startMs": 113690,
+          "endMs": 113910
+        },
+        {
+          "text": "waiting",
+          "startMs": 113910,
+          "endMs": 114400
+        },
+        {
+          "text": "for.",
+          "startMs": 114400,
+          "endMs": 114783
+        }
+      ],
+      "heard_as": "phone",
+      "cutFragment": true,
+      "notes": [
+        "split at the cut at frame 3394"
+      ]
+    },
+    {
+      "id": "c046",
+      "line_id": "l25",
+      "speaker": "nandini",
+      "startMs": 115950,
+      "endMs": 116917,
+      "startFrame": 3479,
+      "endFrame": 3508,
+      "speechFrames": [
+        3479,
+        3508
+      ],
+      "wordTiming": "graphemes",
+      "text": "Bhaiyaji knew.",
+      "words": [
+        {
+          "text": "Bhaiyaji",
+          "startMs": 115950,
+          "endMs": 116556
+        },
+        {
+          "text": "knew.",
+          "startMs": 116556,
+          "endMs": 116917
+        }
+      ]
+    },
+    {
+      "id": "c047",
+      "line_id": "l31",
+      "speaker": "nandini",
+      "startMs": 117183,
+      "endMs": 119250,
+      "startFrame": 3516,
+      "endFrame": 3578,
+      "speechFrames": [
+        3516,
+        3578
+      ],
+      "wordTiming": "asr",
+      "text": "The invitation was a trap.",
+      "words": [
+        {
+          "text": "The",
+          "startMs": 117183,
+          "endMs": 117387
+        },
+        {
+          "text": "invitation",
+          "startMs": 117387,
+          "endMs": 118437
+        },
+        {
+          "text": "was",
+          "startMs": 118437,
+          "endMs": 118577
+        },
+        {
+          "text": "a",
+          "startMs": 118577,
+          "endMs": 118737
+        },
+        {
+          "text": "trap.",
+          "startMs": 118737,
+          "endMs": 119250
+        }
+      ]
+    },
+    {
+      "id": "c048",
+      "line_id": "l26",
+      "speaker": "bhaiyaji",
+      "startMs": 119617,
+      "endMs": 122217,
+      "startFrame": 3589,
+      "endFrame": 3667,
+      "speechFrames": [
+        3589,
+        3667
+      ],
+      "wordTiming": "asr",
+      "text": "And whose phone is this,\nin your pocket?",
+      "words": [
+        {
+          "text": "And",
+          "startMs": 119617,
+          "endMs": 119923
+        },
+        {
+          "text": "whose",
+          "startMs": 119923,
+          "endMs": 120483
+        },
+        {
+          "text": "phone",
+          "startMs": 120483,
+          "endMs": 120883
+        },
+        {
+          "text": "is",
+          "startMs": 120883,
+          "endMs": 121063
+        },
+        {
+          "text": "this,",
+          "startMs": 121063,
+          "endMs": 121583
+        },
+        {
+          "text": "in",
+          "startMs": 121583,
+          "endMs": 121693
+        },
+        {
+          "text": "your",
+          "startMs": 121693,
+          "endMs": 121913
+        },
+        {
+          "text": "pocket?",
+          "startMs": 121913,
+          "endMs": 122217
+        }
+      ],
+      "heard_as": "phone"
+    },
+    {
+      "id": "c049",
+      "line_id": "l27",
+      "speaker": "pushpa",
+      "startMs": 123383,
+      "endMs": 124283,
+      "startFrame": 3702,
+      "endFrame": 3729,
+      "speechFrames": [
+        3702,
+        3722
+      ],
+      "wordTiming": "graphemes",
+      "text": "Madam...",
+      "words": [
+        {
+          "text": "Madam...",
+          "startMs": 123383,
+          "endMs": 124283
+        }
+      ],
+      "notes": [
+        "held 3722->3729 over the pause"
+      ]
+    },
+    {
+      "id": "c050",
+      "line_id": "l27",
+      "speaker": "pushpa",
+      "startMs": 124350,
+      "endMs": 125750,
+      "startFrame": 3731,
+      "endFrame": 3773,
+      "speechFrames": [
+        3731,
+        3773
+      ],
+      "wordTiming": "asr",
+      "text": "the line has gone dead.",
+      "words": [
+        {
+          "text": "the",
+          "startMs": 124350,
+          "endMs": 124493
+        },
+        {
+          "text": "line",
+          "startMs": 124493,
+          "endMs": 124833
+        },
+        {
+          "text": "has",
+          "startMs": 124833,
+          "endMs": 125133
+        },
+        {
+          "text": "gone",
+          "startMs": 125133,
+          "endMs": 125433
+        },
+        {
+          "text": "dead.",
+          "startMs": 125433,
+          "endMs": 125750
         }
       ]
     }
-  ]
+  ],
+  "validation": {
+    "ok": true,
+    "problems": [],
+    "warnings": [],
+    "max_cps": 16.8,
+    "min_cue_frames": 24,
+    "min_gap_frames": 2,
+    "checked": [
+      "per-frame burn-in: no two cues on one frame, each cue on exactly its frames",
+      "cues >= 2 frames apart and in time order",
+      "no cue across a picture cut",
+      "cue start = first speech of its segment",
+      "<= 2 lines of <= 32 graphemes",
+      "duration >= 800 ms where there is room (a warning, not a failure)",
+      "<= 17 graphemes/s",
+      "no emotion tags",
+      "words spell the text",
+      "words inside their cue",
+      "ends inside the video (250 ms)",
+      "per-line text = script minus tags"
+    ]
+  }
 }

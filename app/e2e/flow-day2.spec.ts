@@ -11,7 +11,7 @@
  */
 import type { Choice, Lang } from "../src/content/schema";
 import { readState, seedState, viewerAt } from "./state";
-import { closeDrawer, doWelcome, drawer, expect, expectPath, facts, other, playAll, screen, test, visible } from "./flows/fixtures";
+import { closeDrawer, doWelcome, drawer, expect, expectPath, facts, other, playAll, playToEnd, screen, test, visible } from "./flows/fixtures";
 
 test.use({ actionTimeout: 15_000, navigationTimeout: 30_000 });
 
@@ -52,7 +52,7 @@ for (const seriesId of SERIES_IDS) {
       await test.step("series page on day 2: the losing ending is not playable", async () => {
         const sp = await screen(page, "series");
         await expect(sp.getByTestId("day-status")).toHaveText("Day 2 · official ending only");
-        await expect(sp.getByRole("list", { name: `Ending ${f.losing}` }).locator("li.is-locked")).toHaveCount(f.branch[f.losing].length);
+        await expect(sp.getByRole("list", { name: `Ending ${f.losing}` }).locator("li.is-locked")).toHaveCount(1);
         await snap("series-day-2");
         await sp.locator('[data-part="hero"]').getByRole("link", { name: "Play episode 1" }).click();
       });
@@ -109,12 +109,13 @@ for (const seriesId of SERIES_IDS) {
         await snap("ballot-closed");
       });
 
-      await test.step(`official branch ${official} to the official ending`, async () => {
+      await test.step(`official branch ${official} ends after its first episode`, async () => {
         await page.goto(`/series/${seriesId}/result`);
         const r = await screen(page, "result");
         await r.getByRole("link", { name: "Watch the official ending" }).click();
-        await expectPath(page, `/watch/${seriesId}/${f.branch[official][0]}`);
-        await playAll(page, f.branch[official], lang);
+        const episodeId = f.branch[official][0];
+        await expectPath(page, `/watch/${seriesId}/${episodeId}`);
+        await playToEnd(page, episodeId, { lang });
         await expectPath(page, `/series/${seriesId}/ending/${official}`);
         const e = await screen(page, "ending");
         await expect(e).toContainText("This is how the story ends.");

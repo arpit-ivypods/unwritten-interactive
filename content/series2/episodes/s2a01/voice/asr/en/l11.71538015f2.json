@@ -1,0 +1,153 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,120"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 120
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,120",
+				"to": "00:00:00,370"
+			},
+			"offsets": {
+				"from": 120,
+				"to": 370
+			},
+			"text": " Ten"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,370",
+				"to": "00:00:00,810"
+			},
+			"offsets": {
+				"from": 370,
+				"to": 810
+			},
+			"text": " past"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,810",
+				"to": "00:00:01,710"
+			},
+			"offsets": {
+				"from": 810,
+				"to": 1710
+			},
+			"text": " twelve."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,710",
+				"to": "00:00:02,040"
+			},
+			"offsets": {
+				"from": 1710,
+				"to": 2040
+			},
+			"text": " Eight"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,040",
+				"to": "00:00:02,540"
+			},
+			"offsets": {
+				"from": 2040,
+				"to": 2540
+			},
+			"text": " hundred"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,540",
+				"to": "00:00:03,140"
+			},
+			"offsets": {
+				"from": 2540,
+				"to": 3140
+			},
+			"text": " sacks."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,140",
+				"to": "00:00:03,200"
+			},
+			"offsets": {
+				"from": 3140,
+				"to": 3200
+			},
+			"text": " I"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,200",
+				"to": "00:00:03,530"
+			},
+			"offsets": {
+				"from": 3200,
+				"to": 3530
+			},
+			"text": " let"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,530",
+				"to": "00:00:03,860"
+			},
+			"offsets": {
+				"from": 3530,
+				"to": 3860
+			},
+			"text": " them"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,860",
+				"to": "00:00:04,080"
+			},
+			"offsets": {
+				"from": 3860,
+				"to": 4080
+			},
+			"text": " go."
+		}
+	]
+}

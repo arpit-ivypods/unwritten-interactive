@@ -1,0 +1,109 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,140"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 140
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,140",
+				"to": "00:00:00,430"
+			},
+			"offsets": {
+				"from": 140,
+				"to": 430
+			},
+			"text": " एक"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,430",
+				"to": "00:00:01,090"
+			},
+			"offsets": {
+				"from": 430,
+				"to": 1090
+			},
+			"text": " रात"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,090",
+				"to": "00:00:01,710"
+			},
+			"offsets": {
+				"from": 1090,
+				"to": 1710
+			},
+			"text": " और"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,710",
+				"to": "00:00:02,040"
+			},
+			"offsets": {
+				"from": 1710,
+				"to": 2040
+			},
+			"text": " मेरी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,040",
+				"to": "00:00:02,790"
+			},
+			"offsets": {
+				"from": 2040,
+				"to": 2790
+			},
+			"text": " जिमबारी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,790",
+				"to": "00:00:03,060"
+			},
+			"offsets": {
+				"from": 2790,
+				"to": 3060
+			},
+			"text": " पर"
+		}
+	]
+}

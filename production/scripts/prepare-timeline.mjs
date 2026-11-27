@@ -98,6 +98,32 @@ const audioFrames = (rel) => {
 	return Number.isFinite(d) ? Math.round(d * FPS) : undefined;
 };
 
+const resolvePlotText = (items, label) => {
+	if (items === undefined) return [];
+	if (!Array.isArray(items)) {
+		fail(`${label}: plotText must be a list`);
+		return [];
+	}
+	const normalized = (value) => Number.isFinite(value) && value >= 0 && value <= 1;
+	return items.flatMap((item, i) => {
+		const entry = `${label} plotText[${i}]`;
+		if (!item || typeof item.text !== 'string' || !item.text.trim() ||
+			!normalized(item.x) || !normalized(item.y) || !Number.isFinite(item.fontSize) || item.fontSize <= 0) {
+			fail(`${entry}: needs nonempty text, x and y in 0..1, and positive fontSize`);
+			return [];
+		}
+		if ((item.space !== undefined && !['image', 'screen'].includes(item.space)) ||
+			(item.lang !== undefined && !['hi', 'en'].includes(item.lang)) ||
+			(item.rotation !== undefined && !Number.isFinite(item.rotation)) ||
+			(item.color !== undefined && (typeof item.color !== 'string' || !item.color.trim())) ||
+			(item.plate !== undefined && typeof item.plate !== 'boolean')) {
+			fail(`${entry}: invalid space, lang, rotation, color or plate`);
+			return [];
+		}
+		return [item];
+	});
+};
+
 // --- shots ---------------------------------------------------------------
 
 let cursor = 0;
@@ -145,6 +171,10 @@ const shots = (tl.shots ?? []).map((raw, i) => {
 		else shot.image = resolved[0].src;
 	} else {
 		shot.color = raw.color ?? tl.slateColor ?? '#2b2b2b';
+	}
+	if (shot.type !== 'slate') {
+		const plotText = resolvePlotText(raw.plotText, label);
+		if (plotText.length) shot.plotText = plotText;
 	}
 	return shot;
 });

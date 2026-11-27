@@ -147,7 +147,7 @@ Ids: `series1` has `s1e01`, `s1e02` (shared), `s1a01`-`s1a03`, `s1b01`-`s1b03`, 
 ```
 
 - `series`: live series in display order; the first is tonight's series.
-- `teasers`: at most three "coming next" tiles. No episodes, no artwork, not links. They live here and not in `series.json` because they belong to no series.
+- `teasers`: at most three "coming next" tiles, with an optional local `poster` image. They have no playable episodes or watch links.
 
 ### `series.json`
 

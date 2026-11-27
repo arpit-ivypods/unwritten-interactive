@@ -55,7 +55,8 @@ Outputs, all in the episode folder: `timeline.{hi,en}.json`, `timeline.{hi,en}.r
 episode, else to the series folder, else `content/...` from the repo root), then the cue sheet entry's
 `file` (one-off cues only), then `sound/<cue>.mp3` or `.wav`, then the series library manifest `file`, then
 `content/<series>/sound/lib/<cue>.mp3`. **Gain** is the cue sheet's `gain_db`, then the library's, then
-`mix.starting_gains_db[type]`.
+`mix.starting_gains_db[type]`. Numeric episode defaults override library defaults. Prose in
+`mix.starting_gains_db` and nonnumeric map values are logged and skipped.
 
 **Episode one-off cues** (made for one episode, not in the series library) live in
 `<episode>/sound/<cue_id>.mp3` with rows in `<episode>/sound/manifest.jsonl`, in the series manifest's row
@@ -187,6 +188,30 @@ A focus is added for `push-in`, `pull-out` and `drift`. `"custom"` with no from/
 note. `edit.json` `shots.<id>.move` still overrides (and the override is noted), but it is no longer
 needed to copy a move.
 
+### Plot text
+
+Set `edit.json` `shots.<id>.plot_text` to burn clock and phone labels into a shot in both
+the clean and review cuts. For example, a phone screen with a caller name might use:
+
+```json
+{
+  "shots": {
+    "s02": {
+      "plot_text": [
+        {"text": {"hi": "मौसी", "en": "Mausi"}, "x": 0.51, "y": 0.43, "fontSize": 42, "rotation": -10}
+      ]
+    }
+  }
+}
+```
+
+Give both `hi` and `en` text values. A newline makes a second line at the same anchor.
+`x` and `y` mark the centre of the text block in the uncropped 9:16 picture, from 0 to 1.
+`fontSize` is in pixels on a 1080×1920 frame before the camera move. The default `space: "image"`
+follows the image camera, including punch-in and phone-buzz jitter. `space: "screen"` keeps
+the label fixed to the frame. Optional clockwise `rotation` is in degrees, `color` defaults to
+white, and `plate: true` places the text on a translucent dark background.
+
 ## Subtitles (D-014; app format in `app/src/content/schema.ts`, `docs/contracts.md`)
 
 `subs.<lang>.json` is the app's `SubtitleTrack` (`lang`, `cues[]` with `id`, `line_id`, `speaker`,
@@ -206,6 +231,19 @@ the timing source, `validation`. The rules:
 - `validate()` checks every rule above plus the app's own checks. The checks run frame by frame:
   no two cues on one frame, and each cue on exactly its frames. Any failure exits 1. A cue under
   800 ms is only a warning, because it is not a D-014 rule and the flat2d proof has one.
+
+The app italicizes dialogue whose cue has `heard_as` set to `phone` or `off_screen` (D-024).
+The first marked cue for each speaker in a picture scene also gets `speaker_label`. Scene IDs
+come from the storyboard shots. Older boards without scene IDs use the script beat instead.
+The player uses the localized cast name where available and uses `speaker_label` as a fallback.
+Those labels are separate from the timed words and the line text.
+
+`subs.split_after_words` overrides automatic pause boundaries for an individual line. Word
+counts are one-based, exclude emotion tags, and must increase strictly before the final word.
+For example, `{"l16":{"en":[4,8]}}` starts new English cues after words 4 and 8 while
+leaving Hindi automatic. A plain array applies to both cuts. An empty array suppresses pause
+boundaries for that line. Explicit boundaries survive short-cue merging. Automatic wrapping,
+picture cuts, measured word starts, gap rules and readability checks still apply.
 
 ## Supers (D-024 ruling 3)
 
@@ -239,8 +277,8 @@ the next shot that carries a plot overlay, and the picture end. An end at most 1
 moves back to the cut. A super never holds less than `min_s` (2.0 s, ruling 3.3); one that cannot get
 that inside the limits holds `min_s` anyway and is flagged.
 
-**Plot overlays** are `shots[].overlay` or `shots[].overlays` in `shots.json`, and any layer after the
-first in `edit.json` `shots.<id>.layers` (the overlay layer). Ruling 3.3 keeps supers off them, so
+**Plot overlays** are `shots[].overlay` or `shots[].overlays` in `shots.json`, and any
+`plot_text` or picture layer after the first in `edit.json` `shots.<id>`. Ruling 3.3 keeps supers off them, so
 these are flagged in `meta.checks.supers` (reported by `verify.py`, never failed): a super that starts
 on such a shot, runs into one, is drawn over a slate, or overlaps another super in the same position
 (drawn stacked). The build does not move a super off an overlay shot by itself, except in start rule 2.
@@ -287,7 +325,7 @@ to a frame) or `"<n>f"` for frames.
  "voice_models": ["v4"],
  "measure": {"silence_db": -40, "pause_min_s": 0.3, "merge_blip_ms": 0, "edge_tol_ms": 5},
  "words": {"asr_match": "start"},   // or "midpoint" (the flat2d proof's rule)
- "subs": {"join_gap": 15, "clamped_words": "keep"},   // or "squeeze"
+ "subs": {"join_gap": 15, "clamped_words": "keep", "split_after_words": {"l16": {"en": [4, 8]}}},
  "layout": {
   "first_lead": 4, "lead_default": 5, "use_silent_lead": true, "lead": {"s01": 27}, "lead_min": {"s04": 4},
   "gap_default": 8, "gap": {"l02>l03": 6}, "tail_default": 6, "tail": {"s09": 12}, "min_last_segment": 24,
@@ -477,10 +515,8 @@ frames as planned, at -14.2 LUFS and -1.2 dBTP.
 
 - Nothing in the toolsmith step has been listened to or watched in motion. That includes the
   filtered bed, the earlier cut on "The" in en l04 and l05, and the second framings' crops.
-- D-023 rule 3 items the toolsmith brief did not cover, still open: an `edit.json` override of where a
-  line's subtitle splits; slates in the cut's own language that wrap rather than truncate (the
-  80-character cut of `action` is still in `build_timeline.py`; the slate text itself is in
-  `production/remotion`); and the overlay layer.
+- Slates still use the first 80 characters of the shot's `action`. Localized, wrapping slate text
+  remains open from D-023 rule 3.
 - Also open: the s2e01 editor's note that the cut-on-word cut is placed at round(onset) while
   `read_end` counts from floor(onset). The editor works around it with `tail.s20: 8`.
 - Nothing has been listened to: not the mix, not the QC windows, not the reading-room gaps.

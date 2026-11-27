@@ -1,0 +1,65 @@
+{
+  "episode": "s2a01",
+  "round": "full",
+  "reviewer": "S15 independent Codex pass",
+  "gate": "D-023 / D-027",
+  "pass": true,
+  "blocking": [],
+  "scores": {
+    "hi": 8,
+    "en": 8
+  },
+  "area_scores": {
+    "hi": {
+      "picture": 8,
+      "continuity": 8,
+      "dialogue": 8,
+      "subtitle_sync": 9,
+      "mix_and_cues": 8,
+      "story_clarity": 8
+    },
+    "en": {
+      "picture": 8,
+      "continuity": 8,
+      "dialogue": 8,
+      "subtitle_sync": 9,
+      "mix_and_cues": 8,
+      "story_clarity": 8
+    }
+  },
+  "measurements": {
+    "hi": {
+      "frames": 3928,
+      "seconds": 130.933,
+      "lufs": -14.36,
+      "true_peak_dbtp": -1.12,
+      "dialogue": 30,
+      "cues": 48
+    },
+    "en": {
+      "frames": 3895,
+      "seconds": 129.833,
+      "lufs": -14.06,
+      "true_peak_dbtp": -1.06,
+      "dialogue": 30,
+      "cues": 47
+    }
+  },
+  "verdict": "Both cuts pass at 8/10 with no blocking fault.",
+  "checks_run": [
+    "Inspected 136 shot samples across the four final cuts. Verified cuffs, clang into midnight, repaired doorway and lockup, pink slip, shield, bilingual 1 a.m. super, closed door and pixel-black last frame.",
+    "All 60 placed lines align at zero shift on a 2 ms waveform grid. All 95 subtitle cues match speaker and words, do not cross cuts, and visibly burn at their midpoints.",
+    "Two knock transients land about 1.10 and 0.53 s before s32. Chain and door transients land on their shots. Final 1.3 s measures about -56 dBFS Hindi and -55 dBFS English.",
+    "All four master hashes differ. No slates, placeholders, missing media, supers flags or unchecked takes. Both cuts fit the 150 s limit."
+  ],
+  "nonblocking": [
+    "Opening captions partially cover hands while cuffs remain readable. Repeated background clock is incidental.",
+    "The final line begins with a sigh. Its caption starts near the first lexical word in both cuts."
+  ],
+  "ear_check": [
+    "English l10 over the truck bed. Full-mix transcription recovered its wording."
+  ],
+  "not_checked": [
+    "No human listening or continuous motion playback. Assessment used local Whisper on the final mix, waveform and level analysis, and sampled pictures."
+  ]
+}

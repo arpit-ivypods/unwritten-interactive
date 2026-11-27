@@ -214,12 +214,16 @@ export function wordIndexAt(cue: SubtitleCue, positionMs: number): number {
   return index;
 }
 
-/**
- * The name to show in the speaker tag for a cue: the cast member's name in the
- * audio language, or the id as written if the speaker is not in the cast.
- */
-export function speakerName(series: Series, speakerId: string, lang: Lang): string {
-  return series.cast.find((member) => member.id === speakerId)?.name[lang] ?? speakerId;
+const SUPPORTING_SPEAKERS: Record<string, Record<string, Localized>> = {
+  series1: { chhoti: { hi: "छोटी", en: "Chhoti" } },
+  series2: { door1_man: { hi: "रामसेवक", en: "Ramsevak" } },
+};
+
+/** The speaker's display name in the audio language, or the supplied fallback. */
+export function speakerName(series: Series, speakerId: string, lang: Lang, fallback = speakerId): string {
+  return series.cast.find((member) => member.id === speakerId)?.name[lang]
+    ?? SUPPORTING_SPEAKERS[series.id]?.[speakerId]?.[lang]
+    ?? fallback;
 }
 
 // ---------------------------------------------------------------------------

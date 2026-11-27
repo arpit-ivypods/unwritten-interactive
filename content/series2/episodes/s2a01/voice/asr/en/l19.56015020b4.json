@@ -1,0 +1,164 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,040"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 40
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,040",
+				"to": "00:00:00,150"
+			},
+			"offsets": {
+				"from": 40,
+				"to": 150
+			},
+			"text": " At"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,150",
+				"to": "00:00:00,600"
+			},
+			"offsets": {
+				"from": 150,
+				"to": 600
+			},
+			"text": " 10"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,600",
+				"to": "00:00:00,900"
+			},
+			"offsets": {
+				"from": 600,
+				"to": 900
+			},
+			"text": " this"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,900",
+				"to": "00:00:01,600"
+			},
+			"offsets": {
+				"from": 900,
+				"to": 1600
+			},
+			"text": " morning,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,600",
+				"to": "00:00:01,910"
+			},
+			"offsets": {
+				"from": 1600,
+				"to": 1910
+			},
+			"text": " there"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,910",
+				"to": "00:00:02,100"
+			},
+			"offsets": {
+				"from": 1910,
+				"to": 2100
+			},
+			"text": " will"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,100",
+				"to": "00:00:02,250"
+			},
+			"offsets": {
+				"from": 2100,
+				"to": 2250
+			},
+			"text": " be"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,250",
+				"to": "00:00:02,890"
+			},
+			"offsets": {
+				"from": 2250,
+				"to": 2890
+			},
+			"text": " microphones"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,890",
+				"to": "00:00:03,010"
+			},
+			"offsets": {
+				"from": 2890,
+				"to": 3010
+			},
+			"text": " in"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,010",
+				"to": "00:00:03,250"
+			},
+			"offsets": {
+				"from": 3010,
+				"to": 3250
+			},
+			"text": " this"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,250",
+				"to": "00:00:03,620"
+			},
+			"offsets": {
+				"from": 3250,
+				"to": 3620
+			},
+			"text": " thana."
+		}
+	]
+}

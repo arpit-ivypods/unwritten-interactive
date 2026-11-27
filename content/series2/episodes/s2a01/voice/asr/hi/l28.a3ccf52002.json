@@ -1,0 +1,153 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,060"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 60
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,060",
+				"to": "00:00:00,710"
+			},
+			"offsets": {
+				"from": 60,
+				"to": 710
+			},
+			"text": " रेजिस्टर"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,710",
+				"to": "00:00:00,990"
+			},
+			"offsets": {
+				"from": 710,
+				"to": 990
+			},
+			"text": " इसी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,990",
+				"to": "00:00:01,620"
+			},
+			"offsets": {
+				"from": 990,
+				"to": 1620
+			},
+			"text": " आल्मिरा"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,620",
+				"to": "00:00:02,150"
+			},
+			"offsets": {
+				"from": 1620,
+				"to": 2150
+			},
+			"text": " मेहे,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,150",
+				"to": "00:00:02,470"
+			},
+			"offsets": {
+				"from": 2150,
+				"to": 2470
+			},
+			"text": " और"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,470",
+				"to": "00:00:03,000"
+			},
+			"offsets": {
+				"from": 2470,
+				"to": 3000
+			},
+			"text": " चाभी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,000",
+				"to": "00:00:03,490"
+			},
+			"offsets": {
+				"from": 3000,
+				"to": 3490
+			},
+			"text": " S-H-O"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,490",
+				"to": "00:00:04,260"
+			},
+			"offsets": {
+				"from": 3490,
+				"to": 4260
+			},
+			"text": " साहब"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,260",
+				"to": "00:00:04,750"
+			},
+			"offsets": {
+				"from": 4260,
+				"to": 4750
+			},
+			"text": " के"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,750",
+				"to": "00:00:05,740"
+			},
+			"offsets": {
+				"from": 4750,
+				"to": 5740
+			},
+			"text": " पास."
+		}
+	]
+}

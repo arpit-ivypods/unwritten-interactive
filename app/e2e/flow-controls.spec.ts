@@ -22,6 +22,10 @@ for (const seriesId of SERIES_IDS) {
     const f = facts(seriesId);
     const vote: Choice = "A";
     await seedState(page, { viewer: viewerAt(seriesId, "voted", vote, { language: lang }) });
+    await page.goto(`/series/${seriesId}`);
+    const series = await screen(page, "series");
+    await expect(series.locator('[data-branch="A"] .uw-chip')).toHaveText("Your ending");
+    await expect(series.locator('[data-branch="B"]')).toContainText("finish your own ending first");
     await page.goto(`/watch/${seriesId}/${f.branch[other(vote)][0]}`);
     const stage = page.locator("[data-player-stage]");
     await expect(stage).toHaveAttribute("data-state", "locked");
@@ -61,6 +65,10 @@ for (const seriesId of SERIES_IDS) {
     const [a, b] = (row.match(/\d+/g) ?? []).map(Number);
     expect(forced === "A" ? a > b : b > a, `split "${row}" agrees with the forced winner ${forced}`).toBe(true);
     await snap("result-forced");
+    await page.goto(`/series/${seriesId}`);
+    const official = (await screen(page, "series")).locator(".flow-endings");
+    await expect(official.locator(`[data-branch="${forced}"] .uw-chip`)).toHaveText("Official");
+    await expect(official.locator(`[data-branch="${other(forced)}"] .uw-chip`)).toHaveText("Expired");
   });
 
   test(`presenter: jump to every screen · ${seriesId}`, async ({ page, snap }) => {

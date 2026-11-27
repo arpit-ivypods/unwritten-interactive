@@ -36,6 +36,17 @@ test("every route in the routes table responds", async ({ page }) => {
   }
   expect((await page.request.get(routes.series("no-such-series"))).status()).toBe(404);
   expect((await page.request.get(routes.watch(id, "no-such-episode"))).status()).toBe(404);
+
+  const previousBranchEpisodes = {
+    series1: ["s1a02", "s1a03", "s1b02", "s1b03"],
+    series2: ["s2a02", "s2a03", "s2b02", "s2b03"],
+  };
+  for (const [seriesId, episodeIds] of Object.entries(previousBranchEpisodes)) {
+    for (const episodeId of episodeIds) {
+      const url = routes.watch(seriesId, episodeId);
+      expect((await page.request.get(url)).status(), url).toBe(404);
+    }
+  }
 });
 
 test("the manifests and media are served", async ({ page }) => {

@@ -1,0 +1,2033 @@
+{
+  "id": "s2b01",
+  "series_id": "series2",
+  "title": "Uniform",
+  "made_by": "S7 Storyboard artist",
+  "lead_character_id": "nandini",
+  "sources": [
+    "script.hi.json and script.en.json (final clarity pass)",
+    "voice/manifest.jsonl and voice/review.json",
+    "../../bible.json",
+    "../../continuity.json branches.B",
+    "../../style.json",
+    "../s2e03/shots.json"
+  ],
+  "frame_spec": {
+    "aspect_ratio": "9:16",
+    "width": 1440,
+    "height": 2560,
+    "style": "flat2d",
+    "max_faces": 2
+  },
+  "summary": {
+    "shots": 35,
+    "generated_frames": 28,
+    "second_framings": 7,
+    "planned_seconds": {
+      "hi": 136.48,
+      "en": 134.4
+    },
+    "max_dual_language_seconds": 140.9
+  },
+  "total_duration_s": 140.9,
+  "anchors": {
+    "A": "s04",
+    "B": "s19",
+    "C": "s22",
+    "D": "s25"
+  },
+  "scenes": [
+    {
+      "id": "A",
+      "plate": "talkies_lobby",
+      "light": "lobby_night",
+      "anchor": "s04",
+      "continuity": "Continuous night scene under the one tungsten bulb. Desk and blank board behind Nandini. No handcuffs, uniform state, pocket contents, eyeline or framing copied across beats."
+    },
+    {
+      "id": "B",
+      "plate": "crossing_stall",
+      "light": "crossing_night",
+      "anchor": "s19",
+      "continuity": "Same raised gate arm, single track, dark road, shut stall, warm stall bulb and small signal light. Do not copy the salute, who is present, the framing, or the helmet and phone states."
+    },
+    {
+      "id": "C",
+      "plate": "godown",
+      "light": "godown_exterior",
+      "anchor": "s22",
+      "continuity": "Godown exterior, b8. Back of Nirala only, no lead or other face is in this exterior shot."
+    },
+    {
+      "id": "D",
+      "plate": "godown",
+      "light": "godown_night",
+      "anchor": "s25",
+      "continuity": "Interior inserts only. No people in the godown inserts. Keep the bulb, tarpaulin and stacked jute idiom, not the framing or objects from the anchor."
+    }
+  ],
+  "generation_order": [
+    "s04",
+    "s19",
+    "s22",
+    "s25",
+    "s01",
+    "s02",
+    "s03",
+    "s05",
+    "s06",
+    "s07",
+    "s08",
+    "s10",
+    "s11",
+    "s12",
+    "s13",
+    "s14",
+    "s15",
+    "s16",
+    "s18",
+    "s20",
+    "s21",
+    "s24",
+    "s26",
+    "s27",
+    "s29",
+    "s30",
+    "s34",
+    "s35"
+  ],
+  "second_framings": {
+    "s09": {
+      "source": "s07",
+      "max_scale": 1.3,
+      "reason": "Small reframe on Nirala’s worried eyes as he looks at the hand and pin below frame. Begin close within the same chest-up angle and creep closer without losing his cap."
+    },
+    "s17": {
+      "source": "s12",
+      "max_scale": 1.3,
+      "reason": "Tighter second framing of the anxious front-on close, in toward Nirala’s eyes and thin moustache. Nandini’s voice leads over his face; his phrase follows on the same close."
+    },
+    "s23": {
+      "source": "s21",
+      "max_scale": 1.3,
+      "reason": "Tighter on the two motionless women at the bench. Keep the pen point suspended over the page and the knitted case between them in view."
+    },
+    "s28": {
+      "source": "s24",
+      "max_scale": 1.3,
+      "reason": "Same single on Nandini writing, held on a subtly tighter push. Her attention stays on the page. The spoken figure and her own murmur meet on this face."
+    },
+    "s31": {
+      "source": "s26",
+      "max_scale": 1.3,
+      "reason": "Second framing of the needles stopped dead over orange wool. Tight around the phone and needle tips, lit screen just off centre. Hold through the cloth rustle."
+    },
+    "s32": {
+      "source": "s30",
+      "max_scale": 1.3,
+      "reason": "Return to the held eyes-up close on Nandini. This framing tightens around both eyes and the mouth as she states what just happened."
+    },
+    "s33": {
+      "source": "s26",
+      "max_scale": 1.3,
+      "reason": "One last live close on the handset, knitted orange edges and lit blank screen above centre. Crop tighter than the earlier wool insert while preserving the relevant outline."
+    }
+  },
+  "method_notes": [
+    "Generate the four anchors first and obtain an independent anchor check before generating later shots.",
+    "A and B use the lead’s first usable single/two-shot. C and D carry no lead on camera and require respectively a reverse silhouette exterior anchor and a faceless interior truck anchor. Preserve the script’s separation of these geographies.",
+    "Every frame is issued from the committed prompt files via production/scripts/codex-frame.sh. The last attachment is the scene anchor or, for an anchor shot, the approved real_thana style frame.",
+    "s19 and s16 add the approved period 1b Nirala sheet to their height line-up sheet. Period 1b costume and shot state win if the line-up shows the earlier medal."
+  ],
+  "remap_notes": {
+    "lines_newly_mapped": {
+      "l28": [
+        "s05",
+        "s06"
+      ],
+      "l29": [
+        "s15"
+      ],
+      "l30": [
+        "s21"
+      ],
+      "l31": [
+        "s32"
+      ],
+      "l32": [
+        "s29"
+      ]
+    },
+    "supers_on_shots": {
+      "su_b1": "s22"
+    },
+    "cut_anchors": [
+      {
+        "line": "l28",
+        "shot": "s06",
+        "word": {
+          "hi": "Inspector",
+          "en": "as"
+        }
+      },
+      {
+        "line": "l24",
+        "shot": "s31",
+        "word": {
+          "hi": "आप",
+          "en": "it's"
+        }
+      }
+    ],
+    "planned_durations": "Measured accepted voice files by language, with the highest accepted take per line, planned shot silences, 0.25 s between lines in a shot, small cut handles, and word-count shares for two intra-line cuts. Whole-clip time, before assembled edit measurement. Split onset must be placed by the editor.",
+    "take_files": {
+      "l01": {
+        "hi": "voice/hi/l01.mp3",
+        "en": "voice/en/l01.mp3"
+      },
+      "l02": {
+        "hi": "voice/hi/l02.c1.mp3",
+        "en": "voice/en/l02.c1.mp3"
+      },
+      "l03": {
+        "hi": "voice/hi/l03.mp3",
+        "en": "voice/en/l03.mp3"
+      },
+      "l28": {
+        "hi": "voice/hi/l28.c1.mp3",
+        "en": "voice/en/l28.c1.mp3"
+      },
+      "l04": {
+        "hi": "voice/hi/l04.c1.mp3",
+        "en": "voice/en/l04.c1.mp3"
+      },
+      "l05": {
+        "hi": "voice/hi/l05.c1.mp3",
+        "en": "voice/en/l05.c1.mp3"
+      },
+      "l06": {
+        "hi": "voice/hi/l06.c1.mp3",
+        "en": "voice/en/l06.c1.mp3"
+      },
+      "l07": {
+        "hi": "voice/hi/l07.c1.mp3",
+        "en": "voice/en/l07.c1.mp3"
+      },
+      "l08": {
+        "hi": "voice/hi/l08.mp3",
+        "en": "voice/en/l08.mp3"
+      },
+      "l09": {
+        "hi": "voice/hi/l09.c1.mp3",
+        "en": "voice/en/l09.c1.mp3"
+      },
+      "l29": {
+        "hi": "voice/hi/l29.c1.mp3",
+        "en": "voice/en/l29.c1.mp3"
+      },
+      "l10": {
+        "hi": "voice/hi/l10_t2.mp3",
+        "en": "voice/en/l10.mp3"
+      },
+      "l11": {
+        "hi": "voice/hi/l11.mp3",
+        "en": "voice/en/l11.mp3"
+      },
+      "l12": {
+        "hi": "voice/hi/l12.mp3",
+        "en": "voice/en/l12.mp3"
+      },
+      "l13": {
+        "hi": "voice/hi/l13.mp3",
+        "en": "voice/en/l13.mp3"
+      },
+      "l14": {
+        "hi": "voice/hi/l14.mp3",
+        "en": "voice/en/l14.mp3"
+      },
+      "l15": {
+        "hi": "voice/hi/l15.mp3",
+        "en": "voice/en/l15.c1.mp3"
+      },
+      "l30": {
+        "hi": "voice/hi/l30.c1.mp3",
+        "en": "voice/en/l30.c1.mp3"
+      },
+      "l16": {
+        "hi": "voice/hi/l16.mp3",
+        "en": "voice/en/l16.mp3"
+      },
+      "l17": {
+        "hi": "voice/hi/l17.mp3",
+        "en": "voice/en/l17.mp3"
+      },
+      "l18": {
+        "hi": "voice/hi/l18.mp3",
+        "en": "voice/en/l18.mp3"
+      },
+      "l19": {
+        "hi": "voice/hi/l19.mp3",
+        "en": "voice/en/l19.mp3"
+      },
+      "l20": {
+        "hi": "voice/hi/l20_t2.mp3",
+        "en": "voice/en/l20.mp3"
+      },
+      "l21": {
+        "hi": "voice/hi/l21.mp3",
+        "en": "voice/en/l21.mp3"
+      },
+      "l22": {
+        "hi": "voice/hi/l22.mp3",
+        "en": "voice/en/l22.mp3"
+      },
+      "l23": {
+        "hi": "voice/hi/l23.mp3",
+        "en": "voice/en/l23.mp3"
+      },
+      "l32": {
+        "hi": "voice/hi/l32.c1.mp3",
+        "en": "voice/en/l32.c1.mp3"
+      },
+      "l24": {
+        "hi": "voice/hi/l24.mp3",
+        "en": "voice/en/l24.c1.mp3"
+      },
+      "l25": {
+        "hi": "voice/hi/l25.mp3",
+        "en": "voice/en/l25.mp3"
+      },
+      "l31": {
+        "hi": "voice/hi/l31.c1.mp3",
+        "en": "voice/en/l31.c1.mp3"
+      },
+      "l26": {
+        "hi": "voice/hi/l26.mp3",
+        "en": "voice/en/l26_t2.mp3"
+      },
+      "l27": {
+        "hi": "voice/hi/l27.mp3",
+        "en": "voice/en/l27.mp3"
+      }
+    },
+    "deviations_from_beat_action": [
+      "Omit the optional pink-slip insert. Its evidentiary turn stays heard over the 0.8 s rustle, with no face inside the godown.",
+      "Keep the phone hidden in Nandini’s right trouser pocket from the branch seam until transfer, as continuity.json resolves. No exposed pocket prop needs a script change.",
+      "The eyes-up close at s30 is framed to carry Nandini’s answer at s32 as a tighter second framing. The motionless wool close supplies s31 and s33, with the separate dark screen made for s35.",
+      "Hold the b5 checklist on the designed push-in, as the script asks. The b9 pen-stop insert is held across the two phone lines. These holds follow the accepted take lengths."
+    ]
+  },
+  "edit_notes_for_episode_editor": [
+    "Use the two cut_on_word entries from remap_notes. The l02/l03 cut is a cut at the end of l02, not a cut inside l03.",
+    "Preserve silent lead s05=1.0, s11=0.8, s21=2.0, s30=1.5, and any lead marked in the shot list. Place tails s28=0.8 for paper rustle, s31=1.0 for cloth rustle, and s35=1.5 for dead line.",
+    "s22 is the 2.5 s shutter shot and holds the bilingual place super. If the place super overlaps the next cut, keep it within the godown shot.",
+    "Filter the phone rows from the bilingual scripts through the existing phone effect per line. No Bhaiyaji picture in either language.",
+    "The toy carving is shown only flat on wood and partway in a holster, in strict profile. Nil gunfire, muzzle-forward view, or real metal weapon."
+  ],
+  "not_verified": "Storyboard specifications and take durations only. No anchor quality, later frame images, assembled timing or performance has been judged here.",
+  "shots": [
+    {
+      "id": "s01",
+      "scene": "A",
+      "beat_id": "b1",
+      "line_ids": [],
+      "duration_s": 1.0,
+      "silent_lead_s": 0,
+      "silent_tail_s": 0,
+      "voice_s": {
+        "hi": 0,
+        "en": 0
+      },
+      "characters": [
+        "nandini",
+        "nirala"
+      ],
+      "light": "lobby_night",
+      "state": [
+        "Nirala’s two empty wrists rest on the desk, sleeves over knuckles, while Nandini’s left palm enters picture-right and closes over them. Her right hand at upper picture-left holds the open cuffs. The carved wooden prop is separate on the desk behind the wrists. No metal weapon, face, extra set of hands, ring or watch in view."
+      ],
+      "framing": "Desk-level insert like the branch-point image. Two hands with long khaki sleeves come in low from the top of frame and settle on the dark wood. From picture-right a single palm presses them down. Open cuffs hang from one separate hand just below the top picture-left. The little carved teak prop lies flat in strict side profile beyond their wrists, muzzle pointing parallel to the table edge at empty space.",
+      "action": "Desk-level insert like the branch-point image. Two hands with long khaki sleeves come in low from the top of frame and settle on the dark wood. From picture-right a single palm presses them down. Open cuffs hang from one separate hand just below the top picture-left. The little carved teak prop lies flat in strict side profile beyond their wrists, muzzle pointing parallel to the table edge at empty space.",
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "generate": true,
+      "prompt_file": "frames/prompts/s01.txt",
+      "refs": [
+        "<repo>/content/series2/refs/pair_nandini_nirala.png",
+        "<repo>/content/series2/refs/talkies_lobby.png",
+        "<repo>/content/series2/refs/handcuffs.png",
+        "<repo>/content/series2/refs/wooden_revolver.png",
+        "<repo>/content/series2/episodes/s2b01/frames/s04.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved height line-up and identity sheet for nandini and nirala. Match their faces and relative heights. Copy neither the multiple views nor the background or the pose.",
+        "Image 2 is the approved talkies_lobby location plate. Use its geometry and surface materials. Draw only the part named in the framing and follow the LIGHT line if the plate has different light.",
+        "Image 3 is the approved handcuffs prop sheet. Match the specified construction, scale and colour. Draw the object once in the specified position, never the sheet layout.",
+        "Image 4 is the approved wooden_revolver prop sheet. Match the specified construction, scale and colour. Draw the object once in the specified position, never the sheet layout.",
+        "Image 5 is the scene anchor (s04). Match its drawing and place continuity. Do not copy its characters into an insert, unrelated body poses, eyelines, hands or prop states. Continuous night scene under the one tungsten bulb. Desk and blank board behind Nandini. No handcuffs, uniform state, pocket contents, eyeline or framing copied across beats."
+      ],
+      "camera_move": "hold",
+      "camera_focus": {
+        "x": 0.5,
+        "y": 0.42
+      },
+      "intensity": 0.23
+    },
+    {
+      "id": "s02",
+      "scene": "A",
+      "beat_id": "b1",
+      "line_ids": [
+        "l01"
+      ],
+      "duration_s": 3.5,
+      "silent_lead_s": 0,
+      "silent_tail_s": 0,
+      "voice_s": {
+        "hi": 3.2,
+        "en": 3.04
+      },
+      "characters": [
+        "nandini"
+      ],
+      "light": "lobby_night",
+      "state": [
+        "Nandini’s right hip and hand are the near side at picture-left. Right hand lowers open cuffs into the black pouch; left hand and phone outside crop. No face or other person. The pouch closes by the next picture."
+      ],
+      "framing": "Tight waist insert, Nandini side-on facing picture-right. The opened black pouch flap and the rotating silver D-shaped cuffs are the entire composition, sharp against the sandy uniform.",
+      "action": "Tight waist insert, Nandini side-on facing picture-right. The opened black pouch flap and the rotating silver D-shaped cuffs are the entire composition, sharp against the sandy uniform.",
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "generate": true,
+      "prompt_file": "frames/prompts/s02.txt",
+      "refs": [
+        "<repo>/content/series2/refs/nandini.png",
+        "<repo>/content/series2/refs/talkies_lobby.png",
+        "<repo>/content/series2/refs/handcuffs.png",
+        "<repo>/content/series2/episodes/s2b01/frames/s04.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved character sheet for nandini. Match only the exposed character features specified below. Draw the character once in the specified pose and setting.",
+        "Image 2 is the approved talkies_lobby location plate. Use its geometry and surface materials. Draw only the part named in the framing and follow the LIGHT line if the plate has different light.",
+        "Image 3 is the approved handcuffs prop sheet. Match the specified construction, scale and colour. Draw the object once in the specified position, never the sheet layout.",
+        "Image 4 is the scene anchor (s04). Match its drawing and place continuity. Do not copy its characters into an insert, unrelated body poses, eyelines, hands or prop states. Continuous night scene under the one tungsten bulb. Desk and blank board behind Nandini. No handcuffs, uniform state, pocket contents, eyeline or framing copied across beats."
+      ],
+      "camera_move": "push-in",
+      "camera_focus": {
+        "x": 0.5,
+        "y": 0.42
+      },
+      "intensity": 0.23
+    },
+    {
+      "id": "s03",
+      "scene": "A",
+      "beat_id": "b1",
+      "line_ids": [
+        "l02"
+      ],
+      "duration_s": 6.0,
+      "silent_lead_s": 0,
+      "silent_tail_s": 0,
+      "voice_s": {
+        "hi": 5.52,
+        "en": 5.68
+      },
+      "characters": [
+        "nandini",
+        "pushpa"
+      ],
+      "light": "lobby_night",
+      "state": [
+        "Nandini’s pouch is shut, cuffs inside. Both women’s hands empty, down and below the top of the desk. Nirala’s face wholly absent. Needles stay crossed in Pushpa’s bun, no loose needles or phone here; orange wool in near pocket only if below desk. Wooden prop out of crop."
+      ],
+      "framing": "At the desk end, Nandini picture-left and Pushpa picture-right in a standing two-shot; the two sleeves of Nirala enter only as khaki tips at the edge of the counter. Pushpa leans in just slightly, recognition drawing her brows together.",
+      "action": "At the desk end, Nandini picture-left and Pushpa picture-right in a standing two-shot; the two sleeves of Nirala enter only as khaki tips at the edge of the counter. Pushpa leans in just slightly, recognition drawing her brows together.",
+      "subtitle_safe": true,
+      "sheet_faces": 2,
+      "generate": true,
+      "prompt_file": "frames/prompts/s03.txt",
+      "refs": [
+        "<repo>/content/series2/refs/pair_nandini_pushpa.png",
+        "<repo>/content/series2/refs/talkies_lobby.png",
+        "<repo>/content/series2/episodes/s2b01/frames/s04.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved height line-up and identity sheet for nandini and pushpa. Match their faces and relative heights. Copy neither the multiple views nor the background or the pose.",
+        "Image 2 is the approved talkies_lobby location plate. Use its geometry and surface materials. Draw only the part named in the framing and follow the LIGHT line if the plate has different light.",
+        "Image 3 is the scene anchor (s04). Match its drawing and place continuity. Do not copy its characters into an insert, unrelated body poses, eyelines, hands or prop states. Continuous night scene under the one tungsten bulb. Desk and blank board behind Nandini. No handcuffs, uniform state, pocket contents, eyeline or framing copied across beats."
+      ],
+      "camera_move": "push-in",
+      "camera_focus": {
+        "x": 0.5,
+        "y": 0.42
+      },
+      "intensity": 0.23
+    },
+    {
+      "id": "s04",
+      "scene": "A",
+      "beat_id": "b1",
+      "line_ids": [
+        "l03"
+      ],
+      "duration_s": 5.0,
+      "silent_lead_s": 0,
+      "silent_tail_s": 0,
+      "voice_s": {
+        "hi": 4.64,
+        "en": 4.24
+      },
+      "characters": [
+        "nandini"
+      ],
+      "light": "lobby_night",
+      "state": [
+        "Her cuff pouch is closed below crop. Phone stays unseen in her picture-left trouser pocket. The blue pen is clipped above the pocket flap on the picture-right side of her chest. Both hands below crop. Nirala and Pushpa are outside picture."
+      ],
+      "framing": "Level chest-up single of Nandini, facing slightly picture-right toward Pushpa outside frame. Hold the firm closed mouth between words; it is her decision. Her head is high in frame. A plain dark board and the old booking-counter wood show softly behind her.",
+      "action": "Level chest-up single of Nandini, facing slightly picture-right toward Pushpa outside frame. Hold the firm closed mouth between words; it is her decision. Her head is high in frame. A plain dark board and the old booking-counter wood show softly behind her.",
+      "subtitle_safe": true,
+      "sheet_faces": 1,
+      "generate": true,
+      "prompt_file": "frames/prompts/s04.txt",
+      "refs": [
+        "<repo>/content/series2/refs/nandini.png",
+        "<repo>/content/series2/refs/talkies_lobby.png",
+        "<repo>/content/series2/refs/real_thana.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved character sheet for nandini. Match only the exposed character features specified below. Draw the character once in the specified pose and setting.",
+        "Image 2 is the approved talkies_lobby location plate. Use its geometry and surface materials. Draw only the part named in the framing and follow the LIGHT line if the plate has different light.",
+        "Image 3 is the approved rendering reference. Match only the bold outline, cel shadows and palette. Do not copy the room, fan, shield, armoire, doorway light, clock, barred door, furniture or props."
+      ],
+      "scene_anchor_of": "A",
+      "camera_move": "push-in",
+      "camera_focus": {
+        "x": 0.5,
+        "y": 0.42
+      },
+      "intensity": 0.23,
+      "overlay": {
+        "id": "ov_fake_board",
+        "surface": "blank board behind the desk, if visible within the generated crop"
+      }
+    },
+    {
+      "id": "s05",
+      "scene": "A",
+      "beat_id": "b2",
+      "line_ids": [
+        "l28"
+      ],
+      "duration_s": 2.9,
+      "silent_lead_s": 1,
+      "silent_tail_s": 0,
+      "voice_s": {
+        "hi": 1.34,
+        "en": 1.9
+      },
+      "characters": [
+        "nandini",
+        "nirala"
+      ],
+      "light": "lobby_night",
+      "state": [
+        "Nirala faces camera, so the belt tail begins on picture-right of the buckle and now tucks in there. His own hands and face out of crop. Nandini’s two empty hands alone adjust the belt. Holster is below and outside crop."
+      ],
+      "framing": "Close waist insert across Nirala’s front. Crop above the pocket line and make the waist, narrow black belt and plain buckle large. Nandini’s hands come in from picture-left, threading the long belt tail through the flat keeper.",
+      "action": "Close waist insert across Nirala’s front. Crop above the pocket line and make the waist, narrow black belt and plain buckle large. Nandini’s hands come in from picture-left, threading the long belt tail through the flat keeper.",
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "generate": true,
+      "prompt_file": "frames/prompts/s05.txt",
+      "refs": [
+        "<repo>/content/series2/refs/pair_nandini_nirala.png",
+        "<repo>/content/series2/refs/talkies_lobby.png",
+        "<repo>/content/series2/episodes/s2b01/frames/s04.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved height line-up and identity sheet for nandini and nirala. Match their faces and relative heights. Copy neither the multiple views nor the background or the pose.",
+        "Image 2 is the approved talkies_lobby location plate. Use its geometry and surface materials. Draw only the part named in the framing and follow the LIGHT line if the plate has different light.",
+        "Image 3 is the scene anchor (s04). Match its drawing and place continuity. Do not copy its characters into an insert, unrelated body poses, eyelines, hands or prop states. Continuous night scene under the one tungsten bulb. Desk and blank board behind Nandini. No handcuffs, uniform state, pocket contents, eyeline or framing copied across beats."
+      ],
+      "camera_move": "push-in",
+      "camera_focus": {
+        "x": 0.5,
+        "y": 0.42
+      },
+      "intensity": 0.23,
+      "cut_on_word_note": {
+        "line": "l28",
+        "word": {
+          "hi": "Inspector",
+          "en": "as"
+        },
+        "shot": "s06"
+      },
+      "line_part": {
+        "l28": "head"
+      }
+    },
+    {
+      "id": "s06",
+      "scene": "A",
+      "beat_id": "b2",
+      "line_ids": [
+        "l28"
+      ],
+      "duration_s": 1.8,
+      "silent_lead_s": 0,
+      "silent_tail_s": 0,
+      "voice_s": {
+        "hi": 1.78,
+        "en": 1.14
+      },
+      "characters": [
+        "nandini",
+        "nirala"
+      ],
+      "light": "lobby_night",
+      "state": [
+        "Belt already tucked below crop; cuffs still hang low. His medal remains pinned to left chest, picture-right. Nandini touches only the shoulder seam. Two hands in frame, no face."
+      ],
+      "framing": "A close cloth-detail frame. Nirala front three-quarter, neckline fully above crop. Nandini’s fingertips square the drooping shoulder seam at picture-left. The maroon-and-cream ribbon just reaches the opposite, picture-right side of the crop, flanked by blank fabric.",
+      "action": "A close cloth-detail frame. Nirala front three-quarter, neckline fully above crop. Nandini’s fingertips square the drooping shoulder seam at picture-left. The maroon-and-cream ribbon just reaches the opposite, picture-right side of the crop, flanked by blank fabric.",
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "generate": true,
+      "prompt_file": "frames/prompts/s06.txt",
+      "refs": [
+        "<repo>/content/series2/refs/pair_nandini_nirala.png",
+        "<repo>/content/series2/refs/talkies_lobby.png",
+        "<repo>/content/series2/refs/medal.png",
+        "<repo>/content/series2/episodes/s2b01/frames/s04.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved height line-up and identity sheet for nandini and nirala. Match their faces and relative heights. Copy neither the multiple views nor the background or the pose.",
+        "Image 2 is the approved talkies_lobby location plate. Use its geometry and surface materials. Draw only the part named in the framing and follow the LIGHT line if the plate has different light.",
+        "Image 3 is the approved medal prop sheet. Match the specified construction, scale and colour. Draw the object once in the specified position, never the sheet layout.",
+        "Image 4 is the scene anchor (s04). Match its drawing and place continuity. Do not copy its characters into an insert, unrelated body poses, eyelines, hands or prop states. Continuous night scene under the one tungsten bulb. Desk and blank board behind Nandini. No handcuffs, uniform state, pocket contents, eyeline or framing copied across beats."
+      ],
+      "camera_move": "push-in",
+      "camera_focus": {
+        "x": 0.5,
+        "y": 0.42
+      },
+      "intensity": 0.23,
+      "cut_on_word_note": {
+        "line": "l28",
+        "word": {
+          "hi": "Inspector",
+          "en": "as"
+        },
+        "shot": "s06"
+      },
+      "line_part": {
+        "l28": "rest"
+      }
+    },
+    {
+      "id": "s07",
+      "scene": "A",
+      "beat_id": "b2",
+      "line_ids": [
+        "l04"
+      ],
+      "duration_s": 4.1,
+      "silent_lead_s": 0,
+      "silent_tail_s": 0,
+      "voice_s": {
+        "hi": 3.76,
+        "en": 3.36
+      },
+      "characters": [
+        "nandini",
+        "nirala"
+      ],
+      "light": "lobby_night",
+      "state": [
+        "Belt now fitted out of frame and shoulder seams square. Period 1 medal still pinned high picture-right. His picture-left right cuff turns back to reveal a whole hand. Her two hands adjust the cuff, no jewellery. Holster out of frame."
+      ],
+      "framing": "Chest-up single of Nirala, straight on, cap level, eyes searching the shirt just below camera. Nandini’s fingers from picture-left fold back his right cuff in the lower-left quarter above the subtitle area; her face and torso are fully outside.",
+      "action": "Chest-up single of Nirala, straight on, cap level, eyes searching the shirt just below camera. Nandini’s fingers from picture-left fold back his right cuff in the lower-left quarter above the subtitle area; her face and torso are fully outside.",
+      "subtitle_safe": true,
+      "sheet_faces": 1,
+      "generate": true,
+      "prompt_file": "frames/prompts/s07.txt",
+      "refs": [
+        "<repo>/content/series2/refs/pair_nandini_nirala.png",
+        "<repo>/content/series2/refs/talkies_lobby.png",
+        "<repo>/content/series2/refs/medal.png",
+        "<repo>/content/series2/episodes/s2b01/frames/s04.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved height line-up and identity sheet for nandini and nirala. Match their faces and relative heights. Copy neither the multiple views nor the background or the pose.",
+        "Image 2 is the approved talkies_lobby location plate. Use its geometry and surface materials. Draw only the part named in the framing and follow the LIGHT line if the plate has different light.",
+        "Image 3 is the approved medal prop sheet. Match the specified construction, scale and colour. Draw the object once in the specified position, never the sheet layout.",
+        "Image 4 is the scene anchor (s04). Match its drawing and place continuity. Do not copy its characters into an insert, unrelated body poses, eyelines, hands or prop states. Continuous night scene under the one tungsten bulb. Desk and blank board behind Nandini. No handcuffs, uniform state, pocket contents, eyeline or framing copied across beats."
+      ],
+      "camera_move": "push-in",
+      "camera_focus": {
+        "x": 0.5,
+        "y": 0.42
+      },
+      "intensity": 0.23
+    },
+    {
+      "id": "s08",
+      "scene": "A",
+      "beat_id": "b3",
+      "line_ids": [
+        "l05"
+      ],
+      "duration_s": 3.6,
+      "silent_lead_s": 0,
+      "silent_tail_s": 0,
+      "voice_s": {
+        "hi": 3.04,
+        "en": 3.28
+      },
+      "characters": [
+        "nandini",
+        "nirala"
+      ],
+      "light": "lobby_night",
+      "state": [
+        "Nirala is wearing the medal on his left chest at this moment, which is picture-right. Only the front placket, left pocket flap, pin, ribbon, brass disc and Nandini’s fingertips are visible. His belt, cuffs, hands, collar, sleeves, shoulders and both epaulettes are outside the crop, as are both faces. No shoulder marking or rank bar is within the image."
+      ],
+      "framing": "Extreme macro of Nirala’s front-facing shirt at the left breast pocket, framed entirely below both shoulders and epaulettes. The crop is bounded above by plain khaki above the safety pin, below by the top edge of the pocket flap. The shirt’s vertical row of plain buttons runs down the picture-left edge as a clear orientation cue. On picture-right the single home-made brass medal is still pinned: maroon-and-cream striped ribbon beneath its thin brass bar, small plain round brass disc resting near the pocket flap. Nandini’s bare fingertips approach the safety pin from picture-left and just touch it. Keep the pin, ribbon and brass disc separate and readable well above the subtitle area. The cloth above the pin is plain khaki across the entire visible crop.",
+      "action": "Extreme macro of Nirala’s front-facing shirt at the left breast pocket, framed entirely below both shoulders and epaulettes. The crop is bounded above by plain khaki above the safety pin, below by the top edge of the pocket flap. The shirt’s vertical row of plain buttons runs down the picture-left edge as a clear orientation cue. On picture-right the single home-made brass medal is still pinned: maroon-and-cream striped ribbon beneath its thin brass bar, small plain round brass disc resting near the pocket flap. Nandini’s bare fingertips approach the safety pin from picture-left and just touch it. Keep the pin, ribbon and brass disc separate and readable well above the subtitle area. The cloth above the pin is plain khaki across the entire visible crop.",
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "generate": true,
+      "prompt_file": "frames/prompts/s08.txt",
+      "refs": [
+        "<repo>/content/series2/refs/pair_nandini_nirala.png",
+        "<repo>/content/series2/refs/talkies_lobby.png",
+        "<repo>/content/series2/refs/medal.png",
+        "<repo>/content/series2/episodes/s2b01/frames/s04.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved height line-up and identity sheet for nandini and nirala. Match their faces and relative heights. Copy neither the multiple views nor the background or the pose.",
+        "Image 2 is the approved talkies_lobby location plate. Use its geometry and surface materials. Draw only the part named in the framing and follow the LIGHT line if the plate has different light.",
+        "Image 3 is the approved medal prop sheet. Match the specified construction, scale and colour. Draw the object once in the specified position, never the sheet layout.",
+        "Image 4 is the scene anchor (s04). Match its drawing and place continuity. Do not copy its characters into an insert, unrelated body poses, eyelines, hands or prop states. Continuous night scene under the one tungsten bulb. Desk and blank board behind Nandini. No handcuffs, uniform state, pocket contents, eyeline or framing copied across beats."
+      ],
+      "camera_move": "push-in",
+      "camera_focus": {
+        "x": 0.5,
+        "y": 0.42
+      },
+      "intensity": 0.23
+    },
+    {
+      "id": "s09",
+      "scene": "A",
+      "beat_id": "b3",
+      "line_ids": [],
+      "duration_s": 1.0,
+      "silent_lead_s": 0,
+      "silent_tail_s": 0,
+      "voice_s": {
+        "hi": 0,
+        "en": 0
+      },
+      "characters": [
+        "nirala"
+      ],
+      "light": "lobby_night",
+      "state": [
+        "Medal is still pinned until the next insert, but never needed in the cropped emphasis. Cuffs and belt are unchanged. Same downward gaze and his one face only."
+      ],
+      "framing": "Small reframe on Nirala’s worried eyes as he looks at the hand and pin below frame. Begin close within the same chest-up angle and creep closer without losing his cap.",
+      "action": "Small reframe on Nirala’s worried eyes as he looks at the hand and pin below frame. Begin close within the same chest-up angle and creep closer without losing his cap.",
+      "subtitle_safe": true,
+      "sheet_faces": 1,
+      "generate": false,
+      "frame_source": "s07",
+      "frame": {
+        "kind": "second_framing",
+        "source_shot": "s07"
+      },
+      "camera_move": {
+        "preset": "custom",
+        "easing": "ease-in-out",
+        "from": {
+          "scale": 1.17,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.22,
+          "x": 0,
+          "y": 0
+        },
+        "focus": {
+          "x": 0.5,
+          "y": 0.32
+        }
+      }
+    },
+    {
+      "id": "s10",
+      "scene": "A",
+      "beat_id": "b3",
+      "line_ids": [
+        "l06"
+      ],
+      "duration_s": 2.9,
+      "silent_lead_s": 0,
+      "silent_tail_s": 0,
+      "voice_s": {
+        "hi": 2.56,
+        "en": 2.32
+      },
+      "characters": [
+        "nandini"
+      ],
+      "light": "lobby_night",
+      "state": [
+        "Nirala now has no medal. The medal goes in Nandini’s LEFT chest pocket on picture-right, sharing that flap with the clipped pen; the pen cap stays visible. Her hands and buttons only. The flap is shut from the next shot."
+      ],
+      "framing": "Chest insert, square on Nandini’s uniform: above the picture-right pocket flap the little brass medal slips into the pocket, one thumb pressing the button edge. Frame the tail of ribbon, not a line of labels.",
+      "action": "Chest insert, square on Nandini’s uniform: above the picture-right pocket flap the little brass medal slips into the pocket, one thumb pressing the button edge. Frame the tail of ribbon, not a line of labels.",
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "generate": true,
+      "prompt_file": "frames/prompts/s10.txt",
+      "refs": [
+        "<repo>/content/series2/refs/nandini.png",
+        "<repo>/content/series2/refs/talkies_lobby.png",
+        "<repo>/content/series2/refs/medal.png",
+        "<repo>/content/series2/episodes/s2b01/frames/s04.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved character sheet for nandini. Match only the exposed character features specified below. Draw the character once in the specified pose and setting.",
+        "Image 2 is the approved talkies_lobby location plate. Use its geometry and surface materials. Draw only the part named in the framing and follow the LIGHT line if the plate has different light.",
+        "Image 3 is the approved medal prop sheet. Match the specified construction, scale and colour. Draw the object once in the specified position, never the sheet layout.",
+        "Image 4 is the scene anchor (s04). Match its drawing and place continuity. Do not copy its characters into an insert, unrelated body poses, eyelines, hands or prop states. Continuous night scene under the one tungsten bulb. Desk and blank board behind Nandini. No handcuffs, uniform state, pocket contents, eyeline or framing copied across beats."
+      ],
+      "camera_move": "push-in",
+      "camera_focus": {
+        "x": 0.5,
+        "y": 0.42
+      },
+      "intensity": 0.23
+    },
+    {
+      "id": "s11",
+      "scene": "A",
+      "beat_id": "b4",
+      "line_ids": [
+        "l07"
+      ],
+      "duration_s": 5.2,
+      "silent_lead_s": 0.8,
+      "silent_tail_s": 0,
+      "voice_s": {
+        "hi": 4.24,
+        "en": 3.6
+      },
+      "characters": [
+        "nandini",
+        "nirala"
+      ],
+      "light": "lobby_night",
+      "state": [
+        "Holster on Nirala’s right hip, nearest this camera. The hand pressing the flap is Nandini’s; his own folded cuffs and hands outside crop. Belt tail tucked. The medal is inside her chest pocket and never seen here. Once the flap closes, the carving stays out of sight."
+      ],
+      "framing": "Strict side-on hip insert, Nirala facing picture-right, his nearer hip at middle left. The carved teak object sits partway into the brown leather holster, grain and one small knot clear in its grip. A separate khaki-wristed hand presses the holster flap down toward the stud. No muzzle toward anyone; the carving is visibly wooden.",
+      "action": "Strict side-on hip insert, Nirala facing picture-right, his nearer hip at middle left. The carved teak object sits partway into the brown leather holster, grain and one small knot clear in its grip. A separate khaki-wristed hand presses the holster flap down toward the stud. No muzzle toward anyone; the carving is visibly wooden.",
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "generate": true,
+      "prompt_file": "frames/prompts/s11.txt",
+      "refs": [
+        "<repo>/content/series2/refs/pair_nandini_nirala.png",
+        "<repo>/content/series2/refs/talkies_lobby.png",
+        "<repo>/content/series2/refs/wooden_revolver.png",
+        "<repo>/content/series2/episodes/s2b01/frames/s04.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved height line-up and identity sheet for nandini and nirala. Match their faces and relative heights. Copy neither the multiple views nor the background or the pose.",
+        "Image 2 is the approved talkies_lobby location plate. Use its geometry and surface materials. Draw only the part named in the framing and follow the LIGHT line if the plate has different light.",
+        "Image 3 is the approved wooden_revolver prop sheet. Match the specified construction, scale and colour. Draw the object once in the specified position, never the sheet layout.",
+        "Image 4 is the scene anchor (s04). Match its drawing and place continuity. Do not copy its characters into an insert, unrelated body poses, eyelines, hands or prop states. Continuous night scene under the one tungsten bulb. Desk and blank board behind Nandini. No handcuffs, uniform state, pocket contents, eyeline or framing copied across beats."
+      ],
+      "camera_move": "push-in",
+      "camera_focus": {
+        "x": 0.5,
+        "y": 0.42
+      },
+      "intensity": 0.23
+    },
+    {
+      "id": "s12",
+      "scene": "A",
+      "beat_id": "b4",
+      "line_ids": [
+        "l08"
+      ],
+      "duration_s": 3.5,
+      "silent_lead_s": 0,
+      "silent_tail_s": 0,
+      "voice_s": {
+        "hi": 3.12,
+        "en": 2.96
+      },
+      "characters": [
+        "nirala"
+      ],
+      "light": "lobby_night",
+      "state": [
+        "Period 1b: no medal, shoulders squared, cuffs folded below crop. Phone is not in his pocket yet, but the pocket reads the same as later: buttoned shut, no protrusion. Closed holster and both hands below crop."
+      ],
+      "framing": "Close front-on Nirala, head and upper chest, the whole peaked cap level and dark against the pool of bulb light. His small anxious eyes hold on a mark just off picture-left. Keep chest fronts plain and reserve crop room around his cap.",
+      "action": "Close front-on Nirala, head and upper chest, the whole peaked cap level and dark against the pool of bulb light. His small anxious eyes hold on a mark just off picture-left. Keep chest fronts plain and reserve crop room around his cap.",
+      "subtitle_safe": true,
+      "sheet_faces": 1,
+      "generate": true,
+      "prompt_file": "frames/prompts/s12.txt",
+      "refs": [
+        "<repo>/content/series2/refs/nirala_p1b.png",
+        "<repo>/content/series2/refs/talkies_lobby.png",
+        "<repo>/content/series2/episodes/s2b01/frames/s04.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved character sheet for nirala_p1b. Match only the exposed character features specified below. Draw the character once in the specified pose and setting.",
+        "Image 2 is the approved talkies_lobby location plate. Use its geometry and surface materials. Draw only the part named in the framing and follow the LIGHT line if the plate has different light.",
+        "Image 3 is the scene anchor (s04). Match its drawing and place continuity. Do not copy its characters into an insert, unrelated body poses, eyelines, hands or prop states. Continuous night scene under the one tungsten bulb. Desk and blank board behind Nandini. No handcuffs, uniform state, pocket contents, eyeline or framing copied across beats."
+      ],
+      "camera_move": "push-in",
+      "camera_focus": {
+        "x": 0.5,
+        "y": 0.42
+      },
+      "intensity": 0.23
+    },
+    {
+      "id": "s13",
+      "scene": "A",
+      "beat_id": "b5",
+      "line_ids": [],
+      "duration_s": 1.5,
+      "silent_lead_s": 0,
+      "silent_tail_s": 0,
+      "voice_s": {
+        "hi": 0,
+        "en": 0
+      },
+      "characters": [
+        "pushpa"
+      ],
+      "light": "lobby_night",
+      "state": [
+        "Handset held steady in Pushpa’s palm. Orange knit, blank keys, and the blank illuminated screen remain as shown in the prop sheet. Only her hand and wrist are visible. Sound carries the start of the recording. Keep the wall empty and do not copy any clock from the location plate or the anchor."
+      ],
+      "framing": "A close insert of Pushpa’s hand holding her old upright keypad handset, with the approved orange knitted cover along its edges. Her thumb depresses one blank central key, leaving the small lit blank screen fully visible above it. Fill the background with a plain flat night-blue wall under warm spill from the lobby bulb. The frame contains no clock, clock face, time display or other wall dressing.",
+      "action": "A close insert of Pushpa’s hand holding her old upright keypad handset, with the approved orange knitted cover along its edges. Her thumb depresses one blank central key, leaving the small lit blank screen fully visible above it. Fill the background with a plain flat night-blue wall under warm spill from the lobby bulb. The frame contains no clock, clock face, time display or other wall dressing.",
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "generate": true,
+      "prompt_file": "frames/prompts/s13.txt",
+      "refs": [
+        "<repo>/content/series2/refs/pushpa.png",
+        "<repo>/content/series2/refs/talkies_lobby.png",
+        "<repo>/content/series2/refs/pushpa_phone.png",
+        "<repo>/content/series2/episodes/s2b01/frames/s04.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved character sheet for pushpa. Match only the exposed character features specified below. Draw the character once in the specified pose and setting.",
+        "Image 2 is the approved talkies_lobby location plate. Use its geometry and surface materials. Draw only the part named in the framing and follow the LIGHT line if the plate has different light.",
+        "Image 3 is the approved pushpa_phone prop sheet. Match the specified construction, scale and colour. Draw the object once in the specified position, never the sheet layout.",
+        "Image 4 is the scene anchor (s04). Match its drawing and place continuity. Do not copy its characters into an insert, unrelated body poses, eyelines, hands or prop states. Continuous night scene under the one tungsten bulb. Desk and blank board behind Nandini. No handcuffs, uniform state, pocket contents, eyeline or framing copied across beats."
+      ],
+      "camera_move": "hold",
+      "camera_focus": {
+        "x": 0.5,
+        "y": 0.42
+      },
+      "intensity": 0.23
+    },
+    {
+      "id": "s14",
+      "scene": "A",
+      "beat_id": "b5",
+      "line_ids": [
+        "l09"
+      ],
+      "duration_s": 3.2,
+      "silent_lead_s": 0,
+      "silent_tail_s": 0,
+      "voice_s": {
+        "hi": 2.88,
+        "en": 2.8
+      },
+      "characters": [
+        "pushpa"
+      ],
+      "light": "lobby_night",
+      "state": [
+        "One bar per shoulder. Handset stays in her palm below crop after she turned on the recording. The yarn ball remains in the picture-left cardigan pocket below crop. No other faces."
+      ],
+      "framing": "Level single of Pushpa above the desk end as she looks over low spectacles toward picture-left. Bare bulb’s pool is near her, crossed steel needles clear against the navy wall. The distant lobby clock has two hands at approximately 11:45 and no numerals.",
+      "action": "Level single of Pushpa above the desk end as she looks over low spectacles toward picture-left. Bare bulb’s pool is near her, crossed steel needles clear against the navy wall. The distant lobby clock has two hands at approximately 11:45 and no numerals.",
+      "subtitle_safe": true,
+      "sheet_faces": 1,
+      "generate": true,
+      "prompt_file": "frames/prompts/s14.txt",
+      "refs": [
+        "<repo>/content/series2/refs/pushpa.png",
+        "<repo>/content/series2/refs/talkies_lobby.png",
+        "<repo>/content/series2/episodes/s2b01/frames/s04.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved character sheet for pushpa. Match only the exposed character features specified below. Draw the character once in the specified pose and setting.",
+        "Image 2 is the approved talkies_lobby location plate. Use its geometry and surface materials. Draw only the part named in the framing and follow the LIGHT line if the plate has different light.",
+        "Image 3 is the scene anchor (s04). Match its drawing and place continuity. Do not copy its characters into an insert, unrelated body poses, eyelines, hands or prop states. Continuous night scene under the one tungsten bulb. Desk and blank board behind Nandini. No handcuffs, uniform state, pocket contents, eyeline or framing copied across beats."
+      ],
+      "camera_move": "push-in",
+      "camera_focus": {
+        "x": 0.5,
+        "y": 0.42
+      },
+      "intensity": 0.23
+    },
+    {
+      "id": "s15",
+      "scene": "A",
+      "beat_id": "b5",
+      "line_ids": [
+        "l29"
+      ],
+      "duration_s": 4.3,
+      "silent_lead_s": 0,
+      "silent_tail_s": 0,
+      "voice_s": {
+        "hi": 3.92,
+        "en": 3.76
+      },
+      "characters": [
+        "nandini",
+        "nirala"
+      ],
+      "light": "lobby_night",
+      "state": [
+        "Nirala’s medal has been removed. His left chest pocket at picture-right is receiving Nandini’s live-call phone, screen inward. Only the shirt placket, plain pocket and its two pinholes, charcoal phone back, and the separate khaki-sleeved hand from picture-left are in view. Both shoulders, epaulettes, faces, collar, sleeve patches and rank bars are entirely outside the crop. No second phone."
+      ],
+      "framing": "Extreme close of the lower front of Nirala’s phone-side chest, cropped entirely below the shoulder line and epaulettes. The button placket runs down picture-left and his plain left pocket is at picture-right. On the khaki just above the plain flap are two small dark pinholes left by the removed medal. A separate khaki-sleeved hand enters from picture-left and guides the thin charcoal smartphone down behind that flap. Draw the plain charcoal back toward camera and the screen turned inward toward Nirala’s chest. The whole top of the image is uninterrupted plain khaki, well below the collar and shoulder straps.",
+      "action": "Extreme close of the lower front of Nirala’s phone-side chest, cropped entirely below the shoulder line and epaulettes. The button placket runs down picture-left and his plain left pocket is at picture-right. On the khaki just above the plain flap are two small dark pinholes left by the removed medal. A separate khaki-sleeved hand enters from picture-left and guides the thin charcoal smartphone down behind that flap. Draw the plain charcoal back toward camera and the screen turned inward toward Nirala’s chest. The whole top of the image is uninterrupted plain khaki, well below the collar and shoulder straps.",
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "generate": true,
+      "prompt_file": "frames/prompts/s15.txt",
+      "refs": [
+        "<repo>/content/series2/refs/pair_nandini_nirala.png",
+        "<repo>/content/series2/refs/talkies_lobby.png",
+        "<repo>/content/series2/refs/nandini_phone.png",
+        "<repo>/content/series2/episodes/s2b01/frames/s04.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved height line-up and identity sheet for nandini and nirala. Match their faces and relative heights. Copy neither the multiple views nor the background or the pose.",
+        "Image 2 is the approved talkies_lobby location plate. Use its geometry and surface materials. Draw only the part named in the framing and follow the LIGHT line if the plate has different light.",
+        "Image 3 is the approved nandini_phone prop sheet. Match the specified construction, scale and colour. Draw the object once in the specified position, never the sheet layout.",
+        "Image 4 is the scene anchor (s04). Match its drawing and place continuity. Do not copy its characters into an insert, unrelated body poses, eyelines, hands or prop states. Continuous night scene under the one tungsten bulb. Desk and blank board behind Nandini. No handcuffs, uniform state, pocket contents, eyeline or framing copied across beats."
+      ],
+      "camera_move": "push-in",
+      "camera_focus": {
+        "x": 0.5,
+        "y": 0.42
+      },
+      "intensity": 0.23
+    },
+    {
+      "id": "s16",
+      "scene": "A",
+      "beat_id": "b5",
+      "line_ids": [
+        "l10",
+        "l11"
+      ],
+      "duration_s": 9.9,
+      "silent_lead_s": 0,
+      "silent_tail_s": 0,
+      "voice_s": {
+        "hi": 9.28,
+        "en": 8.48
+      },
+      "characters": [
+        "nandini",
+        "nirala"
+      ],
+      "light": "lobby_night",
+      "state": [
+        "Nandini is picture-left, bareheaded, with exactly two off-white bars on each visible dark-teal shoulder strap. Her left chest pocket is buttoned over the medal with the pen cap visible. Nirala is picture-right, with a level peaked cap, exactly three off-white bars on each visible dark-teal shoulder strap, and a flat closed left chest pocket concealing the phone. No medal on Nirala. Four empty hands below the crop. No Pushpa. Do not copy a clock or time display from either the location plate or the scene anchor."
+      ],
+      "framing": "Close two-shot across the counter corner, Nandini picture-left facing right, Nirala picture-right facing left. Faces at central left and right, with air above the dark peak. Her steady gaze and his attention carry a deliberately held checklist. Keep the profiles and both chest-pocket areas readable. A plain hanging bulb and an optional blank rectangular board between the profiles are the only background dressing. Behind them is flat deep-blue wall. The frame contains no clock, clock face, time display or wall dial.",
+      "action": "Close two-shot across the counter corner, Nandini picture-left facing right, Nirala picture-right facing left. Faces at central left and right, with air above the dark peak. Her steady gaze and his attention carry a deliberately held checklist. Keep the profiles and both chest-pocket areas readable. A plain hanging bulb and an optional blank rectangular board between the profiles are the only background dressing. Behind them is flat deep-blue wall. The frame contains no clock, clock face, time display or wall dial.",
+      "subtitle_safe": true,
+      "sheet_faces": 2,
+      "generate": true,
+      "prompt_file": "frames/prompts/s16.txt",
+      "refs": [
+        "<repo>/content/series2/refs/pair_nandini_nirala.png",
+        "<repo>/content/series2/refs/nirala_p1b.png",
+        "<repo>/content/series2/refs/talkies_lobby.png",
+        "<repo>/content/series2/episodes/s2b01/frames/s04.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved height line-up and identity sheet for nandini and nirala. Match their faces and relative heights. Copy neither the multiple views nor the background or the pose.",
+        "Image 2 is the approved character sheet for nirala_p1b. Match only the exposed character features specified below. Draw the character once in the specified pose and setting.",
+        "Image 3 is the approved talkies_lobby location plate. Use its geometry and surface materials. Draw only the part named in the framing and follow the LIGHT line if the plate has different light.",
+        "Image 4 is the scene anchor (s04). Match its drawing and place continuity. Do not copy its characters into an insert, unrelated body poses, eyelines, hands or prop states. Continuous night scene under the one tungsten bulb. Desk and blank board behind Nandini. No handcuffs, uniform state, pocket contents, eyeline or framing copied across beats."
+      ],
+      "camera_move": "push-in",
+      "camera_focus": {
+        "x": 0.5,
+        "y": 0.42
+      },
+      "intensity": 0.35,
+      "overlay": {
+        "id": "ov_fake_board",
+        "surface": "blank board behind the desk, if visible within the generated crop"
+      }
+    },
+    {
+      "id": "s17",
+      "scene": "A",
+      "beat_id": "b5",
+      "line_ids": [
+        "l12",
+        "l13"
+      ],
+      "duration_s": 6.8,
+      "silent_lead_s": 0,
+      "silent_tail_s": 0,
+      "voice_s": {
+        "hi": 5.92,
+        "en": 6.16
+      },
+      "characters": [
+        "nirala"
+      ],
+      "light": "lobby_night",
+      "state": [
+        "Same picture-visible period 1b costume and anxious forward gaze. Nandini’s phone is in his left pocket, still invisible. His cap stays in frame. Other actors absent."
+      ],
+      "framing": "Tighter second framing of the anxious front-on close, in toward Nirala’s eyes and thin moustache. Nandini’s voice leads over his face; his phrase follows on the same close.",
+      "action": "Tighter second framing of the anxious front-on close, in toward Nirala’s eyes and thin moustache. Nandini’s voice leads over his face; his phrase follows on the same close.",
+      "subtitle_safe": true,
+      "sheet_faces": 1,
+      "generate": false,
+      "frame_source": "s12",
+      "frame": {
+        "kind": "second_framing",
+        "source_shot": "s12"
+      },
+      "camera_move": {
+        "preset": "custom",
+        "easing": "ease-in-out",
+        "from": {
+          "scale": 1.17,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.22,
+          "x": 0,
+          "y": 0
+        },
+        "focus": {
+          "x": 0.5,
+          "y": 0.36
+        }
+      }
+    },
+    {
+      "id": "s18",
+      "scene": "B",
+      "beat_id": "b6",
+      "line_ids": [],
+      "duration_s": 1.0,
+      "silent_lead_s": 0,
+      "silent_tail_s": 0,
+      "voice_s": {
+        "hi": 0,
+        "en": 0
+      },
+      "characters": [
+        "nandini",
+        "pushpa",
+        "nirala"
+      ],
+      "light": "crossing_night",
+      "state": [
+        "Gate arm up. The shutter is fully up, distant opening a small dark rectangle. Nandini has the cherry-red helmet tucked under her far left arm, Pushpa the off-white bag on her far left shoulder, Nirala has the closed holster and hidden phone. Bodies silhouetted and all faces unreadable. No other person."
+      ],
+      "framing": "Establishing wide at the level crossing, night. Single track crosses mid-frame, lamp small red at upper left, the striped gate arm raised clear. Three human silhouettes near the arm: tall straight Nandini on picture-left with helmet under her far arm, short square Pushpa offset behind, small peaked-cap Nirala facing the dark road on picture-right. Far above them a tiny godown opening and one light.",
+      "action": "Establishing wide at the level crossing, night. Single track crosses mid-frame, lamp small red at upper left, the striped gate arm raised clear. Three human silhouettes near the arm: tall straight Nandini on picture-left with helmet under her far arm, short square Pushpa offset behind, small peaked-cap Nirala facing the dark road on picture-right. Far above them a tiny godown opening and one light.",
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "generate": true,
+      "prompt_file": "frames/prompts/s18.txt",
+      "refs": [
+        "<repo>/content/series2/refs/pair_nandini_pushpa.png",
+        "<repo>/content/series2/refs/nirala_p1b.png",
+        "<repo>/content/series2/refs/crossing_stall.png",
+        "<repo>/content/series2/refs/red_helmet.png",
+        "<repo>/content/series2/episodes/s2b01/frames/s19.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved height line-up and identity sheet for nandini and pushpa. Match their faces and relative heights. Copy neither the multiple views nor the background or the pose.",
+        "Image 2 is the approved character sheet for nirala_p1b. Match only the exposed character features specified below. Draw the character once in the specified pose and setting.",
+        "Image 3 is the approved crossing_stall location plate. Use its geometry and surface materials. Draw only the part named in the framing and follow the LIGHT line if the plate has different light.",
+        "Image 4 is the approved red_helmet prop sheet. Match the specified construction, scale and colour. Draw the object once in the specified position, never the sheet layout.",
+        "Image 5 is the scene anchor (s19). Match its drawing and place continuity. Do not copy its characters into an insert, unrelated body poses, eyelines, hands or prop states. Same raised gate arm, single track, dark road, shut stall, warm stall bulb and small signal light. Do not copy the salute, who is present, the framing, or the helmet and phone states."
+      ],
+      "camera_move": "hold",
+      "camera_focus": {
+        "x": 0.5,
+        "y": 0.42
+      },
+      "intensity": 0.23
+    },
+    {
+      "id": "s19",
+      "scene": "B",
+      "beat_id": "b6",
+      "line_ids": [
+        "l14"
+      ],
+      "duration_s": 2.3,
+      "silent_lead_s": 0,
+      "silent_tail_s": 0,
+      "voice_s": {
+        "hi": 1.92,
+        "en": 1.92
+      },
+      "characters": [
+        "nandini",
+        "nirala"
+      ],
+      "light": "crossing_night",
+      "state": [
+        "Nandini salutes with the hand nearest camera, her right. Helmet held under her far left arm, out of this tight crop. Nirala salutes with his right hand, on the far side seen cleanly against the dark. No medal on his chest. Phone inside breast pocket, invisible. Holster closed and below crop. Pushpa, the notebook and any godown interior stay off screen.",
+        "RANK LOCK IN THIS SHOT: picture-left Nandini salutes bareheaded and has TWO off-white bars per dark-teal epaulette; picture-right Nirala salutes in his peaked cap and has THREE off-white bars per dark-teal epaulette. No extra pale seam, shine or edging counts as a third stripe on Nandini’s near epaulette."
+      ],
+      "framing": "Side-on medium two-shot at the raised railway gate. Nandini stands picture-left facing right, Nirala picture-right facing left, their feet on the same level. At eye height, catch the two returned salutes as a still. Nandini is taller by a visible forehead. A single track recedes behind them, with the shut tea stall and its warm bulb farther back. Keep both salutes and the same side-on silhouettes. Let the raised forearm clear the top of each shoulder strap so its visible marking reads at a glance. On the picture-left officer Nandini’s near dark-teal strap, draw exactly TWO equally spaced, short parallel off-white bars with teal gaps and plain teal beyond them. On the picture-right officer Nirala’s visible dark-teal strap, draw exactly THREE. The bars are marks on the straps, not cloth seams, stripes on cuffs, or sleeve patches.",
+      "action": "Side-on medium two-shot at the raised railway gate. Nandini stands picture-left facing right, Nirala picture-right facing left, their feet on the same level. At eye height, catch the two returned salutes as a still. Nandini is taller by a visible forehead. A single track recedes behind them, with the shut tea stall and its warm bulb farther back. Keep both salutes and the same side-on silhouettes. Let the raised forearm clear the top of each shoulder strap so its visible marking reads at a glance. On the picture-left officer Nandini’s near dark-teal strap, draw exactly TWO equally spaced, short parallel off-white bars with teal gaps and plain teal beyond them. On the picture-right officer Nirala’s visible dark-teal strap, draw exactly THREE. The bars are marks on the straps, not cloth seams, stripes on cuffs, or sleeve patches.",
+      "subtitle_safe": true,
+      "sheet_faces": 2,
+      "generate": true,
+      "prompt_file": "frames/prompts/s19.txt",
+      "refs": [
+        "<repo>/content/series2/refs/pair_nandini_nirala.png",
+        "<repo>/content/series2/refs/nandini.png",
+        "<repo>/content/series2/refs/nirala_p1b.png",
+        "<repo>/content/series2/refs/crossing_stall.png",
+        "<repo>/content/series2/refs/real_thana.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved height line-up and identity sheet for nandini and nirala. Match their faces and relative heights. Copy neither the multiple views nor the background or the pose.",
+        "Image 2 is the approved Nandini single-character sheet. Use the side-on model for her identity and wardrobe, especially her near dark-teal epaulette with exactly two plain off-white bars. Keep her shoulder marking separate from Nirala’s.",
+        "Image 3 is the approved character sheet for nirala_p1b. Match only the exposed character features specified below. Draw the character once in the specified pose and setting.",
+        "Image 4 is the approved crossing_stall location plate. Use its geometry and surface materials. Draw only the part named in the framing and follow the LIGHT line if the plate has different light.",
+        "Image 5 is the approved rendering reference. Match only the bold outline, cel shadows and palette. Do not copy the room, fan, shield, armoire, doorway light, clock, barred door, furniture or props."
+      ],
+      "scene_anchor_of": "B",
+      "camera_move": "push-in",
+      "camera_focus": {
+        "x": 0.5,
+        "y": 0.42
+      },
+      "intensity": 0.23
+    },
+    {
+      "id": "s20",
+      "scene": "B",
+      "beat_id": "b6",
+      "line_ids": [],
+      "duration_s": 3.0,
+      "silent_lead_s": 0,
+      "silent_tail_s": 0,
+      "voice_s": {
+        "hi": 0,
+        "en": 0
+      },
+      "characters": [
+        "nandini",
+        "pushpa",
+        "nirala"
+      ],
+      "light": "crossing_night",
+      "state": [
+        "Nirala is alone on the road, hands empty, no exposed phone or medal. Gate up, shutter up. Only distant silhouettes of the women, no faces. No traffic or other people."
+      ],
+      "framing": "Wide from behind the crossing toward the dark road. Nirala is a small capped back receding at upper centre, a few strides toward the tiny glowing loading-bay mouth. The two women are smaller dark shapes at the far edge of the crossing behind him, on the near-side shoulder, and do not follow.",
+      "action": "Wide from behind the crossing toward the dark road. Nirala is a small capped back receding at upper centre, a few strides toward the tiny glowing loading-bay mouth. The two women are smaller dark shapes at the far edge of the crossing behind him, on the near-side shoulder, and do not follow.",
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "generate": true,
+      "prompt_file": "frames/prompts/s20.txt",
+      "refs": [
+        "<repo>/content/series2/refs/pair_nandini_pushpa.png",
+        "<repo>/content/series2/refs/nirala_p1b.png",
+        "<repo>/content/series2/refs/crossing_stall.png",
+        "<repo>/content/series2/episodes/s2b01/frames/s19.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved height line-up and identity sheet for nandini and pushpa. Match their faces and relative heights. Copy neither the multiple views nor the background or the pose.",
+        "Image 2 is the approved character sheet for nirala_p1b. Match only the exposed character features specified below. Draw the character once in the specified pose and setting.",
+        "Image 3 is the approved crossing_stall location plate. Use its geometry and surface materials. Draw only the part named in the framing and follow the LIGHT line if the plate has different light.",
+        "Image 4 is the scene anchor (s19). Match its drawing and place continuity. Do not copy its characters into an insert, unrelated body poses, eyelines, hands or prop states. Same raised gate arm, single track, dark road, shut stall, warm stall bulb and small signal light. Do not copy the salute, who is present, the framing, or the helmet and phone states."
+      ],
+      "camera_move": "drift",
+      "camera_focus": {
+        "x": 0.52,
+        "y": 0.32
+      },
+      "intensity": 0.23
+    },
+    {
+      "id": "s21",
+      "scene": "B",
+      "beat_id": "b7",
+      "line_ids": [
+        "l15",
+        "l30"
+      ],
+      "duration_s": 7.6,
+      "silent_lead_s": 2,
+      "silent_tail_s": 0,
+      "voice_s": {
+        "hi": 4.8,
+        "en": 5.12
+      },
+      "characters": [
+        "nandini",
+        "pushpa"
+      ],
+      "light": "crossing_night",
+      "state": [
+        "Phone is lit and blank, resting on orange knitting, speaker on and muted at this end; screen faces sky. Nandini has uncapped blue pen in her right hand on the picture-left side of the notebook, her other hand steadies the page. Helmet at bench end, not worn. Cap-wearing Nirala and Bhaiyaji are on the line and never drawn."
+      ],
+      "framing": "Front two-shot on the bench under the shut stall bulb. Nandini picture-left, straight-backed, open notebook on her knees and pen up just above it. Pushpa picture-right, lower and broader, knitting low and the orange phone faced up on it. Hero prop and both faces above the bottom quarter; leave crop room for the reaction shot. Helmet at the left bench end.",
+      "action": "Front two-shot on the bench under the shut stall bulb. Nandini picture-left, straight-backed, open notebook on her knees and pen up just above it. Pushpa picture-right, lower and broader, knitting low and the orange phone faced up on it. Hero prop and both faces above the bottom quarter; leave crop room for the reaction shot. Helmet at the left bench end.",
+      "subtitle_safe": true,
+      "sheet_faces": 2,
+      "generate": true,
+      "prompt_file": "frames/prompts/s21.txt",
+      "refs": [
+        "<repo>/content/series2/refs/pair_nandini_pushpa.png",
+        "<repo>/content/series2/refs/pushpa_phone.png",
+        "<repo>/content/series2/refs/pushpa_knitting.png",
+        "<repo>/content/series2/refs/red_helmet.png",
+        "<repo>/content/series2/episodes/s2b01/frames/s19.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved height line-up and identity sheet for nandini and pushpa. Match their faces and relative heights. Copy neither the multiple views nor the background or the pose.",
+        "Image 2 is the approved pushpa_phone prop sheet. Match the specified construction, scale and colour. Draw the object once in the specified position, never the sheet layout.",
+        "Image 3 is the approved pushpa_knitting prop sheet. Match the specified construction, scale and colour. Draw the object once in the specified position, never the sheet layout.",
+        "Image 4 is the approved red_helmet prop sheet. Match the specified construction, scale and colour. Draw the object once in the specified position, never the sheet layout.",
+        "Image 5 is the scene anchor (s19). Match its drawing and place continuity. Do not copy its characters into an insert, unrelated body poses, eyelines, hands or prop states. Same raised gate arm, single track, dark road, shut stall, warm stall bulb and small signal light. Do not copy the salute, who is present, the framing, or the helmet and phone states."
+      ],
+      "refs_not_attached": [
+        "crossing_stall layout plate, which is visible in the scene anchor"
+      ],
+      "camera_move": "push-in",
+      "camera_focus": {
+        "x": 0.56,
+        "y": 0.42
+      },
+      "intensity": 0.23
+    },
+    {
+      "id": "s22",
+      "scene": "C",
+      "beat_id": "b8",
+      "line_ids": [],
+      "duration_s": 2.5,
+      "silent_lead_s": 0,
+      "silent_tail_s": 0,
+      "voice_s": {
+        "hi": 0,
+        "en": 0
+      },
+      "characters": [
+        "nirala"
+      ],
+      "light": "godown_exterior",
+      "state": [
+        "Shutter partially lowered in this one instant. Back of Nirala only, no face. Cap level, squared seams and folded cuffs, arms naturally down and empty. No phone, no medal, no handgun visible. No Bhaiyaji."
+      ],
+      "framing": "Exterior vertical wide of the loading bay from the road. The shutter bottom is one hand-height above the peak of Nirala’s cap. His small back is just beyond the threshold, still whole from head to waist, one shoulder slightly higher as he steps in. Dark stacked sacks frame the mouth and one small warm bulb is visible deep in the shed. Lower left uninterrupted dark shape for place super.",
+      "action": "Exterior vertical wide of the loading bay from the road. The shutter bottom is one hand-height above the peak of Nirala’s cap. His small back is just beyond the threshold, still whole from head to waist, one shoulder slightly higher as he steps in. Dark stacked sacks frame the mouth and one small warm bulb is visible deep in the shed. Lower left uninterrupted dark shape for place super.",
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "generate": true,
+      "prompt_file": "frames/prompts/s22.txt",
+      "refs": [
+        "<repo>/content/series2/refs/nirala_p1b.png",
+        "<repo>/content/series2/refs/godown.png",
+        "<repo>/content/series2/refs/real_thana.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved character sheet for nirala_p1b. Match only the exposed character features specified below. Draw the character once in the specified pose and setting.",
+        "Image 2 is the approved godown location plate. Use its geometry and surface materials. Draw only the part named in the framing and follow the LIGHT line if the plate has different light.",
+        "Image 3 is the approved rendering reference. Match only the bold outline, cel shadows and palette. Do not copy the room, fan, shield, armoire, doorway light, clock, barred door, furniture or props."
+      ],
+      "scene_anchor_of": "C",
+      "camera_move": "push-in",
+      "camera_focus": {
+        "x": 0.5,
+        "y": 0.42
+      },
+      "intensity": 0.23,
+      "supers": [
+        {
+          "id": "su_b1",
+          "kind": "place",
+          "with_line": null,
+          "on_shot": "s22",
+          "text": "भैयाजी का godown",
+          "text_hi": "भैयाजी का godown",
+          "text_en": "Bhaiyaji's godown",
+          "note": "Place super at the godown's first close appearance on path B (viewer ledger places.godown). It sits on shot 1, not on l16's shot 2, because shot 2 is the stall. b8 shot 1 is in Glimpse B: S14 re-cuts against must_not_reveal; a place name reveals nothing on that list.",
+          "hold_min_s": 2,
+          "placement": "First godown close. Hold at least two seconds within the exterior insert; no plot overlay here."
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "scene": "B",
+      "beat_id": "b8",
+      "line_ids": [
+        "l16"
+      ],
+      "duration_s": 3.2,
+      "silent_lead_s": 0,
+      "silent_tail_s": 0,
+      "voice_s": {
+        "hi": 2.88,
+        "en": 2.8
+      },
+      "characters": [
+        "nandini",
+        "pushpa"
+      ],
+      "light": "crossing_night",
+      "state": [
+        "Shutter has shut at the godown; this view remains entirely at the crossing. Speaker phone lit and the pen paused, no change to bench positions or props. Nirala is heard through the handset."
+      ],
+      "framing": "Tighter on the two motionless women at the bench. Keep the pen point suspended over the page and the knitted case between them in view.",
+      "action": "Tighter on the two motionless women at the bench. Keep the pen point suspended over the page and the knitted case between them in view.",
+      "subtitle_safe": true,
+      "sheet_faces": 2,
+      "generate": false,
+      "frame_source": "s21",
+      "frame": {
+        "kind": "second_framing",
+        "source_shot": "s21"
+      },
+      "camera_move": {
+        "preset": "custom",
+        "easing": "ease-in-out",
+        "from": {
+          "scale": 1.1099999999999999,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.16,
+          "x": 0,
+          "y": 0
+        },
+        "focus": {
+          "x": 0.54,
+          "y": 0.45
+        }
+      }
+    },
+    {
+      "id": "s24",
+      "scene": "B",
+      "beat_id": "b9",
+      "line_ids": [
+        "l17"
+      ],
+      "duration_s": 4.7,
+      "silent_lead_s": 0,
+      "silent_tail_s": 0,
+      "voice_s": {
+        "hi": 4.24,
+        "en": 4.32
+      },
+      "characters": [
+        "nandini"
+      ],
+      "light": "crossing_night",
+      "state": [
+        "Same seated bench pose as s21. The blank notebook sits directly on her knees, steadied by her left hand at picture-right, and the right hand writes from picture-left. Pen out of the chest pocket; medal hidden inside its buttoned flap. Keep both hands and the full page above the bottom quarter. No desk or table between her and camera. Phone, Pushpa and helmet outside crop. Bhaiyaji is heard on the phone."
+      ],
+      "framing": "Tight, high three-quarter single looking diagonally down from the end of the tea-stall bench. Nandini is seated on exactly that bench, head high in frame and looking down. Her open notebook rests directly on her raised khaki-clad knees, supported by her left hand at picture-right and tipped slightly toward the camera. Draw the notebook and writing hand entirely in the band 50–70 percent down the frame. The blue pen enters with her right hand from picture-left and touches the blank page. Show the line of her knee beneath the book so the lap reads as its support. The bench edge is at her side, below her hips. Warm stall-bulb light falls on her forehead and the writing hand, with flat night-blue shadows behind. There is no table, counter, flat writing surface or other person.",
+      "action": "Tight, high three-quarter single looking diagonally down from the end of the tea-stall bench. Nandini is seated on exactly that bench, head high in frame and looking down. Her open notebook rests directly on her raised khaki-clad knees, supported by her left hand at picture-right and tipped slightly toward the camera. Draw the notebook and writing hand entirely in the band 50–70 percent down the frame. The blue pen enters with her right hand from picture-left and touches the blank page. Show the line of her knee beneath the book so the lap reads as its support. The bench edge is at her side, below her hips. Warm stall-bulb light falls on her forehead and the writing hand, with flat night-blue shadows behind. There is no table, counter, flat writing surface or other person.",
+      "subtitle_safe": true,
+      "sheet_faces": 1,
+      "generate": true,
+      "prompt_file": "frames/prompts/s24.txt",
+      "refs": [
+        "<repo>/content/series2/refs/nandini.png",
+        "<repo>/content/series2/refs/crossing_stall.png",
+        "<repo>/content/series2/episodes/s2b01/frames/s19.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved character sheet for nandini. Match only the exposed character features specified below. Draw the character once in the specified pose and setting.",
+        "Image 2 is the approved crossing_stall location plate. Use its geometry and surface materials. Draw only the part named in the framing and follow the LIGHT line if the plate has different light.",
+        "Image 3 is the scene anchor (s19). Match its drawing and place continuity. Do not copy its characters into an insert, unrelated body poses, eyelines, hands or prop states. Same raised gate arm, single track, dark road, shut stall, warm stall bulb and small signal light. Do not copy the salute, who is present, the framing, or the helmet and phone states."
+      ],
+      "camera_move": "push-in",
+      "camera_focus": {
+        "x": 0.5,
+        "y": 0.53
+      },
+      "intensity": 0.23
+    },
+    {
+      "id": "s25",
+      "scene": "D",
+      "beat_id": "b9",
+      "line_ids": [
+        "l18"
+      ],
+      "duration_s": 3.9,
+      "silent_lead_s": 0,
+      "silent_tail_s": 0,
+      "voice_s": {
+        "hi": 3.52,
+        "en": 3.52
+      },
+      "characters": [],
+      "light": "godown_night",
+      "state": [
+        "Truck stationary. Grey tarpaulin, rounded dull ochre cab mostly beyond crop, upright tailgate, jute sacks packed to the cover. No driver, hands, handset, lettering, or visible registration. Shutter has fallen behind camera."
+      ],
+      "framing": "Faceless horizontal subject inside a portrait crop. Three-quarter rear insert of the loaded truck, tailgate upright, grey tarpaulin held over the load. A few shoulders of jute sacks are visible just at the edge of the grey cover. The tarpaulin rises high, pressed by the load, with hard cel contours.",
+      "action": "Faceless horizontal subject inside a portrait crop. Three-quarter rear insert of the loaded truck, tailgate upright, grey tarpaulin held over the load. A few shoulders of jute sacks are visible just at the edge of the grey cover. The tarpaulin rises high, pressed by the load, with hard cel contours.",
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "generate": true,
+      "prompt_file": "frames/prompts/s25.txt",
+      "refs": [
+        "<repo>/content/series2/refs/godown.png",
+        "<repo>/content/series2/refs/truck.png",
+        "<repo>/content/series2/refs/real_thana.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved godown location plate. Use its geometry and surface materials. Draw only the part named in the framing and follow the LIGHT line if the plate has different light.",
+        "Image 2 is the approved truck prop sheet. Match the specified construction, scale and colour. Draw the object once in the specified position, never the sheet layout.",
+        "Image 3 is the approved rendering reference. Match only the bold outline, cel shadows and palette. Do not copy the room, fan, shield, armoire, doorway light, clock, barred door, furniture or props."
+      ],
+      "scene_anchor_of": "D",
+      "camera_move": "push-in",
+      "camera_focus": {
+        "x": 0.5,
+        "y": 0.42
+      },
+      "intensity": 0.23
+    },
+    {
+      "id": "s26",
+      "scene": "B",
+      "beat_id": "b9",
+      "line_ids": [
+        "l19"
+      ],
+      "duration_s": 3.1,
+      "silent_lead_s": 0,
+      "silent_tail_s": 0,
+      "voice_s": {
+        "hi": 2.4,
+        "en": 2.72
+      },
+      "characters": [
+        "pushpa"
+      ],
+      "light": "crossing_night",
+      "state": [
+        "Pushpa’s hands on needles beside the phone, as if the needles have just slowed; keep the pose still enough to read as stopped in a later reframe. Phone on speaker, lit blank screen face up. Phone remains in exactly this position. Only Pushpa’s sleeve ends and hands are visible."
+      ],
+      "framing": "Visible orange wool across the centre, pale needles spanning its upper edge, clean silhouette of the old keypad handset at centre facing straight up. Cross neither needles nor fingers over its screen, which reads as a blank lit rectangle. No face or notebook.",
+      "action": "Visible orange wool across the centre, pale needles spanning its upper edge, clean silhouette of the old keypad handset at centre facing straight up. Cross neither needles nor fingers over its screen, which reads as a blank lit rectangle. No face or notebook.",
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "generate": true,
+      "prompt_file": "frames/prompts/s26.txt",
+      "refs": [
+        "<repo>/content/series2/refs/pushpa.png",
+        "<repo>/content/series2/refs/crossing_stall.png",
+        "<repo>/content/series2/refs/pushpa_phone.png",
+        "<repo>/content/series2/refs/pushpa_knitting.png",
+        "<repo>/content/series2/episodes/s2b01/frames/s19.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved character sheet for pushpa. Match only the exposed character features specified below. Draw the character once in the specified pose and setting.",
+        "Image 2 is the approved crossing_stall location plate. Use its geometry and surface materials. Draw only the part named in the framing and follow the LIGHT line if the plate has different light.",
+        "Image 3 is the approved pushpa_phone prop sheet. Match the specified construction, scale and colour. Draw the object once in the specified position, never the sheet layout.",
+        "Image 4 is the approved pushpa_knitting prop sheet. Match the specified construction, scale and colour. Draw the object once in the specified position, never the sheet layout.",
+        "Image 5 is the scene anchor (s19). Match its drawing and place continuity. Do not copy its characters into an insert, unrelated body poses, eyelines, hands or prop states. Same raised gate arm, single track, dark road, shut stall, warm stall bulb and small signal light. Do not copy the salute, who is present, the framing, or the helmet and phone states."
+      ],
+      "camera_move": "push-in",
+      "camera_focus": {
+        "x": 0.5,
+        "y": 0.43
+      },
+      "intensity": 0.23
+    },
+    {
+      "id": "s27",
+      "scene": "D",
+      "beat_id": "b9",
+      "line_ids": [
+        "l20"
+      ],
+      "duration_s": 5.3,
+      "silent_lead_s": 0,
+      "silent_tail_s": 0,
+      "voice_s": {
+        "hi": 4.56,
+        "en": 4.96
+      },
+      "characters": [],
+      "light": "godown_night",
+      "state": [
+        "One sack patch entirely blank, no lettering or printed emblem. Shutter down behind camera. No people, slip, signatures, logos or phone in view."
+      ],
+      "framing": "Extreme close on one jute sack inside the godown. The coarse tan face fills the centre; a rectangular blank stencil patch shows clearly under the warm bulb. Other sacks and the truck make dark broad near-background shapes.",
+      "action": "Extreme close on one jute sack inside the godown. The coarse tan face fills the centre; a rectangular blank stencil patch shows clearly under the warm bulb. Other sacks and the truck make dark broad near-background shapes.",
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "generate": true,
+      "prompt_file": "frames/prompts/s27.txt",
+      "refs": [
+        "<repo>/content/series2/refs/godown.png",
+        "<repo>/content/series2/episodes/s2b01/frames/s25.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved godown location plate. Use its geometry and surface materials. Draw only the part named in the framing and follow the LIGHT line if the plate has different light.",
+        "Image 2 is the scene anchor (s25). Match its drawing and place continuity. Do not copy its characters into an insert, unrelated body poses, eyelines, hands or prop states. Interior inserts only. No people in the godown inserts. Keep the bulb, tarpaulin and stacked jute idiom, not the framing or objects from the anchor."
+      ],
+      "camera_move": "push-in",
+      "camera_focus": {
+        "x": 0.5,
+        "y": 0.42
+      },
+      "intensity": 0.23
+    },
+    {
+      "id": "s28",
+      "scene": "B",
+      "beat_id": "b9",
+      "line_ids": [
+        "l21",
+        "l22"
+      ],
+      "duration_s": 8.0,
+      "silent_lead_s": 0,
+      "silent_tail_s": 0.8,
+      "voice_s": {
+        "hi": 6.64,
+        "en": 6.56
+      },
+      "characters": [
+        "nandini"
+      ],
+      "light": "crossing_night",
+      "state": [
+        "Same pen and open notebook. Eyes down, no revealed medal, other people outside crop. Bhaiyaji remains a phone voice."
+      ],
+      "framing": "Same single on Nandini writing, held on a subtly tighter push. Her attention stays on the page. The spoken figure and her own murmur meet on this face.",
+      "action": "Same single on Nandini writing, held on a subtly tighter push. Her attention stays on the page. The spoken figure and her own murmur meet on this face.",
+      "subtitle_safe": true,
+      "sheet_faces": 1,
+      "generate": false,
+      "frame_source": "s24",
+      "frame": {
+        "kind": "second_framing",
+        "source_shot": "s24"
+      },
+      "camera_move": {
+        "preset": "custom",
+        "easing": "ease-in-out",
+        "from": {
+          "scale": 1.1099999999999999,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.16,
+          "x": 0,
+          "y": 0
+        },
+        "focus": {
+          "x": 0.54,
+          "y": 0.57
+        }
+      }
+    },
+    {
+      "id": "s29",
+      "scene": "B",
+      "beat_id": "b9",
+      "line_ids": [
+        "l23",
+        "l32"
+      ],
+      "duration_s": 8.5,
+      "silent_lead_s": 0,
+      "silent_tail_s": 0,
+      "voice_s": {
+        "hi": 7.92,
+        "en": 7.12
+      },
+      "characters": [
+        "nandini"
+      ],
+      "light": "crossing_night",
+      "state": [
+        "Right writing hand enters picture-left, left hand holds the notebook steady picture-right. No writing or overlaid numbers. Phone call still live off screen. No physical slip in this picture."
+      ],
+      "framing": "Close insert of a blue ballpoint halted a finger-width over the paper. Lamp highlight at the knuckles. The cover edge and straight open seam of her plain pocket notebook frame the pause. Keep the whole tip and both hands above the bottom quarter.",
+      "action": "Close insert of a blue ballpoint halted a finger-width over the paper. Lamp highlight at the knuckles. The cover edge and straight open seam of her plain pocket notebook frame the pause. Keep the whole tip and both hands above the bottom quarter.",
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "generate": true,
+      "prompt_file": "frames/prompts/s29.txt",
+      "refs": [
+        "<repo>/content/series2/refs/nandini.png",
+        "<repo>/content/series2/refs/crossing_stall.png",
+        "<repo>/content/series2/episodes/s2b01/frames/s19.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved character sheet for nandini. Match only the exposed character features specified below. Draw the character once in the specified pose and setting.",
+        "Image 2 is the approved crossing_stall location plate. Use its geometry and surface materials. Draw only the part named in the framing and follow the LIGHT line if the plate has different light.",
+        "Image 3 is the scene anchor (s19). Match its drawing and place continuity. Do not copy its characters into an insert, unrelated body poses, eyelines, hands or prop states. Same raised gate arm, single track, dark road, shut stall, warm stall bulb and small signal light. Do not copy the salute, who is present, the framing, or the helmet and phone states."
+      ],
+      "camera_move": "push-in",
+      "camera_focus": {
+        "x": 0.5,
+        "y": 0.42
+      },
+      "intensity": 0.23
+    },
+    {
+      "id": "s30",
+      "scene": "B",
+      "beat_id": "b10",
+      "line_ids": [
+        "l24"
+      ],
+      "duration_s": 3.6,
+      "silent_lead_s": 1.5,
+      "silent_tail_s": 0,
+      "voice_s": {
+        "hi": 1.81,
+        "en": 2.08
+      },
+      "characters": [
+        "nandini"
+      ],
+      "light": "crossing_night",
+      "state": [
+        "Same seated bench position. Her right hand and pen have stopped on the book below frame; the left hand steadies it, also off camera. Show only her head and shoulder line, with chest pockets and medal concealed by the crop. No notebook, pen, table, other face, or phone inside the crop. Bhaiyaji is heard through the handset off picture-right."
+      ],
+      "framing": "Tight shoulders-up reaction close at the end of the tea-stall bench. Nandini has stopped writing and lifted her gaze toward the handset outside frame on picture-right. Her head turns only slightly right and the tense eyes hold there. Leave breathing room above her hair and on both sides, especially toward her eyeline. Keep her eyes and mouth comfortably clear of the crop edge so the later close can push in. Warm light from the stall bulb catches her cheek and brow, with flat night blue behind. The bottom of the image cuts across her shoulders and upper collar well above both chest pockets. Her hands, page, pen, phone and bench are all outside the picture.",
+      "action": "Tight shoulders-up reaction close at the end of the tea-stall bench. Nandini has stopped writing and lifted her gaze toward the handset outside frame on picture-right. Her head turns only slightly right and the tense eyes hold there. Leave breathing room above her hair and on both sides, especially toward her eyeline. Keep her eyes and mouth comfortably clear of the crop edge so the later close can push in. Warm light from the stall bulb catches her cheek and brow, with flat night blue behind. The bottom of the image cuts across her shoulders and upper collar well above both chest pockets. Her hands, page, pen, phone and bench are all outside the picture.",
+      "subtitle_safe": true,
+      "sheet_faces": 1,
+      "generate": true,
+      "prompt_file": "frames/prompts/s30.txt",
+      "refs": [
+        "<repo>/content/series2/refs/nandini.png",
+        "<repo>/content/series2/refs/crossing_stall.png",
+        "<repo>/content/series2/episodes/s2b01/frames/s19.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved character sheet for nandini. Match only the exposed character features specified below. Draw the character once in the specified pose and setting.",
+        "Image 2 is the approved crossing_stall location plate. Use its geometry and surface materials. Draw only the part named in the framing and follow the LIGHT line if the plate has different light.",
+        "Image 3 is the scene anchor (s19). Match its drawing and place continuity. Do not copy its characters into an insert, unrelated body poses, eyelines, hands or prop states. Same raised gate arm, single track, dark road, shut stall, warm stall bulb and small signal light. Do not copy the salute, who is present, the framing, or the helmet and phone states."
+      ],
+      "camera_move": "push-in",
+      "camera_focus": {
+        "x": 0.51,
+        "y": 0.34
+      },
+      "intensity": 0.23,
+      "cut_on_word_note": {
+        "line": "l24",
+        "word": {
+          "hi": "आप",
+          "en": "it's"
+        },
+        "shot": "s31"
+      },
+      "line_part": {
+        "l24": "head"
+      }
+    },
+    {
+      "id": "s31",
+      "scene": "B",
+      "beat_id": "b10",
+      "line_ids": [
+        "l24"
+      ],
+      "duration_s": 4.7,
+      "silent_lead_s": 0,
+      "silent_tail_s": 1,
+      "voice_s": {
+        "hi": 3.63,
+        "en": 3.12
+      },
+      "characters": [
+        "pushpa"
+      ],
+      "light": "crossing_night",
+      "state": [
+        "Phone still lit on speaker, needles motionless, hands stay away from the keys. Rustle is heard from the remote end, not staged at the crossing. No hand entering from inside the godown."
+      ],
+      "framing": "Second framing of the needles stopped dead over orange wool. Tight around the phone and needle tips, lit screen just off centre. Hold through the cloth rustle.",
+      "action": "Second framing of the needles stopped dead over orange wool. Tight around the phone and needle tips, lit screen just off centre. Hold through the cloth rustle.",
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "generate": false,
+      "frame_source": "s26",
+      "frame": {
+        "kind": "second_framing",
+        "source_shot": "s26"
+      },
+      "camera_move": {
+        "preset": "custom",
+        "easing": "ease-in-out",
+        "from": {
+          "scale": 1.15,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.2,
+          "x": 0,
+          "y": 0
+        },
+        "focus": {
+          "x": 0.49,
+          "y": 0.39
+        }
+      },
+      "cut_on_word_note": {
+        "line": "l24",
+        "word": {
+          "hi": "आप",
+          "en": "it's"
+        },
+        "shot": "s31"
+      },
+      "line_part": {
+        "l24": "rest"
+      }
+    },
+    {
+      "id": "s32",
+      "scene": "B",
+      "beat_id": "b10",
+      "line_ids": [
+        "l25",
+        "l31"
+      ],
+      "duration_s": 4.5,
+      "silent_lead_s": 0,
+      "silent_tail_s": 0,
+      "voice_s": {
+        "hi": 3.92,
+        "en": 3.84
+      },
+      "characters": [
+        "nandini"
+      ],
+      "light": "crossing_night",
+      "state": [
+        "The pen remains still just beyond this tighter crop. She is looking up from the page toward the phone side. Other faces absent, medal still buttoned."
+      ],
+      "framing": "Return to the held eyes-up close on Nandini. This framing tightens around both eyes and the mouth as she states what just happened.",
+      "action": "Return to the held eyes-up close on Nandini. This framing tightens around both eyes and the mouth as she states what just happened.",
+      "subtitle_safe": true,
+      "sheet_faces": 1,
+      "generate": false,
+      "frame_source": "s30",
+      "frame": {
+        "kind": "second_framing",
+        "source_shot": "s30"
+      },
+      "camera_move": {
+        "preset": "custom",
+        "easing": "ease-in-out",
+        "from": {
+          "scale": 1.15,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.2,
+          "x": 0,
+          "y": 0
+        },
+        "focus": {
+          "x": 0.53,
+          "y": 0.34
+        }
+      }
+    },
+    {
+      "id": "s33",
+      "scene": "B",
+      "beat_id": "b11",
+      "line_ids": [
+        "l26"
+      ],
+      "duration_s": 3.1,
+      "silent_lead_s": 0,
+      "silent_tail_s": 0,
+      "voice_s": {
+        "hi": 2.56,
+        "en": 2.72
+      },
+      "characters": [
+        "pushpa"
+      ],
+      "light": "crossing_night",
+      "state": [
+        "Call still connected in this shot only. The sleeve, needles and fingers stay at the edges. Bhaiyaji is a voice, no visible body."
+      ],
+      "framing": "One last live close on the handset, knitted orange edges and lit blank screen above centre. Crop tighter than the earlier wool insert while preserving the relevant outline.",
+      "action": "One last live close on the handset, knitted orange edges and lit blank screen above centre. Crop tighter than the earlier wool insert while preserving the relevant outline.",
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "generate": false,
+      "frame_source": "s26",
+      "frame": {
+        "kind": "second_framing",
+        "source_shot": "s26"
+      },
+      "camera_move": {
+        "preset": "custom",
+        "easing": "ease-in-out",
+        "from": {
+          "scale": 1.21,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.26,
+          "x": 0,
+          "y": 0
+        },
+        "focus": {
+          "x": 0.49,
+          "y": 0.43
+        }
+      }
+    },
+    {
+      "id": "s34",
+      "scene": "B",
+      "beat_id": "b11",
+      "line_ids": [],
+      "duration_s": 1.0,
+      "silent_lead_s": 0,
+      "silent_tail_s": 0,
+      "voice_s": {
+        "hi": 0,
+        "en": 0
+      },
+      "characters": [
+        "nandini",
+        "pushpa"
+      ],
+      "light": "crossing_night",
+      "state": [
+        "Left palm flat over Nandini’s buttoned medal pocket, picture-right on a frontal chest. Pen and notebook stay at the bench outside crop. Pushpa is seated and does not reach into a pocket. The call goes dead in the sound. Helmet remains on the bench beyond crop."
+      ],
+      "framing": "Medium two-shot from beside the stall bench. Nandini stands picture-left, her left palm pressed flat over the pocket on the picture-right side of her chest. Pushpa stays seated on picture-right underneath her eyeline, looking up. Hold their difference in height against the bench and dark wall.",
+      "action": "Medium two-shot from beside the stall bench. Nandini stands picture-left, her left palm pressed flat over the pocket on the picture-right side of her chest. Pushpa stays seated on picture-right underneath her eyeline, looking up. Hold their difference in height against the bench and dark wall.",
+      "subtitle_safe": true,
+      "sheet_faces": 2,
+      "generate": true,
+      "prompt_file": "frames/prompts/s34.txt",
+      "refs": [
+        "<repo>/content/series2/refs/pair_nandini_pushpa.png",
+        "<repo>/content/series2/refs/crossing_stall.png",
+        "<repo>/content/series2/episodes/s2b01/frames/s19.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved height line-up and identity sheet for nandini and pushpa. Match their faces and relative heights. Copy neither the multiple views nor the background or the pose.",
+        "Image 2 is the approved crossing_stall location plate. Use its geometry and surface materials. Draw only the part named in the framing and follow the LIGHT line if the plate has different light.",
+        "Image 3 is the scene anchor (s19). Match its drawing and place continuity. Do not copy its characters into an insert, unrelated body poses, eyelines, hands or prop states. Same raised gate arm, single track, dark road, shut stall, warm stall bulb and small signal light. Do not copy the salute, who is present, the framing, or the helmet and phone states."
+      ],
+      "camera_move": "hold",
+      "camera_focus": {
+        "x": 0.5,
+        "y": 0.42
+      },
+      "intensity": 0.23
+    },
+    {
+      "id": "s35",
+      "scene": "B",
+      "beat_id": "b11",
+      "line_ids": [
+        "l27"
+      ],
+      "duration_s": 4.7,
+      "silent_lead_s": 0,
+      "silent_tail_s": 1.5,
+      "voice_s": {
+        "hi": 2.48,
+        "en": 2.88
+      },
+      "characters": [
+        "pushpa"
+      ],
+      "light": "crossing_night",
+      "state": [
+        "Same handset and wool as the live close. Screen flat dark, no lit icon, reflection, letters or numbers. Pushpa speaks but stays outside crop. The recording exists locally; the call has ended."
+      ],
+      "framing": "Matched close on the orange handset lying face up on the wool, screen now completely dark. The edges of its buttons take the warm stall light, the display takes none. Leave a large dark shape beneath it and hold the image for the last silence.",
+      "action": "Matched close on the orange handset lying face up on the wool, screen now completely dark. The edges of its buttons take the warm stall light, the display takes none. Leave a large dark shape beneath it and hold the image for the last silence.",
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "generate": true,
+      "prompt_file": "frames/prompts/s35.txt",
+      "refs": [
+        "<repo>/content/series2/refs/pushpa.png",
+        "<repo>/content/series2/refs/crossing_stall.png",
+        "<repo>/content/series2/refs/pushpa_phone.png",
+        "<repo>/content/series2/refs/pushpa_knitting.png",
+        "<repo>/content/series2/episodes/s2b01/frames/s19.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved character sheet for pushpa. Match only the exposed character features specified below. Draw the character once in the specified pose and setting.",
+        "Image 2 is the approved crossing_stall location plate. Use its geometry and surface materials. Draw only the part named in the framing and follow the LIGHT line if the plate has different light.",
+        "Image 3 is the approved pushpa_phone prop sheet. Match the specified construction, scale and colour. Draw the object once in the specified position, never the sheet layout.",
+        "Image 4 is the approved pushpa_knitting prop sheet. Match the specified construction, scale and colour. Draw the object once in the specified position, never the sheet layout.",
+        "Image 5 is the scene anchor (s19). Match its drawing and place continuity. Do not copy its characters into an insert, unrelated body poses, eyelines, hands or prop states. Same raised gate arm, single track, dark road, shut stall, warm stall bulb and small signal light. Do not copy the salute, who is present, the framing, or the helmet and phone states."
+      ],
+      "camera_move": "hold",
+      "camera_focus": {
+        "x": 0.49,
+        "y": 0.43
+      },
+      "intensity": 0.23
+    }
+  ]
+}

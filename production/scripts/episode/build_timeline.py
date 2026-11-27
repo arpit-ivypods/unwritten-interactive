@@ -76,10 +76,11 @@ DEFAULTS = {
 
 
 def _shot_overlay(s, sc=None):
-    """A shot's plot overlay as shots.json writes it ('overlay' str/dict/list or 'overlays' list), else the extra
-    layers edit.json shots.<id>.layers puts over its frame (the overlay layer, D-023 rule 3), or None."""
+    """Identify shots with plot text or a picture overlay (D-023 rule 3)."""
     ov = s.get("overlay") or s.get("overlays")
     if not ov:
+        if (sc or {}).get("plot_text"):
+            return "plot text (edit.json)"
         extra = [Path(str(x.get("src", ""))).stem for x in (sc or {}).get("layers", [])[1:]]
         return ", ".join(extra) + " (edit.json layers)" if extra else None
     if isinstance(ov, dict):
@@ -87,6 +88,21 @@ def _shot_overlay(s, sc=None):
     if isinstance(ov, list):
         return ", ".join(str(o.get("id", "overlay")) if isinstance(o, dict) else str(o) for o in ov)
     return str(ov)[:60]
+
+
+def _plot_text(items, sid, lang):
+    label = f"{lang} {sid}: edit.json plot_text"
+    if not isinstance(items, list):
+        raise SystemExit(f"{label} must be a list.")
+    result = []
+    for index, item in enumerate(items):
+        localized = item.get("text") if isinstance(item, dict) else None
+        if not isinstance(localized, dict) or any(
+            not isinstance(localized.get(cut), str) or not localized[cut].strip() for cut in ("hi", "en")
+        ):
+            raise SystemExit(f"{label}[{index}] needs nonempty text for hi and en.")
+        result.append(dict(item, text=localized[lang], lang=lang))
+    return result
 
 
 def place_supers(script, shots, pic, D, cuts, slates, END, SU, lang, log, ev, shot_cfg=None):
@@ -557,7 +573,23 @@ def main():
             ep_rows[cid_] = r
     sound_missing = {}  # cue -> why it is not in the mix (D-023: tagged in meta.placeholders.sound)
     mix = cues_doc.get("mix", {}) or {}
-    start_gains = dict(lib_mix.get("starting_gains_db", {}) or {}, **(mix.get("starting_gains_db", {}) or {}))
+    start_gains = {}
+    for label, source in (("series library", lib_mix), ("episode cue sheet", mix)):
+        gains = source.get("starting_gains_db")
+        if gains is None:
+            continue
+        if not isinstance(gains, dict):
+            log.append(f"sound: ignored {label} mix.starting_gains_db because it is not a gain map.")
+            continue
+        for key, value in gains.items():
+            try:
+                valid = not isinstance(value, bool) and math.isfinite(float(value))
+            except (TypeError, ValueError, OverflowError):
+                valid = False
+            if valid:
+                start_gains[key] = value
+            else:
+                log.append(f"sound: ignored non-numeric {label} starting gain for '{key}'.")
 
     cue_cache = {}
     windows_used = {}
@@ -1320,7 +1352,7 @@ def main():
             sx = 1 if j % 2 == 0 else -1
             return key(sx * amp * rng.uniform(0.5, 1.0), amp * rng.uniform(-0.6, 0.6))
 
-        visual = {k: v for k, v in base.items() if k in ("image", "layers", "type", "note")}
+        visual = {k: v for k, v in base.items() if k in ("image", "layers", "plotText", "type", "note")}
         out, k, n, j = [], 0, base["duration"], 0
         while k < n:
             f = base["start"] + k
@@ -1360,6 +1392,9 @@ def main():
                 shot["layers"] = layers
             else:
                 shot["image"] = E.rel(img)
+            plot_text = _plot_text(sc.get("plot_text", []), sid, lang)
+            if plot_text:
+                shot["plotText"] = plot_text
             finfo["image"] = shot.get("image") or [x["src"] for x in layers]
         mv = shot_move(s)
         if "move" in sc:
@@ -1392,7 +1427,7 @@ def main():
                 fmv["focus"] = focus
             first["move"] = fmv
             second = {"id": punch.get("id", f"{sid}-punch"), "start": at, "duration": p["start"] + p["duration"] - at,
-                      **{k: v for k, v in shot.items() if k in ("image", "layers", "type", "note")},
+                      **{k: v for k, v in shot.items() if k in ("image", "layers", "plotText", "type", "note")},
                       "move": json.loads(json.dumps(punch["move"])), "subshot_of": sid}
             tl_shots += [first, second]
             cuts.append(at)

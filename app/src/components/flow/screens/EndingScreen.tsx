@@ -27,6 +27,7 @@ export function EndingScreen({ seriesId, branch }: { seriesId: string; branch: C
   const role = endingRole(view, ballot?.choice ?? null);
   const closing = closesIn(rules, countdown.text);
   const other = view.otherBranch;
+  const otherEpisodeCount = branchEpisodes(series, other).length;
   const nextIsElsewhere = !(rules.next.type === "ending" && rules.next.branch === branch);
 
   return (
@@ -83,7 +84,7 @@ export function EndingScreen({ seriesId, branch }: { seriesId: string; branch: C
             finished={branch}
             otherLabel={series.choices[other].label[lang]}
             lang={lang}
-            otherNote={`${branchEpisodes(series, other).length} episodes · only open on day 1`}
+            otherNote={`${otherEpisodeCount} ${otherEpisodeCount === 1 ? "episode" : "episodes"} · only open on day 1`}
             closesIn={closing ?? undefined}
             watchHref={routes.watch(series.id, view.otherEndingStart)}
             dismissHref={routes.home()}

@@ -1,0 +1,186 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,210"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 210
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,210",
+				"to": "00:00:00,430"
+			},
+			"offsets": {
+				"from": 210,
+				"to": 430
+			},
+			"text": " First"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,430",
+				"to": "00:00:01,200"
+			},
+			"offsets": {
+				"from": 430,
+				"to": 1200
+			},
+			"text": " prisoner"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,200",
+				"to": "00:00:01,290"
+			},
+			"offsets": {
+				"from": 1200,
+				"to": 1290
+			},
+			"text": " in"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,290",
+				"to": "00:00:01,550"
+			},
+			"offsets": {
+				"from": 1290,
+				"to": 1550
+			},
+			"text": " two"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,550",
+				"to": "00:00:02,380"
+			},
+			"offsets": {
+				"from": 1550,
+				"to": 2380
+			},
+			"text": " years,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,380",
+				"to": "00:00:02,420"
+			},
+			"offsets": {
+				"from": 2380,
+				"to": 2420
+			},
+			"text": " even"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,420",
+				"to": "00:00:02,630"
+			},
+			"offsets": {
+				"from": 2420,
+				"to": 2630
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,630",
+				"to": "00:00:02,910"
+			},
+			"offsets": {
+				"from": 2630,
+				"to": 2910
+			},
+			"text": " lock"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,910",
+				"to": "00:00:03,140"
+			},
+			"offsets": {
+				"from": 2910,
+				"to": 3140
+			},
+			"text": " had"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,140",
+				"to": "00:00:03,760"
+			},
+			"offsets": {
+				"from": 3140,
+				"to": 3760
+			},
+			"text": " forgotten"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,760",
+				"to": "00:00:03,960"
+			},
+			"offsets": {
+				"from": 3760,
+				"to": 3960
+			},
+			"text": " how"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,960",
+				"to": "00:00:04,090"
+			},
+			"offsets": {
+				"from": 3960,
+				"to": 4090
+			},
+			"text": " to"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,090",
+				"to": "00:00:04,560"
+			},
+			"offsets": {
+				"from": 4090,
+				"to": 4560
+			},
+			"text": " open."
+		}
+	]
+}

@@ -155,6 +155,18 @@
    "start": 754,
    "duration": 112,
    "image": "frames/s12.png",
+   "plotText": [
+    {
+     "text": "No network",
+     "x": 0.505,
+     "y": 0.418,
+     "fontSize": 34,
+     "space": "image",
+     "color": "#ffffff",
+     "rotation": -4,
+     "lang": "hi"
+    }
+   ],
    "move": {
     "preset": "push-in",
     "intensity": 0.35,
@@ -183,6 +195,18 @@
    "start": 927,
    "duration": 129,
    "image": "frames/s14.png",
+   "plotText": [
+    {
+     "text": "1:40",
+     "x": 0.157,
+     "y": 0.136,
+     "fontSize": 54,
+     "space": "screen",
+     "color": "#ffffff",
+     "plate": true,
+     "lang": "hi"
+    }
+   ],
    "move": {
     "preset": "drift",
     "intensity": 0.3
@@ -1582,7 +1606,8 @@
    "sfx_s1e01_bare_feet (episode one-off, sound/manifest.jsonl status ok): file 1.7-2.75 s, so its last two steps (file 1.85 s, and the loudest at 2.5 s) land 0.55 s before and 0.1 s after the cut to s07, ending before the bolt rattle peaks (file 0.45 s, at s07.start + 0.45 s). Cue sheet: steps end as her hand reaches the bolt and may start over the cut into b3. The first step falls close to the far dog bark after l03. Not heard.",
    "b10-b11: bedroom bed and drone go out under l25. s33 (the 2.2 s hold) and l26 (s34) carry only the lamp-hum stretch allowed by the cue sheet: amb_bedroom_night low-passed at 180 Hz at -12 dB (edit.json sound filter, toolsmith item 5). It goes out on the cut to the scar insert (s35). Not heard; if screening wants the hold silent again, delete the #lamp-hum entry.",
    "mus_swell_reveal plays from the cut to s35 and is cut at s36 (1-frame fade), so the chooda click is alone.",
-   "Clarity re-edit (S13, 26 Nov): l27 split s15/s16 cuts on 'पर'/'but' (S7 remap note); s31 now carries l29, so silent_frames.s31 removed and tail.s31 60 frames holds the photograph 2.0 s after l29 (script b9 silent_seconds 2.0 'after', shots.json s31 silent_tail_s 2.0; the S7 note's 'about 48' gave 1.6 s); amb_lane_night ducks -6 dB under l27 as under l10 (both Mausi on the phone over the lane)."
+   "Clarity re-edit (S13, 26 Nov): l27 split s15/s16 cuts on 'पर'/'but' (S7 remap note); s31 now carries l29, so silent_frames.s31 removed and tail.s31 60 frames holds the photograph 2.0 s after l29 (script b9 silent_seconds 2.0 'after', shots.json s31 silent_tail_s 2.0; the S7 note's 'about 48' gave 1.6 s); amb_lane_night ducks -6 dB under l27 as under l10 (both Mausi on the phone over the lane).",
+   "Series 1 plot text uses the measured clock and phone placements in shots.*.plot_text."
   ],
   "review": "REVIEW ONLY: timeline.hi.json + subs.hi.json cues burned in (debug.burnSubtitles). Not a deliverable."
  },

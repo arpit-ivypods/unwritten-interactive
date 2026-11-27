@@ -1,0 +1,131 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,090"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 90
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,090",
+				"to": "00:00:00,210"
+			},
+			"offsets": {
+				"from": 90,
+				"to": 210
+			},
+			"text": " We"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,210",
+				"to": "00:00:00,640"
+			},
+			"offsets": {
+				"from": 210,
+				"to": 640
+			},
+			"text": " went"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,640",
+				"to": "00:00:00,960"
+			},
+			"offsets": {
+				"from": 640,
+				"to": 960
+			},
+			"text": " to"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,960",
+				"to": "00:00:01,170"
+			},
+			"offsets": {
+				"from": 960,
+				"to": 1170
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,170",
+				"to": "00:00:01,600"
+			},
+			"offsets": {
+				"from": 1170,
+				"to": 1600
+			},
+			"text": " real"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,600",
+				"to": "00:00:02,130"
+			},
+			"offsets": {
+				"from": 1600,
+				"to": 2130
+			},
+			"text": " dhana"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,130",
+				"to": "00:00:02,550"
+			},
+			"offsets": {
+				"from": 2130,
+				"to": 2550
+			},
+			"text": " once"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,550",
+				"to": "00:00:03,120"
+			},
+			"offsets": {
+				"from": 2550,
+				"to": 3120
+			},
+			"text": " madam"
+		}
+	]
+}

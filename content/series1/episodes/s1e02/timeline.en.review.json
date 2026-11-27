@@ -141,6 +141,26 @@
    "start": 1039,
    "duration": 190,
    "image": "frames/s11.png",
+   "plotText": [
+    {
+     "text": "1:52",
+     "x": 0.502,
+     "y": 0.303,
+     "fontSize": 48,
+     "space": "image",
+     "color": "#ffffff",
+     "lang": "en"
+    },
+    {
+     "text": "No network",
+     "x": 0.502,
+     "y": 0.382,
+     "fontSize": 34,
+     "space": "image",
+     "color": "#ffffff",
+     "lang": "en"
+    }
+   ],
    "move": {
     "preset": "push-in",
     "intensity": 0.2,
@@ -155,6 +175,18 @@
    "start": 1229,
    "duration": 115,
    "image": "frames/s12.png",
+   "plotText": [
+    {
+     "text": "▂▃▅▇",
+     "x": 0.637,
+     "y": 0.315,
+     "fontSize": 29,
+     "space": "image",
+     "color": "#ffffff",
+     "rotation": 9,
+     "lang": "en"
+    }
+   ],
    "move": {
     "preset": "push-in",
     "intensity": 0.2,
@@ -455,6 +487,26 @@
    "start": 3600,
    "duration": 45,
    "image": "frames/s11.png",
+   "plotText": [
+    {
+     "text": "2:00",
+     "x": 0.502,
+     "y": 0.303,
+     "fontSize": 45,
+     "space": "image",
+     "color": "#ffffff",
+     "lang": "en"
+    },
+    {
+     "text": "Mausi",
+     "x": 0.502,
+     "y": 0.433,
+     "fontSize": 53,
+     "space": "image",
+     "color": "#ffffff",
+     "lang": "en"
+    }
+   ],
    "move": {
     "preset": "custom",
     "easing": "ease-in",
@@ -1772,7 +1824,7 @@
    "sfx_zip_pocket: about 20 dB under Mausi (file peak -37 dB). No panning in the toolchain, so it is not panned away from the phone as the cue sheet asks.",
    "b13: Kiran's in-breath is the contingency cue sfx_s1e02_b13_inbreath (ElevenLabs sound v3, one take, sound/manifest.jsonl), placed at s38.start + 0.5s; there is no voice line or take for it. The file peaks at -30.5 dBFS. At db +10.5 the mastered renders put it at -10.8 dBFS (hi) / -10.1 dBFS (en) peak, about 9 dB above the cue gain (master loudnorm is about +3.7 dB of that), so it is db +5 (cue-sheet sfx gain 0) for about -16 dBFS peak in the mastered mix: clearly audible on a phone in the silent ending, well under the -1 dBTP master ceiling. The picture hard-cuts to black and silence at s38's end, 1.0 s into the 1.2 s file, so the breath's decaying tail is cut there; fade_out 2 frames keeps that cut from clicking. Music and the bedroom bed cut to silence on the cut to s38 (1-frame fade; 10 ms is under one frame), so the breath is the only sound in s38. Not checked by ear (sheet fallback: drop it and leave the silence).",
    "sfx_car_door_clunk is left unplaced on purpose (cue sheet: library_cues_listed_for_s1e02_but_not_used). sfx_boots_concrete_shift (optional on the sheet) is placed low in the b12 still.",
-   "Plot overlays (s11 '1:52' and 'No network', s12 network bars, s30 '2:00' and caller name) are not drawn: there are no overlay layer images and the overlay layer is still open in the toolchain (README, D-023 rule 3)."
+   "Series 1 plot text uses the measured clock and phone placements in shots.*.plot_text."
   ],
   "review": "REVIEW ONLY: timeline.en.json + subs.en.json cues burned in (debug.burnSubtitles). Not a deliverable."
  },

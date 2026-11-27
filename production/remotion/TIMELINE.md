@@ -71,6 +71,7 @@ then `production/remotion/test/verify.sh production/remotion/test/out/test.mp4`.
 | `type` | `"image"` \| `"slate"` | `"image"` | |
 | `image` | path | | Single oversized still, ideally exactly 1440x2560 (run `upscale.sh`). Other sizes are centre-cropped (warning if smaller or not 9:16) |
 | `layers` | `{src, depth}[]` | | Parallax, back to front, used instead of `image`. Each layer is a full-frame image (foreground PNGs with alpha). `depth` multiplies the move: e.g. background `0.6`, foreground `1.5`. Default 1 |
+| `plotText` | `{text, x, y, fontSize, lang?, space?, rotation?, color?, plate?}[]` | none | Localized text burned into an image shot. Coordinates centre the text block in the 9:16 frame (0..1), and font size is in output pixels. `space: "image"` (default) follows the base image move; `"screen"` fixes the text to the frame. Rotation is clockwise in degrees. The default text colour is white. `plate: true` adds a dark translucent background. |
 | `start` / `startSec` | frames | end of previous shot | Absolute start |
 | `duration` / `durationSec` | frames | required | Time on screen |
 | `move` | Move | `hold` | Camera move (below) |

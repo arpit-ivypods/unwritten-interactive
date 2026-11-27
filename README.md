@@ -15,7 +15,7 @@ Production build: `pnpm build && pnpm start` (also port 3210).
 
 If `pnpm dev` was already running when episodes were installed, restart it. The server render can serve a stale manifest.
 
-Episode videos (`app/public/media/**/*.mp4`) are not in git. On a fresh checkout run `pnpm placeholders` (needs ffmpeg) for stand-ins. `pnpm content:check` checks `public/media` against the content contract.
+This public repo ships 720p web copies of the episode videos in `app/public/media`. `pnpm content:check` validates the installed media.
 
 ## Presenter drawer (demo controls)
 
@@ -36,11 +36,11 @@ From `app/`:
 ## What is real and what is simulated
 
 - Simulated: votes, tallies (seeded numbers plus your own ballot), and day 1 / day 2. All of it lives in the browser's localStorage and is driven by the presenter drawer. There is no backend and nothing is sent anywhere.
-- Not deployed: the app runs locally only.
+- Live demo: https://unwritten-interactive.vercel.app
 
 ## Current content
 
-Seven real episodes are installed: s1e01, s1e02, s1a01, s1b01, s2e01, s2e02, s2e03. Each passed screening at 8/10 in both languages. The other 10 episodes and the 4 glimpses are still placeholder videos, and the app marks them as stand-ins.
+Nine episodes are installed and each passed screening at 8/10 in both languages. The Ninth First Night has two shared episodes and one episode per branch. The Duplicate Thana has three shared episodes and one per branch, ending with Lockup or Uniform. The four optional glimpse clips still use stand-ins.
 
 ## Production pipeline
 

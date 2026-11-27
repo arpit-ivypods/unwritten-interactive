@@ -392,9 +392,9 @@
   }
   .flow-portrait {
     flex: none;
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border-radius: var(--radius-md);
     object-fit: cover;
     background: var(--brand-soft);
   }
@@ -418,6 +418,76 @@
     line-height: 1.35;
     font-weight: 700;
   }
+  .flow-endings {
+    display: grid;
+    min-width: 0;
+    gap: var(--space-2);
+    padding-top: var(--space-3);
+    border-top: 1px solid var(--hairline);
+  }
+  .flow-endings .uw-caption {
+    margin: 0;
+  }
+  .flow-ending-card {
+    display: grid;
+    min-width: 0;
+    gap: var(--space-2);
+    padding: var(--space-3);
+    border: 1px solid var(--hairline);
+    border-radius: var(--radius-lg);
+    background: var(--glass-strong);
+  }
+  .flow-ending-name {
+    display: flex;
+    min-width: 0;
+    align-items: center;
+    gap: var(--space-2);
+  }
+  .flow-ending-name .uw-letter {
+    display: grid;
+    flex: none;
+    width: 34px;
+    height: 34px;
+    place-items: center;
+    margin: 0;
+    border-radius: var(--radius-md);
+    background: var(--brand-soft);
+    font-size: 15px;
+    font-weight: 800;
+  }
+  .flow-ending-name .uw-letter--b {
+    background: var(--saffron);
+    color: var(--on-saffron);
+  }
+  .flow-ending-name h4,
+  .flow-ending-name p {
+    margin: 0;
+    overflow-wrap: anywhere;
+  }
+  .flow-ending-name h4 {
+    font-size: 15px;
+    font-weight: 800;
+  }
+  .flow-ending-name p {
+    margin-top: 2px;
+    color: var(--ink-muted);
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  .flow-ending-head > .uw-chip {
+    height: 28px;
+    padding-inline: var(--space-2);
+  }
+  .flow-ending-rail > li,
+  .flow-ending-rail > li > a {
+    min-height: 44px;
+    width: auto;
+    padding-inline: var(--space-2);
+    border-radius: var(--radius-md);
+  }
+  .flow-ending-rail > li.is-locked {
+    gap: var(--space-2);
+  }
   .flow-chips {
     display: flex;
     flex-wrap: wrap;
@@ -432,6 +502,41 @@
   }
 
   /* --- Home: the series dock and the shelves ------------------------------- */
+  .flow-live-card.uw-series {
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: auto;
+    border-width: 1px;
+    border-radius: var(--radius-lg);
+    background: var(--glass-strong);
+    color: var(--ink);
+  }
+  .flow-live-card > img {
+    position: static;
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+  }
+  .flow-live-card .uw-series-body {
+    position: static;
+    display: block;
+    padding: var(--space-3);
+    background: none;
+  }
+  .flow-live-card .uw-series-title {
+    font-size: clamp(15px, 1.3vw, 20px);
+    line-height: 1.22;
+    overflow-wrap: anywhere;
+  }
+  .flow-live-card .uw-series-title:lang(hi) {
+    line-height: 1.38;
+  }
+  .flow-live-card .uw-series-meta {
+    color: var(--ink-muted);
+    line-height: 1.35;
+  }
   .flow-series-dock {
     display: flex;
     justify-content: center;

@@ -108,6 +108,19 @@ describe("subtitles", () => {
     expect(H.speakerName(series, "meera", "hi")).toBe("मीरा");
     expect(H.speakerName(series, "meera", "en")).toBe("Meera");
     expect(H.speakerName(series, "caller", "en")).toBe("caller");
+    expect(H.speakerName(series, "caller", "hi", "पड़ोसी")).toBe("पड़ोसी");
+    expect(H.speakerName(series, "meera", "hi", "मिसाल")).toBe("मीरा");
+  });
+
+  it("localizes supporting characters only in their own series", () => {
+    const first = { ...series, id: "series1" };
+    const second = { ...series, id: "series2" };
+    expect(H.speakerName(first, "chhoti", "hi")).toBe("छोटी");
+    expect(H.speakerName(first, "chhoti", "en")).toBe("Chhoti");
+    expect(H.speakerName(second, "door1_man", "hi")).toBe("रामसेवक");
+    expect(H.speakerName(second, "door1_man", "en")).toBe("Ramsevak");
+    expect(H.speakerName(second, "chhoti", "en")).toBe("chhoti");
+    expect(H.speakerName(first, "door1_man", "en")).toBe("door1_man");
   });
 
   it("highlights whole words and stays on the last one spoken", () => {

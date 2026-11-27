@@ -24,6 +24,28 @@
    "start": 77,
    "duration": 151,
    "image": "../s1e01/frames/s12.png",
+   "plotText": [
+    {
+     "text": "2:00",
+     "x": 0.5,
+     "y": 0.303,
+     "fontSize": 45,
+     "space": "image",
+     "color": "#ffffff",
+     "rotation": -4,
+     "lang": "en"
+    },
+    {
+     "text": "Mausi",
+     "x": 0.516,
+     "y": 0.424,
+     "fontSize": 53,
+     "space": "image",
+     "color": "#ffffff",
+     "rotation": -4,
+     "lang": "en"
+    }
+   ],
    "move": {
     "preset": "custom",
     "easing": "ease-in-out",
@@ -220,6 +242,18 @@
    "start": 1329,
    "duration": 30,
    "image": "frames/s15.png",
+   "plotText": [
+    {
+     "text": "3:00",
+     "x": 0.157,
+     "y": 0.136,
+     "fontSize": 54,
+     "space": "screen",
+     "color": "#ffffff",
+     "plate": true,
+     "lang": "en"
+    }
+   ],
    "move": {
     "preset": "custom",
     "easing": "ease-out",
@@ -368,6 +402,18 @@
    "start": 2446,
    "duration": 107,
    "image": "frames/s22.png",
+   "plotText": [
+    {
+     "text": "Mausi",
+     "x": 0.565,
+     "y": 0.587,
+     "fontSize": 26,
+     "space": "image",
+     "color": "#243149",
+     "rotation": -7,
+     "lang": "en"
+    }
+   ],
    "move": {
     "preset": "custom",
     "easing": "ease-in-out",
@@ -2008,9 +2054,7 @@
    "b9: the engine-off shudder is set about 0.3 s after l20 by trimming the idle file (trim expression); the car door clunk 0.4 s into s29; sfx_shutter_up starts 1.3 s into s29 and stops (file 2.8 s) about 2.1 s into s30, with Mausi in the shutter. mus_road_pluck and the drone stop dead (1 frame) on the shutter's first frame.",
    "Ending: the timeline cuts audio hard at the picture end, so the last glass-bangle chink is placed 0.5 s before the s39 cut, with the bureau bed, street layer and drone out a frame before it; the chink rings 0.5 s alone, then black. sfx_chooda_click sits in the s39 hold (0.9 s in), not under l28.",
    "sfx_almirah_door is left unplaced (optional on the cue sheet, 'only if the shot shows the door moving'; s10 is a still with the door already open). sfx_birds_dawn_loop tails 1 s into b10, as the cue sheet allows.",
-   "s28 is a slate: attempt 1 rejected (hand sides and henna); attempt 2 is on disk with no review row. su1 is therefore drawn over the slate (meta.checks.supers). It stays where S7 put it; once s28's retake is approved it sits on the picture.",
-   "s30: its only review row says attempt 1 approved, but manifest attempt 1 failed (no image) and the png on disk is attempt 2, so the build lists it as an unchecked take and shows it.",
-   "Plot overlays (caller name and 2:00 on s02, 3:00 on s13, 'मौसी' on Billu's phone in s23) are not drawn: there are no overlay images and the overlay layer is still open in the toolchain."
+   "Series 1 plot text uses the measured clock and phone placements in shots.*.plot_text."
   ]
  }
 }

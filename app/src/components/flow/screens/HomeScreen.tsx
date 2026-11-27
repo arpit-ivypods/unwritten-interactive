@@ -75,7 +75,10 @@ export function HomeScreen() {
       right={
         <>
           <GlassPanel variant="compact" data-part="live">
-            <Label as="h2">Live now</Label>
+            <div className="flow-between">
+              <Label as="h2">Live now</Label>
+              <StatusChip kind={status.kind}>{rules.isDayTwo ? "Day 2" : rules.isLastHour ? "Last hour" : "Day 1"}</StatusChip>
+            </div>
             <div className="flow-pair">
               {allSeries.map((s) => (
                 <SeriesCard
@@ -85,7 +88,7 @@ export function HomeScreen() {
                   title={s.title[lang]}
                   lang={lang}
                   meta={seriesMeta(s)}
-                  status={{ kind: status.kind, label: rules.isDayTwo ? "Day 2" : rules.isLastHour ? "Last hour" : "Day 1" }}
+                  className="flow-live-card"
                 />
               ))}
             </div>
@@ -124,7 +127,7 @@ export function HomeScreen() {
         <ul className="flow-shelf" tabIndex={0} aria-labelledby="coming-next">
           {teasers.slice(0, 3).map((teaser) => (
             <li key={teaser.id}>
-              <TeaserTile hook={teaser.hook[lang]} title={teaser.title[lang]} visualStyle={teaser.visualStyle} lang={lang} />
+              <TeaserTile poster={teaser.poster} hook={teaser.hook[lang]} title={teaser.title[lang]} visualStyle={teaser.visualStyle} lang={lang} chip={null} />
             </li>
           ))}
         </ul>

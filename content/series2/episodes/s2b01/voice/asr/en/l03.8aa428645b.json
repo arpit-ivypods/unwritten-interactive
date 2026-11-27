@@ -1,0 +1,175 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,100"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 100
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,100",
+				"to": "00:00:00,190"
+			},
+			"offsets": {
+				"from": 100,
+				"to": 190
+			},
+			"text": " \"I"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,190",
+				"to": "00:00:00,680"
+			},
+			"offsets": {
+				"from": 190,
+				"to": 680
+			},
+			"text": " heard"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,680",
+				"to": "00:00:01,070"
+			},
+			"offsets": {
+				"from": 680,
+				"to": 1070
+			},
+			"text": " it,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,070",
+				"to": "00:00:01,650"
+			},
+			"offsets": {
+				"from": 1070,
+				"to": 1650
+			},
+			"text": " Pushpa"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,650",
+				"to": "00:00:02,270"
+			},
+			"offsets": {
+				"from": 1650,
+				"to": 2270
+			},
+			"text": " Ji."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,270",
+				"to": "00:00:02,420"
+			},
+			"offsets": {
+				"from": 2270,
+				"to": 2420
+			},
+			"text": " The"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,420",
+				"to": "00:00:02,710"
+			},
+			"offsets": {
+				"from": 2420,
+				"to": 2710
+			},
+			"text": " name"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,710",
+				"to": "00:00:02,990"
+			},
+			"offsets": {
+				"from": 2710,
+				"to": 2990
+			},
+			"text": " they"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,990",
+				"to": "00:00:03,400"
+			},
+			"offsets": {
+				"from": 2990,
+				"to": 3400
+			},
+			"text": " write"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,400",
+				"to": "00:00:03,650"
+			},
+			"offsets": {
+				"from": 3400,
+				"to": 3650
+			},
+			"text": " will"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,650",
+				"to": "00:00:03,790"
+			},
+			"offsets": {
+				"from": 3650,
+				"to": 3790
+			},
+			"text": " be"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,790",
+				"to": "00:00:04,400"
+			},
+			"offsets": {
+				"from": 3790,
+				"to": 4400
+			},
+			"text": " mine.\""
+		}
+	]
+}

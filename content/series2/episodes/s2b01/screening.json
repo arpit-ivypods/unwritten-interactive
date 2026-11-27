@@ -1,0 +1,71 @@
+{
+  "episode": "s2b01",
+  "round": "full",
+  "reviewer": "S15 independent Codex pass",
+  "gate": "D-023 / D-027",
+  "pass": true,
+  "blocking": [],
+  "scores": {
+    "hi": 8,
+    "en": 8
+  },
+  "area_scores": {
+    "hi": {
+      "picture": 8,
+      "continuity": 8,
+      "dialogue": 8,
+      "subtitle_sync": 9,
+      "mix_and_cues": 8,
+      "story_clarity": 8
+    },
+    "en": {
+      "picture": 8,
+      "continuity": 8,
+      "dialogue": 8,
+      "subtitle_sync": 9,
+      "mix_and_cues": 8,
+      "story_clarity": 8
+    }
+  },
+  "measurements": {
+    "hi": {
+      "frames": 3847,
+      "seconds": 128.233,
+      "lufs": -14.24,
+      "true_peak_dbtp": -1.07,
+      "dialogue": 32,
+      "cues": 53,
+      "lowest_estimated_dialogue_bed_margin_db": 14.16,
+      "lowest_estimated_phone_bed_margin_db": 23.86
+    },
+    "en": {
+      "frames": 3830,
+      "seconds": 127.667,
+      "lufs": -14.18,
+      "true_peak_dbtp": -1.1,
+      "dialogue": 32,
+      "cues": 50,
+      "lowest_estimated_dialogue_bed_margin_db": 11.67,
+      "lowest_estimated_phone_bed_margin_db": 23.31
+    }
+  },
+  "verdict": "Both cuts pass at 8/10 with no blocking fault.",
+  "checks_run": [
+    "Sampled all 35 shots in clean and review cuts in both languages. Checked localized boards, 2.5 s godown super, 11:45 clock, truck and sack inserts, and closing dark handset.",
+    "Compared mixed audio with all 64 placed line sources. All showed zero shift at 2 ms resolution, minimum correlation .937. All 103 captions matched script wording and speaker ID and began on the expected segment frames.",
+    "Both languages and both clean/review files have distinct hashes, no slates or placeholder audio, and fit the 150 s limit. Shutter last slam precedes l16 by about 1.2 s. Pocket rustle clears l25 by about 0.33 s."
+  ],
+  "nonblocking": [
+    "Captions cover part of the pen and lap in s24 and sometimes s28 Hindi. The dedicated s29 tip insert remains clear.",
+    "The cue sheet calls for dead tone through the picture cut. The final hold contains no dialogue, and the tone and score measure -34.7 dBFS Hindi and -33.7 English. The cut ends hard on black.",
+    "Apply italics and speaker labels for the 12 phone lines per language in the app subtitle pass."
+  ],
+  "ear_check": [
+    "English l04 first",
+    "English l18 tarpaulin",
+    "Hindi l24 opening clause in the context of the whole cut"
+  ],
+  "not_checked": [
+    "No human listening or continuous motion playback. Assessment used local Whisper on the final mix, waveform and level analysis, and sampled pictures."
+  ]
+}

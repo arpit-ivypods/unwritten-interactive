@@ -12,7 +12,7 @@ import {
 } from 'remotion';
 import {duckAmount, duckSpans, fadeEnvelope, resolveDucking} from './audio';
 import {cameraAt} from './camera';
-import type {Layer, Move, Shot, SubtitleCue, Super, Timeline} from './types';
+import type {Layer, Move, PlotText, Shot, SubtitleCue, Super, Timeline} from './types';
 
 // Layout images at this multiple of the frame, then scale down, so Chrome
 // rasterises them at (at least) source resolution: 1080x1920 * 4/3 = 1440x2560.
@@ -46,6 +46,48 @@ const ImageLayer: React.FC<{
 					transform: `translate(${cam.tx}px, ${cam.ty}px) scale(${cam.scale / OVERSCAN})`,
 				}}
 			/>
+		</AbsoluteFill>
+	);
+};
+
+const PlotTextLayer: React.FC<{
+	item: PlotText;
+	move: Move | undefined;
+	progress: number;
+	depth: number;
+}> = ({item, move, progress, depth}) => {
+	const {width, height} = useVideoConfig();
+	const cam = item.space === 'screen' ? null : cameraAt(move, progress, width, height, depth);
+	return (
+		<AbsoluteFill style={{overflow: 'hidden'}}>
+			<AbsoluteFill style={{
+				transformOrigin: '50% 50%',
+				transform: cam ? `translate(${cam.tx}px, ${cam.ty}px) scale(${cam.scale})` : undefined,
+			}}>
+				<div
+					lang={item.lang}
+					style={{
+						position: 'absolute',
+						left: `${item.x * 100}%`,
+						top: `${item.y * 100}%`,
+						transform: `translate(-50%, -50%) rotate(${item.rotation ?? 0}deg)`,
+						width: 'max-content',
+						textAlign: 'center',
+						whiteSpace: 'pre',
+						fontFamily: fontFor(item.text),
+						fontSize: item.fontSize,
+						fontWeight: 600,
+						fontVariantNumeric: 'tabular-nums',
+						lineHeight: 1.25,
+						color: item.color ?? '#fff',
+						background: item.plate ? 'rgba(10,8,18,0.75)' : undefined,
+						padding: item.plate ? '0.15em 0.4em' : undefined,
+						borderRadius: item.plate ? '0.2em' : undefined,
+					}}
+				>
+					{item.text}
+				</div>
+			</AbsoluteFill>
 		</AbsoluteFill>
 	);
 };
@@ -108,9 +150,20 @@ const ShotView: React.FC<{shot: Shot; span: number}> = ({shot, span}) => {
 				{isSlate ? (
 					<Slate shot={shot} />
 				) : (
-					layers.map((layer, i) => (
-						<ImageLayer key={i} layer={layer} move={shot.move} progress={progress} />
-					))
+					<>
+						{layers.map((layer, i) => (
+							<ImageLayer key={i} layer={layer} move={shot.move} progress={progress} />
+						))}
+						{shot.plotText?.map((item, i) => (
+							<PlotTextLayer
+								key={i}
+								item={item}
+								move={shot.move}
+								progress={progress}
+								depth={layers[0].depth ?? 1}
+							/>
+						))}
+					</>
 				)}
 			</AbsoluteFill>
 		</AbsoluteFill>

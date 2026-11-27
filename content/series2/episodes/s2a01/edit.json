@@ -1,0 +1,767 @@
+{
+  "about": "S13 editorial assembly for The Arrest (s2a01). Approved v4 dialogue and reviewed still frames in both languages.",
+  "render_name": "s2a01",
+  "max_seconds": 150,
+  "voice_models": [
+    "v4"
+  ],
+  "layout": {
+    "cut_on_word": [
+      {
+        "line": "l01",
+        "word": {
+          "hi": "Police",
+          "en": "For"
+        },
+        "shot": "s02"
+      }
+    ],
+    "lead": {
+      "s01": 18,
+      "s18": 12,
+      "s25": 9,
+      "s32": 24
+    },
+    "tail": {
+      "s31": 45
+    },
+    "silent_frames": {
+      "s06": 45,
+      "s07": 60,
+      "s09": 36,
+      "s10": 39,
+      "s11": 30,
+      "s13": 30,
+      "s17": 60,
+      "s23": 45,
+      "s34": 75
+    },
+    "end_black": 12
+  },
+  "shots": {
+    "s15": {
+      "layers": [
+        {
+          "src": "frames/s15.png",
+          "depth": 1
+        },
+        {
+          "src": "overlays/s15-ov_slip_signature.png",
+          "depth": 1
+        }
+      ]
+    },
+    "s17": {
+      "layers": [
+        {
+          "src": "frames/s15.png",
+          "depth": 1
+        },
+        {
+          "src": "overlays/s15-ov_slip_signature.png",
+          "depth": 1
+        }
+      ],
+      "move": {
+        "preset": "custom",
+        "easing": "ease-in-out",
+        "from": {
+          "scale": 1.15,
+          "x": -0.04,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.28,
+          "x": -0.2,
+          "y": 0
+        }
+      }
+    },
+    "s21": {
+      "move": {
+        "preset": "custom",
+        "easing": "ease-in-out",
+        "from": {
+          "scale": 1.15,
+          "x": 0,
+          "y": 0.2
+        },
+        "to": {
+          "scale": 1.28,
+          "x": 0,
+          "y": 0.2
+        }
+      }
+    },
+    "s24": {
+      "move": {
+        "preset": "custom",
+        "easing": "ease-in-out",
+        "from": {
+          "scale": 1.15,
+          "x": 0,
+          "y": 0.2
+        },
+        "to": {
+          "scale": 1.28,
+          "x": 0,
+          "y": 0.2
+        }
+      }
+    },
+    "s25": {
+      "move": {
+        "preset": "custom",
+        "easing": "ease-in-out",
+        "from": {
+          "scale": 1.01,
+          "x": 0.1,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.15,
+          "x": 0.02,
+          "y": 0
+        }
+      }
+    },
+    "s28": {
+      "move": {
+        "preset": "custom",
+        "easing": "ease-in-out",
+        "from": {
+          "scale": 1,
+          "x": 0.08,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.13,
+          "x": -0.06,
+          "y": 0
+        }
+      }
+    },
+    "s29": {
+      "move": {
+        "preset": "custom",
+        "easing": "ease-in-out",
+        "from": {
+          "scale": 1,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.12,
+          "x": 0.06,
+          "y": 0
+        }
+      }
+    },
+    "s31": {
+      "layers": [
+        {
+          "src": "frames/s31.png",
+          "depth": 1
+        },
+        {
+          "src": "overlays/s31-ov_shield.png",
+          "depth": 1
+        }
+      ]
+    },
+    "s32": {
+      "move": {
+        "preset": "push-in",
+        "intensity": 0.8,
+        "focus": {
+          "x": 0.45,
+          "y": 0.46
+        }
+      }
+    }
+  },
+  "supers": {
+    "items": {
+      "su_a1": {
+        "at": "s32.start",
+        "hold_s": 3.0
+      }
+    }
+  },
+  "ducking": {
+    "amountDb": -8
+  },
+  "sound": [
+    {
+      "cue": "sfx_cuffs_ratchet",
+      "at": 0,
+      "gain_db": 0,
+      "id": "#close_one",
+      "trim": "0s",
+      "len": 7
+    },
+    {
+      "cue": "sfx_cuffs_ratchet",
+      "at": 9,
+      "gain_db": 3,
+      "id": "#close_two",
+      "trim": "0.70s",
+      "len": 7,
+      "fade_out": 2
+    },
+    {
+      "cue": "amb_talkies_lobby",
+      "kind": "bed",
+      "from": 30,
+      "to": "s06.start",
+      "gain_db": -7,
+      "id": "#lit",
+      "window_s": [
+        8,
+        29
+      ],
+      "loop_xf": 15,
+      "fade_in": 12,
+      "fade_out": 5
+    },
+    {
+      "cue": "amb_talkies_lobby",
+      "kind": "bed",
+      "from": "s06.start",
+      "to": "s07.start",
+      "gain_db": -13,
+      "id": "#out",
+      "trim": "8s",
+      "filter": {
+        "lowpass_hz": 2500
+      },
+      "fade_in": 4,
+      "fade_out": 5
+    },
+    {
+      "cue": "lyr_night_crickets",
+      "kind": "bed",
+      "from": 30,
+      "to": "s06.start",
+      "gain_db": -9,
+      "id": "#lobby",
+      "loop": true,
+      "fade_in": 9,
+      "fade_out": 6
+    },
+    {
+      "cue": "lyr_night_crickets",
+      "kind": "bed",
+      "from": "s06.start",
+      "to": "s07.start",
+      "gain_db": -15,
+      "id": "#light_out",
+      "loop": true,
+      "filter": {
+        "lowpass_hz": 2500
+      },
+      "fade_in": 4,
+      "fade_out": 5
+    },
+    {
+      "cue": "s2a01_sfx_moth_bulb",
+      "at": "s02.end - 18",
+      "gain_db": 4,
+      "id": "#lobby_one",
+      "trim": "2.70s",
+      "len": 20,
+      "fade_in": 4,
+      "fade_out": 4
+    },
+    {
+      "cue": "s2a01_sfx_moth_bulb",
+      "at": "s03.end - 12",
+      "gain_db": 2,
+      "id": "#lobby_two",
+      "trim": "2.85s",
+      "len": 13,
+      "fade_out": 4
+    },
+    {
+      "cue": "s2a01_sfx_bag_switch",
+      "at": "s04.start",
+      "gain_db": -3,
+      "id": "#string",
+      "trim": "0.40s",
+      "len": 32,
+      "fade_out": 4
+    },
+    {
+      "cue": "sfx_match_wax",
+      "at": "l04.speech_start + 20",
+      "gain_db": -10,
+      "until": "s05.start",
+      "len": 42,
+      "fade_out": 5
+    },
+    {
+      "cue": "sfx_pen_scratch",
+      "at": "s05.start + 4",
+      "gain_db": -9,
+      "until": "s06.start",
+      "len": 49,
+      "fade_out": 5
+    },
+    {
+      "cue": "s2a01_sfx_bag_switch",
+      "at": "s06.start",
+      "gain_db": -4,
+      "id": "#switch",
+      "trim": "2.40s",
+      "len": 12,
+      "fade_out": 2
+    },
+    {
+      "cue": "amb_crossing_stall",
+      "kind": "bed",
+      "from": "s07.start",
+      "to": "s08.start",
+      "gain_db": -5,
+      "id": "#walk",
+      "fade_in": 5,
+      "fade_out": 7
+    },
+    {
+      "cue": "lyr_night_crickets",
+      "kind": "bed",
+      "from": "s07.start",
+      "to": "s08.start",
+      "gain_db": -10,
+      "id": "#walk",
+      "fade_in": 5,
+      "fade_out": 6
+    },
+    {
+      "cue": "sfx_steps_ballast",
+      "at": "s07.start+4",
+      "gain_db": -2,
+      "len": 55,
+      "fade_out": 8
+    },
+    {
+      "cue": "sfx_cuff_chain_clink",
+      "at": "s07.start+26",
+      "gain_db": -13,
+      "id": "#ballast",
+      "len": 19,
+      "fade_out": 3
+    },
+    {
+      "cue": "amb_real_thana",
+      "kind": "bed",
+      "from": "s08.start",
+      "to": "s14.start",
+      "gain_db": -8,
+      "id": "#midnight",
+      "loop": true,
+      "fade_in": 6,
+      "fade_out": 8
+    },
+    {
+      "cue": "sfx_padlock_rusted",
+      "at": "l06.speech_start+23",
+      "gain_db": -13,
+      "id": "#grind",
+      "len": 51,
+      "fade_out": 6
+    },
+    {
+      "cue": "sfx_padlock_rusted",
+      "at": "s09.start",
+      "gain_db": -9,
+      "id": "#clack",
+      "trim": "2.43s",
+      "len": 14,
+      "fade_out": 3
+    },
+    {
+      "cue": "s2a01_sfx_lockup_door_clang",
+      "at": "s10.start",
+      "gain_db": -9,
+      "id": "#hinge",
+      "len": 26,
+      "fade_out": 4
+    },
+    {
+      "cue": "s2a01_sfx_lockup_door_clang",
+      "at": "s11.start-5",
+      "gain_db": -7,
+      "id": "#clang",
+      "trim": "1.49s",
+      "until": "s11.start+9",
+      "fade_out": 4
+    },
+    {
+      "cue": "sfx_wall_clock_tick",
+      "kind": "bed",
+      "from": "s11.start",
+      "to": "s13.start",
+      "gain_db": -4,
+      "id": "#midnight",
+      "loop": true,
+      "fade_out": 5,
+      "segments": [
+        {
+          "from": "s12.start",
+          "to": "s13.start",
+          "db": -7
+        }
+      ]
+    },
+    {
+      "cue": "s2a01_sfx_helmet_lift",
+      "at": "max(l07.speech_end+2, s13.start-18)",
+      "gain_db": -14,
+      "len": 25,
+      "fade_out": 4
+    },
+    {
+      "cue": "sfx_steps_terrazzo",
+      "at": "max(l07.speech_end+22, s13.start-5)",
+      "gain_db": -10,
+      "len": 52,
+      "until": "s14.start",
+      "fade_in": 4,
+      "fade_out": 7
+    },
+    {
+      "cue": "amb_crossing_stall",
+      "kind": "bed",
+      "from": "s14.start",
+      "to": "s19.start",
+      "gain_db": -7,
+      "id": "#truck",
+      "loop": true,
+      "fade_in": 6,
+      "fade_out": 8,
+      "segments": [
+        {
+          "from": "s18.start",
+          "to": "s19.start",
+          "db": 2
+        }
+      ]
+    },
+    {
+      "cue": "lyr_night_crickets",
+      "kind": "bed",
+      "from": "s14.start",
+      "to": "s19.start",
+      "gain_db": -12,
+      "id": "#truck",
+      "loop": true,
+      "fade_in": 8,
+      "fade_out": 8,
+      "segments": [
+        {
+          "from": "s18.start",
+          "to": "s19.start",
+          "db": 2
+        }
+      ]
+    },
+    {
+      "cue": "sfx_truck_idle",
+      "kind": "bed",
+      "from": "s14.start",
+      "to": "s17.start+22",
+      "gain_db": -7,
+      "loop": true,
+      "fade_in": 9,
+      "fade_out": 11,
+      "segments": [
+        {
+          "from": "l08.speech_start-3",
+          "to": "s15.start",
+          "db": -9
+        },
+        {
+          "from": "s15.start",
+          "to": "s17.start",
+          "db": -3
+        }
+      ]
+    },
+    {
+      "cue": "sfx_headlight_hum",
+      "kind": "bed",
+      "from": "s14.start",
+      "to": "s17.start",
+      "gain_db": -15,
+      "loop": true,
+      "fade_in": 6,
+      "fade_out": 7
+    },
+    {
+      "cue": "sfx_paper_slip",
+      "at": "s15.start",
+      "gain_db": -6,
+      "id": "#receive",
+      "trim": "0.10s",
+      "len": 23,
+      "fade_out": 3
+    },
+    {
+      "cue": "sfx_paper_slip",
+      "at": "s17.start",
+      "gain_db": -12,
+      "id": "#return",
+      "trim": "0.12s",
+      "len": 15,
+      "fade_out": 3
+    },
+    {
+      "cue": "s2a01_sfx_gate_arm_creak",
+      "at": "s17.start+3",
+      "gain_db": -11,
+      "len": 51,
+      "fade_out": 5
+    },
+    {
+      "cue": "s2a01_sfx_truck_pull_away",
+      "at": "s17.start+17",
+      "gain_db": -4,
+      "until": "s19.start-6",
+      "fade_in": 7,
+      "fade_out": 7,
+      "segments": [
+        {
+          "from": "l11.speech_start-4",
+          "db": -9
+        }
+      ]
+    },
+    {
+      "cue": "mus_tension_note",
+      "kind": "bed",
+      "from": "s18.start",
+      "to": "s19.start",
+      "gain_db": -14,
+      "id": "#tail_lights",
+      "trim": "2s",
+      "loop": false,
+      "fade_in": 30,
+      "fade_out": 12,
+      "duck": true
+    },
+    {
+      "cue": "amb_real_thana",
+      "kind": "bed",
+      "from": "s19.start",
+      "to": "s32.start",
+      "gain_db": -8,
+      "id": "#register",
+      "loop": true,
+      "fade_in": 8,
+      "fade_out": 8,
+      "segments": [
+        {
+          "from": "l17.speech_start",
+          "to": "s32.start",
+          "db": -2
+        }
+      ]
+    },
+    {
+      "cue": "s2a01_sfx_collar_brush",
+      "at": "s23.start+3",
+      "gain_db": 14,
+      "len": 26,
+      "fade_out": 3
+    },
+    {
+      "cue": "sfx_far_dog",
+      "at": "s23.end-17",
+      "gain_db": -16,
+      "id": "#lockup",
+      "len": 15,
+      "fade_in": 2,
+      "fade_out": 5,
+      "filter": {
+        "lowpass_hz": 3200
+      }
+    },
+    {
+      "cue": "sfx_bench_creak",
+      "at": "s24.start+1",
+      "gain_db": -5,
+      "len": 25,
+      "until": "l17.speech_start-2",
+      "fade_out": 4
+    },
+    {
+      "cue": "sfx_knitting_needles",
+      "kind": "bed",
+      "from": "l17.speech_start",
+      "to": "s26.start",
+      "gain_db": -8,
+      "loop": true,
+      "fade_in": 5,
+      "fade_out": 0
+    },
+    {
+      "cue": "sfx_cuff_chain_clink",
+      "at": "s25.start-1",
+      "gain_db": -7,
+      "id": "#bar",
+      "len": 12,
+      "until": "l18.speech_start",
+      "fade_out": 3
+    },
+    {
+      "cue": "mus_theme_caper_slow",
+      "kind": "bed",
+      "from": "l17.speech_start",
+      "to": "s32.start-16",
+      "gain_db": -12,
+      "id": "#register",
+      "loop": true,
+      "window_s": [
+        0,
+        40
+      ],
+      "fade_in": 27,
+      "fade_out": 0,
+      "duck": true,
+      "segments": [
+        {
+          "from": "l17.speech_start+390",
+          "to": "l23.speech_start",
+          "db": -6
+        },
+        {
+          "from": "l23.speech_start",
+          "to": "s32.start-16",
+          "db": -4
+        }
+      ]
+    },
+    {
+      "cue": "s2a01_sfx_almirah_open",
+      "at": "s30.start-2",
+      "gain_db": -7,
+      "id": "#lock",
+      "trim": "0.94s",
+      "len": 7,
+      "fade_out": 2
+    },
+    {
+      "cue": "s2a01_sfx_almirah_open",
+      "at": "s30.start+4",
+      "gain_db": -16,
+      "id": "#steel",
+      "trim": "1.14s",
+      "len": 53,
+      "fade_out": 9
+    },
+    {
+      "cue": "sfx_register_thump",
+      "at": "s31.start-2",
+      "gain_db": -8,
+      "len": 16,
+      "fade_out": 3
+    },
+    {
+      "cue": "sfx_page_turn",
+      "at": "s31.start+6",
+      "gain_db": -5,
+      "len": 22,
+      "fade_out": 4
+    },
+    {
+      "cue": "sfx_signature_knock",
+      "at": "s32.start-34",
+      "gain_db": -3,
+      "len": 23,
+      "fade_out": 1
+    },
+    {
+      "cue": "amb_lane_doorway",
+      "kind": "bed",
+      "from": "s32.start-34",
+      "to": "s34.end",
+      "gain_db": -6,
+      "id": "#door",
+      "loop": true,
+      "fade_in": 10,
+      "fade_out": 15,
+      "segments": [
+        {
+          "from": "l27.speech_start-3",
+          "to": "s34.end",
+          "db": -9
+        }
+      ]
+    },
+    {
+      "cue": "lyr_night_crickets",
+      "kind": "bed",
+      "from": "s32.start-33",
+      "to": "s34.start+22",
+      "gain_db": -9,
+      "id": "#door",
+      "loop": true,
+      "fade_in": 9,
+      "fade_out": 6,
+      "segments": [
+        {
+          "from": "l27.speech_start-3",
+          "to": "s34.start+22",
+          "db": -10
+        }
+      ]
+    },
+    {
+      "cue": "sfx_door_chain_stop",
+      "at": "s32.start",
+      "gain_db": -8,
+      "trim": "0.44s",
+      "until": "l26.speech_start-3",
+      "fade_in": 3,
+      "fade_out": 4
+    },
+    {
+      "cue": "s2a01_sfx_moth_bulb",
+      "at": "l26.speech_end-17",
+      "gain_db": -2,
+      "id": "#lane",
+      "trim": "2.75s",
+      "len": 15,
+      "fade_in": 4,
+      "fade_out": 4
+    },
+    {
+      "cue": "sfx_door_shut_bolt",
+      "at": "s34.start",
+      "gain_db": -5,
+      "trim": "0.32s",
+      "len": 23,
+      "fade_out": 6
+    },
+    {
+      "cue": "sfx_door_chain_slide",
+      "at": "s34.start+12",
+      "gain_db": -12,
+      "id": "#bolt",
+      "trim": "0.58s",
+      "len": 19,
+      "fade_in": 3,
+      "fade_out": 4
+    }
+  ],
+  "notes": [
+    "l01 plays once across s01 and s02. The picture cuts to Nandini's profile on the first word after Nirala's name.",
+    "The two cuff ratchet slices precede the first line. Separate source slices place the lockup hinge in s10 and the clang just before the midnight clock.",
+    "s11 shows the clock for 1 s and s13 holds the empty doorway for 1 s. The helmet lift and exit steps bridge to the doorway.",
+    "The approved slip artwork is registered to s15. The same background and plate drive s17 with its tighter camera move. The s31 shield plate is registered separately for both languages.",
+    "The recorded truck fades without discrete rail thuds. The existing gear and engine sounds carry the cut while the dialogue starts on the lowered fade.",
+    "The existing signature-knock cue includes a third hit. Only its first two hits are placed. The caper music stops on the second hit and the latch finishes before l26.",
+    "The original door shut cue has no isolated bolt clack. A short existing chain slide supplies the mechanical release after the door shuts.",
+    "s25, s28 and s29 use gentle moves through long dialogue stretches. The 2.5 s s34 door hold follows the last line before the hard cut to black."
+  ]
+}

@@ -48,7 +48,7 @@
         "hi": "/media/series2/cast/nandini.hi.mp3",
         "en": "/media/series2/cast/nandini.en.mp3"
       },
-      "portrait": "/media/series2/cast/nandini.jpg",
+      "portrait": "/media/series2/art/cast/nandini.webp",
       "placeholder": true
     },
     {
@@ -65,7 +65,7 @@
         "hi": "/media/series2/cast/nirala.hi.mp3",
         "en": "/media/series2/cast/nirala.en.mp3"
       },
-      "portrait": "/media/series2/cast/nirala.jpg",
+      "portrait": "/media/series2/art/cast/nirala.webp",
       "placeholder": true
     },
     {
@@ -82,7 +82,7 @@
         "hi": "/media/series2/cast/tripathi.hi.mp3",
         "en": "/media/series2/cast/tripathi.en.mp3"
       },
-      "portrait": "/media/series2/cast/tripathi.jpg",
+      "portrait": "/media/series2/art/cast/tripathi.webp",
       "placeholder": true
     },
     {
@@ -99,7 +99,7 @@
         "hi": "/media/series2/cast/bhaiyaji.hi.mp3",
         "en": "/media/series2/cast/bhaiyaji.en.mp3"
       },
-      "portrait": "/media/series2/cast/bhaiyaji.jpg",
+      "portrait": "/media/series2/art/cast/bhaiyaji.webp",
       "placeholder": true
     },
     {
@@ -116,11 +116,11 @@
         "hi": "/media/series2/cast/pushpa.hi.mp3",
         "en": "/media/series2/cast/pushpa.en.mp3"
       },
-      "portrait": "/media/series2/cast/pushpa.jpg",
+      "portrait": "/media/series2/art/cast/pushpa.webp",
       "placeholder": true
     }
   ],
-  "poster": "/media/series2/poster.jpg",
+  "poster": "/media/series2/art/cover.webp",
   "backdrop": "/media/series2/backdrop.jpg",
   "branchAfterEpisode": 3,
   "episodes": [
@@ -1730,16 +1730,16 @@
       "number": 4,
       "kind": "branchA",
       "title": {
-        "hi": "भाग 4",
-        "en": "Part 4"
+        "hi": "हवालात",
+        "en": "Lockup"
       },
       "video": {
         "hi": "/media/series2/episodes/s2a01/hi.mp4",
         "en": "/media/series2/episodes/s2a01/en.mp4"
       },
       "durationMs": {
-        "hi": 20000,
-        "en": 19000
+        "hi": 131000,
+        "en": 129965
       },
       "subtitles": {
         "hi": "/media/series2/episodes/s2a01/hi.json",
@@ -1752,11 +1752,11 @@
           "timing": {
             "hi": {
               "startMs": 0,
-              "endMs": 4000
+              "endMs": 2167
             },
             "en": {
               "startMs": 0,
-              "endMs": 3000
+              "endMs": 2067
             }
           }
         },
@@ -1765,12 +1765,12 @@
           "still": "/media/series2/episodes/s2a01/shots/s02.jpg",
           "timing": {
             "hi": {
-              "startMs": 4000,
-              "endMs": 8000
+              "startMs": 2167,
+              "endMs": 6533
             },
             "en": {
-              "startMs": 3000,
-              "endMs": 7500
+              "startMs": 2067,
+              "endMs": 6800
             }
           }
         },
@@ -1779,12 +1779,12 @@
           "still": "/media/series2/episodes/s2a01/shots/s03.jpg",
           "timing": {
             "hi": {
-              "startMs": 8000,
-              "endMs": 12000
+              "startMs": 6533,
+              "endMs": 11133
             },
             "en": {
-              "startMs": 7500,
-              "endMs": 11000
+              "startMs": 6800,
+              "endMs": 11033
             }
           }
         },
@@ -1793,12 +1793,12 @@
           "still": "/media/series2/episodes/s2a01/shots/s04.jpg",
           "timing": {
             "hi": {
-              "startMs": 12000,
-              "endMs": 16000
+              "startMs": 11133,
+              "endMs": 14833
             },
             "en": {
-              "startMs": 11000,
-              "endMs": 15000
+              "startMs": 11033,
+              "endMs": 14900
             }
           }
         },
@@ -1807,227 +1807,440 @@
           "still": "/media/series2/episodes/s2a01/shots/s05.jpg",
           "timing": {
             "hi": {
-              "startMs": 16000,
-              "endMs": 20000
+              "startMs": 14833,
+              "endMs": 17067
             },
             "en": {
-              "startMs": 15000,
-              "endMs": 19000
+              "startMs": 14900,
+              "endMs": 16967
+            }
+          }
+        },
+        {
+          "id": "s06",
+          "still": "/media/series2/episodes/s2a01/shots/s06.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 17067,
+              "endMs": 18567
+            },
+            "en": {
+              "startMs": 16967,
+              "endMs": 18467
+            }
+          }
+        },
+        {
+          "id": "s07",
+          "still": "/media/series2/episodes/s2a01/shots/s07.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 18567,
+              "endMs": 20567
+            },
+            "en": {
+              "startMs": 18467,
+              "endMs": 20467
+            }
+          }
+        },
+        {
+          "id": "s08",
+          "still": "/media/series2/episodes/s2a01/shots/s08.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 20567,
+              "endMs": 26200
+            },
+            "en": {
+              "startMs": 20467,
+              "endMs": 25333
+            }
+          }
+        },
+        {
+          "id": "s09",
+          "still": "/media/series2/episodes/s2a01/shots/s09.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 26200,
+              "endMs": 27400
+            },
+            "en": {
+              "startMs": 25333,
+              "endMs": 26533
+            }
+          }
+        },
+        {
+          "id": "s10",
+          "still": "/media/series2/episodes/s2a01/shots/s10.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 27400,
+              "endMs": 28700
+            },
+            "en": {
+              "startMs": 26533,
+              "endMs": 27833
+            }
+          }
+        },
+        {
+          "id": "s11",
+          "still": "/media/series2/episodes/s2a01/shots/s11.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 28700,
+              "endMs": 29700
+            },
+            "en": {
+              "startMs": 27833,
+              "endMs": 28833
+            }
+          }
+        },
+        {
+          "id": "s12",
+          "still": "/media/series2/episodes/s2a01/shots/s12.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 29700,
+              "endMs": 32933
+            },
+            "en": {
+              "startMs": 28833,
+              "endMs": 31967
+            }
+          }
+        },
+        {
+          "id": "s13",
+          "still": "/media/series2/episodes/s2a01/shots/s13.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 32933,
+              "endMs": 33933
+            },
+            "en": {
+              "startMs": 31967,
+              "endMs": 32967
+            }
+          }
+        },
+        {
+          "id": "s14",
+          "still": "/media/series2/episodes/s2a01/shots/s14.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 33933,
+              "endMs": 36800
+            },
+            "en": {
+              "startMs": 32967,
+              "endMs": 36067
+            }
+          }
+        },
+        {
+          "id": "s15",
+          "still": "/media/series2/episodes/s2a01/shots/s15.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 36800,
+              "endMs": 43033
+            },
+            "en": {
+              "startMs": 36067,
+              "endMs": 42433
+            }
+          }
+        },
+        {
+          "id": "s16",
+          "still": "/media/series2/episodes/s2a01/shots/s16.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 43033,
+              "endMs": 44667
+            },
+            "en": {
+              "startMs": 42433,
+              "endMs": 44200
+            }
+          }
+        },
+        {
+          "id": "s17",
+          "still": "/media/series2/episodes/s2a01/shots/s17.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 44667,
+              "endMs": 46667
+            },
+            "en": {
+              "startMs": 44200,
+              "endMs": 46200
+            }
+          }
+        },
+        {
+          "id": "s18",
+          "still": "/media/series2/episodes/s2a01/shots/s18.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 46667,
+              "endMs": 51667
+            },
+            "en": {
+              "startMs": 46200,
+              "endMs": 50667
+            }
+          }
+        },
+        {
+          "id": "s19",
+          "still": "/media/series2/episodes/s2a01/shots/s19.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 51667,
+              "endMs": 54533
+            },
+            "en": {
+              "startMs": 50667,
+              "endMs": 53500
+            }
+          }
+        },
+        {
+          "id": "s20",
+          "still": "/media/series2/episodes/s2a01/shots/s20.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 54533,
+              "endMs": 57700
+            },
+            "en": {
+              "startMs": 53500,
+              "endMs": 56767
+            }
+          }
+        },
+        {
+          "id": "s21",
+          "still": "/media/series2/episodes/s2a01/shots/s21.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 57700,
+              "endMs": 64000
+            },
+            "en": {
+              "startMs": 56767,
+              "endMs": 62700
+            }
+          }
+        },
+        {
+          "id": "s22",
+          "still": "/media/series2/episodes/s2a01/shots/s22.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 64000,
+              "endMs": 71300
+            },
+            "en": {
+              "startMs": 62700,
+              "endMs": 70033
+            }
+          }
+        },
+        {
+          "id": "s23",
+          "still": "/media/series2/episodes/s2a01/shots/s23.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 71300,
+              "endMs": 72800
+            },
+            "en": {
+              "startMs": 70033,
+              "endMs": 71533
+            }
+          }
+        },
+        {
+          "id": "s24",
+          "still": "/media/series2/episodes/s2a01/shots/s24.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 72800,
+              "endMs": 76833
+            },
+            "en": {
+              "startMs": 71533,
+              "endMs": 75967
+            }
+          }
+        },
+        {
+          "id": "s25",
+          "still": "/media/series2/episodes/s2a01/shots/s25.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 76833,
+              "endMs": 84967
+            },
+            "en": {
+              "startMs": 75967,
+              "endMs": 84867
+            }
+          }
+        },
+        {
+          "id": "s26",
+          "still": "/media/series2/episodes/s2a01/shots/s26.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 84967,
+              "endMs": 88500
+            },
+            "en": {
+              "startMs": 84867,
+              "endMs": 88567
+            }
+          }
+        },
+        {
+          "id": "s27",
+          "still": "/media/series2/episodes/s2a01/shots/s27.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 88500,
+              "endMs": 92300
+            },
+            "en": {
+              "startMs": 88567,
+              "endMs": 92600
+            }
+          }
+        },
+        {
+          "id": "s28",
+          "still": "/media/series2/episodes/s2a01/shots/s28.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 92300,
+              "endMs": 100733
+            },
+            "en": {
+              "startMs": 92600,
+              "endMs": 101567
+            }
+          }
+        },
+        {
+          "id": "s29",
+          "still": "/media/series2/episodes/s2a01/shots/s29.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 100733,
+              "endMs": 108933
+            },
+            "en": {
+              "startMs": 101567,
+              "endMs": 108533
+            }
+          }
+        },
+        {
+          "id": "s30",
+          "still": "/media/series2/episodes/s2a01/shots/s30.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 108933,
+              "endMs": 112733
+            },
+            "en": {
+              "startMs": 108533,
+              "endMs": 112067
+            }
+          }
+        },
+        {
+          "id": "s31",
+          "still": "/media/series2/episodes/s2a01/shots/s31.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 112733,
+              "endMs": 118167
+            },
+            "en": {
+              "startMs": 112067,
+              "endMs": 117567
+            }
+          }
+        },
+        {
+          "id": "s32",
+          "still": "/media/series2/episodes/s2a01/shots/s32.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 118167,
+              "endMs": 124033
+            },
+            "en": {
+              "startMs": 117567,
+              "endMs": 123467
+            }
+          }
+        },
+        {
+          "id": "s33",
+          "still": "/media/series2/episodes/s2a01/shots/s33.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 124033,
+              "endMs": 128033
+            },
+            "en": {
+              "startMs": 123467,
+              "endMs": 126933
+            }
+          }
+        },
+        {
+          "id": "s34",
+          "still": "/media/series2/episodes/s2a01/shots/s34.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 128033,
+              "endMs": 130533
+            },
+            "en": {
+              "startMs": 126933,
+              "endMs": 129433
             }
           }
         }
       ],
       "poster": "/media/series2/episodes/s2a01/poster.jpg",
-      "placeholder": true,
-      "placeholderNote": "Generated test card. Replace with the finished render (docs/contracts.md, \"Replacing a placeholder\")."
-    },
-    {
-      "id": "s2a02",
-      "number": 5,
-      "kind": "branchA",
-      "title": {
-        "hi": "भाग 5",
-        "en": "Part 5"
-      },
-      "video": {
-        "hi": "/media/series2/episodes/s2a02/hi.mp4",
-        "en": "/media/series2/episodes/s2a02/en.mp4"
-      },
-      "durationMs": {
-        "hi": 20000,
-        "en": 19000
-      },
-      "subtitles": {
-        "hi": "/media/series2/episodes/s2a02/hi.json",
-        "en": "/media/series2/episodes/s2a02/en.json"
-      },
-      "shots": [
-        {
-          "id": "s01",
-          "still": "/media/series2/episodes/s2a02/shots/s01.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 0,
-              "endMs": 4000
-            },
-            "en": {
-              "startMs": 0,
-              "endMs": 3000
-            }
-          }
-        },
-        {
-          "id": "s02",
-          "still": "/media/series2/episodes/s2a02/shots/s02.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 4000,
-              "endMs": 8000
-            },
-            "en": {
-              "startMs": 3000,
-              "endMs": 7500
-            }
-          }
-        },
-        {
-          "id": "s03",
-          "still": "/media/series2/episodes/s2a02/shots/s03.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 8000,
-              "endMs": 12000
-            },
-            "en": {
-              "startMs": 7500,
-              "endMs": 11000
-            }
-          }
-        },
-        {
-          "id": "s04",
-          "still": "/media/series2/episodes/s2a02/shots/s04.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 12000,
-              "endMs": 16000
-            },
-            "en": {
-              "startMs": 11000,
-              "endMs": 15000
-            }
-          }
-        },
-        {
-          "id": "s05",
-          "still": "/media/series2/episodes/s2a02/shots/s05.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 16000,
-              "endMs": 20000
-            },
-            "en": {
-              "startMs": 15000,
-              "endMs": 19000
-            }
-          }
-        }
-      ],
-      "poster": "/media/series2/episodes/s2a02/poster.jpg",
-      "placeholder": true,
-      "placeholderNote": "Generated test card. Replace with the finished render (docs/contracts.md, \"Replacing a placeholder\")."
-    },
-    {
-      "id": "s2a03",
-      "number": 6,
-      "kind": "branchA",
-      "title": {
-        "hi": "भाग 6",
-        "en": "Part 6"
-      },
-      "video": {
-        "hi": "/media/series2/episodes/s2a03/hi.mp4",
-        "en": "/media/series2/episodes/s2a03/en.mp4"
-      },
-      "durationMs": {
-        "hi": 20000,
-        "en": 19000
-      },
-      "subtitles": {
-        "hi": "/media/series2/episodes/s2a03/hi.json",
-        "en": "/media/series2/episodes/s2a03/en.json"
-      },
-      "shots": [
-        {
-          "id": "s01",
-          "still": "/media/series2/episodes/s2a03/shots/s01.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 0,
-              "endMs": 4000
-            },
-            "en": {
-              "startMs": 0,
-              "endMs": 3000
-            }
-          }
-        },
-        {
-          "id": "s02",
-          "still": "/media/series2/episodes/s2a03/shots/s02.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 4000,
-              "endMs": 8000
-            },
-            "en": {
-              "startMs": 3000,
-              "endMs": 7500
-            }
-          }
-        },
-        {
-          "id": "s03",
-          "still": "/media/series2/episodes/s2a03/shots/s03.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 8000,
-              "endMs": 12000
-            },
-            "en": {
-              "startMs": 7500,
-              "endMs": 11000
-            }
-          }
-        },
-        {
-          "id": "s04",
-          "still": "/media/series2/episodes/s2a03/shots/s04.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 12000,
-              "endMs": 16000
-            },
-            "en": {
-              "startMs": 11000,
-              "endMs": 15000
-            }
-          }
-        },
-        {
-          "id": "s05",
-          "still": "/media/series2/episodes/s2a03/shots/s05.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 16000,
-              "endMs": 20000
-            },
-            "en": {
-              "startMs": 15000,
-              "endMs": 19000
-            }
-          }
-        }
-      ],
-      "poster": "/media/series2/episodes/s2a03/poster.jpg",
-      "placeholder": true,
-      "placeholderNote": "Generated test card. Replace with the finished render (docs/contracts.md, \"Replacing a placeholder\")."
+      "placeholder": false
     },
     {
       "id": "s2b01",
       "number": 4,
       "kind": "branchB",
       "title": {
-        "hi": "भाग 4",
-        "en": "Part 4"
+        "hi": "वर्दी",
+        "en": "Uniform"
       },
       "video": {
         "hi": "/media/series2/episodes/s2b01/hi.mp4",
         "en": "/media/series2/episodes/s2b01/en.mp4"
       },
       "durationMs": {
-        "hi": 20000,
-        "en": 19000
+        "hi": 128365,
+        "en": 127720
       },
       "subtitles": {
         "hi": "/media/series2/episodes/s2b01/hi.json",
@@ -2040,11 +2253,11 @@
           "timing": {
             "hi": {
               "startMs": 0,
-              "endMs": 4000
+              "endMs": 1000
             },
             "en": {
               "startMs": 0,
-              "endMs": 3000
+              "endMs": 1000
             }
           }
         },
@@ -2053,12 +2266,12 @@
           "still": "/media/series2/episodes/s2b01/shots/s02.jpg",
           "timing": {
             "hi": {
-              "startMs": 4000,
-              "endMs": 8000
+              "startMs": 1000,
+              "endMs": 4233
             },
             "en": {
-              "startMs": 3000,
-              "endMs": 7500
+              "startMs": 1000,
+              "endMs": 4267
             }
           }
         },
@@ -2067,12 +2280,12 @@
           "still": "/media/series2/episodes/s2b01/shots/s03.jpg",
           "timing": {
             "hi": {
-              "startMs": 8000,
-              "endMs": 12000
+              "startMs": 4233,
+              "endMs": 9700
             },
             "en": {
-              "startMs": 7500,
-              "endMs": 11000
+              "startMs": 4267,
+              "endMs": 9900
             }
           }
         },
@@ -2081,12 +2294,12 @@
           "still": "/media/series2/episodes/s2b01/shots/s04.jpg",
           "timing": {
             "hi": {
-              "startMs": 12000,
-              "endMs": 16000
+              "startMs": 9700,
+              "endMs": 14167
             },
             "en": {
-              "startMs": 11000,
-              "endMs": 15000
+              "startMs": 9900,
+              "endMs": 14100
             }
           }
         },
@@ -2095,211 +2308,438 @@
           "still": "/media/series2/episodes/s2b01/shots/s05.jpg",
           "timing": {
             "hi": {
-              "startMs": 16000,
-              "endMs": 20000
+              "startMs": 14167,
+              "endMs": 15967
             },
             "en": {
-              "startMs": 15000,
-              "endMs": 19000
+              "startMs": 14100,
+              "endMs": 16700
+            }
+          }
+        },
+        {
+          "id": "s06",
+          "still": "/media/series2/episodes/s2b01/shots/s06.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 15967,
+              "endMs": 18133
+            },
+            "en": {
+              "startMs": 16700,
+              "endMs": 17967
+            }
+          }
+        },
+        {
+          "id": "s07",
+          "still": "/media/series2/episodes/s2b01/shots/s07.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 18133,
+              "endMs": 21933
+            },
+            "en": {
+              "startMs": 17967,
+              "endMs": 21267
+            }
+          }
+        },
+        {
+          "id": "s08",
+          "still": "/media/series2/episodes/s2b01/shots/s08.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 21933,
+              "endMs": 25000
+            },
+            "en": {
+              "startMs": 21267,
+              "endMs": 24700
+            }
+          }
+        },
+        {
+          "id": "s09",
+          "still": "/media/series2/episodes/s2b01/shots/s09.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 25000,
+              "endMs": 26000
+            },
+            "en": {
+              "startMs": 24700,
+              "endMs": 25700
+            }
+          }
+        },
+        {
+          "id": "s10",
+          "still": "/media/series2/episodes/s2b01/shots/s10.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 26000,
+              "endMs": 28633
+            },
+            "en": {
+              "startMs": 25700,
+              "endMs": 27967
+            }
+          }
+        },
+        {
+          "id": "s11",
+          "still": "/media/series2/episodes/s2b01/shots/s11.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 28633,
+              "endMs": 33500
+            },
+            "en": {
+              "startMs": 27967,
+              "endMs": 32367
+            }
+          }
+        },
+        {
+          "id": "s12",
+          "still": "/media/series2/episodes/s2b01/shots/s12.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 33500,
+              "endMs": 36733
+            },
+            "en": {
+              "startMs": 32367,
+              "endMs": 35567
+            }
+          }
+        },
+        {
+          "id": "s13",
+          "still": "/media/series2/episodes/s2b01/shots/s13.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 36733,
+              "endMs": 38233
+            },
+            "en": {
+              "startMs": 35567,
+              "endMs": 37067
+            }
+          }
+        },
+        {
+          "id": "s14",
+          "still": "/media/series2/episodes/s2b01/shots/s14.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 38233,
+              "endMs": 41067
+            },
+            "en": {
+              "startMs": 37067,
+              "endMs": 39933
+            }
+          }
+        },
+        {
+          "id": "s15",
+          "still": "/media/series2/episodes/s2b01/shots/s15.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 41067,
+              "endMs": 45100
+            },
+            "en": {
+              "startMs": 39933,
+              "endMs": 43767
+            }
+          }
+        },
+        {
+          "id": "s16",
+          "still": "/media/series2/episodes/s2b01/shots/s16.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 45100,
+              "endMs": 54433
+            },
+            "en": {
+              "startMs": 43767,
+              "endMs": 52400
+            }
+          }
+        },
+        {
+          "id": "s17",
+          "still": "/media/series2/episodes/s2b01/shots/s17.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 54433,
+              "endMs": 60567
+            },
+            "en": {
+              "startMs": 52400,
+              "endMs": 58900
+            }
+          }
+        },
+        {
+          "id": "s18",
+          "still": "/media/series2/episodes/s2b01/shots/s18.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 60567,
+              "endMs": 61567
+            },
+            "en": {
+              "startMs": 58900,
+              "endMs": 59900
+            }
+          }
+        },
+        {
+          "id": "s19",
+          "still": "/media/series2/episodes/s2b01/shots/s19.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 61567,
+              "endMs": 63533
+            },
+            "en": {
+              "startMs": 59900,
+              "endMs": 61733
+            }
+          }
+        },
+        {
+          "id": "s20",
+          "still": "/media/series2/episodes/s2b01/shots/s20.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 63533,
+              "endMs": 66533
+            },
+            "en": {
+              "startMs": 61733,
+              "endMs": 64733
+            }
+          }
+        },
+        {
+          "id": "s21",
+          "still": "/media/series2/episodes/s2b01/shots/s21.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 66533,
+              "endMs": 73333
+            },
+            "en": {
+              "startMs": 64733,
+              "endMs": 71867
+            }
+          }
+        },
+        {
+          "id": "s22",
+          "still": "/media/series2/episodes/s2b01/shots/s22.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 73333,
+              "endMs": 75833
+            },
+            "en": {
+              "startMs": 71867,
+              "endMs": 74367
+            }
+          }
+        },
+        {
+          "id": "s23",
+          "still": "/media/series2/episodes/s2b01/shots/s23.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 75833,
+              "endMs": 78700
+            },
+            "en": {
+              "startMs": 74367,
+              "endMs": 77367
+            }
+          }
+        },
+        {
+          "id": "s24",
+          "still": "/media/series2/episodes/s2b01/shots/s24.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 78700,
+              "endMs": 83100
+            },
+            "en": {
+              "startMs": 77367,
+              "endMs": 81967
+            }
+          }
+        },
+        {
+          "id": "s25",
+          "still": "/media/series2/episodes/s2b01/shots/s25.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 83100,
+              "endMs": 86667
+            },
+            "en": {
+              "startMs": 81967,
+              "endMs": 85667
+            }
+          }
+        },
+        {
+          "id": "s26",
+          "still": "/media/series2/episodes/s2b01/shots/s26.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 86667,
+              "endMs": 89300
+            },
+            "en": {
+              "startMs": 85667,
+              "endMs": 88600
+            }
+          }
+        },
+        {
+          "id": "s27",
+          "still": "/media/series2/episodes/s2b01/shots/s27.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 89300,
+              "endMs": 93867
+            },
+            "en": {
+              "startMs": 88600,
+              "endMs": 93633
+            }
+          }
+        },
+        {
+          "id": "s28",
+          "still": "/media/series2/episodes/s2b01/shots/s28.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 93867,
+              "endMs": 101233
+            },
+            "en": {
+              "startMs": 93633,
+              "endMs": 101100
+            }
+          }
+        },
+        {
+          "id": "s29",
+          "still": "/media/series2/episodes/s2b01/shots/s29.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 101233,
+              "endMs": 109233
+            },
+            "en": {
+              "startMs": 101100,
+              "endMs": 108200
+            }
+          }
+        },
+        {
+          "id": "s30",
+          "still": "/media/series2/episodes/s2b01/shots/s30.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 109233,
+              "endMs": 114033
+            },
+            "en": {
+              "startMs": 108200,
+              "endMs": 113133
+            }
+          }
+        },
+        {
+          "id": "s31",
+          "still": "/media/series2/episodes/s2b01/shots/s31.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 114033,
+              "endMs": 116967
+            },
+            "en": {
+              "startMs": 113133,
+              "endMs": 115800
+            }
+          }
+        },
+        {
+          "id": "s32",
+          "still": "/media/series2/episodes/s2b01/shots/s32.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 116967,
+              "endMs": 120633
+            },
+            "en": {
+              "startMs": 115800,
+              "endMs": 119467
+            }
+          }
+        },
+        {
+          "id": "s33",
+          "still": "/media/series2/episodes/s2b01/shots/s33.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 120633,
+              "endMs": 123200
+            },
+            "en": {
+              "startMs": 119467,
+              "endMs": 122233
+            }
+          }
+        },
+        {
+          "id": "s34",
+          "still": "/media/series2/episodes/s2b01/shots/s34.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 123200,
+              "endMs": 124200
+            },
+            "en": {
+              "startMs": 122233,
+              "endMs": 123233
+            }
+          }
+        },
+        {
+          "id": "s35",
+          "still": "/media/series2/episodes/s2b01/shots/s35.jpg",
+          "timing": {
+            "hi": {
+              "startMs": 124200,
+              "endMs": 127833
+            },
+            "en": {
+              "startMs": 123233,
+              "endMs": 127267
             }
           }
         }
       ],
       "poster": "/media/series2/episodes/s2b01/poster.jpg",
-      "placeholder": true,
-      "placeholderNote": "Generated test card. Replace with the finished render (docs/contracts.md, \"Replacing a placeholder\")."
-    },
-    {
-      "id": "s2b02",
-      "number": 5,
-      "kind": "branchB",
-      "title": {
-        "hi": "भाग 5",
-        "en": "Part 5"
-      },
-      "video": {
-        "hi": "/media/series2/episodes/s2b02/hi.mp4",
-        "en": "/media/series2/episodes/s2b02/en.mp4"
-      },
-      "durationMs": {
-        "hi": 20000,
-        "en": 19000
-      },
-      "subtitles": {
-        "hi": "/media/series2/episodes/s2b02/hi.json",
-        "en": "/media/series2/episodes/s2b02/en.json"
-      },
-      "shots": [
-        {
-          "id": "s01",
-          "still": "/media/series2/episodes/s2b02/shots/s01.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 0,
-              "endMs": 4000
-            },
-            "en": {
-              "startMs": 0,
-              "endMs": 3000
-            }
-          }
-        },
-        {
-          "id": "s02",
-          "still": "/media/series2/episodes/s2b02/shots/s02.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 4000,
-              "endMs": 8000
-            },
-            "en": {
-              "startMs": 3000,
-              "endMs": 7500
-            }
-          }
-        },
-        {
-          "id": "s03",
-          "still": "/media/series2/episodes/s2b02/shots/s03.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 8000,
-              "endMs": 12000
-            },
-            "en": {
-              "startMs": 7500,
-              "endMs": 11000
-            }
-          }
-        },
-        {
-          "id": "s04",
-          "still": "/media/series2/episodes/s2b02/shots/s04.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 12000,
-              "endMs": 16000
-            },
-            "en": {
-              "startMs": 11000,
-              "endMs": 15000
-            }
-          }
-        },
-        {
-          "id": "s05",
-          "still": "/media/series2/episodes/s2b02/shots/s05.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 16000,
-              "endMs": 20000
-            },
-            "en": {
-              "startMs": 15000,
-              "endMs": 19000
-            }
-          }
-        }
-      ],
-      "poster": "/media/series2/episodes/s2b02/poster.jpg",
-      "placeholder": true,
-      "placeholderNote": "Generated test card. Replace with the finished render (docs/contracts.md, \"Replacing a placeholder\")."
-    },
-    {
-      "id": "s2b03",
-      "number": 6,
-      "kind": "branchB",
-      "title": {
-        "hi": "भाग 6",
-        "en": "Part 6"
-      },
-      "video": {
-        "hi": "/media/series2/episodes/s2b03/hi.mp4",
-        "en": "/media/series2/episodes/s2b03/en.mp4"
-      },
-      "durationMs": {
-        "hi": 20000,
-        "en": 19000
-      },
-      "subtitles": {
-        "hi": "/media/series2/episodes/s2b03/hi.json",
-        "en": "/media/series2/episodes/s2b03/en.json"
-      },
-      "shots": [
-        {
-          "id": "s01",
-          "still": "/media/series2/episodes/s2b03/shots/s01.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 0,
-              "endMs": 4000
-            },
-            "en": {
-              "startMs": 0,
-              "endMs": 3000
-            }
-          }
-        },
-        {
-          "id": "s02",
-          "still": "/media/series2/episodes/s2b03/shots/s02.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 4000,
-              "endMs": 8000
-            },
-            "en": {
-              "startMs": 3000,
-              "endMs": 7500
-            }
-          }
-        },
-        {
-          "id": "s03",
-          "still": "/media/series2/episodes/s2b03/shots/s03.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 8000,
-              "endMs": 12000
-            },
-            "en": {
-              "startMs": 7500,
-              "endMs": 11000
-            }
-          }
-        },
-        {
-          "id": "s04",
-          "still": "/media/series2/episodes/s2b03/shots/s04.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 12000,
-              "endMs": 16000
-            },
-            "en": {
-              "startMs": 11000,
-              "endMs": 15000
-            }
-          }
-        },
-        {
-          "id": "s05",
-          "still": "/media/series2/episodes/s2b03/shots/s05.jpg",
-          "timing": {
-            "hi": {
-              "startMs": 16000,
-              "endMs": 20000
-            },
-            "en": {
-              "startMs": 15000,
-              "endMs": 19000
-            }
-          }
-        }
-      ],
-      "poster": "/media/series2/episodes/s2b03/poster.jpg",
-      "placeholder": true,
-      "placeholderNote": "Generated test card. Replace with the finished render (docs/contracts.md, \"Replacing a placeholder\")."
+      "placeholder": false
     }
   ],
   "glimpses": {

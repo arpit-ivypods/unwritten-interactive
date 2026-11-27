@@ -10,7 +10,7 @@
 /* eslint-disable @next/next/no-img-element -- stills are served as they are from /media */
 import type { CSSProperties, HTMLAttributes, ReactNode } from "react";
 import clsx from "clsx";
-import type { Lang } from "@/content/schema";
+import type { Lang, SubtitleVoiceMode } from "@/content/schema";
 import { Icon } from "./Icon";
 import { storyLang } from "./Surface";
 
@@ -124,8 +124,10 @@ export function StageBottom({ className, ...rest }: HTMLAttributes<HTMLDivElemen
 // ---------------------------------------------------------------------------
 
 export interface SubtitlesProps {
-  /** Speaker tag, shown when the speaker changes or is off screen. */
+  /** Speaker tag selected by the track's labeling rules. */
   speaker?: ReactNode;
+  /** Italic dialogue for a caller or an off-screen voice. */
+  heardAs?: SubtitleVoiceMode;
   /** The line as spoken. Ignored when `words` is given. */
   text?: string;
   /** Whole words in order; joined by spaces they are the line. `breakBefore` starts a new line at that word. */
@@ -140,7 +142,7 @@ export interface SubtitlesProps {
 }
 
 /** Two lines at most, about 32 characters a line, centred on the subtitle plate. */
-export function Subtitles({ speaker, text, words, activeWord = -1, lang, small = false, className, children }: SubtitlesProps) {
+export function Subtitles({ speaker, heardAs, text, words, activeWord = -1, lang, small = false, className, children }: SubtitlesProps) {
   let line: ReactNode = children ?? text;
   if (!children && words && words.length > 0) {
     line = words.map((w, i) => (
@@ -153,7 +155,7 @@ export function Subtitles({ speaker, text, words, activeWord = -1, lang, small =
   return (
     <div className={clsx("uw-sub", small && "uw-sub--sm", className)}>
       {speaker ? <span className="uw-sub-speaker">{speaker}</span> : null}
-      <span className="uw-sub-line" lang={storyLang(lang)}>
+      <span className="uw-sub-line" lang={storyLang(lang)} data-heard-as={heardAs}>
         {line}
       </span>
     </div>

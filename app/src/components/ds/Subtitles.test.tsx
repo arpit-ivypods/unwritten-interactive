@@ -28,4 +28,10 @@ describe("Subtitles", () => {
     expect(container.querySelector("br")).toBeNull();
     expect(container.querySelector("b")).toBeNull();
   });
+
+  it("marks only the spoken words as phone dialogue", () => {
+    const { container } = render(<Subtitles speaker="Neighbour" heardAs="phone" words={[{ text: "Hello" }]} activeWord={0} lang="en" />);
+    expect(container.querySelector('.uw-sub-line[data-heard-as="phone"] b')?.textContent).toBe("Hello");
+    expect(container.querySelector(".uw-sub-speaker")?.getAttribute("data-heard-as")).toBeNull();
+  });
 });

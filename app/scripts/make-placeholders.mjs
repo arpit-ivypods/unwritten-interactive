@@ -117,11 +117,7 @@ const SERIES = [
       { id: "s1e01", kind: "shared", number: 1, title: part(1) },
       { id: "s1e02", kind: "shared", number: 2, title: part(2) },
       { id: "s1a01", kind: "branchA", number: 3, title: part(3) },
-      { id: "s1a02", kind: "branchA", number: 4, title: part(4) },
-      { id: "s1a03", kind: "branchA", number: 5, title: part(5) },
       { id: "s1b01", kind: "branchB", number: 3, title: part(3) },
-      { id: "s1b02", kind: "branchB", number: 4, title: part(4) },
-      { id: "s1b03", kind: "branchB", number: 5, title: part(5) },
     ],
     glimpses: { A: "s1ga", B: "s1gb" },
   },
@@ -159,11 +155,7 @@ const SERIES = [
       { id: "s2e02", kind: "shared", number: 2, title: { hi: "Charge", en: "Handing Over" } },
       { id: "s2e03", kind: "shared", number: 3, title: { hi: "बारह बजे", en: "Midnight" } },
       { id: "s2a01", kind: "branchA", number: 4, title: part(4) },
-      { id: "s2a02", kind: "branchA", number: 5, title: part(5) },
-      { id: "s2a03", kind: "branchA", number: 6, title: part(6) },
       { id: "s2b01", kind: "branchB", number: 4, title: part(4) },
-      { id: "s2b02", kind: "branchB", number: 5, title: part(5) },
-      { id: "s2b03", kind: "branchB", number: 6, title: part(6) },
     ],
     glimpses: { A: "s2ga", B: "s2gb" },
   },
@@ -588,26 +580,32 @@ function installFromProof({ series, playableId, renders }) {
 // Series-level stand-ins: poster, backdrop, cast
 // ---------------------------------------------------------------------------
 
-async function installSeriesArt(series, voiceMasters) {
-  const poster = url(series.id, "poster.jpg");
+async function installSeriesArt(series, voiceMasters, existing) {
+  const curatedArt = (file) => typeof file === "string" && file.startsWith(`/media/${series.id}/art/`) && fs.existsSync(diskPath(file));
+  const poster = curatedArt(existing?.poster) ? existing.poster : url(series.id, "poster.jpg");
   const backdrop = url(series.id, "backdrop.jpg");
   const lines = [
     { text: `${series.title.hi} / ${series.title.en}`, size: 0.085, weight: 800, lang: "hi" },
     { text: `Series ${series.n} · ${series.genre}`, size: 0.05, weight: 700 },
   ];
-  await drawCard({ file: diskPath(poster), type: "jpeg", width: 1080, height: 1440, hue: SLOTS.shared.hue + series.n * 40, lines, footer: "Poster" });
+  if (!curatedArt(poster)) {
+    await drawCard({ file: diskPath(poster), type: "jpeg", width: 1080, height: 1440, hue: SLOTS.shared.hue + series.n * 40, lines, footer: "Poster" });
+  }
   await drawCard({ file: diskPath(backdrop), type: "jpeg", hue: SLOTS.shared.hue + series.n * 40, step: 2, lines, footer: "Backdrop" });
   const cast = [];
   for (const [i, member] of series.cast.entries()) {
-    const portrait = url(series.id, "cast", `${member.id}.jpg`);
-    await drawCard({
-      file: diskPath(portrait),
-      type: "jpeg",
-      width: 720,
-      height: 720,
-      hue: 200 + i * 70,
-      lines: [{ text: `${member.name.hi} / ${member.name.en}`, size: 0.085, weight: 800, lang: "hi" }],
-    });
+    const previous = existing?.cast?.find((c) => c.id === member.id)?.portrait;
+    const portrait = curatedArt(previous) ? previous : url(series.id, "cast", `${member.id}.jpg`);
+    if (!curatedArt(portrait)) {
+      await drawCard({
+        file: diskPath(portrait),
+        type: "jpeg",
+        width: 720,
+        height: 720,
+        hue: 200 + i * 70,
+        lines: [{ text: `${member.name.hi} / ${member.name.en}`, size: 0.085, weight: 800, lang: "hi" }],
+      });
+    }
     const voiceSample = {};
     for (const lang of LANGS) {
       voiceSample[lang] = url(series.id, "cast", `${member.id}.${lang}.mp3`);
@@ -727,7 +725,7 @@ async function buildSeries(series, voiceMasters) {
         if (typeof file === "string" && file.startsWith(`/media/${series.id}/cast/`)) fs.rmSync(diskPath(file), { force: true });
       }
     }
-    const art = await installSeriesArt(series, voiceMasters);
+    const art = await installSeriesArt(series, voiceMasters, existing);
     top = {
       title: series.title,
       synopsis: series.synopsis,
@@ -771,7 +769,13 @@ function buildCatalog() {
   const file = path.join(MEDIA_DIR, "catalog.json");
   const existing = FORCE ? null : readJsonIfAny(file);
   const realTeasers = (existing?.teasers ?? []).filter((t) => t.placeholder === false);
-  const teasers = [...realTeasers, ...TEASERS.filter((t) => !realTeasers.some((r) => r.id === t.id))].slice(0, 3);
+  const standIns = TEASERS.filter((t) => !realTeasers.some((r) => r.id === t.id)).map((teaser) => {
+    const poster = existing?.teasers?.find((t) => t.id === teaser.id)?.poster;
+    return typeof poster === "string" && poster.startsWith("/media/teasers/") && fs.existsSync(diskPath(poster))
+      ? { ...teaser, poster }
+      : teaser;
+  });
+  const teasers = [...realTeasers, ...standIns].slice(0, 3);
   writeJson(file, { schemaVersion: 1, series: SERIES.map((s) => s.id), teasers });
   log(`wrote ${path.relative(APP_DIR, file)}`);
 }

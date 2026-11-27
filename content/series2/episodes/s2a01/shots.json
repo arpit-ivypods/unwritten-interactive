@@ -1,0 +1,1700 @@
+{
+  "id": "s2a01",
+  "series_id": "s2",
+  "title": "हवालात",
+  "made_by": "S7 Storyboard artist (Codex), 27 Nov 2026",
+  "sources": [
+    "script.hi.json",
+    "script.en.json",
+    "voice/manifest.jsonl",
+    "voice/review.json",
+    "../../bible.json",
+    "../../style.json",
+    "../../continuity.json",
+    "docs/decisions.md D-013, D-017, D-021, D-023, D-024, D-025"
+  ],
+  "lead_character_id": "nandini",
+  "frame_spec": "Vertical 9:16. Runner upscales all generated takes to 1440×2560.",
+  "summary": {
+    "shots": 34,
+    "frames_to_generate": 28,
+    "second_framings": 6,
+    "anchors": {
+      "A": "s03",
+      "B": "s07",
+      "C": "s12",
+      "D": "s14",
+      "E": "s20",
+      "F": "s32"
+    },
+    "estimated_seconds": {
+      "hi": 132.5,
+      "en": 130.99
+    }
+  },
+  "scenes": [
+    {
+      "id": "A",
+      "location": "talkies_lobby",
+      "light": "lobby_night",
+      "anchor": "s03",
+      "notes": "Same counter, same bulb, same side of the room. Do not copy the duo's wrist position or face visibility from the anchor.",
+      "beats": [
+        "b1",
+        "b2"
+      ]
+    },
+    {
+      "id": "B",
+      "location": "crossing_stall",
+      "light": "crossing_night",
+      "anchor": "s07",
+      "notes": "A night crossing with a single rail line and a pool of amber light. No daylight or thana interiors from the style plate.",
+      "beats": [
+        "b3"
+      ]
+    },
+    {
+      "id": "C",
+      "location": "real_thana",
+      "light": "thana_night",
+      "anchor": "s12",
+      "notes": "Thana at midnight, tube light only. Do not copy the exact position of Nandini, the helmet or the door from the anchor; use the state below.",
+      "beats": [
+        "b4",
+        "b5"
+      ]
+    },
+    {
+      "id": "D",
+      "location": "crossing_stall",
+      "light": "crossing_night_truck",
+      "anchor": "s14",
+      "notes": "Minutes later, the same rail crossing, now in the truck's headlights. Do not copy the direction of the truck, gate position, helmet, empty hands or the beam direction from the anchor when the state changes.",
+      "beats": [
+        "b6",
+        "b7"
+      ]
+    },
+    {
+      "id": "E",
+      "location": "real_thana",
+      "light": "thana_night",
+      "anchor": "s20",
+      "notes": "Back at the real thana after the truck. Do not copy the anchor's face, angle, desk contents, file, or bar states where the shot specifies a change. NO helmet visible at any point.",
+      "beats": [
+        "b8",
+        "b9",
+        "b10"
+      ]
+    },
+    {
+      "id": "F",
+      "location": "lane_doorway",
+      "light": "lane_night",
+      "anchor": "s32",
+      "notes": "Ramsevak's door, one small warm pool from a wall lamp within dark blue lane light. Do not copy the anchor's framing, door opening or face visibility. Preserve the same wood, blue-dark brick, single stone step and bicycle.",
+      "beats": [
+        "b11"
+      ]
+    }
+  ],
+  "generation_order": [
+    "s03",
+    "s07",
+    "s12",
+    "s14",
+    "s20",
+    "s32",
+    "s01",
+    "s02",
+    "s04",
+    "s05",
+    "s06",
+    "s08",
+    "s10",
+    "s11",
+    "s13",
+    "s15",
+    "s16",
+    "s18",
+    "s19",
+    "s23",
+    "s25",
+    "s27",
+    "s28",
+    "s29",
+    "s30",
+    "s31",
+    "s33",
+    "s34"
+  ],
+  "remap_notes": {
+    "lines_newly_mapped": {
+      "l28": "s29",
+      "l29": "s22",
+      "l30": "s25"
+    },
+    "cut_anchors": {
+      "l01": {
+        "from": "s01",
+        "to": "s02",
+        "word": {
+          "hi": "Police",
+          "en": "For"
+        },
+        "note": "Name alone over cuffs, rest of the arrest statement over her profile. Configure this in edit.json; onset is not measured here."
+      }
+    },
+    "supers_on_shots": {
+      "su_a1": "s32 (l26)"
+    },
+    "planned_durations": "Final accepted v4 voice-manifest lengths in each language after any reviewed head trim; stable highest eligible take with later row winning a tie, matching build_timeline.py. Split l01 estimated by spoken-character fraction. Per-language estimate includes scripted silence and 0.25 s between shared-shot lines. These are projections from accepted audio durations, not placed speech onsets.",
+    "deviations_from_beat_action": [
+      "s09 crops the outer bars out of s10’s bench still, implying the open lockup before the clang reveals the uncropped barred view. The camera move holds 1.3×.",
+      "s17 repeats the same opposing-hand slip exchange as s15, with a tighter move. The raised gate appears immediately afterward in s18, with its rise in sound.",
+      "s24 uses the moment after Nirala reaches the bars, framed in s19. The move avoids showing his feet or the bench, so the cut skips the rise and stays on his line.",
+      "The s11 clock gets 1 s just before l07 and the s13 empty doorway 1 s just after it. Keep the same total silence budget within b5.",
+      "s25 covers l18 and l30 with the same cuff insert as scripted, a prolonged deliberate move."
+    ],
+    "glimpse_boundaries": "s03 l03, s10, s12 l07 and s14 l08 are photographed with the compatible states. End Glimpse A on l08 before any pink slip or later scene; this board does not cut a glimpse."
+  },
+  "selected_voice_files": {
+    "hi": {
+      "l01": "voice/hi/l01.mp3",
+      "l02": "voice/hi/l02.mp3",
+      "l03": "voice/hi/l03.mp3",
+      "l04": "voice/hi/l04.mp3",
+      "l05": "voice/hi/l05.mp3",
+      "l06": "voice/hi/l06.mp3",
+      "l07": "voice/hi/l07.mp3",
+      "l08": "voice/hi/l08_t2.mp3",
+      "l09": "voice/hi/l09.mp3",
+      "l10": "voice/hi/l10.mp3",
+      "l11": "voice/hi/l11.mp3",
+      "l12": "voice/hi/l12.mp3",
+      "l13": "voice/hi/l13.c1.mp3",
+      "l14": "voice/hi/l14.mp3",
+      "l15": "voice/hi/l15.mp3",
+      "l29": "voice/hi/l29.c1.mp3",
+      "l16": "voice/hi/l16.mp3",
+      "l17": "voice/hi/l17.mp3",
+      "l18": "voice/hi/l18.mp3",
+      "l30": "voice/hi/l30.c1.mp3",
+      "l19": "voice/hi/l19.mp3",
+      "l20": "voice/hi/l20.c1.mp3",
+      "l21": "voice/hi/l21.c1.mp3",
+      "l22": "voice/hi/l22.mp3",
+      "l28": "voice/hi/l28.c1.mp3",
+      "l23": "voice/hi/l23.mp3",
+      "l24": "voice/hi/l24.mp3",
+      "l25": "voice/hi/l25.c1.mp3",
+      "l26": "voice/hi/l26_t2.mp3",
+      "l27": "voice/hi/l27.mp3"
+    },
+    "en": {
+      "l01": "voice/en/l01.mp3",
+      "l02": "voice/en/l02.mp3",
+      "l03": "voice/en/l03.mp3",
+      "l04": "voice/en/l04.mp3",
+      "l05": "voice/en/l05.mp3",
+      "l06": "voice/en/l06.mp3",
+      "l07": "voice/en/l07.mp3",
+      "l08": "voice/en/l08.mp3",
+      "l09": "voice/en/l09.mp3",
+      "l10": "voice/en/l10.mp3",
+      "l11": "voice/en/l11.mp3",
+      "l12": "voice/en/l12.mp3",
+      "l13": "voice/en/l13.c1.mp3",
+      "l14": "voice/en/l14.mp3",
+      "l15": "voice/en/l15.mp3",
+      "l29": "voice/en/l29.c1.mp3",
+      "l16": "voice/en/l16.mp3",
+      "l17": "voice/en/l17.mp3",
+      "l18": "voice/en/l18.mp3",
+      "l30": "voice/en/l30.c1.mp3",
+      "l19": "voice/en/l19.mp3",
+      "l20": "voice/en/l20.c1.mp3",
+      "l21": "voice/en/l21.c1.mp3",
+      "l22": "voice/en/l22.mp3",
+      "l28": "voice/en/l28.c1.mp3",
+      "l23": "voice/en/l23.mp3",
+      "l24": "voice/en/l24.mp3",
+      "l25": "voice/en/l25.c1.mp3",
+      "l26": "voice/en/l26.mp3",
+      "l27": "voice/en/l27.mp3"
+    }
+  },
+  "shots": [
+    {
+      "id": "s01",
+      "beat_id": "b1",
+      "scene": "A",
+      "location": "talkies_lobby",
+      "framing": "insert",
+      "action": "Low and level over the talkies booking counter. Nirala's two long khaki sleeves enter from picture-right, his wrists together, fingers just past the cuffs. Nandini's close-fitted sleeves enter from picture-left, closing the steel rings over both of his wrists. His palms stay angled down, and the desk is plain wood. No faces, no other hands. The lock click is the opening picture's event.",
+      "line_ids": [
+        "l01"
+      ],
+      "characters": [
+        "nandini",
+        "nirala"
+      ],
+      "light": "lobby_night",
+      "state": [
+        "Low and level over the talkies booking counter. Nirala's two long khaki sleeves enter from picture-right, his wrists together, fingers just past the cuffs. Nandini's close-fitted sleeves enter from picture-left, closing the steel rings over both of his wrists. His palms stay angled down, and the desk is plain wood. No faces, no other hands. The lock click is the opening picture's event."
+      ],
+      "generate": true,
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "camera_move": "push-in",
+      "silent_lead_s": 0.6,
+      "line_part": {
+        "l01": "head: सुधीर निराला। / Sudhir Nirala."
+      },
+      "voice_by_language_s": {
+        "hi": 1.01,
+        "en": 0.98
+      },
+      "voice_s": 1.01,
+      "duration_s": 1.8,
+      "refs": [
+        "<repo>/content/series2/refs/pair_nandini_nirala.png",
+        "<repo>/content/series2/refs/talkies_lobby.png",
+        "<repo>/content/series2/refs/handcuffs.png",
+        "<repo>/content/series2/episodes/s2a01/frames/s03.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved height line-up for NANDINI AND NIRALA. Match identity and relative size exactly, in the pose and lighting below.",
+        "Image 2 is the talkies lobby geography plate. Match its physical layout only; follow the LIGHT line and the precise current prop states below.",
+        "Image 3 is the approved prop sheet for One pair of steel handcuffs. Match the shape, color and materials only. Use its current position and state below.",
+        "Image 4 is the already checked scene anchor for drawing and geography. Same counter, same bulb, same side of the room. Do not copy the duo's wrist position or face visibility from the anchor."
+      ],
+      "prompt_file": "frames/prompts/s01.txt"
+    },
+    {
+      "id": "s02",
+      "beat_id": "b1",
+      "scene": "A",
+      "location": "talkies_lobby",
+      "framing": "medium close single",
+      "action": "Nandini on picture-left in profile facing right, gaze down, her far thumb finishing the cuff closure just within the center-right edge. Nirala is only an oversized sleeve. Two bars on her visible teal epaulette. Tight on her measured arrest statement; no pen or other props required if outside crop.",
+      "line_ids": [
+        "l01"
+      ],
+      "characters": [
+        "nandini"
+      ],
+      "light": "lobby_night",
+      "state": [
+        "Nandini on picture-left in profile facing right, gaze down, her far thumb finishing the cuff closure just within the center-right edge. Nirala is only an oversized sleeve. Two bars on her visible teal epaulette. Tight on her measured arrest statement; no pen or other props required if outside crop."
+      ],
+      "generate": true,
+      "subtitle_safe": true,
+      "sheet_faces": 1,
+      "camera_move": "push-in",
+      "silent_lead_s": 0,
+      "line_part": {
+        "l01": "rest: Police अफ़सर बनकर थाना चलाने के जुर्म में, आप under arrest हैं। / For posing as a police officer and running a thana, you are under arrest."
+      },
+      "voice_by_language_s": {
+        "hi": 4.91,
+        "en": 5.11
+      },
+      "voice_s": 5.11,
+      "duration_s": 5.3,
+      "refs": [
+        "<repo>/content/series2/refs/nandini.png",
+        "<repo>/content/series2/refs/talkies_lobby.png",
+        "<repo>/content/series2/refs/handcuffs.png",
+        "<repo>/content/series2/episodes/s2a01/frames/s03.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved character sheet for NANDINI. Match their face, wardrobe and build in the specified pose.",
+        "Image 2 is the talkies lobby geography plate. Match its physical layout only; follow the LIGHT line and the precise current prop states below.",
+        "Image 3 is the approved prop sheet for One pair of steel handcuffs. Match the shape, color and materials only. Use its current position and state below.",
+        "Image 4 is the already checked scene anchor for drawing and geography. Same counter, same bulb, same side of the room. Do not copy the duo's wrist position or face visibility from the anchor."
+      ],
+      "prompt_file": "frames/prompts/s02.txt"
+    },
+    {
+      "id": "s03",
+      "beat_id": "b1",
+      "scene": "A",
+      "location": "talkies_lobby",
+      "framing": "medium two-shot",
+      "action": "Level view over the end of the booking counter. Nandini picture-left, tall, profile facing right, empty hands with arms lowered; Nirala picture-right behind the counter, bowed just enough that the black peak stays dead level, brass medal on his left chest, cuffs on both wrists resting together on the desk. Hold the exact relative heights. Pushpa stays off camera. No wooden prop visible from this angle.",
+      "line_ids": [
+        "l02",
+        "l03"
+      ],
+      "characters": [
+        "nandini",
+        "nirala"
+      ],
+      "light": "lobby_night",
+      "state": [
+        "Level view over the end of the booking counter. Nandini picture-left, tall, profile facing right, empty hands with arms lowered; Nirala picture-right behind the counter, bowed just enough that the black peak stays dead level, brass medal on his left chest, cuffs on both wrists resting together on the desk. Hold the exact relative heights. Pushpa stays off camera. No wooden prop visible from this angle."
+      ],
+      "generate": true,
+      "subtitle_safe": true,
+      "sheet_faces": 2,
+      "camera_move": "push-in",
+      "silent_lead_s": 0,
+      "voice_by_language_s": {
+        "hi": 4.4,
+        "en": 4.32
+      },
+      "voice_s": 4.4,
+      "duration_s": 4.8,
+      "refs": [
+        "<repo>/content/series2/refs/pair_nandini_nirala.png",
+        "<repo>/content/series2/refs/talkies_lobby.png",
+        "<repo>/content/series2/refs/handcuffs.png",
+        "<repo>/content/series2/refs/real_thana.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved height line-up for NANDINI AND NIRALA. Match identity and relative size exactly, in the pose and lighting below.",
+        "Image 2 is the talkies lobby geography plate. Match its physical layout only; follow the LIGHT line and the precise current prop states below.",
+        "Image 3 is the approved prop sheet for One pair of steel handcuffs. Match the shape, color and materials only. Use its current position and state below.",
+        "Image 4 is the series style frame. Match only its rendering. Do not copy its room, furniture, props or light; the light comes from the LIGHT line. No real-thana fan, shield, almirah, clock, barred door or daylight inside this separate location."
+      ],
+      "scene_anchor_of": "A",
+      "prompt_file": "frames/prompts/s03.txt"
+    },
+    {
+      "id": "s04",
+      "beat_id": "b2",
+      "scene": "A",
+      "location": "talkies_lobby",
+      "framing": "insert",
+      "action": "Counter-level insert only: the carved wooden theatrical revolver is seen in flat strict side profile, laid horizontally on the wood and half enclosed in a small plain cloth evidence bag. Its visible silhouette reads carved wood. Nirala's sleeve ends and steel-cuffed hands come in from picture-right; one fresh red wax blob sits on the bag knot. A short red wax stick and unbranded matchbox lie flat to its left; no flame, no tag lettering, no faces, no exposed barrel pointing towards camera or person.",
+      "line_ids": [
+        "l04"
+      ],
+      "characters": [
+        "nirala"
+      ],
+      "light": "lobby_night",
+      "state": [
+        "Counter-level insert only: the carved wooden theatrical revolver is seen in flat strict side profile, laid horizontally on the wood and half enclosed in a small plain cloth evidence bag. Its visible silhouette reads carved wood. Nirala's sleeve ends and steel-cuffed hands come in from picture-right; one fresh red wax blob sits on the bag knot. A short red wax stick and unbranded matchbox lie flat to its left; no flame, no tag lettering, no faces, no exposed barrel pointing towards camera or person."
+      ],
+      "generate": true,
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "camera_move": "push-in",
+      "silent_lead_s": 0,
+      "voice_by_language_s": {
+        "hi": 3.6,
+        "en": 3.76
+      },
+      "voice_s": 3.76,
+      "duration_s": 3.9,
+      "refs": [
+        "<repo>/content/series2/refs/nirala.png",
+        "<repo>/content/series2/refs/talkies_lobby.png",
+        "<repo>/content/series2/refs/wooden_revolver.png",
+        "<repo>/content/series2/refs/handcuffs.png",
+        "<repo>/content/series2/episodes/s2a01/frames/s03.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved character sheet for NIRALA. Match their face, wardrobe and build in the specified pose.",
+        "Image 2 is the talkies lobby geography plate. Match its physical layout only; follow the LIGHT line and the precise current prop states below.",
+        "Image 3 is the approved prop sheet for Carved wooden revolver and its holster. Match the shape, color and materials only. Use its current position and state below.",
+        "Image 4 is the approved prop sheet for One pair of steel handcuffs. Match the shape, color and materials only. Use its current position and state below.",
+        "Image 5 is the already checked scene anchor for drawing and geography. Same counter, same bulb, same side of the room. Do not copy the duo's wrist position or face visibility from the anchor."
+      ],
+      "prompt_file": "frames/prompts/s04.txt"
+    },
+    {
+      "id": "s05",
+      "beat_id": "b2",
+      "scene": "A",
+      "location": "talkies_lobby",
+      "framing": "medium two-shot",
+      "action": "Nandini picture-left with blue pen in her right hand and other hand pinning blank tag against the desk; Nirala picture-right, cap level and medal in place, cuffs joined, watching the tag rather than her. The sealed plain cloth bag is beside the tag, wooden prop entirely inside; brim stays below her crown, sleeves overlap his knuckles. Only two faces.",
+      "line_ids": [
+        "l05"
+      ],
+      "characters": [
+        "nandini",
+        "nirala"
+      ],
+      "light": "lobby_night",
+      "state": [
+        "Nandini picture-left with blue pen in her right hand and other hand pinning blank tag against the desk; Nirala picture-right, cap level and medal in place, cuffs joined, watching the tag rather than her. The sealed plain cloth bag is beside the tag, wooden prop entirely inside; brim stays below her crown, sleeves overlap his knuckles. Only two faces."
+      ],
+      "generate": true,
+      "subtitle_safe": true,
+      "sheet_faces": 2,
+      "camera_move": "push-in",
+      "silent_lead_s": 0,
+      "voice_by_language_s": {
+        "hi": 2.16,
+        "en": 1.92
+      },
+      "voice_s": 2.16,
+      "duration_s": 2.3,
+      "refs": [
+        "<repo>/content/series2/refs/pair_nandini_nirala.png",
+        "<repo>/content/series2/refs/talkies_lobby.png",
+        "<repo>/content/series2/refs/handcuffs.png",
+        "<repo>/content/series2/episodes/s2a01/frames/s03.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved height line-up for NANDINI AND NIRALA. Match identity and relative size exactly, in the pose and lighting below.",
+        "Image 2 is the talkies lobby geography plate. Match its physical layout only; follow the LIGHT line and the precise current prop states below.",
+        "Image 3 is the approved prop sheet for One pair of steel handcuffs. Match the shape, color and materials only. Use its current position and state below.",
+        "Image 4 is the already checked scene anchor for drawing and geography. Same counter, same bulb, same side of the room. Do not copy the duo's wrist position or face visibility from the anchor."
+      ],
+      "prompt_file": "frames/prompts/s05.txt"
+    },
+    {
+      "id": "s06",
+      "beat_id": "b2",
+      "scene": "A",
+      "location": "talkies_lobby",
+      "framing": "wide back silhouette",
+      "action": "Side silhouette against the booking counter at blackout. Pushpa picture-left in the plum cardigan, orange wool needles crossing her bun, red cloth-tied file under the free arm and a small sealed bag in the same hand near torso, the reaching hand at the bulb switch. The bulb has JUST gone dark, no halo; the three figures are simple readable deep-blue shapes with only their distinctive outlines. Nandini is tall and straight, Nirala the shorter peaked-cap silhouette with wrists joined. Three figures, zero faces. The helmet is already carried out of frame or hidden by the counter edge.",
+      "line_ids": [],
+      "characters": [
+        "pushpa",
+        "nandini",
+        "nirala"
+      ],
+      "light": "lobby_dark",
+      "state": [
+        "Side silhouette against the booking counter at blackout. Pushpa picture-left in the plum cardigan, orange wool needles crossing her bun, red cloth-tied file under the free arm and a small sealed bag in the same hand near torso, the reaching hand at the bulb switch. The bulb has JUST gone dark, no halo; the three figures are simple readable deep-blue shapes with only their distinctive outlines. Nandini is tall and straight, Nirala the shorter peaked-cap silhouette with wrists joined. Three figures, zero faces. The helmet is already carried out of frame or hidden by the counter edge."
+      ],
+      "generate": true,
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "camera_move": "hold",
+      "silent_lead_s": 0,
+      "silent_hold_s": 1.5,
+      "voice_by_language_s": {
+        "hi": 0,
+        "en": 0
+      },
+      "voice_s": 0,
+      "duration_s": 1.5,
+      "refs": [
+        "<repo>/content/series2/refs/pair_nandini_pushpa.png",
+        "<repo>/content/series2/refs/nirala.png",
+        "<repo>/content/series2/refs/talkies_lobby.png",
+        "<repo>/content/series2/refs/thick_file.png",
+        "<repo>/content/series2/episodes/s2a01/frames/s03.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved height line-up for PUSHPA AND NANDINI. Match identity and relative size exactly, in the pose and lighting below.",
+        "Image 2 is the approved character sheet for NIRALA. Match their face, wardrobe and build in the specified pose.",
+        "Image 3 is the talkies lobby geography plate. Match its physical layout only; follow the LIGHT line and the precise current prop states below.",
+        "Image 4 is the approved prop sheet for The thick file in red cloth. Match the shape, color and materials only. Use its current position and state below.",
+        "Image 5 is the already checked scene anchor for drawing and geography. Same counter, same bulb, same side of the room. Do not copy the duo's wrist position or face visibility from the anchor."
+      ],
+      "prompt_file": "frames/prompts/s06.txt"
+    },
+    {
+      "id": "s07",
+      "beat_id": "b3",
+      "scene": "B",
+      "location": "crossing_stall",
+      "framing": "wide silhouette",
+      "action": "Wide night view of one railway line and its small signal lamp. We see exactly three people from directly behind as they cross the rails away from camera. Picture-left, Nandini is tall and upright. Her two pressed khaki sleeves reach all the way to both wrists; cuffs are buttoned at her wrists and no bare forearm shows. The cherry-red helmet is snug under her left elbow on the outside edge of her silhouette (picture-left in this rear view). Center, Nirala is slight and shorter, with the peaked cap dead level. Both elbows bend forward toward his unseen abdomen. His cuffed right and left wrists are joined in FRONT of his waist, completely occluded by his torso from this strictly rear angle. Both forearms and both hands are fully hidden; his back, belt and hips are completely clear of hands, arms or handcuffs. Picture-right, the compact Pushpa silhouette has two crossed needles visible above the bun. No readable faces, no truck and no papers. Readable rail highlights and silhouettes against deep blue, with the lower fifth kept quiet.",
+      "line_ids": [],
+      "characters": [
+        "nandini",
+        "nirala",
+        "pushpa"
+      ],
+      "light": "crossing_night",
+      "state": [
+        "Nirala’s cuffs remain on both wrists in front of his body. Show only upper arms leading forward; neither forearm nor hand shows from behind. Nandini wears both full-length sleeves buttoned at the wrist; helmet under the arm at picture-left in this rear view. All three turn their backs toward camera. Same single track at night."
+      ],
+      "generate": true,
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "camera_move": "hold",
+      "silent_lead_s": 2.0,
+      "voice_by_language_s": {
+        "hi": 0,
+        "en": 0
+      },
+      "voice_s": 0,
+      "duration_s": 2.0,
+      "refs": [
+        "<repo>/content/series2/refs/pair_nandini_nirala.png",
+        "<repo>/content/series2/refs/pushpa.png",
+        "<repo>/content/series2/refs/crossing_stall.png",
+        "<repo>/content/series2/refs/red_helmet.png",
+        "<repo>/content/series2/refs/real_thana.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved height line-up for NANDINI AND NIRALA. Match identity and relative size exactly, in the pose and lighting below.",
+        "Image 2 is the approved character sheet for PUSHPA. Match their face, wardrobe and build in the specified pose.",
+        "Image 3 is the crossing stall geography plate. Match its physical layout only; follow the LIGHT line and the precise current prop states below.",
+        "Image 4 is the approved prop sheet for Nandini's cherry-red scooter helmet. Match the shape, color and materials only. Use its current position and state below.",
+        "Image 5 is the series style frame. Match only its rendering. Do not copy its room, furniture, props or light; the light comes from the LIGHT line. No real-thana fan, shield, almirah, clock, barred door or daylight inside this separate location."
+      ],
+      "scene_anchor_of": "B",
+      "prompt_file": "frames/prompts/s07.txt"
+    },
+    {
+      "id": "s08",
+      "beat_id": "b4",
+      "scene": "C",
+      "location": "real_thana",
+      "framing": "medium over shoulder",
+      "action": "From the back of the real thana into a tight layered composition. Open room beyond, cobwebbed grey barred lockup door filling picture-right with a rusted padlock at waist height being worked by Pushpa's two hands. Plum sleeves identify her; her face is hidden. Nandini is seen from behind to picture-left, just setting her cherry-red helmet on the edge of the SHO's writing desk. No file at this angle.",
+      "line_ids": [
+        "l06"
+      ],
+      "characters": [
+        "pushpa",
+        "nandini"
+      ],
+      "light": "thana_night",
+      "state": [
+        "From the back of the real thana into a tight layered composition. Open room beyond, cobwebbed grey barred lockup door filling picture-right with a rusted padlock at waist height being worked by Pushpa's two hands. Plum sleeves identify her; her face is hidden. Nandini is seen from behind to picture-left, just setting her cherry-red helmet on the edge of the SHO's writing desk. No file at this angle."
+      ],
+      "generate": true,
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "camera_move": "push-in",
+      "silent_lead_s": 0,
+      "voice_by_language_s": {
+        "hi": 5.6,
+        "en": 4.88
+      },
+      "voice_s": 5.6,
+      "duration_s": 5.7,
+      "refs": [
+        "<repo>/content/series2/refs/pair_nandini_pushpa.png",
+        "<repo>/content/series2/refs/real_thana.png",
+        "<repo>/content/series2/refs/red_helmet.png",
+        "<repo>/content/series2/episodes/s2a01/frames/s12.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved height line-up for PUSHPA AND NANDINI. Match identity and relative size exactly, in the pose and lighting below.",
+        "Image 2 is the real thana geography plate. Match its physical layout only; follow the LIGHT line and the precise current prop states below.",
+        "Image 3 is the approved prop sheet for Nandini's cherry-red scooter helmet. Match the shape, color and materials only. Use its current position and state below.",
+        "Image 4 is the already checked scene anchor for drawing and geography. Thana at midnight, tube light only. Do not copy the exact position of Nandini, the helmet or the door from the anchor; use the state below."
+      ],
+      "prompt_file": "frames/prompts/s08.txt"
+    },
+    {
+      "id": "s09",
+      "beat_id": "b4",
+      "scene": "C",
+      "location": "real_thana",
+      "framing": "medium single",
+      "action": "Closer on Nirala on the bench: a centered crop excludes the two edge bars. He sits upright, cap level and cuffs together, just after the sound of him dusting the bench. Seen before the barred-door clang, this reads as inside the still-open cell; no change of face, pose, location or prop in the source.",
+      "line_ids": [],
+      "characters": [
+        "nirala"
+      ],
+      "light": "thana_night",
+      "state": [
+        "Closer on Nirala on the bench: a centered crop excludes the two edge bars. He sits upright, cap level and cuffs together, just after the sound of him dusting the bench. Seen before the barred-door clang, this reads as inside the still-open cell; no change of face, pose, location or prop in the source."
+      ],
+      "generate": false,
+      "subtitle_safe": true,
+      "sheet_faces": 1,
+      "camera_move": "custom",
+      "silent_lead_s": 0,
+      "silent_hold_s": 1.2,
+      "voice_by_language_s": {
+        "hi": 0,
+        "en": 0
+      },
+      "voice_s": 0,
+      "duration_s": 1.2,
+      "frame_source": "s10",
+      "move": {
+        "preset": "custom",
+        "easing": "ease-in-out",
+        "to": {
+          "scale": 1.3,
+          "x": 0,
+          "y": 0
+        },
+        "from": {
+          "scale": 1.3,
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "id": "s10",
+      "beat_id": "b4",
+      "scene": "C",
+      "location": "real_thana",
+      "framing": "medium single through bars",
+      "action": "Inside the lockup corridor: center Nirala formally upright on the bare wooden bench, cap dead level, eyes readable, medal pinned, cuffs joined on his knees, a dark handkerchief beside him. Show the steel barred door as two prominent dark verticals and the door edge with its shut latch, confined to the outermost 10 percent of both sides; keep the central 76 percent between them completely unobstructed so a flat 1.30x center crop can read as an open-cell insert when the editor uses it earlier. Empty corridor, one tube, no helmet. This uncropped view with bars and a shut latch is the glimpse-compatible arrest image.",
+      "line_ids": [],
+      "characters": [
+        "nirala"
+      ],
+      "light": "thana_night",
+      "state": [
+        "Inside the lockup corridor: center Nirala formally upright on the bare wooden bench, cap dead level, eyes readable, medal pinned, cuffs joined on his knees, a dark handkerchief beside him. Show the steel barred door as two prominent dark verticals and the door edge with its shut latch, confined to the outermost 10 percent of both sides; keep the central 76 percent between them completely unobstructed so a flat 1.30x center crop can read as an open-cell insert when the editor uses it earlier. Empty corridor, one tube, no helmet. This uncropped view with bars and a shut latch is the glimpse-compatible arrest image."
+      ],
+      "generate": true,
+      "subtitle_safe": true,
+      "sheet_faces": 1,
+      "camera_move": "push-in",
+      "silent_lead_s": 0,
+      "silent_hold_s": 1.3,
+      "voice_by_language_s": {
+        "hi": 0,
+        "en": 0
+      },
+      "voice_s": 0,
+      "duration_s": 1.3,
+      "refs": [
+        "<repo>/content/series2/refs/nirala.png",
+        "<repo>/content/series2/refs/real_thana.png",
+        "<repo>/content/series2/refs/handcuffs.png",
+        "<repo>/content/series2/episodes/s2a01/frames/s12.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved character sheet for NIRALA. Match their face, wardrobe and build in the specified pose.",
+        "Image 2 is the real thana geography plate. Match its physical layout only; follow the LIGHT line and the precise current prop states below.",
+        "Image 3 is the approved prop sheet for One pair of steel handcuffs. Match the shape, color and materials only. Use its current position and state below.",
+        "Image 4 is the already checked scene anchor for drawing and geography. Thana at midnight, tube light only. Do not copy the exact position of Nandini, the helmet or the door from the anchor; use the state below."
+      ],
+      "prompt_file": "frames/prompts/s10.txt"
+    },
+    {
+      "id": "s11",
+      "beat_id": "b5",
+      "scene": "C",
+      "location": "real_thana",
+      "framing": "insert",
+      "action": "Wall-clock close: plain off-white circular face, no numerals, no branding, simple ticks only. TWO separate hands aligned toward twelve at the top, a fine offset lets each hand read. Dim thana wall behind, no shield, no fan, no other objects. Do not copy the one-hand depiction from any plate.",
+      "line_ids": [],
+      "characters": [],
+      "light": "thana_night",
+      "state": [
+        "Wall-clock close: plain off-white circular face, no numerals, no branding, simple ticks only. TWO separate hands aligned toward twelve at the top, a fine offset lets each hand read. Dim thana wall behind, no shield, no fan, no other objects. Do not copy the one-hand depiction from any plate."
+      ],
+      "generate": true,
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "camera_move": "hold",
+      "silent_lead_s": 0,
+      "silent_hold_s": 1.0,
+      "voice_by_language_s": {
+        "hi": 0,
+        "en": 0
+      },
+      "voice_s": 0,
+      "duration_s": 1.0,
+      "refs": [
+        "<repo>/content/series2/refs/real_thana.png",
+        "<repo>/content/series2/episodes/s2a01/frames/s12.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the real thana geography plate. Match its physical layout only; follow the LIGHT line and the precise current prop states below.",
+        "Image 2 is the already checked scene anchor for drawing and geography. Thana at midnight, tube light only. Do not copy the exact position of Nandini, the helmet or the door from the anchor; use the state below."
+      ],
+      "prompt_file": "frames/prompts/s11.txt"
+    },
+    {
+      "id": "s12",
+      "beat_id": "b5",
+      "scene": "C",
+      "location": "real_thana",
+      "framing": "tight corridor two-shot",
+      "action": "Camera on the free public corridor side of the locked cell, chest-to-crown two-shot. Layer 1, closest to lens and in the unobstructed corridor: Nandini on picture-left in three-quarter profile facing picture-right, cold tube light on her ponytail. Her near khaki shoulder reaches across the center of the image and visibly occludes the edge of the central grey steel bar, so the bar disappears behind her shoulder. No bar crosses her body, face or silhouette. Layer 2, behind her in picture-center/right: one or two crisp steel verticals in the locked cell entrance, clearly in front of only the man at picture-right. Layer 3, farther from lens, inside the cell: Nirala on picture-right, looking up toward the off-camera clock. Through the gap his face is unobstructed, peaked cap strictly level, and brass medal visible on his chest. If his hands are low enough to fit the crop, both wrists are cuffed together in front of him; hide both below the crop if the gesture is unreadable. No clock, fan, padlock, desk, helmet, sign, shield or daylight in this crop.",
+      "line_ids": [
+        "l07"
+      ],
+      "characters": [
+        "nandini",
+        "nirala"
+      ],
+      "light": "thana_night",
+      "state": [
+        "Nandini stands outside in the unlocked public corridor with empty hands. Her foreground shoulder masks the nearest vertical behind her. Nirala is farther away inside the locked cell. One or two bars separate him from the camera and Nandini. His cuffs are linked across the front of both his wrists, whether those wrists fit the crop or remain out of view. His cap is level and his medal stays on."
+      ],
+      "generate": true,
+      "subtitle_safe": true,
+      "sheet_faces": 2,
+      "camera_move": "push-in",
+      "silent_lead_s": 0,
+      "voice_by_language_s": {
+        "hi": 3.12,
+        "en": 2.96
+      },
+      "voice_s": 3.12,
+      "duration_s": 3.3,
+      "refs": [
+        "<repo>/content/series2/refs/pair_nandini_nirala.png",
+        "<repo>/content/series2/refs/handcuffs.png",
+        "<repo>/content/series2/refs/real_thana.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved height line-up for NANDINI AND NIRALA. Match identity and relative size exactly, in the pose and lighting below.",
+        "Image 2 is the approved prop sheet for One pair of steel handcuffs. Match the shape, color and materials only. Use its current position and state below.",
+        "Image 3 is the series style frame. Match only its rendering. Do not copy its room, furniture, props or light; the light comes from the LIGHT line. This is also the geography plate for this thana; use the room layout, with only the night lighting specified below."
+      ],
+      "scene_anchor_of": "C",
+      "prompt_file": "frames/prompts/s12.txt"
+    },
+    {
+      "id": "s13",
+      "beat_id": "b5",
+      "scene": "C",
+      "location": "real_thana",
+      "framing": "tight empty doorway, straight on",
+      "action": "Face the empty front doorway straight on from inside the real thana at night. Frame just the lower and middle span of the open doorway, with both warm-grey door jambs forming plain vertical bands at the sides and continuing out of the top edge. The top of the picture is below the upper door lintel, so the lintel and all wall space above it are entirely out of frame. Inside the opening is a flat, empty night-navy yard. A pale green-white patch of the indoor tube light falls across the stone threshold and the foreground floor. The light source itself is off camera. Featureless wall, doorjambs, threshold and empty yard are the only elements. No clock, fan, desk, objects, figure or helmet. No daytime light.",
+      "line_ids": [],
+      "characters": [],
+      "light": "thana_night",
+      "state": [
+        "Post-exit hold. Nandini has left with the helmet. The front door is open onto the empty night yard. The architecture alone marks the set. Do not borrow the clock, fan, desk, fixtures, objects or any person from either reference. All wall space above the opening stays out of frame."
+      ],
+      "generate": true,
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "camera_move": "hold",
+      "silent_lead_s": 0,
+      "silent_hold_s": 1.0,
+      "voice_by_language_s": {
+        "hi": 0,
+        "en": 0
+      },
+      "voice_s": 0,
+      "duration_s": 1.0,
+      "refs": [
+        "<repo>/content/series2/refs/real_thana.png",
+        "<repo>/content/series2/episodes/s2a01/frames/s12.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the real thana geography plate. Match its physical layout only; follow the LIGHT line and the precise current prop states below.",
+        "Image 2 is the already checked scene anchor for drawing and geography. Thana at midnight, tube light only. Do not copy the exact position of Nandini, the helmet or the door from the anchor; use the state below."
+      ],
+      "prompt_file": "frames/prompts/s13.txt"
+    },
+    {
+      "id": "s14",
+      "beat_id": "b6",
+      "scene": "D",
+      "location": "crossing_stall",
+      "framing": "wide",
+      "action": "Night at the rail crossing as seen from low eye level, Nandini centered in front of the truck and three-quarter frontal, her empty right palm raised on picture-left at chest height; her cherry-red helmet hangs from her left hand on picture-right. Red-and-white striped gate arm lowered across lane behind her; dulled ochre truck cab behind the arm has two headlamps on, a high grey-tarp load, and a completely blank number plate. Truck faces the lens, Nandini looks past camera toward the driver. One face, no pink slip yet. Headlight cones softly edged, flat outlines everywhere else.",
+      "line_ids": [
+        "l08"
+      ],
+      "characters": [
+        "nandini"
+      ],
+      "light": "crossing_night_truck",
+      "state": [
+        "Night at the rail crossing as seen from low eye level, Nandini centered in front of the truck and three-quarter frontal, her empty right palm raised on picture-left at chest height; her cherry-red helmet hangs from her left hand on picture-right. Red-and-white striped gate arm lowered across lane behind her; dulled ochre truck cab behind the arm has two headlamps on, a high grey-tarp load, and a completely blank number plate. Truck faces the lens, Nandini looks past camera toward the driver. One face, no pink slip yet. Headlight cones softly edged, flat outlines everywhere else."
+      ],
+      "generate": true,
+      "subtitle_safe": true,
+      "sheet_faces": 1,
+      "camera_move": "push-in",
+      "silent_lead_s": 1.0,
+      "voice_by_language_s": {
+        "hi": 2.08,
+        "en": 2.0
+      },
+      "voice_s": 2.08,
+      "duration_s": 3.2,
+      "refs": [
+        "<repo>/content/series2/refs/nandini.png",
+        "<repo>/content/series2/refs/crossing_stall.png",
+        "<repo>/content/series2/refs/red_helmet.png",
+        "<repo>/content/series2/refs/truck.png",
+        "<repo>/content/series2/refs/real_thana.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved character sheet for NANDINI. Match their face, wardrobe and build in the specified pose.",
+        "Image 2 is the crossing stall geography plate. Match its physical layout only; follow the LIGHT line and the precise current prop states below.",
+        "Image 3 is the approved prop sheet for Nandini's cherry-red scooter helmet. Match the shape, color and materials only. Use its current position and state below.",
+        "Image 4 is the approved prop sheet for The one truck design. Match the shape, color and materials only. Use its current position and state below.",
+        "Image 5 is the series style frame. Match only its rendering. Do not copy its room, furniture, props or light; the light comes from the LIGHT line. No real-thana fan, shield, almirah, clock, barred door or daylight inside this separate location."
+      ],
+      "scene_anchor_of": "D",
+      "prompt_file": "frames/prompts/s14.txt"
+    },
+    {
+      "id": "s15",
+      "beat_id": "b6",
+      "scene": "D",
+      "location": "crossing_stall",
+      "framing": "insert",
+      "action": "Tight enough to show just the ochre edge of the cab window and a driver's plain sleeve coming from picture-right. Nandini's uniform sleeve enters low picture-left. Both hands meet on opposite corners of the same blank pink postcard-sized slip, slightly creased, facing lens and riding central above subtitle space. All fingers clear of the blank signature/stamp field, no faces, no gate visible, no number plate. The truck is stationary at this instant.",
+      "line_ids": [
+        "l09"
+      ],
+      "characters": [
+        "nandini"
+      ],
+      "light": "crossing_night_truck",
+      "state": [
+        "Tight enough to show just the ochre edge of the cab window and a driver's plain sleeve coming from picture-right. Nandini's uniform sleeve enters low picture-left. Both hands meet on opposite corners of the same blank pink postcard-sized slip, slightly creased, facing lens and riding central above subtitle space. All fingers clear of the blank signature/stamp field, no faces, no gate visible, no number plate. The truck is stationary at this instant."
+      ],
+      "generate": true,
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "camera_move": "push-in",
+      "silent_lead_s": 0,
+      "voice_by_language_s": {
+        "hi": 6.16,
+        "en": 6.24
+      },
+      "voice_s": 6.24,
+      "duration_s": 6.4,
+      "overlay": {
+        "id": "ov_slip_signature",
+        "surface": "blank pink slip at center, 40–62% down; measure the actual four corners in frame review"
+      },
+      "refs": [
+        "<repo>/content/series2/refs/nandini.png",
+        "<repo>/content/series2/refs/crossing_stall.png",
+        "<repo>/content/series2/refs/movement_slip.png",
+        "<repo>/content/series2/refs/truck.png",
+        "<repo>/content/series2/episodes/s2a01/frames/s14.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved character sheet for NANDINI. Match their face, wardrobe and build in the specified pose.",
+        "Image 2 is the crossing stall geography plate. Match its physical layout only; follow the LIGHT line and the precise current prop states below.",
+        "Image 3 is the approved prop sheet for Pink movement slip. Match the shape, color and materials only. Use its current position and state below.",
+        "Image 4 is the approved prop sheet for The one truck design. Match the shape, color and materials only. Use its current position and state below.",
+        "Image 5 is the already checked scene anchor for drawing and geography. Minutes later, the same rail crossing, now in the truck's headlights. Do not copy the direction of the truck, gate position, helmet, empty hands or the beam direction from the anchor when the state changes."
+      ],
+      "prompt_file": "frames/prompts/s15.txt"
+    },
+    {
+      "id": "s16",
+      "beat_id": "b6",
+      "scene": "D",
+      "location": "crossing_stall",
+      "framing": "close single",
+      "action": "Tight front three-quarter on Nandini, her gaze lowered at the top edge of the plain pink slip held in her right hand at the lower-left of the composition. Her face reads in two flat amber headlight bands from below; deep-blue backdrop. Helmet and gate outside crop, no writing on slip. Give her a still, neutral expression.",
+      "line_ids": [
+        "l10"
+      ],
+      "characters": [
+        "nandini"
+      ],
+      "light": "crossing_night_truck",
+      "state": [
+        "Tight front three-quarter on Nandini, her gaze lowered at the top edge of the plain pink slip held in her right hand at the lower-left of the composition. Her face reads in two flat amber headlight bands from below; deep-blue backdrop. Helmet and gate outside crop, no writing on slip. Give her a still, neutral expression."
+      ],
+      "generate": true,
+      "subtitle_safe": true,
+      "sheet_faces": 1,
+      "camera_move": "push-in",
+      "silent_lead_s": 0,
+      "voice_by_language_s": {
+        "hi": 1.6,
+        "en": 1.76
+      },
+      "voice_s": 1.76,
+      "duration_s": 1.9,
+      "refs": [
+        "<repo>/content/series2/refs/nandini.png",
+        "<repo>/content/series2/refs/crossing_stall.png",
+        "<repo>/content/series2/refs/movement_slip.png",
+        "<repo>/content/series2/episodes/s2a01/frames/s14.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved character sheet for NANDINI. Match their face, wardrobe and build in the specified pose.",
+        "Image 2 is the crossing stall geography plate. Match its physical layout only; follow the LIGHT line and the precise current prop states below.",
+        "Image 3 is the approved prop sheet for Pink movement slip. Match the shape, color and materials only. Use its current position and state below.",
+        "Image 4 is the already checked scene anchor for drawing and geography. Minutes later, the same rail crossing, now in the truck's headlights. Do not copy the direction of the truck, gate position, helmet, empty hands or the beam direction from the anchor when the state changes."
+      ],
+      "prompt_file": "frames/prompts/s16.txt"
+    },
+    {
+      "id": "s17",
+      "beat_id": "b7",
+      "scene": "D",
+      "location": "crossing_stall",
+      "framing": "insert",
+      "action": "Same exact shared hand-off pose as s15, now returning rather than receiving: cut tighter toward the driver's grip, only card and the two opposing hands. The gate's raise and gear engagement are heard; gate remains outside the insert.",
+      "line_ids": [],
+      "characters": [
+        "nandini"
+      ],
+      "light": "crossing_night_truck",
+      "state": [
+        "Same exact shared hand-off pose as s15, now returning rather than receiving: cut tighter toward the driver's grip, only card and the two opposing hands. The gate's raise and gear engagement are heard; gate remains outside the insert."
+      ],
+      "generate": false,
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "camera_move": "custom",
+      "silent_lead_s": 2.0,
+      "voice_by_language_s": {
+        "hi": 0,
+        "en": 0
+      },
+      "voice_s": 0,
+      "duration_s": 2.0,
+      "frame_source": "s15",
+      "move": {
+        "preset": "custom",
+        "easing": "ease-in-out",
+        "to": {
+          "scale": 1.28,
+          "x": 0.2,
+          "y": 0
+        },
+        "from": {
+          "scale": 1.15,
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "id": "s18",
+      "beat_id": "b7",
+      "scene": "D",
+      "location": "crossing_stall",
+      "framing": "wide back",
+      "action": "Reverse to the empty railway tracks running away from us. Nandini is seen from behind on picture-left, helmet hanging from her left hand on the same side in this back view, right hand empty. The truck is small and moving away on the far side of the rails at picture-right; tiny flat red tail lamps on a dull rear gate beneath the grey-canvas load. The gate arm is raised, no headlights into lens, no slip. Let the two dots carry the hold.",
+      "line_ids": [
+        "l11"
+      ],
+      "characters": [
+        "nandini"
+      ],
+      "light": "crossing_night_truck",
+      "state": [
+        "Reverse to the empty railway tracks running away from us. Nandini is seen from behind on picture-left, helmet hanging from her left hand on the same side in this back view, right hand empty. The truck is small and moving away on the far side of the rails at picture-right; tiny flat red tail lamps on a dull rear gate beneath the grey-canvas load. The gate arm is raised, no headlights into lens, no slip. Let the two dots carry the hold."
+      ],
+      "generate": true,
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "camera_move": "hold",
+      "silent_lead_s": 0,
+      "voice_by_language_s": {
+        "hi": 4.8,
+        "en": 4.24
+      },
+      "voice_s": 4.8,
+      "duration_s": 4.9,
+      "refs": [
+        "<repo>/content/series2/refs/nandini.png",
+        "<repo>/content/series2/refs/crossing_stall.png",
+        "<repo>/content/series2/refs/red_helmet.png",
+        "<repo>/content/series2/refs/truck.png",
+        "<repo>/content/series2/episodes/s2a01/frames/s14.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved character sheet for NANDINI. Match their face, wardrobe and build in the specified pose.",
+        "Image 2 is the crossing stall geography plate. Match its physical layout only; follow the LIGHT line and the precise current prop states below.",
+        "Image 3 is the approved prop sheet for Nandini's cherry-red scooter helmet. Match the shape, color and materials only. Use its current position and state below.",
+        "Image 4 is the approved prop sheet for The one truck design. Match the shape, color and materials only. Use its current position and state below.",
+        "Image 5 is the already checked scene anchor for drawing and geography. Minutes later, the same rail crossing, now in the truck's headlights. Do not copy the direction of the truck, gate position, helmet, empty hands or the beam direction from the anchor when the state changes."
+      ],
+      "prompt_file": "frames/prompts/s18.txt"
+    },
+    {
+      "id": "s19",
+      "beat_id": "b8",
+      "scene": "E",
+      "location": "real_thana",
+      "framing": "medium close single",
+      "action": "Medium close single through the LOCKED cell from the public corridor. On picture-right Nirala faces picture-left toward unseen Nandini. His peaked cap is level, three bars show clearly on the near shoulder, and his single brass medal stays on his left chest (picture-right on his body). The camera looks ACROSS the steel foreground bars and INTO the cell. The bars are between the lens and Nirala. He curls both hands around a single vertical steel bar near his chest, thumbs visible against the bar, knuckles barely out of his long sleeves, and the steel cuffs on both wrists joined with a short, readable chain. Behind him, a cool, featureless inner cell wall fills the entire background, with at most the edge of the bare bench tucked low. The wall has no openings or mounted objects. There is no view into the public thana: no desk, phone, shield, doorway, any clock, fan, other furniture or person. Leave clean headroom above the level cap for a centered reuse up to 1.28×. Keep the cuff-and-bar grip well above subtitle space.",
+      "line_ids": [
+        "l12"
+      ],
+      "characters": [
+        "nirala"
+      ],
+      "light": "thana_night",
+      "state": [
+        "Nirala is inside the locked cell, behind the foreground bars and facing picture-left. Both cuffed wrists are joined below his two hands gripping the same bar. Cap level, medal on and holster below crop. Interior cool plaster and optional bare bench only. Nandini, the helmet and all public-room furnishings are outside the frame."
+      ],
+      "generate": true,
+      "subtitle_safe": true,
+      "sheet_faces": 1,
+      "camera_move": "push-in",
+      "silent_lead_s": 0,
+      "voice_by_language_s": {
+        "hi": 2.8,
+        "en": 2.72
+      },
+      "voice_s": 2.8,
+      "duration_s": 2.9,
+      "refs": [
+        "<repo>/content/series2/refs/nirala.png",
+        "<repo>/content/series2/episodes/s2a01/frames/s10.png",
+        "<repo>/content/series2/refs/handcuffs.png",
+        "<repo>/content/series2/episodes/s2a01/frames/s20.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved character sheet for NIRALA. Match their face, wardrobe and build in the specified pose.",
+        "Image 2 is the checked lockup-interior geography reference. Match only the cool inner cell wall and the relation of corridor-side bars to the cell. The seated pose and the spacing of the bars in that image do not apply to this close shot.",
+        "Image 3 is the approved prop sheet for One pair of steel handcuffs. Match the shape, color and materials only. Use its current position and state below.",
+        "Image 4 is the checked scene anchor from the public side. Match its outline weight, color and night lighting only. Its public thana, desk contents, other character, furniture and geography are entirely out of view here."
+      ],
+      "prompt_file": "frames/prompts/s19.txt",
+      "refs_not_attached": [
+        "real_thana geography plate: use the checked s10 lockup view instead; the plate depicts the public room."
+      ]
+    },
+    {
+      "id": "s20",
+      "beat_id": "b8",
+      "scene": "E",
+      "location": "real_thana",
+      "framing": "medium close single",
+      "action": "Nandini alone outside the cell on picture-left, facing right towards Nirala, tall and composed, right arm hanging loose and her hands empty. Tube light on cheek, glimpse of out-of-focus locked bars at picture-right. Through the space over her shoulder, the empty SHO desk carries the tied red file in the rear plane; no helmet, no green register, no phone. Camera stays on the established outside side of the bars.",
+      "line_ids": [
+        "l13"
+      ],
+      "characters": [
+        "nandini"
+      ],
+      "light": "thana_night",
+      "state": [
+        "Nandini alone outside the cell on picture-left, facing right towards Nirala, tall and composed, right arm hanging loose and her hands empty. Tube light on cheek, glimpse of out-of-focus locked bars at picture-right. Through the space over her shoulder, the empty SHO desk carries the tied red file in the rear plane; no helmet, no green register, no phone. Camera stays on the established outside side of the bars."
+      ],
+      "generate": true,
+      "subtitle_safe": true,
+      "sheet_faces": 1,
+      "camera_move": "push-in",
+      "silent_lead_s": 0,
+      "voice_by_language_s": {
+        "hi": 3.04,
+        "en": 3.2
+      },
+      "voice_s": 3.2,
+      "duration_s": 3.3,
+      "refs": [
+        "<repo>/content/series2/refs/nandini.png",
+        "<repo>/content/series2/refs/thick_file.png",
+        "<repo>/content/series2/refs/real_thana.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved character sheet for NANDINI. Match their face, wardrobe and build in the specified pose.",
+        "Image 2 is the approved prop sheet for The thick file in red cloth. Match the shape, color and materials only. Use its current position and state below.",
+        "Image 3 is the series style frame. Match only its rendering. Do not copy its room, furniture, props or light; the light comes from the LIGHT line. This is also the geography plate for this thana; use the room layout, with only the night lighting specified below."
+      ],
+      "scene_anchor_of": "E",
+      "prompt_file": "frames/prompts/s20.txt"
+    },
+    {
+      "id": "s21",
+      "beat_id": "b8",
+      "scene": "E",
+      "location": "real_thana",
+      "framing": "close single",
+      "action": "Tighten the existing chest-up angle toward the same cap and eyes, both hands still together at the same bar. He turns the fact over without changing his footing.",
+      "line_ids": [
+        "l14",
+        "l15"
+      ],
+      "characters": [
+        "nirala"
+      ],
+      "light": "thana_night",
+      "state": [
+        "Tighten the existing chest-up angle toward the same cap and eyes, both hands still together at the same bar. He turns the fact over without changing his footing."
+      ],
+      "generate": false,
+      "subtitle_safe": true,
+      "sheet_faces": 1,
+      "camera_move": "custom",
+      "silent_lead_s": 0,
+      "voice_by_language_s": {
+        "hi": 6.24,
+        "en": 5.92
+      },
+      "voice_s": 6.24,
+      "duration_s": 6.6,
+      "frame_source": "s19",
+      "move": {
+        "preset": "custom",
+        "easing": "ease-in-out",
+        "to": {
+          "scale": 1.28,
+          "x": 0,
+          "y": 0
+        },
+        "from": {
+          "scale": 1.15,
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "id": "s22",
+      "beat_id": "b8",
+      "scene": "E",
+      "location": "real_thana",
+      "framing": "close single",
+      "action": "Stay on her same line of sight and stance, start a slow tightening move toward the eyes as her implication becomes direct. Do not reuse this as a separate stance or actor action.",
+      "line_ids": [
+        "l29",
+        "l16"
+      ],
+      "characters": [
+        "nandini"
+      ],
+      "light": "thana_night",
+      "state": [
+        "Stay on her same line of sight and stance, start a slow tightening move toward the eyes as her implication becomes direct. Do not reuse this as a separate stance or actor action."
+      ],
+      "generate": false,
+      "subtitle_safe": true,
+      "sheet_faces": 1,
+      "camera_move": "custom",
+      "silent_lead_s": 0,
+      "voice_by_language_s": {
+        "hi": 7.2,
+        "en": 7.12
+      },
+      "voice_s": 7.2,
+      "duration_s": 7.6,
+      "frame_source": "s20",
+      "move": {
+        "preset": "custom",
+        "easing": "ease-in-out",
+        "to": {
+          "scale": 1.28,
+          "x": 0,
+          "y": 0
+        },
+        "from": {
+          "scale": 1.15,
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "id": "s23",
+      "beat_id": "b8",
+      "scene": "E",
+      "location": "real_thana",
+      "framing": "insert",
+      "action": "Nirala's short cuff chain and oversized sleeves just below his open collar, picture-right hand at the seam of his uniform collar, the second wrist follows close because the cuffs are linked. Medal hangs alone on ribbon and stays fastened. A single bar at the edge. Crop below the face and hide his cap; no other hands.",
+      "line_ids": [],
+      "characters": [
+        "nirala"
+      ],
+      "light": "thana_night",
+      "state": [
+        "Nirala's short cuff chain and oversized sleeves just below his open collar, picture-right hand at the seam of his uniform collar, the second wrist follows close because the cuffs are linked. Medal hangs alone on ribbon and stays fastened. A single bar at the edge. Crop below the face and hide his cap; no other hands."
+      ],
+      "generate": true,
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "camera_move": "push-in",
+      "silent_lead_s": 0,
+      "silent_hold_s": 1.5,
+      "voice_by_language_s": {
+        "hi": 0,
+        "en": 0
+      },
+      "voice_s": 0,
+      "duration_s": 1.5,
+      "refs": [
+        "<repo>/content/series2/refs/nirala.png",
+        "<repo>/content/series2/refs/real_thana.png",
+        "<repo>/content/series2/refs/handcuffs.png",
+        "<repo>/content/series2/episodes/s2a01/frames/s20.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved character sheet for NIRALA. Match their face, wardrobe and build in the specified pose.",
+        "Image 2 is the real thana geography plate. Match its physical layout only; follow the LIGHT line and the precise current prop states below.",
+        "Image 3 is the approved prop sheet for One pair of steel handcuffs. Match the shape, color and materials only. Use its current position and state below.",
+        "Image 4 is the already checked scene anchor for drawing and geography. Back at the real thana after the truck. Do not copy the anchor's face, angle, desk contents, file, or bar states where the shot specifies a change. NO helmet visible at any point."
+      ],
+      "prompt_file": "frames/prompts/s23.txt"
+    },
+    {
+      "id": "s24",
+      "beat_id": "b9",
+      "scene": "E",
+      "location": "real_thana",
+      "framing": "medium close single",
+      "action": "Return to the same shotscale at the bars just as he has risen from the bench to speak. Start lower on his joined wrists and settle on his expression by the line; the exact leg and bench motion is behind the crop.",
+      "line_ids": [
+        "l17"
+      ],
+      "characters": [
+        "nirala"
+      ],
+      "light": "thana_night",
+      "state": [
+        "Return to the same shotscale at the bars just as he has risen from the bench to speak. Start lower on his joined wrists and settle on his expression by the line; the exact leg and bench motion is behind the crop."
+      ],
+      "generate": false,
+      "subtitle_safe": true,
+      "sheet_faces": 1,
+      "camera_move": "custom",
+      "silent_lead_s": 1.0,
+      "voice_by_language_s": {
+        "hi": 3.2,
+        "en": 3.6
+      },
+      "voice_s": 3.6,
+      "duration_s": 4.7,
+      "frame_source": "s19",
+      "move": {
+        "preset": "custom",
+        "easing": "ease-in-out",
+        "to": {
+          "scale": 1.28,
+          "x": 0,
+          "y": 0
+        },
+        "from": {
+          "scale": 1.15,
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "id": "s25",
+      "beat_id": "b9",
+      "scene": "E",
+      "location": "real_thana",
+      "framing": "insert",
+      "action": "Extreme close at chest height. Both of Nirala's hands curl round one shadow-blue vertical lockup bar, cuffs linked in a loose short loop, fingers emerging beneath oversized sleeve ends. Collar and medal above crop, no face, no other hand, no register. Hold on the wrists while he distinguishes the two thana records.",
+      "line_ids": [
+        "l18",
+        "l30"
+      ],
+      "characters": [
+        "nirala"
+      ],
+      "light": "thana_night",
+      "state": [
+        "Extreme close at chest height. Both of Nirala's hands curl round one shadow-blue vertical lockup bar, cuffs linked in a loose short loop, fingers emerging beneath oversized sleeve ends. Collar and medal above crop, no face, no other hand, no register. Hold on the wrists while he distinguishes the two thana records."
+      ],
+      "generate": true,
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "camera_move": "push-in",
+      "silent_lead_s": 0,
+      "voice_by_language_s": {
+        "hi": 7.84,
+        "en": 8.48
+      },
+      "voice_s": 8.48,
+      "duration_s": 8.9,
+      "refs": [
+        "<repo>/content/series2/refs/nirala.png",
+        "<repo>/content/series2/refs/real_thana.png",
+        "<repo>/content/series2/refs/handcuffs.png",
+        "<repo>/content/series2/episodes/s2a01/frames/s20.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved character sheet for NIRALA. Match their face, wardrobe and build in the specified pose.",
+        "Image 2 is the real thana geography plate. Match its physical layout only; follow the LIGHT line and the precise current prop states below.",
+        "Image 3 is the approved prop sheet for One pair of steel handcuffs. Match the shape, color and materials only. Use its current position and state below.",
+        "Image 4 is the already checked scene anchor for drawing and geography. Back at the real thana after the truck. Do not copy the anchor's face, angle, desk contents, file, or bar states where the shot specifies a change. NO helmet visible at any point."
+      ],
+      "prompt_file": "frames/prompts/s25.txt"
+    },
+    {
+      "id": "s26",
+      "beat_id": "b9",
+      "scene": "E",
+      "location": "real_thana",
+      "framing": "medium close single",
+      "action": "Same Nandini single, ease frame to keep the SHO's desk and tied red file readable behind the outside cell profile; no new prop or positional change.",
+      "line_ids": [
+        "l19"
+      ],
+      "characters": [
+        "nandini"
+      ],
+      "light": "thana_night",
+      "state": [
+        "Same Nandini single, ease frame to keep the SHO's desk and tied red file readable behind the outside cell profile; no new prop or positional change."
+      ],
+      "generate": false,
+      "subtitle_safe": true,
+      "sheet_faces": 1,
+      "camera_move": "custom",
+      "silent_lead_s": 0,
+      "voice_by_language_s": {
+        "hi": 3.52,
+        "en": 3.68
+      },
+      "voice_s": 3.68,
+      "duration_s": 3.8,
+      "frame_source": "s20",
+      "move": {
+        "preset": "custom",
+        "easing": "ease-in-out",
+        "to": {
+          "scale": 1.28,
+          "x": 0,
+          "y": 0
+        },
+        "from": {
+          "scale": 1.15,
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "id": "s27",
+      "beat_id": "b9",
+      "scene": "E",
+      "location": "real_thana",
+      "framing": "insert",
+      "action": "Profile-close insert on the worn SHO desk. Nandini's right hand comes down flat onto the thick brick-red cloth-tied file, knot visible alongside the hand. No label, no green register, no helmet, no face. Place the contrast of pale tape and red cloth at center.",
+      "line_ids": [
+        "l20"
+      ],
+      "characters": [
+        "nandini"
+      ],
+      "light": "thana_night",
+      "state": [
+        "Profile-close insert on the worn SHO desk. Nandini's right hand comes down flat onto the thick brick-red cloth-tied file, knot visible alongside the hand. No label, no green register, no helmet, no face. Place the contrast of pale tape and red cloth at center."
+      ],
+      "generate": true,
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "camera_move": "push-in",
+      "silent_lead_s": 0,
+      "voice_by_language_s": {
+        "hi": 3.76,
+        "en": 3.92
+      },
+      "voice_s": 3.92,
+      "duration_s": 4.1,
+      "refs": [
+        "<repo>/content/series2/refs/nandini.png",
+        "<repo>/content/series2/refs/real_thana.png",
+        "<repo>/content/series2/refs/thick_file.png",
+        "<repo>/content/series2/episodes/s2a01/frames/s20.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved character sheet for NANDINI. Match their face, wardrobe and build in the specified pose.",
+        "Image 2 is the real thana geography plate. Match its physical layout only; follow the LIGHT line and the precise current prop states below.",
+        "Image 3 is the approved prop sheet for The thick file in red cloth. Match the shape, color and materials only. Use its current position and state below.",
+        "Image 4 is the already checked scene anchor for drawing and geography. Back at the real thana after the truck. Do not copy the anchor's face, angle, desk contents, file, or bar states where the shot specifies a change. NO helmet visible at any point."
+      ],
+      "prompt_file": "frames/prompts/s27.txt"
+    },
+    {
+      "id": "s28",
+      "beat_id": "b9",
+      "scene": "E",
+      "location": "real_thana",
+      "framing": "medium two-shot through bars",
+      "action": "Medium two-shot of those same sides of the lockup: Nandini on picture-left outside, Nirala on picture-right inside, his two cuffed wrists held together at the bar, cap level and medal on. In extreme picture-left foreground above subtitle safe area: only Pushpa's plum sleeves, stalled knitting needles and orange wool, no third face. Keep the knitting hand shape distinct from the two faces.",
+      "line_ids": [
+        "l21",
+        "l22"
+      ],
+      "characters": [
+        "nandini",
+        "nirala",
+        "pushpa"
+      ],
+      "light": "thana_night",
+      "state": [
+        "Medium two-shot of those same sides of the lockup: Nandini on picture-left outside, Nirala on picture-right inside, his two cuffed wrists held together at the bar, cap level and medal on. In extreme picture-left foreground above subtitle safe area: only Pushpa's plum sleeves, stalled knitting needles and orange wool, no third face. Keep the knitting hand shape distinct from the two faces."
+      ],
+      "generate": true,
+      "subtitle_safe": true,
+      "sheet_faces": 2,
+      "camera_move": "push-in",
+      "silent_lead_s": 0,
+      "voice_by_language_s": {
+        "hi": 8.24,
+        "en": 8.96
+      },
+      "voice_s": 8.96,
+      "duration_s": 9.4,
+      "refs": [
+        "<repo>/content/series2/refs/pair_nandini_nirala.png",
+        "<repo>/content/series2/refs/real_thana.png",
+        "<repo>/content/series2/refs/handcuffs.png",
+        "<repo>/content/series2/refs/pushpa_knitting.png",
+        "<repo>/content/series2/episodes/s2a01/frames/s20.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved height line-up for NANDINI AND NIRALA. Match identity and relative size exactly, in the pose and lighting below.",
+        "Image 2 is the real thana geography plate. Match its physical layout only; follow the LIGHT line and the precise current prop states below.",
+        "Image 3 is the approved prop sheet for One pair of steel handcuffs. Match the shape, color and materials only. Use its current position and state below.",
+        "Image 4 is the approved prop sheet for Pushpa's knitting in progress. Match the shape, color and materials only. Use its current position and state below.",
+        "Image 5 is the already checked scene anchor for drawing and geography. Back at the real thana after the truck. Do not copy the anchor's face, angle, desk contents, file, or bar states where the shot specifies a change. NO helmet visible at any point."
+      ],
+      "prompt_file": "frames/prompts/s28.txt"
+    },
+    {
+      "id": "s29",
+      "beat_id": "b10",
+      "scene": "E",
+      "location": "real_thana",
+      "framing": "medium two-shot",
+      "action": "The tall grey steel almirah is shut and padlocked at center. Nandini picture-left in profile looking directly at the padlock, hands lowered. Pushpa picture-right, shorter than Nandini, holds one small steel key on a vivid orange wool loop between them, lifting it with the hand near center after taking it from her cardigan pocket. Her wool remains in her bun and pockets unless required on key. No green register visible yet.",
+      "line_ids": [
+        "l28",
+        "l23"
+      ],
+      "characters": [
+        "nandini",
+        "pushpa"
+      ],
+      "light": "thana_night",
+      "state": [
+        "The tall grey steel almirah is shut and padlocked at center. Nandini picture-left in profile looking directly at the padlock, hands lowered. Pushpa picture-right, shorter than Nandini, holds one small steel key on a vivid orange wool loop between them, lifting it with the hand near center after taking it from her cardigan pocket. Her wool remains in her bun and pockets unless required on key. No green register visible yet."
+      ],
+      "generate": true,
+      "subtitle_safe": true,
+      "sheet_faces": 2,
+      "camera_move": "push-in",
+      "silent_lead_s": 0,
+      "voice_by_language_s": {
+        "hi": 8.24,
+        "en": 6.88
+      },
+      "voice_s": 8.24,
+      "duration_s": 8.6,
+      "refs": [
+        "<repo>/content/series2/refs/pair_nandini_pushpa.png",
+        "<repo>/content/series2/refs/real_thana.png",
+        "<repo>/content/series2/refs/almirah_key.png",
+        "<repo>/content/series2/episodes/s2a01/frames/s20.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved height line-up for NANDINI AND PUSHPA. Match identity and relative size exactly, in the pose and lighting below.",
+        "Image 2 is the real thana geography plate. Match its physical layout only; follow the LIGHT line and the precise current prop states below.",
+        "Image 3 is the approved prop sheet for Almirah key on a loop of orange wool. Match the shape, color and materials only. Use its current position and state below.",
+        "Image 4 is the already checked scene anchor for drawing and geography. Back at the real thana after the truck. Do not copy the anchor's face, angle, desk contents, file, or bar states where the shot specifies a change. NO helmet visible at any point."
+      ],
+      "prompt_file": "frames/prompts/s29.txt"
+    },
+    {
+      "id": "s30",
+      "beat_id": "b10",
+      "scene": "E",
+      "location": "real_thana",
+      "framing": "medium-wide single",
+      "action": "The same tall grey almirah now open. Pushpa at picture-right lifting a heavy plain clothbound green register straight out, supporting it with both hands. A few clean cel dust shapes in the tube light, empty cabinet shelf behind. Orange wool key hangs from the opened padlock or is cropped out. Nandini and red file outside crop.",
+      "line_ids": [
+        "l24"
+      ],
+      "characters": [
+        "pushpa"
+      ],
+      "light": "thana_night",
+      "state": [
+        "The same tall grey almirah now open. Pushpa at picture-right lifting a heavy plain clothbound green register straight out, supporting it with both hands. A few clean cel dust shapes in the tube light, empty cabinet shelf behind. Orange wool key hangs from the opened padlock or is cropped out. Nandini and red file outside crop."
+      ],
+      "generate": true,
+      "subtitle_safe": true,
+      "sheet_faces": 1,
+      "camera_move": "push-in",
+      "silent_lead_s": 0,
+      "voice_by_language_s": {
+        "hi": 3.84,
+        "en": 3.52
+      },
+      "voice_s": 3.84,
+      "duration_s": 4.0,
+      "refs": [
+        "<repo>/content/series2/refs/pushpa.png",
+        "<repo>/content/series2/refs/real_thana.png",
+        "<repo>/content/series2/refs/fir_register.png",
+        "<repo>/content/series2/episodes/s2a01/frames/s20.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved character sheet for PUSHPA. Match their face, wardrobe and build in the specified pose.",
+        "Image 2 is the real thana geography plate. Match its physical layout only; follow the LIGHT line and the precise current prop states below.",
+        "Image 3 is the approved prop sheet for The green FIR register. Match the shape, color and materials only. Use its current position and state below.",
+        "Image 4 is the already checked scene anchor for drawing and geography. Back at the real thana after the truck. Do not copy the anchor's face, angle, desk contents, file, or bar states where the shot specifies a change. NO helmet visible at any point."
+      ],
+      "prompt_file": "frames/prompts/s30.txt"
+    },
+    {
+      "id": "s31",
+      "beat_id": "b10",
+      "scene": "E",
+      "location": "real_thana",
+      "framing": "high over shoulder",
+      "action": "High from behind Nandini's near shoulder, no face. Her right hand flat on the open green cloth register on the desk, ruled pages entirely blank with no letters or marks. Beyond the desk, at the top-center separated from the open pages, hangs the unlocked design's familiar shield with an empty brass plate reserved for later text. No visual door knock; there are two knocks in the audio lead into the lane.",
+      "line_ids": [
+        "l25"
+      ],
+      "characters": [
+        "nandini"
+      ],
+      "light": "thana_night",
+      "state": [
+        "High from behind Nandini's near shoulder, no face. Her right hand flat on the open green cloth register on the desk, ruled pages entirely blank with no letters or marks. Beyond the desk, at the top-center separated from the open pages, hangs the unlocked design's familiar shield with an empty brass plate reserved for later text. No visual door knock; there are two knocks in the audio lead into the lane."
+      ],
+      "generate": true,
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "camera_move": "push-in",
+      "silent_lead_s": 0,
+      "silent_tail_s": 1.5,
+      "voice_by_language_s": {
+        "hi": 4.08,
+        "en": 4.08
+      },
+      "voice_s": 4.08,
+      "duration_s": 5.7,
+      "overlay": {
+        "id": "ov_shield",
+        "surface": "blank brass plate of the wall shield high beyond the SHO desk; measure the actual plate in frame review"
+      },
+      "refs": [
+        "<repo>/content/series2/refs/nandini.png",
+        "<repo>/content/series2/refs/real_thana.png",
+        "<repo>/content/series2/refs/fir_register.png",
+        "<repo>/content/series2/refs/zero_crime_shield.png",
+        "<repo>/content/series2/episodes/s2a01/frames/s20.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved character sheet for NANDINI. Match their face, wardrobe and build in the specified pose.",
+        "Image 2 is the real thana geography plate. Match its physical layout only; follow the LIGHT line and the precise current prop states below.",
+        "Image 3 is the approved prop sheet for The green FIR register. Match the shape, color and materials only. Use its current position and state below.",
+        "Image 4 is the approved prop sheet for The zero-crime shield. Match the shape, color and materials only. Use its current position and state below.",
+        "Image 5 is the already checked scene anchor for drawing and geography. Back at the real thana after the truck. Do not copy the anchor's face, angle, desk contents, file, or bar states where the shot specifies a change. NO helmet visible at any point."
+      ],
+      "prompt_file": "frames/prompts/s31.txt"
+    },
+    {
+      "id": "s32",
+      "beat_id": "b11",
+      "scene": "F",
+      "location": "lane_doorway",
+      "framing": "medium side single",
+      "action": "Night side view at Ramsevak's specific dark wood double door. Nandini picture-left facing right, her raised right knuckles just clear of the wood. Same left arm clamps tied red file beneath the green register against her chest, not a second free hand. Door open a hand's width, stopped on its visible iron chain, no face inside. Lamp small high above the jamb, bicycle against brick near the stone step, nothing else in lane. Her shoulder rank readable and bottom fifth clear for subtitles.",
+      "line_ids": [
+        "l26"
+      ],
+      "characters": [
+        "nandini"
+      ],
+      "light": "lane_night",
+      "state": [
+        "Night side view at Ramsevak's specific dark wood double door. Nandini picture-left facing right, her raised right knuckles just clear of the wood. Same left arm clamps tied red file beneath the green register against her chest, not a second free hand. Door open a hand's width, stopped on its visible iron chain, no face inside. Lamp small high above the jamb, bicycle against brick near the stone step, nothing else in lane. Her shoulder rank readable and bottom fifth clear for subtitles."
+      ],
+      "generate": true,
+      "subtitle_safe": true,
+      "sheet_faces": 1,
+      "camera_move": "push-in",
+      "silent_lead_s": 0,
+      "voice_by_language_s": {
+        "hi": 5.04,
+        "en": 5.28
+      },
+      "voice_s": 5.28,
+      "duration_s": 5.4,
+      "supers": [
+        "su_a1"
+      ],
+      "refs": [
+        "<repo>/content/series2/refs/nandini.png",
+        "<repo>/content/series2/refs/lane_doorway.png",
+        "<repo>/content/series2/refs/fir_register.png",
+        "<repo>/content/series2/refs/thick_file.png",
+        "<repo>/content/series2/refs/real_thana.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved character sheet for NANDINI. Match their face, wardrobe and build in the specified pose.",
+        "Image 2 is the lane doorway geography plate. Match its physical layout only; follow the LIGHT line and the precise current prop states below.",
+        "Image 3 is the approved prop sheet for The green FIR register. Match the shape, color and materials only. Use its current position and state below.",
+        "Image 4 is the approved prop sheet for The thick file in red cloth. Match the shape, color and materials only. Use its current position and state below.",
+        "Image 5 is the series style frame. Match only its rendering. Do not copy its room, furniture, props or light; the light comes from the LIGHT line. No real-thana fan, shield, almirah, clock, barred door or daylight inside this separate location."
+      ],
+      "scene_anchor_of": "F",
+      "prompt_file": "frames/prompts/s32.txt"
+    },
+    {
+      "id": "s33",
+      "beat_id": "b11",
+      "scene": "F",
+      "location": "lane_doorway",
+      "framing": "close single through door gap",
+      "action": "From Nandini's eye line, only a narrow part of Ramsevak's face between two leaves of the door and above its taut iron chain. Thin man in his fifties, grey stubble, white vest under a shawl, weary rather than hostile. His gaze drops toward picture-left to her shoulder outside frame. Her uniform shoulder is either outside crop or a small soft wedge with two bars, no face, no prop transfer. This is his only visible face.",
+      "line_ids": [
+        "l27"
+      ],
+      "characters": [
+        "door1_man"
+      ],
+      "light": "lane_night",
+      "state": [
+        "From Nandini's eye line, only a narrow part of Ramsevak's face between two leaves of the door and above its taut iron chain. Thin man in his fifties, grey stubble, white vest under a shawl, weary rather than hostile. His gaze drops toward picture-left to her shoulder outside frame. Her uniform shoulder is either outside crop or a small soft wedge with two bars, no face, no prop transfer. This is his only visible face."
+      ],
+      "generate": true,
+      "subtitle_safe": true,
+      "sheet_faces": 1,
+      "camera_move": "push-in",
+      "silent_lead_s": 0,
+      "voice_by_language_s": {
+        "hi": 3.92,
+        "en": 3.36
+      },
+      "voice_s": 3.92,
+      "duration_s": 4.1,
+      "refs": [
+        "<repo>/content/series2/refs/lane_doorway.png",
+        "<repo>/content/series2/episodes/s2a01/frames/s32.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the lane doorway geography plate. Match its physical layout only; follow the LIGHT line and the precise current prop states below.",
+        "Image 2 is the already checked scene anchor for drawing and geography. Ramsevak's door, one small warm pool from a wall lamp within dark blue lane light. Do not copy the anchor's framing, door opening or face visibility. Preserve the same wood, blue-dark brick, single stone step and bicycle."
+      ],
+      "prompt_file": "frames/prompts/s33.txt"
+    },
+    {
+      "id": "s34",
+      "beat_id": "b11",
+      "scene": "F",
+      "location": "lane_doorway",
+      "framing": "insert held",
+      "action": "Same doorway now fully shut, dark wooden leaves together, no gap and no face behind. Her right hand, coming from picture-left at mid-height, hangs still half raised a few inches from the wood, fingers loose. The bicycle and stone step may barely read off focus at edge; wall lamp makes only a small pool, night blue everywhere else. Keep hand and door seam central for the final still.",
+      "line_ids": [],
+      "characters": [
+        "nandini"
+      ],
+      "light": "lane_night",
+      "state": [
+        "Same doorway now fully shut, dark wooden leaves together, no gap and no face behind. Her right hand, coming from picture-left at mid-height, hangs still half raised a few inches from the wood, fingers loose. The bicycle and stone step may barely read off focus at edge; wall lamp makes only a small pool, night blue everywhere else. Keep hand and door seam central for the final still."
+      ],
+      "generate": true,
+      "subtitle_safe": true,
+      "sheet_faces": 0,
+      "camera_move": "hold",
+      "silent_lead_s": 0,
+      "silent_hold_s": 2.5,
+      "voice_by_language_s": {
+        "hi": 0,
+        "en": 0
+      },
+      "voice_s": 0,
+      "duration_s": 2.5,
+      "refs": [
+        "<repo>/content/series2/refs/nandini.png",
+        "<repo>/content/series2/refs/lane_doorway.png",
+        "<repo>/content/series2/episodes/s2a01/frames/s32.png"
+      ],
+      "ref_labels": [
+        "Image 1 is the approved character sheet for NANDINI. Match their face, wardrobe and build in the specified pose.",
+        "Image 2 is the lane doorway geography plate. Match its physical layout only; follow the LIGHT line and the precise current prop states below.",
+        "Image 3 is the already checked scene anchor for drawing and geography. Ramsevak's door, one small warm pool from a wall lamp within dark blue lane light. Do not copy the anchor's framing, door opening or face visibility. Preserve the same wood, blue-dark brick, single stone step and bicycle."
+      ],
+      "prompt_file": "frames/prompts/s34.txt"
+    }
+  ]
+}

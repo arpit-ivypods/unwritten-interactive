@@ -1,0 +1,131 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,090"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 90
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,090",
+				"to": "00:00:00,650"
+			},
+			"offsets": {
+				"from": 90,
+				"to": 650
+			},
+			"text": " अट्सो"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,650",
+				"to": "00:00:01,220"
+			},
+			"offsets": {
+				"from": 650,
+				"to": 1220
+			},
+			"text": " बूरी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,460",
+				"to": "00:00:01,580"
+			},
+			"offsets": {
+				"from": 1460,
+				"to": 1580
+			},
+			"text": " और"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,580",
+				"to": "00:00:02,340"
+			},
+			"offsets": {
+				"from": 1580,
+				"to": 2340
+			},
+			"text": " साईन"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,580",
+				"to": "00:00:03,650"
+			},
+			"offsets": {
+				"from": 2580,
+				"to": 3650
+			},
+			"text": " अजो"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,650",
+				"to": "00:00:04,660"
+			},
+			"offsets": {
+				"from": 3650,
+				"to": 4660
+			},
+			"text": " त्रिपाठीके"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,940",
+				"to": "00:00:05,380"
+			},
+			"offsets": {
+				"from": 4940,
+				"to": 5380
+			},
+			"text": " मुहर"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,380",
+				"to": "00:00:06,120"
+			},
+			"offsets": {
+				"from": 5380,
+				"to": 6120
+			},
+			"text": " समेध"
+		}
+	]
+}

@@ -1,0 +1,131 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,030"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 30
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,030",
+				"to": "00:00:00,300"
+			},
+			"offsets": {
+				"from": 30,
+				"to": 300
+			},
+			"text": " And"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,300",
+				"to": "00:00:00,790"
+			},
+			"offsets": {
+				"from": 300,
+				"to": 790
+			},
+			"text": " still,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,790",
+				"to": "00:00:01,440"
+			},
+			"offsets": {
+				"from": 790,
+				"to": 1440
+			},
+			"text": " Bhaiyaji"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,440",
+				"to": "00:00:01,840"
+			},
+			"offsets": {
+				"from": 1440,
+				"to": 1840
+			},
+			"text": " asked"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,840",
+				"to": "00:00:02,090"
+			},
+			"offsets": {
+				"from": 1840,
+				"to": 2090
+			},
+			"text": " you"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,090",
+				"to": "00:00:02,240"
+			},
+			"offsets": {
+				"from": 2090,
+				"to": 2240
+			},
+			"text": " to"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,240",
+				"to": "00:00:02,560"
+			},
+			"offsets": {
+				"from": 2240,
+				"to": 2560
+			},
+			"text": " come"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,560",
+				"to": "00:00:03,420"
+			},
+			"offsets": {
+				"from": 2560,
+				"to": 3420
+			},
+			"text": " alone."
+		}
+	]
+}

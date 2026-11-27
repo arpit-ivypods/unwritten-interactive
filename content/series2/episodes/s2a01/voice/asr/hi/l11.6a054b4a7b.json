@@ -1,0 +1,142 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "hi",
+		"translate": false
+	},
+	"result": {
+		"language": "hi"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,080"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 80
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,080",
+				"to": "00:00:00,510"
+			},
+			"offsets": {
+				"from": 80,
+				"to": 510
+			},
+			"text": " बारा"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,510",
+				"to": "00:00:01,010"
+			},
+			"offsets": {
+				"from": 510,
+				"to": 1010
+			},
+			"text": " बचकर"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,010",
+				"to": "00:00:01,260"
+			},
+			"offsets": {
+				"from": 1010,
+				"to": 1260
+			},
+			"text": " दस"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,260",
+				"to": "00:00:01,940"
+			},
+			"offsets": {
+				"from": 1260,
+				"to": 1940
+			},
+			"text": " मिनेट"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,940",
+				"to": "00:00:02,530"
+			},
+			"offsets": {
+				"from": 1940,
+				"to": 2530
+			},
+			"text": " आट्सो"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,530",
+				"to": "00:00:03,000"
+			},
+			"offsets": {
+				"from": 2530,
+				"to": 3000
+			},
+			"text": " भूरी"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,000",
+				"to": "00:00:03,810"
+			},
+			"offsets": {
+				"from": 3000,
+				"to": 3810
+			},
+			"text": " मैंने"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,810",
+				"to": "00:00:04,360"
+			},
+			"offsets": {
+				"from": 3810,
+				"to": 4360
+			},
+			"text": " जाने"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,360",
+				"to": "00:00:05,000"
+			},
+			"offsets": {
+				"from": 4360,
+				"to": 5000
+			},
+			"text": " दिया"
+		}
+	]
+}

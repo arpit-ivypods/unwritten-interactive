@@ -1,0 +1,153 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "~/.whisper-models/ggml-small.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,150"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 150
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,150",
+				"to": "00:00:00,160"
+			},
+			"offsets": {
+				"from": 150,
+				"to": 160
+			},
+			"text": " My"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,160",
+				"to": "00:00:00,570"
+			},
+			"offsets": {
+				"from": 160,
+				"to": 570
+			},
+			"text": " phone"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,570",
+				"to": "00:00:00,980"
+			},
+			"offsets": {
+				"from": 570,
+				"to": 980
+			},
+			"text": " stays"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,980",
+				"to": "00:00:01,140"
+			},
+			"offsets": {
+				"from": 980,
+				"to": 1140
+			},
+			"text": " in"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,140",
+				"to": "00:00:01,460"
+			},
+			"offsets": {
+				"from": 1140,
+				"to": 1460
+			},
+			"text": " your"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,460",
+				"to": "00:00:02,410"
+			},
+			"offsets": {
+				"from": 1460,
+				"to": 2410
+			},
+			"text": " pocket."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,410",
+				"to": "00:00:02,680"
+			},
+			"offsets": {
+				"from": 2410,
+				"to": 2680
+			},
+			"text": " The"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,680",
+				"to": "00:00:03,140"
+			},
+			"offsets": {
+				"from": 2680,
+				"to": 3140
+			},
+			"text": " call"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,140",
+				"to": "00:00:03,750"
+			},
+			"offsets": {
+				"from": 3140,
+				"to": 3750
+			},
+			"text": " stays"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,750",
+				"to": "00:00:04,320"
+			},
+			"offsets": {
+				"from": 3750,
+				"to": 4320
+			},
+			"text": " on."
+		}
+	]
+}
